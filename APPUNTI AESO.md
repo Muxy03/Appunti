@@ -241,4 +241,195 @@ endmodule;
 
 ![[Pasted image 20230425170612.png]]
 
-pagina 152
+![[Pasted image 20230509164208.png]]
+
+![[Pasted image 20230509164300.png]]
+
+![[Pasted image 20230509164427.png]]
+
+![[Pasted image 20230509164550.png]]
+
+![[Pasted image 20230509164907.png]]
+
+![[Pasted image 20230509164942.png]]
+
+![[Pasted image 20230509164957.png]]
+
+![[Pasted image 20230509165018.png]]
+
+![[Pasted image 20230509165136.png]]
+
+![[Pasted image 20230509165423.png]]
+
+![[Pasted image 20230509165153.png]]
+
+![[Pasted image 20230509165517.png]]
+
+![[Pasted image 20230509165620.png]]
+
+![[Pasted image 20230509170010.png]]
+
+![[Pasted image 20230509170048.png]]
+
+![[Pasted image 20230509170305.png]]
+
+![[Pasted image 20230509170605.png]]
+
+![[Pasted image 20230509170802.png]]
+
+![[Pasted image 20230509170828.png]]
+
+![[Pasted image 20230509170909.png]]
+
+![[Pasted image 20230509170930.png]]
+
+![[Pasted image 20230509171014.png]] ![[Pasted image 20230509171138.png]]
+
+# Capitolo 5
+
+## ADDIZIONE
+
+![[Pasted image 20230509171820.png]]
+
+>Sommatore completo (_Full Adder_) :
+>
+>![[Pasted image 20230509172602.png]]
+
+>Sommatore a propragazione di riporto (_Carry Propagate Adder_):
+>$ritardo_{CPA} = N*ritardo_{FA}$
+>
+>![[Pasted image 20230509172815.png]]
+
+>Sommatore ad anticipazione di riporto (_Carry-Lookhead Adder_):
+>
+>risolve il problema della velocità dividendo il sommatore stesso in blocchi e aggiungendo un circuito per determinare velocemente il riporto di uscita da ciascun blocco appena è noto il riporto di ingresso. Per questo si dice che il sommatore è in grado di “anticipare” o “guardare avanti” (look ahead) attraverso i blocchi invece di attendere che il riporto si propaghi attraverso tutti i full adder del blocco. Per esempio, un sommatore a 32 bit può essere diviso in otto blocchi da 4 bit ciascuno. I sommatori ad anticipazione di riporto utilizzano segnali di generazione (G) e di propagazione (P) che descrivono come una colonna o un blocco determinano il proprio riporto.
+>
+>$G_i = A_i*B_i$ , $P_i=A_i + B_i$ , $R_i=G_i+P_i*R_{i-1}$
+>$G_{3:0} = G_3+P_3*(G_2+P_2*(G_1+P_1*G_0))$ , $P_{3:0}=P_3*P_2*P_1*P_0$ , $R_i = G_{i:j}+P_{i:j}*R_{j-1}$
+>
+>$t_{CLA}=t_{pg}+t_{pg\_blocco}+(\frac{N}{k}-1)*t_{AND/OR}+k*t_{FA}$
+>
+>>Legenda:
+>>- $t_{pg}$ = ritardo delle porte di generazione e propagazione per calcolare $G_i$ e $P_i$ di ogni colonna (in una sola porta AND o OR)  
+>>- $t_{pg\_blocco}$ = ritardo per calcolare i segnali di generazione e propagazione $P_{i:j}$ e $G_{i:j}$ per ogni blocco a k bit
+>>- $t_{AND/OR}$ = ritardo da $R_{in}$ a $R_{out}$ attraverso la porta AND/OR finale del blocco ad anticipazione di riporto a k bit
+>
+>![[Pasted image 20230509173124.png]]
+
+sommatore a prefissi ??
+
+![[Pasted image 20230509180431.png]]
+
+## SOTTRAZIONE
+
+![[Pasted image 20230509180702.png]]
+
+Y = A - B = A + NOT(B) +1 -> A + NOT(B) con $R_{in}=1$ 
+
+![[Pasted image 20230509180829.png]]
+
+## Comparatore
+
+faccio AND dei risultati delle XNOR (NOT XOR)
+![[Pasted image 20230509181021.png]]
+
+N-1 bit = 1 <=> A < B , problemi con overflow
+![[Pasted image 20230509181256.png]]
+
+![[Pasted image 20230509181552.png]]
+
+## ALU: Arithmetic Logical Unit
+
+![[Pasted image 20230509181619.png]]
+
+![[Pasted image 20230509181636.png]]
+
+![[Pasted image 20230509181708.png]]
+
+flagALU ->4 bit: N,Z,C,V -> negativo, zero, Carry, overflow
+
+overflow -> la somma di 2 numeri concordi genera un numero di segno opposto
+
+![[Pasted image 20230509182021.png]]
+
+## Traslatori e rotatori
+
+![[Pasted image 20230509182416.png]]
+
+\>>,\<<,>>> -> LSL, LSR, ARS
+
+3 LSL 4 = 3 * 2^4 = 48
+
+-4 ARS 2 = -4 / 2^2 = -1
+
+![[Pasted image 20230509183315.png]]
+
+## MOLTIPLICAZIONE
+
+![[Pasted image 20230509183518.png]]
+
+![[Pasted image 20230509183627.png]]
+
+## DIVISIONE
+
+![[Pasted image 20230509183810.png]]
+
+![[Pasted image 20230509184009.png]]
+
+## NUMERI IN VIRGOLA FISSA
+
+notazione in virgola fissa -> parte intera.parte frazionaria ->0110.1100 = $2^2+2^1+2^{-1}+2^{-2}$ = 6.75 
+
+rappresentati in modulo e esegno o in complemento 2 
+
+notazione virgola mobile -> 4100 = $4.1*10^3$  -> $\pm M \times B^E$ , M = mantissa, B = base, E = esponente -> virgola mobile perché viene spostata a destra della cifra + significativa
+
+## NUMERI IN VIRGOLA MOBILE
+
+I numeri in virgola mobile sono in base 2 con una mantissa binaria: vengono usati 32 bit per rappresentare 1 bit di segno, 8 bit di esponente e 23 bit di mantissa.
+
+![[Pasted image 20230509185704.png]]
+
+![[Pasted image 20230509185900.png]]
+
+![[Pasted image 20230509185936.png]]
+
+![[Pasted image 20230509185952.png]]
+
+![[Pasted image 20230509190207.png]]
+
+![[Pasted image 20230509190247.png]]
+
+## Contatori 
+
+![[Pasted image 20230509190611.png]]
+
+![[Pasted image 20230509190718.png]]
+
+## REGISTRI
+
+![[Pasted image 20230509192617.png]]
+
+![[Pasted image 20230509192657.png]]
+
+![[Pasted image 20230509192721.png]]
+
+## COMPONENTI DI MEMORIA
+
+memoria ad accesso casuale dinamica -> DRAM
+memoria ad accesso casuale statica -> SRAM
+memoria a sola lettura -> ROM
+
+memoria con N bit indirizzo e M bit di dato -> matrice $2^N \times M$ -> 2^N righe e M colonne -> ogni riga della matrice è una parola -> \#righe = lunghezza, larghezza = \#colonne
+
+![[Pasted image 20230509195433.png]]
+
+![[Pasted image 20230509195659.png]]
+
+per leggere -> si attiva la linea di parola corrispondente e le linee di bit rimangono fluttuanti
+
+per scrivere -> si porta le linee di bit al valore che vogliamo scrivere e poi viene attivata la linea di parola corrispondente e il nuovo valore viene immagazzinato nelle celle di bit 
+
+![[Pasted image 20230509200225.png]]
+
+pagina 207
