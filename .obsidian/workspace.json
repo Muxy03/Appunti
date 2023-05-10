@@ -6,7 +6,7 @@
       {
         "id": "6760dda537a1be95",
         "type": "tabs",
-        "dimension": 44.923857868020306,
+        "dimension": 44.9238578680203,
         "children": [
           {
             "id": "9d245768c21676a6",
@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "APPUNTI AESO.md",
+                "file": "APPUNTI STATISTICA.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,15 +25,15 @@
       {
         "id": "0deb17551a614d7c",
         "type": "tabs",
-        "dimension": 55.0761421319797,
+        "dimension": 55.076142131979694,
         "children": [
           {
-            "id": "f8cb5d8dac4b9b7e",
+            "id": "eacd6ec8566f0af2",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "PDF/Architettura degli elaboratori (Harris, Harris_ ARM Edition).pdf"
+                "file": "PDF/Note Preliminari Complete.pdf"
               }
             }
           }
@@ -87,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -103,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "APPUNTI AESO.md",
+                "file": "APPUNTI STATISTICA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "APPUNTI AESO.md",
+                "file": "APPUNTI STATISTICA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "APPUNTI AESO.md"
+                "file": "APPUNTI STATISTICA.md"
               }
             }
           }
@@ -166,18 +167,20 @@
   },
   "active": "9d245768c21676a6",
   "lastOpenFiles": [
-    "IMMAGINI/Pasted image 20230509200225.png",
-    "IMMAGINI/Pasted image 20230509195659.png",
-    "IMMAGINI/Pasted image 20230509195433.png",
-    "IMMAGINI/Pasted image 20230509192721.png",
-    "IMMAGINI/Pasted image 20230509192657.png",
-    "IMMAGINI/Pasted image 20230509192617.png",
-    "IMMAGINI/Pasted image 20230509190718.png",
-    "IMMAGINI/Pasted image 20230509190611.png",
-    "IMMAGINI/Pasted image 20230509190247.png",
-    "IMMAGINI/Pasted image 20230509190207.png",
-    "IMMAGINI/Pasted image 20230509185952.png",
+    "IMMAGINI/Pasted image 20230510182507.png",
+    "IMMAGINI/Pasted image 20230510182448.png",
+    "IMMAGINI/Pasted image 20230510182422.png",
+    "IMMAGINI/Pasted image 20230510182334.png",
+    "IMMAGINI/Pasted image 20230510182140.png",
+    "IMMAGINI/Pasted image 20230510182115.png",
+    "IMMAGINI/Pasted image 20230510182035.png",
+    "IMMAGINI/Pasted image 20230510182006.png",
+    "IMMAGINI/Pasted image 20230510181939.png",
+    "IMMAGINI/Pasted image 20230510181858.png",
+    "IMMAGINI/Pasted image 20230510181816.png",
+    "APPUNTI STATISTICA.md",
     "APPUNTI AESO.md",
+    "PDF/Note Preliminari Complete.pdf",
     "PDF/Architettura degli elaboratori (Harris, Harris_ ARM Edition).pdf"
   ]
 }

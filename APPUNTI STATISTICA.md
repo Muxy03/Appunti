@@ -140,5 +140,104 @@ Variabili aleatorie notevoli:
 - Variabile di Poisson:
 	- $\lambda>0,X:\Omega \rightarrow N$ valori naturali
 	- $\pmb{P}(X=h)=e^{-\lambda}*\frac{\lambda^{h}}{h!},h \in N$ 
+- Variabili uniformi su intervalli:
+	- Dati due numeri reali a < b, la densità uniforme sull’intervallo \[a,b\] è costante sull’intervallo e nulla fuori da esso
+	- ![[Pasted image 20230510165303.png]]
+- Variabili Esponenziali:
+	- ![[Pasted image 20230510165414.png]]
 
-pagina 46
+![[Pasted image 20230510165654.png]]
+
+## Variabili Gaussiane: 
+N(0,1) -> densità di probabilità = $\phi(x)=\frac{1}{\sqrt{2\pi}}*e^{-t^2/2}$
+
+funzione di ripartizione = $\Phi(x) = \frac{1}{\sqrt{2\pi}}*\int^x_{-\infty} e^{-t^2/2}dt$
+
+$q_\alpha$ = $\alpha$-quantile della variabile N(0,1)
+
+![[Pasted image 20230510171833.png]]
+
+Valore Atteso = $E[X] = \sum_i x_i*p(x_i)$ -> p = funzione di massa, X = variabile discreta -> $\sum_i |x_i|*p(x_i) < +\infty$ condizione per cui X ha valore atteso
+
+Valore Atteso = $E[X] = \int_{-\infty}^\infty x*f(x) dx$ -> f = densità, X= variabile con densità f -> $\int_{-\infty}^\infty |x|*f(x) dx < +\infty$ condizione per cui X ha valore atteso
+
+![[Pasted image 20230510172512.png]]
+
+![[Pasted image 20230510172556.png]]
+
+$1 \le m < n:$ se $E[|X|^n]<+\infty$ anche $E[|X|^m]<+\infty$ 
+
+se X è una variabile aleatoria (discreta o con densità) a valori positivi e a >0 :
+$a*\pmb{P}\{X \ge a\} \le E[X]$ 
+
+Varianza di una variabile aleatoria = $Var(X)=E[(X-E[X])^2]=E[X^2]-E[X]^2$ 
+
+deviazione standard di una variabile aleatoria = $\sigma(X)=\sqrt{Var(X)}$ 
+
+$Var(aX+b)=a^2*Var(X)$ 
+
+>se X è una variabile aleatoria e d>0 vale 
+>$$\pmb{P}\{|X-E[X]|>d\} \le \frac{Var(X)}{d^2}$$
+
+![[Pasted image 20230510174036.png]]
+
+![[Pasted image 20230510174234.png]]
+
+
+## Variabili Aleatorie Doppie
+
+![[Pasted image 20230510174608.png]]
+
+![[Pasted image 20230510174629.png]]
+
+![[Pasted image 20230510174848.png]]
+
+![[Pasted image 20230510175026.png]]
+
+![[Pasted image 20230510175225.png]]
+
+![[Pasted image 20230510175451.png]]
+
+![[Pasted image 20230510175634.png]]
+
+![[Pasted image 20230510175701.png]]
+
+![[Pasted image 20230510175719.png]]
+
+![[Pasted image 20230510175746.png]]
+
+![[Pasted image 20230510175808.png]]
+
+![[Pasted image 20230510175837.png]]
+
+![[Pasted image 20230510175909.png]]
+
+![[Pasted image 20230510175956.png]]
+
+![[Pasted image 20230510180036.png]]
+
+![[Pasted image 20230510181759.png]]
+
+![[Pasted image 20230510181816.png]]
+
+![[Pasted image 20230510181858.png]]
+
+![[Pasted image 20230510181939.png]]
+
+![[Pasted image 20230510182006.png]]
+
+![[Pasted image 20230510182035.png]]
+
+![[Pasted image 20230510182115.png]]
+
+![[Pasted image 20230510182140.png]]
+
+![[Pasted image 20230510182334.png]]
+
+![[Pasted image 20230510182422.png]]
+
+![[Pasted image 20230510182448.png]]
+
+![[Pasted image 20230510182507.png]]
+
+pagina 81
