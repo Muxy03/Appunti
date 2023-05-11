@@ -432,4 +432,140 @@ per scrivere -> si porta le linee di bit al valore che vogliamo scrivere e poi v
 
 ![[Pasted image 20230509200225.png]]
 
-pagina 207
+>DRAM:
+>![[Pasted image 20230511160030.png]]
+
+>SRAM:
+>![[Pasted image 20230511160107.png]]
+
+![[Pasted image 20230511160133.png]]
+
+throughput = quantità di bit scambiabili nel tempo
+
+SDRAM -> DRAM sincrone
+DDR SDRAM -> SDRAM a doppia velocità
+
+register file -> gruppo di registri per immagazzinare variabili temporanee
+
+![[Pasted image 20230511160510.png]]
+
+![[Pasted image 20230511160556.png]]
+
+![[Pasted image 20230511160713.png]]
+
+PROM -> ROM programmabile -> ![[Pasted image 20230511161048.png]]
+
+EPROM -> PROM cancellabile -> al posto del transistor e del fusibile c'è un transistor a gate sommerso
+
+![[Pasted image 20230511161449.png]]
+
+![[Pasted image 20230511161609.png]]
+
+PLA -> matrici logich programmabili 
+
+![[Pasted image 20230511161633.png]]
+
+
+![[Pasted image 20230511161753.png]]
+
+![[Pasted image 20230511161932.png]]
+
+![[Pasted image 20230511162026.png]]
+
+# Capitolo 6
+
+Assembly (_MERDA_)
+
+registri = variabili di Assembly -> ARM usa 16 registri (0-15) 
+
+constanti -> immediati -> #... -> decimali o esadecimali(0x...) -> unsigned (8 o 12 bit)
+![[Pasted image 20230511163325.png]]
+
+```armasm
+; R0 = a, R1 = b, R2 = c, R3 = d 
+
+ADD R0, R1, R2 ; a = b + c
+SUB R0, R1, R2 ; a = b - c
+
+ADD R0,R1,#4 ; a = b+4
+SUB R1,R2,#0xC ; b = c+12
+MOV R2,#4 ; c = 0 (inizializzazione) 
+
+MOV R1,#0 ; indirizzo base = 0
+LDR R0,[R1,#8] ; R0 = dato memorizzato nella cella di indirizzo (R1+8)
+
+MOV R1,#0
+MOV R2,#42
+STR R2,[R1,#0x14]; dato memorizzato nella cella di indirizzo(R1+20)=42
+
+; al posto di R2 ci può essere un immediato
+AND R0,R1,R2 ; R0 = R1 && R2
+ORR R0,R1,R2 ; R0 = R1 || R2
+EOR R0,R1,R2 ; R0 = R1 XOR R2
+BIC R0,R1,R2 ; R0 = R1 && NOT(R2) azzera i bit che sono a 1 in R2
+MVN R0,R2 ; R0 = NOT(R2)
+
+; AL POSTODI #5 CI PUÒ ESSERE UN INDIRIZZO
+LSL R0,R2,#5 ;R0 = R2 << 5 (SHIFT SINISTRO LOGICO)
+lSR R0,R2,#5 ;R0 = R2 >> 5 (SHIFT DESTRO LOGICO)
+ASR R0,R2,#5 ;R0 = R2 >>> 5 (SHIFT DESTRO ARITMETICO)
+ROR R0,R2,#5 ;R0 = R2 ROR 5 (ROTAZIONE DESTRA)
+
+MUL R0,R1,R2 ;R0 = R1*R2 (32 BIT MENO SIGNIFICATIVI)
+UMULL R0,R1,R2,R3 ;MULL A 64 BIT -> R0=32 BIT(-SIGN) E R1 = 32 BIT(+SIGN) DI R2*R3
+SMULL = UMULL SIGNED
+
+CMP R0,#0 ;R0 === 0
+ADDS E SUBS = ADD E SUB MA IMPOSTANO LE FLAG
+
+LDR R3,[R0,R1,LSL #2] ;R3 = R0+ R1*2^2
+
+```
+
+![[Pasted image 20230511164306.png]]
+
+ogni parola di dato è 4 byte -> indirizzo di parola = 4 * indice di parola
+
+![[Pasted image 20230511165245.png]]
+
+![[Pasted image 20230511173908.png]]
+
+![[Pasted image 20230511174153.png]]
+
+![[Pasted image 20230511174209.png]]
+
+![[Pasted image 20230511174829.png]]
+
+![[Pasted image 20230511174940.png]]
+
+![[Pasted image 20230511175222.png]]
+
+![[Pasted image 20230511175335.png]]
+
+![[Pasted image 20230511175449.png]]
+
+![[Pasted image 20230511175528.png]]
+
+![[Pasted image 20230511175601.png]]
+
+![[Pasted image 20230511175904.png]]
+
+![[Pasted image 20230511175846.png]]
+
+![[Pasted image 20230511180135.png]]
+
+![[Pasted image 20230511180223.png]]
+
+![[Pasted image 20230511180348.png]]
+
+![[Pasted image 20230511180523.png]]
+
+![[Pasted image 20230511181411.png]]
+
+![[Pasted image 20230511181705.png]]
+
+![[Pasted image 20230511184102.png]]
+
+![[Pasted image 20230511184029.png]]
+
+pagina 245
