@@ -568,4 +568,36 @@ ogni parola di dato è 4 byte -> indirizzo di parola = 4 * indice di parola
 
 ![[Pasted image 20230511184029.png]]
 
-pagina 245
+![[Pasted image 20230512174028.png]]
+
+![[Pasted image 20230512174127.png]]
+
+![[Pasted image 20230512174334.png]]
+
+![[Pasted image 20230512174416.png]]
+
+![[Pasted image 20230512174509.png]]
+
+![[Pasted image 20230512174809.png]]
+
+![[Pasted image 20230512175119.png]]
+
+![[Pasted image 20230512175326.png]]
+
+![[Pasted image 20230512175438.png]]
+
+![[Pasted image 20230512175453.png]]
+
+![[Pasted image 20230512175846.png]]
+
+![[Pasted image 20230512175857.png]]
+
+![[Pasted image 20230512175954.png]]
+
+![[Pasted image 20230512180034.png]]
+
+![[Pasted image 20230512180400.png]]
+
+![[Pasted image 20230512180553.png]]
+
+pagina 260

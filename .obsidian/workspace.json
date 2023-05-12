@@ -6,7 +6,7 @@
       {
         "id": "6760dda537a1be95",
         "type": "tabs",
-        "dimension": 50.00000000000001,
+        "dimension": 50,
         "children": [
           {
             "id": "9d245768c21676a6",
@@ -25,7 +25,7 @@
       {
         "id": "8ca41ffecdb7042e",
         "type": "tabs",
-        "dimension": 50.00000000000001,
+        "dimension": 50,
         "children": [
           {
             "id": "d5863bd293db020e",
@@ -165,19 +165,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8ecbeedd8669d71e",
+  "active": "9d245768c21676a6",
   "lastOpenFiles": [
-    "IMMAGINI/Pasted image 20230511184102.png",
-    "IMMAGINI/Pasted image 20230511184029.png",
-    "IMMAGINI/Pasted image 20230511181705.png",
-    "IMMAGINI/Pasted image 20230511181411.png",
-    "IMMAGINI/Pasted image 20230511180523.png",
-    "IMMAGINI/Pasted image 20230511180348.png",
-    "IMMAGINI/Pasted image 20230511180223.png",
-    "IMMAGINI/Pasted image 20230511180135.png",
-    "IMMAGINI/Pasted image 20230511175904.png",
-    "IMMAGINI/Pasted image 20230511175846.png",
-    "IMMAGINI/Pasted image 20230511175601.png",
+    "IMMAGINI/Pasted image 20230512180553.png",
+    "IMMAGINI/Pasted image 20230512180400.png",
+    "IMMAGINI/Pasted image 20230512180034.png",
+    "IMMAGINI/Pasted image 20230512175954.png",
+    "IMMAGINI/Pasted image 20230512175857.png",
+    "IMMAGINI/Pasted image 20230512175846.png",
+    "IMMAGINI/Pasted image 20230512175453.png",
+    "IMMAGINI/Pasted image 20230512175438.png",
+    "IMMAGINI/Pasted image 20230512175326.png",
+    "IMMAGINI/Pasted image 20230512175119.png",
+    "IMMAGINI/Pasted image 20230512174809.png",
     "PDF/Architettura degli elaboratori (Harris, Harris_ ARM Edition).pdf",
     "APPUNTI AESO.md",
     "APPUNTI STATISTICA.md",
