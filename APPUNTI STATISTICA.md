@@ -240,4 +240,33 @@ $Var(aX+b)=a^2*Var(X)$
 
 ![[Pasted image 20230510182507.png]]
 
-pagina 81
+>Data $F=F_X$ c.d.f. di una variabile aleatoria X, una famiglia finita $X_1,\dots,X_n$ di variabili aleatorie i.i.d. con legge data dalla c.d.f. si dice _campione statistico_ o _campione aleatorio_ della v.a. X di numerosità (o _taglia_) n.
+
+![[Pasted image 20230531114830.png]]
+
+![[Pasted image 20230531114958.png]]
+
+![[Pasted image 20230531115038.png]]
+
+![[Pasted image 20230531115047.png]]
+
+![[Pasted image 20230531115103.png]]
+
+![[Pasted image 20230531115147.png]]
+
+![[Pasted image 20230531120637.png]]
+
+>Siano $X_1,\dots,X_n$ un campione Gaussiano $N(m,\sigma^2)$ e poniamo come sopra:
+>$$
+ \overline{X}_n = \frac{1}{n}*\sum^n_{i=1} X_i
+$$
+>$$
+ S^2_n = \frac{1}{n-1}*\sum^n_{i=1}(X_i - \overline{X}_n)^2
+$$
+>Valgono i seguenti risultati:
+>1. le variabili $\overline{X}_n$ e $S^2_n$ sono indipendenti;
+>2. la variabile $\overline{X}$ ha densità $N(m,\sigma^2/n);$ 
+>3. la variabile $\frac{n-1}{\sigma^2}*S^2_n$ ha densità $\chi^2(n-1);$
+>4. la variabile $T=\sqrt{n}*\frac{(\overline{X}_n -m)}{S}$ ha densità di Student T(n-1);
+
+pagina 87
