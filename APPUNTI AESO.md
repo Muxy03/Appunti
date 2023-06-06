@@ -600,4 +600,260 @@ ogni parola di dato è 4 byte -> indirizzo di parola = 4 * indice di parola
 
 ![[Pasted image 20230512180553.png]]
 
-pagina 260
+![[Pasted image 20230606150055.png]]
+
+![[Pasted image 20230606150344.png]]
+
+>![[Pasted image 20230606150726.png]]
+>![[Pasted image 20230606150741.png]]
+
+![[Pasted image 20230606150957.png]]
+
+![[Pasted image 20230606151145.png]]
+
+![[Pasted image 20230606151224.png]]
+
+# CAPITOLO 7
+
+micro-architettura ->  anello di congiunzione tra i circuiti logici e l'architettura
+
+datapath -> costituito da strutture (registri, ALU, multiplexer, etc) e opera su parole di dati
+
+control path -> riceve l’istruzione corrente dal datapath e  gli comunica
+come eseguirla, attivando opportunamente gli ingressi di selezione dei multiplexer, le abilitazioni dei registri e i segnali di lettura e scrittura in memoria per controllare le operazioni del percorso dati.
+
+>![[Pasted image 20230606152716.png]]
+>![[Pasted image 20230606152732.png]]
+
+MA (micro-architettura) a ciclo singolo -> 1 istruzione a ciclo
+MA multi ciclo -> esegue le istruzioni in sequenze di cicli + brevi
+MA pipeline -> + istruzioni (contemporaneamente) in un singolo ciclo
+
+tempo di esecuzione = $\#istruzioni *(cicli/istruzione)*(secondi/ciclo)$
+
+CPI = numero di cicli di clock per istruzione (in media)
+
+IPC = numero di istruzioni per ciclo (in media)
+
+$T_{ck}$ = periodo di clock = numero di secondi per ciclo
+
+
+## MA ciclo singolo
+
+PC = program counter = contiene l'indirizzo dell'istruzione da eseguire
+>![[Pasted image 20230606160452.png]]
+>![[Pasted image 20230606160415.png]]
+
+![[Pasted image 20230606154858.png]]
+
+PC si incrementa di 4 perché le istruzioni sono di 32 bit (4 byte)
+
+INSTR(19-16) = Rn = registro sorgente
+
+INSTR(11:0) = immediato -> viene esteso aggiungo 0 -> 31:12 = 0 e 11:0 = INSTR(11:0)
+
+INSTR(15:12) = Rd = registro destinazione
+
+ALU control:
+- 00 = somma
+- 01 = sottrazione
+- 10 = AND
+- 11 = ORR
+
+RF = register file 
+
+porta A3 = porta di scrittura
+porta WD3 = porta ingresso dati per la scrittura
+RegWrite = permesso di scrittura (0/1)
+
+![[Pasted image 20230606160104.png]]
+
+![[Pasted image 20230606160236.png]]
+
+>![[Pasted image 20230606160718.png]]
+>![[Pasted image 20230606160907.png]]
+
+![[Pasted image 20230606160920.png]]
+
+![[Pasted image 20230606161510.png]]
+
+![[Pasted image 20230606161542.png]]
+
+>![[Pasted image 20230606161713.png]]
+>![[Pasted image 20230606161731.png]]
+
+![[Pasted image 20230606161853.png]]
+
+![[Pasted image 20230606161906.png]]
+
+>![[Pasted image 20230606162013.png]]
+>![[Pasted image 20230606162119.png]]
+>![[Pasted image 20230606162134.png]]
+
+
+![[Pasted image 20230606162245.png]]
+
+![[Pasted image 20230606162304.png]]
+
+![[Pasted image 20230606162333.png]]
+
+![[Pasted image 20230606162457.png]]
+
+![[Pasted image 20230606162514.png]]
+
+![[Pasted image 20230606162538.png]]
+
+![[Pasted image 20230606162758.png]]
+
+
+## MA multiciclo
+
+![[Pasted image 20230606162903.png]]
+
+![[Pasted image 20230606163024.png]]
+
+>![[Pasted image 20230606163035.png]]
+>![[Pasted image 20230606163122.png]]
+>![[Pasted image 20230606163141.png]]
+
+
+![[Pasted image 20230606163253.png]]
+
+![[Pasted image 20230606163309.png]]
+
+![[Pasted image 20230606163506.png]]
+
+![[Pasted image 20230606163622.png]]
+
+![[Pasted image 20230606163633.png]]
+
+![[Pasted image 20230606163648.png]]
+
+>![[Pasted image 20230606163725.png]]
+>![[Pasted image 20230606163738.png]]
+
+![[Pasted image 20230606163752.png]]
+
+![[Pasted image 20230606163829.png]]
+
+![[Pasted image 20230606163845.png]]
+
+>![[Pasted image 20230606163943.png]]
+>![[Pasted image 20230606164002.png]]
+>![[Pasted image 20230606164030.png]]
+>![[Pasted image 20230606164102.png]]
+>![[Pasted image 20230606164132.png]]
+>![[Pasted image 20230606164148.png]]
+>![[Pasted image 20230606164205.png]]
+>![[Pasted image 20230606164230.png]]
+
+![[Pasted image 20230606164251.png]]
+
+![[Pasted image 20230606164303.png]]
+
+![[Pasted image 20230606164348.png]]
+
+![[Pasted image 20230606164416.png]]
+
+![[Pasted image 20230606164442.png]]
+
+![[Pasted image 20230606164536.png]]
+
+![[Pasted image 20230606164704.png]]
+
+![[Pasted image 20230606164828.png]]
+
+
+## MA PIPELINE
+
+>![[Pasted image 20230606165022.png]]
+>![[Pasted image 20230606165042.png]]
+>![[Pasted image 20230606165058.png]]
+
+![[Pasted image 20230606165118.png]]
+
+![[Pasted image 20230606165140.png]]
+
+>![[Pasted image 20230606165205.png]]
+>![[Pasted image 20230606165324.png]]
+
+![[Pasted image 20230606165347.png]]
+
+>![[Pasted image 20230606165442.png]]
+>![[Pasted image 20230606165508.png]]
+
+
+![[Pasted image 20230606165539.png]]
+
+>![[Pasted image 20230606165605.png]]
+>![[Pasted image 20230606165629.png]]
+>![[Pasted image 20230606165645.png]]
+>![[Pasted image 20230606165736.png]]
+>![[Pasted image 20230606165754.png]]
+>![[Pasted image 20230606165808.png]]
+>![[Pasted image 20230606165820.png]]
+>![[Pasted image 20230606165833.png]]
+
+![[Pasted image 20230606170014.png]]
+
+![[Pasted image 20230606170027.png]]
+
+![[Pasted image 20230606170045.png]]
+
+![[Pasted image 20230606170140.png]]
+
+![[Pasted image 20230606170153.png]]
+
+![[Pasted image 20230606170209.png]]
+
+![[Pasted image 20230606170225.png]]
+
+![[Pasted image 20230606170246.png]]
+
+>![[Pasted image 20230606170308.png]]
+>![[Pasted image 20230606170938.png]]
+
+
+![[Pasted image 20230606170320.png]]
+
+![[Pasted image 20230606181046.png]]
+
+>![[Pasted image 20230606181104.png]]
+>![[Pasted image 20230606181128.png]]
+>![[Pasted image 20230606181139.png]]
+
+>![[Pasted image 20230606181220.png]]
+>![[Pasted image 20230606181239.png]]
+>![[Pasted image 20230606181255.png]]
+>![[Pasted image 20230606181307.png]]
+
+![[Pasted image 20230606181317.png]]
+
+>![[Pasted image 20230606181351.png]]
+>![[Pasted image 20230606181406.png]]
+>![[Pasted image 20230606181418.png]]
+
+![[Pasted image 20230606181432.png]]
+
+![[Pasted image 20230606181446.png]]
+
+>![[Pasted image 20230606181541.png]]
+>![[Pasted image 20230606181559.png]]
+>![[Pasted image 20230606181622.png]]
+>![[Pasted image 20230606181713.png]]
+
+![[Pasted image 20230606181734.png]]
+
+
+
+>![[Pasted image 20230606181747.png]]
+>![[Pasted image 20230606181819.png]]
+
+![[Pasted image 20230606181832.png]]
+
+>![[Pasted image 20230606181920.png]]
+>![[Pasted image 20230606181930.png]]
+>![[Pasted image 20230606181944.png]]
+>![[Pasted image 20230606182005.png]]
+
+pagina 373
