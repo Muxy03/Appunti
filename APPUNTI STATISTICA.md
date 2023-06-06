@@ -269,4 +269,57 @@ $$
 >3. la variabile $\frac{n-1}{\sigma^2}*S^2_n$ ha densità $\chi^2(n-1);$
 >4. la variabile $T=\sqrt{n}*\frac{(\overline{X}_n -m)}{S}$ ha densità di Student T(n-1);
 
-pagina 87
+![[Pasted image 20230531172406.png]]
+
+![[Pasted image 20230531172443.png]]
+
+![[Pasted image 20230531172506.png]]
+
+![[Pasted image 20230531172601.png]]
+
+![[Pasted image 20230531172621.png]]
+
+![[Pasted image 20230531172638.png]]
+
+![[Pasted image 20230531172706.png]]
+
+![[Pasted image 20230531172715.png]]
+
+![[Pasted image 20230531172752.png]]
+
+![[Pasted image 20230531172811.png]]
+
+![[Pasted image 20230531172822.png]]
+
+![[Pasted image 20230531172841.png]]
+
+![[Pasted image 20230531172905.png]]
+
+![[Pasted image 20230531172916.png]]
+
+![[Pasted image 20230531172933.png]]
+
+![[Pasted image 20230531173004.png]]
+
+![[Pasted image 20230531173023.png]]
+
+![[Pasted image 20230531173035.png]]
+
+![[Pasted image 20230531173241.png]]
+
+![[Pasted image 20230531173300.png]]
+
+![[Pasted image 20230531173340.png]]
+
+![[Pasted image 20230531173518.png]]
+
+![[Pasted image 20230531173651.png]]
+
+![[Pasted image 20230531173713.png]]
+
+![[Pasted image 20230531173735.png]]
+
+![[Pasted image 20230531173742.png]]
+
+![[Pasted image 20230531173758.png]]
+
