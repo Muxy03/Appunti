@@ -1,4 +1,4 @@
-statistica descrittiva quando i dati vengono analizzati, seppur con tecniche anche raffinate, senza fare assunzioni esterne all’insieme di dati considerati.
+statistica descrittiva quando i dati vengono analizzati, seppur con tecniche anche raffinate, senza fare assunzioni esterne all'insieme di dati considerati.
 
 L’inferenza statistica invece studia i dati utilizzando un modello probabilistico, cioè suppone che i dati siano valori assunti da variabili aleatorie aventi una certa distribuzione di probabilità dipendente da dei parametri non noti.
 
@@ -35,11 +35,11 @@ la varianza ( $\sigma^2(x)$ ) è uguale a 0 <=> i dati sono tutti uguali
 >Dimostrazione: (passo finale dividere entrambe le parti per n)
 >$$\sum_{i=1}^{n}(x_i - \overline{x})^2 \ge \sum_{i:|x_i-\overline{x}|>d}^{n}(x_i - \overline{x})^2 \ge \sum_{i:|x_i-\overline{x}|>d}^{n}d^2 = \#\{x_i:|x_i-\overline{x}|>d\}\le \frac{\sum_{i=1}^{n}(x_i-\overline{x})^2}{d^2}$$
 
-sample skewness (misura campionaria di assimetria) -> $b=\frac{1}{\sigma^3}*\frac{1}{n}*\sum_{i=1}^{n}(x_i-\overline{x})^3$
+sample skewness (misura campionaria di asimmetria) -> $b=\frac{1}{\sigma^3}*\frac{1}{n}*\sum_{i=1}^{n}(x_i-\overline{x})^3$
 
->ecdf : funzione di riaprtizione empirica -> restituisce la frequenza relativa dei dati minori uguali a t 
+>ecdf : funzione di ripartizione empirica -> restituisce la frequenza relativa dei dati minori uguali a t 
 >$x=(x_1,\dots,x_n)\in R^n$
->$$F_e(t)=\frac{\#\{i|x_i \le t\}}{n}$$
+>$$F_e(t)=\frac{\#\{x_i|x_i \le t\}}{n}$$
 
 ![[K-PERCENTILE.png]]
 

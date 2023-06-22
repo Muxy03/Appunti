@@ -856,4 +856,137 @@ RegWrite = permesso di scrittura (0/1)
 >![[Pasted image 20230606181944.png]]
 >![[Pasted image 20230606182005.png]]
 
-pagina 373
+# SISTEMI OPERATIVI
+
+## MEMORY HIERARCHY
+
+![[Pasted image 20230622174337.png]]
+
+![[Pasted image 20230622174356.png]]
+
+![[Pasted image 20230622174426.png]]
+
+![[Pasted image 20230622174524.png]]
+
+![[Pasted image 20230622174559.png]]
+
+![[Pasted image 20230622174839.png]]
+
+![[Pasted image 20230622174849.png]]
+
+![[Pasted image 20230622174953.png]]
+
+![[Pasted image 20230622175007.png]]
+
+![[Pasted image 20230622175036.png]]
+
+$$CPU_{time} = IC*CPI*ClockCycleTime$$
+$$CPI=CPI_{perfect}+CPI_{stall} \rightarrow CPI_{stall}=\frac{Memory\_Instructions}{Program\_Instructions}*Miss\_rate*Miss\_penalty$$
+
+IC -> the number of program instructions executed
+
+$\frac{Memory\_Instructions}{Program\_Instructions}*Miss\_rate$ -> Miss rate per memory instruction 
+
+![[Pasted image 20230622175805.png]]
+
+>C = capacità cache
+>B = numero blocchi nella cache
+>b = numero di word per blocco
+>S = set di blocchi
+>N = numero blocchi in un set
+
+1. Direct mapped -> \#S = \#B
+2. N-way set-asocative -> S = B/N
+3. Fully assocative -> S = 1
+
+$\log_2(S)$ = numero di bit per distinguere i vari set (dimensione SetOffset)
+
+<Tag, SetOffset, ByteOffset> -> memory address (b = 1)
+<Tag, SetOffset, BlockOffset, ByteOffset> -> memory address (b > 1)
+
+V = valid bit
+
+![[Pasted image 20230622180650.png]]
+
+![[Pasted image 20230622180914.png]]
+
+![[Pasted image 20230622181010.png]]
+
+>![[Pasted image 20230622181122.png]]
+>![[Pasted image 20230622181133.png]]
+
+![[Pasted image 20230622181337.png]]
+
+![[Pasted image 20230622181400.png]]
+
+![[Pasted image 20230622181427.png]]
+
+![[Pasted image 20230622181631.png]]
+
+
+![[Pasted image 20230622181742.png]]
+
+![[Pasted image 20230622181831.png]]
+
+![[Pasted image 20230622182605.png]]
+
+![[Pasted image 20230622182939.png]]
+
+![[Pasted image 20230622182924.png]]
+
+![[Pasted image 20230622183027.png]]
+
+![[Pasted image 20230622183230.png]]
+
+![[Pasted image 20230622183346.png]]
+
+![[Pasted image 20230622183422.png]]
+
+![[Pasted image 20230622183444.png]]
+
+![[Pasted image 20230622183759.png]]
+
+![[Pasted image 20230622183816.png]]
+
+![[Pasted image 20230622184003.png]]
+
+![[Pasted image 20230622184049.png]]
+
+![[Pasted image 20230622184127.png]]
+
+![[Pasted image 20230622184146.png]]
+
+![[Pasted image 20230622184213.png]]
+
+![[Pasted image 20230622184315.png]]
+
+![[Pasted image 20230622184424.png]]
+
+## INPUT OUTPUT
+
+![[Pasted image 20230622185113.png]]
+
+>Amdahl's law:
+>![[Pasted image 20230622220127.png]]
+
+![[Pasted image 20230622220201.png]]
+
+I/O devices -> Control (commands e status report), Data
+
+![[Pasted image 20230622220334.png]]
+
+![[Pasted image 20230622220436.png]]
+
+Bus -> A collection of data lines that is treated together as a single logical signal
+
+![[Pasted image 20230622220630.png]]
+
+![[Pasted image 20230622220659.png]]
+
+![[Pasted image 20230622220916.png]]
+
+![[Pasted image 20230622220946.png]]
+
+![[Pasted image 20230622221138.png]]
+
+PAGINA 22
