@@ -20,7 +20,7 @@ $E_i = I_n - v^T*e^T_i$ -> matrice E elementare di gauss -> v  = colonna ridotta
 $A_1 = E_1*A_0$ 
 
 >![[Pasted image 20230621164143.png]]
->L gli elementi sotto la diagonale di L sono i valori per cui moltiplichi le righe
+>L: gli elementi sotto la diagonale di L sono i valori per cui moltiplichi le righe
 >U non è altro che la matrice ottenuta alla fine della riduzione
 
 
@@ -47,6 +47,7 @@ A pred. diagonale implica:
 - A invertibile
 - J e GS sono applicabili
 - J e GS sono convergenti
+- ammette unica LU
 
 A simmetrica implica:
 - autovalori reali
@@ -70,3 +71,4 @@ A simmetrica implica:
 
 ![[Pasted image 20230621170804.png]]
 
+guardare ricevimenti!!!

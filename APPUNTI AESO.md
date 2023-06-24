@@ -989,4 +989,41 @@ Bus -> A collection of data lines that is treated together as a single logical s
 
 ![[Pasted image 20230622221138.png]]
 
-PAGINA 22
+![[Pasted image 20230623160954.png]]
+
+![[Pasted image 20230623161133.png]]
+
+>![[Pasted image 20230623161155.png]]
+>![[Pasted image 20230623161223.png]]
+
+>![[Pasted image 20230623161253.png]]
+>![[Pasted image 20230623161327.png]]
+
+![[Pasted image 20230623161417.png]]
+
+![[Pasted image 20230623162238.png]]
+
+![[Pasted image 20230623162354.png]]
+
+![[Pasted image 20230623162412.png]]
+
+![[Pasted image 20230623162618.png]]
+
+![[Pasted image 20230623162652.png]]
+
+![[Pasted image 20230623162715.png]]
+
+![[Pasted image 20230623162740.png]]
+
+![[Pasted image 20230623162830.png]]
+
+![[Pasted image 20230623162908.png]]
+
+![[Pasted image 20230623162933.png]]
+
+![[Pasted image 20230623162949.png]]
+
+![[Pasted image 20230623163001.png]]
+
+## DISKS
+
