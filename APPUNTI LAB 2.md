@@ -28,3 +28,4 @@ fclose() -> flushes the stream pointed to by stream (writing any buffered output
 codici sui puntatori -> lezione 7
 
 
+dio prco
