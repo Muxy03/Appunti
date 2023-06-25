@@ -6,7 +6,7 @@
       {
         "id": "6760dda537a1be95",
         "type": "tabs",
-        "dimension": 52.2098105876639,
+        "dimension": 76.10490529383196,
         "children": [
           {
             "id": "c6721834181835d7",
@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "APPUNTI LAB 2.md",
+                "file": "APPUNTI CN.md",
                 "mode": "source",
                 "source": false
               }
@@ -23,17 +23,17 @@
         ]
       },
       {
-        "id": "f9f10ff99c4de6bc",
+        "id": "5c7ed1096d8d4c7c",
         "type": "tabs",
-        "dimension": 47.7901894123361,
+        "dimension": 23.895094706168045,
         "children": [
           {
-            "id": "6e0d315dcb0c32a6",
+            "id": "e585da29e953cb19",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "PDF/AESO/2.1-Disks.pdf"
+                "file": "PDF/AESO/3b- Kernel.pdf"
               }
             }
           }
@@ -87,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -103,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "APPUNTI LAB 2.md",
+                "file": "APPUNTI CN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "APPUNTI LAB 2.md",
+                "file": "APPUNTI CN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "APPUNTI LAB 2.md"
+                "file": "APPUNTI CN.md"
               }
             }
           },
@@ -178,9 +179,23 @@
   },
   "active": "c6721834181835d7",
   "lastOpenFiles": [
+    "Pasted image 20230625231733.png",
+    "PDF/AESO/3b- Kernel.pdf",
     "APPUNTI CN.md",
-    "APPUNTI LAB 2.md",
+    "Pasted image 20230625224434.png",
+    "Pasted image 20230625224058.png",
+    "APPUNTI AESO.md",
+    "IMMAGINI/Pasted image 20230625162845.png",
+    "IMMAGINI/Pasted image 20230625162756.png",
+    "IMMAGINI/Pasted image 20230625162525.png",
+    "IMMAGINI/Pasted image 20230625162509.png",
+    "IMMAGINI/Pasted image 20230625162437.png",
+    "IMMAGINI/Pasted image 20230625162423.png",
+    "IMMAGINI/Pasted image 20230625162404.png",
+    "IMMAGINI/Pasted image 20230625162342.png",
+    "PDF/AESO/3a- OSintro.pdf",
     "PDF/AESO/2.1-Disks.pdf",
+    "APPUNTI LAB 2.md",
     "home/muxy/Scrivania/Appunti/CODICI/lezione7 1.md",
     "home/muxy/Scrivania/Appunti/CODICI/lezione7.md",
     "home/muxy/Scrivania/Appunti/CODICI",
@@ -188,21 +203,8 @@
     "home/muxy/Scrivania",
     "home/muxy",
     "home",
-    "APPUNTI AESO.md",
     "CODICI/lezione7/mergeSort.c",
     "CODICI/lezione7/makefile",
-    "CODICI/lezione7/lunghezzaStringa.c",
-    "CODICI/lezione7/aritp.c",
-    "IMMAGINI/Pasted image 20230623163001.png",
-    "IMMAGINI/Pasted image 20230623162949.png",
-    "IMMAGINI/Pasted image 20230623162933.png",
-    "IMMAGINI/Pasted image 20230623162908.png",
-    "IMMAGINI/Pasted image 20230623162830.png",
-    "IMMAGINI/Pasted image 20230623162740.png",
-    "IMMAGINI/Pasted image 20230623162715.png",
-    "IMMAGINI/Pasted image 20230623162652.png",
-    "IMMAGINI/Pasted image 20230623162618.png",
-    "IMMAGINI/Pasted image 20230623162412.png",
     "Excalidraw/Drawing 2023-06-23 00.19.02.excalidraw.md",
     "README.md",
     "APPUNTI STATISTICA.md"

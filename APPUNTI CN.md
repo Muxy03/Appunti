@@ -15,7 +15,7 @@ $K_i(A) =||A||_i *||A^{-1}||_i$  -> condizionamento (i = 1/2/infinito) -> +grand
 
 se tutte le sotto matrici di A, fino a n-1, sono invertibili allora esiste unica LU
 
-$E_i = I_n - v^T*e^T_i$ -> matrice E elementare di gauss -> v  = colonna ridotta mediante la riduzione di gauss -> i indica il passo di riduzione
+$E_i = I_n - v^T*e^T_i$ -> matrice E elementare di gauss -> ex. per $E_1$ = prima colonna di L con 0 al posto di 1-> i indica il passo di riduzione
 
 $A_1 = E_1*A_0$ 
 
@@ -71,4 +71,10 @@ A simmetrica implica:
 
 ![[Pasted image 20230621170804.png]]
 
-guardare ricevimenti!!!
+![[Pasted image 20230625224058.png]]
+
+![[Pasted image 20230625224434.png]]
+
+>$|J|_\infty = (\frac{n-1}{n})$
+>![[Pasted image 20230625231733.png]]
+

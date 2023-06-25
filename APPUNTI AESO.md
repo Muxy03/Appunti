@@ -1027,3 +1027,80 @@ Bus -> A collection of data lines that is treated together as a single logical s
 
 ## DISKS
 
+dischi magnetici -> HDD (hard disk)
+
+![[Pasted image 20230625160255.png]]
+
+>disk tracks:
+>![[Pasted image 20230625160355.png]]
+
+![[Pasted image 20230625160451.png]]
+
+![[Pasted image 20230625160510.png]]
+
+$b=c*(\#faces*\#sectors)+f*(\#sectors) +s$
+
+![[Pasted image 20230625160922.png]]
+
+![[Pasted image 20230625160932.png]]
+
+![[Pasted image 20230625161055.png]]
+
+![[Pasted image 20230625161225.png]]
+
+![[Pasted image 20230625161241.png]]
+
+![[Pasted image 20230625161344.png]]
+
+![[Pasted image 20230625161359.png]]
+
+![[Pasted image 20230625161418.png]]
+
+![[Pasted image 20230625161432.png]]
+
+![[Pasted image 20230625161445.png]]
+
+
+## OSintro
+
+![[Pasted image 20230625161546.png]]
+
+![[Pasted image 20230625161657.png]]
+
+![[Pasted image 20230625161757.png]]
+
+![[Pasted image 20230625161812.png]]
+
+![[Pasted image 20230625161828.png]]
+
+![[Pasted image 20230625161851.png]]
+
+![[Pasted image 20230625162024.png]]
+
+![[Pasted image 20230625162116.png]]
+
+![[Pasted image 20230625162128.png]]
+
+![[Pasted image 20230625162146.png]]
+
+![[Pasted image 20230625162210.png]]
+
+## KERNEL
+
+![[Pasted image 20230625162342.png]]
+
+![[Pasted image 20230625162404.png]]
+
+![[Pasted image 20230625162423.png]]
+
+![[Pasted image 20230625162437.png]]
+
+![[Pasted image 20230625162509.png]]
+
+![[Pasted image 20230625162525.png]]
+
+![[Pasted image 20230625162756.png]]
+
+![[Pasted image 20230625162845.png]]
+
+
