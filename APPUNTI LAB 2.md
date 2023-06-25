@@ -26,6 +26,3 @@ fclose() -> flushes the stream pointed to by stream (writing any buffered output
 [man errno](https://linux.die.net/man/3/errno)
 
 codici sui puntatori -> lezione 7
-
-
-dio prco

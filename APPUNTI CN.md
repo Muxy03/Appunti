@@ -78,4 +78,4 @@ A simmetrica implica:
 >$|J|_\infty = (\frac{n-1}{n})$
 >![[Pasted image 20230625231733.png]]
 
-
+[CN GIOELE](https://unipiit-my.sharepoint.com/personal/g_pasquini6_studenti_unipi_it/_layouts/15/Doc.aspx?sourcedoc={f8358618-7bc7-4d26-b847-b2e145594772}&action=view&wd=target%28Lezioni.one%7C057e2bc6-116c-4039-9b91-5ea68119576e%2F18.%20Lezione%20-%2029%5C%2F03%5C%2F2023%7C93bbe53b-5919-3540-a2a9-612d478c5afd%2F%29&wdorigin=NavigationUrl)
