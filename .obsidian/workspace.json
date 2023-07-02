@@ -6,7 +6,7 @@
       {
         "id": "6760dda537a1be95",
         "type": "tabs",
-        "dimension": 50,
+        "dimension": 62.16666666666667,
         "children": [
           {
             "id": "c6721834181835d7",
@@ -23,17 +23,17 @@
         ]
       },
       {
-        "id": "fca52007639a0155",
+        "id": "2ab084b7b80b0547",
         "type": "tabs",
-        "dimension": 50,
+        "dimension": 37.833333333333336,
         "children": [
           {
-            "id": "3ed1042f7b877248",
+            "id": "615582e7838e47c0",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "PDF/AESO/10- storageRAID.pdf"
+                "file": "PDF/AESO/Operating Systems.pdf"
               }
             }
           }
@@ -179,7 +179,9 @@
   },
   "active": "c6721834181835d7",
   "lastOpenFiles": [
+    "Pasted image 20230702170337.png",
     "PDF/AESO/Operating Systems.pdf",
+    "APPUNTI AESO.md",
     "Pasted image 20230701185225.png",
     "Pasted image 20230701185211.png",
     "Pasted image 20230701185155.png",
@@ -190,7 +192,6 @@
     "Pasted image 20230701184854.png",
     "Pasted image 20230701184843.png",
     "PDF/AESO/10- storageRAID.pdf",
-    "APPUNTI AESO.md",
     "Pasted image 20230701184643.png",
     "PDF/AESO/9- filesys.pdf",
     "PDF/AESO/8- PagedVirtualMemory.pdf",
@@ -200,7 +201,6 @@
     "PDF/AESO/5b- multiobjsync.pdf",
     "PDF/AESO/5a- synchronization.pdf",
     "PDF/AESO/4- concurrency.pdf",
-    "PDF/AESO/3c- processes.pdf",
     "APPUNTI CN.md",
     "APPUNTI LAB 2.md",
     "home/muxy/Scrivania/Appunti/CODICI/lezione7 1.md",

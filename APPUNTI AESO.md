@@ -10,7 +10,7 @@ $2ED_{16} = 2*16^2+E*16^1+D*16^0=749_{10}$
 $1+1 = 0$ con riporto di 1 (carry)
 
 modulo e segno:
-- 1 bit per il segno (0->+ e 1->-) e N-1 bit per il modulo
+- 1 bit per il segno (0 -> positivo e 1 -> negativo) e N-1 bit per il modulo
 - $[-2^{N-1}+1,2^{N-1}-1]$  intervallo di variabilità
 - 0 ha 2 rappresentazioni -> +0 e -0
 - non è possibile utilizzare la somma usuale -> -5 +5 torna diverso da 0
@@ -77,13 +77,14 @@ Codice di Gray -> 00 01 11 10 -> mappe Karnaugh
 
 Regole mappe Karnaugh:
 - se nella true table c'è indifferenza possiamo inserire 0/1 a nostra scelta
+
 ![[Pasted image 20230415184847.png]]
 
 multiplexer (mux) -> N ingressi e 1 uscita con S (segnale di controllo) che decide quale ingresso uscirà -> un multiplexer N:1 necessita di $\log_{2}(N)$ ingressi di selezione
 
 ![[Pasted image 20230415190355.png]]
 
-componenti reti combinatorie -> appunti onenote
+componenti reti combinatorie  (5/10/22) -> [appunti onenote]([5/10/22](onenote:https://unipiit-my.sharepoint.com/personal/a_mussari_studenti_unipi_it/Documents/Blocchi%20appunti/Andrea%20@%20University%20of%20Pisa/ARCHITETTURE.one#5/10/22&section-id={FE521038-12D1-40C0-A1C6-B83BB575E093}&page-id={A2B77B77-0C76-4F0A-8C09-3498D082AFEE}&end)
 
 ![[Pasted image 20230415194009.png]]
 
