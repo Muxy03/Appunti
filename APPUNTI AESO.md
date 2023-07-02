@@ -1103,4 +1103,533 @@ $b=c*(\#faces*\#sectors)+f*(\#sectors) +s$
 
 ![[Pasted image 20230625162845.png]]
 
+![[Pasted image 20230627163815.png]]
+
+>![[Pasted image 20230627163838.png]]
+>![[Pasted image 20230627163901.png]]
+
+![[Pasted image 20230627164020.png]]
+
+![[Pasted image 20230627164039.png]]
+
+![[Pasted image 20230627164117.png]]
+
+![[Pasted image 20230627164152.png]]
+
+![[Pasted image 20230627164203.png]]
+
+![[Pasted image 20230627164222.png]]
+
+![[Pasted image 20230627164239.png]]
+
+Pre-processor are located only in kernel memory
+
+![[Pasted image 20230627164459.png]]
+
+![[Pasted image 20230627164524.png]]
+
+![[Pasted image 20230627164611.png]]
+
+![[Pasted image 20230627164731.png]]
+
+![[Pasted image 20230627164922.png]]
+
+![[Pasted image 20230627165030.png]]
+
+![[Pasted image 20230627165011.png]]
+
+![[Pasted image 20230627165057.png]]
+
+![[Pasted image 20230627165123.png]]
+
+![[Pasted image 20230627165148.png]]
+
+![[Pasted image 20230627165217.png]]
+
+![[Pasted image 20230627165328.png]]
+
+![[Pasted image 20230627165415.png]]
+
+![[Pasted image 20230627165443.png]]
+
+![[Pasted image 20230627165456.png]]
+
+![[Pasted image 20230627165713.png]]
+
+![[Pasted image 20230627165801.png]]
+
+![[Pasted image 20230627165936.png]]
+
+![[Pasted image 20230627170009.png]]
+
+![[Pasted image 20230627170051.png]]
+
+## PROCESSES
+
+![[Pasted image 20230627170213.png]]
+
+![[Pasted image 20230627170236.png]]
+
+![[Pasted image 20230627170413.png]]
+
+![[Pasted image 20230627170429.png]]
+
+![[Pasted image 20230627170456.png]]
+
+![[Pasted image 20230627170542.png]]
+
+![[Pasted image 20230627170557.png]]
+
+![[Pasted image 20230627170646.png]]
+
+![[Pasted image 20230627170702.png]]
+
+![[Pasted image 20230627170806.png]]
+
+![[Pasted image 20230627170823.png]]
+
+![[Pasted image 20230627170854.png]]
+
+![[Pasted image 20230627170939.png]]
+
+## Concurrency
+
+![[Pasted image 20230627171027.png]]
+
+![[Pasted image 20230627171053.png]]
+
+![[Pasted image 20230627171129.png]]
+
+![[Pasted image 20230627171147.png]]
+
+![[Pasted image 20230627171208.png]]
+
+![[Pasted image 20230627171242.png]]
+
+![[Pasted image 20230627171305.png]]
+
+![[Pasted image 20230627171354.png]]
+
+![[Pasted image 20230627171339.png]]
+
+![[Pasted image 20230627171734.png]]
+
+>![[Pasted image 20230627171759.png]]
+>![[Pasted image 20230627171830.png]]
+
+![[Pasted image 20230627171925.png]]
+
+![[Pasted image 20230627171952.png]]
+![[Pasted image 20230627172007.png]]
+
+![[Pasted image 20230627172020.png]]
+
+![[Pasted image 20230627172036.png]]
+
+![[Pasted image 20230627172051.png]]
+
+![[Pasted image 20230627172102.png]]
+
+![[Pasted image 20230628180223.png]]
+
+![[Pasted image 20230628180255.png]]
+
+![[Pasted image 20230628180328.png]]
+
+![[Pasted image 20230628180341.png]]
+
+![[Pasted image 20230628180524.png]]
+
+![[Pasted image 20230628180726.png]]
+
+![[Pasted image 20230628180747.png]]
+
+![[Pasted image 20230628180826.png]]
+
+## SYNCHRONIZATION
+
+![[Pasted image 20230628181022.png]]
+
+![[Pasted image 20230628181039.png]]
+
+![[Pasted image 20230628181214.png]]
+
+![[Pasted image 20230628181231.png]]
+
+![[Pasted image 20230628181330.png]]
+
+![[Pasted image 20230628181350.png]]
+
+![[Pasted image 20230628181451.png]]
+
+![[Pasted image 20230628181544.png]]
+
+![[Pasted image 20230628181604.png]]
+
+![[Pasted image 20230628181650.png]]
+
+![[Pasted image 20230628181708.png]]
+
+![[Pasted image 20230628182213.png]]
+
+![[Pasted image 20230628182257.png]]
+
+![[Pasted image 20230628182319.png]]
+
+![[Pasted image 20230628182433.png]]
+
+![[Pasted image 20230628182810.png]]
+
+![[Pasted image 20230628182825.png]]
+
+![[Pasted image 20230628183012.png]]
+
+![[Pasted image 20230628183115.png]]
+
+![[Pasted image 20230628183237.png]]
+
+![[Pasted image 20230628183257.png]]
+
+![[Pasted image 20230628191443.png]]
+
+![[Pasted image 20230628191537.png]]
+
+![[Pasted image 20230628191553.png]]
+
+
+## Multi-Object Synchronization
+
+![[Pasted image 20230628224106.png]]
+
+![[Pasted image 20230628224435.png]]
+
+![[Pasted image 20230628224957.png]]
+
+![[Pasted image 20230628225156.png]]
+
+>![[Pasted image 20230628225430.png]]
+>![[Pasted image 20230628225456.png]]
+>![[Pasted image 20230628225512.png]]
+
+
+>![[Pasted image 20230628225530.png]]
+>![[Pasted image 20230628225620.png]]
+>![[Pasted image 20230628225657.png]]
+>![[Pasted image 20230628225715.png]]
+>![[Pasted image 20230628225728.png]]
+
+>![[Pasted image 20230628225806.png]]
+
+![[Pasted image 20230628225849.png]]
+
+![[Pasted image 20230628230037.png]]
+
+![[Pasted image 20230628230127.png]]
+
+![[Pasted image 20230628230434.png]]
+
+![[Pasted image 20230628230717.png]]
+
+pag 34-47 Example of banker
+
+## Scheduling
+
+![[Pasted image 20230628231141.png]]
+
+![[Pasted image 20230628231156.png]]
+
+FIFO
+
+![[Pasted image 20230628231317.png]]
+
+![[Pasted image 20230628231938.png]]
+
+![[Pasted image 20230628232010.png]]
+
+![[Pasted image 20230628232054.png]]
+
+![[Pasted image 20230628232309.png]]
+
+![[Pasted image 20230628232545.png]]
+
+![[Pasted image 20230628232711.png]]
+
+![[Pasted image 20230628232825.png]]
+
+![[Pasted image 20230628232924.png]]
+
+Uniprocessor:
+>![[Pasted image 20230628233011.png]]
+>![[Pasted image 20230628233302.png]]
+
+![[Pasted image 20230628233419.png]]
+
+![[Pasted image 20230628233431.png]]
+
+![[Pasted image 20230628234849.png]]
+
+![[Pasted image 20230628234910.png]]
+
+![[Pasted image 20230628234955.png]]
+
+![[Pasted image 20230628235020.png]]
+
+## Address Translation
+
+![[Pasted image 20230629170903.png]]
+
+![[Pasted image 20230629170926.png]]
+
+![[Pasted image 20230629170940.png]]
+
+![[Pasted image 20230629170954.png]]
+
+![[Pasted image 20230629171036.png]]
+
+![[Pasted image 20230629171056.png]]
+
+![[Pasted image 20230629171119.png]]
+
+![[Pasted image 20230629171136.png]]
+
+![[Pasted image 20230629171209.png]]
+
+![[Pasted image 20230629171244.png]]
+
+![[Pasted image 20230629171727.png]]
+
+![[Pasted image 20230629171813.png]]
+
+![[Pasted image 20230629171919.png]]
+
+![[Pasted image 20230629171952.png]]
+
+![[Pasted image 20230629172035.png]]
+
+![[Pasted image 20230629172330.png]]
+
+![[Pasted image 20230629172423.png]]
+
+![[Pasted image 20230629172843.png]]
+
+![[Pasted image 20230629173103.png]]
+
+![[Pasted image 20230629173649.png]]
+
+![[Pasted image 20230629173801.png]]
+
+![[Pasted image 20230629174113.png]]
+
+![[Pasted image 20230629174358.png]]
+
+![[Pasted image 20230629174420.png]]
+
+![[Pasted image 20230629174708.png]]
+
+![[Pasted image 20230629174906.png]]
+
+![[Pasted image 20230629175030.png]]
+
+![[Pasted image 20230629175048.png]]
+
+![[Pasted image 20230629175203.png]]
+
+![[Pasted image 20230629175308.png]]
+
+![[Pasted image 20230629175348.png]]
+
+![[Pasted image 20230629175630.png]]
+
+![[Pasted image 20230629175838.png]]
+
+![[Pasted image 20230629175902.png]]
+
+![[Pasted image 20230629180348.png]]
+
+![[Pasted image 20230629180533.png]]
+
+![[Pasted image 20230629180633.png]]
+
+![[Pasted image 20230629180732.png]]
+
+## Paged Virtual memory
+
+![[Pasted image 20230630164330.png]]
+
+![[Pasted image 20230630164356.png]]
+
+![[Pasted image 20230630164518.png]]
+
+![[Pasted image 20230630164649.png]]
+
+![[Pasted image 20230630164744.png]]
+
+![[Pasted image 20230630164915.png]]
+
+![[Pasted image 20230630164943.png]]
+
+![[Pasted image 20230630165127.png]]
+
+![[Pasted image 20230630165213.png]]
+
+![[Pasted image 20230630165402.png]]
+
+![[Pasted image 20230630165416.png]]
+
+![[Pasted image 20230630165454.png]]
+
+![[Pasted image 20230630165629.png]]
+
+![[Pasted image 20230630165733.png]]
+
+![[Pasted image 20230630165825.png]]
+
+![[Pasted image 20230630165843.png]]
+
+![[Pasted image 20230630170041.png]]
+
+![[Pasted image 20230630170738.png]]
+
+![[Pasted image 20230630171340.png]]
+
+![[Pasted image 20230630171401.png]]
+
+![[Pasted image 20230630171510.png]]
+
+![[Pasted image 20230630171528.png]]
+
+![[Pasted image 20230630171552.png]]
+
+![[Pasted image 20230630171722.png]]
+
+![[Pasted image 20230630171744.png]]
+
+![[Pasted image 20230630171816.png]]
+
+![[Pasted image 20230630171837.png]]
+
+![[Pasted image 20230630171941.png]]
+
+![[Pasted image 20230630172017.png]]
+
+![[Pasted image 20230630172040.png]]
+
+![[Pasted image 20230630172118.png]]
+
+![[Pasted image 20230630172132.png]]
+
+![[Pasted image 20230630172148.png]]
+
+![[Pasted image 20230630172259.png]]
+
+![[Pasted image 20230630172353.png]]
+
+![[Pasted image 20230630172408.png]]
+
+![[Pasted image 20230630172539.png]]
+
+![[Pasted image 20230630172555.png]]
+
+## filesys
+
+![[Pasted image 20230701180752.png]]
+
+![[Pasted image 20230701180822.png]]
+
+![[Pasted image 20230701180839.png]]
+
+![[Pasted image 20230701180943.png]]
+
+![[Pasted image 20230701181005.png]]
+
+![[Pasted image 20230701181027.png]]
+
+![[Pasted image 20230701181104.png]]
+
+![[Pasted image 20230701181221.png]]
+
+![[Pasted image 20230701181308.png]]
+
+![[Pasted image 20230701181335.png]]
+
+![[Pasted image 20230701181356.png]]
+
+![[Pasted image 20230701181437.png]]
+
+![[Pasted image 20230701181453.png]]
+
+![[Pasted image 20230701181506.png]]
+
+![[Pasted image 20230701181520.png]]
+
+![[Pasted image 20230701181955.png]]
+
+![[Pasted image 20230701182034.png]]
+
+file name ->(directory) file number offset ->(index structure) storage block
+
+![[Pasted image 20230701182149.png]]
+
+![[Pasted image 20230701182209.png]]
+
+![[Pasted image 20230701182220.png]]
+
+![[Pasted image 20230701182233.png]]
+
+![[Pasted image 20230701182356.png]]
+
+![[Pasted image 20230701182411.png]]
+
+![[Pasted image 20230701182428.png]]
+
+![[Pasted image 20230701182440.png]]
+
+![[Pasted image 20230701182452.png]]
+
+![[Pasted image 20230701182517.png]]
+
+![[Pasted image 20230701183019.png]]
+
+![[Pasted image 20230701183031.png]]
+
+![[Pasted image 20230701183108.png]]
+
+![[Pasted image 20230701183119.png]]
+
+![[Pasted image 20230701183149.png]]
+
+![[Pasted image 20230701183208.png]]
+
+![[Pasted image 20230701183224.png]]
+
+![[Pasted image 20230701183253.png]]
+
+hard link -> multiple directory entries map different name to the same file number.
+
+soft link ->  a directory entry that maps one name to another name
+
+![[Pasted image 20230701184632.png]]
+
+![[Pasted image 20230701184643.png]]
+
+
+## STORAGE RAID
+
+![[Pasted image 20230701184843.png]]
+
+![[Pasted image 20230701184854.png]]
+
+![[Pasted image 20230701184923.png]]
+
+![[Pasted image 20230701184944.png]]
+
+![[Pasted image 20230701185012.png]]
+
+![[Pasted image 20230701185136.png]]
+
+![[Pasted image 20230701185155.png]]
+
+![[Pasted image 20230701185211.png]]
+
+![[Pasted image 20230701185225.png]]
 
