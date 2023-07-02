@@ -8,6 +8,7 @@ $10110_{2} = 1*2^4+0*2^3+1*2^2+1*2^1+0*2^0 = 22_{10}$
 $2ED_{16} = 2*16^2+E*16^1+D*16^0=749_{10}$
 
 $1+1 = 0$ con riporto di 1 (carry)
+$0 -1 = 1$ con prestito di 1 da sx
 
 modulo e segno:
 - 1 bit per il segno (0 -> positivo e 1 -> negativo) e N-1 bit per il modulo
@@ -58,7 +59,9 @@ reti combinatorie -> una rete combinatoria utilizza i valori presenti agli ingre
 
 reti sequenziali -> Le uscite di una rete sequenziale, invece, dipendono sia dai valori presenti agli ingressi, sia dai valori precedenti; in altre parole, i valori delle uscite dipendono dalla sequenza dei valori degli ingressi -> SI MEMORIA
 
-FULL ADDER -> Ingressi: (A,B,$R_{in}$), Output: (S,$R_{out}$)
+FULL Adder -> Ingressi: (A,B,$R_{in}$), Output: (C,$R_{out}$)
+
+![[Pasted image 20230702231048.png]]
 
 >Terminologia:
 > -  $\overline{A}$ = complemento di A (NOT di A) -> $\overline{A}$ indica che A = 0 nella true table
@@ -80,17 +83,25 @@ Regole mappe Karnaugh:
 
 ![[Pasted image 20230415184847.png]]
 
-multiplexer (mux) -> N ingressi e 1 uscita con S (segnale di controllo) che decide quale ingresso uscirà -> un multiplexer N:1 necessita di $\log_{2}(N)$ ingressi di selezione
+multiplexer (mux) -> N ingressi e 1 uscita con S (segnale di controllo) che decide quale ingresso uscirà -> un multiplexer N:1 necessita di $\log_{2}(N)$ bit di selezione
 
 ![[Pasted image 20230415190355.png]]
+
+Demultiplexer -> opposto MUX (1 input, N uscite) -> $log_2(N)$ bit di selezione
+
+Confrontatore -> 2 input e 1 uscita -> corrisponde ad uno XOR negato
+
+Decoder -> K input e $2^K$ uscite
+
+Encoder -> opposto del Decoder ($2^K$ input e K uscite)
 
 componenti reti combinatorie  (5/10/22) -> [appunti onenote]([5/10/22](onenote:https://unipiit-my.sharepoint.com/personal/a_mussari_studenti_unipi_it/Documents/Blocchi%20appunti/Andrea%20@%20University%20of%20Pisa/ARCHITETTURE.one#5/10/22&section-id={FE521038-12D1-40C0-A1C6-B83BB575E093}&page-id={A2B77B77-0C76-4F0A-8C09-3498D082AFEE}&end)
 
 ![[Pasted image 20230415194009.png]]
 
-ritardo di propragazione -> tempo massimo che trascorre dal momento in cui avviene un cambiamento nell'ingresso al momento in cui l'uscita/e raggiunge il suo valore finale
+ritardo di propragazione -> tempo massimo che trascorre dal momento in cui avviene un cambiamento nell'ingresso al momento in cui l'uscita/e raggiunge il suo valore finale -> $t_1 - t_0$ dove a $t_0$ gli ingressi sono stabili e a $t_1$ dove le uscite sono stabili
 
-ritardo di contaminazione -> tempo minimo che trascorre dal momento in cui cambia l'ingresso al momento in cui una qualsiasi uscita comincia il processo di adattamento del suo valore
+ritardo di contaminazione -> tempo minimo che trascorre dal momento in cui cambia l'ingresso al momento in cui una qualsiasi uscita comincia il processo di adattamento del suo valore -> tempo minimo per cui gli ingressi cambiano
 
 ![[Pasted image 20230415194451.png]]
 
@@ -105,7 +116,7 @@ MAPPA SENZA ALEA
 
 # Capitolo 3
 
->Latch SR -> rete sequenziale (S=set, R=reset, Q=State) -> 2 porte NOR collegate a croce -> S=R=1 comportamento incredibile
+>Latch SR -> rete sequenziale (S=set, R=reset, Q=State) -> 2 porte NOR collegate a croce -> S=R=1 comportamento proibito
 >
 >![[Pasted image 20230417182048.png]]
 >
@@ -127,7 +138,7 @@ MAPPA SENZA ALEA
 >
 >Quando CLK = 0, il latch master è trasparente, mentre il latch slave è opaco. Di conseguenza, qualsiasi valore di D viene portato a N1. Quando invece CLK = 1, il latch master diventa opaco e quello slave trasparente. In questo caso, il valore di N1 viene trasmesso a Q, ma N1 resta isolato da D. Quindi, qualunque sia il valore di D subito prima del fronte di salita (passaggio da 0 a 1) del clock, questo è il valore che viene trasferito a Q al momento di tale fronte. In tutti gli altri casi, Q mantiene il suo valore precedente, dal momento che c’è sempre un latch opaco che blocca il passaggio di dati tra D e Q.
 >
-> i lflip-flop copia D su Q al fronte di salita del clock e ricorda il suo stato in tutti gli altri casi
+> il flip-flop copia D su Q al fronte di salita del clock e ricorda il suo stato in tutti gli altri casi
 > 
 > ![[Pasted image 20230417184214.png]]
 > 
@@ -136,6 +147,9 @@ MAPPA SENZA ALEA
 >Registro -> Un registro a N bit è un banco di N flip-flop che condividono un ingresso CLK comune, in modo che tutti i bit vengano aggiornati allo stesso tempo. I registri costituiscono i blocchi costitutivi chiave per la maggior parte delle reti sequenziali.
 >
 >![[Pasted image 20230417184907.png]]
+>![[Pasted image 20230702234924.png]]
+>FLUSH = 1 => reset registro (scrivo tutti 0)
+>WE = write enable (1 si, 0 no)
 
 Una rete sequenziale sincrona ha un ingresso di clock i cui fronti di salita indicano una sequenza di istanti di tempo nei quali hanno luogo le transizioni di stato -> flip-flop
 
@@ -155,11 +169,16 @@ sistema con K stati -> $\log_{2}K$ bit di stato
 
 Quindi nel diagramma degli stati per le macchine alla Moore i valori delle uscite vengono indicati nei cerchi. Le macchine alla Mealy, come già detto, sono molto simili a quelle alla Moore, ma le uscite possono dipendere sia dallo stato presente sia dagli ingressi. Ne consegue che un diagramma degli stati per una macchina alla Mealy avrà le uscite indicate sugli archi invece che nei cerchi
 
+![[Pasted image 20230703001340.png]]
+
+
+$\# stati\_Moore \ge \# stati\_Mealy$ 
+
 $T_c \ge t_{ps} + t_{pc} +t_{setup}+t_{skew}$ :
 - $T_c$ = periodo di clock -> $f_c = \frac{1}{T_c}$ = frequenza di clock 
 - $t_{ps}$ = ritardo di propagazione (sequenziale) -> $t_{pcq}$
 - $t_{pc}$ = ritardo propagazione (combinatorio)
-- $t_{setup}$ = tempo dopo cui gli ingressi sono stabili prima del fronte di salita del clock
+- $t_{setup}$ = tempo dopo cui gli ingressi sono stabili prima del fronte di salita del clock -> tempo in cui il registro si prepara a ricevere gli ingressi
 - $t_{skew}$ = tempo in cui il clock raggiunge tutti i registri
 
 $t_{cs} + t_{cc} \ge t_{hold}+t_{skew}$ :
@@ -189,7 +208,7 @@ capacità produttiva -> numero di token che possono essere elaborati per unità 
 
 Parallelismo:
 - spaziale -> + lavori svolti contemporaneamente
-- temporale -> , invece, ogni compito viene diviso in fasi, come in una catena di montaggio. Più compiti possono essere distribuiti tra le varie fasi. Nonostante ogni compito debba passare attraverso tutte le fasi, compiti diversi possono trovarsi in ogni fase in un qualsiasi momento, cosicché i diversi compiti si sovrappongono -> pipelining
+- temporale -> invece, ogni compito viene diviso in fasi, come in una catena di montaggio. Più compiti possono essere distribuiti tra le varie fasi. Nonostante ogni compito debba passare attraverso tutte le fasi, compiti diversi possono trovarsi in ogni fase in un qualsiasi momento, cosicché i diversi compiti si sovrappongono -> pipelining
 
 ![[Pasted image 20230425164427.png]]
 

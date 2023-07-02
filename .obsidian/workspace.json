@@ -6,7 +6,6 @@
       {
         "id": "6760dda537a1be95",
         "type": "tabs",
-        "dimension": 62.16666666666667,
         "children": [
           {
             "id": "c6721834181835d7",
@@ -17,23 +16,6 @@
                 "file": "APPUNTI AESO.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "2ab084b7b80b0547",
-        "type": "tabs",
-        "dimension": 37.833333333333336,
-        "children": [
-          {
-            "id": "615582e7838e47c0",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/AESO/Operating Systems.pdf"
               }
             }
           }
@@ -179,20 +161,25 @@
   },
   "active": "c6721834181835d7",
   "lastOpenFiles": [
+    "IMMAGINI/Pasted image 20230703001340.png",
+    "IMMAGINI/Pasted image 20230702234924.png",
+    "IMMAGINI/Pasted image 20230702234907.png",
+    "IMMAGINI/Pasted image 20230702231048.png",
+    "IMMAGINI/Pasted image 20230702170337.png",
+    "Excalidraw/Drawing 2023-07-03 00.16.49.excalidraw.md",
+    "Excalidraw/Drawing 2023-07-02 23.45.10.excalidraw.md",
+    "Excalidraw/Drawing 2023-07-03 00.00.31.excalidraw.md",
+    "APPUNTI AESO.md",
+    "Pasted image 20230703001340.png",
+    "Pasted image 20230702234924.png",
+    "Pasted image 20230702234907.png",
+    "Excalidraw",
+    "Excalidraw/Drawing 2023-07-02 23.04.39.excalidraw.md",
+    "Pasted image 20230702231048.png",
     "Pasted image 20230702170337.png",
     "PDF/AESO/Operating Systems.pdf",
-    "APPUNTI AESO.md",
     "Pasted image 20230701185225.png",
-    "Pasted image 20230701185211.png",
-    "Pasted image 20230701185155.png",
-    "Pasted image 20230701185136.png",
-    "Pasted image 20230701185012.png",
-    "Pasted image 20230701184944.png",
-    "Pasted image 20230701184923.png",
-    "Pasted image 20230701184854.png",
-    "Pasted image 20230701184843.png",
     "PDF/AESO/10- storageRAID.pdf",
-    "Pasted image 20230701184643.png",
     "PDF/AESO/9- filesys.pdf",
     "PDF/AESO/8- PagedVirtualMemory.pdf",
     "PDF/AESO/7- AddressTranslation.pdf",
@@ -200,7 +187,6 @@
     "PDF/AESO/Filosofi-A-Cena.pdf",
     "PDF/AESO/5b- multiobjsync.pdf",
     "PDF/AESO/5a- synchronization.pdf",
-    "PDF/AESO/4- concurrency.pdf",
     "APPUNTI CN.md",
     "APPUNTI LAB 2.md",
     "home/muxy/Scrivania/Appunti/CODICI/lezione7 1.md",
