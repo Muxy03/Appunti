@@ -412,6 +412,8 @@ I numeri in virgola mobile sono in base 2 con una mantissa binaria: vengono usat
 
 ![[Pasted image 20230509185900.png]]
 
+$(-1)^{segno}*2^{esponente-127}*(1+\sum mantissa))$ -> mantissa: $2^{-1},2^{-2},\dots$
+
 ![[Pasted image 20230509185936.png]]
 
 ![[Pasted image 20230509185952.png]]
@@ -440,7 +442,7 @@ memoria ad accesso casuale dinamica -> DRAM
 memoria ad accesso casuale statica -> SRAM
 memoria a sola lettura -> ROM
 
-memoria con N bit indirizzo e M bit di dato -> matrice $2^N \times M$ -> 2^N righe e M colonne -> ogni riga della matrice è una parola -> \#righe = lunghezza, larghezza = \#colonne
+memoria con N bit indirizzo e M bit di dato -> matrice $2^N \times M$ -> $2^N$ righe e M colonne -> ogni riga della matrice è una parola -> \#righe = lunghezza = \# parole, larghezza = \#colonne =  \# bit per parola
 
 ![[Pasted image 20230509195433.png]]
 
@@ -481,10 +483,9 @@ EPROM -> PROM cancellabile -> al posto del transistor e del fusibile c'è un tra
 
 ![[Pasted image 20230511161609.png]]
 
-PLA -> matrici logich programmabili 
+PLA -> matrici logiche programmabili 
 
 ![[Pasted image 20230511161633.png]]
-
 
 ![[Pasted image 20230511161753.png]]
 
@@ -525,7 +526,7 @@ EOR R0,R1,R2 ; R0 = R1 XOR R2
 BIC R0,R1,R2 ; R0 = R1 && NOT(R2) azzera i bit che sono a 1 in R2
 MVN R0,R2 ; R0 = NOT(R2)
 
-; AL POSTODI #5 CI PUÒ ESSERE UN INDIRIZZO
+; AL POSTO DI #5 CI PUÒ ESSERE UN INDIRIZZO
 LSL R0,R2,#5 ;R0 = R2 << 5 (SHIFT SINISTRO LOGICO)
 lSR R0,R2,#5 ;R0 = R2 >> 5 (SHIFT DESTRO LOGICO)
 ASR R0,R2,#5 ;R0 = R2 >>> 5 (SHIFT DESTRO ARITMETICO)
@@ -801,7 +802,6 @@ RegWrite = permesso di scrittura (0/1)
 
 >![[Pasted image 20230606165442.png]]
 >![[Pasted image 20230606165508.png]]
-
 
 ![[Pasted image 20230606165539.png]]
 
