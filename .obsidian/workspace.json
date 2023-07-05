@@ -6,6 +6,7 @@
       {
         "id": "6760dda537a1be95",
         "type": "tabs",
+        "dimension": 63.739946380697056,
         "children": [
           {
             "id": "c6721834181835d7",
@@ -16,6 +17,23 @@
                 "file": "APPUNTI AESO.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "8a6708a412fa1f53",
+        "type": "tabs",
+        "dimension": 36.26005361930295,
+        "children": [
+          {
+            "id": "39d6fb421c0a2ced",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/AESO/Operating Systems.pdf"
               }
             }
           }
@@ -161,6 +179,8 @@
   },
   "active": "c6721834181835d7",
   "lastOpenFiles": [
+    "PDF/AESO/Operating Systems.pdf",
+    "APPUNTI AESO.md",
     "CODICI/ARM/a",
     "CODICI/ARM/main_fact.c",
     "CODICI/ARM/main_div.s",
@@ -170,8 +190,6 @@
     "CODICI/ARM/fact.c",
     "CODICI/ARM/div.s",
     "CODICI/ARM/output",
-    "CODICI/ARM/-static",
-    "CODICI/ARM/a.out",
     "IMMAGINI/Pasted image 20230703001340.png",
     "IMMAGINI/Pasted image 20230702234924.png",
     "IMMAGINI/Pasted image 20230702234907.png",
@@ -180,7 +198,6 @@
     "Excalidraw/Drawing 2023-07-03 00.16.49.excalidraw.md",
     "Excalidraw/Drawing 2023-07-02 23.45.10.excalidraw.md",
     "Excalidraw/Drawing 2023-07-03 00.00.31.excalidraw.md",
-    "APPUNTI AESO.md",
     "Pasted image 20230703001340.png",
     "Pasted image 20230702234924.png",
     "Pasted image 20230702234907.png",
