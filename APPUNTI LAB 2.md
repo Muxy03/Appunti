@@ -390,4 +390,15 @@ int xsem_wait(sem_t *sem, int linea, char *file) {
 
 ![[Pasted image 20230711001148.png]]
 
-lezioni 40 in poi
+[segnali](obsidian://open?vault=Appunti&file=PDF%2FLAB2%2Fsegnali_fino_sigwait.pdf)
+
+[CondVar](obsidian://open?vault=Appunti&file=PDF%2FLAB2%2FCondVar.pdf)
+
+[Server](obsidian://open?vault=Appunti&file=PDF%2FLAB2%2FServer%20concorrenti.pdf)
+
+[Safety](obsidian://open?vault=Appunti&file=PDF%2FLAB2%2FSafety.pdf)
+
+![[Pasted image 20230712233756.png]]
+
+[Select]([select function in Python | Pythontic.com](https://pythontic.com/modules/select/select))
+

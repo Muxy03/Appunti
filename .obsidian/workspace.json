@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "APPUNTI LAB 2.md",
+                "file": "APPUNTI AESO.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "APPUNTI LAB 2.md",
+                "file": "APPUNTI AESO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "APPUNTI LAB 2.md",
+                "file": "APPUNTI AESO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "APPUNTI LAB 2.md"
+                "file": "APPUNTI AESO.md"
               }
             }
           },
@@ -158,8 +159,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8ecbeedd8669d71e",
+  "active": "c6721834181835d7",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2023-07-20 12.20.18.excalidraw.md",
+    "APPUNTI AESO.md",
+    "Excalidraw",
+    "APPUNTI LAB 2.md",
+    "Pasted image 20230712233756.png",
+    "PDF/LAB2/Safety.pdf",
+    "PDF/LAB2/Non confermato 949786.crdownload",
+    "PDF/LAB2/Server concorrenti.pdf",
+    "PDF/LAB2/Non confermato 212483.crdownload",
+    "PDF/LAB2/segnali_fino_sigwait.pdf",
+    "PDF/LAB2/CondVar.pdf",
+    "PDF/LAB2/Non confermato 780472.crdownload",
+    "PDF/LAB2/Non confermato 485063.crdownload",
     "IMMAGINI/Pasted image 20230711001148.png",
     "IMMAGINI/Pasted image 20230711001102.png",
     "IMMAGINI/Pasted image 20230711000838.png",
@@ -169,20 +183,7 @@
     "IMMAGINI/Pasted image 20230710233637.png",
     "IMMAGINI/Pasted image 20230710232928.png",
     "IMMAGINI/Pasted image 20230710232538.png",
-    "IMMAGINI/Pasted image 20230710231824.png",
-    "IMMAGINI/Pasted image 20230710231717.png",
     "PDF/LAB2/prodcons.pdf",
-    "PDF/LAB2/Non confermato 719716.crdownload",
-    "PDF/LAB2/Library functions vs System Calls.pdf",
-    "APPUNTI LAB 2.md",
-    "PDF/LAB2/Non confermato 879409.crdownload",
-    "CODICI/navigatore/grandi.py",
-    "CODICI/navigatore/recenti.py",
-    "CODICI/navigatore/duplicati.py",
-    "CODICI/navigatore",
-    "CODICI/qsortint.c",
-    "CODICI/qsortcap.c",
-    "APPUNTI AESO.md",
     "Excalidraw/Drawing 2023-07-03 00.16.49.excalidraw.md",
     "Excalidraw/Drawing 2023-07-02 23.45.10.excalidraw.md",
     "Excalidraw/Drawing 2023-07-03 00.00.31.excalidraw.md",
