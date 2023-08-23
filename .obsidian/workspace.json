@@ -4,11 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6760dda537a1be95",
+        "id": "dcb8d27778f772ce",
         "type": "tabs",
         "children": [
           {
-            "id": "c6721834181835d7",
+            "id": "27f5d1c15cdf348f",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/AESO/Appunti Esterni.pdf"
+              }
+            }
+          },
+          {
+            "id": "657328dd74b2870f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,8 +28,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4afbeb9171304e2f",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-08-16 15.09.00.excalidraw.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -86,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "APPUNTI AESO.md",
+                "file": "Excalidraw/Drawing 2023-08-16 15.09.00.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "APPUNTI AESO.md",
+                "file": "Excalidraw/Drawing 2023-08-16 15.09.00.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "APPUNTI AESO.md"
+                "file": "Excalidraw/Drawing 2023-08-16 15.09.00.excalidraw.md"
               }
             }
           },
@@ -154,18 +175,33 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c6721834181835d7",
+  "active": "4afbeb9171304e2f",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2023-07-20 12.20.18.excalidraw.md",
+    "PDF/SAW/svelte-handbook.pdf",
+    "PDF/SAW",
+    "IMMAGINI/Pasted image 20230712233756.png",
+    "Pasted Image 20230816162032_148.png",
     "APPUNTI AESO.md",
+    "Excalidraw/Drawing 2023-08-16 15.09.00.excalidraw.md",
+    "Pasted Image 20230816161830_142.png",
+    "Pasted Image 20230816161059_356.png",
+    "Pasted Image 20230816160959_308.png",
+    "Pasted Image 20230816160942_731.png",
+    "PDF/AESO/Appunti Esterni.pdf",
+    "Pasted Image 20230816154858_719.png",
+    "IMMAGINI/Pasted image 20230622181010.png",
+    "Pasted Image 20230816154349_527.png",
+    "Pasted Image 20230816153430_233.png",
     "Excalidraw",
+    "APPUNTI CN.md",
+    "APPUNTI ALGEBRA LINEARE.md",
+    "Excalidraw/Drawing 2023-07-20 12.20.18.excalidraw.md",
     "APPUNTI LAB 2.md",
-    "Pasted image 20230712233756.png",
     "PDF/LAB2/Safety.pdf",
     "PDF/LAB2/Non confermato 949786.crdownload",
     "PDF/LAB2/Server concorrenti.pdf",
@@ -173,22 +209,10 @@
     "PDF/LAB2/segnali_fino_sigwait.pdf",
     "PDF/LAB2/CondVar.pdf",
     "PDF/LAB2/Non confermato 780472.crdownload",
-    "PDF/LAB2/Non confermato 485063.crdownload",
-    "IMMAGINI/Pasted image 20230711001148.png",
-    "IMMAGINI/Pasted image 20230711001102.png",
-    "IMMAGINI/Pasted image 20230711000838.png",
-    "IMMAGINI/Pasted image 20230710235528.png",
-    "IMMAGINI/Pasted image 20230710235038.png",
-    "IMMAGINI/Pasted image 20230710234706.png",
-    "IMMAGINI/Pasted image 20230710233637.png",
-    "IMMAGINI/Pasted image 20230710232928.png",
-    "IMMAGINI/Pasted image 20230710232538.png",
-    "PDF/LAB2/prodcons.pdf",
     "Excalidraw/Drawing 2023-07-03 00.16.49.excalidraw.md",
     "Excalidraw/Drawing 2023-07-02 23.45.10.excalidraw.md",
     "Excalidraw/Drawing 2023-07-03 00.00.31.excalidraw.md",
     "Excalidraw/Drawing 2023-07-02 23.04.39.excalidraw.md",
-    "APPUNTI CN.md",
     "home/muxy/Scrivania/Appunti/CODICI/lezione7 1.md",
     "home/muxy/Scrivania/Appunti/CODICI/lezione7.md",
     "Excalidraw/Drawing 2023-06-23 00.19.02.excalidraw.md",
