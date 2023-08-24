@@ -35,12 +35,32 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/Drawing 2023-08-16 15.09.00.excalidraw.md"
+                "file": "Excalidraw/SO-1.md"
+              }
+            }
+          },
+          {
+            "id": "8ccf69d5823e0ff5",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/SO-2-3.md"
+              }
+            }
+          },
+          {
+            "id": "9be3807fe0d4216a",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/SO-4.md"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -90,8 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -107,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2023-08-16 15.09.00.excalidraw.md",
+                "file": "Excalidraw/SO-4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2023-08-16 15.09.00.excalidraw.md",
+                "file": "Excalidraw/SO-4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2023-08-16 15.09.00.excalidraw.md"
+                "file": "Excalidraw/SO-4.md"
               }
             }
           },
@@ -180,23 +199,26 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4afbeb9171304e2f",
+  "active": "9be3807fe0d4216a",
   "lastOpenFiles": [
+    "IMMAGINI/Pasted Image 20230824032320_501.png",
+    "IMMAGINI/Pasted Image 20230824031849_350.png",
+    "IMMAGINI/Pasted Image 20230824031033_147.png",
+    "IMMAGINI/Pasted Image 20230824030747_046.png",
+    "IMMAGINI/Pasted Image 20230824030616_995.png",
+    "IMMAGINI/Pasted Image 20230824030516_962.png",
+    "IMMAGINI/Pasted Image 20230824030146_876.png",
+    "IMMAGINI/Pasted Image 20230824025745_766.png",
+    "IMMAGINI/Pasted Image 20230824025700_723.png",
+    "IMMAGINI/Pasted Image 20230824025542_664.png",
+    "IMMAGINI/Pasted Image 20230824025454_526.png",
+    "PDF/AESO/Appunti Esterni.pdf",
+    "Excalidraw/SO-4.md",
+    "Excalidraw/SO-1.md",
+    "Excalidraw/SO-2-3.md",
+    "APPUNTI AESO.md",
     "PDF/SAW/svelte-handbook.pdf",
     "PDF/SAW",
-    "IMMAGINI/Pasted image 20230712233756.png",
-    "Pasted Image 20230816162032_148.png",
-    "APPUNTI AESO.md",
-    "Excalidraw/Drawing 2023-08-16 15.09.00.excalidraw.md",
-    "Pasted Image 20230816161830_142.png",
-    "Pasted Image 20230816161059_356.png",
-    "Pasted Image 20230816160959_308.png",
-    "Pasted Image 20230816160942_731.png",
-    "PDF/AESO/Appunti Esterni.pdf",
-    "Pasted Image 20230816154858_719.png",
-    "IMMAGINI/Pasted image 20230622181010.png",
-    "Pasted Image 20230816154349_527.png",
-    "Pasted Image 20230816153430_233.png",
     "Excalidraw",
     "APPUNTI CN.md",
     "APPUNTI ALGEBRA LINEARE.md",
@@ -208,7 +230,6 @@
     "PDF/LAB2/Non confermato 212483.crdownload",
     "PDF/LAB2/segnali_fino_sigwait.pdf",
     "PDF/LAB2/CondVar.pdf",
-    "PDF/LAB2/Non confermato 780472.crdownload",
     "Excalidraw/Drawing 2023-07-03 00.16.49.excalidraw.md",
     "Excalidraw/Drawing 2023-07-02 23.45.10.excalidraw.md",
     "Excalidraw/Drawing 2023-07-03 00.00.31.excalidraw.md",
