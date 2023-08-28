@@ -58,9 +58,19 @@
                 "file": "Excalidraw/SO-4.md"
               }
             }
+          },
+          {
+            "id": "8bfe1fbbc9c2edb7",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/SO-5.md"
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -110,7 +120,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -126,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/SO-4.md",
+                "file": "Excalidraw/SO-5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/SO-4.md",
+                "file": "Excalidraw/SO-5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/SO-4.md"
+                "file": "Excalidraw/SO-5.md"
               }
             }
           },
@@ -195,28 +206,28 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9be3807fe0d4216a",
+  "active": "8bfe1fbbc9c2edb7",
   "lastOpenFiles": [
-    "IMMAGINI/Pasted Image 20230824032320_501.png",
-    "IMMAGINI/Pasted Image 20230824031849_350.png",
-    "IMMAGINI/Pasted Image 20230824031033_147.png",
-    "IMMAGINI/Pasted Image 20230824030747_046.png",
-    "IMMAGINI/Pasted Image 20230824030616_995.png",
-    "IMMAGINI/Pasted Image 20230824030516_962.png",
-    "IMMAGINI/Pasted Image 20230824030146_876.png",
-    "IMMAGINI/Pasted Image 20230824025745_766.png",
-    "IMMAGINI/Pasted Image 20230824025700_723.png",
-    "IMMAGINI/Pasted Image 20230824025542_664.png",
-    "IMMAGINI/Pasted Image 20230824025454_526.png",
     "PDF/AESO/Appunti Esterni.pdf",
-    "Excalidraw/SO-4.md",
-    "Excalidraw/SO-1.md",
-    "Excalidraw/SO-2-3.md",
+    "Excalidraw/SO-5.md",
+    "Pasted Image 20230826231720_770.png",
+    "Pasted Image 20230826231445_673.png",
+    "Pasted Image 20230826231415_640.png",
+    "Pasted Image 20230826231223_546.png",
+    "Pasted Image 20230826231043_461.png",
+    "Pasted Image 20230826230958_433.png",
+    "Pasted Image 20230826230726_343.png",
+    "Pasted Image 20230826230624_289.png",
+    "Pasted Image 20230826230538_271.png",
+    "Pasted Image 20230826230453_252.png",
     "APPUNTI AESO.md",
+    "Excalidraw/SO-4.md",
+    "Excalidraw/SO-2-3.md",
+    "Excalidraw/SO-1.md",
     "PDF/SAW/svelte-handbook.pdf",
     "PDF/SAW",
     "Excalidraw",
