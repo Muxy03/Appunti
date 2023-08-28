@@ -58,19 +58,9 @@
                 "file": "Excalidraw/SO-4.md"
               }
             }
-          },
-          {
-            "id": "8bfe1fbbc9c2edb7",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/SO-5.md"
-              }
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -137,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/SO-5.md",
+                "file": "Excalidraw/SO-4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/SO-5.md",
+                "file": "Excalidraw/SO-4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/SO-5.md"
+                "file": "Excalidraw/SO-4.md"
               }
             }
           },
@@ -210,20 +200,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8bfe1fbbc9c2edb7",
+  "active": "9be3807fe0d4216a",
   "lastOpenFiles": [
-    "PDF/AESO/Appunti Esterni.pdf",
+    "IMMAGINI/Pasted Image 20230826230038_157.png",
+    "IMMAGINI/Pasted Image 20230826230008_133.png",
+    "IMMAGINI/Pasted Image 20230826225908_117.png",
+    "IMMAGINI/Pasted Image 20230826225533_443.png",
+    "IMMAGINI/Pasted Image 20230826225403_392.png",
+    "IMMAGINI/Pasted Image 20230826225303_365.png",
+    "IMMAGINI/Pasted Image 20230826225046_277.png",
+    "IMMAGINI/Pasted Image 20230826224759_265.png",
+    "IMMAGINI/Pasted Image 20230826224546_124.png",
+    "IMMAGINI/Pasted Image 20230826224416_074.png",
+    "IMMAGINI/Pasted Image 20230826224156_990.png",
+    "APPUNTI CN.md",
     "Excalidraw/SO-5.md",
-    "Pasted Image 20230826231720_770.png",
-    "Pasted Image 20230826231445_673.png",
-    "Pasted Image 20230826231415_640.png",
-    "Pasted Image 20230826231223_546.png",
-    "Pasted Image 20230826231043_461.png",
-    "Pasted Image 20230826230958_433.png",
-    "Pasted Image 20230826230726_343.png",
-    "Pasted Image 20230826230624_289.png",
-    "Pasted Image 20230826230538_271.png",
-    "Pasted Image 20230826230453_252.png",
+    "PDF/AESO/Appunti Esterni.pdf",
     "APPUNTI AESO.md",
     "Excalidraw/SO-4.md",
     "Excalidraw/SO-2-3.md",
@@ -231,7 +223,6 @@
     "PDF/SAW/svelte-handbook.pdf",
     "PDF/SAW",
     "Excalidraw",
-    "APPUNTI CN.md",
     "APPUNTI ALGEBRA LINEARE.md",
     "Excalidraw/Drawing 2023-07-20 12.20.18.excalidraw.md",
     "APPUNTI LAB 2.md",
