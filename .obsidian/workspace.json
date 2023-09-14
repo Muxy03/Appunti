@@ -4,43 +4,73 @@
     "type": "split",
     "children": [
       {
-        "id": "dcb8d27778f772ce",
+        "id": "f5af8f2e30e16bba",
         "type": "tabs",
         "children": [
           {
-            "id": "ad94573b313bf8d3",
+            "id": "a583d2b477782af5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "APPUNTI AESO.md",
+                "file": "APPUNTI ORALE AESO.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4afbeb9171304e2f",
+            "id": "279da945904678c1",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "pdf",
               "state": {
-                "file": "Excalidraw/SO-1.md"
+                "file": "PDF/AESO/1-MemoryHierarchy.pdf"
               }
             }
           },
           {
-            "id": "8ccf69d5823e0ff5",
+            "id": "6918bdb614d962e8",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "pdf",
               "state": {
-                "file": "Excalidraw/SO-5.md"
+                "file": "PDF/AESO/4- concurrency.pdf"
+              }
+            }
+          },
+          {
+            "id": "ee493b9c6e750d90",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/AESO/9- filesys.pdf"
+              }
+            }
+          },
+          {
+            "id": "b1a1de160b5bfaea",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/AESO/5a- synchronization.pdf"
+              }
+            }
+          },
+          {
+            "id": "06256d6924570dc6",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/AESO/Appunti Esterni.pdf"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -106,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/SO-5.md",
+                "file": "PDF/AESO/5a- synchronization.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/SO-5.md",
+                "file": "PDF/AESO/5a- synchronization.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/SO-5.md"
+                "file": "PDF/AESO/5a- synchronization.pdf"
               }
             }
           },
@@ -156,6 +186,16 @@
             "state": {
               "type": "calendar",
               "state": {}
+            }
+          },
+          {
+            "id": "fd302bd154e9b3f3",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
             }
           }
         ],
@@ -168,49 +208,51 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Apri selezione rapida": false,
-      "graph:Apri vista grafo": false,
-      "canvas:Crea nuova lavagna": false,
-      "daily-notes:Apri nota del giorno": false,
-      "templates:Inserisci modello": false,
-      "command-palette:Apri riquadro comandi": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8ccf69d5823e0ff5",
+  "active": "b1a1de160b5bfaea",
   "lastOpenFiles": [
-    "IMMAGINI/Pasted Image 20230901160446_171.png",
-    "IMMAGINI/Pasted Image 20230901154212_003.png",
-    "IMMAGINI/Pasted Image 20230901150955_847.png",
-    "IMMAGINI/Pasted Image 20230831192319_052.png",
-    "IMMAGINI/Pasted Image 20230831192059_469.png",
-    "IMMAGINI/Pasted Image 20230831191801_829.png",
-    "IMMAGINI/Pasted Image 20230831191249_124.png",
-    "IMMAGINI/Pasted Image 20230831190401_329.png",
-    "IMMAGINI/Pasted Image 20230831190315_524.png",
-    "IMMAGINI/Pasted Image 20230831190126_492.png",
-    "IMMAGINI/Pasted Image 20230831185833_240.png",
-    "APPUNTI AESO.md",
-    "Excalidraw/SO-5.md",
-    "Excalidraw/SO-1.md",
+    "PDF/AESO/4- concurrency.pdf",
+    "PDF/AESO/3c- processes.pdf",
     "PDF/AESO/Appunti Esterni.pdf",
-    "Excalidraw/SO-2-3.md",
-    "Excalidraw/SO-4.md",
+    "PDF/AESO/9- filesys.pdf",
+    "PDF/AESO/5a- synchronization.pdf",
+    "PDF/AESO/3b- Kernel.pdf",
+    "PDF/AESO/3a- OSintro.pdf",
+    "PDF/AESO/2.1-Disks.pdf",
+    "PDF/AESO/2-Input-Output.pdf",
+    "Excalidraw/SO-1.md",
+    "PDF/AESO/1-MemoryHierarchy.pdf",
+    "APPUNTI ORALE AESO.md",
+    "PDF/CN/corr_inf_16052022.pdf",
     "APPUNTI CN.md",
-    "PDF/SAW/svelte-handbook.pdf",
-    "PDF/SAW",
-    "Excalidraw",
+    "IMMAGINI/Pasted Image 20230904085505_280.png",
+    "IMMAGINI/Pasted Image 20230904085005_252.png",
+    "IMMAGINI/Pasted Image 20230904084450_245.png",
+    "IMMAGINI/Pasted Image 20230904084249_120.png",
+    "IMMAGINI/Pasted Image 20230904084104_118.png",
+    "IMMAGINI/Pasted Image 20230904083315_022.png",
+    "IMMAGINI/Pasted Image 20230904082214_709.png",
+    "IMMAGINI/Pasted Image 20230904081314_580.png",
+    "IMMAGINI/Pasted Image 20230904080944_575.png",
+    "IMMAGINI/Pasted Image 20230904080528_521.png",
+    "Excalidraw/SO-4.md",
+    "Excalidraw/SO-2-3.md",
+    "Excalidraw/SO-5.md",
+    "Excalidraw/SO-6.md",
+    "APPUNTI AESO.md",
     "APPUNTI ALGEBRA LINEARE.md",
     "Excalidraw/Drawing 2023-07-20 12.20.18.excalidraw.md",
     "APPUNTI LAB 2.md",
-    "PDF/LAB2/Safety.pdf",
-    "PDF/LAB2/Non confermato 949786.crdownload",
-    "PDF/LAB2/Server concorrenti.pdf",
-    "PDF/LAB2/Non confermato 212483.crdownload",
-    "PDF/LAB2/segnali_fino_sigwait.pdf",
-    "PDF/LAB2/CondVar.pdf",
     "Excalidraw/Drawing 2023-07-03 00.16.49.excalidraw.md",
     "Excalidraw/Drawing 2023-07-02 23.45.10.excalidraw.md",
     "Excalidraw/Drawing 2023-07-03 00.00.31.excalidraw.md",
