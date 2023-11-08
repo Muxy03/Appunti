@@ -4,73 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "f5af8f2e30e16bba",
+        "id": "c58bb7c780571ccd",
         "type": "tabs",
         "children": [
           {
-            "id": "a583d2b477782af5",
+            "id": "5291312246933cc9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "APPUNTI ORALE AESO.md",
+                "file": "APPUNTI ING. SOFTWARE.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "279da945904678c1",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/AESO/1-MemoryHierarchy.pdf"
-              }
-            }
-          },
-          {
-            "id": "6918bdb614d962e8",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/AESO/4- concurrency.pdf"
-              }
-            }
-          },
-          {
-            "id": "ee493b9c6e750d90",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/AESO/9- filesys.pdf"
-              }
-            }
-          },
-          {
-            "id": "b1a1de160b5bfaea",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/AESO/5a- synchronization.pdf"
-              }
-            }
-          },
-          {
-            "id": "06256d6924570dc6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/AESO/Appunti Esterni.pdf"
-              }
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -120,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -136,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PDF/AESO/5a- synchronization.pdf",
+                "file": "APPUNTI ING. SOFTWARE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PDF/AESO/5a- synchronization.pdf",
+                "file": "APPUNTI ING. SOFTWARE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PDF/AESO/5a- synchronization.pdf"
+                "file": "APPUNTI ING. SOFTWARE.md"
               }
             }
           },
@@ -219,37 +169,38 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b1a1de160b5bfaea",
+  "active": "5291312246933cc9",
   "lastOpenFiles": [
+    "PDF/ING SOFTWARE/is_08b_stati.pdf",
+    "PDF/ING SOFTWARE/is_08a_attivita.pdf",
+    "Pasted image 20231019172317.png",
+    "Pasted image 20231019172255.png",
+    "PDF/ING SOFTWARE/is_07_e2_esercitazioneclassi.pdf",
+    "Pasted image 20231019171140.png",
+    "Pasted image 20231019170926.png",
+    "Pasted image 20231019170828.png",
+    "Pasted image 20231019170658.png",
+    "Pasted image 20231019170648.png",
+    "Pasted image 20231019170630.png",
+    "Pasted image 20231019170418.png",
+    "Pasted image 20231019170208.png",
+    "PDF/ING SOFTWARE/is_06_classioggetti.pdf",
+    "PDF/ING SOFTWARE/is_04_introuml_casid_uso.pdf",
+    "PDF/ING SOFTWARE/is_05_e1_esercitazionereq_casid_uso.pdf",
+    "PDF/ING SOFTWARE",
+    "APPUNTI AESO.md",
+    "APPUNTI ING. SOFTWARE.md",
+    "PDF/AESO/Appunti Esterni.pdf",
+    "PDF/AESO/5a- synchronization.pdf",
     "PDF/AESO/4- concurrency.pdf",
     "PDF/AESO/3c- processes.pdf",
-    "PDF/AESO/Appunti Esterni.pdf",
-    "PDF/AESO/9- filesys.pdf",
-    "PDF/AESO/5a- synchronization.pdf",
-    "PDF/AESO/3b- Kernel.pdf",
-    "PDF/AESO/3a- OSintro.pdf",
-    "PDF/AESO/2.1-Disks.pdf",
-    "PDF/AESO/2-Input-Output.pdf",
     "Excalidraw/SO-1.md",
-    "PDF/AESO/1-MemoryHierarchy.pdf",
     "APPUNTI ORALE AESO.md",
-    "PDF/CN/corr_inf_16052022.pdf",
     "APPUNTI CN.md",
-    "IMMAGINI/Pasted Image 20230904085505_280.png",
-    "IMMAGINI/Pasted Image 20230904085005_252.png",
-    "IMMAGINI/Pasted Image 20230904084450_245.png",
-    "IMMAGINI/Pasted Image 20230904084249_120.png",
-    "IMMAGINI/Pasted Image 20230904084104_118.png",
-    "IMMAGINI/Pasted Image 20230904083315_022.png",
-    "IMMAGINI/Pasted Image 20230904082214_709.png",
-    "IMMAGINI/Pasted Image 20230904081314_580.png",
-    "IMMAGINI/Pasted Image 20230904080944_575.png",
-    "IMMAGINI/Pasted Image 20230904080528_521.png",
     "Excalidraw/SO-4.md",
     "Excalidraw/SO-2-3.md",
     "Excalidraw/SO-5.md",
     "Excalidraw/SO-6.md",
-    "APPUNTI AESO.md",
     "APPUNTI ALGEBRA LINEARE.md",
     "Excalidraw/Drawing 2023-07-20 12.20.18.excalidraw.md",
     "APPUNTI LAB 2.md",
