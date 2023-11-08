@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "APPUNTI ING. SOFTWARE.md",
+                "file": "RETI.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "APPUNTI ING. SOFTWARE.md",
+                "file": "RETI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "APPUNTI ING. SOFTWARE.md",
+                "file": "RETI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "APPUNTI ING. SOFTWARE.md"
+                "file": "RETI.md"
               }
             }
           },
@@ -171,6 +170,14 @@
   },
   "active": "5291312246933cc9",
   "lastOpenFiles": [
+    "APPUNTI LAB 3.md",
+    "APPUNTI BASI DI DATI.md",
+    "1 ANNO/APPUNTI ALGEBRA LINEARE.md",
+    "2 ANNO/APPUNTI LAB 2.md",
+    "RETI.md",
+    "APPUNTI ING. SOFTWARE.md",
+    "2 ANNO",
+    "1 ANNO",
     "PDF/ING SOFTWARE/is_08b_stati.pdf",
     "PDF/ING SOFTWARE/is_08a_attivita.pdf",
     "Pasted image 20231019172317.png",
@@ -188,22 +195,16 @@
     "PDF/ING SOFTWARE/is_04_introuml_casid_uso.pdf",
     "PDF/ING SOFTWARE/is_05_e1_esercitazionereq_casid_uso.pdf",
     "PDF/ING SOFTWARE",
-    "APPUNTI AESO.md",
-    "APPUNTI ING. SOFTWARE.md",
+    "2 ANNO/APPUNTI AESO.md",
     "PDF/AESO/Appunti Esterni.pdf",
-    "PDF/AESO/5a- synchronization.pdf",
-    "PDF/AESO/4- concurrency.pdf",
-    "PDF/AESO/3c- processes.pdf",
     "Excalidraw/SO-1.md",
-    "APPUNTI ORALE AESO.md",
-    "APPUNTI CN.md",
+    "2 ANNO/APPUNTI ORALE AESO.md",
+    "2 ANNO/APPUNTI CN.md",
     "Excalidraw/SO-4.md",
     "Excalidraw/SO-2-3.md",
     "Excalidraw/SO-5.md",
     "Excalidraw/SO-6.md",
-    "APPUNTI ALGEBRA LINEARE.md",
     "Excalidraw/Drawing 2023-07-20 12.20.18.excalidraw.md",
-    "APPUNTI LAB 2.md",
     "Excalidraw/Drawing 2023-07-03 00.16.49.excalidraw.md",
     "Excalidraw/Drawing 2023-07-02 23.45.10.excalidraw.md",
     "Excalidraw/Drawing 2023-07-03 00.00.31.excalidraw.md",
@@ -212,6 +213,6 @@
     "home/muxy/Scrivania/Appunti/CODICI/lezione7.md",
     "Excalidraw/Drawing 2023-06-23 00.19.02.excalidraw.md",
     "README.md",
-    "APPUNTI STATISTICA.md"
+    "2 ANNO/APPUNTI STATISTICA.md"
   ]
 }

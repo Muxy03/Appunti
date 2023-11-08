@@ -1,6 +1,6 @@
 [PAGINE MAN](https://linux.die.net/man/)
 
-[PUNTATORI](./PDF/LAB2/Lezione3.pdf)
+[PUNTATORI](Lezione3.pdf)
 
 le stringhe terminano con '\\0'
 
@@ -38,7 +38,7 @@ codici sui puntatori -> lezione 7
 
 ![[Pasted image 20230707170415.png]]
 
-[scanf](./PDF/LAB2/Lezione8.pdf) 
+[scanf](Lezione8.pdf) 
 
 ```makefile
 # nei comandi associati ad ogni regola:  
