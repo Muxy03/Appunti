@@ -333,3 +333,325 @@ Query Iterativa:
 
 
 # STRATO DI TRASPORTO
+
+![[Pasted image 20231116182143.png]]
+
+![[Pasted image 20231116182206.png]]
+
+![[Pasted image 20231116182215.png]]
+
+![[Pasted image 20231116182304.png]]
+
+![[Pasted image 20231116182323.png]]
+
+![[Pasted image 20231116182344.png]]
+
+![[Pasted image 20231117085712.png]]
+
+![[Pasted image 20231117085724.png]]
+
+![[Pasted image 20231117085746.png]]
+
+![[Pasted image 20231117085804.png]]
+
+![[Pasted image 20231117085817.png]]
+
+![[Pasted image 20231117085835.png]]
+
+![[Pasted image 20231117085851.png]]
+
+## TCP
+
+orientamento allo stream -> TCP vede i dati come un flusso di byte ordinati ma non strutturati (len indefinita)
+
+orientato alla connessione:
+- handshake fra processi (source e dest); 
+- lo stato della connessione risiede solo nei punti terminali (es. router) della rete (NO INTERMEDI)
+- connessione = circuito dedicato -> per gli applicativi  -> TCP offre servizi CONNECTION ORIENTED (IP invece CONNECTION LESS)
+- connessione full-duplex -> connessione in tutte e due le direzioni contemporaneamente (slegate fra loro) e connessione punto-punto
+
+![[Pasted image 20231126170935.png]]
+
+![[Pasted image 20231126170952.png]]
+
+![[Pasted image 20231126171003.png]]
+
+![[Pasted image 20231126171018.png]]
+
+![[Pasted image 20231126171038.png]]
+
+TCP numera i byte:
+- Numero di sequenza = numero del primo byte del segmento (si parte da un initial sequence number random != 0)
+- Numero di riscontro = numero ultimo byte correttamente ricevuto + 1 -> ACK = y significa che aspetto il byte y e che ho ricevuto correttamente tutti i byte fino a y-1 incluso
+
+![[Pasted image 20231126171335.png]]
+
+FLAG SYN settato $\Rightarrow$ numero di sequenza = ISN (initial sequence number) e il primo byte di dati è ISN+1
+
+FLAG ACK settato $\Rightarrow$ numero di riscontro = valore del prossimo numero di sequenza che il mittente del segmento si aspetta di ricevere dall'altro host. Una volta che la connessione è stabilita è sempre inviato
+
+HLEN = len header TCP espressa in parole di 4 byte
+
+![[Pasted image 20231126172039.png]]
+
+![[Pasted image 20231126172052.png]]
+
+![[Pasted image 20231126172105.png]]
+
+Handshake a 3 vie:
+- ![[Pasted image 20231126172223.png]]
+- dopo l'handshake a livello trasporto non c'è più distinzione tra client e server
+- ![[Pasted image 20231126172340.png]]
+
+![[Pasted image 20231126172428.png]]
+
+![[Pasted image 20231126172453.png]]
+
+![[Pasted image 20231126172603.png]]
+
+![[Pasted image 20231126172638.png]]
+
+![[Pasted image 20231126172723.png]]
+
+![[Pasted image 20231126172745.png]]
+
+![[Pasted image 20231126172758.png]]
+
+![[Pasted image 20231126172914.png]]
+
+![[Pasted image 20231126173736.png]]
+
+![[Pasted image 20231126173745.png]]
+
+![[Pasted image 20231126173758.png]]
+
+![[Pasted image 20231126173824.png]]
+
+![[Pasted image 20231126173837.png]]
+
+![[Pasted image 20231126173856.png]]
+
+![[Pasted image 20231126173908.png]]
+
+![[Pasted image 20231126173925.png]]
+
+![[Pasted image 20231126174014.png]]
+
+![[Pasted image 20231126174036.png]]
+
+![[Pasted image 20231126174058.png]]
+
+![[Pasted image 20231126174152.png]]
+
+RTO = tempo timeout
+RTT = tempo trascorso da quando si invia un segmento a quando se ne riceve il riscontro
+
+![[Pasted image 20231126174511.png]]
+
+$\alpha = \frac{1}{8}$ 
+
+![[Pasted image 20231126174530.png]]
+
+sliding window:![[Pasted image 20231126174629.png]]
+
+![[Pasted image 20231126175005.png]]
+
+![[Pasted image 20231126175043.png]]
+
+![[Pasted image 20231126181019.png]]
+
+![[Pasted image 20231126181050.png]]
+
+![[Pasted image 20231126181101.png]]
+
+![[Pasted image 20231126181159.png]]
+
+sliding window = min(rwnd,cwnd) = min(receiver window, congestion window)
+
+rate invio $\leq \frac{min(rwnd,cwnd)}{RTT}$ 
+
+Congestion Control Algorithm:
+- slow start
+- AIMD (Incremento addittivo e decremendo moltiplicativo)
+- fast recovery
+- Reazione ai time-out
+
+![[Pasted image 20231126181733.png]]
+
+![[Pasted image 20231126181756.png]]
+
+![[Pasted image 20231126181855.png]]
+
+![[Pasted image 20231126181913.png]]
+
+### TCP RENO:
+
+Algoritmo di congestione
+
+![[Pasted image 20231126182115.png]]
+
+![[Pasted image 20231126182728.png]]
+
+![[Pasted image 20231126182742.png]]
+
+### TCP Tahoe:
+
+![[Pasted image 20231126182826.png]]
+
+### TCP CUBIC:
+
+![[Pasted image 20231126183417.png]]
+
+![[Pasted image 20231126183427.png]]
+
+
+
+### ECN (Explicit Congestion Notification):
+
+![[Pasted image 20231126183508.png]]
+
+
+
+![[Pasted image 20231126183536.png]]
+
+![[Pasted image 20231126183545.png]]
+
+![[Pasted image 20231126183704.png]]
+
+![[Pasted image 20231126183714.png]]
+
+
+
+## UDP:
+
+User Datagram Protocol
+
+![[Pasted image 20231126183758.png]]
+
+![[Pasted image 20231126183822.png]]
+
+![[Pasted image 20231126183900.png]]
+
+![[Pasted image 20231126183908.png]]
+
+![[Pasted image 20231126183920.png]]
+
+![[Pasted image 20231126183952.png]]
+
+![[Pasted image 20231126184004.png]]
+
+![[Pasted image 20231126184052.png]]
+
+![[Pasted image 20231126184101.png]]
+
+![[Pasted image 20231126184113.png]]
+
+![[Pasted image 20231126184125.png]]
+
+![[Pasted image 20231126184135.png]]
+
+![[Pasted image 20231126184147.png]]
+
+
+# LIVELLO RETE:
+
+Responsabile della consegna dei datagrammi tra gli host
+
+![[Pasted image 20231126184334.png]]
+
+![[Pasted image 20231126184347.png]]
+
+![[Pasted image 20231126184430.png]]
+
+![[Pasted image 20231126184442.png]]
+
+![[Pasted image 20231126184458.png]]
+
+![[Pasted image 20231126184555.png]]
+
+![[Pasted image 20231126185025.png]]
+
+![[Pasted image 20231126185034.png]]
+
+![[Pasted image 20231126185043.png]]
+
+![[Pasted image 20231126185052.png]]
+
+![[Pasted image 20231126185112.png]]
+
+![[Pasted image 20231126185132.png]]
+
+![[Pasted image 20231126185148.png]]
+
+![[Pasted image 20231126185158.png]]
+
+![[Pasted image 20231126185242.png]]
+
+![[Pasted image 20231126185256.png]]
+
+![[Pasted image 20231126185317.png]]
+
+![[Pasted image 20231126185331.png]]
+
+![[Pasted image 20231126185343.png]]
+
+![[Pasted image 20231126185358.png]]
+
+![[Pasted image 20231126185418.png]]
+
+![[Pasted image 20231126185437.png]]
+
+![[Pasted image 20231126185449.png]]
+
+![[Pasted image 20231126185504.png]]
+
+![[Pasted image 20231126185536.png]]
+
+![[Pasted image 20231126185548.png]]
+
+![[Pasted image 20231126185626.png]]
+
+![[Pasted image 20231126185652.png]]
+
+### DHCP:
+
+![[Pasted image 20231126190257.png]]
+
+![[Pasted image 20231126190243.png]]
+
+![[Pasted image 20231126190400.png]]
+
+![[Pasted image 20231126190441.png]]
+
+![[Pasted image 20231126190455.png]]
+
+![[Pasted image 20231126190554.png]]
+
+![[Pasted image 20231126190605.png]]
+
+![[Pasted image 20231126190620.png]]
+
+![[Pasted image 20231126190630.png]]
+
+USA UDP A LIVELLO TRASPORTO
+
+![[Pasted image 20231126190900.png]]
+
+![[Pasted image 20231126190913.png]]
+
+![[Pasted image 20231126190930.png]]
+
+![[Pasted image 20231126190938.png]]
+
+![[Pasted image 20231126190953.png]]
+
+forwarding diretto -> destinatario appartiene alla stessa rete -> controllo nella tabella IP-MAC addr. soddisfatto
+
+forwarding indiretto -> destinatario non appartiene alla stessa rete -> controllo nella tabella IP-MAC addr. non soddisfatto -> default router
+
+![[Pasted image 20231126191041.png]]
+
+![[Pasted image 20231126191257.png]]
+
+![[Pasted image 20231126191312.png]]
+

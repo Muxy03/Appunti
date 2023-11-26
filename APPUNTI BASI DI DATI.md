@@ -188,3 +188,135 @@ $_{\{A_i\}} \gamma _{\{f_i\}}(R)$  -> raggruppamento:
 
 # SQL
 
+Calcolo su Multiinsiemi -> sono permessi elementi cloni
+
+![[Pasted image 20231113182500.png]]
+![[Pasted image 20231113182519.png]]
+
+![[Pasted image 20231113182603.png]]
+![[Pasted image 20231113182846.png]]
+
+## SELECT:
+![[Pasted image 20231113182016.png]]
+![[Pasted image 20231113182124.png]]
+![[Pasted image 20231113182136.png]] ![[Pasted image 20231113182156.png]]
+
+La SELECT implementa gli operatori di Proiezione, Selezione e Join dell'Algebra Relazionale, ecc.
+
+![[Pasted image 20231113182901.png]]
+
+![[Pasted image 20231114215507.png]]
+
+![[Pasted image 20231114215532.png]]
+
+![[Pasted image 20231114215632.png]]
+
+![[Pasted image 20231114215644.png]]
+
+![[Pasted image 20231114215657.png]]
+
+![[Pasted image 20231114215714.png]]
+
+![[Pasted image 20231114215754.png]]
+
+![[Pasted image 20231114215823.png]]
+
+![[Pasted image 20231114215841.png]]
+
+SE DEVI GESTIRE NULL -> **IS / IS NOT NULL**
+
+![[Pasted image 20231114220027.png]]
+
+![[Pasted image 20231114220038.png]]
+
+![[Pasted image 20231114220047.png]]
+
+![[Pasted image 20231114224817.png]]
+
+![[Pasted image 20231114224829.png]]
+
+![[Pasted image 20231114225334.png]]
+
+![[Pasted image 20231116175820.png]]
+
+![[Pasted image 20231116175644.png]]
+
+![[Pasted image 20231116175658.png]]
+
+![[Pasted image 20231116175737.png]]
+
+![[Pasted image 20231116175748.png]]
+
+![[Pasted image 20231116175944.png]]
+
+![[Pasted image 20231116175958.png]]
+
+![[Pasted image 20231116180013.png]]
+
+![[Pasted image 20231116180055.png]]
+
+![[Pasted image 20231116180107.png]]
+
+![[Pasted image 20231116180206.png]]
+
+![[Pasted image 20231116180706.png]]
+
+![[Pasted image 20231116180740.png]]
+
+![[Pasted image 20231116180824.png]]
+
+![[Pasted image 20231116180839.png]]
+
+![[Pasted image 20231116180905.png]]
+
+![[Pasted image 20231116181017.png]]
+
+cross join (prodotto cartesiano) -> ![[Pasted image 20231116181104.png]]
+
+![[Pasted image 20231116181123.png]]
+
+![[Pasted image 20231116181200.png]]
+
+![[Pasted image 20231116181356.png]]
+
+![[Pasted image 20231116181406.png]]
+
+![[Pasted image 20231116181503.png]]
+
+equi-join = NATURAL JOIN
+
+![[Pasted image 20231116181617.png]]
+
+![[Pasted image 20231116181642.png]]
+
+![[Pasted image 20231116181813.png]]
+
+![[Pasted image 20231117090149.png]]
+
+![[Pasted image 20231117090205.png]]
+
+![[Pasted image 20231117090228.png]]
+
+![[Pasted image 20231117091219.png]]
+
+![[Pasted image 20231117091240.png]]
+
+![[Pasted image 20231117160629.png]]
+
+![[Pasted image 20231117160715.png]]
+
+![[Pasted image 20231117160742.png]]
+
+![[Pasted image 20231117160852.png]]
+
+![[Pasted image 20231117160935.png]]
+
+![[Pasted image 20231117161008.png]]
+
+![[Pasted image 20231117161105.png]]
+
+![[Pasted image 20231117161117.png]]
+
+![[Pasted image 20231117161206.png]]
+
+

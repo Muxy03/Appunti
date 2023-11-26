@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "67591388631e1ca4",
+        "id": "10017819f36d15e8",
         "type": "tabs",
         "children": [
           {
-            "id": "2434c3717fc2d6d3",
+            "id": "54fea9bb7bb2fe72",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "APPUNTI RETI.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "APPUNTI RETI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "APPUNTI RETI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "APPUNTI RETI.md"
-              }
+              "state": {}
             }
           },
           {
@@ -169,21 +160,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2434c3717fc2d6d3",
+  "active": "54fea9bb7bb2fe72",
   "lastOpenFiles": [
-    "IMMAGINI/Pasted image 20231112014132.png",
-    "IMMAGINI/Pasted image 20231112014020.png",
-    "IMMAGINI/Pasted image 20231112013937.png",
-    "IMMAGINI/Pasted image 20231112013737.png",
-    "IMMAGINI/Pasted image 20231112013518.png",
-    "IMMAGINI/Pasted image 20231112013335.png",
-    "IMMAGINI/Pasted image 20231112013305.png",
-    "IMMAGINI/Pasted image 20231112013208.png",
-    "IMMAGINI/Pasted image 20231112012925.png",
-    "IMMAGINI/Pasted image 20231112012845.png",
-    "IMMAGINI/Pasted image 20231112012121.png",
-    "APPUNTI RETI.md",
+    "Pasted image 20231126190930.png",
     "APPUNTI BASI DI DATI.md",
+    "APPUNTI RETI.md",
+    "IMMAGINI/Pasted image 20231126191312.png",
+    "IMMAGINI/Pasted image 20231126191257.png",
+    "IMMAGINI/Pasted image 20231126191041.png",
+    "IMMAGINI/Pasted image 20231126185504.png",
+    "IMMAGINI/Pasted image 20231126185449.png",
+    "IMMAGINI/Pasted image 20231126185437.png",
+    "IMMAGINI/Pasted image 20231126185418.png",
+    "IMMAGINI/Pasted image 20231126185358.png",
+    "IMMAGINI/Pasted image 20231126185343.png",
+    "IMMAGINI/Pasted image 20231126185331.png",
     "APPUNTI ING. SOFTWARE.md",
     "2023-11-08.md",
     "APPUNTI LAB 3.md",

@@ -11,7 +11,6 @@ Diagramma Casi d'uso:
 - per caso d'uso ci deve essere 1 solo attore principale
 - ![[Pasted image 20231019164404.png]]
 - Esempio di Narrativa![[Pasted image 20231019164905.png]]
-- 
 
 Chiavi magnetiche:
 - ![[Pasted image 20231019164042.png]]
