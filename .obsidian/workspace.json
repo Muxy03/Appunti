@@ -11,8 +11,12 @@
             "id": "54fea9bb7bb2fe72",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "2 ANNO/APPUNTI RO.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "2 ANNO/APPUNTI RO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "2 ANNO/APPUNTI RO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "2 ANNO/APPUNTI RO.md"
+              }
             }
           },
           {
@@ -162,19 +171,26 @@
   },
   "active": "54fea9bb7bb2fe72",
   "lastOpenFiles": [
-    "Pasted image 20231126190930.png",
+    "IMMAGINI/Pasted image 20231127182606.png",
+    "IMMAGINI/Pasted image 20231127182555.png",
+    "IMMAGINI/Pasted image 20231127182546.png",
+    "IMMAGINI/Pasted image 20231127182513.png",
+    "IMMAGINI/Pasted image 20231127182456.png",
+    "IMMAGINI/Pasted image 20231127182309.png",
+    "IMMAGINI/Pasted image 20231127182037.png",
+    "IMMAGINI/Pasted image 20231127182024.png",
+    "IMMAGINI/Pasted image 20231127181946.png",
+    "IMMAGINI/Pasted image 20231127181608.png",
+    "IMMAGINI/Pasted image 20231127181544.png",
+    "PDF/RO/RO_capitolo2.pdf",
+    "PDF/RO/RO_capitolo3.pdf",
+    "PDF/RO",
+    "PDF/Nuova cartella",
+    "PDF/RO_capitolo3.pdf",
+    "PDF/RO_capitolo2.pdf",
     "APPUNTI BASI DI DATI.md",
+    "2 ANNO/APPUNTI RO.md",
     "APPUNTI RETI.md",
-    "IMMAGINI/Pasted image 20231126191312.png",
-    "IMMAGINI/Pasted image 20231126191257.png",
-    "IMMAGINI/Pasted image 20231126191041.png",
-    "IMMAGINI/Pasted image 20231126185504.png",
-    "IMMAGINI/Pasted image 20231126185449.png",
-    "IMMAGINI/Pasted image 20231126185437.png",
-    "IMMAGINI/Pasted image 20231126185418.png",
-    "IMMAGINI/Pasted image 20231126185358.png",
-    "IMMAGINI/Pasted image 20231126185343.png",
-    "IMMAGINI/Pasted image 20231126185331.png",
     "APPUNTI ING. SOFTWARE.md",
     "2023-11-08.md",
     "APPUNTI LAB 3.md",
@@ -185,13 +201,7 @@
     "1 ANNO",
     "PDF/ING SOFTWARE/is_08b_stati.pdf",
     "PDF/ING SOFTWARE/is_08a_attivita.pdf",
-    "PDF/ING SOFTWARE/is_07_e2_esercitazioneclassi.pdf",
-    "PDF/ING SOFTWARE/is_06_classioggetti.pdf",
-    "PDF/ING SOFTWARE/is_04_introuml_casid_uso.pdf",
-    "PDF/ING SOFTWARE/is_05_e1_esercitazionereq_casid_uso.pdf",
-    "PDF/ING SOFTWARE",
     "2 ANNO/APPUNTI AESO.md",
-    "PDF/AESO/Appunti Esterni.pdf",
     "Excalidraw/SO-1.md",
     "2 ANNO/APPUNTI ORALE AESO.md",
     "2 ANNO/APPUNTI CN.md",
@@ -206,7 +216,6 @@
     "Excalidraw/Drawing 2023-07-02 23.04.39.excalidraw.md",
     "home/muxy/Scrivania/Appunti/CODICI/lezione7 1.md",
     "home/muxy/Scrivania/Appunti/CODICI/lezione7.md",
-    "Excalidraw/Drawing 2023-06-23 00.19.02.excalidraw.md",
-    "README.md"
+    "Excalidraw/Drawing 2023-06-23 00.19.02.excalidraw.md"
   ]
 }

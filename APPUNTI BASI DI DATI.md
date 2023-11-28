@@ -319,4 +319,49 @@ equi-join = NATURAL JOIN
 
 ![[Pasted image 20231117161206.png]]
 
+![[Pasted image 20231127180114.png]]
+
+![[Pasted image 20231127180133.png]]
+
+![[Pasted image 20231127180523.png]]
+
+![[Pasted image 20231127180532.png]]
+
+![[Pasted image 20231127180554.png]]
+
+![[Pasted image 20231127180612.png]]
+
+![[Pasted image 20231127180623.png]]
+
+![[Pasted image 20231127180705.png]]
+
+![[Pasted image 20231127181020.png]]
+
+![[Pasted image 20231127181040.png]]
+
+![[Pasted image 20231127181148.png]]
+
+![[Pasted image 20231127181504.png]]
+
+![[Pasted image 20231127181544.png]]
+
+![[Pasted image 20231127181608.png]]
+
+![[Pasted image 20231127181946.png]]
+
+![[Pasted image 20231127182024.png]]
+
+![[Pasted image 20231127182037.png]]
+
+![[Pasted image 20231127182309.png]]
+
+![[Pasted image 20231127182456.png]]
+
+![[Pasted image 20231127182513.png]]
+
+![[Pasted image 20231127182546.png]]
+
+![[Pasted image 20231127182555.png]]
+
+![[Pasted image 20231127182606.png]]
 
