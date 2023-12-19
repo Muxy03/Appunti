@@ -613,7 +613,7 @@ Responsabile della consegna dei datagrammi tra gli host
 
 ![[Pasted image 20231126185652.png]]
 
-### DHCP:
+## DHCP:
 
 ![[Pasted image 20231126190257.png]]
 
@@ -654,4 +654,254 @@ forwarding indiretto -> destinatario non appartiene alla stessa rete -> controll
 ![[Pasted image 20231126191257.png]]
 
 ![[Pasted image 20231126191312.png]]
+
+
+## NAT e ICMP:
+
+![[Pasted image 20231129112417.png]]
+
+![[Pasted image 20231129112426.png]]
+
+![[Pasted image 20231129112444.png]]
+
+![[Pasted image 20231129112625.png]]
+
+![[Pasted image 20231129112641.png]]
+
+quante comunicazioni può gestire un router NAT con un solo indirizzo pubblico ? il numero delle porte di router
+
+![[Pasted image 20231129112715.png]]
+
+![[Pasted image 20231129114041.png]]
+
+![[Pasted image 20231129114626.png]]
+
+![[Pasted image 20231129114059.png]]
+
+![[Pasted image 20231129114148.png]]
+
+![[Pasted image 20231129114203.png]]
+
+![[Pasted image 20231129114236.png]]
+
+![[Pasted image 20231129114248.png]]
+
+![[Pasted image 20231129114333.png]]
+
+![[Pasted image 20231129114344.png]]
+
+
+## ARCHITETTURA ROUTER:
+
+![[Pasted image 20231129122516.png]]
+
+![[Pasted image 20231129123036.png]]
+
+![[Pasted image 20231129123050.png]]
+
+![[Pasted image 20231129123923.png]]
+
+![[Pasted image 20231129123947.png]]
+
+![[Pasted image 20231129124010.png]]
+
+![[Pasted image 20231129124023.png]]
+
+![[Pasted image 20231201141555.png]]
+
+![[Pasted image 20231201141604.png]]
+
+![[Pasted image 20231201141619.png]]
+
+![[Pasted image 20231201141634.png]]
+
+![[Pasted image 20231201141646.png]]
+
+![[Pasted image 20231201141720.png]]
+
+### Distance Vector Algorithm:
+distribuito, iterativo, asincrono
+
+![[Pasted image 20231201141829.png]]
+
+![[Pasted image 20231201141900.png]]
+
+![[Pasted image 20231201141912.png]]
+
+![[Pasted image 20231201141925.png]]
+
+![[Pasted image 20231201141941.png]]
+
+![[Pasted image 20231201141952.png]]
+
+![[Pasted image 20231201142003.png]]
+
+### Link-State Algorithm:
+
+![[Pasted image 20231201142021.png]]
+
+![[Pasted image 20231201142051.png]]
+
+![[Pasted image 20231201142111.png]]
+
+![[Pasted image 20231201142138.png]]
+
+![[Pasted image 20231201142152.png]]
+
+![[Pasted image 20231201142213.png]]
+
+![[Pasted image 20231201142221.png]]
+
+![[Pasted image 20231201142233.png]]
+
+### RIP:
+
+usa UDP
+
+![[Pasted image 20231201142254.png]]
+
+![[Pasted image 20231201142311.png]]
+
+### OSPF:
+
+Open Shortest Path First
+
+![[Pasted image 20231201142322.png]]
+
+![[Pasted image 20231201142415.png]]
+
+### BGP:
+
+Border Gateway Protocol
+
+![[Pasted image 20231201142446.png]]
+
+![[Pasted image 20231201142455.png]]
+
+![[Pasted image 20231201142504.png]]
+
+![[Pasted image 20231201142521.png]]
+
+![[Pasted image 20231201142532.png]]
+
+![[Pasted image 20231201142543.png]]
+
+![[Pasted image 20231201142633.png]]
+
+![[Pasted image 20231201142642.png]]
+
+### IPV6:
+
+![[Pasted image 20231201142658.png]]
+
+![[Pasted image 20231201142709.png]]
+
+![[Pasted image 20231201142720.png]]
+
+![[Pasted image 20231201142738.png]]
+
+![[Pasted image 20231201142747.png]]
+
+![[Pasted image 20231201142756.png]]
+
+
+## LIVELLO COLLEGAMENTO:
+
+![[Pasted image 20231201142920.png]]
+
+![[Pasted image 20231201142930.png]]
+
+![[Pasted image 20231201142956.png]]
+
+![[Pasted image 20231201143006.png]]
+
+![[Pasted image 20231201143015.png]]
+
+![[Pasted image 20231201143059.png]]
+
+![[Pasted image 20231201143108.png]]
+
+![[Pasted image 20231201143119.png]]
+
+![[Pasted image 20231201143126.png]]
+
+![[Pasted image 20231201143142.png]]
+
+![[Pasted image 20231201143214.png]]
+
+![[Pasted image 20231201143228.png]]
+
+![[Pasted image 20231201143238.png]]
+
+### SLOTTED ALOHA:
+
+![[Pasted image 20231201143258.png]]
+
+![[Pasted image 20231201143308.png]]
+
+### ALOHA PURE (UNSLOTTED):
+
+![[Pasted image 20231201143332.png]]
+
+### CSMA:
+
+carrier sense multiple access
+
+![[Pasted image 20231201143657.png]]
+
+![[Pasted image 20231201143712.png]]
+
+### CSMA/CD:
+
+![[Pasted image 20231201143741.png]]
+
+![[Pasted image 20231201143753.png]]
+
+![[Pasted image 20231201143810.png]]
+
+
+
+![[Pasted image 20231201143826.png]]
+
+![[Pasted image 20231201143836.png]]
+
+![[Pasted image 20231201143850.png]]
+
+![[Pasted image 20231201143902.png]]
+
+![[Pasted image 20231201143911.png]]
+
+![[Pasted image 20231201143924.png]]
+
+![[Pasted image 20231201143931.png]]
+
+![[Pasted image 20231201143947.png]]
+
+ARP: IP -> MAC
+
+![[Pasted image 20231201144021.png]]
+
+![[Pasted image 20231201144029.png]]
+
+![[Pasted image 20231201144040.png]]
+
+![[Pasted image 20231201144049.png]]
+
+![[Pasted image 20231201144111.png]]
+
+![[Pasted image 20231201144119.png]]
+
+![[Pasted image 20231201144132.png]]
+
+![[Pasted image 20231201144157.png]]
+
+![[Pasted image 20231201144209.png]]
+
+![[Pasted image 20231201144228.png]]
+
+![[Pasted image 20231201144236.png]]
+
+![[Pasted image 20231201144247.png]]
+
+![[Pasted image 20231201144258.png]]
 

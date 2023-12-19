@@ -116,7 +116,7 @@ chiave esterna -> riferimento(puntatore) ad una chiave primaria di un'altra tabe
 
 ![[Pasted image 20231112012121.png]]
 
-# ALGEBRA RELAZIONALE
+# ALGEBRA RELAZIONALE:
 
 DDL -> operazioni sullo schema
 DML -> operazioni sui dati
@@ -186,7 +186,7 @@ $_{\{A_i\}} \gamma _{\{f_i\}}(R)$  -> raggruppamento:
 
 ![[Pasted image 20231112020705.png]]
 
-# SQL
+# SQL:
 
 Calcolo su Multiinsiemi -> sono permessi elementi cloni
 
@@ -364,4 +364,345 @@ equi-join = NATURAL JOIN
 ![[Pasted image 20231127182555.png]]
 
 ![[Pasted image 20231127182606.png]]
+
+![[Pasted image 20231128035045.png]]
+
+![[Pasted image 20231128035102.png]]
+
+![[Pasted image 20231128035117.png]]
+
+![[Pasted image 20231128035126.png]]
+
+![[Pasted image 20231128035156.png]]
+
+![[Pasted image 20231128035207.png]]
+
+![[Pasted image 20231128035216.png]]
+
+![[Pasted image 20231128035441.png]]
+
+![[Pasted image 20231128035457.png]]
+
+![[Pasted image 20231128035504.png]]
+
+![[Pasted image 20231128035514.png]]
+
+![[Pasted image 20231128035635.png]]
+
+![[Pasted image 20231128035647.png]]
+
+![[Pasted image 20231128035715.png]]
+
+![[Pasted image 20231128035731.png]]
+
+![[Pasted image 20231128035745.png]]
+
+![[Pasted image 20231128035816.png]]
+
+![[Pasted image 20231128035825.png]]
+
+![[Pasted image 20231128035837.png]]
+
+![[Pasted image 20231128035847.png]]
+
+![[Pasted image 20231128035909.png]]
+
+![[Pasted image 20231128035926.png]]
+
+![[Pasted image 20231128035937.png]]
+
+![[Pasted image 20231128163152.png]]
+
+![[Pasted image 20231128163208.png]]
+
+![[Pasted image 20231128163229.png]]
+
+![[Pasted image 20231128163243.png]]
+
+![[Pasted image 20231128163258.png]]
+
+![[Pasted image 20231128163412.png]]
+
+![[Pasted image 20231128163434.png]]
+
+![[Pasted image 20231128163448.png]]
+
+![[Pasted image 20231128163519.png]]
+
+![[Pasted image 20231128163606.png]]
+
+![[Pasted image 20231128163623.png]]
+
+![[Pasted image 20231128163630.png]]
+
+![[Pasted image 20231128163742.png]]
+
+![[Pasted image 20231128163800.png]]
+
+![[Pasted image 20231128163808.png]]
+
+![[Pasted image 20231128163909.png]]
+
+![[Pasted image 20231128163926.png]]
+
+![[Pasted image 20231128163957.png]]
+
+![[Pasted image 20231128164043.png]]
+
+![[Pasted image 20231128164107.png]]
+
+![[Pasted image 20231128164233.png]]
+
+![[Pasted image 20231128164243.png]]
+
+![[Pasted image 20231128164301.png]]
+
+![[Pasted image 20231128164331.png]]
+
+![[Pasted image 20231128164349.png]]
+
+![[Pasted image 20231128164401.png]]
+
+![[Pasted image 20231128164424.png]]
+
+![[Pasted image 20231128164435.png]]
+
+![[Pasted image 20231128164451.png]]
+
+![[Pasted image 20231128164501.png]]
+
+![[Pasted image 20231128164519.png]]
+
+![[Pasted image 20231128164528.png]]
+
+![[Pasted image 20231128164603.png]]
+
+![[Pasted image 20231128164637.png]]
+
+![[Pasted image 20231128164647.png]]
+
+![[Pasted image 20231128164857.png]]
+
+![[Pasted image 20231128164914.png]]
+
+![[Pasted image 20231128164925.png]]
+
+![[Pasted image 20231128164937.png]]
+
+![[Pasted image 20231128164946.png]]
+
+![[Pasted image 20231128165030.png]]
+
+![[Pasted image 20231128165042.png]]
+
+![[Pasted image 20231128165100.png]]
+
+![[Pasted image 20231128165109.png]]
+
+![[Pasted image 20231128165127.png]]
+
+![[Pasted image 20231128165137.png]]
+
+![[Pasted image 20231128165145.png]]
+
+![[Pasted image 20231128165153.png]]
+
+![[Pasted image 20231128165208.png]]
+
+![[Pasted image 20231128165217.png]]
+
+![[Pasted image 20231128165226.png]]
+
+![[Pasted image 20231128165248.png]]
+
+![[Pasted image 20231128165303.png]]
+
+![[Pasted image 20231128165319.png]]
+
+![[Pasted image 20231128165328.png]]
+
+![[Pasted image 20231128165343.png]]
+
+![[Pasted image 20231128165401.png]]
+
+![[Pasted image 20231128165413.png]]
+
+![[Pasted image 20231128165450.png]]
+
+![[Pasted image 20231128165500.png]]
+
+![[Pasted image 20231128165508.png]]
+
+
+# NORMALIZZAZIONE:
+
+![[Pasted image 20231128165630.png]]
+
+![[Pasted image 20231128165649.png]]
+
+
+
+# DBMS:
+
+![[Pasted image 20231128174732.png]]
+
+![[Pasted image 20231128174743.png]]
+
+![[Pasted image 20231128174755.png]]
+
+![[Pasted image 20231128174804.png]]
+
+![[Pasted image 20231128174831.png]]
+
+![[Pasted image 20231128174849.png]]
+
+![[Pasted image 20231128174908.png]]
+
+![[Pasted image 20231128174932.png]]
+
+![[Pasted image 20231128174946.png]]
+
+![[Pasted image 20231128175005.png]]
+
+![[Pasted image 20231128175016.png]]
+
+![[Pasted image 20231128175025.png]]
+
+![[Pasted image 20231128175037.png]]
+
+![[Pasted image 20231129090057.png]]
+
+![[Pasted image 20231129090304.png]]
+
+![[Pasted image 20231129090318.png]]
+
+![[Pasted image 20231129090333.png]]
+
+![[Pasted image 20231129090343.png]]
+
+![[Pasted image 20231129090354.png]]
+
+![[Pasted image 20231129090406.png]]
+
+![[Pasted image 20231129090417.png]]
+
+![[Pasted image 20231129090425.png]]
+
+![[Pasted image 20231129090439.png]]
+
+![[Pasted image 20231129090453.png]]
+
+![[Pasted image 20231129090502.png]]
+
+![[Pasted image 20231129150653.png]]
+
+![[Pasted image 20231129150704.png]]
+
+![[Pasted image 20231129150825.png]]
+
+![[Pasted image 20231129150924.png]]
+
+![[Pasted image 20231129150933.png]]
+
+![[Pasted image 20231129150955.png]]
+
+![[Pasted image 20231129151005.png]]
+
+![[Pasted image 20231130223455.png]]
+
+![[Pasted image 20231130223507.png]]
+
+![[Pasted image 20231130223519.png]]
+
+![[Pasted image 20231130223554.png]]
+
+![[Pasted image 20231130223608.png]]
+
+![[Pasted image 20231130223618.png]]
+
+![[Pasted image 20231130223634.png]]
+
+![[Pasted image 20231130223644.png]]
+
+![[Pasted image 20231130223653.png]]
+
+![[Pasted image 20231130223711.png]]
+
+![[Pasted image 20231130223726.png]]
+
+![[Pasted image 20231130223736.png]]
+
+![[Pasted image 20231130223748.png]]
+
+![[Pasted image 20231130223816.png]]
+
+![[Pasted image 20231130223846.png]]
+
+![[Pasted image 20231130223909.png]]
+
+![[Pasted image 20231130223920.png]]
+
+![[Pasted image 20231130223936.png]]
+
+![[Pasted image 20231130224041.png]]
+
+![[Pasted image 20231130224122.png]]
+
+![[Pasted image 20231130224131.png]]
+
+![[Pasted image 20231130224143.png]]
+
+![[Pasted image 20231130224237.png]]
+
+![[Pasted image 20231130224248.png]]
+
+![[Pasted image 20231130224302.png]]
+
+![[Pasted image 20231130224454.png]]
+
+![[Pasted image 20231130224513.png]]
+
+![[Pasted image 20231130225238.png]]
+
+![[Pasted image 20231130225259.png]]
+
+![[Pasted image 20231130225312.png]]
+
+![[Pasted image 20231130225332.png]]
+
+![[Pasted image 20231130225442.png]]
+
+![[Pasted image 20231130225458.png]]
+
+![[Pasted image 20231130225526.png]]
+
+![[Pasted image 20231130225605.png]]
+
+![[Pasted image 20231130225617.png]]
+
+![[Pasted image 20231130225635.png]]
+
+![[Pasted image 20231130225648.png]]
+
+![[Pasted image 20231130225701.png]]
+
+![[Pasted image 20231130225752.png]]
+
+![[Pasted image 20231130225802.png]]
+
+![[Pasted image 20231130225832.png]]
+
+![[Pasted image 20231130225851.png]]
+
+![[Pasted image 20231130225908.png]]
+
+![[Pasted image 20231130225947.png]]
+
+![[Pasted image 20231130230004.png]]
+
+![[Pasted image 20231130230021.png]]
+
+![[Pasted image 20231130230031.png]]
+
+![[Pasted image 20231130230049.png]]
 

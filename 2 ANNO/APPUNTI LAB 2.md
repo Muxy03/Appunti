@@ -4,9 +4,12 @@
 
 le stringhe terminano con '\\0'
 
+![[Pasted image 20231201144910.png]]
+
 stdin -> 0
 stdout -> 1
 stderr -> 2
+
 fopen mode:
 1. r -> reading -> Open text file for reading.  The stream is positioned at the beginning of the file.
 2.  r+ -> Open for reading and writing.  The stream is positioned at the beginning of the file.
@@ -25,18 +28,28 @@ fclose() -> flushes the stream pointed to by stream (writing any buffered output
 
 [man errno](https://linux.die.net/man/3/errno)
 
-codici sui puntatori -> lezione 7
- "%4s" -> 4 implica la larghezza minima della stringa -> no overflow
+aritmetica puntatori:
+- s = &s\[0], quindi \*s = s\[0]
+- s+i == &s\[i\] , quindi \*(s+i)=s\[i]
+- s++ equivalente s = s+1
 
-![[Pasted image 20230707164751.png]] -> equivalenti
+%x = hex format
+%o = octal format
+ 
+"%4s" -> right justify -> se la stringa è più corta di 4 aggiunge spazio a sinistra fino ad ottenere len == 4
 
-"%-4s" -> left justify
+"%-4s" -> left justify -> analogo ad sopra che aggiunge gli spazi a destra
+
+equivalenti:
+![[Pasted image 20230707164751.png]] 
 
 ![[Pasted image 20230707164928.png]]
 
 ![[Pasted image 20230707170103.png]]
 
 ![[Pasted image 20230707170415.png]]
+
+![[Pasted image 20231201153126.png]]
 
 [scanf](Lezione8.pdf) 
 
