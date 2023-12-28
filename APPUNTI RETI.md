@@ -1,3 +1,4 @@
+# GENERALE
 Rete = interconnessione di dispositivi
 
 sistemi terminali = host
@@ -805,7 +806,7 @@ Border Gateway Protocol
 ![[Pasted image 20231201142756.png]]
 
 
-## LIVELLO COLLEGAMENTO:
+# LIVELLO COLLEGAMENTO:
 
 ![[Pasted image 20231201142920.png]]
 
@@ -833,17 +834,17 @@ Border Gateway Protocol
 
 ![[Pasted image 20231201143238.png]]
 
-### SLOTTED ALOHA:
+## SLOTTED ALOHA:
 
 ![[Pasted image 20231201143258.png]]
 
 ![[Pasted image 20231201143308.png]]
 
-### ALOHA PURE (UNSLOTTED):
+## ALOHA PURE (UNSLOTTED):
 
 ![[Pasted image 20231201143332.png]]
 
-### CSMA:
+## CSMA:
 
 carrier sense multiple access
 
@@ -851,7 +852,7 @@ carrier sense multiple access
 
 ![[Pasted image 20231201143712.png]]
 
-### CSMA/CD:
+## CSMA/CD:
 
 ![[Pasted image 20231201143741.png]]
 
@@ -905,3 +906,57 @@ ARP: IP -> MAC
 
 ![[Pasted image 20231201144258.png]]
 
+
+## ETHERNET:
+
+![[Pasted image 20231228183928.png]]
+
+![[Pasted image 20231228183947.png]]
+
+![[Pasted image 20231228184003.png]]
+
+![[Pasted image 20231228184028.png]]
+
+![[Pasted image 20231228184048.png]]
+
+![[Pasted image 20231228184101.png]]
+
+![[Pasted image 20231228184120.png]]
+
+![[Pasted image 20231228184129.png]]
+
+![[Pasted image 20231228184148.png]]
+
+![[Pasted image 20231228184425.png]]
+
+![[Pasted image 20231228184432.png]]
+
+![[Pasted image 20231228184443.png]]
+
+![[Pasted image 20231228184454.png]]
+
+![[Pasted image 20231228184508.png]]
+
+![[Pasted image 20231228184533.png]]
+
+![[Pasted image 20231228184545.png]]
+
+## VLAN:
+
+![[Pasted image 20231228184636.png]]
+
+![[Pasted image 20231228184649.png]]
+
+![[Pasted image 20231228184658.png]]
+
+![[Pasted image 20231228184728.png]]
+
+![[Pasted image 20231228184739.png]]
+
+![[Pasted image 20231228184747.png]]
+
+![[Pasted image 20231228184811.png]]
+
+![[Pasted image 20231228184820.png]]
+
+![[Pasted image 20231228184935.png]]

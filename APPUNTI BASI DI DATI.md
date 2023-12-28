@@ -1,4 +1,4 @@
-
+# GENERALE
 DDL -> Data Definition Language
 
 3 livelli di schemi:
