@@ -53,11 +53,11 @@ Ritardo end-to-end = somma dei ritardi dei singoli collegamenti
 
 ![[Pasted image 20231112153256.png]]
 
-Modello OSI/OSI:
+Modello ISO/OSI:
 - Struttura:
 	1.  Fisico: Comprende tutte le funzioni (procedure meccaniche ed elettroniche) che permettono una connessione a livello fisico.
 	2. Collegamento: Si occupa di formare i dati da inviare attraverso il livello fisico, incapsulando i dati in un pacchetto provvisto di header (intestazione) e tail (coda), chiamato frame
-	3. Rete: Si occupa dell’istradamento (“routing”) dei pacchetti cioè di determinare la sequenza di collegamenti punto-punto necessari per trasmettere un pacchetto da un nodo generico della rete a un altro
+	3. Rete: Si occupa dell’instradamento (“routing”) dei pacchetti cioè di determinare la sequenza di collegamenti punto-punto necessari per trasmettere un pacchetto da un nodo generico della rete a un altro
 	4. Trasporto: Si occupa di instaurare, mantenere terminare una connessione
 	5. Sessione: Assembla il dialogo tra nodi in unità logiche (sessione)
 	6. Presentazione: Adatta la sintassi dei dati di ciascuna applicazione alla sintassi richiesta dalla sessione
@@ -67,7 +67,7 @@ Modello OSI/OSI:
 
 ![[Pasted image 20231112153806.png]]
 
-il flusso parte dal 7 strato e scende fino al 1 strato ->Ogni livello aggiunge all’informazione del livello superiore una propria sezione informativa (o più di una)
+il flusso parte dal 7 strato e scende fino al 1 strato -> Ogni livello aggiunge all’informazione del livello superiore una propria sezione informativa (o più di una)
 
 ![[Pasted image 20231112154000.png]]
 
@@ -133,8 +133,6 @@ HyperText Transfer Protocol
 ![[Pasted image 20231112160648.png]]
 
 ![[Pasted image 20231112160806.png]]
-
-![[Pasted image 20231112160859.png]]
 
 ![[Pasted image 20231112160917.png]]
 
@@ -258,7 +256,7 @@ File Transfer Protocol
 ![[Pasted image 20231112233946.png]]
 
 Tipi di connessioni: (usano TCP)
-- control -> scambio di comandi e risposte tra client e server (Telenet)
+- control -> scambio di comandi e risposte tra client e server (Telnet)
 - data -> connessione su cui i dati sono trasferiti con modi e tipi specificati. I dati trasferiti possono essere parte di un file, un file o un set di file.
 
 FTP è stateful
@@ -329,6 +327,8 @@ Query Iterativa:
 ![[Pasted image 20231112235809.png]]
 
 ![[Pasted image 20231112235940.png]]
+
+![[Pasted image 20240110000004.png]]
 
 ![[Pasted image 20231112235952.png]]
 
@@ -483,6 +483,8 @@ Congestion Control Algorithm:
 
 ![[Pasted image 20231126181855.png]]
 
+![[Pasted image 20240110171353.png]]
+
 ![[Pasted image 20231126181913.png]]
 
 ### TCP RENO:
@@ -494,11 +496,12 @@ Algoritmo di congestione
 ![[Pasted image 20231126182728.png]]
 
 ![[Pasted image 20231126182742.png]]
-
+![[Pasted image 20240110171320.png]]
 ### TCP Tahoe:
 
 ![[Pasted image 20231126182826.png]]
 
+![[Pasted image 20240110171433.png]]
 ### TCP CUBIC:
 
 ![[Pasted image 20231126183417.png]]
@@ -520,7 +523,6 @@ Algoritmo di congestione
 ![[Pasted image 20231126183704.png]]
 
 ![[Pasted image 20231126183714.png]]
-
 
 
 ## UDP:
@@ -704,10 +706,6 @@ quante comunicazioni può gestire un router NAT con un solo indirizzo pubblico ?
 
 ![[Pasted image 20231129123947.png]]
 
-![[Pasted image 20231129124010.png]]
-
-![[Pasted image 20231129124023.png]]
-
 ![[Pasted image 20231201141555.png]]
 
 ![[Pasted image 20231201141604.png]]
@@ -737,7 +735,7 @@ distribuito, iterativo, asincrono
 
 ![[Pasted image 20231201142003.png]]
 
-### Link-State Algorithm:
+### Link-State Algoritm:
 
 ![[Pasted image 20231201142021.png]]
 
@@ -859,8 +857,6 @@ carrier sense multiple access
 ![[Pasted image 20231201143753.png]]
 
 ![[Pasted image 20231201143810.png]]
-
-
 
 ![[Pasted image 20231201143826.png]]
 

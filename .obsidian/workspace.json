@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -143,7 +144,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -170,18 +173,18 @@
   },
   "active": "ab7821945c411461",
   "lastOpenFiles": [
-    "IMMAGINI/Pasted image 20231228184935.png",
-    "IMMAGINI/Pasted image 20231228184820.png",
-    "IMMAGINI/Pasted image 20231228184811.png",
-    "IMMAGINI/Pasted image 20231228184747.png",
-    "IMMAGINI/Pasted image 20231228184739.png",
-    "IMMAGINI/Pasted image 20231228184728.png",
-    "IMMAGINI/Pasted image 20231228184658.png",
-    "IMMAGINI/Pasted image 20231228184649.png",
-    "IMMAGINI/Pasted image 20231228184636.png",
-    "IMMAGINI/Pasted image 20231228184545.png",
-    "IMMAGINI/Pasted image 20231228184533.png",
+    "Pasted image 20240110171433.png",
+    "Pasted image 20240110171353.png",
+    "Pasted image 20240110171320.png",
+    "Pasted image 20240110000004.png",
     "APPUNTI BASI DI DATI.md",
+    "Pasted image 20231229184905.png",
+    "Pasted image 20231229184838.png",
+    "Pasted image 20231229184826.png",
+    "Pasted image 20231229184807.png",
+    "Pasted image 20231229184756.png",
+    "Pasted image 20231229184744.png",
+    "Pasted image 20231229184638.png",
     "APPUNTI RETI.md",
     "2 ANNO/APPUNTI RO.md",
     "APPUNTI ING. SOFTWARE.md",
