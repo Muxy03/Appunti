@@ -413,5 +413,8 @@ int xsem_wait(sem_t *sem, int linea, char *file) {
 
 ![[Pasted image 20230712233756.png]]
 
-[Select]([select function in Python | Pythontic.com](https://pythontic.com/modules/select/select))
+[Select](https://pythontic.com/modules/select/select)
 
+![[Pasted image 20240117172620.png]]
+
+The signals **SIGKILL** and **SIGSTOP** cannot be caught, blocked, or ignored.
