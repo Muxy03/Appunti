@@ -417,4 +417,11 @@ int xsem_wait(sem_t *sem, int linea, char *file) {
 
 ![[Pasted image 20240117172620.png]]
 
-The signals **SIGKILL** and **SIGSTOP** cannot be caught, blocked, or ignored.
+The signals **SIGKILL** and **SIGSTOP** cannot be caught, blocked, or ignored. 
+
+mmap()  creates  a  new  mapping  in  the virtual address space of the calling process.  The starting address for the new mapping is specified in addr.   The length  argument  specifies  the  length of the mapping (which must be greater than 0).
+
+ If addr is NULL, then the kernel chooses the (page-aligned) address  at  which to create the mapping; this is the most portable method of creating a new mapping.  If addr is not NULL, then the kernel takes it as a hint about where  to place  the mapping;
+
+gettid() == getpid() <=> single threaded process
+
