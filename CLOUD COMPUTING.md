@@ -2,3 +2,4 @@
 
 ![[Introduction to cloud computing.pdf]]
 
+![[IaaS.pdf]]

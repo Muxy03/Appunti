@@ -8,18 +8,29 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ab7821945c411461",
+            "id": "21cca146c2a741e9",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/IIA/1-IIA-24-introduzione-V1.0.pdf"
+              }
+            }
+          },
+          {
+            "id": "7e3b81b2be9ef5a9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2 ANNO/APPUNTI LAB 2.md",
+                "file": "CLOUD COMPUTING.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -86,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2 ANNO/APPUNTI LAB 2.md",
+                "file": "CLOUD COMPUTING.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2 ANNO/APPUNTI LAB 2.md",
+                "file": "CLOUD COMPUTING.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2 ANNO/APPUNTI LAB 2.md"
+                "file": "CLOUD COMPUTING.md"
               }
             }
           },
@@ -171,16 +181,26 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ab7821945c411461",
+  "active": "8ecbeedd8669d71e",
   "lastOpenFiles": [
-    "PDF/LAB2/Server concorrenti.pdf",
+    "PDF/CLOUD/IaaS.pdf",
+    "PDF/CLOUD/IaaS.pdf.crdownload",
+    "PDF/IIA/2-IIA-2024-agents.pdf",
+    "PDF/CLOUD",
+    "PDF/IIA/1-IIA-24-introduzione-V1.0.pdf",
+    "INTELLIGENZA ARTIFICIALE.md",
+    "PDF/IIA",
+    "PDF/IIA/3-IIA-2024-problem_solving.pdf",
+    "PDF/3-IIA-2024-problem_solving.pdf.crdownload",
+    "PDF/2-IIA-2024-agents.pdf.crdownload",
+    "PDF/CN/all_together.pdf",
+    "2 ANNO/APPUNTI STATISTICA.md",
+    "2 ANNO/APPUNTI CN.md",
     "2 ANNO/APPUNTI LAB 2.md",
+    "PDF/LAB2/Server concorrenti.pdf",
     "select.md",
     "[select.md",
-    "PDF/LAB2/Safety.pdf",
     "IMMAGINI/Pasted image 20230709182658.png",
-    "PDF/LAB2/Lezione3.pdf",
-    "PDF/LAB2/segnali_fino_sigwait.pdf",
     "Pasted image 20240117172620.png",
     "APPUNTI RETI.md",
     "Pasted image 20240110171433.png",
@@ -194,13 +214,6 @@
     "Pasted image 20231229184807.png",
     "2 ANNO/APPUNTI RO.md",
     "APPUNTI ING. SOFTWARE.md",
-    "PDF/ING SOFTWARE/is_05_e1_esercitazionereq_casid_uso.pdf",
-    "PDF/LAB2/Lezione8.pdf",
-    "PDF/LAB2/Library functions vs System Calls.pdf",
-    "PDF/LAB2/CondVar.pdf",
-    "PDF/RO/RO_capitolo2.pdf",
-    "PDF/RO/RO_capitolo3.pdf",
-    "PDF/RO",
     "2023-11-08.md",
     "APPUNTI LAB 3.md",
     "1 ANNO/APPUNTI ALGEBRA LINEARE.md",
@@ -208,7 +221,6 @@
     "2 ANNO/APPUNTI AESO.md",
     "Excalidraw/SO-1.md",
     "2 ANNO/APPUNTI ORALE AESO.md",
-    "2 ANNO/APPUNTI CN.md",
     "Excalidraw/SO-4.md",
     "Excalidraw/SO-2-3.md",
     "Excalidraw/SO-5.md",
@@ -216,8 +228,6 @@
     "Excalidraw/Drawing 2023-07-20 12.20.18.excalidraw.md",
     "Excalidraw/Drawing 2023-07-03 00.16.49.excalidraw.md",
     "Excalidraw/Drawing 2023-07-02 23.45.10.excalidraw.md",
-    "Excalidraw/Drawing 2023-07-03 00.00.31.excalidraw.md",
-    "Excalidraw/Drawing 2023-07-02 23.04.39.excalidraw.md",
-    "home/muxy/Scrivania/Appunti/CODICI/lezione7 1.md"
+    "Excalidraw/Drawing 2023-07-03 00.00.31.excalidraw.md"
   ]
 }
