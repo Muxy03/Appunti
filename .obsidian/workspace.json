@@ -8,29 +8,34 @@
         "type": "tabs",
         "children": [
           {
-            "id": "21cca146c2a741e9",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/IIA/1-IIA-24-introduzione-V1.0.pdf"
-              }
-            }
-          },
-          {
-            "id": "7e3b81b2be9ef5a9",
+            "id": "fb3e715fca352c50",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CLOUD COMPUTING.md",
+                "file": "2 ANNO/APPUNTI CN.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "0d13c91118643d43",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "21cca146c2a741e9",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/CN/all_together.pdf"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -80,7 +85,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -96,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CLOUD COMPUTING.md",
+                "file": "PDF/CN/all_together.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CLOUD COMPUTING.md",
+                "file": "PDF/CN/all_together.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CLOUD COMPUTING.md"
+                "file": "PDF/CN/all_together.pdf"
               }
             }
           },
@@ -176,42 +182,44 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8ecbeedd8669d71e",
+  "active": "21cca146c2a741e9",
   "lastOpenFiles": [
-    "PDF/CLOUD/IaaS.pdf",
-    "PDF/CLOUD/IaaS.pdf.crdownload",
-    "PDF/IIA/2-IIA-2024-agents.pdf",
-    "PDF/CLOUD",
-    "PDF/IIA/1-IIA-24-introduzione-V1.0.pdf",
-    "INTELLIGENZA ARTIFICIALE.md",
-    "PDF/IIA",
-    "PDF/IIA/3-IIA-2024-problem_solving.pdf",
-    "PDF/3-IIA-2024-problem_solving.pdf.crdownload",
-    "PDF/2-IIA-2024-agents.pdf.crdownload",
-    "PDF/CN/all_together.pdf",
-    "2 ANNO/APPUNTI STATISTICA.md",
     "2 ANNO/APPUNTI CN.md",
+    "PDF/CN/all_together.pdf",
+    "CLOUD COMPUTING.md",
+    "PDF/CLOUD/Containers.pdf",
+    "PDF/CLOUD/Containers.pdf.crdownload",
+    "INTELLIGENZA ARTIFICIALE.md",
+    "IMMAGINI/Pasted image 20240221111847.png",
+    "IMMAGINI/Pasted image 20240221111712.png",
+    "IMMAGINI/Pasted image 20240221110400.png",
+    "IMMAGINI/Pasted image 20240221110310.png",
+    "IMMAGINI/Pasted image 20240219095246.png",
+    "IMMAGINI/Pasted image 20240219095228.png",
+    "IMMAGINI/Pasted image 20240219095149.png",
+    "IMMAGINI/Pasted image 20240219094942.png",
+    "IMMAGINI/Pasted image 20240219093734.png",
+    "IMMAGINI/Pasted image 20240221112917.png",
+    "Excalidraw/Drawing 2024-02-21 11.45.33.excalidraw.md",
+    "PDF/IIA/es2-testi-2024.pdf",
+    "PDF/IIA/es2-testi-2024.pdf.crdownload",
+    "PDF/IIA/5-IIA-2024-oltre_ricerca_classica.pdf",
+    "PDF/IIA/5-IIA-2024-oltre_ricerca_classica.pdf.crdownload",
+    "PDF/IIA/Drawing 2024-02-09 11.31.45.excalidraw.md",
+    "PDF/IIA/4-IIA-2024-infosearch-v2.pdf",
+    "PDF/IIA/4-IIA-2024-infosearch-v2.pdf.crdownload",
+    "PDF/IIA/1-IIA-24-introduzione-V1.0.pdf",
+    "2 ANNO/APPUNTI STATISTICA.md",
     "2 ANNO/APPUNTI LAB 2.md",
-    "PDF/LAB2/Server concorrenti.pdf",
     "select.md",
     "[select.md",
-    "IMMAGINI/Pasted image 20230709182658.png",
-    "Pasted image 20240117172620.png",
     "APPUNTI RETI.md",
-    "Pasted image 20240110171433.png",
-    "Pasted image 20240110171353.png",
-    "Pasted image 20240110171320.png",
-    "Pasted image 20240110000004.png",
     "APPUNTI BASI DI DATI.md",
-    "Pasted image 20231229184905.png",
-    "Pasted image 20231229184838.png",
-    "Pasted image 20231229184826.png",
-    "Pasted image 20231229184807.png",
     "2 ANNO/APPUNTI RO.md",
     "APPUNTI ING. SOFTWARE.md",
     "2023-11-08.md",
@@ -225,9 +233,6 @@
     "Excalidraw/SO-2-3.md",
     "Excalidraw/SO-5.md",
     "Excalidraw/SO-6.md",
-    "Excalidraw/Drawing 2023-07-20 12.20.18.excalidraw.md",
-    "Excalidraw/Drawing 2023-07-03 00.16.49.excalidraw.md",
-    "Excalidraw/Drawing 2023-07-02 23.45.10.excalidraw.md",
-    "Excalidraw/Drawing 2023-07-03 00.00.31.excalidraw.md"
+    "Excalidraw/Drawing 2023-07-20 12.20.18.excalidraw.md"
   ]
 }
