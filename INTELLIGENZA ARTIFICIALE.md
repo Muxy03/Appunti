@@ -1,6 +1,7 @@
 
 ![[1-IIA-24-introduzione-V1.0.pdf]]
 
+# PRIMA PARTE
 
 ![[2-IIA-2024-agents.pdf]]
 
@@ -94,13 +95,10 @@ Algoritmi non informati:
 - ![[Pasted image 20240216165540.png]]
 
 ![[Pasted image 20240214173324.png]]
-
 Valutazione Strategia:
 - ![[Pasted image 20240214181258.png]]
 
 ![[Pasted image 20240216160711.png]]
-
-
 
 ```python
 """Ricerca-grafo in ampiezza"""
@@ -139,7 +137,6 @@ def BF(problem): #CODA -> PUSH E UNSHIFT -> FIFO
 
     return None
 ```
-
 ```python
 """Ricerca in profondita' ricorsiva """
 
@@ -161,7 +158,6 @@ def DF_ricorsiva(problem,node): #STACK -> PUSH E POP -> LIFO
 
     return None
 ```
-
 ```python
 """Ricerca-grafo UC"""
 
@@ -205,7 +201,6 @@ def UC(problem):
 
     return None
 ```
-
 ![[4-IIA-2024-infosearch-v2.pdf]]
 
 pruning -> evitare di generare i cammini meno promettenti
@@ -312,3 +307,91 @@ Spazi continui => uno stato è descritto da un vettore x di variabili continue
 
 ![[Pasted image 20240221113954.png]]
 
+
+
+# SECONDA PARTE
+
+![[Parte2_Lezione_1.pdf]]
+
+![[Pasted image 20240225172815.png]]
+
+linguaggio + espressivo => - efficiente
+
+Calcolo proposizionale:
+- modello = interpretazione di una formula che la rende vera
+- ![[Pasted image 20240225174144.png]]
+- $KB\models\alpha (formula) \iff M(KB) \subseteq M(\alpha)$ -> M(..) = insieme modelli di ...
+- Model checking:
+  ![[Pasted image 20240225174915.png]]
+- ![[Pasted image 20240225175055.png]]
+
+![[Parte2_Lezione_2.pdf]]
+
+Equivalenza logica -> $\alpha \equiv \beta \iff a\models \beta$ e $\beta \models \alpha$ -> sono equivalenti se sono vere nello stesso insieme di modelli
+
+![[Pasted image 20240225175427.png]]
+
+una formula è valida $\iff$ se è vera in tutte le interpretazioni -> una formula valida è detta anche tautologia
+
+$\alpha \models \beta \iff (\alpha \implies \beta)$ è valida
+
+una formula è soddisfacibile $\iff$ esiste una interpretazione in cui la formula è vera (esiste un modello della formula) -> SAT = determinare la soddisfacibilità di formule della logica proposizionale
+
+$\alpha$ è valida $\iff \neg\alpha$ è soddisfacibile
+$\alpha$ è soddisfacibile $\iff \neg \alpha$  non è valida
+
+![[Pasted image 20240225180145.png]]
+
+![[Pasted image 20240225180221.png]]
+
+![[Pasted image 20240225180324.png]]
+
+disgiunzione,congiunzione -> OR,AND
+
+clausola = disgiunzione di letterali (e/o letterali negati) -> $A \vee B \vee \neg C \vee D$
+
+DPLL:
+- ![[Pasted image 20240225181656.png]]
+- ![[Pasted image 20240225181755.png]]
+- ![[Pasted image 20240225192413.png]]
+- ![[Pasted image 20240225192511.png]]
+
+Metodi Locali per SAT:
+- ![[Pasted image 20240225192904.png]]
+- ![[Pasted image 20240225194638.png]]
+- ![[Pasted image 20240225194858.png]]
+- ![[Pasted image 20240225195009.png]]
+- ![[Pasted image 20240225195052.png]]
+- rapporto $\frac{m}{n}$ -> m = \# clausole, \# simboli -> + è grande + il problema è vincolato (complex)
+
+Inferenza di deduzione -> $KB \vdash A$ ovvero A è deducibile da KB
+
+![[Pasted image 20240225195448.png]]
+
+correttezza -> $KB \vdash \alpha \implies KB \models \alpha$
+
+completezza -> $KB \models \alpha \implies KB \vdash \alpha$
+
+schema regola d'inferenza -> $\frac{Premesse}{Conclusione}$ -> $EX:\frac{\{P\},\{\neg P\}}{\{\}}$
+
+![[Pasted image 20240225201346.png]]
+
+Problema di Ricerca:
+- ![[Pasted image 20240225201038.png]]
+- ![[Pasted image 20240225201101.png]]
+- ![[Pasted image 20240225201321.png]]
+- ![[Pasted image 20240225201434.png]]
+- ![[Pasted image 20240225201502.png]]
+
+
+# ESERCITAZIONI
+
+## PARTE 1
+
+![[es1_teseo-testo-2024.pdf]]
+
+![[es1_teseo-sol-2024.pdf]]
+
+![[es2-testi-2024.pdf]]
+
+![[es2_sol-2024.pdf]]

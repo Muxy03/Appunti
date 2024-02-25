@@ -1,4 +1,35 @@
 
+rappresentazione di $x \in \mathbb{R},x \neq 0$ in base B con $B \in \mathbb{N},B \gt 1$:
+>![[Pasted image 20240224174836.png]]
+>$d_1 \neq 0$ e $d_i$ non definitivamente uguale a $B-1$ garantiscono l'unicità della rappresentazione
+>$x=0$ non ammette rappresentazione normalizzata (rappr. speciale)
+>La rappresentazione floating point dei numeri reali si estende all’insieme dei numeri complessi z = a + ib rappresentati come coppie di numeri reali.
+
+	STANDARD IEEE 754-1985:
+- segno | esponente | cifre rappresentazione 
+- 32 BIT (1+8+23) -> singola precisione
+- 64 BIT (1+11+52) -> doppia precisione
+
+insieme dei numeri di macchina in rappresentazione floating point con t cifre, base B e range (−m, M ) l’insieme dei numeri reali:
+>$\mathbb{F}(B,t,m,M)=\{0\} \cup \{x \in \mathbb{R}: x = sign(x)*B^p*\sum_{i=1}^t d_i*B^{-i},0 \le d_i \le B-1,d_1 \neq 0,-m \le p \le M\}$
+>cardinalità = $2*B^{t-1}*(M+m+1)+1$
+>![[Pasted image 20240224181441.png]]
+>![[Pasted image 20240224183609.png]]
+
+rappresentare un numero reale diverso da 0 in macchina significa approssimarlo con $\tilde{x} \in \mathbb{F}$:
+- errore relativo -> $\epsilon_x = \frac{\tilde{x}-x}{x} = \frac{\eta_x}{x},x \neq 0$ -> valutazione qualitativa
+- errore assoluto -> $\eta_x = \tilde{x}-x$ -> valutazione quantitativa
+- tecniche di approssimazione per $\omega \le |x| \le \Omega:$
+	-  round to the nearest (arrotondamento): il numero x viene approssimato con il numero rappresentabile $\tilde{x}$ più vicino;
+	- round toward zero (troncamento): il numero x viene approssimato con il più grande numero rappresentabile $\tilde{x}$ il cui valore assoluto risulti minore od uguale al valore assoluto di x;
+	- round toward plus infinity: il numero x viene approssimato al più piccolo numero rappresentabile maggiore del dato;
+	- round toward minus infinity: il numero x viene approssimato al più piccolo numero rappresentabile minore del dato;
+- $|\epsilon_x|=|\frac{trn(x)-x}{x}| \le u = B^{1-t}$ -> $trn(x)$ = il risultato dell’approssimazione di x con troncamento ($fl(x)$ = l’approssimazione in macchina del dato x nel sistema floating point considerato)
+- u = precisione di macchina -> è indipendente dalla grandezza del numero e caratteristica dell’aritmetica floating point (insieme dei numeri rappresentabili e tecnica di approssimazione) implementata sulla macchina su cui stiamo operando
+- $fl(x) = x(1+\epsilon_x),|\epsilon_x|\le u$
+- ![[Pasted image 20240224191451.png]]
+
+
 $||A||_\infty =$ norma matriciale infinito -> $max \sum_{j=1}^n |a_{ij}|$  (righe)
 
 $||A||_1 =$ norma matriciale 1 -> $max \sum_{i=1}^n |a_{ij}|$  (colonne)
@@ -54,6 +85,10 @@ A simmetrica implica:
 - $K_1(A) = K_\infty(A)$ -> $||A||_1 = ||A||_\infty$ 
 - $K_2(A) = \frac{\max |\lambda_i|}{\min |\lambda_i|}$ 
 - nei cerchi di Gerschgorin gli autovalori stanno sul diametro
+
+A quadrata è invertibile <-> $det(A) \neq 0$ <-> 0 non è autovalore di A
+
+A\*v = a\*v <-> a è autovalore di A (v autovettore di a)
 
 ![[Pasted image 20230621170249.png]]
 
