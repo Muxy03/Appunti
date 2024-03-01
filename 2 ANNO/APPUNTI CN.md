@@ -5,7 +5,7 @@ rappresentazione di $x \in \mathbb{R},x \neq 0$ in base B con $B \in \mathbb{N},
 >$x=0$ non ammette rappresentazione normalizzata (rappr. speciale)
 >La rappresentazione floating point dei numeri reali si estende all’insieme dei numeri complessi z = a + ib rappresentati come coppie di numeri reali.
 
-	STANDARD IEEE 754-1985:
+STANDARD IEEE 754-1985:
 - segno | esponente | cifre rappresentazione 
 - 32 BIT (1+8+23) -> singola precisione
 - 64 BIT (1+11+52) -> doppia precisione
@@ -28,7 +28,22 @@ rappresentare un numero reale diverso da 0 in macchina significa approssimarlo c
 - u = precisione di macchina -> è indipendente dalla grandezza del numero e caratteristica dell’aritmetica floating point (insieme dei numeri rappresentabili e tecnica di approssimazione) implementata sulla macchina su cui stiamo operando
 - $fl(x) = x(1+\epsilon_x),|\epsilon_x|\le u$
 - ![[Pasted image 20240224191451.png]]
+(calcolo funzione razionale):
+- errore inerente -> $\epsilon_{in} = \frac{f(\tilde{x})-f(x)}{f(x)}$ -> per $f(x) \neq 0$ -> misura la sensibilità della funzione e del problema matematico -> indipendente dall'algoritmo -> $|\epsilon_{in}|$ qualitativamente molto elevato => problema mal condizionato
+- errore algoritmico -> $\epsilon_{alg} = \frac{g(\tilde{x})-f(\tilde{x})}{f(\tilde{x})}$ -> g(x) è l'approssimazione in macchina di f(x) -> dipende dall'algoritmo -> $|\epsilon_{alg}|$ qualitativamente molto elevato => problema numericamente instabile
+- errore totale -> $\epsilon_{tot} = \frac{g(\tilde{x})-f(x)}{f(x)} = \epsilon_{in}+\epsilon_{alg}$ -> rappresenta la differenza relativa tra l'output atteso e ottenuto
+- $\epsilon_{in} \doteq \frac{f'(x)}{f(x)}*x*\epsilon_x = c_x*\epsilon_x$ -> $c_x$ è il coefficiente d'amplificazione del cond. del problema
+- $|c_x| \le 1$ => problema neb condizionato
+- ![[Pasted image 20240226162529.png]]
 
+analisi in avanti -> +pessimistica ->[[all_together.pdf#page=14&selection=490,0,533,2|all_together, pagina 14]]
+analisi all'indietro -> +realistica -> $g(\tilde{x}) \doteq f(\hat{x}) \implies \epsilon_{alg} = \frac{f(\hat{x})-f(\tilde{x})}{f(\hat{x})}$
+
+studiare condizionamento:
+- $f(x,y)=x^2+y^2$![[Pasted image 20240226175347.png]]
+
+studiare stabilità:
+- ![[Pasted image 20240226180213.png]]
 
 $||A||_\infty =$ norma matriciale infinito -> $max \sum_{j=1}^n |a_{ij}|$  (righe)
 

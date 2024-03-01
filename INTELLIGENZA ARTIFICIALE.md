@@ -383,6 +383,71 @@ Problema di Ricerca:
 - ![[Pasted image 20240225201434.png]]
 - ![[Pasted image 20240225201502.png]]
 
+![[Parte2_Lezione_3.pdf]]
+
+![[Pasted image 20240227161749.png]]
+
+LOGICA 1 ORDINE:
+- concettualizzazione: si tratta di decidere quali sono le cose di cui si vuole parlare -> trovare dominio, funzioni e relazioni interessanti
+- oggetti
+- funzioni -> relazioni con un solo valore per ogni input
+- proprietà -> relazioni unarie
+- insieme degli oggetti = dominio del discorso (finito/infinito)
+- <dominio,funzioni,relazioni> = concettualizzazione
+- Simboli:
+	- costante -> rappresentano gli oggetti
+	- predicato -> ... relazioni
+	- funzione -> ... funzioni
+	- Variabile -> un simbolo che rappresenta elementi arbitrari del dominio -> ... oggetti non specificati
+	- termine -> expr logica che si riferisce a un oggetto -> Costante|Var|Fun(Termine,...)
+	- x = y -> x e y si riferiscono allo stesso oggetto
+	- formula atomica -> l'espressione più semplice e indivisibile che afferma una relazione tra oggetti del dominio di discorso. -> predicato seguito da una lista di termini
+	- ![[Pasted image 20240227162926.png]]
+	- Formula -> Form.Atomica | Form connettivo Form | Quantificatore var Form | NOT Form | (Formula)
+	- Quantificatori
+		- $\forall$ -> relazione si applica a tutti gli elementi del dominio
+		- $\exists$ -> la relazione si applica ad almeno un elemento del dominio
+	- ![[Pasted image 20240227163347.png]]
+	- variabile in uno scope di un quantificatore -> legata -> altrimenti è libera
+	- Formula chiusa -> non ci sono variabili libere
+	- Formula aperta -> c'è almeno una variabile libera
+	- Formula ground -> non ci sono variabili
+	- ![[Pasted image 20240227164013.png]]
+-  ![[Pasted image 20240227164202.png]]
+-  ![[Pasted image 20240227164240.png]]
+- Interpretazione -> stabilire una corrispondenza precisa tra elementi atomici del linguaggio ed elementi della concettualizzazione
+- ![[Pasted image 20240227164346.png]]
+- ![[Pasted image 20240227164552.png]]
+- $\forall x A(x)$ è vera  se è vera per ogni elemento del dominio di A -> con dominio finito è praticamente un grosso AND
+- $\exists x A(x)$ è vera se è vera per almeno un elemento del dominio per cui A è vera -> con dominio finito è praticamente un grosso OR
+- ![[Pasted image 20240227164957.png]]
+- ![[Pasted image 20240227165134.png]]
+
+![[Pasted image 20240227165448.png]]
+
+A\[x/g\] -> sostituiamo g per x in A
+
+Regole di inferenza:
+- $\frac{\forall x A[x]}{A[x/g]}$ -> g = termine ground e il denominatore è il risultato della sostituzione di g per x in A
+	- ![[Pasted image 20240227171159.png]]
+- ![[Pasted image 20240227171449.png]]
+- ![[Pasted image 20240227171622.png]]
+
+Teorema di Herbrand:
+- $KB \models \alpha \implies$ esiste una dimostrazione che coinvolge solo un sotto-insieme finito della KB proposizionalizzata
+- ![[Pasted image 20240227172042.png]]
+Forma a clausole:
+- costanti, fun e predicati sono come definiti
+- ![[Pasted image 20240227172357.png]]
+- ![[Pasted image 20240227172415.png]]
+- ![[Pasted image 20240227174017.png]]
+- ![[Pasted image 20240227174035.png]]
+- ![[Pasted image 20240227174155.png]]
+- ![[Pasted image 20240227174852.png]]
+- ![[Pasted image 20240227174915.png]]
+- ![[Pasted image 20240227175142.png]]
+- ![[Pasted image 20240227175618.png]]
+- 
 
 # ESERCITAZIONI
 
