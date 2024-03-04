@@ -22,7 +22,6 @@ def breadth_first_search(problem):
         explored.append(node.state) # inserisce il nodo nell'insieme dei nodi esplorati
         for action in problem.actions(node.state):
             child_node = node.child_node(problem,action)
-            print(problem.actions(node.state),child_node)
             # controlla se lo stato del nodo figlio non e' nell'insieme dei nodi esplorati
             # e non e' nella frontiera
             if (child_node.state not in explored) and (not frontier.contains_state(child_node.state)):
