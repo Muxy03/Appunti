@@ -27,6 +27,7 @@ class Problema(Problem):
 		elif state[1] == 'F':
 			actions = [(1,'E'),(3,'G')]
 
+		print(sorted(actions, key=lambda x: (x[0], x[1] if x[0] == min(action[0] for action in actions) else ord(x[1]))))
 		return sorted(actions, key=lambda x: (x[0], x[1] if x[0] == min(action[0] for action in actions) else ord(x[1])));
 
 	def result(self,state,action):
@@ -35,11 +36,6 @@ class Problema(Problem):
 	def goal_test(self,state):
 		return state[1] == self.goal_state
 
-	def __str__(self)
-
-
-
 
 if __name__ == "__main__":
 	print(breadth_first_search(Problema('S','G')))
-	print(uniform_cost_search(Problema('S','G')))
