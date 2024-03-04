@@ -33,7 +33,7 @@ rappresentare un numero reale diverso da 0 in macchina significa approssimarlo c
 - errore algoritmico -> $\epsilon_{alg} = \frac{g(\tilde{x})-f(\tilde{x})}{f(\tilde{x})}$ -> g(x) è l'approssimazione in macchina di f(x) -> dipende dall'algoritmo -> $|\epsilon_{alg}|$ qualitativamente molto elevato => problema numericamente instabile
 - errore totale -> $\epsilon_{tot} = \frac{g(\tilde{x})-f(x)}{f(x)} = \epsilon_{in}+\epsilon_{alg}$ -> rappresenta la differenza relativa tra l'output atteso e ottenuto
 - $\epsilon_{in} \doteq \frac{f'(x)}{f(x)}*x*\epsilon_x = c_x*\epsilon_x$ -> $c_x$ è il coefficiente d'amplificazione del cond. del problema
-- $|c_x| \le 1$ => problema neb condizionato
+- $|c_x| \le 1$ => problema ben condizionato
 - ![[Pasted image 20240226162529.png]]
 
 analisi in avanti -> +pessimistica ->[[all_together.pdf#page=14&selection=490,0,533,2|all_together, pagina 14]]
@@ -44,6 +44,7 @@ studiare condizionamento:
 
 studiare stabilità:
 - ![[Pasted image 20240226180213.png]]
+- ![[Pasted image 20240303164257.png]]
 
 $||A||_\infty =$ norma matriciale infinito -> $max \sum_{j=1}^n |a_{ij}|$  (righe)
 
@@ -90,10 +91,9 @@ costo di una iterazione di J o GS = nnz(A)  operazioni moltiplicative= \# elemen
 ![[Pasted image 20230621165045.png]]
 
 A pred. diagonale implica:
-- A invertibile
+- A invertibile => ammette unica LU
 - J e GS sono applicabili
 - J e GS sono convergenti
-- ammette unica LU
 
 A simmetrica implica:
 - autovalori reali

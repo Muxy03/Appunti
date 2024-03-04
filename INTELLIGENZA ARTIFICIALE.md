@@ -61,7 +61,7 @@ Tipi di Agenti:
 ![[3-IIA-2024-problem_solving.pdf]]
 
 ricerca su albero -> Ossia senza controllare se i nodi (stati) siano già stati esplorati
-ricerca su grafo -> controllando se i nodi (stati) siano già stati esplorati -> esplora uno stato al più una volta -> frontiera separa nodi esplorati da quelli esplorati
+ricerca su grafo -> controllando se i nodi (stati) siano già stati esplorati -> esplora uno stato al più una volta -> frontiera separa nodi esplorati da quelli non esplorati
 ricerca bidirezionale ->  si procede sia da start che da goal per incontrarsi ->complex spazio e tempo : $O(b^{d/2})$
 
  **distanza di Manhattan** = $|x_1-x_2|+|y_1-y_2|$
@@ -72,11 +72,13 @@ Algoritmi non informati:
 	- strategia ottimale se  gli operatori hanno tutti lo stesso costo k, cioè g(n) = k · depth(n), dove g(n) è il costo del cammino per arrivare a n
 	- complex tempo: $O(b^{d})$ 
 	- complex spazio: $O(b^{d})$  -> dim frontiera
+	- ![[Pasted image 20240302154651.png]]
 - DF -> LIFO -> inserisco ed estraggo dalla testa (STACK) -> inserimento e estrazione stesso punto
 	- complex tempo: $O(b^m)$ con b = fattore di diramazione e m = lunghezza max dei cammini nello spazio degli stati
 	- complex spazio: bm (frontiera sul cammino)
 	- versione su albero -> no completa e no ottimale
 	- versione su grafo -> si perde vantaggio sulla memoria -> completa solo in spazi di stati finiti
+	- ![[Pasted image 20240302154712.png]]
 - DL -> DF limitato
 	- strategia completa se d < l, d= profondità nodo obiettivo più superficiale 
 	- non ottimale
@@ -84,7 +86,7 @@ Algoritmi non informati:
 	- complex spazio : $O(b*l)$
 - ID -> approfondimento iterativo -> DL con l=0 che poi incrementa per ogni interazione
 	- completo
-	- ottimale per costo fisso di operazione
+	- ottimale per costo fisso di operazione (come BF)
 	- complex tempo: $O(b^d)$
 	- complex spazio: $O(bd)$
 	- best compromesso fra BF e DF
@@ -100,107 +102,8 @@ Valutazione Strategia:
 
 ![[Pasted image 20240216160711.png]]
 
-```python
-"""Ricerca-grafo in ampiezza"""
+CODICI PYTHON -> CODICI/IIA/...
 
-def BF(problem): #CODA -> PUSH E UNSHIFT -> FIFO
-
-    # explored = []
-
-    # node = Node(problem.initial_state)
-
-    # if problem.goal_test(node.state):
-
-    #     return node.solution(explored_set = explored)
-
-    # frontier = FIFOQueue()
-
-    # frontier.insert(node)
-
-    # while not frontier.isempty():
-
-    #     node = frontier.pop()
-
-    #     explored.append(node.state)
-
-    #     for action in problem.actions(node.state):
-
-    #         child_node = node.child_node(problem,action)
-
-    #         if (child_node.state not in explored) and (not frontier.contains_state(child_node.state)):
-
-    #             if problem.goal_test(child_node.state):
-
-    #                 return child_node.solution(explored_set = explored)
-
-    #             frontier.insert(child_node)
-
-    return None
-```
-```python
-"""Ricerca in profondita' ricorsiva """
-
-def DF_ricorsiva(problem,node): #STACK -> PUSH E POP -> LIFO
-
-    # if problem.goal_test(node.state):
-
-    #     return node.solution()
-
-    # for action in problem.actions(node.state):
-
-    #     child_node = node.child_node(problem, action)
-
-    #     result = DF_ricorsiva(problem, child_node)
-
-    #     if result is not None:
-
-    #         return result
-
-    return None
-```
-```python
-"""Ricerca-grafo UC"""
-
-def UC(problem):
-
-    # explored = []
-
-    # node = Node(problem.initial_state)
-
-    # frontier = PriorityQueue(f = lambda x:x.path_cost)
-
-    # frontier.insert(node)
-
-    # while not frontier.isempty():
-
-    #     node = frontier.pop()
-
-    #     if problem.goal_test(node.state):
-
-    #         return node.solution(explored_set = explored)
-
-    #     else:
-
-    #         explored.append(node.state)
-
-    #     for action in problem.actions(node.state):
-
-    #         child_node = node.child_node(problem, action)
-
-    #         if (child_node.state not in explored) and (not frontier.contains_state(child_node.state)):
-
-    #             frontier.insert(child_node)
-
-    #         elif frontier.contains_state(child_node.state) and (frontier.get_node(frontier.index_state(child_node.state)).path_cost > child_node.path_cost):
-
-    #             frontier.remove(frontier.index_state(child_node.state))
-
-    #             frontier.insert(child_node)
-
-  
-
-    return None
-```
 ![[4-IIA-2024-infosearch-v2.pdf]]
 
 pruning -> evitare di generare i cammini meno promettenti
@@ -215,7 +118,7 @@ Greedy Best first -> caso speciale dove f = h
 
 Algoritmo A = algoritmo best first con $f(n) = g(n) + h(n),$ $h(n) \ge 0$ e $h(goal) = 0$
 - g(n) = costo cammino percorso per giungere a n
-- h(n) stima cost oper raggiungere da n un nodo goal
+- h(n) stima costo per raggiungere da n un nodo goal
 - h(n) = 0 => UC
 - g(n) = 0 => Greedy Best First
 - è completo con la condizione $g(n) \ge d(n)*ε,(ε \gt 0)$ ove d(n) indica la profondità
@@ -242,7 +145,7 @@ Algoritmo A*:
 - UC con f= -d(n), d(n) = profondità nodo => DF
 - ![[Pasted image 20240219093705.png]]
 - ![[Pasted image 20240219093734.png]]
-- $\forall n. h_1(n) \le h_2(n)$ => h2 domina h1 perché h2 è + informata
+- $\forall n. h_1(n) \le h_2(n)$ => $h_2$ domina $h_1$ perché $h_2$ è + informata => $h_2$ efficiente almeno quanto $h_1$
 - ![[Pasted image 20240219094150.png]]
 - ![[Pasted image 20240219094322.png]]
 - ![[Pasted image 20240219094509.png]]
