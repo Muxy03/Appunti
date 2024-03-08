@@ -82,6 +82,8 @@ class LIFOQueue(Queue):
         """ Inserisce l'elemento E nella coda. """
         # ogni nuovo elemento e' inserito alla fine della lista
         self.elements.append(E)
+        self.elements = sorted(self.elements,key=lambda n:n.state,reverse=True)
+        print(f"QUEUE AGGIORNATA: {self.elements}")
 
     def pop(self):
         """ Estrae e restituisce il primo elemento della coda."""
