@@ -223,7 +223,7 @@ linguaggio + espressivo => - efficiente
 Calcolo proposizionale:
 - modello = interpretazione di una formula che la rende vera
 - ![[Pasted image 20240225174144.png]]
-- $KB\models\alpha (formula) \iff M(KB) \subseteq M(\alpha)$ -> M(..) = insieme modelli di ...
+- (conseguenza logica)$KB\models\alpha (formula) \iff M(KB) \subseteq M(\alpha)$ -> M(..) = insieme modelli di ...
 - Model checking:
   ![[Pasted image 20240225174915.png]]
 - ![[Pasted image 20240225175055.png]]
@@ -236,7 +236,9 @@ Equivalenza logica -> $\alpha \equiv \beta \iff a\models \beta$ e $\beta \models
 
 una formula è valida $\iff$ se è vera in tutte le interpretazioni -> una formula valida è detta anche tautologia
 
-$\alpha \models \beta \iff (\alpha \implies \beta)$ è valida
+Teorema di deduzione : $\alpha \models \beta \iff (\alpha \implies \beta)$ è valida
+
+Teorema di refutazione: $KB \models \alpha \iff (KB \land \neg \alpha)$ è insoddisfacibile 
 
 una formula è soddisfacibile $\iff$ esiste una interpretazione in cui la formula è vera (esiste un modello della formula) -> SAT = determinare la soddisfacibilità di formule della logica proposizionale
 
@@ -321,8 +323,8 @@ LOGICA 1 ORDINE:
 - Interpretazione -> stabilire una corrispondenza precisa tra elementi atomici del linguaggio ed elementi della concettualizzazione
 - ![[Pasted image 20240227164346.png]]
 - ![[Pasted image 20240227164552.png]]
-- $\forall x A(x)$ è vera  se è vera per ogni elemento del dominio di A -> con dominio finito è praticamente un grosso AND
-- $\exists x A(x)$ è vera se è vera per almeno un elemento del dominio per cui A è vera -> con dominio finito è praticamente un grosso OR
+- $\forall x .A(x)$ è vera  se è vera per ogni elemento del dominio di A -> con dominio finito è praticamente un grosso AND
+- $\exists x .A(x)$ è vera se è vera per almeno un elemento del dominio per cui A è vera -> con dominio finito è praticamente un grosso OR
 - ![[Pasted image 20240227164957.png]]
 - ![[Pasted image 20240227165134.png]]
 
@@ -363,3 +365,8 @@ Forma a clausole:
 ![[es2-testi-2024.pdf]]
 
 ![[es2_sol-2024.pdf]]
+
+## PARTE 2
+![[Parte2_Esercitazione1.pdf]]
+
+![[Parte2_Esercitazione2.pdf]]
