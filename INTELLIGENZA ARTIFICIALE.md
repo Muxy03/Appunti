@@ -1,4 +1,6 @@
 
+$\newcommand {\R}{\mathbb{R}}$
+
 ![[1-IIA-24-introduzione-V1.0.pdf]]
 
 # PRIMA PARTE
@@ -242,7 +244,7 @@ Teorema di refutazione: $KB \models \alpha \iff (KB \land \neg \alpha)$ è insod
 
 una formula è soddisfacibile $\iff$ esiste una interpretazione in cui la formula è vera (esiste un modello della formula) -> SAT = determinare la soddisfacibilità di formule della logica proposizionale
 
-$\alpha$ è valida $\iff \neg\alpha$ è soddisfacibile
+$\alpha$ è valida $\iff \neg\alpha$ è insoddisfacibile
 $\alpha$ è soddisfacibile $\iff \neg \alpha$  non è valida
 
 ![[Pasted image 20240225180145.png]]
@@ -353,6 +355,120 @@ Forma a clausole:
 - ![[Pasted image 20240227175142.png]]
 - ![[Pasted image 20240227175618.png]]
 - 
+
+
+# TERZA PARTE
+
+![[IIA-24-ML-INTRO-v0.1.pdf]]
+
+![[Pasted image 20240324080700.png]]
+
+Supervised Learning:
+- Classification -> discreto
+- Regression -> continuo
+- \<x,d\> -> labeled training example \<input,output\> -> d= target value / desiderate value of unknown f(x) (categorical o numerical label)
+- h hypotesis = approx di f(x) per unseen data x'
+
+Unsupervised Learning:
+- TR = training  set = set di unlabeled data \<x\>
+- Clustering = Partition of data into clusters (subsets of “similar” data)
+
+![[Pasted image 20240324081749.png]]
+
+Linguaggi per esprimere modelli (le ipotesi h):
+- logica (prop)
+- equazioni numeriche
+- probabilità
+
+tipi di rappresentazoini di ipotesi:
+- Linear models:
+	- ![[Pasted image 20240324082329.png]]
+- Symbolic Rules:
+	- ![[Pasted image 20240324082352.png]]
+- Probabilistic model:
+	- estimate p(x,y)
+
+
+![[Pasted image 20240324082446.png]]
+
+Local search approaches
+
+LEARNING = search of good function in a function space from known data -> Good (generalization error) =  it measures how accurately the model predicts over novel samples of data ( Error/Loss measured over new data) (low error, high accuracy and vice versa)
+
+Generalization:
+- Learning phase (training, fitting) = build the model from know data (training data) (e bias)
+- Predictive phase (test) = aplly to new examples
+- evaluation of the predictive hypothesis, i.e. of the generalization capability
+
+
+performance in ML = predictive accuracy -> estimated by the error computed on the (Hold out) Test Set
+
+Basic Background:
+- $a \cdot b = a_1b_1+a_2b_2+\dots+a_nb_n = \sum^n_{i=1}a_ib_i$
+- $a \cdot b = |a| |b| cos \Theta$
+- Norma Euclidea = $\sqrt{\sum_i x_i^2}$ = $||x||$
+- ![[Pasted image 20240324084509.png]]
+- Cauchy-Schwarz inequality = $|<x,y>| \le ||x||*||y||,\forall x,y \in V$
+- grad f = $\sum_{i=1}^n e_i * der.parziale(x_i)$ -> $e_i$ = vettori canonici
+- +gradiente = direzione in cui la fun cresce
+- -gradiente = la direzione in cui la fun decresce
+- stationary point = the gradient is null
+
+
+![[IIA-24-ML-concept-learning-v0.1.pdf]]
+
+Classification = f(x) return the (assumed) correct class for x (discrete-valued function)
+Regression = approximate a real-valued target function (in $\R$ o $\R^K$ )
+
+![[Pasted image 20240324090039.png]]
+
+|H| = dim insieme ipotesi = $2^{2^n}$  = $2^{\#instances}$ = dove n (per binary input/output) è la dim dell'input
+
+ipotesi h = congiunzione  di constraints on attributes -> spefici value, ?, no value allowed (ipotesi nulla) $\emptyset$ 
+
+$<\emptyset,\dots,\emptyset>$ -> most specific
+$<?,\dots,?>$ -> most generic
+
+![[Pasted image 20240324104920.png]]
+
+![[Pasted image 20240324104949.png]]
+
+![[Pasted image 20240324105246.png]]
+
+ilepath/filename.pdf#page=number
+
+Find-S algorithm :
+> ![[IIA-24-ML-concept-learning-v0.1.pdf#page=18]]
+
+Version Space:
+- ![[Pasted image 20240324124731.png]]
+
+![[Pasted image 20240324124827.png]]
+
+![[Pasted image 20240324125356.png]]
+
+![[Pasted image 20240324130236.png]]
+
+![[Pasted image 20240324160852.png]]
+
+![[Pasted image 20240324160945.png]]
+
+![[Pasted image 20240324160959.png]]
+
+![[Pasted image 20240324161055.png]]
+
+![[Pasted image 20240324161147.png]]
+
+![[Pasted image 20240324161218.png]]
+
+
+
+![[IIA-24-ML-linear-v0.1.pdf]]
+
+
+
+![[IIA-24-ML-DT-v0.1.pdf]]
+
 
 # ESERCITAZIONI
 

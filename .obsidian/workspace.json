@@ -4,35 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "c016208d6761ce23",
+        "id": "d73cd99593e4b538",
         "type": "tabs",
         "children": [
           {
-            "id": "fb3e715fca352c50",
+            "id": "fc56e0dea6336310",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2 ANNO/APPUNTI CN.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "0d13c91118643d43",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "21cca146c2a741e9",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/CN/all_together.pdf"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -102,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PDF/CN/all_together.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PDF/CN/all_together.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PDF/CN/all_together.pdf"
+                "file": "TEST SLIDES SU OBSIDIAN.md"
               }
             }
           },
@@ -167,7 +144,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -187,39 +164,42 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "21cca146c2a741e9",
+  "active": "8ecbeedd8669d71e",
   "lastOpenFiles": [
-    "2 ANNO/APPUNTI CN.md",
-    "PDF/CN/all_together.pdf",
-    "CLOUD COMPUTING.md",
-    "PDF/CLOUD/Containers.pdf",
-    "PDF/CLOUD/Containers.pdf.crdownload",
+    "Excalidraw/SO-4.md",
+    "IMMAGINI/Pasted image 20240324161218.png",
+    "IMMAGINI/Pasted image 20240324161147.png",
+    "IMMAGINI/Pasted image 20240324161055.png",
+    "IMMAGINI/Pasted image 20240324160959.png",
+    "IMMAGINI/Pasted image 20240324160945.png",
+    "IMMAGINI/Pasted image 20240324160852.png",
+    "IMMAGINI/Pasted image 20240324130236.png",
+    "IMMAGINI/Pasted image 20240324125356.png",
+    "IMMAGINI/Pasted image 20240324124827.png",
+    "IMMAGINI/Pasted image 20240324124731.png",
+    "Excalidraw/SO-5.md",
+    "TEST SLIDES SU OBSIDIAN.md",
     "INTELLIGENZA ARTIFICIALE.md",
-    "IMMAGINI/Pasted image 20240221111847.png",
-    "IMMAGINI/Pasted image 20240221111712.png",
-    "IMMAGINI/Pasted image 20240221110400.png",
-    "IMMAGINI/Pasted image 20240221110310.png",
-    "IMMAGINI/Pasted image 20240219095246.png",
-    "IMMAGINI/Pasted image 20240219095228.png",
-    "IMMAGINI/Pasted image 20240219095149.png",
-    "IMMAGINI/Pasted image 20240219094942.png",
-    "IMMAGINI/Pasted image 20240219093734.png",
-    "IMMAGINI/Pasted image 20240221112917.png",
-    "Excalidraw/Drawing 2024-02-21 11.45.33.excalidraw.md",
-    "PDF/IIA/es2-testi-2024.pdf",
-    "PDF/IIA/es2-testi-2024.pdf.crdownload",
-    "PDF/IIA/5-IIA-2024-oltre_ricerca_classica.pdf",
-    "PDF/IIA/5-IIA-2024-oltre_ricerca_classica.pdf.crdownload",
-    "PDF/IIA/Drawing 2024-02-09 11.31.45.excalidraw.md",
-    "PDF/IIA/4-IIA-2024-infosearch-v2.pdf",
-    "PDF/IIA/4-IIA-2024-infosearch-v2.pdf.crdownload",
+    "PDF/IIA/IIA-24-ML-concept-learning-v0.1.pdf",
+    "2 ANNO/APPUNTI CN.md",
+    "APPUNTI BASI DI DATI.md",
+    "PDF/IIA/IIA-24-ML-INTRO-v0.1.pdf",
+    "PDF/STATISTICA/Appunti Pratelli AA 21-22.pdf",
     "PDF/IIA/1-IIA-24-introduzione-V1.0.pdf",
+    "PDF/IIA/IIA-24-ML-DT-v0.1.pdf",
+    "PDF/IIA/IIA-24-ML-DT-v0.1.pdf.crdownload",
+    "PDF/IIA/IIA-24-ML-linear-v0.1.pdf",
+    "PDF/IIA/IIA-24-ML-linear-v0.1.pdf.crdownload",
+    "PDF/IIA/IIA-24-ML-concept-learning-v0.1.pdf.crdownload",
+    "CLOUD COMPUTING.md",
+    "PDF/CN/all_together.pdf",
+    "Excalidraw/Drawing 2024-02-21 11.45.33.excalidraw.md",
+    "PDF/IIA/Drawing 2024-02-09 11.31.45.excalidraw.md",
     "2 ANNO/APPUNTI STATISTICA.md",
     "2 ANNO/APPUNTI LAB 2.md",
     "select.md",
     "[select.md",
     "APPUNTI RETI.md",
-    "APPUNTI BASI DI DATI.md",
     "2 ANNO/APPUNTI RO.md",
     "APPUNTI ING. SOFTWARE.md",
     "2023-11-08.md",
@@ -229,10 +209,7 @@
     "2 ANNO/APPUNTI AESO.md",
     "Excalidraw/SO-1.md",
     "2 ANNO/APPUNTI ORALE AESO.md",
-    "Excalidraw/SO-4.md",
     "Excalidraw/SO-2-3.md",
-    "Excalidraw/SO-5.md",
-    "Excalidraw/SO-6.md",
-    "Excalidraw/Drawing 2023-07-20 12.20.18.excalidraw.md"
+    "Excalidraw/SO-6.md"
   ]
 }
