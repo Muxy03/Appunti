@@ -435,7 +435,6 @@ $<?,\dots,?>$ -> most generic
 
 ![[Pasted image 20240324105246.png]]
 
-ilepath/filename.pdf#page=number
 
 Find-S algorithm :
 > ![[IIA-24-ML-concept-learning-v0.1.pdf#page=18]]
@@ -469,6 +468,9 @@ Version Space:
 
 ![[IIA-24-ML-DT-v0.1.pdf]]
 
+![[IIA-24-ML-VALID-SLT-v0.1.pdf]]
+
+![[IIA-24-ML-SVM-v0.1.pdf]]
 
 # ESERCITAZIONI
 

@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "d73cd99593e4b538",
+        "id": "935e28ad4ab0d571",
         "type": "tabs",
         "children": [
           {
-            "id": "fc56e0dea6336310",
+            "id": "8acdd96aa6ee49da",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "INTELLIGENZA ARTIFICIALE.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "INTELLIGENZA ARTIFICIALE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "INTELLIGENZA ARTIFICIALE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TEST SLIDES SU OBSIDIAN.md"
+                "file": "INTELLIGENZA ARTIFICIALE.md"
               }
             }
           },
@@ -142,14 +149,21 @@
                 "searchQuery": ""
               }
             }
+          },
+          {
+            "id": "be9612ad9f838820",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -164,35 +178,37 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8ecbeedd8669d71e",
+  "active": "8acdd96aa6ee49da",
   "lastOpenFiles": [
+    "PDF/IIA/IIA-24-ML-SVM-v0.1.pdf",
+    "INTELLIGENZA ARTIFICIALE.md",
+    "APPUNTI BASI DI DATI.md",
+    "PDF/BASI DI DATI/4b.ModelloRel_AlgebraRelazionale_Parte_I.pdf",
+    "PDF/BASI DI DATI/1.Sistemi_modificato_Parte_I.pdf",
+    "Pasted image 20240329160117.png",
+    "PDF/BASI DI DATI/4a.ModelloRel_progLogica_Parte_II.pdf",
+    "Pasted image 20240329155839.png",
+    "Pasted image 20240329155812.png",
+    "Pasted image 20240329155633.png",
+    "Pasted image 20240329155618.png",
+    "Pasted image 20240329155600.png",
+    "Pasted image 20240329155445.png",
+    "Pasted image 20240329155435.png",
+    "Pasted image 20240329155425.png",
+    "Pasted image 20240329155412.png",
+    "PDF/BASI DI DATI/4a.ModelloRel_progLogica_Parte_I.pdf",
+    "PDF/BASI DI DATI/2e3_ModelliProgettazione_Parte_IV.pdf",
+    "PDF/BASI DI DATI/2e3_ModelliProgettazione_Parte_III.pdf",
+    "PDF/BASI DI DATI/2e3_ModelliProgettazione_Parte_II.pdf",
+    "PDF/BASI DI DATI/2e3_ModelliProgettazione_Parte_I.pdf",
+    "PDF/BASI DI DATI/1.Sistemi_modificato_Parte_II.pdf",
+    "CLOUD COMPUTING.md",
+    "PDF/BASI DI DATI/9.RealizzazioneDBMS_Parte_IV_Transazioni.pdf",
+    "TEST.md",
     "Excalidraw/SO-4.md",
-    "IMMAGINI/Pasted image 20240324161218.png",
-    "IMMAGINI/Pasted image 20240324161147.png",
-    "IMMAGINI/Pasted image 20240324161055.png",
-    "IMMAGINI/Pasted image 20240324160959.png",
-    "IMMAGINI/Pasted image 20240324160945.png",
-    "IMMAGINI/Pasted image 20240324160852.png",
-    "IMMAGINI/Pasted image 20240324130236.png",
-    "IMMAGINI/Pasted image 20240324125356.png",
-    "IMMAGINI/Pasted image 20240324124827.png",
-    "IMMAGINI/Pasted image 20240324124731.png",
     "Excalidraw/SO-5.md",
     "TEST SLIDES SU OBSIDIAN.md",
-    "INTELLIGENZA ARTIFICIALE.md",
-    "PDF/IIA/IIA-24-ML-concept-learning-v0.1.pdf",
     "2 ANNO/APPUNTI CN.md",
-    "APPUNTI BASI DI DATI.md",
-    "PDF/IIA/IIA-24-ML-INTRO-v0.1.pdf",
-    "PDF/STATISTICA/Appunti Pratelli AA 21-22.pdf",
-    "PDF/IIA/1-IIA-24-introduzione-V1.0.pdf",
-    "PDF/IIA/IIA-24-ML-DT-v0.1.pdf",
-    "PDF/IIA/IIA-24-ML-DT-v0.1.pdf.crdownload",
-    "PDF/IIA/IIA-24-ML-linear-v0.1.pdf",
-    "PDF/IIA/IIA-24-ML-linear-v0.1.pdf.crdownload",
-    "PDF/IIA/IIA-24-ML-concept-learning-v0.1.pdf.crdownload",
-    "CLOUD COMPUTING.md",
-    "PDF/CN/all_together.pdf",
     "Excalidraw/Drawing 2024-02-21 11.45.33.excalidraw.md",
     "PDF/IIA/Drawing 2024-02-09 11.31.45.excalidraw.md",
     "2 ANNO/APPUNTI STATISTICA.md",
@@ -209,7 +225,6 @@
     "2 ANNO/APPUNTI AESO.md",
     "Excalidraw/SO-1.md",
     "2 ANNO/APPUNTI ORALE AESO.md",
-    "Excalidraw/SO-2-3.md",
-    "Excalidraw/SO-6.md"
+    "Excalidraw/SO-2-3.md"
   ]
 }
