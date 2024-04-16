@@ -465,13 +465,111 @@ Version Space:
 ![[IIA-24-ML-linear-v0.1.pdf]]
 
 
+![[Pasted image 20240410111939.png]]
+
+![[Pasted image 20240410112021.png]]
+
+![[Pasted image 20240410112227.png]]
+
+![[Pasted image 20240410112938.png]]
+
+![[Pasted image 20240410113038.png]]
+
+![[Pasted image 20240410113156.png]]
+
+![[Pasted image 20240410113508.png]]
+
+![[Pasted image 20240410113557.png]]
+
+![[Pasted image 20240410113615.png]]
+
+![[Pasted image 20240410114429.png]]
+
+![[Pasted image 20240410114632.png]]
+
+![[Pasted image 20240410115700.png]]
+
+![[Pasted image 20240410120101.png]]
+
+![[Pasted image 20240410120129.png]]
+
+![[Pasted image 20240410120216.png]]
+
+![[Pasted image 20240410120252.png]]
+
+![[Pasted image 20240410121153.png]]
+
+![[Pasted image 20240410121203.png]]
+
+![[Pasted image 20240410121215.png]]
+
+![[Pasted image 20240410121253.png]]
+
+
+![[Pasted image 20240410121337.png]]
+
+![[Pasted image 20240410121400.png]]
+
+![[Pasted image 20240410123124.png]]
+
+![[Pasted image 20240410123706.png]]
+
+![[Pasted image 20240410123723.png]]
+
+![[Pasted image 20240411111521.png]]
+
+![[Pasted image 20240412111355.png]]
+
+![[Pasted image 20240412111448.png]]
+
+![[Pasted image 20240412111545.png]]
+
+![[Pasted image 20240412111640.png]]
+
+![[Pasted image 20240412111720.png]]
+
 
 ![[IIA-24-ML-DT-v0.1.pdf]]
+
+![[Pasted image 20240412135516.png]]
+
+![[Pasted image 20240412135539.png]]
+
+![[Pasted image 20240412135556.png]]
+
+![[Pasted image 20240412135722.png]]
+
+![[Pasted image 20240412135747.png]]
+
+![[Pasted image 20240412135809.png]]
+
+![[Pasted image 20240412135818.png]]
+
+![[Pasted image 20240412135830.png]]
+
+![[Pasted image 20240412135842.png]]
+
+![[Pasted image 20240412135853.png]]
+
+![[Pasted image 20240412135903.png]]
+
+![[Pasted image 20240412135919.png]]
+
+![[Pasted image 20240412135930.png]]
+
+![[Pasted image 20240412135942.png]]
+
+![[Pasted image 20240412135952.png]]
+
+![[Pasted image 20240412140006.png]]
+
+
 
 ![[IIA-24-ML-VALID-SLT-v0.1.pdf]]
 
 ![[IIA-24-ML-SVM-v0.1.pdf]]
 
+![[IIA-24-ML-MIX-kNN-UNSUP-and-others-v.0.1.pdf]]
 # ESERCITAZIONI
 
 ## PARTE 1

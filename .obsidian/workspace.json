@@ -20,6 +20,22 @@
             }
           }
         ]
+      },
+      {
+        "id": "125235f0a1d79107",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "02388f7b2f7e0c16",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/IIA/IIA-24-ML-VALID-SLT-v0.1.pdf"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -163,7 +179,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,30 +197,30 @@
   },
   "active": "8acdd96aa6ee49da",
   "lastOpenFiles": [
-    "PDF/IIA/IIA-24-ML-SVM-v0.1.pdf",
+    "PDF/IIA/IIA-24-ML-VALID-SLT-v0.1.pdf",
+    "PDF/IIA/IIA-24-ML-MIX-kNN-UNSUP-and-others-v.0.1.pdf",
+    "PDF/IIA/IIA-24-ML-MIX-kNN-UNSUP-and-others-v.0.1.pdf.crdownload",
     "INTELLIGENZA ARTIFICIALE.md",
+    "Pasted image 20240412140006.png",
+    "Pasted image 20240412135952.png",
+    "Pasted image 20240412135942.png",
+    "Pasted image 20240412135930.png",
+    "Pasted image 20240412135919.png",
+    "Pasted image 20240412135903.png",
+    "Pasted image 20240412135853.png",
+    "Pasted image 20240412135842.png",
+    "Pasted image 20240412135830.png",
+    "Pasted image 20240412135818.png",
+    "PDF/IIA/IIA-24-ML-DT-v0.1.pdf",
+    "PDF/IIA/IIA-24-ML-linear-v0.1.pdf",
+    "PDF/IIA/IIA-24-ML-SVM-v0.1.pdf",
     "APPUNTI BASI DI DATI.md",
     "PDF/BASI DI DATI/4b.ModelloRel_AlgebraRelazionale_Parte_I.pdf",
     "PDF/BASI DI DATI/1.Sistemi_modificato_Parte_I.pdf",
-    "Pasted image 20240329160117.png",
     "PDF/BASI DI DATI/4a.ModelloRel_progLogica_Parte_II.pdf",
-    "Pasted image 20240329155839.png",
-    "Pasted image 20240329155812.png",
-    "Pasted image 20240329155633.png",
-    "Pasted image 20240329155618.png",
-    "Pasted image 20240329155600.png",
-    "Pasted image 20240329155445.png",
-    "Pasted image 20240329155435.png",
-    "Pasted image 20240329155425.png",
-    "Pasted image 20240329155412.png",
     "PDF/BASI DI DATI/4a.ModelloRel_progLogica_Parte_I.pdf",
     "PDF/BASI DI DATI/2e3_ModelliProgettazione_Parte_IV.pdf",
-    "PDF/BASI DI DATI/2e3_ModelliProgettazione_Parte_III.pdf",
-    "PDF/BASI DI DATI/2e3_ModelliProgettazione_Parte_II.pdf",
-    "PDF/BASI DI DATI/2e3_ModelliProgettazione_Parte_I.pdf",
-    "PDF/BASI DI DATI/1.Sistemi_modificato_Parte_II.pdf",
     "CLOUD COMPUTING.md",
-    "PDF/BASI DI DATI/9.RealizzazioneDBMS_Parte_IV_Transazioni.pdf",
     "TEST.md",
     "Excalidraw/SO-4.md",
     "Excalidraw/SO-5.md",
