@@ -1,4 +1,3 @@
-
 $\newcommand {\R}{\mathbb{R}}$
 
 ![[1-IIA-24-introduzione-V1.0.pdf]]
@@ -563,11 +562,71 @@ Version Space:
 
 ![[Pasted image 20240412140006.png]]
 
-
-
 ![[IIA-24-ML-VALID-SLT-v0.1.pdf]]
 
+![[Pasted image 20240417152258.png]]
+
+![[Pasted image 20240417152449.png]]
+
+![[Pasted image 20240417152511.png]]
+
+![[Pasted image 20240417152539.png]]
+
+![[Pasted image 20240417152824.png]]
+
+![[Pasted image 20240417153029.png]]
+
+![[Pasted image 20240417153050.png]]
+
+![[Pasted image 20240417153246.png]]
+
+![[Pasted image 20240417153527.png]]
+
+![[Pasted image 20240417153625.png]]
+
+![[Pasted image 20240417153719.png]]
+
+![[Pasted image 20240417153740.png]]
+
+![[Pasted image 20240417153946.png]]
+
+![[Pasted image 20240417154022.png]]
+
+![[Pasted image 20240417154158.png]]
+
+![[Pasted image 20240417154222.png]]
+
+![[Pasted image 20240417154244.png]]
+
+![[Pasted image 20240417154312.png]]
+
+![[Pasted image 20240417154425.png]]
+
+![[Pasted image 20240417154614.png]]
+
+![[Pasted image 20240417154644.png]]
+
 ![[IIA-24-ML-SVM-v0.1.pdf]]
+
+![[Pasted image 20240417155740.png]]
+
+![[Pasted image 20240417155818.png]]
+
+![[Pasted image 20240417155847.png]]
+
+![[Pasted image 20240417160039.png]]
+
+![[Pasted image 20240417160115.png]]
+
+![[Pasted image 20240417160142.png]]
+
+![[Pasted image 20240417160158.png]]
+
+![[Pasted image 20240417160302.png]]
+
+![[Pasted image 20240417160326.png]]
+
+pag 18
 
 ![[IIA-24-ML-MIX-kNN-UNSUP-and-others-v.0.1.pdf]]
 # ESERCITAZIONI
