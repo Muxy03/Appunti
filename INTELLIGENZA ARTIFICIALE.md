@@ -626,9 +626,33 @@ Version Space:
 
 ![[Pasted image 20240417160326.png]]
 
-pag 18
+![[Pasted image 20240421180631.png]]
+
+![[Pasted image 20240421180721.png]]
+
+![[Pasted image 20240421180904.png]]
+
+![[Pasted image 20240421181150.png]]
+
+![[Pasted image 20240421181206.png]]
+
+![[Pasted image 20240421181311.png]]
+
+![[Pasted image 20240421181345.png]]
+
+![[Pasted image 20240421181550.png]]
+
+![[Pasted image 20240421181812.png]]
+
+![[Pasted image 20240421181910.png]]
+
+![[Pasted image 20240421182106.png]]
 
 ![[IIA-24-ML-MIX-kNN-UNSUP-and-others-v.0.1.pdf]]
+
+![[Pasted image 20240421193729.png]]
+
+
 # ESERCITAZIONI
 
 ## PARTE 1
