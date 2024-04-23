@@ -26,12 +26,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "02388f7b2f7e0c16",
+            "id": "5a9507722d85f6b9",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "PDF/IIA/IIA-24-ML-VALID-SLT-v0.1.pdf"
+                "file": "PDF/IIA/IIA-24-ML-MIX-kNN-UNSUP-and-others-v.0.1.pdf"
               }
             }
           }
@@ -197,20 +197,21 @@
   },
   "active": "8acdd96aa6ee49da",
   "lastOpenFiles": [
-    "PDF/IIA/IIA-24-ML-VALID-SLT-v0.1.pdf",
+    "Pasted image 20240422114216.png",
+    "Pasted image 20240422114204.png",
+    "Pasted image 20240422114150.png",
+    "Pasted image 20240422111512.png",
+    "Pasted image 20240422111318.png",
+    "Pasted image 20240422111137.png",
+    "Pasted image 20240422111126.png",
+    "Pasted image 20240422111056.png",
     "PDF/IIA/IIA-24-ML-MIX-kNN-UNSUP-and-others-v.0.1.pdf",
-    "PDF/IIA/IIA-24-ML-MIX-kNN-UNSUP-and-others-v.0.1.pdf.crdownload",
     "INTELLIGENZA ARTIFICIALE.md",
-    "Pasted image 20240412140006.png",
-    "Pasted image 20240412135952.png",
-    "Pasted image 20240412135942.png",
-    "Pasted image 20240412135930.png",
-    "Pasted image 20240412135919.png",
-    "Pasted image 20240412135903.png",
-    "Pasted image 20240412135853.png",
-    "Pasted image 20240412135842.png",
-    "Pasted image 20240412135830.png",
-    "Pasted image 20240412135818.png",
+    "Pasted image 20240422110210.png",
+    "Pasted image 20240422110156.png",
+    "Pasted image 20240422110145.png",
+    "PDF/IIA/IIA-24-ML-VALID-SLT-v0.1.pdf",
+    "PDF/IIA/IIA-24-ML-MIX-kNN-UNSUP-and-others-v.0.1.pdf.crdownload",
     "PDF/IIA/IIA-24-ML-DT-v0.1.pdf",
     "PDF/IIA/IIA-24-ML-linear-v0.1.pdf",
     "PDF/IIA/IIA-24-ML-SVM-v0.1.pdf",
@@ -219,7 +220,6 @@
     "PDF/BASI DI DATI/1.Sistemi_modificato_Parte_I.pdf",
     "PDF/BASI DI DATI/4a.ModelloRel_progLogica_Parte_II.pdf",
     "PDF/BASI DI DATI/4a.ModelloRel_progLogica_Parte_I.pdf",
-    "PDF/BASI DI DATI/2e3_ModelliProgettazione_Parte_IV.pdf",
     "CLOUD COMPUTING.md",
     "TEST.md",
     "Excalidraw/SO-4.md",

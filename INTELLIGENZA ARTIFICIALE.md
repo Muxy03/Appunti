@@ -652,6 +652,36 @@ Version Space:
 
 ![[Pasted image 20240421193729.png]]
 
+![[Pasted image 20240422105938.png]]
+
+![[Pasted image 20240422105956.png]]
+
+![[Pasted image 20240422110105.png]]
+
+![[Pasted image 20240422110134.png]]
+
+![[Pasted image 20240422110145.png]]
+
+![[Pasted image 20240422110156.png]]
+
+![[Pasted image 20240422110210.png]]
+
+![[Pasted image 20240422111056.png]]
+
+![[Pasted image 20240422111126.png]]
+
+![[Pasted image 20240422111137.png]]
+
+![[Pasted image 20240422111318.png]]
+
+![[Pasted image 20240422111512.png]]
+
+![[Pasted image 20240422114150.png]]
+
+![[Pasted image 20240422114204.png]]
+
+![[Pasted image 20240422114216.png]]
+
 
 # ESERCITAZIONI
 
