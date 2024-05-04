@@ -4,35 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "935e28ad4ab0d571",
+        "id": "98380744b3b224e6",
         "type": "tabs",
         "children": [
           {
-            "id": "8acdd96aa6ee49da",
+            "id": "32662c9d597379df",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "INTELLIGENZA ARTIFICIALE.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "125235f0a1d79107",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5a9507722d85f6b9",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/IIA/IIA-24-ML-MIX-kNN-UNSUP-and-others-v.0.1.pdf"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -102,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "INTELLIGENZA ARTIFICIALE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "INTELLIGENZA ARTIFICIALE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "INTELLIGENZA ARTIFICIALE.md"
+                "file": "SLIDE IIA PARTE 3.md"
               }
             }
           },
@@ -195,31 +172,32 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8acdd96aa6ee49da",
+  "active": "8ecbeedd8669d71e",
   "lastOpenFiles": [
+    "PDF/CLOUD/Learning From Data.pdf",
+    "PDF/CLOUD/Learning From Data.pdf.crdownload",
+    "INTELLIGENZA ARTIFICIALE.md",
+    "SLIDE IIA PARTE 3.md",
+    "Pasted image 20240427181035.png",
+    "Pasted image 20240427181010.png",
+    "Pasted image 20240427180143.png",
+    "Pasted image 20240427175159.png",
+    "Pasted image 20240427175044.png",
+    "Pasted image 20240426120300.png",
+    "Pasted image 20240426115904.png",
+    "Pasted image 20240426115213.png",
+    "PDF/CLOUD/Cloud Edge Continuum 101.pdf",
+    "PDF/CLOUD/Cloud-based Quantum Computing 101 .pdf",
+    "PDF/CLOUD/Lab 6 - REST API amp OpenAPI-20240327/Lab6-OpenAPI.pdf",
+    "PDF/CLOUD/Containers.pdf",
+    "PDF/CLOUD/Datacenters.pdf",
+    "PDF/CLOUD/LAB. 5 - Business models-20240313/LAB Business models.pdf",
+    "PDF/CLOUD/Lab 7 - Kubernetes-20240327/Lab7-Kubernetes.pdf",
+    "PDF/CLOUD/Extra Red.pdf",
+    "PDF/CLOUD/Extra Red.pdf.crdownload",
     "Pasted image 20240422114216.png",
     "Pasted image 20240422114204.png",
-    "Pasted image 20240422114150.png",
-    "Pasted image 20240422111512.png",
-    "Pasted image 20240422111318.png",
-    "Pasted image 20240422111137.png",
-    "Pasted image 20240422111126.png",
-    "Pasted image 20240422111056.png",
-    "PDF/IIA/IIA-24-ML-MIX-kNN-UNSUP-and-others-v.0.1.pdf",
-    "INTELLIGENZA ARTIFICIALE.md",
-    "Pasted image 20240422110210.png",
-    "Pasted image 20240422110156.png",
-    "Pasted image 20240422110145.png",
-    "PDF/IIA/IIA-24-ML-VALID-SLT-v0.1.pdf",
-    "PDF/IIA/IIA-24-ML-MIX-kNN-UNSUP-and-others-v.0.1.pdf.crdownload",
-    "PDF/IIA/IIA-24-ML-DT-v0.1.pdf",
-    "PDF/IIA/IIA-24-ML-linear-v0.1.pdf",
-    "PDF/IIA/IIA-24-ML-SVM-v0.1.pdf",
     "APPUNTI BASI DI DATI.md",
-    "PDF/BASI DI DATI/4b.ModelloRel_AlgebraRelazionale_Parte_I.pdf",
-    "PDF/BASI DI DATI/1.Sistemi_modificato_Parte_I.pdf",
-    "PDF/BASI DI DATI/4a.ModelloRel_progLogica_Parte_II.pdf",
-    "PDF/BASI DI DATI/4a.ModelloRel_progLogica_Parte_I.pdf",
     "CLOUD COMPUTING.md",
     "TEST.md",
     "Excalidraw/SO-4.md",
@@ -241,7 +219,6 @@
     "RETI.md",
     "2 ANNO/APPUNTI AESO.md",
     "Excalidraw/SO-1.md",
-    "2 ANNO/APPUNTI ORALE AESO.md",
-    "Excalidraw/SO-2-3.md"
+    "2 ANNO/APPUNTI ORALE AESO.md"
   ]
 }
