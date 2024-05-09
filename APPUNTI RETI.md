@@ -1,4 +1,7 @@
-# GENERALE
+# INTRODUZIONE ALLE RETI
+
+$2^{10} = 1KB, 2^{20} = 1MB, \dots$
+
 Rete = interconnessione di dispositivi
 
 sistemi terminali = host
@@ -7,22 +10,32 @@ dispositivi di interconnessione = router e switch
 
 link = mezzi trasmissivi 
 
+ISP = Internet Service Provider
+
+IXP = Internet Exchange Point = peering point (inoltro) tra 2+ ISP
+
+IETF = Internet Engineering Task Force = organismo che studia e sviluppa i protocolli in uso su Internet
+
+ICANN = Internet Corporation for Assigned Names and Numbers = Coordina il sistema dei nomi di dominio (DNS), assegna i gruppi di indirizzi di rete,
+identificativi di protocollo e ha funzioni di controllo (blando) dello sviluppo di Internet
+
+W3C = World Wide Web Consortium = comunità internazionale che sviluppa standard aperti per favorire lo sviluppo del Web (HTML,...)
+
 LAN < MAN < WAN
 
-WAN punto a punto: ![[Pasted image 20231112150810.png]]
+Tipi di WAN:
+- punto a punto: ![[Pasted image 20231112150810.png]]
+- a commutazione:![[Pasted image 20231112150925.png]]
 
-WAN a commutazione:
-![[Pasted image 20231112150925.png]]
-
-Reti a commutazione:
-- circuito:
+Tipi di reti a commutazione:
+-  di circuito:
 	- ![[Pasted image 20231112151120.png]]
 	- ![[Pasted image 20231112151133.png]]
 	- ![[Pasted image 20231112151205.png]]
-- pacchetto:
-	- ![[Pasted image 20231112151251.png]]
+- di pacchetto:
 	- ![[Pasted image 20231112151311.png]]
 	- ![[Pasted image 20231112151321.png]]
+- ![[Pasted image 20231112151251.png]]
 
 ![[Pasted image 20231112151403.png]]
 
@@ -44,17 +57,20 @@ cause di Latenza:
 - accodamento
 - trasmissione -> L/R -> R = transmission rate, L = len pachetto in bit
 - propagazione -> d/s -> d = len link fisico (Ex. len cavo), s = vel. propagazione mezzo
+- ![[Pasted image 20240504191033.png]]
 
 ![[Pasted image 20231112153103.png]]
 
 Ritardo end-to-end = somma dei ritardi dei singoli collegamenti
 
+Prodotto rate-ritardo: numero massimo di bit che il link può contenere ad un certo istante
+
 ![[Pasted image 20231112153244.png]]
 
 ![[Pasted image 20231112153256.png]]
 
-Modello ISO/OSI:
-- Struttura:
+- Modello ISO/OSI:
+	- Struttura:
 	1.  Fisico: Comprende tutte le funzioni (procedure meccaniche ed elettroniche) che permettono una connessione a livello fisico.
 	2. Collegamento: Si occupa di formare i dati da inviare attraverso il livello fisico, incapsulando i dati in un pacchetto provvisto di header (intestazione) e tail (coda), chiamato frame
 	3. Rete: Si occupa dell’instradamento (“routing”) dei pacchetti cioè di determinare la sequenza di collegamenti punto-punto necessari per trasmettere un pacchetto da un nodo generico della rete a un altro
@@ -62,8 +78,9 @@ Modello ISO/OSI:
 	5. Sessione: Assembla il dialogo tra nodi in unità logiche (sessione)
 	6. Presentazione: Adatta la sintassi dei dati di ciascuna applicazione alla sintassi richiesta dalla sessione
 	7. Applicazione: Protocolli a supporto di applicazioni distribuite
-- ![[Pasted image 20231112153416.png]]
-- ![[Pasted image 20231112153423.png]]
+	- ![[Pasted image 20231112153416.png]]
+	- ![[Pasted image 20231112153423.png]]
+	- ![[Pasted image 20240505163356.png]]
 
 ![[Pasted image 20231112153806.png]]
 
@@ -87,7 +104,9 @@ Stack TCP/IP:
 
 ![[Pasted image 20231112154243.png]]
 
-# LIVELLO APPLICATIVO
+# STRATO APPLICATIVO / LIVELLO APPLICAZIONE
+
+![[Pasted image 20240505164753.png]]
 
 ![[Pasted image 20231112154418.png]]
 
@@ -101,6 +120,8 @@ Paradigma client-server:
 Socket Address -> 48 bit -> 32 bit IP address + 16 bit numero porta
 
 ![[Pasted image 20231112154712.png]]
+
+![[Pasted image 20240505170314.png]]
 
 ![[Pasted image 20231112154730.png]]
 
@@ -133,6 +154,10 @@ HyperText Transfer Protocol
 ![[Pasted image 20231112160648.png]]
 
 ![[Pasted image 20231112160806.png]]
+
+![[Pasted image 20240505215414.png]]
+
+![[Pasted image 20240505215854.png]]
 
 ![[Pasted image 20231112160917.png]]
 
@@ -174,7 +199,7 @@ Tipi di header (coppie nome,valore):
 
 ![[Pasted image 20231112161733.png]]
 
-![[Pasted image 20231112162014.png]]
+HEAD = SIMILE A GET MA SENZA MESSAGE BODY NELLA RISPOSTA![[Pasted image 20231112162014.png]]
 
 ![[Pasted image 20231112162028.png]]
 
@@ -192,7 +217,7 @@ Tipi di header (coppie nome,valore):
 
 ## TELNET
 
-TErminal NETwork -> suo di macchine remote
+TErminaL NETwork -> uso di macchine remote
 
 ![[Pasted image 20231112164354.png]]
 
@@ -232,6 +257,8 @@ Simple Mail Transfer Protocol
 ![[Pasted image 20231112165103.png]]
 
 ![[Pasted image 20231112165112.png]]
+
+![[Pasted image 20240506171152.png]]
 
 ![[Pasted image 20231112165138.png]]
 
@@ -391,7 +418,7 @@ FLAG SYN settato $\Rightarrow$ numero di sequenza = ISN (initial sequence number
 
 FLAG ACK settato $\Rightarrow$ numero di riscontro = valore del prossimo numero di sequenza che il mittente del segmento si aspetta di ricevere dall'altro host. Una volta che la connessione è stabilita è sempre inviato
 
-HLEN = len header TCP espressa in parole di 4 byte
+HLEN = len header TCP espressa in parole di 4 byte -> 1 to 15 parole da 4 byte
 
 ![[Pasted image 20231126172039.png]]
 
@@ -410,7 +437,7 @@ Handshake a 3 vie:
 
 ![[Pasted image 20231126172603.png]]
 
-![[Pasted image 20231126172638.png]]
+![[Pasted image 20240507173706.png]]
 
 ![[Pasted image 20231126172723.png]]
 
@@ -464,6 +491,8 @@ sliding window:![[Pasted image 20231126174629.png]]
 ![[Pasted image 20231126181050.png]]
 
 ![[Pasted image 20231126181101.png]]
+
+![[Pasted image 20240507181800.png]]
 
 ![[Pasted image 20231126181159.png]]
 
@@ -580,7 +609,11 @@ Responsabile della consegna dei datagrammi tra gli host
 
 ![[Pasted image 20231126185052.png]]
 
-![[Pasted image 20231126185112.png]]
+>![[Pasted image 20231126185112.png]]
+> - TCP:
+>	If the lower level is IP (or other protocol that provides this feature) and source routing is used, the interface must allow the route information to be communicated.  This is especially important so that the source and destination addresses used in the TCP checksum be the originating source and ultimate destination. It is also important to preserve the return route to answer connection requests.
+>- UDP:
+>	![[Pasted image 20240508161202.png]]
 
 ![[Pasted image 20231126185132.png]]
 
@@ -592,6 +625,11 @@ Responsabile della consegna dei datagrammi tra gli host
 
 ![[Pasted image 20231126185256.png]]
 
+SCHEMA FRAMMENTAZIONE:
+- ![[Pasted image 20240508162547.png]]
+- \# frammenti = len iniziale / MTU -> (4020 / 1420)
+- offset = (MTU - 20) / 8 -> (1400 / 8) (20 = dim header IP)
+
 ![[Pasted image 20231126185317.png]]
 
 ![[Pasted image 20231126185331.png]]
@@ -601,6 +639,8 @@ Responsabile della consegna dei datagrammi tra gli host
 ![[Pasted image 20231126185358.png]]
 
 ![[Pasted image 20231126185418.png]]
+
+![[Pasted image 20240508163339.png]]
 
 ![[Pasted image 20231126185437.png]]
 
@@ -623,6 +663,11 @@ Responsabile della consegna dei datagrammi tra gli host
 ![[Pasted image 20231126190243.png]]
 
 ![[Pasted image 20231126190400.png]]
+
+SCHEMA:
+- n = \# numero ind. del sottoblocco
+- m = potenza di 2 >= n
+- n = 120 => m = 7 ($2^7 = 128$) => /25 (32 - 7) (25 bit per la rete) -> 126 host disponibili ($2^7-2$)
 
 ![[Pasted image 20231126190441.png]]
 
@@ -658,12 +703,21 @@ forwarding indiretto -> destinatario non appartiene alla stessa rete -> controll
 
 ![[Pasted image 20231126191312.png]]
 
+Aggregazione indirizzi:
+- ![[Pasted image 20240508174612.png]]
+
+![[Pasted image 20240508234712.png]]
+
+
+![[Pasted image 20240508234800.png]]
 
 ## NAT e ICMP:
 
 ![[Pasted image 20231129112417.png]]
 
 ![[Pasted image 20231129112426.png]]
+
+![[Pasted image 20240508175032.png]]
 
 ![[Pasted image 20231129112444.png]]
 
@@ -729,6 +783,12 @@ distribuito, iterativo, asincrono
 
 ![[Pasted image 20231201141925.png]]
 
+![[Pasted image 20240508182650.png]]
+
+![[Pasted image 20240509171352.png]]
+SCHEMA:
+- ![[Pasted image 20240509171810.png]]
+
 ![[Pasted image 20231201141941.png]]
 
 ![[Pasted image 20231201141952.png]]
@@ -751,11 +811,16 @@ distribuito, iterativo, asincrono
 
 ![[Pasted image 20231201142221.png]]
 
+TIPI DI AS:
+- AS stub -> collegato ad un solo altro AS
+- AS multihomed -> collegato a più di un altro AS (ma trasporta – come lo stub - solo traffico di cui è origine o destinazione)
+- AS transito
+
 ![[Pasted image 20231201142233.png]]
 
 ### RIP:
 
-usa UDP
+usa UDP (porta 520)
 
 ![[Pasted image 20231201142254.png]]
 
@@ -889,6 +954,8 @@ ARP: IP -> MAC
 ![[Pasted image 20231201144119.png]]
 
 ![[Pasted image 20231201144132.png]]
+
+!!!!!!!!!!!!!!!! --> SONO ARRIVATO QUI <--!!!!!!!!!!!!!!!!!!
 
 ![[Pasted image 20231201144157.png]]
 
