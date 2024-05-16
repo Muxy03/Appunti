@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "98380744b3b224e6",
+        "id": "74ff676529af58a5",
         "type": "tabs",
         "children": [
           {
-            "id": "32662c9d597379df",
+            "id": "60c6495730f36b3d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "APPUNTI RETI.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "APPUNTI RETI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "APPUNTI RETI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SLIDE IIA PARTE 3.md"
+                "file": "APPUNTI RETI.md"
               }
             }
           },
@@ -172,31 +178,33 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8ecbeedd8669d71e",
+  "active": "60c6495730f36b3d",
   "lastOpenFiles": [
-    "PDF/CLOUD/Learning From Data.pdf",
-    "PDF/CLOUD/Learning From Data.pdf.crdownload",
+    "IMMAGINI/Pasted image 20231126182728.png",
+    "APPUNTI RETI.md",
+    "Excalidraw/Drawing 2024-05-15 22.47.06.excalidraw.md",
+    "PDF/RETI/2024_01_scrittoB_SOLUZIONI.pdf",
+    "PDF/RETI/2024_01_scrittoA_SOLUZIONI.pdf",
+    "PDF/RETI/2023_12_scrittoB_SOLUZIONI.pdf",
+    "PDF/RETI/2023_12_scrittoA_SOLUZIONI.pdf",
+    "PDF/RETI/2024_01_scrittoB_SOLUZIONI.pdf.crdownload",
+    "PDF/RETI/2024_01_scrittoA_SOLUZIONI.pdf.crdownload",
+    "PDF/RETI/2023_12_scrittoB_SOLUZIONI.pdf.crdownload",
+    "PDF/RETI/2023_12_scrittoA_SOLUZIONI.pdf.crdownload",
+    "Pasted image 20240515001715.png",
+    "Pasted image 20240515001707.png",
+    "Pasted image 20240515001646.png",
+    "Pasted image 20240515001634.png",
+    "Pasted image 20240515001621.png",
+    "Pasted image 20240515001607.png",
+    "Pasted image 20240515001453.png",
+    "PDF/RETI/L16_Sicurezza.pdf",
+    "Pasted image 20240515001342.png",
+    "Pasted image 20240515001332.png",
+    "PDF/RETI/L16_P2P.pdf",
+    "Untitled.canvas",
     "INTELLIGENZA ARTIFICIALE.md",
     "SLIDE IIA PARTE 3.md",
-    "Pasted image 20240427181035.png",
-    "Pasted image 20240427181010.png",
-    "Pasted image 20240427180143.png",
-    "Pasted image 20240427175159.png",
-    "Pasted image 20240427175044.png",
-    "Pasted image 20240426120300.png",
-    "Pasted image 20240426115904.png",
-    "Pasted image 20240426115213.png",
-    "PDF/CLOUD/Cloud Edge Continuum 101.pdf",
-    "PDF/CLOUD/Cloud-based Quantum Computing 101 .pdf",
-    "PDF/CLOUD/Lab 6 - REST API amp OpenAPI-20240327/Lab6-OpenAPI.pdf",
-    "PDF/CLOUD/Containers.pdf",
-    "PDF/CLOUD/Datacenters.pdf",
-    "PDF/CLOUD/LAB. 5 - Business models-20240313/LAB Business models.pdf",
-    "PDF/CLOUD/Lab 7 - Kubernetes-20240327/Lab7-Kubernetes.pdf",
-    "PDF/CLOUD/Extra Red.pdf",
-    "PDF/CLOUD/Extra Red.pdf.crdownload",
-    "Pasted image 20240422114216.png",
-    "Pasted image 20240422114204.png",
     "APPUNTI BASI DI DATI.md",
     "CLOUD COMPUTING.md",
     "TEST.md",
@@ -210,7 +218,6 @@
     "2 ANNO/APPUNTI LAB 2.md",
     "select.md",
     "[select.md",
-    "APPUNTI RETI.md",
     "2 ANNO/APPUNTI RO.md",
     "APPUNTI ING. SOFTWARE.md",
     "2023-11-08.md",
@@ -218,7 +225,6 @@
     "1 ANNO/APPUNTI ALGEBRA LINEARE.md",
     "RETI.md",
     "2 ANNO/APPUNTI AESO.md",
-    "Excalidraw/SO-1.md",
-    "2 ANNO/APPUNTI ORALE AESO.md"
+    "Excalidraw/SO-1.md"
   ]
 }

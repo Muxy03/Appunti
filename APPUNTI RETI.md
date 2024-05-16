@@ -955,8 +955,6 @@ ARP: IP -> MAC
 
 ![[Pasted image 20231201144132.png]]
 
-!!!!!!!!!!!!!!!! --> SONO ARRIVATO QUI <--!!!!!!!!!!!!!!!!!!
-
 ![[Pasted image 20231201144157.png]]
 
 ![[Pasted image 20231201144209.png]]
@@ -969,7 +967,7 @@ ARP: IP -> MAC
 
 ![[Pasted image 20231201144258.png]]
 
-
+ESEMPIO 51-53![[L14_Collegamento.pdf#Page=51]] 
 ## ETHERNET:
 
 ![[Pasted image 20231228183928.png]]
@@ -1023,3 +1021,68 @@ ARP: IP -> MAC
 ![[Pasted image 20231228184820.png]]
 
 ![[Pasted image 20231228184935.png]]
+
+ESEMPIO 33-39 ![[L14_Collegamento_parte2.pdf#Page=33]]
+
+# CENNI DI SICUREZZA:
+
+## Peer-to-Peer:
+
+paradigma peer-to-peer (P2P) -> tutti gli host fanno da client e da server (servent)
+
+![[Pasted image 20240515000027.png]]
+
+![[Pasted image 20240515000114.png]]
+
+- ![[Pasted image 20240515000146.png]]
+	- ![[Pasted image 20240515000324.png]]
+	- ![[Pasted image 20240515000340.png]]
+	- ![[Pasted image 20240515000353.png]]
+- ![[Pasted image 20240515000543.png]]
+	- ![[Pasted image 20240515000616.png]]
+	- ![[Pasted image 20240515000626.png]]
+	- ![[Pasted image 20240515000642.png]]
+	- ![[Pasted image 20240515000652.png]]
+	- ![[Pasted image 20240515000705.png]]
+	- ![[Pasted image 20240515000714.png]]
+	- ![[Pasted image 20240515000723.png]]
+
+
+## SICUREZZA:
+
+![[Pasted image 20240515000840.png]]
+
+![[Pasted image 20240515000906.png]]
+
+![[Pasted image 20240515000927.png]]
+
+![[Pasted image 20240515000940.png]]
+
+![[Pasted image 20240515001103.png]]
+
+![[Pasted image 20240515001131.png]]
+
+![[Pasted image 20240515001256.png]]
+
+![[Pasted image 20240515001313.png]]
+
+![[Pasted image 20240515001332.png]]
+
+![[Pasted image 20240515001342.png]]
+
+IPSec = set di protocolli per fornire sicurezza e livello rete -> modalità trasporto / tunnel
+
+![[Pasted image 20240515001453.png]]
+
+![[Pasted image 20240515001607.png]]
+
+![[Pasted image 20240515001621.png]]
+
+![[Pasted image 20240515001634.png]]
+
+![[Pasted image 20240515001646.png]]
+
+![[Pasted image 20240515001707.png]]
+
+![[Pasted image 20240515001715.png]]
+
