@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "APPUNTI RETI.md",
-                "mode": "source",
+                "file": "INTELLIGENZA ARTIFICIALE.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "APPUNTI RETI.md",
+                "file": "INTELLIGENZA ARTIFICIALE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "APPUNTI RETI.md",
+                "file": "INTELLIGENZA ARTIFICIALE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "APPUNTI RETI.md"
+                "file": "INTELLIGENZA ARTIFICIALE.md"
               }
             }
           },
@@ -180,8 +181,10 @@
   },
   "active": "60c6495730f36b3d",
   "lastOpenFiles": [
-    "IMMAGINI/Pasted image 20231126182728.png",
+    "PDF/BASI DI DATI/APPUNTI BASI DI DATI gioele.pdf",
+    "APPUNTI BASI DI DATI.md",
     "APPUNTI RETI.md",
+    "IMMAGINI/Pasted image 20231126182728.png",
     "Excalidraw/Drawing 2024-05-15 22.47.06.excalidraw.md",
     "PDF/RETI/2024_01_scrittoB_SOLUZIONI.pdf",
     "PDF/RETI/2024_01_scrittoA_SOLUZIONI.pdf",
@@ -205,7 +208,6 @@
     "Untitled.canvas",
     "INTELLIGENZA ARTIFICIALE.md",
     "SLIDE IIA PARTE 3.md",
-    "APPUNTI BASI DI DATI.md",
     "CLOUD COMPUTING.md",
     "TEST.md",
     "Excalidraw/SO-4.md",

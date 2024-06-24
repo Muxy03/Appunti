@@ -10,7 +10,7 @@ Agente razionale -> fa la cosa "giusta" -> per ogni sequenza di percezioni compi
 
 Agente autonomo -> il suo comportamento dipende dalla sua capacità di ottenere esperienza (e non dall’aiuto del progettista)
 
-Problemi -> PEAS = Performance Envoriment Actuators Sensors
+Problemi -> PEAS = Performance Enviroment Actuators Sensors
 
 Proprietà ambiente-problema:
 - Osservabilità:
@@ -76,7 +76,7 @@ Algoritmi non informati:
 	- ![[Pasted image 20240302154651.png]]
 - DF -> LIFO -> inserisco ed estraggo dalla testa (STACK) -> inserimento e estrazione stesso punto
 	- complex tempo: $O(b^m)$ con b = fattore di diramazione e m = lunghezza max dei cammini nello spazio degli stati
-	- complex spazio: bm (frontiera sul cammino)
+	- complex spazio: b\*m (frontiera sul cammino)
 	- versione su albero -> no completa e no ottimale
 	- versione su grafo -> si perde vantaggio sulla memoria -> completa solo in spazi di stati finiti
 	- ![[Pasted image 20240302154712.png]]
