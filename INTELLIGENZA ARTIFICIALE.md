@@ -390,15 +390,17 @@ tipi di rappresentazoini di ipotesi:
 
 ![[Pasted image 20240324082446.png]]
 
-Local search approaches
+![[Pasted image 20240707180211.png]]
+
+Local search approaches :
+![[Pasted image 20240707180318.png]]
 
 LEARNING = search of good function in a function space from known data -> Good (generalization error) =  it measures how accurately the model predicts over novel samples of data ( Error/Loss measured over new data) (low error, high accuracy and vice versa)
 
 Generalization:
 - Learning phase (training, fitting) = build the model from know data (training data) (e bias)
-- Predictive phase (test) = aplly to new examples
+- Predictive phase (test) = apply to new examples
 - evaluation of the predictive hypothesis, i.e. of the generalization capability
-
 
 performance in ML = predictive accuracy -> estimated by the error computed on the (Hold out) Test Set
 

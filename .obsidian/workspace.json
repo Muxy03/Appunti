@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "INTELLIGENZA ARTIFICIALE.md",
+                "file": "2 ANNO/APPUNTI CN.md",
                 "mode": "preview",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "INTELLIGENZA ARTIFICIALE.md",
+                "file": "2 ANNO/APPUNTI CN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "INTELLIGENZA ARTIFICIALE.md",
+                "file": "2 ANNO/APPUNTI CN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "INTELLIGENZA ARTIFICIALE.md"
+                "file": "2 ANNO/APPUNTI CN.md"
               }
             }
           },
@@ -181,10 +181,23 @@
   },
   "active": "60c6495730f36b3d",
   "lastOpenFiles": [
+    "APPUNTI LAB 3.md",
+    "Pasted image 20240819230903.png",
+    "Pasted image 20240819230844.png",
+    "Pasted image 20240819230750.png",
+    "Pasted image 20240819230725.png",
+    "Pasted image 20240819230328.png",
+    "Pasted image 20240819230311.png",
+    "Pasted image 20240819230222.png",
+    "Pasted image 20240819230110.png",
+    "Pasted image 20240819230028.png",
+    "Pasted image 20240819225923.png",
+    "2 ANNO/APPUNTI CN.md",
+    "Excalidraw/Drawing 2024-08-06 22.55.28.excalidraw.md",
+    "INTELLIGENZA ARTIFICIALE.md",
     "PDF/BASI DI DATI/APPUNTI BASI DI DATI gioele.pdf",
     "APPUNTI BASI DI DATI.md",
     "APPUNTI RETI.md",
-    "IMMAGINI/Pasted image 20231126182728.png",
     "Excalidraw/Drawing 2024-05-15 22.47.06.excalidraw.md",
     "PDF/RETI/2024_01_scrittoB_SOLUZIONI.pdf",
     "PDF/RETI/2024_01_scrittoA_SOLUZIONI.pdf",
@@ -194,26 +207,14 @@
     "PDF/RETI/2024_01_scrittoA_SOLUZIONI.pdf.crdownload",
     "PDF/RETI/2023_12_scrittoB_SOLUZIONI.pdf.crdownload",
     "PDF/RETI/2023_12_scrittoA_SOLUZIONI.pdf.crdownload",
-    "Pasted image 20240515001715.png",
-    "Pasted image 20240515001707.png",
-    "Pasted image 20240515001646.png",
-    "Pasted image 20240515001634.png",
-    "Pasted image 20240515001621.png",
-    "Pasted image 20240515001607.png",
-    "Pasted image 20240515001453.png",
     "PDF/RETI/L16_Sicurezza.pdf",
-    "Pasted image 20240515001342.png",
-    "Pasted image 20240515001332.png",
-    "PDF/RETI/L16_P2P.pdf",
     "Untitled.canvas",
-    "INTELLIGENZA ARTIFICIALE.md",
     "SLIDE IIA PARTE 3.md",
     "CLOUD COMPUTING.md",
     "TEST.md",
     "Excalidraw/SO-4.md",
     "Excalidraw/SO-5.md",
     "TEST SLIDES SU OBSIDIAN.md",
-    "2 ANNO/APPUNTI CN.md",
     "Excalidraw/Drawing 2024-02-21 11.45.33.excalidraw.md",
     "PDF/IIA/Drawing 2024-02-09 11.31.45.excalidraw.md",
     "2 ANNO/APPUNTI STATISTICA.md",
@@ -223,10 +224,8 @@
     "2 ANNO/APPUNTI RO.md",
     "APPUNTI ING. SOFTWARE.md",
     "2023-11-08.md",
-    "APPUNTI LAB 3.md",
     "1 ANNO/APPUNTI ALGEBRA LINEARE.md",
     "RETI.md",
-    "2 ANNO/APPUNTI AESO.md",
-    "Excalidraw/SO-1.md"
+    "2 ANNO/APPUNTI AESO.md"
   ]
 }
