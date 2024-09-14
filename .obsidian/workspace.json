@@ -4,17 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "74ff676529af58a5",
+        "id": "6c30c3face1ed4b1",
         "type": "tabs",
         "children": [
           {
-            "id": "60c6495730f36b3d",
+            "id": "46e7de47a37bd879",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/CN/all_together.pdf"
+              }
+            }
+          },
+          {
+            "id": "c7628e49ab4c96c6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "2 ANNO/APPUNTI CN.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -86,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2 ANNO/APPUNTI CN.md",
+                "file": "PDF/CN/all_together.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2 ANNO/APPUNTI CN.md",
+                "file": "PDF/CN/all_together.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2 ANNO/APPUNTI CN.md"
+                "file": "PDF/CN/all_together.pdf"
               }
             }
           },
@@ -179,35 +189,37 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "60c6495730f36b3d",
+  "active": "46e7de47a37bd879",
   "lastOpenFiles": [
-    "APPUNTI LAB 3.md",
-    "Pasted image 20240819230903.png",
-    "Pasted image 20240819230844.png",
-    "Pasted image 20240819230750.png",
-    "Pasted image 20240819230725.png",
-    "Pasted image 20240819230328.png",
-    "Pasted image 20240819230311.png",
-    "Pasted image 20240819230222.png",
-    "Pasted image 20240819230110.png",
-    "Pasted image 20240819230028.png",
-    "Pasted image 20240819225923.png",
     "2 ANNO/APPUNTI CN.md",
+    "PDF/CN/all_together.pdf",
+    "PDF/CN/inf_31012022.pdf",
+    "PDF/CN/corr_inf_31012022.pdf",
+    "PDF/CN/corr_inf_16052022.pdf",
+    "PDF/CN/inf_16052022.pdf",
+    "PDF/CN/corr_inf_12072022.pdf",
+    "PDF/CN/inf_12072022.pdf",
+    "PDF/CN/inf_07062022.pdf",
+    "PDF/CN/inf_05092022.pdf",
+    "PDF/CN/corr_inf_05092022.pdf",
+    "WEBSCRAPING.md",
+    "Pasted image 20240902170934.png",
+    "Pasted image 20240902170812.png",
+    "Pasted image 20240902170654.png",
+    "Pasted image 20240902164753.png",
+    "Pasted image 20240902164141.png",
+    "Pasted image 20240902163533.png",
+    "Pasted image 20240902161528.png",
+    "PDF/WEBSCRAPING/Lezione_28_02_24/Figures/ConcatAxis_0.jpg",
+    "PDF/WEBSCRAPING/Lezione_28_02_24/Figures/ConcatAxis_1.jpg",
+    "PDF/WEBSCRAPING/Lezione_28_02_24/Figures/SyntheticMerge.jpg",
+    "PDF/Untitled.md",
+    "APPUNTI LAB 3.md",
     "Excalidraw/Drawing 2024-08-06 22.55.28.excalidraw.md",
     "INTELLIGENZA ARTIFICIALE.md",
-    "PDF/BASI DI DATI/APPUNTI BASI DI DATI gioele.pdf",
     "APPUNTI BASI DI DATI.md",
     "APPUNTI RETI.md",
     "Excalidraw/Drawing 2024-05-15 22.47.06.excalidraw.md",
-    "PDF/RETI/2024_01_scrittoB_SOLUZIONI.pdf",
-    "PDF/RETI/2024_01_scrittoA_SOLUZIONI.pdf",
-    "PDF/RETI/2023_12_scrittoB_SOLUZIONI.pdf",
-    "PDF/RETI/2023_12_scrittoA_SOLUZIONI.pdf",
-    "PDF/RETI/2024_01_scrittoB_SOLUZIONI.pdf.crdownload",
-    "PDF/RETI/2024_01_scrittoA_SOLUZIONI.pdf.crdownload",
-    "PDF/RETI/2023_12_scrittoB_SOLUZIONI.pdf.crdownload",
-    "PDF/RETI/2023_12_scrittoA_SOLUZIONI.pdf.crdownload",
-    "PDF/RETI/L16_Sicurezza.pdf",
     "Untitled.canvas",
     "SLIDE IIA PARTE 3.md",
     "CLOUD COMPUTING.md",
@@ -224,8 +236,6 @@
     "2 ANNO/APPUNTI RO.md",
     "APPUNTI ING. SOFTWARE.md",
     "2023-11-08.md",
-    "1 ANNO/APPUNTI ALGEBRA LINEARE.md",
-    "RETI.md",
-    "2 ANNO/APPUNTI AESO.md"
+    "1 ANNO/APPUNTI ALGEBRA LINEARE.md"
   ]
 }

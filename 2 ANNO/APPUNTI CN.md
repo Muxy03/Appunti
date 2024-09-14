@@ -132,7 +132,7 @@ A\*v = a\*v <-> a è autovalore di A (v autovettore di a)
 
 ```txt
 PROGRAMMA DI CALCOLO
-NUMERICO A.A. 2022-2023
+NUMERICO A.A. 2023-2024
 
 Luca Gemignani
 Dipartimento di Informatica
@@ -175,3 +175,4 @@ Lezione 10.1: Il Metodo di Bisezione (Teorema 10.1.1 con dimostrazione semplific
 Lezione 10.2: Metodi di Iterazione Funzionale (Teorema 10.2.2, Teorema 10.2.3).
 Lezione 10.3: Il Metodo delle Tangenti (Teorema 10.3.1)
 ```
+
