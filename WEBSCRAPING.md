@@ -76,3 +76,68 @@
 
 ![[Pasted image 20240902170934.png]]
 
+```html
+tr = riga tabella
+<table class="table-1">
+  <tr> 
+	NOMI COLONNE
+	<th>Corso</th>
+    <th>Laurea</th>
+    <th>Numero Studenti</th>
+  </tr>
+  <tr>
+    <td>Laboratorio Web Scraping</td>
+    <td>Informatica</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>Blockchains</td>
+    <td>Magistrale Informatica</td>
+    <td>40</td>
+  </tr>
+</table>
+```
+
+Layout x grafi:
+- circular_layout
+- fruchterman_reingold_layout
+- random_layout
+- shell_layout
+- spectral_layout
+
+>degree centrality: 
+>$$\frac{\#archi\_incidenti}{\#tot\_archi}$$
+
+![[Pasted image 20240917215324.png]]
+
+![[Pasted image 20240917215415.png]]
+
+![[Pasted image 20240917215628.png]]
+
+![[Pasted image 20240917221209.png]]
+
+Modelli di grafi:
+- Random Graph (Erdos,Renyi)
+- Watts-Strogatz
+- Kleinberg
+- Barabasi-Albert
+
+## Random Graph:
+
+n = \#nodi
+p = probabilità
+
+![[Pasted image 20240917215024.png]]
+
+![[Pasted image 20240917215705.png]]
+
+![[Pasted image 20240917223107.png]]
+
+![[Pasted image 20240917223130.png]]
+
+Clustering coefficient locale:
+- caso g orientato: 
+	- ![[Pasted image 20240917232511.png]]
+- caso g non orientato:
+	- ![[Pasted image 20240917232630.png]]
+

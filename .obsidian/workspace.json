@@ -11,21 +11,27 @@
             "id": "46e7de47a37bd879",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/CN/all_together.pdf"
-              }
-            }
-          },
-          {
-            "id": "c7628e49ab4c96c6",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "2 ANNO/APPUNTI CN.md",
+                "file": "APPUNTI LAB 3.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ece8b28c3d3f3a5d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b54392277a4edb5e",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/LAB3/Possibili domande-risposte orale Laboratorio 3.pdf"
               }
             }
           }
@@ -96,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PDF/CN/all_together.pdf",
+                "file": "APPUNTI LAB 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PDF/CN/all_together.pdf",
+                "file": "APPUNTI LAB 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PDF/CN/all_together.pdf"
+                "file": "APPUNTI LAB 3.md"
               }
             }
           },
@@ -191,30 +197,31 @@
   },
   "active": "46e7de47a37bd879",
   "lastOpenFiles": [
-    "2 ANNO/APPUNTI CN.md",
-    "PDF/CN/all_together.pdf",
-    "PDF/CN/inf_31012022.pdf",
-    "PDF/CN/corr_inf_31012022.pdf",
-    "PDF/CN/corr_inf_16052022.pdf",
-    "PDF/CN/inf_16052022.pdf",
-    "PDF/CN/corr_inf_12072022.pdf",
-    "PDF/CN/inf_12072022.pdf",
-    "PDF/CN/inf_07062022.pdf",
-    "PDF/CN/inf_05092022.pdf",
-    "PDF/CN/corr_inf_05092022.pdf",
-    "WEBSCRAPING.md",
-    "Pasted image 20240902170934.png",
-    "Pasted image 20240902170812.png",
-    "Pasted image 20240902170654.png",
-    "Pasted image 20240902164753.png",
-    "Pasted image 20240902164141.png",
-    "Pasted image 20240902163533.png",
-    "Pasted image 20240902161528.png",
-    "PDF/WEBSCRAPING/Lezione_28_02_24/Figures/ConcatAxis_0.jpg",
-    "PDF/WEBSCRAPING/Lezione_28_02_24/Figures/ConcatAxis_1.jpg",
-    "PDF/WEBSCRAPING/Lezione_28_02_24/Figures/SyntheticMerge.jpg",
-    "PDF/Untitled.md",
+    "IMMAGINI/Pasted image 20240917232630.png",
+    "IMMAGINI/Pasted image 20240917232511.png",
+    "IMMAGINI/Pasted image 20240917223130.png",
+    "IMMAGINI/Pasted image 20240917223107.png",
+    "IMMAGINI/Pasted image 20240917221209.png",
+    "IMMAGINI/Pasted image 20240917215705.png",
+    "IMMAGINI/Pasted image 20240917215628.png",
+    "IMMAGINI/Pasted image 20240917215415.png",
+    "IMMAGINI/Pasted image 20240917215324.png",
+    "IMMAGINI/Pasted image 20240917215024.png",
+    "IMMAGINI/Pasted image 20240917214809.png",
+    "PDF/LAB3/Possibili domande-risposte orale Laboratorio 3.pdf",
     "APPUNTI LAB 3.md",
+    "WEBSCRAPING.md",
+    "PDF/LAB3",
+    "PDF/WEBSCRAPING/Possibili domande-risposte orale Laboratorio 3.pdf",
+    "PDF/WEBSCRAPING/Pandas_Cheat_Sheet.pdf",
+    "PDF/WEBSCRAPING/matplotlib-cheatsheet.pdf",
+    "PDF/WEBSCRAPING/justin1209_beautiful-soup.pdf",
+    "PDF/WEBSCRAPING/lezione-21-02-24.pdf",
+    "PDF/WEBSCRAPING/lezione-14-02-24.pdf",
+    "PDF/STATISTICA/Appunti Pratelli AA 21-22.pdf",
+    "PDF/CN/all_together.pdf",
+    "2 ANNO/APPUNTI CN.md",
+    "PDF/Untitled.md",
     "Excalidraw/Drawing 2024-08-06 22.55.28.excalidraw.md",
     "INTELLIGENZA ARTIFICIALE.md",
     "APPUNTI BASI DI DATI.md",
