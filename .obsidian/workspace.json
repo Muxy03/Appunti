@@ -13,25 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "APPUNTI LAB 3.md",
+                "file": "WEBSCRAPING.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "ece8b28c3d3f3a5d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "b54392277a4edb5e",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/LAB3/Possibili domande-risposte orale Laboratorio 3.pdf"
               }
             }
           }
@@ -102,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "APPUNTI LAB 3.md",
+                "file": "WEBSCRAPING.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "APPUNTI LAB 3.md",
+                "file": "WEBSCRAPING.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "APPUNTI LAB 3.md"
+                "file": "WEBSCRAPING.md"
               }
             }
           },
@@ -197,29 +181,29 @@
   },
   "active": "46e7de47a37bd879",
   "lastOpenFiles": [
-    "IMMAGINI/Pasted image 20240917232630.png",
-    "IMMAGINI/Pasted image 20240917232511.png",
-    "IMMAGINI/Pasted image 20240917223130.png",
-    "IMMAGINI/Pasted image 20240917223107.png",
-    "IMMAGINI/Pasted image 20240917221209.png",
-    "IMMAGINI/Pasted image 20240917215705.png",
-    "IMMAGINI/Pasted image 20240917215628.png",
-    "IMMAGINI/Pasted image 20240917215415.png",
-    "IMMAGINI/Pasted image 20240917215324.png",
-    "IMMAGINI/Pasted image 20240917215024.png",
-    "IMMAGINI/Pasted image 20240917214809.png",
-    "PDF/LAB3/Possibili domande-risposte orale Laboratorio 3.pdf",
+    "IMMAGINI/Pasted image 20240921011317.png",
+    "IMMAGINI/Pasted image 20240921010119.png",
+    "IMMAGINI/Pasted image 20240921005938.png",
+    "IMMAGINI/Pasted image 20240921005735.png",
+    "IMMAGINI/Pasted image 20240921005637.png",
+    "IMMAGINI/Pasted image 20240921005448.png",
+    "PDF/WEBSCRAPING/Lezione_30_04_24.zip",
+    "PDF/WEBSCRAPING/Lezione_24_04_24.zip",
+    "PDF/WEBSCRAPING/Lezione_12_04_24.zip",
+    "PDF/WEBSCRAPING/Lezione_10_04_24.zip",
+    "PDF/WEBSCRAPING/Lezione_03_04_24.zip",
+    "Pasted image 20240921011317.png",
+    "Pasted image 20240921010119.png",
+    "Pasted image 20240921005938.png",
+    "Pasted image 20240921005735.png",
+    "Pasted image 20240921005637.png",
     "APPUNTI LAB 3.md",
+    "PDF/LAB3/Possibili domande-risposte orale Laboratorio 3.pdf",
     "WEBSCRAPING.md",
     "PDF/LAB3",
     "PDF/WEBSCRAPING/Possibili domande-risposte orale Laboratorio 3.pdf",
     "PDF/WEBSCRAPING/Pandas_Cheat_Sheet.pdf",
     "PDF/WEBSCRAPING/matplotlib-cheatsheet.pdf",
-    "PDF/WEBSCRAPING/justin1209_beautiful-soup.pdf",
-    "PDF/WEBSCRAPING/lezione-21-02-24.pdf",
-    "PDF/WEBSCRAPING/lezione-14-02-24.pdf",
-    "PDF/STATISTICA/Appunti Pratelli AA 21-22.pdf",
-    "PDF/CN/all_together.pdf",
     "2 ANNO/APPUNTI CN.md",
     "PDF/Untitled.md",
     "Excalidraw/Drawing 2024-08-06 22.55.28.excalidraw.md",

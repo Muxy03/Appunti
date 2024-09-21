@@ -135,9 +135,50 @@ p = probabilità
 
 ![[Pasted image 20240917223130.png]]
 
-Clustering coefficient locale:
+Clustering coefficient di un nodo:
 - caso g orientato: 
 	- ![[Pasted image 20240917232511.png]]
 - caso g non orientato:
 	- ![[Pasted image 20240917232630.png]]
 
+Clustering coefficient di un grafo (CC):
+- $$\frac{\sum Clustering\_coefficient}{\#nodi}$$
+- $$\frac{\#triangoli\_presenti}{\#triangoli\_possibili}$$
+
+Graph Density:
+- $$\rho = \frac{2*\#archi}{\#nodi*(\#nodi-1)/2}$$
+- $\rho$ small $\implies$ sparse
+- $\rho$ large $\implies$ dense
+
+High clustering if CC >> $\rho$
+
+![[Pasted image 20240921005448.png]]
+
+## Small World:
+
+![[Pasted image 20240921005637.png]]
+
+## Watts e Strogatz:
+
+![[Pasted image 20240921005735.png]]
+
+![[Pasted image 20240921005938.png]]
+
+![[Pasted image 20240921010119.png]]
+
+p=0 => grafo regolare
+p=1 => grafo random
+
+**X = log(xi)**: ogni valore **xi** è rappresentato sull'asse delle x da una distanza dall'origine pari a **log(xi)** => 1 (distanza = 0), 10 (distanza = 1), ...
+
+np.logspace(-4,0,10) -> range potenze (-4,0) di 10
+
+**la rete è una small world** se ha il coefficiente di clustering significativo, diametro basso
+
+![[Pasted image 20240921011317.png]]
+
+- Degree centrality -> numero archi incidenti nel nodo: $$\frac{Archi\_connessi}{\#TotArchi}$$
+- Betweeness centrality: $$\frac{\#Cammini\_minimi\_incidenti}{\#TotCammini\_minimi}$$
+- Closeness Centrality -> distanza media del nodo rispetto agli altri nodi della rete (+alto => + centrale)
+
+- Eigenvector centrality -> pagerank (l'**importanza** di un nodo in un grafo è determinata dall'**importanza dei nodi vicini**)
