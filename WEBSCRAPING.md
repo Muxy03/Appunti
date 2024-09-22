@@ -43,6 +43,8 @@
 
 ![[Pasted image 20240901195608.png]]
 
+![[matplotlib-cheatsheet.pdf]]
+
 ![[Pasted image 20240901200201.png]]
 
 ![[Pasted image 20240901200310.png]]
@@ -182,3 +184,58 @@ np.logspace(-4,0,10) -> range potenze (-4,0) di 10
 - Closeness Centrality -> distanza media del nodo rispetto agli altri nodi della rete (+alto => + centrale)
 
 - Eigenvector centrality -> pagerank (l'**importanza** di un nodo in un grafo è determinata dall'**importanza dei nodi vicini**)
+
+
+![[Pasted image 20240922160633.png]]
+
+## Power Law Distribution
+
+![[Pasted image 20240922161217.png]]
+
+![[Pasted image 20240922161342.png]]
+
+## Barabasi Albert
+
+![[Pasted image 20240922162323.png]]
+
+![[Pasted image 20240922163030.png]]
+
+![[Pasted image 20240922163420.png]]
+
+## BITCOIN
+
+![[Pasted image 20240922164133.png]]
+
+![[Pasted image 20240922164421.png]]
+
+![[Pasted image 20240922165020.png]]
+
+![[Pasted image 20240922165216.png]]
+
+![[Pasted image 20240922165328.png]]
+
+![[Pasted image 20240922165808.png]]
+
+![[Pasted image 20240922165937.png]]
+
+![[Pasted image 20240922170608.png]]
+
+![[Pasted image 20240922171238.png]]
+
+
+## BeautifulSoup:
+
+![[justin1209_beautiful-soup.pdf]]
+
+## SELENIUM:
+
+![[lezione030424.pdf]]
+
+![[lezione100424.pdf]]
+
+## PANDAS:
+
+![[Pandas_Cheat_Sheet.pdf]]
+
+![[lezione-30-04-24.pdf]]
+
