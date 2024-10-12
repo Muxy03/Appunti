@@ -4,6 +4,24 @@
     "type": "split",
     "children": [
       {
+        "id": "70a20af3890e2419",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "49d57a8d16537381",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2 ANNO/APPUNTI STATISTICA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
         "id": "6c30c3face1ed4b1",
         "type": "tabs",
         "children": [
@@ -11,11 +29,9 @@
             "id": "46e7de47a37bd879",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "WEBSCRAPING.md",
-                "mode": "source",
-                "source": false
+                "file": "PDF/STATISTICA/Note Preliminari Complete.pdf"
               }
             }
           }
@@ -86,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WEBSCRAPING.md",
+                "file": "PDF/STATISTICA/Note Preliminari Complete.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WEBSCRAPING.md",
+                "file": "PDF/STATISTICA/Note Preliminari Complete.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WEBSCRAPING.md"
+                "file": "PDF/STATISTICA/Note Preliminari Complete.pdf"
               }
             }
           },
@@ -181,6 +197,15 @@
   },
   "active": "46e7de47a37bd879",
   "lastOpenFiles": [
+    "2 ANNO/APPUNTI STATISTICA.md",
+    "Pasted image 20241010223753.png",
+    "Pasted image 20241010223726.png",
+    "Pasted image 20241010223635.png",
+    "PDF/STATISTICA/Note Preliminari Complete.pdf",
+    "PDF/CLOUD/Containers.pdf",
+    "PDF/CLOUD/Lab 2 - Docker-20240313/Lab2-Docker.pdf",
+    "CLOUD COMPUTING.md",
+    "WEBSCRAPING.md",
     "IMMAGINI/Pasted image 20240922171238.png",
     "IMMAGINI/Pasted image 20240922170608.png",
     "IMMAGINI/Pasted image 20240922165937.png",
@@ -188,21 +213,13 @@
     "IMMAGINI/Pasted image 20240922165328.png",
     "IMMAGINI/Pasted image 20240922165216.png",
     "IMMAGINI/Pasted image 20240922165020.png",
-    "IMMAGINI/Pasted image 20240922164421.png",
-    "IMMAGINI/Pasted image 20240922164133.png",
-    "IMMAGINI/Pasted image 20240922163420.png",
-    "IMMAGINI/Pasted image 20240922163030.png",
     "PDF/WEBSCRAPING/Pandas_Cheat_Sheet.pdf",
-    "WEBSCRAPING.md",
     "PDF/WEBSCRAPING/lezione-30-04-24.pdf",
     "PDF/WEBSCRAPING/lezione100424.pdf",
     "PDF/WEBSCRAPING/lezione030424.pdf",
     "PDF/WEBSCRAPING/Lezione030424.slides.html",
     "PDF/WEBSCRAPING/Lezione_30_04_24.zip",
     "PDF/WEBSCRAPING/Lezione_24_04_24.zip",
-    "PDF/WEBSCRAPING/Lezione_12_04_24.zip",
-    "PDF/WEBSCRAPING/Lezione_10_04_24.zip",
-    "PDF/WEBSCRAPING/Lezione_03_04_24.zip",
     "APPUNTI LAB 3.md",
     "2 ANNO/APPUNTI CN.md",
     "PDF/Untitled.md",
@@ -213,14 +230,12 @@
     "Excalidraw/Drawing 2024-05-15 22.47.06.excalidraw.md",
     "Untitled.canvas",
     "SLIDE IIA PARTE 3.md",
-    "CLOUD COMPUTING.md",
     "TEST.md",
     "Excalidraw/SO-4.md",
     "Excalidraw/SO-5.md",
     "TEST SLIDES SU OBSIDIAN.md",
     "Excalidraw/Drawing 2024-02-21 11.45.33.excalidraw.md",
     "PDF/IIA/Drawing 2024-02-09 11.31.45.excalidraw.md",
-    "2 ANNO/APPUNTI STATISTICA.md",
     "2 ANNO/APPUNTI LAB 2.md",
     "select.md",
     "[select.md",

@@ -19,10 +19,14 @@ carattere **continuo** -> carattere che può assumere un qualunque valore positi
 ![][IMMAGINI/ISTOGRAMMA.png]
 
 $$x = (x_1,\dots,x_n) \in R^n$$
-$$\overline{x} = \frac{1}{n}* \sum_{i=1}^{n} x_i$$
+Media campionaria:$$\overline{x} = \frac{1}{n}* \sum_{i=1}^{n} x_i$$
 La mediana -> è il dato $x_i$ tale che metà degli altri valori è minore o uguale a $x_i$ e l’altra metà maggiore o uguale (nel caso n sia pari si può prendere la media aritmetica dei due valori centrali in questo senso).
 
+La media campionaria viene facilmente spostata da singoli dati molto piccoli o molto grandi, e questo non succede alla mediana.
+
 varianza campionaria -> $var(x) = \frac{1}{n-1} \sum_{i=1}^{n}(x_i-\overline{x})^2$
+
+La varianza campionaria si usa per misurare la dispersione dei dati, cioè quanto i dati sono “sparsi” attorno al “centro” della distribuzione.
 
 varianza empirica -> $var_e(x) = \frac{1}{n} \sum_{i=1}^{n}(x_i-\overline{x})^2$
 
@@ -34,12 +38,18 @@ la varianza ( $\sigma^2(x)$ ) è uguale a 0 <=> i dati sono tutti uguali
 >$$\frac{\#\{x_i:|x_i-\overline{x}|>d\}}{n} \le \frac{var_e(x)}{d^2}$$
 >Dimostrazione: (passo finale dividere entrambe le parti per n)
 >$$\sum_{i=1}^{n}(x_i - \overline{x})^2 \ge \sum_{i:|x_i-\overline{x}|>d}^{n}(x_i - \overline{x})^2 \ge \sum_{i:|x_i-\overline{x}|>d}^{n}d^2 = \#\{x_i:|x_i-\overline{x}|>d\}\le \frac{\sum_{i=1}^{n}(x_i-\overline{x})^2}{d^2}$$
+>Questa formula è un caso particolare della diseguaglianza di Chebyshev che vedremo più avanti, notiamo che il termine di sinistra è la frazione di dati che differiscono da ¯x più di d, ed è quindi evidente l’idea di varianza come misura della dispersione dei dati.
+
+Se la varianza fa uso della funzione x → $x^2$ per misurare la distanza media dei punti dalla media campionaria, tramite la funzione x → $x^3$, che assume valori grandi man mano che x si allontana dall'origine ma mantenendo il segno di x, possiamo misurare l’asimmetria della distribuzione. Questo perché se ci sono molti dati a sinistra della media campionaria, nella somma di termini $(\bar{x}-x_i)^3$ prevarranno quelli con segno negativo, e viceversa.
 
 sample skewness (misura campionaria di asimmetria) -> $b=\frac{1}{\sigma^3}*\frac{1}{n}*\sum_{i=1}^{n}(x_i-\overline{x})^3$
+
+Senza entrare nei dettagli, menzioniamo che usando la funzione x → $x^4$ si può misurare in modo simile a sopra “quanto piatta” (o anche “quanto normale”) è la distribuzione dei dati, definendo la curtosi (kurtosis)
 
 >ecdf : funzione di ripartizione empirica -> restituisce la frequenza relativa dei dati minori uguali a t 
 >$x=(x_1,\dots,x_n)\in R^n$
 >$$F_e(t)=\frac{\#\{x_i|x_i \le t\}}{n}$$
+>La funzione Fe(t) è eguale a 0 per t < x(1), poi fa un salto di ampiezza 1/n in corrispondenza di ognuno dei valori x(i) (se due dati sono eguali il salto è di ampiezza 2/n, se tre dati sono eguali il salto è di ampiezza 3/n e così via) e poi è definitivamente eguale a 1 per t ≥ x(n).
 
 ![[K-PERCENTILE.png]]
 
@@ -48,6 +58,11 @@ sample skewness (misura campionaria di asimmetria) -> $b=\frac{1}{\sigma^3}*\fra
 ![[Pasted image 20230416173822.png]]
 
 ![[Pasted image 20230416174007.png]]
+
+![[Pasted image 20241010223726.png]]
+![[Pasted image 20241010223753.png]]
+
+---
 
 considerando n coppie di numeri $(x,y)=((x_1,y_1),\dots,(x_n,y_n)) \in R^{2 \times n}$, $\overline{x}$ e $\overline{y}$ corrispondono alle medie campionarie di x e y
 
