@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "70a20af3890e2419",
+        "id": "661db7564a7495f4",
         "type": "tabs",
         "children": [
           {
-            "id": "49d57a8d16537381",
+            "id": "11450758c17d71c7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2 ANNO/APPUNTI STATISTICA.md",
+                "file": "TIROCINIO/2024-10-21.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "6c30c3face1ed4b1",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "46e7de47a37bd879",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/STATISTICA/Note Preliminari Complete.pdf"
-              }
+              },
+              "icon": "lucide-file",
+              "title": "2024-10-21"
             }
           }
         ]
@@ -55,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -70,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -78,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -102,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PDF/STATISTICA/Note Preliminari Complete.pdf",
+                "file": "TIROCINIO/2024-10-21.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +102,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2024-10-21"
             }
           },
           {
@@ -119,10 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PDF/STATISTICA/Note Preliminari Complete.pdf",
+                "file": "TIROCINIO/2024-10-21.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2024-10-21"
             }
           },
           {
@@ -133,7 +129,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -142,8 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PDF/STATISTICA/Note Preliminari Complete.pdf"
-              }
+                "file": "TIROCINIO/2024-10-21.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2024-10-21"
             }
           },
           {
@@ -151,7 +151,9 @@
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -163,7 +165,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -171,7 +175,9 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ],
@@ -195,31 +201,33 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "46e7de47a37bd879",
+  "active": "11450758c17d71c7",
   "lastOpenFiles": [
+    "TIROCINIO/2024-10-21.md",
+    "TIROCINIO",
     "2 ANNO/APPUNTI STATISTICA.md",
-    "Pasted image 20241010223753.png",
-    "Pasted image 20241010223726.png",
-    "Pasted image 20241010223635.png",
+    "INTERAZIONE UOMO MACCHINA.md",
+    "Pasted image 20241014233151.png",
+    "Pasted image 20241014233112.png",
+    "Pasted image 20241014232933.png",
+    "Pasted image 20241014232841.png",
+    "Pasted image 20241014232824.png",
+    "Pasted image 20241014232655.png",
+    "Pasted image 20241014232643.png",
+    "Pasted image 20241014232625.png",
+    "Pasted image 20241014232547.png",
+    "Pasted image 20241014232447.png",
     "PDF/STATISTICA/Note Preliminari Complete.pdf",
     "PDF/CLOUD/Containers.pdf",
     "PDF/CLOUD/Lab 2 - Docker-20240313/Lab2-Docker.pdf",
     "CLOUD COMPUTING.md",
     "WEBSCRAPING.md",
-    "IMMAGINI/Pasted image 20240922171238.png",
-    "IMMAGINI/Pasted image 20240922170608.png",
-    "IMMAGINI/Pasted image 20240922165937.png",
-    "IMMAGINI/Pasted image 20240922165808.png",
-    "IMMAGINI/Pasted image 20240922165328.png",
-    "IMMAGINI/Pasted image 20240922165216.png",
-    "IMMAGINI/Pasted image 20240922165020.png",
     "PDF/WEBSCRAPING/Pandas_Cheat_Sheet.pdf",
     "PDF/WEBSCRAPING/lezione-30-04-24.pdf",
     "PDF/WEBSCRAPING/lezione100424.pdf",
     "PDF/WEBSCRAPING/lezione030424.pdf",
     "PDF/WEBSCRAPING/Lezione030424.slides.html",
     "PDF/WEBSCRAPING/Lezione_30_04_24.zip",
-    "PDF/WEBSCRAPING/Lezione_24_04_24.zip",
     "APPUNTI LAB 3.md",
     "2 ANNO/APPUNTI CN.md",
     "PDF/Untitled.md",
@@ -241,7 +249,6 @@
     "[select.md",
     "2 ANNO/APPUNTI RO.md",
     "APPUNTI ING. SOFTWARE.md",
-    "2023-11-08.md",
-    "1 ANNO/APPUNTI ALGEBRA LINEARE.md"
+    "2023-11-08.md"
   ]
 }
