@@ -64,7 +64,9 @@ Senza entrare nei dettagli, menzioniamo che usando la funzione x → $x^4$ si pu
 
 ---
 
-considerando n coppie di numeri $(x,y)=((x_1,y_1),\dots,(x_n,y_n)) \in R^{2 \times n}$, $\overline{x}$ e $\overline{y}$ corrispondono alle medie campionarie di x e y
+considerando n coppie di numeri $(x,y)=((x_1,y_1),\dots,(x_n,y_n)) \subset R^{2 \times n}$
+
+$\overline{x}$ e $\overline{y}$ corrispondono alle medie campionarie di x e y
 
 covarianza campionaria/empirica -> $cov(x)=\sum_{i=1}^{n}\frac{(x_i-\overline{x})*(y_i-\overline{y})}{n-1}$ / $cov_e(x)=\sum_{i=1}^{n}\frac{(x_i-\overline{x})*(y_i-\overline{y})}{n}$
 
@@ -72,15 +74,23 @@ coefficiente di correlazione tra x e y -> $r(x,y)=\frac{cov(x,y)}{\sigma(x)*\sig
 
 ![[Pasted image 20230416175137.png]]
 
+$r(x,y) = \frac{\sum_{i=1}^n (x_i-\overline{x})*(y_i-\overline{y})}{\sqrt{\sum_{i=1}^n (x_i-\overline{x})^2} * \sqrt{\sum_{i=1}^n (y_i-\overline{y})^2}}$
+
 r(x,y) misura il legame di natura lineare tra i dati x e y -> quantifichiamo mediante la retta di regressione
 
 ![[Pasted image 20230416175910.png]]
+
+---
+
+esperimento aleatorio = fenomeno il cui esito non è determinabile con certezza a priori.
 
 $\Omega$ = spazio di probabilità (insieme astratto degli esiti possibili) -> i suoi sottoinsiemi si chiamano eventi -> evento elementare = $\omega \in \Omega$ oppure $\{\omega\}$
 
 ![[Pasted image 20230416180645.png]]![[Pasted image 20230416180709.png]]
 
-la definizione di $\sigma$-algebra permette di eseguire operazioni insiemistiche anche se $\Omega$ è inifinito 
+la definizione di $\sigma$-algebra permette di eseguire operazioni insiemistiche anche se $\Omega$ è infinito
+
+![[Pasted image 20241022234912.png]]
 
 ![[Pasted image 20230416181031.png]]
 
@@ -100,6 +110,10 @@ per $\pmb{P}$ uniforme e $\Omega$ finito -> $\pmb{P}(A)= \frac{\#A}{\#\Omega},A 
 
 il numero di sequenze ordinate, possibilmente con ripetizione, di k numeri da 1 a n, cioè il numero di funzioni da {1,..., k} a {1,...,n} è $n^k$
 
+Siano 0 ≤ k ≤ n: il numero di sequenze ordinate, senza ripetizione, di k numeri da 1 a n, cioè il numero di funzioni iniettive da {1,..., k} a {1,...,n} è $\frac{n!}{(n-k)!}$
+
+Siano $k_1, \dots , k_h$ interi con $k_1 + \dots + k_h = n$: il numero di modi in cui si possono scegliere h sottoinsiemi di {1, . . . , n} formati rispettivamente da $k_1, \dots , k_h$ elementi è $\binom{n}{k_1,\dots,k_h} = \frac{n!}{k_1!*\dots*k_h!}$
+
 il numero di modi in cui si possono ordinare gli elementi di {1,...,n} (ovvero il numero di funzioni biiettive dall’insieme a se stesso, o di permutazioni di n elementi) è $n!$
 
 se 0 ≤ k ≤ n, il numero di sottinsiemi di {1,...,n} formati da k elementi (coefficiente binomiale) è $\binom{n}{k}=\frac{n!}{k!*(n-k)!}=\frac{n*(n-1)*\dots*(n-k+1)}{k!}$
@@ -110,7 +124,13 @@ formula del binomio di Newton -> $(a+b)^n=\sum_{k=0}^{n}\binom{n}{k}*a^k*b^{n-k}
 
 ![[Pasted image 20230416183301.png]]
 
+La formula della probabilità totale si usa in esempi in cui non è nota la probabilità P ma sono note le probabilità condizionate a un sistema di alternative => P(A) che cambia a seconda di varie alternative
+
 ![[Pasted image 20230416183445.png]]
+
+La formula di Bayes si applica per “invertire il condizionamento”, tipicamente in contesti in cui accade un evento A riferito a un’“osservabile” e vogliamo dedurre la probabilità di un’alternativa Bi di eventi “causa” 
+
+La formula della probabilità totale e il teorema di Bayes sono valide anche se il sistema di alternative anziché essere finito è numerabile, naturalmente sostituendo alle somme finite le somme di una serie. 
 
 ![[Pasted image 20230416183630.png]]
 
@@ -128,6 +148,8 @@ densità concreta della probabilità discreta $\pmb{P}$ la funzione $p(x_i)=\pmb
 ![[Pasted image 20230424184219.png]]
 
 ![[Pasted image 20230424184409.png]]
+
+---
 
 ![[Pasted image 20230424184518.png]]
 

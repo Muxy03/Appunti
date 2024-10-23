@@ -4,24 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "661db7564a7495f4",
+        "id": "09ba8a10ca03e0bc",
         "type": "tabs",
         "children": [
           {
-            "id": "11450758c17d71c7",
+            "id": "a4726f3426c43961",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "TIROCINIO/2024-10-21.md",
-                "mode": "source",
-                "source": false
+                "file": "PDF/STATISTICA/Note Preliminari Complete.pdf"
               },
-              "icon": "lucide-file",
-              "title": "2024-10-21"
+              "icon": "lucide-file-text",
+              "title": "Note Preliminari Complete"
+            }
+          },
+          {
+            "id": "2d9ef9b42367fddb",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/STATISTICA/Appunti Pratelli AA 21-22.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Appunti Pratelli AA 21-22"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -201,33 +211,35 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "11450758c17d71c7",
+  "active": "8ecbeedd8669d71e",
   "lastOpenFiles": [
+    "2 ANNO/APPUNTI STATISTICA.md",
+    "TIROCINIO/2024-10-23.md",
+    "PDF/STATISTICA/Compito30Maggio23Soluzioni.pdf",
+    "PDF/STATISTICA/compito14Dicembre23soluzioni.pdf",
+    "PDF/STATISTICA/Compito10Gennaio24.pdf",
+    "PDF/STATISTICA/Compito9Maggio23Soluzioni.pdf",
+    "PDF/STATISTICA/Compito8SettembreSoluzioni.pdf",
+    "PDF/STATISTICA/Compito2NovembreSoluzioni.pdf",
+    "PDF/STATISTICA/Compit030Giugno23Soluzioni.pdf",
+    "PDF/STATISTICA/Note Preliminari Complete.pdf",
+    "IMMAGINI/Pasted image 20241022234912.png",
+    "IMMAGINI/Pasted image 20241022234857.png",
+    "TIROCINIO/2024-10-22.md",
     "TIROCINIO/2024-10-21.md",
     "TIROCINIO",
-    "2 ANNO/APPUNTI STATISTICA.md",
     "INTERAZIONE UOMO MACCHINA.md",
-    "Pasted image 20241014233151.png",
-    "Pasted image 20241014233112.png",
-    "Pasted image 20241014232933.png",
-    "Pasted image 20241014232841.png",
-    "Pasted image 20241014232824.png",
-    "Pasted image 20241014232655.png",
-    "Pasted image 20241014232643.png",
-    "Pasted image 20241014232625.png",
-    "Pasted image 20241014232547.png",
-    "Pasted image 20241014232447.png",
-    "PDF/STATISTICA/Note Preliminari Complete.pdf",
+    "IMMAGINI/Pasted image 20241014233151.png",
+    "IMMAGINI/Pasted image 20241014233112.png",
+    "IMMAGINI/Pasted image 20241014232933.png",
+    "IMMAGINI/Pasted image 20241014232841.png",
+    "IMMAGINI/Pasted image 20241014232824.png",
+    "IMMAGINI/Pasted image 20241014232655.png",
+    "IMMAGINI/Pasted image 20241014232643.png",
+    "IMMAGINI/Pasted image 20241014232625.png",
     "PDF/CLOUD/Containers.pdf",
-    "PDF/CLOUD/Lab 2 - Docker-20240313/Lab2-Docker.pdf",
     "CLOUD COMPUTING.md",
     "WEBSCRAPING.md",
-    "PDF/WEBSCRAPING/Pandas_Cheat_Sheet.pdf",
-    "PDF/WEBSCRAPING/lezione-30-04-24.pdf",
-    "PDF/WEBSCRAPING/lezione100424.pdf",
-    "PDF/WEBSCRAPING/lezione030424.pdf",
-    "PDF/WEBSCRAPING/Lezione030424.slides.html",
-    "PDF/WEBSCRAPING/Lezione_30_04_24.zip",
     "APPUNTI LAB 3.md",
     "2 ANNO/APPUNTI CN.md",
     "PDF/Untitled.md",
@@ -247,8 +259,6 @@
     "2 ANNO/APPUNTI LAB 2.md",
     "select.md",
     "[select.md",
-    "2 ANNO/APPUNTI RO.md",
-    "APPUNTI ING. SOFTWARE.md",
-    "2023-11-08.md"
+    "2 ANNO/APPUNTI RO.md"
   ]
 }
