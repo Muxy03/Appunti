@@ -23,12 +23,14 @@
             "id": "2d9ef9b42367fddb",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "PDF/STATISTICA/Appunti Pratelli AA 21-22.pdf"
+                "file": "INTERAZIONE UOMO MACCHINA.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Appunti Pratelli AA 21-22"
+              "icon": "lucide-file",
+              "title": "INTERAZIONE UOMO MACCHINA"
             }
           }
         ],
@@ -88,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -211,33 +214,34 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8ecbeedd8669d71e",
+  "active": "2d9ef9b42367fddb",
   "lastOpenFiles": [
-    "2 ANNO/APPUNTI STATISTICA.md",
+    "IMMAGINI/Pasted image 20241028030633.png",
+    "IMMAGINI/Pasted image 20241028030553.png",
+    "IMMAGINI/Pasted image 20241028030536.png",
+    "IMMAGINI/Pasted image 20241028030523.png",
+    "IMMAGINI/Pasted image 20241028030505.png",
+    "IMMAGINI/Pasted image 20241028030417.png",
+    "IMMAGINI/Pasted image 20241028030403.png",
+    "IMMAGINI/Pasted image 20241028030117.png",
+    "IMMAGINI/Pasted image 20241028030024.png",
+    "IMMAGINI/Pasted image 20241028030005.png",
+    "IMMAGINI/Pasted image 20241028025612.png",
+    "PDF/IUM/[9] HCI Principles.pdf",
+    "PDF/IUM/[9] HCI Principles.pptx",
+    "PDF/IUM",
+    "PDF/Nuova cartella",
+    "TIROCINIO/2024-10-21.md",
+    "TIROCINIO/2024-10-22.md",
     "TIROCINIO/2024-10-23.md",
+    "PDF/STATISTICA/Note Preliminari Complete.pdf",
+    "PDF/STATISTICA/Appunti Pratelli AA 21-22.pdf",
+    "2 ANNO/APPUNTI STATISTICA.md",
     "PDF/STATISTICA/Compito30Maggio23Soluzioni.pdf",
     "PDF/STATISTICA/compito14Dicembre23soluzioni.pdf",
     "PDF/STATISTICA/Compito10Gennaio24.pdf",
     "PDF/STATISTICA/Compito9Maggio23Soluzioni.pdf",
-    "PDF/STATISTICA/Compito8SettembreSoluzioni.pdf",
-    "PDF/STATISTICA/Compito2NovembreSoluzioni.pdf",
-    "PDF/STATISTICA/Compit030Giugno23Soluzioni.pdf",
-    "PDF/STATISTICA/Note Preliminari Complete.pdf",
-    "IMMAGINI/Pasted image 20241022234912.png",
-    "IMMAGINI/Pasted image 20241022234857.png",
-    "TIROCINIO/2024-10-22.md",
-    "TIROCINIO/2024-10-21.md",
-    "TIROCINIO",
     "INTERAZIONE UOMO MACCHINA.md",
-    "IMMAGINI/Pasted image 20241014233151.png",
-    "IMMAGINI/Pasted image 20241014233112.png",
-    "IMMAGINI/Pasted image 20241014232933.png",
-    "IMMAGINI/Pasted image 20241014232841.png",
-    "IMMAGINI/Pasted image 20241014232824.png",
-    "IMMAGINI/Pasted image 20241014232655.png",
-    "IMMAGINI/Pasted image 20241014232643.png",
-    "IMMAGINI/Pasted image 20241014232625.png",
-    "PDF/CLOUD/Containers.pdf",
     "CLOUD COMPUTING.md",
     "WEBSCRAPING.md",
     "APPUNTI LAB 3.md",
@@ -258,7 +262,6 @@
     "PDF/IIA/Drawing 2024-02-09 11.31.45.excalidraw.md",
     "2 ANNO/APPUNTI LAB 2.md",
     "select.md",
-    "[select.md",
-    "2 ANNO/APPUNTI RO.md"
+    "[select.md"
   ]
 }
