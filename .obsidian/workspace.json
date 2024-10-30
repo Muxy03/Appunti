@@ -25,12 +25,29 @@
             "state": {
               "type": "pdf",
               "state": {
+                "file": "PDF/STATISTICA/Note Preliminari Complete.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Note Preliminari Complete"
+            }
+          },
+          {
+            "id": "2d9ef9b42367fddb",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
                 "file": "PDF/STATISTICA/Appunti Pratelli AA 21-22.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Appunti Pratelli AA 21-22"
+              "title": "Appunti Pratelli AA 21-22",
+                "file": "INTERAZIONE UOMO MACCHINA.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "INTERAZIONE UOMO MACCHINA"
             }
-          }
         ],
         "currentTab": 1
       }
@@ -237,28 +254,5 @@
     "IMMAGINI/Pasted image 20241014232655.png",
     "IMMAGINI/Pasted image 20241014232643.png",
     "IMMAGINI/Pasted image 20241014232625.png",
-    "PDF/CLOUD/Containers.pdf",
-    "CLOUD COMPUTING.md",
-    "WEBSCRAPING.md",
-    "APPUNTI LAB 3.md",
-    "2 ANNO/APPUNTI CN.md",
-    "PDF/Untitled.md",
-    "Excalidraw/Drawing 2024-08-06 22.55.28.excalidraw.md",
-    "INTELLIGENZA ARTIFICIALE.md",
-    "APPUNTI BASI DI DATI.md",
-    "APPUNTI RETI.md",
-    "Excalidraw/Drawing 2024-05-15 22.47.06.excalidraw.md",
-    "Untitled.canvas",
-    "SLIDE IIA PARTE 3.md",
-    "TEST.md",
-    "Excalidraw/SO-4.md",
-    "Excalidraw/SO-5.md",
-    "TEST SLIDES SU OBSIDIAN.md",
-    "Excalidraw/Drawing 2024-02-21 11.45.33.excalidraw.md",
-    "PDF/IIA/Drawing 2024-02-09 11.31.45.excalidraw.md",
-    "2 ANNO/APPUNTI LAB 2.md",
-    "select.md",
-    "[select.md",
-    "2 ANNO/APPUNTI RO.md"
-  ]
+    "PDF/CLOUD/Containers.pdf"]
 }
