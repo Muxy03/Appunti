@@ -8,15 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a4726f3426c43961",
+            "id": "0157217379425d1d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "PDF/STATISTICA/statistica23-24.pdf"
+                "file": "SAW.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "statistica23-24"
+              "icon": "lucide-file",
+              "title": "SAW"
             }
           }
         ]
@@ -199,22 +201,27 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a4726f3426c43961",
+  "active": "0157217379425d1d",
   "lastOpenFiles": [
-    "PDF/STATISTICA/Note Preliminari Complete.pdf",
+    "PDF/SAW/SAW24_12_-_Sviluppare_una_REST_API.pdf",
+    "PDF/SAW/SAW24_12_-_Sviluppare_una_REST_API.pdf.crdownload",
+    "Pasted image 20241119192723.png",
+    "Pasted image 20241119192647.png",
+    "Pasted image 20241119192630.png",
+    "Pasted image 20241119192517.png",
+    "PDF/SAW/SAW24_18_-_Notifiche.pdf",
+    "PDF/SAW/SAW24_18_-_Notifiche.pdf.crdownload",
+    "Pasted image 20241119192350.png",
+    "Pasted image 20241119192335.png",
+    "Pasted image 20241119192320.png",
+    "Pasted image 20241119192156.png",
+    "Pasted image 20241119185948.png",
+    "Pasted image 20241119185924.png",
+    "SAW.md",
     "PDF/STATISTICA/statistica23-24.pdf",
+    "PDF/STATISTICA/Note Preliminari Complete.pdf",
     "PDF/STATISTICA/statistica23-24.pdf.crdownload",
     "INTERAZIONE UOMO MACCHINA.md",
-    "IMMAGINI/Pasted image 20241028030633.png",
-    "IMMAGINI/Pasted image 20241028030553.png",
-    "IMMAGINI/Pasted image 20241028030536.png",
-    "IMMAGINI/Pasted image 20241028030523.png",
-    "IMMAGINI/Pasted image 20241028030505.png",
-    "IMMAGINI/Pasted image 20241028030417.png",
-    "IMMAGINI/Pasted image 20241028030403.png",
-    "IMMAGINI/Pasted image 20241028030117.png",
-    "IMMAGINI/Pasted image 20241028030024.png",
-    "IMMAGINI/Pasted image 20241028030005.png",
     "PDF/IUM/[9] HCI Principles.pdf",
     "PDF/IUM/[9] HCI Principles.pptx",
     "PDF/IUM",
@@ -222,11 +229,7 @@
     "TIROCINIO/2024-10-21.md",
     "TIROCINIO/2024-10-22.md",
     "TIROCINIO/2024-10-23.md",
-    "PDF/STATISTICA/Appunti Pratelli AA 21-22.pdf",
     "2 ANNO/APPUNTI STATISTICA.md",
-    "PDF/STATISTICA/Compito30Maggio23Soluzioni.pdf",
-    "PDF/STATISTICA/compito14Dicembre23soluzioni.pdf",
-    "PDF/STATISTICA/Compito10Gennaio24.pdf",
     "CLOUD COMPUTING.md",
     "WEBSCRAPING.md",
     "APPUNTI LAB 3.md",
@@ -246,7 +249,6 @@
     "Excalidraw/Drawing 2024-02-21 11.45.33.excalidraw.md",
     "PDF/IIA/Drawing 2024-02-09 11.31.45.excalidraw.md",
     "2 ANNO/APPUNTI LAB 2.md",
-    "select.md",
-    "[select.md"
+    "select.md"
   ]
 }
