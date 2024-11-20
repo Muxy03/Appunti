@@ -130,8 +130,7 @@ GoF = gang of four -> Creational/Structural/Behavioral Patterns
 
 Decorator pattern -> structural
 
-Decoratori -> Sono funzioni che applicano il pattern al loro target -> in ts sono speciali dichiarazioni 
-applicabili a classi, metodi, proprietà (@sealed/ Object.seal(constructor);Object.seal(constructor.prototype))
+Decoratori -> Sono funzioni che applicano il pattern al loro target -> in ts sono speciali dichiarazioni  applicabili a classi, metodi, proprietà (@sealed/ Object.seal(constructor);Object.seal(constructor.prototype))
 
 Componenti -> classi ts @Component() -> selettore CSS, html template, set stili css
 
@@ -185,7 +184,7 @@ control flow:
 - @if () {}
 - @else if () {}
 - @else {}
-- @for () {} -> $count,$index,$first,$last,$even,$odd
+- @for () {} -> \$count,\$index,\$first,\$last,\$even,$odd
 - @empty {}
 - @switch () {@case () {} } -> cond controllata con ===
 - @default {} -> opzionale
@@ -218,7 +217,6 @@ modi di gestire form:
 ![[Pasted image 20241119185824.png]]
 
 
-
 RxJs = libreria composizione programmi su eventi asincroni -> Observable
 ![[Pasted image 20241119192723.png]]
 
@@ -233,7 +231,7 @@ Writable signals:
 Computed signals:
 - valutati lazy -> quando vengono letti per la prima volta
 - memorized
-- const cx = computed(() => x() *2);
+- const cx = computed(() => x() \*2);
 
 input signal:
 ![[Pasted image 20241119185902.png]]
