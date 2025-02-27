@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ed60b2f4ae28e766",
+        "id": "495667d525688699",
         "type": "tabs",
         "children": [
           {
-            "id": "c05d28398fda6b62",
+            "id": "c095d05bcbdadf3e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIROCINIO/TESI BRUTTA COPIA.md",
+                "file": "MAGISTRALE 1/QUANTUM COMPUTING.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TESI BRUTTA COPIA"
+              "title": "QUANTUM COMPUTING"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -196,13 +197,38 @@
       "command-palette:Open command palette": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "c05d28398fda6b62",
+  "active": "c095d05bcbdadf3e",
   "lastOpenFiles": [
-    "TIROCINIO/2024-10-23.md",
+    "PDF/QUANTUM COMPUTING/2025-02-26-Nota-15-52.xopp",
+    "PDF/QUANTUM COMPUTING/2025-02-26-Nota-15-52.pdf",
+    "PDF/QUANTUM COMPUTING",
+    "MAGISTRALE 1/ALGORITHM DESIGN.md",
+    "PDF/ALGORITHM DESIGN/2025-02-26-Nota-14-02.xopp",
+    "PDF/ALGORITHM DESIGN/2025-02-26-Nota-14-02.pdf",
+    "PDF/ALGORITHM DESIGN",
+    "MAGISTRALE 1/SOFTWARE COMPOSITION.md",
+    "IMMAGINI/Pasted image 20250225175527.png",
+    "IMMAGINI/Pasted image 20250225175514.png",
+    "IMMAGINI/Pasted image 20250225175338.png",
+    "IMMAGINI/Pasted image 20250225175330.png",
+    "IMMAGINI/Pasted image 20250225175250.png",
+    "IMMAGINI/Pasted image 20250225175240.png",
+    "IMMAGINI/Pasted image 20250225174936.png",
+    "IMMAGINI/Pasted image 20250225174830.png",
+    "IMMAGINI/Pasted image 20250225174353.png",
+    "IMMAGINI/Pasted image 20250225174257.png",
+    "MAGISTRALE 1/QUANTUM COMPUTING.md",
+    "Excalidraw/swcomp1.md",
+    "Excalidraw/Drawing 2025-02-20 14.46.37.excalidraw.md",
+    "Untitled.canvas",
+    "MAGISTRALE 1/GAME THEORY.md",
+    "MAGISTRALE 1",
     "TIROCINIO/TESI BRUTTA COPIA.md",
+    "Excalidraw/Drawing 2025-01-14 17.23.58.excalidraw.md",
+    "TIROCINIO/2024-10-23.md",
     "TIROCINIO/2024-10-22.md",
     "TIROCINIO/2024-10-21.md",
     "PDF/IUM/SLIDE/PDF/[14] Usability and Evaluation Techniques.pdf",
@@ -211,22 +237,6 @@
     "IUM PRATICA.md",
     "Excalidraw/Drawing 2025-01-08 12.28.29.excalidraw.md",
     "PDF/IUM/SLIDE/PDF/[17] Pretotyping.pdf",
-    "PDF/IUM/SLIDE/PDF/[16] Prototyping & Mockups.pdf",
-    "PDF/IUM/SLIDE/PDF/[12] Human Interface Devices.pdf",
-    "PDF/IUM/SLIDE/PDF/[9] HCI Principles.pdf",
-    "PDF/IUM/SLIDE/PDF/[10] Innovation methods and frameworks.pdf",
-    "PDF/IUM/SLIDE/PDF/[11] Le Interfacce Utente.pdf",
-    "PDF/IUM/SLIDE/PDF/[9b] HCI_compendium.pdf",
-    "IMMAGINI/Pasted image 20250104173801.png",
-    "IMMAGINI/Pasted image 20250104173749.png",
-    "IMMAGINI/Pasted image 20250104173737.png",
-    "IMMAGINI/Pasted image 20250104173717.png",
-    "IMMAGINI/Pasted image 20250104173658.png",
-    "IMMAGINI/Pasted image 20250104173107.png",
-    "IMMAGINI/Pasted image 20250104172953.png",
-    "IMMAGINI/Pasted image 20250104172651.png",
-    "IMMAGINI/Pasted image 20250104172635.png",
-    "IMMAGINI/Pasted image 20250104172605.png",
     "Untitled.md",
     "INTERAZIONE UOMO MACCHINA.md",
     "STATISTICA PRATICA.md",
@@ -238,15 +248,6 @@
     "CLOUD COMPUTING.md",
     "WEBSCRAPING.md",
     "APPUNTI LAB 3.md",
-    "2 ANNO/APPUNTI CN.md",
-    "PDF/Untitled.md",
-    "Excalidraw/Drawing 2024-08-06 22.55.28.excalidraw.md",
-    "INTELLIGENZA ARTIFICIALE.md",
-    "APPUNTI BASI DI DATI.md",
-    "APPUNTI RETI.md",
-    "Excalidraw/Drawing 2024-05-15 22.47.06.excalidraw.md",
-    "Untitled.canvas",
-    "SLIDE IIA PARTE 3.md",
-    "TEST.md"
+    "2 ANNO/APPUNTI CN.md"
   ]
 }
