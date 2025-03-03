@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAGISTRALE 1/QUANTUM COMPUTING.md",
+                "file": "MAGISTRALE 1/ALGORITHM DESIGN.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "QUANTUM COMPUTING"
+              "title": "ALGORITHM DESIGN"
             }
           }
         ]
@@ -202,6 +202,7 @@
   },
   "active": "c095d05bcbdadf3e",
   "lastOpenFiles": [
+    "MAGISTRALE 1/QUANTUM COMPUTING.md",
     "PDF/QUANTUM COMPUTING/2025-02-26-Nota-15-52.xopp",
     "PDF/QUANTUM COMPUTING/2025-02-26-Nota-15-52.pdf",
     "PDF/QUANTUM COMPUTING",
@@ -220,7 +221,6 @@
     "IMMAGINI/Pasted image 20250225174830.png",
     "IMMAGINI/Pasted image 20250225174353.png",
     "IMMAGINI/Pasted image 20250225174257.png",
-    "MAGISTRALE 1/QUANTUM COMPUTING.md",
     "Excalidraw/swcomp1.md",
     "Excalidraw/Drawing 2025-02-20 14.46.37.excalidraw.md",
     "Untitled.canvas",
@@ -236,7 +236,6 @@
     "PDF/IUM/Interazione uomo-macchina/domande-e-risposte-corrette-spiegazioni-dalle-dispense.pdf",
     "IUM PRATICA.md",
     "Excalidraw/Drawing 2025-01-08 12.28.29.excalidraw.md",
-    "PDF/IUM/SLIDE/PDF/[17] Pretotyping.pdf",
     "Untitled.md",
     "INTERAZIONE UOMO MACCHINA.md",
     "STATISTICA PRATICA.md",
