@@ -204,3 +204,88 @@ mirror(t1,t2) :- t1
 
 ![[Pasted image 20250225175527.png]]
 
+## LEZIONE 4/3/25
+
+
+TERMINATION = A RESULT CAN ALWAYS BE RETURNED
+DETERMINACY = ANY TWO RESULTS ARE THE SAME
+
+![[Pasted image 20250304172031.png]]
+
+![[Pasted image 20250304172423.png]]
+
+![[Pasted image 20250304172515.png]]
+
+![[Pasted image 20250304172526.png]]
+![[Pasted image 20250304172742.png]]
+
+![[Pasted image 20250304172754.png]]
+
+![[Pasted image 20250304172807.png]]
+
+![[Pasted image 20250304173136.png]]
+
+![[Pasted image 20250304173146.png]]
+
+![[Pasted image 20250304173454.png]]
+
+![[Pasted image 20250304173614.png]]
+
+![[Pasted image 20250304173942.png]]
+
+![[Pasted image 20250304173957.png]]
+
+![[Pasted image 20250304174030.png]]
+
+![[Pasted image 20250304174123.png]]
+
+![[Pasted image 20250304174148.png]]
+
+![[Pasted image 20250304174411.png]]
+
+![[Pasted image 20250304174427.png]]
+
+![[Pasted image 20250304174627.png]]
+
+![[Pasted image 20250304174639.png]]
+
+![[Pasted image 20250304175044.png]]
+
+![[Pasted image 20250304175318.png]]
+
+## ESERCIZI:
+
+### EX 1:
+
+```prolog
+prod(0,y,0).
+prod(s(x),y,z) :- prod(x,y,w),sum(w,y,z).
+
+pow(0,s(y),0).
+pow(s(x),0,s(0)).
+pow(x,s(y),z) :- pow(x,y,w),prod(w,x,z).
+
+div(s(y),z) :- prod(x,s(y),z).
+```
+
+### EX 2:
+
+1) not possible
+2) \[x=s(y), z=s(y)\]
+3) not possible
+
+### EX 3:
+
+RECUPERARE SLIDES
+
+### EX 4:
+
+RECUPERARE SLIDES
+
+### EX 5:
+
+RECUPERA SLIDES
+
+### EX 6:
+ 
+ RECUPERA SLIDES
