@@ -12,3 +12,9 @@ MARZO :
 ## LEZIONE 4 3/3/25
 
 ![[AlgoDesign_250303_125912.pdf]]
+
+$$
+\usagepackages{pdfpages}
+\includepdf[pages=-]{AlgoDesign_250303_125912.pdf}
+$$
+
