@@ -253,7 +253,7 @@ DETERMINACY = ANY TWO RESULTS ARE THE SAME
 
 ![[Pasted image 20250304175318.png]]
 
-## ESERCIZI:
+### ESERCIZI:
 
 ### EX 1:
 
@@ -289,3 +289,17 @@ RECUPERA SLIDES
 ### EX 6:
  
  RECUPERA SLIDES
+
+## LEZIONE 6/3/25
+
+![[20250306_250306_163234.pdf]]
+
+## LEZIONE 
+
+![[2025-03-07 - 06 - Equivalence.pdf]]
+
+![[2025-03-07 - 07 - Recursion.pdf]]
+
+## LEZIONE 
+
+![[20250311  08a  CPO_250312_132832.pdf]]

@@ -1,3 +1,4 @@
+$\usagepackages{pdfpages}$
 ## LEZIONE 2 26/2/25
 
 MARZO :
@@ -13,8 +14,9 @@ MARZO :
 
 ![[AlgoDesign_250303_125912.pdf]]
 
-$$
-\usagepackages{pdfpages}
-\includepdf[pages=-]{AlgoDesign_250303_125912.pdf}
-$$
+## LEZIONE 6/3/25
 
+![[20250306.pdf]]
+
+## LEZIONE 12/3/25
+![[AlgoDesign12325_250312_133119.pdf]]

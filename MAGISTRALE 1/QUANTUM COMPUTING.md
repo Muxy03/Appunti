@@ -1,3 +1,5 @@
+
+![[Introduction_to_Quantum_Computing-GDC notes.pdf]]
 ## LEZIONE 1 19/02/25
 
 esame -> talk su topic a scelta e esame orale
@@ -151,3 +153,18 @@ $$\ket{a} $$
 ## LEZIONE 3 26/2/25
 
 ![[2025-02-26-Nota-15-52.pdf]]
+
+## LEZIONE 28/2/25
+
+![[Lezione 4 - 28-02-2025 (1).pdf]]
+
+## LEZIONE 5/3/25
+
+![[05-03-2025.pdf]]
+
+## LEZIONE 7/3/25
+
+![[IQC_3.pdf]]
+
+## LEZIONE 12/3/25
+
