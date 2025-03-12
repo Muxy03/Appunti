@@ -54,20 +54,12 @@ $x_i = 0 \text{ otherwise}$
 
 $U_i(x_1,\dots,x_n) = 100(1 - x_i) + \frac{3}{2N} * \sum_{j=1}^N{100*x_j}$
 
-$$
-\begin{table}[]
-\caption{cazo}
-\label{tab:my-table}
-\begin{tabular}{|c|c|c|}
-\hline
-P\_1 \textbackslash P\_2 & C       & NC      \\ \hline
-C                        & 150,150 & 75,175  \\ \hline
-NC                       & 175,75  & 100,100 \\ \hline
-\end{tabular}
-\end{table}}
-$$
+| P1 \ P2 |    C    |   NC    |
+|:-------:|:-------:|:-------:|
+|  **C**  | 150,150 | 75,175  |
+| **NC**  | 175,75  | 100,100 |
 
-We can see in the table $ ref{tab:my-table}$ that choosing not to contribute is the dominant strategy for all players and therefore we get the Nash Equilibria in case all players decide not to contribute.
+We can see in the table that choosing not to contribute is the dominant strategy for all players and therefore we get the Nash Equilibria in case all players decide not to contribute.
 
 the Nash equilibria case:
 - (0,0,...,0)
