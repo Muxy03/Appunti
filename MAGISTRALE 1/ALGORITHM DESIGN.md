@@ -20,3 +20,7 @@ MARZO :
 
 ## LEZIONE 12/3/25
 ![[AlgoDesign12325_250312_133119.pdf]]
+
+## LEZIONE 13/3/25
+
+![[AlgoDesgin13032025_250313_140102.pdf]]

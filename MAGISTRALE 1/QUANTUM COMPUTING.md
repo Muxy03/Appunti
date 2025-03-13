@@ -1,6 +1,5 @@
 
-![[Introduction_to_Quantum_Computing-GDC notes.pdf]]
-## LEZIONE 1 19/02/25
+# LEZIONE 1 19/02/25
 
 esame -> talk su topic a scelta e esame orale
 
@@ -168,3 +167,4 @@ $$\ket{a} $$
 
 ## LEZIONE 12/3/25
 
+Qiskit notebook
