@@ -11,14 +11,12 @@
             "id": "c095d05bcbdadf3e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "MAGISTRALE 1/SOFTWARE COMPOSITION.md",
-                "mode": "source",
-                "source": false
+                "file": "PDF/SOFTWARE COMPOSITION/18032025.pdf"
               },
-              "icon": "lucide-file",
-              "title": "SOFTWARE COMPOSITION"
+              "icon": "lucide-file-text",
+              "title": "18032025"
             }
           }
         ]
@@ -201,25 +199,25 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "c095d05bcbdadf3e",
+  "active": "8ecbeedd8669d71e",
   "lastOpenFiles": [
-    "PDF/SOFTWARE COMPOSITION/softwareComposition13032025_250313_153822.pdf",
-    "MAGISTRALE 1/QUANTUM RIPASSO.md",
+    "MAGISTRALE 1/AlgoDesignAssignment1.md",
+    "MAGISTRALE 1/AlgoDesignAssignment2.md",
+    "PDF/SOFTWARE COMPOSITION/18032025.pdf",
+    "PDF/SOFTWARE COMPOSITION/18032025 2.pdf",
     "MAGISTRALE 1/QUANTUM COMPUTING.md",
     "MAGISTRALE 1/SOFTWARE COMPOSITION.md",
+    "PDF/ALGO.md",
+    "PDF/SOFTWARE COMPOSITION/softwareComposition13032025_250313_153822.pdf",
+    "MAGISTRALE 1/QUANTUM RIPASSO.md",
     "MAGISTRALE 1/ALGORITHM DESIGN.md",
     "PDF/ALGORITHM DESIGN/AlgoDesgin13032025_250313_140102.pdf",
     "PDF/ALGORITHM DESIGN/AlgoDesign12325_250312_133119.pdf",
-    "AlgoDesignAssignment1.md",
     "PDF/QUANTUM COMPUTING/Introduction_to_Quantum_Computing-GDC notes.pdf",
     "PDF/QUANTUM COMPUTING/Introduction_to_Quantum_Computing-GDC notes.pdf.crdownload",
     "PDF/QUANTUM COMPUTING/IQC_3.pdf",
     "PDF/QUANTUM COMPUTING/IQC_3.pdf.crdownload",
     "PDF/QUANTUM COMPUTING/05-03-2025.pdf",
-    "PDF/QUANTUM COMPUTING/05-03-2025.pdf.crdownload",
-    "PDF/QUANTUM COMPUTING/Lezione 4 - 28-02-2025 (1).pdf",
-    "PDF/QUANTUM COMPUTING/Lezione 4 - 28-02-2025 (1).pdf.crdownload",
-    "PDF/ALGO.md",
     "Pasted image 20250304175318.png",
     "Pasted image 20250304175044.png",
     "Pasted image 20250304174639.png",

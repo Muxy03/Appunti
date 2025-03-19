@@ -168,3 +168,7 @@ $$\ket{a} $$
 ## LEZIONE 12/3/25
 
 Qiskit notebook
+
+## LEZIONE 19/3/25
+
+![[IQC_Teleportation.pdf]]
