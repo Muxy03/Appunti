@@ -172,3 +172,7 @@ Qiskit notebook
 ## LEZIONE 19/3/25
 
 ![[IQC_Teleportation.pdf]]
+
+## LEZIONE 21/3/25
+
+![[IQC_SuperdenseCoding.pdf]]

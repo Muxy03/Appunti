@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "495667d525688699",
+        "id": "6580393e9d55c5a0",
         "type": "tabs",
         "children": [
           {
-            "id": "c095d05bcbdadf3e",
+            "id": "eaa79c5b8715ab8a",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "PDF/SOFTWARE COMPOSITION/18032025.pdf"
+                "file": "MAGISTRALE 1/QUANTUM COMPUTING.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "18032025"
+              "icon": "lucide-file",
+              "title": "QUANTUM COMPUTING"
             }
           }
         ]
@@ -199,11 +201,12 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "8ecbeedd8669d71e",
+  "active": "eaa79c5b8715ab8a",
   "lastOpenFiles": [
+    "PDF/QUANTUM COMPUTING/IQC_SuperdenseCoding.pdf",
+    "PDF/SOFTWARE COMPOSITION/18032025.pdf",
     "MAGISTRALE 1/AlgoDesignAssignment1.md",
     "MAGISTRALE 1/AlgoDesignAssignment2.md",
-    "PDF/SOFTWARE COMPOSITION/18032025.pdf",
     "PDF/SOFTWARE COMPOSITION/18032025 2.pdf",
     "MAGISTRALE 1/QUANTUM COMPUTING.md",
     "MAGISTRALE 1/SOFTWARE COMPOSITION.md",
@@ -246,7 +249,6 @@
     "Untitled.md",
     "INTERAZIONE UOMO MACCHINA.md",
     "STATISTICA PRATICA.md",
-    "2 ANNO/APPUNTI AESO.md",
-    "2 ANNO/APPUNTI ORALE AESO.md"
+    "2 ANNO/APPUNTI AESO.md"
   ]
 }
