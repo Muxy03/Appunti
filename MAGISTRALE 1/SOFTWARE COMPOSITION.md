@@ -307,3 +307,16 @@ RECUPERA SLIDES
 ## LEZIONE 13/03/2025
 
 ![[softwareComposition13032025_250313_153822.pdf]]
+
+## LEZIONE 18/3/25
+
+![[18032025.pdf]]
+![[18032025 2.pdf]]
+
+## LEZIONE 20/3/25
+
+![[2025-03-20 - 10 - Consistency IMP.pdf]]
+
+## LEZIONE 21/3/25
+
+![[2025-03-21 - 11 - Haskell.pdf]]
