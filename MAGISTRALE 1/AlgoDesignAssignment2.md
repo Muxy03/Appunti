@@ -1,3 +1,6 @@
+
+![[Pasted image 20250327003753.png]]
+
 In this document the fractions includes the floor operation on the result of division. 
 
 ## Part 1:
