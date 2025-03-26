@@ -176,3 +176,7 @@ Qiskit notebook
 ## LEZIONE 21/3/25
 
 ![[IQC_SuperdenseCoding.pdf]]
+
+## LEZIONE 26/2/25
+
+![[QuantumAlgorithms(1).pdf]]
