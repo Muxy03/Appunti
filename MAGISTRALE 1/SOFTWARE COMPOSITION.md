@@ -320,3 +320,7 @@ RECUPERA SLIDES
 ## LEZIONE 21/3/25
 
 ![[2025-03-21 - 11 - Haskell.pdf]]
+
+## LEZIONE 27/3/25
+
+![[2025-03-27 - 12a - HOFL Types.pdf]]
