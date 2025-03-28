@@ -180,3 +180,7 @@ Qiskit notebook
 ## LEZIONE 26/2/25
 
 ![[QuantumAlgorithms(1).pdf]]
+
+## LEZIONE 28/3/25
+
+![[QuantumAlgorithms(2).pdf]]

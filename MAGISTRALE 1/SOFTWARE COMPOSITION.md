@@ -324,3 +324,11 @@ RECUPERA SLIDES
 ## LEZIONE 27/3/25
 
 ![[2025-03-27 - 12a - HOFL Types.pdf]]
+
+## LEZIONE 28/3/25
+
+![[2025-03-28 - 12b - HOFL Operational.pdf]]
+
+![[2025-03-28 - 13a - Cartesian Domains.pdf]]
+
+![[2025-03-28 - Haskell Badge.pdf]]
