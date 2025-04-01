@@ -332,3 +332,7 @@ RECUPERA SLIDES
 ![[2025-03-28 - 13a - Cartesian Domains.pdf]]
 
 ![[2025-03-28 - Haskell Badge.pdf]]
+
+## LEZIONE 1/4/25
+
+![[2025-04-01 - 13a - Cartesian Domains.pdf]]
