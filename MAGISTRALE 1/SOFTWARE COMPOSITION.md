@@ -336,3 +336,9 @@ RECUPERA SLIDES
 ## LEZIONE 1/4/25
 
 ![[2025-04-01 - 13a - Cartesian Domains.pdf]]
+
+## LEZIONE 3/4/25
+
+![[2025-04-03 - 13b - Functional Domains.pdf]]
+
+![[2025-04-03 - 13c - Continuity Theorems.pdf]]
