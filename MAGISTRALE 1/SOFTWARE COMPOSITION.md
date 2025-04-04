@@ -342,3 +342,7 @@ RECUPERA SLIDES
 ![[2025-04-03 - 13b - Functional Domains.pdf]]
 
 ![[2025-04-03 - 13c - Continuity Theorems.pdf]]
+
+## LEZIONE 4/4/25
+
+![[2025-04-04 - 14 - HOFL Denotational.pdf]]
