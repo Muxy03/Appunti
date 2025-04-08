@@ -346,3 +346,7 @@ RECUPERA SLIDES
 ## LEZIONE 4/4/25
 
 ![[2025-04-04 - 14 - HOFL Denotational.pdf]]
+
+## LEZIONE 8/4/25
+
+![[2025-04-08 - 15 - Consistency HOFL.pdf]]
