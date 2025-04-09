@@ -343,7 +343,17 @@ RECUPERA SLIDES
 
 ![[2025-04-03 - 13c - Continuity Theorems.pdf]]
 
+<<<<<<< HEAD
 
 ## LEZIONE 4/4/25
 
 ![[2025-04-04 - 14 - HOFL Denotational.pdf]]
+=======
+## LEZIONE 4/4/25
+
+![[2025-04-04 - 14 - HOFL Denotational.pdf]]
+
+## LEZIONE 8/4/25
+
+![[2025-04-08 - 15 - Consistency HOFL.pdf]]
+>>>>>>> 6ff196e2b7e4841ff3ae0ed02ac318cdb4a18cbb
