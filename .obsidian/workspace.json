@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAGISTRALE 1/SOFTWARE COMPOSITION.md",
+                "file": "MAGISTRALE 1/QUANTUM COMPUTING.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SOFTWARE COMPOSITION"
+              "title": "QUANTUM COMPUTING"
             }
           }
         ]
@@ -213,8 +213,14 @@
   },
   "active": "dd76c7a236fd97e6",
   "lastOpenFiles": [
-    "MAGISTRALE 1/ALGORITHM DESIGN.md",
+    "PDF/QUANTUM COMPUTING/Lecture 15. 2025-04-11 QFT+QPE.pdf",
+    "PDF/QUANTUM COMPUTING/Lecture 15. 2025-04-11 QFT+QPE.pdf.crdownload",
+    "PDF/QUANTUM COMPUTING/Lecture 11. 04_04_2025.pdf",
+    "PDF/QUANTUM COMPUTING/Lecture 11. 04_04_2025.pdf.crdownload",
+    "PDF/QUANTUM COMPUTING/2025-04-02.pdf",
+    "PDF/QUANTUM COMPUTING/2025-04-02.pdf.crdownload",
     "MAGISTRALE 1/SOFTWARE COMPOSITION.md",
+    "MAGISTRALE 1/ALGORITHM DESIGN.md",
     "MAGISTRALE 1/QUANTUM COMPUTING.md",
     "MAGISTRALE 1/AlgoDesignAssignment2.md",
     "IMMAGINI/Pasted image 20250327003753.png",
@@ -227,11 +233,6 @@
     "PDF/SOFTWARE COMPOSITION/softwareComposition13032025_250313_153822.pdf",
     "MAGISTRALE 1/QUANTUM RIPASSO.md",
     "PDF/ALGORITHM DESIGN/AlgoDesgin13032025_250313_140102.pdf",
-    "PDF/ALGORITHM DESIGN/AlgoDesign12325_250312_133119.pdf",
-    "PDF/QUANTUM COMPUTING/Introduction_to_Quantum_Computing-GDC notes.pdf",
-    "PDF/QUANTUM COMPUTING/Introduction_to_Quantum_Computing-GDC notes.pdf.crdownload",
-    "PDF/QUANTUM COMPUTING/IQC_3.pdf",
-    "PDF/QUANTUM COMPUTING/IQC_3.pdf.crdownload",
     "Pasted image 20250304175318.png",
     "Pasted image 20250304175044.png",
     "Pasted image 20250304174639.png",

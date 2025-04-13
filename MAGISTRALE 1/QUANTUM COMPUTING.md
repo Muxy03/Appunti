@@ -184,3 +184,13 @@ Qiskit notebook
 ## LEZIONE 28/3/25
 
 ![[QuantumAlgorithms(2).pdf]]
+
+## LEZIONE 2/4/25
+![[2025-04-02.pdf]]
+
+## LEZIONE 4/4/25
+
+![[Lecture 11. 04_04_2025.pdf]]
+## LEZIONE 11/4/25
+
+![[Lecture 15. 2025-04-11 QFT+QPE.pdf]]
