@@ -354,3 +354,9 @@ RECUPERA SLIDES
 ## LEZIONE 10/4/25
 
 ![[2025-04-10 - 16 - Erlang.pdf]]
+
+## LEZIONE 15/4/25
+
+![[2025-04-15 - 16a - Erlang session.pdf]]
+
+![[2025-04-15 - 17a - CCS.pdf]]
