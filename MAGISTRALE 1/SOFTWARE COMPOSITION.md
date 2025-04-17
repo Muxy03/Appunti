@@ -360,3 +360,9 @@ RECUPERA SLIDES
 ![[2025-04-15 - 16a - Erlang session.pdf]]
 
 ![[2025-04-15 - 17a - CCS.pdf]]
+
+## LEZIONE 17/4/25
+
+![[2025-04-17 - 17b - CCS guarded.pdf]]
+
+![[2025-04-17 - Easter Badge.pdf]]
