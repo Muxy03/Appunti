@@ -366,3 +366,13 @@ RECUPERA SLIDES
 ![[2025-04-17 - 17b - CCS guarded.pdf]]
 
 ![[2025-04-17 - Easter Badge.pdf]]
+
+## LEZIONE 24/4/25
+
+![[2025-04-24 - 18a - CCS abstract.pdf]]
+
+![[2025-04-24 - 18b - CCS bisimulation.pdf]]
+
+## LEZIONE 29/4/25
+
+![[2025-04-29 - 18c - CCS bis as fix.pdf]]
