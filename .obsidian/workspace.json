@@ -205,7 +205,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 514.5
+    "width": 514.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -222,7 +223,7 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "3b0b874f623af78c",
+  "active": "0f43527d727d7d28",
   "lastOpenFiles": [
     "MAGISTRALE 1/Assignments/AlgoDesignAssignment1.md",
     "MAGISTRALE 1/ALGORITHM DESIGN.md",
