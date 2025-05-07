@@ -376,3 +376,9 @@ RECUPERA SLIDES
 ## LEZIONE 29/4/25
 
 ![[2025-04-29 - 18c - CCS bis as fix.pdf]]
+
+## LEZIONE 6/5/25
+
+![[2025-05-06 - 19 - HML.pdf]]
+![[2025-05-06 - 20 - Weak.pdf]]
+![[2025-05-06 - 21 - CCS at work.pdf]]
