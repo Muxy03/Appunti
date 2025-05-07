@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAGISTRALE 1/SOFTWARE COMPOSITION.md",
+                "file": "MAGISTRALE 1/ALGORITHM DESIGN.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SOFTWARE COMPOSITION"
+              "title": "ALGORITHM DESIGN"
             }
           }
         ]
@@ -225,6 +225,10 @@
   },
   "active": "a2ef563c0a30c825",
   "lastOpenFiles": [
+    "MAGISTRALE 1/QUANTUM COMPUTING.md",
+    "PDF/QUANTUM COMPUTING/Shor_Part1.pdf",
+    "PDF/QUANTUM COMPUTING/Shor_Part1.pdf.crdownload",
+    "MAGISTRALE 1/SOFTWARE COMPOSITION.md",
     "MAGISTRALE 1/Assignments/Assignment6.pdf",
     "MAGISTRALE 1/Assignments/Pasted image 20250505211442.png",
     "MAGISTRALE 1/Assignments/Updated_Graph.png",
@@ -235,18 +239,14 @@
     "MAGISTRALE 1/ALGORITHM DESIGN.md",
     "MAGISTRALE 1/Assignments/AlgoDesignAssignment1.md",
     "MAGISTRALE 1/Assignments",
-    "MAGISTRALE 1/SOFTWARE COMPOSITION.md",
-    "MAGISTRALE 1/QUANTUM COMPUTING.md",
     "PDF/QUANTUM COMPUTING/Lecture 15. 2025-04-11 QFT+QPE.pdf",
     "PDF/QUANTUM COMPUTING/Lecture 15. 2025-04-11 QFT+QPE.pdf.crdownload",
     "PDF/QUANTUM COMPUTING/Lecture 11. 04_04_2025.pdf",
     "PDF/QUANTUM COMPUTING/Lecture 11. 04_04_2025.pdf.crdownload",
     "PDF/QUANTUM COMPUTING/2025-04-02.pdf",
-    "PDF/QUANTUM COMPUTING/2025-04-02.pdf.crdownload",
     "MAGISTRALE 1/Assignments/AlgoDesignAssignment2.md",
     "IMMAGINI/Pasted image 20250327003753.png",
     "MAGISTRALE 1/Assignments/AlgoDesignAssignment3.md",
-    "PDF/QUANTUM COMPUTING/IQC_SuperdenseCoding.pdf",
     "PDF/ALGO.md",
     "MAGISTRALE 1/QUANTUM RIPASSO.md",
     "Pasted image 20250304175318.png",

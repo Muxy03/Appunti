@@ -194,3 +194,14 @@ Qiskit notebook
 ## LEZIONE 11/4/25
 
 ![[Lecture 15. 2025-04-11 QFT+QPE.pdf]]
+
+## LEZIONE 16/4/25
+
+![[IQC2025-1.pdf]]
+## LEZIONE 23/4/25
+
+![[IQC2025-2.pdf]]
+
+## LEZIONE 7/5/25
+
+![[Shor_Part1.pdf]]
