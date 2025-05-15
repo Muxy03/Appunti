@@ -205,3 +205,7 @@ Qiskit notebook
 ## LEZIONE 7/5/25
 
 ![[Shor_Part1.pdf]]
+
+## LEZIONE 9/5/25
+
+![[Shor25_part2.pdf]]

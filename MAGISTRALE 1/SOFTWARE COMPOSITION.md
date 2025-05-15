@@ -382,3 +382,10 @@ RECUPERA SLIDES
 ![[2025-05-06 - 19 - HML.pdf]]
 ![[2025-05-06 - 20 - Weak.pdf]]
 ![[2025-05-06 - 21 - CCS at work.pdf]]
+
+## LEZIONE 9/5/25
+
+![[2025-05-09 - 22a - LTL CTL.pdf]]
+## LEZIONE 13/4/25
+
+![[2025-05-13 - 22b - mu calculus.pdf]]
