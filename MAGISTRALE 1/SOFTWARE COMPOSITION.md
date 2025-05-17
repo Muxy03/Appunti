@@ -389,3 +389,11 @@ RECUPERA SLIDES
 ## LEZIONE 13/4/25
 
 ![[2025-05-13 - 22b - mu calculus.pdf]]
+
+## LEZIONE 15/5/25
+
+![[2025-05-15 - 23 - Google Go.pdf]]
+
+## LEZIONE 16/5/25
+
+![[2025-05-16 - 24 - pi calculus.pdf]]
