@@ -1,13 +1,6 @@
+# Dimostrazioni e Schemi di Dimostrazione dalle Fonti
 
-Assolutamente! Ecco una raccolta delle dimostrazioni e degli schemi di dimostrazione presenti nelle fonti fornite, con una spiegazione dettagliata per ciascuna, formattata in Markdown e scritta in italiano.
-
-----------
-
-### Dimostrazioni e Schemi di Dimostrazione dalle Fonti
-
-Le fonti presentano diverse dimostrazioni complete o schemi di dimostrazione per proprietà di algoritmi randomizzati, strutture dati e problemi di teoria dei giochi o ottimizzazione. Di seguito sono riportati i principali.
-
-#### 1. Correttezza dello Shuffling con Variabili Indicatrici
+## 1. Correttezza dello Shuffling con Variabili Indicatrici
 
 Sebbene non sia presentata una dimostrazione completa e formale passo-passo, le fonti suggeriscono un esercizio per dimostrare la correttezza di un algoritmo di shuffling (permutazione casuale uniforme di un array) utilizzando le variabili indicatrici e l'induzione.
 
@@ -20,7 +13,7 @@ Sebbene non sia presentata una dimostrazione completa e formale passo-passo, le 
 
 Questa dimostrazione si basa sul fatto che in ogni passo `i`, l'elemento nella posizione `i` è scambiato con una posizione `j` scelta uniformemente dall'intervallo rimanente `[i, n]`, garantendo che ogni elemento abbia una probabilità uniforme di finire in ogni posizione finale.
 
-#### 2. Costo Atteso del QuickSort Randomizzato
+## 2. Costo Atteso del QuickSort Randomizzato
 
 L'analisi del costo atteso (numero di confronti tra elementi) per il QuickSort randomizzato utilizza le variabili indicatrici.
 
@@ -38,7 +31,7 @@ L'analisi del costo atteso (numero di confronti tra elementi) per il QuickSort r
 
 Questa analisi dimostra che il numero atteso di confronti nel QuickSort randomizzato è proporzionale a `n log n`.
 
-#### 3. Limite alla Probabilità di Errore nell'Algoritmo di Rabin-Karp
+## 3. Limite alla Probabilità di Errore nell'Algoritmo di Rabin-Karp
 
 L'algoritmo di Rabin-Karp per la string matching utilizza l'hashing per confrontare velocemente il pattern con le sottostringhe del testo. Essendo un algoritmo Monte Carlo, ha una probabilità di errore unilaterale (falso positivo).
 
@@ -56,7 +49,7 @@ L'algoritmo di Rabin-Karp per la string matching utilizza l'hashing per confront
 
 Questa dimostrazione mostra che, scegliendo un modulo primo `p` sufficientemente grande, l'algoritmo di Rabin-Karp ha una bassa probabilità di falso positivo.
 
-#### 4. La Probabilità che il Livello Inferiore dell'Hash Perfetto sia Perfetto
+## 4. La Probabilità che il Livello Inferiore dell'Hash Perfetto sia Perfetto
 
 Nella costruzione di una tabella hash perfetta a due livelli, il livello superiore mappa le chiavi in bucket. Il livello inferiore per ogni bucket `i` utilizza una funzione hash `h_i` specifica per mappare le chiavi `S_i` che finiscono in quel bucket a posizioni in un array di dimensione `|S_i|^2`. Si vuole dimostrare che, scegliendo una funzione hash `h_i` casuale da una famiglia universale per il bucket `S_i`, la probabilità che `h_i` sia perfetta (nessuna collisione per le chiavi in `S_i`) è maggiore o uguale a 1/2.
 
@@ -75,7 +68,7 @@ Nella costruzione di una tabella hash perfetta a due livelli, il livello superio
 
 Questo dimostra che per un singolo bucket, la probabilità di avere zero collisioni scegliendo una funzione hash casuale da una famiglia universale con un dominio di dimensione quadrata rispetto al numero di chiavi nel bucket è maggiore di 1/2. Questo è fondamentale per la costruzione efficiente della tabella hash perfetta.
 
-#### 5. Dimostrazione della Disuguaglianza di Markov
+## 5. Dimostrazione della Disuguaglianza di Markov
 
 La disuguaglianza di Markov fornisce un limite superiore alla probabilità che una variabile casuale non negativa sia maggiore o uguale a un certo valore, basandosi solo sul suo valore atteso.
 
@@ -92,7 +85,7 @@ La disuguaglianza di Markov fornisce un limite superiore alla probabilità che u
 
 Questa è una dimostrazione semplice ma fondamentale per ottenere limiti probabilistici a partire dal solo valore atteso.
 
-#### 6. Proprietà di Jaccard per Min-Hash
+## 6. Proprietà di Jaccard per Min-Hash
 
 La Min-Hash è una tecnica utilizzata per stimare la somiglianza tra insiemi, in particolare l'Indice di Jaccard. Una proprietà chiave delle funzioni Min-Hash (definite da permutazioni casuali uniformi dell'universo) è che la probabilità che le Min-Hash di due insiemi siano uguali è pari al loro Indice di Jaccard.
 
@@ -108,7 +101,7 @@ La Min-Hash è una tecnica utilizzata per stimare la somiglianza tra insiemi, in
 
 Questa proprietà è cruciale perché permette di stimare l'Indice di Jaccard tra due insiemi semplicemente confrontando le loro Min-Hash ottenute da diverse funzioni hash.
 
-#### 7. Indice di Jaccard Stimato con Bottom-k Sketch come Stimatore Non Polarizzato
+## 7. Indice di Jaccard Stimato con Bottom-k Sketch come Stimatore Non Polarizzato
 
 Il Bottom-k Sketch è un altro tipo di sketch basato su hash che mantiene i `k` elementi con i valori hash più piccoli da un insieme. Si può utilizzare per stimare l'Indice di Jaccard. Si vuole dimostrare che lo stimatore basato sul rapporto tra l'intersezione e l'unione dei Bottom-k sketch è non polarizzato (unbiased).
 
@@ -148,14 +141,14 @@ Concentriamoci sullo schema per il Threshold Sketch () poiché è più esplicita
     7.  `Pr[x in A union B]` (con x scelto da U) = `|A union B|/|U|`.
     8.  Quindi, `E[Y_x] = ((|A int B|/|U|) * t) / (|A union B|/|U|) = (|A int B| / |A union B|) * t = J(A, B) * t`. Questo non è `J(A,B)`.
     
-    L'outline in "Pr[Ex e AB'(x e AB1)] = Pr[ExzlED . NET C / Pr[IEr] = PEAAP PrExABIxcAB] = JAB" suggerisce un uso più sottile della probabilità condizionata o una riscrittura dello stimatore in termini di probabilità. La frase "Pr[Y^= 1) = J(A,B)" dove Y^ è legato allo stimatore suggerisce che la probabilità che un elemento casuale dell'unione cada nell'intersezione degli sketch è pari a J(A,B). Questo accade se `x` è in `A int B` e `r(x) < t`. La probabilità è `J(A,B) * t`. Questo non è J(A,B).
+    L'outline in "Pr\[Ex e AB'(x e AB1)] = Pr\[ExzlED . NET C / Pr\[IEr] = PEAAP PrExABIxcAB] = JAB" suggerisce un uso più sottile della probabilità condizionata o una riscrittura dello stimatore in termini di probabilità. La frase "Pr\[Y^= 1) = J(A,B)" dove Y^ è legato allo stimatore suggerisce che la probabilità che un elemento casuale dell'unione cada nell'intersezione degli sketch è pari a J(A,B). Questo accade se `x` è in `A int B` e `r(x) < t`. La probabilità è `J(A,B) * t`. Questo non è J(A,B).
     
     Forse lo stimatore è `|S(A) intersect S(B)| * C` dove C è una costante. Oppure è basato su un rapporto di conteggi. La fonte afferma `As J(A,B)= , taking EIJCABI=EY]AC D`. Questo suggerisce che lo stimatore è un'aspettazione di qualche variabile. L'uguaglianza `Pr[ExABIxcAB] = JAB` non è corretta in generale, ma `Pr[x in A int B | x in A union B] = J(A,B)`.
     
     Il fatto che `E[stimatore] = J(A,B)` per il Threshold Sketch è vero, ma la dimostrazione dettagliata nelle fonti non è completa. L'idea è che per un elemento `x` scelto uniformemente da `A union B`, la probabilità che `x` cada in `S(A) intersect S(B)` è `J(A,B) * t`.
     
 
-#### 8. Probabilità di Successo dell'Algoritmo MIN-CUT di Karger
+## 8. Probabilità di Successo dell'Algoritmo MIN-CUT di Karger
 
 L'algoritmo di Karger è un algoritmo randomizzato per trovare un taglio minimo in un grafo. La sua probabilità di successo non è 1, ma può essere resa arbitrariamente alta ripetendo l'algoritmo.
 
@@ -174,7 +167,7 @@ L'algoritmo di Karger è un algoritmo randomizzato per trovare un taglio minimo 
 
 Questo dimostra che una singola esecuzione ha una probabilità di successo relativamente bassa (`O(1/n^2)`), ma ripetendo l'algoritmo `O(n^2 log(1/delta))` volte, si può ottenere la risposta corretta con probabilità `1-delta`.
 
-#### 9. Limite all'Errore nel Count-Min Sketch
+## 9. Limite all'Errore nel Count-Min Sketch
 
 Il Count-Min Sketch è una struttura dati probabilistica utilizzata per stimare le frequenze degli elementi in uno stream. Fornisce una stima `F_est(i)` per la frequenza `F(i)` di un elemento `i` tale che `F_est(i) <= F(i) + epsilon * ||F||_1` con alta probabilità.
 
@@ -185,7 +178,7 @@ Il Count-Min Sketch è una struttura dati probabilistica utilizzata per stimare 
     2.  **Decomposizione:** `T[j][h_j(i)] = F(i) + Sum_{l != i, h_j(l) = h_j(i)} F(l)`. Il secondo termine è l'errore di collisione `X_j` nella riga `j` per l'elemento `i`. `F_est(i) = F(i) + min_j X_j`. Vogliamo limitare `min_j X_j`.
     3.  **Errore Atteso in una Riga:** Per una riga `j` fissata, l'aspettazione dell'errore di collisione per l'elemento `i` è `E[X_j] = E[Sum_{l != i} F(l) * I(h_j(l) = h_j(i))]`. Per linearità, `E[X_j] = Sum_{l != i} F(l) * E[I(h_j(l) = h_j(i))] = Sum_{l != i} F(l) * Pr(h_j(l) = h_j(i))`.
     4.  **Probabilità di Collisione (2-wise independence):** Poiché `h_j` è scelta da una famiglia 2-wise independent (che include le famiglie universali usate nella pratica), `Pr(h_j(l) = h_j(i)) <= 1/c` per `l != i`, dove `c` è la dimensione del dominio delle hash function (numero di colonne).
-    5.  **Limite Superiore per E[X_j]:** `E[X_j] <= Sum_{l != i} F(l) * (1/c) = (Sum_{l != i} F(l)) / c <= ||F||_1 / c`.
+    5.  **Limite Superiore per E\[X_j]:** `E[X_j] <= Sum_{l != i} F(l) * (1/c) = (Sum_{l != i} F(l)) / c <= ||F||_1 / c`.
     6.  **Markov's Inequality:** Per ogni `a > 0`, `Pr[X_j >= a] <= E[X_j]/a <= (||F||_1/c) / a`. Vogliamo che `min_j X_j <= epsilon * ||F||_1` con alta probabilità. L'evento di fallimento è `min_j X_j > epsilon * ||F||_1`, che implica `X_j > epsilon * ||F||_1` per tutte le righe `j`.
     7.  **Probabilità di Errore in una Riga:** Applichiamo Markov con `a = epsilon * ||F||_1`. `Pr[X_j > epsilon * ||F||_1] <= (||F||_1/c) / (epsilon * ||F||_1) = 1 / (epsilon * c)`.
     8.  **Union Bound (Non sufficiente per il minimo):** Un limite superiore a `Pr[min X_j > epsilon ||F||_1]` è `Pr[X_0 > epsilon ||F||_1 e X_1 > epsilon ||F||_1 e ...]`. Poiché le hash function sono indipendenti (se scelte separatamente per ogni riga), gli eventi `X_j > a` sono indipendenti.
@@ -194,7 +187,7 @@ Il Count-Min Sketch è una struttura dati probabilistica utilizzata per stimare 
 
 Questa dimostrazione mostra come la scelta dei parametri `r` e `c` (numero di righe e colonne) controlli il trade-off tra spazio/tempo di query/aggiornamento e probabilità di errore, garantendo un limite di errore assoluto con alta probabilità.
 
-#### 10. Limite all'Errore nel Count-Min Sketch con Mediana
+## 10. Limite all'Errore nel Count-Min Sketch con Mediana
 
 Quando si permette la decremento delle frequenze o si vuole migliorare la garanzia di errore, si può utilizzare la mediana delle stime delle righe invece del minimo.
 
@@ -212,7 +205,7 @@ Quando si permette la decremento delle frequenze o si vuole migliorare la garanz
 
 La dimostrazione per l'errore negativo `F(i) - F_est(i)` segue un ragionamento simile, limitando la probabilità che l'errore `X_j` sia molto negativo (se permesso) o che la mediana sia molto inferiore a `F(i)` perché molte righe hanno un errore piccolo ma negativo. Se si assumono solo incrementi, `X_j >= 0`, e il limite inferiore `F_est(i) >= F(i)` è garantito dalla definizione del minimo. Per la mediana con soli incrementi, `F_est(i)` potrebbe essere maggiore di `F(i)`. Il limite `|F_est(i) - F(i)| < ...` in suggerisce che l'errore può essere positivo o negativo, forse in un setting più generale con decrementi.
 
-#### 11. Limite alla Dimensione del Campione per la Stima della Distanza Media
+## 11. Limite alla Dimensione del Campione per la Stima della Distanza Media
 
 La stima della distanza media in un grafo campionando nodi e calcolando le distanze solo dal campione utilizza strumenti di concentrazione della misura come Azuma-Hoeffding.
 
@@ -230,7 +223,7 @@ La stima della distanza media in un grafo campionando nodi e calcolando le dista
 
 La dimostrazione completa della dimensione del campione O(epsilon^-2 log delta^-1 n) non è completamente dettagliata nelle fonti, ma lo schema si basa chiaramente sull'applicazione di un limite di concentrazione della misura (probabilmente Azuma-Hoeffding o Hoeffding) alla media campionaria delle frazioni a distanza `h`.
 
-#### 12. L'NP-difficoltà del TSP implica l'impossibilità di un'approssimazione con fattore costante a meno che P=NP
+## 12. L'NP-difficoltà del TSP implica l'impossibilità di un'approssimazione con fattore costante a meno che P=NP
 
 Il problema del Commesso Viaggiatore (Traveling Salesperson Problem - TSP) è uno dei problemi NP-hard più noti. Si può dimostrare che trovare un'approssimazione con fattore costante per il TSP (in generale, non metrico) è altrettanto difficile quanto risolverlo esattamente, a meno che P=NP.
 
@@ -264,7 +257,7 @@ Il problema del Commesso Viaggiatore (Traveling Salesperson Problem - TSP) è un
 
 Questa dimostrazione per riduzione stabilisce un forte limite alla possibilità di approssimare il TSP generale con un fattore costante.
 
-#### 13. 2-Approssimazione per il TSP Metrico
+## 13. 2-Approssimazione per il TSP Metrico
 
 Sebbene il TSP generale sia inapprossimabile con fattore costante (a meno che P=NP), il TSP metrico (dove le distanze soddisfano la disuguaglianza triangolare) ammette algoritmi di approssimazione. Un algoritmo classico fornisce una 2-approssimazione.
 
@@ -281,7 +274,7 @@ Sebbene il TSP generale sia inapprossimabile con fattore costante (a meno che P=
 
 Questo dimostra che l'algoritmo produce un tour il cui costo è al massimo il doppio del costo ottimo, fornendo quindi una 2-approssimazione.
 
-#### 14. 2-Approssimazione per il MAX-CUT tramite Ricerca Locale
+## 14. 2-Approssimazione per il MAX-CUT tramite Ricerca Locale
 
 Il problema del MAX-CUT (trovare un taglio che massimizzi il numero di archi tra le due partizioni) è NP-hard. Un algoritmo di ricerca locale può fornire una 2-approssimazione.
 
@@ -300,7 +293,7 @@ Il problema del MAX-CUT (trovare un taglio che massimizzi il numero di archi tra
 
 Questo dimostra che l'algoritmo converge a una partizione il cui taglio ha dimensione almeno la metà del numero totale di archi. Poiché il taglio massimo è al massimo `|E|` (potenzialmente tutti gli archi possono attraversare il taglio), e l'algoritmo garantisce un taglio di almeno `|E|/2`, si ottiene una 2-approssimazione: `OPT_MC >= |E(S, S_bar)| >= |E|/2`, e `OPT_MC <= |E|`. Questo implica `|E(S, S_bar)| >= (1/2) * |E|`. La dimostrazione richiede che `OPT_MC >= |E|/2`. Questo è vero perché si può sempre ottenere un taglio di almeno `|E|/2` (ad esempio, mettendo ogni vertice in una partizione a caso con probabilità 1/2; il numero atteso di archi che attraversano è `|E|/2`).
 
-#### 15. 2-Approssimazione per il MAX-CUT tramite Algoritmo Greedy
+## 15. 2-Approssimazione per il MAX-CUT tramite Algoritmo Greedy
 
 Un algoritmo greedy per il MAX-CUT che assegna i vertici alle partizioni uno per uno per massimizzare il contributo al taglio corrente fornisce anch'esso una 2-approssimazione.
 
@@ -318,7 +311,7 @@ Un algoritmo greedy per il MAX-CUT che assegna i vertici alle partizioni uno per
 
 Questo dimostra che l'algoritmo greedy costruisce un taglio di dimensione almeno `|E|/2`, fornendo una 2-approssimazione.
 
-#### 16. 2-Approssimazione per il KNAPSACK (Greedy + Elemento di Valore Massimo)
+## 16. 2-Approssimazione per il KNAPSACK (Greedy + Elemento di Valore Massimo)
 
 Il problema dello Zaino (Knapsack) (trovare un sottoinsieme di oggetti con peso totale limitato che massimizzi il valore totale) è NP-hard. Un semplice algoritmo greedy non fornisce una buona approssimazione. Tuttavia, una variazione che considera l'output greedy e l'elemento singolo di valore massimo garantisce una 2-approssimazione.
 
@@ -345,7 +338,7 @@ Il problema dello Zaino (Knapsack) (trovare un sottoinsieme di oggetti con peso 
 
 Questo dimostra che la variazione dell'algoritmo greedy con confronto con l'elemento di valore massimo fornisce una 2-approssimazione per il Knapsack.
 
-#### 17. Knapsack FPTAS tramite Scaling dei Valori
+## 17. Knapsack FPTAS tramite Scaling dei Valori
 
 È possibile ottenere uno schema di approssimazione in tempo completamente polinomiale (FPTAS) per il Knapsack metrico (dove i pesi sono interi). L'idea è scalare e arrotondare i valori degli oggetti per poter utilizzare un algoritmo di programmazione dinamica efficiente sugli oggetti scalati.
 
@@ -364,7 +357,7 @@ Questo dimostra che la variazione dell'algoritmo greedy con confronto con l'elem
 
 Questo schema dimostra come la tecnica dello scaling dei valori, combinata con la programmazione dinamica, possa fornire un algoritmo di approssimazione con garanzia arbitrariamente buona (FPTAS) per il Knapsack.
 
-#### 18. La Difficoltà di Distinguere Diametro 2 da Diametro 3 implica la falsità di SETH
+## 18. La Difficoltà di Distinguere Diametro 2 da Diametro 3 implica la falsità di SETH
 
 Strong Exponential Time Hypothesis (SETH) è un'ipotesi sulla complessità computazionale di SAT. Si può dimostrare che se esistesse un algoritmo significativamente più veloce di quello "naïve" per distinguere i grafi con diametro 2 da quelli con diametro 3, allora SETH sarebbe falso.
 
