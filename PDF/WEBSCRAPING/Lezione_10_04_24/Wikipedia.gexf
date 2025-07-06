@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2024-04-07">
+    <creator>NetworkX 3.0</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="title" type="string" />
+    </attributes>
+    <nodes>
+      <node id="https://en.wikipedia.org/wiki/" label="https://en.wikipedia.org/wiki/">
+        <attvalues>
+          <attvalue for="0" value="Main Page" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/Assassination_of_Juv%C3%A9nal_Habyarimana_and_Cyprien_Ntaryamira" label="https://en.wikipedia.org/wiki/Assassination_of_Juv%C3%A9nal_Habyarimana_and_Cyprien_Ntaryamira">
+        <attvalues>
+          <attvalue for="0" value="Assassination of Juvénal Habyarimana and Cyprien Ntaryamira" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/Bruce_W._Klunder" label="https://en.wikipedia.org/wiki/Bruce_W._Klunder">
+        <attvalues>
+          <attvalue for="0" value="Bruce W. Klunder" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/Bulldozer" label="https://en.wikipedia.org/wiki/Bulldozer">
+        <attvalues>
+          <attvalue for="0" value="Bulldozer" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/Hardin_County,_Tennessee" label="https://en.wikipedia.org/wiki/Hardin_County,_Tennessee">
+        <attvalues>
+          <attvalue for="0" value="Hardin County, Tennessee" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/Penal_labour" label="https://en.wikipedia.org/wiki/Penal_labour">
+        <attvalues>
+          <attvalue for="0" value="Penal labour" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/1862" label="https://en.wikipedia.org/wiki/1862">
+        <attvalues>
+          <attvalue for="0" value="1862" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/The_boy_Jones" label="https://en.wikipedia.org/wiki/The_boy_Jones">
+        <attvalues>
+          <attvalue for="0" value="The boy Jones" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/1949" label="https://en.wikipedia.org/wiki/1949">
+        <attvalues>
+          <attvalue for="0" value="1949" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/NASA" label="https://en.wikipedia.org/wiki/NASA">
+        <attvalues>
+          <attvalue for="0" value="NASA" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/List_of_days_of_the_year" label="https://en.wikipedia.org/wiki/List_of_days_of_the_year">
+        <attvalues>
+          <attvalue for="0" value="List of days of the year" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/Statue_of_Queen_Victoria_(Toronto)" label="https://en.wikipedia.org/wiki/Statue_of_Queen_Victoria_(Toronto)">
+        <attvalues>
+          <attvalue for="0" value="Statue of Queen Victoria (Toronto)" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/Gaza_Strip_smuggling_tunnels" label="https://en.wikipedia.org/wiki/Gaza_Strip_smuggling_tunnels">
+        <attvalues>
+          <attvalue for="0" value="Gaza Strip smuggling tunnels" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/Small_Diamond_Crown_of_Queen_Victoria" label="https://en.wikipedia.org/wiki/Small_Diamond_Crown_of_Queen_Victoria">
+        <attvalues>
+          <attvalue for="0" value="Small Diamond Crown of Queen Victoria" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/1948_Republican_Party_presidential_primaries" label="https://en.wikipedia.org/wiki/1948_Republican_Party_presidential_primaries">
+        <attvalues>
+          <attvalue for="0" value="1948 Republican Party presidential primaries" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/Mars_Global_Surveyor" label="https://en.wikipedia.org/wiki/Mars_Global_Surveyor">
+        <attvalues>
+          <attvalue for="0" value="Mars Global Surveyor" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/Cesare_Formichi" label="https://en.wikipedia.org/wiki/Cesare_Formichi">
+        <attvalues>
+          <attvalue for="0" value="Cesare Formichi" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/Billy_Gibbons" label="https://en.wikipedia.org/wiki/Billy_Gibbons">
+        <attvalues>
+          <attvalue for="0" value="Billy Gibbons" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/New_York_City" label="https://en.wikipedia.org/wiki/New_York_City">
+        <attvalues>
+          <attvalue for="0" value="New York City" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/Lifting_body" label="https://en.wikipedia.org/wiki/Lifting_body">
+        <attvalues>
+          <attvalue for="0" value="Lifting body" />
+        </attvalues>
+      </node>
+      <node id="https://en.wikipedia.org/wiki/Tan_Kim_Ching" label="https://en.wikipedia.org/wiki/Tan_Kim_Ching">
+        <attvalues>
+          <attvalue for="0" value="Tan Kim Ching" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="https://en.wikipedia.org/wiki/" target="https://en.wikipedia.org/wiki/" id="0" />
+      <edge source="https://en.wikipedia.org/wiki/" target="https://en.wikipedia.org/wiki/The_boy_Jones" id="1" />
+      <edge source="https://en.wikipedia.org/wiki/" target="https://en.wikipedia.org/wiki/Penal_labour" id="2" />
+      <edge source="https://en.wikipedia.org/wiki/" target="https://en.wikipedia.org/wiki/1862" id="3" />
+      <edge source="https://en.wikipedia.org/wiki/" target="https://en.wikipedia.org/wiki/Hardin_County,_Tennessee" id="4" />
+      <edge source="https://en.wikipedia.org/wiki/" target="https://en.wikipedia.org/wiki/1949" id="5" />
+      <edge source="https://en.wikipedia.org/wiki/" target="https://en.wikipedia.org/wiki/Bruce_W._Klunder" id="6" />
+      <edge source="https://en.wikipedia.org/wiki/" target="https://en.wikipedia.org/wiki/Bulldozer" id="7" />
+      <edge source="https://en.wikipedia.org/wiki/" target="https://en.wikipedia.org/wiki/Assassination_of_Juv%C3%A9nal_Habyarimana_and_Cyprien_Ntaryamira" id="8" />
+      <edge source="https://en.wikipedia.org/wiki/" target="https://en.wikipedia.org/wiki/NASA" id="9" />
+      <edge source="https://en.wikipedia.org/wiki/" target="https://en.wikipedia.org/wiki/List_of_days_of_the_year" id="10" />
+      <edge source="https://en.wikipedia.org/wiki/Assassination_of_Juv%C3%A9nal_Habyarimana_and_Cyprien_Ntaryamira" target="https://en.wikipedia.org/wiki/" id="11" />
+      <edge source="https://en.wikipedia.org/wiki/Assassination_of_Juv%C3%A9nal_Habyarimana_and_Cyprien_Ntaryamira" target="https://en.wikipedia.org/wiki/Assassination_of_Juv%C3%A9nal_Habyarimana_and_Cyprien_Ntaryamira" id="12" />
+      <edge source="https://en.wikipedia.org/wiki/Assassination_of_Juv%C3%A9nal_Habyarimana_and_Cyprien_Ntaryamira" target="https://en.wikipedia.org/wiki/New_York_City" id="13" />
+      <edge source="https://en.wikipedia.org/wiki/Bruce_W._Klunder" target="https://en.wikipedia.org/wiki/" id="14" />
+      <edge source="https://en.wikipedia.org/wiki/Bruce_W._Klunder" target="https://en.wikipedia.org/wiki/Bruce_W._Klunder" id="15" />
+      <edge source="https://en.wikipedia.org/wiki/Bulldozer" target="https://en.wikipedia.org/wiki/" id="16" />
+      <edge source="https://en.wikipedia.org/wiki/Bulldozer" target="https://en.wikipedia.org/wiki/Bulldozer" id="17" />
+      <edge source="https://en.wikipedia.org/wiki/Bulldozer" target="https://en.wikipedia.org/wiki/Gaza_Strip_smuggling_tunnels" id="18" />
+      <edge source="https://en.wikipedia.org/wiki/Hardin_County,_Tennessee" target="https://en.wikipedia.org/wiki/" id="19" />
+      <edge source="https://en.wikipedia.org/wiki/Hardin_County,_Tennessee" target="https://en.wikipedia.org/wiki/Hardin_County,_Tennessee" id="20" />
+      <edge source="https://en.wikipedia.org/wiki/Penal_labour" target="https://en.wikipedia.org/wiki/" id="21" />
+      <edge source="https://en.wikipedia.org/wiki/Penal_labour" target="https://en.wikipedia.org/wiki/Penal_labour" id="22" />
+      <edge source="https://en.wikipedia.org/wiki/1862" target="https://en.wikipedia.org/wiki/" id="23" />
+      <edge source="https://en.wikipedia.org/wiki/1862" target="https://en.wikipedia.org/wiki/1862" id="24" />
+      <edge source="https://en.wikipedia.org/wiki/1862" target="https://en.wikipedia.org/wiki/Tan_Kim_Ching" id="25" />
+      <edge source="https://en.wikipedia.org/wiki/1862" target="https://en.wikipedia.org/wiki/1949" id="26" />
+      <edge source="https://en.wikipedia.org/wiki/The_boy_Jones" target="https://en.wikipedia.org/wiki/" id="27" />
+      <edge source="https://en.wikipedia.org/wiki/The_boy_Jones" target="https://en.wikipedia.org/wiki/The_boy_Jones" id="28" />
+      <edge source="https://en.wikipedia.org/wiki/The_boy_Jones" target="https://en.wikipedia.org/wiki/Statue_of_Queen_Victoria_(Toronto)" id="29" />
+      <edge source="https://en.wikipedia.org/wiki/The_boy_Jones" target="https://en.wikipedia.org/wiki/Small_Diamond_Crown_of_Queen_Victoria" id="30" />
+      <edge source="https://en.wikipedia.org/wiki/1949" target="https://en.wikipedia.org/wiki/" id="31" />
+      <edge source="https://en.wikipedia.org/wiki/1949" target="https://en.wikipedia.org/wiki/1949" id="32" />
+      <edge source="https://en.wikipedia.org/wiki/1949" target="https://en.wikipedia.org/wiki/New_York_City" id="33" />
+      <edge source="https://en.wikipedia.org/wiki/1949" target="https://en.wikipedia.org/wiki/Billy_Gibbons" id="34" />
+      <edge source="https://en.wikipedia.org/wiki/1949" target="https://en.wikipedia.org/wiki/1862" id="35" />
+      <edge source="https://en.wikipedia.org/wiki/1949" target="https://en.wikipedia.org/wiki/Cesare_Formichi" id="36" />
+      <edge source="https://en.wikipedia.org/wiki/NASA" target="https://en.wikipedia.org/wiki/" id="37" />
+      <edge source="https://en.wikipedia.org/wiki/NASA" target="https://en.wikipedia.org/wiki/NASA" id="38" />
+      <edge source="https://en.wikipedia.org/wiki/NASA" target="https://en.wikipedia.org/wiki/Mars_Global_Surveyor" id="39" />
+      <edge source="https://en.wikipedia.org/wiki/NASA" target="https://en.wikipedia.org/wiki/Lifting_body" id="40" />
+      <edge source="https://en.wikipedia.org/wiki/NASA" target="https://en.wikipedia.org/wiki/1948_Republican_Party_presidential_primaries" id="41" />
+      <edge source="https://en.wikipedia.org/wiki/List_of_days_of_the_year" target="https://en.wikipedia.org/wiki/" id="42" />
+      <edge source="https://en.wikipedia.org/wiki/List_of_days_of_the_year" target="https://en.wikipedia.org/wiki/List_of_days_of_the_year" id="43" />
+      <edge source="https://en.wikipedia.org/wiki/Statue_of_Queen_Victoria_(Toronto)" target="https://en.wikipedia.org/wiki/" id="44" />
+      <edge source="https://en.wikipedia.org/wiki/Statue_of_Queen_Victoria_(Toronto)" target="https://en.wikipedia.org/wiki/Statue_of_Queen_Victoria_(Toronto)" id="45" />
+      <edge source="https://en.wikipedia.org/wiki/Statue_of_Queen_Victoria_(Toronto)" target="https://en.wikipedia.org/wiki/The_boy_Jones" id="46" />
+      <edge source="https://en.wikipedia.org/wiki/Statue_of_Queen_Victoria_(Toronto)" target="https://en.wikipedia.org/wiki/Small_Diamond_Crown_of_Queen_Victoria" id="47" />
+      <edge source="https://en.wikipedia.org/wiki/Gaza_Strip_smuggling_tunnels" target="https://en.wikipedia.org/wiki/" id="48" />
+      <edge source="https://en.wikipedia.org/wiki/Gaza_Strip_smuggling_tunnels" target="https://en.wikipedia.org/wiki/Gaza_Strip_smuggling_tunnels" id="49" />
+      <edge source="https://en.wikipedia.org/wiki/Small_Diamond_Crown_of_Queen_Victoria" target="https://en.wikipedia.org/wiki/" id="50" />
+      <edge source="https://en.wikipedia.org/wiki/Small_Diamond_Crown_of_Queen_Victoria" target="https://en.wikipedia.org/wiki/Small_Diamond_Crown_of_Queen_Victoria" id="51" />
+      <edge source="https://en.wikipedia.org/wiki/Small_Diamond_Crown_of_Queen_Victoria" target="https://en.wikipedia.org/wiki/The_boy_Jones" id="52" />
+      <edge source="https://en.wikipedia.org/wiki/Small_Diamond_Crown_of_Queen_Victoria" target="https://en.wikipedia.org/wiki/Statue_of_Queen_Victoria_(Toronto)" id="53" />
+      <edge source="https://en.wikipedia.org/wiki/1948_Republican_Party_presidential_primaries" target="https://en.wikipedia.org/wiki/" id="54" />
+      <edge source="https://en.wikipedia.org/wiki/1948_Republican_Party_presidential_primaries" target="https://en.wikipedia.org/wiki/1948_Republican_Party_presidential_primaries" id="55" />
+      <edge source="https://en.wikipedia.org/wiki/1948_Republican_Party_presidential_primaries" target="https://en.wikipedia.org/wiki/NASA" id="56" />
+      <edge source="https://en.wikipedia.org/wiki/Mars_Global_Surveyor" target="https://en.wikipedia.org/wiki/" id="57" />
+      <edge source="https://en.wikipedia.org/wiki/Mars_Global_Surveyor" target="https://en.wikipedia.org/wiki/Mars_Global_Surveyor" id="58" />
+      <edge source="https://en.wikipedia.org/wiki/Mars_Global_Surveyor" target="https://en.wikipedia.org/wiki/NASA" id="59" />
+      <edge source="https://en.wikipedia.org/wiki/Cesare_Formichi" target="https://en.wikipedia.org/wiki/" id="60" />
+      <edge source="https://en.wikipedia.org/wiki/Cesare_Formichi" target="https://en.wikipedia.org/wiki/Cesare_Formichi" id="61" />
+      <edge source="https://en.wikipedia.org/wiki/Billy_Gibbons" target="https://en.wikipedia.org/wiki/" id="62" />
+      <edge source="https://en.wikipedia.org/wiki/Billy_Gibbons" target="https://en.wikipedia.org/wiki/Billy_Gibbons" id="63" />
+      <edge source="https://en.wikipedia.org/wiki/Billy_Gibbons" target="https://en.wikipedia.org/wiki/New_York_City" id="64" />
+      <edge source="https://en.wikipedia.org/wiki/New_York_City" target="https://en.wikipedia.org/wiki/" id="65" />
+      <edge source="https://en.wikipedia.org/wiki/New_York_City" target="https://en.wikipedia.org/wiki/New_York_City" id="66" />
+      <edge source="https://en.wikipedia.org/wiki/Lifting_body" target="https://en.wikipedia.org/wiki/" id="67" />
+      <edge source="https://en.wikipedia.org/wiki/Lifting_body" target="https://en.wikipedia.org/wiki/Lifting_body" id="68" />
+      <edge source="https://en.wikipedia.org/wiki/Lifting_body" target="https://en.wikipedia.org/wiki/NASA" id="69" />
+      <edge source="https://en.wikipedia.org/wiki/Tan_Kim_Ching" target="https://en.wikipedia.org/wiki/" id="70" />
+      <edge source="https://en.wikipedia.org/wiki/Tan_Kim_Ching" target="https://en.wikipedia.org/wiki/Tan_Kim_Ching" id="71" />
+    </edges>
+  </graph>
+</gexf>

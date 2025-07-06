@@ -1,0 +1,179 @@
+{
+  "main": {
+    "id": "9896f17d7b6c0f83",
+    "type": "split",
+    "children": [
+      {
+        "id": "d123a5bf50565a2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9d1f8bf96aa935e1",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "ALGORITHM DESIGN/20250430.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "20250430"
+            }
+          },
+          {
+            "id": "426ec7795ae8fcc6",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9dcad08cc50ec0f7",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "2dc8bc397b56c9ee",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "5d5c9c5d5773f562",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "74c1a292a048b36c",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "c72bc63a00c6b7b1",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "263c4b46a4c21573",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "735b9dea209ee170",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "ALGORITHM DESIGN/20250430.pdf",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "bfe3f9cd9d1ceb96",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "ALGORITHM DESIGN/20250306.pdf",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "31088e3268827a79",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "ALGORITHM DESIGN/20250306.pdf",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9d1f8bf96aa935e1",
+  "lastOpenFiles": [
+    "ALGORITHM DESIGN/20250428.pdf",
+    "ALGORITHM DESIGN/22050423b.pdf",
+    "ALGORITHM DESIGN/20250423a.pdf",
+    "ALGORITHM DESIGN/20250416.pdf",
+    "ALGORITHM DESIGN/20250414.pdf",
+    "ALGORITHM DESIGN/20250409.pdf",
+    "ALGORITHM DESIGN/20250407.pdf",
+    "ALGORITHM DESIGN/20250403.pdf",
+    "ALGORITHM DESIGN/20250402.pdf",
+    "ALGORITHM DESIGN/20250328.pdf",
+    "ALGORITHM DESIGN/20250327.pdf",
+    "Esercizio 26_02.md"
+  ]
+}
