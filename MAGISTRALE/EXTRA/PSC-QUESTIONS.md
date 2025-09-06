@@ -101,6 +101,7 @@
 
 - What is the domain Z_\bot?
 - How is the cartesian product domain defined?
+---
 - How is the limit in a cartesian product domain defined?
 - What is the Switch Lemma?
 - How is the functional domain defined?
@@ -109,28 +110,37 @@
 - How is the limit in a lifted domain defined?
 - How to prove continuity of a function f:D -> E x F?
 - How to prove continuity of a function f:D x E -> F?
+---
 - How is the apply function defined?
 - How is the fix function defined?
 - What is the let notation?
-
+---
 - What are the domains needed to define the denotational semantics of HOFL?
 - How is the denotational semantics of HOFL defined?
 - What is the Substitution Lemma?
 - What are the possible denotations of canonical HOFL terms?
+- ---
 - Does the denotational semantics of closed HOFL terms depend on the environment?
 - What is the relation between the operational and denotational semantics of HOFL?
 - For which type the operational and denotational semantics are consistent?
 - Do operational and denotational convergence coincide in HOFL?
 - What is the unlifted denotational semantics of HOFL?
-
+---
 - How are new processes created in Erlang?
+	- spawn(function)
 - What kind of communication is possible in Erlang?
+	- actor model
 - What is a process identifier?
+	- Pid
 - What is the syntax for sending messages in Erlang?
+	- Pid ! message
 - What is the syntax for receiving message in Erlang?
+	- receive X -> ... end.
 - What is the meaning of the clause after?
+	- sleep in C 
 - How can pattern matching be used in receiving messages?
-
+	- ![[Pasted image 20250807130602.png]]
+---
 - What is the syntax of CCS?
 - How is iteration achieved in CCS?
 - What is the style of the operational semantics of CCS?
@@ -141,6 +151,7 @@
 - How can value-passing be encoded in CCS?
 - Why graph isomorphism is not a good candidate as an equivalence for CCS?
 - What is trace equivalence?
+---
 - Why trace equivalence is not a good candidate as an equivalence for CCS?
 - What are the rules of the bisimulation game?
 - What is a strong bisimulation?
@@ -153,14 +164,14 @@
 - How can strong bisimilarity be expressed as a least fixpoint?
 - What is the Knaster-Tarski Theorem?
 - What are some of the equivalence laws satisfied by strong bisimilarity?
-
+---
 - What is the syntax of Hennessy-Milner logic?
 - What is the converse of a HML formula?
 - How is the satisfaction relation defined for HML formulas?
 - How is HML logical equivalence between processes defined?
 - What is the relation between HML logical equivalence and strong bisimilarity?
 - How to prove that two finitely branching processes are not strong bisimilar?
-
+---
 - What is a weak transition?
 - How is the weak bisimulation game defined?
 - What is a weak bisimulation?
@@ -171,11 +182,11 @@
 - Why is weak bisimilarity not a congruence?
 - What is the weak observational congruence?
 - What are Milner's tau laws?
-
+---
 - How can imperative programs be encoded in CCS?
 - How can sequential composition of commands be encoded in CCS?
 - How can CCS be used to verify program properties?
-
+---
 - What is CAAL?
 - What are the features implemented in CAAL?
 - Which equivalences can be checked using CAAL?
@@ -199,6 +210,7 @@
 - What is the relation between the expressive powers of LTL, CTL, CTL*?
 
 - What is the syntax of the mu-calculus?
+---
 - Why only positive normal forms are considered?
 - How is the semantics of mu-calculus formulas defined?
 - How to express deadlock freedom in the mu-calculus?
@@ -206,7 +218,7 @@
 - How to write an invariant property in the mu-calculus?
 - How to write a possibly formula in the mu-calculus?
 - How can bisimilarity be exploited in model verification?
-
+---
 - How are goroutines launched in Google Go?
 - How is a channel created in Google Go?
 - How is asynchronous communication possible in Google Go?
@@ -214,7 +226,7 @@
 - What is the syntax for sending messages in Google Go?
 - What is the syntax for receiving messages in Google Go?
 - What is the syntax and meaning of the select construct in Google Go?
-
+---
 - What is the syntax of pi-calculus?
 - What is scope extrusion?
 - What is the style of the operational semantics of the pi-calculus?
@@ -234,7 +246,7 @@
 - What is time independence property?
 - What is a Markov chain?
 - What is a homogeneous Markov chain?
-
+---
 - What is a DTMC?
 - How can a DTMC be represented as a matrix?
 - How can a DTMC be represented as a transition system?
@@ -245,14 +257,14 @@
 - What is the steady state distribution?
 - What is an ergodic DTMC?
 - How is the steady state distribution computed for an ergodic DTMC?
-
+---
 - How are the probability law and the probability density related?
 - What is the (negative) exponential distribution?
 - What is a CTMC?
 - What is the embedded DTMC of a CTMC?
 - What is the infinitesimal matrix generator of a CTMC?
 - How are stationary distributions computed for a CTMC?
-
+---
 - How can the notion of bisimulation be exported to DTMC/CTMC?
 - How is CTMC bisimulation defined?
 - How is DTMC bisimulation defined?
@@ -262,8 +274,8 @@
 - What is the syntax of Larsen-Skou logic?
 - How is the notion of satisfaction defined for Larsen-Skou formulas?
 - What is the relation between reactive bisimilarity and Larsen-Skou logic?
-
-- What is the motivation for introducing PEPA?
+---
+- W hat is the motivation for introducing PEPA?
 - What are the mutual benefits for Process Algebras and CTMC in PEPA?
 - What is the PEPA workflow?
 - What is the difference between qualitative and quantitative analysis?
