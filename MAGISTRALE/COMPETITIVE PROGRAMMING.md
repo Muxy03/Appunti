@@ -11,4 +11,14 @@ big tech intership
 
 # 23/9/25
 
-non so andato a lezione e niente nuovi allegati
+registrazione da recuperare
+
+![[SlidingWindowMaxima.pdf]]
+
+# 29/9/25
+
+![[29:9:25.pdf]]
+
+# 30/9/25
+
+![[PDF/COMPETITIVE PROGRAMMING/30:9:25.pdf|30:9:25]]
