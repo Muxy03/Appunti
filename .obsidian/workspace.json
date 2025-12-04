@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAGISTRALE/SOFTWARE VERIFICATION.md",
+                "file": "MAGISTRALE/ADVANCED PROGRAMMING.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SOFTWARE VERIFICATION"
+              "title": "ADVANCED PROGRAMMING"
             }
           }
         ]
@@ -226,20 +226,27 @@
   },
   "active": "e419eb0602202a8c",
   "lastOpenFiles": [
-    "PDF/SOFTWARE VERIFICATION/svv_06.pdf",
-    "PDF/SOFTWARE VERIFICATION/Non confermato 467022.crdownload",
-    "PDF/SOFTWARE VERIFICATION/svv_07.pdf",
-    "PDF/SOFTWARE VERIFICATION/Non confermato 269065.crdownload",
+    "PDF/ADVANCED PROGRAMMING/26-AP25-Python-Decorators-OOP.pdf",
+    "PDF/ADVANCED PROGRAMMING/Non confermato 136182.crdownload",
+    "PDF/ADVANCED PROGRAMMING/25-AP25-Reflection_Annotations_in_Java.pdf",
+    "PDF/ADVANCED PROGRAMMING/Non confermato 430531.crdownload",
+    "PDF/ADVANCED PROGRAMMING/24-AP25-JLambdas.pdf",
+    "PDF/ADVANCED PROGRAMMING/Non confermato 642499.crdownload",
+    "PDF/ADVANCED PROGRAMMING/21-AP25-Monads.pdf",
+    "PDF/ADVANCED PROGRAMMING/Non confermato 288909.crdownload",
+    "PDF/ADVANCED PROGRAMMING/17-AP25-Haskell-TypeClasses.pdf",
+    "PDF/ADVANCED PROGRAMMING/Non confermato 370774.crdownload",
+    "PDF/ADVANCED PROGRAMMING/16-AP25-JavaGenerics.pdf",
     "MAGISTRALE/COMPETITIVE PROGRAMMING.md",
-    "PDF/COMPETITIVE PROGRAMMING/30:9:25.pdf",
-    "PDF/COMPETITIVE PROGRAMMING/29:9:25.pdf",
-    "PDF/COMPETITIVE PROGRAMMING/SlidingWindowMaxima.pdf",
+    "MAGISTRALE/MAGISTRALE INFO.md",
     "MAGISTRALE/ADVANCED PROGRAMMING.md",
+    "3 ANNO/CLOUD COMPUTING.md",
     "MAGISTRALE/SOFTWARE VERIFICATION.md",
-    "PDF/SOFTWARE VERIFICATION/svv_05.pdf",
-    "PDF/SOFTWARE VERIFICATION/Non confermato 209369.crdownload",
-    "PDF/ADVANCED PROGRAMMING/15:09:25.pdf",
-    "PDF/ADVANCED PROGRAMMING",
+    "MAGISTRALE/EXTRA/Lecture Notes ADVANCED PRO/04 - predictive_parsing_whitespace.md",
+    "MAGISTRALE/EXTRA/Lecture Notes ADVANCED PRO/03 - top_down_parsing.md",
+    "MAGISTRALE/EXTRA/Lecture Notes ADVANCED PRO/02 - pl_transformation.md",
+    "MAGISTRALE/EXTRA/Lecture Notes ADVANCED PRO/01 - language_stack.md",
+    "MAGISTRALE/EXTRA/Lecture Notes ADVANCED PRO/00 - advanced_prog_intro.md",
     "IMMAGINI/Pasted image 20250825150917.png",
     "IMMAGINI/Pasted image 20250825150646.png",
     "IMMAGINI/Pasted image 20250807130602.png",
@@ -247,7 +254,6 @@
     "IMMAGINI/Pasted image 20250605232352.png",
     "MAGISTRALE/GAME THEORY.md",
     "MAGISTRALE/EXTRA/Algorithm Design Slides.md",
-    "MAGISTRALE/MAGISTRALE INFO.md",
     "IMMAGINI/Pasted image 20250825151008.png",
     "IMMAGINI/Pasted image 20250825150944.png",
     "MAGISTRALE/EXTRA/PSC-QUESTIONS.md",
@@ -265,13 +271,7 @@
     "MAGISTRALE 1/Assignments/Pasted image 20250506000429.png",
     "MAGISTRALE/EXTRA/ALGODESIGN Assignments/AlgoDesignAssignment5.md",
     "MAGISTRALE/EXTRA/ALGODESIGN Assignments/AlgoDesignAssignment1.md",
-    "MAGISTRALE/EXTRA/ALGODESIGN Assignments/AlgoDesignAssignment2.md",
     "IMMAGINI/Pasted image 20250327003753.png",
-    "MAGISTRALE/EXTRA/ALGODESIGN Assignments/AlgoDesignAssignment3.md",
-    "PDF/ALGO.md",
-    "MAGISTRALE/EXTRA/QUANTUM RIPASSO.md",
-    "Excalidraw/Drawing 2025-03-04 17.07.50.excalidraw.md",
-    "Excalidraw/Drawing 2025-02-20 14.46.37.excalidraw.md",
     "Untitled.canvas"
   ]
 }

@@ -34,3 +34,19 @@
 # 1/10/25
 
 ![[svv_07.pdf]]
+
+# 3/10/25
+
+esercizi 3 e 4
+
+![[exeSVV_02.pdf]]
+
+# 7/10/25
+
+esercizi 1 e 2
+
+![[exeSVV_02.pdf]]
+
+# 8/10/25
+
+![[svv_08.pdf]]
