@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAGISTRALE/ADVANCED PROGRAMMING.md",
+                "file": "MAGISTRALE/COMPETITIVE PROGRAMMING.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ADVANCED PROGRAMMING"
+              "title": "COMPETITIVE PROGRAMMING"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -226,6 +227,11 @@
   },
   "active": "e419eb0602202a8c",
   "lastOpenFiles": [
+    "PDF/COMPETITIVE PROGRAMMING/DynamicProgramming.pdf",
+    "MAGISTRALE/COMPETITIVE PROGRAMMING.md",
+    "PDF/COMPETITIVE PROGRAMMING/Mos 2025.pdf",
+    "PDF/COMPETITIVE PROGRAMMING/Pearls 2025.pdf",
+    "MAGISTRALE/ADVANCED PROGRAMMING.md",
     "PDF/ADVANCED PROGRAMMING/26-AP25-Python-Decorators-OOP.pdf",
     "PDF/ADVANCED PROGRAMMING/Non confermato 136182.crdownload",
     "PDF/ADVANCED PROGRAMMING/25-AP25-Reflection_Annotations_in_Java.pdf",
@@ -234,12 +240,7 @@
     "PDF/ADVANCED PROGRAMMING/Non confermato 642499.crdownload",
     "PDF/ADVANCED PROGRAMMING/21-AP25-Monads.pdf",
     "PDF/ADVANCED PROGRAMMING/Non confermato 288909.crdownload",
-    "PDF/ADVANCED PROGRAMMING/17-AP25-Haskell-TypeClasses.pdf",
-    "PDF/ADVANCED PROGRAMMING/Non confermato 370774.crdownload",
-    "PDF/ADVANCED PROGRAMMING/16-AP25-JavaGenerics.pdf",
-    "MAGISTRALE/COMPETITIVE PROGRAMMING.md",
     "MAGISTRALE/MAGISTRALE INFO.md",
-    "MAGISTRALE/ADVANCED PROGRAMMING.md",
     "3 ANNO/CLOUD COMPUTING.md",
     "MAGISTRALE/SOFTWARE VERIFICATION.md",
     "MAGISTRALE/EXTRA/Lecture Notes ADVANCED PRO/04 - predictive_parsing_whitespace.md",
