@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6aa6a08c3a60e16d",
+        "id": "2bf30ebbaa6c4631",
         "type": "tabs",
         "children": [
           {
-            "id": "e419eb0602202a8c",
+            "id": "da11e0c78283f36d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MAGISTRALE/COMPETITIVE PROGRAMMING.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "COMPETITIVE PROGRAMMING"
+              "title": "New tab"
             }
           }
         ]
@@ -78,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -225,10 +220,11 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "e419eb0602202a8c",
+  "active": "da11e0c78283f36d",
   "lastOpenFiles": [
-    "PDF/COMPETITIVE PROGRAMMING/DynamicProgramming.pdf",
+    "PDF/Esercizio 26_02.md",
     "MAGISTRALE/COMPETITIVE PROGRAMMING.md",
+    "PDF/COMPETITIVE PROGRAMMING/DynamicProgramming.pdf",
     "PDF/COMPETITIVE PROGRAMMING/Mos 2025.pdf",
     "PDF/COMPETITIVE PROGRAMMING/Pearls 2025.pdf",
     "MAGISTRALE/ADVANCED PROGRAMMING.md",
@@ -239,7 +235,6 @@
     "PDF/ADVANCED PROGRAMMING/24-AP25-JLambdas.pdf",
     "PDF/ADVANCED PROGRAMMING/Non confermato 642499.crdownload",
     "PDF/ADVANCED PROGRAMMING/21-AP25-Monads.pdf",
-    "PDF/ADVANCED PROGRAMMING/Non confermato 288909.crdownload",
     "MAGISTRALE/MAGISTRALE INFO.md",
     "3 ANNO/CLOUD COMPUTING.md",
     "MAGISTRALE/SOFTWARE VERIFICATION.md",
