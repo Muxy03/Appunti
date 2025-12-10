@@ -373,10 +373,10 @@ Professor Corradini concluded by highlighting the complementarity of teaching st
 # 29/9/25
 ## Chapter 5 – Predictive Parsing and the Whitespace Compiler
 
-## 5.1 Introduction
+### 5.1 Introduction
 The lecture of September 29 was divided into two parts. In the first hour, Professor Corradini concluded his presentation on **predictive parsing**, focusing on the formal definitions of **First** and **Follow** sets and on the construction of LL(1) parsers. In the second hour, Professor Cisternino led a hands-on exercise by examining and running the **Whitespace compiler**, a playful yet instructive project demonstrating how compiler theory translates into practice【58†Trascrizione】.
 
-## 5.2 Predictive Parsing: First and Follow Sets
+### 5.2 Predictive Parsing: First and Follow Sets
 Predictive parsing relies on the ability to choose the correct production at each step using only one lookahead token. This requires computing:
 
 - **First(α):** the set of tokens that may appear at the beginning of strings derived from α.
@@ -391,7 +391,7 @@ Predictive parsing relies on the ability to choose the correct production at eac
 
 A grammar is **LL(1)** if, for every non-terminal, the sets of possible lookaheads for its productions are disjoint. This ensures that parsing is deterministic without backtracking【58†Trascrizione】.
 
-### Recursive Descent vs. Table-Driven Parsing
+#### Recursive Descent vs. Table-Driven Parsing
 - **Recursive descent**: each non-terminal corresponds to a procedure; lookahead determines which production to apply.
 - **Table-driven**: uses a parsing table indexed by (non-terminal, lookahead) to decide the production. The parser maintains a stack of symbols, consulting the table at each step.
 
@@ -407,7 +407,7 @@ graph TD
 ```
 *Figure 5.1 – Constructing LL(1) parsers.*
 
-## 5.3 Error Handling in Parsing
+### 5.3 Error Handling in Parsing
 Compilers must handle errors gracefully rather than stopping at the first mistake. Strategies include:
 - **Panic mode**: skip tokens until a synchronizing token (e.g., `;` or `}`) is found.
 - **Phrase-level recovery**: insert or delete minimal tokens to continue parsing.
@@ -416,7 +416,7 @@ Compilers must handle errors gracefully rather than stopping at the first mistak
 
 LL(1) parsers enjoy the **viable prefix property**: they can detect errors as soon as the current prefix cannot be extended into a valid string【58†Trascrizione】.
 
-## 5.4 The Whitespace Language
+### 5.4 The Whitespace Language
 The second half of the lecture introduced the **Whitespace language**, an esoteric programming language invented as a parody of conventional syntax. In Whitespace:
 - Only spaces, tabs, and line feeds are meaningful tokens.
 - All visible characters are ignored.
@@ -439,7 +439,7 @@ graph TD
 ```
 *Figure 5.2 – Architecture of the Whitespace compiler implemented in C#.*
 
-## 5.5 Architecture of the Whitespace Compiler
+### 5.5 Architecture of the Whitespace Compiler
 The **Whitespace compiler** implemented by Professor Cisternino in 2003 (and later modernized) demonstrates how compiler theory applies even to a joke language:
 
 1. **Tokenizer**: converts spaces, tabs, and line feeds into tokens. Other characters are ignored.
@@ -448,7 +448,7 @@ The **Whitespace compiler** implemented by Professor Cisternino in 2003 (and lat
 4. **Code Generation**: emits .NET bytecode via reflection. A separate `Stack` object is created to maintain Whitespace semantics, since it differs from the .NET runtime stack.
 5. **Executable Output**: produces a runnable .NET program (`.dll` and `.exe`) faithfully implementing the Whitespace code【58†Trascrizione】.
 
-### Example Program
+#### Example Program
 A program that pushes `6`, pushes `1`, adds them, and prints the result (`7`) looks like an empty file, but internally it is:
 - **Source (invisible):** `[space][number 6][LF][space][number 1][LF][tab][space][LF][tab][LF]`
 - **Human-readable (via pretty-printer):**
@@ -463,10 +463,10 @@ A program that pushes `6`, pushes `1`, adds them, and prints the result (`7`) lo
 
 This shows how invisible whitespace translates into meaningful computation.
 
-### Fibonacci Example
+#### Fibonacci Example
 A more complex program included in the repository computes the Fibonacci sequence. Written in Whitespace, it uses stack operations, loops, and I/O to generate terms. With comments interspersed, the code becomes readable; otherwise, it is entirely whitespace.
 
-## 5.6 Stack Machines and Compilation
+### 5.6 Stack Machines and Compilation
 Both Java and .NET virtual machines are **stack-based**, meaning operands are pushed and popped from a stack rather than stored in registers. This design simplifies compiler implementation (no need to manage a fixed number of registers).
 
 The Whitespace compiler illustrates these principles. Each instruction in Whitespace is compiled into a corresponding .NET bytecode sequence. For example:
@@ -475,7 +475,7 @@ The Whitespace compiler illustrates these principles. Each instruction in Whites
 
 By tracking the stack height, the compiler can even perform **static checks** (e.g., ensuring enough operands exist before applying `ADD`). This is an instance of **abstract interpretation**, proving properties about the program without running it.
 
-## 5.7 Modernization with AI Assistance
+### 5.7 Modernization with AI Assistance
 The original compiler was written in C# 1.0. To update it for .NET 9, Professor Cisternino used **GitHub Copilot / GPT-based tools** to:
 - Suggest replacements for deprecated constructs.
 - Refactor code for readability (e.g., replacing explicit type declarations with `var`).
@@ -483,13 +483,633 @@ The original compiler was written in C# 1.0. To update it for .NET 9, Professor 
 
 The result is a working modern compiler, partially rewritten with AI assistance—demonstrating how future programming will increasingly involve **human oversight of AI-generated code**【58†Trascrizione】.
 
-## 5.8 Conclusion
+### 5.8 Conclusion
 This lecture bridged **theory and practice**. The first half detailed how grammars, First/Follow sets, and LL(1) parsing guarantee determinism and efficiency. The second half demonstrated these ideas through the Whitespace compiler: from tokenizer to parser to .NET bytecode. Beyond its humorous origin, the project shows how compiler concepts apply universally, and how AI tools are reshaping the very way compilers and software are maintained.
 
 # 1/10/25
-REGISTRAZIONE DA RECUPERARE
+
+## Lecture Summary: Names and Scoping in Programming Languages
+
+**Date:** October 1, 2025
+
+### Chapter 1: Introduction and Course Materials
+
+- **AI-Generated Notes**: The instructor has released AI-generated notes from transcripts, which have been reviewed and edited. These are available in the course materials section.
+- **Important Caveat**: While these notes contain most of the lecture content and additional information, they do not replace textbook chapters on programming language pragmatics.
+- **Master's Course Philosophy**: Students should focus on becoming better programmers rather than just learning to pass exams.
+
+### Chapter 2: Reviewing Language Fundamentals
+
+- **Whitespace Compiler**: A small, browsable example containing all main elements of a language pipeline (lexer, parser, code generation).
+- **Moving Forward**: The course transitions from traditional compiler topics to exploring the importance of names in programs.
+
+### Chapter 3: The Importance of Names in Programs
+
+#### 3.1 Why Names Matter
+
+- Names are crucial for documentation, software engineering, and security.
+- Names act as a contract between programmers and machines.
+- Names are more than variable/function names—they include:
+    - Identifiers in grammar
+    - Pointers in C (which reference objects)
+    - Any mechanism that allows reference to program entities
+
+#### 3.2 Names and Memory Organization
+
+- Names define the organization of memory in a programming language.
+- Scoping rules that govern name visibility directly affect object lifetime in memory.
+
+#### 3.3 Naming Conventions
+
+- **Camel Case** (camelCase): Start with lowercase, capitalize subsequent words
+- **Pascal Case** (PascalCase): Start with uppercase for class names
+- Conventions aid code readability and are enforced by tools and AI assistants (e.g., GitHub Copilot)
+- These pragmatic conventions help developers understand and browse code
+
+#### 3.4 Names in Real-World Code: The C# Compiler
+
+- Explored the Roslyn compiler architecture (open-source on GitHub)
+- Names start with filenames (important in languages like Java)
+- Real-world code organization follows theoretical principles
+- Examples from the C# compiler show how naming patterns reveal program structure
+- The importance of finding definitions through names (e.g., searching for "Main" or "Parser")
+
+---
+
+### Chapter 4: Scoping Rules
+
+#### 4.1 What is Scoping?
+
+- **Definition**: Scoping defines where a name is visible and how it relates to its declaration.
+- Names have declarations that bind them to values or types.
+
+#### 4.2 Static vs. Dynamic Scoping
+
+- **Static Scoping** (most modern languages):
+    
+    - Name meaning is determined by examining the program text
+    - You can determine which declaration a name refers to without running the program
+    - Examples: C#, Java, JavaScript (mostly)
+- **Dynamic Scoping** (rarely used today):
+    
+    - Execution determines which value a name refers to
+    - The last assignment in execution order defines the name
+    - Historical: simpler to implement, now considered poor practice
+
+#### 4.3 Scope Hierarchy
+
+- **Local Scope**: Variables declared within a block (function, method)
+- **Class Scope**: Fields and members of a class
+- **Global Scope**: Variables accessible throughout the program
+- **Namespace Scope**: Organized through dot notation (e.g., `System.IO.FileNotFoundException`)
+
+#### 4.4 Understanding Scope in Real Code
+
+- Example: Finding `_options` field in a C# constructor
+    - Not declared locally → check class level
+    - May be in a `partial` class (spread across files)
+    - Hierarchical search based on grammar structure
+
+### Chapter 5: Lexical Closures
+
+#### 5.1 Definition and Purpose
+
+- Lexical closures result from scoping rules in languages that support nested function definitions.
+- Allow functions to "capture" variables from enclosing scopes.
+
+#### 5.2 Example: Counter Function
+
+```javascript
+function counter() {
+  var n = 0;
+  return function() {
+    return n++;
+  };
+}
+```
+
+- The returned function captures `n` from the outer scope
+- Each call to `counter()` creates a separate instance of `n`
+- `c1 = counter()` and `c2 = counter()` have independent `n` variables
+
+#### 5.3 Semantic Implications
+
+- Variable `n` must remain allocated beyond the function's exit because it's captured
+- Extends the lifespan of local variables as long as referencing functions exist
+- Without this mechanism, code would be semantically broken
+
+#### 5.4 Objects Through Closures
+
+```javascript
+function counter() {
+  var n = 0;
+  return {
+	  'inc': function() { return n++; }
+	  'dec': function() { return n--; }
+  };
+}
+```
+
+- (Lexical) Closures can simulate object-oriented behavior:
+    - Shared state (the captured variables) = object state
+    - Multiple functions referencing that state = methods
+    - Enables `inc()` and `dec()` methods sharing the same `n`
+
+#### 5.5 Delegates in C\#
+
+- `.NET` introduced **delegates** to formalize this pattern
+- A delegate is a pair: (this pointer, function pointer)
+- Enables passing methods as values, essential for functional programming patterns
+
+## Chapter 6: Functions as Values and Higher-Order Programming
+
+#### 6.1 Evolution of Functions as Values
+
+- **Pre-Java (70s-80s)**: Functions were declarations only, not values
+- **Java Era (Mid-90s)**: Interfaces made it possible (though clumsy) to pass functions
+- **Modern Era**: Functional programming with first-class functions is standard
+
+#### 6.2 Higher-Order Functions
+
+- Functions that accept or return other functions
+- Example: `sort(algorithm, collection)`
+- Enable powerful abstractions and code reuse
+
+### Chapter 7: The `this` Keyword and JavaScript's Exception
+
+#### 7.1 JavaScript's Unique Scoping Model
+
+- JavaScript is **almost entirely statically scoped** with one notable exception: the `this` variable
+- `this` has **dynamic scoping** semantics
+
+#### 7.2 How `this` Works
+
+- When calling `object.method()`, the runtime transforms it to:
+    - `this = object`
+    - `method()` is invoked
+- Enables the illusion of objects in JavaScript (despite being a prototype-based language)
+
+#### 7.3 The `new` Keyword
+
+- `var s = new Student()` creates an empty object and sets `this` to it
+- Constructor function populates the object's properties
+- Convinced many JavaScript developers they had "real" objects
+
+#### 7.4 Modern JavaScript
+
+- Functional patterns now dominate over object-oriented patterns
+- The `this` complexity is largely avoided in contemporary code
+
+### Chapter 8: Memory Allocation and the Stack
+
+#### 8.1 Memory Management Fundamentals
+
+- Programs have limited, linear memory (0 to terabytes on 64-bit systems)
+- Memory must be allocated for all program values
+- Scoping rules directly imply efficient memory management strategies
+
+#### 8.2 The Stack Data Structure
+
+- **Stack allocation** for local variables follows the functional call pattern
+- When entering a function: allocate an **activation record**
+- When exiting: deallocate and return value
+- **Natural fit** for recursive, nested function calls
+
+#### 8.3 Activation Records
+
+- Contains:
+    - Local variables
+    - Formal parameters
+    - Return address (where to return control)
+    - Other metadata
+- Stack grows/shrinks with function calls and returns
+- Implements scope naturally: variables below are hidden
+
+#### 8.4 Stack and Scope Relationship
+
+- Stack layout naturally enforces static scoping
+- Functions cannot access variables of other concurrent activations
+- Provides automatic privacy/encapsulation
+
+#### 8.5 Recursion and Static Allocation
+
+- Without recursion: local variables could be statically allocated once
+- With recursion: need dynamic allocation for each activation
+- Scoping rules that allow recursion require dynamic stack management
+
+### Chapter 9: Memory Management Strategies
+
+#### 9.1 Three Categories of Memory
+
+1. **Static Memory**: Allocated at program load, persists until termination (global variables)
+2. **Stack Memory**: Automatically managed, follows function activation
+3. **Dynamic Memory**: Allocated on demand, requires explicit or automatic deallocation
+
+#### 9.2 Memory Management Approaches
+
+##### Explicit Management (C/C++)
+
+- Programmer explicitly allocates (`malloc`/`new`) and frees (`free`/`delete`)
+- Most efficient but error-prone
+- Can lead to memory leaks or dangling pointers
+
+##### Reference Counting
+
+- Tracks how many references exist to each value
+- Automatically deallocates when count reaches zero
+- Semi-automatic approach
+
+##### Garbage Collection (Java, Python, JavaScript, C#/.NET)
+
+- System automatically identifies and deallocates unreachable objects
+- More forgiving but with runtime overhead
+- Enables safer programming at cost of performance
+
+##### Rust's Approach
+
+- Attempts to combine efficiency of explicit management with safety
+- Uses ownership rules and borrow checking to prevent errors
+- Unique position as a practical system language with memory safety guarantees
+
+#### 9.3 The Great Memory Management Debate
+
+- **C Philosophy**: "Memory is too important to let the system manage it"
+- **Lisp/Python Philosophy**: "Memory is too important to let the programmer manage it"
+- **Result (40 years later)**: Lisp/Python won—most modern code uses automatic management
+
+### Chapter 10: Practical Implications and Future Topics
+
+#### 10.1 Key Takeaways
+
+- Scoping rules define a language's semantics and implementation
+- Names are the foundation of code comprehension
+- Understanding where names come from is crucial for reading code
+- Scoping rules naturally induce stack-based memory management
+
+#### 10.2 Real-World Example: The Legere Project
+
+- Open-source University of Pisa project used for elections
+- Election card generation code contains complex JavaScript patterns
+- Even the author is cautious when modifying it—complexity of real-world code
+
+#### 10.3 Upcoming Topics
+
+- Deep dive into memory management strategies
+- Virtual machine implementation (JVM, .NET CLR)
+- Cost analysis of virtual calls and garbage collection
+- Advanced naming and scoping patterns
+### Conclusion
+
+The lecture emphasizes that names, scoping, and memory management are deeply interconnected. By understanding how scoping rules work, programmers gain insight into:
+
+- How to read and understand complex code
+- How languages are implemented efficiently
+- The trade-offs between different programming paradigms
+- Why certain design decisions exist in modern languages
 # 2/10/25
-REGISTRAZIONE DA RECUPERARE
+## Lecture Summary: Memory Management and Garbage Collection
+
+**Date:** October 2, 2025
+
+#TODO REWATCH
+### Chapter 1: Course Assignments and Housekeeping
+
+#### 1.1 Lexical Closures Investigation Assignment
+
+- Students are asked to investigate at least two programming languages
+- Determine whether each language supports lexical closures
+- Assess if support is complete or partial
+- **Languages to investigate**: C, JavaScript, ML, F#, Visual Basic, C#, Java, Rust, Python, Lua, Perl, Fortran, COBOL, PowerShell, Bash, C Shell
+- **Note on Pascal**: Allows returning functions but only within module scope (incomplete closure support)
+- Results can be uploaded via assignment form (optional but encouraged)
+
+#### 1.2 Course Philosophy Reminder
+
+- Scoping is essential for understanding how names work in programs
+- Scope defines where a name has meaning (value and type)
+- Static scoping is defined independently of execution
+- Understanding activation records is key to grasping memory management
+
+### Chapter 2: Introduction to Memory Management
+
+#### 2.1 Three Types of Memory
+
+1. **Static Memory**: Allocated at program load, persists throughout execution (global variables)
+2. **Stack Memory**: Automatically managed through activation records, grows/shrinks with function calls
+3. **Dynamic Memory (Heap)**: Allocated on demand, requires explicit or automatic deallocation
+
+#### 2.2 Memory Layout
+
+- Memory is a continuous stream of cells addressed linearly
+- Layout interpretation depends on programming language
+- **Interoperability challenge**: Different compilers may organize data differently (e.g., X-Y vs Y-X coordinate storage)
+- Memory layout crucial for marshalling and serialization between languages
+
+#### 2.3 The Heap Problem
+
+- Stack has a maximum size (prevents collision with heap)
+- **Stack Overflow**: Results from exceeding maximum stack size through deep recursion
+- Heap is the largest portion of memory for dynamic allocation
+- Programmer must manage which blocks are allocated and which are free
+
+### Chapter 3: Explicit Memory Management (C Style)
+
+#### 3.1 Free List Data Structure
+
+- **Concept**: Linked list of free memory blocks
+- **Mechanism**: Free blocks are stored in the heap itself (no extra cost)
+- **Implementation**:
+    - Each free block contains pointer to next block and size information
+    - Allocation: Find block large enough, split if necessary
+    - Deallocation: Return block to free list
+
+#### 3.2 Memory Fragmentation
+
+- **Issue**: Repeated allocate/deallocate cycles create holes in memory
+- **Problem**: Total free memory may be sufficient, but no single contiguous block large enough for new allocation
+- **Defragmentation**: Theoretically possible but impractical at CPU instruction level
+- **Performance cost**: Moving blocks and updating pointers would be too expensive
+- **Solution in C**: Allocate memory in chunks (1 MB heaps), throw away entire heap when empty
+
+#### 3.3 Challenges with Explicit Management
+
+- **Two schools of thought**:
+    - **C Philosophy**: Programmer should control memory (more efficient)
+    - **Lisp Philosophy**: System should manage memory (safer)
+- **Result (40 years later)**: Lisp philosophy won—most modern code uses automatic management
+- **Human error**: Conventions for allocate/deallocate are prone to mistakes:
+    - Forget to deallocate → memory leaks
+    - Deallocate prematurely → dangling pointers
+    - Allocation responsibility unclear → inconsistent patterns
+
+### Chapter 4: Reference Counting
+
+#### 4.1 Basic Concept
+
+- Each object has a reference counter
+- Every client using an object increments counter ("retain")
+- When client stops using it, decrements counter ("release")
+- When counter reaches zero, object is deallocated
+- **Advantage over explicit management**: Safer—automatic deallocation when truly unused
+
+#### 4.2 Implementation Details
+
+- **Space cost**: 4 bytes per object for reference counter (overhead)
+- **Time cost**: Increment/decrement on every assignment or scope exit
+- **Memory overhead**: Modern objects already carry metadata (~12 bytes overhead), so 4 bytes is reasonable
+- **Compiler optimization**: Can automatically inject retain/release calls on assignment
+
+#### 4.3 Critical Problem: Circular References
+
+- **Scenario**: Object A references Object B, Object B references Object A
+- **Problem**: Both have reference count ≥ 1, even though neither is reachable from program roots
+- **Result**: Memory leak—garbage that won't be collected
+- **Example**: Python's CPython uses reference counting but has garbage collection for cyclic references
+
+#### 4.4 Usage in Different Languages
+
+- **Python**: Extensively uses reference counting for memory management
+- **Drawbacks**: Breaks reference counting protocol → dangling references possible
+- **Why others abandoned it**: All major languages switched to garbage collection to avoid circular reference problem
+- **Modern usage**: COM and CORBA used reference counting (90s component models)
+
+### Chapter 5: Garbage Collection Fundamentals
+
+#### 5.1 Core Concept
+
+- Automatically identify and deallocate objects no longer needed
+- **Key insight**: If an object is unreachable, it can be freed
+- **Reachability**: Object is reachable if there's a path from program roots to it
+
+#### 5.2 Roots
+
+- **Definition**: Entry points to the object graph
+- **Types of roots**:
+    - Local variables in stack (activation records)
+    - Static/global variables in static memory
+    - Special roots (e.g., remote objects in remoting, handles in system)
+- **Critical importance**: All garbage collection begins from roots
+- **Security aspect**: Hiding names/removing references prevents access (core security principle)
+
+#### 5.3 Conservative Assumption
+
+- If object is reachable from any root, keep it alive
+- Doesn't guarantee it will be accessed—just that it might be
+- Safer than deleting prematurely
+
+### Chapter 6: Mark-and-Sweep Garbage Collection
+
+#### 6.1 Algorithm Overview
+
+- **Phase 1 - Mark**: Starting from roots, traverse object graph and mark all reachable objects
+- **Phase 2 - Sweep**: Scan entire heap, deallocate unmarked objects
+- **Implementation**: Typically uses free list approach (malloc/free underneath)
+
+#### 6.2 Advantages
+
+- Intuitive and straightforward
+- Works with any object layout (precise or imprecise)
+- Doesn't require contiguous memory reorganization
+
+#### 6.3 Disadvantages
+
+- **Fragmentation**: Creates holes in heap over time
+- **Imprecise variants**: Conservative approach scans memory looking for "pointer-like" values
+    - Used in C++ when full layout information unavailable
+    - May keep unreachable objects alive ("false positives")
+    - Less precise but works without complete type information
+
+### Chapter 7: Copy Collection (Copying Garbage Collector)
+
+#### 7.1 Basic Mechanism
+
+- **Heap divided into two semi-spaces**: From-space and To-space
+- **Allocation**: Always allocate in From-space (trivial—just pointer increment)
+- **Collection triggered**: When From-space is full
+
+#### 7.2 Collection Process
+
+- **Copy phase**: Traverse from roots, copy all live objects to To-space
+- **Update phase**: Backpatch pointers—update all references to point to new locations
+- **Space swap**: To-space becomes new From-space; old From-space is empty
+- **Benefit**: Compact heap—no fragmentation
+
+#### 7.3 Requirements and Limitations
+
+- **Requires precise GC**: Must know exact location of all pointers
+- **Works best with short-lived objects**: If most objects die quickly, little copying needed
+- **Expensive if most objects survive**: Requires copying large amounts of memory and backpatching many pointers
+- **Memory overhead**: Need space for both semi-spaces simultaneously
+
+#### 7.4 When Copy Collection Works Well
+
+- **String concatenation**: Generate new string, discard old ones (short-lived)
+- **Temporary objects**: Web applications creating HTML
+- **Poor performance**: Long-lived objects (game physics, scene graphs)
+
+### Chapter 8: Generational Garbage Collection
+
+#### 8.1 Motivation
+
+- Empirical observation: Objects tend to be either very short-lived or long-lived
+- Generational hypothesis: Young objects more likely to die; old objects likely to live
+- **Solution**: Combine strategies for different generations
+
+#### 8.2 Two-Generation System (Most Common)
+
+- **Generation 0 (Nursery)**:
+    - New objects allocated here
+    - Allocation is super fast (just pointer increment)
+    - Uses copy collection when full
+    - Objects surviving move to Gen 1
+- **Generation 1 (Mature)**:
+    - Objects that survived Gen 0 collection
+    - Uses mark-and-sweep
+    - Collected less frequently
+    - Reduces fragmentation impact since objects are long-lived
+
+#### 8.3 Large Object Heap
+
+- **Threshold**: ~1.5 KB in .NET runtime
+- Objects larger than threshold bypass generational system
+- Uses mark-and-sweep (copying large objects too expensive)
+- Allocates directly to mature heap
+
+#### 8.4 Multiple Generations
+
+- Can extend to Gen 2, Gen 3, etc.
+- Each generation collected at different intervals
+- Gen 0 → Gen 1 → Gen 2 progression
+- Most runtimes use 2-3 generations in practice
+
+#### 8.5 Real-World Example: Xbox Memory Management
+
+- Standard .NET: Generational GC optimized for string-heavy apps
+- Xbox .NET (2005): **Replaced with mark-and-sweep only**
+- **Reason**: Games allocate different objects than web apps
+    - Few strings (no string concatenation)
+    - Long-lived objects (scenery, physics objects persist for scenes)
+    - Copy collection was creating garbage, slowing down games
+    - Generational approach actually hurt performance
+- **Lesson**: No universal "best" garbage collection strategy
+
+#### 8.6 Empirical Tuning
+
+- Magic numbers throughout runtimes adjusted based on testing
+- Comments like: "Empirically we found this number works best"
+- Different workloads require different strategies
+- No theory—just trial and error finding what works
+### Chapter 9: Multi-Heap Approach
+
+#### 9.1 Modern Runtime Architecture
+
+- **Not a single heap**: Runtime manages multiple heaps with different policies
+- **Typical setup**:
+    - Gen 0 heap (copy collection)
+    - Gen 1 heap (mark-and-sweep)
+    - Large object heap (mark-and-sweep, no moving)
+    - Possibly Gen 2, GC locker, etc.
+
+#### 9.2 Integration of Strategies
+
+- **Within single program**, use:
+    - Explicit allocation for specific needs
+    - Reference counting for certain objects
+    - Garbage collection for others
+- **Not alternatives**: Different strategies coexist
+- **Hierarchy of heaps**: Each managed internally with different policies
+
+#### 9.3 Virtual Memory Consideration
+
+- Each heap is array of bytes
+- Allocated from process virtual memory
+- Multiple heaps allows sophisticated management
+- Enables trading off efficiency for different workload patterns
+
+### Chapter 10: Garbage Collection Challenges and Limitations
+
+#### 10.1 Dangling References
+
+- **Worst case**: Pointer to memory that's been freed
+- **Result**: Program interprets freed memory as valid → memory corruption → crash
+- **Prevention**: Only garbage collection provides complete protection
+- **Example**: Ariana 5 rocket failure (mentioned in first class)
+
+#### 10.2 False Positives
+
+- Garbage collection is conservative: "if reachable, keep it"
+- **Problem**: Programmer can inadvertently keep objects alive
+    - Forgot to clear reference
+    - Reference stored in unused variable
+    - Cyclic references (even with cycle detection)
+
+#### 10.3 Memory Leaks Still Possible
+
+- If programmer doesn't release references they no longer need
+- Objects stay alive even if unreachable from active code
+- Garbage collection prevents **dangling references** but not **garbage**
+- Garbage = memory that's allocated but unused (wastes space)
+- Dangling reference = pointer to freed memory (causes crashes)
+
+#### 10.4 Conservative vs Precise Collection
+
+- **Precise**: Runtime knows exact type/layout of all memory
+    - Enables safe compacting
+    - Requires rich metadata
+    - Used by Java, .NET with full type information
+- **Conservative**: Scans memory looking for values that might be pointers
+    - Safer for languages that erase type info (C++)
+    - False positives keep some garbage alive
+    - Less optimal but practical
+
+### Chapter 11: Memory Management is Fundamental
+
+#### 11.1 Performance Reality
+
+- **80% of program execution**: Memory operations (fetch, copy, compute, store)
+- **CPU design consequence**: High clock = fewer cores (physical law)
+- **Example**: CERN buys high-frequency CPUs (fewer cores) for Monte Carlo simulations because those are memory-independent
+
+#### 11.2 Memory Bandwidth Matters
+
+- **High bandwidth memory (HBM)**: 1 terabyte/second (Intel, NVIDIA)
+- Dimension programs assuming this throughput bottleneck
+- As advanced programmer, must understand memory hierarchy
+
+#### 11.3 Practical Takeaway
+
+- Memory management is 50-80% of program execution
+- Must consider in every line of code
+- Understanding memory policies essential for performance
+- Different languages/runtimes make different trade-offs based on workload assumptions
+
+### Chapter 12: Summary and Next Steps
+
+#### 12.1 Key Insights
+
+- No single "best" memory management strategy
+- Explicit management is efficient but error-prone
+- Reference counting fails with cycles
+- Garbage collection trades performance for safety
+- Generational GC combines strategies for practical efficiency
+- Real systems use multiple heaps with different policies
+
+#### 12.2 Empirical Nature
+
+- Memory management design is largely empirical
+- Testing and profiling determine best strategies
+- Different applications have different needs
+- Constants and thresholds tuned for typical workloads
+
+#### 12.3 Coming Next
+
+- **Monday**: Andrea will present Rust memory management (unique approach)
+- Rust attempts to combine efficiency of explicit management with safety of GC
+- Represents different paradigm using ownership and borrowing
+
+### Conclusion
+
+Memory management is not separate from programming language design—it's fundamental to it. The scoping rules you learned yesterday directly determine how memory must be managed. Understanding both explicit and automatic memory management strategies prepares you to work effectively in any language and to appreciate why different languages make different choices for different use cases.
 # 6/10/25
 
 ![[07-AP25-10-06-RUST-1.pdf]]

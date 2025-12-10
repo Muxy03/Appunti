@@ -11,10 +11,14 @@
             "id": "da11e0c78283f36d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "MAGISTRALE/ADVANCED PROGRAMMING.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "ADVANCED PROGRAMMING"
             }
           }
         ]
@@ -74,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -222,20 +227,20 @@
   },
   "active": "da11e0c78283f36d",
   "lastOpenFiles": [
+    "Untitled.base",
+    "MAGISTRALE/ADVANCED PROGRAMMING.md",
+    "MAGISTRALE/MAGISTRALE INFO.md",
+    "MAGISTRALE/RECORDS/ADVANCED PROGRAMMING/Lezione del 16_10_2025.vtt",
+    "MAGISTRALE/RECORDS/ADVANCED PROGRAMMING/Non confermato 202261.crdownload",
+    "MAGISTRALE/RECORDS/ADVANCED PROGRAMMING/Lezione del 2_10_2025.vtt",
+    "MAGISTRALE/RECORDS/ADVANCED PROGRAMMING/Non confermato 547475.crdownload",
+    "MAGISTRALE/RECORDS/ADVANCED PROGRAMMING/Lezione del 1_10_2025.vtt",
+    "MAGISTRALE/RECORDS/ADVANCED PROGRAMMING/Non confermato 202197.crdownload",
     "PDF/Esercizio 26_02.md",
     "MAGISTRALE/COMPETITIVE PROGRAMMING.md",
     "PDF/COMPETITIVE PROGRAMMING/DynamicProgramming.pdf",
     "PDF/COMPETITIVE PROGRAMMING/Mos 2025.pdf",
     "PDF/COMPETITIVE PROGRAMMING/Pearls 2025.pdf",
-    "MAGISTRALE/ADVANCED PROGRAMMING.md",
-    "PDF/ADVANCED PROGRAMMING/26-AP25-Python-Decorators-OOP.pdf",
-    "PDF/ADVANCED PROGRAMMING/Non confermato 136182.crdownload",
-    "PDF/ADVANCED PROGRAMMING/25-AP25-Reflection_Annotations_in_Java.pdf",
-    "PDF/ADVANCED PROGRAMMING/Non confermato 430531.crdownload",
-    "PDF/ADVANCED PROGRAMMING/24-AP25-JLambdas.pdf",
-    "PDF/ADVANCED PROGRAMMING/Non confermato 642499.crdownload",
-    "PDF/ADVANCED PROGRAMMING/21-AP25-Monads.pdf",
-    "MAGISTRALE/MAGISTRALE INFO.md",
     "3 ANNO/CLOUD COMPUTING.md",
     "MAGISTRALE/SOFTWARE VERIFICATION.md",
     "MAGISTRALE/EXTRA/Lecture Notes ADVANCED PRO/04 - predictive_parsing_whitespace.md",
@@ -266,7 +271,6 @@
     "MAGISTRALE/EXTRA/ALGODESIGN Assignments/AlgoDesignAssignment6.md",
     "MAGISTRALE 1/Assignments/Pasted image 20250506000429.png",
     "MAGISTRALE/EXTRA/ALGODESIGN Assignments/AlgoDesignAssignment5.md",
-    "MAGISTRALE/EXTRA/ALGODESIGN Assignments/AlgoDesignAssignment1.md",
     "IMMAGINI/Pasted image 20250327003753.png",
     "Untitled.canvas"
   ]

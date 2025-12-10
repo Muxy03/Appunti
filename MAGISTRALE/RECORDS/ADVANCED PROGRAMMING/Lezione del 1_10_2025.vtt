@@ -1,0 +1,4547 @@
+WEBVTT
+
+b548f737-0cec-4795-aebc-84ad52e940df/20-0
+00:00:18.147 --> 00:00:22.747
+<v Antonio Cisternino>So uh, let's start where we uh.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/59-0
+00:00:24.747 --> 00:00:32.650
+<v Antonio Cisternino>Left on Monday. Oh, by the way,
+announcement that we're about to drop in</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/59-1
+00:00:32.650 --> 00:00:39.903
+<v Antonio Cisternino>the material section of the team.
+The first notes generated Andrea</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/59-2
+00:00:39.903 --> 00:00:44.667
+<v Antonio Cisternino>yesterday reviewed them and me too.
+So now.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/89-0
+00:00:44.747 --> 00:00:53.915
+<v Antonio Cisternino>Will share that is AI generated content
+from the transcript of the of the class.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/89-1
+00:00:53.915 --> 00:01:00.027
+<v Antonio Cisternino>It's not just the the generation I
+developed the GPT.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/114-0
+00:01:00.507 --> 00:01:07.185
+<v Antonio Cisternino>It does the job,
+but actually in several cases I read the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/114-1
+00:01:07.185 --> 00:01:14.440
+<v Antonio Cisternino>output and said expand this,
+use that and so it's not just the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/114-2
+00:01:14.440 --> 00:01:15.707
+<v Antonio Cisternino>generation.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/147-0
+00:01:15.787 --> 00:01:21.589
+<v Antonio Cisternino>Or include reference to this,
+include this example or this stuff.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/147-1
+00:01:21.589 --> 00:01:28.447
+<v Antonio Cisternino>So it is part of experiment of this
+course and in any case you will get notes</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/147-2
+00:01:28.447 --> 00:01:33.547
+<v Antonio Cisternino>at the end of the course with all the
+things this is not.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/173-0
+00:01:33.627 --> 00:01:40.077
+<v Antonio Cisternino>Even though it contains most of the
+things that we say and even more</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/173-1
+00:01:40.077 --> 00:01:44.939
+<v Antonio Cisternino>information,
+does not replace a chapter of the book</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/173-2
+00:01:44.939 --> 00:01:49.427
+<v Antonio Cisternino>and pragmatics programming language
+pragmatics.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/212-0
+00:01:49.907 --> 00:01:55.185
+<v Antonio Cisternino>Will still be important, but again,
+when this master course and not an</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/212-1
+00:01:55.185 --> 00:01:59.572
+<v Antonio Cisternino>undergraduate course,
+please spend your time in becoming a</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/212-2
+00:01:59.572 --> 00:02:04.182
+<v Antonio Cisternino>better programmer,
+not just learning things to pass the exam,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/212-3
+00:02:04.182 --> 00:02:09.387
+<v Antonio Cisternino>because at the end of the day the goal is
+that you you become a very.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/214-0
+00:02:09.467 --> 00:02:12.507
+<v Antonio Cisternino>OK, so.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/215-0
+00:02:13.987 --> 00:02:14.147
+<v Antonio Cisternino>Um.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/252-0
+00:02:16.507 --> 00:02:24.009
+<v Antonio Cisternino>We left with the compilers, etcetera. OK,
+we had this quick review of the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/252-1
+00:02:24.009 --> 00:02:31.815
+<v Antonio Cisternino>whitespace compiler, just as an example,
+small enough to be browsed in a few</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/252-2
+00:02:31.815 --> 00:02:32.627
+<v Antonio Cisternino>minutes.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/292-0
+00:02:32.907 --> 00:02:39.990
+<v Antonio Cisternino>But still containing all the main
+elements of of the language pipeline.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/292-1
+00:02:39.990 --> 00:02:47.467
+<v Antonio Cisternino>Now basically we finished the the quick
+review of the main constituent of a</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/292-2
+00:02:47.467 --> 00:02:52.387
+<v Antonio Cisternino>programming language.
+Now we start talking about.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/334-0
+00:02:52.507 --> 00:02:56.568
+<v Antonio Cisternino>New areas.
+Today we start talking about the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/334-1
+00:02:56.568 --> 00:03:03.214
+<v Antonio Cisternino>importance of names in in programs.
+Names are the most important thing.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/334-2
+00:03:03.214 --> 00:03:09.583
+<v Antonio Cisternino>It is often overlooked both for
+documentation, software engineering,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/334-3
+00:03:09.583 --> 00:03:11.707
+<v Antonio Cisternino>security, I mean names.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/338-0
+00:03:12.427 --> 00:03:15.467
+<v Antonio Cisternino>Uh, are basically the contractor.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/361-0
+00:03:16.947 --> 00:03:26.947
+<v Antonio Cisternino>Between us programmers and the machine,
+and so understanding the names is a</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/361-1
+00:03:26.947 --> 00:03:31.947
+<v Antonio Cisternino>crucial part of the programming and I.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/395-0
+00:03:32.027 --> 00:03:38.525
+<v Antonio Cisternino>I'd like to remind you that names are not
+necessarily the name of the variables</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/395-1
+00:03:38.525 --> 00:03:42.099
+<v Antonio Cisternino>you're using,
+or the name of the functions.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/395-2
+00:03:42.099 --> 00:03:47.867
+<v Antonio Cisternino>So in a grammar that would have been the
+production of the identifier.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/436-0
+00:03:48.347 --> 00:03:54.370
+<v Antonio Cisternino>Or the literal names are also pointers in
+AC programming language.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/436-1
+00:03:54.370 --> 00:04:00.213
+<v Antonio Cisternino>If you have the pointer,
+you can refer to the object referred by</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/436-2
+00:04:00.213 --> 00:04:05.787
+<v Antonio Cisternino>the pointer thanks to the operation that
+a compiler give you.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/468-0
+00:04:05.867 --> 00:04:10.432
+<v Antonio Cisternino>To reference a different object using
+that number.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/468-1
+00:04:10.432 --> 00:04:14.997
+<v Antonio Cisternino>So in in a in a sense also a point that
+is a name.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/468-2
+00:04:14.997 --> 00:04:20.547
+<v Antonio Cisternino>So the name is not necessarily the the
+the literal, but is a.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/485-0
+00:04:20.907 --> 00:04:26.505
+<v Antonio Cisternino>Crucial element to define the
+organization in the memory of a</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/485-1
+00:04:26.505 --> 00:04:30.027
+<v Antonio Cisternino>programming language. So we will start.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/508-0
+00:04:31.187 --> 00:04:39.151
+<v Antonio Cisternino>With the scoping again,
+sorry this you may already know enough,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/508-1
+00:04:39.151 --> 00:04:45.747
+<v Antonio Cisternino>but so we review quickly scoping we
+discuss briefly.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/539-0
+00:04:46.347 --> 00:04:50.240
+<v Antonio Cisternino>Again,
+lexical closure that I really quickly,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/539-1
+00:04:50.240 --> 00:04:53.964
+<v Antonio Cisternino>quickly introduced in the very first
+class,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/539-2
+00:04:53.964 --> 00:05:00.227
+<v Antonio Cisternino>but we will spend some more time in
+understanding the true nature of the.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/575-0
+00:05:01.307 --> 00:05:09.415
+<v Antonio Cisternino>Of the lexical closures and and then we
+start moving on to the memory management</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/575-1
+00:05:09.415 --> 00:05:17.824
+<v Antonio Cisternino>because names typically refers to also to
+memory object, not only to memory object,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/575-2
+00:05:17.824 --> 00:05:20.627
+<v Antonio Cisternino>names also refer to classes.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/605-0
+00:05:21.267 --> 00:05:27.219
+<v Antonio Cisternino>Which is not technically memory object,
+but most of the names refer to actual</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/605-1
+00:05:27.219 --> 00:05:33.399
+<v Antonio Cisternino>values that are stored in the in the in
+the memory and the the the scoping rules</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/605-2
+00:05:33.399 --> 00:05:36.147
+<v Antonio Cisternino>that govern the visibility of names.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/640-0
+00:05:37.547 --> 00:05:45.110
+<v Antonio Cisternino>It's inevitable that they affect the
+lifetime of the objects in in the memory</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/640-1
+00:05:45.110 --> 00:05:52.770
+<v Antonio Cisternino>of a of a programming language and and
+that is a big, big, big, big, big, big,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/640-2
+00:05:52.770 --> 00:05:56.067
+<v Antonio Cisternino>big topic because 80% of the time.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/683-0
+00:05:56.267 --> 00:06:03.893
+<v Antonio Cisternino>In programming is managing memory and as
+I pointed out in the in the introduction</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/683-1
+00:06:03.893 --> 00:06:10.776
+<v Antonio Cisternino>and now we have easily one terabyte of
+RAM on a system and you still have</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/683-2
+00:06:10.776 --> 00:06:15.427
+<v Antonio Cisternino>pointers.
+If you are using your PC you have a TB.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/713-0
+00:06:16.107 --> 00:06:21.551
+<v Antonio Cisternino>And database, file system, security, etc.
+So as a programmer,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/713-1
+00:06:21.551 --> 00:06:25.502
+<v Antonio Cisternino>we're still managing with very simple
+tools,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/713-2
+00:06:25.502 --> 00:06:30.947
+<v Antonio Cisternino>more and more RAM and then there are
+consideration about the.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/761-0
+00:06:31.587 --> 00:06:37.704
+<v Antonio Cisternino>Performance, which is crucial.
+So you always have to understand where</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/761-1
+00:06:37.704 --> 00:06:43.034
+<v Antonio Cisternino>the memory lies in the runtime of your
+programming language.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/761-2
+00:06:43.034 --> 00:06:49.239
+<v Antonio Cisternino>So we start this journey now.
+At some point we will start digging down</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/761-3
+00:06:49.239 --> 00:06:50.987
+<v Antonio Cisternino>and we will see how.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/782-0
+00:06:50.987 --> 00:06:57.517
+<v Antonio Cisternino>Objects and memory layouts are
+implemented in a virtual machine such as</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/782-1
+00:06:57.517 --> 00:07:03.867
+<v Antonio Cisternino>Java Vito machine or the common language
+runtime so that you can see.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/816-0
+00:07:05.067 --> 00:07:12.366
+<v Antonio Cisternino>All the costs that you have to sustain
+when you make a virtual call or not,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/816-1
+00:07:12.366 --> 00:07:19.474
+<v Antonio Cisternino>what is the cost of the garbage
+collection and various approaches you can</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/816-2
+00:07:19.474 --> 00:07:20.147
+<v Antonio Cisternino>add to?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/842-0
+00:07:20.947 --> 00:07:28.856
+<v Antonio Cisternino>Automatically manage the memory and so on.
+So this today we start this journey and</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/842-1
+00:07:28.856 --> 00:07:33.907
+<v Antonio Cisternino>and we move over the traditional compiler
+stuff, so.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/850-0
+00:07:36.587 --> 00:07:42.787
+<v Antonio Cisternino>Just to as a bridge,
+let me hook into the C#.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/887-0
+00:07:44.747 --> 00:07:50.488
+<v Antonio Cisternino>Compiler. OK,
+so now it is an open source project.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/887-1
+00:07:50.488 --> 00:07:59.495
+<v Antonio Cisternino>So you go on GitHub, you look for Roslin.
+The name of the the system is Roslin.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/887-2
+00:07:59.495 --> 00:08:01.747
+<v Antonio Cisternino>Roslin is a modular.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/918-0
+00:08:02.627 --> 00:08:10.878
+<v Antonio Cisternino>Compiler architecture that compiles
+multiple programming language targeting</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/918-1
+00:08:10.878 --> 00:08:17.609
+<v Antonio Cisternino>the.net by code. OK,
+so it is also interesting to have a look</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/918-2
+00:08:17.609 --> 00:08:19.347
+<v Antonio Cisternino>at a real world.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/944-0
+00:08:19.587 --> 00:08:26.416
+<v Antonio Cisternino>System for this reason.
+So name starts with the name of the files,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/944-1
+00:08:26.416 --> 00:08:33.347
+<v Antonio Cisternino>which typically is not part of the
+program, the of your program or.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/987-0
+00:08:35.067 --> 00:08:40.215
+<v Antonio Cisternino>Not not entirely in Java,
+you know that every file dot Java should</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/987-1
+00:08:40.215 --> 00:08:43.596
+<v Antonio Cisternino>be named after the class the file
+contains.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/987-2
+00:08:43.596 --> 00:08:49.436
+<v Antonio Cisternino>So there are examples of programming
+languages in which you have some rules</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/987-3
+00:08:49.436 --> 00:08:52.587
+<v Antonio Cisternino>that impose you the name of the file. OK.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1019-0
+00:08:53.147 --> 00:08:56.665
+<v Antonio Cisternino>And in that case,
+the name of the file is part of the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1019-1
+00:08:56.665 --> 00:08:59.728
+<v Antonio Cisternino>program.
+But even though even if it's not like</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1019-2
+00:08:59.728 --> 00:09:02.661
+<v Antonio Cisternino>this,
+so in C the tradition is you name your</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1019-3
+00:09:02.661 --> 00:09:07.027
+<v Antonio Cisternino>file as you like, not my problem,
+the C compiler will work anyway.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1066-0
+00:09:08.267 --> 00:09:14.191
+<v Antonio Cisternino>Names are important because it's the way
+you browse the code you don't know.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1066-1
+00:09:14.191 --> 00:09:19.884
+<v Antonio Cisternino>So the ability to look for names is not
+just understand where the name is</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1066-2
+00:09:19.884 --> 00:09:25.885
+<v Antonio Cisternino>available or which is the particular
+variable you're about to refer or memory</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1066-3
+00:09:25.885 --> 00:09:27.347
+<v Antonio Cisternino>location, but it's.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1116-0
+00:09:28.027 --> 00:09:35.254
+<v Antonio Cisternino>Also a way to browse a large code base
+and there are a lot of naming conventions.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1116-1
+00:09:35.254 --> 00:09:42.217
+<v Antonio Cisternino>So let's start with the naming convention.
+Notice that naming convention are a</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1116-2
+00:09:42.217 --> 00:09:46.889
+<v Antonio Cisternino>convention.
+I mean there is no mandatory rule in the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1116-3
+00:09:46.889 --> 00:09:47.947
+<v Antonio Cisternino>programming.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1140-0
+00:09:48.027 --> 00:09:53.714
+<v Antonio Cisternino>Language that mandates you to use
+uppercase, lowercase, et cetera.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1140-1
+00:09:53.714 --> 00:09:59.571
+<v Antonio Cisternino>There are two main naming convention
+typically for variable classes,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1140-2
+00:09:59.571 --> 00:10:02.627
+<v Antonio Cisternino>name of classes, et cetera that are.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1164-0
+00:10:06.587 --> 00:10:11.237
+<v Antonio Cisternino>So when you type in the the name of your
+method,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1164-1
+00:10:11.237 --> 00:10:16.267
+<v Antonio Cisternino>you will start with the lowercase or
+uppercase name.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1184-0
+00:10:17.307 --> 00:10:21.156
+<v Antonio Cisternino>OK,
+you're using the camel notation and it is</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1184-1
+00:10:21.156 --> 00:10:27.601
+<v Antonio Cisternino>called camel because if you look at the
+camel you start low and you go high.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1184-2
+00:10:27.601 --> 00:10:28.187
+<v Antonio Cisternino>OK and.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1211-0
+00:10:29.827 --> 00:10:36.792
+<v Antonio Cisternino>And there is also an alternative that is
+you start with the upper case,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1211-1
+00:10:36.792 --> 00:10:43.467
+<v Antonio Cisternino>that's the Pascal notation and and it's
+the one used that by by.net.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1258-0
+00:10:44.867 --> 00:10:51.283
+<v Antonio Cisternino>I think so as you can see the main in C#
+in in Java would would have been a lower</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1258-1
+00:10:51.283 --> 00:10:57.544
+<v Antonio Cisternino>case main and here is uppercase main.
+All these conventions are crucial because</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1258-2
+00:10:57.544 --> 00:11:02.787
+<v Antonio Cisternino>it helps you browse the code and in fact
+there are automatic tool.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1287-0
+00:11:03.027 --> 00:11:07.521
+<v Antonio Cisternino>Since ages,
+there are automatic tools that checks</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1287-1
+00:11:07.521 --> 00:11:13.364
+<v Antonio Cisternino>this convention that are part of the
+pragmatics of the language,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1287-2
+00:11:13.364 --> 00:11:19.747
+<v Antonio Cisternino>so the set of conventions we use to help
+us understanding a programme.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1334-0
+00:11:20.147 --> 00:11:27.936
+<v Antonio Cisternino>And and nowadays these are also enforced
+by the AI. So if you use a copilot,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1334-1
+00:11:27.936 --> 00:11:35.726
+<v Antonio Cisternino>I mean if you use Visual Studio Code,
+it is likely that you've been asked to</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1334-2
+00:11:35.726 --> 00:11:39.267
+<v Antonio Cisternino>activate copilot. copilot is an AI.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1377-0
+00:11:40.187 --> 00:11:45.088
+<v Antonio Cisternino>Which basically see what you type and
+helps you complete the line.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1377-1
+00:11:45.088 --> 00:11:48.965
+<v Antonio Cisternino>And if you pay attention,
+if you pick up a language,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1377-2
+00:11:48.965 --> 00:11:52.842
+<v Antonio Cisternino>you will start seeing names that are the
+convention,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1377-3
+00:11:52.842 --> 00:11:58.987
+<v Antonio Cisternino>the conventional in the conventional form
+of the names of that particular language.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1415-0
+00:11:59.427 --> 00:12:04.696
+<v Antonio Cisternino>So first of all, names,
+even before becoming objects of</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1415-1
+00:12:04.696 --> 00:12:10.531
+<v Antonio Cisternino>discussion about the semantics of the
+name in a program text,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1415-2
+00:12:10.531 --> 00:12:17.965
+<v Antonio Cisternino>names are a crucial element to understand
+a program and you must be become pay</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1415-3
+00:12:17.965 --> 00:12:18.907
+<v Antonio Cisternino>attention.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1417-0
+00:12:18.947 --> 00:12:20.907
+<v Antonio Cisternino>To the use of the names.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1460-0
+00:12:22.307 --> 00:12:27.025
+<v Antonio Cisternino>Because if you write the program,
+you have to pay attention to use names</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1460-1
+00:12:27.025 --> 00:12:31.550
+<v Antonio Cisternino>that someone else can read.
+But you're about to read more than write,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1460-2
+00:12:31.550 --> 00:12:35.817
+<v Antonio Cisternino>so you have to pay attention.
+And you may think this is a trivial</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1460-3
+00:12:35.817 --> 00:12:37.627
+<v Antonio Cisternino>statement. It's not because.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1502-0
+00:12:37.907 --> 00:12:43.067
+<v Antonio Cisternino>If I ask you to understand how the C#
+compiler works,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1502-1
+00:12:43.067 --> 00:12:50.235
+<v Antonio Cisternino>I'm pretty sure that all of you would
+have browsed to the C CSC directory.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1502-2
+00:12:50.235 --> 00:12:55.587
+<v Antonio Cisternino>CSC is the name of the C# compiler,
+so that's the tool.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1541-0
+00:12:55.907 --> 00:13:02.089
+<v Antonio Cisternino>And and you will have a look for the main
+as I just did the program and you will</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1541-1
+00:13:02.089 --> 00:13:07.432
+<v Antonio Cisternino>have started reading the code as an
+interpreter, a human interpreter.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1541-2
+00:13:07.432 --> 00:13:12.547
+<v Antonio Cisternino>You pretend to know the semantics of the
+language and say OK main.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1566-0
+00:13:14.627 --> 00:13:20.698
+<v Antonio Cisternino>And say OK, I have to find this main core.
+Now all the tools GitHub included helps</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1566-1
+00:13:20.698 --> 00:13:25.307
+<v Antonio Cisternino>you browse the code.
+So on the right I can find the main core.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1577-0
+00:13:28.147 --> 00:13:34.907
+<v Antonio Cisternino>Method and and I understand that there is
+a some logger.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1585-0
+00:13:36.747 --> 00:13:40.467
+<v Antonio Cisternino>And uh, and then there is a big client.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1612-0
+00:13:41.827 --> 00:13:49.071
+<v Antonio Cisternino>And these big client has a huge set of
+arguments that I unlikely.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1612-1
+00:13:49.071 --> 00:13:55.987
+<v Antonio Cisternino>It's unlikely that I fully understand and
+and then there is a.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1614-0
+00:13:56.947 --> 00:13:58.867
+<v Antonio Cisternino>A run uh.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1621-0
+00:14:00.867 --> 00:14:02.427
+<v Antonio Cisternino>Static method that is used.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1659-0
+00:14:04.787 --> 00:14:13.152
+<v Antonio Cisternino>This run is this define some external
+code that that will be that will invoke</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1659-1
+00:14:13.152 --> 00:14:20.337
+<v Antonio Cisternino>this this this common line.
+So this is a typical if you're feeling</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1659-2
+00:14:20.337 --> 00:14:24.627
+<v Antonio Cisternino>that you're not getting what it's doing.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1660-0
+00:14:24.707 --> 00:14:25.187
+<v Antonio Cisternino>The norm.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1706-0
+00:14:26.427 --> 00:14:32.031
+<v Antonio Cisternino>No real world program as a main in which
+you have ask input, ask input,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1706-1
+00:14:32.031 --> 00:14:37.012
+<v Antonio Cisternino>process the input, print the output.
+That was the 70s, the 80s,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1706-2
+00:14:37.012 --> 00:14:43.161
+<v Antonio Cisternino>maybe even the 90s. Nowadays it's not.
+If you take a graphical application you</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1706-3
+00:14:43.161 --> 00:14:45.107
+<v Antonio Cisternino>will have the event loop.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1739-0
+00:14:46.587 --> 00:14:52.354
+<v Antonio Cisternino>So you will have a pick a message from
+the pick an event from the event queue.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1739-1
+00:14:52.354 --> 00:14:58.340
+<v Antonio Cisternino>So the graphical system basically handles
+all the interrupts of the mouse and the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1739-2
+00:14:58.340 --> 00:15:01.187
+<v Antonio Cisternino>keyboard, generates events, queue them.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1785-0
+00:15:01.827 --> 00:15:08.272
+<v Antonio Cisternino>In the window queue and then you pick,
+you switch the particular event you</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1785-1
+00:15:08.272 --> 00:15:15.062
+<v Antonio Cisternino>received and you perform some code. OK,
+so basically you are writing a program</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1785-2
+00:15:15.062 --> 00:15:20.907
+<v Antonio Cisternino>which reacts to external events and this
+is the habit also in less.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1821-0
+00:15:21.107 --> 00:15:25.833
+<v Antonio Cisternino>Event-oriented PROGRAMMING nowadays,
+and this is the proof.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1821-1
+00:15:25.833 --> 00:15:31.661
+<v Antonio Cisternino>I mean here you see just a run because
+there is some other part of a huge</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1821-2
+00:15:31.661 --> 00:15:38.120
+<v Antonio Cisternino>program which will use techniques that we
+will explore during this course such as</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1821-3
+00:15:38.120 --> 00:15:38.987
+<v Antonio Cisternino>reflection.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1846-0
+00:15:39.427 --> 00:15:48.426
+<v Antonio Cisternino>And so the ability of a of a running
+program program to inspect other binary</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1846-1
+00:15:48.426 --> 00:15:54.387
+<v Antonio Cisternino>code and invoke dynamically its abilities
+without.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1873-0
+00:15:54.827 --> 00:16:01.950
+<v Antonio Cisternino>Determine statically the behaviour of the
+program. And so in in this context,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1873-1
+00:16:01.950 --> 00:16:07.064
+<v Antonio Cisternino>as you can see,
+it's difficult to go and browse the the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1873-2
+00:16:07.064 --> 00:16:09.347
+<v Antonio Cisternino>main and say OK, this is.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1880-0
+00:16:09.827 --> 00:16:14.587
+<v Antonio Cisternino>The behavior of this program,
+so in your opinion.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1886-0
+00:16:16.227 --> 00:16:18.507
+<v Antonio Cisternino>Where should I look for?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1897-0
+00:16:23.747 --> 00:16:26.347
+<v Antonio Cisternino>Now that I have the C# compiler.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1901-0
+00:16:28.347 --> 00:16:30.347
+<v Antonio Cisternino>As a program.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1904-0
+00:16:32.107 --> 00:16:32.987
+<v Antonio Cisternino>And.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1911-0
+00:16:35.587 --> 00:16:38.627
+<v Antonio Cisternino>A number of all this where you will look.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1916-0
+00:16:39.267 --> 00:16:41.987
+<v Antonio Cisternino>Let's let's look for the parser.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1924-0
+00:16:53.947 --> 00:16:56.227
+<v Antonio Cisternino>One look for any CPU.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1938-0
+00:16:57.227 --> 00:17:03.867
+<v Antonio Cisternino>Not interesting. Then you move to arm 64.
+Not interesting.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1946-0
+00:17:06.907 --> 00:17:10.827
+<v Antonio Cisternino>Oh, so this is the full C compiler.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1949-0
+00:17:14.707 --> 00:17:15.267
+<v Antonio Cisternino>It's not clearly.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/1960-0
+00:17:17.907 --> 00:17:21.067
+<v Antonio Cisternino>If you go back to the C# folder.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2008-0
+00:17:22.867 --> 00:17:28.986
+<v Antonio Cisternino>You may notice that there are other
+folders and you may think you know what,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2008-1
+00:17:28.986 --> 00:17:34.708
+<v Antonio Cisternino>maybe CSC is just the executable
+definition and maybe there is a lot of</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2008-2
+00:17:34.708 --> 00:17:40.589
+<v Antonio Cisternino>code somewhere else that is invoked
+indirectly by those few lines and you</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2008-3
+00:17:40.589 --> 00:17:40.987
+<v Antonio Cisternino>know.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2010-0
+00:17:41.427 --> 00:17:43.107
+<v Antonio Cisternino>The analyzer driver.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2021-0
+00:17:44.547 --> 00:17:49.947
+<v Antonio Cisternino>Seems provided. Uh, promising.
+Unfortunately, it's not in here.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2025-0
+00:17:52.307 --> 00:17:54.627
+<v Antonio Cisternino>Let's look at the ortable.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2055-0
+00:17:55.667 --> 00:18:01.936
+<v Antonio Cisternino>Now looks much better. OK,
+so you see names how much are important</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2055-1
+00:18:01.936 --> 00:18:08.767
+<v Antonio Cisternino>because one may wonder why the C#
+compiler is in the portable folder and</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2055-2
+00:18:08.767 --> 00:18:11.107
+<v Antonio Cisternino>not in the compiler form.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2098-0
+00:18:12.627 --> 00:18:16.023
+<v Antonio Cisternino>And sometimes it's just because of a
+history,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2098-1
+00:18:16.023 --> 00:18:21.413
+<v Antonio Cisternino>because every programmer feels the
+frustration of the empty file and you</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2098-2
+00:18:21.413 --> 00:18:25.474
+<v Antonio Cisternino>have to type in a name,
+and the name is the first one.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2098-3
+00:18:25.474 --> 00:18:31.307
+<v Antonio Cisternino>It came to your mind in that particular
+moment, and that may last 20 years or.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2148-0
+00:18:32.307 --> 00:18:37.481
+<v Antonio Cisternino>Everybody else, because you are that day.
+In fact,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2148-1
+00:18:37.481 --> 00:18:45.496
+<v Antonio Cisternino>the first day in 2001 I started working
+on the C and.net runtime in Microsoft.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2148-2
+00:18:45.496 --> 00:18:51.787
+<v Antonio Cisternino>The first thing that I did when I check
+out the full runtime.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2150-0
+00:18:51.947 --> 00:18:54.147
+<v Antonio Cisternino>It was opening the object file.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2177-0
+00:18:55.907 --> 00:19:04.023
+<v Antonio Cisternino>I was curious to see object class
+implementation because typically that is</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2177-1
+00:19:04.023 --> 00:19:11.490
+<v Antonio Cisternino>binary. So there are easy thing.
+Now you see the names and the names</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2177-2
+00:19:11.490 --> 00:19:13.547
+<v Antonio Cisternino>include the parser.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2213-0
+00:19:13.987 --> 00:19:20.243
+<v Antonio Cisternino>And and there is an abstract lecture
+which is an interesting name helps us to</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2213-1
+00:19:20.243 --> 00:19:26.820
+<v Antonio Cisternino>understand that that is involved in the
+first part of compiling and then there is</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2213-2
+00:19:26.820 --> 00:19:29.147
+<v Antonio Cisternino>the I don't know the lecture.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2249-0
+00:19:30.107 --> 00:19:37.011
+<v Antonio Cisternino>Let's have a look at quick look at the
+Lexer and as you can see the the Lexer as</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2249-1
+00:19:37.011 --> 00:19:41.274
+<v Antonio Cisternino>a mode that is a typical.
+We didn't discuss much,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2249-2
+00:19:41.274 --> 00:19:45.707
+<v Antonio Cisternino>but honestly we don't have much time for
+that, but.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2273-0
+00:19:45.907 --> 00:19:53.057
+<v Antonio Cisternino>You may know from previous studies that
+some languages have preprocessors.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2273-1
+00:19:53.057 --> 00:20:00.399
+<v Antonio Cisternino>Preprocessors basically allows you to
+transform the program with the program</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2273-2
+00:20:00.399 --> 00:20:01.067
+<v Antonio Cisternino>before.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2317-0
+00:20:01.587 --> 00:20:06.742
+<v Antonio Cisternino>The compiler to transform.
+I don't know macro definition in C OK,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2317-1
+00:20:06.742 --> 00:20:13.226
+<v Antonio Cisternino>so the macro definition in C is just that
+whenever you find the sequence exploding</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2317-2
+00:20:13.226 --> 00:20:17.523
+<v Antonio Cisternino>that and then compile.
+OK and and C for instance has a</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2317-3
+00:20:17.523 --> 00:20:21.507
+<v Antonio Cisternino>preprocessor itself,
+so you have a hash something.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2361-0
+00:20:21.667 --> 00:20:28.888
+<v Antonio Cisternino>It's available in the language and so the
+lexer as a mode and several modes because</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2361-1
+00:20:28.888 --> 00:20:34.991
+<v Antonio Cisternino>sometimes you may wanna read XML dot
+comments or XML element tags etc.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2361-2
+00:20:34.991 --> 00:20:41.267
+<v Antonio Cisternino>So basically depending on the mode,
+the way the tokenizer will tokenize.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2364-0
+00:20:41.307 --> 00:20:44.747
+<v Antonio Cisternino>And I think that will change. OK, so.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2373-0
+00:20:45.667 --> 00:20:50.107
+<v Antonio Cisternino>And there are several modes of this.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2424-0
+00:20:54.027 --> 00:20:57.416
+<v Antonio Cisternino>And then oh,
+like in the white space compiler,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2424-1
+00:20:57.416 --> 00:21:03.042
+<v Antonio Cisternino>there is a token info because when when
+you tokenize you have to emit a token</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2424-2
+00:21:03.042 --> 00:21:08.596
+<v Antonio Cisternino>data structure with some information
+about the token so that if you parse it</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2424-3
+00:21:08.596 --> 00:21:12.347
+<v Antonio Cisternino>the the name of a variable you don't just
+need the.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2474-0
+00:21:12.347 --> 00:21:15.832
+<v Antonio Cisternino>The information that that is name of a
+variable token.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2474-1
+00:21:15.832 --> 00:21:19.191
+<v Antonio Cisternino>You also want the text of the name of the
+variables,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2474-2
+00:21:19.191 --> 00:21:23.881
+<v Antonio Cisternino>otherwise you won't be able to compile
+things. OK, and so as you can see,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2474-3
+00:21:23.881 --> 00:21:28.317
+<v Antonio Cisternino>the ideas are very similar.
+The code is much more complicated because</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2474-4
+00:21:28.317 --> 00:21:31.867
+<v Antonio Cisternino>the PROGRAMMING language is much more
+complicated, but.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2504-0
+00:21:31.907 --> 00:21:35.421
+<v Antonio Cisternino>Nonetheless,
+a lots of switch case because we learned</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2504-1
+00:21:35.421 --> 00:21:40.433
+<v Antonio Cisternino>that the lexer is an automata and the
+automata is naturally implemented as a</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2504-2
+00:21:40.433 --> 00:21:44.663
+<v Antonio Cisternino>for loop, which say OK,
+if I'm in this state I behave like this,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2504-3
+00:21:44.663 --> 00:21:47.267
+<v Antonio Cisternino>if I'm in that state I behave like that.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2532-0
+00:21:47.827 --> 00:21:58.847
+<v Antonio Cisternino>And so on. OK and then syntax kind,
+numerical literal token info value kind</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2532-1
+00:21:58.847 --> 00:22:02.907
+<v Antonio Cisternino>if it's a system in 22 then.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2561-0
+00:22:03.667 --> 00:22:08.615
+<v Antonio Cisternino>Literal.
+So you have to parse a literal and return</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2561-1
+00:22:08.615 --> 00:22:16.184
+<v Antonio Cisternino>a token of value literal of type in 32
+and in the token info you will get all</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2561-2
+00:22:16.184 --> 00:22:19.387
+<v Antonio Cisternino>the necessary information. OK so.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2604-0
+00:22:22.387 --> 00:22:28.841
+<v Antonio Cisternino>Two things if you're curious and I I will
+encourage you to go and try to understand</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2604-1
+00:22:28.841 --> 00:22:32.606
+<v Antonio Cisternino>where is.
+You can see there is also the language</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2604-2
+00:22:32.606 --> 00:22:37.600
+<v Antonio Cisternino>parser. Go and browse.
+I will put in the theme of the course the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2604-3
+00:22:37.600 --> 00:22:38.907
+<v Antonio Cisternino>link to the repo.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2635-0
+00:22:39.587 --> 00:22:47.387
+<v Antonio Cisternino>Try to understand the strategy in the
+parsing of the compiler and look around</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2635-1
+00:22:47.387 --> 00:22:54.187
+<v Antonio Cisternino>because you will learn a lot in the way
+this code now has 20 years,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2635-2
+00:22:54.187 --> 00:22:55.987
+<v Antonio Cisternino>no more than that.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2638-0
+00:22:56.667 --> 00:22:57.547
+<v Antonio Cisternino>It does.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2641-0
+00:22:58.707 --> 00:22:59.427
+<v Antonio Cisternino>96.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2645-0
+00:23:02.387 --> 00:23:04.107
+<v Antonio Cisternino>30 years, almost.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2650-0
+00:23:05.867 --> 00:23:08.027
+<v Antonio Cisternino>So it's a time machine.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2687-0
+00:23:09.427 --> 00:23:16.089
+<v Antonio Cisternino>It has been mostly rewritten since the
+original implementation. Nevertheless,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2687-1
+00:23:16.089 --> 00:23:23.092
+<v Antonio Cisternino>the root and some of the names are still
+rooted in there. OK, and as you can see,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2687-2
+00:23:23.092 --> 00:23:27.107
+<v Antonio Cisternino>you will find patterns that we just
+discussed.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2726-0
+00:23:27.187 --> 00:23:32.555
+<v Antonio Cisternino>OK, so on one hand,
+I hope this convinced you that even real</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2726-1
+00:23:32.555 --> 00:23:39.067
+<v Antonio Cisternino>world code is organised the way Andrea
+has shown in by the mean of formal</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2726-2
+00:23:39.067 --> 00:23:43.027
+<v Antonio Cisternino>methods or I did show it by the mean of
+the.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2767-0
+00:23:43.667 --> 00:23:50.413
+<v Antonio Cisternino>White space compiler. In any case,
+that is the theory and still backs the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2767-1
+00:23:50.413 --> 00:23:56.247
+<v Antonio Cisternino>implementation of this thing.
+Let's go back to names. So names,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2767-2
+00:23:56.247 --> 00:24:03.267
+<v Antonio Cisternino>understanding names in the context of a
+complicated program, it's important.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2796-0
+00:24:03.307 --> 00:24:09.345
+<v Antonio Cisternino>It's important first,
+because if you invoke a method of</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2796-1
+00:24:09.345 --> 00:24:14.737
+<v Antonio Cisternino>function,
+you have to find the definition of that</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2796-2
+00:24:14.737 --> 00:24:19.267
+<v Antonio Cisternino>function and that is not always easy. Why?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2798-0
+00:24:19.987 --> 00:24:22.187
+<v Antonio Cisternino>You've seen the run method.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2817-0
+00:24:24.147 --> 00:24:31.641
+<v Antonio Cisternino>The run method,
+technically it's not a method or or an</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2817-1
+00:24:31.641 --> 00:24:36.547
+<v Antonio Cisternino>element of a class, it's a function.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2820-0
+00:24:38.467 --> 00:24:40.467
+<v Antonio Cisternino>So starting.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2824-0
+00:24:42.587 --> 00:24:44.427
+<v Antonio Cisternino>I would say from Java.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2826-0
+00:24:45.947 --> 00:24:46.027
+<v Antonio Cisternino>Um.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2857-0
+00:24:48.867 --> 00:24:58.607
+<v Antonio Cisternino>Mid 90s PCs were efficient enough to
+support as a mainstream the notion of a</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2857-1
+00:24:58.607 --> 00:25:04.427
+<v Antonio Cisternino>function as values in program in programs
+OK.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2862-0
+00:25:05.667 --> 00:25:07.707
+<v Antonio Cisternino>So what does it means if you take uh?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2890-0
+00:25:09.027 --> 00:25:13.981
+<v Antonio Cisternino>C,
+Pascal and many other mainstream</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2890-1
+00:25:13.981 --> 00:25:23.341
+<v Antonio Cisternino>languages of those years.
+Basic functions or map or procedures were</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2890-2
+00:25:23.341 --> 00:25:26.507
+<v Antonio Cisternino>basically declarations.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2902-0
+00:25:26.787 --> 00:25:31.787
+<v Antonio Cisternino>Which allow to name a sequence of
+instruction in the program. OK,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2902-1
+00:25:31.787 --> 00:25:33.227
+<v Antonio Cisternino>that is a function.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2904-0
+00:25:34.947 --> 00:25:35.107
+<v Antonio Cisternino>But uh.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2941-0
+00:25:38.467 --> 00:25:45.278
+<v Antonio Cisternino>It wasn't fully possible to treat those
+function that are basically fragments of</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2941-1
+00:25:45.278 --> 00:25:49.736
+<v Antonio Cisternino>code as values,
+so it wasn't possible to assign to a</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2941-2
+00:25:49.736 --> 00:25:55.707
+<v Antonio Cisternino>variable a function and then use that
+variable to invoke the function.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2966-0
+00:25:56.507 --> 00:26:03.758
+<v Antonio Cisternino>OK, so that was pre-java.
+With Java mostly thanks to the interface</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/2966-1
+00:26:03.758 --> 00:26:11.227
+<v Antonio Cisternino>that we will discuss when we will talk
+about types, it was possible.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3001-0
+00:26:11.587 --> 00:26:19.708
+<v Antonio Cisternino>To pass around your program functions,
+it was a little bit clumsy in the syntax</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3001-1
+00:26:19.708 --> 00:26:25.495
+<v Antonio Cisternino>with respect to ML,
+Camel and Askel and other functional</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3001-2
+00:26:25.495 --> 00:26:30.267
+<v Antonio Cisternino>languages,
+but nevertheless in the mainstream.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3024-0
+00:26:30.787 --> 00:26:38.821
+<v Antonio Cisternino>The functional programming pattern,
+so the ability to pass a function as an</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3024-1
+00:26:38.821 --> 00:26:44.107
+<v Antonio Cisternino>argument to another function became an
+habit. OK.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3030-0
+00:26:45.747 --> 00:26:49.387
+<v Antonio Cisternino>O Let me go back to the C Shar compiler.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3033-0
+00:26:53.027 --> 00:26:54.907
+<v Antonio Cisternino>So finding.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3062-0
+00:26:57.507 --> 00:27:05.249
+<v Antonio Cisternino>This run where it is.
+It's not that easy because it may be a</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3062-1
+00:27:05.249 --> 00:27:13.627
+<v Antonio Cisternino>direct call to a declared function,
+but you you may are invoking.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3111-0
+00:27:14.627 --> 00:27:19.591
+<v Antonio Cisternino>A variable which contains the reference
+to a function. OK,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3111-1
+00:27:19.591 --> 00:27:25.987
+<v Antonio Cisternino>so understanding this the the names,
+it's crucial because sometimes you get</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3111-2
+00:27:25.987 --> 00:27:32.467
+<v Antonio Cisternino>you start browsing the code and you get
+stuck in some point because you see.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3144-0
+00:27:32.547 --> 00:27:37.536
+<v Antonio Cisternino>Invoke this name,
+but that is not the name of the function.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3144-1
+00:27:37.536 --> 00:27:44.437
+<v Antonio Cisternino>That is the name of the variable that has
+been ***** by through dozens of of calls</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3144-2
+00:27:44.437 --> 00:27:46.267
+<v Antonio Cisternino>and you received some.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3182-0
+00:27:47.627 --> 00:27:55.574
+<v Antonio Cisternino>Lambda as we will call it today that has
+been inserted somewhere as in the program.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3182-1
+00:27:55.574 --> 00:28:00.210
+<v Antonio Cisternino>So OK,
+so the strategy when you read the the the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3182-2
+00:28:00.210 --> 00:28:05.036
+<v Antonio Cisternino>program,
+you have to pay a lot of attention to the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3182-3
+00:28:05.036 --> 00:28:07.307
+<v Antonio Cisternino>meaning of every single.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3211-0
+00:28:07.387 --> 00:28:14.684
+<v Antonio Cisternino>Name you find because it may not be what
+you may think of. It doesn't.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3211-1
+00:28:14.684 --> 00:28:19.206
+<v Antonio Cisternino>It may not be true that since I'm
+applying,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3211-2
+00:28:19.206 --> 00:28:22.907
+<v Antonio Cisternino>so I apply arguments to to the name.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3246-0
+00:28:23.627 --> 00:28:32.145
+<v Antonio Cisternino>That means that that is a static method.
+It may be a variable that Java introduced</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3246-1
+00:28:32.145 --> 00:28:39.534
+<v Antonio Cisternino>it in the form of interfaces.
+net refined the notion and introduced the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3246-2
+00:28:39.534 --> 00:28:41.587
+<v Antonio Cisternino>notion of delegates.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3268-0
+00:28:42.827 --> 00:28:48.957
+<v Antonio Cisternino>Mind this word because delegates affected
+the the evolution of programming language</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3268-1
+00:28:48.957 --> 00:28:52.387
+<v Antonio Cisternino>since then.
+So delegates basically are values.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3290-0
+00:28:54.027 --> 00:28:57.708
+<v Antonio Cisternino>Are pairs,
+so are objects that are provided you by</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3290-1
+00:28:57.708 --> 00:29:03.627
+<v Antonio Cisternino>the runtime and are basically a pair with
+two arguments. One is the this pointer.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3301-0
+00:29:05.787 --> 00:29:09.867
+<v Antonio Cisternino>And the other is the pointer to the
+function that you want to invoke.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3307-0
+00:29:12.827 --> 00:29:15.627
+<v Antonio Cisternino>And why you need this pointer?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3356-0
+00:29:23.347 --> 00:29:28.454
+<v Antonio Cisternino>Because if you if you want to pass around
+not a function but a method,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3356-1
+00:29:28.454 --> 00:29:34.281
+<v Antonio Cisternino>then you having the pointer to the to the
+to the definition of the method is not</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3356-2
+00:29:34.281 --> 00:29:37.878
+<v Antonio Cisternino>enough.
+You need also that this argument which is</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3356-3
+00:29:37.878 --> 00:29:41.547
+<v Antonio Cisternino>the particular object on which you want
+to invoke.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3385-0
+00:29:42.027 --> 00:29:51.141
+<v Antonio Cisternino>The the function and so the delegate
+basically is the pair and introduced the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3385-1
+00:29:51.141 --> 00:29:58.387
+<v Antonio Cisternino>in in in C# the ability to pass around
+the methods as values.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3410-0
+00:29:58.947 --> 00:30:03.340
+<v Antonio Cisternino>OK,
+it was a way to encapsulate all the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3410-1
+00:30:03.340 --> 00:30:12.347
+<v Antonio Cisternino>information needed to to invoke the the
+the method dynamically. Why it is useful?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3412-0
+00:30:13.787 --> 00:30:15.347
+<v Antonio Cisternino>Imagine.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3427-0
+00:30:18.107 --> 00:30:21.823
+<v Antonio Cisternino>As a computer scientist,
+we have really the fantasy.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3427-1
+00:30:21.823 --> 00:30:23.787
+<v Antonio Cisternino>Imagine a sorting algorithm.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3464-0
+00:30:24.747 --> 00:30:31.899
+<v Antonio Cisternino>So same collection and and different
+algorithm for sorting and then you can</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3464-1
+00:30:31.899 --> 00:30:39.145
+<v Antonio Cisternino>say sort you pass the algorithms as a
+first argument and the second argument</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3464-2
+00:30:39.145 --> 00:30:42.627
+<v Antonio Cisternino>the the collection to be ordered and.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3513-0
+00:30:43.147 --> 00:30:48.542
+<v Antonio Cisternino>The in in the body you will apply the
+function to the argument. OK,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3513-1
+00:30:48.542 --> 00:30:53.223
+<v Antonio Cisternino>so that that's the typical pattern.
+Not really compelling,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3513-2
+00:30:53.223 --> 00:30:58.222
+<v Antonio Cisternino>but it that that is OK.
+So I hope by now to have convinced you</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3513-3
+00:30:58.222 --> 00:31:02.507
+<v Antonio Cisternino>that names are the most important thing
+of a program.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3542-0
+00:31:03.227 --> 00:31:09.888
+<v Antonio Cisternino>Of a program because basically they
+convey the intention of the programmer</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3542-1
+00:31:09.888 --> 00:31:16.905
+<v Antonio Cisternino>because file not found exception as you
+there is an exception because the file</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3542-2
+00:31:16.905 --> 00:31:20.547
+<v Antonio Cisternino>has not been found. OK, but that is an A.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3564-0
+00:31:21.067 --> 00:31:27.476
+<v Antonio Cisternino>The programmer could have been invoked,
+my personal exception number one,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3564-1
+00:31:27.476 --> 00:31:31.027
+<v Antonio Cisternino>and the program would have worked anyway.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3601-0
+00:31:32.627 --> 00:31:36.889
+<v Antonio Cisternino>You may if you try to crack it some
+website code,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3601-1
+00:31:36.889 --> 00:31:43.198
+<v Antonio Cisternino>you may know this by art because since
+JavaScript is not really compiled,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3601-2
+00:31:43.198 --> 00:31:47.547
+<v Antonio Cisternino>there are a lot of obfuscator that
+basically play.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3652-0
+00:31:47.627 --> 00:31:53.008
+<v Antonio Cisternino>On this and basically strips of the
+program from all the elements to make it</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3652-1
+00:31:53.008 --> 00:31:58.738
+<v Antonio Cisternino>readable and rename all the variables of
+the program so that you have to struggle</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3652-2
+00:31:58.738 --> 00:32:03.280
+<v Antonio Cisternino>to understand what that particular
+JavaScript function does. OK,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3652-3
+00:32:03.280 --> 00:32:05.587
+<v Antonio Cisternino>this form of obfuscation is just.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3692-0
+00:32:05.707 --> 00:32:11.149
+<v Antonio Cisternino>The application of the fact that you can
+perfectly preserve the the the machine</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3692-1
+00:32:11.149 --> 00:32:16.184
+<v Antonio Cisternino>semantics of a program by renaming all
+the the the names in in the in the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3692-2
+00:32:16.184 --> 00:32:21.626
+<v Antonio Cisternino>program with totally different names,
+even meaning meaningless and it will work</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3692-3
+00:32:21.626 --> 00:32:22.307
+<v Antonio Cisternino>anyway so.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3702-0
+00:32:23.147 --> 00:32:27.707
+<v Antonio Cisternino>The intention of the program is part of a
+name, and that's an important part.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3710-0
+00:32:29.627 --> 00:32:33.787
+<v Antonio Cisternino>The second part that is important is.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3722-0
+00:32:35.907 --> 00:32:41.987
+<v Antonio Cisternino>Where the meaning of that name has been
+defined in the program.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3749-0
+00:32:43.547 --> 00:32:49.972
+<v Antonio Cisternino>And that is bound to a number of
+mechanisms. So technically,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3749-1
+00:32:49.972 --> 00:32:56.187
+<v Antonio Cisternino>by saying that scoping is the only
+mechanism, it's untrue.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3751-0
+00:32:58.267 --> 00:32:58.507
+<v Antonio Cisternino>Because.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3763-0
+00:33:01.387 --> 00:33:07.627
+<v Antonio Cisternino>Do you think that this file not found
+exception is the name I'm interested in?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3774-0
+00:33:11.947 --> 00:33:17.671
+<v Antonio Cisternino>No, no.
+It will be probably system dot IO dot</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3774-1
+00:33:17.671 --> 00:33:18.667
+<v Antonio Cisternino>find no.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3807-0
+00:33:19.867 --> 00:33:24.524
+<v Antonio Cisternino>Found exception because when you manage a
+program,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3807-1
+00:33:24.524 --> 00:33:29.821
+<v Antonio Cisternino>names are really important and we got
+thousands of names.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3807-2
+00:33:29.821 --> 00:33:35.667
+<v Antonio Cisternino>So at some point we said OK,
+let's introduce some mechanism to.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3821-0
+00:33:35.947 --> 00:33:41.453
+<v Antonio Cisternino>Have very long names so that we don't
+collide in having names.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3821-1
+00:33:41.453 --> 00:33:43.027
+<v Antonio Cisternino>And you know what?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3852-0
+00:33:44.187 --> 00:33:49.820
+<v Antonio Cisternino>Having very long names is really
+uncomfortable when you type in.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3852-1
+00:33:49.820 --> 00:33:54.847
+<v Antonio Cisternino>So someone said OK, let's use a trick,
+let's use the dot.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3852-2
+00:33:54.847 --> 00:33:59.267
+<v Antonio Cisternino>Technically that is a name. OK,
+system dot IO dot.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3891-0
+00:34:00.427 --> 00:34:06.663
+<v Antonio Cisternino>File not found exception is a name,
+but we give a little bit of semantics.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3891-1
+00:34:06.663 --> 00:34:13.148
+<v Antonio Cisternino>So in the rules in which the programming
+language gives name meaning to name,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3891-2
+00:34:13.148 --> 00:34:18.387
+<v Antonio Cisternino>technically we're not looking at the name
+itself, but we also.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3920-0
+00:34:19.307 --> 00:34:24.605
+<v Antonio Cisternino>Try to look for that name in namespaces.
+OK,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3920-1
+00:34:24.605 --> 00:34:34.143
+<v Antonio Cisternino>so the scoping of a name in a program is
+basically defines where that particular</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3920-2
+00:34:34.143 --> 00:34:36.027
+<v Antonio Cisternino>name is visible.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3945-0
+00:34:36.347 --> 00:34:40.797
+<v Antonio Cisternino>And how that names relates to its
+definition.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3945-1
+00:34:40.797 --> 00:34:46.990
+<v Antonio Cisternino>That is the core notion of names in a
+program, the declaration.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3945-2
+00:34:46.990 --> 00:34:50.667
+<v Antonio Cisternino>So now there are two types of scoping.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3961-0
+00:34:56.387 --> 00:35:03.246
+<v Antonio Cisternino>So if I look here,
+I don't know either message. Am I sure?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3961-1
+00:35:03.246 --> 00:35:05.107
+<v Antonio Cisternino>Can I say where?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3971-0
+00:35:06.747 --> 00:35:12.227
+<v Antonio Cisternino>This value where it lies by looking at X
+of the program.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3973-0
+00:35:14.067 --> 00:35:14.187
+<v Antonio Cisternino>Why?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3989-0
+00:35:17.027 --> 00:35:23.347
+<v Antonio Cisternino>So there are two kinds of scoping,
+static scoping and dynamic scoping.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/3995-0
+00:35:25.227 --> 00:35:27.067
+<v Antonio Cisternino>And which is the difference?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4024-0
+00:35:37.787 --> 00:35:44.325
+<v Antonio Cisternino>In dynamic scoping,
+it's the execution which defines the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4024-1
+00:35:44.325 --> 00:35:51.667
+<v Antonio Cisternino>actual value that will be bound to a name.
+That is correct and.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4029-0
+00:35:52.987 --> 00:35:56.307
+<v Antonio Cisternino>It's essential that you get that.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4042-0
+00:35:58.907 --> 00:36:04.387
+<v Antonio Cisternino>Almost all the program modern programming
+language are using static scoping.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4047-0
+00:36:07.107 --> 00:36:09.067
+<v Antonio Cisternino>With some exceptions.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4065-0
+00:36:12.267 --> 00:36:16.748
+<v Antonio Cisternino>So,
+and it's not just an exception in the in</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4065-1
+00:36:16.748 --> 00:36:22.027
+<v Antonio Cisternino>the programming language.
+The exception may be in a.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4067-0
+00:36:22.907 --> 00:36:23.947
+<v Antonio Cisternino>Given.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4097-0
+00:36:25.467 --> 00:36:31.505
+<v Antonio Cisternino>Word in the programming language.
+So before going there,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4097-1
+00:36:31.505 --> 00:36:39.767
+<v Antonio Cisternino>so then I'm scoping that it's just the
+name E is available in all the program</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4097-2
+00:36:39.767 --> 00:36:40.827
+<v Antonio Cisternino>depending.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4124-0
+00:36:41.467 --> 00:36:50.941
+<v Antonio Cisternino>The last one who assigned the name E will
+define the which is the name E this form</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4124-1
+00:36:50.941 --> 00:36:56.307
+<v Antonio Cisternino>of typically this is easy to implement in
+the.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4170-0
+00:36:56.507 --> 00:37:01.485
+<v Antonio Cisternino>In the programming language you have a
+table with all the names. You go,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4170-1
+00:37:01.485 --> 00:37:06.804
+<v Antonio Cisternino>you find the last version of the name,
+you look for the value. That's it. OK,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4170-2
+00:37:06.804 --> 00:37:11.646
+<v Antonio Cisternino>so I mean dynamic scoping at the
+beginning was just because it was the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4170-3
+00:37:11.646 --> 00:37:16.147
+<v Antonio Cisternino>easy way to give meaning to to names.
+That's it. So static scope.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4204-0
+00:37:16.347 --> 00:37:22.425
+<v Antonio Cisternino>Copping as this important element that
+you have to be able to understand the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4204-1
+00:37:22.425 --> 00:37:27.871
+<v Antonio Cisternino>value the name refers to just by looking
+at the text of the program,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4204-2
+00:37:27.871 --> 00:37:31.187
+<v Antonio Cisternino>so without having to wait for the runtime.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4208-0
+00:37:31.227 --> 00:37:33.387
+<v Antonio Cisternino>And this has a lot of implications.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4244-0
+00:37:36.667 --> 00:37:44.561
+<v Antonio Cisternino>That I want to draw your attention to
+because when the name E in this method</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4244-1
+00:37:44.561 --> 00:37:48.765
+<v Antonio Cisternino>appears,
+I know that I have to find some</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4244-2
+00:37:48.765 --> 00:37:54.507
+<v Antonio Cisternino>declaration. In this case is the cache.
+Let me go back.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4245-0
+00:37:54.667 --> 00:37:55.267
+<v Antonio Cisternino>Go back.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4247-0
+00:37:56.587 --> 00:37:57.947
+<v Antonio Cisternino>To a more interesting.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4251-0
+00:38:05.227 --> 00:38:06.267
+<v Antonio Cisternino>Parser.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4275-0
+00:38:07.347 --> 00:38:15.791
+<v Antonio Cisternino>Let's take a more interesting piece of
+code to comment some method. OK,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4275-1
+00:38:15.791 --> 00:38:21.187
+<v Antonio Cisternino>so this is the constructor.
+So where is this?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4306-0
+00:38:22.267 --> 00:38:26.455
+<v Antonio Cisternino>Where is this how under under score
+options?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4306-1
+00:38:26.455 --> 00:38:32.877
+<v Antonio Cisternino>Where is the where I should I look for
+for that under score options?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4306-2
+00:38:32.877 --> 00:38:36.507
+<v Antonio Cisternino>Where you why? I mean you're right, OK.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4346-0
+00:38:38.427 --> 00:38:44.141
+<v Antonio Cisternino>under score is a convention.
+Thank you for underlying this.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4346-1
+00:38:44.141 --> 00:38:51.571
+<v Antonio Cisternino>So this particular set of programmers
+decide that to help programmers reading</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4346-2
+00:38:51.571 --> 00:38:57.667
+<v Antonio Cisternino>and finding easily what is a field and
+distinguish fields from.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4376-0
+00:38:57.667 --> 00:39:01.216
+<v Antonio Cisternino>Variables.
+They decide to use under score as the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4376-1
+00:39:01.216 --> 00:39:05.418
+<v Antonio Cisternino>first character,
+but I could have written all options and</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4376-2
+00:39:05.418 --> 00:39:09.113
+<v Antonio Cisternino>would have been the same.
+What is the real reason?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4376-3
+00:39:09.113 --> 00:39:14.547
+<v Antonio Cisternino>Because I know that it's a field
+assignment and not a variable assignment.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4414-0
+00:39:22.707 --> 00:39:26.848
+<v Antonio Cisternino>That is one reason I look for the
+arguments,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4414-1
+00:39:26.848 --> 00:39:33.844
+<v Antonio Cisternino>the formal parameters of my method,
+and I find that there is no declaration</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4414-2
+00:39:33.844 --> 00:39:37.894
+<v Antonio Cisternino>there.
+So basically I'm starting to say OK,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4414-3
+00:39:37.894 --> 00:39:39.827
+<v Antonio Cisternino>here there is no var.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4461-0
+00:39:40.547 --> 00:39:44.514
+<v Antonio Cisternino>Or type to declare.
+So that is not a declaration,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4461-1
+00:39:44.514 --> 00:39:51.179
+<v Antonio Cisternino>it's an assignment. If it's an assignment,
+the declaration should be somewhere else</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4461-2
+00:39:51.179 --> 00:39:56.734
+<v Antonio Cisternino>because I know that the grammar of the
+language has a tree structure.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4461-3
+00:39:56.734 --> 00:40:00.067
+<v Antonio Cisternino>I start browsing the abstract syntax tree.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4493-0
+00:40:00.147 --> 00:40:06.553
+<v Antonio Cisternino>So I'm not going linearly looking for
+that name because I know that in the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4493-1
+00:40:06.553 --> 00:40:13.558
+<v Antonio Cisternino>grammar the constructor should lie of a
+class, should lie in a class declaration,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4493-2
+00:40:13.558 --> 00:40:15.267
+<v Antonio Cisternino>and that is a scope.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4531-0
+00:40:16.227 --> 00:40:22.308
+<v Antonio Cisternino>And so I I know that the names are
+hierarchically defined in the text in the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4531-1
+00:40:22.308 --> 00:40:27.205
+<v Antonio Cisternino>program definition,
+and so under score options is not defined</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4531-2
+00:40:27.205 --> 00:40:32.812
+<v Antonio Cisternino>inside locally to this particular method
+with that is the constructor,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4531-3
+00:40:32.812 --> 00:40:34.787
+<v Antonio Cisternino>so it should be declared.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4547-0
+00:40:34.987 --> 00:40:40.195
+<v Antonio Cisternino>At the uer layer, which is in the class.
+OK, let's go for the class.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4547-1
+00:40:40.195 --> 00:40:44.347
+<v Antonio Cisternino>And in this case, of course,
+we will find it hoefully.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4558-0
+00:40:45.827 --> 00:40:54.987
+<v Antonio Cisternino>I love it. No, it's there, unfortunately.
+OK, I found the decoration.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4564-0
+00:40:56.867 --> 00:41:00.347
+<v Antonio Cisternino>Which is market read only.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4569-0
+00:41:03.107 --> 00:41:04.987
+<v Antonio Cisternino>But I did assign it.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4579-0
+00:41:11.667 --> 00:41:14.707
+<v Antonio Cisternino>We will see later to that. OK,
+so under score options.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4583-0
+00:41:17.027 --> 00:41:19.147
+<v Antonio Cisternino>We found that and so.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4617-0
+00:41:20.427 --> 00:41:27.122
+<v Antonio Cisternino>By knowing the scoping rules,
+which says basically there are code</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4617-1
+00:41:27.122 --> 00:41:32.195
+<v Antonio Cisternino>blocks.
+Code blocks contains local variables that</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4617-2
+00:41:32.195 --> 00:41:38.587
+<v Antonio Cisternino>can be declared locally.
+Then you have the scope of the class.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4655-0
+00:41:39.107 --> 00:41:42.627
+<v Antonio Cisternino>If the PROGRAMMING language supports
+classes,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4655-1
+00:41:42.627 --> 00:41:47.831
+<v Antonio Cisternino>in that case I have also to look in the
+environment of the classes,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4655-2
+00:41:47.831 --> 00:41:54.107
+<v Antonio Cisternino>so the declaration in the class which we
+call fields and if I fail to find there.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4658-0
+00:41:54.467 --> 00:41:55.787
+<v Antonio Cisternino>Where where I should go?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4702-0
+00:41:59.427 --> 00:42:03.988
+<v Antonio Cisternino>Global. OK,
+so there is a basically an hierarchy of</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4702-1
+00:42:03.988 --> 00:42:09.163
+<v Antonio Cisternino>allocations that are bound to the grammar
+of the language.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4702-2
+00:42:09.163 --> 00:42:16.092
+<v Antonio Cisternino>That is one of the reason because you
+really have to understand the grammar of</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4702-3
+00:42:16.092 --> 00:42:18.987
+<v Antonio Cisternino>the language because the grammar.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4705-0
+00:42:19.147 --> 00:42:21.547
+<v Antonio Cisternino>Number of the language defines the scope.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4709-0
+00:42:24.107 --> 00:42:25.667
+<v Antonio Cisternino>That's important.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4719-0
+00:42:30.107 --> 00:42:33.027
+<v Antonio Cisternino>Now I'm not.
+I'm not sure I will be so lucky.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4721-0
+00:42:35.547 --> 00:42:35.627
+<v Antonio Cisternino>O.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4724-0
+00:42:38.987 --> 00:42:39.547
+<v Antonio Cisternino>Question.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4754-0
+00:42:41.147 --> 00:42:49.138
+<v Antonio Cisternino>Let me make an an hypothesis because I
+would have to scrub and scrape and find</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4754-1
+00:42:49.138 --> 00:42:53.893
+<v Antonio Cisternino>some place.
+Suppose that I went to under score</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4754-2
+00:42:53.893 --> 00:42:58.547
+<v Antonio Cisternino>options and I didn't find the line this
+line.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4756-0
+00:42:59.267 --> 00:43:00.067
+<v Antonio Cisternino>Suppose it's not here.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4764-0
+00:43:02.307 --> 00:43:07.267
+<v Antonio Cisternino>Am I allowed to think that is a global
+variable?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4767-0
+00:43:11.867 --> 00:43:12.427
+<v Antonio Cisternino>Why?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4771-0
+00:43:13.907 --> 00:43:14.707
+<v Antonio Cisternino>Might maybe part of us.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4779-0
+00:43:17.187 --> 00:43:21.787
+<v Antonio Cisternino>Perfect.
+Your colleague notice that there is a.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4826-0
+00:43:22.787 --> 00:43:29.494
+<v Antonio Cisternino>This partial that may hint that this
+particular class is not entirely defined</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4826-1
+00:43:29.494 --> 00:43:34.309
+<v Antonio Cisternino>in this file,
+and so maybe the field declaration is not</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4826-2
+00:43:34.309 --> 00:43:38.781
+<v Antonio Cisternino>in this file,
+but it's in another file because this</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4826-3
+00:43:38.781 --> 00:43:42.307
+<v Antonio Cisternino>particular PROGRAMMING language supports.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4862-0
+00:43:42.387 --> 00:43:45.796
+<v Antonio Cisternino>Of course,
+a partial definition of classes,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4862-1
+00:43:45.796 --> 00:43:52.227
+<v Antonio Cisternino>and basically the compiler joins all the
+text of the partial in a single block and</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4862-2
+00:43:52.227 --> 00:43:57.187
+<v Antonio Cisternino>then parse the full class. OK,
+so the definition is incomplete.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4870-0
+00:43:57.667 --> 00:44:02.227
+<v Antonio Cisternino>And so I have to go and check also that
+so as you can see.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4888-0
+00:44:03.427 --> 00:44:09.872
+<v Antonio Cisternino>The scoping of a name in a real world
+PROGRAMMING language can be pretty</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4888-1
+00:44:09.872 --> 00:44:15.347
+<v Antonio Cisternino>daunting. It's not trivial,
+it's not just the local variable.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4924-0
+00:44:16.707 --> 00:44:21.721
+<v Antonio Cisternino>But nevertheless,
+the advantage and the force you have in</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4924-1
+00:44:21.721 --> 00:44:28.464
+<v Antonio Cisternino>your hand is that you know the rules.
+So if you understand the grammar of the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4924-2
+00:44:28.464 --> 00:44:32.787
+<v Antonio Cisternino>language,
+you know how to browse the syntax tree.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4945-0
+00:44:32.867 --> 00:44:38.422
+<v Antonio Cisternino>That you clearly see.
+Actually we invent things because it</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4945-1
+00:44:38.422 --> 00:44:45.107
+<v Antonio Cisternino>allows us us to see the tree OK and find
+the right definition. OK now.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4962-0
+00:44:52.787 --> 00:45:01.398
+<v Antonio Cisternino>The the scoping of a name has
+implications in the execution of the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4962-1
+00:45:01.398 --> 00:45:02.427
+<v Antonio Cisternino>program.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4966-0
+00:45:05.147 --> 00:45:07.227
+<v Antonio Cisternino>Question, so let me.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4972-0
+00:45:09.387 --> 00:45:11.587
+<v Antonio Cisternino>Simplify our life a little bit.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4973-0
+00:45:15.027 --> 00:45:15.147
+<v Antonio Cisternino>Oh.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4985-0
+00:45:23.507 --> 00:45:29.027
+<v Antonio Cisternino>I'm improvising A syntax.
+I think I know the the language, but.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/4986-0
+00:45:29.987 --> 00:45:30.107
+<v Antonio Cisternino>Uh.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5003-0
+00:45:45.267 --> 00:45:50.210
+<v Antonio Cisternino>I'm pretty sure that you wrote this
+example so many times since the first</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5003-1
+00:45:50.210 --> 00:45:51.747
+<v Antonio Cisternino>year. That's just what.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5004-0
+00:45:54.427 --> 00:45:54.507
+<v Antonio Cisternino>Um.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5038-0
+00:45:56.227 --> 00:46:03.247
+<v Antonio Cisternino>I use the this ref because the name is
+not defined only by the name or the type,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5038-1
+00:46:03.247 --> 00:46:09.833
+<v Antonio Cisternino>but also from a number of qualifiers.
+In this case, for instance, I say OK,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5038-2
+00:46:09.833 --> 00:46:10.787
+<v Antonio Cisternino>I'm asking.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5081-0
+00:46:11.267 --> 00:46:17.223
+<v Antonio Cisternino>To the caller of this swap function to
+pass something that is a reference,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5081-1
+00:46:17.223 --> 00:46:22.386
+<v Antonio Cisternino>so it can be the result of an expression
+because I want to sign.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5081-2
+00:46:22.386 --> 00:46:27.867
+<v Antonio Cisternino>I want to change the value outside of of
+the scope. OK, but we will.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5122-0
+00:46:28.307 --> 00:46:33.069
+<v Antonio Cisternino>Review this thing. I mean,
+I'm pretty sure you you're familiar with</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5122-1
+00:46:33.069 --> 00:46:36.922
+<v Antonio Cisternino>the mechanism.
+What I'm trying to do today is to force</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5122-2
+00:46:36.922 --> 00:46:42.455
+<v Antonio Cisternino>you to reason about simple things. OK,
+so if you were expecting me to tell you</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5122-3
+00:46:42.455 --> 00:46:44.907
+<v Antonio Cisternino>very complicated stuff, no, I mean.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5159-0
+00:46:46.147 --> 00:46:51.347
+<v Antonio Cisternino>Being an ADVANCED PROGRAMMING is first of
+all having a full understanding of the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5159-1
+00:46:51.347 --> 00:46:56.033
+<v Antonio Cisternino>nuance of a language of a very subtle
+difference in very few characters,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5159-2
+00:46:56.033 --> 00:47:01.297
+<v Antonio Cisternino>and I appreciate the difference because
+that is where typically the problem lies.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5159-3
+00:47:01.297 --> 00:47:01.747
+<v Antonio Cisternino>OK, so.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5190-0
+00:47:01.987 --> 00:47:09.441
+<v Antonio Cisternino>I said OK, I have the TMP variable,
+the TMP variable that's been this</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5190-1
+00:47:09.441 --> 00:47:15.830
+<v Antonio Cisternino>declaration say OK,
+there is a name TMP which is a variable</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5190-2
+00:47:15.830 --> 00:47:17.747
+<v Antonio Cisternino>the system easily.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5209-0
+00:47:17.907 --> 00:47:24.173
+<v Antonio Cisternino>Can prove that is of type int,
+so I could have written of course int.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5209-1
+00:47:24.173 --> 00:47:27.307
+<v Antonio Cisternino>TMP would have been the same thing.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5226-0
+00:47:28.907 --> 00:47:33.870
+<v Antonio Cisternino>And the initial value is a. OK,
+we know all this.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5226-1
+00:47:33.870 --> 00:47:37.147
+<v Antonio Cisternino>So what if you were the compiler?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5247-0
+00:47:37.187 --> 00:47:41.760
+<v Antonio Cisternino>Tyler,
+what you can What can you tell about the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5247-1
+00:47:41.760 --> 00:47:47.096
+<v Antonio Cisternino>TMP name? That that name,
+because of the scoping rules,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5247-2
+00:47:47.096 --> 00:47:48.907
+<v Antonio Cisternino>is accessible only.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5291-0
+00:47:51.027 --> 00:47:57.361
+<v Antonio Cisternino>That's important because clearly you can
+implement a very stupid PROGRAMMING</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5291-1
+00:47:57.361 --> 00:48:03.696
+<v Antonio Cisternino>language which allocates allocation in
+the memory with the TMP slot and keep</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5291-2
+00:48:03.696 --> 00:48:09.867
+<v Antonio Cisternino>this allocated for all the execution of
+the program would have been valid.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5326-0
+00:48:10.147 --> 00:48:15.522
+<v Antonio Cisternino>So first of all,
+keep your mind in your mind that that</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5326-1
+00:48:15.522 --> 00:48:21.776
+<v Antonio Cisternino>would have been a valid program
+implementation. So there's not,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5326-2
+00:48:21.776 --> 00:48:27.347
+<v Antonio Cisternino>it's not written with some difference,
+but then you can.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5335-0
+00:48:27.947 --> 00:48:33.427
+<v Antonio Cisternino>Have uh the allocation which outlast in
+the memory.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5374-0
+00:48:35.267 --> 00:48:40.938
+<v Antonio Cisternino>The and in fact there are PROGRAMMING
+languages that are implemented like this.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5374-1
+00:48:40.938 --> 00:48:46.538
+<v Antonio Cisternino>Very simple interpreter that may become
+even popular languages started in with</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5374-2
+00:48:46.538 --> 00:48:51.147
+<v Antonio Cisternino>very stupid implementation. For instance,
+Perl has no arguments.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5412-0
+00:48:51.667 --> 00:48:57.183
+<v Antonio Cisternino>They pass an array all around the code
+and the argument is all the arguments of</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5412-1
+00:48:57.183 --> 00:49:02.906
+<v Antonio Cisternino>the function are in fact an array that is
+passed around passed around the program.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5412-2
+00:49:02.906 --> 00:49:08.147
+<v Antonio Cisternino>So don't expect that it's always true
+that TMP would have been deallocated.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5418-0
+00:49:08.427 --> 00:49:11.867
+<v Antonio Cisternino>At the end of the execution above,
+that is an optimization.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5430-0
+00:49:13.347 --> 00:49:20.627
+<v Antonio Cisternino>You may say you know what I I'm.
+I can allocate the.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5467-0
+00:49:22.467 --> 00:49:26.177
+<v Antonio Cisternino>The variable TMP only during the
+execution.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5467-1
+00:49:26.177 --> 00:49:30.900
+<v Antonio Cisternino>This has a lot of interesting properties.
+For instance,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5467-2
+00:49:30.900 --> 00:49:37.394
+<v Antonio Cisternino>if I allow recursive calls and I need
+multiple TM PS that will be supported,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5467-3
+00:49:37.394 --> 00:49:39.587
+<v Antonio Cisternino>but apart from that I can.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5497-0
+00:49:39.987 --> 00:49:47.826
+<v Antonio Cisternino>I I can prove given the semantics of my
+language that TMP can be allocated when I</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5497-1
+00:49:47.826 --> 00:49:55.187
+<v Antonio Cisternino>enter swap and I can be it can be
+deallocated when I exit the swap function.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5531-0
+00:49:57.587 --> 00:50:04.343
+<v Antonio Cisternino>Pretty obvious implication.
+We started with the semantic of a name,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5531-1
+00:50:04.343 --> 00:50:10.007
+<v Antonio Cisternino>the scoping of a name,
+and we ended up talking about the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5531-2
+00:50:10.007 --> 00:50:15.372
+<v Antonio Cisternino>implementation.
+So the scoping rules of a PROGRAMMING</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5531-3
+00:50:15.372 --> 00:50:16.267
+<v Antonio Cisternino>language.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5557-0
+00:50:17.587 --> 00:50:23.624
+<v Antonio Cisternino>Will define the typical, reasonable,
+efficient implementation of that language,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5557-1
+00:50:23.624 --> 00:50:27.095
+<v Antonio Cisternino>OK,
+and the data structure that are needed to</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5557-2
+00:50:27.095 --> 00:50:28.907
+<v Antonio Cisternino>implement that language.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5564-0
+00:50:30.347 --> 00:50:33.547
+<v Antonio Cisternino>And this brings us to.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5580-0
+00:50:35.387 --> 00:50:41.329
+<v Antonio Cisternino>An important part of our future classes,
+which is the allocation of the memory,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5580-1
+00:50:41.329 --> 00:50:41.627
+<v Antonio Cisternino>but.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5612-0
+00:50:43.747 --> 00:50:51.916
+<v Antonio Cisternino>This is not the only effect that the
+scoping rules introduced in a PROGRAMMING</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5612-1
+00:50:51.916 --> 00:50:56.984
+<v Antonio Cisternino>language.
+Another important effect is the one we</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5612-2
+00:50:56.984 --> 00:51:00.707
+<v Antonio Cisternino>already briefly mentioned, which is.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5619-0
+00:51:00.787 --> 00:51:04.027
+<v Antonio Cisternino>Possible if we allow to define.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5665-0
+00:51:06.387 --> 00:51:11.427
+<v Antonio Cisternino>Function as a value.
+So basically you can return a function as</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5665-1
+00:51:11.427 --> 00:51:17.987
+<v Antonio Cisternino>a result of the invocation of a function.
+Usually those languages are called high</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5665-2
+00:51:17.987 --> 00:51:23.507
+<v Antonio Cisternino>order languages because in fact the
+function is called is a program.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5665-3
+00:51:23.507 --> 00:51:26.147
+<v Antonio Cisternino>So basically you have a function.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5694-0
+00:51:26.307 --> 00:51:31.848
+<v Antonio Cisternino>Which is a program which return a portion
+of a program,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5694-1
+00:51:31.848 --> 00:51:36.895
+<v Antonio Cisternino>and so the program somehow talks about
+itself. OK,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5694-2
+00:51:36.895 --> 00:51:43.427
+<v Antonio Cisternino>it's capable of not managing values,
+but also managing functions.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5696-0
+00:51:45.147 --> 00:51:45.267
+<v Antonio Cisternino>OK.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5707-0
+00:51:47.027 --> 00:51:52.347
+<v Antonio Cisternino>There are several views of this this
+thing, but nevertheless so.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5728-0
+00:51:55.747 --> 00:52:02.902
+<v Antonio Cisternino>Let me refine the quick example that and
+discuss the quick example we had at the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5728-1
+00:52:02.902 --> 00:52:04.227
+<v Antonio Cisternino>very beginning.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5730-0
+00:52:05.947 --> 00:52:06.827
+<v Antonio Cisternino>Let's see.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5732-0
+00:52:08.187 --> 00:52:08.787
+<v Antonio Cisternino>Counter.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5737-0
+00:52:10.307 --> 00:52:13.907
+<v Antonio Cisternino>Uh, var N equal 0.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5740-0
+00:52:15.547 --> 00:52:16.507
+<v Antonio Cisternino>Return.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5742-0
+00:52:18.107 --> 00:52:18.987
+<v Antonio Cisternino>Function.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5744-0
+00:52:24.587 --> 00:52:24.667
+<v Antonio Cisternino>Um.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5747-0
+00:52:27.467 --> 00:52:28.107
+<v Antonio Cisternino>Return.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5750-0
+00:52:29.907 --> 00:52:30.747
+<v Antonio Cisternino>And plus.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5761-0
+00:52:36.707 --> 00:52:40.627
+<v Antonio Cisternino>So I define a function which returns a
+function.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5807-0
+00:52:42.907 --> 00:52:48.482
+<v Antonio Cisternino>And we already commented,
+so I don't want to go too long.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5807-1
+00:52:48.482 --> 00:52:55.403
+<v Antonio Cisternino>I already posed the questions.
+I can have C1 counter and then if I call</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5807-2
+00:52:55.403 --> 00:53:01.267
+<v Antonio Cisternino>C1 this will print out zero,
+C1 again it will print out one.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5821-0
+00:53:01.267 --> 00:53:12.867
+<v Antonio Cisternino>And if I say var C2 equal counter C2 will
+print out zero OK.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5831-0
+00:53:15.667 --> 00:53:19.865
+<v Antonio Cisternino>Why?
+Because of the scoping rules of the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5831-1
+00:53:19.865 --> 00:53:20.787
+<v Antonio Cisternino>language.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5850-0
+00:53:21.667 --> 00:53:27.407
+<v Antonio Cisternino>Because if you want to give the proper
+meaning to this very small fragment of</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5850-1
+00:53:27.407 --> 00:53:29.027
+<v Antonio Cisternino>code in this function.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5898-0
+00:53:31.747 --> 00:53:38.348
+<v Antonio Cisternino>I'm using the scope and we are in static
+scoping and static scoping impose us to</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5898-1
+00:53:38.348 --> 00:53:45.112
+<v Antonio Cisternino>let access to the names that are defining
+in all the scope in which I am included.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5898-2
+00:53:45.112 --> 00:53:51.387
+<v Antonio Cisternino>So this function is included in another
+function, so it should be it should.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5943-0
+00:53:51.587 --> 00:53:57.560
+<v Antonio Cisternino>Have access to the local variable of that
+function and maybe to the global if it's</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5943-1
+00:53:57.560 --> 00:54:02.382
+<v Antonio Cisternino>a method to the fields,
+if it otherwise to the global environment.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5943-2
+00:54:02.382 --> 00:54:05.549
+<v Antonio Cisternino>OK,
+so when you allow for nested definition</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5943-3
+00:54:05.549 --> 00:54:10.947
+<v Antonio Cisternino>of functions then you have to consider
+all the values that are accessible.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5987-0
+00:54:11.347 --> 00:54:16.693
+<v Antonio Cisternino>When at the definition place available to
+that particular code.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5987-1
+00:54:16.693 --> 00:54:23.377
+<v Antonio Cisternino>So this variable N should should be bound
+here exactly for the same reasons the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5987-2
+00:54:23.377 --> 00:54:28.055
+<v Antonio Cisternino>under score option variable was bound to
+the field. OK,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5987-3
+00:54:28.055 --> 00:54:31.147
+<v Antonio Cisternino>so it's not declared inside the file.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5997-0
+00:54:31.267 --> 00:54:36.063
+<v Antonio Cisternino>Function, which is an anonymous function,
+so it has not a name,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/5997-1
+00:54:36.063 --> 00:54:38.387
+<v Antonio Cisternino>but it's a value and this name.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6012-0
+00:54:40.747 --> 00:54:44.857
+<v Antonio Cisternino>Since it's not declared inside,
+it should be in the outside scope which</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6012-1
+00:54:44.857 --> 00:54:46.227
+<v Antonio Cisternino>is the function counter.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6020-0
+00:54:47.387 --> 00:54:51.867
+<v Antonio Cisternino>And this name is a local variable now.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6031-0
+00:54:55.547 --> 00:55:00.107
+<v Antonio Cisternino>When you invoke the counter function,
+you return a function.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6042-0
+00:55:02.587 --> 00:55:07.627
+<v Antonio Cisternino>This function which I highlight and it's
+this increment.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6076-0
+00:55:11.667 --> 00:55:20.530
+<v Antonio Cisternino>This function we said that the N the N
+variable will be not needed anymore when</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6076-1
+00:55:20.530 --> 00:55:26.955
+<v Antonio Cisternino>you exit the function,
+but we just returned a value which</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6076-2
+00:55:26.955 --> 00:55:29.947
+<v Antonio Cisternino>depends on that particular.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6077-0
+00:55:32.587 --> 00:55:32.907
+<v Antonio Cisternino>Name.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6125-0
+00:55:34.867 --> 00:55:40.162
+<v Antonio Cisternino>So lexical closures are basically a
+result of the scoping rules of the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6125-1
+00:55:40.162 --> 00:55:44.339
+<v Antonio Cisternino>PROGRAMMING language,
+and they are needed to preserve a</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6125-2
+00:55:44.339 --> 00:55:48.068
+<v Antonio Cisternino>reasonable semantics of the PROGRAMMING
+language,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6125-3
+00:55:48.068 --> 00:55:53.737
+<v Antonio Cisternino>because otherwise this code will not have
+a meaning without this mechanism.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6125-4
+00:55:53.737 --> 00:55:54.707
+<v Antonio Cisternino>So basically.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6149-0
+00:55:54.707 --> 00:56:02.220
+<v Antonio Cisternino>By returning the function which depends
+on the local variable N,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6149-1
+00:56:02.220 --> 00:56:09.387
+<v Antonio Cisternino>I'm extending the lifespan of that name N
+until the function.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6151-0
+00:56:10.107 --> 00:56:11.467
+<v Antonio Cisternino>Is valid.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6195-0
+00:56:12.787 --> 00:56:17.678
+<v Antonio Cisternino>This is an I I hope you see the necessity
+of it. OK,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6195-1
+00:56:17.678 --> 00:56:23.585
+<v Antonio Cisternino>so don't don't stop on the shallow
+surface of the how it works.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6195-2
+00:56:23.585 --> 00:56:30.691
+<v Antonio Cisternino>Think in terms of the semantics if we are
+not able to extend the value if we</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6195-3
+00:56:30.691 --> 00:56:31.707
+<v Antonio Cisternino>deallocate.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6219-0
+00:56:32.347 --> 00:56:39.931
+<v Antonio Cisternino>The N variable when we exit the counter
+function the the code will be broken</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6219-1
+00:56:39.931 --> 00:56:48.107
+<v Antonio Cisternino>because when you execute this instance of
+C1 there is no N variable. Sorry broken.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6252-0
+00:56:50.787 --> 00:56:55.737
+<v Antonio Cisternino>At the same time,
+because when you call multiple time a</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6252-1
+00:56:55.737 --> 00:57:02.367
+<v Antonio Cisternino>function, technically you activate you.
+You have to allocate all the local</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6252-2
+00:57:02.367 --> 00:57:06.787
+<v Antonio Cisternino>variables of that function because you
+need them.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6287-0
+00:57:08.547 --> 00:57:17.230
+<v Antonio Cisternino>We have imposed to the PROGRAMMING
+language runtime to keep alive a location</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6287-1
+00:57:17.230 --> 00:57:26.027
+<v Antonio Cisternino>beyond the scope, the lexical scope,
+because that variable has been captured.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6306-0
+00:57:27.867 --> 00:57:36.079
+<v Antonio Cisternino>OK, it's like a trap. It's being captured.
+So at the first activation we know that</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6306-1
+00:57:36.079 --> 00:57:37.267
+<v Antonio Cisternino>we allocate.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6311-0
+00:57:38.067 --> 00:57:42.507
+<v Antonio Cisternino>Local variable for M and.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6312-0
+00:57:42.547 --> 00:57:42.827
+<v Antonio Cisternino>And.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6317-0
+00:57:45.227 --> 00:57:47.147
+<v Antonio Cisternino>Add the second activation.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6364-0
+00:57:48.707 --> 00:57:55.864
+<v Antonio Cisternino>In this and basically all the programming
+language modern programming languages,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6364-1
+00:57:55.864 --> 00:58:02.580
+<v Antonio Cisternino>you will have another N variable
+allocated different from the previous one,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6364-2
+00:58:02.580 --> 00:58:08.147
+<v Antonio Cisternino>and for this reason the 1st result will
+be bound to the first.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6368-0
+00:58:08.187 --> 00:58:10.747
+<v Antonio Cisternino>First instance of then the second the.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6379-0
+00:58:12.307 --> 00:58:16.627
+<v Antonio Cisternino>Execution will be bound to the second
+activation event.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6380-0
+00:58:20.227 --> 00:58:20.387
+<v Antonio Cisternino>2.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6385-0
+00:58:27.027 --> 00:58:28.347
+<v Antonio Cisternino>What is?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6402-0
+00:58:30.707 --> 00:58:34.488
+<v Antonio Cisternino>A callable piece of code that whenever
+you call it,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6402-1
+00:58:34.488 --> 00:58:37.107
+<v Antonio Cisternino>it may gives you a different result.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6409-0
+00:58:38.507 --> 00:58:41.107
+<v Antonio Cisternino>Depending on variables.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6417-0
+00:58:43.307 --> 00:58:49.707
+<v Antonio Cisternino>That are behind that, that, that, that.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6452-0
+00:58:51.067 --> 00:58:55.804
+<v Antonio Cisternino>That that you don't see.
+I mean I here I invoke a counter and I</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6452-1
+00:58:55.804 --> 00:59:01.800
+<v Antonio Cisternino>invoke the result and I get some behavior.
+Then I invoke again count and I get a</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6452-2
+00:59:01.800 --> 00:59:05.427
+<v Antonio Cisternino>different behavior.
+This is typically an object.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6486-0
+00:59:07.187 --> 00:59:10.831
+<v Antonio Cisternino>OK,
+because basically you have the function</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6486-1
+00:59:10.831 --> 00:59:16.795
+<v Antonio Cisternino>which is the method and at this value
+which is the state of the object.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6486-2
+00:59:16.795 --> 00:59:22.510
+<v Antonio Cisternino>So whenever I call counter,
+I'm getting basically a very dumb object</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6486-3
+00:59:22.510 --> 00:59:24.747
+<v Antonio Cisternino>with an integer as a field.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6511-0
+00:59:25.787 --> 00:59:32.088
+<v Antonio Cisternino>And a single method which is the the the
+the return function.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6511-1
+00:59:32.088 --> 00:59:39.610
+<v Antonio Cisternino>Notice that if this was JavaScript I
+could I could have also have written</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6511-2
+00:59:39.610 --> 00:59:40.627
+<v Antonio Cisternino>increment.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6513-0
+00:59:41.267 --> 00:59:41.667
+<v Antonio Cisternino>Function.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6517-0
+00:59:43.027 --> 00:59:43.987
+<v Antonio Cisternino>And oops.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6526-0
+00:59:47.707 --> 00:59:52.027
+<v Antonio Cisternino>And I also could have written decrement
+function.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6556-0
+01:00:04.587 --> 01:00:13.122
+<v Antonio Cisternino>And now I did return not one,
+not two functions that refer the very</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6556-1
+01:00:13.122 --> 01:00:20.027
+<v Antonio Cisternino>same N object.
+So now if I write C dot inc I will get.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6560-0
+01:00:20.507 --> 01:00:23.187
+<v Antonio Cisternino>Uh, 0 if I type in.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6586-0
+01:00:24.667 --> 01:00:36.117
+<v Antonio Cisternino>C1 dot Inc I will got one get one and if
+I type in C1 dot deck I will get 01.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6586-1
+01:00:36.117 --> 01:00:38.907
+<v Antonio Cisternino>Sorry you're right.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6587-0
+01:00:41.987 --> 01:00:42.507
+<v Antonio Cisternino>Deck.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6590-0
+01:00:44.187 --> 01:00:45.987
+<v Antonio Cisternino>It's the very.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6593-0
+01:00:48.787 --> 01:00:50.627
+<v Antonio Cisternino>So you're right.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6602-0
+01:00:55.067 --> 01:01:01.147
+<v Antonio Cisternino>That's correct. You you are,
+you are former. That's good thing, OK.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6635-0
+01:01:03.467 --> 01:01:09.562
+<v Antonio Cisternino>So as you can see,
+lexical closure can be used to have a</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6635-1
+01:01:09.562 --> 01:01:18.332
+<v Antonio Cisternino>some form of object oriented PROGRAMMING
+because basically they allow to secretly</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6635-2
+01:01:18.332 --> 01:01:18.867
+<v Antonio Cisternino>bind.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6666-0
+01:01:18.987 --> 01:01:25.228
+<v Antonio Cisternino>A common state to multiple functions.
+So this common state will be the state of</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6666-1
+01:01:25.228 --> 01:01:31.626
+<v Antonio Cisternino>the object and the multiple function that
+I share in this state are basically the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6666-2
+01:01:31.626 --> 01:01:34.747
+<v Antonio Cisternino>methods. That is the reason because.net.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6675-0
+01:01:35.387 --> 01:01:40.107
+<v Antonio Cisternino>Said OK if I need if I have a delegate.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6704-0
+01:01:42.187 --> 01:01:51.643
+<v Antonio Cisternino>Int OP int int this is this will be in C#
+the the declaration.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6704-1
+01:01:51.643 --> 01:01:56.747
+<v Antonio Cisternino>So OP is the definition of a type.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6715-0
+01:01:57.267 --> 01:02:05.787
+<v Antonio Cisternino>I delegate now if I have a a class M with
+the method.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6718-0
+01:02:08.507 --> 01:02:09.627
+<v Antonio Cisternino>And add.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6725-0
+01:02:11.147 --> 01:02:14.027
+<v Antonio Cisternino>In the int, let me simplify.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6740-0
+01:02:15.507 --> 01:02:21.587
+<v Antonio Cisternino>The syntax otherwise will be long.
+Now I can say OO equal.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6748-0
+01:02:23.827 --> 01:02:28.227
+<v Antonio Cisternino>Oh, sorry, var M is new M.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6768-0
+01:02:29.387 --> 01:02:37.300
+<v Antonio Cisternino>And then I can say always a type OP equal
+M dot add.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6768-1
+01:02:37.300 --> 01:02:44.467
+<v Antonio Cisternino>This is a very a valid program and if I
+invoke.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6777-0
+01:02:48.187 --> 01:02:51.027
+<v Antonio Cisternino>That will invoke the add method OK and.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6814-0
+01:02:53.867 --> 01:03:01.630
+<v Antonio Cisternino>This particular syntax that have been
+that has been introduced by C# more than</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6814-1
+01:03:01.630 --> 01:03:09.787
+<v Antonio Cisternino>20 years ago was basically the need to be
+able to have something that can be used.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6818-0
+01:03:10.627 --> 01:03:12.627
+<v Antonio Cisternino>For obtaining the same behavior.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6840-0
+01:03:14.347 --> 01:03:24.587
+<v Antonio Cisternino>Of the lexical closure that here I
+presented in in the form of JavaScript.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6891-0
+01:03:26.027 --> 01:03:29.667
+<v Antonio Cisternino>And then C# originally just introduced
+the type.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6891-1
+01:03:29.667 --> 01:03:35.387
+<v Antonio Cisternino>So as a programmer I use it to define
+delegates, etcetera. C#, I don't know,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6891-2
+01:03:35.387 --> 01:03:40.141
+<v Antonio Cisternino>three or some subsequent.
+The evolution of the language at some</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6891-3
+01:03:40.141 --> 01:03:45.787
+<v Antonio Cisternino>point started to give me the syntax that
+basically compiled down into that.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6898-0
+01:03:45.867 --> 01:03:51.427
+<v Antonio Cisternino>Basic object that is the delegate,
+so moral of the story.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6903-0
+01:03:54.067 --> 01:03:55.827
+<v Antonio Cisternino>Lexical closures are.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6921-0
+01:03:56.907 --> 01:04:04.787
+<v Antonio Cisternino>One of many implication of the scoping
+rules of a PROGRAMMING language.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6959-0
+01:04:06.027 --> 01:04:12.212
+<v Antonio Cisternino>So whenever you decide to support some
+syntax in the PROGRAMMING language,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6959-1
+01:04:12.212 --> 01:04:18.976
+<v Antonio Cisternino>you are always have to consider that you
+have to pay a price for that because the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6959-2
+01:04:18.976 --> 01:04:24.667
+<v Antonio Cisternino>we we are learning that PROGRAMMING
+languages are deeply composable.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6992-0
+01:04:26.347 --> 01:04:34.244
+<v Antonio Cisternino>Because of the three induced by the
+grammar and this way of composition as</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6992-1
+01:04:34.244 --> 01:04:42.984
+<v Antonio Cisternino>implication also in the semantics and the
+execution implementation of the language</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/6992-2
+01:04:42.984 --> 01:04:43.827
+<v Antonio Cisternino>in fact.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7014-0
+01:04:47.547 --> 01:04:54.602
+<v Antonio Cisternino>When I started introducing this WAP,
+I made a statement which was partially</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7014-1
+01:04:54.602 --> 01:04:55.067
+<v Antonio Cisternino>true.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7053-0
+01:04:56.027 --> 01:05:03.729
+<v Antonio Cisternino>I said no one impose me to have to
+allocate this variable temp when I enter</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7053-1
+01:05:03.729 --> 01:05:11.027
+<v Antonio Cisternino>the swoop and the allocate when I exit I
+can allocate the TMP variable.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7069-0
+01:05:11.387 --> 01:05:16.322
+<v Antonio Cisternino>Statically all the time.
+This is true for all the PROGRAMMING</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7069-1
+01:05:16.322 --> 01:05:19.427
+<v Antonio Cisternino>languages that don't support recursion.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7076-0
+01:05:22.347 --> 01:05:25.267
+<v Antonio Cisternino>Because uh, if you have repulsion.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7092-0
+01:05:26.827 --> 01:05:33.947
+<v Antonio Cisternino>Then you have multiple activation of the
+same function. I don't know.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7109-0
+01:05:36.467 --> 01:05:45.867
+<v Antonio Cisternino>Factor factorial of N is.
+If N is equal one, then one else.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7119-0
+01:05:47.627 --> 01:05:54.867
+<v Antonio Cisternino>And and I'm so ******. Yeah,
+my one should be OK.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7124-0
+01:05:56.347 --> 01:05:58.307
+<v Antonio Cisternino>So if I support.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7126-0
+01:06:00.947 --> 01:06:01.067
+<v Antonio Cisternino>But.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7157-0
+01:06:02.587 --> 01:06:10.711
+<v Antonio Cisternino>In the scoping rules,
+I say that if I declare a function whose</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7157-1
+01:06:10.711 --> 01:06:16.643
+<v Antonio Cisternino>name is fact,
+that name is visible inside its</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7157-2
+01:06:16.643 --> 01:06:18.707
+<v Antonio Cisternino>definition then.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7174-0
+01:06:21.027 --> 01:06:27.642
+<v Antonio Cisternino>The implication is that I'm allowed to
+have recursive execution if I forbid this</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7174-1
+01:06:27.642 --> 01:06:28.867
+<v Antonio Cisternino>in the grammar.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7214-0
+01:06:30.987 --> 01:06:35.009
+<v Antonio Cisternino>Then the language will not allow
+recursion.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7214-1
+01:06:35.009 --> 01:06:42.141
+<v Antonio Cisternino>Then I can allocate statically all the
+local variable of all the function and</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7214-2
+01:06:42.141 --> 01:06:46.987
+<v Antonio Cisternino>simply reuse the slot anytime I I will be
+called OK.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7257-0
+01:06:46.987 --> 01:06:53.696
+<v Antonio Cisternino>So I hope by now you see all these small
+elements that are induced by the scoping</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7257-1
+01:06:53.696 --> 01:06:58.769
+<v Antonio Cisternino>rule of the language.
+So I invite you to not consider as your</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7257-2
+01:06:58.769 --> 01:07:05.234
+<v Antonio Cisternino>colleague say static is because I it's
+true. I mean the definition is correct.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7257-3
+01:07:05.234 --> 01:07:06.707
+<v Antonio Cisternino>Static is because.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7300-0
+01:07:07.187 --> 01:07:11.800
+<v Antonio Cisternino>Because when I read the name,
+I know how to find the related</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7300-1
+01:07:11.800 --> 01:07:16.564
+<v Antonio Cisternino>declaration and so I know which is the
+value I'm referring to.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7300-2
+01:07:16.564 --> 01:07:20.497
+<v Antonio Cisternino>But that is only a very small part of a
+long story,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7300-3
+01:07:20.497 --> 01:07:25.867
+<v Antonio Cisternino>because when you design A programming
+language, the scoping rule will.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7323-0
+01:07:26.267 --> 01:07:32.143
+<v Antonio Cisternino>Define its implementation.
+You want an example?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7323-1
+01:07:32.143 --> 01:07:40.347
+<v Antonio Cisternino>My and Andreas Favori PROGRAMMING
+language Python until version 3.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7356-0
+01:07:41.587 --> 01:07:49.591
+<v Antonio Cisternino>Supported the syntax of lexical closure,
+but actually they behaved wrong and the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7356-1
+01:07:49.591 --> 01:07:55.817
+<v Antonio Cisternino>scoping of the of the.
+The scoping of the language was defined</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7356-2
+01:07:55.817 --> 01:07:58.387
+<v Antonio Cisternino>by a rule that was called.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7388-0
+01:07:58.427 --> 01:08:02.490
+<v Antonio Cisternino>LGB rule, local,
+global and the BI don't remember anymore</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7388-1
+01:08:02.490 --> 01:08:06.763
+<v Antonio Cisternino>was this stand for,
+which is basically the algorithm used by</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7388-2
+01:08:06.763 --> 01:08:11.107
+<v Antonio Cisternino>the interpreter to scavenge the memory
+and find the names OK.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7390-0
+01:08:11.187 --> 01:08:11.307
+<v Antonio Cisternino>OK.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7419-0
+01:08:14.227 --> 01:08:19.402
+<v Antonio Cisternino>So before introduce introducing the
+consequence,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7419-1
+01:08:19.402 --> 01:08:27.747
+<v Antonio Cisternino>the probably the biggest consequence of
+scoping and grammars, I would like to.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7459-0
+01:08:28.347 --> 01:08:35.309
+<v Antonio Cisternino>Introduce you the OR reintroduce you a
+nice example of a PROGRAMMING language</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7459-1
+01:08:35.309 --> 01:08:42.003
+<v Antonio Cisternino>that is almost statically scoped,
+but there is a one notable exception and</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7459-2
+01:08:42.003 --> 01:08:47.627
+<v Antonio Cisternino>you perhaps all know this language and
+it's called JavaScript.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7494-0
+01:08:47.947 --> 01:08:53.699
+<v Antonio Cisternino>JavaScript is almost all statically typed
+as scoped language. Sorry,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7494-1
+01:08:53.699 --> 01:09:00.535
+<v Antonio Cisternino>with one notable exception with there is
+a specific variable which actually has a</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7494-2
+01:09:00.535 --> 01:09:04.787
+<v Antonio Cisternino>fixed name in the definition,
+but it's a variable.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7532-0
+01:09:05.147 --> 01:09:09.562
+<v Antonio Cisternino>And the name is this.
+This is not a keyword,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7532-1
+01:09:09.562 --> 01:09:16.333
+<v Antonio Cisternino>is a name in the language,
+and it has a very specific semantics that</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7532-2
+01:09:16.333 --> 01:09:23.987
+<v Antonio Cisternino>is used in the language to provide the
+illusion that you had objects. OK, so.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7543-0
+01:09:24.787 --> 01:09:32.627
+<v Antonio Cisternino>In JavaScript, whenever you write,
+so let's define an object.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7556-0
+01:09:34.107 --> 01:09:41.070
+<v Antonio Cisternino>I'm using the jazz notation,
+which is a little way to create an object.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7556-1
+01:09:41.070 --> 01:09:41.747
+<v Antonio Cisternino>OK, so.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7561-0
+01:09:44.787 --> 01:09:45.387
+<v Antonio Cisternino>Let's say ink.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7564-0
+01:09:49.667 --> 01:09:51.187
+<v Antonio Cisternino>Function and.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7568-0
+01:09:52.667 --> 01:09:55.907
+<v Antonio Cisternino>Return M + 1.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7571-0
+01:10:01.387 --> 01:10:03.467
+<v Antonio Cisternino>Imagine also the deck.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7575-0
+01:10:04.627 --> 01:10:06.867
+<v Antonio Cisternino>Should be quick enough.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7583-0
+01:10:08.627 --> 01:10:13.307
+<v Antonio Cisternino>Deck and and -1. That's it now.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7619-0
+01:10:15.067 --> 01:10:20.431
+<v Antonio Cisternino>If I type in a dot Inc,
+we all know that I will get the print out</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7619-1
+01:10:20.431 --> 01:10:25.145
+<v Antonio Cisternino>of the function.
+JavaScript is interpreted as a language,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7619-2
+01:10:25.145 --> 01:10:30.347
+<v Antonio Cisternino>so the interpreter has the full
+definition so it can print out.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7627-0
+01:10:30.427 --> 01:10:36.827
+<v Antonio Cisternino>The definition of the function.
+If I invoke it, I will get 3.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7630-0
+01:10:40.307 --> 01:10:41.267
+<v Antonio Cisternino>That's it. That's easy.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7648-0
+01:10:43.067 --> 01:10:53.627
+<v Antonio Cisternino>Now there is some magic that happens when
+I use a dot because the runtime.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7653-0
+01:10:55.147 --> 01:10:58.587
+<v Antonio Cisternino>Transform this invocation in first.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7661-0
+01:11:00.267 --> 01:11:04.387
+<v Antonio Cisternino>So whenever the language sees a dot
+something, um.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7666-0
+01:11:05.907 --> 01:11:08.587
+<v Antonio Cisternino>There will be these equal a.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7679-0
+01:11:10.227 --> 01:11:16.227
+<v Antonio Cisternino>And then the function a docs dot X will
+be invoked OK.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7680-0
+01:11:18.467 --> 01:11:18.507
+<v Antonio Cisternino>O.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7684-0
+01:11:21.467 --> 01:11:21.707
+<v Antonio Cisternino>At white.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7690-0
+01:11:25.107 --> 01:11:28.907
+<v Antonio Cisternino>JavaScript do this for one reason.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7694-0
+01:11:31.347 --> 01:11:34.707
+<v Antonio Cisternino>So suppose I have a.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7697-0
+01:11:37.347 --> 01:11:38.067
+<v Antonio Cisternino>Function.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7700-0
+01:11:39.507 --> 01:11:39.667
+<v Antonio Cisternino>Stack.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7702-0
+01:11:47.467 --> 01:11:47.987
+<v Antonio Cisternino>Oh.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7709-0
+01:11:50.507 --> 01:11:53.827
+<v Antonio Cisternino>Let's simplify my life, so.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7729-0
+01:11:56.347 --> 01:12:12.067
+<v Antonio Cisternino>I can write this name equal null this ID
+equal Z -1. I don't know right?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7750-0
+01:12:13.787 --> 01:12:23.678
+<v Antonio Cisternino>So this is a a function in JavaScript.
+Since the very beginning we're talking</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7750-1
+01:12:23.678 --> 01:12:24.947
+<v Antonio Cisternino>about 967.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7753-0
+01:12:27.387 --> 01:12:28.867
+<v Antonio Cisternino>You can write also.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7759-0
+01:12:30.667 --> 01:12:33.507
+<v Antonio Cisternino>Var S new student.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7799-0
+01:12:39.627 --> 01:12:45.868
+<v Antonio Cisternino>This convinced all the JavaScript
+programmers that Java JavaScript had</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7799-1
+01:12:45.868 --> 01:12:50.967
+<v Antonio Cisternino>objects because there is a new,
+so you must have objects,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7799-2
+01:12:50.967 --> 01:12:56.067
+<v Antonio Cisternino>which is not the case technically when
+you write in this.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7821-0
+01:12:56.587 --> 01:13:05.753
+<v Antonio Cisternino>You have in reality this code executed as
+gets in initialized with an empty object</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7821-1
+01:13:05.753 --> 01:13:11.827
+<v Antonio Cisternino>because objects in JavaScript are
+dictionaries, so no.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7855-0
+01:13:12.267 --> 01:13:18.316
+<v Antonio Cisternino>No keys.
+Then this is equal to S and then student</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7855-1
+01:13:18.316 --> 01:13:23.881
+<v Antonio Cisternino>gets invoked. OK,
+so when you invoke student,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7855-2
+01:13:23.881 --> 01:13:31.987
+<v Antonio Cisternino>this will be bound to the empty object
+and will populate the name.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7872-0
+01:13:39.667 --> 01:13:45.787
+<v Antonio Cisternino>Therefore in JavaScript you have static
+scoping but for the this keyword.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7905-0
+01:13:47.467 --> 01:13:51.210
+<v Antonio Cisternino>And in fact,
+when you start writing complicated</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7905-1
+01:13:51.210 --> 01:13:55.733
+<v Antonio Cisternino>JavaScript code,
+sometimes you you bump into some problem</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7905-2
+01:13:55.733 --> 01:14:00.803
+<v Antonio Cisternino>because of the disk keyword then
+JavaScript devote. Fortunately,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7905-3
+01:14:00.803 --> 01:14:02.987
+<v Antonio Cisternino>now it's considering mostly.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7936-0
+01:14:02.987 --> 01:14:08.981
+<v Antonio Cisternino>Functional language.
+The object oriented the flavor given by</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7936-1
+01:14:08.981 --> 01:14:17.138
+<v Antonio Cisternino>the syntax has been almost forgotten and
+so we we're living in a much better world</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7936-2
+01:14:17.138 --> 01:14:18.907
+<v Antonio Cisternino>when writing Java.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7965-0
+01:14:18.987 --> 01:14:24.681
+<v Antonio Cisternino>JavaScript programs,
+but this is a good example of a very</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7965-1
+01:14:24.681 --> 01:14:32.143
+<v Antonio Cisternino>twist in the scoping rules that it's
+still there and you have to understand</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7965-2
+01:14:32.143 --> 01:14:36.267
+<v Antonio Cisternino>when you want to understand a complicated.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7967-0
+01:14:36.347 --> 01:14:38.227
+<v Antonio Cisternino>JavaScript rogram.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/7981-0
+01:14:39.587 --> 01:14:45.467
+<v Antonio Cisternino>As a weakness of this,
+you can go and have some fun.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8015-0
+01:14:47.147 --> 01:14:54.400
+<v Antonio Cisternino>With an open source project of University
+of Pisa that yesterday I just use it to</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8015-1
+01:14:54.400 --> 01:14:58.646
+<v Antonio Cisternino>elect the rector of the University of
+Calabria,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8015-2
+01:14:58.646 --> 01:15:02.627
+<v Antonio Cisternino>which is called the Legere that you
+perhaps.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8035-0
+01:15:02.747 --> 01:15:07.455
+<v Antonio Cisternino>Already used that you can.
+You're invited to browse the code.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8035-1
+01:15:07.455 --> 01:15:11.252
+<v Antonio Cisternino>I'm I'm the author,
+so you can ask me in general.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8035-2
+01:15:11.252 --> 01:15:13.987
+<v Antonio Cisternino>I have answer to your questions and.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8040-0
+01:15:17.787 --> 01:15:21.867
+<v Antonio Cisternino>And if you browse and go.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8061-0
+01:15:24.907 --> 01:15:32.809
+<v Antonio Cisternino>To the code that that generates the
+election card where you select the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8061-1
+01:15:32.809 --> 01:15:37.707
+<v Antonio Cisternino>candidates,
+you will find very interesting.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8062-0
+01:15:38.867 --> 01:15:39.147
+<v Antonio Cisternino>And.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8092-0
+01:15:41.947 --> 01:15:48.840
+<v Antonio Cisternino>Complicated JavaScript patterns.
+So if you want an example and this is so</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8092-1
+01:15:48.840 --> 01:15:56.107
+<v Antonio Cisternino>complicated that even though I wrote this
+code anytime I have to touch these.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8127-0
+01:15:56.827 --> 01:16:03.123
+<v Antonio Cisternino>I'm not feeling really confident that I
+will not break something in this code. OK,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8127-1
+01:16:03.123 --> 01:16:07.675
+<v Antonio Cisternino>so if you want some example of some
+treaty JavaScript code,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8127-2
+01:16:07.675 --> 01:16:12.227
+<v Antonio Cisternino>this can be one of many.
+I could have picked it up by many.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8158-0
+01:16:12.347 --> 01:16:19.930
+<v Antonio Cisternino>Yesterday I spent some time reading this
+code, so I it's in top of my mind. OK,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8158-1
+01:16:19.930 --> 01:16:25.048
+<v Antonio Cisternino>so last 10 minutes as in any class that
+is respected.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8158-2
+01:16:25.048 --> 01:16:27.987
+<v Antonio Cisternino>Let's talk start talking about.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8169-0
+01:16:28.347 --> 01:16:34.510
+<v Antonio Cisternino>One of the largest implication of the
+scoping rules supporting the memory</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8169-1
+01:16:34.510 --> 01:16:35.427
+<v Antonio Cisternino>allocation.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8186-0
+01:16:37.307 --> 01:16:46.707
+<v Antonio Cisternino>So the the memory of a program we know is
+always the memory of the program.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8217-0
+01:16:47.987 --> 01:16:54.681
+<v Antonio Cisternino>Leave it limited. Yeah, in please.
+In future when we will have Turing</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8217-1
+01:16:54.681 --> 01:17:00.037
+<v Antonio Cisternino>machine will be not.
+For the moment we will accept this</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8217-2
+01:17:00.037 --> 01:17:02.907
+<v Antonio Cisternino>limitation. It is limited and.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8234-0
+01:17:04.987 --> 01:17:08.406
+<v Antonio Cisternino>How is?
+I mean how if we don't think that the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8234-1
+01:17:08.406 --> 01:17:13.387
+<v Antonio Cisternino>PROGRAMMING language in itself in the
+process, the memory, how is?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8263-0
+01:17:16.267 --> 01:17:24.058
+<v Antonio Cisternino>Linear. It's a very long.
+We know from operating system that this</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8263-1
+01:17:24.058 --> 01:17:30.787
+<v Antonio Cisternino>very long sequence of cells that are
+addressed linearly.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8301-0
+01:17:31.467 --> 01:17:37.549
+<v Antonio Cisternino>Technically are part of a virtual memory
+and this has some implications in terms</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8301-1
+01:17:37.549 --> 01:17:42.054
+<v Antonio Cisternino>of implementation,
+but we live in this beautiful world that</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8301-2
+01:17:42.054 --> 01:17:48.361
+<v Antonio Cisternino>a process has memory that goes from zero
+to, I don't know, terabytes, 64 terabytes,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8301-3
+01:17:48.361 --> 01:17:48.587
+<v Antonio Cisternino>OK.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8302-0
+01:17:49.547 --> 01:17:49.667
+<v Antonio Cisternino>Um.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8308-0
+01:17:51.307 --> 01:17:54.387
+<v Antonio Cisternino>And that is very annoying to manage.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8310-0
+01:17:56.427 --> 01:17:56.827
+<v Antonio Cisternino>Because.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8338-0
+01:17:58.907 --> 01:18:05.101
+<v Antonio Cisternino>At the end of the day,
+you have to decide of these billions</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8338-1
+01:18:05.101 --> 01:18:10.573
+<v Antonio Cisternino>memory cells,
+which values go where and whenever the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8338-2
+01:18:10.573 --> 01:18:14.187
+<v Antonio Cisternino>programmer has to access the value.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8346-0
+01:18:15.347 --> 01:18:20.107
+<v Antonio Cisternino>You need the address of the of the
+location. OK so.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8362-0
+01:18:22.067 --> 01:18:26.003
+<v Antonio Cisternino>Long story short,
+because you already know the the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8362-1
+01:18:26.003 --> 01:18:28.627
+<v Antonio Cisternino>conclusion, so it's not a spoiler.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8363-0
+01:18:28.867 --> 01:18:28.947
+<v Antonio Cisternino>Uh.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8375-0
+01:18:31.747 --> 01:18:37.627
+<v Antonio Cisternino>Thanks to Rikushan. Thanks to Rikushan.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8406-0
+01:18:38.987 --> 01:18:45.241
+<v Antonio Cisternino>We found that if we allocate,
+if we reserve a portion of this linear</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8406-1
+01:18:45.241 --> 01:18:51.587
+<v Antonio Cisternino>memory to a data structure that we all
+know that is called the stack.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8440-0
+01:18:53.147 --> 01:18:58.269
+<v Antonio Cisternino>Then I can allocate local variables on
+top of this stack,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8440-1
+01:18:58.269 --> 01:19:02.332
+<v Antonio Cisternino>use them and when you exit from the
+function,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8440-2
+01:19:02.332 --> 01:19:08.427
+<v Antonio Cisternino>unless you support lexical closures,
+in that case things complicate.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8482-0
+01:19:10.227 --> 01:19:15.889
+<v Antonio Cisternino>You can deallocate the top of the stack,
+return the value and that's it.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8482-1
+01:19:15.889 --> 01:19:22.095
+<v Antonio Cisternino>So stack is a very nice data structure
+because follows the functional view of a</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8482-2
+01:19:22.095 --> 01:19:28.456
+<v Antonio Cisternino>PROGRAMMING language because basically we
+like to invoke function because we like</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8482-3
+01:19:28.456 --> 01:19:29.387
+<v Antonio Cisternino>mathematics.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8521-0
+01:19:29.467 --> 01:19:36.276
+<v Antonio Cisternino>And the way function gets invoked tend to
+generate these push, pop, push,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8521-1
+01:19:36.276 --> 01:19:41.613
+<v Antonio Cisternino>pop of local variables.
+And so why don't your PROGRAMMING</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8521-2
+01:19:41.613 --> 01:19:48.147
+<v Antonio Cisternino>language supports you instead of having
+you to explicitly manage this?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8526-0
+01:19:48.267 --> 01:19:51.107
+<v Antonio Cisternino>Very long stream of values.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8546-0
+01:19:52.587 --> 01:20:00.689
+<v Antonio Cisternino>You have the stack data structure
+generated for you by the compiler O</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8546-1
+01:20:00.689 --> 01:20:03.467
+<v Antonio Cisternino>behind the execution of.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8586-0
+01:20:04.747 --> 01:20:09.299
+<v Antonio Cisternino>Any PROGRAMMING language,
+modern PROGRAMMING language,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8586-1
+01:20:09.299 --> 01:20:15.508
+<v Antonio Cisternino>there is not anymore the jump to the
+subroutine as I did in the whitespace</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8586-2
+01:20:15.508 --> 01:20:19.730
+<v Antonio Cisternino>compiler,
+but there is a function invocation which</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8586-3
+01:20:19.730 --> 01:20:20.227
+<v Antonio Cisternino>means.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8601-0
+01:20:20.547 --> 01:20:26.774
+<v Antonio Cisternino>Allocate variables on top of a stack,
+execute the function which will use these</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8601-1
+01:20:26.774 --> 01:20:29.187
+<v Antonio Cisternino>variables, deallocate, go back.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8605-0
+01:20:32.427 --> 01:20:33.227
+<v Antonio Cisternino>Nice because.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8608-0
+01:20:35.987 --> 01:20:38.267
+<v Antonio Cisternino>I can also ensure that.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8613-0
+01:20:43.947 --> 01:20:45.907
+<v Antonio Cisternino>I didn't use it today.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8616-0
+01:20:49.667 --> 01:20:50.707
+<v Antonio Cisternino>Let's use it.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8639-0
+01:20:52.387 --> 01:21:06.544
+<v Antonio Cisternino>Can you generate a diagram of a stack of
+a PROGRAMMING PROGRAMMING language with</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8639-1
+01:21:06.544 --> 01:21:08.467
+<v Antonio Cisternino>activation?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8642-0
+01:21:09.907 --> 01:21:12.027
+<v Antonio Cisternino>Records, records.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8643-0
+01:21:15.267 --> 01:21:15.507
+<v Antonio Cisternino>4.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8649-0
+01:21:22.907 --> 01:21:23.307
+<v Antonio Cisternino>Execution.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8658-0
+01:21:28.507 --> 01:21:33.427
+<v Antonio Cisternino>Let me see if I get a nice diagram.
+So basically.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8685-0
+01:21:37.947 --> 01:21:41.391
+<v Antonio Cisternino>There is a name for the bunch of
+variables,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8685-1
+01:21:41.391 --> 01:21:47.811
+<v Antonio Cisternino>few other things that gets loaded on top
+of a stack that is called the activation</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8685-2
+01:21:47.811 --> 01:21:50.787
+<v Antonio Cisternino>record. So whenever the compiler find.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8686-0
+01:21:53.547 --> 01:21:53.907
+<v Antonio Cisternino>Yeah.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8694-0
+01:22:06.867 --> 01:22:09.267
+<v Antonio Cisternino>That is basically the idea.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8737-0
+01:22:10.787 --> 01:22:15.598
+<v Antonio Cisternino>So in this picture it looks that the
+stack grows downwards.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8737-1
+01:22:15.598 --> 01:22:21.692
+<v Antonio Cisternino>I would have picked it the other way
+around, but nevertheless it's correct.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8737-2
+01:22:21.692 --> 01:22:27.707
+<v Antonio Cisternino>Technically in memory it will be
+allocated like this if zero is on top so.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8784-0
+01:22:27.787 --> 01:22:33.179
+<v Antonio Cisternino>It makes sense. So as you can see,
+every time you enter in a function,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8784-1
+01:22:33.179 --> 01:22:37.204
+<v Antonio Cisternino>you get some code generated by the
+compiler for you,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8784-2
+01:22:37.204 --> 01:22:41.989
+<v Antonio Cisternino>which allocates the activation record.
+So on top of the stack,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8784-3
+01:22:41.989 --> 01:22:45.027
+<v Antonio Cisternino>it allocates a few information that are.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8808-0
+01:22:46.627 --> 01:22:53.484
+<v Antonio Cisternino>Essential for executing the function.
+These informations include the local</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8808-1
+01:22:53.484 --> 01:22:57.964
+<v Antonio Cisternino>variables.
+Return address is another interesting</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8808-2
+01:22:57.964 --> 01:23:00.707
+<v Antonio Cisternino>part of the activation record.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8810-0
+01:23:02.867 --> 01:23:03.867
+<v Antonio Cisternino>So uh.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8842-0
+01:23:05.187 --> 01:23:13.777
+<v Antonio Cisternino>When you call the factorial of four then
+you have the formal argument is bound to</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8842-1
+01:23:13.777 --> 01:23:21.529
+<v Antonio Cisternino>actual to the value of four. OK,
+so in the activation record there are no</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8842-2
+01:23:21.529 --> 01:23:22.787
+<v Antonio Cisternino>on not only.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8862-0
+01:23:23.227 --> 01:23:28.508
+<v Antonio Cisternino>The local variables,
+but also the formal parameters of the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8862-1
+01:23:28.508 --> 01:23:34.147
+<v Antonio Cisternino>function because you can assign them,
+so you need some memory.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8863-0
+01:23:37.627 --> 01:23:37.787
+<v Antonio Cisternino>And.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8868-0
+01:23:42.427 --> 01:23:45.267
+<v Antonio Cisternino>Oh, yes. Thank you for the.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8889-0
+01:23:47.387 --> 01:23:56.561
+<v Antonio Cisternino>Much better. Sorry.
+So this is a factor of int 4 is the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8889-1
+01:23:56.561 --> 01:24:02.787
+<v Antonio Cisternino>definition, so someone invokes fact 4.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8926-0
+01:24:04.267 --> 01:24:09.538
+<v Antonio Cisternino>And so you remember, OK,
+when I when I finish executing the fact</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8926-1
+01:24:09.538 --> 01:24:16.269
+<v Antonio Cisternino>function, I should go back to the caller.
+So that is something that will change it</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8926-2
+01:24:16.269 --> 01:24:21.947
+<v Antonio Cisternino>depending on the execution.
+So that is part of the activation record.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8928-0
+01:24:23.027 --> 01:24:24.227
+<v Antonio Cisternino>Then.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8933-0
+01:24:27.747 --> 01:24:30.627
+<v Antonio Cisternino>Argument is for T.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8955-0
+01:24:32.067 --> 01:24:39.367
+<v Antonio Cisternino>Which is this local variable is waiting
+for the value of factor of N -1,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8955-1
+01:24:39.367 --> 01:24:43.467
+<v Antonio Cisternino>so the actual value of T unknown waiting.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8969-0
+01:24:44.667 --> 01:24:52.507
+<v Antonio Cisternino>Factory actually is invoked another
+activation record saying values T waiting.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8973-0
+01:24:54.027 --> 01:24:55.947
+<v Antonio Cisternino>Paman is 321.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8997-0
+01:24:58.187 --> 01:25:07.639
+<v Antonio Cisternino>One, we return one and so you pop.
+So this way of laying out things,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8997-1
+01:25:07.639 --> 01:25:13.667
+<v Antonio Cisternino>it also allows us to implement scope
+rules.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/8999-0
+01:25:14.347 --> 01:25:16.147
+<v Antonio Cisternino>Because basically.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9042-0
+01:25:18.747 --> 01:25:27.389
+<v Antonio Cisternino>The I I see the base of the execution is
+this frame and so there's no way for the</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9042-1
+01:25:27.389 --> 01:25:35.610
+<v Antonio Cisternino>program for for the last function to
+access the variables that lies on top of</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9042-2
+01:25:35.610 --> 01:25:38.667
+<v Antonio Cisternino>the stack below on the stack.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9070-0
+01:25:38.667 --> 01:25:44.576
+<v Antonio Cisternino>That are of other functions. OK,
+so the stack has also this beautiful</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9070-1
+01:25:44.576 --> 01:25:49.725
+<v Antonio Cisternino>property that allows you to mask the rest
+of the activation,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9070-2
+01:25:49.725 --> 01:25:53.187
+<v Antonio Cisternino>so you have no clue about who called you.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9112-0
+01:25:53.867 --> 01:25:57.981
+<v Antonio Cisternino>And what are the values of the local
+variables?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9112-1
+01:25:57.981 --> 01:26:03.038
+<v Antonio Cisternino>Because this stack naturally hides the
+previous calls. OK,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9112-2
+01:26:03.038 --> 01:26:10.067
+<v Antonio Cisternino>so you see how the scoping rules and the
+implementation that they tend to induce.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9138-0
+01:26:10.507 --> 01:26:15.771
+<v Antonio Cisternino>Interwine with the actual execution of
+the of the code.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9138-1
+01:26:15.771 --> 01:26:21.412
+<v Antonio Cisternino>We will see later on that there are even
+more pretty stuff.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9138-2
+01:26:21.412 --> 01:26:25.267
+<v Antonio Cisternino>I mean this is not yet at the moment, so.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9150-0
+01:26:27.867 --> 01:26:31.547
+<v Antonio Cisternino>Very long string of bytes to the memory
+of a processor.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9189-0
+01:26:32.187 --> 01:26:36.833
+<v Antonio Cisternino>The scoping induce the automatic
+management of the memory.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9189-1
+01:26:36.833 --> 01:26:42.741
+<v Antonio Cisternino>Unfortunately that is not enough.
+It will be very nice to be able to write</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9189-2
+01:26:42.741 --> 01:26:49.278
+<v Antonio Cisternino>programs that only need local variables,
+but unfortunately this is not the case as</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9189-3
+01:26:49.278 --> 01:26:49.987
+<v Antonio Cisternino>you wait.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9223-0
+01:26:50.547 --> 01:26:54.099
+<v Antonio Cisternino>You will know.
+So we also have static memory,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9223-1
+01:26:54.099 --> 01:27:00.201
+<v Antonio Cisternino>but that that's easy memory that gets
+allocated when the program is loaded and</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9223-2
+01:27:00.201 --> 01:27:06.071
+<v Antonio Cisternino>it stays there for till the end of the
+execution of the program and dynamic</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9223-3
+01:27:06.071 --> 01:27:07.307
+<v Antonio Cisternino>memory which is.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9238-0
+01:27:08.507 --> 01:27:14.485
+<v Antonio Cisternino>All the rest of the memory that you need
+that to allocate at some point and you</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9238-1
+01:27:14.485 --> 01:27:15.307
+<v Antonio Cisternino>don't want.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9272-0
+01:27:16.507 --> 01:27:22.434
+<v Antonio Cisternino>That that part of a memory gets
+deallocated at the exit of a function.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9272-1
+01:27:22.434 --> 01:27:26.942
+<v Antonio Cisternino>I'm pretty sure you're familiar with the
+new keyword,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9272-2
+01:27:26.942 --> 01:27:32.787
+<v Antonio Cisternino>which is the traditional now keyword to
+introduce the allocation and.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9285-0
+01:27:33.027 --> 01:27:42.427
+<v Antonio Cisternino>Memory management is one of the main
+issue of rogramming because.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9303-0
+01:27:44.027 --> 01:27:48.017
+<v Antonio Cisternino>If you don't deallocate memory,
+you waste the memory.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9303-1
+01:27:48.017 --> 01:27:52.747
+<v Antonio Cisternino>The process will exhaust the memory,
+the system will misbehave.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9304-0
+01:27:55.187 --> 01:27:55.267
+<v Antonio Cisternino>Um.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9323-0
+01:27:56.987 --> 01:28:03.456
+<v Antonio Cisternino>You may deallocate,
+so you may reuse a portion of a memory</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9323-1
+01:28:03.456 --> 01:28:06.307
+<v Antonio Cisternino>for something else before.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9361-0
+01:28:07.867 --> 01:28:12.463
+<v Antonio Cisternino>The time and in that case you will get a
+dangling pointer.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9361-1
+01:28:12.463 --> 01:28:17.684
+<v Antonio Cisternino>So the address of a location where you
+assume there is some value,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9361-2
+01:28:17.684 --> 01:28:23.527
+<v Antonio Cisternino>but in fact there is not and typically
+that leads to a crash of or or some</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9361-3
+01:28:23.527 --> 01:28:24.307
+<v Antonio Cisternino>misbehave.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9392-0
+01:28:24.347 --> 01:28:32.207
+<v Antonio Cisternino>Of the of the program.
+So all these conditions led to very,</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9392-1
+01:28:32.207 --> 01:28:39.805
+<v Antonio Cisternino>very harsh fights in the strategies of
+memory management.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9392-2
+01:28:39.805 --> 01:28:43.867
+<v Antonio Cisternino>So we will start investigating.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9431-0
+01:28:43.907 --> 01:28:49.823
+<v Antonio Cisternino>A few strategies.
+The one is the the C way you allocate</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9431-1
+01:28:49.823 --> 01:28:57.007
+<v Antonio Cisternino>explicitly memory location and you're
+free explicitly is up to you.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9431-2
+01:28:57.007 --> 01:29:03.347
+<v Antonio Cisternino>Even in the 70s there was a struggle
+between C programming.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9466-0
+01:29:03.547 --> 01:29:07.733
+<v Antonio Cisternino>They say memory is too important to let
+the system manage.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9466-1
+01:29:07.733 --> 01:29:13.197
+<v Antonio Cisternino>The programmer knows better and the least
+programmer that says memory is too</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9466-2
+01:29:13.197 --> 01:29:17.525
+<v Antonio Cisternino>important to let the system to let the
+programmer manage it.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9466-3
+01:29:17.525 --> 01:29:19.867
+<v Antonio Cisternino>Let's leave it to the system, OK?</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9495-0
+01:29:20.067 --> 01:29:28.051
+<v Antonio Cisternino>40 years later, least PROGRAMMING won.
+Basically most of the code is written</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9495-1
+01:29:28.051 --> 01:29:36.347
+<v Antonio Cisternino>today is with systems that automatically
+manage memory, so explicit management.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9529-0
+01:29:36.867 --> 01:29:40.616
+<v Antonio Cisternino>Is 1 approach.
+Of course it's more efficient because you</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9529-1
+01:29:40.616 --> 01:29:46.142
+<v Antonio Cisternino>you as a programmer should know when the
+memory is needed and when you can free it.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9529-2
+01:29:46.142 --> 01:29:50.221
+<v Antonio Cisternino>And if you're a perfect programmer
+everything will be better.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9529-3
+01:29:50.221 --> 01:29:52.787
+<v Antonio Cisternino>But unfortunately this is not the case.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9547-0
+01:29:53.107 --> 01:30:01.507
+<v Antonio Cisternino>Then there is a simple form that is
+called reference counting that we will</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9547-1
+01:30:01.507 --> 01:30:05.427
+<v Antonio Cisternino>explore, which is a sort of way to.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9578-0
+01:30:06.387 --> 01:30:13.066
+<v Antonio Cisternino>To keep track of semi automatically of
+the how many are still interested in that</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9578-1
+01:30:13.066 --> 01:30:17.848
+<v Antonio Cisternino>particular variable.
+Then there is the garbage collection</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9578-2
+01:30:17.848 --> 01:30:21.147
+<v Antonio Cisternino>which is behind java.net JavaScript and.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9620-0
+01:30:21.867 --> 01:30:26.159
+<v Antonio Cisternino>TypeScript, blah blah blah,
+pretty much everything.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9620-1
+01:30:26.159 --> 01:30:31.524
+<v Antonio Cisternino>And then there is Rust.
+Rust is interesting because it tried to.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9620-2
+01:30:31.524 --> 01:30:37.550
+<v Antonio Cisternino>It tried to discipline the explicit
+management of the memory so that you</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9620-3
+01:30:37.550 --> 01:30:41.347
+<v Antonio Cisternino>don't give up to the efficiency that you
+get.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9648-0
+01:30:41.787 --> 01:30:48.367
+<v Antonio Cisternino>By memory, explicit memory management,
+but by reducing human error in</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9648-1
+01:30:48.367 --> 01:30:55.888
+<v Antonio Cisternino>implementing that and it's considered,
+I will say a unicum in in its in its way</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9648-2
+01:30:55.888 --> 01:30:56.547
+<v Antonio Cisternino>and so.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9661-0
+01:30:56.947 --> 01:31:03.098
+<v Antonio Cisternino>It is worth having few words about that.
+OK. So I think we're done for today.</v>
+
+b548f737-0cec-4795-aebc-84ad52e940df/9661-1
+01:31:03.098 --> 01:31:05.307
+<v Antonio Cisternino>Thank you. See you tomorrow.</v>

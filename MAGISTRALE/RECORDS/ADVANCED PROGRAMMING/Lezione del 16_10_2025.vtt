@@ -1,0 +1,4651 @@
+WEBVTT
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8-0
+00:00:10.324 --> 00:00:14.724
+<v Antonio Cisternino>It's 7-8, I'll be here. I I.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/12-0
+00:00:20.644 --> 00:00:22.244
+<v Antonio Cisternino>Catalogue.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/16-0
+00:00:37.484 --> 00:00:37.644
+<v Antonio Cisternino>Mm.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/24-0
+00:00:56.164 --> 00:00:58.524
+<v Antonio Cisternino>OK, I will use.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/27-0
+00:01:00.244 --> 00:01:00.804
+<v Antonio Cisternino>Right.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/31-0
+00:01:11.384 --> 00:01:11.464
+<v Antonio Cisternino>We.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/37-0
+00:01:13.624 --> 00:01:18.144
+<v Antonio Cisternino>Uh, today we uh start. Um.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/42-0
+00:01:26.344 --> 00:01:27.704
+<v Antonio Cisternino>I'll check the account.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/47-0
+00:01:29.864 --> 00:01:33.104
+<v Antonio Cisternino>No, no collaborative thing.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/54-0
+00:01:45.504 --> 00:01:47.344
+<v Antonio Cisternino>OK.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/66-0
+00:01:52.544 --> 00:02:00.624
+<v Antonio Cisternino>So today we will start the exploration of.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/73-0
+00:02:04.384 --> 00:02:08.984
+<v Antonio Cisternino>The so-called higher order programming,
+OK.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/109-0
+00:02:10.744 --> 00:02:19.009
+<v Antonio Cisternino>I'm generated in your mind the idea that
+the only thing that is characterized by</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/109-1
+00:02:19.009 --> 00:02:25.744
+<v Antonio Cisternino>the program is the ability to have
+function that can be returned.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/144-0
+00:02:26.024 --> 00:02:33.831
+<v Antonio Cisternino>As a result of a functioning location,
+and this allows you to treat the function</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/144-1
+00:02:33.831 --> 00:02:38.939
+<v Antonio Cisternino>as values,
+which of course is a main trait of higher</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/144-2
+00:02:38.939 --> 00:02:42.024
+<v Antonio Cisternino>order programming, but it's not.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/188-0
+00:02:42.224 --> 00:02:47.514
+<v Antonio Cisternino>The only point.
+So my goal for today is to break some of</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/188-1
+00:02:47.514 --> 00:02:52.063
+<v Antonio Cisternino>the assumption you have in your C
+oriented mind,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/188-2
+00:02:52.063 --> 00:02:59.489
+<v Antonio Cisternino>because at the end of the day most of the
+program programming language we use a</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/188-3
+00:02:59.489 --> 00:03:01.624
+<v Antonio Cisternino>syntax that is derived.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/219-0
+00:03:01.784 --> 00:03:07.205
+<v Antonio Cisternino>To some extent from C,
+C++ and then Java and then C# and then</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/219-1
+00:03:07.205 --> 00:03:12.189
+<v Antonio Cisternino>JavaScript and Python.
+I mean at the end of the day with</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/219-2
+00:03:12.189 --> 00:03:16.386
+<v Antonio Cisternino>variance,
+but basically the root of most of the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/219-3
+00:03:16.386 --> 00:03:19.184
+<v Antonio Cisternino>programming language used today.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/245-0
+00:03:20.424 --> 00:03:27.264
+<v Antonio Cisternino>It stays in the C syntax,
+but it is not the only available</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/245-1
+00:03:27.264 --> 00:03:36.424
+<v Antonio Cisternino>programming language out there style.
+There are other languages, some of them.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/274-0
+00:03:36.424 --> 00:03:43.295
+<v Antonio Cisternino>Like Haskell are research languages.
+Haskell has been designed to study</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/274-1
+00:03:43.295 --> 00:03:49.308
+<v Antonio Cisternino>programming languages.
+It was an experiment originally started</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/274-2
+00:03:49.308 --> 00:03:51.504
+<v Antonio Cisternino>by Simon Clayton Johns.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/301-0
+00:03:52.304 --> 00:03:57.008
+<v Antonio Cisternino>And it it has a lot of interesting
+features,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/301-1
+00:03:57.008 --> 00:04:05.373
+<v Antonio Cisternino>but it is really for research purpose.
+But there are also programming languages</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/301-2
+00:04:05.373 --> 00:04:07.464
+<v Antonio Cisternino>that have been used.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/340-0
+00:04:07.584 --> 00:04:13.271
+<v Antonio Cisternino>Many rounds into industrial projects.
+One of these is for sure.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/340-1
+00:04:13.271 --> 00:04:19.758
+<v Antonio Cisternino>MLML has been already mentioned.
+I did mention it yesterday when we were</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/340-2
+00:04:19.758 --> 00:04:25.624
+<v Antonio Cisternino>talking about the your grants and I show
+you the very small line.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/366-0
+00:04:27.224 --> 00:04:36.935
+<v Antonio Cisternino>And it is for many years it was popular
+in the universities in a form,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/366-1
+00:04:36.935 --> 00:04:42.544
+<v Antonio Cisternino>in a public form implementation known as.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/368-0
+00:04:42.864 --> 00:04:43.744
+<v Antonio Cisternino>Oh, Camel.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/391-0
+00:04:45.624 --> 00:04:52.669
+<v Antonio Cisternino>Which where the O stands for object
+because the original ML didn't have</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/391-1
+00:04:52.669 --> 00:04:56.584
+<v Antonio Cisternino>support for object oriented programming.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/426-0
+00:04:58.064 --> 00:05:05.338
+<v Antonio Cisternino>And the last iteration which is supported
+by an industrial player which is</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/426-1
+00:05:05.338 --> 00:05:10.091
+<v Antonio Cisternino>Microsoft,
+it is known as F sharp and F sharp is</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/426-2
+00:05:10.091 --> 00:05:16.784
+<v Antonio Cisternino>basically an ML port for net.
+So technically if you want to program.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/447-0
+00:05:18.344 --> 00:05:26.363
+<v Antonio Cisternino>ML today you can use F# and and and you
+have mostly ML.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/447-1
+00:05:26.363 --> 00:05:32.664
+<v Antonio Cisternino>The object model is clearly different
+from.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/484-0
+00:05:33.904 --> 00:05:37.726
+<v Antonio Cisternino>For subtleties,
+I mean of course you have inheritance</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/484-1
+00:05:37.726 --> 00:05:41.831
+<v Antonio Cisternino>fields etcetera,
+but of course it has been adapted to the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/484-2
+00:05:41.831 --> 00:05:47.706
+<v Antonio Cisternino>net so that you can interact and use all
+the libraries from net in a seamless way,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/484-3
+00:05:47.706 --> 00:05:49.264
+<v Antonio Cisternino>which is a good thing.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/523-0
+00:05:49.544 --> 00:05:54.946
+<v Antonio Cisternino>And the and it has been used really
+heavily in finance.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/523-1
+00:05:54.946 --> 00:06:02.181
+<v Antonio Cisternino>So the largest deployment that I knew,
+I've been one of the leaders of the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/523-2
+00:06:02.181 --> 00:06:07.584
+<v Antonio Cisternino>community at some point,
+but I mean in the recent year.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/564-0
+00:06:08.984 --> 00:06:15.054
+<v Antonio Cisternino>I use it less and less,
+so I'm just an old man that has a lot of</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/564-1
+00:06:15.054 --> 00:06:20.472
+<v Antonio Cisternino>memories about that.
+And I can I will share also not just</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/564-2
+00:06:20.472 --> 00:06:24.581
+<v Antonio Cisternino>today,
+but when we will move along into the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/564-3
+00:06:24.581 --> 00:06:28.224
+<v Antonio Cisternino>runtime, I was lucky enough to witness.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/590-0
+00:06:29.744 --> 00:06:36.676
+<v Antonio Cisternino>Is the first bootstrap of the F# compiler
+on dotnet. It was 2001.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/590-1
+00:06:36.676 --> 00:06:45.184
+<v Antonio Cisternino>So there are a lot of interesting aspects
+in the way these things are done, but.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/634-0
+00:06:45.464 --> 00:06:51.999
+<v Antonio Cisternino>The the largest deployment I think is
+still in Credit Suisse where they have</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/634-1
+00:06:51.999 --> 00:06:56.921
+<v Antonio Cisternino>more than 2,000,
+000 lines of code in production for real</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/634-2
+00:06:56.921 --> 00:07:02.522
+<v Antonio Cisternino>production on on F sharp.
+So it's a it's a real world programming</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/634-3
+00:07:02.522 --> 00:07:04.984
+<v Antonio Cisternino>language and I will say that.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/666-0
+00:07:05.384 --> 00:07:12.154
+<v Antonio Cisternino>In the if you look at Python, Lua,
+JavaScript and I can go on and on and on</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/666-1
+00:07:12.154 --> 00:07:16.073
+<v Antonio Cisternino>that you will find basically the same
+idea,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/666-2
+00:07:16.073 --> 00:07:21.864
+<v Antonio Cisternino>same programming language with slightly
+different syntaxes some.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/702-0
+00:07:22.264 --> 00:07:29.660
+<v Antonio Cisternino>Done well, such as JavaScript,
+others done less well, such as Python.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/702-1
+00:07:29.660 --> 00:07:36.846
+<v Antonio Cisternino>But at the end of the day,
+the overall structure of the language is</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/702-2
+00:07:36.846 --> 00:07:42.024
+<v Antonio Cisternino>the same.
+The decision about typing are similar.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/740-0
+00:07:42.224 --> 00:07:49.420
+<v Antonio Cisternino>So in this world where everybody was
+reinventing their own language by simply</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/740-1
+00:07:49.420 --> 00:07:53.572
+<v Antonio Cisternino>mimicking an existing one,
+when F# came out,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/740-2
+00:07:53.572 --> 00:08:00.307
+<v Antonio Cisternino>a lot of people passionate about
+programming language implementation and</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/740-3
+00:08:00.307 --> 00:08:01.784
+<v Antonio Cisternino>experimentation.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/773-0
+00:08:01.864 --> 00:08:05.684
+<v Antonio Cisternino>Naturally convert into that space.
+And in fact,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/773-1
+00:08:05.684 --> 00:08:12.211
+<v Antonio Cisternino>if you look around the F# community has
+produced a lot of interesting research in</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/773-2
+00:08:12.211 --> 00:08:17.544
+<v Antonio Cisternino>programming languages because it was the
+fun programming language.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/803-0
+00:08:17.624 --> 00:08:21.685
+<v Antonio Cisternino>Around.
+And so I think in this respect it has</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/803-1
+00:08:21.685 --> 00:08:28.129
+<v Antonio Cisternino>been quite influential. In particular,
+I will say that it was one of the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/803-2
+00:08:28.129 --> 00:08:32.544
+<v Antonio Cisternino>language that made again popular the
+keyword let.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/839-0
+00:08:33.424 --> 00:08:38.748
+<v Antonio Cisternino>So when F# came out,
+let it was not even allowed in JavaScript.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/839-1
+00:08:38.748 --> 00:08:45.737
+<v Antonio Cisternino>Nowadays we use it to write let something.
+It made popular asynchronous programming</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/839-2
+00:08:45.737 --> 00:08:52.144
+<v Antonio Cisternino>thanks to a feature that is embedded into
+the language that we will discuss.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/878-0
+00:08:52.664 --> 00:08:58.506
+<v Antonio Cisternino>And it is still unique in one feature
+that it makes really appealing,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/878-1
+00:08:58.506 --> 00:09:03.682
+<v Antonio Cisternino>for instance in finance.
+So in finance became popular because</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/878-2
+00:09:03.682 --> 00:09:07.438
+<v Antonio Cisternino>there was a functional programming
+language,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/878-3
+00:09:07.438 --> 00:09:10.944
+<v Antonio Cisternino>an interpreter one that was called Open F.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/915-0
+00:09:12.264 --> 00:09:19.267
+<v Antonio Cisternino>It was 2014 and it came up and all the
+London finance was based on this open F</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/915-1
+00:09:19.267 --> 00:09:26.359
+<v Antonio Cisternino>At some point someone found a really,
+really bad bug in security in finance and</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/915-2
+00:09:26.359 --> 00:09:28.664
+<v Antonio Cisternino>everybody was cared about.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/966-0
+00:09:29.584 --> 00:09:35.266
+<v Antonio Cisternino>This this bug and so they look around.
+Is there a functional programming</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/966-1
+00:09:35.266 --> 00:09:41.571
+<v Antonio Cisternino>language that we can use to go out from
+open F which is broken and Microsoft was</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/966-2
+00:09:41.571 --> 00:09:47.487
+<v Antonio Cisternino>developing F sharp was embedded in in
+Visual Studio so there was industrial</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/966-3
+00:09:47.487 --> 00:09:48.344
+<v Antonio Cisternino>support so.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/991-0
+00:09:48.344 --> 00:09:55.334
+<v Antonio Cisternino>Debugger and everything and so they
+basically moved on F#.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/991-1
+00:09:55.334 --> 00:10:03.984
+<v Antonio Cisternino>So it was partly due to to this fortunate
+for Microsoft coincidence, so.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1019-0
+00:10:05.544 --> 00:10:13.250
+<v Antonio Cisternino>I was saying there is still a unique
+feature of the language which is abstract</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1019-1
+00:10:13.250 --> 00:10:20.078
+<v Antonio Cisternino>is the only language out there.
+So this is if you want somehow out of</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1019-2
+00:10:20.078 --> 00:10:20.664
+<v Antonio Cisternino>scope.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1032-0
+00:10:21.224 --> 00:10:25.700
+<v Antonio Cisternino>Uh,
+but it's the only programming language</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1032-1
+00:10:25.700 --> 00:10:28.824
+<v Antonio Cisternino>that has the full measure. Uh.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1070-0
+00:10:29.784 --> 00:10:39.814
+<v Antonio Cisternino>Metric algebra implemented.
+By this I mean that you can write a code</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1070-1
+00:10:39.814 --> 00:10:49.264
+<v Antonio Cisternino>where you can label numbers with metres,
+seconds, any dimension.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1094-0
+00:10:49.704 --> 00:10:57.783
+<v Antonio Cisternino>And then if you divide meters by seconds,
+you will get meters per second and the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1094-1
+00:10:57.783 --> 00:11:05.264
+<v Antonio Cisternino>statically the programming language type
+checks whether you're summing up.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1136-0
+00:11:06.304 --> 00:11:10.119
+<v Antonio Cisternino>Numbers with the same measure attached to
+them.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1136-1
+00:11:10.119 --> 00:11:16.319
+<v Antonio Cisternino>And in this respect there was Andrew
+Kennedy was the author of the of this of</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1136-2
+00:11:16.319 --> 00:11:20.214
+<v Antonio Cisternino>the paper.
+Also it was published in some journal</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1136-3
+00:11:20.214 --> 00:11:24.904
+<v Antonio Cisternino>that discussed how to implement and
+statically type check.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1172-0
+00:11:24.944 --> 00:11:32.416
+<v Antonio Cisternino>Like unit of measure attached to numbers
+and this is very useful in physics in in</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1172-1
+00:11:32.416 --> 00:11:39.614
+<v Antonio Cisternino>finance because clearly you may be tent
+if you if you sum 2 double numbers any</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1172-2
+00:11:39.614 --> 00:11:43.624
+<v Antonio Cisternino>programming language will allow you to
+sum.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1203-0
+00:11:43.824 --> 00:11:47.627
+<v Antonio Cisternino>Double numbers,
+but if you can label numbers with the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1203-1
+00:11:47.627 --> 00:11:51.501
+<v Antonio Cisternino>unit of measure,
+you can avoid the significant errors,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1203-2
+00:11:51.501 --> 00:11:54.811
+<v Antonio Cisternino>especially in domains where numbers are
+aware.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1203-3
+00:11:54.811 --> 00:12:00.024
+<v Antonio Cisternino>So the risk of summing up the numbers
+that are incompatible is very high.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1206-0
+00:12:00.584 --> 00:12:01.824
+<v Antonio Cisternino>So just that.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1209-0
+00:12:04.184 --> 00:12:05.464
+<v Antonio Cisternino>To showcase.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1230-0
+00:12:10.664 --> 00:12:24.633
+<v Antonio Cisternino>And you generate on F sharp example of
+unit of measure user show meters and</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1230-1
+00:12:24.633 --> 00:12:26.104
+<v Antonio Cisternino>seconds.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1234-0
+00:12:34.424 --> 00:12:34.504
+<v Antonio Cisternino>So.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1237-0
+00:12:36.184 --> 00:12:38.544
+<v Antonio Cisternino>You will get a full.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1264-0
+00:12:41.744 --> 00:12:47.992
+<v Antonio Cisternino>If the network helps in the meantime,
+I mean as I was saying that is just a</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1264-1
+00:12:47.992 --> 00:12:52.104
+<v Antonio Cisternino>note which I think is useful to know,
+but I mean.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1309-0
+00:12:53.584 --> 00:12:59.879
+<v Antonio Cisternino>That is not the reason because you pick
+up a particular programming language.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1309-1
+00:12:59.879 --> 00:13:05.367
+<v Antonio Cisternino>So how can you use F sharp?
+For those of you that are interested in</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1309-2
+00:13:05.367 --> 00:13:10.049
+<v Antonio Cisternino>in trying the language,
+you simply install.net Framework,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1309-3
+00:13:10.049 --> 00:13:11.744
+<v Antonio Cisternino>the SDK you look for.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1340-0
+00:13:11.824 --> 00:13:19.613
+<v Antonio Cisternino>Net SDK framework which now is multi.
+I mean it's open source multi platform.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1340-1
+00:13:19.613 --> 00:13:26.504
+<v Antonio Cisternino>It runs from Raspberry Pi upwards so you
+can run where you want and.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1373-0
+00:13:26.864 --> 00:13:31.334
+<v Antonio Cisternino>The F# compiler is part of the
+distribution,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1373-1
+00:13:31.334 --> 00:13:39.579
+<v Antonio Cisternino>so you got the FC FSC command that allows
+you to compile the F# files and you also</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1373-2
+00:13:39.579 --> 00:13:41.864
+<v Antonio Cisternino>get the F# interactive.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1401-0
+00:13:42.504 --> 00:13:47.351
+<v Antonio Cisternino>Which is basically a breadful environment
+where you type,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1401-1
+00:13:47.351 --> 00:13:53.703
+<v Antonio Cisternino>you can type in FR statements and
+evaluate them and you get the results and</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1401-2
+00:13:53.703 --> 00:13:57.464
+<v Antonio Cisternino>so you can interactively evaluate things
+so.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1402-0
+00:13:57.864 --> 00:13:57.944
+<v Antonio Cisternino>Uh.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1412-0
+00:13:59.344 --> 00:14:05.224
+<v Antonio Cisternino>Here you see the examples.
+So basically there is a special syntax.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1413-0
+00:14:06.464 --> 00:14:06.504
+<v Antonio Cisternino>Uh.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1458-0
+00:14:08.464 --> 00:14:16.389
+<v Antonio Cisternino>The square brackets have been introduced
+by C# as an annotation and has been</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1458-1
+00:14:16.389 --> 00:14:23.079
+<v Antonio Cisternino>retained by many languages.
+So in F# square brackets were deeply</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1458-2
+00:14:23.079 --> 00:14:26.064
+<v Antonio Cisternino>overloaded, so in F# you use.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1474-0
+00:14:26.104 --> 00:14:36.104
+<v Antonio Cisternino>Open square brackets and angles bracket
+to to start the annotation and the close.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1519-0
+00:14:37.184 --> 00:14:43.259
+<v Antonio Cisternino>close the right angle bracket and close
+the square bracket to close the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1519-1
+00:14:43.259 --> 00:14:47.732
+<v Antonio Cisternino>annotation.
+Then you say type M type is a keyword in</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1519-2
+00:14:47.732 --> 00:14:52.035
+<v Antonio Cisternino>F sharp,
+so type is how you introduce types in the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1519-3
+00:14:52.035 --> 00:14:56.424
+<v Antonio Cisternino>language.
+In this case you don't give a definition.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1555-0
+00:14:57.024 --> 00:15:01.549
+<v Antonio Cisternino>Because you the type has been annotated
+as a measure.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1555-1
+00:15:01.549 --> 00:15:08.085
+<v Antonio Cisternino>So this means this type M should be
+considered the the unit of measure of the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1555-2
+00:15:08.085 --> 00:15:13.197
+<v Antonio Cisternino>in in this context.
+So you have also the types S that is the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1555-3
+00:15:13.197 --> 00:15:13.784
+<v Antonio Cisternino>second.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1581-0
+00:15:14.504 --> 00:15:22.270
+<v Antonio Cisternino>And as you can see then you can evaluate
+100 metres, 9.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1581-1
+00:15:22.270 --> 00:15:31.424
+<v Antonio Cisternino>558 seconds and and then you can say OK
+these distance over time.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1607-0
+00:15:32.144 --> 00:15:39.863
+<v Antonio Cisternino>And then in F sharp you got print FN
+which is inspired from C where you can</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1607-1
+00:15:39.863 --> 00:15:46.669
+<v Antonio Cisternino>provide the format string and the
+arguments and and that's it. OK,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1607-2
+00:15:46.669 --> 00:15:48.904
+<v Antonio Cisternino>so I mean fairly easy.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1639-0
+00:15:49.184 --> 00:15:57.164
+<v Antonio Cisternino>And so if if you evaluate,
+you will get the the the meters per</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1639-1
+00:15:57.164 --> 00:16:07.424
+<v Antonio Cisternino>second from using bolt in this example
+generated. OK, so I mean as I was saying.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1697-0
+00:16:07.424 --> 00:16:11.443
+<v Antonio Cisternino>Keep it there.
+So at some point we when we will talk</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1697-1
+00:16:11.443 --> 00:16:17.130
+<v Antonio Cisternino>about types, maybe this will pop up,
+but I'm pretty sure you can be easily</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1697-2
+00:16:17.130 --> 00:16:23.348
+<v Antonio Cisternino>convinced that you can statically check
+types and then get rid of the annotations</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1697-3
+00:16:23.348 --> 00:16:27.064
+<v Antonio Cisternino>so that at runtime you just get numbers.
+OK, so.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1722-0
+00:16:27.424 --> 00:16:33.121
+<v Antonio Cisternino>I'm confident that you will not be
+surprised by the fact that you can</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1722-1
+00:16:33.121 --> 00:16:39.633
+<v Antonio Cisternino>statically verify the text of the program
+to ensure that everything is behaving</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1722-2
+00:16:39.633 --> 00:16:41.424
+<v Antonio Cisternino>properly. OK, so if I.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1724-0
+00:16:43.464 --> 00:16:44.504
+<v Antonio Cisternino>Paste this.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1727-0
+00:16:46.104 --> 00:16:47.584
+<v Antonio Cisternino>In uh.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1747-0
+00:16:49.104 --> 00:16:56.625
+<v Antonio Cisternino>In the F sharp interactive,
+I get the evaluation with all the numbers,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1747-1
+00:16:56.625 --> 00:16:58.744
+<v Antonio Cisternino>of course now speed.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1762-0
+00:17:00.544 --> 00:17:06.341
+<v Antonio Cisternino>And be evaluated because in the abstract
+interactive all the environment is</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1762-1
+00:17:06.341 --> 00:17:07.104
+<v Antonio Cisternino>preserved.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1763-0
+00:17:09.944 --> 00:17:10.024
+<v Antonio Cisternino>Um.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1774-0
+00:17:17.144 --> 00:17:22.744
+<v Antonio Cisternino>OK, now let's move over. Can I zoom in?
+Yes.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1775-0
+00:17:23.824 --> 00:17:25.344
+<v Antonio Cisternino>And all.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1827-0
+00:17:27.424 --> 00:17:30.743
+<v Antonio Cisternino>First of all,
+this is not a course about F#,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1827-1
+00:17:30.743 --> 00:17:34.948
+<v Antonio Cisternino>so I will use F#.
+I will explain you the syntax which is</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1827-2
+00:17:34.948 --> 00:17:38.783
+<v Antonio Cisternino>relevant.
+If you have any question about the syntax</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1827-3
+00:17:38.783 --> 00:17:42.693
+<v Antonio Cisternino>I will use,
+but I mean this is advanced programming.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1827-4
+00:17:42.693 --> 00:17:46.824
+<v Antonio Cisternino>My goal is to showcase interesting
+programming buttons.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1844-0
+00:17:47.024 --> 00:17:55.878
+<v Antonio Cisternino>And elements of programming languages.
+Otherwise I mean it would become at first</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1844-1
+00:17:55.878 --> 00:18:01.344
+<v Antonio Cisternino>about many programming language which is
+not the.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1875-0
+00:18:02.304 --> 00:18:06.771
+<v Antonio Cisternino>The case,
+I will take the opportunity to start</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1875-1
+00:18:06.771 --> 00:18:12.855
+<v Antonio Cisternino>exploring a programming language that is
+likely you don't know,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1875-2
+00:18:12.855 --> 00:18:17.704
+<v Antonio Cisternino>so that you can start also witnessing the
+process.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1911-0
+00:18:17.984 --> 00:18:23.334
+<v Antonio Cisternino>Of how can I learn something about the
+programming language? I don't know.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1911-1
+00:18:23.334 --> 00:18:26.829
+<v Antonio Cisternino>I mean,
+I'm in trouble even in understanding the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1911-2
+00:18:26.829 --> 00:18:31.751
+<v Antonio Cisternino>syntax of the language. OK,
+so how many of you ever ever programming</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1911-3
+00:18:31.751 --> 00:18:33.464
+<v Antonio Cisternino>ML or or Ocaml or F# or?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1913-0
+00:18:34.784 --> 00:18:34.904
+<v Antonio Cisternino>OK.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1919-0
+00:18:37.424 --> 00:18:40.264
+<v Antonio Cisternino>That one is OK, so so.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1921-0
+00:18:44.024 --> 00:18:44.264
+<v Antonio Cisternino>No.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1929-0
+00:18:45.584 --> 00:18:48.344
+<v Antonio Cisternino>Any of you knows about curing?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1943-0
+00:18:50.184 --> 00:18:55.231
+<v Antonio Cisternino>And I'm curry.
+I see him knocking and I'm not attruding</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/1943-1
+00:18:55.231 --> 00:18:57.304
+<v Antonio Cisternino>you because you nodded.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2005-0
+00:18:58.744 --> 00:19:02.503
+<v Antonio Cisternino>So the first thing,
+so when you approach a programming</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2005-1
+00:19:02.503 --> 00:19:06.194
+<v Antonio Cisternino>language like this,
+so most of the class knows about,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2005-2
+00:19:06.194 --> 00:19:11.662
+<v Antonio Cisternino>so I won't exaggerate in in guessing.
+When you approach a programming language,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2005-3
+00:19:11.662 --> 00:19:16.241
+<v Antonio Cisternino>a new programming language,
+you have to understand whether it's we</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2005-4
+00:19:16.241 --> 00:19:18.224
+<v Antonio Cisternino>said whether it's a compiled.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2047-0
+00:19:18.304 --> 00:19:22.136
+<v Antonio Cisternino>Or interpreted. F# is a compiled language.
+In fact,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2047-1
+00:19:22.136 --> 00:19:26.337
+<v Antonio Cisternino>the F# interactive simply compiles and
+execute the line.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2047-2
+00:19:26.337 --> 00:19:31.938
+<v Antonio Cisternino>So in functional programming language,
+this is easy because in a functional</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2047-3
+00:19:31.938 --> 00:19:35.624
+<v Antonio Cisternino>programming language everything is an
+expression.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2091-0
+00:19:35.784 --> 00:19:40.125
+<v Antonio Cisternino>OK,
+and so functional programming languages</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2091-1
+00:19:40.125 --> 00:19:46.242
+<v Antonio Cisternino>are really easy to have an interactive
+execution environment,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2091-2
+00:19:46.242 --> 00:19:50.978
+<v Antonio Cisternino>even if they are compiled because there
+are no,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2091-3
+00:19:50.978 --> 00:19:55.024
+<v Antonio Cisternino>I mean in C you need to declare the main.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2132-0
+00:19:55.344 --> 00:20:01.591
+<v Antonio Cisternino>And the main is the entry point and then
+you have to go around and execute all the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2132-1
+00:20:01.591 --> 00:20:07.311
+<v Antonio Cisternino>functions in programming languages.
+In functional programming languages the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2132-2
+00:20:07.311 --> 00:20:13.408
+<v Antonio Cisternino>habit is everything is an expression.
+Then you have also the ability to declare,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2132-3
+00:20:13.408 --> 00:20:15.064
+<v Antonio Cisternino>give meaning to names.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2180-0
+00:20:15.264 --> 00:20:20.085
+<v Antonio Cisternino>But the whole nature of the language
+remains expression oriented.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2180-1
+00:20:20.085 --> 00:20:25.711
+<v Antonio Cisternino>And so typically you can evaluate the
+line by line or statement by statement</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2180-2
+00:20:25.711 --> 00:20:30.021
+<v Antonio Cisternino>without much problems.
+So something which is not true in C</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2180-3
+00:20:30.021 --> 00:20:34.624
+<v Antonio Cisternino>oriented programming languages where you
+have a lot of blocks.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2226-0
+00:20:34.784 --> 00:20:38.300
+<v Antonio Cisternino>If you want to properly execute for
+instance C#,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2226-1
+00:20:38.300 --> 00:20:43.682
+<v Antonio Cisternino>technically you should evaluate one file
+at a time because you you got the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2226-2
+00:20:43.682 --> 00:20:47.055
+<v Antonio Cisternino>namespace statement which contains
+everything.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2226-3
+00:20:47.055 --> 00:20:50.787
+<v Antonio Cisternino>So if you start evaluating only the
+classes inside,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2226-4
+00:20:50.787 --> 00:20:54.304
+<v Antonio Cisternino>technically it's not equivalent because
+you are.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2243-0
+00:20:54.624 --> 00:21:01.810
+<v Antonio Cisternino>Skipping the namespace block which is
+enclosing all the file. OK,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2243-1
+00:21:01.810 --> 00:21:08.344
+<v Antonio Cisternino>so first of all it is compiled even
+though I can write let.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2244-0
+00:21:09.664 --> 00:21:09.704
+<v Antonio Cisternino>Uh.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2274-0
+00:21:11.784 --> 00:21:18.378
+<v Antonio Cisternino>And is equal 1 + 2 in the interactive
+column, column,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2274-1
+00:21:18.378 --> 00:21:27.904
+<v Antonio Cisternino>column is the end of the statement and so
+you ask for the evaluation. Here I.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2275-0
+00:21:27.944 --> 00:21:29.464
+<v Antonio Cisternino>Uh wrote uh uh.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2307-0
+00:21:32.104 --> 00:21:40.296
+<v Antonio Cisternino>Let N is equal 1 + 2 and by the fact that
+I assign the result of a sum of 2</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2307-1
+00:21:40.296 --> 00:21:46.441
+<v Antonio Cisternino>integers to N,
+the language inferred that in N has to be</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2307-2
+00:21:46.441 --> 00:21:47.304
+<v Antonio Cisternino>of type.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2343-0
+00:21:47.544 --> 00:21:51.731
+<v Antonio Cisternino>Integer.
+So this is now common in most of the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2343-1
+00:21:51.731 --> 00:21:56.282
+<v Antonio Cisternino>programming of static type programming
+languages.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2343-2
+00:21:56.282 --> 00:22:03.382
+<v Antonio Cisternino>The fact that we start using letter var
+name equal and the type of expression</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2343-3
+00:22:03.382 --> 00:22:07.024
+<v Antonio Cisternino>implicitly become the type of the value.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2366-0
+00:22:07.144 --> 00:22:17.770
+<v Antonio Cisternino>Table the type inference that had been
+introduced for the first time in ML.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2366-1
+00:22:17.770 --> 00:22:22.664
+<v Antonio Cisternino>It's much more complicated and the.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2402-0
+00:22:22.664 --> 00:22:29.925
+<v Antonio Cisternino>The language is able to resolve also
+non-trivial form of of inferences.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2402-1
+00:22:29.925 --> 00:22:38.093
+<v Antonio Cisternino>So we will get back to that later because
+I need to introduce a few other things</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2402-2
+00:22:38.093 --> 00:22:39.304
+<v Antonio Cisternino>before that.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2426-0
+00:22:41.544 --> 00:22:50.967
+<v Antonio Cisternino>One of the first things that unsettles
+the FR programmer in the beginning is the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2426-1
+00:22:50.967 --> 00:22:56.784
+<v Antonio Cisternino>fact that that you can define a function
+such as.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2449-0
+00:23:00.584 --> 00:23:08.570
+<v Antonio Cisternino>This and then say OK,
+let add X given X&amp;</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2449-1
+00:23:08.570 --> 00:23:16.024
+<v Antonio Cisternino>Y and the definition is X + y, but if you.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2478-0
+00:23:16.064 --> 00:23:23.536
+<v Antonio Cisternino>Was C# or Java or it will be like this
+name location,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2478-1
+00:23:23.536 --> 00:23:33.224
+<v Antonio Cisternino>but if I try to evaluate it I get an
+error. Many of you have already.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2496-0
+00:23:33.504 --> 00:23:44.744
+<v Antonio Cisternino>Use the ML so you know that the proper
+way to invoke is by saying at 1/2.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2517-0
+00:23:48.064 --> 00:23:57.598
+<v Antonio Cisternino>And the result is 3. First of all,
+anyone has an idea of why we can't use</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2517-1
+00:23:57.598 --> 00:23:59.144
+<v Antonio Cisternino>the phrases?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2519-0
+00:24:01.264 --> 00:24:02.344
+<v Antonio Cisternino>Why this?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2525-0
+00:24:04.304 --> 00:24:06.304
+<v Antonio Cisternino>Add 1-2 is not.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2574-0
+00:24:13.384 --> 00:24:18.410
+<v Antonio Cisternino>Right.
+So the reason is that brace where you use</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2574-1
+00:24:18.410 --> 00:24:24.257
+<v Antonio Cisternino>it. So first of all,
+the root of the language was lambda</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2574-2
+00:24:24.257 --> 00:24:32.464
+<v Antonio Cisternino>calculus and lambda calculus was from
+mathematics and the use was different in.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2604-0
+00:24:32.984 --> 00:24:38.817
+<v Antonio Cisternino>In things in mathematics,
+and so it was more natural than you may</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2604-1
+00:24:38.817 --> 00:24:44.031
+<v Antonio Cisternino>perceive today in AC oriented world.
+But the other reason,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2604-2
+00:24:44.031 --> 00:24:49.864
+<v Antonio Cisternino>and it's a practical one,
+is that the language supports the tuple</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2604-3
+00:24:49.864 --> 00:24:51.544
+<v Antonio Cisternino>types. So tuple is.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2605-0
+00:24:51.544 --> 00:24:51.624
+<v Antonio Cisternino>Um.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2610-0
+00:24:53.864 --> 00:24:57.704
+<v Antonio Cisternino>A multi field value.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2632-0
+00:24:59.144 --> 00:25:07.732
+<v Antonio Cisternino>There has no name because in a Java world
+you are using that every type has a name</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2632-1
+00:25:07.732 --> 00:25:08.664
+<v Antonio Cisternino>in in in.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2674-0
+00:25:09.864 --> 00:25:16.181
+<v Antonio Cisternino>In ML you can combine types and not only
+by inheritance which which is an</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2674-1
+00:25:16.181 --> 00:25:20.108
+<v Antonio Cisternino>operation.
+I have a type and the inheritance.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2674-2
+00:25:20.108 --> 00:25:25.230
+<v Antonio Cisternino>If you create a new type which inherits
+from the base type,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2674-3
+00:25:25.230 --> 00:25:28.304
+<v Antonio Cisternino>you are using a particular operator.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2706-0
+00:25:28.824 --> 00:25:37.172
+<v Antonio Cisternino>Of the types algebra which is the is F.
+So it's OK all the values of the derived</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2706-1
+00:25:37.172 --> 00:25:45.624
+<v Antonio Cisternino>class can be used where a value of the
+base class is expected. This is basically.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2730-0
+00:25:45.624 --> 00:25:52.034
+<v Antonio Cisternino>A type constructor. OK,
+type constructor is an operation that</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2730-1
+00:25:52.034 --> 00:26:00.513
+<v Antonio Cisternino>given a set of one or more basic types,
+returns you with a new type in the system</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2730-2
+00:26:00.513 --> 00:26:00.824
+<v Antonio Cisternino>in.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2733-0
+00:26:01.144 --> 00:26:03.544
+<v Antonio Cisternino>Uh, ML you have.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2762-0
+00:26:05.064 --> 00:26:09.913
+<v Antonio Cisternino>And it's expressed with the the star,
+the cross product essentially.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2762-1
+00:26:09.913 --> 00:26:13.217
+<v Antonio Cisternino>Because if you think when I say int,
+type int,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2762-2
+00:26:13.217 --> 00:26:17.224
+<v Antonio Cisternino>I'm I'm basically giving you a set,
+the set of integers.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2766-0
+00:26:20.944 --> 00:26:23.504
+<v Antonio Cisternino>Right. And so.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2809-0
+00:26:24.904 --> 00:26:30.535
+<v Antonio Cisternino>In mathematics,
+when you have a pair XY in the in the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2809-1
+00:26:30.535 --> 00:26:35.750
+<v Antonio Cisternino>Cartesian space, it's the cross product.
+In fact,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2809-2
+00:26:35.750 --> 00:26:43.989
+<v Antonio Cisternino>if you remember from the first year,
+the RN set is the Cartesian product of of</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2809-3
+00:26:43.989 --> 00:26:44.824
+<v Antonio Cisternino>N times.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2841-0
+00:26:44.904 --> 00:26:51.304
+<v Antonio Cisternino>Of the real numbers.
+So basically that is exactly that that</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2841-1
+00:26:51.304 --> 00:26:56.530
+<v Antonio Cisternino>operation.
+It's the cross product of all in this</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2841-2
+00:26:56.530 --> 00:27:03.784
+<v Antonio Cisternino>case of the integer values.
+Of course I can say 1A and in this case</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2841-3
+00:27:03.784 --> 00:27:04.744
+<v Antonio Cisternino>the type.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2844-0
+00:27:04.864 --> 00:27:06.264
+<v Antonio Cisternino>Oh yeah, I'm sorry, one.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2870-0
+00:27:09.544 --> 00:27:15.006
+<v Antonio Cisternino>A and in this case the type will be the
+cross.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2870-1
+00:27:15.006 --> 00:27:24.304
+<v Antonio Cisternino>So this particular pair is of type cross
+product at the integer and strings so.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2874-0
+00:27:25.464 --> 00:27:29.344
+<v Antonio Cisternino>Tattles were really popular during the
+70s.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2902-0
+00:27:30.824 --> 00:27:35.580
+<v Antonio Cisternino>How many of you,
+apart from having been enforced using ML</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2902-1
+00:27:35.580 --> 00:27:40.583
+<v Antonio Cisternino>in the second year,
+how many of you ever ever used tuples in</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2902-2
+00:27:40.583 --> 00:27:42.224
+<v Antonio Cisternino>in your programming?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2905-0
+00:27:45.944 --> 00:27:46.584
+<v Antonio Cisternino>Less.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2910-0
+00:27:49.584 --> 00:27:50.744
+<v Antonio Cisternino>So why are you using tuples?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2943-0
+00:27:53.624 --> 00:27:59.498
+<v Antonio Cisternino>Why? I mean why? Why you said OK,
+I have to create A2 dimensional point</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2943-1
+00:27:59.498 --> 00:28:04.802
+<v Antonio Cisternino>structure in my program.
+Why are you are using a pair instead of</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2943-2
+00:28:04.802 --> 00:28:07.984
+<v Antonio Cisternino>creating a class that equal point to D?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2950-0
+00:28:12.784 --> 00:28:15.424
+<v Antonio Cisternino>You can always create a class.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2991-0
+00:28:22.864 --> 00:28:30.151
+<v Antonio Cisternino>So what your colleague is suggesting.
+So basically when I write 1.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/2991-1
+00:28:30.151 --> 00:28:38.744
+<v Antonio Cisternino>2 I in general I if I am if I'm in C# or
+in Java I can say class public class.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3045-0
+00:28:38.864 --> 00:28:42.987
+<v Antonio Cisternino>Point and with two even public fields
+because I'm lazy,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3045-1
+00:28:42.987 --> 00:28:49.025
+<v Antonio Cisternino>I don't want to have accessors so that's
+OK and the 1st is of type int and 2nd is</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3045-2
+00:28:49.025 --> 00:28:53.002
+<v Antonio Cisternino>of type int.
+Then I want to create I I say new point.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3045-3
+00:28:53.002 --> 00:28:58.304
+<v Antonio Cisternino>I mean I'm not going to evaluate here,
+but I mean I will say like this.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3076-0
+00:28:58.744 --> 00:29:05.068
+<v Antonio Cisternino>The the point and then I I can pass it
+around and I can access like let's say if</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3076-1
+00:29:05.068 --> 00:29:11.236
+<v Antonio Cisternino>P is a point, I can say P dot X&amp;
+P dot Y are the two components if you see</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3076-2
+00:29:11.236 --> 00:29:14.984
+<v Antonio Cisternino>what I mean. OK,
+so in traditional programming.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3119-0
+00:29:17.264 --> 00:29:24.053
+<v Antonio Cisternino>Traditional in the 90s object where
+object orientation were dominant,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3119-1
+00:29:24.053 --> 00:29:32.104
+<v Antonio Cisternino>everything was transformed into create a
+class and then use the class dot notation</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3119-2
+00:29:32.104 --> 00:29:35.984
+<v Antonio Cisternino>to access the fields. OK if you want to.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3146-0
+00:29:36.104 --> 00:29:41.438
+<v Antonio Cisternino>Pass around your program some structure
+which which has multiple fields.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3146-1
+00:29:41.438 --> 00:29:45.604
+<v Antonio Cisternino>You simply create an object,
+you pass around the object,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3146-2
+00:29:45.604 --> 00:29:51.304
+<v Antonio Cisternino>and with that you get all the values you
+want passing around. That's correct.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3175-0
+00:29:51.304 --> 00:29:56.677
+<v Antonio Cisternino>Yeah, you have the records.
+Pascal you didn't have the objects and</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3175-1
+00:29:56.677 --> 00:30:02.290
+<v Antonio Cisternino>clutter records exactly from the same
+board exactly because the first</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3175-2
+00:30:02.290 --> 00:30:07.824
+<v Antonio Cisternino>programming language introducing at the
+early operation was similar.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3202-0
+00:30:08.904 --> 00:30:16.885
+<v Antonio Cisternino>With object, but for the 80s,
+Pascal introduced structures which was a</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3202-1
+00:30:16.885 --> 00:30:24.304
+<v Antonio Cisternino>similar concept without the methods and
+the only form of objects.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3239-0
+00:30:24.504 --> 00:30:29.731
+<v Antonio Cisternino>Was the model in in Pascal?
+There was the idea that you have a</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3239-1
+00:30:29.731 --> 00:30:36.618
+<v Antonio Cisternino>private state in the model before having
+full object orientation. But in any case,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3239-2
+00:30:36.618 --> 00:30:40.104
+<v Antonio Cisternino>what your colleague was trying to stay is.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3247-0
+00:30:40.184 --> 00:30:44.864
+<v Antonio Cisternino>A name in your programming language is
+expensive.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3258-0
+00:30:46.344 --> 00:30:50.144
+<v Antonio Cisternino>It's a a notion that is difficult to
+quantify.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3296-0
+00:30:53.464 --> 00:30:59.514
+<v Antonio Cisternino>But if you think of software engineering
+of the program,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3296-1
+00:30:59.514 --> 00:31:06.096
+<v Antonio Cisternino>every name has to be documented,
+has to be defined somewhere.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3296-2
+00:31:06.096 --> 00:31:12.784
+<v Antonio Cisternino>You have to write the meaning of every
+single field, etcetera.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3335-0
+00:31:14.224 --> 00:31:19.455
+<v Antonio Cisternino>So when you said that it's too heavy,
+you will basically say come on,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3335-1
+00:31:19.455 --> 00:31:24.164
+<v Antonio Cisternino>I I just need a pairs of integer.
+Why should I define a class?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3335-2
+00:31:24.164 --> 00:31:28.424
+<v Antonio Cisternino>And by the way,
+if I define a class I should name point.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3373-0
+00:31:29.424 --> 00:31:36.030
+<v Antonio Cisternino>If I want to create a point,
+then I need another pair structure with</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3373-1
+00:31:36.030 --> 00:31:41.488
+<v Antonio Cisternino>two integer fields,
+but I can't reuse point type because</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3373-2
+00:31:41.488 --> 00:31:47.904
+<v Antonio Cisternino>point is point is not something else.
+I don't want to label point.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3401-0
+00:31:48.064 --> 00:31:53.011
+<v Antonio Cisternino>Something else.
+And so when I give the name to the class,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3401-1
+00:31:53.011 --> 00:32:00.092
+<v Antonio Cisternino>I'm committing to a particular semantics
+and with names it's difficult to say this</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3401-2
+00:32:00.092 --> 00:32:04.784
+<v Antonio Cisternino>is this is just a pair of two integers.
+OK, so tuples.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3442-0
+00:32:05.904 --> 00:32:14.887
+<v Antonio Cisternino>This great ability to represent just a
+pair of integers or a pair of something</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3442-1
+00:32:14.887 --> 00:32:20.913
+<v Antonio Cisternino>or a triple.
+Of course you can go on and on and this</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3442-2
+00:32:20.913 --> 00:32:23.984
+<v Antonio Cisternino>is a triple of integers or.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3485-0
+00:32:24.464 --> 00:32:30.122
+<v Antonio Cisternino>Let's move out from 2 integers and a
+float, et cetera, et cetera. OK,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3485-1
+00:32:30.122 --> 00:32:36.347
+<v Antonio Cisternino>so ML in this respect was a first,
+one of the first in introducing this idea</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3485-2
+00:32:36.347 --> 00:32:42.976
+<v Antonio Cisternino>of tuples that were really natural given
+the mathematical root of the programming</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3485-3
+00:32:42.976 --> 00:32:43.704
+<v Antonio Cisternino>language.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3515-0
+00:32:43.824 --> 00:32:47.841
+<v Antonio Cisternino>Because in mathematics this is fairly
+natural.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3515-1
+00:32:47.841 --> 00:32:51.859
+<v Antonio Cisternino>It's just the cross product of sets of
+values.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3515-2
+00:32:51.859 --> 00:32:58.784
+<v Antonio Cisternino>And I mean it's OK Now the problem is
+that if I have a point, I can say P dot X.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3524-0
+00:32:59.784 --> 00:33:05.944
+<v Antonio Cisternino>Or P dot Y and I can refer to the single.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3530-0
+00:33:06.784 --> 00:33:09.624
+<v Antonio Cisternino>Fields. Um, so let me give a.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3560-0
+00:33:12.384 --> 00:33:18.312
+<v Antonio Cisternino>One point. Oh,
+in functional programming languages.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3560-1
+00:33:18.312 --> 00:33:26.178
+<v Antonio Cisternino>So in the standard programming language,
+when you invoke a function,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3560-2
+00:33:26.178 --> 00:33:28.344
+<v Antonio Cisternino>you get the result.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3602-0
+00:33:29.584 --> 00:33:33.125
+<v Antonio Cisternino>OK,
+what if you need several vendors of the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3602-1
+00:33:33.125 --> 00:33:38.519
+<v Antonio Cisternino>result of the function? OK,
+there could be random situations where</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3602-2
+00:33:38.519 --> 00:33:43.026
+<v Antonio Cisternino>you need this,
+then either you need an object with with</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3602-3
+00:33:43.026 --> 00:33:47.373
+<v Antonio Cisternino>the etcetera,
+or in several languages you can exploit</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3602-4
+00:33:47.373 --> 00:33:49.064
+<v Antonio Cisternino>the global variables.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3644-0
+00:33:49.424 --> 00:33:54.326
+<v Antonio Cisternino>Or set effects of the function. OK,
+the function of the tags the value,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3644-1
+00:33:54.326 --> 00:33:59.093
+<v Antonio Cisternino>but also sets some global variable which
+is accessible by the caller.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3644-2
+00:33:59.093 --> 00:34:02.974
+<v Antonio Cisternino>In this way you can pass more information
+to the caller.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3644-3
+00:34:02.974 --> 00:34:07.264
+<v Antonio Cisternino>In function department this is not
+possible because functions.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3681-0
+00:34:07.584 --> 00:34:13.122
+<v Antonio Cisternino>Most of the clean functional programming
+languages functions are pure and not from</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3681-1
+00:34:13.122 --> 00:34:16.791
+<v Antonio Cisternino>a set of vector.
+Therefore the only way to return more</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3681-2
+00:34:16.791 --> 00:34:19.861
+<v Antonio Cisternino>than one value is to group them
+substructure.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3681-3
+00:34:19.861 --> 00:34:23.264
+<v Antonio Cisternino>So it is very natural to use status in
+the second.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3683-0
+00:34:24.984 --> 00:34:27.144
+<v Antonio Cisternino>Absolutely. Uh.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3724-0
+00:34:29.584 --> 00:34:33.208
+<v Antonio Cisternino>Now this will be a rather philosophical
+class,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3724-1
+00:34:33.208 --> 00:34:39.608
+<v Antonio Cisternino>so be prepared because I will try to push
+you in thinking about a lot about of the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3724-2
+00:34:39.608 --> 00:34:42.847
+<v Antonio Cisternino>syntax,
+which is something that I started</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3724-3
+00:34:42.847 --> 00:34:44.544
+<v Antonio Cisternino>introducing yesterday.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3761-0
+00:34:44.944 --> 00:34:49.658
+<v Antonio Cisternino>With respect to the interaction of
+different syntaxes,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3761-1
+00:34:49.658 --> 00:34:55.658
+<v Antonio Cisternino>because if you like tuples,
+tuples are not for free because if I type</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3761-2
+00:34:55.658 --> 00:34:59.429
+<v Antonio Cisternino>E dot,
+I mean we know that this language is</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3761-3
+00:34:59.429 --> 00:35:01.744
+<v Antonio Cisternino>compiled, statically typed.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3807-0
+00:35:01.744 --> 00:35:06.779
+<v Antonio Cisternino>Strongly typed with static coping and
+blah and blah,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3807-1
+00:35:06.779 --> 00:35:13.714
+<v Antonio Cisternino>and it's also high order and so because
+we know there is a.net language,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3807-2
+00:35:13.714 --> 00:35:20.744
+<v Antonio Cisternino>we know that the runtime is.net,
+so we know that everything is an object.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3817-0
+00:35:21.264 --> 00:35:25.944
+<v Antonio Cisternino>Because that is uh uh the the the runtime
+uh uh core value so um.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3848-0
+00:35:28.744 --> 00:35:33.841
+<v Antonio Cisternino>By accident,
+if you type in dot tab in the common line</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3848-1
+00:35:33.841 --> 00:35:41.256
+<v Antonio Cisternino>you you got a nice completion and so as
+you can see you have get type to string</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3848-2
+00:35:41.256 --> 00:35:43.944
+<v Antonio Cisternino>equals get ash code get type.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3888-0
+00:35:44.304 --> 00:35:50.428
+<v Antonio Cisternino>That's it. OK,
+so you have no fields to retrieve one of</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3888-1
+00:35:50.428 --> 00:35:56.990
+<v Antonio Cisternino>the two arguments,
+which makes sense because how can give a</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3888-2
+00:35:56.990 --> 00:36:03.224
+<v Antonio Cisternino>name which is OK for everyone to the 1st
+and to the 2nd?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3926-0
+00:36:03.984 --> 00:36:08.520
+<v Antonio Cisternino>Field.
+So the traditional in in F in ML is to</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3926-1
+00:36:08.520 --> 00:36:16.803
+<v Antonio Cisternino>have a function which say OK the first of
+P is 1 and then there is also sorry there</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3926-2
+00:36:16.803 --> 00:36:23.904
+<v Antonio Cisternino>is also a second of P which is the second
+value and of course there is.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3939-0
+00:36:23.984 --> 00:36:28.499
+<v Antonio Cisternino>3rd, 4th,
+I mean it would be an infinite number of</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3939-1
+00:36:28.499 --> 00:36:33.104
+<v Antonio Cisternino>function.
+So at some point there is the end and no.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3941-0
+00:36:35.504 --> 00:36:37.384
+<v Antonio Cisternino>You are the mic. I think that.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3946-0
+00:36:39.464 --> 00:36:44.104
+<v Antonio Cisternino>And no, I mean well, OK.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3971-0
+00:36:56.144 --> 00:37:10.824
+<v Antonio Cisternino>How I do I get the the the component of
+123?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3996-0
+00:37:17.984 --> 00:37:22.269
+<v Antonio Cisternino>I guess that's from the context that
+should guess that I'm meaning in in F</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3996-1
+00:37:22.269 --> 00:37:25.298
+<v Antonio Cisternino>sharp. OK,
+I don't remember the name of the function</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/3996-2
+00:37:25.298 --> 00:37:27.184
+<v Antonio Cisternino>because I don't use it that much.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4001-0
+00:37:31.744 --> 00:37:34.904
+<v Antonio Cisternino>Come on, I will see you soon.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4003-0
+00:37:37.224 --> 00:37:38.624
+<v Antonio Cisternino>That is point.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4018-0
+00:37:40.544 --> 00:37:51.624
+<v Antonio Cisternino>Is there a function beyond is so unfair
+first and SMD?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4030-0
+00:37:53.344 --> 00:37:58.744
+<v Antonio Cisternino>Like proof that no man remembers all the
+I mean I work it to the compiler.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4036-0
+00:38:00.904 --> 00:38:03.944
+<v Antonio Cisternino>Oh, there are no uh, OK.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4038-0
+00:38:05.144 --> 00:38:05.224
+<v Antonio Cisternino>O.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4075-0
+00:38:07.704 --> 00:38:11.794
+<v Antonio Cisternino>Apparently there is no. Oh,
+that's interesting.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4075-1
+00:38:11.794 --> 00:38:17.760
+<v Antonio Cisternino>And so maybe an answer is in a in ML,
+you know, in a camel and is no,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4075-2
+00:38:17.760 --> 00:38:22.789
+<v Antonio Cisternino>there is no port in in in F#.
+That's interesting, you see,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4075-3
+00:38:22.789 --> 00:38:24.664
+<v Antonio Cisternino>even mix the language.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4106-0
+00:38:24.944 --> 00:38:32.142
+<v Antonio Cisternino>Great, nice example. Having said that,
+the natural way to extract,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4106-1
+00:38:32.142 --> 00:38:40.414
+<v Antonio Cisternino>I mean you can, it will be really,
+really not that useful to have a function</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4106-2
+00:38:40.414 --> 00:38:41.704
+<v Antonio Cisternino>which takes.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4135-0
+00:38:41.984 --> 00:38:52.151
+<v Antonio Cisternino>A tuple value and the number of the field
+that is called array or structure. OK,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4135-1
+00:38:52.151 --> 00:38:57.424
+<v Antonio Cisternino>so the natural way which the I spoiled me.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4147-0
+00:38:58.304 --> 00:39:04.344
+<v Antonio Cisternino>Is to use a function of the language that
+is called pattern matching.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4158-0
+00:39:07.064 --> 00:39:12.744
+<v Antonio Cisternino>Again, pattern matching.
+So if I say let ABC.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4185-0
+00:39:14.064 --> 00:39:24.464
+<v Antonio Cisternino>Equal 123. Guess what?
+A evaluates to 1 to evaluate to two B.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4185-1
+00:39:24.464 --> 00:39:29.664
+<v Antonio Cisternino>Sorry evaluates to 2C23. So in.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4220-0
+00:39:29.904 --> 00:39:37.055
+<v Antonio Cisternino>Pattern matching basically is a very nice
+feature that was introduced and now is</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4220-1
+00:39:37.055 --> 00:39:42.970
+<v Antonio Cisternino>available for sure in C#,
+but I think it's been used also in other</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4220-2
+00:39:42.970 --> 00:39:46.944
+<v Antonio Cisternino>languages.
+Basically the idea is I give you.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4237-0
+00:39:47.824 --> 00:39:54.904
+<v Antonio Cisternino>I I know that the right side of my
+assignment as a a given structure.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4273-0
+00:39:56.864 --> 00:40:03.797
+<v Antonio Cisternino>In terms of a tuple and I pattern match
+by giving names one to the 1st and this</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4273-1
+00:40:03.797 --> 00:40:09.950
+<v Antonio Cisternino>can be very complicated in C#.
+This is the maximum you can get because</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4273-2
+00:40:09.950 --> 00:40:13.504
+<v Antonio Cisternino>tuples are available in the language but.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4274-0
+00:40:13.584 --> 00:40:13.824
+<v Antonio Cisternino>7.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4296-0
+00:40:14.704 --> 00:40:24.030
+<v Antonio Cisternino>Here you can you can you can go farther
+and say OK if I have a tuple of tuples</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4296-1
+00:40:24.030 --> 00:40:26.864
+<v Antonio Cisternino>which in fact is a tree.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4308-0
+00:40:31.584 --> 00:40:37.184
+<v Antonio Cisternino>And now the pattern matching becomes much
+more interesting because.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4339-0
+00:40:38.464 --> 00:40:44.267
+<v Antonio Cisternino>This tree has so the tuple has three
+elements. The first element is 1,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4339-1
+00:40:44.267 --> 00:40:49.253
+<v Antonio Cisternino>the second element is a tuple which
+contains 2 and string A,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4339-2
+00:40:49.253 --> 00:40:53.504
+<v Antonio Cisternino>and then there is the third element with
+this tree.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4380-0
+00:40:54.464 --> 00:41:01.302
+<v Antonio Cisternino>And here on the left I gave exactly the
+same structure and I gave name to all the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4380-1
+00:41:01.302 --> 00:41:05.971
+<v Antonio Cisternino>components and so I was able to extract
+all the values.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4380-2
+00:41:05.971 --> 00:41:12.392
+<v Antonio Cisternino>So pattern matching is very very powerful
+because it allows to decompose the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4380-3
+00:41:12.392 --> 00:41:14.144
+<v Antonio Cisternino>structure of a value.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4410-0
+00:41:14.304 --> 00:41:22.019
+<v Antonio Cisternino>Into its constituent by using the
+structure of the value, not names.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4410-1
+00:41:22.019 --> 00:41:29.064
+<v Antonio Cisternino>So if you like tuples for the reasons
+that we just introduced.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4430-0
+00:41:30.224 --> 00:41:37.364
+<v Antonio Cisternino>We all we also need a way to extract a
+single value out of tuples and the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4430-1
+00:41:37.364 --> 00:41:41.224
+<v Antonio Cisternino>pattern matching is the right way to do.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4431-0
+00:41:41.624 --> 00:41:41.864
+<v Antonio Cisternino>2.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4434-0
+00:41:42.944 --> 00:41:44.224
+<v Antonio Cisternino>Now um.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4442-0
+00:41:45.784 --> 00:41:48.424
+<v Antonio Cisternino>Sometimes I may be interested just in the.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4483-0
+00:41:50.424 --> 00:41:54.896
+<v Antonio Cisternino>Oh,
+in the second value of a type of a tuple</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4483-1
+00:41:54.896 --> 00:42:01.356
+<v Antonio Cisternino>or notice that here I can also pattern
+match in a different way.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4483-2
+00:42:01.356 --> 00:42:09.704
+<v Antonio Cisternino>I I mean to me a I'm interested in having
+the three component of the tuple, so ABC.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4530-0
+00:42:10.104 --> 00:42:15.315
+<v Antonio Cisternino>And in this case, B is a tuple,
+which is the second element,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4530-1
+00:42:15.315 --> 00:42:21.296
+<v Antonio Cisternino>which is the tuple of two and eight.
+I can even say you know what I'm</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4530-2
+00:42:21.296 --> 00:42:27.789
+<v Antonio Cisternino>interested only in the string. I mean,
+I know the structure because I'm the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4530-3
+00:42:27.789 --> 00:42:29.584
+<v Antonio Cisternino>programmer and I did.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4575-0
+00:42:29.664 --> 00:42:34.394
+<v Antonio Cisternino>Why should I give a name which we said
+that are expensive to maintain?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4575-1
+00:42:34.394 --> 00:42:37.658
+<v Antonio Cisternino>Since I'm interested only into the string
+field,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4575-2
+00:42:37.658 --> 00:42:40.723
+<v Antonio Cisternino>I can use the under score which basically
+is.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4575-3
+00:42:40.723 --> 00:42:46.319
+<v Antonio Cisternino>I'm not interested to give a name at this.
+I know that there is something there but</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4575-4
+00:42:46.319 --> 00:42:49.584
+<v Antonio Cisternino>I'm not interested to that and so if I
+evaluate.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4580-0
+00:42:50.304 --> 00:42:53.384
+<v Antonio Cisternino>Wait, I get the a string. OK, so.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4616-0
+00:42:54.304 --> 00:43:02.368
+<v Antonio Cisternino>Going back to the original point,
+F sharp is not using the brace syntax for</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4616-1
+00:43:02.368 --> 00:43:10.538
+<v Antonio Cisternino>function invocation because it was
+already been taken to express tuples. OK,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4616-2
+00:43:10.538 --> 00:43:12.024
+<v Antonio Cisternino>so if I write.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4626-0
+00:43:12.904 --> 00:43:21.064
+<v Antonio Cisternino>So notice I can write add XY equal X + y.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4639-0
+00:43:24.504 --> 00:43:31.544
+<v Antonio Cisternino>And in this case add how many argument
+have as the add function.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4656-0
+00:43:33.424 --> 00:43:40.784
+<v Antonio Cisternino>Only one which is a tuple and in fact if
+we look at the signature of the function.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4663-0
+00:43:42.904 --> 00:43:48.384
+<v Antonio Cisternino>Add is a function that takes int.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4669-0
+00:43:49.864 --> 00:43:53.304
+<v Antonio Cisternino>By int and returns int.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4721-0
+00:43:54.384 --> 00:43:59.992
+<v Antonio Cisternino>And the fact that I use X&amp;
+Y in this case technically is a pattern</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4721-1
+00:43:59.992 --> 00:44:05.758
+<v Antonio Cisternino>matching and say this function takes as
+input one value which is a pair.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4721-2
+00:44:05.758 --> 00:44:09.392
+<v Antonio Cisternino>The first component of the pair,
+I name it X,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4721-3
+00:44:09.392 --> 00:44:13.184
+<v Antonio Cisternino>the second component of the pair and name
+it Y.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4741-0
+00:44:13.584 --> 00:44:21.634
+<v Antonio Cisternino>And then I use that perfect flat odd XY
+we said is.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4741-1
+00:44:21.634 --> 00:44:26.744
+<v Antonio Cisternino>Let me rewrite here because it's.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4743-0
+00:44:27.904 --> 00:44:29.864
+<v Antonio Cisternino>Easier. Um.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4759-0
+00:44:30.944 --> 00:44:37.465
+<v Antonio Cisternino>Add XYX plus Y.
+In this case this function has two</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4759-1
+00:44:37.465 --> 00:44:38.744
+<v Antonio Cisternino>arguments.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4789-0
+00:44:40.384 --> 00:44:46.093
+<v Antonio Cisternino>But if you remember mathematical
+definition of a function,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4789-1
+00:44:46.093 --> 00:44:51.415
+<v Antonio Cisternino>functions in mathematics are defined in
+multiple ways.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4789-2
+00:44:51.415 --> 00:44:56.544
+<v Antonio Cisternino>You can even define functions in terms of
+relations.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4794-0
+00:44:56.984 --> 00:45:01.504
+<v Antonio Cisternino>Uh, certainly you can say.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4804-0
+00:45:03.144 --> 00:45:06.584
+<v Antonio Cisternino>Add is a function that if you give me an
+integer.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4819-0
+00:45:08.624 --> 00:45:15.464
+<v Antonio Cisternino>It returns a function which given another
+integer, it will return an integer.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4834-0
+00:45:21.664 --> 00:45:29.144
+<v Antonio Cisternino>This is interesting because I can define
+another function like this.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4837-0
+00:45:40.584 --> 00:45:40.664
+<v Antonio Cisternino>So.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4845-0
+00:45:45.464 --> 00:45:48.784
+<v Antonio Cisternino>What happens if I write in two?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4870-0
+00:45:50.784 --> 00:46:00.316
+<v Antonio Cisternino>I call the ink, so increment.
+Apart from having used the the ink name,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4870-1
+00:46:00.316 --> 00:46:06.224
+<v Antonio Cisternino>the point is that the syntax of ML
+allowed.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4892-0
+00:46:06.864 --> 00:46:12.639
+<v Antonio Cisternino>Everyone to specify arguments to a
+function from left to right,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4892-1
+00:46:12.639 --> 00:46:17.784
+<v Antonio Cisternino>one at a time. So the language tells you.
+You know what?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4923-0
+00:46:20.384 --> 00:46:28.323
+<v Antonio Cisternino>Given if you give me the first argument,
+I will give you back a function.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4923-1
+00:46:28.323 --> 00:46:36.584
+<v Antonio Cisternino>So when I write the add 1 to I can also
+write the same expression like this.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4927-0
+00:46:39.184 --> 00:46:40.824
+<v Antonio Cisternino>And this is strange.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4957-0
+00:46:44.544 --> 00:46:50.795
+<v Antonio Cisternino>So this phenomenon, this feature,
+this call it whatever you want it is</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4957-1
+00:46:50.795 --> 00:46:55.814
+<v Antonio Cisternino>known as curry.
+So that in the language all the function</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4957-2
+00:46:55.814 --> 00:46:58.984
+<v Antonio Cisternino>technically takes only one argument.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4964-0
+00:47:01.144 --> 00:47:05.984
+<v Antonio Cisternino>And this is possible because the language
+is.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4998-0
+00:47:07.184 --> 00:47:11.608
+<v Antonio Cisternino>So to speak,
+more I am better than being able to</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4998-1
+00:47:11.608 --> 00:47:16.664
+<v Antonio Cisternino>return a function in C.
+So because in this case you are</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/4998-2
+00:47:16.664 --> 00:47:22.984
+<v Antonio Cisternino>generating, so so to speak,
+a new function from an existing function.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5034-0
+00:47:23.464 --> 00:47:30.067
+<v Antonio Cisternino>So you are not returning a function which
+is a code block or a Lambda in JavaScript,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5034-1
+00:47:30.067 --> 00:47:36.204
+<v Antonio Cisternino>which is just a selector of function.
+You are given a function obtaining a new</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5034-2
+00:47:36.204 --> 00:47:36.904
+<v Antonio Cisternino>function.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5039-0
+00:47:38.704 --> 00:47:42.344
+<v Antonio Cisternino>Thanks to the curing ability.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5040-0
+00:47:44.864 --> 00:47:45.224
+<v Antonio Cisternino>Hm.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5071-0
+00:47:47.424 --> 00:47:55.218
+<v Antonio Cisternino>And this expression here exemplify
+exactly this because through the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5071-1
+00:47:55.218 --> 00:48:02.784
+<v Antonio Cisternino>parentheses I applied one which is the
+first argument the system.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5106-0
+00:48:02.864 --> 00:48:08.698
+<v Antonio Cisternino>So if I evaluate the one,
+I get a new function which as you can see</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5106-1
+00:48:08.698 --> 00:48:13.332
+<v Antonio Cisternino>gets an internal name because the
+compilers compiles,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5106-2
+00:48:13.332 --> 00:48:18.824
+<v Antonio Cisternino>obtain bytecode and prepares for the
+execution. So technically.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5138-0
+00:48:19.024 --> 00:48:24.264
+<v Antonio Cisternino>There are generated.
+There is a generated code behind this,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5138-1
+00:48:24.264 --> 00:48:30.552
+<v Antonio Cisternino>but nevertheless this function.
+So the result of evaluating one add one</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5138-2
+00:48:30.552 --> 00:48:34.744
+<v Antonio Cisternino>is a function that from int returns an
+integer.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5151-0
+00:48:35.024 --> 00:48:39.448
+<v Antonio Cisternino>So it's an operation that allows me,
+given any function,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5151-1
+00:48:39.448 --> 00:48:41.544
+<v Antonio Cisternino>to create another function.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5155-0
+00:48:47.624 --> 00:48:47.864
+<v Antonio Cisternino>OK.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5159-0
+00:48:50.944 --> 00:48:54.064
+<v Antonio Cisternino>Why this is useful?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5174-0
+00:48:55.384 --> 00:48:58.678
+<v Antonio Cisternino>Oh,
+there are a lot of programming patterns</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5174-1
+00:48:58.678 --> 00:49:01.224
+<v Antonio Cisternino>that benefit from the curring, so.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5199-0
+00:49:06.224 --> 00:49:13.295
+<v Antonio Cisternino>If you write a function, I don't know.
+Let me invent read DB.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5199-1
+00:49:13.295 --> 00:49:20.024
+<v Antonio Cisternino>You will require a connection and I don't
+know table name.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5201-0
+00:49:22.864 --> 00:49:23.384
+<v Antonio Cisternino>OK.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5203-0
+00:49:25.144 --> 00:49:25.224
+<v Antonio Cisternino>Um.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5221-0
+00:49:39.584 --> 00:49:46.624
+<v Antonio Cisternino>We will later explore the signature of
+function. Nevertheless, Read DB is a.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5266-0
+00:49:47.384 --> 00:49:53.965
+<v Antonio Cisternino>A function that takes 2 arguments and I'm
+conveying you by the name that I'm it's a</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5266-1
+00:49:53.965 --> 00:49:58.510
+<v Antonio Cisternino>function that is a DB.
+It requires a variable that is the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5266-2
+00:49:58.510 --> 00:50:05.013
+<v Antonio Cisternino>connection and then the name of the table.
+But when you work with a database it it</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5266-3
+00:50:05.013 --> 00:50:06.424
+<v Antonio Cisternino>is fairly natural.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5290-0
+00:50:06.704 --> 00:50:16.402
+<v Antonio Cisternino>To reuse the same connection ever and
+ever. So it is so natural to say OK,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5290-1
+00:50:16.402 --> 00:50:21.704
+<v Antonio Cisternino>let read table equal so table name equal.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5292-0
+00:50:22.024 --> 00:50:23.384
+<v Antonio Cisternino>Read DB.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5303-0
+00:50:26.664 --> 00:50:31.464
+<v Antonio Cisternino>Of a specific connection, I need that con.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5317-0
+00:50:35.344 --> 00:50:39.737
+<v Antonio Cisternino>A connection is likely to be a string or
+an object.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5317-1
+00:50:39.737 --> 00:50:42.864
+<v Antonio Cisternino>I'm using a string and so read table.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5325-0
+00:50:49.064 --> 00:50:55.504
+<v Antonio Cisternino>Um, table name equal read DB con.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5332-0
+00:51:04.464 --> 00:51:08.064
+<v Antonio Cisternino>So in in this way.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5341-0
+00:51:13.584 --> 00:51:17.984
+<v Antonio Cisternino>Readtable will work by assing the table
+name.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5347-0
+00:51:34.904 --> 00:51:34.944
+<v Antonio Cisternino>Oh.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5351-0
+00:51:40.864 --> 00:51:43.144
+<v Antonio Cisternino>OK, fair enough.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5353-0
+00:51:44.824 --> 00:51:45.184
+<v Antonio Cisternino>Thank.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5391-0
+00:51:46.184 --> 00:51:50.860
+<v Antonio Cisternino>The evaluation requires that I evaluate
+the full block in a single statement</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5391-1
+00:51:50.860 --> 00:51:54.018
+<v Antonio Cisternino>because otherwise the type inference will
+not work.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5391-2
+00:51:54.018 --> 00:51:58.754
+<v Antonio Cisternino>So given the the the single statement,
+the the compiler wasn't unable to type</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5391-3
+00:51:58.754 --> 00:52:01.184
+<v Antonio Cisternino>check everything yet and so gather that.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5433-0
+00:52:02.504 --> 00:52:07.725
+<v Antonio Cisternino>Given the fact that it it is a void
+function, it's OK.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5433-1
+00:52:07.725 --> 00:52:14.654
+<v Antonio Cisternino>Read table A basically says OK,
+I'm interested in reading the table name</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5433-2
+00:52:14.654 --> 00:52:22.344
+<v Antonio Cisternino>A and I'm in in my part of the code that
+I'm unaware that inside read table the.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5471-0
+00:52:22.424 --> 00:52:26.108
+<v Antonio Cisternino>Connection has been fixed by someone else.
+OK,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5471-1
+00:52:26.108 --> 00:52:32.457
+<v Antonio Cisternino>so in configuration this is a typical
+pattern that you use all around your code.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5471-2
+00:52:32.457 --> 00:52:38.571
+<v Antonio Cisternino>So basically you specify from left to
+right function to making a more general</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5471-3
+00:52:38.571 --> 00:52:41.864
+<v Antonio Cisternino>function down to a more specific function.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5495-0
+00:52:43.064 --> 00:52:52.451
+<v Antonio Cisternino>This is a a a trait, but as I was saying,
+we were saying everything in a</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5495-1
+00:52:52.451 --> 00:52:58.624
+<v Antonio Cisternino>PROGRAMMING language implies some every
+design.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5497-0
+00:52:59.344 --> 00:53:02.504
+<v Antonio Cisternino>Impose some uh.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5510-0
+00:53:03.664 --> 00:53:10.344
+<v Antonio Cisternino>Cost and some assumption. OK,
+so the price you have to pay is.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5512-0
+00:53:12.264 --> 00:53:12.784
+<v Antonio Cisternino>Like me.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5518-0
+00:53:26.664 --> 00:53:28.144
+<v Antonio Cisternino>One minute.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5521-0
+00:53:31.664 --> 00:53:32.144
+<v Antonio Cisternino>Times.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5522-0
+00:53:34.464 --> 00:53:34.664
+<v Antonio Cisternino>Alright.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5528-0
+00:53:38.224 --> 00:53:39.304
+<v Antonio Cisternino>Yeah, mine's fine.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5550-0
+00:53:42.104 --> 00:53:48.909
+<v Antonio Cisternino>So whenever I define a function,
+the cost I have to pay is that I I never</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5550-1
+00:53:48.909 --> 00:53:51.024
+<v Antonio Cisternino>will get unless I want.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5596-0
+00:53:52.504 --> 00:53:58.091
+<v Antonio Cisternino>A fixed number of arguments.
+In that case I can use a tuple as we we</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5596-1
+00:53:58.091 --> 00:54:04.084
+<v Antonio Cisternino>shown at some point using that case and
+say this function takes exactly 1</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5596-2
+00:54:04.084 --> 00:54:10.644
+<v Antonio Cisternino>argument and this argument is a tuple.
+Otherwise you have to live with this idea</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5596-3
+00:54:10.644 --> 00:54:12.264
+<v Antonio Cisternino>that function takes.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5630-0
+00:54:12.264 --> 00:54:17.601
+<v Antonio Cisternino>Are unary in the sense that they take
+always one argument,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5630-1
+00:54:17.601 --> 00:54:24.928
+<v Antonio Cisternino>and if you specify multiple arguments,
+basically it is a function that takes one</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5630-2
+00:54:24.928 --> 00:54:31.984
+<v Antonio Cisternino>argument gives you back another function
+with the remaining arguments to fix.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5635-0
+00:54:37.704 --> 00:54:39.824
+<v Antonio Cisternino>Any questions?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5641-0
+00:54:45.384 --> 00:54:47.184
+<v Antonio Cisternino>OK, at some point I.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5644-0
+00:54:49.824 --> 00:54:50.864
+<v Antonio Cisternino>Define the.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5653-0
+00:54:54.104 --> 00:54:59.584
+<v Antonio Cisternino>The Readb function with two arguments and.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5660-0
+00:55:02.224 --> 00:55:05.584
+<v Antonio Cisternino>Honey, I've got an interesting signature.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5696-0
+00:55:08.144 --> 00:55:14.165
+<v Antonio Cisternino>So unit is like void because I didn't
+want to specify the body,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5696-1
+00:55:14.165 --> 00:55:21.787
+<v Antonio Cisternino>so I returned the empty expression and
+this other special value which is unit no</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5696-2
+00:55:21.787 --> 00:55:24.704
+<v Antonio Cisternino>value. OK, it's like void in C.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5698-0
+00:55:25.984 --> 00:55:28.584
+<v Antonio Cisternino>So this last, it's easy.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5699-0
+00:55:30.144 --> 00:55:30.224
+<v Antonio Cisternino>Um.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5712-0
+00:55:32.104 --> 00:55:37.744
+<v Antonio Cisternino>The first argument on has been labeled as
+stick A.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5718-0
+00:55:39.984 --> 00:55:46.864
+<v Antonio Cisternino>You know that this is a generic function.
+Why?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5724-0
+00:55:54.984 --> 00:55:59.024
+<v Antonio Cisternino>I I saw a lot of hands.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5739-0
+00:56:01.224 --> 00:56:05.984
+<v Antonio Cisternino>And what is the implication by the fact
+that no type has been specified?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5744-0
+00:56:15.144 --> 00:56:16.304
+<v Antonio Cisternino>Perfect so.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5759-0
+00:56:18.344 --> 00:56:26.584
+<v Antonio Cisternino>Let define this swap function that takes
+as input A&amp;B and returns B&amp;A.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5763-0
+00:56:30.024 --> 00:56:31.584
+<v Antonio Cisternino>Oops, sorry, new.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5770-0
+00:56:35.064 --> 00:56:36.744
+<v Antonio Cisternino>What is the type of this?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5784-0
+00:56:46.904 --> 00:56:51.577
+<v Antonio Cisternino>OK, you're right,
+but let me change the name.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5784-1
+00:56:51.577 --> 00:56:53.304
+<v Antonio Cisternino>Otherwise we get.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5785-0
+00:56:55.104 --> 00:56:55.424
+<v Antonio Cisternino>Ish.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5800-0
+00:56:56.904 --> 00:57:02.190
+<v Antonio Cisternino>BC OK,
+because ML names generic type from A,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5800-1
+00:57:02.190 --> 00:57:06.184
+<v Antonio Cisternino>so it would have been a nightmare.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5822-0
+00:57:07.544 --> 00:57:12.984
+<v Antonio Cisternino>So the type is.
+I take one argument which is a tuple of</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5822-1
+00:57:12.984 --> 00:57:15.024
+<v Antonio Cisternino>type A&amp;B because.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5831-0
+00:57:17.624 --> 00:57:22.344
+<v Antonio Cisternino>The language has no more information to
+say to tell.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5838-0
+00:57:23.024 --> 00:57:25.864
+<v Antonio Cisternino>From the user I did.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5870-0
+00:57:27.464 --> 00:57:34.319
+<v Antonio Cisternino>The type of CMD.
+So the only thing that you can say, OK,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5870-1
+00:57:34.319 --> 00:57:42.859
+<v Antonio Cisternino>you give me as long as TK type will be
+used where TK type is accepted.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5870-2
+00:57:42.859 --> 00:57:44.904
+<v Antonio Cisternino>For me it's fine.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5877-0
+00:57:48.264 --> 00:57:51.904
+<v Antonio Cisternino>And the same applies to B tick B.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5885-0
+00:57:54.504 --> 00:57:57.744
+<v Antonio Cisternino>This means that I can say swap.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5889-0
+00:57:59.184 --> 00:57:59.704
+<v Antonio Cisternino>1/2.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5893-0
+00:58:02.824 --> 00:58:04.544
+<v Antonio Cisternino>And I add to one.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5900-0
+00:58:07.544 --> 00:58:11.744
+<v Antonio Cisternino>Question.
+Do you think that this will work?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5923-0
+00:58:16.104 --> 00:58:19.737
+<v Antonio Cisternino>Yes,
+because the definition will bind the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5923-1
+00:58:19.737 --> 00:58:24.064
+<v Antonio Cisternino>string type to the TK and the int type to
+the TB.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5937-0
+00:58:25.384 --> 00:58:37.384
+<v Antonio Cisternino>And the output it will be in the string,
+so it works. Now this is interesting so.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5940-0
+00:58:41.824 --> 00:58:43.544
+<v Antonio Cisternino>It is like.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5974-0
+00:58:44.904 --> 00:58:52.723
+<v Antonio Cisternino>If I have defined 2 functions,
+one function from given int int gives me</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5974-1
+00:58:52.723 --> 00:59:01.304
+<v Antonio Cisternino>back a pair of int to give me back a pair
+of insert and another function that.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5983-0
+00:59:01.424 --> 00:59:05.904
+<v Antonio Cisternino>String in gives back apparel in string.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/5995-0
+00:59:07.784 --> 00:59:12.504
+<v Antonio Cisternino>So technically I defined a class of
+functions.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6000-0
+00:59:15.624 --> 00:59:17.824
+<v Antonio Cisternino>That is a generic function.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6033-0
+00:59:18.904 --> 00:59:28.357
+<v Antonio Cisternino>And that is a specific form of typing
+that is known as parametric polymorphism.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6033-1
+00:59:28.357 --> 00:59:34.384
+<v Antonio Cisternino>So polymorphism in PROGRAMMING language
+refers to.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6062-0
+00:59:35.264 --> 00:59:43.737
+<v Antonio Cisternino>The ability of defining the semantic of
+something that may change its polymorph</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6062-1
+00:59:43.737 --> 00:59:50.304
+<v Antonio Cisternino>may change over time depending on how you
+use it inheritance.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6094-0
+00:59:50.664 --> 00:59:55.196
+<v Antonio Cisternino>Is the form of polymorphism that you know
+the best.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6094-1
+00:59:55.196 --> 00:59:59.031
+<v Antonio Cisternino>You know that wherever Class B is
+expected,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6094-2
+00:59:59.031 --> 01:00:04.522
+<v Antonio Cisternino>any instance of a class inherited by
+Class B will be accepted.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6094-3
+01:00:04.522 --> 01:00:07.224
+<v Antonio Cisternino>So you it is polymorph because.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6111-0
+01:00:07.944 --> 01:00:14.593
+<v Antonio Cisternino>You have uh uh elements of a direct class
+that can are using the as elements of the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6111-1
+01:00:14.593 --> 01:00:15.464
+<v Antonio Cisternino>base class.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6150-0
+01:00:16.904 --> 01:00:21.974
+<v Antonio Cisternino>Parametric polymorphism is another form
+of polymorphism,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6150-1
+01:00:21.974 --> 01:00:28.468
+<v Antonio Cisternino>and this is a way to look at it.
+But at the same time you can also think</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6150-2
+01:00:28.468 --> 01:00:33.984
+<v Antonio Cisternino>with the swap definition that I gave here
+I generate in fact.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6190-0
+01:00:34.624 --> 01:00:42.243
+<v Antonio Cisternino>An infinite number of functions because
+you have all the possible types as the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6190-1
+01:00:42.243 --> 01:00:47.065
+<v Antonio Cisternino>first type argument and the second type
+argument.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6190-2
+01:00:47.065 --> 01:00:53.624
+<v Antonio Cisternino>And so whenever I write swap with a pair
+of two types, technically.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6224-0
+01:00:54.024 --> 01:01:02.292
+<v Antonio Cisternino>It is like the compiler is generating a
+specific version of swap function to</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6224-1
+01:01:02.292 --> 01:01:07.124
+<v Antonio Cisternino>generate the result.
+So as a matter of fact,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6224-2
+01:01:07.124 --> 01:01:12.064
+<v Antonio Cisternino>when we when you use curing,
+you have a mean.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6256-0
+01:01:12.344 --> 01:01:17.729
+<v Antonio Cisternino>To take a function and create a new
+function which is not just if this then</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6256-1
+01:01:17.729 --> 01:01:21.556
+<v Antonio Cisternino>this function,
+otherwise this other function possibly</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6256-2
+01:01:21.556 --> 01:01:25.312
+<v Antonio Cisternino>with a closure,
+which is something that we did until</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6256-3
+01:01:25.312 --> 01:01:27.864
+<v Antonio Cisternino>today, but we basically transformed.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6280-0
+01:01:28.024 --> 01:01:35.714
+<v Antonio Cisternino>A function by creating a new function
+with a different signature.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6280-1
+01:01:35.714 --> 01:01:41.424
+<v Antonio Cisternino>We refine the function when we define
+this warp.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6309-0
+01:01:42.824 --> 01:01:50.844
+<v Antonio Cisternino>It is like as if we did define a class of
+functions where I give you the schema and</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6309-1
+01:01:50.844 --> 01:01:57.624
+<v Antonio Cisternino>and every time you activate the function
+with a specific pair you get.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6316-0
+01:01:57.664 --> 01:02:03.504
+<v Antonio Cisternino>The particular function that works with
+the types that I used.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6354-0
+01:02:05.304 --> 01:02:12.178
+<v Antonio Cisternino>Without this mechanism,
+I I mean in in C this is not possible.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6354-1
+01:02:12.178 --> 01:02:21.016
+<v Antonio Cisternino>I mean in CI need to define swap int and
+swap string int and so on and so forth.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6354-2
+01:02:21.016 --> 01:02:22.544
+<v Antonio Cisternino>So it is like.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6361-0
+01:02:22.544 --> 01:02:26.704
+<v Antonio Cisternino>I'm generating a function that is not
+available.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6410-0
+01:02:28.304 --> 01:02:32.376
+<v Antonio Cisternino>I'm defining a class of functions with
+those are perfect.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6410-1
+01:02:32.376 --> 01:02:35.817
+<v Antonio Cisternino>These these mechanisms is perfect.
+For instance,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6410-2
+01:02:35.817 --> 01:02:41.084
+<v Antonio Cisternino>when you develop algorithms like sorting
+where I mean you don't really pay</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6410-3
+01:02:41.084 --> 01:02:45.368
+<v Antonio Cisternino>attention to the value,
+you want to just change the order of</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6410-4
+01:02:45.368 --> 01:02:47.264
+<v Antonio Cisternino>things, move things around.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6456-0
+01:02:49.064 --> 01:02:54.410
+<v Antonio Cisternino>Whatever the thing is,
+sometimes you may want to say, OK,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6456-1
+01:02:54.410 --> 01:03:01.599
+<v Antonio Cisternino>I need a number. OK, so not not now,
+but in the future we will see that there</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6456-2
+01:03:01.599 --> 01:03:08.144
+<v Antonio Cisternino>is in polymorphic parametric polymorphism.
+It is possible to indicate.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6487-0
+01:03:08.224 --> 01:03:15.481
+<v Antonio Cisternino>So type constraints. So you say OK,
+swope takes two value of this part with</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6487-1
+01:03:15.481 --> 01:03:20.733
+<v Antonio Cisternino>this constraint, not any type,
+but in the purest form.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6487-2
+01:03:20.733 --> 01:03:24.744
+<v Antonio Cisternino>So in terms of the high order programming.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6517-0
+01:03:26.144 --> 01:03:35.034
+<v Antonio Cisternino>The interesting thing is that you can
+basically create functions out of other</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6517-1
+01:03:35.034 --> 01:03:41.304
+<v Antonio Cisternino>function that are not just specifying A
+blocking line.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6547-0
+01:03:42.424 --> 01:03:48.892
+<v Antonio Cisternino>As you are using to if you're a
+JavaScript programmer or C#, Java, Java,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6547-1
+01:03:48.892 --> 01:03:53.942
+<v Antonio Cisternino>Java's Lambda, yes,
+except I mean in pretty much all the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6547-2
+01:03:53.942 --> 01:03:57.664
+<v Antonio Cisternino>programming languages we are using to see.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6583-0
+01:03:57.664 --> 01:04:04.242
+<v Antonio Cisternino>The arrow syntax for having lambdas and
+you think that that that that's it. No,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6583-1
+01:04:04.242 --> 01:04:09.998
+<v Antonio Cisternino>that's a very simple form of high order
+manipulation. You can divide,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6583-2
+01:04:09.998 --> 01:04:15.344
+<v Antonio Cisternino>you can devise operation that allows you
+to manipulate the code.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6586-0
+01:04:15.384 --> 01:04:16.744
+<v Antonio Cisternino>And then compile it.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6589-0
+01:04:18.424 --> 01:04:19.944
+<v Antonio Cisternino>And then compile it.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6598-0
+01:04:21.584 --> 01:04:25.024
+<v Antonio Cisternino>Because of course in JavaScript.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6608-0
+01:04:27.784 --> 01:04:30.664
+<v Antonio Cisternino>What do you do when you need the
+JavaScript interpreter?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6612-0
+01:04:33.424 --> 01:04:34.424
+<v Antonio Cisternino>12 in a browser.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6618-0
+01:04:36.664 --> 01:04:38.464
+<v Antonio Cisternino>You open the console.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6627-0
+01:04:40.464 --> 01:04:44.384
+<v Antonio Cisternino>And you have a JavaScript interpreter.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6640-0
+01:04:46.104 --> 01:04:51.864
+<v Antonio Cisternino>In JavaScript I can do something similar
+because I can always say.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6647-0
+01:04:52.944 --> 01:04:56.784
+<v Antonio Cisternino>Eval 1 + 2.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6682-0
+01:05:05.184 --> 01:05:09.009
+<v Antonio Cisternino>OK,
+I deserve that it is blocking inside the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6682-1
+01:05:09.009 --> 01:05:14.874
+<v Antonio Cisternino>browser for security reason.
+But I mean in in interpreted languages,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6682-2
+01:05:14.874 --> 01:05:20.144
+<v Antonio Cisternino>typically you have a beautiful function
+which is called eval.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6700-0
+01:05:20.864 --> 01:05:29.762
+<v Antonio Cisternino>Eval takes as input a string and you get
+as a result the evaluation of that string.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6700-1
+01:05:29.762 --> 01:05:30.504
+<v Antonio Cisternino>OK, so.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6742-0
+01:05:33.344 --> 01:05:38.019
+<v Antonio Cisternino>If I can evaluate a string,
+I can define a function so I can generate</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6742-1
+01:05:38.019 --> 01:05:41.225
+<v Antonio Cisternino>the string with the definition of the
+function,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6742-2
+01:05:41.225 --> 01:05:46.635
+<v Antonio Cisternino>which is an arbitrary function definition.
+I evaluate and the result will be the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6742-3
+01:05:46.635 --> 01:05:47.704
+<v Antonio Cisternino>function. OK so.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6780-0
+01:05:48.384 --> 01:05:53.043
+<v Antonio Cisternino>In interpreted languages,
+many of the things that I'm discussing</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6780-1
+01:05:53.043 --> 01:05:56.484
+<v Antonio Cisternino>right now,
+and if I'm not part of the language,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6780-2
+01:05:56.484 --> 01:06:00.498
+<v Antonio Cisternino>you can work around,
+you can generate the string of the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6780-3
+01:06:00.498 --> 01:06:04.584
+<v Antonio Cisternino>program and evaluate,
+and you get whatever you want, OK.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6811-0
+01:06:05.024 --> 01:06:09.571
+<v Antonio Cisternino>Of course it's not type safe in any
+possible way.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6811-1
+01:06:09.571 --> 01:06:15.028
+<v Antonio Cisternino>You may introduce syntax errors,
+semantics error, etcetera.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6811-2
+01:06:15.028 --> 01:06:19.211
+<v Antonio Cisternino>So in the higher order programming
+languages,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6811-3
+01:06:19.211 --> 01:06:23.304
+<v Antonio Cisternino>compiled higher order programming
+languages.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6826-0
+01:06:23.824 --> 01:06:31.744
+<v Antonio Cisternino>Research is looking for operation that
+can be implemented in an efficient way.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6840-0
+01:06:32.384 --> 01:06:40.344
+<v Antonio Cisternino>So the operations such as curing,
+such as generics, functions, etc.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6871-0
+01:06:41.664 --> 01:06:49.308
+<v Antonio Cisternino>Are there and you can use them being sure
+that they can be compiled quite</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6871-1
+01:06:49.308 --> 01:06:54.887
+<v Antonio Cisternino>efficiently,
+so the resulting code will be as fast as</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6871-2
+01:06:54.887 --> 01:06:56.024
+<v Antonio Cisternino>AC code or.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6875-0
+01:06:57.104 --> 01:06:59.504
+<v Antonio Cisternino>Other programming language code.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6880-0
+01:07:08.944 --> 01:07:09.664
+<v Antonio Cisternino>Any questions?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6909-0
+01:07:13.944 --> 01:07:21.202
+<v Antonio Cisternino>So ML was called ML,
+which stands for Meta language because</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6909-1
+01:07:21.202 --> 01:07:28.824
+<v Antonio Cisternino>basically it allowed to twist the
+programming language syntax.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6913-0
+01:07:29.104 --> 01:07:33.624
+<v Antonio Cisternino>And semantics by.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6954-0
+01:07:34.944 --> 01:07:38.746
+<v Antonio Cisternino>Using specific operators and not just say
+OK,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6954-1
+01:07:38.746 --> 01:07:43.624
+<v Antonio Cisternino>generate the string with the ML program
+and then evaluate.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6954-2
+01:07:43.624 --> 01:07:50.072
+<v Antonio Cisternino>You can basically change the semantics by
+using a number of mechanisms in the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6954-3
+01:07:50.072 --> 01:07:52.304
+<v Antonio Cisternino>language. One of these are.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6958-0
+01:07:52.704 --> 01:07:55.144
+<v Antonio Cisternino>Uh, curving and uh.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6966-0
+01:07:56.704 --> 01:08:01.024
+<v Antonio Cisternino>Uh, there are other mechanism.
+These are uh.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6971-0
+01:08:02.504 --> 01:08:05.224
+<v Antonio Cisternino>Still bound to.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6992-0
+01:08:07.064 --> 01:08:15.890
+<v Antonio Cisternino>Functional high order functional
+programming languages that are mechanisms</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/6992-1
+01:08:15.890 --> 01:08:19.304
+<v Antonio Cisternino>that allows you to basically.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7001-0
+01:08:20.504 --> 01:08:26.464
+<v Antonio Cisternino>Overload names in the language. Mm-hmm.
+So yesterday we.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7011-0
+01:08:27.104 --> 01:08:30.807
+<v Antonio Cisternino>Uh,
+I introduced something that now I can do</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7011-1
+01:08:30.807 --> 01:08:31.384
+<v Antonio Cisternino>better.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7013-0
+01:08:33.224 --> 01:08:35.064
+<v Antonio Cisternino>FX.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7041-0
+01:08:37.024 --> 01:08:42.354
+<v Antonio Cisternino>Now I can also show the typing of this
+thing.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7041-1
+01:08:42.354 --> 01:08:50.928
+<v Antonio Cisternino>So forward pipe as it is called this
+operator is a function that they can</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7041-2
+01:08:50.928 --> 01:08:51.624
+<v Antonio Cisternino>decay.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7073-0
+01:08:53.264 --> 01:09:01.008
+<v Antonio Cisternino>Generic type and a function that takes
+tick A and gives back tick B returns</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7073-1
+01:09:01.008 --> 01:09:07.734
+<v Antonio Cisternino>ticks tick B. If you remember,
+basically it's a way to invert the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7073-2
+01:09:07.734 --> 01:09:10.384
+<v Antonio Cisternino>function and the argument.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7091-0
+01:09:11.304 --> 01:09:14.337
+<v Antonio Cisternino>OK,
+so you specify instead of giving the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7091-1
+01:09:14.337 --> 01:09:18.628
+<v Antonio Cisternino>function name and then the argument,
+you do the opposite.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7091-2
+01:09:18.628 --> 01:09:21.144
+<v Antonio Cisternino>So I can do one for word pipe Inc.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7108-0
+01:09:30.544 --> 01:09:35.944
+<v Antonio Cisternino>And this is also this also witness how
+complicated can become to read.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7111-0
+01:09:37.864 --> 01:09:37.904
+<v Antonio Cisternino>O.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7113-0
+01:09:40.024 --> 01:09:41.384
+<v Antonio Cisternino>Attention.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7169-0
+01:09:45.104 --> 01:09:51.557
+<v Antonio Cisternino>The fact that you can use the forward
+pipe syntax, which yesterday recommended,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7169-1
+01:09:51.557 --> 01:09:58.091
+<v Antonio Cisternino>is a nice syntax because it can give this
+streaming left to right way of writing</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7169-2
+01:09:58.091 --> 01:10:03.980
+<v Antonio Cisternino>function application which is more
+natural to us at least in the Western</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7169-3
+01:10:03.980 --> 01:10:04.464
+<v Antonio Cisternino>world.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7204-0
+01:10:04.784 --> 01:10:07.885
+<v Antonio Cisternino>I will,
+I I don't know for Arabs if it's or in</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7204-1
+01:10:07.885 --> 01:10:12.042
+<v Antonio Cisternino>Japanese it's the same,
+but nevertheless we tend to read left,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7204-2
+01:10:12.042 --> 01:10:15.671
+<v Antonio Cisternino>left to right.
+So it is easier for us to read argument</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7204-3
+01:10:15.671 --> 01:10:20.224
+<v Antonio Cisternino>and then what you want to do with the
+argument and that's the thing.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7226-0
+01:10:20.424 --> 01:10:26.590
+<v Antonio Cisternino>Notice that this is a useful definition
+only for one reason,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7226-1
+01:10:26.590 --> 01:10:33.464
+<v Antonio Cisternino>because in F sharp YAML all the function
+have exactly one argument.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7237-0
+01:10:34.984 --> 01:10:41.104
+<v Antonio Cisternino>Otherwise the forward pipe operator will
+be impossible to define.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7264-0
+01:10:43.184 --> 01:10:48.989
+<v Antonio Cisternino>So I hope you start appreciating how all
+the element,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7264-1
+01:10:48.989 --> 01:10:55.224
+<v Antonio Cisternino>the syntax element and the design choice
+that are behind.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7310-0
+01:10:57.344 --> 01:11:02.469
+<v Antonio Cisternino>Like programming language design interact
+one with the other because this</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7310-1
+01:11:02.469 --> 01:11:08.148
+<v Antonio Cisternino>particular pattern is useful only if you
+have curry because only then you can say</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7310-2
+01:11:08.148 --> 01:11:13.481
+<v Antonio Cisternino>OK take if you have an argument and a
+function and apply the function to the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7310-3
+01:11:13.481 --> 01:11:16.944
+<v Antonio Cisternino>argument because all the function have
+exactly 1.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7342-0
+01:11:16.944 --> 01:11:21.377
+<v Antonio Cisternino>Otherwise,
+I will need a definition for every given</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7342-1
+01:11:21.377 --> 01:11:27.089
+<v Antonio Cisternino>a function with one argument,
+given a function with two arguments,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7342-2
+01:11:27.089 --> 01:11:32.801
+<v Antonio Cisternino>and so on and so and so forth. OK,
+so this is a typical example of</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7342-3
+01:11:32.801 --> 01:11:33.824
+<v Antonio Cisternino>interaction.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7354-0
+01:11:33.904 --> 01:11:41.944
+<v Antonio Cisternino>Uh of these Uh mechanics and of course
+this allow me to also to write ink.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7370-0
+01:11:45.624 --> 01:11:53.401
+<v Antonio Cisternino>And in this case I get 3 and so on
+because and of course this is if I want</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7370-1
+01:11:53.401 --> 01:11:54.024
+<v Antonio Cisternino>right.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7394-0
+01:11:57.984 --> 01:12:04.614
+<v Antonio Cisternino>Straighter that that's the same thing,
+but clearly for us it's easy to to to to</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7394-1
+01:12:04.614 --> 01:12:08.344
+<v Antonio Cisternino>be read the 1st way rather than the 2nd
+way.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7400-0
+01:12:09.344 --> 01:12:13.704
+<v Antonio Cisternino>This it it it is really more intuitive.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7402-0
+01:12:16.224 --> 01:12:16.344
+<v Antonio Cisternino>OK.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7439-0
+01:12:22.224 --> 01:12:31.261
+<v Antonio Cisternino>So high order function programming
+languages give you more than one way to</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7439-1
+01:12:31.261 --> 01:12:37.166
+<v Antonio Cisternino>manipulate high order values that are
+functions.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7439-2
+01:12:37.166 --> 01:12:41.384
+<v Antonio Cisternino>This is a form of meta programming.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7467-0
+01:12:41.584 --> 01:12:47.348
+<v Antonio Cisternino>Because in fact you are sort of
+generating a portion of your program</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7467-1
+01:12:47.348 --> 01:12:53.279
+<v Antonio Cisternino>because the function typically is
+declared and is defining the program</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7467-2
+01:12:53.279 --> 01:12:53.864
+<v Antonio Cisternino>itself.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7527-0
+01:12:55.384 --> 01:12:58.230
+<v Antonio Cisternino>OK,
+so the fact that you've got operators</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7527-1
+01:12:58.230 --> 01:13:02.838
+<v Antonio Cisternino>that allows you to manipulate the
+function, it's more than. I mean,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7527-2
+01:13:02.838 --> 01:13:08.395
+<v Antonio Cisternino>of course you do the same with integers,
+but that's a different thing because the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7527-3
+01:13:08.395 --> 01:13:13.680
+<v Antonio Cisternino>domain of integers is the final side of
+the language and your operator in the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7527-4
+01:13:13.680 --> 01:13:15.104
+<v Antonio Cisternino>language that allows.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7562-0
+01:13:15.184 --> 01:13:23.188
+<v Antonio Cisternino>To manipulated integers.
+But when I derive the increment function</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7562-1
+01:13:23.188 --> 01:13:31.556
+<v Antonio Cisternino>from the the add function,
+basically I generated the new function by</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7562-2
+01:13:31.556 --> 01:13:34.224
+<v Antonio Cisternino>using an existing one.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7594-0
+01:13:34.824 --> 01:13:38.950
+<v Antonio Cisternino>Dynamically and I even changed the number
+of arguments,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7594-1
+01:13:38.950 --> 01:13:44.846
+<v Antonio Cisternino>the additive of the of the function. OK,
+and this is possible mostly because of</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7594-2
+01:13:44.846 --> 01:13:49.784
+<v Antonio Cisternino>the in this case of the Lambda calculus
+nature of of the language.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7624-0
+01:13:50.304 --> 01:13:58.627
+<v Antonio Cisternino>So don't think moral of the story.
+Every story is a moral moral of the story.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7624-1
+01:13:58.627 --> 01:14:05.884
+<v Antonio Cisternino>Don't think that functions are all high
+order programming function.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7659-0
+01:14:06.384 --> 01:14:12.232
+<v Antonio Cisternino>I order programming languages are only
+those where the you can return a value</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7659-1
+01:14:12.232 --> 01:14:18.155
+<v Antonio Cisternino>from from a function because Pascal was
+able to return a procedure or function</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7659-2
+01:14:18.155 --> 01:14:22.504
+<v Antonio Cisternino>from another procedure or function,
+but that didn't make.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7697-0
+01:14:22.624 --> 01:14:29.727
+<v Antonio Cisternino>It a high order programming language.
+The same applies to C In C you can use</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7697-1
+01:14:29.727 --> 01:14:35.355
+<v Antonio Cisternino>the function pointers,
+but function pointer is not enough to</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7697-2
+01:14:35.355 --> 01:14:39.784
+<v Antonio Cisternino>qualify C as a high order programming
+language.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7749-0
+01:14:40.424 --> 01:14:47.199
+<v Antonio Cisternino>OK, then of course it's easier.
+I don't know if you have something to say</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7749-1
+01:14:47.199 --> 01:14:52.052
+<v Antonio Cisternino>around that,
+but I think it's easier to to tell what</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7749-2
+01:14:52.052 --> 01:14:59.011
+<v Antonio Cisternino>is not an I or different functional
+programming language from because there</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7749-3
+01:14:59.011 --> 01:14:59.744
+<v Antonio Cisternino>is this.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7789-0
+01:14:59.744 --> 01:15:00.224
+<v Antonio Cisternino>Common.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7799-0
+01:15:00.264 --> 01:15:04.558
+<v Antonio Cisternino>Is that you're able to manipulate
+function as values.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7799-1
+01:15:04.558 --> 01:15:09.011
+<v Antonio Cisternino>But if I look several functional
+programming languages,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7799-2
+01:15:09.011 --> 01:15:15.452
+<v Antonio Cisternino>the operation that you have to manipulate
+function values are very different and</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7799-3
+01:15:15.452 --> 01:15:20.144
+<v Antonio Cisternino>I'm not sure that I'm able to tell where
+is the threshold.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7842-0
+01:15:21.064 --> 01:15:26.950
+<v Antonio Cisternino>Because I mean to me it's easy to say C
+is not a functional programming language</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7842-1
+01:15:26.950 --> 01:15:32.764
+<v Antonio Cisternino>even though I can return function pointer.
+So it seems that that ability is not</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7842-2
+01:15:32.764 --> 01:15:36.179
+<v Antonio Cisternino>enough.
+I tell that JavaScript is a functional</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7842-3
+01:15:36.179 --> 01:15:40.104
+<v Antonio Cisternino>programming language because I can return
+a function.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7887-0
+01:15:40.304 --> 01:15:44.882
+<v Antonio Cisternino>That capture. So I have lexical closure.
+I didn't mention them,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7887-1
+01:15:44.882 --> 01:15:50.247
+<v Antonio Cisternino>but of course the lexical closures is
+part of the high of the programming.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7887-2
+01:15:50.247 --> 01:15:54.896
+<v Antonio Cisternino>But by thinking by now,
+I'm not sure that I'm able to tell where</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7887-3
+01:15:54.896 --> 01:15:59.045
+<v Antonio Cisternino>is the threshold.
+One aspect certainly is the possibility</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7887-4
+01:15:59.045 --> 01:15:59.904
+<v Antonio Cisternino>of defining.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7909-0
+01:15:59.904 --> 01:16:06.657
+<v Antonio Cisternino>Oh, yes, yeah. I mean, yeah, you're right.
+I mean,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7909-1
+01:16:06.657 --> 01:16:13.544
+<v Antonio Cisternino>lexica closure seems to be a good
+separation point.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7910-0
+01:16:14.744 --> 01:16:14.824
+<v Antonio Cisternino>Um.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7962-0
+01:16:16.144 --> 01:16:19.777
+<v Antonio Cisternino>Yeah,
+the lexical closure is the minimum viable</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7962-1
+01:16:19.777 --> 01:16:25.984
+<v Antonio Cisternino>set of features that defines A functional
+programming language. But I'm not sure.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7962-2
+01:16:25.984 --> 01:16:29.617
+<v Antonio Cisternino>I mean,
+I'm not sure that because these are the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7962-3
+01:16:29.617 --> 01:16:33.250
+<v Antonio Cisternino>operation that I've shown you that are
+from ML.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7962-4
+01:16:33.250 --> 01:16:35.824
+<v Antonio Cisternino>If you take ask and you get these.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7981-0
+01:16:36.024 --> 01:16:40.630
+<v Antonio Cisternino>But you also get others,
+and I'm pretty sure that there are some</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7981-1
+01:16:40.630 --> 01:16:46.371
+<v Antonio Cisternino>unknown to me programming languages that
+do different things even than that. OK,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/7981-2
+01:16:46.371 --> 01:16:46.584
+<v Antonio Cisternino>so.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8029-0
+01:16:49.984 --> 01:16:54.019
+<v Antonio Cisternino>Functions are a way to manipulate
+programs.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8029-1
+01:16:54.019 --> 01:17:01.357
+<v Antonio Cisternino>You can basically have a program that
+defines some way part of itself depending</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8029-2
+01:17:01.357 --> 01:17:06.585
+<v Antonio Cisternino>on the execution,
+because depending on the execution you</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8029-3
+01:17:06.585 --> 01:17:09.704
+<v Antonio Cisternino>can get a function or another and.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8054-0
+01:17:09.904 --> 01:17:13.427
+<v Antonio Cisternino>Then the behavior will change of your
+program.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8054-1
+01:17:13.427 --> 01:17:19.125
+<v Antonio Cisternino>So it's a form of metaprogramming to some
+extent because you manipulate the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8054-2
+01:17:19.125 --> 01:17:23.624
+<v Antonio Cisternino>language. In other programming languages,
+these things are.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8056-0
+01:17:25.464 --> 01:17:26.984
+<v Antonio Cisternino>Have consequences.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8062-0
+01:17:30.104 --> 01:17:32.544
+<v Antonio Cisternino>So uh, some one thing that is.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8073-0
+01:17:34.704 --> 01:17:40.944
+<v Antonio Cisternino>It's not for all high order programming
+languages, but it's.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8079-0
+01:17:41.984 --> 01:17:45.544
+<v Antonio Cisternino>And important to know is.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8096-0
+01:18:08.624 --> 01:18:14.731
+<v Antonio Cisternino>I'm not sure that I'm able to write any
+more abstract code in one line.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8096-1
+01:18:14.731 --> 01:18:15.664
+<v Antonio Cisternino>Let me try.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8101-0
+01:18:29.184 --> 01:18:30.024
+<v Antonio Cisternino>Yes, that's one.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8107-0
+01:18:42.024 --> 01:18:44.504
+<v Antonio Cisternino>Oh, no, no.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8111-0
+01:18:50.664 --> 01:18:52.704
+<v Antonio Cisternino>No, he's gone.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8114-0
+01:18:56.344 --> 01:18:57.064
+<v Antonio Cisternino>No.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8120-0
+01:19:19.064 --> 01:19:19.224
+<v Antonio Cisternino>Sorry.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8126-0
+01:19:20.464 --> 01:19:25.384
+<v Antonio Cisternino>So I did install that on.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8172-0
+01:19:27.264 --> 01:19:32.493
+<v Antonio Cisternino>You just recall that you're not IOI,
+which is the F track integration in just</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8172-1
+01:19:32.493 --> 01:19:35.912
+<v Antonio Cisternino>recorded,
+but I found out that I wasn't able to do</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8172-2
+01:19:35.912 --> 01:19:41.343
+<v Antonio Cisternino>to enroll the F track interactive and so
+that's the reason because I reverted to</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8172-3
+01:19:41.343 --> 01:19:43.824
+<v Antonio Cisternino>the terminal, but it's not that calm.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8175-0
+01:19:44.144 --> 01:19:46.464
+<v Antonio Cisternino>Oh, for the ball too.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8179-0
+01:19:48.704 --> 01:19:50.904
+<v Antonio Cisternino>No, that's not.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8182-0
+01:19:55.824 --> 01:19:56.744
+<v Antonio Cisternino>This one.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8184-0
+01:19:58.264 --> 01:19:58.704
+<v Antonio Cisternino>Thank you.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8192-0
+01:20:07.104 --> 01:20:10.744
+<v Antonio Cisternino>I don't know why, not from Anna.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8193-0
+01:20:14.264 --> 01:20:14.424
+<v Antonio Cisternino>Ha.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8196-0
+01:20:16.904 --> 01:20:17.064
+<v Antonio Cisternino>OK.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8201-0
+01:20:19.224 --> 01:20:21.544
+<v Antonio Cisternino>Give me one second there.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8203-0
+01:20:29.264 --> 01:20:29.464
+<v Antonio Cisternino>OK.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8207-0
+01:20:35.504 --> 01:20:36.024
+<v Antonio Cisternino>This video.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8216-0
+01:20:39.504 --> 01:20:42.904
+<v Antonio Cisternino>This was the code I was about to write OK.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8246-0
+01:20:45.184 --> 01:20:54.639
+<v Antonio Cisternino>So something that characterize some of
+the IO Gramming language is the ability</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8246-1
+01:20:54.639 --> 01:21:00.864
+<v Antonio Cisternino>to reason about specific data structures
+that have.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8248-0
+01:21:01.624 --> 01:21:03.104
+<v Antonio Cisternino>Particular.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8291-0
+01:21:04.064 --> 01:21:13.212
+<v Antonio Cisternino>Structure that I introduced the SMB when
+I was I was talking about the numeric and</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8291-1
+01:21:13.212 --> 01:21:22.140
+<v Antonio Cisternino>C Darper as an example of sophistication
+in the compilation of the dish Sugaring</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8291-2
+01:21:22.140 --> 01:21:23.904
+<v Antonio Cisternino>in the language.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8293-0
+01:21:24.184 --> 01:21:24.464
+<v Antonio Cisternino>OK.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8322-0
+01:21:26.144 --> 01:21:32.842
+<v Antonio Cisternino>But there was more than just the
+sophisticated form of the sugaring.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8322-1
+01:21:32.842 --> 01:21:40.705
+<v Antonio Cisternino>Yesterday I focused myself on the fact
+that the syntax of that particular amount</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8322-2
+01:21:40.705 --> 01:21:42.064
+<v Antonio Cisternino>of code of C#.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8358-0
+01:21:42.304 --> 01:21:48.590
+<v Antonio Cisternino>The the semantics of how the the
+semantics of that particular fragment of</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8358-1
+01:21:48.590 --> 01:21:53.177
+<v Antonio Cisternino>C# code that was given in terms of a
+class, etcetera.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8358-2
+01:21:53.177 --> 01:22:00.144
+<v Antonio Cisternino>But the concept that lies behind that is
+much more interesting and sophisticated.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8378-0
+01:22:00.304 --> 01:22:11.396
+<v Antonio Cisternino>Because basically it gives you the
+ability to express and reason and work</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8378-1
+01:22:11.396 --> 01:22:15.744
+<v Antonio Cisternino>with sequences, sequences or.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8380-0
+01:22:15.984 --> 01:22:17.744
+<v Antonio Cisternino>Frequencies or.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8388-0
+01:22:19.104 --> 01:22:22.864
+<v Antonio Cisternino>So in general I have a domain of values.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8438-0
+01:22:24.504 --> 01:22:31.540
+<v Antonio Cisternino>I can say OK, if you give me a sequence,
+I can operate on every element of the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8438-1
+01:22:31.540 --> 01:22:36.083
+<v Antonio Cisternino>sequence.
+I give you back a sequence so I can move</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8438-2
+01:22:36.083 --> 01:22:42.229
+<v Antonio Cisternino>from the domain of values.
+In this case of the sequence of integers,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8438-3
+01:22:42.229 --> 01:22:43.744
+<v Antonio Cisternino>I can manipulate.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8471-0
+01:22:44.184 --> 01:22:51.409
+<v Antonio Cisternino>Each integer and give you back a sequence.
+This is a typical form of programming.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8471-1
+01:22:51.409 --> 01:22:57.225
+<v Antonio Cisternino>So let's look at these.
+And I don't think that we will be able to</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8471-2
+01:22:57.225 --> 01:23:01.984
+<v Antonio Cisternino>dig into this syntax today,
+so we'll do it on Monday.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8504-0
+01:23:02.544 --> 01:23:10.117
+<v Antonio Cisternino>But let me introduce this and let's spend
+the the the final part of the the class</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8504-1
+01:23:10.117 --> 01:23:16.860
+<v Antonio Cisternino>in commenting first this syntax.
+Then we'll see how in F# and this is F#</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8504-2
+01:23:16.860 --> 01:23:17.784
+<v Antonio Cisternino>is not ML.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8506-0
+01:23:18.024 --> 01:23:20.984
+<v Antonio Cisternino>Uh, you can find the uh.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8518-0
+01:23:21.944 --> 01:23:27.544
+<v Antonio Cisternino>Multiple. Uh,
+you can personalize your syntax.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8521-0
+01:23:29.624 --> 01:23:31.544
+<v Antonio Cisternino>By changing.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8524-0
+01:23:32.904 --> 01:23:34.544
+<v Antonio Cisternino>The the label here OK.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8560-0
+01:23:36.744 --> 01:23:41.655
+<v Antonio Cisternino>Let's start with the sequences,
+which is an easy one.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8560-1
+01:23:41.655 --> 01:23:48.385
+<v Antonio Cisternino>The only thing that I want to like to
+point you out is that this is not a</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8560-2
+01:23:48.385 --> 01:23:54.024
+<v Antonio Cisternino>keyword. This is an object. OK,
+so the sequence object takes.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8597-0
+01:23:54.104 --> 01:23:59.475
+<v Antonio Cisternino>This argument which specify what you want
+to do with the sequence.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8597-1
+01:23:59.475 --> 01:24:05.168
+<v Antonio Cisternino>So you you are building a sequence.
+I didn't tell you at the beginning</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8597-2
+01:24:05.168 --> 01:24:11.502
+<v Antonio Cisternino>functional, Andrea told you. In fact,
+functional programming languages love to</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8597-3
+01:24:11.502 --> 01:24:12.144
+<v Antonio Cisternino>be pure.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8606-0
+01:24:12.264 --> 01:24:15.738
+<v Antonio Cisternino>So by default,
+whenever you you you introduce a name</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8606-1
+01:24:15.738 --> 01:24:16.984
+<v Antonio Cisternino>that is redominute.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8642-0
+01:24:18.904 --> 01:24:26.083
+<v Antonio Cisternino>And that made the really popular
+functional programming languages at the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8642-1
+01:24:26.083 --> 01:24:34.344
+<v Antonio Cisternino>end of the 80s when parallel programming
+became interesting because race condition.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8689-0
+01:24:34.424 --> 01:24:39.228
+<v Antonio Cisternino>And so mutable state,
+as Andrea was pointing out in the last</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8689-1
+01:24:39.228 --> 01:24:43.482
+<v Antonio Cisternino>Rust class,
+is due to the fact that the code can make</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8689-2
+01:24:43.482 --> 01:24:47.735
+<v Antonio Cisternino>into the memory.
+And so if you have multiple threads,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8689-3
+01:24:47.735 --> 01:24:52.304
+<v Antonio Cisternino>one on writing the same location and
+there is a conflict.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8740-0
+01:24:52.744 --> 01:24:58.954
+<v Antonio Cisternino>If everything is read only, guess what?
+No problem. Everything is read only.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8740-1
+01:24:58.954 --> 01:25:04.923
+<v Antonio Cisternino>You can go and write and write.
+And of course you use the definition of a</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8740-2
+01:25:04.923 --> 01:25:09.601
+<v Antonio Cisternino>name as the assignment.
+Or when you assign to a function,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8740-3
+01:25:09.601 --> 01:25:12.344
+<v Antonio Cisternino>you copy and you assign the value.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8783-0
+01:25:12.504 --> 01:25:16.145
+<v Antonio Cisternino>Of the actual arguments to the formal
+parameters,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8783-1
+01:25:16.145 --> 01:25:19.640
+<v Antonio Cisternino>and so you keep going by copying values
+around.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8783-2
+01:25:19.640 --> 01:25:24.957
+<v Antonio Cisternino>It is not really possible to do an
+interesting programming and efficient</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8783-3
+01:25:24.957 --> 01:25:28.743
+<v Antonio Cisternino>programming in a pure form.
+Mathematically you can,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8783-4
+01:25:28.743 --> 01:25:31.584
+<v Antonio Cisternino>but practically it's not really useful.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8807-0
+01:25:31.704 --> 01:25:38.096
+<v Antonio Cisternino>So the solution in some programming
+languages was OK.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8807-1
+01:25:38.096 --> 01:25:46.384
+<v Antonio Cisternino>I made it really difficult for you to
+have a mutable state, so in ML.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8846-0
+01:25:46.984 --> 01:25:52.267
+<v Antonio Cisternino>If you say let mutable then that that is
+a variable.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8846-1
+01:25:52.267 --> 01:25:57.949
+<v Antonio Cisternino>If you see simply say let X equal that is
+read only. OK,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8846-2
+01:25:57.949 --> 01:26:05.426
+<v Antonio Cisternino>so in this case I introduce A variable
+because I need to a counter so that</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8846-3
+01:26:05.426 --> 01:26:06.224
+<v Antonio Cisternino>mutable.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8873-0
+01:26:06.584 --> 01:26:14.712
+<v Antonio Cisternino>The alternative would have been read,
+but it's OK. So this is very similar,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8873-1
+01:26:14.712 --> 01:26:21.664
+<v Antonio Cisternino>not to say equivalent to what I wrote
+yesterday was true do ill.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8874-0
+01:26:22.344 --> 01:26:22.704
+<v Antonio Cisternino>It's.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8880-0
+01:26:25.544 --> 01:26:28.664
+<v Antonio Cisternino>It's it's incremented.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8884-0
+01:26:30.144 --> 01:26:31.904
+<v Antonio Cisternino>A voice through. OK, so.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8904-0
+01:26:35.304 --> 01:26:43.407
+<v Antonio Cisternino>This is not compiled into a fine state
+automata as the C# compiling fence,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8904-1
+01:26:43.407 --> 01:26:45.784
+<v Antonio Cisternino>actually the sequence.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8923-0
+01:26:47.824 --> 01:26:55.904
+<v Antonio Cisternino>Object as a fixed number of operands,
+typical of monadic expressions.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8962-0
+01:26:57.824 --> 01:27:04.662
+<v Antonio Cisternino>And so by implementing those,
+so this the compiler basically takes the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8962-1
+01:27:04.662 --> 01:27:11.983
+<v Antonio Cisternino>block and transforms the block into a
+number of operations in this sequence</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8962-2
+01:27:11.983 --> 01:27:14.584
+<v Antonio Cisternino>object that gives you back.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8976-0
+01:27:15.144 --> 01:27:27.744
+<v Antonio Cisternino>Basically we have to find the automata in
+this case. OK, so now I can say SEC take.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8977-0
+01:27:29.344 --> 01:27:29.384
+<v Antonio Cisternino>Uh.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8980-0
+01:27:32.904 --> 01:27:35.264
+<v Antonio Cisternino>Sorry and.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/8984-0
+01:27:36.784 --> 01:27:39.144
+<v Antonio Cisternino>So take Google.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9000-0
+01:27:44.184 --> 01:27:52.344
+<v Antonio Cisternino>Now we know that for Y operator N is a
+sequence of integers.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9023-0
+01:27:54.584 --> 01:28:00.673
+<v Antonio Cisternino>And I use a a function that is available
+in the module sequencer.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9023-1
+01:28:00.673 --> 01:28:06.024
+<v Antonio Cisternino>It allows me to extract the first two
+elements I can say.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9025-0
+01:28:08.904 --> 01:28:09.424
+<v Antonio Cisternino>The first.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9033-0
+01:28:10.904 --> 01:28:13.824
+<v Antonio Cisternino>1000 numbers and I can extract.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9036-0
+01:28:15.384 --> 01:28:17.944
+<v Antonio Cisternino>It's interesting, uh.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9041-0
+01:28:19.104 --> 01:28:21.344
+<v Antonio Cisternino>Also to see.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9061-0
+01:28:22.824 --> 01:28:31.048
+<v Antonio Cisternino>The the difference of syntaxes less I
+should have the notepad of yesterday</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9061-1
+01:28:31.048 --> 01:28:32.584
+<v Antonio Cisternino>class because.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9062-0
+01:28:34.904 --> 01:28:35.584
+<v Antonio Cisternino>I'm up.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9064-0
+01:28:41.384 --> 01:28:41.864
+<v Antonio Cisternino>Hmm.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9067-0
+01:28:43.504 --> 01:28:44.584
+<v Antonio Cisternino>They would have out.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9076-0
+01:28:50.864 --> 01:28:55.424
+<v Antonio Cisternino>It's not this. Uh, uh, OK, well,
+I've seen it.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9080-0
+01:28:59.744 --> 01:29:00.344
+<v Antonio Cisternino>So.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9105-0
+01:29:02.504 --> 01:29:09.524
+<v Antonio Cisternino>So for years I I've I've used the notepad
+because at every crash of my system all</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9105-1
+01:29:09.524 --> 01:29:12.864
+<v Antonio Cisternino>the notes were deleted and I was happy.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9110-0
+01:29:14.664 --> 01:29:18.184
+<v Antonio Cisternino>Then Microsoft introduced the auto saving
+notes.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9119-0
+01:29:19.944 --> 01:29:23.544
+<v Antonio Cisternino>I hate it. No, this is not. So this is.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9122-0
+01:29:29.824 --> 01:29:30.744
+<v Antonio Cisternino>Oh, sensitive.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9127-0
+01:29:35.384 --> 01:29:37.744
+<v Antonio Cisternino>This is not. This is not.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9173-0
+01:29:39.144 --> 01:29:44.463
+<v Antonio Cisternino>I don't remember where I where I wrote it
+out. No, sorry, it was in Chagikiti.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9173-1
+01:29:44.463 --> 01:29:49.446
+<v Antonio Cisternino>That's the reason because it's too
+complicated to find the the the place.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9173-2
+01:29:49.446 --> 01:29:53.755
+<v Antonio Cisternino>But I hope you remember how I did write
+the C part of the code.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9173-3
+01:29:53.755 --> 01:29:55.304
+<v Antonio Cisternino>It was if you remember.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9209-0
+01:29:55.544 --> 01:30:02.500
+<v Antonio Cisternino>I enumerable of the integer and and then
+the function and then the coding was like</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9209-1
+01:30:02.500 --> 01:30:07.864
+<v Antonio Cisternino>it was pretty similar,
+but the perception of the meaning of the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9209-2
+01:30:07.864 --> 01:30:13.144
+<v Antonio Cisternino>code it was very different because in
+what does it mean in C#?</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9237-0
+01:30:13.224 --> 01:30:20.767
+<v Antonio Cisternino>That a function returns an enumeration
+and then the enumeration is not an</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9237-1
+01:30:20.767 --> 01:30:26.067
+<v Antonio Cisternino>interface,
+so the result should be either something</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9237-2
+01:30:26.067 --> 01:30:29.024
+<v Antonio Cisternino>that generates an enumerable.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9283-0
+01:30:29.304 --> 01:30:32.508
+<v Antonio Cisternino>But it can't be the definition of
+denomination.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9283-1
+01:30:32.508 --> 01:30:35.914
+<v Antonio Cisternino>You need a a class which implements the
+interface.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9283-2
+01:30:35.914 --> 01:30:41.589
+<v Antonio Cisternino>So it was really creepy to read that code.
+I still remember the first time I did it.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9283-3
+01:30:41.589 --> 01:30:46.664
+<v Antonio Cisternino>I appreciate the the functionality,
+but I mean it was wrong to some extent.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9304-0
+01:30:46.664 --> 01:30:53.224
+<v Antonio Cisternino>It's much more natural to do this thing.
+Oh, by the way,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9304-1
+01:30:53.224 --> 01:30:59.784
+<v Antonio Cisternino>I forgot to stress the arrow assignment
+in mathematical.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9336-0
+01:31:00.624 --> 01:31:08.760
+<v Antonio Cisternino>Friendly programming languages is never
+done with equal. Equal is a comparison,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9336-1
+01:31:08.760 --> 01:31:14.963
+<v Antonio Cisternino>it's not assignment.
+It was C that imposed us the assignment</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9336-2
+01:31:14.963 --> 01:31:16.184
+<v Antonio Cisternino>using equal.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9354-0
+01:31:16.184 --> 01:31:22.149
+<v Antonio Cisternino>So here is X + 1 is assigned to it apart
+from that.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9354-1
+01:31:22.149 --> 01:31:26.624
+<v Antonio Cisternino>So the sequence as you can see defines.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9373-0
+01:31:27.744 --> 01:31:33.474
+<v Antonio Cisternino>If we need data structure,
+that's the main point that I didn't want</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9373-1
+01:31:33.474 --> 01:31:36.424
+<v Antonio Cisternino>to express it in the main meetings.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9413-0
+01:31:38.384 --> 01:31:45.200
+<v Antonio Cisternino>Because there is the while through and we
+learn that we can sort of suspend the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9413-1
+01:31:45.200 --> 01:31:49.374
+<v Antonio Cisternino>execution,
+return the value and then restart the</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9413-2
+01:31:49.374 --> 01:31:55.424
+<v Antonio Cisternino>execution. Why this is important?
+Because this allows us to represent.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9417-0
+01:31:55.904 --> 01:31:59.384
+<v Antonio Cisternino>An infinite data structure in our program.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9445-0
+01:32:02.984 --> 01:32:11.077
+<v Antonio Cisternino>Because N represents all the integer
+numbers and then it's up to me to unroll</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9445-1
+01:32:11.077 --> 01:32:16.784
+<v Antonio Cisternino>the sequence as much as I want.
+But if I ask for more.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9452-0
+01:32:22.424 --> 01:32:25.984
+<v Antonio Cisternino>1,000,000 OK, it's there.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9453-0
+01:32:26.024 --> 01:32:26.264
+<v Antonio Cisternino>Call.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9455-0
+01:32:27.264 --> 01:32:28.464
+<v Antonio Cisternino>I can use it.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9462-0
+01:32:30.144 --> 01:32:34.624
+<v Antonio Cisternino>And if I can.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9465-0
+01:32:41.864 --> 01:32:43.264
+<v Antonio Cisternino>And I can um.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9489-0
+01:32:45.504 --> 01:32:51.996
+<v Antonio Cisternino>Take the sequence,
+use the the sequence inside another</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9489-1
+01:32:51.996 --> 01:32:57.544
+<v Antonio Cisternino>sequence so I can define let B equal
+sequence.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9490-0
+01:32:59.424 --> 01:32:59.504
+<v Antonio Cisternino>Uh.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9493-0
+01:33:01.824 --> 01:33:02.104
+<v Antonio Cisternino>For each.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9496-0
+01:33:11.264 --> 01:33:11.504
+<v Antonio Cisternino>Hmm.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9499-0
+01:33:14.224 --> 01:33:15.264
+<v Antonio Cisternino>I'm not sure.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9503-0
+01:33:22.384 --> 01:33:25.384
+<v Antonio Cisternino>Uh, and in an.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9505-0
+01:33:29.264 --> 01:33:29.344
+<v Antonio Cisternino>Um.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9509-0
+01:33:32.144 --> 01:33:35.264
+<v Antonio Cisternino>Return to.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9512-0
+01:33:42.064 --> 01:33:42.104
+<v Antonio Cisternino>Uh.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9528-0
+01:33:59.864 --> 01:34:05.504
+<v Antonio Cisternino>It's too long since I really programmed F
+sharp and I you can see it.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9529-0
+01:34:06.944 --> 01:34:07.024
+<v Antonio Cisternino>Um.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9534-0
+01:34:19.784 --> 01:34:20.824
+<v Antonio Cisternino>Let me ask.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9542-0
+01:34:24.184 --> 01:34:26.984
+<v Antonio Cisternino>I was able to take the sun, obviously.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9553-0
+01:34:28.504 --> 01:34:33.424
+<v Antonio Cisternino>Or OK, no, there was a no, no parenthesis.
+You see, I'm.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9557-0
+01:34:36.904 --> 01:34:38.544
+<v Antonio Cisternino>Or an in an.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9560-0
+01:34:40.064 --> 01:34:41.024
+<v Antonio Cisternino>OK, do.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9561-0
+01:34:42.544 --> 01:34:42.584
+<v Antonio Cisternino>Oh.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9579-0
+01:34:45.944 --> 01:34:50.643
+<v Antonio Cisternino>No, this is not recorded.
+When you know too many languages,</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9579-1
+01:34:50.643 --> 01:34:55.264
+<v Antonio Cisternino>you tend to mix one and the other quite
+easily anyway, so.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9582-0
+01:34:58.504 --> 01:34:59.984
+<v Antonio Cisternino>I can um.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9599-0
+01:35:03.104 --> 01:35:09.823
+<v Antonio Cisternino>Enumerate the end sequence and return
+another sequence as part of the original</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9599-1
+01:35:09.823 --> 01:35:11.184
+<v Antonio Cisternino>sequence and so.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9621-0
+01:35:12.424 --> 01:35:20.720
+<v Antonio Cisternino>You you are able to define how to
+transform a sequence into another</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9621-1
+01:35:20.720 --> 01:35:22.184
+<v Antonio Cisternino>sequence by.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9632-0
+01:35:23.144 --> 01:35:29.584
+<v Antonio Cisternino>Processing every element in the sequence
+and return another sequent as a result.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9636-0
+01:35:32.184 --> 01:35:34.864
+<v Antonio Cisternino>Set bake 2.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9638-0
+01:35:38.624 --> 01:35:38.664
+<v Antonio Cisternino>I.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9658-0
+01:35:41.064 --> 01:35:48.236
+<v Antonio Cisternino>02 and twice. OK,
+so it's interesting because this object</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9658-1
+01:35:48.236 --> 01:35:54.544
+<v Antonio Cisternino>that would dig into on Monday the
+sequence object.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9672-0
+01:35:57.304 --> 01:36:03.284
+<v Antonio Cisternino>Is an object that basically allows me to
+manipulate the sequences and not just</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9672-1
+01:36:03.284 --> 01:36:04.344
+<v Antonio Cisternino>single values.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9703-0
+01:36:05.784 --> 01:36:11.422
+<v Antonio Cisternino>That's a feature that allows you to
+express complex notions such as infinite</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9703-1
+01:36:11.422 --> 01:36:15.596
+<v Antonio Cisternino>data structure,
+and you can even manipulate the infinite</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9703-2
+01:36:15.596 --> 01:36:19.184
+<v Antonio Cisternino>data structure through the statement
+operations.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9719-0
+01:36:23.584 --> 01:36:28.744
+<v Antonio Cisternino>And I think we're done for today.
+Have a nice weekend and see you on Monday.</v>
+
+da813415-6a0b-4837-85dc-54f77efefd8a/9720-0
+01:36:30.024 --> 01:36:30.144
+<v Antonio Cisternino>OK.</v>
