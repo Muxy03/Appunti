@@ -1,0 +1,4620 @@
+WEBVTT
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/15-0
+00:00:27.582 --> 00:00:27.622
+<v Antonio Cisternino>Oh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/18-0
+00:00:39.601 --> 00:00:41.561
+<v Antonio Cisternino>Yeah.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/19-0
+00:00:41.601 --> 00:00:41.801
+<v Antonio Cisternino>2.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/29-0
+00:01:25.041 --> 00:01:25.081
+<v Antonio Cisternino>Uh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/33-0
+00:01:38.281 --> 00:01:38.441
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/46-0
+00:02:04.281 --> 00:02:09.241
+<v Antonio Cisternino>OK, I just put it in a little bit here.
+Sorry.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/47-0
+00:02:11.161 --> 00:02:11.281
+<v Antonio Cisternino>But.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/50-0
+00:02:19.881 --> 00:02:20.121
+<v Antonio Cisternino>Right.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/52-0
+00:02:33.481 --> 00:02:33.601
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/64-0
+00:02:38.801 --> 00:02:47.081
+<v Antonio Cisternino>Today we start to have some exercise.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/70-0
+00:02:48.401 --> 00:02:49.881
+<v Antonio Cisternino>So first of all.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/71-0
+00:02:53.321 --> 00:02:53.801
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/78-0
+00:02:58.241 --> 00:03:03.681
+<v Antonio Cisternino>Oh, I shot. So first of all.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/92-0
+00:03:08.001 --> 00:03:16.470
+<v Antonio Cisternino>The information I already started at the
+end of the last class on Thursday,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/92-1
+00:03:16.470 --> 00:03:17.361
+<v Antonio Cisternino>so exam.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/121-0
+00:03:19.841 --> 00:03:27.226
+<v Antonio Cisternino>Project and oral exam.
+So oral exam will be oral exam. OK,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/121-1
+00:03:27.226 --> 00:03:35.487
+<v Antonio Cisternino>so you're supposed to have studied the
+continuation passing time,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/121-2
+00:03:35.487 --> 00:03:38.241
+<v Antonio Cisternino>like your closure and.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/127-0
+00:03:38.361 --> 00:03:42.121
+<v Antonio Cisternino>Dramas, uh,
+combines the runtimes and everything.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/129-0
+00:03:43.481 --> 00:03:43.521
+<v Antonio Cisternino>Uh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/139-0
+00:03:45.721 --> 00:03:53.401
+<v Antonio Cisternino>And end up will be basically unusual and
+of course.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/141-0
+00:03:54.721 --> 00:03:55.761
+<v Antonio Cisternino>There will be some.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/148-0
+00:03:57.521 --> 00:04:01.281
+<v Antonio Cisternino>Maybe first question revolving around.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/170-0
+00:04:02.881 --> 00:04:10.033
+<v Antonio Cisternino>The the project,
+the project I will I will publish</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/170-1
+00:04:10.033 --> 00:04:15.081
+<v Antonio Cisternino>projects after of course this thing.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/177-0
+00:04:16.161 --> 00:04:20.921
+<v Antonio Cisternino>It's always made with the agreement with
+Andrea.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/186-0
+00:04:22.961 --> 00:04:27.121
+<v Antonio Cisternino>But uh, personally,
+I think it would be nice to publish.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/201-0
+00:04:30.161 --> 00:04:37.555
+<v Antonio Cisternino>Uh, by the end of this week,
+a number of potential projects that you</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/201-1
+00:04:37.555 --> 00:04:38.841
+<v Antonio Cisternino>can pick up.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/221-0
+00:04:41.441 --> 00:04:47.172
+<v Antonio Cisternino>And as I was saying and we will give some
+rating of the project,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/221-1
+00:04:47.172 --> 00:04:49.641
+<v Antonio Cisternino>but honestly I have no idea.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/231-0
+00:04:51.681 --> 00:04:58.041
+<v Antonio Cisternino>On how to read the the the assignment so.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/258-0
+00:05:00.841 --> 00:05:06.302
+<v Antonio Cisternino>At least for me in the grade,
+but I have to discuss this with them that</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/258-1
+00:05:06.302 --> 00:05:10.321
+<v Antonio Cisternino>the grade will be more a way to give you
+a feedback.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/286-0
+00:05:13.081 --> 00:05:20.798
+<v Antonio Cisternino>Then a way to say, OK, your project is 25,
+but you can get more.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/286-1
+00:05:20.798 --> 00:05:28.041
+<v Antonio Cisternino>You cannot get more than 28. In any case,
+basically that is.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/312-0
+00:05:28.401 --> 00:05:36.940
+<v Antonio Cisternino>The the idea it is an experiment
+discourse and so also the project would</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/312-1
+00:05:36.940 --> 00:05:43.841
+<v Antonio Cisternino>be experimental and personally I think
+and I was I am the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/332-0
+00:05:43.841 --> 00:05:48.757
+<v Antonio Cisternino>The one who came up with this proposal of
+project,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/332-1
+00:05:48.757 --> 00:05:55.601
+<v Antonio Cisternino>I think that this should be for you,
+an opportunity to force yourself.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/356-0
+00:05:56.441 --> 00:06:06.261
+<v Antonio Cisternino>In doing a significant job using the AI
+around the notions of the course and by</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/356-1
+00:06:06.261 --> 00:06:08.961
+<v Antonio Cisternino>also having your mind.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/387-0
+00:06:09.961 --> 00:06:13.598
+<v Antonio Cisternino>Sat on, you know what you're doing.
+I mean,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/387-1
+00:06:13.598 --> 00:06:19.798
+<v Antonio Cisternino>you're not anymore someone that have
+basically asked something to GPT just</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/387-2
+00:06:19.798 --> 00:06:24.841
+<v Antonio Cisternino>because you didn't feel yet. OK,
+as I was saying, basically.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/418-0
+00:06:25.041 --> 00:06:29.766
+<v Antonio Cisternino>You are supposed to supposed to submit
+three things.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/418-1
+00:06:29.766 --> 00:06:37.254
+<v Antonio Cisternino>One is I guess a PDF file or in case of a
+software project also a zip will be OK so</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/418-2
+00:06:37.254 --> 00:06:40.641
+<v Antonio Cisternino>that we can compile it, but basically.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/453-0
+00:06:40.641 --> 00:06:47.215
+<v Antonio Cisternino>The output of your use of the AI,
+which of course if it's well done,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/453-1
+00:06:47.215 --> 00:06:52.454
+<v Antonio Cisternino>we will give a super nice grade to the AI,
+not to you,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/453-2
+00:06:52.454 --> 00:06:58.361
+<v Antonio Cisternino>because that that is AI's contribution,
+but it is the way to.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/455-0
+00:06:58.481 --> 00:06:59.161
+<v Antonio Cisternino>Submit the result.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/471-0
+00:07:01.841 --> 00:07:09.481
+<v Antonio Cisternino>So I guess that that will be your
+submission to someone someone else or.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/496-0
+00:07:11.441 --> 00:07:17.868
+<v Antonio Cisternino>Not letting you to use AI and you try to
+use the AI to pass the X.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/496-1
+00:07:17.868 --> 00:07:22.761
+<v Antonio Cisternino>OK then you have also to produce two
+other things.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/540-0
+00:07:26.521 --> 00:07:30.365
+<v Antonio Cisternino>The prompts, I mean,
+I'm not saying that you have to submit</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/540-1
+00:07:30.365 --> 00:07:34.401
+<v Antonio Cisternino>all the trace of all your interactions
+with the AI. They will,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/540-2
+00:07:34.401 --> 00:07:39.655
+<v Antonio Cisternino>there will be prompts with the prompts of
+just things and it's pointless to go to</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/540-3
+00:07:39.655 --> 00:07:41.641
+<v Antonio Cisternino>that level also for us to read.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/571-0
+00:07:43.241 --> 00:07:49.267
+<v Antonio Cisternino>OK, So what are the meaningful prompts,
+even bad ends? I mean,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/571-1
+00:07:49.267 --> 00:07:55.389
+<v Antonio Cisternino>it would be nice to say, OK,
+I try to ask this question and the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/571-2
+00:07:55.389 --> 00:07:58.641
+<v Antonio Cisternino>results were not that interesting.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/603-0
+00:07:58.801 --> 00:08:03.793
+<v Antonio Cisternino>As I thought they will be,
+and so I went that way. OK,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/603-1
+00:08:03.793 --> 00:08:11.236
+<v Antonio Cisternino>but basically all the problems that we
+use to produce the output. Oh, by the way,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/603-2
+00:08:11.236 --> 00:08:15.321
+<v Antonio Cisternino>the output is not necessarily a single
+shot.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/642-0
+00:08:16.001 --> 00:08:24.853
+<v Antonio Cisternino>It's totally acceptable for programming
+that you generate one file at a time for</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/642-1
+00:08:24.853 --> 00:08:31.082
+<v Antonio Cisternino>for a document.
+It may be the collation of multiple file</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/642-2
+00:08:31.082 --> 00:08:34.361
+<v Antonio Cisternino>or multiple steps. OK, so the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/671-0
+00:08:34.601 --> 00:08:39.727
+<v Antonio Cisternino>It's not an exercise to have one prompt
+that gives you the output.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/671-1
+00:08:39.727 --> 00:08:46.078
+<v Antonio Cisternino>Basically you want to make the eye making
+the hard work and you are the supervisor</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/671-2
+00:08:46.078 --> 00:08:49.521
+<v Antonio Cisternino>of the eye and you have to question the
+eye.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/692-0
+00:08:49.601 --> 00:08:57.154
+<v Antonio Cisternino>Ask for you have to improve this.
+You need to double check things and the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/692-1
+00:08:57.154 --> 00:09:01.441
+<v Antonio Cisternino>third ingredient of the submission is how.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/695-0
+00:09:02.441 --> 00:09:04.201
+<v Antonio Cisternino>You check the output.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/747-0
+00:09:05.441 --> 00:09:09.941
+<v Antonio Cisternino>Which is, by the way,
+the most important thing,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/747-1
+00:09:09.941 --> 00:09:17.160
+<v Antonio Cisternino>because I'd like to leave as long as I
+can leave without having some sort of</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/747-2
+00:09:17.160 --> 00:09:20.441
+<v Antonio Cisternino>approval by someone of you without.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/751-0
+00:09:20.801 --> 00:09:22.601
+<v Antonio Cisternino>Double checking on my card.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/818-0
+00:09:24.001 --> 00:09:29.785
+<v Antonio Cisternino>Then I got a cash accident because there
+was a bugging. OK,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/818-1
+00:09:29.785 --> 00:09:36.823
+<v Antonio Cisternino>that's basically the submission.
+The idea is you should be able to do it</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/818-2
+00:09:36.823 --> 00:09:41.161
+<v Antonio Cisternino>in a couple of weeks, OK,
+not full time you.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/855-0
+00:09:41.761 --> 00:09:48.057
+<v Antonio Cisternino>You have also other assignments,
+other exams, etcetera.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/855-1
+00:09:48.057 --> 00:09:54.241
+<v Antonio Cisternino>So I think it's unfair to pressure you
+more than that.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/903-0
+00:09:55.281 --> 00:10:01.010
+<v Antonio Cisternino>Since it is an experiment, please,
+please play the game with us.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/903-1
+00:10:01.010 --> 00:10:05.241
+<v Antonio Cisternino>There's no point in cheating.
+Have discussions.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/903-2
+00:10:05.241 --> 00:10:10.441
+<v Antonio Cisternino>They're more than welcome. OK,
+exchange opinion among you.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/950-0
+00:10:10.881 --> 00:10:15.752
+<v Antonio Cisternino>It's OK.
+That's not something I I hope you will</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/950-1
+00:10:15.752 --> 00:10:23.566
+<v Antonio Cisternino>take this as an opportunity to grow,
+to personally grow in a field where you</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/950-2
+00:10:23.566 --> 00:10:26.001
+<v Antonio Cisternino>you are among the first.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1003-0
+00:10:26.081 --> 00:10:31.185
+<v Antonio Cisternino>Trying to be certain,
+so take the opportunity and there's no</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1003-1
+00:10:31.185 --> 00:10:36.959
+<v Antonio Cisternino>point. At the end of the day,
+the final game will be set at the oral</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1003-2
+00:10:36.959 --> 00:10:41.561
+<v Antonio Cisternino>exam and then you should be as prepared
+as you can be.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1063-0
+00:10:42.561 --> 00:10:48.161
+<v Antonio Cisternino>And of course you have to remember things.
+But at the end of the day,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1063-1
+00:10:48.161 --> 00:10:54.561
+<v Antonio Cisternino>the hope about this course is that you
+have spent time thinking about concepts,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1063-2
+00:10:54.561 --> 00:10:58.401
+<v Antonio Cisternino>not features of the language,
+because features.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1074-0
+00:10:58.881 --> 00:11:02.561
+<v Antonio Cisternino>They were important, I mean 10 years ago.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1077-0
+00:11:04.081 --> 00:11:04.281
+<v Antonio Cisternino>I think.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1104-0
+00:11:06.321 --> 00:11:12.496
+<v Antonio Cisternino>15 years ago,
+one of the last time I did this course,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1104-1
+00:11:12.496 --> 00:11:15.241
+<v Antonio Cisternino>teachers were important.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1116-0
+00:11:16.561 --> 00:11:20.641
+<v Antonio Cisternino>Back then, programming was about Googling.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1184-0
+00:11:22.761 --> 00:11:28.521
+<v Antonio Cisternino>Backward flow and writing code.
+So knowing the feature was of paramount</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1184-1
+00:11:28.521 --> 00:11:33.641
+<v Antonio Cisternino>importance to be productive. OK,
+nowadays it's still important,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1184-2
+00:11:33.641 --> 00:11:37.561
+<v Antonio Cisternino>but it's more important that you
+understand the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1236-0
+00:11:37.721 --> 00:11:44.767
+<v Antonio Cisternino>Hidden structure that I try to align and
+there try to align across multiple tasks</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1236-1
+00:11:44.767 --> 00:11:51.125
+<v Antonio Cisternino>in the languages and then I hope you
+appreciated all the field rouge that</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1221-0
+00:11:48.521 --> 00:11:48.841
+<v Jaanis Fehling>OK, the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1236-2
+00:11:51.125 --> 00:11:51.641
+<v Antonio Cisternino>binds.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1291-0
+00:11:52.641 --> 00:11:57.893
+<v Antonio Cisternino>Apparently different languages,
+and sometimes because the programming</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1291-1
+00:11:57.893 --> 00:12:02.694
+<v Antonio Cisternino>language is a trade-off,
+every beat of the programming language</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1291-2
+00:12:02.694 --> 00:12:07.721
+<v Antonio Cisternino>lets you sacrifice some other feature on
+the programming language.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1334-0
+00:12:09.721 --> 00:12:15.597
+<v Antonio Cisternino>And it's a compromise.
+So it's not the point. I mean,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1334-1
+00:12:15.597 --> 00:12:19.841
+<v Antonio Cisternino>there are bad languages, Python, sorry.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1392-0
+00:12:21.121 --> 00:12:27.348
+<v Antonio Cisternino>But there are no good languages.
+I mean there are some languages that are</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1392-1
+00:12:27.348 --> 00:12:34.332
+<v Antonio Cisternino>more applicable than others to represent
+some computation and it's OK then the the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1392-2
+00:12:34.332 --> 00:12:37.361
+<v Antonio Cisternino>novelty is that now you can explore.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1444-0
+00:12:37.361 --> 00:12:45.372
+<v Antonio Cisternino>Learn and generate code using a tool that
+is capable of understanding is fairly</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1444-1
+00:12:45.372 --> 00:12:52.481
+<v Antonio Cisternino>productive in the space of formal
+language. The eye is really, really.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1478-0
+00:12:54.001 --> 00:12:57.392
+<v Antonio Cisternino>Google with formal language is more than
+not a manage.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1478-1
+00:12:57.392 --> 00:13:00.721
+<v Antonio Cisternino>It's a place where you you can get some
+satisfaction.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1537-0
+00:13:03.281 --> 00:13:10.008
+<v Antonio Cisternino>Of course you can also ask not for the
+core, you can also ask for.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1537-1
+00:13:10.008 --> 00:13:16.736
+<v Antonio Cisternino>I don't know if you decide to go and
+generate a system that works,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1537-2
+00:13:16.736 --> 00:13:18.041
+<v Antonio Cisternino>so a program.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1594-0
+00:13:18.481 --> 00:13:25.011
+<v Antonio Cisternino>Then you may also ask instruction on how
+to which is the best way to set up the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1594-1
+00:13:25.011 --> 00:13:29.744
+<v Antonio Cisternino>project etcetera.
+I mean it's not only related to give me</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1594-2
+00:13:29.744 --> 00:13:32.601
+<v Antonio Cisternino>the algorithm function or the file.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1601-0
+00:13:34.161 --> 00:13:35.481
+<v Antonio Cisternino>You can aim uh at the project.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1651-0
+00:13:37.241 --> 00:13:43.699
+<v Antonio Cisternino>So someone of you asked about the
+projects. OK, again, being an experiment,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1651-1
+00:13:43.699 --> 00:13:50.072
+<v Antonio Cisternino>we will try to figure out something that
+can be done in a couple of weeks,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1651-2
+00:13:50.072 --> 00:13:52.281
+<v Antonio Cisternino>but at the end of the day.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1653-0
+00:13:53.801 --> 00:13:53.841
+<v Antonio Cisternino>Uh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1697-0
+00:13:55.761 --> 00:14:02.129
+<v Antonio Cisternino>Any output that can be more or less
+sophisticated,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1697-1
+00:14:02.129 --> 00:14:10.121
+<v Antonio Cisternino>so I don't expect that the problems will
+be too detailed first.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1717-0
+00:14:12.281 --> 00:14:17.201
+<v Antonio Cisternino>Because I think that you're and you must
+be measured enough the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1781-0
+00:14:18.081 --> 00:14:22.610
+<v Antonio Cisternino>To fill out the blanks. OK,
+I mean this is not a first year</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1781-1
+00:14:22.610 --> 00:14:28.724
+<v Antonio Cisternino>mathematical analysis course in which you
+have to say this this is the function,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1781-2
+00:14:28.724 --> 00:14:31.441
+<v Antonio Cisternino>give me the limits and there is one.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1800-0
+00:14:32.321 --> 00:14:38.001
+<v Antonio Cisternino>Good answer in in programming and in
+general in the real world there are.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1803-0
+00:14:38.721 --> 00:14:39.201
+<v Antonio Cisternino>Wrong gangsters.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1809-0
+00:14:41.401 --> 00:14:42.561
+<v Antonio Cisternino>As many as you want.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1816-0
+00:14:44.201 --> 00:14:46.161
+<v Antonio Cisternino>Brilliantly the right answer.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1878-0
+00:14:47.761 --> 00:14:54.421
+<v Antonio Cisternino>And you got a bunch of reasonable answers.
+And so in all my projects,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1878-1
+00:14:54.421 --> 00:15:00.320
+<v Antonio Cisternino>typically I encourage students to take
+this approach. I mean,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1878-2
+00:15:00.320 --> 00:15:04.601
+<v Antonio Cisternino>tell me why you think it's OK as a
+solution.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1895-0
+00:15:05.401 --> 00:15:11.001
+<v Antonio Cisternino>So if you are investigating,
+you have to decide where do you stop.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1954-0
+00:15:12.081 --> 00:15:16.871
+<v Antonio Cisternino>Insertion. OK, I mean,
+remember the web assembly.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1954-1
+00:15:16.871 --> 00:15:23.097
+<v Antonio Cisternino>Where do you stop? Semantics,
+implementation, future directions,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/1954-2
+00:15:23.097 --> 00:15:30.761
+<v Antonio Cisternino>different implementation and comparison
+across implementations. It's up to you.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2007-0
+00:15:31.041 --> 00:15:34.233
+<v Antonio Cisternino>OK,
+take and use your time to produce the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2007-1
+00:15:34.233 --> 00:15:38.109
+<v Antonio Cisternino>output that you would like to submit to
+your boss,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2007-2
+00:15:38.109 --> 00:15:43.961
+<v Antonio Cisternino>hopefully in a couple of years from now
+when you will be paid for your work.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2034-0
+00:15:47.121 --> 00:15:52.633
+<v Antonio Cisternino>If it's OK for your boss,
+it may be also good for you.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2034-1
+00:15:52.633 --> 00:15:56.441
+<v Antonio Cisternino>I'm assuming a skilled boss otherwise.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2036-0
+00:15:59.121 --> 00:15:59.201
+<v Antonio Cisternino>Bye.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2039-0
+00:16:01.881 --> 00:16:02.281
+<v Antonio Cisternino>So.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2103-0
+00:16:03.841 --> 00:16:11.528
+<v Antonio Cisternino>There will be a flat piece of progress,
+but at some point some of you challenged</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2103-1
+00:16:11.528 --> 00:16:15.799
+<v Antonio Cisternino>me,
+asking me for what kind of investigation</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2103-2
+00:16:15.799 --> 00:16:19.121
+<v Antonio Cisternino>will be requested to perform. So I.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2154-0
+00:16:22.201 --> 00:16:26.504
+<v Antonio Cisternino>Produce a classification,
+but it's not mandatory.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2154-1
+00:16:26.504 --> 00:16:32.441
+<v Antonio Cisternino>I mean it's just there are there will be
+3 broader areas of request.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2154-2
+00:16:32.441 --> 00:16:35.281
+<v Antonio Cisternino>The first one will be generative.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2177-0
+00:16:36.801 --> 00:16:43.881
+<v Antonio Cisternino>If you're someone that likes to program,
+if you like, you can generate a program.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2180-0
+00:16:48.401 --> 00:16:48.441
+<v Antonio Cisternino>Uh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2200-0
+00:16:52.161 --> 00:16:58.081
+<v Antonio Cisternino>If you like to investigate to learn more
+about a specific subject.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2264-0
+00:16:59.601 --> 00:17:04.421
+<v Antonio Cisternino>Then beat. I mean,
+let's take a programming language or a</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2264-1
+00:17:04.421 --> 00:17:10.985
+<v Antonio Cisternino>feature of programming language, etcetera,
+and do the work of learning all the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2264-2
+00:17:10.985 --> 00:17:12.481
+<v Antonio Cisternino>internal features.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2323-0
+00:17:15.521 --> 00:17:20.177
+<v Antonio Cisternino>How they've been used,
+how they have affected the the evolution</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2323-1
+00:17:20.177 --> 00:17:25.269
+<v Antonio Cisternino>of other programming languages.
+We'll learn during the course that in</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2323-2
+00:17:25.269 --> 00:17:30.070
+<v Antonio Cisternino>general this is the norm.
+Programming languages tend to influence</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2323-3
+00:17:30.070 --> 00:17:31.161
+<v Antonio Cisternino>for each other.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2339-0
+00:17:33.041 --> 00:17:40.121
+<v Antonio Cisternino>So that that's another and the third one
+is instead.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2394-0
+00:17:41.521 --> 00:17:49.770
+<v Antonio Cisternino>Go and read some really cool base and
+with the help of AI try to fill the gap</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2394-1
+00:17:49.770 --> 00:17:56.961
+<v Antonio Cisternino>together a reasonable feeling of a
+specific feature of a flow base.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2440-0
+00:17:57.841 --> 00:18:07.773
+<v Antonio Cisternino>We did it. We did it with the CLR.
+There are several interesting code bases</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2440-1
+00:18:07.773 --> 00:18:13.001
+<v Antonio Cisternino>that can range from the kernel of Linux.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2449-0
+00:18:13.361 --> 00:18:18.681
+<v Antonio Cisternino>Uh, the web browser.
+These are the obvious. Uh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2513-0
+00:18:21.521 --> 00:18:26.895
+<v Antonio Cisternino>The values of React JS framework,
+Angular JS, all these frameworks,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2513-1
+00:18:26.895 --> 00:18:32.584
+<v Antonio Cisternino>all of them are full of these database
+implementation, MySQL, Postgres,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2513-2
+00:18:32.584 --> 00:18:36.615
+<v Antonio Cisternino>DB etcetera.
+All of these are interesting codebase</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2513-3
+00:18:36.615 --> 00:18:37.721
+<v Antonio Cisternino>where you may.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2517-0
+00:18:39.721 --> 00:18:41.601
+<v Antonio Cisternino>Like to uh uh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2587-0
+00:18:44.401 --> 00:18:51.013
+<v Antonio Cisternino>To deepen your understanding, OK.
+And for this reason apart from the list</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2587-1
+00:18:51.013 --> 00:18:58.162
+<v Antonio Cisternino>that that we will publish so that I mean
+we can we help you if you don't have a</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2587-2
+00:18:58.162 --> 00:18:59.681
+<v Antonio Cisternino>particular ideas.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2644-0
+00:18:59.681 --> 00:19:06.241
+<v Antonio Cisternino>I personally encourage you if you want to
+do something along these three lines of</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2644-1
+00:19:06.241 --> 00:19:11.521
+<v Antonio Cisternino>thinking that you like,
+because you're already working apart from</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2644-2
+00:19:11.521 --> 00:19:15.921
+<v Antonio Cisternino>studying because you're curious and you
+want to learn.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2670-0
+00:19:16.481 --> 00:19:21.307
+<v Antonio Cisternino>Uh, sound bigger.
+Please write to me and Andrea and say OK,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2670-1
+00:19:21.307 --> 00:19:23.801
+<v Antonio Cisternino>I've seen the list of projects.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2676-0
+00:19:25.201 --> 00:19:27.401
+<v Antonio Cisternino>I'd like to do this.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2732-0
+00:19:30.001 --> 00:19:35.823
+<v Antonio Cisternino>And we simply double check that the
+project is not too difficult. Yeah,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2732-1
+00:19:35.823 --> 00:19:39.786
+<v Antonio Cisternino>because those that want to depend the
+knowledge,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2732-2
+00:19:39.786 --> 00:19:44.961
+<v Antonio Cisternino>they are under the risk of working too
+much for for the output.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2783-0
+00:19:45.921 --> 00:19:52.543
+<v Antonio Cisternino>Or it's too dumb to be a project. OK,
+so we need to balance things.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2783-1
+00:19:52.543 --> 00:19:58.386
+<v Antonio Cisternino>But apart from that,
+feel free to propose if you think your</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2783-2
+00:19:58.386 --> 00:20:00.041
+<v Antonio Cisternino>favorite project.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2835-0
+00:20:01.721 --> 00:20:07.063
+<v Antonio Cisternino>And I mean,
+I think it's a a better way to spend your</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2835-1
+00:20:07.063 --> 00:20:15.176
+<v Antonio Cisternino>time than work on a synthetic project,
+just to check that we learn something. OK,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2835-2
+00:20:15.176 --> 00:20:16.561
+<v Antonio Cisternino>so personally.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2878-0
+00:20:16.881 --> 00:20:21.803
+<v Antonio Cisternino>And if you're passionate about,
+you may even learn things,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2878-1
+00:20:21.803 --> 00:20:27.309
+<v Antonio Cisternino>which is a good thing. OK,
+so that is basically the we will write</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2878-2
+00:20:27.309 --> 00:20:32.481
+<v Antonio Cisternino>down the set of rules along the project
+so that you also get.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2880-0
+00:20:33.081 --> 00:20:33.121
+<v Antonio Cisternino>Uh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2926-0
+00:20:34.961 --> 00:20:43.273
+<v Antonio Cisternino>Previous picture of the rules and the
+submission that probably likely will be</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2926-1
+00:20:43.273 --> 00:20:48.601
+<v Antonio Cisternino>by submitting a form. That's it.
+I mean so today.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2927-0
+00:20:48.681 --> 00:20:48.761
+<v Antonio Cisternino>Hey.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2954-0
+00:20:50.361 --> 00:21:00.684
+<v Antonio Cisternino>Today we we do a first exercise and to
+start I'd like to develop an application</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2954-1
+00:21:00.684 --> 00:21:02.361
+<v Antonio Cisternino>from scratch.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2965-0
+00:21:03.681 --> 00:21:08.281
+<v Antonio Cisternino>UI and to make things interesting.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2999-0
+00:21:09.681 --> 00:21:17.733
+<v Antonio Cisternino>I think we will use and also compatible
+with my laptop because I can't afford to</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/2999-1
+00:21:17.733 --> 00:21:19.721
+<v Antonio Cisternino>spend the whole day.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3040-0
+00:21:22.281 --> 00:21:29.130
+<v Antonio Cisternino>Installing packages and stuff.
+I decided that we'll use Windows Forms,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3040-1
+00:21:29.130 --> 00:21:35.401
+<v Antonio Cisternino>which is a fairly old by now framework
+for writing applications.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3047-0
+00:21:36.761 --> 00:21:40.241
+<v Antonio Cisternino>And we have to.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3049-0
+00:21:41.641 --> 00:21:41.881
+<v Antonio Cisternino>Create.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3057-0
+00:21:44.401 --> 00:21:49.321
+<v Antonio Cisternino>I think an arcade game.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3061-0
+00:21:52.281 --> 00:21:53.601
+<v Antonio Cisternino>By the address.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3075-0
+00:21:54.481 --> 00:21:56.401
+<v Antonio Cisternino>I think it will be. I'm using a mobile.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3108-0
+00:21:58.921 --> 00:22:11.017
+<v Antonio Cisternino>So now this is the goal and of course the
+first thing that you do is I have to</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3108-1
+00:22:11.017 --> 00:22:13.161
+<v Antonio Cisternino>implement the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3111-0
+00:22:14.921 --> 00:22:15.801
+<v Antonio Cisternino>Patrice.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3151-0
+00:22:17.281 --> 00:22:28.579
+<v Antonio Cisternino>Or I can wait. That's I cannot,
+I not cannot like game in C# and win</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3151-1
+00:22:28.579 --> 00:22:29.561
+<v Antonio Cisternino>forms.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3153-0
+00:22:32.601 --> 00:22:32.641
+<v Antonio Cisternino>Uh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3188-0
+00:22:35.121 --> 00:22:44.627
+<v Antonio Cisternino>It is. Oh, I mean that's cheat.
+It is my assignment.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3188-1
+00:22:44.627 --> 00:22:51.801
+<v Antonio Cisternino>I'd like to do a super nice application.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3194-0
+00:22:54.401 --> 00:22:55.961
+<v Antonio Cisternino>Can you help me?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3228-0
+00:23:00.961 --> 00:23:05.899
+<v Antonio Cisternino>Always remember when you talk to the AI,
+most of it is American.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3228-1
+00:23:05.899 --> 00:23:09.241
+<v Antonio Cisternino>So use the American way.
+That's super cool.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3231-0
+00:23:15.161 --> 00:23:15.321
+<v Antonio Cisternino>Oh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3244-0
+00:23:21.281 --> 00:23:24.361
+<v Antonio Cisternino>In the meantime, let let me open.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3248-0
+00:23:25.641 --> 00:23:26.481
+<v Antonio Cisternino>Pair me now.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3252-0
+00:23:29.401 --> 00:23:29.681
+<v Antonio Cisternino>So that.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3268-0
+00:23:33.161 --> 00:23:35.801
+<v Antonio Cisternino>So as you can see us now, Oh yeah, sorry.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3320-0
+00:23:47.161 --> 00:23:55.321
+<v Antonio Cisternino>OK, this is. First of all,
+I forgot to tell one other ingredient,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3320-1
+00:23:55.321 --> 00:24:02.121
+<v Antonio Cisternino>the AR model. Personally,
+I don't care if you use GPT.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3370-0
+00:24:02.441 --> 00:24:07.610
+<v Antonio Cisternino>So Gemini,
+some model that runs on your laptop.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3370-1
+00:24:07.610 --> 00:24:12.456
+<v Antonio Cisternino>It's OK of course as part of the
+submission,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3370-2
+00:24:12.456 --> 00:24:19.241
+<v Antonio Cisternino>please tell me because the output if you
+use an on-prem model.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3429-0
+00:24:19.601 --> 00:24:25.396
+<v Antonio Cisternino>Maybe not so nice,
+but it's valuable because you spend time</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3429-1
+00:24:25.396 --> 00:24:32.930
+<v Antonio Cisternino>using a smaller model and so it's a nice
+result because we are evaluating the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3429-2
+00:24:32.930 --> 00:24:35.441
+<v Antonio Cisternino>questions, not the answer.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3482-0
+00:24:35.961 --> 00:24:40.591
+<v Antonio Cisternino>Is the answer depends on the quality of
+the model you're using.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3482-1
+00:24:40.591 --> 00:24:46.378
+<v Antonio Cisternino>So don't feel constrained in using GPT
+because I did use GPT during the course.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3482-2
+00:24:46.378 --> 00:24:49.561
+<v Antonio Cisternino>OK,
+use the model that you prefer the most.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3496-0
+00:24:53.441 --> 00:24:59.801
+<v Antonio Cisternino>If you're curious, there is.
+There are also.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3559-0
+00:25:01.041 --> 00:25:07.305
+<v Antonio Cisternino>Codex CLI.
+In that case you will need an API key,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3559-1
+00:25:07.305 --> 00:25:17.453
+<v Antonio Cisternino>but it's you can run it in a container.
+I suggest you to do so because Codex CLI</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3559-2
+00:25:17.453 --> 00:25:20.961
+<v Antonio Cisternino>basically allows you to run.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3644-0
+00:25:21.041 --> 00:25:26.473
+<v Antonio Cisternino>On your machine, the AI,
+but that's the AI would run comments on</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3644-1
+00:25:26.473 --> 00:25:30.569
+<v Antonio Cisternino>your product.
+So if you care about your machine,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3644-2
+00:25:30.569 --> 00:25:36.920
+<v Antonio Cisternino>sandbox it inside the container,
+that will be a much better way to operate.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3644-3
+00:25:36.920 --> 00:25:40.681
+<v Antonio Cisternino>And that's it. OK,
+so now I'm doing it with.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3664-0
+00:25:40.801 --> 00:25:44.722
+<v Antonio Cisternino>Uh,
+I'm not using codex because codex will be</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3664-1
+00:25:44.722 --> 00:25:47.961
+<v Antonio Cisternino>in principle able to also to generate.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3717-0
+00:25:48.641 --> 00:25:53.836
+<v Antonio Cisternino>All the the code project and everything
+in a single bunch.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3717-1
+00:25:53.836 --> 00:26:01.232
+<v Antonio Cisternino>Now I'm in the chat like chat mode way of
+doing things which is basically available</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3717-2
+00:26:01.232 --> 00:26:03.521
+<v Antonio Cisternino>both on Prem and off Prem.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3721-0
+00:26:04.281 --> 00:26:05.561
+<v Antonio Cisternino>If you want to run.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3728-0
+00:26:07.521 --> 00:26:09.361
+<v Antonio Cisternino>On premise models.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3748-0
+00:26:10.681 --> 00:26:16.041
+<v Antonio Cisternino>How many of you have on Prem have run on
+Prem models on your laptop?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3779-0
+00:26:17.441 --> 00:26:23.254
+<v Antonio Cisternino>So if you want to start because you're
+curious, this is nice.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3779-1
+00:26:23.254 --> 00:26:26.161
+<v Antonio Cisternino>A good place to start is Olama.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3791-0
+00:26:26.801 --> 00:26:30.961
+<v Antonio Cisternino>OK, Olama, now comes both the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3814-0
+00:26:36.041 --> 00:26:41.801
+<v Antonio Cisternino>With the common line and also a web UI
+which is very similar.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3850-0
+00:26:45.521 --> 00:26:52.681
+<v Antonio Cisternino>This is all llama running on our server
+and as you can see it is very similar to</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3850-1
+00:26:52.681 --> 00:26:54.361
+<v Antonio Cisternino>GPT or whatever so.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3920-0
+00:26:58.241 --> 00:27:06.521
+<v Antonio Cisternino>So if you want you start with the llama,
+it's fairly easy and one of the things</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3920-1
+00:27:06.521 --> 00:27:14.284
+<v Antonio Cisternino>that the llama does is to produce and
+give models and you can also use any</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3920-2
+00:27:14.284 --> 00:27:16.561
+<v Antonio Cisternino>model from a new face.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3936-0
+00:27:17.001 --> 00:27:23.241
+<v Antonio Cisternino>These are basically the two ways and if
+you look for code.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/3944-0
+00:27:27.281 --> 00:27:30.121
+<v Antonio Cisternino>You have called Lama, called Gemma.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4013-0
+00:27:36.241 --> 00:27:39.833
+<v Antonio Cisternino>And so and so on.
+So if you want to experiment,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4013-1
+00:27:39.833 --> 00:27:45.670
+<v Antonio Cisternino>you can go also this way. And again,
+please tell me I use my laptop with this</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4013-2
+00:27:45.670 --> 00:27:51.657
+<v Antonio Cisternino>and of course I will not seek for super
+complicated output because you're using</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4013-3
+00:27:51.657 --> 00:27:51.881
+<v Antonio Cisternino>it.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4040-0
+00:27:52.241 --> 00:27:56.958
+<v Antonio Cisternino>Your your cycles. OK,
+let's see the proposal.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4040-1
+00:27:56.958 --> 00:28:01.881
+<v Antonio Cisternino>So a clean architecture,
+a basic playable game.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4050-0
+00:28:03.681 --> 00:28:09.001
+<v Antonio Cisternino>Ideas for super nice. OK, sounds good.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4054-0
+00:28:11.961 --> 00:28:12.001
+<v Antonio Cisternino>O.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4070-0
+00:28:15.281 --> 00:28:19.401
+<v Antonio Cisternino>They propose the form and the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4134-0
+00:28:22.401 --> 00:28:29.659
+<v Antonio Cisternino>We proposed to create the the game form.
+Now I expect that you had some classes in</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4134-1
+00:28:29.659 --> 00:28:33.769
+<v Antonio Cisternino>UI's,
+but in any case form is the typical name</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4134-2
+00:28:33.769 --> 00:28:38.841
+<v Antonio Cisternino>if you use it to talk about a window in a
+in a system so.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4172-0
+00:28:39.121 --> 00:28:45.042
+<v Antonio Cisternino>That's the objects, the core objects,
+the paddle,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4172-1
+00:28:45.042 --> 00:28:51.081
+<v Antonio Cisternino>the bowl and the brakes where the the
+bowl bounce.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4196-0
+00:28:53.641 --> 00:28:56.761
+<v Antonio Cisternino>That would lost the attempting to
+reconnect the it's not so.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4200-0
+00:29:00.001 --> 00:29:00.841
+<v Antonio Cisternino>Not so good.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4223-0
+00:29:05.761 --> 00:29:10.121
+<v Antonio Cisternino>So we got the network until now and now
+that I need it.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4235-0
+00:29:14.481 --> 00:29:17.201
+<v Antonio Cisternino>OK, maybe it is just the application.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4240-0
+00:29:26.521 --> 00:29:27.361
+<v Antonio Cisternino>Retry.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4269-0
+00:29:31.361 --> 00:29:35.994
+<v Antonio Cisternino>Notice now it will get give me a
+completely different approach of course,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4269-1
+00:29:35.994 --> 00:29:37.121
+<v Antonio Cisternino>no more game form.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4279-0
+00:29:39.761 --> 00:29:43.801
+<v Antonio Cisternino>It's reasonably similar.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4287-0
+00:29:45.481 --> 00:29:46.601
+<v Antonio Cisternino>There is the game loop.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4298-0
+00:29:49.761 --> 00:29:51.801
+<v Antonio Cisternino>OK, so first of all.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4307-0
+00:29:55.001 --> 00:29:56.881
+<v Antonio Cisternino>What do you think that the game look?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4309-0
+00:29:58.921 --> 00:29:59.281
+<v Antonio Cisternino>Please.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4376-0
+00:30:01.361 --> 00:30:08.172
+<v Antonio Cisternino>Doesn't mean when you start generating
+part of the generation will be about the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4376-1
+00:30:08.172 --> 00:30:12.854
+<v Antonio Cisternino>domain of your choice.
+If you want to generate a music</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4376-2
+00:30:12.854 --> 00:30:17.281
+<v Antonio Cisternino>generation,
+you have to know something about music.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4406-0
+00:30:17.721 --> 00:30:22.493
+<v Antonio Cisternino>Sound waves,
+fast Fourier transform and whatever,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4406-1
+00:30:22.493 --> 00:30:27.361
+<v Antonio Cisternino>because otherwise you will fail to
+understand the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4455-0
+00:30:28.721 --> 00:30:35.162
+<v Antonio Cisternino>Uh, the output. OK,
+so I mean this is our job at the end of</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4455-1
+00:30:35.162 --> 00:30:42.247
+<v Antonio Cisternino>the day, because even before AI,
+what we do as a programmer is we</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4455-2
+00:30:42.247 --> 00:30:43.321
+<v Antonio Cisternino>basically.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4489-0
+00:30:46.721 --> 00:30:53.253
+<v Antonio Cisternino>Then I feel somehow philosophical.
+You take me as a.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4489-1
+00:30:53.253 --> 00:31:00.401
+<v Antonio Cisternino>So let me share this small talk,
+small talk with you. So.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4509-0
+00:31:04.761 --> 00:31:10.161
+<v Antonio Cisternino>One may argue that computer science is
+about some problems.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4530-0
+00:31:11.481 --> 00:31:16.014
+<v Antonio Cisternino>I mean, at least in programming,
+would you implement an exponential</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4530-1
+00:31:16.014 --> 00:31:16.681
+<v Antonio Cisternino>algorithm?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4532-0
+00:31:18.241 --> 00:31:18.481
+<v Antonio Cisternino>No.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4599-0
+00:31:22.281 --> 00:31:29.398
+<v Antonio Cisternino>Or some non deterministic something? No.
+So at the end of the day we write</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4599-1
+00:31:29.398 --> 00:31:36.041
+<v Antonio Cisternino>programs that generate that are either
+polynomial, linear polynomial.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4609-0
+00:31:36.801 --> 00:31:41.481
+<v Antonio Cisternino>And they'll break, but that, you know,
+saying.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4642-0
+00:31:43.001 --> 00:31:48.258
+<v Antonio Cisternino>So at some point in my life I said OK,
+so I think that a discipline in which I</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4642-1
+00:31:48.258 --> 00:31:50.321
+<v Antonio Cisternino>face all these stupid problems.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4696-0
+00:31:52.321 --> 00:31:56.980
+<v Antonio Cisternino>Of course,
+sometimes I was a little bit depressed.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4696-1
+00:31:56.980 --> 00:32:03.375
+<v Antonio Cisternino>I mean, I was looking to physicists,
+differential equation engineers,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4696-2
+00:32:03.375 --> 00:32:07.121
+<v Antonio Cisternino>find hands. I said OK and and I for each.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4711-0
+00:32:08.401 --> 00:32:15.921
+<v Antonio Cisternino>Really.
+Then I realized that something that.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4721-0
+00:32:18.281 --> 00:32:21.041
+<v Antonio Cisternino>Made U my mind basically.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4742-0
+00:32:22.281 --> 00:32:29.561
+<v Antonio Cisternino>Our goal is to take something which is
+exponential, which is difficult the world.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4812-0
+00:32:30.521 --> 00:32:36.956
+<v Antonio Cisternino>Quantum computing,
+I mean very complicated problems and our</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4812-1
+00:32:36.956 --> 00:32:44.678
+<v Antonio Cisternino>job is to find a way possibly through
+approximation to give a tractable</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4812-2
+00:32:44.678 --> 00:32:50.041
+<v Antonio Cisternino>representation in terms of linear or
+polynomials.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4868-0
+00:32:50.121 --> 00:32:54.345
+<v Antonio Cisternino>OK.
+And so our contribution is mostly in the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4868-1
+00:32:54.345 --> 00:33:01.666
+<v Antonio Cisternino>in passing from the super complicated
+work that we are modeling down into the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4868-2
+00:33:01.666 --> 00:33:06.641
+<v Antonio Cisternino>simpler representation that the machine
+can be with.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4876-0
+00:33:06.921 --> 00:33:10.721
+<v Antonio Cisternino>And in this respect, uh, I said OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4949-0
+00:33:12.161 --> 00:33:17.793
+<v Antonio Cisternino>My discipline is not that bad, OK,
+but if you look at the output,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4949-1
+00:33:17.793 --> 00:33:21.974
+<v Antonio Cisternino>the output is sometimes.
+And so why I said this?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4949-2
+00:33:21.974 --> 00:33:28.801
+<v Antonio Cisternino>Because basically in any problem that you
+take up, the first thing you have to.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4975-0
+00:33:29.161 --> 00:33:32.818
+<v Antonio Cisternino>To to do is to try to understand the
+domain,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4975-1
+00:33:32.818 --> 00:33:36.801
+<v Antonio Cisternino>the application domain when I set up my
+journey.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/4985-0
+00:33:38.361 --> 00:33:41.921
+<v Antonio Cisternino>In writing the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5009-0
+00:33:43.081 --> 00:33:51.121
+<v Antonio Cisternino>I assume that in this university there
+were not that many elections.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5072-0
+00:33:52.441 --> 00:33:57.646
+<v Antonio Cisternino>Since then,
+you know more than few other things and I</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5072-1
+00:33:57.646 --> 00:34:05.551
+<v Antonio Cisternino>did take some number of decision in the
+UI implementation that were wrong because</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5072-2
+00:34:05.551 --> 00:34:07.961
+<v Antonio Cisternino>I did study a little bit.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5127-0
+00:34:08.041 --> 00:34:14.294
+<v Antonio Cisternino>The theory of elections,
+but I wasn't aware that we do hundreds of</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5127-1
+00:34:14.294 --> 00:34:21.014
+<v Antonio Cisternino>elections per month in this university,
+and so part of the VI should be</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5127-2
+00:34:21.014 --> 00:34:24.001
+<v Antonio Cisternino>redesigned because it's already.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5182-0
+00:34:24.241 --> 00:34:28.917
+<v Antonio Cisternino>Beyond control,
+mostly because I didn't know completely</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5182-1
+00:34:28.917 --> 00:34:32.591
+<v Antonio Cisternino>the domain when I started writing code.
+OK,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5182-2
+00:34:32.591 --> 00:34:36.515
+<v Antonio Cisternino>so whenever when you start reading the
+output,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5182-3
+00:34:36.515 --> 00:34:39.521
+<v Antonio Cisternino>the first thing that you have to do.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5228-0
+00:34:39.801 --> 00:34:46.546
+<v Antonio Cisternino>Is to be sure that you understand the
+proposal that the model is making in</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5228-1
+00:34:46.546 --> 00:34:52.302
+<v Antonio Cisternino>terms of the objects.
+So this brings us back to the what is the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5228-2
+00:34:52.302 --> 00:34:53.201
+<v Antonio Cisternino>game loop.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5251-0
+00:35:04.161 --> 00:35:08.321
+<v Antonio Cisternino>So I mean withdrawal, yes,
+but I mean it's not limited to that.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5318-0
+00:35:14.121 --> 00:35:25.552
+<v Antonio Cisternino>There is some something that a lot of a
+lot of calculating things.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5318-1
+00:35:25.552 --> 00:35:30.841
+<v Antonio Cisternino>So we take a big group when we.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5380-0
+00:35:30.841 --> 00:35:41.040
+<v Antonio Cisternino>You can overcome this same calculation
+with different data for like for example</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5380-1
+00:35:41.040 --> 00:35:48.561
+<v Antonio Cisternino>the the the player movie the the the same.
+That's perfect.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5420-0
+00:35:50.601 --> 00:35:57.723
+<v Antonio Cisternino>In general, the game goal,
+as your colleague just stated,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5420-1
+00:35:57.723 --> 00:36:06.441
+<v Antonio Cisternino>is to produce a new frame of an unleash
+every at least 30 times a set.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5486-0
+00:36:07.121 --> 00:36:11.036
+<v Antonio Cisternino>OK.
+And you have some representation of the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5486-1
+00:36:11.036 --> 00:36:15.662
+<v Antonio Cisternino>objects of the game, the paddle, the bed,
+the ball,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5486-2
+00:36:15.662 --> 00:36:21.801
+<v Antonio Cisternino>the brick and and those are governed by,
+I don't know when the ball.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5538-0
+00:36:21.801 --> 00:36:29.325
+<v Antonio Cisternino>Goes in the tradition of volcanoid,
+the speed is constant.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5538-1
+00:36:29.325 --> 00:36:36.721
+<v Antonio Cisternino>So I mean it is a very bad implementation
+of physics, no?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5615-0
+00:36:37.041 --> 00:36:44.164
+<v Antonio Cisternino>So typically every computer game ranging
+from the super complex 3D down to the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5615-1
+00:36:44.164 --> 00:36:51.016
+<v Antonio Cisternino>arcade at this inner inner structure,
+which depends because I mean the game</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5615-2
+00:36:51.016 --> 00:36:54.081
+<v Antonio Cisternino>evolves for the reasons the frame.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5661-0
+00:36:54.281 --> 00:36:58.157
+<v Antonio Cisternino>First,
+some object that you are displaying</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5661-1
+00:36:58.157 --> 00:37:02.574
+<v Antonio Cisternino>should move according to some simulated
+feeling,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5661-2
+00:37:02.574 --> 00:37:07.081
+<v Antonio Cisternino>so some other rule and that's one and the
+2nd is.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5665-0
+00:37:08.241 --> 00:37:09.241
+<v Antonio Cisternino>User interaction.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5669-0
+00:37:10.521 --> 00:37:10.641
+<v Antonio Cisternino>So.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5731-0
+00:37:13.601 --> 00:37:18.376
+<v Antonio Cisternino>And since the game is designed to be
+interacted constantly,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5731-1
+00:37:18.376 --> 00:37:22.593
+<v Antonio Cisternino>typically it is more efficient to pull
+the keyboard,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5731-2
+00:37:22.593 --> 00:37:27.686
+<v Antonio Cisternino>pull the joystick or any input,
+check the interaction given the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5731-3
+00:37:27.686 --> 00:37:28.641
+<v Antonio Cisternino>interaction.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5806-0
+00:37:30.161 --> 00:37:35.010
+<v Antonio Cisternino>Update the internal model.
+Of course only the part of the model that</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5806-1
+00:37:35.010 --> 00:37:38.805
+<v Antonio Cisternino>is affected by user actions,
+in this case the paddle.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5806-2
+00:37:38.805 --> 00:37:41.968
+<v Antonio Cisternino>So if there is a right key,
+right arrow key,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5806-3
+00:37:41.968 --> 00:37:47.801
+<v Antonio Cisternino>you have to update the position and the
+speed of the paddle so that it goes right.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5847-0
+00:37:48.561 --> 00:37:55.747
+<v Antonio Cisternino>And and then once you've updated all the
+state of your world,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5847-1
+00:37:55.747 --> 00:38:03.281
+<v Antonio Cisternino>then you've read the the current frame.
+OK, that's the a normal.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5861-0
+00:38:03.401 --> 00:38:08.001
+<v Antonio Cisternino>Way of organizing a computer game.
+There are frameworks.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5905-0
+00:38:09.001 --> 00:38:13.588
+<v Antonio Cisternino>That implement this,
+I ask it to use a general framework,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5905-1
+00:38:13.588 --> 00:38:19.441
+<v Antonio Cisternino>so I expect the AI will generate some of
+these data structures by itself.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5908-0
+00:38:20.801 --> 00:38:20.921
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5920-0
+00:38:28.121 --> 00:38:32.721
+<v Antonio Cisternino>Visual niceness, double buffering.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5927-0
+00:38:34.401 --> 00:38:36.441
+<v Antonio Cisternino>What it is double buffering?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5936-0
+00:38:46.321 --> 00:38:51.201
+<v Antonio Cisternino>Sorry, OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/5949-0
+00:38:57.961 --> 00:39:01.001
+<v Antonio Cisternino>So is right. So basically.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6014-0
+00:39:04.601 --> 00:39:10.530
+<v Antonio Cisternino>For the sake of of of speed,
+I'm blaming the A I in this moment. OK,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6014-1
+00:39:10.530 --> 00:39:15.687
+<v Antonio Cisternino>I mean answering.
+Of course you can go and ask the A I what</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6014-2
+00:39:15.687 --> 00:39:20.241
+<v Antonio Cisternino>is the double top? OK,
+you will get the same answer.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6020-0
+00:39:20.441 --> 00:39:23.161
+<v Antonio Cisternino>But basically the idea is.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6024-0
+00:39:25.521 --> 00:39:26.081
+<v Antonio Cisternino>When you.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6088-0
+00:39:27.241 --> 00:39:33.084
+<v Antonio Cisternino>And the graphics context is called.
+It's basically the operation that the UI</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6088-1
+00:39:33.084 --> 00:39:37.030
+<v Antonio Cisternino>gives you.
+It's an object that allows you to design</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6088-2
+00:39:37.030 --> 00:39:42.721
+<v Antonio Cisternino>to draw on the on your on your window. OK,
+so that's the graphics context.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6149-0
+00:39:44.721 --> 00:39:50.532
+<v Antonio Cisternino>And if you start drawing,
+actually the system will update all the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6149-1
+00:39:50.532 --> 00:39:56.432
+<v Antonio Cisternino>pixels that you're seeing.
+So if you're updating multiple objects,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6149-2
+00:39:56.432 --> 00:39:59.161
+<v Antonio Cisternino>this is unlikely to be updated.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6182-0
+00:39:59.481 --> 00:40:07.920
+<v Antonio Cisternino>In instantaneously and so the user will
+perceive some flickering in the in the in</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6182-1
+00:40:07.920 --> 00:40:10.081
+<v Antonio Cisternino>the refresh. OK, but.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6230-0
+00:40:11.761 --> 00:40:20.300
+<v Antonio Cisternino>If you allocate an offscreen bitmap,
+so basically a buffer with the same</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6230-1
+00:40:20.300 --> 00:40:27.201
+<v Antonio Cisternino>number of pixels on your screen or all of
+your window and.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6301-0
+00:40:27.561 --> 00:40:35.133
+<v Antonio Cisternino>You start writing into that off screen
+buffer that basically generates the new</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6301-1
+00:40:35.133 --> 00:40:39.734
+<v Antonio Cisternino>frame.
+In the frame buffer there is the current</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6301-2
+00:40:39.734 --> 00:40:43.281
+<v Antonio Cisternino>frame and then you copy the the this.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6368-0
+00:40:44.081 --> 00:40:50.835
+<v Antonio Cisternino>Hidden buffer into the buffer and only
+the different pixel will be updated.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6368-1
+00:40:50.835 --> 00:40:55.989
+<v Antonio Cisternino>This generates a much stabler update of
+the of the frame.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6368-2
+00:40:55.989 --> 00:41:00.521
+<v Antonio Cisternino>So then this is the standard technique
+studied in.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6374-0
+00:41:00.721 --> 00:41:04.321
+<v Antonio Cisternino>Graphical programming courses and that's
+that's it.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6377-0
+00:41:05.681 --> 00:41:05.801
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6380-0
+00:41:08.081 --> 00:41:08.161
+<v Antonio Cisternino>So.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6393-0
+00:41:12.201 --> 00:41:16.641
+<v Antonio Cisternino>Now we are getting instructions.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6400-0
+00:41:19.121 --> 00:41:22.041
+<v Antonio Cisternino>And the output OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6421-0
+00:41:23.561 --> 00:41:32.503
+<v Antonio Cisternino>I pick up a a simple project,
+so clearly perhaps a single file will be</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6421-1
+00:41:32.503 --> 00:41:32.881
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6444-0
+00:41:34.201 --> 00:41:42.081
+<v Antonio Cisternino>I am using.net core and VS code.
+How can I start?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6476-0
+00:41:57.201 --> 00:42:04.819
+<v Antonio Cisternino>So no,
+no graphical user interface to to draw</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6476-1
+00:42:04.819 --> 00:42:06.641
+<v Antonio Cisternino>things. OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6498-0
+00:42:08.681 --> 00:42:15.321
+<v Antonio Cisternino>So now I can say OK, I can read,
+especially when you execute the uh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6537-0
+00:42:16.361 --> 00:42:23.793
+<v Antonio Cisternino>Code please read the the instruction
+before copy paste in your shell.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6537-1
+00:42:23.793 --> 00:42:27.721
+<v Antonio Cisternino>So I know that that is correct, so I.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6547-0
+00:42:30.881 --> 00:42:35.001
+<v Antonio Cisternino>Paste and I have my.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6552-0
+00:42:36.721 --> 00:42:37.361
+<v Antonio Cisternino>Roject created.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6561-0
+00:42:40.801 --> 00:42:43.921
+<v Antonio Cisternino>This generates these files.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6567-0
+00:42:47.361 --> 00:42:48.761
+<v Antonio Cisternino>OK, this is uh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6585-0
+00:42:49.721 --> 00:42:55.401
+<v Antonio Cisternino>Now I can check whether I can run.net run.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6628-0
+00:42:57.641 --> 00:43:03.644
+<v Antonio Cisternino>And the system in net compiles and run
+the application.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6628-1
+00:43:03.644 --> 00:43:11.041
+<v Antonio Cisternino>So now this is my Windows form graphical
+application up and running.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6635-0
+00:43:12.361 --> 00:43:14.601
+<v Antonio Cisternino>Of course, emty form.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6639-0
+00:43:16.721 --> 00:43:18.201
+<v Antonio Cisternino>OK now.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6642-0
+00:43:19.841 --> 00:43:20.081
+<v Antonio Cisternino>We.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6658-0
+00:43:22.281 --> 00:43:27.801
+<v Antonio Cisternino>Start Visual Studio Code.
+I trust the authors, yes.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6692-0
+00:43:30.961 --> 00:43:35.313
+<v Antonio Cisternino>And as you can see,
+it's complicated because you start</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6692-1
+00:43:35.313 --> 00:43:41.881
+<v Antonio Cisternino>trusting this thing even too much because
+all the instructions are correct so far.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6699-0
+00:43:45.721 --> 00:43:47.681
+<v Antonio Cisternino>So first of all.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6708-0
+00:43:49.401 --> 00:43:51.721
+<v Antonio Cisternino>Let's rename form one. No, sorry.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6714-0
+00:43:54.721 --> 00:43:56.801
+<v Antonio Cisternino>For one in two.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6722-0
+00:44:02.561 --> 00:44:05.961
+<v Antonio Cisternino>Rename game form.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6726-0
+00:44:13.281 --> 00:44:13.561
+<v Antonio Cisternino>Rename.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6730-0
+00:44:15.681 --> 00:44:16.001
+<v Antonio Cisternino>Game.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6733-0
+00:44:19.361 --> 00:44:20.281
+<v Antonio Cisternino>Too much.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6738-0
+00:44:24.761 --> 00:44:25.681
+<v Antonio Cisternino>Game for.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6741-0
+00:44:28.721 --> 00:44:29.201
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6746-0
+00:44:35.841 --> 00:44:36.321
+<v Antonio Cisternino>Now.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6756-0
+00:44:38.321 --> 00:44:40.641
+<v Antonio Cisternino>We have to rename.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6814-0
+00:44:42.441 --> 00:44:47.919
+<v Antonio Cisternino>Also the classes because this is these
+are the files in C#.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6814-1
+00:44:47.919 --> 00:44:52.666
+<v Antonio Cisternino>It's not like Java that you are forced to
+use this.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6814-2
+00:44:52.666 --> 00:44:57.961
+<v Antonio Cisternino>The name of the file should correspond to
+the class name.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6837-0
+00:44:58.961 --> 00:45:08.521
+<v Antonio Cisternino>So in principle it will run.
+So now I have to update this so game form.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6840-0
+00:45:11.281 --> 00:45:11.401
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6850-0
+00:45:17.401 --> 00:45:20.281
+<v Antonio Cisternino>I also have to change this.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6872-0
+00:45:21.241 --> 00:45:30.681
+<v Antonio Cisternino>Or constructor.
+Of course I can use a some support from.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6916-0
+00:45:32.281 --> 00:45:37.170
+<v Antonio Cisternino>The the editor to do the so-called code
+refactoring.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6916-1
+00:45:37.170 --> 00:45:44.643
+<v Antonio Cisternino>Code refactoring allows you to rename all
+the things because editors this is for</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6916-2
+00:45:44.643 --> 00:45:47.041
+<v Antonio Cisternino>sure for the multi-factor.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6918-0
+00:45:48.601 --> 00:45:48.721
+<v Antonio Cisternino>Um.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6970-0
+00:45:50.361 --> 00:45:56.737
+<v Antonio Cisternino>The the code the the editor.
+We didn't discuss much this,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6970-1
+00:45:56.737 --> 00:46:02.453
+<v Antonio Cisternino>but the editor is basically the half of a
+compiler.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/6970-2
+00:46:02.453 --> 00:46:06.081
+<v Antonio Cisternino>I mean it has most of the parser.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7052-0
+00:46:06.441 --> 00:46:12.962
+<v Antonio Cisternino>Of the of the language so that the editor
+is able to collapse blocks and see the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7052-1
+00:46:12.962 --> 00:46:18.919
+<v Antonio Cisternino>code as the abstract syntax tree.
+So operations such as rename this class</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7052-2
+00:46:18.919 --> 00:46:22.944
+<v Antonio Cisternino>can be performed by the editor in a
+semantic way,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7052-3
+00:46:22.944 --> 00:46:25.601
+<v Antonio Cisternino>not just search replace linearly.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7055-0
+00:46:26.241 --> 00:46:26.561
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7059-0
+00:46:28.201 --> 00:46:30.761
+<v Antonio Cisternino>Now it's fairly common.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7080-0
+00:46:32.241 --> 00:46:37.601
+<v Antonio Cisternino>And of course we have to change the
+program where we start.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7105-0
+00:46:39.841 --> 00:46:48.961
+<v Antonio Cisternino>The OK, this is for having a nice code.
+From time to time you restart and then.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7115-0
+00:46:53.441 --> 00:46:55.521
+<v Antonio Cisternino>We get in the designer.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7126-0
+00:46:58.201 --> 00:47:02.161
+<v Antonio Cisternino>In line 14, sorry.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7130-0
+00:47:08.161 --> 00:47:08.521
+<v Antonio Cisternino>Thank you.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7138-0
+00:47:11.361 --> 00:47:13.681
+<v Antonio Cisternino>OK, that was a good.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7142-0
+00:47:15.081 --> 00:47:17.641
+<v Antonio Cisternino>Right now.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7147-0
+00:47:22.481 --> 00:47:23.561
+<v Antonio Cisternino>We get these.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7160-0
+00:47:33.161 --> 00:47:36.201
+<v Antonio Cisternino>So the designer should be replaced with
+this.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7166-0
+00:47:40.281 --> 00:47:42.841
+<v Antonio Cisternino>Now notice that uh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7233-0
+00:47:45.321 --> 00:47:52.505
+<v Antonio Cisternino>Notice. Now let me do the dumb user.
+So I'm just acting as the servant of the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7233-1
+00:47:52.505 --> 00:47:57.754
+<v Antonio Cisternino>AI. AI tells me copy here,
+do that and I'm doing it. OK,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7233-2
+00:47:57.754 --> 00:48:00.241
+<v Antonio Cisternino>of course this is the risk.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7311-0
+00:48:00.641 --> 00:48:07.324
+<v Antonio Cisternino>You're taking and with applications it to
+some extent it's easier because at the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7311-1
+00:48:07.324 --> 00:48:12.192
+<v Antonio Cisternino>end of the day you know that you will run
+the application.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7311-2
+00:48:12.192 --> 00:48:18.546
+<v Antonio Cisternino>So if it's an archonoid game, OK,
+if it's not bad, OK, so it's not terrible,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7311-3
+00:48:18.546 --> 00:48:20.361
+<v Antonio Cisternino>but in general as you.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7365-0
+00:48:20.361 --> 00:48:26.565
+<v Antonio Cisternino>You can see it's really,
+really easy to fall in the trap that you</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7365-1
+00:48:26.565 --> 00:48:34.179
+<v Antonio Cisternino>start following the eye without losing
+your brain and contribute to the project.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7365-2
+00:48:34.179 --> 00:48:37.281
+<v Antonio Cisternino>So let me take this attitude, OK?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7367-0
+00:48:40.121 --> 00:48:40.481
+<v Antonio Cisternino>Now.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7374-0
+00:48:42.121 --> 00:48:46.121
+<v Antonio Cisternino>Here I did get.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7403-0
+00:48:51.401 --> 00:49:01.521
+<v Antonio Cisternino>I so create a new file game objects.
+I can make it game objects dot CS.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7456-0
+00:49:11.801 --> 00:49:17.012
+<v Antonio Cisternino>So as you can see,
+the AI tends to generate coding files</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7456-1
+00:49:17.012 --> 00:49:23.961
+<v Antonio Cisternino>because she expects that you will copy,
+paste and create the files so that.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7462-0
+00:49:26.081 --> 00:49:27.521
+<v Antonio Cisternino>O This is the game form.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7465-0
+00:49:35.121 --> 00:49:35.281
+<v Antonio Cisternino>So.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7474-0
+00:49:39.281 --> 00:49:41.761
+<v Antonio Cisternino>I forgot something, no?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7483-0
+00:49:43.681 --> 00:49:46.321
+<v Antonio Cisternino>OK, if we are lucky.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7494-0
+00:49:53.361 --> 00:49:55.121
+<v Antonio Cisternino>We should be able to run.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7504-0
+00:50:03.121 --> 00:50:05.961
+<v Antonio Cisternino>OK, so first error.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7508-0
+00:50:06.921 --> 00:50:07.681
+<v Antonio Cisternino>Time in.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7522-0
+00:50:10.561 --> 00:50:13.401
+<v Antonio Cisternino>Is ambiguous. Which one would you pick?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7560-0
+00:50:18.841 --> 00:50:26.298
+<v Antonio Cisternino>Timer is a reference ambiguous between
+seats and windows forms timer and system</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7560-1
+00:50:26.298 --> 00:50:29.561
+<v Antonio Cisternino>threading timer. What you would do?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7571-0
+00:50:30.521 --> 00:50:33.281
+<v Antonio Cisternino>OK, so let's do the down the programmer.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7592-0
+00:50:35.361 --> 00:50:42.401
+<v Antonio Cisternino>It's complicated. I know the answer. OK,
+so I screenshot.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7603-0
+00:50:43.801 --> 00:50:48.561
+<v Antonio Cisternino>And I guess this is the ever.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7619-0
+00:50:52.441 --> 00:50:58.881
+<v Antonio Cisternino>I get I created uh and copied the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7622-0
+00:51:00.761 --> 00:51:01.121
+<v Antonio Cisternino>Code.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7658-0
+00:51:09.361 --> 00:51:13.829
+<v Antonio Cisternino>Notice that at least for GPT,
+any task that involves programming</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7658-1
+00:51:13.829 --> 00:51:16.441
+<v Antonio Cisternino>typically triggers the thinking model.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7660-0
+00:51:16.521 --> 00:51:17.601
+<v Antonio Cisternino>Thinking model.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7674-0
+00:51:24.001 --> 00:51:25.801
+<v Antonio Cisternino>So the comparison to time classes.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7701-0
+00:51:28.321 --> 00:51:32.244
+<v Antonio Cisternino>For Windows Form game you want system
+Windows Forms time.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7701-1
+00:51:32.244 --> 00:51:34.881
+<v Antonio Cisternino>It was fairly obvious but nevertheless.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7715-0
+00:51:36.401 --> 00:51:40.401
+<v Antonio Cisternino>It is this way, so game four line 10.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7726-0
+00:51:49.121 --> 00:51:52.521
+<v Antonio Cisternino>System Windows forms type.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7730-0
+00:51:58.041 --> 00:51:58.281
+<v Antonio Cisternino>Hmm.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7733-0
+00:52:01.321 --> 00:52:03.001
+<v Antonio Cisternino>Oh, another one.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7736-0
+00:52:06.841 --> 00:52:07.481
+<v Antonio Cisternino>59.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7750-0
+00:52:10.241 --> 00:52:15.521
+<v Antonio Cisternino>Same error now OK being dumb but.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7752-0
+00:52:17.921 --> 00:52:17.961
+<v Antonio Cisternino>Oh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7762-0
+00:52:21.601 --> 00:52:26.321
+<v Antonio Cisternino>OK, sees them in those forms.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7826-0
+00:52:44.801 --> 00:52:52.038
+<v Antonio Cisternino>So imagine that a bunch of colleagues of
+yours spent weeks in implementing these</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7826-1
+00:52:52.038 --> 00:52:58.561
+<v Antonio Cisternino>to pass the exam when I use it to give
+the programming interface course.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7852-0
+00:53:00.961 --> 00:53:06.301
+<v Antonio Cisternino>For so many years,
+I mean that was an exercise actually in</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7852-1
+00:53:06.301 --> 00:53:08.201
+<v Antonio Cisternino>15 minutes we we got.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7868-0
+00:53:09.201 --> 00:53:15.321
+<v Antonio Cisternino>An implementation that would have granted
+the pass to a student.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7873-0
+00:53:16.961 --> 00:53:18.881
+<v Antonio Cisternino>OK now.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7877-0
+00:53:26.121 --> 00:53:26.241
+<v Antonio Cisternino>Why?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7880-0
+00:53:30.521 --> 00:53:31.401
+<v Antonio Cisternino>Um, no.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7896-0
+00:53:38.921 --> 00:53:44.161
+<v Antonio Cisternino>So it oh bug. No, I've got a bug.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7917-0
+00:53:46.561 --> 00:53:53.201
+<v Antonio Cisternino>I was pressing it,
+so the first thing I will probably do is.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7928-0
+00:53:54.321 --> 00:53:57.081
+<v Antonio Cisternino>OK, no up to you now that we got this.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7967-0
+00:54:08.401 --> 00:54:11.284
+<v Antonio Cisternino>OK,
+so every time you you you you you break a</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7967-1
+00:54:11.284 --> 00:54:14.041
+<v Antonio Cisternino>brick, you have to increment the speed,
+OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/7970-0
+00:54:19.721 --> 00:54:20.161
+<v Antonio Cisternino>Now.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8001-0
+00:54:40.681 --> 00:54:52.601
+<v Antonio Cisternino>OK, can you make the physics of the ball?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8007-0
+00:54:54.081 --> 00:54:57.121
+<v Antonio Cisternino>More realistic.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8010-0
+00:54:58.681 --> 00:54:59.321
+<v Antonio Cisternino>When?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8093-0
+00:55:02.921 --> 00:55:08.806
+<v Antonio Cisternino>So actually your colleagues is suggesting
+that in a real world you have a bowl and</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8093-1
+00:55:08.806 --> 00:55:13.345
+<v Antonio Cisternino>the paddle is moving,
+you have friction that introduce rotation</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8093-2
+00:55:13.345 --> 00:55:18.521
+<v Antonio Cisternino>and in fact they were in Archanoid,
+in the original Archanoid they were.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8135-0
+00:55:18.641 --> 00:55:22.327
+<v Antonio Cisternino>Real approximation typically at the
+border.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8135-1
+00:55:22.327 --> 00:55:28.778
+<v Antonio Cisternino>Actually those have been implemented.
+It's in if you have noticed when I the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8135-2
+00:55:28.778 --> 00:55:29.281
+<v Antonio Cisternino>angle.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8142-0
+00:55:30.241 --> 00:55:33.761
+<v Antonio Cisternino>The angle at which the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8212-0
+00:55:36.241 --> 00:55:41.591
+<v Antonio Cisternino>The ball goes back if I use it,
+if I hit using the is changing.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8212-1
+00:55:41.591 --> 00:55:46.524
+<v Antonio Cisternino>So there is some implementation,
+but I think you're right,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8212-2
+00:55:46.524 --> 00:55:52.041
+<v Antonio Cisternino>it may be interesting to have a more
+physical implementation, OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8216-0
+00:55:52.521 --> 00:55:53.521
+<v Antonio Cisternino>Let's do that.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8251-0
+00:55:56.161 --> 00:56:03.973
+<v Antonio Cisternino>Can you make the physics of the ball more
+realistic when you when the ball</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8251-1
+00:56:03.973 --> 00:56:06.681
+<v Antonio Cisternino>interacts with the paddle?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8254-0
+00:56:10.681 --> 00:56:11.041
+<v Antonio Cisternino>Fiction.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8259-0
+00:56:12.201 --> 00:56:12.641
+<v Antonio Cisternino>Add the speed.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8263-0
+00:56:15.241 --> 00:56:17.241
+<v Antonio Cisternino>Ball speed.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8267-0
+00:56:18.841 --> 00:56:20.281
+<v Antonio Cisternino>Born nurse.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8271-0
+00:56:21.641 --> 00:56:22.841
+<v Antonio Cisternino>Et cetera.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8275-0
+00:56:26.161 --> 00:56:27.081
+<v Antonio Cisternino>Two examples.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8282-0
+00:56:41.961 --> 00:56:43.121
+<v Antonio Cisternino>So now.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8299-0
+00:56:45.961 --> 00:56:49.961
+<v Antonio Cisternino>If you look at the reasoning, uh,
+reasoning, it's interesting.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8315-0
+00:56:54.521 --> 00:56:57.561
+<v Antonio Cisternino>So I have to change the bounce from
+paddle.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8361-0
+00:56:58.801 --> 00:57:03.212
+<v Antonio Cisternino>I will add these variables,
+so reading the output,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8361-1
+00:57:03.212 --> 00:57:08.921
+<v Antonio Cisternino>especially on thinking mode,
+it's really useful for understanding</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8361-2
+00:57:08.921 --> 00:57:12.121
+<v Antonio Cisternino>what's going on. OK, so please do it.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8365-0
+00:57:13.481 --> 00:57:13.601
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8367-0
+00:57:15.641 --> 00:57:16.561
+<v Antonio Cisternino>Now.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8375-0
+00:57:21.641 --> 00:57:23.641
+<v Antonio Cisternino>What should I update?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8414-0
+00:57:26.721 --> 00:57:30.462
+<v Antonio Cisternino>So the system generated just the class
+paddle.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8414-1
+00:57:30.462 --> 00:57:34.521
+<v Antonio Cisternino>So now I have to understand the code a
+little bit.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8424-0
+00:57:36.921 --> 00:57:40.521
+<v Antonio Cisternino>So now in this simple uh uh case uh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8434-0
+00:57:42.161 --> 00:57:44.761
+<v Antonio Cisternino>We know that there is the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8466-0
+00:57:48.321 --> 00:57:52.527
+<v Antonio Cisternino>Game objects.
+The paddle should be updated,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8466-1
+00:57:52.527 --> 00:57:55.681
+<v Antonio Cisternino>so basically I replace the class.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8476-0
+00:58:00.641 --> 00:58:03.241
+<v Antonio Cisternino>And in game form dot game loop.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8488-0
+00:58:11.601 --> 00:58:15.441
+<v Antonio Cisternino>In the game form game loop.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8512-0
+00:58:28.481 --> 00:58:33.521
+<v Antonio Cisternino>We have to add this because we got the
+the difference.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8519-0
+00:58:39.521 --> 00:58:41.721
+<v Antonio Cisternino>I will say this.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8537-0
+00:58:51.841 --> 00:58:55.841
+<v Antonio Cisternino>I guess only the first because the other
+two lines are already there.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8564-0
+00:58:57.361 --> 00:59:02.081
+<v Antonio Cisternino>So do you think it's a good idea to ask
+to regenerate the full?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8568-0
+00:59:04.921 --> 00:59:06.121
+<v Antonio Cisternino>The full method.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8585-0
+00:59:07.601 --> 00:59:13.321
+<v Antonio Cisternino>Instead of me making a repeat,
+updating all the differences.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8602-0
+00:59:19.561 --> 00:59:23.881
+<v Antonio Cisternino>So in general, AI is terrible at copying.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8605-0
+00:59:25.561 --> 00:59:26.481
+<v Antonio Cisternino>Uh, the output.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8669-0
+00:59:28.441 --> 00:59:34.221
+<v Antonio Cisternino>OK, so if you ask the AI to copy,
+typically you get a completely different</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8669-1
+00:59:34.221 --> 00:59:37.689
+<v Antonio Cisternino>result.
+This is a problem because if you are</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8669-2
+00:59:37.689 --> 00:59:41.851
+<v Antonio Cisternino>writing code,
+I mean it's complicated to restart over</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8669-3
+00:59:41.851 --> 00:59:43.161
+<v Antonio Cisternino>and over because.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8685-0
+00:59:43.481 --> 00:59:48.481
+<v Antonio Cisternino>Sometimes you may get another
+implementation which is different.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8718-0
+00:59:49.721 --> 00:59:53.721
+<v Antonio Cisternino>And fix some problem,
+but introduce new problems that you have.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8718-1
+00:59:53.721 --> 00:59:57.721
+<v Antonio Cisternino>And so the risk is that you never
+converge into a final result.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8771-0
+01:00:00.961 --> 01:00:05.929
+<v Antonio Cisternino>Of course,
+one of the contribution that the Codex</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8771-1
+01:00:05.929 --> 01:00:13.281
+<v Antonio Cisternino>brings to the table is exactly this.
+It basically generates the diff with</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8771-2
+01:00:13.281 --> 01:00:16.361
+<v Antonio Cisternino>respect to the current project.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8789-0
+01:00:18.841 --> 01:00:22.321
+<v Antonio Cisternino>OK,
+so this is bounce from paddle when you do.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8846-0
+01:00:24.721 --> 01:00:31.363
+<v Antonio Cisternino>When you do things like this,
+basically with an editor like VS Code,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8846-1
+01:00:31.363 --> 01:00:35.983
+<v Antonio Cisternino>it's easy.
+You collapse the object and then you</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8846-2
+01:00:35.983 --> 01:00:39.641
+<v Antonio Cisternino>replace with a new implementation and.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8862-0
+01:00:42.761 --> 01:00:46.361
+<v Antonio Cisternino>And then, uh,
+if you're a maniac of the code, you also.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8875-0
+01:00:48.001 --> 01:00:51.801
+<v Antonio Cisternino>Control KF where you format this section.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8878-0
+01:00:53.481 --> 01:00:53.601
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8896-0
+01:01:05.241 --> 01:01:09.401
+<v Antonio Cisternino>If you wanna air friction,
+let's have also air friction.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8910-0
+01:01:12.441 --> 01:01:16.761
+<v Antonio Cisternino>Move into the ball class. Notice that the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8921-0
+01:01:21.801 --> 01:01:25.521
+<v Antonio Cisternino>This is in the class no oh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8923-0
+01:01:25.561 --> 01:01:25.681
+<v Antonio Cisternino>Oh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8946-0
+01:01:30.961 --> 01:01:36.521
+<v Antonio Cisternino>In class bowl, there should be move.
+There we are and we replace.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8948-0
+01:01:38.641 --> 01:01:39.401
+<v Antonio Cisternino>And.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8953-0
+01:01:41.281 --> 01:01:42.561
+<v Antonio Cisternino>Contra KF.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8957-0
+01:01:44.001 --> 01:01:45.201
+<v Antonio Cisternino>There we are.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8967-0
+01:01:48.801 --> 01:01:51.721
+<v Antonio Cisternino>OK, let's see if it works.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/8991-0
+01:01:56.721 --> 01:02:02.961
+<v Antonio Cisternino>Some effect is visible,
+so I will say that nice good AI.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9002-0
+01:02:09.281 --> 01:02:11.921
+<v Antonio Cisternino>OK, next one you were suggesting.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9005-0
+01:02:16.721 --> 01:02:17.641
+<v Antonio Cisternino>Is the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9015-0
+01:02:21.881 --> 01:02:25.921
+<v Antonio Cisternino>Actually the the the game.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9028-0
+01:02:27.521 --> 01:02:31.601
+<v Antonio Cisternino>Please every brick it gets it bounce into.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9033-0
+01:02:41.161 --> 01:02:41.401
+<v Antonio Cisternino>Hmm.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9039-0
+01:02:48.001 --> 01:02:50.441
+<v Antonio Cisternino>Oh, bug.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9049-0
+01:02:54.401 --> 01:02:59.681
+<v Antonio Cisternino>And and oh, that that that will be OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9060-0
+01:03:06.841 --> 01:03:08.161
+<v Antonio Cisternino>So you see what I was, um.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9111-0
+01:03:09.481 --> 01:03:15.073
+<v Antonio Cisternino>What?
+What was my my point about how deep you</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9111-1
+01:03:15.073 --> 01:03:21.395
+<v Antonio Cisternino>you can go?
+I mean this project can be implement an</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9111-2
+01:03:21.395 --> 01:03:24.921
+<v Antonio Cisternino>Arcanoid game like a game in.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9168-0
+01:03:26.041 --> 01:03:32.189
+<v Antonio Cisternino>In Windows Pharmacy Sharp,
+OK and then we did the core job in 10</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9168-1
+01:03:32.189 --> 01:03:38.716
+<v Antonio Cisternino>minutes and now we can go in graphics.
+You can go on and on forever.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9168-2
+01:03:38.716 --> 01:03:41.081
+<v Antonio Cisternino>I mean graphics is never.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9173-0
+01:03:41.201 --> 01:03:42.881
+<v Antonio Cisternino>Never ever finished.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9198-0
+01:03:44.281 --> 01:03:55.121
+<v Antonio Cisternino>But I mean is now the problem is we have
+to fix bugs. So oh, come on.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9200-0
+01:03:56.881 --> 01:03:57.121
+<v Antonio Cisternino>Um.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9209-0
+01:03:59.801 --> 01:04:04.801
+<v Antonio Cisternino>When the bowl hits.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9214-0
+01:04:06.001 --> 01:04:08.561
+<v Antonio Cisternino>In some places.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9223-0
+01:04:10.321 --> 01:04:13.441
+<v Antonio Cisternino>Probably at the crossing.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9232-0
+01:04:16.761 --> 01:04:21.521
+<v Antonio Cisternino>It pops a break without the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9236-0
+01:04:23.881 --> 01:04:26.241
+<v Antonio Cisternino>Um, changing.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9239-0
+01:04:28.121 --> 01:04:30.681
+<v Antonio Cisternino>The reaction this.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9252-0
+01:04:33.281 --> 01:04:37.201
+<v Antonio Cisternino>Is a bug. Can you fix it?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9299-0
+01:04:47.401 --> 01:04:52.316
+<v Antonio Cisternino>It's interesting because as you see when
+you start changing things,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9299-1
+01:04:52.316 --> 01:04:57.521
+<v Antonio Cisternino>question gets more complicated and you
+have to double check the output.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9302-0
+01:04:59.001 --> 01:04:59.361
+<v Antonio Cisternino>More thoroughly.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9306-0
+01:05:03.921 --> 01:05:05.121
+<v Antonio Cisternino>So now.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9313-0
+01:05:12.561 --> 01:05:14.401
+<v Antonio Cisternino>That bug makes sense.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9327-0
+01:05:18.401 --> 01:05:21.321
+<v Antonio Cisternino>So let's add two fields to the ball class.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9343-0
+01:05:26.081 --> 01:05:29.001
+<v Antonio Cisternino>I hope that you start appreciating.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9345-0
+01:05:30.401 --> 01:05:30.961
+<v Antonio Cisternino>Off.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9351-0
+01:05:32.561 --> 01:05:33.081
+<v Antonio Cisternino>Class.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9418-0
+01:05:35.441 --> 01:05:43.675
+<v Antonio Cisternino>How at some point you start feeling the
+need to understand the the generated code,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9418-1
+01:05:43.675 --> 01:05:50.321
+<v Antonio Cisternino>because by copy pasting the risk is that
+eventually you will fail.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9426-0
+01:05:52.401 --> 01:05:55.721
+<v Antonio Cisternino>To understand what's going on.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9435-0
+01:06:00.441 --> 01:06:02.241
+<v Antonio Cisternino>So for instance, now.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9444-0
+01:06:03.441 --> 01:06:06.521
+<v Antonio Cisternino>It is changing the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9466-0
+01:06:09.681 --> 01:06:14.761
+<v Antonio Cisternino>Uh, the the move implementation,
+but it's losing the air friction.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9506-0
+01:06:16.601 --> 01:06:20.633
+<v Antonio Cisternino>Which I like it,
+so I decide to not copy paste the full</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9506-1
+01:06:20.633 --> 01:06:24.161
+<v Antonio Cisternino>method,
+but I include only the interesting part.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9566-0
+01:06:31.201 --> 01:06:36.936
+<v Antonio Cisternino>The bouncer from brick. Oh, by the way,
+if you decide to go this way,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9566-1
+01:06:36.936 --> 01:06:43.654
+<v Antonio Cisternino>it's a good idea to commit into a local
+git that you create for the occasion your</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9566-2
+01:06:43.654 --> 01:06:46.521
+<v Antonio Cisternino>code so that you can roll back and.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9581-0
+01:06:49.241 --> 01:06:52.441
+<v Antonio Cisternino>Uh, so bathroom week is in.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9584-0
+01:06:54.201 --> 01:06:54.361
+<v Antonio Cisternino>Yeah.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9595-0
+01:06:58.801 --> 01:07:01.641
+<v Antonio Cisternino>Notice very simple bounds.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9618-0
+01:07:02.721 --> 01:07:08.521
+<v Antonio Cisternino>She was aware that was very simple bound.
+Now it's more complicated.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9623-0
+01:07:11.721 --> 01:07:12.841
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9627-0
+01:07:14.281 --> 01:07:14.401
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9643-0
+01:07:19.921 --> 01:07:24.281
+<v Antonio Cisternino>Only bounce on one brick per frame,
+so basically.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9658-0
+01:07:25.921 --> 01:07:29.401
+<v Antonio Cisternino>The I found that initial implementation.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9672-0
+01:07:32.081 --> 01:07:38.161
+<v Antonio Cisternino>You had two months,
+two months to set up the MFA two months.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9677-0
+01:07:40.761 --> 01:07:43.401
+<v Antonio Cisternino>Now you wait O.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9758-0
+01:07:45.841 --> 01:07:51.944
+<v Antonio Cisternino>The risk is that there are situation in
+which you hit with multiple bricks and in</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9758-1
+01:07:51.944 --> 01:07:55.294
+<v Antonio Cisternino>fact the both is that we didn't cross
+check,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9758-2
+01:07:55.294 --> 01:08:01.174
+<v Antonio Cisternino>but I think it it is right is that and
+it's a typical the boundary checking in</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9758-3
+01:08:01.174 --> 01:08:03.481
+<v Antonio Cisternino>in games is always a big thing.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9820-0
+01:08:04.241 --> 01:08:08.359
+<v Antonio Cisternino>Because if you update the position of the
+object before changing it,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9820-1
+01:08:08.359 --> 01:08:13.075
+<v Antonio Cisternino>the risk is that you enter inside an
+object, you fail to detect the collision,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9820-2
+01:08:13.075 --> 01:08:16.835
+<v Antonio Cisternino>and so you may have some transparency
+effects inside the game.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9820-3
+01:08:16.835 --> 01:08:19.521
+<v Antonio Cisternino>So that's that's basically what's
+happening.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9822-0
+01:08:20.081 --> 01:08:20.241
+<v Antonio Cisternino>Um.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9825-0
+01:08:23.481 --> 01:08:23.841
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9827-0
+01:08:25.641 --> 01:08:25.721
+<v Antonio Cisternino>So.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9837-0
+01:08:27.641 --> 01:08:30.481
+<v Antonio Cisternino>In the game loop, so in the form.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9848-0
+01:08:34.121 --> 01:08:37.281
+<v Antonio Cisternino>In the game loop, we're already here.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9854-0
+01:08:46.001 --> 01:08:46.441
+<v Antonio Cisternino>Basically.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9873-0
+01:08:50.561 --> 01:08:55.121
+<v Antonio Cisternino>The patch allows only one collision for
+frame.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9876-0
+01:08:59.561 --> 01:08:59.801
+<v Antonio Cisternino>5.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9878-0
+01:09:02.121 --> 01:09:02.241
+<v Antonio Cisternino>And.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9912-0
+01:09:03.361 --> 01:09:10.721
+<v Antonio Cisternino>The the actually the the the the idea
+that the AI does and actually I'm playing</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9912-1
+01:09:10.721 --> 01:09:15.321
+<v Antonio Cisternino>this game uh but I think it it can make
+uh sense.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9918-0
+01:09:19.041 --> 01:09:21.041
+<v Antonio Cisternino>Who? Hallucination.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9930-0
+01:09:24.721 --> 01:09:27.321
+<v Antonio Cisternino>That is not evident, but basically.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9939-0
+01:09:28.681 --> 01:09:30.961
+<v Antonio Cisternino>You have a an empty variable.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9949-0
+01:09:36.121 --> 01:09:40.041
+<v Antonio Cisternino>Unnecessary. OK, no, that was.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9970-0
+01:09:42.641 --> 01:09:47.801
+<v Antonio Cisternino>The variable is assigned,
+but its value is never used. Uh, OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9973-0
+01:09:50.001 --> 01:09:50.481
+<v Antonio Cisternino>Hmm.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9985-0
+01:09:51.841 --> 01:09:54.358
+<v Antonio Cisternino>She's right,
+so let me go back to the previous</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9985-1
+01:09:54.358 --> 01:09:55.161
+<v Antonio Cisternino>implementation.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/9988-0
+01:09:58.881 --> 01:09:59.561
+<v Antonio Cisternino>Actually.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10017-0
+01:10:03.601 --> 01:10:08.926
+<v Antonio Cisternino>There is the break. Oh, OK,
+so basically the the the news is uh,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10017-1
+01:10:08.926 --> 01:10:10.401
+<v Antonio Cisternino>it generates a uh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10041-0
+01:10:11.961 --> 01:10:17.464
+<v Antonio Cisternino>An empty, a useless variable,
+but basically the idea is you break from</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10041-1
+01:10:17.464 --> 01:10:18.161
+<v Antonio Cisternino>the loop.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10062-0
+01:10:21.721 --> 01:10:28.921
+<v Antonio Cisternino>So probably we can remove this,
+remove that and still make sense.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10094-0
+01:10:32.641 --> 01:10:37.346
+<v Antonio Cisternino>This is because, I mean,
+we're doing things together with AI,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10094-1
+01:10:37.346 --> 01:10:40.761
+<v Antonio Cisternino>so don't pretend that everything is
+perfect.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10097-0
+01:10:42.921 --> 01:10:43.041
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10108-0
+01:10:46.681 --> 01:10:49.961
+<v Antonio Cisternino>Don't looks to me that it's been fixed.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10112-0
+01:10:52.481 --> 01:10:53.961
+<v Antonio Cisternino>I don't know.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10126-0
+01:11:01.921 --> 01:11:04.321
+<v Antonio Cisternino>Let me start again because I have to
+check.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10132-0
+01:11:12.481 --> 01:11:14.001
+<v Antonio Cisternino>This part is correct.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10156-0
+01:11:15.281 --> 01:11:20.016
+<v Antonio Cisternino>The mounts in that way is OK is OK.
+I'm still trying to understand whether</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10156-1
+01:11:20.016 --> 01:11:20.521
+<v Antonio Cisternino>because.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10158-0
+01:11:22.121 --> 01:11:22.321
+<v Antonio Cisternino>Thank.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10169-0
+01:11:27.921 --> 01:11:30.441
+<v Antonio Cisternino>And that was the the attempt to.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10188-0
+01:11:36.641 --> 01:11:41.881
+<v Antonio Cisternino>OK, so I I hope you got the idea of the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10190-0
+01:11:43.721 --> 01:11:43.761
+<v Antonio Cisternino>Uh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10199-0
+01:11:46.761 --> 01:11:49.561
+<v Antonio Cisternino>So let let's uh uh because uh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10294-0
+01:11:52.241 --> 01:11:55.465
+<v Antonio Cisternino>If I was doing a project then that will
+be.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10294-1
+01:11:55.465 --> 01:12:01.255
+<v Antonio Cisternino>Now the game will be interesting because
+I have to convince the A I to have me</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10294-2
+01:12:01.255 --> 01:12:05.945
+<v Antonio Cisternino>produce the right output by explaining a
+non-trivial behaviour.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10294-3
+01:12:05.945 --> 01:12:11.001
+<v Antonio Cisternino>I think at some point I would have tried
+to record the screen video.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10313-0
+01:12:12.241 --> 01:12:18.744
+<v Antonio Cisternino>And try to pass the AI in the video.
+So look at this. Do you think it's OK?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10313-1
+01:12:18.744 --> 01:12:22.081
+<v Antonio Cisternino>But let's try that. That's interesting.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10317-0
+01:12:23.721 --> 01:12:24.121
+<v Antonio Cisternino>So.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10356-0
+01:12:28.361 --> 01:12:38.236
+<v Antonio Cisternino>You know that in Windows now you you can
+if you hit the windows key capital S you</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10356-1
+01:12:38.236 --> 01:12:39.681
+<v Antonio Cisternino>can capture.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10376-0
+01:12:42.641 --> 01:12:50.961
+<v Antonio Cisternino>And let me start caturing this.
+Let me start the thing run.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10379-0
+01:12:55.961 --> 01:12:56.001
+<v Antonio Cisternino>Oh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10390-0
+01:12:58.801 --> 01:13:01.281
+<v Antonio Cisternino>Let me see if I'm able to.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10394-0
+01:13:05.321 --> 01:13:05.441
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10400-0
+01:13:07.761 --> 01:13:09.841
+<v Antonio Cisternino>Let's stop the video.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10417-0
+01:13:16.401 --> 01:13:21.321
+<v Antonio Cisternino>Unavailable. I I got the game over, OK?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10421-0
+01:13:24.121 --> 01:13:24.281
+<v Antonio Cisternino>So.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10428-0
+01:13:25.881 --> 01:13:28.401
+<v Antonio Cisternino>Where is this file now?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10430-0
+01:13:30.921 --> 01:13:31.041
+<v Antonio Cisternino>Save.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10433-0
+01:13:35.561 --> 01:13:35.961
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10436-0
+01:13:37.841 --> 01:13:39.441
+<v Antonio Cisternino>I'll go.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10448-0
+01:13:42.161 --> 01:13:46.281
+<v Antonio Cisternino>I join you for the F file download.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10462-0
+01:13:51.121 --> 01:13:55.601
+<v Antonio Cisternino>You see that at the beginning.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10466-0
+01:14:00.681 --> 01:14:01.561
+<v Antonio Cisternino>Beginning oh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10474-0
+01:14:03.841 --> 01:14:08.361
+<v Antonio Cisternino>The behavior is weird.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10493-0
+01:14:11.921 --> 01:14:16.721
+<v Antonio Cisternino>This is my first time.
+I never tried uh uh to to feed the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10497-0
+01:14:18.521 --> 01:14:19.561
+<v Antonio Cisternino>A video.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10514-0
+01:14:33.121 --> 01:14:36.801
+<v Antonio Cisternino>Oh,
+now she pretends that she's understanding.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10531-0
+01:14:42.761 --> 01:14:46.361
+<v Antonio Cisternino>O Let's change the constructor to this,
+OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10534-0
+01:14:50.921 --> 01:14:51.041
+<v Antonio Cisternino>Call.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10542-0
+01:14:52.881 --> 01:14:55.121
+<v Antonio Cisternino>Uh, the constructor of both.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10545-0
+01:15:00.281 --> 01:15:00.441
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10549-0
+01:15:05.001 --> 01:15:06.121
+<v Antonio Cisternino>OK, boy.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10566-0
+01:15:15.241 --> 01:15:20.161
+<v Antonio Cisternino>New OK, so reset bull and paddle.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10571-0
+01:15:23.161 --> 01:15:24.601
+<v Antonio Cisternino>In game 4.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10577-0
+01:15:26.041 --> 01:15:26.761
+<v Antonio Cisternino>So K4.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10581-0
+01:15:29.561 --> 01:15:30.161
+<v Antonio Cisternino>Reset.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10595-0
+01:15:38.801 --> 01:15:43.241
+<v Antonio Cisternino>This this is it. Go there the new.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10602-0
+01:15:44.641 --> 01:15:46.481
+<v Antonio Cisternino>We have to set up.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10607-0
+01:15:51.881 --> 01:15:52.001
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10609-0
+01:15:52.081 --> 01:15:52.201
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10627-0
+01:15:56.881 --> 01:16:01.170
+<v Antonio Cisternino>OK,
+so let me check that I did save</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10627-1
+01:16:01.170 --> 01:16:02.481
+<v Antonio Cisternino>everything.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10631-0
+01:16:06.481 --> 01:16:06.921
+<v Antonio Cisternino>That's cool.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10635-0
+01:16:13.161 --> 01:16:14.641
+<v Antonio Cisternino>This is war.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10662-0
+01:16:17.001 --> 01:16:22.281
+<v Antonio Cisternino>So if you think that I just provided the
+video saying can you fix this,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10662-1
+01:16:22.281 --> 01:16:23.601
+<v Antonio Cisternino>that's impressive.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10668-0
+01:16:25.881 --> 01:16:28.281
+<v Antonio Cisternino>I didn't expect this, OK?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10688-0
+01:16:29.241 --> 01:16:33.201
+<v Antonio Cisternino>OK, let's do a final thing,
+which is increase the speed.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10710-0
+01:16:38.601 --> 01:16:51.121
+<v Antonio Cisternino>Can you now increase the speed as the
+user pops bricks?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10751-0
+01:17:00.361 --> 01:17:11.534
+<v Antonio Cisternino>OK, so while I get the these few lines,
+I hope you got the idea on how to produce</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10751-1
+01:17:11.534 --> 01:17:13.441
+<v Antonio Cisternino>this thing so.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10754-0
+01:17:15.041 --> 01:17:16.361
+<v Antonio Cisternino>Few considerations.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10788-0
+01:17:19.001 --> 01:17:26.726
+<v Antonio Cisternino>Prompts here are fairly easy to to
+comment. OK,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10788-1
+01:17:26.726 --> 01:17:32.841
+<v Antonio Cisternino>so let's in your board class add this.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10799-0
+01:17:35.441 --> 01:17:39.201
+<v Antonio Cisternino>OK, so we have to add the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10813-0
+01:17:44.281 --> 01:17:48.881
+<v Antonio Cisternino>In the bool class add the these advers.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10823-0
+01:17:50.281 --> 01:17:53.801
+<v Antonio Cisternino>Terrible. I need the terrible thing.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10827-0
+01:17:55.441 --> 01:17:56.761
+<v Antonio Cisternino>It's late.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10829-0
+01:17:58.801 --> 01:17:59.081
+<v Antonio Cisternino>No.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10836-0
+01:18:10.241 --> 01:18:10.601
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10840-0
+01:18:12.641 --> 01:18:14.081
+<v Antonio Cisternino>There we are.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10854-0
+01:18:17.681 --> 01:18:22.041
+<v Antonio Cisternino>Control KF OK, did it and now.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10858-0
+01:18:24.481 --> 01:18:24.881
+<v Antonio Cisternino>In bounce.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10867-0
+01:18:33.441 --> 01:18:35.841
+<v Antonio Cisternino>In bounce from paddle.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10870-0
+01:18:38.481 --> 01:18:38.801
+<v Antonio Cisternino>This one.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10880-0
+01:18:41.361 --> 01:18:44.881
+<v Antonio Cisternino>So here the bounce from paddle.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10899-0
+01:18:56.001 --> 01:19:00.601
+<v Antonio Cisternino>Just replace the keep speed within bounce
+pads.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10902-0
+01:19:05.961 --> 01:19:06.201
+<v Antonio Cisternino>Hmm.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10911-0
+01:19:15.041 --> 01:19:17.761
+<v Antonio Cisternino>These two at the end, I will say.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10949-0
+01:19:19.521 --> 01:19:27.735
+<v Antonio Cisternino>OK,
+don't ask me why this thing is doing like</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10949-1
+01:19:27.735 --> 01:19:34.521
+<v Antonio Cisternino>this, but nevertheless, OK, which one?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10956-0
+01:19:36.321 --> 01:19:38.201
+<v Antonio Cisternino>It's, uh, oh, yes.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10959-0
+01:19:39.641 --> 01:19:40.001
+<v Antonio Cisternino>Thank you.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10963-0
+01:19:43.041 --> 01:19:43.161
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10968-0
+01:19:55.761 --> 01:19:55.841
+<v Antonio Cisternino>O.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/10984-0
+01:19:58.401 --> 01:20:06.161
+<v Antonio Cisternino>You see that the ball is moving like.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11021-0
+01:20:08.361 --> 01:20:14.825
+<v Antonio Cisternino>Not really constant speed.
+It looks like for a small amount of time,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11021-1
+01:20:14.825 --> 01:20:19.041
+<v Antonio Cisternino>uh is uh speeding up and then uh slows
+down.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11028-0
+01:20:21.801 --> 01:20:23.641
+<v Antonio Cisternino>Why do you think is this?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11070-0
+01:20:24.361 --> 01:20:32.679
+<v Antonio Cisternino>I cannot generate,
+but it takes time to generate plays and</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11070-1
+01:20:32.679 --> 01:20:38.601
+<v Antonio Cisternino>slow down the game, so we should separate.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11100-0
+01:20:40.521 --> 01:20:47.453
+<v Antonio Cisternino>So your colleague says OK,
+the problem is that the code that is</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11100-1
+01:20:47.453 --> 01:20:52.761
+<v Antonio Cisternino>being generated assumes that it is called
+every.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11158-0
+01:20:54.241 --> 01:21:02.352
+<v Antonio Cisternino>6 milliseconds. OK,
+but unfortunately the UI system is not so</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11158-1
+01:21:02.352 --> 01:21:09.547
+<v Antonio Cisternino>precise. OK,
+so a better way will be to measure to use</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11158-2
+01:21:09.547 --> 01:21:10.201
+<v Antonio Cisternino>time.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11246-0
+01:21:10.921 --> 01:21:15.911
+<v Antonio Cisternino>To measure the actual speed,
+the actual position and compute every</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11246-1
+01:21:15.911 --> 01:21:21.498
+<v Antonio Cisternino>frame you take the current time,
+you take the difference with with respect</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11246-2
+01:21:21.498 --> 01:21:27.233
+<v Antonio Cisternino>to the previous frame and then you
+compute the physics using the delta T not</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11246-3
+01:21:27.233 --> 01:21:30.361
+<v Antonio Cisternino>with the assuming that the delta T is the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11320-0
+01:21:30.441 --> 01:21:36.083
+<v Antonio Cisternino>Milliseconds of the frame. OK,
+that will get a much better,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11320-1
+01:21:36.083 --> 01:21:43.793
+<v Antonio Cisternino>but I think it's fairly nice that in 3/4
+of an hour we've been able to generate a</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11320-2
+01:21:43.793 --> 01:21:50.281
+<v Antonio Cisternino>reasonable application from scratch using
+Windows Forms not knowing.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11335-0
+01:21:50.361 --> 01:21:57.361
+<v Antonio Cisternino>Now if this was a project,
+you may ask what?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11391-0
+01:21:58.801 --> 01:22:07.523
+<v Antonio Cisternino>Does it mean to verify? Double check. OK,
+so in some of the projects software is it</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11391-1
+01:22:07.523 --> 01:22:13.961
+<v Antonio Cisternino>depends on the software because this this
+software was about.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11464-0
+01:22:14.721 --> 01:22:22.390
+<v Antonio Cisternino>Deleting all the files from your file
+system that starts with F and have on the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11464-1
+01:22:22.390 --> 01:22:28.238
+<v Antonio Cisternino>4th letter A the file,
+then the self evidence in running the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11464-2
+01:22:28.238 --> 01:22:31.401
+<v Antonio Cisternino>application. I won't go that way.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11528-0
+01:22:31.481 --> 01:22:35.555
+<v Antonio Cisternino>This is a UI application.
+If it doesn't work,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11528-1
+01:22:35.555 --> 01:22:41.844
+<v Antonio Cisternino>we simply kill and restart it and it is
+to some extent self applicant.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11528-2
+01:22:41.844 --> 01:22:47.601
+<v Antonio Cisternino>OK and as a matter of fact I would have
+written in the relation.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11587-0
+01:22:48.281 --> 01:22:52.553
+<v Antonio Cisternino>I did the the checks over time.
+For instance,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11587-1
+01:22:52.553 --> 01:22:59.796
+<v Antonio Cisternino>I had to upload the video so we get
+because at some point they don't when you</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11587-2
+01:22:59.796 --> 01:23:04.161
+<v Antonio Cisternino>are application was behaving in the wrong
+way.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11682-0
+01:23:04.841 --> 01:23:10.293
+<v Antonio Cisternino>And and then I first tried with this
+prompt to explain to the model which was</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11682-1
+01:23:10.293 --> 01:23:16.164
+<v Antonio Cisternino>but I failed to to get the fix and then I
+reported a brief video and I uploaded the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11682-2
+01:23:16.164 --> 01:23:21.686
+<v Antonio Cisternino>video and asked it for a patch and and
+the model would do how to produce it in</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11682-3
+01:23:21.686 --> 01:23:24.761
+<v Antonio Cisternino>and work it etcetera.
+OK so the the checks.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11765-0
+01:23:24.761 --> 01:23:30.752
+<v Antonio Cisternino>Depends on if you're generating text
+about some properties of monadic</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11765-1
+01:23:30.752 --> 01:23:36.487
+<v Antonio Cisternino>computation in our scale,
+then you have to double check the final.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11765-2
+01:23:36.487 --> 01:23:42.478
+<v Antonio Cisternino>When you're doing with the code,
+the check is part of the development</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11765-3
+01:23:42.478 --> 01:23:44.361
+<v Antonio Cisternino>cycle because you get.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11793-0
+01:23:44.601 --> 01:23:49.270
+<v Antonio Cisternino>Check.
+You have to check because I I hope you</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11793-1
+01:23:49.270 --> 01:23:52.721
+<v Antonio Cisternino>did appreciate that at some point.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11859-0
+01:23:53.961 --> 01:23:59.435
+<v Antonio Cisternino>The the the code of the bounce from
+paddle that it generated,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11859-1
+01:23:59.435 --> 01:24:06.763
+<v Antonio Cisternino>it was different than the one because in
+the context now the model has the simpler</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11859-2
+01:24:06.763 --> 01:24:08.441
+<v Antonio Cisternino>bounce from paddle.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11942-0
+01:24:10.041 --> 01:24:14.041
+<v Antonio Cisternino>That original generated.
+Then I I asked him to make it more</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11942-1
+01:24:14.041 --> 01:24:19.374
+<v Antonio Cisternino>physically possible and he complicated it,
+but he forgot about that part and he</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11942-2
+01:24:19.374 --> 01:24:23.908
+<v Antonio Cisternino>generated the simpler version. Again,
+I spotted the difference. OK,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11942-3
+01:24:23.908 --> 01:24:27.841
+<v Antonio Cisternino>I'll do it by myself.
+There are several techniques to work</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/11942-4
+01:24:27.841 --> 01:24:28.641
+<v Antonio Cisternino>around this.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12013-0
+01:24:28.841 --> 01:24:33.930
+<v Antonio Cisternino>You can start a new chat and say OK,
+I have this application.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12013-1
+01:24:33.930 --> 01:24:39.511
+<v Antonio Cisternino>You upload the files of the application
+and start again from there.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12013-2
+01:24:39.511 --> 01:24:43.861
+<v Antonio Cisternino>That's acceptable.
+Or you start looking and making a</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12013-3
+01:24:43.861 --> 01:24:46.241
+<v Antonio Cisternino>difference and read the code.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12049-0
+01:24:47.161 --> 01:24:54.172
+<v Antonio Cisternino>Another thing that I would like to see in
+the verification is whether the code is</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12049-1
+01:24:54.172 --> 01:24:58.361
+<v Antonio Cisternino>convincing. I mean,
+do you think that are there?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12070-0
+01:25:01.121 --> 01:25:05.641
+<v Antonio Cisternino>Potential condition in which the code the
+generated code misbehaves.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12147-0
+01:25:07.081 --> 01:25:13.496
+<v Antonio Cisternino>Are you sure that the output is always
+sound or you did three tests and those</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12147-1
+01:25:13.496 --> 01:25:18.842
+<v Antonio Cisternino>three tests were OK and that's it and you
+hope for the best? OK,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12147-2
+01:25:18.842 --> 01:25:24.681
+<v Antonio Cisternino>so even though the liquidation part in
+the software, it may be partly.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12221-0
+01:25:25.081 --> 01:25:30.320
+<v Antonio Cisternino>Done just by executing.
+This doesn't mean that you don't go.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12221-1
+01:25:30.320 --> 01:25:34.185
+<v Antonio Cisternino>You don't have to go.
+You have to go inside,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12221-2
+01:25:34.185 --> 01:25:41.400
+<v Antonio Cisternino>try to understand the code and try to see
+whether the code is behaving as expected.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12221-3
+01:25:41.400 --> 01:25:44.921
+<v Antonio Cisternino>And I mean the game loop is this correct?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12225-0
+01:25:44.961 --> 01:25:46.801
+<v Antonio Cisternino>So let's let's have a look at the game
+loop.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12253-0
+01:25:51.641 --> 01:25:57.562
+<v Antonio Cisternino>There are warnings.
+These warnings are OK or we should we so</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12253-1
+01:25:57.562 --> 01:25:58.921
+<v Antonio Cisternino>the game loop.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12286-0
+01:26:02.276 --> 01:26:10.134
+<v Antonio Cisternino>One may argue about this because the game
+loop is a call back on the tick of the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12286-1
+01:26:10.134 --> 01:26:10.716
+<v Antonio Cisternino>timer.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12357-0
+01:26:12.556 --> 01:26:16.499
+<v Antonio Cisternino>OK,
+which is OK in fact because this is a</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12357-1
+01:26:16.499 --> 01:26:21.288
+<v Antonio Cisternino>Windows form application.
+That was my requirement.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12357-2
+01:26:21.288 --> 01:26:26.734
+<v Antonio Cisternino>There are frameworks that allows you to
+not have the the.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12357-3
+01:26:26.734 --> 01:26:30.396
+<v Antonio Cisternino>You can do it also in in Windows forms.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12412-0
+01:26:31.076 --> 01:26:38.652
+<v Antonio Cisternino>You you you can avoid to process the
+event loop and and so you can have a much</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12412-1
+01:26:38.652 --> 01:26:46.708
+<v Antonio Cisternino>more efficient cycle in in the processing.
+So I mean you may possibly using another</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12412-2
+01:26:46.708 --> 01:26:46.996
+<v Antonio Cisternino>AI.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12430-0
+01:26:47.396 --> 01:26:53.916
+<v Antonio Cisternino>Asking whether these implementations are
+OK or not. So let's try this.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12432-0
+01:26:56.556 --> 01:26:56.716
+<v Antonio Cisternino>Cloth.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12474-0
+01:27:04.356 --> 01:27:19.436
+<v Antonio Cisternino>I have the following implementation of
+another canoid game in C# and Winforms.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12477-0
+01:27:19.996 --> 01:27:21.276
+<v Antonio Cisternino>Forms.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12482-0
+01:27:24.396 --> 01:27:26.316
+<v Antonio Cisternino>Is the game.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12486-0
+01:27:29.236 --> 01:27:30.396
+<v Antonio Cisternino>Loop correct.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12490-0
+01:27:35.116 --> 01:27:35.236
+<v Antonio Cisternino>OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12529-0
+01:27:42.236 --> 01:27:48.172
+<v Antonio Cisternino>And we'll see.
+This is a fairly frequent way using</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12529-1
+01:27:48.172 --> 01:27:53.876
+<v Antonio Cisternino>another A I to cross-check the output of
+an A I.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12531-0
+01:27:55.036 --> 01:27:55.116
+<v Antonio Cisternino>Uh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12538-0
+01:28:00.636 --> 01:28:03.076
+<v Antonio Cisternino>And actually I expect that.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12547-0
+01:28:06.156 --> 01:28:09.516
+<v Antonio Cisternino>Mostly correct was good.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12585-0
+01:28:13.316 --> 01:28:17.924
+<v Antonio Cisternino>UI thread blocking. OK,
+this is the fine the end of the game.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12585-1
+01:28:17.924 --> 01:28:21.641
+<v Antonio Cisternino>In general,
+it's not a good idea to use a pop-up.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12585-2
+01:28:21.641 --> 01:28:22.236
+<v Antonio Cisternino>It's OK.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12587-0
+01:28:23.676 --> 01:28:23.716
+<v Antonio Cisternino>Uh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12589-0
+01:28:27.516 --> 01:28:27.756
+<v Antonio Cisternino>Huh.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12643-0
+01:28:30.476 --> 01:28:37.752
+<v Antonio Cisternino>OK, reasonable for this. OK,
+basically she said. OK, I will do this.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12643-1
+01:28:37.752 --> 01:28:45.556
+<v Antonio Cisternino>I mean, I I disagree with this,
+but I mean this is not the UI programming</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12643-2
+01:28:45.556 --> 01:28:46.716
+<v Antonio Cisternino>course, so.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12713-0
+01:28:48.036 --> 01:28:53.709
+<v Antonio Cisternino>It's OK. OK,
+so I hope to give you an example of how</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12713-1
+01:28:53.709 --> 01:29:01.096
+<v Antonio Cisternino>software development may feel.
+Of course these boons scale up to the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12713-2
+01:29:01.096 --> 01:29:06.556
+<v Antonio Cisternino>full 300 files application.
+I mean this works for.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12794-0
+01:29:07.756 --> 01:29:13.113
+<v Antonio Cisternino>Small applications,
+then you need to start using a different</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12794-1
+01:29:13.113 --> 01:29:19.436
+<v Antonio Cisternino>system and the models are the same,
+but clearly the codex is capable of</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12794-2
+01:29:19.436 --> 01:29:26.725
+<v Antonio Cisternino>processing the full code base without you
+having to code the copy paste, etcetera,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12794-3
+01:29:26.725 --> 01:29:27.516
+<v Antonio Cisternino>etcetera.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12838-0
+01:29:27.636 --> 01:29:34.593
+<v Antonio Cisternino>Small application, I mean if you think,
+I think this will cover probably 80 or 90</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12838-1
+01:29:34.593 --> 01:29:38.665
+<v Antonio Cisternino>percent,
+90% of the Google Play Store and Apple</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12838-2
+01:29:38.665 --> 01:29:40.956
+<v Antonio Cisternino>Store sort of apps, I mean.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12840-0
+01:29:44.316 --> 01:29:44.556
+<v Antonio Cisternino>No.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12900-0
+01:29:46.676 --> 01:29:53.512
+<v Antonio Cisternino>No, I mean I'm open. Why not? No,
+no the the the kind of applications that</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12900-1
+01:29:53.512 --> 01:30:00.439
+<v Antonio Cisternino>you you manage by this most of the
+application you find in the in the store</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12900-2
+01:30:00.439 --> 01:30:01.716
+<v Antonio Cisternino>are basically.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12999-0
+01:30:03.716 --> 01:30:08.580
+<v Antonio Cisternino>Web application or simple applications
+that can be generated this way.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12999-1
+01:30:08.580 --> 01:30:12.211
+<v Antonio Cisternino>That was my my point.
+I mean there are sophisticated</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12999-2
+01:30:12.211 --> 01:30:16.253
+<v Antonio Cisternino>application that you can find in the in
+the in in the app,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12999-3
+01:30:16.253 --> 01:30:21.597
+<v Antonio Cisternino>but I mean if I look at the average
+average includes all the stupid games and</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/12999-4
+01:30:21.597 --> 01:30:23.036
+<v Antonio Cisternino>all etcetera I think.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13018-0
+01:30:23.316 --> 01:30:27.605
+<v Antonio Cisternino>That in percentage,
+probably 80% can be generated using these</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13018-1
+01:30:27.605 --> 01:30:30.996
+<v Antonio Cisternino>kind of techniques. Beyond that,
+I won't say so.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13101-0
+01:30:39.636 --> 01:30:43.573
+<v Antonio Cisternino>You can.
+I think that you can reach the production</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13101-1
+01:30:43.573 --> 01:30:49.749
+<v Antonio Cisternino>grade. I mean, I agree with you that it's,
+I mean, it's not a one shot process,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13101-2
+01:30:49.749 --> 01:30:54.690
+<v Antonio Cisternino>but if you keep going,
+you can complicate things as much as you</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13101-3
+01:30:54.690 --> 01:30:58.396
+<v Antonio Cisternino>want.
+My personal experience is when you start.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13143-0
+01:31:00.796 --> 01:31:04.816
+<v Antonio Cisternino>Including graphics,
+then things get complicated.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13143-1
+01:31:04.816 --> 01:31:09.246
+<v Antonio Cisternino>I mean the images are sets so that you
+get, you know,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13143-2
+01:31:09.246 --> 01:31:12.036
+<v Antonio Cisternino>the bricks are with a nice button.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13150-0
+01:31:12.756 --> 01:31:15.476
+<v Antonio Cisternino>There you can get complication.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13198-0
+01:31:23.236 --> 01:31:26.771
+<v Antonio Cisternino>Oh, that that part.
+It's up to you to describe all these</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13198-1
+01:31:26.771 --> 01:31:29.811
+<v Antonio Cisternino>things,
+but if you're good in describing things,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13198-2
+01:31:29.811 --> 01:31:31.796
+<v Antonio Cisternino>you can get a reasonably result.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13268-0
+01:31:34.636 --> 01:31:38.499
+<v Antonio Cisternino>But again,
+if you're pretending that I need an</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13268-1
+01:31:38.499 --> 01:31:44.417
+<v Antonio Cisternino>application that does this on iOS,
+it won't work. Yes, I agree. I mean,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13268-2
+01:31:44.417 --> 01:31:50.007
+<v Antonio Cisternino>this is something that can help you.
+Now the the other question is,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13268-3
+01:31:50.007 --> 01:31:51.076
+<v Antonio Cisternino>should I use?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13356-0
+01:31:52.756 --> 01:31:58.890
+<v Antonio Cisternino>Pilot inside Visual Studio which is an
+alternative where I can say OK I take</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13356-1
+01:31:58.890 --> 01:32:04.547
+<v Antonio Cisternino>this and I asked to rewrite code.
+So should I go for a developer first</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13356-2
+01:32:04.547 --> 01:32:11.160
+<v Antonio Cisternino>approach in which I added the code and AI
+helps me writing or should I go into the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13356-3
+01:32:11.160 --> 01:32:12.276
+<v Antonio Cisternino>generate only?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13406-0
+01:32:12.596 --> 01:32:17.409
+<v Antonio Cisternino>Way of I need an application and then
+keeps going.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13406-1
+01:32:17.409 --> 01:32:23.165
+<v Antonio Cisternino>I mean that's an open question.
+When I started this journey,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13406-2
+01:32:23.165 --> 01:32:28.356
+<v Antonio Cisternino>I thought it was Visual Studio Code first
+and then AI.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13489-0
+01:32:28.356 --> 01:32:33.644
+<v Antonio Cisternino>When I started writing codex application,
+so I mean with a full-fledged model,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13489-1
+01:32:33.644 --> 01:32:38.329
+<v Antonio Cisternino>then I started saying yes or no.
+I mean I can see at least a bunch of</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13489-2
+01:32:38.329 --> 01:32:42.948
+<v Antonio Cisternino>application that you can get
+out-of-the-box without need of an edge.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13489-3
+01:32:42.948 --> 01:32:44.956
+<v Antonio Cisternino>I mean you can then after fix.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13529-0
+01:32:45.636 --> 01:32:49.589
+<v Antonio Cisternino>The generated code,
+but most of the code can be fully</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13529-1
+01:32:49.589 --> 01:32:53.616
+<v Antonio Cisternino>generated. So that's my current feeling.
+Nevertheless,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13529-2
+01:32:53.616 --> 01:32:58.156
+<v Antonio Cisternino>this is part of the exercise,
+I mean to learn how to do this.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13531-0
+01:33:02.876 --> 01:33:02.996
+<v Antonio Cisternino>That.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13542-0
+01:33:06.796 --> 01:33:11.916
+<v Antonio Cisternino>Trying to use this model,
+I try to find a little like.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13546-0
+01:33:13.316 --> 01:33:14.236
+<v Antonio Cisternino>I'm sorry, hold on.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13571-0
+01:33:15.716 --> 01:33:21.187
+<v Antonio Cisternino>Sense of me writing.
+You have no sense in writing.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13571-1
+01:33:21.187 --> 01:33:22.796
+<v Antonio Cisternino>I mean you are.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13575-0
+01:33:22.876 --> 01:33:23.396
+<v Antonio Cisternino>Yeah.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13627-0
+01:33:25.396 --> 01:33:34.085
+<v Antonio Cisternino>Like the chief of like how is still my
+ship if I change every single bit.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13627-1
+01:33:34.085 --> 01:33:40.779
+<v Antonio Cisternino>It's a different rule.
+The rule becomes that you are the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13627-2
+01:33:40.779 --> 01:33:41.836
+<v Antonio Cisternino>guardian.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13687-0
+01:33:42.196 --> 01:33:46.743
+<v Antonio Cisternino>That ensures that this thing is safe for
+people to use,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13687-1
+01:33:46.743 --> 01:33:50.723
+<v Antonio Cisternino>and it's much more difficult because I
+tell you,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13687-2
+01:33:50.723 --> 01:33:57.301
+<v Antonio Cisternino>it's much easier to write code than read
+code. Read code is much more difficult,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13687-3
+01:33:57.301 --> 01:33:58.276
+<v Antonio Cisternino>really more.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13761-0
+01:34:00.036 --> 01:34:05.695
+<v Antonio Cisternino>This is one of the reason because I
+shifted the course this year,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13761-1
+01:34:05.695 --> 01:34:12.811
+<v Antonio Cisternino>because you need to understand much more
+things to be able to read code than write</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13761-2
+01:34:12.811 --> 01:34:17.356
+<v Antonio Cisternino>code. OK,
+so if you if you think that you're losing.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13837-0
+01:34:17.956 --> 01:34:23.453
+<v Antonio Cisternino>Your role? No, you're not.
+You're getting a much more sensible role.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13837-1
+01:34:23.453 --> 01:34:29.429
+<v Antonio Cisternino>And I said when we started this course,
+if you remember, I told you, look,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13837-2
+01:34:29.429 --> 01:34:33.732
+<v Antonio Cisternino>it will be, or at least it seems,
+and I may be wrong,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13837-3
+01:34:33.732 --> 01:34:37.716
+<v Antonio Cisternino>that the word is coming.
+There will be much less.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13876-0
+01:34:37.716 --> 01:34:46.343
+<v Antonio Cisternino>Job place and posts for programmers
+because and those will be for ********</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13876-1
+01:34:46.343 --> 01:34:53.476
+<v Antonio Cisternino>highly skilled programmers because web
+programmers are dying.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13940-0
+01:34:53.476 --> 01:35:01.302
+<v Antonio Cisternino>It's just a matter of cycles.
+The last announcement of GPT-5 they shown</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13940-1
+01:35:01.302 --> 01:35:09.999
+<v Antonio Cisternino>that that they improved the also the nice
+design of the code generated from the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/13940-2
+01:35:09.999 --> 01:35:11.956
+<v Antonio Cisternino>from GPT and they.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14026-0
+01:35:12.036 --> 01:35:15.803
+<v Antonio Cisternino>Failing the model to to do better designs.
+OK,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14026-1
+01:35:15.803 --> 01:35:22.056
+<v Antonio Cisternino>so it's just a matter of cycles of of
+training and I'm pretty sure a full web</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14026-2
+01:35:22.056 --> 01:35:28.228
+<v Antonio Cisternino>application will be generated and it's
+and my feeling is I'm doing artifacts</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14026-3
+01:35:28.228 --> 01:35:31.836
+<v Antonio Cisternino>with clothes since the beginning the
+latest.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14081-0
+01:35:31.876 --> 01:35:37.729
+<v Antonio Cisternino>Versions are full-fledged application.
+If I show you the original artifacts,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14081-1
+01:35:37.729 --> 01:35:43.507
+<v Antonio Cisternino>they were shaky, not so good, etc.
+But the latest one are basically micro's</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14081-2
+01:35:43.507 --> 01:35:47.916
+<v Antonio Cisternino>application ready to go,
+even if you ask for a dashboard.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14174-0
+01:35:48.276 --> 01:35:53.428
+<v Antonio Cisternino>You've got a very nice dashboard. OK,
+now you have to play some editor,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14174-1
+01:35:53.428 --> 01:35:58.581
+<v Antonio Cisternino>whether it's Power BI or some other
+application to do all these things.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14174-2
+01:35:58.581 --> 01:36:03.376
+<v Antonio Cisternino>And then you say this is the data.
+Can you generate the dashboard?</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14174-3
+01:36:03.376 --> 01:36:07.956
+<v Antonio Cisternino>And I got an interactive dashboard with
+all the pipes and then.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14246-0
+01:36:07.956 --> 01:36:12.051
+<v Antonio Cisternino>Stuff and write these things.
+So it's just the beginning.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14246-1
+01:36:12.051 --> 01:36:16.571
+<v Antonio Cisternino>GitHub released Spark.
+Spark is basically the idea that on when</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14246-2
+01:36:16.571 --> 01:36:21.019
+<v Antonio Cisternino>you're in the go you can write and
+develop micro applications.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14246-3
+01:36:21.019 --> 01:36:26.316
+<v Antonio Cisternino>So the state of what we are today is a
+micro application can be generated.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14316-0
+01:36:26.956 --> 01:36:31.087
+<v Antonio Cisternino>OK,
+but if you start thinking along this way,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14316-1
+01:36:31.087 --> 01:36:36.655
+<v Antonio Cisternino>you may think, OK,
+I write the spec office of my application,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14316-2
+01:36:36.655 --> 01:36:43.031
+<v Antonio Cisternino>I write all the back office APIs,
+the data model exam and then I start</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14316-3
+01:36:43.031 --> 01:36:45.636
+<v Antonio Cisternino>generating micro application.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14400-0
+01:36:45.636 --> 01:36:51.556
+<v Antonio Cisternino>Then use the background API.
+I said I'll save a lot of time because</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14400-1
+01:36:51.556 --> 01:36:57.563
+<v Antonio Cisternino>most of the time typically is UI
+development and and then I focus in</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14400-2
+01:36:57.563 --> 01:37:03.918
+<v Antonio Cisternino>developing and maintaining the core
+business logic with all the APIs and</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14400-3
+01:37:03.918 --> 01:37:04.876
+<v Antonio Cisternino>everything.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14429-0
+01:37:05.076 --> 01:37:08.105
+<v Antonio Cisternino>So it's an open question.
+I have no answer,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14429-1
+01:37:08.105 --> 01:37:12.236
+<v Antonio Cisternino>but this is happening now. Uh, cursor.
+You you know cursor.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14501-0
+01:37:14.236 --> 01:37:19.387
+<v Antonio Cisternino>How many person? OK,
+the rest go and check is getting a fairly</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14501-1
+01:37:19.387 --> 01:37:24.784
+<v Antonio Cisternino>popular AI environment.
+It was on stage with open AI because they</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14501-2
+01:37:24.784 --> 01:37:31.080
+<v Antonio Cisternino>use open AI and they announced a few
+months ago that they generate or not by</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14501-3
+01:37:31.080 --> 01:37:32.716
+<v Antonio Cisternino>now 40% of the vote.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14529-0
+01:37:34.996 --> 01:37:42.876
+<v Antonio Cisternino>Or less. OK, so I mean, but again,
+the important part is what you did.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14607-0
+01:37:44.196 --> 01:37:48.785
+<v Antonio Cisternino>These are the fiction.
+Go and check that that is the fiction.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14607-1
+01:37:48.785 --> 01:37:53.375
+<v Antonio Cisternino>Go and check that the output is as the
+quality that it needs.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14607-2
+01:37:53.375 --> 01:37:58.113
+<v Antonio Cisternino>And to do the verification,
+you must be a very good programmer,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14607-3
+01:37:58.113 --> 01:38:00.556
+<v Antonio Cisternino>perhaps even a better programmer.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14665-0
+01:38:00.756 --> 01:38:04.504
+<v Antonio Cisternino>Than the than the one that runs the code.
+OK,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14665-1
+01:38:04.504 --> 01:38:10.127
+<v Antonio Cisternino>so be sure that your you see that one
+rule and it's a more delicate,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14665-2
+01:38:10.127 --> 01:38:16.076
+<v Antonio Cisternino>especially when this code will run on a
+device, on a car, on an airport.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14721-0
+01:38:17.396 --> 01:38:22.574
+<v Antonio Cisternino>Because at some point it will be the code
+generated. So,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14721-1
+01:38:22.574 --> 01:38:29.206
+<v Antonio Cisternino>so far it's just about convenience.
+You know that the fastest quick sort</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14721-2
+01:38:29.206 --> 01:38:34.476
+<v Antonio Cisternino>implementation worldwide has been
+generated by Alphagodo.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14748-0
+01:38:35.796 --> 01:38:41.076
+<v Antonio Cisternino>OK, if you try to read the algorithms,
+it's almost uncomprehensible.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14822-0
+01:38:42.516 --> 01:38:48.188
+<v Antonio Cisternino>So don't think that the AI will simply
+generate the code that you will write.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14822-1
+01:38:48.188 --> 01:38:53.934
+<v Antonio Cisternino>As the models and the machine grows,
+it will generate code that you will never</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14822-2
+01:38:53.934 --> 01:38:57.716
+<v Antonio Cisternino>think of writing and you will find too
+complicated.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14833-0
+01:38:58.036 --> 01:39:00.956
+<v Antonio Cisternino>And as long as this process will go on.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14890-0
+01:39:02.996 --> 01:39:07.867
+<v Antonio Cisternino>They will.
+We will need to develop techniques to</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14890-1
+01:39:07.867 --> 01:39:14.330
+<v Antonio Cisternino>double check that that thing really
+satisfy my requirements. Oh,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14890-2
+01:39:14.330 --> 01:39:16.716
+<v Antonio Cisternino>that's an open question.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14927-0
+01:39:17.876 --> 01:39:26.276
+<v Antonio Cisternino>That's an open question. I mean,
+I have no answer to that. It's true,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14927-1
+01:39:26.276 --> 01:39:29.396
+<v Antonio Cisternino>but actually we roll dice.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14991-0
+01:39:31.236 --> 01:39:36.600
+<v Antonio Cisternino>And the dice basically,
+you know that without rolling dice,</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14991-1
+01:39:36.600 --> 01:39:43.127
+<v Antonio Cisternino>other than some basically useless.
+So apparently rolling the dice by the</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14991-2
+01:39:43.127 --> 01:39:47.956
+<v Antonio Cisternino>alias introduced changes which made the
+these models.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/14994-0
+01:39:48.196 --> 01:39:49.996
+<v Antonio Cisternino>Show me again.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/15037-0
+01:39:51.316 --> 01:39:56.676
+<v Antonio Cisternino>Unexpected behaviors.
+So in principle you can expect you can</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/15037-1
+01:39:56.676 --> 01:40:03.356
+<v Antonio Cisternino>get unexpected both. OK, sorry, it's late.
+Thank you. See you on Wednesday.</v>
+
+c5e93385-5fb8-43cf-a3c1-b486be746fc2/15040-0
+01:40:06.756 --> 01:40:06.876
+<v Antonio Cisternino>See.</v>

@@ -1,0 +1,2235 @@
+WEBVTT
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/7-0
+00:00:14.908 --> 00:00:15.468
+<v Antonio Cisternino>So.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/10-0
+00:00:16.468 --> 00:00:17.668
+<v Antonio Cisternino>Hi, everybody.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/15-0
+00:00:26.748 --> 00:00:31.468
+<v Antonio Cisternino>Welcome back. Um, welcome to the means.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/21-0
+00:00:34.308 --> 00:00:42.671
+<v Antonio Cisternino>This advanced programming course class I
+hope we hope with that you enjoy the show</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/21-1
+00:00:42.671 --> 00:00:47.708
+<v Antonio Cisternino>and being an experiment isn't too painful
+so far.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/23-0
+00:00:49.628 --> 00:00:54.388
+<v Antonio Cisternino>Yes, sorry, I do turn on.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/25-0
+00:00:56.228 --> 00:01:01.948
+<v Antonio Cisternino>And now there is the final step.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/28-0
+00:01:03.788 --> 00:01:08.428
+<v Antonio Cisternino>Uh, which is, uh, as promised the uh.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/31-0
+00:01:09.828 --> 00:01:18.868
+<v Antonio Cisternino>They will sample few of the text of the
+projects, of course AI generated.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/32-0
+00:01:20.788 --> 00:01:20.868
+<v Antonio Cisternino>Um.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/39-0
+00:01:23.188 --> 00:01:30.433
+<v Antonio Cisternino>I mean the way we we generated the the
+the text it's interesting basically I</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/39-1
+00:01:30.433 --> 00:01:37.395
+<v Antonio Cisternino>explained the the three examples we
+discussed together and then I said OK</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/39-2
+00:01:37.395 --> 00:01:41.628
+<v Antonio Cisternino>these were the examples in classes you
+know.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/43-0
+00:01:41.668 --> 00:01:48.077
+<v Antonio Cisternino>Course, et cetera.
+And there are basically three types of</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/43-1
+00:01:48.077 --> 00:01:55.811
+<v Antonio Cisternino>projects, Explorer codebase,
+Explorer language feature or similar and</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/43-2
+00:01:55.811 --> 00:01:57.468
+<v Antonio Cisternino>generally code.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/48-0
+00:01:58.068 --> 00:02:07.541
+<v Antonio Cisternino>And then we started this.
+So actually I I also tested trying to get</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/48-1
+00:02:07.541 --> 00:02:13.948
+<v Antonio Cisternino>the generation done on my behalf,
+but the AI.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/53-0
+00:02:14.268 --> 00:02:19.674
+<v Antonio Cisternino>Start too much from the,
+but actually one of the goal with this</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/53-1
+00:02:19.674 --> 00:02:25.756
+<v Antonio Cisternino>project is that you explore something
+that you for sure not don't know.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/53-2
+00:02:25.756 --> 00:02:30.148
+<v Antonio Cisternino>So in some cases I even pick up things
+that I know.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/54-0
+00:02:30.548 --> 00:02:32.068
+<v Antonio Cisternino>But I'm not an expert.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/56-0
+00:02:32.908 --> 00:02:40.948
+<v Antonio Cisternino>Because one of the thing that I think the
+AI is crucial is the fact that.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/62-0
+00:02:42.148 --> 00:02:46.952
+<v Antonio Cisternino>It allows you,
+if you know the proper questions,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/62-1
+00:02:46.952 --> 00:02:54.793
+<v Antonio Cisternino>to learn very fast a new technology, OK?
+And so it's part of the game asking to</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/62-2
+00:02:54.793 --> 00:02:59.988
+<v Antonio Cisternino>investigate through the AI something you
+don't know.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/66-0
+00:03:00.788 --> 00:03:07.075
+<v Antonio Cisternino>Because you don't know the specifics,
+but you know a lot of things that we</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/66-1
+00:03:07.075 --> 00:03:12.356
+<v Antonio Cisternino>covered within the course,
+and so you must be able to pose the</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/66-2
+00:03:12.356 --> 00:03:17.468
+<v Antonio Cisternino>proper questions so that you can you can
+get useful answers.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/70-0
+00:03:17.868 --> 00:03:24.232
+<v Antonio Cisternino>And also when you read the output,
+you should be able to parse the output</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/70-1
+00:03:24.232 --> 00:03:30.338
+<v Antonio Cisternino>and make yourself an opinion whether the
+output is correct or not. OK,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/70-2
+00:03:30.338 --> 00:03:31.628
+<v Antonio Cisternino>so as promised.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/75-0
+00:03:33.028 --> 00:03:41.198
+<v Antonio Cisternino>The final project that we will of course
+review the the projects and it will be</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/75-1
+00:03:41.198 --> 00:03:46.508
+<v Antonio Cisternino>possibly be who you you will get a grade
+of course.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/79-0
+00:03:48.388 --> 00:03:57.178
+<v Antonio Cisternino>But actually you will receive the as a
+feedback of how complete well done as</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/79-1
+00:03:57.178 --> 00:04:02.428
+<v Antonio Cisternino>recognize the work you put into this
+project.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/83-0
+00:04:04.548 --> 00:04:13.188
+<v Antonio Cisternino>But then when you will come to the oral
+exam and the big important announcement,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/83-1
+00:04:13.188 --> 00:04:20.548
+<v Antonio Cisternino>we will of course we will try to set up a
+a a slot, a sets of slots.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/88-0
+00:04:21.068 --> 00:04:25.002
+<v Antonio Cisternino>For an agenda so that you can book for
+your exam,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/88-1
+00:04:25.002 --> 00:04:30.666
+<v Antonio Cisternino>but we we decided we're not too bound to
+the dates in the calendar. OK,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/88-2
+00:04:30.666 --> 00:04:35.700
+<v Antonio Cisternino>so don't worry if you are in,
+we will set up a number of slots.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/88-3
+00:04:35.700 --> 00:04:37.588
+<v Antonio Cisternino>We assume one hour slot.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/92-0
+00:04:38.508 --> 00:04:43.253
+<v Antonio Cisternino>OK.
+So be prepared to talk to him and fill up</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/92-1
+00:04:43.253 --> 00:04:51.091
+<v Antonio Cisternino>an hour and and of course among the
+discussion there will be a possible end</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/92-2
+00:04:51.091 --> 00:04:55.628
+<v Antonio Cisternino>point can be your your project. OK,
+so and.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/95-0
+00:04:55.908 --> 00:05:05.508
+<v Antonio Cisternino>That is the I think I expect that you
+were expecting something. OK, so.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/97-0
+00:05:09.388 --> 00:05:10.268
+<v Antonio Cisternino>Having said that.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/102-0
+00:05:16.868 --> 00:05:22.520
+<v Antonio Cisternino>Let's see, I mean,
+I mean in between one it.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/102-1
+00:05:22.520 --> 00:05:33.068
+<v Antonio Cisternino>So the format of the project that will be
+posted by tonight inside the I would say.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/106-0
+00:05:33.508 --> 00:05:38.705
+<v Antonio Cisternino>Either I I I don't decide it yet how to
+support this,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/106-1
+00:05:38.705 --> 00:05:46.788
+<v Antonio Cisternino>but probably either in the final section
+or I will post the comment in the channel.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/111-0
+00:05:49.868 --> 00:05:57.333
+<v Antonio Cisternino>So far there will be about 30 projects
+and for each time.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/111-1
+00:05:57.333 --> 00:06:04.668
+<v Antonio Cisternino>I don't see particular problems in if two
+of you decide.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/116-0
+00:06:04.708 --> 00:06:10.009
+<v Antonio Cisternino>Independently to have the same project,
+but I I don't even,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/116-1
+00:06:10.009 --> 00:06:16.546
+<v Antonio Cisternino>I don't think either encourage it. OK,
+I mean if you if you're able to do</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/116-2
+00:06:16.546 --> 00:06:21.228
+<v Antonio Cisternino>different projects,
+I think it will be a nice thing.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/119-0
+00:06:21.788 --> 00:06:27.905
+<v Antonio Cisternino>You can, if you like,
+discussions about your ideas, et cetera.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/119-1
+00:06:27.905 --> 00:06:31.108
+<v Antonio Cisternino>By the way, if you're working on.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/121-0
+00:06:31.748 --> 00:06:39.628
+<v Antonio Cisternino>Even more interesting exchange of ideas
+and.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/125-0
+00:06:41.028 --> 00:06:47.628
+<v Antonio Cisternino>As you may see,
+the format is the following so.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/128-0
+00:06:49.508 --> 00:06:54.581
+<v Antonio Cisternino>Internal memory management in GCC during
+correlation,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/128-1
+00:06:54.581 --> 00:06:57.868
+<v Antonio Cisternino>which is a super interesting topic.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/129-0
+00:06:59.308 --> 00:06:59.468
+<v Antonio Cisternino>Uh.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/134-0
+00:07:01.628 --> 00:07:07.982
+<v Antonio Cisternino>Analyze how GCC manage memory internally
+during the compilation process,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/134-1
+00:07:07.982 --> 00:07:12.508
+<v Antonio Cisternino>focusing on its allocation strategies
+region based.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/137-0
+00:07:13.828 --> 00:07:17.854
+<v Antonio Cisternino>Memory pools,
+garbage collection like mechanism and how</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/137-1
+00:07:17.854 --> 00:07:23.461
+<v Antonio Cisternino>this contribute to performance modularity
+and correctness within the compiler</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/137-2
+00:07:23.461 --> 00:07:24.108
+<v Antonio Cisternino>pipeline.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/138-0
+00:07:25.228 --> 00:07:26.108
+<v Antonio Cisternino>And basically.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/142-0
+00:07:28.148 --> 00:07:33.968
+<v Antonio Cisternino>All the project have this structure with
+free free tasks,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/142-1
+00:07:33.968 --> 00:07:40.188
+<v Antonio Cisternino>so in this case explain the internal
+memory management model.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/143-0
+00:07:41.868 --> 00:07:41.908
+<v Antonio Cisternino>Uh.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/148-0
+00:07:45.348 --> 00:07:52.363
+<v Antonio Cisternino>And how different compiler subsystem from
+10 middle in the land and optimizer use</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/148-1
+00:07:52.363 --> 00:07:58.009
+<v Antonio Cisternino>these memory facilities.
+So this is a rather broad exploration of</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/148-2
+00:07:58.009 --> 00:07:59.548
+<v Antonio Cisternino>the GCC code base.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/151-0
+00:08:00.708 --> 00:08:05.858
+<v Antonio Cisternino>Analyze relevant GCC source code and
+documentation to illustrate concrete</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/151-1
+00:08:05.858 --> 00:08:10.868
+<v Antonio Cisternino>example of how memory is allocated,
+reused or discarded during parsing.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/155-0
+00:08:12.948 --> 00:08:19.274
+<v Antonio Cisternino>Gimple RTL generation,
+which is the intermediate representation</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/155-1
+00:08:19.274 --> 00:08:27.181
+<v Antonio Cisternino>which is used by GCC and optimization
+passes highlight trade-offs and rationale</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/155-2
+00:08:27.181 --> 00:08:29.948
+<v Antonio Cisternino>behind GCC's design choices.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/159-0
+00:08:30.188 --> 00:08:36.448
+<v Antonio Cisternino>Document the prompts using VDI and
+describe how you will find your finding.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/159-1
+00:08:36.448 --> 00:08:42.214
+<v Antonio Cisternino>I mean and the third task basically is
+the same for all the projects,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/159-2
+00:08:42.214 --> 00:08:45.508
+<v Antonio Cisternino>which is the thing that we discussed so.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/162-0
+00:08:45.948 --> 00:08:52.373
+<v Antonio Cisternino>Uh, producer,
+in this case a document as detailed as</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/162-1
+00:08:52.373 --> 00:08:53.948
+<v Antonio Cisternino>you think it.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/164-0
+00:08:56.508 --> 00:09:00.908
+<v Antonio Cisternino>It can be given the time you you have and.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/169-0
+00:09:02.308 --> 00:09:06.509
+<v Antonio Cisternino>The the target generation can be
+technical,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/169-1
+00:09:06.509 --> 00:09:14.050
+<v Antonio Cisternino>so you can easily spend one one page
+around the a part of a of a code that you</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/169-2
+00:09:14.050 --> 00:09:17.868
+<v Antonio Cisternino>find interesting and explaining why and.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/173-0
+00:09:18.308 --> 00:09:23.745
+<v Antonio Cisternino>By saying that this should be AI
+generated, it doesn't mean that,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/173-1
+00:09:23.745 --> 00:09:29.018
+<v Antonio Cisternino>as we already commented,
+that must be a single shot generation.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/173-2
+00:09:29.018 --> 00:09:33.548
+<v Antonio Cisternino>It can be a set of generation.
+You can use the canvas.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/175-0
+00:09:33.828 --> 00:09:37.515
+<v Antonio Cisternino>Uh,
+for those AI which support the canvas</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/175-1
+00:09:37.515 --> 00:09:42.868
+<v Antonio Cisternino>that allows you in place editing. Uh,
+so I mean it's not uh.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/180-0
+00:09:43.828 --> 00:09:47.700
+<v Antonio Cisternino>I I can't touch the text or the image is
+generated.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/180-1
+00:09:47.700 --> 00:09:53.582
+<v Antonio Cisternino>I mean it's suppose you you want to cheat
+into an exam that is asking for this</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/180-2
+00:09:53.582 --> 00:09:58.273
+<v Antonio Cisternino>output and you have to produce the output
+to sustain the exam.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/180-3
+00:09:58.273 --> 00:10:03.708
+<v Antonio Cisternino>In this case it's not cheating because
+it's the require requirements to.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/185-0
+00:10:03.748 --> 00:10:10.843
+<v Antonio Cisternino>For for the course, OK,
+but if you spend your time to get a nice</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/185-1
+00:10:10.843 --> 00:10:16.192
+<v Antonio Cisternino>document,
+at some point you may even share it on</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/185-2
+00:10:16.192 --> 00:10:23.068
+<v Antonio Cisternino>the on on the Internet or someone else be
+interest. I mean so.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/186-0
+00:10:23.468 --> 00:10:25.708
+<v Antonio Cisternino>Spend well your time.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/188-0
+00:10:28.068 --> 00:10:29.948
+<v Antonio Cisternino>OK, um.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/189-0
+00:10:31.548 --> 00:10:31.588
+<v Antonio Cisternino>O.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/195-0
+00:10:34.428 --> 00:10:42.242
+<v Antonio Cisternino>Category A as a promise and category A is
+the name that we discussed it with the I</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/195-1
+00:10:42.242 --> 00:10:48.548
+<v Antonio Cisternino>it's I mean it doesn't mean nothing.
+It is is about investigation.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/198-0
+00:10:49.508 --> 00:10:54.965
+<v Antonio Cisternino>Of the implementation,
+another interesting investigation can be</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/198-1
+00:10:54.965 --> 00:10:59.228
+<v Antonio Cisternino>the C group's implementation in the Linux
+kernel.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/201-0
+00:11:01.708 --> 00:11:07.532
+<v Antonio Cisternino>This is this one is for those of you that
+are passionate about system Linux system,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/201-1
+00:11:07.532 --> 00:11:10.028
+<v Antonio Cisternino>operating system, kernels and stuff.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/205-0
+00:11:11.508 --> 00:11:16.582
+<v Antonio Cisternino>It's interesting because the how control
+groups are implemented inside the Linux</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/205-1
+00:11:16.582 --> 00:11:20.465
+<v Antonio Cisternino>kernel focusing on the internal
+architecture, data structure,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/205-2
+00:11:20.465 --> 00:11:24.348
+<v Antonio Cisternino>integration with process management and
+resource controllers.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/210-0
+00:11:25.508 --> 00:11:32.462
+<v Antonio Cisternino>And it's interesting because the kernel
+typically is super optimized in the way</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/210-1
+00:11:32.462 --> 00:11:39.502
+<v Antonio Cisternino>memory is allocated and and managed and
+and and how ownership is managed and how</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/210-2
+00:11:39.502 --> 00:11:44.108
+<v Antonio Cisternino>pools gets used.
+So it's an interesting exploration.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/213-0
+00:11:44.468 --> 00:11:53.561
+<v Antonio Cisternino>That is really to understand how the
+operation on C groups are implemented</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/213-1
+00:11:53.561 --> 00:11:56.228
+<v Antonio Cisternino>really for containers.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/216-0
+00:11:59.348 --> 00:12:07.588
+<v Antonio Cisternino>OK,
+let's take some a couple of cogeneration.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/217-0
+00:12:10.428 --> 00:12:10.588
+<v Antonio Cisternino>So.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/221-0
+00:12:14.308 --> 00:12:18.004
+<v Antonio Cisternino>For code generation,
+I try to include the number of</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/221-1
+00:12:18.004 --> 00:12:22.482
+<v Antonio Cisternino>applications that are.
+Some of them are around the programming</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/221-2
+00:12:22.482 --> 00:12:23.548
+<v Antonio Cisternino>language space.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/226-0
+00:12:24.508 --> 00:12:28.804
+<v Antonio Cisternino>Generate the parser,
+generate the interpreter,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/226-1
+00:12:28.804 --> 00:12:34.562
+<v Antonio Cisternino>these kind of things,
+and others more oriented if someone some</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/226-2
+00:12:34.562 --> 00:12:38.675
+<v Antonio Cisternino>of you are interested in graphics,
+etcetera.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/226-3
+00:12:38.675 --> 00:12:42.148
+<v Antonio Cisternino>The very first one is to generate the.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/227-0
+00:12:42.628 --> 00:12:46.188
+<v Antonio Cisternino>Um, very bad. Uh.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/232-0
+00:12:47.508 --> 00:12:53.497
+<v Antonio Cisternino>3D library and then use the library to
+implement some 3D something.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/232-1
+00:12:53.497 --> 00:12:59.751
+<v Antonio Cisternino>OK as an example or in this case
+implement A multi-threaded Mandelbrot</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/232-2
+00:12:59.751 --> 00:13:06.708
+<v Antonio Cisternino>viewer with the the ability of zoom
+export and path animation which is record.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/234-0
+00:13:07.228 --> 00:13:12.788
+<v Antonio Cisternino>A browsing inside the the the fractal and
+then you get a video out of it.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/236-0
+00:13:13.708 --> 00:13:17.188
+<v Antonio Cisternino>Uh, there is uh.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/240-0
+00:13:18.148 --> 00:13:29.377
+<v Antonio Cisternino>A face detector web application which you
+run inside the the on the client side and</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/240-1
+00:13:29.377 --> 00:13:33.788
+<v Antonio Cisternino>so there are interesting aspects.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/241-0
+00:13:34.428 --> 00:13:35.548
+<v Antonio Cisternino>To deal with.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/243-0
+00:13:36.828 --> 00:13:38.348
+<v Antonio Cisternino>And there are.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/245-0
+00:13:41.948 --> 00:13:45.948
+<v Antonio Cisternino>The request to implement some library,
+in this case a 2D game engine.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/249-0
+00:13:47.428 --> 00:13:54.059
+<v Antonio Cisternino>Which is another nice task,
+a better one than we use the for Arcanoid</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/249-1
+00:13:54.059 --> 00:13:59.268
+<v Antonio Cisternino>in particular. No events, no timers,
+a true game loop.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/251-0
+00:14:00.548 --> 00:14:06.828
+<v Antonio Cisternino>Featuring a manual game loop without
+using timer controls. OK, so that's.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/253-0
+00:14:09.228 --> 00:14:09.268
+<v Antonio Cisternino>Uh.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/255-0
+00:14:13.348 --> 00:14:16.908
+<v Antonio Cisternino>Some binary disassembly.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/258-0
+00:14:18.628 --> 00:14:27.085
+<v Antonio Cisternino>So in particular something that is
+capable of decoding into text web</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/258-1
+00:14:27.085 --> 00:14:28.188
+<v Antonio Cisternino>assembly.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/260-0
+00:14:34.188 --> 00:14:34.868
+<v Antonio Cisternino>Hmm.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/265-0
+00:14:37.268 --> 00:14:43.982
+<v Antonio Cisternino>Something revolving around the AI.
+This one is nice is implementing an MCP</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/265-1
+00:14:43.982 --> 00:14:51.143
+<v Antonio Cisternino>server which expose a directory of CVS
+files as a data source knowledge for the</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/265-2
+00:14:51.143 --> 00:14:53.828
+<v Antonio Cisternino>AI. So if someone some of you.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/268-0
+00:14:53.908 --> 00:14:58.963
+<v Antonio Cisternino>Is interested about, you know,
+MCB protocol and AI integration with</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/268-1
+00:14:58.963 --> 00:15:02.828
+<v Antonio Cisternino>knowledge bases, etcetera.
+This can be interesting.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/270-0
+00:15:05.668 --> 00:15:08.628
+<v Antonio Cisternino>Some good old XML parsing.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/271-0
+00:15:10.988 --> 00:15:11.068
+<v Antonio Cisternino>Um.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/277-0
+00:15:13.108 --> 00:15:16.939
+<v Antonio Cisternino>For those that are more mathematical of
+you,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/277-1
+00:15:16.939 --> 00:15:23.750
+<v Antonio Cisternino>I thought they would be nice to implement
+a transpiler that implements a domain</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/277-2
+00:15:23.750 --> 00:15:30.135
+<v Antonio Cisternino>specific language for statistical
+computation and sample sequences that is</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/277-3
+00:15:30.135 --> 00:15:32.348
+<v Antonio Cisternino>rewritten into JavaScript.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/282-0
+00:15:36.148 --> 00:15:43.550
+<v Antonio Cisternino>Of course, I mean for it. Well,
+let let's go through the the list and</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/282-1
+00:15:43.550 --> 00:15:52.008
+<v Antonio Cisternino>then I will give some remarks about this
+parser interpreter for the Shakespeare</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/282-2
+00:15:52.008 --> 00:15:54.228
+<v Antonio Cisternino>programming language.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/283-0
+00:15:54.388 --> 00:15:55.948
+<v Antonio Cisternino>You know Shakespeare.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/288-0
+00:15:58.228 --> 00:16:02.913
+<v Antonio Cisternino>That's part of the assignment,
+learning about something.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/288-1
+00:16:02.913 --> 00:16:07.433
+<v Antonio Cisternino>Shakespeare is one among several.
+It's likewise space.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/288-2
+00:16:07.433 --> 00:16:12.857
+<v Antonio Cisternino>It's a fun programming language.
+Shakespeare was designed so that</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/288-3
+00:16:12.857 --> 00:16:16.308
+<v Antonio Cisternino>Shakespeare programs can be read as poems.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/291-0
+00:16:16.628 --> 00:16:20.047
+<v Antonio Cisternino>That was, but it's for fun. I mean,
+it's basically,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/291-1
+00:16:20.047 --> 00:16:25.242
+<v Antonio Cisternino>I could have said they implemented a
+basic interpreter and would have been the</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/291-2
+00:16:25.242 --> 00:16:27.148
+<v Antonio Cisternino>same, but Shakespeare is fun.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/293-0
+00:16:28.148 --> 00:16:32.308
+<v Antonio Cisternino>Um, let's have a look at the Uh.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/297-0
+00:16:35.948 --> 00:16:41.089
+<v Antonio Cisternino>The last type,
+so I mean explored language feature or</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/297-1
+00:16:41.089 --> 00:16:45.468
+<v Antonio Cisternino>libraries or something revolving around
+that.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/302-0
+00:16:47.188 --> 00:16:54.058
+<v Antonio Cisternino>So for instance,
+understands Haskell's notion of kinds and</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/302-1
+00:16:54.058 --> 00:17:02.908
+<v Antonio Cisternino>investigate to what extent similar ideas
+exist or can be emulated in F# and</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/302-2
+00:17:02.908 --> 00:17:04.188
+<v Antonio Cisternino>JavaScript.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/305-0
+00:17:04.468 --> 00:17:09.751
+<v Antonio Cisternino>I mean we all the programming languages
+are two equivalent. OK,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/305-1
+00:17:09.751 --> 00:17:16.354
+<v Antonio Cisternino>so I mean for sure it can be expressed.
+Many of the construct that we discussed</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/305-2
+00:17:16.354 --> 00:17:20.068
+<v Antonio Cisternino>during the course is are basically
+designed.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/309-0
+00:17:20.228 --> 00:17:25.219
+<v Antonio Cisternino>To make programming languages more
+expressive,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/309-1
+00:17:25.219 --> 00:17:31.909
+<v Antonio Cisternino>which means that we can express with less
+text, more semantic,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/309-2
+00:17:31.909 --> 00:17:34.988
+<v Antonio Cisternino>possibly in a composable way.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/314-0
+00:17:35.268 --> 00:17:41.752
+<v Antonio Cisternino>So that you can compose the feature of
+your programming language and this lets</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/314-1
+00:17:41.752 --> 00:17:48.318
+<v Antonio Cisternino>you to the ability to express with very
+little text significant amount portions</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/314-2
+00:17:48.318 --> 00:17:52.668
+<v Antonio Cisternino>of a program or or of an algorithm and so
+this kind.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/316-0
+00:17:53.228 --> 00:17:59.868
+<v Antonio Cisternino>Of assignments basically meant to have
+you think.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/320-0
+00:18:01.748 --> 00:18:07.258
+<v Antonio Cisternino>About the fact that if something is
+unavailable in a programming language,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/320-1
+00:18:07.258 --> 00:18:10.785
+<v Antonio Cisternino>this doesn't mean that it can't be
+implemented.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/320-2
+00:18:10.785 --> 00:18:16.588
+<v Antonio Cisternino>To some extent you can implement your own
+library, which approximates somehow.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/324-0
+00:18:17.188 --> 00:18:24.640
+<v Antonio Cisternino>The same feature.
+Sometimes you may have to meet a program.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/324-1
+00:18:24.640 --> 00:18:34.079
+<v Antonio Cisternino>I mean sometimes you may think, OK,
+you know I use the the the preprocessor</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/324-2
+00:18:34.079 --> 00:18:34.948
+<v Antonio Cisternino>in C++.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/326-0
+00:18:34.948 --> 00:18:39.121
+<v Antonio Cisternino>Uh,
+so that I macro expand and I introduce</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/326-1
+00:18:39.121 --> 00:18:40.188
+<v Antonio Cisternino>some uh uh.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/331-0
+00:18:42.588 --> 00:18:48.675
+<v Antonio Cisternino>Some macros that allows me to to express
+constructs that are not present in the</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/331-1
+00:18:48.675 --> 00:18:52.403
+<v Antonio Cisternino>language,
+leveraging on the fact that during the</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/331-2
+00:18:52.403 --> 00:18:58.108
+<v Antonio Cisternino>compilation text would be program text
+would be rewritten using the macro.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/332-0
+00:18:58.468 --> 00:19:01.908
+<v Antonio Cisternino>Uh, expansion system. So uh.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/335-0
+00:19:02.628 --> 00:19:10.108
+<v Antonio Cisternino>In general, as you may notice,
+all these tracks are very, very broad.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/341-0
+00:19:11.508 --> 00:19:19.210
+<v Antonio Cisternino>I mean every one of these can produce
+dozens of different projects speaking</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/341-1
+00:19:19.210 --> 00:19:27.012
+<v Antonio Cisternino>about different things and perfectly
+compatible with this specification. OK,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/341-2
+00:19:27.012 --> 00:19:31.268
+<v Antonio Cisternino>so this is for to encourage you to define.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/346-0
+00:19:31.348 --> 00:19:38.323
+<v Antonio Cisternino>Yourself and follow your personal
+interest during the project. OK,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/346-1
+00:19:38.323 --> 00:19:44.257
+<v Antonio Cisternino>so if you feel more attracted about type
+generation, OK,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/346-2
+00:19:44.257 --> 00:19:48.108
+<v Antonio Cisternino>you wanna play with meta programming?</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/350-0
+00:19:48.388 --> 00:19:56.158
+<v Antonio Cisternino>Let's do that there are angles in which
+you can take the the the and approach the</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/350-1
+00:19:56.158 --> 00:20:01.938
+<v Antonio Cisternino>problem which are exactly acceptable.
+If you have any doubt,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/350-2
+00:20:01.938 --> 00:20:05.348
+<v Antonio Cisternino>write to me and and Professor Kurdi.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/354-0
+00:20:05.388 --> 00:20:09.677
+<v Antonio Cisternino>To me,
+please write me on teams and you you you</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/354-1
+00:20:09.677 --> 00:20:16.736
+<v Antonio Cisternino>first say advanced programming and then
+so that I know that you are you are in</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/354-2
+00:20:16.736 --> 00:20:19.148
+<v Antonio Cisternino>need of assistance because.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/356-0
+00:20:22.428 --> 00:20:28.028
+<v Antonio Cisternino>I crossed the 200,
+000 unread e-mail in my inbox.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/360-0
+00:20:30.268 --> 00:20:37.322
+<v Antonio Cisternino>Even if I go and roll the dice likeliness
+that I bump into yours, it's small.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/360-1
+00:20:37.322 --> 00:20:40.668
+<v Antonio Cisternino>I I don't know how to manage this so.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/366-0
+00:20:41.748 --> 00:20:53.148
+<v Antonio Cisternino>So for programming language features,
+I try to range from more foundational</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/366-1
+00:20:53.148 --> 00:20:57.348
+<v Antonio Cisternino>like the kinds in Askell to.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/370-0
+00:20:57.708 --> 00:21:06.587
+<v Antonio Cisternino>The type system which makes possible
+language integration integrated query in</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/370-1
+00:21:06.587 --> 00:21:14.668
+<v Antonio Cisternino>C# because the type algebra which lies
+behind the the link technology.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/374-0
+00:21:15.068 --> 00:21:22.586
+<v Antonio Cisternino>In in.net is quite interesting,
+so including because some things are</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/374-1
+00:21:22.586 --> 00:21:31.628
+<v Antonio Cisternino>explicitly mentioned and others less so a
+feature which is interesting and deeply.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/378-0
+00:21:33.508 --> 00:21:37.724
+<v Antonio Cisternino>Integrated with the link is are the
+extension methods.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/378-1
+00:21:37.724 --> 00:21:44.086
+<v Antonio Cisternino>Extension methods are a way in C# to add
+extra methods to classes that are already</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/378-2
+00:21:44.086 --> 00:21:48.148
+<v Antonio Cisternino>compiled and to which you don't have even
+access to.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/380-0
+00:21:48.348 --> 00:21:52.362
+<v Antonio Cisternino>It's another form of syntactic sugar that
+has been introduced in the language,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/380-1
+00:21:52.362 --> 00:21:53.428
+<v Antonio Cisternino>which is interesting.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/382-0
+00:21:55.428 --> 00:21:55.588
+<v Antonio Cisternino>Um.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/384-0
+00:22:00.188 --> 00:22:01.348
+<v Antonio Cisternino>And the.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/385-0
+00:22:02.868 --> 00:22:04.748
+<v Antonio Cisternino>And then uh.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/390-0
+00:22:05.628 --> 00:22:12.247
+<v Antonio Cisternino>Few example around how the link
+expression can be compiled to object</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/390-1
+00:22:12.247 --> 00:22:19.536
+<v Antonio Cisternino>browsing and SQL so that you can see both
+browsing of in memory programming</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/390-2
+00:22:19.536 --> 00:22:23.948
+<v Antonio Cisternino>language structures and cogeneration for
+SQL.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/394-0
+00:22:24.428 --> 00:22:33.085
+<v Antonio Cisternino>So if you're passionate about databases
+and and data management and type systems,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/394-1
+00:22:33.085 --> 00:22:38.468
+<v Antonio Cisternino>this is a nice one. Duck typing.
+Duck typing is a.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/399-0
+00:22:39.988 --> 00:22:44.761
+<v Antonio Cisternino>It's not popular anymore,
+but the 10 years ago,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/399-1
+00:22:44.761 --> 00:22:50.926
+<v Antonio Cisternino>I mean actually it made the fortune of
+Python, unfortunately.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/399-2
+00:22:50.926 --> 00:22:57.588
+<v Antonio Cisternino>It's it's a philosophy basically that
+typing and it's interesting.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/401-0
+00:22:57.828 --> 00:23:05.788
+<v Antonio Cisternino>To observe how the typing can be obtained
+in different rogramming languages if.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/406-0
+00:23:06.908 --> 00:23:11.665
+<v Antonio Cisternino>So JavaScript, Python, I mean Python.
+Yeah,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/406-1
+00:23:11.665 --> 00:23:20.097
+<v Antonio Cisternino>it is known for that Java and C# and and
+those were sherry picket because the</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/406-2
+00:23:20.097 --> 00:23:23.988
+<v Antonio Cisternino>answer, especially for the last two.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/407-0
+00:23:24.348 --> 00:23:25.908
+<v Antonio Cisternino>May be really interesting.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/409-0
+00:23:27.708 --> 00:23:33.308
+<v Antonio Cisternino>So that that one, uh,
+gives you a lot of uh.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/414-0
+00:23:34.668 --> 00:23:40.944
+<v Antonio Cisternino>Angles too.
+You like parametric polymorphism and C++</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/414-1
+00:23:40.944 --> 00:23:50.889
+<v Antonio Cisternino>in Java and C# at the end of the 90s were
+all the rage for parametric polymorphism,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/414-2
+00:23:50.889 --> 00:23:52.428
+<v Antonio Cisternino>which we all.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/420-0
+00:23:52.588 --> 00:23:59.283
+<v Antonio Cisternino>Give it for granted by now,
+but back then it was a super cool feature</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/420-1
+00:23:59.283 --> 00:24:07.126
+<v Antonio Cisternino>and and they have a three very different
+implementation of the same thing and one</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/420-2
+00:24:07.126 --> 00:24:09.708
+<v Antonio Cisternino>of the three C++ it's even.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/424-0
+00:24:09.708 --> 00:24:17.892
+<v Antonio Cisternino>Turing complete at compile time,
+so you may induce the compiler to execute</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/424-1
+00:24:17.892 --> 00:24:24.548
+<v Antonio Cisternino>code on your behalf in the in in the
+journey to resolve the.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/429-0
+00:24:25.428 --> 00:24:29.945
+<v Antonio Cisternino>Uh,
+some types and and there are few core</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/429-1
+00:24:29.945 --> 00:24:36.828
+<v Antonio Cisternino>reasons because of this.
+So basically this revolves around the.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/432-0
+00:24:38.068 --> 00:24:44.817
+<v Antonio Cisternino>Finding why you can't have a Java
+template metaprogramming or C# template</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/432-1
+00:24:44.817 --> 00:24:49.468
+<v Antonio Cisternino>metaprogramming only C++ template
+metaprogramming.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/433-0
+00:24:51.228 --> 00:24:53.388
+<v Antonio Cisternino>And the answer is interesting.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/435-0
+00:24:54.508 --> 00:24:54.628
+<v Antonio Cisternino>Um.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/440-0
+00:24:58.508 --> 00:25:06.316
+<v Antonio Cisternino>I resorted also to all languages. Still,
+if you're in love of good old programming</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/440-1
+00:25:06.316 --> 00:25:11.959
+<v Antonio Cisternino>languages that made history,
+Smalltalk and Clos are clearly</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/440-2
+00:25:11.959 --> 00:25:14.028
+<v Antonio Cisternino>interesting Smalltalk.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/443-0
+00:25:14.108 --> 00:25:20.856
+<v Antonio Cisternino>Is considered the father of object
+oriented programming and CLOS was the</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/443-1
+00:25:20.856 --> 00:25:27.788
+<v Antonio Cisternino>common Lisp object system which was which
+introduced a number of features.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/448-0
+00:25:29.148 --> 00:25:37.895
+<v Antonio Cisternino>Mostly bound to Lisp and you have to
+compare with more modernjavaand.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/448-1
+00:25:37.895 --> 00:25:40.268
+<v Antonio Cisternino>net approach types.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/449-0
+00:25:41.868 --> 00:25:41.988
+<v Antonio Cisternino>Um.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/454-0
+00:25:45.388 --> 00:25:52.639
+<v Antonio Cisternino>I attempted also to have some web stuff.
+I know that in the audience there are</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/454-1
+00:25:52.639 --> 00:25:59.889
+<v Antonio Cisternino>people interested in web technologies,
+so there are a lot of look how Chromium</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/454-2
+00:25:59.889 --> 00:26:01.908
+<v Antonio Cisternino>Chrome is implemented.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/459-0
+00:26:02.268 --> 00:26:08.877
+<v Antonio Cisternino>On the end, in this case,
+Angular JS versus React versus jQuery,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/459-1
+00:26:08.877 --> 00:26:15.078
+<v Antonio Cisternino>of course. I mean,
+I'm not looking for the implementation of</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/459-2
+00:26:15.078 --> 00:26:21.788
+<v Antonio Cisternino>that. I I don't care. I mean,
+I don't give you. It's interesting.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/463-0
+00:26:21.908 --> 00:26:29.938
+<v Antonio Cisternino>From an advanced programming perspective
+to look the differences between the three.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/463-1
+00:26:29.938 --> 00:26:35.387
+<v Antonio Cisternino>In particular,
+I mentioned the three because React has a</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/463-2
+00:26:35.387 --> 00:26:40.548
+<v Antonio Cisternino>very peculiar implementation of its
+internal working.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/465-0
+00:26:40.668 --> 00:26:44.588
+<v Antonio Cisternino>And it's radically and totally different
+than jQuery.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/470-0
+00:26:46.028 --> 00:26:54.012
+<v Antonio Cisternino>And the same can be said around Angular
+and async programming that we discussed</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/470-1
+00:26:54.012 --> 00:27:01.597
+<v Antonio Cisternino>it and why it is important because
+basically React and Angular works mostly</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/470-2
+00:27:01.597 --> 00:27:05.788
+<v Antonio Cisternino>because of Ajax, I mean and the design is.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/475-0
+00:27:07.748 --> 00:27:12.010
+<v Antonio Cisternino>Deep even in jQuery too.
+I mean all three frameworks,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/475-1
+00:27:12.010 --> 00:27:17.772
+<v Antonio Cisternino>all the web single application page
+frameworks basically give you have a</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/475-2
+00:27:17.772 --> 00:27:23.375
+<v Antonio Cisternino>relevant role in terms of async,
+which means promises and the thing we</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/475-3
+00:27:23.375 --> 00:27:25.348
+<v Antonio Cisternino>said and we discussed so.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/480-0
+00:27:25.828 --> 00:27:31.336
+<v Antonio Cisternino>Always remember that we are interested in
+reading the advanced programming</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/480-1
+00:27:31.336 --> 00:27:35.595
+<v Antonio Cisternino>perspective. I mean,
+so I'm not interested in receiving a</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/480-2
+00:27:35.595 --> 00:27:41.690
+<v Antonio Cisternino>manual that tells me how to do our React
+application. I'm interested in, OK, look,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/480-3
+00:27:41.690 --> 00:27:45.068
+<v Antonio Cisternino>this feature is very nice in Reactor
+because.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/483-0
+00:27:45.388 --> 00:27:51.145
+<v Antonio Cisternino>Reactor is manipulating the DOM in this
+way and generates code,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/483-1
+00:27:51.145 --> 00:27:57.081
+<v Antonio Cisternino>so it's a code generator in that way so
+that you get this effect.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/483-2
+00:27:57.081 --> 00:28:00.588
+<v Antonio Cisternino>Look at how nice is the data structure.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/487-0
+00:28:00.588 --> 00:28:06.796
+<v Antonio Cisternino>Dictionaries in JavaScript are
+implemented this way and so on. OK,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/487-1
+00:28:06.796 --> 00:28:14.024
+<v Antonio Cisternino>so focus on the advanced programming
+features that have been used and all the</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/487-2
+00:28:14.024 --> 00:28:16.988
+<v Antonio Cisternino>example that I tried to pick up.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/491-0
+00:28:17.108 --> 00:28:26.146
+<v Antonio Cisternino>Are basically interesting in the way the
+feature features features of the various</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/491-1
+00:28:26.146 --> 00:28:32.428
+<v Antonio Cisternino>programming languages have been adopted
+and used I have.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/497-0
+00:28:32.908 --> 00:28:37.346
+<v Antonio Cisternino>Quotation and quasi quotation in
+programming languages.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/497-1
+00:28:37.346 --> 00:28:42.496
+<v Antonio Cisternino>We touched the subject,
+but this is an opportunity to learn more</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/497-2
+00:28:42.496 --> 00:28:48.438
+<v Antonio Cisternino>of a very important notation asking to
+compare lisp you don't you you know</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/497-3
+00:28:48.438 --> 00:28:49.468
+<v Antonio Cisternino>little about.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/501-0
+00:28:50.188 --> 00:28:57.628
+<v Antonio Cisternino>And PHP you may know something about and
+ASP you don't know anything about because</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/501-1
+00:28:57.628 --> 00:29:04.171
+<v Antonio Cisternino>it's in the past now. Nevertheless,
+they are more related than you might</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/501-2
+00:29:04.171 --> 00:29:04.708
+<v Antonio Cisternino>think.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/502-0
+00:29:04.908 --> 00:29:08.188
+<v Antonio Cisternino>And so, uh,
+it's an interesting exploration.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/504-0
+00:29:09.388 --> 00:29:09.468
+<v Antonio Cisternino>Um.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/506-0
+00:29:17.268 --> 00:29:17.348
+<v Antonio Cisternino>Um.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/512-0
+00:29:19.948 --> 00:29:23.541
+<v Antonio Cisternino>Lexical closures, lexical closures,
+if you,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/512-1
+00:29:23.541 --> 00:29:30.074
+<v Antonio Cisternino>I mean we learn that lexical closure is
+fundamental. It's an essential element,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/512-2
+00:29:30.074 --> 00:29:33.748
+<v Antonio Cisternino>for instance,
+in continuation passing style.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/515-0
+00:29:34.988 --> 00:29:40.718
+<v Antonio Cisternino>And so it's important to understand
+whether a programming language implements</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/515-1
+00:29:40.718 --> 00:29:42.628
+<v Antonio Cisternino>or not and how implements.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/519-0
+00:29:44.788 --> 00:29:50.713
+<v Antonio Cisternino>Lexical closures,
+because it may be it may seem trivial,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/519-1
+00:29:50.713 --> 00:29:56.223
+<v Antonio Cisternino>but it's not.
+Not all lexical closure implementation</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/519-2
+00:29:56.223 --> 00:30:00.588
+<v Antonio Cisternino>are equivalent. There may be restrictions.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/522-0
+00:30:00.908 --> 00:30:04.233
+<v Antonio Cisternino>In the way a language supports the
+features,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/522-1
+00:30:04.233 --> 00:30:08.148
+<v Antonio Cisternino>so I mean it's interesting to look into
+the details.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/523-0
+00:30:10.708 --> 00:30:13.268
+<v Antonio Cisternino>So in this case I picked up.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/529-0
+00:30:14.748 --> 00:30:20.441
+<v Antonio Cisternino>Spoiler Python, for instance,
+in the beginning was not properly</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/529-1
+00:30:20.441 --> 00:30:24.354
+<v Antonio Cisternino>implementing lexical closures.
+If you look,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/529-2
+00:30:24.354 --> 00:30:30.668
+<v Antonio Cisternino>you will learn that at some point they
+fixed the language, but in the.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/532-0
+00:30:30.908 --> 00:30:37.594
+<v Antonio Cisternino>Original version of Python.
+Python wasn't supporting lexical, so Lua,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/532-1
+00:30:37.594 --> 00:30:40.268
+<v Antonio Cisternino>Python, JavaScript and Perl.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/535-0
+00:30:41.868 --> 00:30:49.868
+<v Antonio Cisternino>A big boy from the 90s that is basic.
+I mean, how many of you know about Pearl?</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/537-0
+00:30:52.428 --> 00:30:58.280
+<v Antonio Cisternino>But you you write coding per now. OK,
+you know that there is a Perl programming</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/537-1
+00:30:58.280 --> 00:31:00.108
+<v Antonio Cisternino>language. OK, Perl was a.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/543-0
+00:31:01.348 --> 00:31:05.430
+<v Antonio Cisternino>Strange and interesting and audible
+programming,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/543-1
+00:31:05.430 --> 00:31:10.427
+<v Antonio Cisternino>but actually it signed history because
+regular expressions,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/543-2
+00:31:10.427 --> 00:31:17.257
+<v Antonio Cisternino>all the regular expression available in
+basically all programming languages today</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/543-3
+00:31:17.257 --> 00:31:20.588
+<v Antonio Cisternino>are in after the current implementation.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/546-0
+00:31:20.668 --> 00:31:29.678
+<v Antonio Cisternino>So Perl did change the world and we all
+use the Perl regex in any other</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/546-1
+00:31:29.678 --> 00:31:35.308
+<v Antonio Cisternino>programming language.
+OK and as you can see.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/548-0
+00:31:35.948 --> 00:31:40.348
+<v Antonio Cisternino>Typescript and JavaScript and dynamic
+typing.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/552-0
+00:31:41.148 --> 00:31:44.472
+<v Antonio Cisternino>There are some that are more.
+So for instance,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/552-1
+00:31:44.472 --> 00:31:49.846
+<v Antonio Cisternino>if you are a programming language
+passionate that would like to learn about</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/552-2
+00:31:49.846 --> 00:31:55.362
+<v Antonio Cisternino>the subtle things inside the programming
+language, this can be, for instance,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/552-3
+00:31:55.362 --> 00:31:56.988
+<v Antonio Cisternino>an interesting project.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/553-0
+00:31:56.988 --> 00:31:58.108
+<v Antonio Cisternino>Because uh.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/556-0
+00:32:01.068 --> 00:32:05.468
+<v Antonio Cisternino>Um, JavaScript,
+we said as no type constructors.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/559-0
+00:32:06.108 --> 00:32:12.408
+<v Antonio Cisternino>Uh, and it it has dynamic typing.
+I mean a variable can change uh the type</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/559-1
+00:32:12.408 --> 00:32:17.028
+<v Antonio Cisternino>uh is bound to during the course during
+the execution.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/562-0
+00:32:18.428 --> 00:32:21.824
+<v Antonio Cisternino>Um,
+TypeScript tries to support the type</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/562-1
+00:32:21.824 --> 00:32:24.308
+<v Antonio Cisternino>system with type constructors.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/567-0
+00:32:26.508 --> 00:32:33.523
+<v Antonio Cisternino>Similar to Java or C# or less,
+but also with dynamic typing and static</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/567-1
+00:32:33.523 --> 00:32:38.364
+<v Antonio Cisternino>typing.
+Now dynamic typing and static typing are</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/567-2
+00:32:38.364 --> 00:32:44.688
+<v Antonio Cisternino>not so easy to be mixed together.
+There are only two successful</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/567-3
+00:32:44.688 --> 00:32:46.268
+<v Antonio Cisternino>implementations.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/569-0
+00:32:46.428 --> 00:32:51.668
+<v Antonio Cisternino>With that I know of as of today,
+one is Visual Basic.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/573-0
+00:32:53.948 --> 00:33:00.574
+<v Antonio Cisternino>Visual Basic did support this thing and
+the other is TypeScript.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/573-1
+00:33:00.574 --> 00:33:08.116
+<v Antonio Cisternino>So it's interesting because when you
+allow both static typing and dynamic</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/573-2
+00:33:08.116 --> 00:33:10.868
+<v Antonio Cisternino>typing then you need rules.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/576-0
+00:33:11.148 --> 00:33:16.693
+<v Antonio Cisternino>That allows you to discriminate,
+decide when you stop type checking.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/576-1
+00:33:16.693 --> 00:33:20.068
+<v Antonio Cisternino>I mean there are a little bit implication.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/579-0
+00:33:28.308 --> 00:33:28.428
+<v Antonio Cisternino>OK.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/582-0
+00:33:34.908 --> 00:33:39.148
+<v Antonio Cisternino>Let me see if there there is some. Uh,
+I basically.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/585-0
+00:33:42.308 --> 00:33:45.612
+<v Antonio Cisternino>Oh,
+this is another interesting one for a um</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/585-1
+00:33:45.612 --> 00:33:48.108
+<v Antonio Cisternino>programming a language passionate.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/586-0
+00:33:50.788 --> 00:33:50.948
+<v Antonio Cisternino>Um.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/591-0
+00:33:52.828 --> 00:34:00.625
+<v Antonio Cisternino>To study. In this case, for instance,
+you can search and you will find also</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/591-1
+00:34:00.625 --> 00:34:08.730
+<v Antonio Cisternino>scientific papers around the the F sharp
+units of measure that you may find it</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/591-2
+00:34:08.730 --> 00:34:10.268
+<v Antonio Cisternino>useful to read.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/595-0
+00:34:12.708 --> 00:34:20.825
+<v Antonio Cisternino>And the paper from Andrew Kennedy in in
+this case can be used for instance to</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/595-1
+00:34:20.825 --> 00:34:27.588
+<v Antonio Cisternino>cross check your output instead of asking
+to the I Are you sure?</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/597-0
+00:34:28.188 --> 00:34:33.068
+<v Antonio Cisternino>And uh, this is, uh,
+an interesting it's it's another.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/601-0
+00:34:34.828 --> 00:34:42.303
+<v Antonio Cisternino>Very interesting aspect of programming
+language design because touching in a</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/601-1
+00:34:42.303 --> 00:34:47.643
+<v Antonio Cisternino>programming language a notion which is a
+numeric type,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/601-2
+00:34:47.643 --> 00:34:51.428
+<v Antonio Cisternino>which is so core and then blending the.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/606-0
+00:34:51.628 --> 00:34:58.246
+<v Antonio Cisternino>Unit of measure which is not just a tag
+because the language supports the</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/606-1
+00:34:58.246 --> 00:35:03.969
+<v Antonio Cisternino>dimensional computation.
+So if you divide the meter per seconds</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/606-2
+00:35:03.969 --> 00:35:08.708
+<v Antonio Cisternino>you you get a new measure which is meter
+per second.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/610-0
+00:35:10.588 --> 00:35:15.590
+<v Antonio Cisternino>And so in this respect,
+it's not just tagging things around,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/610-1
+00:35:15.590 --> 00:35:20.674
+<v Antonio Cisternino>it's more than that.
+It's interesting to to to understand how</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/610-2
+00:35:20.674 --> 00:35:25.348
+<v Antonio Cisternino>it is possible to statically type check
+the whole thing.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/612-0
+00:35:25.788 --> 00:35:32.041
+<v Antonio Cisternino>And eventually get a code which has no
+trace at runtime of all this work,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/612-1
+00:35:32.041 --> 00:35:34.068
+<v Antonio Cisternino>which is clearly useful.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/617-0
+00:35:35.148 --> 00:35:45.684
+<v Antonio Cisternino>Uh to avoid I there is also uh CC plus
+plus in rust. When I ask the comparison,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/617-1
+00:35:45.684 --> 00:35:52.268
+<v Antonio Cisternino>I always try to mix different things.
+I mean C++.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/622-0
+00:35:52.548 --> 00:35:58.180
+<v Antonio Cisternino>Very fast, very complicated,
+three key programming language. C,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/622-1
+00:35:58.180 --> 00:36:03.196
+<v Antonio Cisternino>very clean, very old,
+very basic and Rust the attempt to</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/622-2
+00:36:03.196 --> 00:36:10.412
+<v Antonio Cisternino>produce a better C with with the memory
+management and with the borrowing and the</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/622-3
+00:36:10.412 --> 00:36:11.468
+<v Antonio Cisternino>whole thing.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/625-0
+00:36:12.428 --> 00:36:24.084
+<v Antonio Cisternino>And in this case clearly the point is how
+you compare the three and pros and cons</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/625-1
+00:36:24.084 --> 00:36:27.068
+<v Antonio Cisternino>limits and there are.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/627-0
+00:36:27.388 --> 00:36:32.988
+<v Antonio Cisternino>A lot of angles that can be taken because.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/631-0
+00:36:35.868 --> 00:36:40.558
+<v Antonio Cisternino>Smart pointers, for instance,
+are available both in Rust and in C++.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/631-1
+00:36:40.558 --> 00:36:44.228
+<v Antonio Cisternino>How the smart pointers implementation do
+they differ?</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/632-0
+00:36:46.308 --> 00:36:47.908
+<v Antonio Cisternino>Knock and so on.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/636-0
+00:36:50.548 --> 00:37:02.278
+<v Antonio Cisternino>OK, this is the 3D rendering,
+so I guess we will pause more in the in</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/636-1
+00:37:02.278 --> 00:37:02.948
+<v Antonio Cisternino>the.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/640-0
+00:37:04.108 --> 00:37:10.102
+<v Antonio Cisternino>In in the in the channel,
+actually I was thinking that probably a</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/640-1
+00:37:10.102 --> 00:37:16.732
+<v Antonio Cisternino>sensible way to move forward in this
+respect is I created the assignment</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/640-2
+00:37:16.732 --> 00:37:18.548
+<v Antonio Cisternino>channel in the team.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/644-0
+00:37:20.188 --> 00:37:27.600
+<v Antonio Cisternino>I post each assignment as a poster and if
+you are interested in making that</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/644-1
+00:37:27.600 --> 00:37:32.768
+<v Antonio Cisternino>assignment,
+you comment the post saying I'm going to</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/644-2
+00:37:32.768 --> 00:37:33.548
+<v Antonio Cisternino>do this.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/647-0
+00:37:34.508 --> 00:37:42.028
+<v Antonio Cisternino>I think it so that we we keep track of uh
+what uh is doing uh.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/651-0
+00:37:43.508 --> 00:37:51.216
+<v Antonio Cisternino>Who is going doing what and we will keep
+posting new projects.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/651-1
+00:37:51.216 --> 00:38:00.268
+<v Antonio Cisternino>One of you just wrote to me Andrea asking
+for feedback that it will come.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/655-0
+00:38:00.908 --> 00:38:08.642
+<v Antonio Cisternino>Around the as a project,
+as a project proposal and so you will</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/655-1
+00:38:08.642 --> 00:38:15.148
+<v Antonio Cisternino>receive the answer shortly and that's it.
+Questions.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/666-0
+00:38:47.788 --> 00:38:48.308
+<v Antonio Cisternino>So.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/670-0
+00:38:49.908 --> 00:38:59.065
+<v Antonio Cisternino>Let's say that we will share the link to
+an agenda where you simply pick up the</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/670-1
+00:38:59.065 --> 00:39:04.788
+<v Antonio Cisternino>slot and the submission of the project
+should be.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/675-0
+00:39:06.548 --> 00:39:11.341
+<v Antonio Cisternino>A week, the week before, one week,
+one week before. OK,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/675-1
+00:39:11.341 --> 00:39:15.876
+<v Antonio Cisternino>so basically you you apply for the
+January the 10th.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/675-2
+00:39:15.876 --> 00:39:22.551
+<v Antonio Cisternino>So by January the 3rd you should have
+submitted the the assignment so that we</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/675-3
+00:39:22.551 --> 00:39:24.348
+<v Antonio Cisternino>have time for review.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/677-0
+00:39:30.188 --> 00:39:30.348
+<v Antonio Cisternino>You.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/680-0
+00:39:37.028 --> 00:39:40.708
+<v Antonio Cisternino>Oh, submission. No, no,
+I think I will post a form.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/682-0
+00:39:42.268 --> 00:39:48.188
+<v Antonio Cisternino>Uh, so that I mean I I tried not to.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/684-0
+00:39:50.188 --> 00:39:51.508
+<v Antonio Cisternino>The name is.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/689-0
+00:39:55.108 --> 00:40:00.516
+<v Antonio Cisternino>No, exactly. But in general, no,
+it's it's a e-mail.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/689-1
+00:40:00.516 --> 00:40:08.882
+<v Antonio Cisternino>I think it's should be just deleted. No,
+I mean there will be a form that we post</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/689-2
+00:40:08.882 --> 00:40:11.228
+<v Antonio Cisternino>on again in the in the.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/693-0
+00:40:11.268 --> 00:40:19.776
+<v Antonio Cisternino>In the in the team so that we got the
+hour recorded by the system etcetera.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/693-1
+00:40:19.776 --> 00:40:26.828
+<v Antonio Cisternino>So everything is tracked.
+You can Anna will ask to upload the.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/696-0
+00:40:27.628 --> 00:40:35.428
+<v Antonio Cisternino>At most 3 documents,
+so various formats I will allow also zip.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/702-0
+00:40:37.268 --> 00:40:45.396
+<v Antonio Cisternino>If if there is, if it's too big,
+I will also have a a field with the link</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/702-1
+00:40:45.396 --> 00:40:53.523
+<v Antonio Cisternino>so that you can paste the share to
+OneDrive so that we sure that in in in</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/702-2
+00:40:53.523 --> 00:40:56.708
+<v Antonio Cisternino>some case in any case we can.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/703-0
+00:40:57.108 --> 00:40:58.268
+<v Antonio Cisternino>Get the information.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/704-0
+00:41:00.828 --> 00:41:01.388
+<v Antonio Cisternino>That's it.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/706-0
+00:41:04.748 --> 00:41:05.828
+<v Antonio Cisternino>Other questions, Sir.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/711-0
+00:41:18.428 --> 00:41:19.708
+<v Antonio Cisternino>OK, so.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/712-0
+00:41:24.068 --> 00:41:24.268
+<v Antonio Cisternino>Um.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/716-0
+00:41:28.068 --> 00:41:35.748
+<v Antonio Cisternino>Have a wonderful Christmas.
+If you go home, have a safe trip home.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/719-0
+00:41:36.868 --> 00:41:41.931
+<v Antonio Cisternino>Talk to you at the exam. Don't be.
+I mean study. Yes,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/719-1
+00:41:41.931 --> 00:41:48.868
+<v Antonio Cisternino>study to understand and learn the
+advanced programming language features.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/721-0
+00:41:49.668 --> 00:41:52.108
+<v Antonio Cisternino>Uh, learn to be.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/726-0
+00:41:54.148 --> 00:41:58.769
+<v Antonio Cisternino>One of the things that I'm not sure,
+at least for me,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/726-1
+00:41:58.769 --> 00:42:05.358
+<v Antonio Cisternino>I've been able to really ask you during
+the classes is how subtle is program</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/726-2
+00:42:05.358 --> 00:42:10.065
+<v Antonio Cisternino>advanced programming.
+People that thinks that advanced</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/726-3
+00:42:10.065 --> 00:42:11.348
+<v Antonio Cisternino>programming is.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/729-0
+00:42:11.428 --> 00:42:18.548
+<v Antonio Cisternino>The big super complicated notion,
+but the reality is that under really</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/729-1
+00:42:18.548 --> 00:42:25.668
+<v Antonio Cisternino>understanding the programming languages
+is really understand the deep.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/733-0
+00:42:26.628 --> 00:42:32.700
+<v Antonio Cisternino>Interwined story between the syntax,
+the semantics of every feature,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/733-1
+00:42:32.700 --> 00:42:39.388
+<v Antonio Cisternino>and how these interact with other
+features so that you can get figures that</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/733-2
+00:42:39.388 --> 00:42:42.028
+<v Antonio Cisternino>allows you to represent ideas.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/738-0
+00:42:42.228 --> 00:42:48.854
+<v Antonio Cisternino>And and and it's complicated and what it
+makes makes it complicated is to</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/738-1
+00:42:48.854 --> 00:42:56.017
+<v Antonio Cisternino>understand all the interactions that you
+find from scoping rules, typing rules,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/738-2
+00:42:56.017 --> 00:43:01.388
+<v Antonio Cisternino>runtime implementation,
+runtime type checking, static type.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/742-0
+00:43:01.988 --> 00:43:08.530
+<v Antonio Cisternino>Checking it and so on.
+I mean it's a it's a sort of melody and</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/742-1
+00:43:08.530 --> 00:43:15.799
+<v Antonio Cisternino>lots of things that some in some case
+like Python probably Cacophony.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/742-2
+00:43:15.799 --> 00:43:17.148
+<v Antonio Cisternino>Sorry Python.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/747-0
+00:43:17.588 --> 00:43:24.461
+<v Antonio Cisternino>But basically, in any way,
+I I hope that we we at least a little bit</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/747-1
+00:43:24.461 --> 00:43:31.134
+<v Antonio Cisternino>show you all the ingredients,
+but actually it's up to you to start</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/747-2
+00:43:31.134 --> 00:43:37.508
+<v Antonio Cisternino>looking into a program and try to
+appreciate the subtle things.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/751-0
+00:43:37.708 --> 00:43:42.910
+<v Antonio Cisternino>Not the big ones.
+The big ones are the easy and simple one</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/751-1
+00:43:42.910 --> 00:43:49.257
+<v Antonio Cisternino>and I tried in the we tried in this
+assignments to try to capture this.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/751-2
+00:43:49.257 --> 00:43:55.428
+<v Antonio Cisternino>I mean C++ template meta programming why
+it is really too incomplete.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/754-0
+00:43:55.508 --> 00:43:59.909
+<v Antonio Cisternino>There is exactly 1 feature that makes it
+very incomplete,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/754-1
+00:43:59.909 --> 00:44:05.068
+<v Antonio Cisternino>otherwise without it it won't be.
+So it's and why it's not in Java.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/758-0
+00:44:09.468 --> 00:44:15.809
+<v Antonio Cisternino>So think, think, think.
+And I mean because it's about the</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/758-1
+00:44:15.809 --> 00:44:23.788
+<v Antonio Cisternino>beautiful of programming languages. OK,
+thank you and see you next year.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/761-0
+00:44:27.308 --> 00:44:29.228
+<v Antonio Cisternino>Next year, I mean.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/763-0
+00:44:31.108 --> 00:44:31.148
+<v Antonio Cisternino>Uh.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/764-0
+00:44:32.948 --> 00:44:42.188
+<v Antonio Cisternino>Next year in the sense at the exam,
+but not OK, it wasn't.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/765-0
+00:44:43.628 --> 00:44:48.188
+<v Antonio Cisternino>Uh,
+any any uh question from uh oh will uh um.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/766-0
+00:44:50.028 --> 00:44:54.914
+<v Antonio Cisternino>Lorenzo, OK,
+will our code be reviewed by you or by AI?</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/766-1
+00:44:54.914 --> 00:44:59.101
+<v Antonio Cisternino>By both?
+I mean in the total coherence with the</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/766-2
+00:44:59.101 --> 00:45:03.289
+<v Antonio Cisternino>course.
+So I just showed that that the text has</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/766-3
+00:45:03.289 --> 00:45:08.348
+<v Antonio Cisternino>been basically generated,
+but it's not entirely true, so.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/768-0
+00:45:09.508 --> 00:45:16.548
+<v Antonio Cisternino>In in full transparency,
+if you look at the at the chat, uh.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/774-0
+00:45:17.428 --> 00:45:24.752
+<v Antonio Cisternino>These were the proposals made it by the I
+that in my personal opinion were simply</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/774-1
+00:45:24.752 --> 00:45:29.665
+<v Antonio Cisternino>unacceptable.
+So I retain the category system that the</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/774-2
+00:45:29.665 --> 00:45:36.988
+<v Antonio Cisternino>I proposed and it's OK and as you can see
+here there was another attempt and and.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/778-0
+00:45:37.108 --> 00:45:42.309
+<v Antonio Cisternino>It was three page description for the
+assignment, so I decided no,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/778-1
+00:45:42.309 --> 00:45:48.675
+<v Antonio Cisternino>that's not OK and after a little bit of
+struggle now category C and comparison of</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/778-2
+00:45:48.675 --> 00:45:54.108
+<v Antonio Cisternino>lexical closure implementation in Lua,
+Python, JavaScript, and I got.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/780-0
+00:45:55.188 --> 00:46:01.311
+<v Antonio Cisternino>Yes. OK. So yes, we will.
+We may help us with with the eye,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/780-1
+00:46:01.311 --> 00:46:08.556
+<v Antonio Cisternino>but we will review the code because
+accountability applies also to us,</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/780-2
+00:46:08.556 --> 00:46:10.188
+<v Antonio Cisternino>not only to you.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/781-0
+00:46:10.428 --> 00:46:10.548
+<v Antonio Cisternino>OK.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/782-0
+00:46:13.708 --> 00:46:17.748
+<v Antonio Cisternino>Oh, and if you generate code,
+the code should run.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/783-0
+00:46:21.148 --> 00:46:21.468
+<v Antonio Cisternino>OK.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/784-0
+00:46:24.148 --> 00:46:28.725
+<v Antonio Cisternino>If you provide a docker, we'll be fine.
+I'm I'm pretty sure you those of you that</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/784-1
+00:46:28.725 --> 00:46:32.297
+<v Antonio Cisternino>decide to generate code,
+I'm pretty sure you will find a way to</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/784-2
+00:46:32.297 --> 00:46:33.748
+<v Antonio Cisternino>give us a running version.</v>
+
+cc6a2e5b-8312-400f-9a37-b8d4afb102b8/787-0
+00:46:43.948 --> 00:46:45.388
+<v Antonio Cisternino>And in English.</v>

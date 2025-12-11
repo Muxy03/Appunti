@@ -1,0 +1,4438 @@
+WEBVTT
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/11-0
+00:00:20.663 --> 00:00:20.783
+So.
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/12-0
+00:00:21.103 --> 00:00:21.263
+<v Antonio Cisternino>So.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/30-0
+00:00:25.543 --> 00:00:31.333
+<v Antonio Cisternino>Last week I was attending the
+Supercomputing conference.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/30-1
+00:00:31.333 --> 00:00:33.263
+<v Antonio Cisternino>It was in San Luis.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/40-0
+00:00:34.503 --> 00:00:41.183
+<v Antonio Cisternino>In the middle of nowhere and it was
+interesting anyway.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/41-0
+00:00:45.023 --> 00:00:45.063
+<v Antonio Cisternino>Uh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/75-0
+00:00:47.543 --> 00:00:51.167
+<v Antonio Cisternino>Even though,
+as you may have noticed that we got some</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/75-1
+00:00:51.167 --> 00:00:54.657
+<v Antonio Cisternino>problems in Pisa,
+so during the day I was attending</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/75-2
+00:00:54.657 --> 00:00:59.825
+<v Antonio Cisternino>meetings and during the night I was
+debugging to stay in the network in Pisa</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/75-3
+00:00:59.825 --> 00:01:01.503
+<v Antonio Cisternino>from Monday to Wednesday.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/95-0
+00:01:02.943 --> 00:01:09.645
+<v Antonio Cisternino>Nevertheless,
+it was interesting here and I think that</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/95-1
+00:01:09.645 --> 00:01:16.103
+<v Antonio Cisternino>there are few considerations that are
+worth sharing.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/109-0
+00:01:17.223 --> 00:01:26.743
+<v Antonio Cisternino>Even though it is a conference dedicated
+to HPC. OK, how to be supercomputers so.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/126-0
+00:01:27.623 --> 00:01:34.983
+<v Antonio Cisternino>I attended 15 editions of this conference.
+This is the largest conference worldwide.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/128-0
+00:01:36.703 --> 00:01:37.863
+<v Antonio Cisternino>Of supercomputing.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/157-0
+00:01:40.583 --> 00:01:46.149
+<v Antonio Cisternino>And of course,
+every vision is affected by the hype of</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/157-1
+00:01:46.149 --> 00:01:51.210
+<v Antonio Cisternino>the moment.
+So the first thing that you notice is</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/157-2
+00:01:51.210 --> 00:01:55.663
+<v Antonio Cisternino>that now it's like entering a plumber
+shop.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/199-0
+00:01:57.063 --> 00:02:01.550
+<v Antonio Cisternino>That's the feeling you have when you're
+entering,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/199-1
+00:02:01.550 --> 00:02:05.498
+<v Antonio Cisternino>because there is a huge exhibition.
+I mean,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/199-2
+00:02:05.498 --> 00:02:12.588
+<v Antonio Cisternino>you can work one hour just to have a
+quick view of all the stands with all the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/199-3
+00:02:12.588 --> 00:02:14.383
+<v Antonio Cisternino>companies trying to.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/217-0
+00:02:14.663 --> 00:02:25.509
+<v Antonio Cisternino>To tell how they are redefining the world
+and and there are a few things that are</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/217-1
+00:02:25.509 --> 00:02:28.023
+<v Antonio Cisternino>evident first if I.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/244-0
+00:02:28.743 --> 00:02:34.720
+<v Antonio Cisternino>OK, that's easy. Yeah, I was everywhere.
+I was used to implement.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/244-1
+00:02:34.720 --> 00:02:40.606
+<v Antonio Cisternino>I was optimized to run,
+pick up the one you you prefer the most.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/244-2
+00:02:40.606 --> 00:02:44.863
+<v Antonio Cisternino>By the way, I met Jensen,
+the CEO from Nvidia.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/245-0
+00:02:45.503 --> 00:02:45.583
+<v Antonio Cisternino>Um.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/259-0
+00:02:48.183 --> 00:02:55.263
+<v Antonio Cisternino>I was there announcing the new things
+about the the I of course.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/280-0
+00:02:56.383 --> 00:03:01.297
+<v Antonio Cisternino>Everyone is scared because there is
+clearly a bubble,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/280-1
+00:03:01.297 --> 00:03:07.303
+<v Antonio Cisternino>a financial bubble around the eye,
+because many investors use it.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/296-0
+00:03:08.383 --> 00:03:14.693
+<v Antonio Cisternino>The AI brand to get money and they will
+not produce any value out of them and</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/296-1
+00:03:14.693 --> 00:03:15.583
+<v Antonio Cisternino>eventually.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/302-0
+00:03:16.663 --> 00:03:19.663
+<v Antonio Cisternino>People will start asking.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/313-0
+00:03:21.063 --> 00:03:26.943
+<v Antonio Cisternino>Sorry,
+let me answer this because I suspect that.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/338-0
+00:03:46.023 --> 00:03:50.980
+<v Antonio Cisternino>They said that the ministry was looking
+for me, so I was.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/338-1
+00:03:50.980 --> 00:03:54.143
+<v Antonio Cisternino>I thought it was the ministry. Sorry.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/343-0
+00:03:55.663 --> 00:03:58.103
+<v Antonio Cisternino>It was a user asking.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/346-0
+00:03:59.663 --> 00:04:00.383
+<v Antonio Cisternino>Uh, so.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/365-0
+00:04:02.263 --> 00:04:08.830
+<v Antonio Cisternino>The first thing so it is AI and the
+bubble will eventually blow up.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/365-1
+00:04:08.830 --> 00:04:10.183
+<v Antonio Cisternino>It would burn.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/400-0
+00:04:11.223 --> 00:04:17.053
+<v Antonio Cisternino>Few billions or more billions and and
+eventually as it happened probably with</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/400-1
+00:04:17.053 --> 00:04:21.613
+<v Antonio Cisternino>the Internet because around 2000 it was a
+similar situation.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/400-2
+00:04:21.613 --> 00:04:26.023
+<v Antonio Cisternino>Everyone was investing in the in November
+anyway actually.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/447-0
+00:04:26.343 --> 00:04:30.078
+<v Antonio Cisternino>There was a collapse,
+but the web is still there.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/447-1
+00:04:30.078 --> 00:04:35.084
+<v Antonio Cisternino>It's still unimportant technology,
+social are important, etcetera.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/447-2
+00:04:35.084 --> 00:04:39.940
+<v Antonio Cisternino>So I mean that is the overhype.
+Sometimes it's just an overhype.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/447-3
+00:04:39.940 --> 00:04:44.423
+<v Antonio Cisternino>Sometimes there is a technology,
+but the enthusiasm brings.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/459-0
+00:04:44.863 --> 00:04:55.423
+<v Antonio Cisternino>And both too much the the hype.
+So the second one is compute power.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/474-0
+00:04:57.063 --> 00:05:07.943
+<v Antonio Cisternino>OK, so compute power is very, very, very,
+very important. Compute power is about.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/475-0
+00:05:08.943 --> 00:05:09.583
+<v Antonio Cisternino>Um.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/502-0
+00:05:11.383 --> 00:05:17.188
+<v Antonio Cisternino>Then anticipation.
+Those of you that will attend attend the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/502-1
+00:05:17.188 --> 00:05:23.671
+<v Antonio Cisternino>ACTA infrastructure course will learn
+more in the second semester,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/502-2
+00:05:23.671 --> 00:05:25.703
+<v Antonio Cisternino>but at the same time.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/536-0
+00:05:27.223 --> 00:05:34.544
+<v Antonio Cisternino>It is only also a problem of efficient
+use of the machines.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/536-1
+00:05:34.544 --> 00:05:44.063
+<v Antonio Cisternino>So a server today easily cost at least 60,
+000 EUR. So if I spend 60,000 EUR.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/558-0
+00:05:45.383 --> 00:05:50.314
+<v Antonio Cisternino>To get a server.
+Clearly I'm expecting that that server</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/558-1
+00:05:50.314 --> 00:05:57.094
+<v Antonio Cisternino>will will be used as more as much as
+possible to to get some return from the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/558-2
+00:05:57.094 --> 00:05:58.063
+<v Antonio Cisternino>investment.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/577-0
+00:06:00.783 --> 00:06:09.090
+<v Antonio Cisternino>And the other big,
+big theme is and which is strictly</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/577-1
+00:06:09.090 --> 00:06:10.783
+<v Antonio Cisternino>related to.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/581-0
+00:06:12.263 --> 00:06:15.063
+<v Antonio Cisternino>To rogramming is power consumption.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/584-0
+00:06:16.943 --> 00:06:17.743
+<v Antonio Cisternino>So um.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/623-0
+00:06:19.543 --> 00:06:23.809
+<v Antonio Cisternino>They have these racks with 1000 times on
+the back.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/623-1
+00:06:23.809 --> 00:06:30.501
+<v Antonio Cisternino>There are not not even anymore the cables
+because the amount of current is such</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/623-2
+00:06:30.501 --> 00:06:36.023
+<v Antonio Cisternino>that you can't use a cable to bring the
+cable. So there is a bar.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/628-0
+00:06:36.343 --> 00:06:41.045
+<v Antonio Cisternino>And there is a sort of mechanism that
+inserts the server in this barring</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/628-1
+00:06:41.045 --> 00:06:42.463
+<v Antonio Cisternino>against the power. OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/657-0
+00:06:45.023 --> 00:06:53.439
+<v Antonio Cisternino>And from our perspective, as programmers,
+this means that we will be asked of more</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/657-1
+00:06:53.439 --> 00:07:00.943
+<v Antonio Cisternino>and more efficiency in using, we call it,
+we writing and to this respect.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/689-0
+00:07:03.623 --> 00:07:10.763
+<v Antonio Cisternino>Concurrency is one of the key elements to
+get the most out of this.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/689-1
+00:07:10.763 --> 00:07:15.698
+<v Antonio Cisternino>I had some meetings with the private
+meetings.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/689-2
+00:07:15.698 --> 00:07:21.263
+<v Antonio Cisternino>Actually they showed us the roadmap next
+five years.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/697-0
+00:07:21.903 --> 00:07:26.738
+<v Antonio Cisternino>And uh,
+CPUs will get a ridiculous number of</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/697-1
+00:07:26.738 --> 00:07:27.383
+<v Antonio Cisternino>cores.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/713-0
+00:07:30.703 --> 00:07:37.103
+<v Antonio Cisternino>So there is a there are a lot of problems
+of concurrent access to the memory.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/742-0
+00:07:38.383 --> 00:07:41.700
+<v Antonio Cisternino>OK,
+because we're not used to thinking in</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/742-1
+00:07:41.700 --> 00:07:47.861
+<v Antonio Cisternino>these terms, but when you write a program,
+this program access to the memory,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/742-2
+00:07:47.861 --> 00:07:50.863
+<v Antonio Cisternino>you will run on a core inside the CPU.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/754-0
+00:07:53.423 --> 00:08:00.703
+<v Antonio Cisternino>And let me show you briefly this because
+I think it's an interesting.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/761-0
+00:08:06.183 --> 00:08:08.063
+<v Antonio Cisternino>This is an old CPU.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/763-0
+00:08:09.023 --> 00:08:09.903
+<v Antonio Cisternino>From.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/765-0
+00:08:11.503 --> 00:08:11.543
+<v Antonio Cisternino>Oh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/766-0
+00:08:13.943 --> 00:08:14.063
+<v Antonio Cisternino>Oh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/778-0
+00:08:26.823 --> 00:08:29.983
+<v Antonio Cisternino>This is a 10 years old project.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/781-0
+00:08:31.463 --> 00:08:32.143
+<v Antonio Cisternino>Nevertheless.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/812-0
+00:08:34.623 --> 00:08:41.278
+<v Antonio Cisternino>It's interesting because since then CPUs
+have evolved, but not that much.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/812-1
+00:08:41.278 --> 00:08:48.203
+<v Antonio Cisternino>So they were in many ways, but not.
+So when you enter the CPU when you write</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/812-2
+00:08:48.203 --> 00:08:49.103
+<v Antonio Cisternino>a program.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/853-0
+00:08:49.463 --> 00:08:54.772
+<v Antonio Cisternino>You you tend to think that is a
+mathematical abstract entity,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/853-1
+00:08:54.772 --> 00:09:01.795
+<v Antonio Cisternino>which in part is we spoke about formal
+semantics, the meaning of the program. OK,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/853-2
+00:09:01.795 --> 00:09:08.903
+<v Antonio Cisternino>but eventually this program will become a
+sequence of bytes that will be executed.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/878-0
+00:09:08.983 --> 00:09:17.121
+<v Antonio Cisternino>By the CP and the CP is much more than
+what you are using to think.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/878-1
+00:09:17.121 --> 00:09:23.943
+<v Antonio Cisternino>I mean we have a fairly simple model in
+mind, of course.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/905-0
+00:09:26.263 --> 00:09:33.906
+<v Antonio Cisternino>All these computing elements at the core,
+they still use the patches that you cycle,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/905-1
+00:09:33.906 --> 00:09:38.223
+<v Antonio Cisternino>OK, but they do more.
+They do fresh prediction.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/942-0
+00:09:39.463 --> 00:09:47.624
+<v Antonio Cisternino>So they try to do formal analysis on the
+machine language to decide whether you</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/942-1
+00:09:47.624 --> 00:09:54.662
+<v Antonio Cisternino>can cache instructions or not,
+because if you branch some cache will</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/942-2
+00:09:54.662 --> 00:09:56.703
+<v Antonio Cisternino>will be flushed and.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/945-0
+00:09:57.143 --> 00:09:59.743
+<v Antonio Cisternino>Some latency will be introduced.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/955-0
+00:10:01.223 --> 00:10:06.543
+<v Antonio Cisternino>So this was a 72 course machine.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/988-0
+00:10:08.863 --> 00:10:15.568
+<v Antonio Cisternino>Nowadays it's pretty common as an
+architecture and they probably for the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/988-1
+00:10:15.568 --> 00:10:22.457
+<v Antonio Cisternino>first time they introduced that.
+So every one of these rectangles which is</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/988-2
+00:10:22.457 --> 00:10:23.743
+<v Antonio Cisternino>called a tile.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/991-0
+00:10:24.143 --> 00:10:25.583
+<v Antonio Cisternino>Is made of two cores.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1030-0
+00:10:26.823 --> 00:10:34.278
+<v Antonio Cisternino>And they share of course there is a first
+level of cache is inside the two cores</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1030-1
+00:10:34.278 --> 00:10:40.722
+<v Antonio Cisternino>and then there is the sort of proxy.
+So there is some silicon that is</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1030-2
+00:10:40.722 --> 00:10:43.023
+<v Antonio Cisternino>dedicated to communicate.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1061-0
+00:10:43.343 --> 00:10:49.532
+<v Antonio Cisternino>In a bidimensional mesh,
+so that accessing the the the RAM allows</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1061-1
+00:10:49.532 --> 00:10:53.377
+<v Antonio Cisternino>you.
+So if this guy and this guy have to</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1061-2
+00:10:53.377 --> 00:10:58.816
+<v Antonio Cisternino>access this module,
+they have different patterns so locks</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1061-3
+00:10:58.816 --> 00:11:00.223
+<v Antonio Cisternino>will not block.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1063-0
+00:11:01.183 --> 00:11:01.543
+<v Antonio Cisternino>Uh, the.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1098-0
+00:11:03.623 --> 00:11:10.305
+<v Antonio Cisternino>The the the access to the RAM.
+Otherwise you may think that since you've</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1098-1
+00:11:10.305 --> 00:11:17.170
+<v Antonio Cisternino>got the program and the thread you you
+you will have to find to access the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1098-2
+00:11:17.170 --> 00:11:18.543
+<v Antonio Cisternino>memory in fact.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1104-0
+00:11:19.103 --> 00:11:25.423
+<v Antonio Cisternino>As the number of core has grown and now
+stronger match.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1106-0
+00:11:27.023 --> 00:11:27.103
+<v Antonio Cisternino>Uh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1123-0
+00:11:27.343 --> 00:11:27.503
+<v Antonio Cisternino>Uh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1144-0
+00:11:29.623 --> 00:11:36.326
+<v Antonio Cisternino>There's been the need to have a dedicated
+memory,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1144-1
+00:11:36.326 --> 00:11:46.783
+<v Antonio Cisternino>which these days is called HBM high
+bandwidth memory to allow the throughput.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1164-0
+00:11:46.983 --> 00:11:57.023
+<v Antonio Cisternino>That many cores will generate access in
+the ramp. OK, so any of anyone of you?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1169-0
+00:11:58.263 --> 00:12:01.383
+<v Antonio Cisternino>I have an idea of the current.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1206-0
+00:12:04.503 --> 00:12:11.767
+<v Antonio Cisternino>This is the structure of the core and the
+threading and I was hoping to see also</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1206-1
+00:12:11.767 --> 00:12:18.942
+<v Antonio Cisternino>the the tiles. This is the interconnect.
+So every tile is the agent that allows</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1206-2
+00:12:18.942 --> 00:12:21.543
+<v Antonio Cisternino>the communication on the bus.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1246-0
+00:12:21.943 --> 00:12:27.984
+<v Antonio Cisternino>But this is not an architecture course.
+So just to give you to introduce the the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1246-1
+00:12:27.984 --> 00:12:31.714
+<v Antonio Cisternino>point and the fact that when you write a
+program,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1246-2
+00:12:31.714 --> 00:12:37.904
+<v Antonio Cisternino>this program should run on this thing. OK.
+And so of course the algorithms matter.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1246-3
+00:12:37.904 --> 00:12:41.783
+<v Antonio Cisternino>Of course the PROGRAMMING language
+matters because.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1268-0
+00:12:41.943 --> 00:12:47.859
+<v Antonio Cisternino>We said OK, C is faster,
+C is C Python is terribly slow and so a</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1268-1
+00:12:47.859 --> 00:12:53.503
+<v Antonio Cisternino>single core will take more time to give
+the same computation.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1302-0
+00:12:54.903 --> 00:13:01.113
+<v Antonio Cisternino>One is best to interpret and the other is
+compiled. We discussed also this,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1302-1
+00:13:01.113 --> 00:13:07.815
+<v Antonio Cisternino>but we risk to get ourselves trapped in
+the idea that there is a single CPU which</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1302-2
+00:13:07.815 --> 00:13:10.103
+<v Antonio Cisternino>runs your code and the only.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1316-0
+00:13:10.343 --> 00:13:15.247
+<v Antonio Cisternino>Not that you have in your mind is to
+optimize the algorithm,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1316-1
+00:13:15.247 --> 00:13:18.463
+<v Antonio Cisternino>which is not and you have to understand.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1354-0
+00:13:19.623 --> 00:13:27.613
+<v Antonio Cisternino>How this the the the ground under your
+feet is like to be able to to choose the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1354-1
+00:13:27.613 --> 00:13:36.003
+<v Antonio Cisternino>proper shoes and decide whether to run or
+whether to get the right performance. OK,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1354-2
+00:13:36.003 --> 00:13:36.303
+<v Antonio Cisternino>so.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1392-0
+00:13:37.623 --> 00:13:42.792
+<v Antonio Cisternino>This is an element that you all have to
+take into your mind,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1392-1
+00:13:42.792 --> 00:13:48.809
+<v Antonio Cisternino>because sometimes we tend to think that
+the world is made of x86 code,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1392-2
+00:13:48.809 --> 00:13:52.623
+<v Antonio Cisternino>compilers and that's it,
+which is not today.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1403-0
+00:13:54.063 --> 00:13:59.863
+<v Antonio Cisternino>It it can be X86, it can be this five,
+it can be arm.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1441-0
+00:14:01.663 --> 00:14:05.868
+<v Antonio Cisternino>And even if it's R,
+it depends on the architecture.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1441-1
+00:14:05.868 --> 00:14:11.205
+<v Antonio Cisternino>It's R is an instruction set,
+but the implementation depends from</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1441-2
+00:14:11.205 --> 00:14:15.976
+<v Antonio Cisternino>different values.
+So is different than or from other state</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1441-3
+00:14:15.976 --> 00:14:16.623
+<v Antonio Cisternino>concept.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1454-0
+00:14:17.143 --> 00:14:20.583
+<v Antonio Cisternino>So all these elements contribute.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1463-0
+00:14:24.743 --> 00:14:27.303
+<v Antonio Cisternino>Together with your breathing system.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1480-0
+00:14:28.423 --> 00:14:34.303
+<v Antonio Cisternino>To tell me the performance of the
+programs. OK, so today.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1508-0
+00:14:36.103 --> 00:14:40.953
+<v Antonio Cisternino>We start.
+I don't think we will be able to finish.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1508-1
+00:14:40.953 --> 00:14:45.423
+<v Antonio Cisternino>We start talking about concurrent
+programming.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1569-0
+00:14:47.623 --> 00:14:51.976
+<v Antonio Cisternino>And as I was saying,
+computer PROGRAMMING is a part about</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1569-1
+00:14:51.976 --> 00:14:57.604
+<v Antonio Cisternino>importance because programs will run
+either on your phone and I'll be sure</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1569-2
+00:14:57.604 --> 00:15:02.783
+<v Antonio Cisternino>that you're not happy when you install an
+application on your phone.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1585-0
+00:15:03.783 --> 00:15:08.583
+<v Antonio Cisternino>And the button will raise in 5 minutes
+and you have to uninstall the application.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1647-0
+00:15:10.663 --> 00:15:19.249
+<v Antonio Cisternino>Nor an enterprise is happy when spends so
+much money in in buying a server and then</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1647-1
+00:15:19.249 --> 00:15:25.383
+<v Antonio Cisternino>it gets as much as a PC because the
+program is low. OK, so.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1685-0
+00:15:25.943 --> 00:15:30.571
+<v Antonio Cisternino>Either way,
+program efficiency is crucial and I mean</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1685-1
+00:15:30.571 --> 00:15:37.383
+<v Antonio Cisternino>this is the ADVANCED PROGRAMMING course.
+We try to introduce you with all we.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1741-0
+00:15:38.343 --> 00:15:45.779
+<v Antonio Cisternino>Abstractions that involved in the last
+five decades that contributed to define</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1741-1
+00:15:45.779 --> 00:15:50.486
+<v Antonio Cisternino>target PROGRAMMING languages. But please,
+please,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1741-2
+00:15:50.486 --> 00:15:54.063
+<v Antonio Cisternino>please don't forget that these things.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1818-0
+00:15:54.263 --> 00:16:01.614
+<v Antonio Cisternino>Will run on top of some hardware and you
+and on top of operating system and it is</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1818-1
+00:16:01.614 --> 00:16:08.428
+<v Antonio Cisternino>the combination of these things that will
+determine the performance and the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1818-2
+00:16:08.428 --> 00:16:12.463
+<v Antonio Cisternino>behaviour of the application.
+So it's naive.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1853-0
+00:16:12.903 --> 00:16:22.268
+<v Antonio Cisternino>Thinking that the PROGRAMMING language is
+a self-contained island and concurrent</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1853-1
+00:16:22.268 --> 00:16:28.743
+<v Antonio Cisternino>PROGRAMMING perhaps has been the first
+showing us this.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1860-0
+00:16:28.863 --> 00:16:32.063
+<v Antonio Cisternino>Concept. OK, briefly.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1893-0
+00:16:34.663 --> 00:16:40.243
+<v Antonio Cisternino>Let's talk about operating system.
+So what what what are the mechanism of</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1893-1
+00:16:40.243 --> 00:16:43.863
+<v Antonio Cisternino>concurrency that the operating system
+provides?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1909-0
+00:16:47.103 --> 00:16:52.143
+<v Antonio Cisternino>Sorry, fork, fork, fork,
+which is here too.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1931-0
+00:16:53.463 --> 00:16:59.398
+<v Antonio Cisternino>To create processes.
+So processes where the concurrent unit</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1931-1
+00:16:59.398 --> 00:17:00.783
+<v Antonio Cisternino>until the 90s.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1993-0
+00:17:02.023 --> 00:17:08.292
+<v Antonio Cisternino>OK. Still, I mean,
+they are not only a confulent unit,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1993-1
+00:17:08.292 --> 00:17:15.473
+<v Antonio Cisternino>they are also a boundary of security and
+a boundary of memory.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/1993-2
+00:17:15.473 --> 00:17:19.463
+<v Antonio Cisternino>And so thanks to the visual memory.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2033-0
+00:17:20.983 --> 00:17:26.157
+<v Antonio Cisternino>Implementation.
+You have the ability to run your code as</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2033-1
+00:17:26.157 --> 00:17:31.875
+<v Antonio Cisternino>if the computer was yours,
+even though it's not like this. OK,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2033-2
+00:17:31.875 --> 00:17:32.783
+<v Antonio Cisternino>processes.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2036-0
+00:17:33.983 --> 00:17:34.383
+<v Antonio Cisternino>Then.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2050-0
+00:17:35.943 --> 00:17:40.263
+<v Antonio Cisternino>A program is basically what controls a
+processor.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2092-0
+00:17:41.223 --> 00:17:46.486
+<v Antonio Cisternino>So this operating system loads the
+program into the memory and then say</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2092-1
+00:17:46.486 --> 00:17:51.823
+<v Antonio Cisternino>process go. This is your program.
+OK and then you shut that other forms.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2096-0
+00:17:54.503 --> 00:17:56.623
+<v Antonio Cisternino>Breads. What are breads?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2159-0
+00:18:01.223 --> 00:18:09.159
+<v Antonio Cisternino>They are basically a sort of smaller
+processes which of course they fight for</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2159-1
+00:18:09.159 --> 00:18:14.043
+<v Antonio Cisternino>the CPU.
+So if I look from the CPU perspective,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2159-2
+00:18:14.043 --> 00:18:17.503
+<v Antonio Cisternino>threats are implemented processes.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2165-0
+00:18:19.103 --> 00:18:20.863
+<v Antonio Cisternino>But they are not processing water.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2227-0
+00:18:24.583 --> 00:18:29.503
+<v Antonio Cisternino>The memory is shared,
+so basically the context feature only</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2227-1
+00:18:29.503 --> 00:18:35.900
+<v Antonio Cisternino>relates to the registers if you're
+switching to a thread of the same process,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2227-2
+00:18:35.900 --> 00:18:39.263
+<v Antonio Cisternino>otherwise you have to do the food switch.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2231-0
+00:18:40.583 --> 00:18:41.823
+<v Antonio Cisternino>Then there are others.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2305-0
+00:18:49.303 --> 00:18:53.988
+<v Antonio Cisternino>These were the easy one.
+Mutex are not a form of competency,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2305-1
+00:18:53.988 --> 00:18:59.134
+<v Antonio Cisternino>are a form of synchronization,
+which is very important and we will</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2305-2
+00:18:59.134 --> 00:19:03.205
+<v Antonio Cisternino>discuss later.
+This is the first part of this class.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2305-3
+00:19:03.205 --> 00:19:05.663
+<v Antonio Cisternino>It will be basically a break up.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2347-0
+00:19:05.943 --> 00:19:11.497
+<v Antonio Cisternino>So that I force you to remember all all
+the the piece of the puzzle.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2347-1
+00:19:11.497 --> 00:19:17.938
+<v Antonio Cisternino>Otherwise it's pointless to discuss about
+concurrent PROGRAMMING in PROGRAMMING</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2347-2
+00:19:17.938 --> 00:19:18.743
+<v Antonio Cisternino>languages.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2349-0
+00:19:19.663 --> 00:19:21.103
+<v Antonio Cisternino>There are.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2364-0
+00:19:23.303 --> 00:19:28.143
+<v Antonio Cisternino>Uh, so-called collaborative concurrency.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2385-0
+00:19:29.983 --> 00:19:36.503
+<v Antonio Cisternino>In Windows,
+that was implemented in a form of fibers.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2435-0
+00:19:38.263 --> 00:19:47.046
+<v Antonio Cisternino>Only of them were multiple libraries.
+Collaborative concurrency is basically a</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2435-1
+00:19:47.046 --> 00:19:52.383
+<v Antonio Cisternino>software abstraction without the
+preaction, OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2502-0
+00:19:53.463 --> 00:19:59.329
+<v Antonio Cisternino>You learned in the operating system that
+one core mechanism of the operating</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2502-1
+00:19:59.329 --> 00:20:04.890
+<v Antonio Cisternino>system is to be able to preempt,
+so suspend in fact the execution of the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2502-2
+00:20:04.890 --> 00:20:08.623
+<v Antonio Cisternino>process which is running on a CPU,
+save all the.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2549-0
+00:20:09.143 --> 00:20:15.161
+<v Antonio Cisternino>All the state and then switch one of the
+process and this action is imposed on on</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2549-1
+00:20:15.161 --> 00:20:19.784
+<v Antonio Cisternino>the process. Of course,
+if the process tries to reach at least</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2549-2
+00:20:19.784 --> 00:20:25.582
+<v Antonio Cisternino>will suspend automatically because it
+will wait for the input output operation</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2549-3
+00:20:25.582 --> 00:20:26.463
+<v Antonio Cisternino>to complete.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2574-0
+00:20:26.623 --> 00:20:34.158
+<v Antonio Cisternino>But if it's CPU only code,
+I don't know Monte Carlo simulation,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2574-1
+00:20:34.158 --> 00:20:41.223
+<v Antonio Cisternino>then this will keep running on and on
+unless you interrupt.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2577-0
+00:20:43.423 --> 00:20:45.423
+<v Antonio Cisternino>Collaborative.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2623-0
+00:20:46.663 --> 00:20:54.063
+<v Antonio Cisternino>Concurrency is basically a library which
+allows you to say it's like a thread,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2623-1
+00:20:54.063 --> 00:20:58.373
+<v Antonio Cisternino>but you have no way to preempt the
+execution.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2623-2
+00:20:58.373 --> 00:21:04.743
+<v Antonio Cisternino>Is that popular is more available,
+especially in no libraries in C.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2656-0
+00:21:05.383 --> 00:21:11.609
+<v Antonio Cisternino>It was using a lot because it's the
+easiest format to implement. Windows 3.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2656-1
+00:21:11.609 --> 00:21:18.163
+<v Antonio Cisternino>1 was terrible because it didn't have the
+pre-emption on the CPU because it was</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2656-2
+00:21:18.163 --> 00:21:22.423
+<v Antonio Cisternino>basically impossible to obtain that at
+the time so.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2658-0
+00:21:23.263 --> 00:21:23.903
+<v Antonio Cisternino>In left.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2686-0
+00:21:25.383 --> 00:21:30.785
+<v Antonio Cisternino>And of course,
+what is the risk that collaborative</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2686-1
+00:21:30.785 --> 00:21:35.975
+<v Antonio Cisternino>concurrency?
+If you don't give up spontaneously,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2686-2
+00:21:35.975 --> 00:21:38.623
+<v Antonio Cisternino>you can block everything.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2703-0
+00:21:39.863 --> 00:21:45.803
+<v Antonio Cisternino>Advantage is that you get less,
+less there is structure involved in</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2703-1
+00:21:45.803 --> 00:21:47.463
+<v Antonio Cisternino>implementation, OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2711-0
+00:21:49.463 --> 00:21:52.863
+<v Antonio Cisternino>So this is basically the panorama of
+concurrency.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2712-0
+00:21:55.743 --> 00:21:56.183
+<v Antonio Cisternino>Help.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2720-0
+00:21:58.823 --> 00:22:01.943
+<v Antonio Cisternino>Let's take out the process.
+The processor is basically.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2735-0
+00:22:04.703 --> 00:22:12.023
+<v Antonio Cisternino>A domain for the memory for the program,
+so typically there is.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2740-0
+00:22:13.543 --> 00:22:16.943
+<v Antonio Cisternino>One-on-one mapping between the processor.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2747-0
+00:22:18.303 --> 00:22:21.943
+<v Antonio Cisternino>And the programmer during the execution.
+Beware.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2757-0
+00:22:42.103 --> 00:22:42.943
+<v Antonio Cisternino>You add.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2786-0
+00:22:46.903 --> 00:22:51.219
+<v Antonio Cisternino>It is true that a program is run by a
+process.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2786-1
+00:22:51.219 --> 00:22:55.902
+<v Antonio Cisternino>Multiple instances of the program,
+as we all know,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2786-2
+00:22:55.902 --> 00:22:59.943
+<v Antonio Cisternino>can be run on multiple process,
+but mobile.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2800-0
+00:23:01.783 --> 00:23:09.343
+<v Antonio Cisternino>Device introduced the weaker connection
+between the process and the programmer.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2807-0
+00:23:10.983 --> 00:23:13.583
+<v Antonio Cisternino>If you remember, we mentioned a bit.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2809-0
+00:23:14.583 --> 00:23:16.063
+<v Antonio Cisternino>Two weeks ago.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2846-0
+00:23:18.143 --> 00:23:23.598
+<v Antonio Cisternino>When we're talking about civilization,
+because at some point we said, OK,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2846-1
+00:23:23.598 --> 00:23:29.200
+<v Antonio Cisternino>but we don't want so many processes
+running on our mobile because otherwise</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2846-2
+00:23:29.200 --> 00:23:32.223
+<v Antonio Cisternino>the battery will last very little and so.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2879-0
+00:23:32.903 --> 00:23:37.293
+<v Antonio Cisternino>You know what?
+We can somehow save the state of the of</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2879-1
+00:23:37.293 --> 00:23:41.044
+<v Antonio Cisternino>the program, of the process,
+kill the process,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2879-2
+00:23:41.044 --> 00:23:47.031
+<v Antonio Cisternino>and then start another process.
+Start the program in that process and say,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2879-3
+00:23:47.031 --> 00:23:50.623
+<v Antonio Cisternino>OK, this is your state, load it,
+keep going.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2880-0
+00:23:51.583 --> 00:23:51.703
+<v Antonio Cisternino>And.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2911-0
+00:23:52.743 --> 00:23:59.821
+<v Antonio Cisternino>We were because all these are elements
+that are at the complexity and eventually</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2911-1
+00:23:59.821 --> 00:24:04.452
+<v Antonio Cisternino>they found their way into the programming
+languages.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2911-2
+00:24:04.452 --> 00:24:07.423
+<v Antonio Cisternino>In the origin they were not there.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2918-0
+00:24:08.583 --> 00:24:12.183
+<v Antonio Cisternino>But since it was important.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2939-0
+00:24:13.703 --> 00:24:20.287
+<v Antonio Cisternino>With time programming,
+they start to be including these features</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2939-1
+00:24:20.287 --> 00:24:26.263
+<v Antonio Cisternino>inside the definition and this thing is
+important because.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2959-0
+00:24:28.343 --> 00:24:33.028
+<v Antonio Cisternino>When we define the semantics of a
+programming language,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2959-1
+00:24:33.028 --> 00:24:36.543
+<v Antonio Cisternino>we basically define the semantics of this.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2961-0
+00:24:37.503 --> 00:24:38.423
+<v Antonio Cisternino>Team 12 machine.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2993-0
+00:24:39.863 --> 00:24:46.712
+<v Antonio Cisternino>So the semantics of a programming
+language is given in terms of a sort of a</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2993-1
+00:24:46.712 --> 00:24:54.102
+<v Antonio Cisternino>virtual machine capable of interpreting
+the programmer at the language level. OK,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2993-2
+00:24:54.102 --> 00:24:54.823
+<v Antonio Cisternino>that is.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/2995-0
+00:24:55.303 --> 00:24:56.143
+<v Antonio Cisternino>And so uh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3012-0
+00:24:58.423 --> 00:25:06.020
+<v Antonio Cisternino>This shift in the implementation has
+changed the way we we think about</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3012-1
+00:25:06.020 --> 00:25:06.983
+<v Antonio Cisternino>programs.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3047-0
+00:25:08.503 --> 00:25:12.644
+<v Antonio Cisternino>For a very long time,
+programming programs,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3047-1
+00:25:12.644 --> 00:25:18.291
+<v Antonio Cisternino>programming languages were taught as
+mathematical entities,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3047-2
+00:25:18.291 --> 00:25:26.103
+<v Antonio Cisternino>computing functions. You spend some time,
+a lot of time in studying computability.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3063-0
+00:25:26.103 --> 00:25:32.788
+<v Antonio Cisternino>The program termination and you Lambda
+calculus and all these things you know</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3063-1
+00:25:32.788 --> 00:25:35.103
+<v Antonio Cisternino>were rooted in mathematics.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3075-0
+00:25:36.823 --> 00:25:40.561
+<v Antonio Cisternino>You know what?
+When you introduce concurrency,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3075-1
+00:25:40.561 --> 00:25:43.663
+<v Antonio Cisternino>the program is not anymore determinist.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3089-0
+00:25:44.983 --> 00:25:53.023
+<v Antonio Cisternino>There are external factors that makes the
+program execution unique every time.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3093-0
+00:25:55.823 --> 00:25:56.663
+<v Antonio Cisternino>We are used to that.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3125-0
+00:25:57.623 --> 00:26:03.327
+<v Antonio Cisternino>We know that the execution for some part
+portion of the execution,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3125-1
+00:26:03.327 --> 00:26:09.116
+<v Antonio Cisternino>it still is mathematics.
+It still is the computation of a function,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3125-2
+00:26:09.116 --> 00:26:13.543
+<v Antonio Cisternino>but we if we go upstairs,
+this is not true anymore.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3158-0
+00:26:14.903 --> 00:26:22.723
+<v Antonio Cisternino>And that basically introduced a need for
+programming languages to introduce</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3158-1
+00:26:22.723 --> 00:26:30.851
+<v Antonio Cisternino>non-mathematical functional objects in
+their semantics and in the semantics of</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3158-2
+00:26:30.851 --> 00:26:31.263
+<v Antonio Cisternino>the.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3161-0
+00:26:31.503 --> 00:26:32.343
+<v Antonio Cisternino>User machine.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3175-0
+00:26:33.463 --> 00:26:37.840
+<v Antonio Cisternino>Of course,
+if you study the theory of Turing</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3175-1
+00:26:37.840 --> 00:26:41.343
+<v Antonio Cisternino>machines, just to mention something.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3211-0
+00:26:42.823 --> 00:26:47.620
+<v Antonio Cisternino>There are concurrent to the machines,
+etcetera. OK,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3211-1
+00:26:47.620 --> 00:26:53.985
+<v Antonio Cisternino>so there have been attempt to define
+abstract machines capable of of</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3211-2
+00:26:53.985 --> 00:26:58.783
+<v Antonio Cisternino>expressing also concurrency. OK,
+so I'm not saying.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3234-0
+00:26:58.983 --> 00:27:03.639
+<v Antonio Cisternino>If possible,
+but nevertheless if we look at the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3234-1
+00:27:03.639 --> 00:27:09.460
+<v Antonio Cisternino>programming language,
+this asked to introduce no functional</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3234-2
+00:27:09.460 --> 00:27:11.983
+<v Antonio Cisternino>element in its definition.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3262-0
+00:27:13.303 --> 00:27:18.320
+<v Antonio Cisternino>Or there is say you don't know I'm
+functioning.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3262-1
+00:27:18.320 --> 00:27:24.279
+<v Antonio Cisternino>You can use external libraries and do
+whatever you want,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3262-2
+00:27:24.279 --> 00:27:28.983
+<v Antonio Cisternino>but I I'm still is I I am still function
+OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3294-0
+00:27:31.543 --> 00:27:38.100
+<v Antonio Cisternino>Not without irony. C is on this page,
+C says. I mean, I have no threats.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3294-1
+00:27:38.100 --> 00:27:43.131
+<v Antonio Cisternino>You want to threats,
+there are like or you can call the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3294-2
+00:27:43.131 --> 00:27:47.623
+<v Antonio Cisternino>operating system function,
+but I have no threats.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3327-0
+00:27:47.863 --> 00:27:52.906
+<v Antonio Cisternino>By definition, there are no sets. Yes,
+I give you only one spare,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3327-1
+00:27:52.906 --> 00:27:57.339
+<v Antonio Cisternino>but it's a library.
+It's a it's not part of the language,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3327-2
+00:27:57.339 --> 00:28:03.223
+<v Antonio Cisternino>the ability of saving the state of the
+CPU. That's the only exception there.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3343-0
+00:28:03.303 --> 00:28:10.701
+<v Antonio Cisternino>And then borderline, in fact,
+is being used to implement the CMC,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3343-1
+00:28:10.701 --> 00:28:12.943
+<v Antonio Cisternino>but apart from this.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3344-0
+00:28:14.783 --> 00:28:14.863
+<v Antonio Cisternino>Uh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3369-0
+00:28:16.583 --> 00:28:22.978
+<v Antonio Cisternino>Cooperative threats in C Apart from this,
+the first,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3369-1
+00:28:22.978 --> 00:28:31.183
+<v Antonio Cisternino>the first very large switching produced
+concurrence explicitly was.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3373-0
+00:28:33.303 --> 00:28:36.143
+<v Antonio Cisternino>There's the sorry.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3375-0
+00:28:38.103 --> 00:28:39.583
+<v Antonio Cisternino>That's me.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3408-0
+00:28:40.783 --> 00:28:45.814
+<v Antonio Cisternino>Made popular in the maze.
+They were ready to grammy languages that</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3408-1
+00:28:45.814 --> 00:28:51.221
+<v Antonio Cisternino>were allowing for concurrency.
+They were concurrent to grammy language.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3408-2
+00:28:51.221 --> 00:28:56.703
+<v Antonio Cisternino>So basically in the mainstream
+multi-threading was made popular by John.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3443-0
+00:28:58.103 --> 00:29:02.223
+<v Antonio Cisternino>It was too strong.
+There were already a lot of programming</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3443-1
+00:29:02.223 --> 00:29:07.531
+<v Antonio Cisternino>concurrent programming languages.
+But they those programming languages were</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3443-2
+00:29:07.531 --> 00:29:13.327
+<v Antonio Cisternino>designed basically to be concurrent. OK,
+it was they were sort of confined in that</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3443-3
+00:29:13.327 --> 00:29:15.143
+<v Antonio Cisternino>space in Java. Java was a.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3460-0
+00:29:15.663 --> 00:29:22.453
+<v Antonio Cisternino>A sort of C++ more say portable
+programming language which included for</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3460-1
+00:29:22.453 --> 00:29:24.623
+<v Antonio Cisternino>the first time threads.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3465-0
+00:29:25.983 --> 00:29:29.783
+<v Antonio Cisternino>And they got this idea,
+which is very nice.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3493-0
+00:29:30.743 --> 00:29:38.565
+<v Antonio Cisternino>To tell you know what I create a class
+and I represent as value of this class</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3493-1
+00:29:38.565 --> 00:29:44.983
+<v Antonio Cisternino>and it is that are operating system and
+it is that are threats.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3495-0
+00:29:45.983 --> 00:29:46.623
+<v Antonio Cisternino>OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3499-0
+00:29:49.823 --> 00:29:52.703
+<v Antonio Cisternino>To some extent those.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3535-0
+00:29:54.143 --> 00:30:02.190
+<v Antonio Cisternino>Values are not equivalent to any other
+values, as it already happens with files.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3535-1
+00:30:02.190 --> 00:30:08.349
+<v Antonio Cisternino>Files are the same.
+You got a number from the building system</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3535-2
+00:30:08.349 --> 00:30:12.423
+<v Antonio Cisternino>and that's it. OK, so that was basically.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3578-0
+00:30:12.423 --> 00:30:16.544
+<v Antonio Cisternino>The history until the 90s and why it
+happened in the 90s.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3578-1
+00:30:16.544 --> 00:30:22.655
+<v Antonio Cisternino>Not because in Java they were visionaries.
+I mean they were visionaries in many ways,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3578-2
+00:30:22.655 --> 00:30:26.777
+<v Antonio Cisternino>but not for this.
+It was because the operating system mid</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3578-3
+00:30:26.777 --> 00:30:30.543
+<v Antonio Cisternino>90s in the threads in the libraries.
+So there was a.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3602-0
+00:30:30.583 --> 00:30:39.145
+<v Antonio Cisternino>A clear use case to rely upon to get
+better performance. Oh, by the way,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3602-1
+00:30:39.145 --> 00:30:46.183
+<v Antonio Cisternino>in the elements that we mentioned that
+nobody recalled the.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3626-0
+00:30:46.863 --> 00:30:51.149
+<v Antonio Cisternino>Hyper threading,
+which technically is not a form of</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3626-1
+00:30:51.149 --> 00:30:55.517
+<v Antonio Cisternino>concurrency,
+but it's an architecture inside our CPU</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3626-2
+00:30:55.517 --> 00:30:57.743
+<v Antonio Cisternino>user that allows to to use.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3643-0
+00:30:58.863 --> 00:31:04.395
+<v Antonio Cisternino>Sort of two threads that execute
+simultaneously on a single core.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3643-1
+00:31:04.395 --> 00:31:08.503
+<v Antonio Cisternino>It is not exactly true to some extent it
+can be.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3646-0
+00:31:10.623 --> 00:31:10.783
+<v Antonio Cisternino>OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3649-0
+00:31:22.063 --> 00:31:22.103
+<v Antonio Cisternino>Uh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3659-0
+00:31:38.943 --> 00:31:41.863
+<v Antonio Cisternino>OK, so let me zoom.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3663-0
+00:31:43.703 --> 00:31:46.383
+<v Antonio Cisternino>And let's discuss this.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3685-0
+00:31:48.903 --> 00:31:56.302
+<v Antonio Cisternino>So that was a typical way to obtain a a
+thread in Java.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3685-1
+00:31:56.302 --> 00:32:00.663
+<v Antonio Cisternino>So you extends the class threads.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3693-0
+00:32:02.663 --> 00:32:07.663
+<v Antonio Cisternino>You override the run methods method.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3698-0
+00:32:10.303 --> 00:32:11.663
+<v Antonio Cisternino>And and then.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3729-0
+00:32:14.503 --> 00:32:21.277
+<v Antonio Cisternino>You know that the new newly created
+thread will start executing this.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3729-1
+00:32:21.277 --> 00:32:26.793
+<v Antonio Cisternino>You know that multiple threads share the
+process memory.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3729-2
+00:32:26.793 --> 00:32:29.503
+<v Antonio Cisternino>You know that you will have.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3737-0
+00:32:29.623 --> 00:32:35.463
+<v Antonio Cisternino>To introduce synchronization mechanisms
+because.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3748-0
+00:32:37.103 --> 00:32:42.823
+<v Antonio Cisternino>Synchronization is a crucial process to
+ensure of one.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3757-0
+00:32:43.583 --> 00:32:47.783
+<v Antonio Cisternino>Key element which is of aramount
+imortance, which is.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3761-0
+00:32:49.943 --> 00:32:53.103
+<v Antonio Cisternino>That is the solution.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3775-0
+00:33:02.183 --> 00:33:06.606
+<v Antonio Cisternino>Why we use mutual exclusion?
+What is the problem we are trying to</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3775-1
+00:33:06.606 --> 00:33:07.143
+<v Antonio Cisternino>address?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3777-0
+00:33:08.103 --> 00:33:08.343
+<v Antonio Cisternino>Hmm.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3778-0
+00:33:11.183 --> 00:33:11.383
+<v Antonio Cisternino>Data.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3786-0
+00:33:13.463 --> 00:33:16.183
+<v Antonio Cisternino>I don't get the the word. Sorry,
+can you speak louder?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3791-0
+00:33:19.263 --> 00:33:22.263
+<v Antonio Cisternino>Data. Uh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3793-0
+00:33:24.383 --> 00:33:24.463
+<v Antonio Cisternino>Uh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3827-0
+00:33:26.863 --> 00:33:33.582
+<v Antonio Cisternino>Problem are called race conditions. OK,
+so that's the right the the the word was</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3827-1
+00:33:33.582 --> 00:33:37.398
+<v Antonio Cisternino>there.
+The problem is that the CPU implements</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3827-2
+00:33:37.398 --> 00:33:41.463
+<v Antonio Cisternino>reading the memory and writing it to the
+memory.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3870-0
+00:33:42.023 --> 00:33:47.532
+<v Antonio Cisternino>Not as an atomic operation.
+You don't have instructions in the CPU to</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3870-1
+00:33:47.532 --> 00:33:51.231
+<v Antonio Cisternino>ensure.
+So basically you can read the value by</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3870-2
+00:33:51.231 --> 00:33:57.055
+<v Antonio Cisternino>the way and you do a copy because inside
+the CPU there are no references.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3870-3
+00:33:57.055 --> 00:33:59.023
+<v Antonio Cisternino>I mean we use references.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3901-0
+00:33:59.543 --> 00:34:03.554
+<v Antonio Cisternino>In in our programs,
+but the CPU has no reference,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3901-1
+00:34:03.554 --> 00:34:09.169
+<v Antonio Cisternino>so the CPU is only able to copy data from
+the memory to the register,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3901-2
+00:34:09.169 --> 00:34:14.223
+<v Antonio Cisternino>operate in the register right back and so
+in this respect the.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3939-0
+00:34:14.823 --> 00:34:21.467
+<v Antonio Cisternino>The race condition is simply the
+situation in which two threads reads the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3939-1
+00:34:21.467 --> 00:34:25.957
+<v Antonio Cisternino>same value.
+You don't know the order of execution</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3939-2
+00:34:25.957 --> 00:34:32.063
+<v Antonio Cisternino>because if that's executed independently
+and and then they operate.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3979-0
+00:34:32.743 --> 00:34:40.226
+<v Antonio Cisternino>On the red version of the variable state
+and eventually they may want to write the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3979-1
+00:34:40.226 --> 00:34:45.184
+<v Antonio Cisternino>updated value and without any form of
+synchronization.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3979-2
+00:34:45.184 --> 00:34:50.143
+<v Antonio Cisternino>The risk is that operation on the on the
+state may be.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3997-0
+00:34:51.423 --> 00:34:59.780
+<v Antonio Cisternino>Hands deleted because the first data is
+successfully writes on on a memory</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/3997-1
+00:34:59.780 --> 00:35:00.783
+<v Antonio Cisternino>location.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4035-0
+00:35:02.743 --> 00:35:07.231
+<v Antonio Cisternino>Would keep going,
+but the news there that the second trend</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4035-1
+00:35:07.231 --> 00:35:13.544
+<v Antonio Cisternino>will write again, deleting the previous.
+Then if that small register was your bank</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4035-2
+00:35:13.544 --> 00:35:18.185
+<v Antonio Cisternino>account, you will.
+You may be really happy or really unhappy</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4035-3
+00:35:18.185 --> 00:35:20.543
+<v Antonio Cisternino>depending on the risk function.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4061-0
+00:35:21.503 --> 00:35:28.993
+<v Antonio Cisternino>OK, but basically that is the point.
+And so synchronisation is a key a key</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4061-1
+00:35:28.993 --> 00:35:33.588
+<v Antonio Cisternino>methods.
+I know that you have studied all the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4061-2
+00:35:33.588 --> 00:35:37.783
+<v Antonio Cisternino>theory, PV and whatever in your curricula.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4095-0
+00:35:37.863 --> 00:35:42.744
+<v Antonio Cisternino>But basically,
+once you reify the thread object,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4095-1
+00:35:42.744 --> 00:35:50.615
+<v Antonio Cisternino>so the thread that's operating system
+element into a value in your programmer,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4095-2
+00:35:50.615 --> 00:35:53.903
+<v Antonio Cisternino>it is fairly natural to the same.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4105-0
+00:35:54.023 --> 00:36:00.063
+<v Antonio Cisternino>We synchronization mechanism.
+You may have monitors, you may have.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4138-0
+00:36:01.143 --> 00:36:07.305
+<v Antonio Cisternino>Same of course,
+and and and there have been a lot of</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4138-1
+00:36:07.305 --> 00:36:16.143
+<v Antonio Cisternino>debate over the past on which is the the
+best thing, by the way, of course.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4156-0
+00:36:16.943 --> 00:36:22.691
+<v Antonio Cisternino>With the evolution of the language,
+you can implement an interface instead of</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4156-1
+00:36:22.691 --> 00:36:26.303
+<v Antonio Cisternino>deriving from a thread from a class.
+Same story.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4159-0
+00:36:34.543 --> 00:36:35.503
+<v Antonio Cisternino>Hey, everyone.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4178-0
+00:36:47.743 --> 00:36:52.283
+<v Antonio Cisternino>Now it's interesting.
+I I didn't plan this,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4178-1
+00:36:52.283 --> 00:36:56.823
+<v Antonio Cisternino>but I think this is very,
+very interesting.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4179-0
+00:36:59.343 --> 00:36:59.503
+<v Antonio Cisternino>Uh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4213-0
+00:37:01.623 --> 00:37:06.920
+<v Antonio Cisternino>Because from interface, so inheritance,
+both extents and implements are form of</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4213-1
+00:37:06.920 --> 00:37:11.159
+<v Antonio Cisternino>inheritance because at the end of day run
+as no implementation,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4213-2
+00:37:11.159 --> 00:37:13.543
+<v Antonio Cisternino>so it can be expressed as interface.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4220-0
+00:37:15.183 --> 00:37:19.823
+<v Antonio Cisternino>Uh,
+now you have the option to pass a Lambda.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4224-0
+00:37:23.263 --> 00:37:24.703
+<v Antonio Cisternino>To the thread.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4264-0
+00:37:25.943 --> 00:37:33.062
+<v Antonio Cisternino>Which outlines and stress the fact one of
+the big reasons because the functional</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4264-1
+00:37:33.062 --> 00:37:39.743
+<v Antonio Cisternino>sub language has grown also in non
+functional languages as Java was before.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4282-0
+00:37:41.863 --> 00:37:50.607
+<v Antonio Cisternino>It introduced to the lambdas because in
+concurrent programming functions are</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4282-1
+00:37:50.607 --> 00:37:51.743
+<v Antonio Cisternino>beautiful.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4286-0
+00:37:53.063 --> 00:37:57.143
+<v Antonio Cisternino>Functional programming switched very well.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4291-0
+00:37:58.583 --> 00:38:00.783
+<v Antonio Cisternino>Concordant programming. Why?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4306-0
+00:38:05.583 --> 00:38:10.353
+<v Antonio Cisternino>Why it is better than imperative
+programming or even object oriented</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4306-1
+00:38:10.353 --> 00:38:11.183
+<v Antonio Cisternino>programming?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4351-0
+00:38:19.063 --> 00:38:25.242
+<v Antonio Cisternino>That's the point.
+So your colleague as as your colleague is</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4351-1
+00:38:25.242 --> 00:38:32.245
+<v Antonio Cisternino>saying the reason why is that functions,
+I mean in the purest form,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4351-2
+00:38:32.245 --> 00:38:36.983
+<v Antonio Cisternino>then of course if you have preference
+asking.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4366-0
+00:38:37.063 --> 00:38:41.661
+<v Antonio Cisternino>Things that gets more complicated,
+but in the purest form,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4366-1
+00:38:41.661 --> 00:38:44.623
+<v Antonio Cisternino>formal parameters are bound to values.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4394-0
+00:38:46.543 --> 00:38:51.214
+<v Antonio Cisternino>And so basically you copy the values into
+the arguments,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4394-1
+00:38:51.214 --> 00:38:55.803
+<v Antonio Cisternino>you compute and you return a value which
+is the result.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4394-2
+00:38:55.803 --> 00:39:01.703
+<v Antonio Cisternino>This means that there are basically no
+memory contention in functional.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4396-0
+00:39:01.823 --> 00:39:02.303
+<v Antonio Cisternino>Programming.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4424-0
+00:39:03.703 --> 00:39:07.855
+<v Antonio Cisternino>At the same time,
+you have much more copies operation</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4424-1
+00:39:07.855 --> 00:39:13.622
+<v Antonio Cisternino>because of course you're making a copy of
+the value, et cetera. So I mean,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4424-2
+00:39:13.622 --> 00:39:18.543
+<v Antonio Cisternino>but it allows the the the computing
+programmer to decide where.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4455-0
+00:39:20.023 --> 00:39:28.309
+<v Antonio Cisternino>When to pay the cost of synchronization.
+So this is one of the reasons because</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4455-1
+00:39:28.309 --> 00:39:34.183
+<v Antonio Cisternino>functional programming has become really
+important. OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4464-0
+00:39:35.063 --> 00:39:42.863
+<v Antonio Cisternino>Can you now generate an example with
+synchronization?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4503-0
+00:39:56.503 --> 00:40:00.594
+<v Antonio Cisternino>Never an encounter.
+So we got values of the count of the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4503-1
+00:40:00.594 --> 00:40:06.337
+<v Antonio Cisternino>counter class with in the increment which
+allows you to write the increment the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4503-2
+00:40:06.337 --> 00:40:11.792
+<v Antonio Cisternino>internal counter and the accessor that
+allows you to get the current count.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4503-3
+00:40:11.792 --> 00:40:12.223
+<v Antonio Cisternino>Is it?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4505-0
+00:40:16.863 --> 00:40:17.183
+<v Antonio Cisternino>No.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4508-0
+00:40:22.023 --> 00:40:22.823
+<v Antonio Cisternino>We have.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4517-0
+00:40:24.583 --> 00:40:30.343
+<v Antonio Cisternino>A counter object that is created.
+The counter object is the.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4518-0
+00:40:31.703 --> 00:40:31.743
+<v Antonio Cisternino>Uh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4525-0
+00:40:34.383 --> 00:40:39.863
+<v Antonio Cisternino>Used in this lambda.
+The lambda is used to create.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4527-0
+00:40:40.943 --> 00:40:41.663
+<v Antonio Cisternino>The threats.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4552-0
+00:40:41.703 --> 00:40:42.143
+<v Antonio Cisternino>That's.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4553-0
+00:40:42.223 --> 00:40:42.543
+<v Antonio Cisternino>Yeah.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4577-0
+00:40:43.543 --> 00:40:48.646
+<v Antonio Cisternino>Then you start the threads. By the way,
+when you start the thread,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4577-1
+00:40:48.646 --> 00:40:52.074
+<v Antonio Cisternino>of course the the current thread which is
+a.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4577-2
+00:40:52.074 --> 00:40:55.959
+<v Antonio Cisternino>So every process when it started as a
+main thread,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4577-3
+00:40:55.959 --> 00:40:59.463
+<v Antonio Cisternino>this main thread is is running this code
+you.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4598-0
+00:40:59.783 --> 00:41:07.250
+<v Antonio Cisternino>With this line you start another a new
+thread T1 and you keep going and so of</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4598-1
+00:41:07.250 --> 00:41:11.463
+<v Antonio Cisternino>course you need also primitive for
+waiting.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4608-0
+00:41:13.463 --> 00:41:18.235
+<v Antonio Cisternino>In this case,
+join waits the end of the T1 and T2</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4608-1
+00:41:18.235 --> 00:41:18.903
+<v Antonio Cisternino>thread.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4611-0
+00:41:23.343 --> 00:41:23.583
+<v Antonio Cisternino>OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4614-0
+00:41:25.223 --> 00:41:27.023
+<v Antonio Cisternino>So.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4638-0
+00:41:33.303 --> 00:41:39.087
+<v Antonio Cisternino>This version is bugged in the sense that
+there is no coordination and so the risk</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4638-1
+00:41:39.087 --> 00:41:43.743
+<v Antonio Cisternino>is that with the component execution some
+increment will be lost.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4660-0
+00:41:45.383 --> 00:41:50.150
+<v Antonio Cisternino>Because when you do counter plus plus,
+you're reading counter,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4660-1
+00:41:50.150 --> 00:41:56.583
+<v Antonio Cisternino>incrementing counter and dragging counter.
+So there is some likeliness that the some</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4660-2
+00:41:56.583 --> 00:41:59.383
+<v Antonio Cisternino>some increment will will be lost, OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4685-0
+00:42:00.703 --> 00:42:04.967
+<v Antonio Cisternino>So this will is incrementing the counter
+by 10,000.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4685-1
+00:42:04.967 --> 00:42:09.314
+<v Antonio Cisternino>The result will be less than 20,
+000 window threads.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4685-2
+00:42:09.314 --> 00:42:12.103
+<v Antonio Cisternino>This this is the resulting effect.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4700-0
+00:42:17.023 --> 00:42:23.223
+<v Antonio Cisternino>Now if you use a keyword in the language
+that is called synchronized.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4708-0
+00:42:25.783 --> 00:42:30.063
+<v Antonio Cisternino>Passing the object,
+but we are familiar with this.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4740-0
+00:42:32.303 --> 00:42:35.733
+<v Antonio Cisternino>Because if you remember the.
+net implementation,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4740-1
+00:42:35.733 --> 00:42:40.073
+<v Antonio Cisternino>there is the sync block on top of any
+objects in the runtime,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4740-2
+00:42:40.073 --> 00:42:43.223
+<v Antonio Cisternino>and the sync block has exactly this
+purpose.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4761-0
+00:42:44.583 --> 00:42:51.278
+<v Antonio Cisternino>Serve the purpose of being an object that
+you use to synchronize to acquire the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4761-1
+00:42:51.278 --> 00:42:55.463
+<v Antonio Cisternino>lock on that object.
+And so basically this means.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4782-0
+00:42:56.983 --> 00:43:01.986
+<v Antonio Cisternino>If this is locked, wait,
+wait for this to be unlocked,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4782-1
+00:43:01.986 --> 00:43:07.263
+<v Antonio Cisternino>otherwise acquire the locker and once you
+get the locker.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4799-0
+00:43:08.983 --> 00:43:14.190
+<v Antonio Cisternino>Nobody else will be able to access this
+block of code,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4799-1
+00:43:14.190 --> 00:43:19.303
+<v Antonio Cisternino>so I'm sure that I'm the only one that is
+allowed to.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4802-0
+00:43:21.943 --> 00:43:23.423
+<v Antonio Cisternino>To execute.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4813-0
+00:43:29.943 --> 00:43:37.103
+<v Antonio Cisternino>Question the synchronized keyword.
+How do you think is implemented?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4830-0
+00:43:40.783 --> 00:43:48.903
+<v Antonio Cisternino>What would be a question that makes sense
+when you see a keyword like this?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4876-0
+00:43:54.743 --> 00:44:00.506
+<v Antonio Cisternino>First is is it the sugar or it is a
+construct of the language?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4876-1
+00:44:00.506 --> 00:44:07.276
+<v Antonio Cisternino>Because we learn that sometimes
+PROGRAMMING language the sugars syntax to</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4876-2
+00:44:07.276 --> 00:44:13.863
+<v Antonio Cisternino>element or constituents of the
+PROGRAMMING language not as a primitive.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4892-0
+00:44:15.743 --> 00:44:27.663
+<v Antonio Cisternino>So I would like to say OK,
+is synchronized implemented as the sugars?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4895-0
+00:44:30.143 --> 00:44:30.343
+<v Antonio Cisternino>The.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4899-0
+00:44:37.983 --> 00:44:38.423
+<v Antonio Cisternino>Yes.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4905-0
+00:44:43.463 --> 00:44:45.823
+<v Antonio Cisternino>Yes and no, I will say.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4940-0
+00:44:49.103 --> 00:44:55.546
+<v Antonio Cisternino>So we're learning that the with respect
+to the Java Virtual machine is not the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4940-1
+00:44:55.546 --> 00:44:59.298
+<v Antonio Cisternino>sugared.
+I mean because there is no rewriting</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4940-2
+00:44:59.298 --> 00:45:03.703
+<v Antonio Cisternino>system that rewrites in Java equivalent
+synchronized.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4943-0
+00:45:05.223 --> 00:45:07.263
+<v Antonio Cisternino>But the JVM.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4973-0
+00:45:08.983 --> 00:45:15.258
+<v Antonio Cisternino>As monitors in the implementation and in
+the by code you enter the monitor using</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4973-1
+00:45:15.258 --> 00:45:21.223
+<v Antonio Cisternino>the object as a synchronization element
+and you exit the monitor at the end.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4978-0
+00:45:31.863 --> 00:45:32.663
+<v Antonio Cisternino>Can you do?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4988-0
+00:45:34.663 --> 00:45:39.903
+<v Antonio Cisternino>A similar example in C shar with lock.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/4997-0
+00:45:41.703 --> 00:45:46.863
+<v Antonio Cisternino>And show the C the sugaring.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5011-0
+00:45:49.703 --> 00:45:55.783
+<v Antonio Cisternino>I think it's interesting because in C#
+they decided to be sugared properly.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5018-0
+00:46:00.343 --> 00:46:03.623
+<v Antonio Cisternino>So as you can see similar example of
+course.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5024-0
+00:46:05.063 --> 00:46:07.743
+<v Antonio Cisternino>Very similar names and everything.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5033-0
+00:46:09.623 --> 00:46:14.663
+<v Antonio Cisternino>In C# we use lock as a constructor.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5045-0
+00:46:16.023 --> 00:46:21.663
+<v Antonio Cisternino>But actually lock is transformed in C#
+itself.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5052-0
+00:46:23.423 --> 00:46:27.263
+<v Antonio Cisternino>And I think it's interesting because
+basically.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5069-0
+00:46:28.663 --> 00:46:34.511
+<v Antonio Cisternino>It user steal the monitor implementation,
+which is a an object in the standard</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5069-1
+00:46:34.511 --> 00:46:35.103
+<v Antonio Cisternino>library.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5084-0
+00:46:37.223 --> 00:46:45.375
+<v Antonio Cisternino>And basically you use local variable to
+know whether the lock has been taken or</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5084-1
+00:46:45.375 --> 00:46:45.783
+<v Antonio Cisternino>not.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5121-0
+00:46:48.903 --> 00:46:53.725
+<v Antonio Cisternino>Because when you try to enter into a
+monitor, typically you may wait,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5121-1
+00:46:53.725 --> 00:46:56.825
+<v Antonio Cisternino>but for instance you can specify a time
+out.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5121-2
+00:46:56.825 --> 00:47:01.785
+<v Antonio Cisternino>I don't want wait more than 10
+milliseconds and so in that case you may</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5121-3
+00:47:01.785 --> 00:47:03.783
+<v Antonio Cisternino>exit without having the lock.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5147-0
+00:47:04.343 --> 00:47:13.921
+<v Antonio Cisternino>Then there is apparently at least in this,
+but I I doubt that this is the full</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5147-1
+00:47:13.921 --> 00:47:19.863
+<v Antonio Cisternino>implementation lock taken is only used
+here but.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5148-0
+00:47:20.303 --> 00:47:20.343
+<v Antonio Cisternino>Uh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5189-0
+00:47:21.863 --> 00:47:26.852
+<v Antonio Cisternino>No, sorry,
+and it probably raises an exception in</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5189-1
+00:47:26.852 --> 00:47:32.739
+<v Antonio Cisternino>case of unable to acquire the.
+So the the code is correct.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5189-2
+00:47:32.739 --> 00:47:39.424
+<v Antonio Cisternino>Then you do the manipulation,
+which is basically the code that you</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5189-3
+00:47:39.424 --> 00:47:40.023
+<v Antonio Cisternino>wrote.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5232-0
+00:47:41.183 --> 00:47:46.914
+<v Antonio Cisternino>And it's interesting the finally you the
+use of the finally constructs to ensure</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5232-1
+00:47:46.914 --> 00:47:52.716
+<v Antonio Cisternino>that whether you get an exception or not,
+if the lock and lock is has been taken,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5232-2
+00:47:52.716 --> 00:47:57.103
+<v Antonio Cisternino>if there has been an an exception in the
+execution of a body.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5249-0
+00:47:57.463 --> 00:48:01.862
+<v Antonio Cisternino>In any under any condition,
+if the locking is taken,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5249-1
+00:48:01.862 --> 00:48:05.183
+<v Antonio Cisternino>the monitor is released at the exit, OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5273-0
+00:48:07.023 --> 00:48:13.991
+<v Antonio Cisternino>Java implementation is compatible.
+I mean it's just that in this case this</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5273-1
+00:48:13.991 --> 00:48:20.959
+<v Antonio Cisternino>is implemented as a library in the
+language rather than a primitive inside</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5273-2
+00:48:20.959 --> 00:48:21.703
+<v Antonio Cisternino>the the.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5302-0
+00:48:25.543 --> 00:48:32.693
+<v Antonio Cisternino>The virtual machine. OK,
+so now we starting looking at the basic</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5302-1
+00:48:32.693 --> 00:48:41.383
+<v Antonio Cisternino>elements of control in C since Java,
+basically threads represented inside the.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5305-0
+00:48:41.383 --> 00:48:42.943
+<v Antonio Cisternino>The PROGRAMMING language.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5307-0
+00:48:44.343 --> 00:48:44.423
+<v Antonio Cisternino>Um.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5309-0
+00:48:48.223 --> 00:48:48.743
+<v Antonio Cisternino>What are?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5317-0
+00:48:50.703 --> 00:48:53.943
+<v Antonio Cisternino>Drawbacks in using threads in your
+applications.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5348-0
+00:49:02.663 --> 00:49:07.012
+<v Antonio Cisternino>In general,
+I mean if I have a shared valuable,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5348-1
+00:49:07.012 --> 00:49:12.902
+<v Antonio Cisternino>I will need in any case that if I do some
+concurrency execution,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5348-2
+00:49:12.902 --> 00:49:15.983
+<v Antonio Cisternino>I will have to synchronize anyway.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5365-0
+00:49:17.143 --> 00:49:20.719
+<v Antonio Cisternino>So yes,
+but that is true also without threats,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5365-1
+00:49:20.719 --> 00:49:24.143
+<v Antonio Cisternino>if you have a any other form of
+concurrency.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5384-0
+00:49:25.463 --> 00:49:33.837
+<v Antonio Cisternino>But why it's so uncomfortable to have
+threats in an application?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5384-1
+00:49:33.837 --> 00:49:36.543
+<v Antonio Cisternino>So there are clearly.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5387-0
+00:49:37.663 --> 00:49:38.903
+<v Antonio Cisternino>Performance considerations.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5397-0
+00:49:40.743 --> 00:49:44.275
+<v Antonio Cisternino>Mm-hmm.
+Creating a thread is not an easy</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5397-1
+00:49:44.275 --> 00:49:45.223
+<v Antonio Cisternino>prediction.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5425-0
+00:49:46.503 --> 00:49:50.386
+<v Antonio Cisternino>On the scale of a process,
+of course it's super fast,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5425-1
+00:49:50.386 --> 00:49:54.053
+<v Antonio Cisternino>but if you write a program that generates
+threats,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5425-2
+00:49:54.053 --> 00:49:59.303
+<v Antonio Cisternino>that starts and stops and starts and
+stops, the overhead is significant.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5450-0
+00:50:02.823 --> 00:50:09.117
+<v Antonio Cisternino>So, and this is clearly one problem,
+but from a PROGRAMMING standpoint,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5450-1
+00:50:09.117 --> 00:50:13.663
+<v Antonio Cisternino>what do you think is the problem of
+having threads?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5460-0
+00:50:15.863 --> 00:50:24.023
+<v Antonio Cisternino>Yes, debugging is very uncomfortable,
+but in general you.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5496-0
+00:50:26.223 --> 00:50:31.344
+<v Antonio Cisternino>Modern debuggers allows you to suspend
+the execution of the thread jumps from</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5496-1
+00:50:31.344 --> 00:50:35.613
+<v Antonio Cisternino>one thread to the others.
+Of course the debugging is complicated</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5496-2
+00:50:35.613 --> 00:50:41.063
+<v Antonio Cisternino>because you will alter the timing of your
+application if you set up a break point.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5538-0
+00:50:41.143 --> 00:50:47.328
+<v Antonio Cisternino>In in a particular part of your code,
+because the the thread that is executing</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5538-1
+00:50:47.328 --> 00:50:53.670
+<v Antonio Cisternino>that code was slow down to a point that
+is basically unrealistic in the world in</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5538-2
+00:50:53.670 --> 00:50:59.543
+<v Antonio Cisternino>the world will keep running. OK,
+but apart from this, yes, debugging is 1.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5551-0
+00:51:02.703 --> 00:51:08.503
+<v Antonio Cisternino>So I will is that that is a philosophical
+question.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5582-0
+00:51:09.703 --> 00:51:18.988
+<v Antonio Cisternino>And it's a subtle thing. So I mean,
+I'm spending some time in trying to focus</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5582-1
+00:51:18.988 --> 00:51:24.703
+<v Antonio Cisternino>your your mind on this subject so that
+you can.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5609-0
+00:51:24.783 --> 00:51:29.825
+<v Antonio Cisternino>Appreciate because one may say OK,
+but if underneath I got threads,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5609-1
+00:51:29.825 --> 00:51:34.793
+<v Antonio Cisternino>where's the point in having asynchronous
+programs? I have threads,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5609-2
+00:51:34.793 --> 00:51:37.463
+<v Antonio Cisternino>which by the way are the primitives.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5619-0
+00:51:38.383 --> 00:51:43.303
+<v Antonio Cisternino>And so why at some point we felt the need
+to move away from threats?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5630-0
+00:51:48.703 --> 00:51:53.441
+<v Antonio Cisternino>I'd say lazy,
+lazy loading and lazy programming,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5630-1
+00:51:53.441 --> 00:51:57.503
+<v Antonio Cisternino>lazy loading and programming, I would say.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5653-0
+00:51:59.503 --> 00:52:07.983
+<v Antonio Cisternino>Threads brings you in the main syndrome.
+I mean when you write a thread,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5653-1
+00:52:07.983 --> 00:52:12.863
+<v Antonio Cisternino>typically let me use the original version.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5684-0
+00:52:15.823 --> 00:52:21.796
+<v Antonio Cisternino>You write basically a main program.
+You start thinking that your program is</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5684-1
+00:52:21.796 --> 00:52:26.276
+<v Antonio Cisternino>confined inside that one,
+and then you start looking for</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5684-2
+00:52:26.276 --> 00:52:31.463
+<v Antonio Cisternino>communicating with other threats.
+Through what? Through messages.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5691-0
+00:52:32.583 --> 00:52:37.543
+<v Antonio Cisternino>So suddenly you will start seeing it.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5719-0
+00:52:39.263 --> 00:52:45.795
+<v Antonio Cisternino>Synchronization mechanism with the
+message passing it so that the thread can</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5719-1
+00:52:45.795 --> 00:52:49.783
+<v Antonio Cisternino>safely send the events to another thread,
+but.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5749-0
+00:52:51.463 --> 00:52:58.910
+<v Antonio Cisternino>If I have to define a computation by
+slicing into the collaboration of threads,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5749-1
+00:52:58.910 --> 00:53:03.472
+<v Antonio Cisternino>even a simple algorithm may become super,
+super,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5749-2
+00:53:03.472 --> 00:53:07.103
+<v Antonio Cisternino>super difficult to read for an example.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5796-0
+00:53:09.063 --> 00:53:13.650
+<v Antonio Cisternino>When you open a connection to a DB,
+that is a huge operation in terms of a</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5796-1
+00:53:13.650 --> 00:53:17.748
+<v Antonio Cisternino>programming language. It takes cycles.
+You want to suspend it. OK,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5796-2
+00:53:17.748 --> 00:53:21.969
+<v Antonio Cisternino>so if you're using a thread,
+you typically suspend the thread there,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5796-3
+00:53:21.969 --> 00:53:23.743
+<v Antonio Cisternino>so you have a blocked thread.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5805-0
+00:53:24.583 --> 00:53:28.743
+<v Antonio Cisternino>If I have a tag connections,
+those are 10 blocker threats.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5843-0
+00:53:30.623 --> 00:53:34.569
+<v Antonio Cisternino>And you wait, you resume, you block again,
+you resume.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5843-1
+00:53:34.569 --> 00:53:40.093
+<v Antonio Cisternino>So you're losing a lot of ability to go
+concurrent. What is the alternative?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5843-2
+00:53:40.093 --> 00:53:45.832
+<v Antonio Cisternino>You start two threads, one for connection,
+but then I have the problem that I I</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5843-3
+00:53:45.832 --> 00:53:46.263
+<v Antonio Cisternino>can't.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5874-0
+00:53:46.743 --> 00:53:50.759
+<v Antonio Cisternino>Move on until I I have all the resources.
+OK,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5874-1
+00:53:50.759 --> 00:53:56.697
+<v Antonio Cisternino>so threads are too system level to be
+really useful in programming.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5874-2
+00:53:56.697 --> 00:54:02.023
+<v Antonio Cisternino>They are nice when you have you need a
+background thread to.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5909-0
+00:54:02.343 --> 00:54:06.474
+<v Antonio Cisternino>Clean up your directory.
+The thread starts,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5909-1
+00:54:06.474 --> 00:54:12.954
+<v Antonio Cisternino>execute and and stays there.
+But when you want to use concurrency to</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5909-2
+00:54:12.954 --> 00:54:18.964
+<v Antonio Cisternino>parallelize operation,
+this is not the best possible options on</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5909-3
+00:54:18.964 --> 00:54:19.903
+<v Antonio Cisternino>the table.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5937-0
+00:54:24.863 --> 00:54:33.696
+<v Antonio Cisternino>Mostly because it is difficult to write
+code and to read code that is being</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5937-1
+00:54:33.696 --> 00:54:40.322
+<v Antonio Cisternino>written that way.
+Can you show me an example of a thread</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5937-2
+00:54:40.322 --> 00:54:40.903
+<v Antonio Cisternino>pool?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5946-0
+00:54:44.783 --> 00:54:50.103
+<v Antonio Cisternino>Implementation in C# of.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5950-0
+00:54:51.303 --> 00:54:52.543
+<v Antonio Cisternino>Make it simple.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5952-0
+00:54:55.463 --> 00:54:55.583
+<v Antonio Cisternino>OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5963-0
+00:55:06.903 --> 00:55:08.903
+<v Antonio Cisternino>So we said there are basically.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5977-0
+00:55:10.623 --> 00:55:15.558
+<v Antonio Cisternino>Uh-2 reasons.
+The first is uh uh the costs uh of</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/5977-1
+00:55:15.558 --> 00:55:18.983
+<v Antonio Cisternino>allocating and allocating threats.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6009-0
+00:55:20.743 --> 00:55:25.441
+<v Antonio Cisternino>Operating system don't support so many
+threads per process. OK,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6009-1
+00:55:25.441 --> 00:55:29.919
+<v Antonio Cisternino>so if you write a a program which is for
+each create thread,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6009-2
+00:55:29.919 --> 00:55:34.103
+<v Antonio Cisternino>you may easily put into a limit of the
+operating system.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6016-0
+00:55:36.503 --> 00:55:40.623
+<v Antonio Cisternino>Second things we said is about.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6017-0
+00:55:42.063 --> 00:55:42.983
+<v Antonio Cisternino>Yeah.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6054-0
+00:55:44.023 --> 00:55:52.118
+<v Antonio Cisternino>Self-contained nature of the run method
+which force you to write all your code</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6054-1
+00:55:52.118 --> 00:55:59.906
+<v Antonio Cisternino>inside this main of the thread. OK,
+let's first of all because I'm going in</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6054-2
+00:55:59.906 --> 00:56:02.263
+<v Antonio Cisternino>the evolution timeline.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6097-0
+00:56:02.943 --> 00:56:07.554
+<v Antonio Cisternino>The first thing that happened,
+it was the thread pool. OK,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6097-1
+00:56:07.554 --> 00:56:12.790
+<v Antonio Cisternino>thread pool is addressing basically the
+first part of the problem.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6097-2
+00:56:12.790 --> 00:56:19.199
+<v Antonio Cisternino>Threats are expensive and you don't want
+to allocate too many threats during your</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6097-3
+00:56:19.199 --> 00:56:19.903
+<v Antonio Cisternino>programs.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6133-0
+00:56:20.303 --> 00:56:25.011
+<v Antonio Cisternino>So natural way to do I create a number of
+threads.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6133-1
+00:56:25.011 --> 00:56:32.674
+<v Antonio Cisternino>When I need to start some background job,
+I go to the thread pool for is there any</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6133-2
+00:56:32.674 --> 00:56:39.413
+<v Antonio Cisternino>thread available? Yes or no? Yes.
+OK this is can you please execute this</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6133-3
+00:56:39.413 --> 00:56:39.783
+<v Antonio Cisternino>job?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6134-0
+00:56:39.863 --> 00:56:40.423
+<v Antonio Cisternino>For me.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6135-0
+00:56:41.703 --> 00:56:41.943
+<v Antonio Cisternino>Hmm.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6137-0
+00:56:44.103 --> 00:56:44.663
+<v Antonio Cisternino>So.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6173-0
+00:56:46.143 --> 00:56:52.221
+<v Antonio Cisternino>The code, as you can see,
+immediately evolves because you're not</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6173-1
+00:56:52.221 --> 00:56:59.514
+<v Antonio Cisternino>anymore thinking in terms of the run,
+but I have a task which is in this code</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6173-2
+00:56:59.514 --> 00:57:00.543
+<v Antonio Cisternino>is do work.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6182-0
+00:57:02.223 --> 00:57:07.303
+<v Antonio Cisternino>That should be defined somewhere. OK,
+there we are. This is the work.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6183-0
+00:57:08.423 --> 00:57:08.463
+<v Antonio Cisternino>Uh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6209-0
+00:57:11.223 --> 00:57:17.083
+<v Antonio Cisternino>So you pass the do work as a value,
+so sort of Lambda technically is a</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6209-1
+00:57:17.083 --> 00:57:21.623
+<v Antonio Cisternino>delegate if you remember delegates in the
+runtime, OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6220-0
+00:57:23.623 --> 00:57:31.863
+<v Antonio Cisternino>And and and a number which allows you to
+say, OK, I have 5 concurrent things going.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6251-0
+00:57:34.183 --> 00:57:39.625
+<v Antonio Cisternino>And you queue.
+This means that it is not ensured that</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6251-1
+00:57:39.625 --> 00:57:47.385
+<v Antonio Cisternino>all the five instances will receive a
+dedicated threat if in the threat pool</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6251-2
+00:57:47.385 --> 00:57:49.703
+<v Antonio Cisternino>you have three threats.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6280-0
+00:57:50.143 --> 00:57:56.956
+<v Antonio Cisternino>And you assign five work items,
+then the first three will be executed as</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6280-1
+00:57:56.956 --> 00:58:04.236
+<v Antonio Cisternino>soon as possible, starting a thread.
+The other two will stay in queue waiting</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6280-2
+00:58:04.236 --> 00:58:06.383
+<v Antonio Cisternino>for a thread available.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6284-0
+00:58:07.983 --> 00:58:10.103
+<v Antonio Cisternino>Q is working OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6286-0
+00:58:14.703 --> 00:58:16.303
+<v Antonio Cisternino>And this is the example.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6298-0
+00:58:30.463 --> 00:58:34.503
+<v Antonio Cisternino>Show me a minimal custom thread.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6303-0
+00:58:36.943 --> 00:58:39.623
+<v Antonio Cisternino>Pool implementation.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6345-0
+00:58:40.943 --> 00:58:44.421
+<v Antonio Cisternino>Because the full implementation of thread
+pool,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6345-1
+00:58:44.421 --> 00:58:48.117
+<v Antonio Cisternino>I could go into the runtime and start
+studying it,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6345-2
+00:58:48.117 --> 00:58:52.754
+<v Antonio Cisternino>but there are a lot of elements.
+If you want to do an exercise,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6345-3
+00:58:52.754 --> 00:58:55.943
+<v Antonio Cisternino>please go into the Java virtual machine
+or.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6363-0
+00:58:56.383 --> 00:58:59.875
+<v Antonio Cisternino>Uh.
+net runtime and look for the thread pool</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6363-1
+00:58:59.875 --> 00:59:04.221
+<v Antonio Cisternino>implementation.
+It's a very nice exercise to understand</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6363-2
+00:59:04.221 --> 00:59:05.463
+<v Antonio Cisternino>what's going on.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6374-0
+00:59:15.783 --> 00:59:20.263
+<v Antonio Cisternino>OK, so here we have a a very small.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6379-0
+00:59:21.543 --> 00:59:23.543
+<v Antonio Cisternino>This is a simple thread OOL.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6384-0
+00:59:26.983 --> 00:59:29.543
+<v Antonio Cisternino>So there is the cube.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6410-0
+00:59:31.103 --> 00:59:38.971
+<v Antonio Cisternino>Of the blocking collection actions,
+which so it's a collection of action.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6410-1
+00:59:38.971 --> 00:59:43.863
+<v Antonio Cisternino>The action is is representing the work to
+do.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6458-0
+00:59:45.543 --> 00:59:51.356
+<v Antonio Cisternino>So when you create a thread pool,
+typically you can specify the worker</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6458-1
+00:59:51.356 --> 00:59:55.285
+<v Antonio Cisternino>count.
+Then thread pool implementation may have</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6458-2
+00:59:55.285 --> 01:00:00.362
+<v Antonio Cisternino>different approaches.
+Some may monitor the number of elements</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6458-3
+01:00:00.362 --> 01:00:04.783
+<v Antonio Cisternino>in the queue and decide to allocate and
+free threads.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6489-0
+01:00:04.863 --> 01:00:09.476
+<v Antonio Cisternino>Depending upon requests.
+So for this reason I tell you it can be</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6489-1
+01:00:09.476 --> 01:00:14.585
+<v Antonio Cisternino>interesting to read a real world
+implementation that you you may find a</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6489-2
+01:00:14.585 --> 01:00:18.063
+<v Antonio Cisternino>lot of considerations that are not
+present here.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6496-0
+01:00:18.703 --> 01:00:24.183
+<v Antonio Cisternino>Then you create an array of threads.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6525-0
+01:00:26.703 --> 01:00:35.465
+<v Antonio Cisternino>Then you create a thread,
+and a thread by definition needs to have</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6525-1
+01:00:35.465 --> 01:00:41.743
+<v Antonio Cisternino>a a run, a run method. OK,
+so there's no pause.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6561-0
+01:00:41.783 --> 01:00:48.078
+<v Antonio Cisternino>There's no pause that you can get from
+the operating system of a thread. OK,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6561-1
+01:00:48.078 --> 01:00:54.618
+<v Antonio Cisternino>we need to provide basically a chunk of
+code which is the body of the thread in</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6561-2
+01:00:54.618 --> 01:00:59.932
+<v Antonio Cisternino>running the thread pool,
+which basically will do always the same</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6561-3
+01:00:59.932 --> 01:01:00.423
+<v Antonio Cisternino>thing.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6602-0
+01:01:01.063 --> 01:01:08.009
+<v Antonio Cisternino>Is there something in the queue? Yes. No.
+If if there is a something in the queues,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6602-1
+01:01:08.009 --> 01:01:13.714
+<v Antonio Cisternino>pick the queue, run the action,
+return the results, start again. OK,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6602-2
+01:01:13.714 --> 01:01:19.998
+<v Antonio Cisternino>so this is this is generated code.
+So this is my expectation without having</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6602-3
+01:01:19.998 --> 01:01:20.743
+<v Antonio Cisternino>read yet.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6605-0
+01:01:20.823 --> 01:01:22.223
+<v Antonio Cisternino>The code OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6640-0
+01:01:23.863 --> 01:01:30.086
+<v Antonio Cisternino>Of course we include also the name of the
+of the of the threads so they're in</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6640-1
+01:01:30.086 --> 01:01:33.915
+<v Antonio Cisternino>debugger and then you start the the the
+thread.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6640-2
+01:01:33.915 --> 01:01:38.383
+<v Antonio Cisternino>So the thread starts and starts executing
+the workload.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6641-0
+01:01:38.463 --> 01:01:38.583
+<v Antonio Cisternino>But.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6643-0
+01:01:40.183 --> 01:01:40.383
+<v Antonio Cisternino>So.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6662-0
+01:01:44.583 --> 01:01:49.321
+<v Antonio Cisternino>As you can see here,
+there is a commenter which we welcome the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6662-1
+01:01:49.321 --> 01:01:51.503
+<v Antonio Cisternino>get consuming a new variable.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6667-0
+01:01:52.903 --> 01:01:55.743
+<v Antonio Cisternino>Blocks until work arrives.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6707-0
+01:01:57.943 --> 01:02:04.750
+<v Antonio Cisternino>Exit when complete adding is called. OK,
+so I mean there is a specific object that</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6707-1
+01:02:04.750 --> 01:02:10.820
+<v Antonio Cisternino>has been implemented in the library that
+we we believe it works that way.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6707-2
+01:02:10.820 --> 01:02:14.183
+<v Antonio Cisternino>So I go into the queue and say OK get me.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6740-0
+01:02:14.183 --> 01:02:19.798
+<v Antonio Cisternino>Consuming enumerable which basically
+blocks the thread until there is some</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6740-1
+01:02:19.798 --> 01:02:24.889
+<v Antonio Cisternino>something in the queue. OK,
+and in fact if you look at the queue is</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6740-2
+01:02:24.889 --> 01:02:28.783
+<v Antonio Cisternino>of a a collection which is the blocking
+collection.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6776-0
+01:02:29.903 --> 01:02:35.033
+<v Antonio Cisternino>Which is implemented the there is
+internally a state, there is a monitor,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6776-1
+01:02:35.033 --> 01:02:38.500
+<v Antonio Cisternino>blah blah blah, synchronized, etcetera,
+etcetera.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6776-2
+01:02:38.500 --> 01:02:44.047
+<v Antonio Cisternino>And it allows you basically to say, OK,
+I need an element to consume as soon as</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6776-3
+01:02:44.047 --> 01:02:46.543
+<v Antonio Cisternino>you have the the element to consume.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6781-0
+01:02:47.063 --> 01:02:49.903
+<v Antonio Cisternino>I will, uh, take on otherwise.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6789-0
+01:02:51.743 --> 01:02:57.663
+<v Antonio Cisternino>Wait, suspend. OK,
+so this is a weight object.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6823-0
+01:03:01.463 --> 01:03:06.013
+<v Antonio Cisternino>Now as soon as I get a job,
+the thread will receive the job in this</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6823-1
+01:03:06.013 --> 01:03:10.028
+<v Antonio Cisternino>variable. It invokes the job.
+It's a it's a type of action,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6823-2
+01:03:10.028 --> 01:03:12.103
+<v Antonio Cisternino>so it is like runnable in Java.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6842-0
+01:03:13.703 --> 01:03:18.363
+<v Antonio Cisternino>If there is a an exception job failed
+just for the report,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6842-1
+01:03:18.363 --> 01:03:23.023
+<v Antonio Cisternino>of course in a real world implementation
+it is not enough.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6882-0
+01:03:29.743 --> 01:03:35.589
+<v Antonio Cisternino>And this is the method which submit a new
+job into the pool.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6882-1
+01:03:35.589 --> 01:03:41.532
+<v Antonio Cisternino>So you submit a job of type action if the
+job is no complain,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6882-2
+01:03:41.532 --> 01:03:44.503
+<v Antonio Cisternino>otherwise you are to the queue.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6904-0
+01:03:44.903 --> 01:03:49.044
+<v Antonio Cisternino>The job.
+And of course we are assuming that this</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6904-1
+01:03:49.044 --> 01:03:55.383
+<v Antonio Cisternino>blocking here is synchronized because
+it's clearly shared across multiple.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6910-0
+01:03:57.223 --> 01:04:01.943
+<v Antonio Cisternino>Multiple threads. OK, beware.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6934-0
+01:04:04.743 --> 01:04:12.098
+<v Antonio Cisternino>Here I'm basically granting, ensuring,
+reassuring you that blocking collection</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6934-1
+01:04:12.098 --> 01:04:15.543
+<v Antonio Cisternino>is synchronized, but please do check.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6945-0
+01:04:17.063 --> 01:04:22.402
+<v Antonio Cisternino>If this is holds true,
+you want an example the Windows Forms</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6945-1
+01:04:22.402 --> 01:04:23.103
+<v Antonio Cisternino>library.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6988-0
+01:04:25.703 --> 01:04:31.210
+<v Antonio Cisternino>Which has been fairly used for
+implementing a lot of applications,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6988-1
+01:04:31.210 --> 01:04:35.320
+<v Antonio Cisternino>is not thread safe.
+It is declared in the library</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6988-2
+01:04:35.320 --> 01:04:41.075
+<v Antonio Cisternino>documentation that for efficiency reasons
+they decide to say you need</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6988-3
+01:04:41.075 --> 01:04:45.103
+<v Antonio Cisternino>synchronization,
+do it your own synchronization.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/6991-0
+01:04:45.383 --> 01:04:47.503
+<v Antonio Cisternino>I am not threat safe.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7030-0
+01:04:48.983 --> 01:04:56.180
+<v Antonio Cisternino>And in fact, if you start using threads,
+if you use them in the wrong way,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7030-1
+01:04:56.180 --> 01:05:03.952
+<v Antonio Cisternino>you may get an exception from the library
+that says call from different threads.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7030-2
+01:05:03.952 --> 01:05:07.503
+<v Antonio Cisternino>Sorry, I can't execute exception, OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7077-0
+01:05:08.183 --> 01:05:14.962
+<v Antonio Cisternino>So it is not obvious that all the we we
+tried but the overhead of monitor</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7077-1
+01:05:14.962 --> 01:05:21.742
+<v Antonio Cisternino>checking piles up and so when you are
+implementing call libraries it is a</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7077-2
+01:05:21.742 --> 01:05:27.423
+<v Antonio Cisternino>sensible choice sometimes to say OK this
+is not synchronised.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7110-0
+01:05:28.543 --> 01:05:34.491
+<v Antonio Cisternino>So may even say OK if it's a different
+random exception so that you can help the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7110-1
+01:05:34.491 --> 01:05:38.970
+<v Antonio Cisternino>programmer avoid tricks.
+And so don't count that every class</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7110-2
+01:05:38.970 --> 01:05:43.303
+<v Antonio Cisternino>library or class implementation is read
+safe most of them.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7114-0
+01:05:44.223 --> 01:05:46.943
+<v Antonio Cisternino>Especially in the Uh code libraries are
+not.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7135-0
+01:05:48.503 --> 01:05:54.401
+<v Antonio Cisternino>Dispose. OK, dispose.
+Basically you you tell the the queue that</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7135-1
+01:05:54.401 --> 01:05:57.903
+<v Antonio Cisternino>there are no items. So this basically.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7164-0
+01:06:00.303 --> 01:06:08.235
+<v Antonio Cisternino>We'll flush the queue and then you wait
+every worker to complete the execution</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7164-1
+01:06:08.235 --> 01:06:14.863
+<v Antonio Cisternino>and eventually you dispose everything. OK,
+we said that disposer.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7197-0
+01:06:17.543 --> 01:06:21.583
+<v Antonio Cisternino>That is very similar to the finalizer in
+Java.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7197-1
+01:06:21.583 --> 01:06:28.117
+<v Antonio Cisternino>You have no guarantee that is will be
+invoked by the the garbage collector,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7197-2
+01:06:28.117 --> 01:06:33.103
+<v Antonio Cisternino>so you have no guarantees about the
+timing, so sometimes.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7234-0
+01:06:33.383 --> 01:06:37.931
+<v Antonio Cisternino>In case like this,
+you may want to explicitly invoke the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7234-1
+01:06:37.931 --> 01:06:42.799
+<v Antonio Cisternino>dispose to get rid of all the threats.
+Otherwise you get it.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7234-2
+01:06:42.799 --> 01:06:48.944
+<v Antonio Cisternino>Have you ever had experienced some
+application that you create and they stay</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7234-3
+01:06:48.944 --> 01:06:49.423
+<v Antonio Cisternino>there?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7266-0
+01:06:51.143 --> 01:06:55.611
+<v Antonio Cisternino>Sometimes happens and the reason
+typically is this one.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7266-1
+01:06:55.611 --> 01:07:01.755
+<v Antonio Cisternino>I mean you're waiting some thread that
+has not been terminated properly. OK,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7266-2
+01:07:01.755 --> 01:07:06.543
+<v Antonio Cisternino>and here we have the the, the, the,
+the demo usage of this.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7277-0
+01:07:09.903 --> 01:07:15.263
+<v Antonio Cisternino>So you create a thread pool with four
+threads.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7293-0
+01:07:17.263 --> 01:07:23.635
+<v Antonio Cisternino>You submit four jobs.
+Every job says least for 200 milliseconds,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7293-1
+01:07:23.635 --> 01:07:24.223
+<v Antonio Cisternino>right?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7295-0
+01:07:25.823 --> 01:07:26.783
+<v Antonio Cisternino>And that's it.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7314-0
+01:07:33.983 --> 01:07:38.694
+<v Antonio Cisternino>OK,
+so thread pool is one of the abstractions.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7314-1
+01:07:38.694 --> 01:07:42.303
+<v Antonio Cisternino>Now things will be more interesting.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7322-0
+01:07:44.063 --> 01:07:48.983
+<v Antonio Cisternino>But to properly appreciate the.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7341-0
+01:07:50.423 --> 01:07:58.528
+<v Antonio Cisternino>The evolution you have to keep in mind
+that the upcoming abstraction that I'm</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7341-1
+01:07:58.528 --> 01:08:00.503
+<v Antonio Cisternino>about to introduce.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7359-0
+01:08:01.223 --> 01:08:07.751
+<v Antonio Cisternino>Are built on top of the thread pool. OK,
+so at the end of the day,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7359-1
+01:08:07.751 --> 01:08:12.623
+<v Antonio Cisternino>the the real star of our show is the
+thread pool.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7366-0
+01:08:14.103 --> 01:08:17.863
+<v Antonio Cisternino>But of course, we still have to address.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7369-0
+01:08:19.703 --> 01:08:20.223
+<v Antonio Cisternino>The uh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7396-0
+01:08:23.983 --> 01:08:29.553
+<v Antonio Cisternino>If I survive to address the the second
+part,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7396-1
+01:08:29.553 --> 01:08:38.343
+<v Antonio Cisternino>so the idea that sometimes I want to
+express a computation as a whole.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7427-0
+01:08:39.623 --> 01:08:46.970
+<v Antonio Cisternino>This computation I know that will wait
+for some resources that will take longer</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7427-1
+01:08:46.970 --> 01:08:53.767
+<v Antonio Cisternino>to get. So I'd like to say, OK,
+I want to suspend the execution there and</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7427-2
+01:08:53.767 --> 01:08:56.063
+<v Antonio Cisternino>as soon as the execution.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7430-0
+01:08:57.783 --> 01:08:59.023
+<v Antonio Cisternino>Completes. OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7447-0
+01:09:00.983 --> 01:09:10.463
+<v Antonio Cisternino>So now I switch totally environmental.
+Can you please show me?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7449-0
+01:09:12.063 --> 01:09:14.423
+<v Antonio Cisternino>An example.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7454-0
+01:09:15.823 --> 01:09:16.383
+<v Antonio Cisternino>Oh, uh, Jackson.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7455-0
+01:09:19.663 --> 01:09:19.743
+<v Antonio Cisternino>Uh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7462-0
+01:09:22.503 --> 01:09:28.463
+<v Antonio Cisternino>Call the the original part then, please.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7488-0
+01:09:30.663 --> 01:09:33.873
+<v Antonio Cisternino>Oh,
+learn that sometimes you you have in mind</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7488-1
+01:09:33.873 --> 01:09:39.386
+<v Antonio Cisternino>that the original one and then oh Java
+version and on 97 and 9000 has this new</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7488-2
+01:09:39.386 --> 01:09:40.503
+<v Antonio Cisternino>feature feature.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7494-0
+01:09:43.703 --> 01:09:45.823
+<v Antonio Cisternino>OK, so uh, Jackson.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7497-0
+01:09:48.463 --> 01:09:48.783
+<v Antonio Cisternino>Thank you.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7514-0
+01:09:55.023 --> 01:10:00.543
+<v Antonio Cisternino>Ajax as a a nice you know who first
+implemented Ajax.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7520-0
+01:10:06.623 --> 01:10:09.143
+<v Antonio Cisternino>We as the inventor objects.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7523-0
+01:10:13.863 --> 01:10:14.383
+<v Antonio Cisternino>Microsoft.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7533-0
+01:10:17.063 --> 01:10:23.983
+<v Antonio Cisternino>Basically, during the 90s I didn't spend.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7576-0
+01:10:26.943 --> 01:10:31.687
+<v Antonio Cisternino>Not even mentioning,
+I may have before the end of the course</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7576-1
+01:10:31.687 --> 01:10:36.354
+<v Antonio Cisternino>to have a quick run.
+Maybe we will use it as an exercise to</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7576-2
+01:10:36.354 --> 01:10:42.343
+<v Antonio Cisternino>recover that part because it's still
+there. I mean you saw you know that in.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7582-0
+01:10:42.783 --> 01:10:46.022
+<v Antonio Cisternino>Uh, in Windows, uh,
+have you ever seen that the Windows</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7582-1
+01:10:46.022 --> 01:10:46.543
+<v Antonio Cisternino>registry?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7583-0
+01:10:49.423 --> 01:10:49.583
+<v Antonio Cisternino>Um.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7586-0
+01:10:58.743 --> 01:10:58.943
+<v Antonio Cisternino>Oh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7604-0
+01:11:10.903 --> 01:11:18.787
+<v Antonio Cisternino>So this is a very old data structure.
+It started before 95. It's still there.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7604-1
+01:11:18.787 --> 01:11:20.303
+<v Antonio Cisternino>Legacy undying.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7628-0
+01:11:23.583 --> 01:11:28.609
+<v Antonio Cisternino>You know that there are classes.
+I'm pretty sure that eventually you ended</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7628-1
+01:11:28.609 --> 01:11:32.763
+<v Antonio Cisternino>up editing this thing,
+possibly collapsing your system at the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7628-2
+01:11:32.763 --> 01:11:33.903
+<v Antonio Cisternino>end of a session.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7629-0
+01:11:35.743 --> 01:11:36.223
+<v Antonio Cisternino>So.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7633-0
+01:11:37.703 --> 01:11:41.543
+<v Antonio Cisternino>Let me take.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7638-0
+01:11:46.063 --> 01:11:48.423
+<v Antonio Cisternino>So you may know that uh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7654-0
+01:11:49.863 --> 01:11:55.901
+<v Antonio Cisternino>This is one of the core ways in which you
+associate programs in into the witness</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7654-1
+01:11:55.901 --> 01:11:56.423
+<v Antonio Cisternino>system.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7656-0
+01:11:59.023 --> 01:11:59.143
+<v Antonio Cisternino>OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7661-0
+01:12:01.383 --> 01:12:02.703
+<v Antonio Cisternino>So.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7666-0
+01:12:05.903 --> 01:12:08.943
+<v Antonio Cisternino>It does few attributes and then.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7677-0
+01:12:10.023 --> 01:12:14.823
+<v Antonio Cisternino>There is this key that say word document
+12.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7682-0
+01:12:15.943 --> 01:12:18.983
+<v Antonio Cisternino>This is a reference to word.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7684-0
+01:12:21.143 --> 01:12:21.423
+<v Antonio Cisternino>What?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7687-0
+01:12:22.823 --> 01:12:24.263
+<v Antonio Cisternino>Documenter 12.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7707-0
+01:12:27.063 --> 01:12:32.204
+<v Antonio Cisternino>It's interesting because the registry is
+basically a tree with cross references,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7707-1
+01:12:32.204 --> 01:12:34.743
+<v Antonio Cisternino>so at the end of the day is a graph. OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7713-0
+01:12:36.263 --> 01:12:39.903
+<v Antonio Cisternino>And oh, there is a class ID.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7716-0
+01:12:41.903 --> 01:12:42.863
+<v Antonio Cisternino>Which is.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7725-0
+01:12:43.943 --> 01:12:48.671
+<v Antonio Cisternino>Made by this beautiful,
+globally unique identifier grid for</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7725-1
+01:12:48.671 --> 01:12:49.223
+<v Antonio Cisternino>France.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7733-0
+01:12:51.943 --> 01:12:54.863
+<v Antonio Cisternino>You know what are these things and why
+are there?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7769-0
+01:12:55.863 --> 01:12:59.807
+<v Antonio Cisternino>They are a standard introduced by
+Microsoft.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7769-1
+01:12:59.807 --> 01:13:06.467
+<v Antonio Cisternino>Basically the problem was how can we get
+a name which is very unlikely that</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7769-2
+01:13:06.467 --> 01:13:11.463
+<v Antonio Cisternino>someone else will have in their lifetime.
+So let's keep.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7815-0
+01:13:11.863 --> 01:13:16.062
+<v Antonio Cisternino>Natural language because humans have a
+very poor fantasy,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7815-1
+01:13:16.062 --> 01:13:20.769
+<v Antonio Cisternino>so they it is very likely they will pick
+up the same name twice.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7815-2
+01:13:20.769 --> 01:13:26.706
+<v Antonio Cisternino>So how can we be sure that that all the
+developers in this world can get a unique</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7815-3
+01:13:26.706 --> 01:13:31.703
+<v Antonio Cisternino>identifier that is very unlikely that
+will collide with some others?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7817-0
+01:13:31.823 --> 01:13:33.103
+<v Antonio Cisternino>Uh, identifier.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7846-0
+01:13:34.783 --> 01:13:42.461
+<v Antonio Cisternino>And they come up with an algorithm that
+has a high probability, not the certainty.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7846-1
+01:13:42.461 --> 01:13:49.863
+<v Antonio Cisternino>So there is still a chance that you can
+get the very same GUID of another user.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7889-0
+01:13:50.423 --> 01:13:55.033
+<v Antonio Cisternino>And to be sure that the space was parsing
+out,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7889-1
+01:13:55.033 --> 01:14:03.272
+<v Antonio Cisternino>you pick up a number which is 128 bit if
+I'm right, which is 2 to the power of 128,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7889-2
+01:14:03.272 --> 01:14:05.823
+<v Antonio Cisternino>which is a huge space, so.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7912-0
+01:14:06.103 --> 01:14:11.450
+<v Antonio Cisternino>If you are good at randomize,
+it is very unlikely that two GUIDs will</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7912-1
+01:14:11.450 --> 01:14:15.423
+<v Antonio Cisternino>have the same value.
+OK now all this thing because.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7915-0
+01:14:19.343 --> 01:14:21.383
+<v Antonio Cisternino>Let me copy this.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7925-0
+01:14:24.263 --> 01:14:29.663
+<v Antonio Cisternino>Let me annotate this.
+It's interesting this class ID.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7930-0
+01:14:32.423 --> 01:14:33.263
+<v Antonio Cisternino>Plus ID.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7967-0
+01:14:37.463 --> 01:14:44.689
+<v Antonio Cisternino>There is a key in under classes. In fact,
+in the original version Windows 95 where</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7967-1
+01:14:44.689 --> 01:14:50.609
+<v Antonio Cisternino>these things have found life,
+the purpose of the registry was this,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7967-2
+01:14:50.609 --> 01:14:52.263
+<v Antonio Cisternino>not the other keys.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7999-0
+01:14:52.583 --> 01:14:58.186
+<v Antonio Cisternino>Then they said OK, we got this.
+Let's use also for system configuration,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7999-1
+01:14:58.186 --> 01:15:03.405
+<v Antonio Cisternino>but the the real purpose was programmable
+programming. So class ID.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/7999-2
+01:15:03.405 --> 01:15:07.703
+<v Antonio Cisternino>If I open the class ID you see that there
+are a lot of.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8007-0
+01:15:09.423 --> 01:15:13.263
+<v Antonio Cisternino>This and if I look for F4.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8023-0
+01:15:22.783 --> 01:15:31.903
+<v Antonio Cisternino>F47 no F47 there we are 9B this one OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8030-0
+01:15:38.103 --> 01:15:42.023
+<v Antonio Cisternino>I find the name of an executable.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8040-0
+01:15:43.943 --> 01:15:47.703
+<v Antonio Cisternino>So this is the component object model.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8078-0
+01:15:49.143 --> 01:15:56.495
+<v Antonio Cisternino>It has been implemented around 9697 by
+Microsoft as a binary component model in</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8078-1
+01:15:56.495 --> 01:16:03.664
+<v Antonio Cisternino>which you can invoke functions of binary
+components pre-compiled in different</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8078-2
+01:16:03.664 --> 01:16:04.583
+<v Antonio Cisternino>languages.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8114-0
+01:16:04.743 --> 01:16:12.713
+<v Antonio Cisternino>So you have pointers to be tables to
+interfaces and you can invoke functions</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8114-1
+01:16:12.713 --> 01:16:18.200
+<v Antonio Cisternino>of processes or DLLS that are in process
+in process.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8114-2
+01:16:18.200 --> 01:16:21.823
+<v Antonio Cisternino>There we are in process handler so.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8151-0
+01:16:22.903 --> 01:16:28.451
+<v Antonio Cisternino>This is this DLL will be responsible to
+send the message to the external process</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8151-1
+01:16:28.451 --> 01:16:33.109
+<v Antonio Cisternino>and this is how you can get Adobe Acrobat
+inside or the vice versa.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8151-2
+01:16:33.109 --> 01:16:36.192
+<v Antonio Cisternino>That's that's basically the core
+technology.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8151-3
+01:16:36.192 --> 01:16:39.823
+<v Antonio Cisternino>It's interesting because it's a component
+model, OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8189-0
+01:16:40.503 --> 01:16:46.063
+<v Antonio Cisternino>I don't want to dig down more than this.
+It's even beyond what I did expect,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8189-1
+01:16:46.063 --> 01:16:51.479
+<v Antonio Cisternino>but at least you have a clue of what was
+going on. And this is the reason,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8189-2
+01:16:51.479 --> 01:16:55.089
+<v Antonio Cisternino>because if you go there and change some
+of these,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8189-3
+01:16:55.089 --> 01:16:59.783
+<v Antonio Cisternino>you may destroy the graph and so the
+system will start behaving.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8191-0
+01:17:00.303 --> 01:17:00.863
+<v Antonio Cisternino>Badly.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8192-0
+01:17:02.943 --> 01:17:03.343
+<v Antonio Cisternino>Um.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8226-0
+01:17:10.903 --> 01:17:16.323
+<v Antonio Cisternino>There are also type libraries,
+which is basically the commutation of the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8226-1
+01:17:16.323 --> 01:17:22.114
+<v Antonio Cisternino>types in the in the components. OK,
+so that thing was exposed inside Internet</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8226-2
+01:17:22.114 --> 01:17:22.783
+<v Antonio Cisternino>Explorer.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8247-0
+01:17:24.823 --> 01:17:30.875
+<v Antonio Cisternino>So in Internet Explorer,
+it was possible to I I forgot to finish</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8247-1
+01:17:30.875 --> 01:17:36.183
+<v Antonio Cisternino>the phrases. Sorry,
+because today I'm really struggling.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8254-0
+01:17:38.183 --> 01:17:41.463
+<v Antonio Cisternino>Firefox.
+So how many of you are using Firefox?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8277-0
+01:17:42.343 --> 01:17:47.391
+<v Antonio Cisternino>The component model of Firefox is copied
+from COM.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8277-1
+01:17:47.391 --> 01:17:52.438
+<v Antonio Cisternino>It's basically a different permutation of
+COM. OK,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8277-2
+01:17:52.438 --> 01:17:55.903
+<v Antonio Cisternino>so you're using COM without domain.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8278-0
+01:17:57.263 --> 01:17:57.343
+<v Antonio Cisternino>Uh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8303-0
+01:17:59.543 --> 01:18:03.418
+<v Antonio Cisternino>OK,
+so Microsoft implemented the XML HTTP</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8303-1
+01:18:03.418 --> 01:18:08.863
+<v Antonio Cisternino>request component for Office.
+It wasn't meant for the web.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8332-0
+01:18:10.983 --> 01:18:19.718
+<v Antonio Cisternino>But Internet Explorer implementation was
+using JavaScript that were was allowed to</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8332-1
+01:18:19.718 --> 01:18:25.823
+<v Antonio Cisternino>start COM components including the XMLHTP
+request and so.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8372-0
+01:18:26.263 --> 01:18:33.167
+<v Antonio Cisternino>That this thing became so popular that
+eventually other browsers implemented the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8372-1
+01:18:33.167 --> 01:18:36.918
+<v Antonio Cisternino>XML HTTP request object inside the
+browser,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8372-2
+01:18:36.918 --> 01:18:43.823
+<v Antonio Cisternino>not not more using not anymore using COM
+because otherwise wouldn't be portable.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8380-0
+01:18:44.423 --> 01:18:50.223
+<v Antonio Cisternino>And this is how the web became
+asynchronous. OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8381-0
+01:18:52.503 --> 01:18:52.903
+<v Antonio Cisternino>Hmm.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8382-0
+01:18:56.183 --> 01:18:56.343
+<v Antonio Cisternino>No.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8385-0
+01:18:57.703 --> 01:18:57.823
+<v Antonio Cisternino>OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8395-0
+01:19:00.703 --> 01:19:04.023
+<v Antonio Cisternino>So you create the HTTP request.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8397-0
+01:19:05.583 --> 01:19:06.463
+<v Antonio Cisternino>Then.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8420-0
+01:19:14.103 --> 01:19:19.035
+<v Antonio Cisternino>You open the request,
+I'm jumping and then going back.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8420-1
+01:19:19.035 --> 01:19:25.223
+<v Antonio Cisternino>So this means I want to execute the HTTP
+request using the verb GET.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8434-0
+01:19:26.903 --> 01:19:34.383
+<v Antonio Cisternino>On this URL which is in the same
+directory in this example, so it's OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8458-0
+01:19:35.783 --> 01:19:40.964
+<v Antonio Cisternino>And then of course I'd like to say what
+then you send the request.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8458-1
+01:19:40.964 --> 01:19:45.063
+<v Antonio Cisternino>I need to be called back when the data is
+available.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8460-0
+01:19:47.783 --> 01:19:49.023
+<v Antonio Cisternino>And so.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8503-0
+01:19:51.383 --> 01:19:58.071
+<v Antonio Cisternino>They into exploiting the fact that
+JavaScript is a functional programming</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8503-1
+01:19:58.071 --> 01:20:02.138
+<v Antonio Cisternino>language.
+They allow to register a call back</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8503-2
+01:20:02.138 --> 01:20:09.006
+<v Antonio Cisternino>function that is invoked every time the
+connection to the HTTP request that</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8503-3
+01:20:09.006 --> 01:20:10.543
+<v Antonio Cisternino>change its state.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8516-0
+01:20:11.223 --> 01:20:19.263
+<v Antonio Cisternino>Typically I'm interested only in ready
+state 4, which is OK done.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8527-0
+01:20:21.663 --> 01:20:28.063
+<v Antonio Cisternino>I'd like also to have an OK result,
+so the resource is there 200.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8545-0
+01:20:29.703 --> 01:20:37.977
+<v Antonio Cisternino>And now I can copy the data that I get
+through HTT inside my webpage.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8545-1
+01:20:37.977 --> 01:20:40.223
+<v Antonio Cisternino>This is the basics.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8552-0
+01:20:45.503 --> 01:20:49.423
+<v Antonio Cisternino>Of the Ajax technology, OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8555-0
+01:20:49.463 --> 01:20:49.583
+<v Antonio Cisternino>OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8557-0
+01:20:54.103 --> 01:20:56.463
+<v Antonio Cisternino>Looking for the clock.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8564-0
+01:20:57.703 --> 01:21:00.303
+<v Antonio Cisternino>I'm looking for a nice place to stop.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8576-0
+01:21:01.983 --> 01:21:07.263
+<v Antonio Cisternino>Now what is the problem is that if I
+wanna make multiple?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8578-0
+01:21:10.063 --> 01:21:10.143
+<v Antonio Cisternino>Uh.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8584-0
+01:21:13.103 --> 01:21:17.743
+<v Antonio Cisternino>Can you generate an example?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8587-0
+01:21:20.023 --> 01:21:21.423
+<v Antonio Cisternino>In which?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8590-0
+01:21:23.423 --> 01:21:24.863
+<v Antonio Cisternino>You will form.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8592-0
+01:21:26.543 --> 01:21:27.943
+<v Antonio Cisternino>To get.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8599-0
+01:21:29.263 --> 01:21:34.383
+<v Antonio Cisternino>One after the other using.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8601-0
+01:21:37.423 --> 01:21:37.823
+<v Antonio Cisternino>Jacks.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8605-0
+01:21:44.863 --> 01:21:45.303
+<v Antonio Cisternino>If I'm lucky.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8615-0
+01:21:47.343 --> 01:21:51.783
+<v Antonio Cisternino>And the eye is helping me.
+I hope to be able to.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8620-0
+01:21:53.983 --> 01:21:56.943
+<v Antonio Cisternino>Explain where's the point.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8623-0
+01:21:59.143 --> 01:21:59.383
+<v Antonio Cisternino>Thank you.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8656-0
+01:22:01.503 --> 01:22:08.428
+<v Antonio Cisternino>So now you see it's fairly easy.
+I mean I have two files on on my web web</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8656-1
+01:22:08.428 --> 01:22:12.826
+<v Antonio Cisternino>service.
+I want to browse both of them and the</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8656-2
+01:22:12.826 --> 01:22:16.383
+<v Antonio Cisternino>second I I need to read them in order.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8675-0
+01:22:17.143 --> 01:22:25.294
+<v Antonio Cisternino>And so first the 1st and then the 2nd and
+with the Ajax this is the my only option</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8675-1
+01:22:25.294 --> 01:22:28.143
+<v Antonio Cisternino>in the on ready state change.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8690-0
+01:22:29.623 --> 01:22:35.703
+<v Antonio Cisternino>I have to wait for the finish of the for
+the end of the the first call.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8699-0
+01:22:37.463 --> 01:22:43.983
+<v Antonio Cisternino>And then I have to start again inside.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8703-0
+01:22:45.463 --> 01:22:48.983
+<v Antonio Cisternino>The result of the first request.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8714-0
+01:22:50.863 --> 01:22:54.943
+<v Antonio Cisternino>This leads to a code which is basically
+unreadable.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8740-0
+01:22:59.303 --> 01:23:04.992
+<v Antonio Cisternino>It's not wrong,
+it is simply unreadable because it's</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8740-1
+01:23:04.992 --> 01:23:12.184
+<v Antonio Cisternino>structure is following this suspension
+pattern and then pull back,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8740-2
+01:23:12.184 --> 01:23:16.263
+<v Antonio Cisternino>suspension pattern and then pull back.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8742-0
+01:23:16.863 --> 01:23:16.983
+<v Antonio Cisternino>OK.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8759-0
+01:23:19.943 --> 01:23:27.183
+<v Antonio Cisternino>Now if I'm a good programmer,
+I can try to rewrite this code.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8789-0
+01:23:28.823 --> 01:23:34.590
+<v Antonio Cisternino>In a in a way in which I can see the real
+actions,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8789-1
+01:23:34.590 --> 01:23:43.863
+<v Antonio Cisternino>trying to get rid of all these opens and
+wait, etcetera, so that at least I know.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8796-0
+01:23:45.263 --> 01:23:48.663
+<v Antonio Cisternino>What comes first and then what comes
+after?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8800-0
+01:23:55.183 --> 01:23:56.463
+<v Antonio Cisternino>You know what?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8805-0
+01:23:59.903 --> 01:24:04.063
+<v Antonio Cisternino>Concetually I'm writing read.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8810-0
+01:24:06.783 --> 01:24:09.343
+<v Antonio Cisternino>Risa fetch. Uh, sorry.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8811-0
+01:24:11.423 --> 01:24:11.543
+<v Antonio Cisternino>Batch.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8818-0
+01:24:14.543 --> 01:24:19.783
+<v Antonio Cisternino>Result one and then fetch.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8821-0
+01:24:25.063 --> 01:24:25.583
+<v Antonio Cisternino>Result 2.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8830-0
+01:24:29.303 --> 01:24:32.623
+<v Antonio Cisternino>This is what I'm basically writing, OK?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8859-0
+01:24:35.143 --> 01:24:41.271
+<v Antonio Cisternino>And you know what?
+Functional programming allows me to have</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8859-1
+01:24:41.271 --> 01:24:49.237
+<v Antonio Cisternino>a syntax that gives me the impression of
+right of doing things in a sequence,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8859-2
+01:24:49.237 --> 01:24:50.463
+<v Antonio Cisternino>even though.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8873-0
+01:24:51.703 --> 01:24:56.532
+<v Antonio Cisternino>To the best of the knowledge,
+I'm calling a function and inside someone</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8873-1
+01:24:56.532 --> 01:24:58.343
+<v Antonio Cisternino>will call another function.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8902-0
+01:25:01.423 --> 01:25:09.732
+<v Antonio Cisternino>So I introduce, but we stop here.
+I introduce the subject of Wednesday,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8902-1
+01:25:09.732 --> 01:25:15.503
+<v Antonio Cisternino>which is this style of decomposing a
+computation.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8935-0
+01:25:16.023 --> 01:25:23.797
+<v Antonio Cisternino>By the means of writing some code and
+then invoking a function which performs</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8935-1
+01:25:23.797 --> 01:25:29.578
+<v Antonio Cisternino>some code and then may invoke another
+function and so on.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8935-2
+01:25:29.578 --> 01:25:34.263
+<v Antonio Cisternino>It is known as continuation passing style
+CPX.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8982-0
+01:25:36.383 --> 01:25:42.977
+<v Antonio Cisternino>And the continuation passive style is a
+key element to really understand</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8982-1
+01:25:42.977 --> 01:25:48.396
+<v Antonio Cisternino>JavaScript promises, C# passing, etcetera.
+But at the core,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/8982-2
+01:25:48.396 --> 01:25:55.623
+<v Antonio Cisternino>basically the idea is to try to retain
+the functional structure of my function.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9026-0
+01:25:58.623 --> 01:26:03.194
+<v Antonio Cisternino>And the semantics,
+even though I want to suspend and resume</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9026-1
+01:26:03.194 --> 01:26:09.289
+<v Antonio Cisternino>and suspend again. And when I suspend,
+I don't even care about if it's the same</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9026-2
+01:26:09.289 --> 01:26:12.642
+<v Antonio Cisternino>thread.
+I mean I want to execute this here.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9026-3
+01:26:12.642 --> 01:26:16.223
+<v Antonio Cisternino>I can suspend as soon as this thing
+completes.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9063-0
+01:26:16.743 --> 01:26:22.313
+<v Antonio Cisternino>I can resume and even if a different
+friend thread takes over,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9063-1
+01:26:22.313 --> 01:26:27.530
+<v Antonio Cisternino>for me it's fine.
+It's OK because I I have only to compute</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9063-2
+01:26:27.530 --> 01:26:33.808
+<v Antonio Cisternino>the computation until the end. OK,
+this continuation passing style has</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9063-3
+01:26:33.808 --> 01:26:35.223
+<v Antonio Cisternino>become the core.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9097-0
+01:26:35.703 --> 01:26:42.160
+<v Antonio Cisternino>Of the implement of the implementation of
+asynchronous programming in programming</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9097-1
+01:26:42.160 --> 01:26:46.255
+<v Antonio Cisternino>languages.
+So on Wednesday we will start from here.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9097-2
+01:26:46.255 --> 01:26:50.823
+<v Antonio Cisternino>We will have some examples of
+continuation passing style.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9125-0
+01:26:50.823 --> 01:26:55.537
+<v Antonio Cisternino>And then we'll look into JavaScript
+promises,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9125-1
+01:26:55.537 --> 01:27:03.223
+<v Antonio Cisternino>I mean things that you may probably
+already had and we will discuss also a</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9125-2
+01:27:03.223 --> 01:27:08.143
+<v Antonio Cisternino>phase encountered and you we will also
+discuss.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9140-0
+01:27:14.183 --> 01:27:19.623
+<v Antonio Cisternino>What are the implication in terms of
+debugging?</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9182-0
+01:27:21.303 --> 01:27:24.424
+<v Antonio Cisternino>Because debugging is an essential
+activity,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9182-1
+01:27:24.424 --> 01:27:28.113
+<v Antonio Cisternino>so the ability to debug a program which
+is execute,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9182-2
+01:27:28.113 --> 01:27:33.079
+<v Antonio Cisternino>I mean a single function is executed by
+multiple threads as of course</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9182-3
+01:27:33.079 --> 01:27:37.903
+<v Antonio Cisternino>implications in terms of the semantics of
+the programming language.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9223-0
+01:27:38.183 --> 01:27:45.601
+<v Antonio Cisternino>There are a lot of lot of possible issues
+there and honestly programming language</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9223-1
+01:27:45.601 --> 01:27:53.110
+<v Antonio Cisternino>have been so good that now they preserve
+the functional programming semantics even</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9223-2
+01:27:53.110 --> 01:27:55.463
+<v Antonio Cisternino>though you are concurrent.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9266-0
+01:27:56.063 --> 01:27:59.943
+<v Antonio Cisternino>And this form of concurrency has become
+dominant.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9266-1
+01:27:59.943 --> 01:28:05.918
+<v Antonio Cisternino>Threads are still used because you may
+have to run a background task in your</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9266-2
+01:28:05.918 --> 01:28:09.875
+<v Antonio Cisternino>application and a thread is a fundamental
+element,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9266-3
+01:28:09.875 --> 01:28:15.463
+<v Antonio Cisternino>but for the core pattern of the executing
+code which requires external.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9281-0
+01:28:15.543 --> 01:28:23.177
+<v Antonio Cisternino>Resources and you have to wait for those
+resources and you don't want to be stuck</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9281-1
+01:28:23.177 --> 01:28:26.343
+<v Antonio Cisternino>in while waiting for the resource.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9322-0
+01:28:30.463 --> 01:28:36.349
+<v Antonio Cisternino>Having otherwise an active wait group.
+So I mean if you don't have suspension,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9322-1
+01:28:36.349 --> 01:28:42.459
+<v Antonio Cisternino>typically you have to wait explicitly.
+So it's an active you're using CPU cycles.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9322-2
+01:28:42.459 --> 01:28:47.303
+<v Antonio Cisternino>Is there is there is there waiting then
+the solution has become.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9350-0
+01:28:48.943 --> 01:28:56.108
+<v Antonio Cisternino>For almost everybody out there,
+asynchronous programming and then we will</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9350-1
+01:28:56.108 --> 01:29:02.983
+<v Antonio Cisternino>finish this part going back to the
+modality computations, the F sharp.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9353-0
+01:29:03.063 --> 01:29:05.703
+<v Antonio Cisternino>Async implementation that I.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9406-0
+01:29:06.943 --> 01:29:14.815
+<v Antonio Cisternino>Exposed you too early in the course to be
+able to discuss the the implementation,</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9406-1
+01:29:14.815 --> 01:29:22.687
+<v Antonio Cisternino>which basically gives you an example of
+how asynchronous combinations are in fact</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9406-2
+01:29:22.687 --> 01:29:25.663
+<v Antonio Cisternino>a form of monadic computations.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9418-0
+01:29:26.183 --> 01:29:29.766
+<v Antonio Cisternino>They are properly modeled using this
+thing.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9418-1
+01:29:29.766 --> 01:29:33.023
+<v Antonio Cisternino>So I thank you and see you on Wednesday.</v>
+
+984c45e5-9f15-4456-b5d2-470ccb2a32a4/9427-0
+01:29:46.183 --> 01:29:48.183
+<v Antonio Cisternino>you know</v>

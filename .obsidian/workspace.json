@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -225,8 +224,9 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "da11e0c78283f36d",
+  "active": "8ecbeedd8669d71e",
   "lastOpenFiles": [
+    "IMMAGINI/Pasted image 20251211213406.png",
     "Untitled.base",
     "MAGISTRALE/ADVANCED PROGRAMMING.md",
     "MAGISTRALE/MAGISTRALE INFO.md",

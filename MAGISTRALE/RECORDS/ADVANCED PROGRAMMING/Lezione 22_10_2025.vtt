@@ -1,0 +1,4752 @@
+WEBVTT
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5-0
+00:00:05.311 --> 00:00:05.471
+<v Antonio Cisternino>No.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6-0
+00:00:06.271 --> 00:00:06.511
+<v Antonio Cisternino>No.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9-0
+00:00:15.791 --> 00:00:16.751
+<v Antonio Cisternino>OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10-0
+00:00:19.751 --> 00:00:19.871
+<v Antonio Cisternino>So.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/12-0
+00:00:22.431 --> 00:00:24.751
+<v Antonio Cisternino>Oops, I have to share the screen.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/13-0
+00:00:27.471 --> 00:00:28.871
+<v Antonio Cisternino>Screen sharing.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/19-0
+00:00:45.031 --> 00:00:46.071
+<v Antonio Cisternino>So um.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/21-0
+00:00:49.791 --> 00:00:49.831
+<v Antonio Cisternino>Uh.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/28-0
+00:00:55.911 --> 00:01:00.104
+<v Antonio Cisternino>Sorry for the little delay,
+but it was raining.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/28-1
+00:01:00.104 --> 00:01:06.829
+<v Antonio Cisternino>So did you have some spend some time in
+trying to figure out what I told you</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/28-2
+00:01:06.829 --> 00:01:08.751
+<v Antonio Cisternino>during the last class?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/29-0
+00:01:10.951 --> 00:01:12.431
+<v Antonio Cisternino>I mean that.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/31-0
+00:01:13.831 --> 00:01:16.871
+<v Antonio Cisternino>Comments or questions or doubts?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/67-0
+00:01:37.672 --> 00:01:44.496
+<v Antonio Cisternino>So your colleague says to me promises
+from JavaScript were a good way to sort</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/67-1
+00:01:44.496 --> 00:01:50.795
+<v Antonio Cisternino>of figure out is the opposite.
+I mean promises are a particular kind of</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/67-2
+00:01:50.795 --> 00:01:52.632
+<v Antonio Cisternino>monad like the async.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/72-0
+00:01:52.672 --> 00:01:59.032
+<v Antonio Cisternino>In a sharp, so historically the.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/116-0
+00:02:00.432 --> 00:02:07.812
+<v Antonio Cisternino>Monads started mostly to preserve pure
+functional PROGRAMMING in a work with</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/116-1
+00:02:07.812 --> 00:02:12.508
+<v Antonio Cisternino>state,
+because basically the monad allows you to</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/116-2
+00:02:12.508 --> 00:02:19.792
+<v Antonio Cisternino>hide the state inside the monad and then
+have a a pure functional approach.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/143-0
+00:02:20.112 --> 00:02:25.986
+<v Antonio Cisternino>That is simply a sequence of function
+application of the bind to transform an</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/143-1
+00:02:25.986 --> 00:02:30.127
+<v Antonio Cisternino>hidden state.
+And in this way basically you hide under</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/143-2
+00:02:30.127 --> 00:02:36.152
+<v Antonio Cisternino>the carpet the state and this applies to
+a lot of things including concurrency.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/179-0
+00:02:36.272 --> 00:02:39.337
+<v Antonio Cisternino>So yes,
+you're right in the sense that</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/179-1
+00:02:39.337 --> 00:02:44.288
+<v Antonio Cisternino>asynchronous programming.
+So if you're familiar with promises,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/179-2
+00:02:44.288 --> 00:02:48.061
+<v Antonio Cisternino>it's OK,
+but it's important that you understand</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/179-3
+00:02:48.061 --> 00:02:51.912
+<v Antonio Cisternino>that it's an instance of a more general
+pattern.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/212-0
+00:02:53.432 --> 00:02:58.532
+<v Antonio Cisternino>Because if you recognize this,
+then suddenly the probability</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/212-1
+00:02:58.532 --> 00:03:02.212
+<v Antonio Cisternino>distributions,
+the synchronous programming,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/212-2
+00:03:02.212 --> 00:03:06.810
+<v Antonio Cisternino>the sequences,
+and many others are simply instances of</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/212-3
+00:03:06.810 --> 00:03:08.232
+<v Antonio Cisternino>the same pattern.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/242-0
+00:03:09.192 --> 00:03:16.182
+<v Antonio Cisternino>And the pattern is I have a value I build
+around a container for this value.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/242-1
+00:03:16.182 --> 00:03:23.536
+<v Antonio Cisternino>I define basically an algebra between the
+containers and at each step I obtain I</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/242-2
+00:03:23.536 --> 00:03:25.352
+<v Antonio Cisternino>get a new container.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/269-0
+00:03:26.672 --> 00:03:33.381
+<v Antonio Cisternino>With the same type of content,
+with a different type of content,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/269-1
+00:03:33.381 --> 00:03:38.645
+<v Antonio Cisternino>and in promises,
+what you learned is the so-called</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/269-2
+00:03:38.645 --> 00:03:41.432
+<v Antonio Cisternino>continuation passing style.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/320-0
+00:03:46.992 --> 00:03:53.605
+<v Antonio Cisternino>At some point we will dedicate a class to
+asynchronous PROGRAMMING from a language,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/320-1
+00:03:53.605 --> 00:03:58.644
+<v Antonio Cisternino>not from concurrency.
+From concurrency there are other courses.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/320-2
+00:03:58.644 --> 00:04:03.683
+<v Antonio Cisternino>But what does it mean to have
+asynchronous PROGRAMMING inside a</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/320-3
+00:04:03.683 --> 00:04:06.832
+<v Antonio Cisternino>PROGRAMMING language? Because basically.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/355-0
+00:04:08.432 --> 00:04:15.840
+<v Antonio Cisternino>Almost all the modern asynchronous
+constructs that we have in PROGRAMMING</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/355-1
+00:04:15.840 --> 00:04:23.448
+<v Antonio Cisternino>languages promises is 1, async in C#,
+async in F# and many others basically</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/355-2
+00:04:23.448 --> 00:04:27.352
+<v Antonio Cisternino>introduce a continuation passive style.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/383-0
+00:04:28.112 --> 00:04:34.215
+<v Antonio Cisternino>So basically you have the perception
+there is a lot of the sugaring and as you</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/383-1
+00:04:34.215 --> 00:04:39.236
+<v Antonio Cisternino>can see the sugaring is keeping popping
+up in our conversations.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/383-2
+00:04:39.236 --> 00:04:42.712
+<v Antonio Cisternino>Basically you have the impression to
+define.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/414-0
+00:04:43.952 --> 00:04:49.311
+<v Antonio Cisternino>Atomic computation and like a very
+traditional function,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/414-1
+00:04:49.311 --> 00:04:56.926
+<v Antonio Cisternino>but in fact this will be compiled as a
+sequence of computation with a state that</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/414-2
+00:04:56.926 --> 00:04:58.712
+<v Antonio Cisternino>is hiddenly passed.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/451-0
+00:05:00.192 --> 00:05:05.158
+<v Antonio Cisternino>So that the formal semantics hopefully
+will remain true,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/451-1
+00:05:05.158 --> 00:05:12.127
+<v Antonio Cisternino>but at the same time you are generating
+under hood the number of functions that</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/451-2
+00:05:12.127 --> 00:05:16.832
+<v Antonio Cisternino>will be called at the end of the previous
+invocation.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/461-0
+00:05:17.472 --> 00:05:21.152
+<v Antonio Cisternino>And that that is a style of PROGRAMMING
+that is traditionally known as</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/461-1
+00:05:21.152 --> 00:05:22.552
+<v Antonio Cisternino>continuation passing style.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/509-0
+00:05:24.432 --> 00:05:30.828
+<v Antonio Cisternino>In in the past, especially in JavaScript,
+the use was to be explicit.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/509-1
+00:05:30.828 --> 00:05:37.316
+<v Antonio Cisternino>So basically you start defining.
+It was typically in Ajax programming.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/509-2
+00:05:37.316 --> 00:05:43.346
+<v Antonio Cisternino>You you define your code,
+then you you make the Ajax call and you</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/509-3
+00:05:43.346 --> 00:05:43.712
+<v Antonio Cisternino>set.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/532-0
+00:05:44.272 --> 00:05:47.836
+<v Antonio Cisternino>The function to be invoked upon
+completion,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/532-1
+00:05:47.836 --> 00:05:53.911
+<v Antonio Cisternino>and that is basically the same thing.
+So the promise gives you just a more</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/532-2
+00:05:53.911 --> 00:05:57.232
+<v Antonio Cisternino>cleaner way to do exactly the same thing.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/568-0
+00:05:58.112 --> 00:06:03.342
+<v Antonio Cisternino>Right. And by the way,
+continuation passing style is a form of</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/568-1
+00:06:03.342 --> 00:06:10.150
+<v Antonio Cisternino>functional PROGRAMMING and now has become
+popular because most of the PROGRAMMING</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/568-2
+00:06:10.150 --> 00:06:12.392
+<v Antonio Cisternino>languages we use today are.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/571-0
+00:06:14.272 --> 00:06:17.952
+<v Antonio Cisternino>Object oriented, imperative, functional.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/573-0
+00:06:18.912 --> 00:06:19.792
+<v Antonio Cisternino>All together.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/590-0
+00:06:24.952 --> 00:06:33.394
+<v Antonio Cisternino>OK,
+so today and tomorrow we will introduce</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/590-1
+00:06:33.394 --> 00:06:36.272
+<v Antonio Cisternino>something that.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/614-0
+00:06:38.832 --> 00:06:47.071
+<v Antonio Cisternino>Is at the same time a new chapter,
+but also it will also be a sort of</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/614-1
+00:06:47.071 --> 00:06:53.192
+<v Antonio Cisternino>exercise on functional PROGRAMMING
+because F sharp.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/623-0
+00:06:54.832 --> 00:06:58.032
+<v Antonio Cisternino>As uh some uh feature that uh is called
+quotations.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/657-0
+00:07:01.032 --> 00:07:08.312
+<v Antonio Cisternino>Which is a feature of F sharp,
+and so in this respect is a very specific</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/657-1
+00:07:08.312 --> 00:07:13.099
+<v Antonio Cisternino>feature,
+but basically allows me to introduce a</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/657-2
+00:07:13.099 --> 00:07:15.592
+<v Antonio Cisternino>much more general notion.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/661-0
+00:07:16.192 --> 00:07:20.192
+<v Antonio Cisternino>Which is the the meta programming, OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/662-0
+00:07:22.072 --> 00:07:22.152
+<v Antonio Cisternino>Um.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/664-0
+00:07:25.192 --> 00:07:25.512
+<v Antonio Cisternino>Um.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/672-0
+00:07:27.312 --> 00:07:31.992
+<v Antonio Cisternino>What it is meta programming?
+Meta PROGRAMMING is uh um.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/686-0
+00:07:33.152 --> 00:07:38.292
+<v Antonio Cisternino>A very simple idea,
+a program which generates or and or</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/686-1
+00:07:38.292 --> 00:07:40.312
+<v Antonio Cisternino>manipulates a program.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/707-0
+00:07:41.712 --> 00:07:47.729
+<v Antonio Cisternino>OK. Or and or reason about the program.
+OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/707-1
+00:07:47.729 --> 00:07:56.072
+<v Antonio Cisternino>so it's meta because basically the
+program reason typically.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/709-0
+00:07:57.432 --> 00:07:58.552
+<v Antonio Cisternino>About itself.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/743-0
+00:08:02.552 --> 00:08:08.859
+<v Antonio Cisternino>So a compiler is technically not a full
+meta program because it's a program that</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/743-1
+00:08:08.859 --> 00:08:13.142
+<v Antonio Cisternino>generates another program given a source
+coding input.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/743-2
+00:08:13.142 --> 00:08:15.712
+<v Antonio Cisternino>So it's true that it manipulates.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/745-0
+00:08:16.032 --> 00:08:16.872
+<v Antonio Cisternino>The program.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/776-0
+00:08:18.272 --> 00:08:24.795
+<v Antonio Cisternino>It's true that there's a lot of similar
+things and the tools are the same,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/776-1
+00:08:24.795 --> 00:08:29.927
+<v Antonio Cisternino>but strictly speaking,
+meta PROGRAMMING is mostly intended</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/776-2
+00:08:29.927 --> 00:08:33.232
+<v Antonio Cisternino>programs that reason about themselves.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/799-0
+00:08:34.672 --> 00:08:41.137
+<v Antonio Cisternino>Or modify their own behaviour at runtime.
+OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/799-1
+00:08:41.137 --> 00:08:49.992
+<v Antonio Cisternino>so there are several ways of performing
+metaprogramming. It's.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/831-0
+00:08:53.632 --> 00:09:01.305
+<v Antonio Cisternino>It's counterintuitive, but it requires.
+So in many ways metaprogramming is one of</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/831-1
+00:09:01.305 --> 00:09:07.481
+<v Antonio Cisternino>the most important tools for - ADVANCED
+programming, I would say,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/831-2
+00:09:07.481 --> 00:09:09.072
+<v Antonio Cisternino>because both for.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/849-0
+00:09:09.152 --> 00:09:17.323
+<v Antonio Cisternino>An - ADVANCED programmer that write the
+code and also an - ADVANCED programmer</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/849-1
+00:09:17.323 --> 00:09:19.392
+<v Antonio Cisternino>which read the code.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/859-0
+00:09:20.912 --> 00:09:27.752
+<v Antonio Cisternino>Give you an example before digging into
+more code if you go.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/862-0
+00:09:29.232 --> 00:09:30.392
+<v Antonio Cisternino>In the.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/868-0
+00:09:31.752 --> 00:09:34.512
+<v Antonio Cisternino>A leisure record base.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/876-0
+00:09:39.112 --> 00:09:44.512
+<v Antonio Cisternino>Has been developed using.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/888-0
+00:09:48.192 --> 00:09:56.072
+<v Antonio Cisternino>A standard frameworkasp.
+net so it's like Java or whatever.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/897-0
+00:09:59.992 --> 00:10:03.352
+<v Antonio Cisternino>And it's interesting to look at the
+startup code.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/904-0
+00:10:06.472 --> 00:10:08.712
+<v Antonio Cisternino>Which requires some zoom.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/906-0
+00:10:09.872 --> 00:10:09.952
+<v Antonio Cisternino>Um.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/910-0
+00:10:13.312 --> 00:10:15.552
+<v Antonio Cisternino>Which is interesting because.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/918-0
+00:10:18.112 --> 00:10:21.855
+<v Antonio Cisternino>Uh,
+you basically the the there is no main</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/918-1
+00:10:21.855 --> 00:10:22.552
+<v Antonio Cisternino>program.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/928-0
+00:10:25.512 --> 00:10:31.192
+<v Antonio Cisternino>Which is not entirely correct if I
+remember well.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/934-0
+00:10:33.792 --> 00:10:34.952
+<v Antonio Cisternino>So there is a program.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/941-0
+00:10:36.432 --> 00:10:39.472
+<v Antonio Cisternino>There there is a program.
+The program has uh.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/944-0
+00:10:40.752 --> 00:10:43.672
+<v Antonio Cisternino>Um, a main method then?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/948-0
+00:10:45.072 --> 00:10:46.152
+<v Antonio Cisternino>The main method.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/949-0
+00:10:48.312 --> 00:10:48.352
+<v Antonio Cisternino>Uh.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/956-0
+00:10:50.472 --> 00:10:52.752
+<v Antonio Cisternino>The main method that simply says.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/961-0
+00:10:54.952 --> 00:10:58.632
+<v Antonio Cisternino>Create create a house builder.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/974-0
+00:11:00.272 --> 00:11:08.352
+<v Antonio Cisternino>Given the arguments, build and run.
+That's it. OK, so.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/989-0
+00:11:08.992 --> 00:11:12.872
+<v Antonio Cisternino>You say OK,
+where is this create host builder?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/989-1
+00:11:12.872 --> 00:11:16.752
+<v Antonio Cisternino>There we are.
+So the create host builder is a.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1018-0
+00:11:18.272 --> 00:11:22.947
+<v Antonio Cisternino>It's scaffolded,
+which means that basically there is a</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1018-1
+00:11:22.947 --> 00:11:29.407
+<v Antonio Cisternino>code generator that generates the
+template that typically everybody use and</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1018-2
+00:11:29.407 --> 00:11:32.552
+<v Antonio Cisternino>many of the asp.net developers never.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1023-0
+00:11:33.472 --> 00:11:36.432
+<v Antonio Cisternino>Look into that code, nevertheless.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1026-0
+00:11:36.472 --> 00:11:40.672
+<v Antonio Cisternino>You have a.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1054-0
+00:11:42.152 --> 00:11:48.158
+<v Antonio Cisternino>Static class host.
+So you create the default builder,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1054-1
+00:11:48.158 --> 00:11:54.832
+<v Antonio Cisternino>you configure the logging,
+you configure web host defaults.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1058-0
+00:11:56.232 --> 00:11:58.992
+<v Antonio Cisternino>And web user user setup setup.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1094-0
+00:12:00.952 --> 00:12:06.983
+<v Antonio Cisternino>Now even and here we're not even touching
+the meta programming part.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1094-1
+00:12:06.983 --> 00:12:12.227
+<v Antonio Cisternino>I mean we here there are a lot of things
+happening. I mean,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1094-2
+00:12:12.227 --> 00:12:18.346
+<v Antonio Cisternino>so this is a static method.
+There are a number of static classes with</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1094-3
+00:12:18.346 --> 00:12:19.832
+<v Antonio Cisternino>methods that are.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1100-0
+00:12:22.032 --> 00:12:25.352
+<v Antonio Cisternino>Invoked and then there is a.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1101-0
+00:12:27.392 --> 00:12:27.432
+<v Antonio Cisternino>Uh.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1142-0
+00:12:29.472 --> 00:12:35.540
+<v Antonio Cisternino>Function that is passed in the to the
+configure web host defaults.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1142-1
+00:12:35.540 --> 00:12:43.057
+<v Antonio Cisternino>So a little bit of functional programming
+and the function expected by this method</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1142-2
+00:12:43.057 --> 00:12:48.672
+<v Antonio Cisternino>requires a function that given an object
+of type web builder.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1190-0
+00:12:50.232 --> 00:12:55.523
+<v Antonio Cisternino>You do something with that web builder.
+You don't know when this function will be</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1190-1
+00:12:55.523 --> 00:12:58.556
+<v Antonio Cisternino>invoked.
+You have no idea on how the framework</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1190-2
+00:12:58.556 --> 00:13:02.363
+<v Antonio Cisternino>will invoke this function,
+but you know that at some point</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1190-3
+00:13:02.363 --> 00:13:07.460
+<v Antonio Cisternino>eventually you will be invoked and when
+you will be invoked and you have a web</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1190-4
+00:13:07.460 --> 00:13:09.912
+<v Antonio Cisternino>builder object that has been prepared.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1191-0
+00:13:10.032 --> 00:13:10.432
+<v Antonio Cisternino>For you.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1227-0
+00:13:11.592 --> 00:13:18.454
+<v Antonio Cisternino>You invoke the you start top and you pass
+a type and technically that is a generic</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1227-1
+00:13:18.454 --> 00:13:21.927
+<v Antonio Cisternino>method.
+Andrea next week we'll talk about</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1227-2
+00:13:21.927 --> 00:13:25.564
+<v Antonio Cisternino>parametric poly several type of
+polymorphy.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1227-3
+00:13:25.564 --> 00:13:31.352
+<v Antonio Cisternino>So you will learn a little bit bit more
+about that, but basically is.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1256-0
+00:13:32.032 --> 00:13:40.231
+<v Antonio Cisternino>Is a function with a type parameter like
+TK that we we introduce it with F sharp</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1256-1
+00:13:40.231 --> 00:13:46.912
+<v Antonio Cisternino>or ML or Askell etcetera and and and
+start up is a class of mine.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1267-0
+00:13:47.512 --> 00:13:55.512
+<v Antonio Cisternino>OK, so uh, in fact that when uh,
+I will be invoked eventually.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1283-0
+00:13:58.712 --> 00:14:07.299
+<v Antonio Cisternino>The startup class will be used
+instantiated and used by that piece of</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1283-1
+00:14:07.299 --> 00:14:07.912
+<v Antonio Cisternino>code.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1316-0
+00:14:09.672 --> 00:14:15.736
+<v Antonio Cisternino>And this is a a class of mine.
+I will receive a configuration interface</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1316-1
+00:14:15.736 --> 00:14:19.947
+<v Antonio Cisternino>object,
+an environment with the web web host that</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1316-2
+00:14:19.947 --> 00:14:25.927
+<v Antonio Cisternino>I can do something and and then
+eventually someone because the startup</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1316-3
+00:14:25.927 --> 00:14:26.432
+<v Antonio Cisternino>class.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1317-0
+00:14:26.992 --> 00:14:27.312
+<v Antonio Cisternino>Uh uh.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1323-0
+00:14:29.712 --> 00:14:32.712
+<v Antonio Cisternino>Osess a number of methods.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1326-0
+00:14:35.352 --> 00:14:36.912
+<v Antonio Cisternino>Interesting.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1339-0
+00:14:39.672 --> 00:14:44.650
+<v Antonio Cisternino>Start up is a class.
+Do you think that this class inherits</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1339-1
+00:14:44.650 --> 00:14:45.072
+<v Antonio Cisternino>from?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1361-0
+00:14:51.192 --> 00:14:56.030
+<v Antonio Cisternino>Object with C#.
+C# is very similar to in many ways to</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1361-1
+00:14:56.030 --> 00:14:57.912
+<v Antonio Cisternino>Java, so setup is up.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1367-0
+00:14:58.752 --> 00:15:01.712
+<v Antonio Cisternino>Do you see any interface implementation?
+No.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1391-0
+00:15:02.952 --> 00:15:09.352
+<v Antonio Cisternino>So why someone tell me this method gets
+called by the runtime?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1391-1
+00:15:09.352 --> 00:15:14.432
+<v Antonio Cisternino>Use this method to add services to the
+container.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1393-0
+00:15:17.752 --> 00:15:18.952
+<v Antonio Cisternino>Not possible.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1407-0
+00:15:27.632 --> 00:15:33.352
+<v Antonio Cisternino>Not through the interface pattern that
+you're familiar with.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1418-0
+00:15:34.472 --> 00:15:43.352
+<v Antonio Cisternino>It is possible because of a function that
+has become.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1423-0
+00:15:44.392 --> 00:15:48.032
+<v Antonio Cisternino>Really, really important.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1431-0
+00:15:48.872 --> 00:15:54.632
+<v Antonio Cisternino>That is called reflection. OK, so.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1439-0
+00:15:55.912 --> 00:16:01.392
+<v Antonio Cisternino>The reflection is the ability of the
+program.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1444-0
+00:16:02.872 --> 00:16:05.872
+<v Antonio Cisternino>Of reasoning about itself.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1480-0
+00:16:07.192 --> 00:16:12.412
+<v Antonio Cisternino>So reflection typically allows you to,
+I don't know,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1480-1
+00:16:12.412 --> 00:16:19.603
+<v Antonio Cisternino>given an object to get a class which
+represent the class of that object.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1480-2
+00:16:19.603 --> 00:16:22.952
+<v Antonio Cisternino>To that class you can ask a class.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1513-0
+00:16:23.192 --> 00:16:29.737
+<v Antonio Cisternino>Do you? What are your methods?
+What are the decorations of your methods?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1513-1
+00:16:29.737 --> 00:16:35.923
+<v Antonio Cisternino>What is the body ideally of of your
+method? OK, what are the fields?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1513-2
+00:16:35.923 --> 00:16:38.792
+<v Antonio Cisternino>And that is the reflection part.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1528-0
+00:16:40.952 --> 00:16:46.255
+<v Antonio Cisternino>Of the of a META program,
+inspecting the state of the program</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1528-1
+00:16:46.255 --> 00:16:48.992
+<v Antonio Cisternino>itself, not just the values, OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1555-0
+00:16:51.232 --> 00:16:59.710
+<v Antonio Cisternino>And then there is also the intersection
+part which is set invoke. OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1555-1
+00:16:59.710 --> 00:17:04.312
+<v Antonio Cisternino>so you can dynamically invoke methods.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1587-0
+00:17:05.872 --> 00:17:13.933
+<v Antonio Cisternino>By asking support of the runtime.
+So of course reflection and intersection</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1587-1
+00:17:13.933 --> 00:17:20.705
+<v Antonio Cisternino>requires some runtime support to be
+supported by the language.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1587-2
+00:17:20.705 --> 00:17:23.392
+<v Antonio Cisternino>So C++ has no reflection.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1614-0
+00:17:24.992 --> 00:17:28.884
+<v Antonio Cisternino>At runtime,
+if you have a appointed to an object,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1614-1
+00:17:28.884 --> 00:17:35.268
+<v Antonio Cisternino>there's no way to get the class of that
+object and understand how that particular</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1614-2
+00:17:35.268 --> 00:17:39.472
+<v Antonio Cisternino>class is possible. Java was the first one.
+Oh, sorry.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1631-0
+00:17:41.192 --> 00:17:52.672
+<v Antonio Cisternino>It's it's not it's been the the the
+system that made popular reflection OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1662-0
+00:17:54.072 --> 00:17:59.258
+<v Antonio Cisternino>Reflection is available,
+I mean is available in many forms since</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1662-1
+00:17:59.258 --> 00:18:03.726
+<v Antonio Cisternino>Lisp, since the 60s and the 70s,
+so it's not so so new.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1662-2
+00:18:03.726 --> 00:18:09.152
+<v Antonio Cisternino>The reflection that we are used to has
+been defined mostly by Java.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1664-0
+00:18:09.952 --> 00:18:11.712
+<v Antonio Cisternino>And um.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1704-0
+00:18:15.992 --> 00:18:21.446
+<v Antonio Cisternino>So this method gets called because
+through reflection the system looks for</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1704-1
+00:18:21.446 --> 00:18:24.719
+<v Antonio Cisternino>the methods in the startup class and say
+OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1704-2
+00:18:24.719 --> 00:18:30.101
+<v Antonio Cisternino>there is the configuration service
+configure service with this signature.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1704-3
+00:18:30.101 --> 00:18:31.192
+<v Antonio Cisternino>Yes, invoke it.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1712-0
+00:18:32.272 --> 00:18:35.796
+<v Antonio Cisternino>OK,
+of course you're paying runtime type</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1712-1
+00:18:35.796 --> 00:18:36.312
+<v Antonio Cisternino>costs.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1768-0
+00:18:37.032 --> 00:18:42.121
+<v Antonio Cisternino>But this is only once you can afford it.
+It's not that expensive. OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1768-1
+00:18:42.121 --> 00:18:47.864
+<v Antonio Cisternino>it's the cost that an interpreter will
+sustain when you call a function inside</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1768-2
+00:18:47.864 --> 00:18:52.081
+<v Antonio Cisternino>an interpreter.
+Because an interpreter we discussed about</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1768-3
+00:18:52.081 --> 00:18:55.643
+<v Antonio Cisternino>interpret,
+but it's fairly obvious that when the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1768-4
+00:18:55.643 --> 00:18:56.952
+<v Antonio Cisternino>interpreter reads.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1806-0
+00:18:57.032 --> 00:19:01.306
+<v Antonio Cisternino>The function definition.
+It has an internal table with all the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1806-1
+00:19:01.306 --> 00:19:04.494
+<v Antonio Cisternino>functions,
+and when you see the function code,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1806-2
+00:19:04.494 --> 00:19:09.582
+<v Antonio Cisternino>you go and look up in that in that table
+and invoke the the the an interp.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1806-3
+00:19:09.582 --> 00:19:13.992
+<v Antonio Cisternino>You start the interpretation of that
+function. OK, so basically.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1839-0
+00:19:14.072 --> 00:19:21.902
+<v Antonio Cisternino>This means that at runtime you will need
+some information in order to be able to</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1839-1
+00:19:21.902 --> 00:19:27.799
+<v Antonio Cisternino>execute this code,
+but it is expensive if it's if you invoke</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1839-2
+00:19:27.799 --> 00:19:31.472
+<v Antonio Cisternino>this function multiple time in a loop.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1872-0
+00:19:31.832 --> 00:19:38.415
+<v Antonio Cisternino>But once in the execution of a program is
+basically neglecting all the cost of</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1872-1
+00:19:38.415 --> 00:19:43.582
+<v Antonio Cisternino>browsing and invoking. OK,
+because then of course the runtime</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1872-2
+00:19:43.582 --> 00:19:46.832
+<v Antonio Cisternino>optimize the the thing, so it assemble.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1926-0
+00:19:48.712 --> 00:19:54.792
+<v Antonio Cisternino>The activation record that we will
+explore later in the course and activate</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1926-1
+00:19:54.792 --> 00:19:59.032
+<v Antonio Cisternino>the function.
+So the execution function is like it's</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1926-2
+00:19:59.032 --> 00:20:02.792
+<v Antonio Cisternino>compiled.
+So it's just the cost of finding and</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1926-3
+00:20:02.792 --> 00:20:08.072
+<v Antonio Cisternino>invoking the function that you pay at
+runtime. OK during the 90s.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1960-0
+00:20:08.552 --> 00:20:15.192
+<v Antonio Cisternino>Everybody was scared about this because
+the PCs were not that efficient. Nowadays,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1960-1
+00:20:15.192 --> 00:20:19.192
+<v Antonio Cisternino>honestly,
+even a Raspberry Pi is efficient enough</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1960-2
+00:20:19.192 --> 00:20:25.112
+<v Antonio Cisternino>to do this thing without basically not
+noticing the difference with other</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1960-3
+00:20:25.112 --> 00:20:26.792
+<v Antonio Cisternino>different approaches.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1966-0
+00:20:28.352 --> 00:20:32.432
+<v Antonio Cisternino>And and so as I hope you see.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1994-0
+00:20:34.472 --> 00:20:40.780
+<v Antonio Cisternino>In in in this,
+this is the modern way of programming.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/1994-1
+00:20:40.780 --> 00:20:49.192
+<v Antonio Cisternino>Someone will call you at some point you.
+There's no way to go and look.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2025-0
+00:20:50.072 --> 00:20:56.528
+<v Antonio Cisternino>For a main and then you start follows the
+program definition from the main method</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2025-1
+00:20:56.528 --> 00:21:01.330
+<v Antonio Cisternino>of function because eventually you will
+invoke some library.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2025-2
+00:21:01.330 --> 00:21:04.952
+<v Antonio Cisternino>This library will say OK,
+I take care of you.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2056-0
+00:21:06.552 --> 00:21:14.119
+<v Antonio Cisternino>So be prepared that some eventually I
+will call you back to to do something. OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2056-1
+00:21:14.119 --> 00:21:21.592
+<v Antonio Cisternino>This has become very popular in the 90s
+thanks to UI graphical programming. OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2100-0
+00:21:21.992 --> 00:21:28.787
+<v Antonio Cisternino>Event driven programming was the origin
+of all this because basically the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2100-1
+00:21:28.787 --> 00:21:35.399
+<v Antonio Cisternino>windowing system has the events,
+tracks the interrupts of the mouse and</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2100-2
+00:21:35.399 --> 00:21:40.358
+<v Antonio Cisternino>the keyboard.
+It has the motion of the current window</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2100-3
+00:21:40.358 --> 00:21:41.552
+<v Antonio Cisternino>that has the.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2144-0
+00:21:41.592 --> 00:21:47.327
+<v Antonio Cisternino>The focus we are used to and so if I type
+a keyboard, a keyboard,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2144-1
+00:21:47.327 --> 00:21:51.325
+<v Antonio Cisternino>it's not the program that reads the
+keyboard,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2144-2
+00:21:51.325 --> 00:21:55.409
+<v Antonio Cisternino>but the windowing system detects the
+keyboard,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2144-3
+00:21:55.409 --> 00:22:01.232
+<v Antonio Cisternino>looks to the current windows from the
+windows, look to the thread.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2183-0
+00:22:01.432 --> 00:22:06.283
+<v Antonio Cisternino>And the process and insert a message in a
+standard queue,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2183-1
+00:22:06.283 --> 00:22:10.883
+<v Antonio Cisternino>which is the event queue that belongs to
+that process.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2183-2
+00:22:10.883 --> 00:22:17.574
+<v Antonio Cisternino>The process does a very simple loop,
+next event, process the event, next event.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2183-3
+00:22:17.574 --> 00:22:18.912
+<v Antonio Cisternino>So it basically.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2196-0
+00:22:19.232 --> 00:22:23.999
+<v Antonio Cisternino>Reads the events from the queue and
+process the event is basically a big</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2196-1
+00:22:23.999 --> 00:22:25.632
+<v Antonio Cisternino>switch that invokes your.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2243-0
+00:22:27.512 --> 00:22:33.102
+<v Antonio Cisternino>Depressed method. OK,
+so that is basically the origin of all</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2243-1
+00:22:33.102 --> 00:22:39.609
+<v Antonio Cisternino>this event driven programming.
+Event driven programming basically is a</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2243-2
+00:22:39.609 --> 00:22:46.207
+<v Antonio Cisternino>reactive form of programming.
+So you react basically to external events</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2243-3
+00:22:46.207 --> 00:22:47.032
+<v Antonio Cisternino>in graph.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2283-0
+00:22:47.032 --> 00:22:51.843
+<v Antonio Cisternino>Programming typically are bound to time
+and devices,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2283-1
+00:22:51.843 --> 00:22:56.927
+<v Antonio Cisternino>and then once you get the control,
+you perform actions.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2283-2
+00:22:56.927 --> 00:23:04.280
+<v Antonio Cisternino>Typically you change the state of your
+interface or you render the current frame</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2283-3
+00:23:04.280 --> 00:23:04.552
+<v Antonio Cisternino>of.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2290-0
+00:23:07.032 --> 00:23:12.912
+<v Antonio Cisternino>Component that is in a very few words,
+the graphical programming.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2338-0
+00:23:14.392 --> 00:23:18.165
+<v Antonio Cisternino>At some point we found out that that is
+not that bad.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2338-1
+00:23:18.165 --> 00:23:22.777
+<v Antonio Cisternino>It applies to a lot of other environments,
+not just the graphics,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2338-2
+00:23:22.777 --> 00:23:25.922
+<v Antonio Cisternino>for instance to to asynchronous
+programming,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2338-3
+00:23:25.922 --> 00:23:29.346
+<v Antonio Cisternino>because when you start an asynchronous
+activity,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2338-4
+00:23:29.346 --> 00:23:31.792
+<v Antonio Cisternino>eventually you want to receive the.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2369-0
+00:23:32.152 --> 00:23:37.912
+<v Antonio Cisternino>Event activity completed.
+So we started using the callback.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2369-1
+00:23:37.912 --> 00:23:45.496
+<v Antonio Cisternino>Callback is the standard name for the
+function that will be invoked at the end</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2369-2
+00:23:45.496 --> 00:23:47.032
+<v Antonio Cisternino>of some process.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2404-0
+00:23:47.432 --> 00:23:53.276
+<v Antonio Cisternino>You will be called back and you will
+receive some data that describes the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2404-1
+00:23:53.276 --> 00:23:57.935
+<v Antonio Cisternino>partic in graphics is the data which
+represents the event,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2404-2
+00:23:57.935 --> 00:24:02.752
+<v Antonio Cisternino>so the key press the the position of the
+mouse or something.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2436-0
+00:24:03.032 --> 00:24:09.325
+<v Antonio Cisternino>In in in asynchronous programming,
+it will contain an object that you will</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2436-1
+00:24:09.325 --> 00:24:15.619
+<v Antonio Cisternino>get an object with the result of a
+computation and eventual value produced</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2436-2
+00:24:15.619 --> 00:24:18.472
+<v Antonio Cisternino>by the computation. OK, same idea.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2476-0
+00:24:19.952 --> 00:24:26.372
+<v Antonio Cisternino>And and once this idea started becoming
+popular in the during the 90s,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2476-1
+00:24:26.372 --> 00:24:32.250
+<v Antonio Cisternino>it started permeating all the programming
+in all the frameworks.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2476-2
+00:24:32.250 --> 00:24:36.952
+<v Antonio Cisternino>So most of the programming frameworks we
+use today.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2516-0
+00:24:37.192 --> 00:24:43.146
+<v Antonio Cisternino>Are reactive frameworks in which you
+through thanks to the functional</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2516-1
+00:24:43.146 --> 00:24:48.761
+<v Antonio Cisternino>programming part that has been
+implemented by all the programming</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2516-2
+00:24:48.761 --> 00:24:55.056
+<v Antonio Cisternino>language by now or most of them.
+Basically you register your own function</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2516-3
+00:24:55.056 --> 00:24:56.672
+<v Antonio Cisternino>as a callback some.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2562-0
+00:24:58.712 --> 00:25:05.335
+<v Antonio Cisternino>More and more bigger runtime do a lot of
+work for you. In case of graphics,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2562-1
+00:25:05.335 --> 00:25:10.650
+<v Antonio Cisternino>it was to manage the frame buffer,
+to manage the interrupts,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2562-2
+00:25:10.650 --> 00:25:15.705
+<v Antonio Cisternino>etcetera in a web application,
+the connections, etcetera,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2562-3
+00:25:15.705 --> 00:25:18.232
+<v Antonio Cisternino>and you will be invoked only.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2595-0
+00:25:18.312 --> 00:25:24.500
+<v Antonio Cisternino>When your intervention is needed.
+So it's a super nice pattern to reuse</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2595-1
+00:25:24.500 --> 00:25:31.203
+<v Antonio Cisternino>large code bases to the point in which it
+becomes difficult to understand the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2595-2
+00:25:31.203 --> 00:25:35.672
+<v Antonio Cisternino>execution of your program because you
+have no clue.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2617-0
+00:25:35.752 --> 00:25:42.345
+<v Antonio Cisternino>Of what happens before the invocation and
+after the invocation,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2617-1
+00:25:42.345 --> 00:25:50.792
+<v Antonio Cisternino>not only in graphics and in many other
+and in web you you're not all you give up.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2621-0
+00:25:51.472 --> 00:25:52.792
+<v Antonio Cisternino>To the sequence.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2658-0
+00:25:54.312 --> 00:25:58.555
+<v Antonio Cisternino>In imperative programming,
+first there is a statement,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2658-1
+00:25:58.555 --> 00:26:04.186
+<v Antonio Cisternino>then there is another statement,
+then another one, then another one. OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2658-2
+00:26:04.186 --> 00:26:09.432
+<v Antonio Cisternino>you have control of what come first and
+what comes second. You can.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2667-0
+00:26:09.512 --> 00:26:16.192
+<v Antonio Cisternino>Prove that your variable will contain a
+given value because of that.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2675-0
+00:26:17.672 --> 00:26:21.632
+<v Antonio Cisternino>Weak graphical programming and.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2710-0
+00:26:22.552 --> 00:26:27.772
+<v Antonio Cisternino>Evan driven programming,
+and so basically any form of programming</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2710-1
+00:26:27.772 --> 00:26:31.648
+<v Antonio Cisternino>nowadays,
+you lose control about the sequence in</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2710-2
+00:26:31.648 --> 00:26:36.552
+<v Antonio Cisternino>which the runtime will invoke your
+methods or your functions.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2718-0
+00:26:38.432 --> 00:26:42.432
+<v Antonio Cisternino>So you know that the bottom will be
+pressed. You have no clue.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2719-0
+00:26:43.792 --> 00:26:44.072
+<v Antonio Cisternino>Of uh.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2749-0
+00:26:46.072 --> 00:26:50.182
+<v Antonio Cisternino>What happened before the press of the
+button?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2749-1
+00:26:50.182 --> 00:26:56.348
+<v Antonio Cisternino>So you will start digging inside your
+state because every component,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2749-2
+00:26:56.348 --> 00:27:01.352
+<v Antonio Cisternino>every reaction will basically write some
+variable, say.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2794-0
+00:27:02.152 --> 00:27:08.277
+<v Antonio Cisternino>This has happened and so when you will be
+invoked, you look at what, what,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2794-1
+00:27:08.277 --> 00:27:14.076
+<v Antonio Cisternino>what is the current state of the world
+and you will react to that. OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2794-2
+00:27:14.076 --> 00:27:20.365
+<v Antonio Cisternino>so this is a general pattern that has
+become so pervasive that any framework</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2794-3
+00:27:20.365 --> 00:27:21.672
+<v Antonio Cisternino>available today.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2795-0
+00:27:22.032 --> 00:27:22.232
+<v Antonio Cisternino>Is.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2830-0
+00:27:23.432 --> 00:27:27.355
+<v Antonio Cisternino>By framework I mean not the programming
+language,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2830-1
+00:27:27.355 --> 00:27:33.788
+<v Antonio Cisternino>but a set of libraries written developing
+in some programming language has become</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2830-2
+00:27:33.788 --> 00:27:39.672
+<v Antonio Cisternino>supervasive that I I can't imagine
+programming without understanding this.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2862-0
+00:27:39.992 --> 00:27:45.461
+<v Antonio Cisternino>Apart from very few programmers that
+write a good old application,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2862-1
+00:27:45.461 --> 00:27:51.827
+<v Antonio Cisternino>there are sections in which good old
+programming with the main and everything</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2862-2
+00:27:51.827 --> 00:27:56.072
+<v Antonio Cisternino>and everything is under your control
+still happens.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2893-0
+00:27:56.072 --> 00:28:00.913
+<v Antonio Cisternino>Internet of Things.
+So if I if I program a remote control</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2893-1
+00:28:00.913 --> 00:28:04.835
+<v Antonio Cisternino>system,
+there you will find a more traditional</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2893-2
+00:28:04.835 --> 00:28:11.512
+<v Antonio Cisternino>way of programming. But apart from that,
+everything else is basically a runtime</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2893-3
+00:28:11.512 --> 00:28:13.432
+<v Antonio Cisternino>that someone picked up.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2903-0
+00:28:13.512 --> 00:28:18.712
+<v Antonio Cisternino>You record your call callbacks.
+You react to those callbacks.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2923-0
+00:28:20.232 --> 00:28:25.968
+<v Antonio Cisternino>And and so the callback notion is very
+important is what a function that will be</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2923-1
+00:28:25.968 --> 00:28:29.792
+<v Antonio Cisternino>invoked with some arguments upon some
+external event.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2931-0
+00:28:33.112 --> 00:28:37.592
+<v Antonio Cisternino>So it was important to be able to.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2937-0
+00:28:38.832 --> 00:28:42.552
+<v Antonio Cisternino>It was very important to be able to um.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2943-0
+00:28:43.512 --> 00:28:46.432
+<v Antonio Cisternino>I was checking the time.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2971-0
+00:28:48.072 --> 00:28:54.993
+<v Antonio Cisternino>It was very important to to be able to
+pass a a function as a reaction of some</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/2971-1
+00:28:54.993 --> 00:29:00.512
+<v Antonio Cisternino>external event. OK,
+first attempt object oriented programming.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3019-0
+00:29:02.432 --> 00:29:07.394
+<v Antonio Cisternino>Oh, nice.
+The the the class has its own internal</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3019-1
+00:29:07.394 --> 00:29:14.786
+<v Antonio Cisternino>state. Oh yeah, so I can record.
+I can use that internal state of the of</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3019-2
+00:29:14.786 --> 00:29:21.672
+<v Antonio Cisternino>the of the class as the blackboard where
+I keep track of the state.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3046-0
+00:29:21.672 --> 00:29:29.650
+<v Antonio Cisternino>As long as my methods are invoked. OK,
+so method is invoked event fields shared</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3046-1
+00:29:29.650 --> 00:29:34.437
+<v Antonio Cisternino>state.
+I check the shared state and I implement</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3046-2
+00:29:34.437 --> 00:29:36.432
+<v Antonio Cisternino>the behavior I need.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3047-0
+00:29:36.992 --> 00:29:37.712
+<v Antonio Cisternino>Nice.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3075-0
+00:29:39.392 --> 00:29:45.973
+<v Antonio Cisternino>And how can I be?
+Can I be sure that there is the mouse</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3075-1
+00:29:45.973 --> 00:29:52.672
+<v Antonio Cisternino>button down method in my class?
+I got an idea interface.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3109-0
+00:29:54.072 --> 00:30:01.254
+<v Antonio Cisternino>I start as a framework where there is the
+the class that inherits from some</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3109-1
+00:30:01.254 --> 00:30:09.003
+<v Antonio Cisternino>abstract class that I call component and
+through inheritance I impose a number of</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3109-2
+00:30:09.003 --> 00:30:10.232
+<v Antonio Cisternino>methods that.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3113-0
+00:30:10.912 --> 00:30:13.112
+<v Antonio Cisternino>Then I know they are there.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3145-0
+00:30:14.152 --> 00:30:19.049
+<v Antonio Cisternino>And that's good.
+We we made this work working for at least</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3145-1
+00:30:19.049 --> 00:30:24.443
+<v Antonio Cisternino>two decades using interfaces and classes
+that you know by heart,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3145-2
+00:30:24.443 --> 00:30:29.672
+<v Antonio Cisternino>mostly because they're super useful in
+the modern programming.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3147-0
+00:30:31.432 --> 00:30:32.392
+<v Antonio Cisternino>You know what?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3192-0
+00:30:33.752 --> 00:30:39.123
+<v Antonio Cisternino>And if I take two frameworks that
+performs basically the same work and I</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3192-1
+00:30:39.123 --> 00:30:44.273
+<v Antonio Cisternino>would wanted to make them interact,
+then I have a problem because one</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3192-2
+00:30:44.273 --> 00:30:50.232
+<v Antonio Cisternino>framework has the class component and the
+other framework has the class control.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3225-0
+00:30:50.872 --> 00:30:55.216
+<v Antonio Cisternino>They do the same thing,
+but they are different types.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3225-1
+00:30:55.216 --> 00:30:59.158
+<v Antonio Cisternino>They both have left button mouse clicked
+method,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3225-2
+00:30:59.158 --> 00:31:03.582
+<v Antonio Cisternino>but nevertheless because they use
+different interface,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3225-3
+00:31:03.582 --> 00:31:05.352
+<v Antonio Cisternino>they are incompatible.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3257-0
+00:31:06.352 --> 00:31:12.836
+<v Antonio Cisternino>So as programmers we we want always more
+and say can we address this problem?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3257-1
+00:31:12.836 --> 00:31:18.488
+<v Antonio Cisternino>Because this object orientation is very
+nice, but it's not perfect.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3257-2
+00:31:18.488 --> 00:31:22.312
+<v Antonio Cisternino>Can we do something better?
+And someone said.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3297-0
+00:31:22.952 --> 00:31:27.286
+<v Antonio Cisternino>You know what?
+I just need the mouse button down</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3297-1
+00:31:27.286 --> 00:31:31.267
+<v Antonio Cisternino>signature.
+I don't care about having a class</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3297-2
+00:31:31.267 --> 00:31:35.601
+<v Antonio Cisternino>interface.
+As long as you give me the mouse left</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3297-3
+00:31:35.601 --> 00:31:40.112
+<v Antonio Cisternino>button mouse method signature,
+I will invoke that.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3303-0
+00:31:40.312 --> 00:31:46.112
+<v Antonio Cisternino>OK. And and in fact, uh, that was, uh,
+I would say.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3310-0
+00:31:48.232 --> 00:31:53.152
+<v Antonio Cisternino>2008910 more or less.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3348-0
+00:31:54.632 --> 00:32:02.510
+<v Antonio Cisternino>The so-called duck typing became popular.
+It is called duck typing because</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3348-1
+00:32:02.510 --> 00:32:09.232
+<v Antonio Cisternino>basically it says if I have a a class
+that packs and and walks.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3355-0
+00:32:10.392 --> 00:32:13.072
+<v Antonio Cisternino>Like a duck, then he's a duck.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3451-0
+00:32:14.152 --> 00:32:21.441
+<v Antonio Cisternino>And there was and that philosophically it
+was very important because that was the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3451-1
+00:32:21.441 --> 00:32:27.930
+<v Antonio Cisternino>start of Python JavaScript as a
+mainstream programming languages because</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3451-2
+00:32:27.930 --> 00:32:33.352
+<v Antonio Cisternino>they were able to define a sort of weaker
+typing because we.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3513-0
+00:32:33.912 --> 00:32:38.375
+<v Antonio Cisternino>I said that in JavaScript,
+everything is a dictionary,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3513-1
+00:32:38.375 --> 00:32:44.948
+<v Antonio Cisternino>so you don't really care about the class.
+The class is not so strict as it is in</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3513-2
+00:32:44.948 --> 00:32:50.872
+<v Antonio Cisternino>Java, C++, and.net, etcetera,
+but I still retain this ability of invoke.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3528-0
+00:32:52.312 --> 00:32:58.312
+<v Antonio Cisternino>The the method that I presume, uh,
+will do something just by the name.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3532-0
+00:33:02.112 --> 00:33:02.272
+<v Antonio Cisternino>Nice.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3599-0
+00:33:03.352 --> 00:33:08.579
+<v Antonio Cisternino>Then when you start scaling up a system
+without typing, we human,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3599-1
+00:33:08.579 --> 00:33:14.678
+<v Antonio Cisternino>we like to think that we are perfect,
+that we are consistent, but we're not.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3599-2
+00:33:14.678 --> 00:33:19.272
+<v Antonio Cisternino>You start writing a program in a style by
+the end of the.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3681-0
+00:33:19.672 --> 00:33:22.827
+<v Antonio Cisternino>Development,
+you change it completely style.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3681-1
+00:33:22.827 --> 00:33:26.402
+<v Antonio Cisternino>So it's very,
+very difficult to be consistent with</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3681-2
+00:33:26.402 --> 00:33:29.907
+<v Antonio Cisternino>ourselves.
+We discussed this when we were talking</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3681-3
+00:33:29.907 --> 00:33:34.815
+<v Antonio Cisternino>about the memory and it is true also for
+the rest of the programming.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3681-4
+00:33:34.815 --> 00:33:39.512
+<v Antonio Cisternino>I mean we fail to agree upon ourselves
+about the convention about.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3742-0
+00:33:39.592 --> 00:33:45.542
+<v Antonio Cisternino>Allocating and allocating heap memory,
+figure out everything else and we said</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3742-1
+00:33:45.542 --> 00:33:51.797
+<v Antonio Cisternino>Rust is wonderful because it introduced
+basically convention by definition in the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3742-2
+00:33:51.797 --> 00:33:55.992
+<v Antonio Cisternino>language so that everybody has to buy to
+that and not.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3787-0
+00:33:56.592 --> 00:34:02.684
+<v Antonio Cisternino>Something else.
+So going back to my original point,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3787-1
+00:34:02.684 --> 00:34:11.472
+<v Antonio Cisternino>thanks to the reflection and the ability
+to invoke at runtime dynamically.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3832-0
+00:34:11.752 --> 00:34:17.447
+<v Antonio Cisternino>Part of your program,
+you can go beyond classes and interfaces</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3832-1
+00:34:17.447 --> 00:34:23.232
+<v Antonio Cisternino>and invoke a method just because it has a
+particular signature.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3912-0
+00:34:25.752 --> 00:34:31.861
+<v Antonio Cisternino>So this is similar to what you can do in
+Python and in JavaScript and in less</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3912-1
+00:34:31.861 --> 00:34:37.658
+<v Antonio Cisternino>strictly. I mean they are strictly type.
+Technically they don't have type</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3912-2
+00:34:37.658 --> 00:34:42.122
+<v Antonio Cisternino>constructor in.
+This is the counterpart in a world where</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3912-3
+00:34:42.122 --> 00:34:44.472
+<v Antonio Cisternino>you can define your own types.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3933-0
+00:34:44.712 --> 00:34:52.912
+<v Antonio Cisternino>And this is possible just because of meta
+programming.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3992-0
+00:34:54.392 --> 00:35:01.010
+<v Antonio Cisternino>So to really understand a modern code,
+you need to understand meta programming</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3992-1
+00:35:01.010 --> 00:35:07.461
+<v Antonio Cisternino>because the most of the programs nowadays
+tend to reason about themselves to</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/3992-2
+00:35:07.461 --> 00:35:09.472
+<v Antonio Cisternino>provide useful features.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4001-0
+00:35:10.792 --> 00:35:15.352
+<v Antonio Cisternino>You want to see an example I.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4006-0
+00:35:16.352 --> 00:35:16.992
+<v Antonio Cisternino>Show you so.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4016-0
+00:35:20.792 --> 00:35:23.432
+<v Antonio Cisternino>Let me go in the controller.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4027-0
+00:35:25.152 --> 00:35:31.392
+<v Antonio Cisternino>And let's take the a leader API.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4029-0
+00:35:33.272 --> 00:35:34.152
+<v Antonio Cisternino>Anna.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4035-0
+00:35:36.712 --> 00:35:38.032
+<v Antonio Cisternino>You know what?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4097-0
+00:35:39.232 --> 00:35:45.332
+<v Antonio Cisternino>Let's take this code.
+This code is sort of sum up of most of</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4097-1
+00:35:45.332 --> 00:35:52.032
+<v Antonio Cisternino>the things that I told you until today.
+So it's a synchronous. OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4097-2
+00:35:52.032 --> 00:35:57.032
+<v Antonio Cisternino>we already discussed that.
+We will discuss again.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4149-0
+00:35:57.472 --> 00:36:01.609
+<v Antonio Cisternino>OK,
+it's an asynchronous method and and so we</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4149-1
+00:36:01.609 --> 00:36:08.265
+<v Antonio Cisternino>know that it's not a real function.
+It will become some more complicated.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4149-2
+00:36:08.265 --> 00:36:12.312
+<v Antonio Cisternino>It is called listed.
+Sorry listed elections.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4157-0
+00:36:13.512 --> 00:36:17.832
+<v Antonio Cisternino>And this is annotated.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4195-0
+00:36:20.632 --> 00:36:28.905
+<v Antonio Cisternino>This is annotated,
+so this list elections is mapped onto an</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4195-1
+00:36:28.905 --> 00:36:32.352
+<v Antonio Cisternino>HTTP GET called election.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4231-0
+00:36:34.232 --> 00:36:38.760
+<v Antonio Cisternino>So basically,
+thanks to the ability of reading the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4231-1
+00:36:38.760 --> 00:36:45.152
+<v Antonio Cisternino>definition of the program itself,
+I can write a program that transform.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4281-0
+00:36:47.752 --> 00:36:56.821
+<v Antonio Cisternino>A method of a class into an HTTP request.
+So if in the system you call the a region</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4281-1
+00:36:56.821 --> 00:37:02.112
+<v Antonio Cisternino>API slash API slash version 1.
+0 slash election.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4285-0
+00:37:04.352 --> 00:37:05.032
+<v Antonio Cisternino>And.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4380-0
+00:37:06.632 --> 00:37:12.272
+<v Antonio Cisternino>An optional argument that you can pass,
+then you will get this method executed.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4380-1
+00:37:12.272 --> 00:37:16.573
+<v Antonio Cisternino>So you you issue an HTTP request,
+you get a method executed.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4380-2
+00:37:16.573 --> 00:37:20.592
+<v Antonio Cisternino>Lots of work behind.
+You have to implement a web server,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4380-3
+00:37:20.592 --> 00:37:23.764
+<v Antonio Cisternino>you have to implement all the HTTP
+protocol,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4380-4
+00:37:23.764 --> 00:37:26.232
+<v Antonio Cisternino>you have to implement the security.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4443-0
+00:37:26.552 --> 00:37:32.004
+<v Antonio Cisternino>The identity and many other things,
+and eventually you can get this</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4443-1
+00:37:32.004 --> 00:37:37.296
+<v Antonio Cisternino>invocation method performed on your
+behalf. Thanks to reflection,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4443-2
+00:37:37.296 --> 00:37:44.031
+<v Antonio Cisternino>I can write a program because it's always
+the same work that does all this work for</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4443-3
+00:37:44.031 --> 00:37:44.272
+<v Antonio Cisternino>me.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4525-0
+00:37:46.112 --> 00:37:51.992
+<v Antonio Cisternino>And so I can simply say OK,
+this method is on STP is called election</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4525-1
+00:37:51.992 --> 00:37:58.981
+<v Antonio Cisternino>and whenever you see the get verb on that
+particular URL you have to invoke this.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4525-2
+00:37:58.981 --> 00:38:05.032
+<v Antonio Cisternino>And you know what I also get type
+checking because if you try to pass.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4553-0
+00:38:05.312 --> 00:38:11.191
+<v Antonio Cisternino>Something other than a Boolean value,
+I would get an error because an error</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4553-1
+00:38:11.191 --> 00:38:14.672
+<v Antonio Cisternino>because a Boolean value is expected. OK,
+so.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4603-0
+00:38:16.312 --> 00:38:22.894
+<v Antonio Cisternino>All these to try to make you see the
+importance of metaprogramming.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4603-1
+00:38:22.894 --> 00:38:30.832
+<v Antonio Cisternino>It's not some geeky thing of people that
+likes to write compilers is the core of.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4662-0
+00:38:31.272 --> 00:38:36.223
+<v Antonio Cisternino>Any framework we use today, Python,
+there is a,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4662-1
+00:38:36.223 --> 00:38:43.959
+<v Antonio Cisternino>there is a different way of doing,
+but there are lots of Python frameworks</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4662-2
+00:38:43.959 --> 00:38:47.672
+<v Antonio Cisternino>that allows you to annotate methods.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4742-0
+00:38:47.712 --> 00:38:55.461
+<v Antonio Cisternino>That will be exposed in as HTTP GET
+invocation exactly with the same approach.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4742-1
+00:38:55.461 --> 00:39:02.524
+<v Antonio Cisternino>OK, so you can change the language,
+but basically the idea is the same.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4742-2
+00:39:02.524 --> 00:39:07.232
+<v Antonio Cisternino>At some point we felt the need for our
+program.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4757-0
+00:39:07.312 --> 00:39:13.792
+<v Antonio Cisternino>To be able to inspect themselves,
+not because they like they are.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4811-0
+00:39:14.672 --> 00:39:20.769
+<v Antonio Cisternino>They like the the mirror to see them on
+in the mirror,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4811-1
+00:39:20.769 --> 00:39:29.748
+<v Antonio Cisternino>but because we can develop libraries that
+implement sophisticated behaviours and</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4811-2
+00:39:29.748 --> 00:39:30.192
+<v Antonio Cisternino>can.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4907-0
+00:39:30.472 --> 00:39:34.348
+<v Antonio Cisternino>Look at the because the program is made
+of two things.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4907-1
+00:39:34.348 --> 00:39:39.141
+<v Antonio Cisternino>You're part of a program or three things.
+You're part of a program,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4907-2
+00:39:39.141 --> 00:39:44.569
+<v Antonio Cisternino>the libraries you are using in your
+program and the runtime of your program.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4907-3
+00:39:44.569 --> 00:39:47.740
+<v Antonio Cisternino>OK,
+so the point is that the libraries to to</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4907-4
+00:39:47.740 --> 00:39:49.432
+<v Antonio Cisternino>be more and more useful.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4927-0
+00:39:49.792 --> 00:39:55.383
+<v Antonio Cisternino>Need to know about the part you wrote of
+the program and metaprogramming is the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/4927-1
+00:39:55.383 --> 00:39:56.432
+<v Antonio Cisternino>answer to that.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5011-0
+00:39:57.312 --> 00:40:04.025
+<v Antonio Cisternino>So metaprogramming started in the origin
+as a way to change the semantic of the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5011-1
+00:40:04.025 --> 00:40:09.059
+<v Antonio Cisternino>programming language,
+as we will shortly see. But honestly,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5011-2
+00:40:09.059 --> 00:40:15.521
+<v Antonio Cisternino>that was just the beginning. Today,
+program metaprogramming is basically the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5011-3
+00:40:15.521 --> 00:40:16.192
+<v Antonio Cisternino>core of.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5066-0
+00:40:16.432 --> 00:40:23.694
+<v Antonio Cisternino>Most of the most used programming
+framework today in libraries you use</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5066-1
+00:40:23.694 --> 00:40:31.672
+<v Antonio Cisternino>React on JavaScript in React JS for your
+web pages. That is the meta program.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5078-0
+00:40:31.952 --> 00:40:35.992
+<v Antonio Cisternino>You prefer AngularJS? Same story.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5161-0
+00:40:37.592 --> 00:40:42.582
+<v Antonio Cisternino>And in that case,
+the library parses the Dom and the Dom</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5161-1
+00:40:42.582 --> 00:40:49.760
+<v Antonio Cisternino>gets interpreted and the semantics of the
+Dom gets changed by the library itself,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5161-2
+00:40:49.760 --> 00:40:54.312
+<v Antonio Cisternino>and you get a lot of nice services
+because of that.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5232-0
+00:40:55.392 --> 00:40:59.100
+<v Antonio Cisternino>OK,
+so basically meta programming has become</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5232-1
+00:40:59.100 --> 00:41:02.891
+<v Antonio Cisternino>the dominant way of writing complex
+programs,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5232-2
+00:41:02.891 --> 00:41:09.813
+<v Antonio Cisternino>which means that you must become familiar
+with this because otherwise you will fail</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5232-3
+00:41:09.813 --> 00:41:13.192
+<v Antonio Cisternino>to understand the behaviour of a program.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5263-0
+00:41:13.872 --> 00:41:18.674
+<v Antonio Cisternino>Because you can understand what this
+particular method does,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5263-1
+00:41:18.674 --> 00:41:23.792
+<v Antonio Cisternino>but you will fail to understand why and
+when it will be invoked.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5293-0
+00:41:26.312 --> 00:41:29.135
+<v Antonio Cisternino>OK,
+so that's the reason because meta</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5293-1
+00:41:29.135 --> 00:41:32.552
+<v Antonio Cisternino>programming is crucial for you to
+understand.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5316-0
+00:41:33.952 --> 00:41:43.272
+<v Antonio Cisternino>And Java, the story is nice.
+Java introduced the the notion, so.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5333-0
+00:41:48.592 --> 00:41:55.112
+<v Antonio Cisternino>Let me for a second,
+let me start a terminal.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5336-0
+00:41:56.592 --> 00:41:57.832
+<v Antonio Cisternino>We the um.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5404-0
+00:42:01.392 --> 00:42:08.788
+<v Antonio Cisternino>With the.net FSI with F#. I mean,
+I'm using F# not because of F# here.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5404-1
+00:42:08.788 --> 00:42:16.392
+<v Antonio Cisternino>I mean it's just a way to show you a live
+example of reflection. OK, so.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5409-0
+00:42:18.312 --> 00:42:19.552
+<v Antonio Cisternino>If I.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5425-0
+00:42:20.512 --> 00:42:25.992
+<v Antonio Cisternino>I have a string I can say dot get type.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5474-0
+00:42:27.512 --> 00:42:37.905
+<v Antonio Cisternino>And I have and and I receive an object
+which describes with a lot of fields and</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5474-1
+00:42:37.905 --> 00:42:43.232
+<v Antonio Cisternino>methods which describes the string class.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5514-0
+00:42:46.152 --> 00:42:57.234
+<v Antonio Cisternino>And so I can then say get methods.
+I hope that is the name and this is the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5514-1
+00:42:57.234 --> 00:43:00.632
+<v Antonio Cisternino>list of the methods of.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5550-0
+00:43:01.632 --> 00:43:08.088
+<v Antonio Cisternino>Of the of the the string. So for instance,
+let's take the list one.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5550-1
+00:43:08.088 --> 00:43:11.032
+<v Antonio Cisternino>You see how many data is there.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5599-0
+00:43:16.632 --> 00:43:22.441
+<v Antonio Cisternino>So this is the join.
+It is contained in the module which is</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5599-1
+00:43:22.441 --> 00:43:27.475
+<v Antonio Cisternino>called like this.
+It is implemented in intermediate</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5599-2
+00:43:27.475 --> 00:43:29.992
+<v Antonio Cisternino>language. These are flags.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5669-0
+00:43:30.352 --> 00:43:34.761
+<v Antonio Cisternino>There are tokens that have some purpose,
+of course,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5669-1
+00:43:34.761 --> 00:43:40.357
+<v Antonio Cisternino>but this is not the moment to stress this.
+It is a static method.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5669-2
+00:43:40.357 --> 00:43:45.953
+<v Antonio Cisternino>It's static through. It's not virtual.
+It's not a virtual method.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5669-3
+00:43:45.953 --> 00:43:50.192
+<v Antonio Cisternino>So any decoration in your types when you
+perform.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5716-0
+00:43:50.272 --> 00:43:58.351
+<v Antonio Cisternino>All that effort to describe your your
+type is basically documented in a</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5716-1
+00:43:58.351 --> 00:44:06.992
+<v Antonio Cisternino>database that is generated by the
+compiler and is part of the binary system.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5743-0
+00:44:08.512 --> 00:44:14.510
+<v Antonio Cisternino>Hmm. So that at runtime,
+the runtime gives you the ability to read</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5743-1
+00:44:14.510 --> 00:44:16.032
+<v Antonio Cisternino>that information.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5771-0
+00:44:18.352 --> 00:44:27.592
+<v Antonio Cisternino>And thanks to that you can reason about O
+at at some point someone said.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5858-0
+00:44:29.992 --> 00:44:34.185
+<v Antonio Cisternino>So we got this database,
+that database which is a tree that</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5858-1
+00:44:34.185 --> 00:44:39.495
+<v Antonio Cisternino>represents all the definition of my
+program because of course you also have</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5858-2
+00:44:39.495 --> 00:44:44.247
+<v Antonio Cisternino>the the bytecode if you want,
+but the bytecode is not in the source</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5858-3
+00:44:44.247 --> 00:44:47.112
+<v Antonio Cisternino>language. So first important observation.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5904-0
+00:44:47.552 --> 00:44:57.800
+<v Antonio Cisternino>Reflection has become useful because the
+typing has been brought to runtime,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5904-1
+00:44:57.800 --> 00:45:02.192
+<v Antonio Cisternino>so the string class string class.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5930-0
+00:45:02.672 --> 00:45:09.897
+<v Antonio Cisternino>That you type in in your program is the
+same string class that the runtime is</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5930-1
+00:45:09.897 --> 00:45:11.472
+<v Antonio Cisternino>using to execute.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5986-0
+00:45:14.992 --> 00:45:20.586
+<v Antonio Cisternino>The more the compiler generate types on
+your behalf.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5986-1
+00:45:20.586 --> 00:45:29.242
+<v Antonio Cisternino>You remember when we look at into the the
+sugaring of the state machine of the C#</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/5986-2
+00:45:29.242 --> 00:45:30.192
+<v Antonio Cisternino>compiler.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6022-0
+00:45:30.672 --> 00:45:37.634
+<v Antonio Cisternino>Then you have a class that has generated
+name that you didn't write for</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6022-1
+00:45:37.634 --> 00:45:40.632
+<v Antonio Cisternino>implementing the comprehension.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6076-0
+00:45:42.792 --> 00:45:46.390
+<v Antonio Cisternino>That class is available through
+reflection,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6076-1
+00:45:46.390 --> 00:45:51.132
+<v Antonio Cisternino>but for you it's less useful because it's
+not your class.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6076-2
+00:45:51.132 --> 00:45:57.592
+<v Antonio Cisternino>It's some generated thing by the compiler
+you're not even aware about. OK, so.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6142-0
+00:45:59.352 --> 00:46:07.050
+<v Antonio Cisternino>It's interesting to be able to reflect
+the state of your program at runtime as</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6142-1
+00:46:07.050 --> 00:46:15.041
+<v Antonio Cisternino>long as the objects that you reason about
+are present both in the source language</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6142-2
+00:46:15.041 --> 00:46:17.672
+<v Antonio Cisternino>and in the target language.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6184-0
+00:46:18.032 --> 00:46:23.917
+<v Antonio Cisternino>Otherwise it's useless. So after Java,
+this means types,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6184-1
+00:46:23.917 --> 00:46:30.524
+<v Antonio Cisternino>because most of the types are still
+written by programmers, OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6184-2
+00:46:30.524 --> 00:46:33.312
+<v Antonio Cisternino>and that makes them useful.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6246-0
+00:46:34.912 --> 00:46:40.676
+<v Antonio Cisternino>But it's important that you imagine that
+I have my source program.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6246-1
+00:46:40.676 --> 00:46:44.462
+<v Antonio Cisternino>I don't have the source program at
+runtime,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6246-2
+00:46:44.462 --> 00:46:50.312
+<v Antonio Cisternino>I have the compiled program apart from
+JavaScript, which of course.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6309-0
+00:46:50.592 --> 00:46:57.092
+<v Antonio Cisternino>You have the Swiss program too at runtime,
+but for most of the programs out there,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6309-1
+00:46:57.092 --> 00:47:02.026
+<v Antonio Cisternino>you don't have the source code,
+you have the compiled version,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6309-2
+00:47:02.026 --> 00:47:07.352
+<v Antonio Cisternino>so you retain enough information in the
+binary to do useful things.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6382-0
+00:47:08.312 --> 00:47:11.591
+<v Antonio Cisternino>OK,
+and you have the sensation that you're</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6382-1
+00:47:11.591 --> 00:47:17.768
+<v Antonio Cisternino>browsing the source code, but you're not.
+You're reading the methods because the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6382-2
+00:47:17.768 --> 00:47:23.717
+<v Antonio Cisternino>runtime has the very same notion at
+compile time and in the language of types</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6382-3
+00:47:23.717 --> 00:47:24.632
+<v Antonio Cisternino>and methods.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6422-0
+00:47:24.992 --> 00:47:29.875
+<v Antonio Cisternino>And because that objects are shared
+between the source language and the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6422-1
+00:47:29.875 --> 00:47:33.606
+<v Antonio Cisternino>target language,
+you have the impression that it's the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6422-2
+00:47:33.606 --> 00:47:34.352
+<v Antonio Cisternino>same thing.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6495-0
+00:47:35.472 --> 00:47:39.837
+<v Antonio Cisternino>OK,
+so that's the reason why it is popular to</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6495-1
+00:47:39.837 --> 00:47:44.962
+<v Antonio Cisternino>browse at runtime through reflection
+types, not code,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6495-2
+00:47:44.962 --> 00:47:52.175
+<v Antonio Cisternino>because the code is typically deleted
+during the computation process and it</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6495-3
+00:47:52.175 --> 00:47:54.832
+<v Antonio Cisternino>will be impractical to have.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6499-0
+00:47:55.272 --> 00:47:56.552
+<v Antonio Cisternino>The code there, right?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6502-0
+00:47:59.312 --> 00:47:59.432
+<v Antonio Cisternino>OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6584-0
+00:48:01.992 --> 00:48:07.967
+<v Antonio Cisternino>So now someone say you know we already
+generated the list election method with a</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6584-1
+00:48:07.967 --> 00:48:13.573
+<v Antonio Cisternino>return type, public or not, virtual not,
+static or not, etcetera, etcetera.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6584-2
+00:48:13.573 --> 00:48:19.032
+<v Antonio Cisternino>All the qualification of the details the
+compiler is already emitting or.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6596-0
+00:48:19.792 --> 00:48:25.392
+<v Antonio Cisternino>These things, you know, I got an idea.
+Let's have.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6626-0
+00:48:26.832 --> 00:48:31.370
+<v Antonio Cisternino>Uh,
+an extra annotation mechanism so that I</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6626-1
+00:48:31.370 --> 00:48:35.392
+<v Antonio Cisternino>can put custom annotation to my method.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6682-0
+00:48:36.592 --> 00:48:44.025
+<v Antonio Cisternino>And notice that was invented by Java,
+but the problem is that that annotation</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6682-1
+00:48:44.025 --> 00:48:51.553
+<v Antonio Cisternino>bits were made available in the binary,
+but there was no way to define them in</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6682-2
+00:48:51.553 --> 00:48:52.792
+<v Antonio Cisternino>the language.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6745-0
+00:48:53.792 --> 00:49:00.601
+<v Antonio Cisternino>So Java Runtime implemented custom
+attributes since the very beginning,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6745-1
+00:49:00.601 --> 00:49:07.504
+<v Antonio Cisternino>but Java language had no way to include
+this information in your binary.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6745-2
+00:49:07.504 --> 00:49:10.152
+<v Antonio Cisternino>It was a compiler thing, OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6801-0
+00:49:11.952 --> 00:49:16.563
+<v Antonio Cisternino>dot net few years later said come on,
+are you serious?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6801-1
+00:49:16.563 --> 00:49:23.103
+<v Antonio Cisternino>Let let's expose this into the language
+so that programmers can put their own</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6801-2
+00:49:23.103 --> 00:49:26.792
+<v Antonio Cisternino>annotation onto types.
+That is interesting.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6889-0
+00:49:27.992 --> 00:49:32.105
+<v Antonio Cisternino>And because of that,
+basically you have the ability to</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6889-1
+00:49:32.105 --> 00:49:37.041
+<v Antonio Cisternino>annotate in a formal way.
+So it is more than a comment because it</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6889-2
+00:49:37.041 --> 00:49:41.154
+<v Antonio Cisternino>has a semantics.
+Technically this is a class that must</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6889-3
+00:49:41.154 --> 00:49:46.912
+<v Antonio Cisternino>inherit from the attribute class.
+So there are some constraints it may have.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6935-0
+00:49:47.312 --> 00:49:51.325
+<v Antonio Cisternino>Values,
+but those values should be computed at</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6935-1
+00:49:51.325 --> 00:49:55.510
+<v Antonio Cisternino>compile time.
+So clearly they should go into the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6935-2
+00:49:55.510 --> 00:50:02.512
+<v Antonio Cisternino>metadata so it can be generated runtime,
+but nonetheless I can and it's an array.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6970-0
+00:50:03.272 --> 00:50:09.036
+<v Antonio Cisternino>So every class, method,
+field and every object has a custom</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/6970-1
+00:50:09.036 --> 00:50:13.552
+<v Antonio Cisternino>attribute array of things,
+so the join method.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7036-0
+00:50:16.552 --> 00:50:22.361
+<v Antonio Cisternino>As no custom attribute of the class
+string. OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7036-1
+00:50:22.361 --> 00:50:31.436
+<v Antonio Cisternino>now if I'm able to label with the
+information part of my program that this</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7036-2
+00:50:31.436 --> 00:50:35.672
+<v Antonio Cisternino>annotation have no semantics in C#.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7115-0
+00:50:35.952 --> 00:50:41.856
+<v Antonio Cisternino>Those are like comments,
+but those are available through the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7115-1
+00:50:41.856 --> 00:50:46.792
+<v Antonio Cisternino>reflection API and so if you are using
+reflection,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7115-2
+00:50:46.792 --> 00:50:53.470
+<v Antonio Cisternino>you can alter the behaviour of the
+program according to these custom</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7115-3
+00:50:53.470 --> 00:50:54.632
+<v Antonio Cisternino>annotations.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7170-0
+00:50:55.072 --> 00:50:58.108
+<v Antonio Cisternino>So from the programming language
+standpoint,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7170-1
+00:50:58.108 --> 00:51:02.831
+<v Antonio Cisternino>that is just a bunch of data that is
+included in the metadata of your</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7170-2
+00:51:02.831 --> 00:51:07.352
+<v Antonio Cisternino>programming inside the binary,
+and that's it. It has no semantics.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7221-0
+00:51:08.552 --> 00:51:15.114
+<v Antonio Cisternino>But when you use the reflection API,
+suddenly you can give semantics and it's</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7221-1
+00:51:15.114 --> 00:51:20.919
+<v Antonio Cisternino>not fixed by the language.
+You can decide your own semantics in your</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7221-2
+00:51:20.919 --> 00:51:21.592
+<v Antonio Cisternino>program.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7293-0
+00:51:23.152 --> 00:51:28.086
+<v Antonio Cisternino>OK,
+and if I'm implementing a web framework,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7293-1
+00:51:28.086 --> 00:51:36.200
+<v Antonio Cisternino>I can say OK if I have a class which
+inherits from controller and all the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7293-2
+00:51:36.200 --> 00:51:41.792
+<v Antonio Cisternino>methods are target like HTTP get,
+this means that.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7318-0
+00:51:42.592 --> 00:51:46.830
+<v Antonio Cisternino>This function should be invoked only
+through the GET verb,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7318-1
+00:51:46.830 --> 00:51:49.272
+<v Antonio Cisternino>not through the post verb of HTTP.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7356-0
+00:51:50.472 --> 00:51:54.712
+<v Antonio Cisternino>And this annotation means nothing to the
+C compiler.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7356-1
+00:51:54.712 --> 00:51:59.672
+<v Antonio Cisternino>It's the runtime that by browsing the
+reflection information.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7379-0
+00:52:01.592 --> 00:52:07.592
+<v Antonio Cisternino>Accesses and changes the behavior of this
+thing OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7455-0
+00:52:10.232 --> 00:52:16.203
+<v Antonio Cisternino>And so, as you can see,
+the full system has a lot of inherited</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7455-1
+00:52:16.203 --> 00:52:21.321
+<v Antonio Cisternino>services because of this reflection
+authorized roles.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7455-2
+00:52:21.321 --> 00:52:27.292
+<v Antonio Cisternino>I can have declarative programming.
+I declare how what I need.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7455-3
+00:52:27.292 --> 00:52:29.472
+<v Antonio Cisternino>I don't say how I need.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7504-0
+00:52:29.552 --> 00:52:34.907
+<v Antonio Cisternino>I will get it.
+OK here I say OK this election ID blah</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7504-1
+00:52:34.907 --> 00:52:42.443
+<v Antonio Cisternino>blah is available on throughput and only
+if the user has this role election</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7504-2
+00:52:42.443 --> 00:52:46.112
+<v Antonio Cisternino>officer. Otherwise this shouldn't be.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7507-0
+00:52:46.312 --> 00:52:47.472
+<v Antonio Cisternino>Uh, accessible.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7514-0
+00:52:48.912 --> 00:52:50.752
+<v Antonio Cisternino>This is super cool.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7570-0
+00:52:52.192 --> 00:52:56.435
+<v Antonio Cisternino>Because I don't have to go in my
+programming.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7570-1
+00:52:56.435 --> 00:53:03.261
+<v Antonio Cisternino>If current user is in this role,
+do this and do that is a property that I</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7570-2
+00:53:03.261 --> 00:53:05.752
+<v Antonio Cisternino>can even safely type check.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7666-0
+00:53:08.272 --> 00:53:14.328
+<v Antonio Cisternino>I can prove that this thing is accessible
+because if you do if in your program,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7666-1
+00:53:14.328 --> 00:53:19.703
+<v Antonio Cisternino>if you forget or if you're wrong,
+write the wrong condition in your if</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7666-2
+00:53:19.703 --> 00:53:23.564
+<v Antonio Cisternino>statement,
+you may lead access to a code to a user</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7666-3
+00:53:23.564 --> 00:53:26.592
+<v Antonio Cisternino>that shouldn't have access to that code.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7753-0
+00:53:27.072 --> 00:53:33.182
+<v Antonio Cisternino>In this way I declared that and then if I
+prove that the runtime ensure that only</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7753-1
+00:53:33.182 --> 00:53:36.982
+<v Antonio Cisternino>authorized role can go through that piece
+of code,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7753-2
+00:53:36.982 --> 00:53:43.017
+<v Antonio Cisternino>then these apply to all the programs and
+so I can be sure that if you don't have</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7753-3
+00:53:43.017 --> 00:53:46.072
+<v Antonio Cisternino>that role you can't access to this thing.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7833-0
+00:53:46.432 --> 00:53:52.780
+<v Antonio Cisternino>Unless of course bugs of implementation.
+So it's very different because if I have</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7833-1
+00:53:52.780 --> 00:53:58.431
+<v Antonio Cisternino>4 methods with the rice roles,
+I'm sure that all of them will be applied</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7833-2
+00:53:58.431 --> 00:54:04.392
+<v Antonio Cisternino>in the right way if I use either user is
+enrolled and I type check the role.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7872-0
+00:54:04.752 --> 00:54:08.182
+<v Antonio Cisternino>Then if I forget or I write the wrong
+condition,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7872-1
+00:54:08.182 --> 00:54:13.992
+<v Antonio Cisternino>then my my program will be broken in one
+of the four methods and three will be OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7938-0
+00:54:15.232 --> 00:54:18.900
+<v Antonio Cisternino>OK,
+so I hope that in this very long</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7938-1
+00:54:18.900 --> 00:54:27.128
+<v Antonio Cisternino>introduction to meta programming to have
+convinced you that you have to spend lots</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/7938-2
+00:54:27.128 --> 00:54:33.472
+<v Antonio Cisternino>of time not in, I mean studying.
+Of course I like if you study.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8005-0
+00:54:33.472 --> 00:54:39.948
+<v Antonio Cisternino>Monads, languages, parses, etcetera.
+You should. You have to pass an exams,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8005-1
+00:54:39.948 --> 00:54:44.123
+<v Antonio Cisternino>of course,
+but please spend your time and become</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8005-2
+00:54:44.123 --> 00:54:49.236
+<v Antonio Cisternino>better programmers.
+Spend your time in trying to understand</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8005-3
+00:54:49.236 --> 00:54:51.792
+<v Antonio Cisternino>every nuance, every symbol in.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8081-0
+00:54:52.072 --> 00:54:57.485
+<v Antonio Cisternino>Piece of code,
+because even this very small casual code</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8081-1
+00:54:57.485 --> 00:55:04.252
+<v Antonio Cisternino>I came up with, it's full of things,
+full of it's dense of semantics.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8081-2
+00:55:04.252 --> 00:55:11.792
+<v Antonio Cisternino>There is this async which basically says
+the compiler will desugar this in a.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8167-0
+00:55:11.872 --> 00:55:18.587
+<v Antonio Cisternino>So this is not a method,
+it will be compiled in several methods.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8167-1
+00:55:18.587 --> 00:55:25.923
+<v Antonio Cisternino>You're curious, you ask the AI,
+which is the fastest way how to browse</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8167-2
+00:55:25.923 --> 00:55:31.192
+<v Antonio Cisternino>the intermediate language of net compiler
+program.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8224-0
+00:55:31.472 --> 00:55:37.673
+<v Antonio Cisternino>Like this, look at the binary.
+You will find that there are a lot.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8224-1
+00:55:37.673 --> 00:55:45.448
+<v Antonio Cisternino>There will be this method plus many other
+methods to implement all the asynchronous</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8224-2
+00:55:45.448 --> 00:55:47.392
+<v Antonio Cisternino>programming there is.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8230-0
+00:55:47.472 --> 00:55:49.032
+<v Antonio Cisternino>A little bit of type inference.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8279-0
+00:55:50.672 --> 00:55:57.727
+<v Antonio Cisternino>COM is of type Poly Station Commission
+and the compiler, in a very stupid way,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8279-1
+00:55:57.727 --> 00:56:02.192
+<v Antonio Cisternino>is capable of inferring that COM is of
+type that.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8294-0
+00:56:03.072 --> 00:56:09.832
+<v Antonio Cisternino>There are genetics, yes,
+so parametric types.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8296-0
+00:56:12.232 --> 00:56:12.552
+<v Antonio Cisternino>Um.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8335-0
+00:56:14.752 --> 00:56:22.613
+<v Antonio Cisternino>There is something that we didn't explore
+yet, but we will between today,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8335-1
+00:56:22.613 --> 00:56:29.094
+<v Antonio Cisternino>most likely tomorrow.
+The C# compiler implements a subset of</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8335-2
+00:56:29.094 --> 00:56:34.512
+<v Antonio Cisternino>syntax that is known as language
+integrated query.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8367-0
+00:56:34.632 --> 00:56:43.013
+<v Antonio Cisternino>Which is Link and Link allows you to have
+a sort of SQL like syntax from C in this</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8367-1
+00:56:43.013 --> 00:56:51.192
+<v Antonio Cisternino>where condition to manipulate objects and
+collections and not just the database.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8401-0
+00:56:52.632 --> 00:56:59.149
+<v Antonio Cisternino>And this will be the sugared in the
+creation of a data structure that some</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8401-1
+00:56:59.149 --> 00:57:04.188
+<v Antonio Cisternino>driver will compile into a query for a
+specific database.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8401-2
+00:57:04.188 --> 00:57:08.272
+<v Antonio Cisternino>OK at runtime and so this particular
+thing is.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8418-0
+00:57:08.392 --> 00:57:16.790
+<v Antonio Cisternino>Part of the the sugaring process and and
+then there is a little bit of high order</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8418-1
+00:57:16.790 --> 00:57:20.272
+<v Antonio Cisternino>programming. I'm passing a Lambda.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8425-0
+00:57:21.232 --> 00:57:25.592
+<v Antonio Cisternino>Uh,
+function that that it will be invoked the.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8432-0
+00:57:27.632 --> 00:57:32.112
+<v Antonio Cisternino>To avoid the for each because here I.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8476-0
+00:57:34.392 --> 00:57:40.910
+<v Antonio Cisternino>Perform the query asynchronous.
+So I start the query, I suspend myself.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8476-1
+00:57:40.910 --> 00:57:46.975
+<v Antonio Cisternino>When the query is ready,
+I take back the control and then I have a</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8476-2
+00:57:46.975 --> 00:57:53.312
+<v Antonio Cisternino>list and and and and I invoke convert all
+which is basically the map.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8515-0
+00:57:54.552 --> 00:57:58.545
+<v Antonio Cisternino>Function.
+So for every value of the source list,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8515-1
+00:57:58.545 --> 00:58:05.064
+<v Antonio Cisternino>I get new list with a function that is
+applied to every to every element of the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8515-2
+00:58:05.064 --> 00:58:08.812
+<v Antonio Cisternino>source list,
+and this distinction list is the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8515-3
+00:58:08.812 --> 00:58:12.072
+<v Antonio Cisternino>transformed list. OK, so as you can see.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8546-0
+00:58:13.912 --> 00:58:19.892
+<v Antonio Cisternino>In very few lines of code,
+there are a lot of interaction between</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8546-1
+00:58:19.892 --> 00:58:26.777
+<v Antonio Cisternino>the compiler, the way the compiler,
+the sugar things, the semantics, types,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8546-2
+00:58:26.777 --> 00:58:28.952
+<v Antonio Cisternino>type checking, etcetera.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8593-0
+00:58:29.232 --> 00:58:34.600
+<v Antonio Cisternino>Genetics, et cetera.
+The runtime and the libraries that come</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8593-1
+00:58:34.600 --> 00:58:40.672
+<v Antonio Cisternino>with the language that provide part of
+the semantics. So guess what?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8593-2
+00:58:40.672 --> 00:58:46.832
+<v Antonio Cisternino>Modern programming languages are
+difficult to define without standard</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8593-3
+00:58:46.832 --> 00:58:47.712
+<v Antonio Cisternino>libraries.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8615-0
+00:58:48.632 --> 00:58:55.859
+<v Antonio Cisternino>Because part of the behavior is defined
+in outside libraries and so on. OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8615-1
+00:58:55.859 --> 00:59:02.992
+<v Antonio Cisternino>and most of this evolution in recent
+years is due to meta program because.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8647-0
+00:59:03.032 --> 00:59:09.798
+<v Antonio Cisternino>The types were not enough to support the
+our need of reuse our code,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8647-1
+00:59:09.798 --> 00:59:17.153
+<v Antonio Cisternino>so we look for other means of reusing our
+codes by writing frameworks that</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8647-2
+00:59:17.153 --> 00:59:18.232
+<v Antonio Cisternino>manipulate.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8682-0
+00:59:18.272 --> 00:59:24.752
+<v Antonio Cisternino>Smaller and smaller part of the program.
+So if you look at how much code you are</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8682-1
+00:59:24.752 --> 00:59:31.312
+<v Antonio Cisternino>writing and how much code you are using,
+how much code your program is made with,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8682-2
+00:59:31.312 --> 00:59:35.232
+<v Antonio Cisternino>you are writing more and more a smaller
+portion.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8685-0
+00:59:37.152 --> 00:59:38.392
+<v Antonio Cisternino>Of the of the program.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8735-0
+00:59:39.672 --> 00:59:44.000
+<v Antonio Cisternino>And the rest,
+the rest is provided by the frameworks</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8735-1
+00:59:44.000 --> 00:59:50.615
+<v Antonio Cisternino>that you have to understand and and for
+this reason when I was I started writing</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8735-2
+00:59:50.615 --> 00:59:55.189
+<v Antonio Cisternino>CGI application during the 90s,
+I was master of myself.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8735-3
+00:59:55.189 --> 00:59:59.272
+<v Antonio Cisternino>Today you may be familiar with Angular JS
+and no.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8738-0
+00:59:59.312 --> 01:00:01.952
+<v Antonio Cisternino>Nothing about React JS or vice versa.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8754-0
+01:00:04.472 --> 01:00:09.552
+<v Antonio Cisternino>So you are not anymore an expert of web,
+you are an expert of Angular.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8809-0
+01:00:10.632 --> 01:00:14.302
+<v Antonio Cisternino>Which is a very small part of a larger
+world. OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8809-1
+01:00:14.302 --> 01:00:18.487
+<v Antonio Cisternino>and of course a true web programmer knows
+about the Dom,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8809-2
+01:00:18.487 --> 01:00:24.212
+<v Antonio Cisternino>knows out about the implementation of
+Angular or Reactor and understands what</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8809-3
+01:00:24.212 --> 01:00:30.232
+<v Antonio Cisternino>the framework does and appreciate that is
+saving a lot of time because otherwise.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8836-0
+01:00:30.312 --> 01:00:34.090
+<v Antonio Cisternino>Would have been involved in doing a lot
+of things,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8836-1
+01:00:34.090 --> 01:00:39.425
+<v Antonio Cisternino>but most of the programmers out there
+have no clue about React. I mean,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8836-2
+01:00:39.425 --> 01:00:45.352
+<v Antonio Cisternino>it's like the Bible. React is like this.
+Sorry, I have no idea of how it works.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8840-0
+01:00:45.472 --> 01:00:49.632
+<v Antonio Cisternino>Right. So let's go back to original.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8874-0
+01:00:51.232 --> 01:00:58.599
+<v Antonio Cisternino>So now that we did this very long but
+important introduction, let's now focus.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8874-1
+01:00:58.599 --> 01:01:05.686
+<v Antonio Cisternino>We already explored a little bit of
+reflection. I've shown you the F sharp,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8874-2
+01:01:05.686 --> 01:01:06.712
+<v Antonio Cisternino>which is a.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8896-0
+01:01:06.712 --> 01:01:12.135
+<v Antonio Cisternino>We went to C#, Java,
+same get class instead of get type,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8896-1
+01:01:12.135 --> 01:01:20.032
+<v Antonio Cisternino>but basically same thing in Python and in
+JavaScript. How does it work reflection?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8906-0
+01:01:23.272 --> 01:01:27.912
+<v Antonio Cisternino>In JavaScript there,
+some of you were nodding about.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8918-0
+01:01:29.072 --> 01:01:33.752
+<v Antonio Cisternino>What is the fundamental construct of
+reflection in JavaScript?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8924-0
+01:01:37.712 --> 01:01:39.712
+<v Antonio Cisternino>How you see the prototype?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8939-0
+01:01:41.432 --> 01:01:46.363
+<v Antonio Cisternino>There is a construct in the language
+which is the reflection,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8939-1
+01:01:46.363 --> 01:01:48.192
+<v Antonio Cisternino>which is the four four.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8954-0
+01:01:49.912 --> 01:01:55.472
+<v Antonio Cisternino>N in O where N is the name of a property
+O is an object.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8975-0
+01:01:57.272 --> 01:02:03.029
+<v Antonio Cisternino>So basically you can enumerate the names
+of a dictionary that is the reflection in</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/8975-1
+01:02:03.029 --> 01:02:03.792
+<v Antonio Cisternino>JavaScript.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9028-0
+01:02:04.872 --> 01:02:10.121
+<v Antonio Cisternino>Through that you can start reading all
+the properties and then you can use type</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9028-1
+01:02:10.121 --> 01:02:15.567
+<v Antonio Cisternino>of which is the other part of reflection
+in JavaScript and ask for the type of the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9028-2
+01:02:15.567 --> 01:02:20.423
+<v Antonio Cisternino>of the class and so on and so forth.
+OK and you can then say if type of a</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9028-3
+01:02:20.423 --> 01:02:24.032
+<v Antonio Cisternino>string then do this,
+if it's number do that, etcetera.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9055-0
+01:02:24.632 --> 01:02:29.832
+<v Antonio Cisternino>Right. So as you can see,
+you change the language,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9055-1
+01:02:29.832 --> 01:02:36.357
+<v Antonio Cisternino>you get different degree of support. Why?
+Because for instance,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9055-2
+01:02:36.357 --> 01:02:40.232
+<v Antonio Cisternino>JavaScript is interpreted like Python.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9063-0
+01:02:40.592 --> 01:02:44.992
+<v Antonio Cisternino>Interpreted languages allows you to have
+eval.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9110-0
+01:02:46.072 --> 01:02:52.166
+<v Antonio Cisternino>Because if you have the interpreter,
+you have at runtime for sure the parser</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9110-1
+01:02:52.166 --> 01:02:57.944
+<v Antonio Cisternino>and the and the interpreter. OK,
+so in interpreter programming languages</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9110-2
+01:02:57.944 --> 01:03:02.851
+<v Antonio Cisternino>often provide eval.
+The eval function takes as input a string</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9110-3
+01:03:02.851 --> 01:03:04.672
+<v Antonio Cisternino>which is assumed to be.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9133-0
+01:03:04.952 --> 01:03:11.454
+<v Antonio Cisternino>A string in the language and invokes the
+interpreter on that string.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9133-1
+01:03:11.454 --> 01:03:17.107
+<v Antonio Cisternino>So meta programming in interpreted
+language is much easier,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9133-2
+01:03:17.107 --> 01:03:18.992
+<v Antonio Cisternino>is also error prone.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9157-0
+01:03:20.592 --> 01:03:27.775
+<v Antonio Cisternino>Because I can be a bad programmer and I
+can generate A syntax error in the string</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9157-1
+01:03:27.775 --> 01:03:31.192
+<v Antonio Cisternino>and then I will get a syntax error. OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9161-0
+01:03:32.592 --> 01:03:34.592
+<v Antonio Cisternino>So someone start saying OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9172-0
+01:03:37.072 --> 01:03:45.312
+<v Antonio Cisternino>You show me an example of quasi quotation.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9176-0
+01:03:48.032 --> 01:03:48.912
+<v Antonio Cisternino>Of lisp.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9202-0
+01:03:50.352 --> 01:03:55.090
+<v Antonio Cisternino>So Lisp said this processing. Lisp said,
+you know,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9202-1
+01:03:55.090 --> 01:04:02.428
+<v Antonio Cisternino>let's have a standard syntax where data
+and program everything is the same and</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9202-2
+01:04:02.428 --> 01:04:04.472
+<v Antonio Cisternino>then interpreter with.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9208-0
+01:04:06.712 --> 01:04:11.152
+<v Antonio Cisternino>Interpret the thing so in Lisp.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9238-0
+01:04:19.272 --> 01:04:25.991
+<v Antonio Cisternino>You can basically.
+So at least everything is an S expression.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9238-1
+01:04:25.991 --> 01:04:34.552
+<v Antonio Cisternino>An S expression is open, open brace,
+a sequence of symbol is a list basically.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9242-0
+01:04:34.552 --> 01:04:39.192
+<v Antonio Cisternino>No and and close, close brace. Um and so.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9244-0
+01:04:40.472 --> 01:04:42.352
+<v Antonio Cisternino>Letter.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9269-0
+01:04:43.672 --> 01:04:48.732
+<v Antonio Cisternino>Requires a list of assignments.
+So this is let.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9269-1
+01:04:48.732 --> 01:04:57.272
+<v Antonio Cisternino>This is the argument of let and this is
+the first and is X takes 10, Y takes 20.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9275-0
+01:05:00.792 --> 01:05:03.952
+<v Antonio Cisternino>And uh, Lisp introduced the.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9276-0
+01:05:05.632 --> 01:05:05.752
+<v Antonio Cisternino>The.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9296-0
+01:05:07.912 --> 01:05:14.999
+<v Antonio Cisternino>This back tick back quote notation for
+the quasi quotation.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9296-1
+01:05:14.999 --> 01:05:17.952
+<v Antonio Cisternino>So what is the quotation?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9306-0
+01:05:19.432 --> 01:05:25.192
+<v Antonio Cisternino>Let's think a little bit about this
+important notion in programming languages.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9311-0
+01:05:27.592 --> 01:05:28.832
+<v Antonio Cisternino>In your opinion.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9325-0
+01:05:30.152 --> 01:05:36.414
+<v Antonio Cisternino>Why we use quotes around strings?
+What is the true message between the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9325-1
+01:05:36.414 --> 01:05:37.032
+<v Antonio Cisternino>quotes?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9336-0
+01:05:42.712 --> 01:05:49.312
+<v Antonio Cisternino>You're saying please ignore this is text
+is not program.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9337-0
+01:05:51.912 --> 01:05:52.152
+<v Antonio Cisternino>Hmm.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9340-0
+01:05:55.552 --> 01:05:55.672
+<v Antonio Cisternino>OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9348-0
+01:05:59.672 --> 01:06:03.432
+<v Antonio Cisternino>There are situation in which you.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9360-0
+01:06:05.592 --> 01:06:12.112
+<v Antonio Cisternino>Both the code and not the same.
+Do you have a an example of this?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9362-0
+01:06:14.632 --> 01:06:15.312
+<v Antonio Cisternino>Hmm, that's.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9368-0
+01:06:20.072 --> 01:06:22.112
+<v Antonio Cisternino>SQL is a different story.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9371-0
+01:06:27.712 --> 01:06:28.792
+<v Antonio Cisternino>PHP.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9404-0
+01:06:30.912 --> 01:06:37.513
+<v Antonio Cisternino>In PHP code is quoted. Why?
+Because most of the text of a web page is</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9404-1
+01:06:37.513 --> 01:06:43.737
+<v Antonio Cisternino>static, so it is much more.
+It makes more sense to quote the code</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9404-2
+01:06:43.737 --> 01:06:46.472
+<v Antonio Cisternino>rather than quoting the text.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9423-0
+01:06:47.592 --> 01:06:50.767
+<v Antonio Cisternino>OK,
+so quote and un quote basically defines 2</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9423-1
+01:06:50.767 --> 01:06:55.392
+<v Antonio Cisternino>languages, 2 languages.
+One is the program, the other is the data.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9461-0
+01:06:57.352 --> 01:07:03.126
+<v Antonio Cisternino>Always. In some cases you call the code,
+other cases you call the text.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9461-1
+01:07:03.126 --> 01:07:09.300
+<v Antonio Cisternino>But nevertheless you need a syntax to
+discriminate between these two levels.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9461-2
+01:07:09.300 --> 01:07:14.272
+<v Antonio Cisternino>This should be preserved at runtime.
+This should be executed.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9463-0
+01:07:14.512 --> 01:07:16.432
+<v Antonio Cisternino>Right now.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9485-0
+01:07:17.832 --> 01:07:23.450
+<v Antonio Cisternino>Lis says OK because in my language
+everything is an expression.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9485-1
+01:07:23.450 --> 01:07:27.752
+<v Antonio Cisternino>I have an interpreter then I'd like to
+generate.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9487-0
+01:07:29.632 --> 01:07:30.872
+<v Antonio Cisternino>Part of the program.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9519-0
+01:07:32.312 --> 01:07:39.238
+<v Antonio Cisternino>Which is basically generating a list and
+I like it to not use the quote.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9519-1
+01:07:39.238 --> 01:07:46.638
+<v Antonio Cisternino>I I don't want to give you the text
+because the text is error prone if in the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9519-2
+01:07:46.638 --> 01:07:47.112
+<v Antonio Cisternino>text.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9525-0
+01:07:49.792 --> 01:07:52.352
+<v Antonio Cisternino>If in the text I write.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9534-0
+01:07:55.392 --> 01:08:00.272
+<v Antonio Cisternino>Oh, yes, not the plus, plus, plus. OK, uh,
+should be OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9535-0
+01:08:02.032 --> 01:08:02.112
+<v Antonio Cisternino>So.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9542-0
+01:08:04.752 --> 01:08:09.672
+<v Antonio Cisternino>Singing in the rain if I write.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9569-0
+01:08:14.032 --> 01:08:21.721
+<v Antonio Cisternino>1-2 let's say add the one.
+This will be add 1-2. This is correct.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9569-1
+01:08:21.721 --> 01:08:28.712
+<v Antonio Cisternino>OK in Lisp Lisp as a syntax which we
+calls Lambda calculus.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9573-0
+01:08:30.712 --> 01:08:33.192
+<v Antonio Cisternino>So function arguments.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9575-0
+01:08:34.912 --> 01:08:35.512
+<v Antonio Cisternino>By the way.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9591-0
+01:08:37.832 --> 01:08:44.872
+<v Antonio Cisternino>If you replace this with that,
+you obtain another language that you may</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9591-1
+01:08:44.872 --> 01:08:46.632
+<v Antonio Cisternino>have faced if you.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9600-0
+01:08:47.552 --> 01:08:53.632
+<v Antonio Cisternino>Are more mathematical.
+That is Mathematica from Wolfram uses.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9606-0
+01:08:54.872 --> 01:08:58.832
+<v Antonio Cisternino>Square braces,
+but basically it's like lis, OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9629-0
+01:09:01.992 --> 01:09:06.933
+<v Antonio Cisternino>This just to say, OK,
+Lisp apart from E Max is still there</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9629-1
+01:09:06.933 --> 01:09:13.632
+<v Antonio Cisternino>because all those that are using Wolfram
+Mathematica are using dialect of Lisp.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9640-0
+01:09:14.632 --> 01:09:23.152
+<v Antonio Cisternino>OK, but I can write add one, add, add 2-3.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9665-0
+01:09:26.312 --> 01:09:31.168
+<v Antonio Cisternino>Or and this is,
+I mean this is easy to spot,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9665-1
+01:09:31.168 --> 01:09:39.261
+<v Antonio Cisternino>but nevertheless is syntactically
+syntactically not correct because I have</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9665-2
+01:09:39.261 --> 01:09:40.232
+<v Antonio Cisternino>an extra.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9666-0
+01:09:42.992 --> 01:09:43.352
+<v Antonio Cisternino>Race.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9715-0
+01:09:46.872 --> 01:09:51.501
+<v Antonio Cisternino>So the risk of using streams to specify
+code in our meta program,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9715-1
+01:09:51.501 --> 01:09:56.903
+<v Antonio Cisternino>because of course meta programming is
+made. I read the state of the program.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9715-2
+01:09:56.903 --> 01:10:01.392
+<v Antonio Cisternino>Eventually I want to manipulate the
+program fairly natural. OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9740-0
+01:10:02.392 --> 01:10:08.758
+<v Antonio Cisternino>If I am in a compiled language that is
+more complicated in.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9740-1
+01:10:08.758 --> 01:10:16.927
+<v Antonio Cisternino>net when we explored the whitespace
+compiler you if you remember I generated</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9740-2
+01:10:16.927 --> 01:10:17.352
+<v Antonio Cisternino>the.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9742-0
+01:10:17.472 --> 01:10:18.432
+<v Antonio Cisternino>By code OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9758-0
+01:10:20.792 --> 01:10:25.977
+<v Antonio Cisternino>It would be nice to be able to manipulate
+the source code and add the code</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9758-1
+01:10:25.977 --> 01:10:27.152
+<v Antonio Cisternino>generated for me.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9788-0
+01:10:31.152 --> 01:10:39.717
+<v Antonio Cisternino>If you are very, very motivated,
+I can send you my PhD thesis that was</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9788-1
+01:10:39.717 --> 01:10:46.472
+<v Antonio Cisternino>about exactly this, this, this problem.
+How can we get?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9795-0
+01:10:46.832 --> 01:10:50.632
+<v Antonio Cisternino>quotation in a compiled language like.net.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9798-0
+01:10:53.192 --> 01:10:54.432
+<v Antonio Cisternino>Um, OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9841-0
+01:10:56.312 --> 01:11:03.642
+<v Antonio Cisternino>So the quasi quotation is important.
+You have to learn the quasi quotation</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9841-1
+01:11:03.642 --> 01:11:11.167
+<v Antonio Cisternino>because it influences all the meta
+programming choices after since then. OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9841-2
+01:11:11.167 --> 01:11:16.152
+<v Antonio Cisternino>so the quasi quotation is a notation is a
+concept.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9882-0
+01:11:16.232 --> 01:11:22.058
+<v Antonio Cisternino>It's like the PHP code quotation.
+I mean it's a concept that has been</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9882-1
+01:11:22.058 --> 01:11:28.800
+<v Antonio Cisternino>declined several time along the history.
+So the quasi quotation is introduced by</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9882-2
+01:11:28.800 --> 01:11:33.461
+<v Antonio Cisternino>the backtick. OK,
+so that the language knows that the S</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9882-3
+01:11:33.461 --> 01:11:35.792
+<v Antonio Cisternino>expression that will follow.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9910-0
+01:11:36.152 --> 01:11:42.292
+<v Antonio Cisternino>Is quasi quoted. OK,
+so the quasi quotation is like commas in</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9910-1
+01:11:42.292 --> 01:11:47.046
+<v Antonio Cisternino>strings.
+So this one should not be interpreted,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9910-2
+01:11:47.046 --> 01:11:50.512
+<v Antonio Cisternino>it should be taken as it is, right?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9936-0
+01:11:51.992 --> 01:11:55.614
+<v Antonio Cisternino>But that is not a string,
+is an S expression.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9936-1
+01:11:55.614 --> 01:12:01.284
+<v Antonio Cisternino>So it's a fragment of a program that I
+want. I don't want to interpret.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9936-2
+01:12:01.284 --> 01:12:04.592
+<v Antonio Cisternino>Now I want to defer the execution of this.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9939-0
+01:12:06.112 --> 01:12:08.072
+<v Antonio Cisternino>OK now.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9948-0
+01:12:10.392 --> 01:12:14.632
+<v Antonio Cisternino>But you know, if I let me take this.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9950-0
+01:12:16.752 --> 01:12:18.352
+<v Antonio Cisternino>Uh, so.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9956-0
+01:12:22.192 --> 01:12:25.992
+<v Antonio Cisternino>If I write this.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9980-0
+01:12:28.032 --> 01:12:32.002
+<v Antonio Cisternino>OK,
+in in Lisp there is also the quotation.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9980-1
+01:12:32.002 --> 01:12:37.327
+<v Antonio Cisternino>The quotation is like commas,
+like quotes for strings. OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9980-2
+01:12:37.327 --> 01:12:39.312
+<v Antonio Cisternino>so I'm returning this.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/9991-0
+01:12:41.112 --> 01:12:46.992
+<v Antonio Cisternino>So if I return these X&amp;
+Y will be X&amp;Y.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10020-0
+01:12:49.392 --> 01:12:58.248
+<v Antonio Cisternino>But I just said that X is 10 and Y is 20.
+So I want the quotation,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10020-1
+01:12:58.248 --> 01:13:04.592
+<v Antonio Cisternino>but I'd like to see 10 and 20 here
+substituted.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10058-0
+01:13:05.912 --> 01:13:10.231
+<v Antonio Cisternino>That is what I want.
+So I don't want a full quotation.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10058-1
+01:13:10.231 --> 01:13:14.393
+<v Antonio Cisternino>I don't want to have the a monolithic
+block of code.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10058-2
+01:13:14.393 --> 01:13:20.910
+<v Antonio Cisternino>I want to say I want to build a piece of
+code that in part is quoted and in part I</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10058-3
+01:13:20.910 --> 01:13:22.952
+<v Antonio Cisternino>want the actual value now.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10059-0
+01:13:25.952 --> 01:13:26.032
+<v Antonio Cisternino>So.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10079-0
+01:13:28.192 --> 01:13:32.608
+<v Antonio Cisternino>The quasi quotation syntax is basically
+this.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10079-1
+01:13:32.608 --> 01:13:36.352
+<v Antonio Cisternino>It allows you to quote a piece of code.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10109-0
+01:13:37.952 --> 01:13:43.615
+<v Antonio Cisternino>And say where,
+which basically means I want to defer the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10109-1
+01:13:43.615 --> 01:13:51.067
+<v Antonio Cisternino>execution of this code and then I have an
+un quote operation that say yes,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10109-2
+01:13:51.067 --> 01:13:53.352
+<v Antonio Cisternino>but please X should be.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10120-0
+01:13:54.632 --> 01:13:58.712
+<v Antonio Cisternino>The actual value of X,
+not the symbol X that should be returned.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10120-1
+01:13:58.712 --> 01:13:59.152
+<v Antonio Cisternino>OK, so.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10157-0
+01:14:01.512 --> 01:14:06.759
+<v Antonio Cisternino>The quasi quasi quotation mechanism
+always has two levels.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10157-1
+01:14:06.759 --> 01:14:14.051
+<v Antonio Cisternino>You are be able to quote to say OK this
+piece of code is the output I want and un</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10157-2
+01:14:14.051 --> 01:14:19.832
+<v Antonio Cisternino>quote but here evaluate because I need
+the value not the symbol.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10160-0
+01:14:19.832 --> 01:14:21.672
+<v Antonio Cisternino>Right. You see the point.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10194-0
+01:14:23.552 --> 01:14:29.330
+<v Antonio Cisternino>If you think of PHP,
+now you understand PHP much better than</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10194-1
+01:14:29.330 --> 01:14:33.972
+<v Antonio Cisternino>before,
+because basically it's exactly this. OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10194-2
+01:14:33.972 --> 01:14:38.992
+<v Antonio Cisternino>when you say you evaluate an expression,
+that is OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10236-0
+01:14:40.392 --> 01:14:44.448
+<v Antonio Cisternino>It's it's this part.
+It's not exactly the same thing because</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10236-1
+01:14:44.448 --> 01:14:48.704
+<v Antonio Cisternino>you're not manipulating the the code,
+you're manipulating HTML.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10236-2
+01:14:48.704 --> 01:14:52.894
+<v Antonio Cisternino>So it's slightly different,
+but basically similar in here. OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10236-3
+01:14:52.894 --> 01:14:56.352
+<v Antonio Cisternino>you're manipulating when you mix Python,
+sorry PHP.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10244-0
+01:14:56.792 --> 01:15:01.296
+<v Antonio Cisternino>And and JavaScript that is similar.
+It's not exactly the same,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10244-1
+01:15:01.296 --> 01:15:02.512
+<v Antonio Cisternino>but it's similar.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10247-0
+01:15:04.232 --> 01:15:04.352
+<v Antonio Cisternino>OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10266-0
+01:15:07.752 --> 01:15:17.152
+<v Antonio Cisternino>Now that we introduce the quasi quotation
+syntax, we can go back to F#.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10304-0
+01:15:24.152 --> 01:15:28.384
+<v Antonio Cisternino>And there are the nested quasi quotation.
+By the way,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10304-1
+01:15:28.384 --> 01:15:34.183
+<v Antonio Cisternino>I stressed the AI at the beginning.
+I'm not keep stressing the AI because</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10304-2
+01:15:34.183 --> 01:15:39.512
+<v Antonio Cisternino>this is not a course about the AI,
+it's about advanced programming.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10346-0
+01:15:39.672 --> 01:15:43.607
+<v Antonio Cisternino>But please, please ask,
+ask and try to experiment.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10346-1
+01:15:43.607 --> 01:15:47.773
+<v Antonio Cisternino>Now it's much more easy.
+When I started these things,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10346-2
+01:15:47.773 --> 01:15:52.017
+<v Antonio Cisternino>the only way was installing a ton of
+things and learn,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10346-3
+01:15:52.017 --> 01:15:58.266
+<v Antonio Cisternino>study the full book and then you start.
+Now you can ask and dig and try to learn</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10346-4
+01:15:58.266 --> 01:15:59.192
+<v Antonio Cisternino>by your own.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10368-0
+01:15:59.592 --> 01:16:06.005
+<v Antonio Cisternino>Questions.
+Can you show me now an example of</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10368-1
+01:16:06.005 --> 01:16:16.552
+<v Antonio Cisternino>quotations in F sharp? By the way,
+by the way, if you're wondering how I.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10374-0
+01:16:17.872 --> 01:16:19.952
+<v Antonio Cisternino>Became involved in F#.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10385-0
+01:16:21.672 --> 01:16:27.192
+<v Antonio Cisternino>It was because my of my PhD thesis around.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10408-0
+01:16:28.552 --> 01:16:36.475
+<v Antonio Cisternino>Code generation in java and.
+net basically and and and and and and and</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10408-1
+01:16:36.475 --> 01:16:43.952
+<v Antonio Cisternino>so I was asked to review this thing by
+the author of the language.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10410-0
+01:16:46.872 --> 01:16:46.992
+<v Antonio Cisternino>So.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10432-0
+01:16:51.352 --> 01:16:54.563
+<v Antonio Cisternino>Well,
+quotation server part was similar to Lisp</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10432-1
+01:16:54.563 --> 01:16:59.312
+<v Antonio Cisternino>because today I I just asked about Lisp
+because it was easy to say OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10433-0
+01:17:00.672 --> 01:17:00.832
+<v Antonio Cisternino>Uh.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10486-0
+01:17:06.392 --> 01:17:11.678
+<v Antonio Cisternino>The output of the quotation,
+it's more complicated to define in the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10486-1
+01:17:11.678 --> 01:17:17.819
+<v Antonio Cisternino>sense that I hope that by now you you
+appreciate the difference between having</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10486-2
+01:17:17.819 --> 01:17:22.483
+<v Antonio Cisternino>an interpreter or not,
+because if you have the interpreter,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10486-3
+01:17:22.483 --> 01:17:25.592
+<v Antonio Cisternino>basically you are able to generate code.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10518-0
+01:17:25.992 --> 01:17:31.237
+<v Antonio Cisternino>And execute the code at runtime.
+Lisp was made that way.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10518-1
+01:17:31.237 --> 01:17:37.587
+<v Antonio Cisternino>Then they were also Lisp compilers.
+But basically whenever you got a</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10518-2
+01:17:37.587 --> 01:17:43.752
+<v Antonio Cisternino>quotation in Lisp or a quasi quotation in
+Lisp, the compiler Lisp.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10567-0
+01:17:43.832 --> 01:17:50.155
+<v Antonio Cisternino>Program contained also a Lisp interpreter
+to interpret the part of this that was</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10567-1
+01:17:50.155 --> 01:17:54.449
+<v Antonio Cisternino>not possible to compile.
+The same apply to JavaScript.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10567-2
+01:17:54.449 --> 01:18:00.147
+<v Antonio Cisternino>JavaScript is P code these days,
+but still you can write JavaScript code</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10567-3
+01:18:00.147 --> 01:18:03.192
+<v Antonio Cisternino>that can be compiled and so at runtime.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10582-0
+01:18:04.112 --> 01:18:09.340
+<v Antonio Cisternino>We also have the full interpreter and
+then the full interpreter tries to</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10582-1
+01:18:09.340 --> 01:18:12.992
+<v Antonio Cisternino>optimize which version should be executed.
+OK, so.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10611-0
+01:18:14.952 --> 01:18:22.804
+<v Antonio Cisternino>In F# you can quote the syntax here is
+angle brackets and F,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10611-1
+01:18:22.804 --> 01:18:29.112
+<v Antonio Cisternino>but basically you can quote part of the
+program.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10632-0
+01:18:30.912 --> 01:18:36.226
+<v Antonio Cisternino>By using quotation you can delay the
+execution of the code.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10632-1
+01:18:36.226 --> 01:18:40.832
+<v Antonio Cisternino>So there are several ways of looking at
+this thing.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10667-0
+01:18:41.992 --> 01:18:47.970
+<v Antonio Cisternino>One way is to say when this 1 + 2 should
+be evaluated.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10667-1
+01:18:47.970 --> 01:18:56.556
+<v Antonio Cisternino>Now now please that should be quoted and
+then if I have a run operation then I</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10667-2
+01:18:56.556 --> 01:18:58.512
+<v Antonio Cisternino>will say run code.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10670-0
+01:18:59.432 --> 01:19:01.512
+<v Antonio Cisternino>And the code will be executed.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10694-0
+01:19:02.872 --> 01:19:08.546
+<v Antonio Cisternino>Why?
+Because most of our programming languages</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10694-1
+01:19:08.546 --> 01:19:16.032
+<v Antonio Cisternino>have a a eager, eager evaluation strategy.
+So when you write.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10695-0
+01:19:16.072 --> 01:19:16.672
+<v Antonio Cisternino>Yeah.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10715-0
+01:19:17.472 --> 01:19:27.390
+<v Antonio Cisternino>A function in invocation in Java.
+Net Ross pick up almost whatever you want</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10715-1
+01:19:27.390 --> 01:19:30.392
+<v Antonio Cisternino>if you write add 1 + 2.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10716-0
+01:19:32.032 --> 01:19:32.072
+<v Antonio Cisternino>Uh.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10720-0
+01:19:33.512 --> 01:19:35.952
+<v Antonio Cisternino>Three, not two.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10729-0
+01:19:37.552 --> 01:19:40.832
+<v Antonio Cisternino>When this 1 + 2 will be evaluated.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10732-0
+01:19:44.272 --> 01:19:44.552
+<v Antonio Cisternino>Before.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10741-0
+01:19:45.472 --> 01:19:50.272
+<v Antonio Cisternino>The execution of other or later before.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10786-0
+01:19:51.752 --> 01:19:56.096
+<v Antonio Cisternino>That is not the only option.
+You can say you know what?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10786-1
+01:19:56.096 --> 01:19:59.510
+<v Antonio Cisternino>As long as I don't need the first
+argument,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10786-2
+01:19:59.510 --> 01:20:04.786
+<v Antonio Cisternino>I can suspend the execution and I will
+evaluate only if needed. OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10786-3
+01:20:04.786 --> 01:20:08.432
+<v Antonio Cisternino>that is another option that is lazy
+execution.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10810-0
+01:20:08.712 --> 01:20:14.900
+<v Antonio Cisternino>Asker supports lazy execution.
+Why are we using basically almost only</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10810-1
+01:20:14.900 --> 01:20:20.912
+<v Antonio Cisternino>eager execution strategy?
+Because it's more efficient to implement.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10827-0
+01:20:22.312 --> 01:20:27.616
+<v Antonio Cisternino>And in fact, after many attempts,
+Askel always struggled to have an</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10827-1
+01:20:27.616 --> 01:20:30.112
+<v Antonio Cisternino>efficient implementation, right?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10849-0
+01:20:33.672 --> 01:20:37.922
+<v Antonio Cisternino>We still wondering why people is using
+Python and not ask it because Python is</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10849-1
+01:20:37.922 --> 01:20:41.472
+<v Antonio Cisternino>less efficient than ask it,
+but it's also less expressive. Sorry.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10877-0
+01:20:43.512 --> 01:20:52.206
+<v Antonio Cisternino>So quotations are a way in programming
+languages to get back a lazy about do</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10877-1
+01:20:52.206 --> 01:21:01.352
+<v Antonio Cisternino>insertion strategy in which the language
+is eager, so you don't you're not paid.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10918-0
+01:21:01.472 --> 01:21:06.277
+<v Antonio Cisternino>For laziness, if it's not needed,
+and if it's needed,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10918-1
+01:21:06.277 --> 01:21:12.596
+<v Antonio Cisternino>you quote the code and say OK,
+I will use the operator to run the code</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10918-2
+01:21:12.596 --> 01:21:18.202
+<v Antonio Cisternino>when I need it, right?
+Of course the implementation of the run</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10918-3
+01:21:18.202 --> 01:21:20.872
+<v Antonio Cisternino>operator requires you to have.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10953-0
+01:21:21.352 --> 01:21:26.353
+<v Antonio Cisternino>Basically the compiler is something
+similar at runtime,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10953-1
+01:21:26.353 --> 01:21:30.282
+<v Antonio Cisternino>so it's not for free the run operation.
+OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10953-2
+01:21:30.282 --> 01:21:37.872
+<v Antonio Cisternino>but nevertheless you can obtain the thing.
+So you see when you quote the expression.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10960-0
+01:21:38.712 --> 01:21:44.112
+<v Antonio Cisternino>And then you print the expression you
+have the.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10980-0
+01:21:45.432 --> 01:21:54.283
+<v Antonio Cisternino>A sort of a variant of a an S expression.
+So you have basically the compiler</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10980-1
+01:21:54.283 --> 01:21:56.352
+<v Antonio Cisternino>generates for you.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10991-0
+01:21:58.392 --> 01:22:05.432
+<v Antonio Cisternino>And that structure which represents the
+code. So here is call of addition.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10996-0
+01:22:07.272 --> 01:22:09.392
+<v Antonio Cisternino>With these arguments, Sir.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/10998-0
+01:22:10.512 --> 01:22:10.912
+<v Antonio Cisternino>Hmm.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11006-0
+01:22:14.672 --> 01:22:20.712
+<v Antonio Cisternino>And of course you also have variables
+quoted.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11010-0
+01:22:23.072 --> 01:22:24.872
+<v Antonio Cisternino>And in this case.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11023-0
+01:22:26.792 --> 01:22:32.712
+<v Antonio Cisternino>The un quote is implicit.
+That is the decision of the.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11051-0
+01:22:35.592 --> 01:22:42.999
+<v Antonio Cisternino>So I'm using ** is 10 and this will be
+unquoted automatically by the language</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11051-1
+01:22:42.999 --> 01:22:47.272
+<v Antonio Cisternino>and so as you can see there is not at
+least.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11057-0
+01:22:50.872 --> 01:22:54.432
+<v Antonio Cisternino>No, sorry, I said a wrong thing.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11065-0
+01:22:56.072 --> 01:22:58.832
+<v Antonio Cisternino>I mean it is unquoted, yes.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11078-0
+01:23:02.472 --> 01:23:09.072
+<v Antonio Cisternino>I was wondering this lead.
+I think that this is an hallucination.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11087-0
+01:23:11.432 --> 01:23:14.312
+<v Antonio Cisternino>Because let X10 is outside of the court,
+so.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11101-0
+01:23:16.112 --> 01:23:22.712
+<v Antonio Cisternino>You want to see a guy hallucinating that
+it is. This is wrong, OK?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11104-0
+01:23:26.552 --> 01:23:27.912
+<v Antonio Cisternino>Next the quotation.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11127-0
+01:23:29.672 --> 01:23:33.900
+<v Antonio Cisternino>Like Lisp, et cetera.
+So if you want to un quote,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11127-1
+01:23:33.900 --> 01:23:40.072
+<v Antonio Cisternino>then you're not using a single ad,
+but you use two ads and then you can.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11173-0
+01:23:41.512 --> 01:23:46.857
+<v Antonio Cisternino>Have placeholder that will be evaluated
+now and not deferred. OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11173-1
+01:23:46.857 --> 01:23:53.578
+<v Antonio Cisternino>so you have part of your expression that
+is will be evaluated when you use run and</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11173-2
+01:23:53.578 --> 01:24:00.056
+<v Antonio Cisternino>part now because you're saying percent
+percentage in there and in this case you</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11173-3
+01:24:00.056 --> 01:24:01.352
+<v Antonio Cisternino>are splicing in.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11226-0
+01:24:01.432 --> 01:24:06.941
+<v Antonio Cisternino>The the inner why these two things are
+useful? Because for instance,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11226-1
+01:24:06.941 --> 01:24:12.849
+<v Antonio Cisternino>if you want to compose a program,
+often you will say if the data has this</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11226-2
+01:24:12.849 --> 01:24:16.362
+<v Antonio Cisternino>property then I need this fragment of
+code,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11226-3
+01:24:16.362 --> 01:24:21.312
+<v Antonio Cisternino>otherwise I need another equivalent
+fragment of code. OK, so.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11264-0
+01:24:21.432 --> 01:24:25.040
+<v Antonio Cisternino>Usually you do the splicing,
+so you say OK,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11264-1
+01:24:25.040 --> 01:24:29.551
+<v Antonio Cisternino>the code is take the code inner,
+remove the quotation,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11264-2
+01:24:29.551 --> 01:24:36.112
+<v Antonio Cisternino>put here the code and then the rest is
+quoted and so I can combine fragments of</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11264-3
+01:24:36.112 --> 01:24:39.392
+<v Antonio Cisternino>code in an algebra of code manipulation.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11305-0
+01:24:40.792 --> 01:24:48.025
+<v Antonio Cisternino>That is also type safe because in this
+case the code the the language is capable</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11305-1
+01:24:48.025 --> 01:24:54.811
+<v Antonio Cisternino>of type inferencing the code and say this
+code is of type int and this code</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11305-2
+01:24:54.811 --> 01:24:58.472
+<v Antonio Cisternino>requires a code of type int and return a.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11310-0
+01:24:58.712 --> 01:25:02.512
+<v Antonio Cisternino>Code of typing so you can even type check
+the thing.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11312-0
+01:25:04.592 --> 01:25:04.712
+<v Antonio Cisternino>OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11314-0
+01:25:08.752 --> 01:25:08.912
+<v Antonio Cisternino>So.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11347-0
+01:25:11.672 --> 01:25:18.852
+<v Antonio Cisternino>There are evaluation for the quotation,
+but these are not complete in F sharp.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11347-1
+01:25:18.852 --> 01:25:25.305
+<v Antonio Cisternino>So in general, when you go to reflection,
+when you go to intersection,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11347-2
+01:25:25.305 --> 01:25:27.032
+<v Antonio Cisternino>you always have to.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11386-0
+01:25:27.112 --> 01:25:33.987
+<v Antonio Cisternino>Keep in mind that the first question is
+how much can I reflect at runtime and how</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11386-1
+01:25:33.987 --> 01:25:39.771
+<v Antonio Cisternino>much I can act at runtime?
+Because unless it's an interpreter and in</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11386-2
+01:25:39.771 --> 01:25:43.712
+<v Antonio Cisternino>case of the interpreter,
+typically you can do.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11438-0
+01:25:44.392 --> 01:25:48.270
+<v Antonio Cisternino>Almost everything in all the other
+programming languages,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11438-1
+01:25:48.270 --> 01:25:52.215
+<v Antonio Cisternino>there is a compromise.
+So in Java you can reflect the type</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11438-2
+01:25:52.215 --> 01:25:57.364
+<v Antonio Cisternino>system, not the body of the method. In.
+net you can reflect the type system.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11438-3
+01:25:57.364 --> 01:26:02.112
+<v Antonio Cisternino>You can even reflect the body methods,
+but those will be expressed in.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11488-0
+01:26:03.832 --> 01:26:08.375
+<v Antonio Cisternino>Intermediate language,
+not in the language you wrote the code.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11488-1
+01:26:08.375 --> 01:26:11.260
+<v Antonio Cisternino>OK,
+so it's a compromise for efficiency</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11488-2
+01:26:11.260 --> 01:26:15.659
+<v Antonio Cisternino>purpose and the same applies to the
+quotations and the code.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11488-3
+01:26:15.659 --> 01:26:20.779
+<v Antonio Cisternino>So unless you don't want to have the full
+language support at runtime,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11488-4
+01:26:20.779 --> 01:26:23.592
+<v Antonio Cisternino>you may have a system this helper that.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11522-0
+01:26:23.832 --> 01:26:27.430
+<v Antonio Cisternino>Comes with F# allows you to evaluate the
+quotation,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11522-1
+01:26:27.430 --> 01:26:33.174
+<v Antonio Cisternino>but it will not support the full language.
+So if you use some unsupported language</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11522-2
+01:26:33.174 --> 01:26:36.495
+<v Antonio Cisternino>feature that may be supported by the
+quotation,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11522-3
+01:26:36.495 --> 01:26:40.232
+<v Antonio Cisternino>you will get an error when you want to
+evaluate that.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11526-0
+01:26:40.592 --> 01:26:43.632
+<v Antonio Cisternino>OK. And that is part of life.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11527-0
+01:26:44.712 --> 01:26:45.152
+<v Antonio Cisternino>OK, um.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11537-0
+01:26:50.072 --> 01:26:55.232
+<v Antonio Cisternino>Now that we, uh, look into that, can um.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11555-0
+01:26:56.952 --> 01:27:02.419
+<v Antonio Cisternino>And we finished and we we will start
+tomorrow from here,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11555-1
+01:27:02.419 --> 01:27:05.392
+<v Antonio Cisternino>but can you show me an example?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11557-0
+01:27:07.552 --> 01:27:08.112
+<v Antonio Cisternino>Of.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11569-0
+01:27:09.952 --> 01:27:18.192
+<v Antonio Cisternino>Uh,
+an expression evaluation of F quotation.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11607-0
+01:27:24.352 --> 01:27:30.096
+<v Antonio Cisternino>So when you have quotation,
+typically you have data structure which</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11607-1
+01:27:30.096 --> 01:27:35.502
+<v Antonio Cisternino>represents the code no,
+which is basically the syntax tree that</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11607-2
+01:27:35.502 --> 01:27:40.992
+<v Antonio Cisternino>the parser generates generate in terms of
+data of your language.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11614-0
+01:27:42.632 --> 01:27:49.272
+<v Antonio Cisternino>Um, so you can write your own interpreter.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11617-0
+01:27:53.352 --> 01:27:54.272
+<v Antonio Cisternino>Enough.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11618-0
+01:27:56.952 --> 01:27:58.112
+<v Antonio Cisternino>I know.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11622-0
+01:27:59.472 --> 01:28:01.232
+<v Antonio Cisternino>No, no, no, no, no.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11626-0
+01:28:02.632 --> 01:28:03.792
+<v Antonio Cisternino>I need the uh.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11637-0
+01:28:06.552 --> 01:28:16.112
+<v Antonio Cisternino>A recursive evaluation example with
+pattern matching.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11640-0
+01:28:18.192 --> 01:28:19.392
+<v Antonio Cisternino>Don't use.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11651-0
+01:28:24.272 --> 01:28:28.992
+<v Antonio Cisternino>BF sharp evaluation.
+Why is this useless as an example?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11653-0
+01:28:32.592 --> 01:28:32.712
+<v Antonio Cisternino>OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11654-0
+01:28:34.592 --> 01:28:34.672
+<v Antonio Cisternino>So.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11692-0
+01:28:36.912 --> 01:28:44.262
+<v Antonio Cisternino>Basically you suddenly start appreciating
+all the things we said about grammars,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11692-1
+01:28:44.262 --> 01:28:51.612
+<v Antonio Cisternino>because basically you are browsing the
+abstract syntax tree that is generated by</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11692-2
+01:28:51.612 --> 01:28:52.792
+<v Antonio Cisternino>the language.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11700-0
+01:28:53.032 --> 01:28:58.872
+<v Antonio Cisternino>Into a data structure and in rogramming
+languages.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11724-0
+01:29:00.472 --> 01:29:08.180
+<v Antonio Cisternino>With the button matching like F sharp,
+like list like like Askel,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11724-1
+01:29:08.180 --> 01:29:13.552
+<v Antonio Cisternino>ML and many others,
+basically you can say OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11753-0
+01:29:15.752 --> 01:29:22.748
+<v Antonio Cisternino>I I I have the ability to structure a
+match values and so I can say match the</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11753-1
+01:29:22.748 --> 01:29:29.745
+<v Antonio Cisternino>expression with if the expression is a
+value with some value and I don't care</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11753-2
+01:29:29.745 --> 01:29:30.552
+<v Antonio Cisternino>the rest.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11760-0
+01:29:31.752 --> 01:29:36.432
+<v Antonio Cisternino>The result is value OK if it's call.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11789-0
+01:29:39.832 --> 01:29:48.551
+<v Antonio Cisternino>And the know the the with some operation
+and the name is addition and I have two</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11789-1
+01:29:48.551 --> 01:29:54.472
+<v Antonio Cisternino>values A and B.
+Then I convert at runtime A and B and.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11792-0
+01:29:54.752 --> 01:29:55.912
+<v Antonio Cisternino>And I call.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11806-0
+01:29:57.072 --> 01:30:01.697
+<v Antonio Cisternino>Beware I call eval,
+so I recurse because this can be an</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11806-1
+01:30:01.697 --> 01:30:03.432
+<v Antonio Cisternino>expression itself so.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11808-0
+01:30:04.512 --> 01:30:05.872
+<v Antonio Cisternino>Like in the grammar.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11837-0
+01:30:06.512 --> 01:30:14.688
+<v Antonio Cisternino>Call it can can be plaza expression
+expression and you recourse so I can</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11837-1
+01:30:14.688 --> 01:30:20.960
+<v Antonio Cisternino>recursively go.
+Eventually I know I will get an integer</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11837-2
+01:30:20.960 --> 01:30:22.192
+<v Antonio Cisternino>and then I.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11840-0
+01:30:22.392 --> 01:30:24.592
+<v Antonio Cisternino>Box the result.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11873-0
+01:30:25.552 --> 01:30:32.092
+<v Antonio Cisternino>Which is the sum of the two values.
+If it's multiply, do the multiplication.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11873-1
+01:30:32.092 --> 01:30:37.189
+<v Antonio Cisternino>If it's if then else,
+then eval the condition into bool and</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11873-2
+01:30:37.189 --> 01:30:39.992
+<v Antonio Cisternino>then eval the then or the branch.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11876-0
+01:30:42.032 --> 01:30:44.152
+<v Antonio Cisternino>And so on so.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11931-0
+01:30:45.312 --> 01:30:48.992
+<v Antonio Cisternino>Of course,
+if you want to interpret at runtime,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11931-1
+01:30:48.992 --> 01:30:54.742
+<v Antonio Cisternino>either you have the full compiler,
+otherwise you can retain a much lighter</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11931-2
+01:30:54.742 --> 01:30:58.115
+<v Antonio Cisternino>version,
+which is something that is able at</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11931-3
+01:30:58.115 --> 01:31:04.325
+<v Antonio Cisternino>compile time to generate the tree. OK,
+so the compiler at compile time generates</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11931-4
+01:31:04.325 --> 01:31:04.632
+<v Antonio Cisternino>the.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11961-0
+01:31:04.952 --> 01:31:12.172
+<v Antonio Cisternino>Expression structure inside the and don't
+need anymore the F compiler because you</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11961-1
+01:31:12.172 --> 01:31:18.951
+<v Antonio Cisternino>already got the result and then I
+interpret the thing again. Why we do this?</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/11961-2
+01:31:18.951 --> 01:31:20.712
+<v Antonio Cisternino>Because this allows.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/12008-0
+01:31:20.912 --> 01:31:26.362
+<v Antonio Cisternino>Even for compiled languages to have some
+code manipulation without having to bring</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/12008-1
+01:31:26.362 --> 01:31:31.418
+<v Antonio Cisternino>the full compiler stack at runtime,
+which of course will be the alternative.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/12008-2
+01:31:31.418 --> 01:31:36.081
+<v Antonio Cisternino>In that case you output the F sharp,
+you call the compiler, that's it,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/12008-3
+01:31:36.081 --> 01:31:40.152
+<v Antonio Cisternino>you can execute OK, but that is too much,
+it's too expensive.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/12034-0
+01:31:41.512 --> 01:31:46.168
+<v Antonio Cisternino>It's too error prone.
+In this way you can even prove properties.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/12034-1
+01:31:46.168 --> 01:31:49.391
+<v Antonio Cisternino>You can prove that the system is not
+broken,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/12034-2
+01:31:49.391 --> 01:31:54.836
+<v Antonio Cisternino>you can forbid to use language features
+that in other cases are applicable,</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/12034-3
+01:31:54.836 --> 01:31:55.552
+<v Antonio Cisternino>and so on.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/12036-0
+01:31:55.672 --> 01:31:55.792
+<v Antonio Cisternino>OK.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/12042-0
+01:31:57.912 --> 01:32:00.712
+<v Antonio Cisternino>Right. I think we can.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/12067-0
+01:32:02.632 --> 01:32:09.728
+<v Antonio Cisternino>Stop here and tomorrow we will start
+again and we will finish to reason about</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/12067-1
+01:32:09.728 --> 01:32:16.552
+<v Antonio Cisternino>meta programming and look into many other
+application of these techniques.</v>
+
+8b94445b-096f-4dcc-8bc8-b1a691847b3a/12069-0
+01:32:18.352 --> 01:32:19.112
+<v Antonio Cisternino>Thank you.</v>

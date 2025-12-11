@@ -1,0 +1,4201 @@
+WEBVTT
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9-0
+00:00:11.331 --> 00:00:11.451
+OK.
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10-0
+00:00:11.491 --> 00:00:11.611
+OK.
+
+144475b2-e415-4c60-adda-f6b8ce80609f/33-0
+00:01:14.531 --> 00:01:17.091
+<v Antonio Cisternino>One second, I'll.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/35-0
+00:01:20.251 --> 00:01:21.691
+<v Antonio Cisternino>I may need to.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/51-0
+00:02:00.491 --> 00:02:03.491
+<v Antonio Cisternino>Open the eye.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/64-0
+00:02:44.580 --> 00:02:44.660
+Oh.
+
+144475b2-e415-4c60-adda-f6b8ce80609f/85-0
+00:02:46.980 --> 00:02:57.161
+<v Antonio Cisternino>OK, so second day,
+second round of exercises. OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/85-1
+00:02:57.161 --> 00:03:00.420
+<v Antonio Cisternino>so on Monday we.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/87-0
+00:03:01.580 --> 00:03:03.060
+<v Antonio Cisternino>Finished. Um.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/101-0
+00:03:04.820 --> 00:03:12.100
+<v Antonio Cisternino>A number of we finished the example of
+generating some code and.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/124-0
+00:03:13.660 --> 00:03:27.644
+<v Antonio Cisternino>How we can use the AI for that purpose.
+Now today I'd like to explore with you</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/124-1
+00:03:27.644 --> 00:03:30.300
+<v Antonio Cisternino>some code base.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/126-0
+00:03:30.380 --> 00:03:31.860
+<v Antonio Cisternino>As an example.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/129-0
+00:03:33.540 --> 00:03:34.420
+<v Antonio Cisternino>Of um.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/131-0
+00:03:36.220 --> 00:03:37.180
+<v Antonio Cisternino>Learning.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/138-0
+00:03:38.620 --> 00:03:42.180
+<v Antonio Cisternino>So anyone has any preferences?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/147-0
+00:03:44.700 --> 00:03:48.398
+<v Antonio Cisternino>Of course,
+it should be available on GitHub,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/147-1
+00:03:48.398 --> 00:03:49.220
+<v Antonio Cisternino>of course.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/151-0
+00:03:53.820 --> 00:03:56.140
+<v Antonio Cisternino>And top.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/155-0
+00:04:00.380 --> 00:04:01.580
+<v Antonio Cisternino>Is that OK?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/168-0
+00:04:07.420 --> 00:04:12.863
+<v Antonio Cisternino>OK,
+today let's try to be more interactive.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/168-1
+00:04:12.863 --> 00:04:14.100
+<v Antonio Cisternino>So I will.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/172-0
+00:04:17.780 --> 00:04:19.220
+<v Antonio Cisternino>Stop.org.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/179-0
+00:04:26.580 --> 00:04:29.860
+<v Antonio Cisternino>Which one? The original and top?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/185-0
+00:04:31.620 --> 00:04:34.300
+<v Antonio Cisternino>Uh, it can be done. OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/187-0
+00:04:36.820 --> 00:04:36.940
+<v Antonio Cisternino>Com.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/200-0
+00:04:52.740 --> 00:04:56.820
+<v Antonio Cisternino>OK, blackboard and chalk.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/206-0
+00:04:58.100 --> 00:04:59.420
+<v Antonio Cisternino>Come on, too many requests.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/214-0
+00:05:03.060 --> 00:05:05.740
+<v Antonio Cisternino>You have exceeded a secondary rate limit.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/219-0
+00:05:08.540 --> 00:05:11.420
+<v Antonio Cisternino>One way too many request.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/221-0
+00:05:13.980 --> 00:05:15.500
+<v Antonio Cisternino>Let me sign in.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/225-0
+00:05:21.300 --> 00:05:22.260
+<v Antonio Cisternino>Let's use the.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/227-0
+00:05:24.140 --> 00:05:25.500
+<v Antonio Cisternino>I move my lap.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/229-0
+00:05:28.620 --> 00:05:28.820
+<v Antonio Cisternino>Yeah.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/230-0
+00:05:29.900 --> 00:05:30.540
+<v Antonio Cisternino>Vitab.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/232-0
+00:05:34.260 --> 00:05:34.380
+<v Antonio Cisternino>Back.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/235-0
+00:05:41.180 --> 00:05:41.500
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/239-0
+00:05:47.500 --> 00:05:48.700
+<v Antonio Cisternino>M Top Eng.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/242-0
+00:05:54.620 --> 00:05:54.780
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/245-0
+00:05:57.180 --> 00:05:57.900
+<v Antonio Cisternino>Perfect.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/247-0
+00:06:02.700 --> 00:06:03.340
+<v Antonio Cisternino>Now.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/275-0
+00:06:06.980 --> 00:06:10.839
+<v Antonio Cisternino>So in general,
+I don't think the assignment will be tell</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/275-1
+00:06:10.839 --> 00:06:15.579
+<v Antonio Cisternino>me something about and top.
+I mean it will be something more like how</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/275-2
+00:06:15.579 --> 00:06:16.460
+<v Antonio Cisternino>these things.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/305-0
+00:06:17.860 --> 00:06:26.009
+<v Antonio Cisternino>Is implemented or work or can be done or
+is the code efficiency efficient or we</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/305-1
+00:06:26.009 --> 00:06:33.140
+<v Antonio Cisternino>can improve some areas or I don't know,
+I mean perform some security.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/341-0
+00:06:33.460 --> 00:06:40.666
+<v Antonio Cisternino>Checks looking for potential
+vulnerabilities into the code base. OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/341-1
+00:06:40.666 --> 00:06:48.917
+<v Antonio Cisternino>so so I mean particular preference for
+this code base and top for those of you</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/341-2
+00:06:48.917 --> 00:06:52.260
+<v Antonio Cisternino>that are not familiar with it's.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/368-0
+00:06:52.700 --> 00:07:01.052
+<v Antonio Cisternino>An open source system maintained by
+Professor Derry that you may know it's</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/368-1
+00:07:01.052 --> 00:07:08.180
+<v Antonio Cisternino>around networking and so I mean questions
+and analysis will be.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/377-0
+00:07:08.260 --> 00:07:13.660
+<v Antonio Cisternino>Likely to be in in this space. OK, so.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/381-0
+00:07:15.780 --> 00:07:18.020
+<v Antonio Cisternino>Goal. Any preferences?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/406-0
+00:07:22.260 --> 00:07:26.871
+<v Antonio Cisternino>Mm-hmm.
+I mean if this was supposed to be a</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/406-1
+00:07:26.871 --> 00:07:33.580
+<v Antonio Cisternino>project for the course,
+which is explore and top Ng codebase 4.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/457-0
+00:07:35.380 --> 00:07:41.672
+<v Antonio Cisternino>Or what? I mean it it it will not be,
+it will never be explore this code base.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/457-1
+00:07:41.672 --> 00:07:45.495
+<v Antonio Cisternino>I mean it's rather pointless.
+It's complicated.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/457-2
+00:07:45.495 --> 00:07:51.070
+<v Antonio Cisternino>You have to set up your goals.
+So I mean let's define a clear goal of</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/457-3
+00:07:51.070 --> 00:07:53.540
+<v Antonio Cisternino>the project. So the project is.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/462-0
+00:07:53.780 --> 00:07:57.540
+<v Antonio Cisternino>What we are looking uh into this code
+base?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/489-0
+00:07:58.900 --> 00:08:12.222
+<v Antonio Cisternino>Efficiency of the code I will. I mean,
+let's let's say I would rather prefer</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/489-1
+00:08:12.222 --> 00:08:13.780
+<v Antonio Cisternino>security.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/534-0
+00:08:15.100 --> 00:08:18.828
+<v Antonio Cisternino>Because the efficiency of the code
+requires,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/534-1
+00:08:18.828 --> 00:08:25.041
+<v Antonio Cisternino>I will probably never ask for that. OK,
+because it's first it's more about</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/534-2
+00:08:25.041 --> 00:08:30.011
+<v Antonio Cisternino>algorithms. Second,
+you probably need some more licenses to</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/534-3
+00:08:30.011 --> 00:08:32.580
+<v Antonio Cisternino>because the overall efficiency.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/565-0
+00:08:32.620 --> 00:08:36.971
+<v Antonio Cisternino>Of a code base,
+unless it's a system in a single file or</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/565-1
+00:08:36.971 --> 00:08:40.865
+<v Antonio Cisternino>in few files.
+Otherwise it's impossible for you to</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/565-2
+00:08:40.865 --> 00:08:45.980
+<v Antonio Cisternino>provide the full set of files to expect
+for efficiency. So I mean.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/609-0
+00:08:47.700 --> 00:08:53.472
+<v Antonio Cisternino>It will be tricky to to to perform this
+kind of analysis using the eye,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/609-1
+00:08:53.472 --> 00:08:59.886
+<v Antonio Cisternino>so I will always look for analysis that
+are suitable that you can do reasonably</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/609-2
+00:08:59.886 --> 00:09:04.375
+<v Antonio Cisternino>well by copy pasting,
+downloading code bases, etcetera,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/609-3
+00:09:04.375 --> 00:09:06.380
+<v Antonio Cisternino>but without having to to.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/615-0
+00:09:07.060 --> 00:09:10.940
+<v Antonio Cisternino>To look too many files at once.
+So I mean it's.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/623-0
+00:09:12.900 --> 00:09:17.260
+<v Antonio Cisternino>Let's say let's look for.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/625-0
+00:09:19.260 --> 00:09:20.220
+<v Antonio Cisternino>So uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/651-0
+00:09:21.420 --> 00:09:31.344
+<v Antonio Cisternino>You can when you explore a code base,
+in this case on top is written in C++,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/651-1
+00:09:31.344 --> 00:09:35.340
+<v Antonio Cisternino>let's say C++ will be the core.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/653-0
+00:09:36.500 --> 00:09:36.620
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/656-0
+00:09:38.580 --> 00:09:38.860
+<v Antonio Cisternino>So uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/685-0
+00:09:41.220 --> 00:09:50.348
+<v Antonio Cisternino>Question that I may ask around the C++
+codebase can be around the memory</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/685-1
+00:09:50.348 --> 00:09:56.100
+<v Antonio Cisternino>management style of the codebase and
+whether.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/722-0
+00:09:56.900 --> 00:10:05.125
+<v Antonio Cisternino>There are dangerous patterns for dynamic
+references or use and abuse of pointers</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/722-1
+00:10:05.125 --> 00:10:10.305
+<v Antonio Cisternino>that may, you know,
+compromise the security of the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/722-2
+00:10:10.305 --> 00:10:16.500
+<v Antonio Cisternino>application or these kind of things. OK,
+so let let's stick.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/758-0
+00:10:16.740 --> 00:10:25.511
+<v Antonio Cisternino>The space of in the space of pointers,
+memory management and security related</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/758-1
+00:10:25.511 --> 00:10:31.247
+<v Antonio Cisternino>properties.
+And let's assume that the goal was set</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/758-2
+00:10:31.247 --> 00:10:36.420
+<v Antonio Cisternino>like this.
+I mean explore the top Ng project.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/777-0
+00:10:36.740 --> 00:10:49.649
+<v Antonio Cisternino>Looking for the convention used in the
+C++ project for managing the memory and</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/777-1
+00:10:49.649 --> 00:10:52.100
+<v Antonio Cisternino>spot potential.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/803-0
+00:10:54.020 --> 00:11:01.437
+<v Antonio Cisternino>So find the the style of memory
+management and look for potential issues</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/803-1
+00:11:01.437 --> 00:11:06.620
+<v Antonio Cisternino>in in in this both in security and in
+performance.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/828-0
+00:11:08.180 --> 00:11:14.919
+<v Antonio Cisternino>It will be already complicated as a as a
+task. OK, in general,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/828-1
+00:11:14.919 --> 00:11:21.016
+<v Antonio Cisternino>whether we ask it or not,
+if you decide to go for a code</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/828-2
+00:11:21.016 --> 00:11:22.300
+<v Antonio Cisternino>exploration.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/878-0
+00:11:23.380 --> 00:11:31.060
+<v Antonio Cisternino>Include a brief out outline of the style
+and the conventions that are used in the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/878-1
+00:11:31.060 --> 00:11:37.710
+<v Antonio Cisternino>in the code base. And by the way,
+of course we are focusing on the AI,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/878-2
+00:11:37.710 --> 00:11:43.330
+<v Antonio Cisternino>but it's not forbidden to do traditional
+stuff. OK, I mean.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/908-0
+00:11:43.780 --> 00:11:50.450
+<v Antonio Cisternino>But the the fact that we say to use AI
+doesn't mean that you can't use Visual</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/908-1
+00:11:50.450 --> 00:11:56.180
+<v Antonio Cisternino>Studio or Code or any editor,
+read the code by your own, etcetera.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/908-2
+00:11:56.180 --> 00:11:58.660
+<v Antonio Cisternino>I mean it's basically the AI.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/941-0
+00:11:59.620 --> 00:12:05.949
+<v Antonio Cisternino>Will help you to make tractable tractable
+the problem because if you have to read</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/941-1
+00:12:05.949 --> 00:12:10.734
+<v Antonio Cisternino>and learn the the code base,
+a complex code base is basically</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/941-2
+00:12:10.734 --> 00:12:14.980
+<v Antonio Cisternino>impossible in 10 days with DI becomes
+possible. OK so.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/971-0
+00:12:15.300 --> 00:12:21.489
+<v Antonio Cisternino>So I I don't want you to think that the
+assignment is just typing in the AI.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/971-1
+00:12:21.489 --> 00:12:26.714
+<v Antonio Cisternino>I mean it can be a mixed.
+It can also be a different interaction</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/971-2
+00:12:26.714 --> 00:12:32.020
+<v Antonio Cisternino>with the AI because for instance on
+GitHub you also have copilot.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/973-0
+00:12:32.060 --> 00:12:32.260
+<v Antonio Cisternino>8.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/993-0
+00:12:33.700 --> 00:12:41.130
+<v Antonio Cisternino>You take a pilot which is included with
+some limits in the in the free version</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/993-1
+00:12:41.130 --> 00:12:44.140
+<v Antonio Cisternino>and you can use that instead of.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1022-0
+00:12:45.500 --> 00:12:51.468
+<v Antonio Cisternino>Use downloading the source code and
+passing the source code to some other AI.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1022-1
+00:12:51.468 --> 00:12:56.978
+<v Antonio Cisternino>So basically in this respect,
+find your own balance and I mean there is</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1022-2
+00:12:56.978 --> 00:13:01.340
+<v Antonio Cisternino>no particular prescriptions in how to do
+this thing, OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1023-0
+00:13:02.020 --> 00:13:02.060
+<v Antonio Cisternino>O.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1033-0
+00:13:04.740 --> 00:13:09.260
+<v Antonio Cisternino>What you will do now that we set up our
+goal?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1040-0
+00:13:19.260 --> 00:13:20.980
+<v Antonio Cisternino>In the meantime, I try to.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1044-0
+00:13:22.220 --> 00:13:23.580
+<v Antonio Cisternino>Understand whether.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1046-0
+00:13:25.100 --> 00:13:26.100
+<v Antonio Cisternino>I can.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1059-0
+00:13:27.300 --> 00:13:33.340
+<v Antonio Cisternino>Oh, now looks more like it should.
+There we are, OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1061-0
+00:13:35.180 --> 00:13:36.460
+<v Antonio Cisternino>Be much better.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1063-0
+00:13:37.620 --> 00:13:37.700
+<v Antonio Cisternino>Uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1066-0
+00:13:40.620 --> 00:13:42.940
+<v Antonio Cisternino>So, how would you proceed?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1089-0
+00:13:52.060 --> 00:14:01.262
+<v Antonio Cisternino>I would use the gravity to analyze the
+code base and make me a brief how it's</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1089-1
+00:14:01.262 --> 00:14:06.100
+<v Antonio Cisternino>structured the technologies anti gravity.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1097-0
+00:14:26.660 --> 00:14:26.700
+<v Antonio Cisternino>Uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1108-0
+00:14:46.380 --> 00:14:50.340
+<v Antonio Cisternino>A good AI integrated the ID.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1114-0
+00:14:57.180 --> 00:14:58.340
+<v Antonio Cisternino>I'm available for download.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1121-0
+00:15:09.220 --> 00:15:11.340
+<v Antonio Cisternino>OK, free.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1122-0
+00:15:14.660 --> 00:15:15.300
+<v Antonio Cisternino>Hit a stop.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1125-0
+00:15:18.900 --> 00:15:20.300
+<v Antonio Cisternino>It's interesting.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1129-0
+00:15:21.900 --> 00:15:23.500
+<v Antonio Cisternino>Click on download that.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1130-0
+00:15:25.140 --> 00:15:25.620
+<v Antonio Cisternino>M.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1136-0
+00:15:35.620 --> 00:15:36.460
+<v Antonio Cisternino>At Google.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1138-0
+00:15:39.340 --> 00:15:41.500
+<v Antonio Cisternino>Oh, no, that Google will.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1142-0
+00:15:42.380 --> 00:15:47.980
+<v Antonio Cisternino>Let me know. Mm-hmm. Let me.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1149-0
+00:15:57.980 --> 00:15:58.780
+<v Antonio Cisternino>Mm-hmm.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1158-0
+00:16:14.340 --> 00:16:14.780
+<v Antonio Cisternino>Here we are.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1166-0
+00:16:17.860 --> 00:16:21.940
+<v Antonio Cisternino>This looks my more like I'm 64.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1183-0
+00:16:25.900 --> 00:16:32.194
+<v Antonio Cisternino>This time I'll follow your instructions,
+so anyone is allowed to contribute,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1183-1
+00:16:32.194 --> 00:16:33.420
+<v Antonio Cisternino>but today it's.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1186-0
+00:16:34.780 --> 00:16:36.220
+<v Antonio Cisternino>It's your fault in case.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1206-0
+00:16:38.700 --> 00:16:44.400
+<v Antonio Cisternino>Personally, personally,
+I would have started the before</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1206-1
+00:16:44.400 --> 00:16:50.100
+<v Antonio Cisternino>downloading and forking and opening.
+I would have done.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1211-0
+00:16:51.060 --> 00:16:53.140
+<v Antonio Cisternino>Some code inquiry.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1215-0
+00:16:58.660 --> 00:16:59.980
+<v Antonio Cisternino>Straight on GitHub.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1222-0
+00:17:05.740 --> 00:17:08.460
+<v Antonio Cisternino>I'm already accepting.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1225-0
+00:17:12.740 --> 00:17:12.860
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1257-0
+00:17:29.660 --> 00:17:35.248
+<v Antonio Cisternino>You have to use a fork of Visual Studio
+for me and so it's easy to use or to</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1257-1
+00:17:35.248 --> 00:17:39.820
+<v Antonio Cisternino>integrate with all the extensions,
+so it's a good alternative.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1290-0
+00:17:43.340 --> 00:17:47.740
+<v Antonio Cisternino>It's OK. I mean,
+I don't have particular preferences.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1290-1
+00:17:47.740 --> 00:17:52.304
+<v Antonio Cisternino>I mean VS code,
+I think now is 70% of development is on</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1290-2
+00:17:52.304 --> 00:17:58.580
+<v Antonio Cisternino>VS code and from time to time there is
+some fork trying to integrate things.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1302-0
+00:18:12.020 --> 00:18:16.728
+<v Antonio Cisternino>But at the same time, um,
+VS code was a a first fork of eight</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1302-1
+00:18:16.728 --> 00:18:17.260
+<v Antonio Cisternino>option.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1303-0
+00:18:18.260 --> 00:18:18.340
+<v Antonio Cisternino>Uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1315-0
+00:18:19.980 --> 00:18:26.740
+<v Antonio Cisternino>It's basically the same thing. OK,
+now I have anti gravity now.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1318-0
+00:18:33.500 --> 00:18:33.620
+<v Antonio Cisternino>Oh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1324-0
+00:18:38.340 --> 00:18:41.380
+<v Antonio Cisternino>But you can start fresh. No, no,
+start fresh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1330-0
+00:18:47.900 --> 00:18:49.380
+<v Antonio Cisternino>I go next.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1331-0
+00:18:53.380 --> 00:18:53.780
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1334-0
+00:18:55.340 --> 00:18:55.460
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1342-0
+00:19:14.300 --> 00:19:15.540
+<v Antonio Cisternino>OK now.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1345-0
+00:19:19.780 --> 00:19:20.420
+<v Antonio Cisternino>**** that.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1349-0
+00:19:32.180 --> 00:19:32.260
+<v Antonio Cisternino>Uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1354-0
+00:19:42.100 --> 00:19:42.220
+<v Antonio Cisternino>Much.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1358-0
+00:19:45.780 --> 00:19:47.540
+<v Antonio Cisternino>K.com.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1361-0
+00:19:52.940 --> 00:19:53.620
+<v Antonio Cisternino>Are so.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1371-0
+00:20:07.740 --> 00:20:12.660
+<v Antonio Cisternino>I should have some temp test folder.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1376-0
+00:20:23.260 --> 00:20:24.260
+<v Antonio Cisternino>OK, so I mean.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1426-0
+00:20:33.900 --> 00:20:37.224
+<v Antonio Cisternino>For the rest,
+I mean it's it's fault so far,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1426-1
+00:20:37.224 --> 00:20:42.100
+<v Antonio Cisternino>but you can take your part of fault by
+suggesting things. I mean,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1426-2
+00:20:42.100 --> 00:20:48.011
+<v Antonio Cisternino>I'm just following instructions so far.
+At some point I may change my attitude,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1426-3
+00:20:48.011 --> 00:20:53.700
+<v Antonio Cisternino>but so far because the risk is that it is
+just another class and I mean the.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1428-0
+00:20:53.740 --> 00:20:56.100
+<v Antonio Cisternino>Go today is trying to have you.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1466-0
+00:21:00.700 --> 00:21:07.522
+<v Antonio Cisternino>In fact, the repo is not that big. OK,
+that's more. OK, now that I'm here,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1466-1
+00:21:07.522 --> 00:21:13.799
+<v Antonio Cisternino>anyone has an idea while waiting
+anti-gravity to finish to clone the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1466-2
+00:21:13.799 --> 00:21:16.620
+<v Antonio Cisternino>repository? Anyone has an idea?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1478-0
+00:21:17.980 --> 00:21:24.740
+<v Antonio Cisternino>Of the how can I do some inspection
+before downloading the full code base?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1489-0
+00:21:29.180 --> 00:21:35.540
+<v Antonio Cisternino>Asking the A asking the AI asking the AI
+how?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1491-0
+00:21:36.620 --> 00:21:38.140
+<v Antonio Cisternino>Like or something.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1539-0
+00:21:43.340 --> 00:21:46.966
+<v Antonio Cisternino>So there are I think that there are two
+approaches.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1539-1
+00:21:46.966 --> 00:21:52.685
+<v Antonio Cisternino>I mean basically one is somehow I fork
+into some editor. No one mentioned cursor.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1539-2
+00:21:52.685 --> 00:21:57.218
+<v Antonio Cisternino>Cursor is another option.
+Cursor is an online editor and service</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1539-3
+00:21:57.218 --> 00:22:02.100
+<v Antonio Cisternino>with the integrated with AI that could
+have been we just record code.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1542-0
+00:22:02.700 --> 00:22:06.860
+<v Antonio Cisternino>Integrated with compiler or with the uh
+uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1574-0
+00:22:07.740 --> 00:22:13.901
+<v Antonio Cisternino>With GPT or with cloud,
+I mean pretty much any vendor now gives</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1574-1
+00:22:13.901 --> 00:22:20.737
+<v Antonio Cisternino>you integration with the IDs,
+but if I want to stay just in the cloud,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1574-2
+00:22:20.737 --> 00:22:24.300
+<v Antonio Cisternino>I mean without going to the dev part.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1611-0
+00:22:25.100 --> 00:22:30.624
+<v Antonio Cisternino>I'm lazy.
+That's the link of picking it up to the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1611-1
+00:22:30.624 --> 00:22:39.573
+<v Antonio Cisternino>chat. OK, this this was also a suggestion.
+An alternative can be let's as to the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1611-2
+00:22:39.573 --> 00:22:43.220
+<v Antonio Cisternino>chat. OK, so first prompt prompt.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1614-0
+00:22:45.460 --> 00:22:46.620
+<v Antonio Cisternino>What is the prompt?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1643-0
+00:22:51.140 --> 00:23:00.317
+<v Antonio Cisternino>So for my assignment, sorry,
+let me start the the chat outside of the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1643-1
+00:23:00.317 --> 00:23:05.300
+<v Antonio Cisternino>project so that no information for my.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1645-0
+00:23:06.180 --> 00:23:06.860
+<v Antonio Cisternino>Assignment.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1655-0
+00:23:09.780 --> 00:23:15.980
+<v Antonio Cisternino>Roject of Advanced Rogramming course.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1664-0
+00:23:18.820 --> 00:23:24.740
+<v Antonio Cisternino>Uh, I have to review the and top.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1668-0
+00:23:26.260 --> 00:23:28.420
+<v Antonio Cisternino>Ng codebase.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1677-0
+00:23:30.420 --> 00:23:38.180
+<v Antonio Cisternino>Looking for memory management style
+otential.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1679-0
+00:23:39.780 --> 00:23:39.860
+<v Antonio Cisternino>Uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1686-0
+00:23:42.340 --> 00:23:47.740
+<v Antonio Cisternino>Issues and security related issues.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1694-0
+00:23:49.340 --> 00:23:53.300
+<v Antonio Cisternino>The URL of the repo is.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1740-0
+00:23:57.340 --> 00:24:02.667
+<v Antonio Cisternino>So in general, when you start,
+it's a good idea to give your goal to the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1740-1
+00:24:02.667 --> 00:24:06.025
+<v Antonio Cisternino>AI,
+say that that's my goal because this will</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1740-2
+00:24:06.025 --> 00:24:11.790
+<v Antonio Cisternino>be the first thing that will be passed
+into onto all the context afterwards to</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1740-3
+00:24:11.790 --> 00:24:13.980
+<v Antonio Cisternino>the model and so you will get.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1751-0
+00:24:14.180 --> 00:24:20.475
+<v Antonio Cisternino>Uh, the right context.
+It can be also a good idea now that I</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1751-1
+00:24:20.475 --> 00:24:22.540
+<v Antonio Cisternino>pasted it to say OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1755-0
+00:24:24.820 --> 00:24:26.660
+<v Antonio Cisternino>OK, Google.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1761-0
+00:24:29.420 --> 00:24:32.700
+<v Antonio Cisternino>UniPi course catalog.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1765-0
+00:24:38.900 --> 00:24:40.420
+<v Antonio Cisternino>The most beautiful.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1769-0
+00:24:45.980 --> 00:24:46.220
+<v Antonio Cisternino>System.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1771-0
+00:24:48.900 --> 00:24:49.020
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1776-0
+00:24:53.220 --> 00:24:54.900
+<v Antonio Cisternino>It may be an option.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1780-0
+00:24:56.540 --> 00:24:58.260
+<v Antonio Cisternino>I can also select the English.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1799-0
+00:24:59.660 --> 00:25:04.905
+<v Antonio Cisternino>OK,
+it may be an option also to provide the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1799-1
+00:25:04.905 --> 00:25:11.700
+<v Antonio Cisternino>the URL to the syllabus.
+This will help the context too.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1800-0
+00:25:14.820 --> 00:25:15.140
+<v Antonio Cisternino>Um.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1802-0
+00:25:16.700 --> 00:25:17.300
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1804-0
+00:25:22.700 --> 00:25:23.140
+<v Antonio Cisternino>It will be.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1821-0
+00:25:34.460 --> 00:25:43.180
+<v Antonio Cisternino>So as you can see now the AI is
+navigating. OK, notice that it.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1843-0
+00:25:44.620 --> 00:25:53.100
+<v Antonio Cisternino>Depending on the questions,
+this way of producing the output may not</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1843-1
+00:25:53.100 --> 00:25:59.860
+<v Antonio Cisternino>be complete in the sense that the code
+base is highly.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1870-0
+00:26:00.460 --> 00:26:10.237
+<v Antonio Cisternino>Cross reference that piece of files. OK,
+when the eye browses the web,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1870-1
+00:26:10.237 --> 00:26:17.260
+<v Antonio Cisternino>the general AI typically is not really so
+good at.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1872-0
+00:26:17.780 --> 00:26:20.460
+<v Antonio Cisternino>Being exhaustive, so uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1916-0
+00:26:22.540 --> 00:26:28.019
+<v Antonio Cisternino>To some extent, in your mind,
+the first question that you have to pose</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1916-1
+00:26:28.019 --> 00:26:33.420
+<v Antonio Cisternino>yourself, perhaps even by browsing,
+opening randomly files, etcetera,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1916-2
+00:26:33.420 --> 00:26:39.517
+<v Antonio Cisternino>is whether you think that VI may get the
+relevant information by opening a few</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1916-3
+00:26:39.517 --> 00:26:39.980
+<v Antonio Cisternino>files.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1950-0
+00:26:40.260 --> 00:26:44.425
+<v Antonio Cisternino>Or not,
+because if you need to look at the full</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1950-1
+00:26:44.425 --> 00:26:48.589
+<v Antonio Cisternino>code base,
+perhaps whether it's VCS code or any</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1950-2
+00:26:48.589 --> 00:26:55.531
+<v Antonio Cisternino>other editor and and fork and cloning the
+repro locally may be a good idea. OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1950-3
+00:26:55.531 --> 00:26:57.180
+<v Antonio Cisternino>so I mean both are.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1954-0
+00:26:57.180 --> 00:27:00.260
+<v Antonio Cisternino>Uh, reasonable, OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1974-0
+00:27:01.820 --> 00:27:09.367
+<v Antonio Cisternino>Anyway,
+from end tops on docs and blog C++ doing</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1974-1
+00:27:09.367 --> 00:27:15.220
+<v Antonio Cisternino>OK control plane and UI mostly in Lua.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/1988-0
+00:27:17.300 --> 00:27:22.980
+<v Antonio Cisternino>External libraries like and DPI,
+et cetera.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2015-0
+00:27:26.900 --> 00:27:36.743
+<v Antonio Cisternino>Memory management styling C++ side engine
+from analysis and blocks and then top and</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2015-1
+00:27:36.743 --> 00:27:41.900
+<v Antonio Cisternino>G source manual memory management with
+new.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2027-0
+00:27:44.140 --> 00:27:49.740
+<v Antonio Cisternino>Drive blocks ownership usually stored in
+lease or array of interfaces.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2037-0
+00:27:52.820 --> 00:27:56.940
+<v Antonio Cisternino>Each interface owns a ocket olling thread.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2044-0
+00:27:59.020 --> 00:28:02.180
+<v Antonio Cisternino>And allocate spare interface.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2048-0
+00:28:03.860 --> 00:28:05.660
+<v Antonio Cisternino>Statistic structures.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2050-0
+00:28:08.500 --> 00:28:08.580
+<v Antonio Cisternino>So.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2074-0
+00:28:10.380 --> 00:28:15.856
+<v Antonio Cisternino>You get some suggestion in source and
+include the fine classes,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2074-1
+00:28:15.856 --> 00:28:20.820
+<v Antonio Cisternino>call it something like network interface,
+flow, etcetera.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2077-0
+00:28:23.540 --> 00:28:25.460
+<v Antonio Cisternino>Few more other other thing.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2108-0
+00:28:30.380 --> 00:28:35.798
+<v Antonio Cisternino>Look for new and include malloc, free,
+etcetera. So at this level,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2108-1
+00:28:35.798 --> 00:28:40.004
+<v Antonio Cisternino>as you can see,
+the AI is not even sure whether the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2108-2
+00:28:40.004 --> 00:28:45.100
+<v Antonio Cisternino>allocation is made by malloc,
+new or whatever. She found some.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2131-0
+00:28:48.380 --> 00:28:57.848
+<v Antonio Cisternino>Some articles online describing the
+implementation and that's it.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2131-1
+00:28:57.848 --> 00:29:03.300
+<v Antonio Cisternino>I mean we got some report and and now.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2165-0
+00:29:06.300 --> 00:29:12.000
+<v Antonio Cisternino>Let me zoom a little bit,
+otherwise we're losing something. OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2165-1
+00:29:12.000 --> 00:29:16.899
+<v Antonio Cisternino>because now we are in advanced
+programming, so I mean,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2165-2
+00:29:16.899 --> 00:29:23.580
+<v Antonio Cisternino>we don't like ******** and we'd like to
+be really grounded to have a real.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2184-0
+00:29:23.580 --> 00:29:27.923
+<v Antonio Cisternino>Understanding.
+So what in a memory management context,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2184-1
+00:29:27.923 --> 00:29:32.820
+<v Antonio Cisternino>what are the elements that are relevant
+to memory management?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2198-0
+00:29:33.980 --> 00:29:39.889
+<v Antonio Cisternino>I mean, we said C++,
+so we know that C++ is garbage collector</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2198-1
+00:29:39.889 --> 00:29:41.700
+<v Antonio Cisternino>free as a language.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2209-0
+00:29:43.100 --> 00:29:49.460
+<v Antonio Cisternino>And we know that the heap memory will be
+either managed explicitly.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2212-0
+00:29:50.940 --> 00:29:51.460
+<v Antonio Cisternino>New delete.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2242-0
+00:29:53.580 --> 00:29:57.916
+<v Antonio Cisternino>And in that case,
+you can get inspired by Ross,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2242-1
+00:29:57.916 --> 00:30:04.239
+<v Antonio Cisternino>the conventions that have been boiled
+down into the language. I mean,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2242-2
+00:30:04.239 --> 00:30:09.660
+<v Antonio Cisternino>who's responsible for allocating and
+who's responsible for?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2253-0
+00:30:09.740 --> 00:30:15.860
+<v Antonio Cisternino>Deleting memory.
+Another thing that you may ask is OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2293-0
+00:30:18.020 --> 00:30:25.154
+<v Antonio Cisternino>Maybe there is a garbage collector inside,
+so I will like first to have a look into</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2293-1
+00:30:25.154 --> 00:30:30.505
+<v Antonio Cisternino>the. Is there some garbage collector?
+There are libraries. OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2293-2
+00:30:30.505 --> 00:30:36.620
+<v Antonio Cisternino>so in principle you can get garbage
+collection even though C++ does not</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2293-3
+00:30:36.620 --> 00:30:37.300
+<v Antonio Cisternino>provide.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2295-0
+00:30:37.620 --> 00:30:39.660
+<v Antonio Cisternino>Collection. Uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2336-0
+00:30:42.580 --> 00:30:46.786
+<v Antonio Cisternino>Or reference counting is another good
+question.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2336-1
+00:30:46.786 --> 00:30:51.605
+<v Antonio Cisternino>Is this code base using reference
+counting or not? OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2336-2
+00:30:51.605 --> 00:30:58.440
+<v Antonio Cisternino>so as you can see the questions should
+come not from following advice of this</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2336-3
+00:30:58.440 --> 00:31:01.420
+<v Antonio Cisternino>stupid thing that we call the A I.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2350-0
+00:31:01.620 --> 00:31:07.578
+<v Antonio Cisternino>Uh, which is very useful. Uh,
+but from what you learned during the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2350-1
+00:31:07.578 --> 00:31:09.980
+<v Antonio Cisternino>course. So OK, what's next?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2353-0
+00:31:11.340 --> 00:31:13.260
+<v Antonio Cisternino>I think that uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2355-0
+00:31:14.500 --> 00:31:15.860
+<v Antonio Cisternino>Antigravity.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2358-0
+00:31:18.180 --> 00:31:20.020
+<v Antonio Cisternino>It's now ready.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2361-0
+00:31:21.620 --> 00:31:22.740
+<v Antonio Cisternino>For this.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2363-0
+00:31:23.940 --> 00:31:24.060
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2393-0
+00:31:27.020 --> 00:31:35.203
+<v Antonio Cisternino>Let's leave it here so that I propose
+just to go following some order in this</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2393-1
+00:31:35.203 --> 00:31:39.820
+<v Antonio Cisternino>exercise. The first part,
+let's try to use.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2420-0
+00:31:41.260 --> 00:31:48.674
+<v Antonio Cisternino>The UR, the web-based, etcetera.
+And then just as a second part,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2420-1
+00:31:48.674 --> 00:31:56.660
+<v Antonio Cisternino>let's cross-check our statements that we
+possibly quickly find found.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2448-0
+00:31:57.260 --> 00:32:01.766
+<v Antonio Cisternino>Using the this traditional web chat style
+thing,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2448-1
+00:32:01.766 --> 00:32:08.481
+<v Antonio Cisternino>let's double check whether the our
+findings are relevant and accurate by</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2448-2
+00:32:08.481 --> 00:32:12.620
+<v Antonio Cisternino>using anti-gravity.
+So we do both our words.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2449-0
+00:32:12.660 --> 00:32:12.980
+<v Antonio Cisternino>Yes.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2452-0
+00:32:16.100 --> 00:32:17.020
+<v Antonio Cisternino>Which?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2485-0
+00:32:19.940 --> 00:32:24.752
+<v Antonio Cisternino>That's,
+I mean this is another style which of</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2485-1
+00:32:24.752 --> 00:32:33.017
+<v Antonio Cisternino>course it's it's it's it's possible,
+but actually that is more on the software</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2485-2
+00:32:33.017 --> 00:32:36.260
+<v Antonio Cisternino>developing side. OK, so I mean.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2531-0
+00:32:36.980 --> 00:32:42.715
+<v Antonio Cisternino>Of course if we but then you must be you
+you first thing you should learn how to</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2531-1
+00:32:42.715 --> 00:32:47.529
+<v Antonio Cisternino>compile the project and that's already
+it's complicated in general.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2531-2
+00:32:47.529 --> 00:32:53.193
+<v Antonio Cisternino>I mean when you go to non trivial trivial
+project the first day typically spend</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2531-3
+00:32:53.193 --> 00:32:56.380
+<v Antonio Cisternino>just to understand and make the
+development.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2571-0
+00:32:56.420 --> 00:32:59.377
+<v Antonio Cisternino>Development environment up and running.
+OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2571-1
+00:32:59.377 --> 00:33:04.619
+<v Antonio Cisternino>so the hope when you when you bring in
+the AI is that you can skip that thing</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2571-2
+00:33:04.619 --> 00:33:09.323
+<v Antonio Cisternino>because the AI is good enough in the
+analysis. But yes, you're right,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2571-3
+00:33:09.323 --> 00:33:13.893
+<v Antonio Cisternino>if you want to go deeper,
+it's more likely that you have to go down</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2571-4
+00:33:13.893 --> 00:33:14.700
+<v Antonio Cisternino>and do more.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2573-0
+00:33:15.460 --> 00:33:16.620
+<v Antonio Cisternino>Practically. Thanks. OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2588-0
+00:33:19.100 --> 00:33:31.060
+<v Antonio Cisternino>OK. So next question,
+garbage collection do can now please.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2601-0
+00:33:32.100 --> 00:33:42.020
+<v Antonio Cisternino>From now on, use only GitHub repo,
+not external.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2604-0
+00:33:44.140 --> 00:33:44.540
+<v Antonio Cisternino>Sources.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2624-0
+00:33:46.580 --> 00:33:51.886
+<v Antonio Cisternino>In general this is a good.
+I mean trying to confine the the AI to</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2624-1
+00:33:51.886 --> 00:33:54.700
+<v Antonio Cisternino>some some place may be a good idea.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2640-0
+00:33:56.820 --> 00:34:11.380
+<v Antonio Cisternino>And can you check whether a garbage
+collector is included is used?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2643-0
+00:34:15.500 --> 00:34:16.700
+<v Antonio Cisternino>In the project.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2691-0
+00:34:23.460 --> 00:34:30.253
+<v Antonio Cisternino>So this this question is one of the
+question I would expect to receive as</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2691-1
+00:34:30.253 --> 00:34:34.844
+<v Antonio Cisternino>part of your submission was clearly is it
+states.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2691-2
+00:34:34.844 --> 00:34:42.372
+<v Antonio Cisternino>I'm aware that a garbage collection that
+may be used at the even though we are in</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2691-3
+00:34:42.372 --> 00:34:42.740
+<v Antonio Cisternino>C++.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2707-0
+00:34:42.820 --> 00:34:49.017
+<v Antonio Cisternino>So whether the answer is yes or no,
+it is relevant as a question because it</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2707-1
+00:34:49.017 --> 00:34:53.420
+<v Antonio Cisternino>shows that you understand that that is an
+option, OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2731-0
+00:34:58.340 --> 00:35:03.810
+<v Antonio Cisternino>Yes, you're right.
+And let's see the answer because one</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2731-1
+00:35:03.810 --> 00:35:09.671
+<v Antonio Cisternino>answer can be Oh yes,
+of course in there is and then I will</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2731-2
+00:35:09.671 --> 00:35:11.820
+<v Antonio Cisternino>reply yes, but in C++.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2746-0
+00:35:18.020 --> 00:35:23.020
+<v Antonio Cisternino>Or the the constriction.
+I mean the I may violate your obligation.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2750-0
+00:35:28.500 --> 00:35:30.340
+<v Antonio Cisternino>I mean that.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2766-0
+00:35:35.340 --> 00:35:40.660
+<v Antonio Cisternino>OK, so solo no, no, it says.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2775-0
+00:35:45.140 --> 00:35:47.740
+<v Antonio Cisternino>But Lua includes a garbage collector.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2778-0
+00:35:50.260 --> 00:35:50.700
+<v Antonio Cisternino>So actually.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2812-0
+00:35:54.940 --> 00:35:59.997
+<v Antonio Cisternino>DI short answer,
+there is no CC plus plus side garbage</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2812-1
+00:35:59.997 --> 00:36:06.250
+<v Antonio Cisternino>collector in top and top PNG.
+The only GC in the project is the one</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2812-2
+00:36:06.250 --> 00:36:10.020
+<v Antonio Cisternino>provided by the embedded Lua JIT runtime.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2844-0
+00:36:10.740 --> 00:36:18.325
+<v Antonio Cisternino>Which man is manages to object only,
+not the C++ object. So it's OK. I mean,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2844-1
+00:36:18.325 --> 00:36:24.138
+<v Antonio Cisternino>it's a good answer. She doesn't.
+She didn't cheat. I mean,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2844-2
+00:36:24.138 --> 00:36:27.980
+<v Antonio Cisternino>she considered both sides of the story.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2852-0
+00:36:28.180 --> 00:36:36.340
+<v Antonio Cisternino>And basically we're also getting
+information.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2863-0
+00:36:38.100 --> 00:36:44.380
+<v Antonio Cisternino>Where we can look for more information in
+terms of.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2877-0
+00:36:45.500 --> 00:36:53.820
+<v Antonio Cisternino>OK, now I can say let's restrict to C++.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2886-0
+00:36:55.500 --> 00:37:02.740
+<v Antonio Cisternino>Core and can now can you now check?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2898-0
+00:37:04.660 --> 00:37:15.660
+<v Antonio Cisternino>Whether whether some reference counting
+is used or not.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2924-0
+00:37:19.060 --> 00:37:23.051
+<v Antonio Cisternino>Another interesting prompt with the
+output. OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2924-1
+00:37:23.051 --> 00:37:29.621
+<v Antonio Cisternino>basically in the overall understanding
+this is a big statement and again there</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2924-2
+00:37:29.621 --> 00:37:33.780
+<v Antonio Cisternino>were no mention in the output proposed by
+the AI.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2961-0
+00:37:44.180 --> 00:37:50.656
+<v Antonio Cisternino>I tried to run it over. Yes,
+and this is one of the biggest impact in</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2961-1
+00:37:50.656 --> 00:37:58.057
+<v Antonio Cisternino>the AI of the AI in programming because
+programmers tend to dislike to document</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2961-2
+00:37:58.057 --> 00:37:59.260
+<v Antonio Cisternino>what they do.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2977-0
+00:37:59.700 --> 00:38:05.793
+<v Antonio Cisternino>Because they there are several way of
+things. Many programmers tend to say, OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/2977-1
+00:38:05.793 --> 00:38:06.860
+<v Antonio Cisternino>you know what?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3010-0
+00:38:07.700 --> 00:38:14.074
+<v Antonio Cisternino>We I'm writing so beautiful code which is
+set explaining someone will have to read</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3010-1
+00:38:14.074 --> 00:38:17.914
+<v Antonio Cisternino>everything and will understand and see
+the light.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3010-2
+00:38:17.914 --> 00:38:23.060
+<v Antonio Cisternino>This is a typical attitude of a
+programmer and the other thing is.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3052-0
+00:38:23.060 --> 00:38:26.856
+<v Antonio Cisternino>Keep inserting useless comments in the
+code,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3052-1
+00:38:26.856 --> 00:38:33.520
+<v Antonio Cisternino>especially union programmers tend to
+comment something like I iterate over the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3052-2
+00:38:33.520 --> 00:38:37.991
+<v Antonio Cisternino>this thing and then for each in the and
+say come on,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3052-3
+00:38:37.991 --> 00:38:40.860
+<v Antonio Cisternino>I mean if you write for each this.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3085-0
+00:38:41.140 --> 00:38:45.729
+<v Antonio Cisternino>You should in typical.
+Typically when you write code you should</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3085-1
+00:38:45.729 --> 00:38:49.672
+<v Antonio Cisternino>document where,
+especially where you you take decision</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3085-2
+00:38:49.672 --> 00:38:54.190
+<v Antonio Cisternino>not to illustrate in Italian or in
+English what the code does,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3085-3
+00:38:54.190 --> 00:38:56.700
+<v Antonio Cisternino>which typically is self-explaining.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3129-0
+00:38:56.980 --> 00:39:01.234
+<v Antonio Cisternino>But sometimes they say, OK,
+I don't use quick sort,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3129-1
+00:39:01.234 --> 00:39:06.389
+<v Antonio Cisternino>let's use bubble sort.
+It's good enough and not I don't expect</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3129-2
+00:39:06.389 --> 00:39:13.180
+<v Antonio Cisternino>performances because I use the suboptimal
+sorting out because I'm lazy and I don't</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3129-3
+00:39:13.180 --> 00:39:14.980
+<v Antonio Cisternino>want to spend time to.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3144-0
+00:39:15.060 --> 00:39:19.559
+<v Antonio Cisternino>Implement quick sort.
+I mean this this is OK because uh you you</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3144-1
+00:39:19.559 --> 00:39:24.340
+<v Antonio Cisternino>took a design decision uh and and who's
+reading the code to say uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3187-0
+00:39:25.300 --> 00:39:30.673
+<v Antonio Cisternino>Why he didn't use a quick sort OK or the
+library sorting algorithm?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3187-1
+00:39:30.673 --> 00:39:34.465
+<v Antonio Cisternino>So these kind of things. But yes,
+you're right,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3187-2
+00:39:34.465 --> 00:39:40.787
+<v Antonio Cisternino>one of the user that AI is finding and
+one of the reason because both anthropic</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3187-3
+00:39:40.787 --> 00:39:44.580
+<v Antonio Cisternino>and open AI are investing heavily as long
+with.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3219-0
+00:39:44.780 --> 00:39:49.073
+<v Antonio Cisternino>Google, etc.
+AI inside programming is that AI</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3219-1
+00:39:49.073 --> 00:39:56.353
+<v Antonio Cisternino>shortened the time that someone has to
+spend to understand the code base than</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3219-2
+00:39:56.353 --> 00:40:01.020
+<v Antonio Cisternino>before by order of magnitude.
+The impact is huge.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3263-0
+00:40:01.300 --> 00:40:06.490
+<v Antonio Cisternino>And I mean it's safe because if you make
+the eye generating the code,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3263-1
+00:40:06.490 --> 00:40:10.271
+<v Antonio Cisternino>then you need someone checking the
+generated code.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3263-2
+00:40:10.271 --> 00:40:16.277
+<v Antonio Cisternino>But asking question about the code base
+is safe because I mean it's just reading</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3263-3
+00:40:16.277 --> 00:40:16.500
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3314-0
+00:40:17.940 --> 00:40:22.665
+<v Antonio Cisternino>Short version,
+I can't see any evidence of a reference</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3314-1
+00:40:22.665 --> 00:40:29.452
+<v Antonio Cisternino>reference counting scheme in the end top
+C++ core and given how the project is</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3314-2
+00:40:29.452 --> 00:40:30.140
+<v Antonio Cisternino>written.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3368-0
+00:40:31.700 --> 00:40:38.529
+<v Antonio Cisternino>This is a more interesting statement.
+It's very likely that they rely on manual</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3368-1
+00:40:38.529 --> 00:40:42.797
+<v Antonio Cisternino>ownership plus containers,
+not on shared pointer,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3368-2
+00:40:42.797 --> 00:40:46.980
+<v Antonio Cisternino>unique pointer or a custom ref count base
+class.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3417-0
+00:40:50.020 --> 00:40:58.259
+<v Antonio Cisternino>But I also need to be honest,
+this is the new flavour of GPT 5.1.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3417-1
+00:40:58.259 --> 00:41:05.500
+<v Antonio Cisternino>They are trying to make the ILS
+sycophants a conditioner.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3426-0
+00:41:06.260 --> 00:41:10.780
+<v Antonio Cisternino>In in English, it's and then.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3489-0
+00:41:12.260 --> 00:41:18.688
+<v Antonio Cisternino>With the tool I have here,
+I cannot mechanically grab the whole repo,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3489-1
+00:41:18.688 --> 00:41:25.300
+<v Antonio Cisternino>so I can't mathematically prove there is
+0 reference counting anywhere.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3560-0
+00:41:26.500 --> 00:41:32.800
+<v Antonio Cisternino>This is a big improvement.
+I mean a few months ago it would be, yeah,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3560-1
+00:41:32.800 --> 00:41:38.920
+<v Antonio Cisternino>be sure I just check it out.
+So we appreciate the honesty in in the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3560-2
+00:41:38.920 --> 00:41:43.780
+<v Antonio Cisternino>thing and in fact also it also shows that
+this a I's.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3602-0
+00:41:44.620 --> 00:41:49.784
+<v Antonio Cisternino>Now when they process code,
+they don't fetch the full code base.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3602-1
+00:41:49.784 --> 00:41:56.220
+<v Antonio Cisternino>They start making grep statements on the
+common line. This is also true in code.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3691-0
+00:41:58.700 --> 00:42:05.665
+<v Antonio Cisternino>And you see that you see bash and
+everything and actually they found that</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3691-1
+00:42:05.665 --> 00:42:13.007
+<v Antonio Cisternino>browsing the code base is best done by
+the AI by selecting code and basically</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3691-2
+00:42:13.007 --> 00:42:17.620
+<v Antonio Cisternino>using sad or grep to get the output of
+portions.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3698-0
+00:42:17.700 --> 00:42:23.340
+<v Antonio Cisternino>Of the code that which the AI uses quite
+extensively in.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3743-0
+00:42:24.460 --> 00:42:31.917
+<v Antonio Cisternino>In Codex,
+this is performed by the Codex agent. Uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3743-1
+00:42:31.917 --> 00:42:37.940
+<v Antonio Cisternino>In the Um in Code, it is performed by the.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3750-0
+00:42:39.300 --> 00:42:41.740
+<v Antonio Cisternino>By the the eye itself so.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3755-0
+00:42:44.860 --> 00:42:45.540
+<v Antonio Cisternino>That's what.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3799-0
+00:42:49.380 --> 00:42:58.886
+<v Antonio Cisternino>So now let me mirror the prompts in and
+let's see the differences between the two</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3799-1
+00:42:58.886 --> 00:43:01.900
+<v Antonio Cisternino>eyes in the in the in the.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3801-0
+00:43:01.940 --> 00:43:02.620
+<v Antonio Cisternino>In there.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3871-0
+00:43:09.500 --> 00:43:16.137
+<v Antonio Cisternino>So thinking both ways, again, beware,
+I have both paid versions. OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3871-1
+00:43:16.137 --> 00:43:23.063
+<v Antonio Cisternino>so when you use the free version,
+the output may be less sophisticated,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3871-2
+00:43:23.063 --> 00:43:25.180
+<v Antonio Cisternino>which is a good thing.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3917-0
+00:43:25.700 --> 00:43:32.068
+<v Antonio Cisternino>So you have to use your brain instead of
+picking on the eye brain only, so it's OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3917-1
+00:43:32.068 --> 00:43:37.906
+<v Antonio Cisternino>but be more suspicious if you're using
+the the free version because they are</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3917-2
+00:43:37.906 --> 00:43:38.740
+<v Antonio Cisternino>less model.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/3932-0
+00:43:49.340 --> 00:43:53.300
+<v Antonio Cisternino>Oh, this is a a fairly so um.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4002-0
+00:43:55.300 --> 00:44:00.970
+<v Antonio Cisternino>You know that airplanes have two in
+flight system, one is active,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4002-1
+00:44:00.970 --> 00:44:06.124
+<v Antonio Cisternino>the other is passive.
+So that in case of and typically they</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4002-2
+00:44:06.124 --> 00:44:10.248
+<v Antonio Cisternino>tend to have two different
+implementations. OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4002-3
+00:44:10.248 --> 00:44:12.740
+<v Antonio Cisternino>this is a typical way to try.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4073-0
+00:44:13.300 --> 00:44:19.533
+<v Antonio Cisternino>To sort out when you can't be sure of a
+code which is mission critical.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4073-1
+00:44:19.533 --> 00:44:26.112
+<v Antonio Cisternino>So comparing output of two different
+system in general is a good idea and I</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4073-2
+00:44:26.112 --> 00:44:31.220
+<v Antonio Cisternino>think that with AI it makes sense and
+sometimes as we did.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4117-0
+00:44:31.220 --> 00:44:37.192
+<v Antonio Cisternino>We can ask to an AI an opinion about the
+code that generated by the other AI.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4117-1
+00:44:37.192 --> 00:44:41.940
+<v Antonio Cisternino>This is a fairly standard approach which
+is fairly intuitive.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4150-0
+00:44:43.180 --> 00:44:47.863
+<v Antonio Cisternino>Under the assumption that they both will
+be wrong,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4150-1
+00:44:47.863 --> 00:44:53.740
+<v Antonio Cisternino>but hopefully on different subjects and
+so we can rely on that.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4153-0
+00:44:58.180 --> 00:44:58.540
+<v Antonio Cisternino>Good.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4156-0
+00:45:00.100 --> 00:45:00.500
+<v Antonio Cisternino>I mean.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4160-0
+00:45:02.260 --> 00:45:02.380
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4168-0
+00:45:06.060 --> 00:45:07.700
+<v Antonio Cisternino>We're getting a full report.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4173-0
+00:45:13.540 --> 00:45:15.220
+<v Antonio Cisternino>Didn't inspect that.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4184-0
+00:45:17.220 --> 00:45:20.340
+<v Antonio Cisternino>Including also the vulnerabilities.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4190-0
+00:45:30.340 --> 00:45:33.460
+<v Antonio Cisternino>Look at.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4197-0
+00:45:36.580 --> 00:45:41.140
+<v Antonio Cisternino>It got.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4206-0
+00:45:45.260 --> 00:45:47.340
+<v Antonio Cisternino>OK, I'm impressed. Sorry.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4258-0
+00:45:48.980 --> 00:45:56.925
+<v Antonio Cisternino>I didn't expect such a huge it it is.
+I keep changing AI so the last few months</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4258-1
+00:45:56.925 --> 00:46:00.700
+<v Antonio Cisternino>I'm using more GPT than than cloud so.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4264-0
+00:46:02.420 --> 00:46:04.380
+<v Antonio Cisternino>I I miss this.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4268-0
+00:46:07.100 --> 00:46:08.420
+<v Antonio Cisternino>OK. Oh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4283-0
+00:46:12.380 --> 00:46:14.980
+<v Antonio Cisternino>Also, also GPT wrote.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4286-0
+00:46:17.740 --> 00:46:17.860
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4294-0
+00:46:26.340 --> 00:46:29.060
+<v Antonio Cisternino>Come on, are you serious?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4298-0
+00:46:32.900 --> 00:46:33.020
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4407-0
+00:46:40.060 --> 00:46:45.771
+<v Antonio Cisternino>Beware, that's interesting. I mean,
+you may feel that, oh, that's beautiful.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4407-1
+00:46:45.771 --> 00:46:49.702
+<v Antonio Cisternino>I'm going to use only Claude because he's
+beautiful.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4407-2
+00:46:49.702 --> 00:46:55.709
+<v Antonio Cisternino>Let's consider that one of the thing that
+we are expecting at your submission is</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4407-3
+00:46:55.709 --> 00:46:58.380
+<v Antonio Cisternino>when you double check it. So I mean.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4443-0
+00:46:58.580 --> 00:47:04.326
+<v Antonio Cisternino>You can take your chance and say OK,
+I spend less time in generation,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4443-1
+00:47:04.326 --> 00:47:11.140
+<v Antonio Cisternino>but then you will have to spend much more
+time in reviewing the output. Up to you.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4466-0
+00:47:18.580 --> 00:47:25.300
+<v Antonio Cisternino>I'm sorry, I do respect this thing.
+I was expecting more like.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4477-0
+00:47:30.900 --> 00:47:34.540
+<v Antonio Cisternino>Yeah, it's. I mean, I think it's.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4506-0
+00:47:40.580 --> 00:47:45.967
+<v Antonio Cisternino>So few other minutes and we'll get a new
+version of top preview and then fix it.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4506-1
+00:47:45.967 --> 00:47:46.500
+<v Antonio Cisternino>It's OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4509-0
+00:47:49.900 --> 00:47:50.140
+<v Antonio Cisternino>Mm.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4534-0
+00:47:51.380 --> 00:47:57.620
+<v Antonio Cisternino>I think it's the first time uh I I get so
+much output uh from uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4542-0
+00:47:59.300 --> 00:48:01.620
+<v Antonio Cisternino>I mean, that's impressive.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4553-0
+00:48:03.780 --> 00:48:06.380
+<v Antonio Cisternino>And to some extent pointless.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4576-0
+00:48:07.860 --> 00:48:12.607
+<v Antonio Cisternino>'Cause I mean, oh,
+we also get diagrams on the layout of</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4576-1
+00:48:12.607 --> 00:48:13.940
+<v Antonio Cisternino>data structures.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4640-0
+00:48:23.380 --> 00:48:26.384
+<v Antonio Cisternino>No,
+the point is that now we have to take</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4640-1
+00:48:26.384 --> 00:48:30.318
+<v Antonio Cisternino>your chance.
+You trust the first output of the eye and</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4640-2
+00:48:30.318 --> 00:48:35.970
+<v Antonio Cisternino>spend the rest of your time in double
+checking every single wine that has been</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4640-3
+00:48:35.970 --> 00:48:36.900
+<v Antonio Cisternino>generated or.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4674-0
+00:48:53.380 --> 00:48:58.307
+<v Antonio Cisternino>No,
+actually Claude downloaded the part of a</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4674-1
+00:48:58.307 --> 00:49:02.140
+<v Antonio Cisternino>code the the end top documentation.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4676-0
+00:49:04.140 --> 00:49:04.460
+<v Antonio Cisternino>I.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4702-0
+00:49:06.500 --> 00:49:14.500
+<v Antonio Cisternino>Here OK basically did same similar thing
+as GPT. I mean it's searching for the web.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4730-0
+00:49:24.260 --> 00:49:29.113
+<v Antonio Cisternino>Yeah, but I'm I'm curious. I mean,
+now I'm curious to see where these things</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4730-1
+00:49:29.113 --> 00:49:30.500
+<v Antonio Cisternino>led, because actually.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4753-0
+00:49:37.380 --> 00:49:44.369
+<v Antonio Cisternino>Leave it. I mean,
+we will come back at some point when at</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4753-1
+00:49:44.369 --> 00:49:46.780
+<v Antonio Cisternino>some point it would.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4758-0
+00:49:49.140 --> 00:49:51.020
+<v Antonio Cisternino>Let's stop this thing.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4761-0
+00:49:55.580 --> 00:49:55.820
+<v Antonio Cisternino>Hmm.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4774-0
+00:50:02.660 --> 00:50:04.780
+<v Antonio Cisternino>It was the first prompt,
+so he deleted everything.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4781-0
+00:50:09.180 --> 00:50:10.540
+<v Antonio Cisternino>So there was a uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4814-0
+00:50:12.260 --> 00:50:17.427
+<v Antonio Cisternino>It was selected the refreshments,
+there's a deep thinking,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4814-1
+00:50:17.427 --> 00:50:20.580
+<v Antonio Cisternino>so I removed that so that hopefully.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4830-0
+00:50:21.940 --> 00:50:26.540
+<v Antonio Cisternino>We get a more reasonable output. I mean,
+it was completely crazy.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4839-0
+00:50:30.260 --> 00:50:32.700
+<v Antonio Cisternino>No, now this is interesting.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4901-0
+00:50:35.340 --> 00:50:39.275
+<v Antonio Cisternino>Please answer your question.
+I mean for Claude for GPT.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4901-1
+00:50:39.275 --> 00:50:44.194
+<v Antonio Cisternino>She declared that she didn't do that.
+I mean she fetched a few files.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4901-2
+00:50:44.194 --> 00:50:48.902
+<v Antonio Cisternino>We don't know which one.
+Claude is actually cloning on a terminal,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4901-3
+00:50:48.902 --> 00:50:50.940
+<v Antonio Cisternino>the repo to analyze the repo.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4908-0
+00:50:54.580 --> 00:50:57.300
+<v Antonio Cisternino>OK, now now it's.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4913-0
+00:50:59.860 --> 00:51:01.620
+<v Antonio Cisternino>Observation.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4919-0
+00:51:08.500 --> 00:51:10.380
+<v Antonio Cisternino>Man, where are you?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4936-0
+00:51:16.180 --> 00:51:20.260
+<v Antonio Cisternino>It's very it's getting complicated,
+I mean.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4966-0
+00:51:22.740 --> 00:51:26.441
+<v Antonio Cisternino>I think that at school,
+at high school professor,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4966-1
+00:51:26.441 --> 00:51:29.180
+<v Antonio Cisternino>we reading a same generated this way.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4973-0
+00:51:30.580 --> 00:51:32.460
+<v Antonio Cisternino>And have no way to understand it.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/4980-0
+00:51:36.020 --> 00:51:37.700
+<v Antonio Cisternino>OK, now stop.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5040-0
+00:51:43.860 --> 00:51:48.233
+<v Antonio Cisternino>OK,
+let's let's go and and follow the the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5040-1
+00:51:48.233 --> 00:51:53.751
+<v Antonio Cisternino>three lines.
+So with the that's interesting with the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5040-2
+00:51:53.751 --> 00:51:58.020
+<v Antonio Cisternino>we close the one way GPT is clearly less.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5085-0
+00:51:58.900 --> 00:52:08.742
+<v Antonio Cisternino>GPT is more like can you confirm by
+executing on my behalf this this this</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5085-1
+00:52:08.742 --> 00:52:15.260
+<v Antonio Cisternino>comments. OK,
+so we concluded that there are no.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5138-0
+00:52:15.460 --> 00:52:21.164
+<v Antonio Cisternino>No reference counting.
+So memory management is managed. How?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5138-1
+00:52:21.164 --> 00:52:29.020
+<v Antonio Cisternino>Which are other interesting question that
+we can pose related to memory management?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5144-0
+00:52:29.860 --> 00:52:31.820
+<v Antonio Cisternino>Let's go back to Advanced rogramming.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5149-0
+00:52:36.500 --> 00:52:37.660
+<v Antonio Cisternino>That's dictating.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5208-0
+00:52:42.580 --> 00:52:49.405
+<v Antonio Cisternino>Which which stores? No,
+actually we got this answer I mean at</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5208-1
+00:52:49.405 --> 00:52:56.340
+<v Antonio Cisternino>least to some extent and then we will ask
+using the code base.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5212-0
+00:52:56.980 --> 00:52:57.980
+<v Antonio Cisternino>No, I mean.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5231-0
+00:52:59.540 --> 00:53:04.620
+<v Antonio Cisternino>I found the prompt that basically crashes
+the claude. I think now it can be.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5232-0
+00:53:04.660 --> 00:53:05.580
+<v Antonio Cisternino>It can be.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5235-0
+00:53:10.140 --> 00:53:10.300
+<v Antonio Cisternino>The.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5302-0
+00:53:13.300 --> 00:53:19.553
+<v Antonio Cisternino>Nevertheless, it's point in general.
+I mean,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5302-1
+00:53:19.553 --> 00:53:31.087
+<v Antonio Cisternino>I'm surprised because in general they try
+to save money by outputting not too many</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5302-2
+00:53:31.087 --> 00:53:32.060
+<v Antonio Cisternino>tokens.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5346-0
+00:53:32.420 --> 00:53:37.697
+<v Antonio Cisternino>So I'm impressed about how many token is
+generating this thing,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5346-1
+00:53:37.697 --> 00:53:43.139
+<v Antonio Cisternino>and it's completely pointless.
+I thought it was for the thinking,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5346-2
+00:53:43.139 --> 00:53:47.180
+<v Antonio Cisternino>etcetera, but I mean,
+this is clearly pointless.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5375-0
+00:53:48.060 --> 00:53:56.374
+<v Antonio Cisternino>To the point that it is basically a bug,
+I think. I can ask for a borrow check.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5375-1
+00:53:56.374 --> 00:53:59.180
+<v Antonio Cisternino>Borrow check. OK, question.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5402-0
+00:54:03.940 --> 00:54:14.540
+<v Antonio Cisternino>Is there borrow borrow checker or similar
+in the repo?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5453-0
+00:54:27.420 --> 00:54:35.308
+<v Antonio Cisternino>It's troubles. It's costing them. No,
+there is no borrow checker or anything</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5453-1
+00:54:35.308 --> 00:54:41.660
+<v Antonio Cisternino>conceptually close to Rust ownership
+borrowing model. OK, so.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5513-0
+00:54:42.100 --> 00:54:48.677
+<v Antonio Cisternino>We ruled out this makes sense because
+Luca is older than Rust.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5513-1
+00:54:48.677 --> 00:54:56.507
+<v Antonio Cisternino>So I can add this is from my experience,
+so I'm cheating now in C++ memory</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5513-2
+00:54:56.507 --> 00:54:58.700
+<v Antonio Cisternino>management typically.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5573-0
+00:54:59.060 --> 00:55:09.149
+<v Antonio Cisternino>Often using uses patterns such as
+creating reusable pool of objects so that</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5573-1
+00:55:09.149 --> 00:55:14.990
+<v Antonio Cisternino>the memory is using reducing the heap
+user.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5642-0
+00:55:15.060 --> 00:55:18.743
+<v Antonio Cisternino>Or fragmentation,
+because if you remember one of the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5642-1
+00:55:18.743 --> 00:55:23.677
+<v Antonio Cisternino>problem of the malloc when we studied the
+malloc is the fragmentation.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5642-2
+00:55:23.677 --> 00:55:29.167
+<v Antonio Cisternino>So there are several techniques in C++ to
+use classes which try to reduce heap</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5642-3
+00:55:29.167 --> 00:55:30.140
+<v Antonio Cisternino>fragmentation.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5647-0
+00:55:30.500 --> 00:55:34.140
+<v Antonio Cisternino>That's oh, OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5651-0
+00:55:42.340 --> 00:55:42.540
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5672-0
+00:55:49.500 --> 00:55:55.340
+<v Antonio Cisternino>So there is also a code we can send it to
+to Luca. Luca.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5675-0
+00:55:58.900 --> 00:55:59.100
+<v Antonio Cisternino>Um.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5681-0
+00:56:03.500 --> 00:56:06.380
+<v Antonio Cisternino>Let's take some uh uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5723-0
+00:56:09.860 --> 00:56:15.308
+<v Antonio Cisternino>Memory leak. Oh, OK,
+actually she read also comments in the in</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5723-1
+00:56:15.308 --> 00:56:19.460
+<v Antonio Cisternino>the in the issues.
+Let me see in the beginning.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5785-0
+00:56:20.980 --> 00:56:25.617
+<v Antonio Cisternino>Manual memory management with defensive
+patterns.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5785-1
+00:56:25.617 --> 00:56:33.036
+<v Antonio Cisternino>This is the way for the labels that from
+the source code analysis and this goes</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5785-2
+00:56:33.036 --> 00:56:35.540
+<v Antonio Cisternino>back to the your colleague.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5813-0
+00:56:36.540 --> 00:56:46.380
+<v Antonio Cisternino>Point actually it use it.
+It uses parser interface as a file source.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5855-0
+00:56:48.180 --> 00:56:52.237
+<v Antonio Cisternino>Observation.
+No throw usage prevents exception from</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5855-1
+00:56:52.237 --> 00:56:56.529
+<v Antonio Cisternino>location failure.
+No checking pattern defensive checks</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5855-2
+00:56:56.529 --> 00:56:57.700
+<v Antonio Cisternino>after location.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5903-0
+00:56:58.500 --> 00:57:03.456
+<v Antonio Cisternino>Warning logging failures are logged.
+They clean up proper deleting the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5903-1
+00:57:03.456 --> 00:57:07.645
+<v Antonio Cisternino>structure for early,
+which is a good thing because many C++</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5903-2
+00:57:07.645 --> 00:57:09.740
+<v Antonio Cisternino>programmers forget about this.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5967-0
+00:57:10.980 --> 00:57:15.080
+<v Antonio Cisternino>Style assessment.
+Mixed modern C with C style manual</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5967-1
+00:57:15.080 --> 00:57:18.716
+<v Antonio Cisternino>management.
+No widespread user smart pointers.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5967-2
+00:57:18.716 --> 00:57:23.358
+<v Antonio Cisternino>Reliance on rule pointers with minimal
+lifetime management.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5967-3
+00:57:23.358 --> 00:57:25.060
+<v Antonio Cisternino>Defensive programming.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/5987-0
+00:57:26.300 --> 00:57:32.620
+<v Antonio Cisternino>Allocator used the Uh JA malloc.
+This is an informative.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6094-0
+00:57:34.020 --> 00:57:40.061
+<v Antonio Cisternino>We learned that the heap can be managed
+by different allocators because you can</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6094-1
+00:57:40.061 --> 00:57:46.027
+<v Antonio Cisternino>always allocate a chunk of memory and
+manage with the different allocators all</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6094-2
+00:57:46.027 --> 00:57:49.426
+<v Antonio Cisternino>the time.
+The use of different allocators is</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6094-3
+00:57:49.426 --> 00:57:53.580
+<v Antonio Cisternino>typically made for optimizing or
+obtaining properties.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6153-0
+00:57:53.700 --> 00:58:01.014
+<v Antonio Cisternino>Such as that safety for some part of the
+heap and more efficient approaches for</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6153-1
+00:58:01.014 --> 00:58:06.408
+<v Antonio Cisternino>other parts of the heap.
+There are several considerations,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6153-2
+00:58:06.408 --> 00:58:12.260
+<v Antonio Cisternino>so it's interesting that it checked about
+the different malloc.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6164-0
+00:58:13.380 --> 00:58:17.860
+<v Antonio Cisternino>Interesting that Claude spotted this
+thing and uh uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6169-0
+00:58:18.780 --> 00:58:20.060
+<v Antonio Cisternino>Opening I did not.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6182-0
+00:58:21.580 --> 00:58:27.660
+<v Antonio Cisternino>And then Lua is an issue. Let's keep.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6185-0
+00:58:29.260 --> 00:58:29.340
+<v Antonio Cisternino>Uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6203-0
+00:58:31.860 --> 00:58:34.690
+<v Antonio Cisternino>Security related concern,
+allocation failure,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6203-1
+00:58:34.690 --> 00:58:36.660
+<v Antonio Cisternino>handling vulnerability patterns.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6258-0
+00:58:37.620 --> 00:58:44.064
+<v Antonio Cisternino>New pointer the reference in potential.
+This is I think for any C++ code,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6258-1
+00:58:44.064 --> 00:58:50.857
+<v Antonio Cisternino>so this is not and the final behaviour if
+pointer is used without rechecking.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6258-2
+00:58:50.857 --> 00:58:52.860
+<v Antonio Cisternino>Also this is a general.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6264-0
+00:58:54.460 --> 00:58:56.380
+<v Antonio Cisternino>So no real.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6273-0
+00:58:57.700 --> 00:59:00.940
+<v Antonio Cisternino>OK, let's ask do.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6289-0
+00:59:02.980 --> 00:59:09.260
+<v Antonio Cisternino>Uh, you find multiple heaps or allocators.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6302-0
+00:59:33.140 --> 00:59:34.460
+<v Antonio Cisternino>In the meantime.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6306-0
+00:59:36.940 --> 00:59:37.420
+<v Antonio Cisternino>Let's do.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6308-0
+00:59:39.300 --> 00:59:39.380
+<v Antonio Cisternino>I I.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6353-0
+00:59:43.500 --> 00:59:48.603
+<v Antonio Cisternino>Added a new system to my my PC,
+so let's try to use it.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6353-1
+00:59:48.603 --> 00:59:52.340
+<v Antonio Cisternino>So there was the comment about JA Malloc.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6357-0
+00:59:54.380 --> 00:59:55.100
+<v Antonio Cisternino>O Let's try to.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6361-0
+00:59:59.900 --> 00:59:59.980
+<v Antonio Cisternino>Um.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6374-0
+01:00:02.300 --> 01:00:06.780
+<v Antonio Cisternino>Oh, you said the.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6378-0
+01:00:09.260 --> 01:00:11.060
+<v Antonio Cisternino>So now.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6385-0
+01:00:13.740 --> 01:00:15.740
+<v Antonio Cisternino>I'm using antigravity.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6398-0
+01:00:24.900 --> 01:00:28.220
+<v Antonio Cisternino>Now let's see whether this works or not.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6404-0
+01:00:30.580 --> 01:00:32.420
+<v Antonio Cisternino>This has finished.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6505-0
+01:00:33.860 --> 01:00:37.901
+<v Antonio Cisternino>From what I can see,
+there's no sign of multiple independent</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6505-1
+01:00:37.901 --> 01:00:41.811
+<v Antonio Cisternino>tips allocator being used inside C++ core.
+More precisely,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6505-2
+01:00:41.811 --> 01:00:47.112
+<v Antonio Cisternino>the C++ code in the top PNG is written in
+the usual style that assumes a single</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6505-3
+01:00:47.112 --> 01:00:51.220
+<v Antonio Cisternino>process wide allocator new delete malloc
+free STL containers.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6524-0
+01:00:51.620 --> 01:00:58.780
+<v Antonio Cisternino>From GitHub issues,
+you do see that some builds are packaged.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6552-0
+01:01:00.020 --> 01:01:06.572
+<v Antonio Cisternino>On that means the whole process is linked
+against JM unlock on that platform,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6552-1
+01:01:06.572 --> 01:01:07.580
+<v Antonio Cisternino>not is dead.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6615-0
+01:01:08.740 --> 01:01:16.529
+<v Antonio Cisternino>This is basically saying Claude I I I
+you're say you you're you're telling a a</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6615-1
+01:01:16.529 --> 01:01:24.318
+<v Antonio Cisternino>false thing and a full story because
+basically Claude told me that the project</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6615-2
+01:01:24.318 --> 01:01:26.980
+<v Antonio Cisternino>is using JE Malloc and and.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6627-0
+01:01:27.060 --> 01:01:30.220
+<v Antonio Cisternino>Uh, GPT says no.
+I mean there is some mention.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6638-0
+01:01:38.540 --> 01:01:39.660
+<v Antonio Cisternino>So.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6665-0
+01:01:42.620 --> 01:01:49.060
+<v Antonio Cisternino>OK,
+the best thing you should like this anti</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6665-1
+01:01:49.060 --> 01:01:51.780
+<v Antonio Cisternino>gravity don't tell.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6669-0
+01:01:52.980 --> 01:01:54.820
+<v Antonio Cisternino>Then it will actually.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6699-0
+01:01:56.860 --> 01:02:03.737
+<v Antonio Cisternino>Yeah, you're right. OK.
+But now I think we can conclude that that</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6699-1
+01:02:03.737 --> 01:02:04.780
+<v Antonio Cisternino>this is a.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6779-0
+01:02:06.340 --> 01:02:11.225
+<v Antonio Cisternino>A sensible thing to do,
+but now you see the difference between</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6779-1
+01:02:11.225 --> 01:02:16.343
+<v Antonio Cisternino>the various systems. OK,
+so Claude basically said oh don't worry,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6779-2
+01:02:16.343 --> 01:02:22.003
+<v Antonio Cisternino>but it was sensible and say the
+allocation is patterns have been derived</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6779-3
+01:02:22.003 --> 01:02:24.020
+<v Antonio Cisternino>from this particular file.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6858-0
+01:02:24.820 --> 01:02:29.600
+<v Antonio Cisternino>GPT didn't tell us which files were used
+to derive conclusions,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6858-1
+01:02:29.600 --> 01:02:35.202
+<v Antonio Cisternino>but from the trace of the the the
+thinking I've got that GPT is aware that</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6858-2
+01:02:35.202 --> 01:02:41.178
+<v Antonio Cisternino>she only browse needs to browse GitHub.
+So I'm pretty sure that at least either</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6858-3
+01:02:41.178 --> 01:02:44.540
+<v Antonio Cisternino>is the documentation or the issue,
+but only.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6860-0
+01:02:44.780 --> 01:02:45.300
+<v Antonio Cisternino>It up.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6889-0
+01:02:46.260 --> 01:02:54.577
+<v Antonio Cisternino>At the same time, GPT says OK,
+can you check on my behalf by running</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6889-1
+01:02:54.577 --> 01:02:55.180
+<v Antonio Cisternino>grep?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6894-0
+01:02:56.580 --> 01:02:58.860
+<v Antonio Cisternino>So that you can check because.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6909-0
+01:03:05.820 --> 01:03:10.060
+<v Antonio Cisternino>Yes, and as your colleague was not sorry.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6912-0
+01:03:10.100 --> 01:03:10.620
+<v Antonio Cisternino>No, sorry.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6916-0
+01:03:20.460 --> 01:03:20.580
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6919-0
+01:03:25.580 --> 01:03:25.700
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6955-0
+01:03:28.260 --> 01:03:38.420
+<v Antonio Cisternino>So there is a a mention in the configure
+AC and in the read me for compilation.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/6959-0
+01:03:40.740 --> 01:03:43.180
+<v Antonio Cisternino>So from.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7030-0
+01:03:44.820 --> 01:03:50.343
+<v Antonio Cisternino>I should probably spend some some time on
+on this,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7030-1
+01:03:50.343 --> 01:03:55.324
+<v Antonio Cisternino>but nevertheless apparently it GPT was
+right.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7030-2
+01:03:55.324 --> 01:04:02.580
+<v Antonio Cisternino>Jemalloc is referenced and is on all only
+used for Lua I will add.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7042-0
+01:04:02.900 --> 01:04:06.526
+<v Antonio Cisternino>I mean,
+it's a dependency that is coming from Lua,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7042-1
+01:04:06.526 --> 01:04:06.740
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7063-0
+01:04:16.180 --> 01:04:19.758
+<v Antonio Cisternino>Oh,
+this is the trace of the so actually</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7063-1
+01:04:19.758 --> 01:04:20.980
+<v Antonio Cisternino>still working.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7076-0
+01:04:24.780 --> 01:04:28.180
+<v Antonio Cisternino>We'll have to wait for the the output. OK,
+let's.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7133-0
+01:04:29.460 --> 01:04:33.968
+<v Antonio Cisternino>For the moment,
+let's keep exploring why waiting the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7133-1
+01:04:33.968 --> 01:04:37.710
+<v Antonio Cisternino>analysis of course of the code.
+By the way,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7133-2
+01:04:37.710 --> 01:04:43.580
+<v Antonio Cisternino>there's no nothing wrong in say. OK,
+let me go on GitHub and search.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7165-0
+01:04:45.140 --> 01:04:54.685
+<v Antonio Cisternino>Inside the let me go even in the source
+so I'm sure that in a source and I can</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7165-1
+01:04:54.685 --> 01:04:56.860
+<v Antonio Cisternino>say J e-mail look.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7190-0
+01:05:04.020 --> 01:05:08.867
+<v Antonio Cisternino>By the way,
+graph beats AI 4 to 0 in this kind of</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7190-1
+01:05:08.867 --> 01:05:09.740
+<v Antonio Cisternino>task, OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7214-0
+01:05:12.020 --> 01:05:18.580
+<v Antonio Cisternino>This is an interesting fact to report in
+How did I verify the statement?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7268-0
+01:05:20.260 --> 01:05:26.900
+<v Antonio Cisternino>I did the graph.
+There is no reference to the JE malloc</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7268-1
+01:05:26.900 --> 01:05:34.132
+<v Antonio Cisternino>other than in Lua,
+so we can basically conclude that the C++</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7268-2
+01:05:34.132 --> 01:05:36.860
+<v Antonio Cisternino>is not using JE malloc.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7270-0
+01:05:37.580 --> 01:05:37.740
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7283-0
+01:05:40.220 --> 01:05:43.420
+<v Antonio Cisternino>By the way, as I was saying, I I won't.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7338-0
+01:05:45.260 --> 01:05:52.275
+<v Antonio Cisternino>Pretend that this is the best question I
+will pose myself during the project.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7338-1
+01:05:52.275 --> 01:05:59.110
+<v Antonio Cisternino>Please try to validate high level
+statements such as I mean the style so we</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7338-2
+01:05:59.110 --> 01:06:00.100
+<v Antonio Cisternino>don't have.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7340-0
+01:06:00.220 --> 01:06:00.260
+<v Antonio Cisternino>Uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7343-0
+01:06:04.220 --> 01:06:05.020
+<v Antonio Cisternino>So um.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7345-0
+01:06:07.020 --> 01:06:07.100
+<v Antonio Cisternino>Um.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7382-0
+01:06:09.420 --> 01:06:22.740
+<v Antonio Cisternino>Who is responsible for the allocating the
+the memory allocated with new?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7388-0
+01:06:23.980 --> 01:06:26.540
+<v Antonio Cisternino>This is a reasonable question, OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7393-0
+01:06:27.860 --> 01:06:29.180
+<v Antonio Cisternino>Which refers to.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7415-0
+01:06:35.380 --> 01:06:40.060
+<v Antonio Cisternino>The C++ code that owns the pointer is
+responsible.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7420-0
+01:06:44.180 --> 01:06:45.100
+<v Antonio Cisternino>So basically.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7494-0
+01:06:46.580 --> 01:06:53.911
+<v Antonio Cisternino>The container acts basically as the roots
+of a manually developed memory strategy,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7494-1
+01:06:53.911 --> 01:07:00.623
+<v Antonio Cisternino>but basically you can think them as of
+the roots where the system when will</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7494-2
+01:07:00.623 --> 01:07:03.980
+<v Antonio Cisternino>delete the container will delete also.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7499-0
+01:07:04.860 --> 01:07:06.380
+<v Antonio Cisternino>Hierarchically so.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7528-0
+01:07:12.260 --> 01:07:17.489
+<v Antonio Cisternino>Look at this. That, by the way,
+would have been my next question to the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7528-1
+01:07:17.489 --> 01:07:17.780
+<v Antonio Cisternino>eye.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7621-0
+01:07:19.300 --> 01:07:24.066
+<v Antonio Cisternino>When you deal with programming languages
+such as C++ and C++,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7621-1
+01:07:24.066 --> 01:07:29.831
+<v Antonio Cisternino>because I mean there are not many,
+but I mean programming languages object</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7621-2
+01:07:29.831 --> 01:07:35.136
+<v Antonio Cisternino>oriented with destructors.
+It's a good question to ask yourself what</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7621-3
+01:07:35.136 --> 01:07:38.980
+<v Antonio Cisternino>is the role of the destructor,
+especially memory.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7667-0
+01:07:39.140 --> 01:07:44.264
+<v Antonio Cisternino>Management destructor may play a
+significant role, OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7667-1
+01:07:44.264 --> 01:07:51.718
+<v Antonio Cisternino>and we just get the confirmation that
+basically destructors are responsible for</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7667-2
+01:07:51.718 --> 01:07:54.980
+<v Antonio Cisternino>the allocating data structures, OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7713-0
+01:07:55.540 --> 01:08:03.799
+<v Antonio Cisternino>So we are working with network and the
+system is meant to analyse the network,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7713-1
+01:08:03.799 --> 01:08:09.340
+<v Antonio Cisternino>so I would expect a little bit of string
+management.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7724-0
+01:08:11.940 --> 01:08:15.420
+<v Antonio Cisternino>What are the question you will ask for
+string management?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7751-0
+01:08:17.060 --> 01:08:22.156
+<v Antonio Cisternino>The technology behind it maybe.
+So first of all,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7751-1
+01:08:22.156 --> 01:08:25.380
+<v Antonio Cisternino>why string management is worth?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7755-0
+01:08:29.860 --> 01:08:32.420
+<v Antonio Cisternino>Honestly, uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7762-0
+01:08:33.300 --> 01:08:35.380
+<v Antonio Cisternino>I was expecting more from.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7768-0
+01:08:37.460 --> 01:08:40.060
+<v Antonio Cisternino>Yeah, I mean.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7817-0
+01:08:41.700 --> 01:08:50.015
+<v Antonio Cisternino>This way, 10 days will not be enough. OK,
+but I mean, is yeah, I mean, it's OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7817-1
+01:08:50.015 --> 01:08:56.460
+<v Antonio Cisternino>So this is an open game.
+Everyone can pick up. I'm trying to.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7836-0
+01:08:57.060 --> 01:09:01.020
+<v Antonio Cisternino>Showcase everything. OK, so strings.
+Why strings are so important?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7902-0
+01:09:07.380 --> 01:09:16.126
+<v Antonio Cisternino>They may fragment heap and um the they
+may. If you go the Java way,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7902-1
+01:09:16.126 --> 01:09:21.914
+<v Antonio Cisternino>it can lead to a lot of copy buffer
+copying.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7902-2
+01:09:21.914 --> 01:09:27.060
+<v Antonio Cisternino>So string management is crucial because.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7954-0
+01:09:27.340 --> 01:09:34.100
+<v Antonio Cisternino>It may affect performances and in
+software like Ntop,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/7954-1
+01:09:34.100 --> 01:09:43.740
+<v Antonio Cisternino>performance is rather important because
+you are trying to monitor fast pace.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8003-0
+01:09:43.860 --> 01:09:49.057
+<v Antonio Cisternino>Elements,
+especially now that networking is 100</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8003-1
+01:09:49.057 --> 01:09:55.769
+<v Antonio Cisternino>gigabit per second. OK,
+and so you're you're going so for 400</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8003-2
+01:09:55.769 --> 01:09:58.260
+<v Antonio Cisternino>gigabit per second, so.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8063-0
+01:09:59.140 --> 01:10:03.300
+<v Antonio Cisternino>The speed,
+the the the speed of the network is such</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8063-1
+01:10:03.300 --> 01:10:09.780
+<v Antonio Cisternino>that the processing speed of the CPU and
+efficiency of the algorithms may affect</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8063-2
+01:10:09.780 --> 01:10:14.100
+<v Antonio Cisternino>your ability to do real time or not
+analysis. OK, OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8065-0
+01:10:14.500 --> 01:10:14.700
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8105-0
+01:10:23.860 --> 01:10:27.921
+<v Antonio Cisternino>Yes,
+but that I will say that if you are at</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8105-1
+01:10:27.921 --> 01:10:32.260
+<v Antonio Cisternino>the pocket level,
+you even get just the bytes.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8183-0
+01:10:32.900 --> 01:10:36.820
+<v Antonio Cisternino>But typically these these tools typically
+have.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8183-1
+01:10:36.820 --> 01:10:41.557
+<v Antonio Cisternino>I mean if you are the network admin and
+you want to look,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8183-2
+01:10:41.557 --> 01:10:46.702
+<v Antonio Cisternino>you're looking for something,
+typically you want to do search,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8183-3
+01:10:46.702 --> 01:10:51.031
+<v Antonio Cisternino>so that's strings.
+So these kind of tools have to to</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8183-4
+01:10:51.031 --> 01:10:52.420
+<v Antonio Cisternino>generate strings.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8248-0
+01:10:52.420 --> 01:10:59.873
+<v Antonio Cisternino>The problem it it's from maybe is less
+important for the control the. Oh no, no,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8248-1
+01:10:59.873 --> 01:11:04.750
+<v Antonio Cisternino>definitely.
+But our question is what is the style so</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8248-2
+01:11:04.750 --> 01:11:12.020
+<v Antonio Cisternino>that we can judge whether it is OK or not.
+So what is the string manipulation?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8254-0
+01:11:12.140 --> 01:11:15.220
+<v Antonio Cisternino>Style in the code base.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8299-0
+01:11:40.020 --> 01:11:43.442
+<v Antonio Cisternino>Actually yeah, yeah,
+I was saying I did digress.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8299-1
+01:11:43.442 --> 01:11:48.331
+<v Antonio Cisternino>I should stick on the GitHub,
+but the user told me that the GitHub is</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8299-2
+01:11:48.331 --> 01:11:49.100
+<v Antonio Cisternino>the source.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8328-0
+01:11:51.700 --> 01:11:54.574
+<v Antonio Cisternino>Uh,
+I love to to read the comments from the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8328-1
+01:11:54.574 --> 01:11:56.860
+<v Antonio Cisternino>AI 'cause sometimes they're so fun.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8333-0
+01:12:06.780 --> 01:12:06.900
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8377-0
+01:12:12.060 --> 01:12:17.551
+<v Antonio Cisternino>As an optional drop in replacement for
+the standard memory allocator to optimize</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8377-1
+01:12:17.551 --> 01:12:20.060
+<v Antonio Cisternino>memory usage and reduce fermentation.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8468-0
+01:12:21.620 --> 01:12:27.740
+<v Antonio Cisternino>And it is basically a configuration part
+because Jemalloc then simply redefine</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8468-1
+01:12:27.740 --> 01:12:33.317
+<v Antonio Cisternino>malloc and so during the linking of the
+project will inherit the malloc</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8468-2
+01:12:33.317 --> 01:12:37.965
+<v Antonio Cisternino>implementation from Gemalloc. So OK,
+this is a nice answer.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8468-3
+01:12:37.965 --> 01:12:39.980
+<v Antonio Cisternino>This has been produced by.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8550-0
+01:12:41.220 --> 01:12:45.785
+<v Antonio Cisternino>Actually reading the full code base it
+took longer.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8550-1
+01:12:45.785 --> 01:12:52.544
+<v Antonio Cisternino>We learn something also from this.
+Maybe the first analysis is convenient to</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8550-2
+01:12:52.544 --> 01:12:56.846
+<v Antonio Cisternino>produce it using the standard web
+interface etc.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8550-3
+01:12:56.846 --> 01:13:01.060
+<v Antonio Cisternino>And then when you wanna cross check on go
+deep.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8602-0
+01:13:01.340 --> 01:13:09.358
+<v Antonio Cisternino>Then or to be to get a comprehensive
+answer that regards all the code base</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8602-1
+01:13:09.358 --> 01:13:17.804
+<v Antonio Cisternino>rather than just you know overall and
+overall properties then using an additor</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8602-2
+01:13:17.804 --> 01:13:18.660
+<v Antonio Cisternino>locally.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8613-0
+01:13:18.700 --> 01:13:22.740
+<v Antonio Cisternino>They gets you better results. OK,
+so I mean.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8679-0
+01:13:24.900 --> 01:13:30.085
+<v Antonio Cisternino>OK, C++ core.
+They use a very traditional mixed CC plus</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8679-1
+01:13:30.085 --> 01:13:34.530
+<v Antonio Cisternino>plus string style,
+so char start fixed buffers.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8679-2
+01:13:34.530 --> 01:13:42.216
+<v Antonio Cisternino>This is in in the traditional networking
+also because packets have a fixed length,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8679-3
+01:13:42.216 --> 01:13:43.420
+<v Antonio Cisternino>so typically.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8745-0
+01:13:43.460 --> 01:13:50.272
+<v Antonio Cisternino>Chart star is a typical way to to deal
+with them and as the SM print F or</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8745-1
+01:13:50.272 --> 01:13:57.268
+<v Antonio Cisternino>similar Sync is used but mostly as a
+convenience wrapper at a higher level,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8745-2
+01:13:57.268 --> 01:14:02.700
+<v Antonio Cisternino>not as a strict policy.
+So this means that basically is C.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8759-0
+01:14:03.060 --> 01:14:07.620
+<v Antonio Cisternino>Style buffer style string processing at
+the core.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8827-0
+01:14:09.260 --> 01:14:17.729
+<v Antonio Cisternino>No sign of modern stuff such as a string
+view format, safe string abstractions. OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8827-1
+01:14:17.729 --> 01:14:25.291
+<v Antonio Cisternino>so personally I will share this,
+but I mean now I'm I'm cheating because I</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8827-2
+01:14:25.291 --> 01:14:26.300
+<v Antonio Cisternino>know Luca.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8894-0
+01:14:26.540 --> 01:14:33.399
+<v Antonio Cisternino>And I'm pretty sure that Luca is a C fan
+basically and so I'm pretty sure that he</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8894-1
+01:14:33.399 --> 01:14:38.669
+<v Antonio Cisternino>use it as the core,
+the C and then the object orientation. OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8894-2
+01:14:38.669 --> 01:14:43.940
+<v Antonio Cisternino>so we are left with little time and few
+other questions first.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8901-0
+01:14:44.900 --> 01:14:49.820
+<v Antonio Cisternino>Uh, even the styles.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8919-0
+01:14:51.700 --> 01:14:55.740
+<v Antonio Cisternino>So now let me pose the question to the
+local.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8927-0
+01:14:57.340 --> 01:15:00.140
+<v Antonio Cisternino>No to the local chat.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8972-0
+01:15:01.700 --> 01:15:11.329
+<v Antonio Cisternino>Dismiss. There we are.
+Can you validate the security?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8972-1
+01:15:11.329 --> 01:15:20.780
+<v Antonio Cisternino>Can you find the security related the
+weaknesses in?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8978-0
+01:15:21.940 --> 01:15:26.620
+<v Antonio Cisternino>The C++ code base.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8985-0
+01:15:32.020 --> 01:15:35.660
+<v Antonio Cisternino>OK, this is.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8988-0
+01:15:37.780 --> 01:15:38.460
+<v Antonio Cisternino>Unless.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/8995-0
+01:15:40.220 --> 01:15:42.340
+<v Antonio Cisternino>It was the same question.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9039-0
+01:15:43.820 --> 01:15:59.980
+<v Antonio Cisternino>To the AI so that we can.
+So that's interesting, I mean because.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9041-0
+01:16:00.740 --> 01:16:00.820
+<v Antonio Cisternino>Um.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9088-0
+01:16:04.220 --> 01:16:09.008
+<v Antonio Cisternino>The buffer overflow.
+So how do you check before asking the AI,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9088-1
+01:16:09.008 --> 01:16:14.100
+<v Antonio Cisternino>how would you check the potential buffer
+overflows in a code base?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9090-0
+01:16:18.020 --> 01:16:18.260
+<v Antonio Cisternino>So.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9140-0
+01:16:21.460 --> 01:16:25.007
+<v Antonio Cisternino>Oh yeah, I mean you can use tools,
+but I mean if suppose we are,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9140-1
+01:16:25.007 --> 01:16:28.008
+<v Antonio Cisternino>we go back 20 years,
+no tools because I mean the tools</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9140-2
+01:16:28.008 --> 01:16:29.700
+<v Antonio Cisternino>basically embeds the behaviour.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9221-0
+01:16:35.180 --> 01:16:40.633
+<v Antonio Cisternino>No, no, even without the eye.
+I mean let let's stick to the core</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9221-1
+01:16:40.633 --> 01:16:44.493
+<v Antonio Cisternino>programming programming that live live in
+us.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9221-2
+01:16:44.493 --> 01:16:51.457
+<v Antonio Cisternino>I mean what are the so the because buffer
+overflow is often misused as I mean it's</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9221-3
+01:16:51.457 --> 01:16:52.380
+<v Antonio Cisternino>considered.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9252-0
+01:16:52.460 --> 01:16:56.249
+<v Antonio Cisternino>A bad thing in general,
+but I mean where where would you look?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9252-1
+01:16:56.249 --> 01:17:00.340
+<v Antonio Cisternino>If you only have notepad,
+where would you look for buffer or flows?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9276-0
+01:17:07.180 --> 01:17:13.140
+<v Antonio Cisternino>But we are in C,
+so basically everything is unsafe or C++.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9347-0
+01:17:16.180 --> 01:17:22.421
+<v Antonio Cisternino>Said like a string copy function by which
+will use the string and copy that that I</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9347-1
+01:17:22.421 --> 01:17:28.135
+<v Antonio Cisternino>mean that that is and in fact it was
+mentioned in the the and copy function</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9347-2
+01:17:28.135 --> 01:17:31.820
+<v Antonio Cisternino>typically.
+So the invocation of a function that.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9406-0
+01:17:32.420 --> 01:17:38.102
+<v Antonio Cisternino>Performs boundary checks on on a pointer.
+Basically that that that it is.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9406-1
+01:17:38.102 --> 01:17:43.554
+<v Antonio Cisternino>But the first thing that you have to
+check in general is the automatic</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9406-2
+01:17:43.554 --> 01:17:46.780
+<v Antonio Cisternino>allocated memory. So if you want to focus.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9411-0
+01:17:47.420 --> 01:17:50.980
+<v Antonio Cisternino>In in the.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9484-0
+01:17:52.860 --> 01:17:57.130
+<v Antonio Cisternino>In the in in the search for a buffer
+overflow,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9484-1
+01:17:57.130 --> 01:18:04.127
+<v Antonio Cisternino>first you will concentrate on stack
+allocated memory because the the essence</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9484-2
+01:18:04.127 --> 01:18:08.580
+<v Antonio Cisternino>of the stack overflow attacker is to be
+able to.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9534-0
+01:18:08.620 --> 01:18:14.566
+<v Antonio Cisternino>Use one of these function that don't
+check the boundaries.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9534-1
+01:18:14.566 --> 01:18:20.612
+<v Antonio Cisternino>So of course your colleague is right that
+that's important,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9534-2
+01:18:20.612 --> 01:18:24.140
+<v Antonio Cisternino>but the I will focus on the static.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9588-0
+01:18:24.420 --> 01:18:28.427
+<v Antonio Cisternino>No, sorry,
+not static on on on the on the stack</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9588-1
+01:18:28.427 --> 01:18:34.271
+<v Antonio Cisternino>because the essence of the stack overflow,
+so sorry, buffer overflow,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9588-2
+01:18:34.271 --> 01:18:38.780
+<v Antonio Cisternino>it was exploiting the the absence of
+boundary checks.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9645-0
+01:18:39.700 --> 01:18:45.848
+<v Antonio Cisternino>To override the stack because it's where
+you can get the best out of it,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9645-1
+01:18:45.848 --> 01:18:52.586
+<v Antonio Cisternino>especially if the the you are calling a
+library which elevated the privilege to</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9645-2
+01:18:52.586 --> 01:18:54.860
+<v Antonio Cisternino>administrative and you can.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9717-0
+01:18:55.340 --> 01:19:03.607
+<v Antonio Cisternino>Rewrite the return address in the
+activation record so that you can get my</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9717-1
+01:19:03.607 --> 01:19:10.552
+<v Antonio Cisternino>first buffer overflow.
+I think it was 97 or 6 and I managed to</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9717-2
+01:19:10.552 --> 01:19:14.300
+<v Antonio Cisternino>get a beautiful bash prompt route.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9795-0
+01:19:14.660 --> 01:19:20.404
+<v Antonio Cisternino>By exploiting one of this thing and and
+the core was basically not only the fact</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9795-1
+01:19:20.404 --> 01:19:25.511
+<v Antonio Cisternino>that you you buffer overflow,
+but you have to understand the the layout</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9795-2
+01:19:25.511 --> 01:19:31.114
+<v Antonio Cisternino>of the memory so that you can write your
+interesting stuff and the 1st place I</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9795-3
+01:19:31.114 --> 01:19:33.100
+<v Antonio Cisternino>will look for will be stack.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9875-0
+01:19:34.420 --> 01:19:37.463
+<v Antonio Cisternino>Not heap.
+Of course in the heap you can do,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9875-1
+01:19:37.463 --> 01:19:42.997
+<v Antonio Cisternino>but it's more difficult to produce damage
+in the heap rather than in the stack,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9875-2
+01:19:42.997 --> 01:19:47.423
+<v Antonio Cisternino>because the heap depends on how the
+project has been developed.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9875-3
+01:19:47.423 --> 01:19:52.127
+<v Antonio Cisternino>The stack behaves in a well understood
+way with activation records,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9875-4
+01:19:52.127 --> 01:19:53.580
+<v Antonio Cisternino>so there you can get.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9882-0
+01:19:54.260 --> 01:19:57.660
+<v Antonio Cisternino>Uh, much more interesting stuff. OK, so.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9927-0
+01:19:58.620 --> 01:20:04.742
+<v Antonio Cisternino>There are several security relevant risk
+pattern. Luca, you're in trouble.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9927-1
+01:20:04.742 --> 01:20:09.068
+<v Antonio Cisternino>We'll send you a report,
+but with the access I have,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9927-2
+01:20:09.068 --> 01:20:12.660
+<v Antonio Cisternino>I can't do a complete audit and this is
+OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9929-0
+01:20:13.860 --> 01:20:13.940
+<v Antonio Cisternino>Uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9959-0
+01:20:15.820 --> 01:20:22.020
+<v Antonio Cisternino>OK, a lot of excusation. I'm sorry,
+I can't do this. So I mean,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9959-1
+01:20:22.020 --> 01:20:24.540
+<v Antonio Cisternino>I can give you an opinion.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9962-0
+01:20:27.300 --> 01:20:27.540
+<v Antonio Cisternino>Um.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9963-0
+01:20:30.180 --> 01:20:30.340
+<v Antonio Cisternino>Huh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9967-0
+01:20:33.100 --> 01:20:34.260
+<v Antonio Cisternino>Truncation.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/9980-0
+01:20:36.740 --> 01:20:40.740
+<v Antonio Cisternino>Plus so string copy is used the.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10054-0
+01:20:43.020 --> 01:20:48.502
+<v Antonio Cisternino>The destination is not null terminated
+because in C the the tradition is to null</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10054-1
+01:20:48.502 --> 01:20:52.630
+<v Antonio Cisternino>terminate strings.
+So I mean with truncation you can you you</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10054-2
+01:20:52.630 --> 01:20:57.097
+<v Antonio Cisternino>you protect the buffer,
+but basically you can get an inconsistent</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10054-3
+01:20:57.097 --> 01:20:58.180
+<v Antonio Cisternino>string. This is.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10056-0
+01:20:58.340 --> 01:20:59.140
+<v Antonio Cisternino>Uh, the.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10058-0
+01:21:00.820 --> 01:21:00.900
+<v Antonio Cisternino>Uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10110-0
+01:21:02.700 --> 01:21:09.902
+<v Antonio Cisternino>General. So in from this shallow analysis,
+nothing that isn't.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10110-1
+01:21:09.902 --> 01:21:18.820
+<v Antonio Cisternino>I mean all these things are if you use C
+string styles, basically that's the.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10112-0
+01:21:19.980 --> 01:21:20.060
+<v Antonio Cisternino>Um.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10124-0
+01:21:21.980 --> 01:21:25.060
+<v Antonio Cisternino>From source network interface C.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10146-0
+01:21:26.260 --> 01:21:30.090
+<v Antonio Cisternino>Uh,
+you can see the typical pattern on hand</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10146-1
+01:21:30.090 --> 01:21:32.180
+<v Antonio Cisternino>rolled protocol parsing.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10195-0
+01:21:34.700 --> 01:21:40.255
+<v Antonio Cisternino>They do some blank checker before the NS
+header, which is good,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10195-1
+01:21:40.255 --> 01:21:46.940
+<v Antonio Cisternino>but all bounds checking is manual,
+so error prone because of the programmer.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10211-0
+01:21:49.060 --> 01:21:53.180
+<v Antonio Cisternino>A complex protocol logic security input.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10276-0
+01:21:54.300 --> 01:21:59.732
+<v Antonio Cisternino>And top NG often runs as a root or
+elevated user. OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10276-1
+01:21:59.732 --> 01:22:05.163
+<v Antonio Cisternino>so basically nothing new.
+Good news for Luca. I mean,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10276-2
+01:22:05.163 --> 01:22:11.300
+<v Antonio Cisternino>there are no obvious problems. OK,
+let's see if antigravity.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10278-0
+01:22:11.780 --> 01:22:12.060
+<v Antonio Cisternino>Yeah.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10281-0
+01:22:14.340 --> 01:22:14.900
+<v Antonio Cisternino>Hmm.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10363-0
+01:22:25.100 --> 01:22:29.459
+<v Antonio Cisternino>Identify multiple.
+I mean this is part of reasoning,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10363-1
+01:22:29.459 --> 01:22:33.984
+<v Antonio Cisternino>so it's not the.
+I mean you can get multiple main copy</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10363-2
+01:22:33.984 --> 01:22:39.578
+<v Antonio Cisternino>calls, most appears safe,
+but investigating 2 specific instances in</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10363-3
+01:22:39.578 --> 01:22:44.020
+<v Antonio Cisternino>utils CPP for potential buffer overflows.
+OK, I mean.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10385-0
+01:22:44.380 --> 01:22:52.900
+<v Antonio Cisternino>Overall, I I like it there here.
+I think it's close to wrap up.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10389-0
+01:22:55.220 --> 01:22:55.460
+<v Antonio Cisternino>So uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10451-0
+01:22:57.420 --> 01:23:06.031
+<v Antonio Cisternino>While I try to wrap up the whole session,
+let's leave the the the code to run.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10451-1
+01:23:06.031 --> 01:23:13.116
+<v Antonio Cisternino>So what are our takeaways?
+So as you can see we use it basically</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10451-2
+01:23:13.116 --> 01:23:14.860
+<v Antonio Cisternino>three AIS Cloud.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10515-0
+01:23:14.940 --> 01:23:21.461
+<v Antonio Cisternino>We generated probably the most useless
+output, 2 verbose,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10515-1
+01:23:21.461 --> 01:23:28.095
+<v Antonio Cisternino>too big to cross-check and with I won't
+say hallucination,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10515-2
+01:23:28.095 --> 01:23:33.380
+<v Antonio Cisternino>but it pointed out not so relevant things,
+OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10552-0
+01:23:34.700 --> 01:23:42.588
+<v Antonio Cisternino>I would have expected.
+I mean you can ask when I I paste in the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10552-1
+01:23:42.588 --> 01:23:45.300
+<v Antonio Cisternino>first prompt from GPT.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10629-0
+01:23:47.740 --> 01:23:52.358
+<v Antonio Cisternino>If I were using Cloud,
+I would probably have stopped it and</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10629-1
+01:23:52.358 --> 01:23:57.207
+<v Antonio Cisternino>corrected the prompter by saying but
+don't do a full analysis,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10629-2
+01:23:57.207 --> 01:24:02.748
+<v Antonio Cisternino>I will ask you for specific things. OK,
+so that you can go incremental.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10629-3
+01:24:02.748 --> 01:24:03.980
+<v Antonio Cisternino>So first factor.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10726-0
+01:24:04.300 --> 01:24:07.418
+<v Antonio Cisternino>When you use the AI,
+please do it this way.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10726-1
+01:24:07.418 --> 01:24:12.591
+<v Antonio Cisternino>Do it incremental so that it's easy also
+to cross check and validate the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10726-2
+01:24:12.591 --> 01:24:16.206
+<v Antonio Cisternino>statements,
+because otherwise the risk is that you</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10726-3
+01:24:16.206 --> 01:24:19.749
+<v Antonio Cisternino>spend a lot of time.
+If you use the free version,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10726-4
+01:24:19.749 --> 01:24:23.860
+<v Antonio Cisternino>you may even run out of tokens before you
+have an answer.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10766-0
+01:24:24.180 --> 01:24:30.882
+<v Antonio Cisternino>And do cross checking between different
+AI's is a good thing.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10766-1
+01:24:30.882 --> 01:24:39.639
+<v Antonio Cisternino>For a general overview of code base and
+repositories you can use the general web</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10766-2
+01:24:39.639 --> 01:24:40.180
+<v Antonio Cisternino>even.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10833-0
+01:24:40.460 --> 01:24:47.614
+<v Antonio Cisternino>Without restricting to GitHub, I mean,
+but also let the AI find articles that</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10833-1
+01:24:47.614 --> 01:24:52.292
+<v Antonio Cisternino>explains the code base.
+I think it's a good thing,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10833-2
+01:24:52.292 --> 01:24:59.538
+<v Antonio Cisternino>but then you go and cross-check every
+statement so that you you see that there</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10833-3
+01:24:59.538 --> 01:25:00.180
+<v Antonio Cisternino>are no.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10872-0
+01:25:00.460 --> 01:25:07.384
+<v Antonio Cisternino>Misunderstandings,
+but as your colleagues was suggesting,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10872-1
+01:25:07.384 --> 01:25:15.980
+<v Antonio Cisternino>eventually I totally agree that using
+cloning the repo on your machine.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10946-0
+01:25:16.300 --> 01:25:24.203
+<v Antonio Cisternino>And doing some check about the statement
+is necessary because as you've seen the A</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10946-1
+01:25:24.203 --> 01:25:31.249
+<v Antonio Cisternino>I cherry pick some files from the repo
+and try tries to draw conclusions.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/10946-2
+01:25:31.249 --> 01:25:35.820
+<v Antonio Cisternino>In some cases I felt OK with memory
+management.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11031-0
+01:25:35.940 --> 01:25:42.058
+<v Antonio Cisternino>Because memory managing is so widely
+available in all the source code that I'm</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11031-1
+01:25:42.058 --> 01:25:47.480
+<v Antonio Cisternino>pretty sure that any file you pick up you
+will find the same pattern.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11031-2
+01:25:47.480 --> 01:25:53.831
+<v Antonio Cisternino>So I mean I felt safe to continue using
+the online version if we decided for more</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11031-3
+01:25:53.831 --> 01:25:55.380
+<v Antonio Cisternino>vertical properties.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11093-0
+01:25:55.940 --> 01:26:02.796
+<v Antonio Cisternino>May not be the best thing.
+Global properties such as security that</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11093-1
+01:26:02.796 --> 01:26:10.574
+<v Antonio Cisternino>is requires browsing the full repo,
+so I will use some local tool and not I</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11093-2
+01:26:10.574 --> 01:26:15.180
+<v Antonio Cisternino>won't trust too much the the online
+version.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11097-0
+01:26:15.700 --> 01:26:15.780
+<v Antonio Cisternino>Uh.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11099-0
+01:26:18.740 --> 01:26:20.180
+<v Antonio Cisternino>Submission.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11181-0
+01:26:22.380 --> 01:26:25.662
+<v Antonio Cisternino>I would have appreciated to receive the
+output,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11181-1
+01:26:25.662 --> 01:26:31.134
+<v Antonio Cisternino>which probably is cut and paste of the
+most relevant consideration you got from</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11181-2
+01:26:31.134 --> 01:26:34.212
+<v Antonio Cisternino>the chat.
+You can even at some point can you</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11181-3
+01:26:34.212 --> 01:26:37.700
+<v Antonio Cisternino>produce me a summary about the garbage
+collection?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11259-0
+01:26:37.980 --> 01:26:45.127
+<v Antonio Cisternino>Can you give me a summary about reference
+counting and copy paste so you get a nice</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11259-1
+01:26:45.127 --> 01:26:52.104
+<v Antonio Cisternino>report and as a separate document those
+were the questions and in this in this in</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11259-2
+01:26:52.104 --> 01:26:57.380
+<v Antonio Cisternino>this case basically they revolve around
+the notion of memory.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11267-0
+01:26:57.900 --> 01:27:01.300
+<v Antonio Cisternino>Management. I mean,
+if you understand the memory management.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11294-0
+01:27:02.580 --> 01:27:08.509
+<v Antonio Cisternino>Those were the interesting questions.
+I could have posed other questions that I</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11294-1
+01:27:08.509 --> 01:27:10.140
+<v Antonio Cisternino>think are interesting.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11296-0
+01:27:11.540 --> 01:27:11.620
+<v Antonio Cisternino>Um.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11317-0
+01:27:14.060 --> 01:27:21.820
+<v Antonio Cisternino>Is this code base using multiple
+inheritance?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11326-0
+01:27:24.700 --> 01:27:27.100
+<v Antonio Cisternino>That would have been a pro question.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11338-0
+01:27:28.740 --> 01:27:32.420
+<v Antonio Cisternino>Why this would have been a a question?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11410-0
+01:27:37.820 --> 01:27:42.277
+<v Antonio Cisternino>Oh, it works. I mean,
+but it's error prone and basically</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11410-1
+01:27:42.277 --> 01:27:46.656
+<v Antonio Cisternino>depending on the flavor,
+whether it is virtual multiple</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11410-2
+01:27:46.656 --> 01:27:50.488
+<v Antonio Cisternino>inheritance or non virtual multiple
+inheritance,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11410-3
+01:27:50.488 --> 01:27:55.180
+<v Antonio Cisternino>you may have a single copy or dual copy
+of the inheritance.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11458-0
+01:27:55.340 --> 01:28:01.978
+<v Antonio Cisternino>Base class OK that the the diamond
+problem that at some point Andrea pointed</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11458-1
+01:28:01.978 --> 01:28:08.788
+<v Antonio Cisternino>out OK and so this may relate to the
+memory because you may have copies of the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11458-2
+01:28:08.788 --> 01:28:10.340
+<v Antonio Cisternino>memory and or not.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11459-0
+01:28:10.980 --> 01:28:11.140
+<v Antonio Cisternino>What?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11464-0
+01:28:12.340 --> 01:28:15.780
+<v Antonio Cisternino>Google finished. Are you sure?</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11527-0
+01:28:17.300 --> 01:28:21.970
+<v Antonio Cisternino>OK,
+C++ found weak random number generation,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11527-1
+01:28:21.970 --> 01:28:27.574
+<v Antonio Cisternino>high severity.
+In general this is a good concern. Oh,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11527-2
+01:28:27.574 --> 01:28:32.660
+<v Antonio Cisternino>potential buffer overflow in string
+replacement.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11572-0
+01:28:33.180 --> 01:28:38.717
+<v Antonio Cisternino>Utility CPP.
+It performs a a movie and a copy assuming</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11572-1
+01:28:38.717 --> 01:28:45.060
+<v Antonio Cisternino>the destination buffer is large enough.
+This is a significant.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11586-0
+01:28:46.220 --> 01:28:51.580
+<v Antonio Cisternino>Recommendation Fixed sites, password,
+buffer. This is another.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11676-0
+01:28:52.620 --> 01:28:56.051
+<v Antonio Cisternino>OK,
+so I mean it's pretty good as a report.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11676-1
+01:28:56.051 --> 01:29:01.901
+<v Antonio Cisternino>I wouldn't expect the big security issues
+in in this code base. So I mean,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11676-2
+01:29:01.901 --> 01:29:06.346
+<v Antonio Cisternino>but as you can see,
+even the output feels more like, OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11676-3
+01:29:06.346 --> 01:29:11.260
+<v Antonio Cisternino>you read the code, you give me an opinion.
+Thank you and then.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11748-0
+01:29:12.220 --> 01:29:20.470
+<v Antonio Cisternino>If I want to check whether this I I can
+go to UTCPP line at this line and check</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11748-1
+01:29:20.470 --> 01:29:29.030
+<v Antonio Cisternino>with my eyes what the code look like and
+then say OK I check it and she's right or</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11748-2
+01:29:29.030 --> 01:29:29.340
+<v Antonio Cisternino>no.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11819-0
+01:29:29.340 --> 01:29:34.094
+<v Antonio Cisternino>It's clearly there are a few lines that
+ensures that this is safe.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11819-1
+01:29:34.094 --> 01:29:38.280
+<v Antonio Cisternino>OK in this in this case I I think this is
+a post positive.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11819-2
+01:29:38.280 --> 01:29:44.099
+<v Antonio Cisternino>I mean I I'm pretty sure that if I go to
+Uthil's CPP at this line I will find the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11819-3
+01:29:44.099 --> 01:29:45.660
+<v Antonio Cisternino>code that that I mean.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11873-0
+01:29:46.180 --> 01:29:53.031
+<v Antonio Cisternino>Otis is the typical file where you put
+the functions that you use the most. OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11873-1
+01:29:53.031 --> 01:29:58.256
+<v Antonio Cisternino>and so that there is a buffer overflow
+there I really doubt.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11873-2
+01:29:58.256 --> 01:30:00.740
+<v Antonio Cisternino>So this is a good example of.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11923-0
+01:30:01.140 --> 01:30:04.440
+<v Antonio Cisternino>Where, uh,
+let let me go and check because I can see</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11923-1
+01:30:04.440 --> 01:30:08.737
+<v Antonio Cisternino>that the machine don't sees the
+assumptions or the full assumptions,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/11923-2
+01:30:08.737 --> 01:30:12.660
+<v Antonio Cisternino>but it is like it's unlikely that that's,
+uh, buffer overflow.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12008-0
+01:30:13.900 --> 01:30:20.486
+<v Antonio Cisternino>I will expect so. OK, so I thank you.
+And so at the end basically questions one</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12008-1
+01:30:20.486 --> 01:30:26.003
+<v Antonio Cisternino>file output and verification which
+includes I code the repository,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12008-2
+01:30:26.003 --> 01:30:32.095
+<v Antonio Cisternino>I use an anti gravity or Visual Studio
+code with ChatGPT or with the free</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12008-3
+01:30:32.095 --> 01:30:33.660
+<v Antonio Cisternino>version of Copilot.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12094-0
+01:30:34.020 --> 01:30:39.982
+<v Antonio Cisternino>Whatever and I got this report and I
+checked it in the code and from the</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12094-1
+01:30:39.982 --> 01:30:43.902
+<v Antonio Cisternino>snippet it looks like it's OK,
+that's fine. OK,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12094-2
+01:30:43.902 --> 01:30:49.946
+<v Antonio Cisternino>the way you double check it that the
+output was not only correct but also</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12094-3
+01:30:49.946 --> 01:30:53.540
+<v Antonio Cisternino>relevant because the GEMA lock was
+correct.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12110-0
+01:30:53.900 --> 01:30:59.460
+<v Antonio Cisternino>The end of the day. But was it relevant?
+No, it was just a Lincoln thing.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12112-0
+01:31:00.980 --> 01:31:01.140
+<v Antonio Cisternino>OK.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12126-0
+01:31:02.780 --> 01:31:05.580
+<v Antonio Cisternino>Thank you. See you. Oh,
+so see you tomorrow.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12148-0
+01:31:07.420 --> 01:31:12.300
+<v Antonio Cisternino>And this is the before last class because
+next week Monday is holiday.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12217-0
+01:31:13.860 --> 01:31:21.019
+<v Antonio Cisternino>Wednesday is I'm in London and
+unfortunately the plane lands too late.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12217-1
+01:31:21.019 --> 01:31:25.960
+<v Antonio Cisternino>And anyway,
+I think we did enough in the course.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12217-2
+01:31:25.960 --> 01:31:33.220
+<v Antonio Cisternino>Yesterday I spoke with Professor
+Corradini. We agreed that we tortured.</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12264-0
+01:31:33.420 --> 01:31:40.777
+<v Antonio Cisternino>With you and not to spend the last two
+classes in keeping making exercise,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12264-1
+01:31:40.777 --> 01:31:45.093
+<v Antonio Cisternino>having discussions,
+answering to questions,</v>
+
+144475b2-e415-4c60-adda-f6b8ce80609f/12264-2
+01:31:45.093 --> 01:31:49.900
+<v Antonio Cisternino>probably I will say on Thursday we will
+publish.</v>

@@ -1187,3 +1187,99 @@ container => set of process (cgroup in Linux)
 REGISTRAZIONE DA RECUPERARE
 # 3/12/25
 REGISTRAZIONE DA RECUPERARE
+
+# 11/12/25
+
+## Summary of Advanced Programming Course Final Project Lecture
+
+### Chapter 1: Introduction and Course Welcome
+- The professor, Antonio Cisternino, welcomes students back to the Advanced Programming course
+- Acknowledges the experimental nature of the course format
+- Announces the final project phase as the "final step" of the course
+
+### Chapter 2: Project Overview and Philosophy
+- Projects will be AI-generated but human-curated
+- Three main project categories:
+  1. **Explorer codebase** (e.g., GCC memory management, Linux kernel cgroups)
+  2. **Explorer language features/libraries**
+  3. **Code generation projects**
+- 30+ projects will be available
+- Students can choose their own project, with some allowance for duplicates
+- Emphasis on exploring unfamiliar topics to leverage AI learning capabilities
+
+### Chapter 3: Project Objectives and Learning Goals
+- Students should use AI to investigate topics they don't know
+- Key skills:
+  - Formulating proper questions to get useful AI answers
+  - Critically evaluating AI outputs for correctness
+  - Understanding advanced programming concepts and their interactions
+- The goal is rapid learning of new technologies through effective AI interaction
+
+### Chapter 4: Assessment and Exam Structure
+- Projects will be graded and count toward final evaluation
+- Oral exams will be scheduled via time slots (approximately 1 hour each)
+- Exam dates are flexible and not strictly bound to the academic calendar
+- Project submission deadline: **One week before the scheduled oral exam**
+- Submission format: Via form (maximum 3 documents, links to cloud storage accepted)
+
+### Chapter 5: Example Projects - Category A (Codebase Exploration)
+- **GCC Memory Management**: Internal memory allocation strategies during compilation
+- **Linux Kernel Cgroups**: Control groups implementation in Linux kernel
+- Focus on understanding memory optimization, data structures, and system architecture
+
+### Chapter 6: Example Projects - Code Generation
+- 3D graphics library implementation
+- Multi-threaded Mandelbrot viewer with zoom/export capabilities
+- Face detector web application (client-side)
+- 2D game engine with manual game loop
+- Binary disassembler
+- MCP server for AI data source integration
+- XML parser
+- Statistical computation transpiler to JavaScript
+- Shakespeare programming language interpreter/parser
+
+### Chapter 7: Example Projects - Language Features Exploration
+- **Haskell kinds** and their emulation in F# and JavaScript
+- **C# LINQ** type system and extension methods
+- **Duck typing** implementations across languages
+- **Parametric polymorphism** in C++, Java, and C#
+- **Template metaprogramming** differences (why only C++ supports Turing-complete templates)
+- **Smalltalk and CLOS** object systems compared to modern OOP
+- **Web frameworks**: AngularJS vs React vs jQuery implementation approaches
+- **Quotation and quasi-quotation** in Lisp, PHP, and ASP
+- **Lexical closures** in Lua, Python, JavaScript, and Perl
+- **TypeScript's** hybrid static/dynamic typing system
+- **F# units of measure** type system
+- **C, C++, and Rust** memory management comparison
+
+### Chapter 8: Project Requirements and Expectations
+- Projects are intentionally broad to allow for personal interests
+- Focus should be on **advanced programming perspectives**, not just usage tutorials
+- AI generation is permitted but not required to be single-shot
+- Canvas/iterative editing of AI output is acceptable
+- For coding projects: **Code must run** (Docker containers accepted)
+- Documentation should include prompts used and discovery process
+
+### Chapter 9: Communication and Support
+- Contact professor via **Teams** (not email due to inbox overload)
+- Include "Advanced Programming" in subject line
+- Projects will be posted in Teams channel for claiming
+- Students should comment on posts to claim projects
+- Questions and clarifications available before project commitment
+
+### Chapter 10: Course Philosophy and Closing Remarks
+- Advanced programming involves understanding subtle interactions between:
+  - Syntax and semantics
+  - Type systems
+  - Runtime implementations
+  - Scoping rules
+- The beauty of programming languages lies in how features combine to express ideas
+- Encouragement to appreciate subtle details, not just obvious features
+- Emphasis on thinking critically about language design choices
+- Final farewell and holiday wishes to students
+
+---
+
+# PROGETTO ESAME
+
+![[Pasted image 20251211213406.png]]

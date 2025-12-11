@@ -1,0 +1,5377 @@
+WEBVTT
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5-0
+00:00:06.362 --> 00:00:07.562
+<v Antonio Cisternino>Mic is on.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6-0
+00:00:07.642 --> 00:00:07.962
+<v Antonio Cisternino>No.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8-0
+00:00:09.482 --> 00:00:11.242
+<v Antonio Cisternino>Screen is shared.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10-0
+00:00:14.802 --> 00:00:15.042
+<v Antonio Cisternino>Browser.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/17-0
+00:00:27.882 --> 00:00:32.482
+<v Antonio Cisternino>So uh, just uh before starting and uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/21-0
+00:00:34.802 --> 00:00:43.722
+<v Antonio Cisternino>This morning I had a very nice interview
+with the team that is developing.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/26-0
+00:00:46.042 --> 00:00:52.692
+<v Antonio Cisternino>So the VD8 VD8 is a vector database is
+rather known.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/26-1
+00:00:52.692 --> 00:01:00.095
+<v Antonio Cisternino>I developed the the the library for
+accessing it from.net.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/26-2
+00:01:00.095 --> 00:01:03.482
+<v Antonio Cisternino>Now they're developing the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/28-0
+00:01:03.682 --> 00:01:08.602
+<v Antonio Cisternino>The.net support uh internally,
+so they asked me to have an interview.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/30-0
+00:01:10.202 --> 00:01:13.642
+<v Antonio Cisternino>Someone that is speaking so out.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/32-0
+00:01:16.602 --> 00:01:19.962
+<v Antonio Cisternino>Oh, it's mine. Sorry.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/35-0
+00:01:30.002 --> 00:01:31.162
+<v Antonio Cisternino>I don't know.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/39-0
+00:01:35.002 --> 00:01:40.240
+<v Antonio Cisternino>OK, sorry.
+And and so we had a very nice discussion</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/39-1
+00:01:40.240 --> 00:01:48.096
+<v Antonio Cisternino>about the design of a library or sensing
+a vector database from a programming</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/39-2
+00:01:48.096 --> 00:01:49.002
+<v Antonio Cisternino>language.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/45-0
+00:01:49.682 --> 00:01:55.710
+<v Antonio Cisternino>And part of the code that I developed in
+the virtual version actually will be</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/45-1
+00:01:55.710 --> 00:02:02.202
+<v Antonio Cisternino>copied by them into the into the product.
+And we had some nice discussion about the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/45-2
+00:02:02.202 --> 00:02:08.152
+<v Antonio Cisternino>use of custom attributes to annotate and
+decorate the fields so that you can</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/45-3
+00:02:08.152 --> 00:02:09.002
+<v Antonio Cisternino>control it.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/49-0
+00:02:09.362 --> 00:02:17.173
+<v Antonio Cisternino>The behaviour of the connector with the
+database through reflection.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/49-1
+00:02:17.173 --> 00:02:26.229
+<v Antonio Cisternino>So as you can see things happens all the
+day and then the conversation you have</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/49-2
+00:02:26.229 --> 00:02:26.682
+<v Antonio Cisternino>are.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/51-0
+00:02:26.882 --> 00:02:30.938
+<v Antonio Cisternino>This kind of conversation.
+Having said that,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/51-1
+00:02:30.938 --> 00:02:33.642
+<v Antonio Cisternino>let's go back to our business.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/53-0
+00:02:37.602 --> 00:02:39.322
+<v Antonio Cisternino>Which I think is here.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/57-0
+00:02:41.002 --> 00:02:46.773
+<v Antonio Cisternino>Right.
+So yesterday we basically started</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/57-1
+00:02:46.773 --> 00:02:48.602
+<v Antonio Cisternino>browsing the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/61-0
+00:02:50.802 --> 00:02:57.265
+<v Antonio Cisternino>The code base that we learn that browsing
+a large code base is not that easy and</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/61-1
+00:02:57.265 --> 00:03:03.489
+<v Antonio Cisternino>especially is not something that you do
+starting from the main notes from the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/61-2
+00:03:03.489 --> 00:03:06.042
+<v Antonio Cisternino>entry point on some other place.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/65-0
+00:03:06.922 --> 00:03:14.224
+<v Antonio Cisternino>And the only way to face and really
+appreciate a a system is that you must</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/65-1
+00:03:14.224 --> 00:03:21.331
+<v Antonio Cisternino>understand the problem first,
+the application domain, because we humans,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/65-2
+00:03:21.331 --> 00:03:22.402
+<v Antonio Cisternino>we tend to.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/69-0
+00:03:22.402 --> 00:03:31.122
+<v Antonio Cisternino>Use meaningful names in classes, etc.
+So it's always a good idea to.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/74-0
+00:03:32.122 --> 00:03:38.438
+<v Antonio Cisternino>Study in the domain even before
+approaching the the the codebase.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/74-1
+00:03:38.438 --> 00:03:44.562
+<v Antonio Cisternino>If you can find documentation as we did,
+that's surely helpful,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/74-2
+00:03:44.562 --> 00:03:46.762
+<v Antonio Cisternino>so that's a good thing.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/78-0
+00:03:47.202 --> 00:03:52.920
+<v Antonio Cisternino>And then you can start digging.
+Don't pretend to understand everything.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/78-1
+00:03:52.920 --> 00:03:58.160
+<v Antonio Cisternino>If you have to change it,
+do it carefully because in a code base,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/78-2
+00:03:58.160 --> 00:04:03.242
+<v Antonio Cisternino>in a big code base there there are a lot
+of hidden assumptions.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/129-0
+00:04:18.044 --> 00:04:21.735
+<v Antonio Cisternino>Becoming big.
+So typically you find things.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/129-1
+00:04:21.735 --> 00:04:28.110
+<v Antonio Cisternino>The other thing is you have to figure out
+whether some feature is in there.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/129-2
+00:04:28.110 --> 00:04:34.066
+<v Antonio Cisternino>So typically you're not learning by
+reading, but typically you say OK,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/129-3
+00:04:34.066 --> 00:04:37.924
+<v Antonio Cisternino>this is a virtual machine,
+a virtual machine.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/166-0
+00:04:37.964 --> 00:04:44.316
+<v Antonio Cisternino>Some properties that we studied and I
+know that this thing should be something.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/166-1
+00:04:44.316 --> 00:04:50.509
+<v Antonio Cisternino>There should be some way to do this.
+Let's go around and look for this thing,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/166-2
+00:04:50.509 --> 00:04:53.764
+<v Antonio Cisternino>not vice versa. Let's go around and find.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/183-0
+00:04:54.004 --> 00:05:01.331
+<v Antonio Cisternino>Bumping to the thing I was looking for.
+I'm happy, OK,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/183-1
+00:05:01.331 --> 00:05:09.324
+<v Antonio Cisternino>because sometimes things are subtle.
+So yesterday I didn't.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/211-0
+00:05:09.444 --> 00:05:17.002
+<v Antonio Cisternino>Use this because I didn't want to start
+today with this this thing.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/211-1
+00:05:17.002 --> 00:05:25.004
+<v Antonio Cisternino>So you remember the object class and
+remember we said OK, there is the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/236-0
+00:05:25.484 --> 00:05:34.833
+<v Antonio Cisternino>A method table pointer that points to the
+method table and in fact since we have</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/236-1
+00:05:34.833 --> 00:05:43.604
+<v Antonio Cisternino>one method table for every type,
+it also identifies the type of the object.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/248-0
+00:05:43.964 --> 00:05:47.926
+<v Antonio Cisternino>Uh,
+but some of you may remember that I</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/248-1
+00:05:47.926 --> 00:05:50.204
+<v Antonio Cisternino>mentioned that you pay.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/288-0
+00:05:51.804 --> 00:05:58.064
+<v Antonio Cisternino>More than 4 bytes for each object,
+but when we read the code,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/288-1
+00:05:58.064 --> 00:06:06.444
+<v Antonio Cisternino>the object class only possessed 4 bytes,
+the pointer or depending it may be even 8</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/288-2
+00:06:06.444 --> 00:06:10.684
+<v Antonio Cisternino>bytes. It depends on the architecture but.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/297-0
+00:06:11.644 --> 00:06:18.564
+<v Antonio Cisternino>Uh the the the the the pointer size uh to
+the to the to the uh class so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/318-0
+00:06:19.684 --> 00:06:25.237
+<v Antonio Cisternino>Where the other information that I
+already mentioned at some point,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/318-1
+00:06:25.237 --> 00:06:31.444
+<v Antonio Cisternino>which is the synchronization block is
+available. So if we go to the object.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/327-0
+00:06:43.164 --> 00:06:46.964
+<v Antonio Cisternino>Let me search because I mean we don't
+have time to.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/367-0
+00:06:50.204 --> 00:06:54.933
+<v Antonio Cisternino>This is the common base part to all
+sealer objects.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/367-1
+00:06:54.933 --> 00:07:00.481
+<v Antonio Cisternino>It contains the method table point and
+the sink block index,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/367-2
+00:07:00.481 --> 00:07:07.029
+<v Antonio Cisternino>which is a negative offset. OK,
+so in the layout layout they decided to</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/367-3
+00:07:07.029 --> 00:07:07.484
+<v Antonio Cisternino>have.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/398-0
+00:07:07.924 --> 00:07:15.779
+<v Antonio Cisternino>A memory layout in which a part of every
+object is not accessible starting from</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/398-1
+00:07:15.779 --> 00:07:20.491
+<v Antonio Cisternino>the zero,
+so from the base point to the object,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/398-2
+00:07:20.491 --> 00:07:24.124
+<v Antonio Cisternino>but it is defined as negative offset.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/400-0
+00:07:25.604 --> 00:07:26.644
+<v Antonio Cisternino>OK, um.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/434-0
+00:07:29.524 --> 00:07:34.480
+<v Antonio Cisternino>Of course you could have.
+It's like having a a day starting from</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/434-1
+00:07:34.480 --> 00:07:38.825
+<v Antonio Cisternino>zero or one minute.
+It's a convention that it would have</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/434-2
+00:07:38.825 --> 00:07:44.924
+<v Antonio Cisternino>worked with also in the other way around,
+but the point is that as you can see.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/466-0
+00:07:45.004 --> 00:07:51.935
+<v Antonio Cisternino>Since they are basically piggyback on top
+of the C++ compiler. Oh yes,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/466-1
+00:07:51.935 --> 00:07:59.256
+<v Antonio Cisternino>this is another thing that I didn't
+mention as much as it should. runtime.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/466-2
+00:07:59.256 --> 00:08:01.404
+<v Antonio Cisternino>net is written in C++.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/516-0
+00:08:01.484 --> 00:08:08.269
+<v Antonio Cisternino>As it was from those days.
+So this means that the memory layout you</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/516-1
+00:08:08.269 --> 00:08:16.352
+<v Antonio Cisternino>do inherit some runtime support from C++
+and you may wonder why we are not using</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/516-2
+00:08:16.352 --> 00:08:19.844
+<v Antonio Cisternino>the same layout of C++ objects. OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/572-0
+00:08:20.364 --> 00:08:27.386
+<v Antonio Cisternino>And the reality is that to the semantics,
+as we did with the whitespace compiler,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/572-1
+00:08:27.386 --> 00:08:34.066
+<v Antonio Cisternino>the semantics of runtime object of C++
+may not be equivalent to the semantics</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/572-2
+00:08:34.066 --> 00:08:39.804
+<v Antonio Cisternino>we're going to achieve in in our runtime.
+OK, so we we can't rely.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/620-0
+00:08:39.884 --> 00:08:46.247
+<v Antonio Cisternino>And map things on on the C++ features.
+And so basically you have to think that</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/620-1
+00:08:46.247 --> 00:08:53.013
+<v Antonio Cisternino>the programmer that brought this code was
+thinking in terms of layout of the memory</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/620-2
+00:08:53.013 --> 00:08:57.524
+<v Antonio Cisternino>to create the abstraction,
+not in terms of C++ objects.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/667-0
+00:08:59.364 --> 00:09:05.782
+<v Antonio Cisternino>And C was OK because it allows you to
+control every single bit in the memory</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/667-1
+00:09:05.782 --> 00:09:11.283
+<v Antonio Cisternino>layout so that you can create your data
+structures. For instance,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/667-2
+00:09:11.283 --> 00:09:17.034
+<v Antonio Cisternino>strings are completely different.
+net strings or Java strings from C</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/667-3
+00:09:17.034 --> 00:09:18.284
+<v Antonio Cisternino>strings and so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/696-0
+00:09:18.444 --> 00:09:25.146
+<v Antonio Cisternino>You need to have a dedicated class which
+implements the runtime string,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/696-1
+00:09:25.146 --> 00:09:30.918
+<v Antonio Cisternino>which is different from the string
+provided by your language.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/696-2
+00:09:30.918 --> 00:09:33.524
+<v Antonio Cisternino>So now the question becomes.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/722-0
+00:09:34.044 --> 00:09:41.512
+<v Antonio Cisternino>Where do I find this sync block?
+Because if you start browsing this thing,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/722-1
+00:09:41.512 --> 00:09:47.884
+<v Antonio Cisternino>it's not in there. OK,
+so I don't wanna spend too much on this.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/767-0
+00:10:00.084 --> 00:10:06.146
+<v Antonio Cisternino>So I go straight to the solution.
+There is a beautiful sync block file</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/767-1
+00:10:06.146 --> 00:10:12.977
+<v Antonio Cisternino>which contains the synchronization block
+and also an explanation of its purpose</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/767-2
+00:10:12.977 --> 00:10:17.844
+<v Antonio Cisternino>and why is every object is preceded by an
+object header.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/801-0
+00:10:18.284 --> 00:10:24.630
+<v Antonio Cisternino>So it's not just the same block,
+it's there is a an header of the object</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/801-1
+00:10:24.630 --> 00:10:28.890
+<v Antonio Cisternino>and it is other negative offset.
+And the reason,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/801-2
+00:10:28.890 --> 00:10:35.844
+<v Antonio Cisternino>the real reason is that the header of the
+object is an internal representation.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/808-0
+00:10:36.444 --> 00:10:40.684
+<v Antonio Cisternino>With private fields,
+they shouldn't be used.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/843-0
+00:10:42.284 --> 00:10:46.053
+<v Antonio Cisternino>Right.
+I mean the the purpose is I don't want</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/843-1
+00:10:46.053 --> 00:10:52.526
+<v Antonio Cisternino>even to the CLR implement implementers.
+I don't want that people to access the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/843-2
+00:10:52.526 --> 00:10:57.524
+<v Antonio Cisternino>header of the object because these are
+internal details for.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/891-0
+00:10:58.844 --> 00:11:02.767
+<v Antonio Cisternino>Booking keep bookkeeping servicing of the
+objects.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/891-1
+00:11:02.767 --> 00:11:07.920
+<v Antonio Cisternino>It's not part of the specification,
+but the runtime will need this</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/891-2
+00:11:07.920 --> 00:11:11.381
+<v Antonio Cisternino>information in this specific
+implementation.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/891-3
+00:11:11.381 --> 00:11:16.534
+<v Antonio Cisternino>You have the implementation,
+you may get some different fields and</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/891-4
+00:11:16.534 --> 00:11:18.764
+<v Antonio Cisternino>therefore look at seems like.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/923-0
+00:11:18.844 --> 00:11:24.839
+<v Antonio Cisternino>The idea to say OK object is a meta table
+plus something because meta table is</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/923-1
+00:11:24.839 --> 00:11:30.302
+<v Antonio Cisternino>something that is mandatory and is even
+mentioned in the specification.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/923-2
+00:11:30.302 --> 00:11:34.324
+<v Antonio Cisternino>By the way.
+net is a standard has been standardized.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/950-0
+00:11:34.684 --> 00:11:41.325
+<v Antonio Cisternino>Through ECMA and later to ISO.
+So there are you can have multiple</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/950-1
+00:11:41.325 --> 00:11:49.776
+<v Antonio Cisternino>implementation of the virtual machine and
+and so the idea was the object OBJ header</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/950-2
+00:11:49.776 --> 00:11:51.084
+<v Antonio Cisternino>contains the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/980-0
+00:11:51.084 --> 00:11:59.550
+<v Antonio Cisternino>Non-standard part of the object that are
+needed for this particular implementation.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/980-1
+00:11:59.550 --> 00:12:06.102
+<v Antonio Cisternino>OK, that's the reason.
+So the C blocker is basically most of it,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/980-2
+00:12:06.102 --> 00:12:06.404
+<v Antonio Cisternino>so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/995-0
+00:12:06.764 --> 00:12:14.964
+<v Antonio Cisternino>If we look for OBJ header, yes, yes, yes,
+yes. At some point there should be.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1013-0
+00:12:16.364 --> 00:12:24.004
+<v Antonio Cisternino>So the OBJ add, as you can see, can be 8,
+four or eight bytes. OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1045-0
+00:12:26.884 --> 00:12:36.286
+<v Antonio Cisternino>Because it depends on the architecture
+precision, so whether it's 64 or 32 bits,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1045-1
+00:12:36.286 --> 00:12:44.644
+<v Antonio Cisternino>which means that every object,
+even if you create an empty object cost.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1079-0
+00:12:45.324 --> 00:12:52.752
+<v Antonio Cisternino>Either 8 or 16 bytes because you pay for
+the method table pointer and you pay for</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1079-1
+00:12:52.752 --> 00:12:58.731
+<v Antonio Cisternino>the header of the object.
+And if you want to represent an integer</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1079-2
+00:12:58.731 --> 00:13:03.804
+<v Antonio Cisternino>32 bits because actually in the runtime
+base types are.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1118-0
+00:13:03.884 --> 00:13:08.091
+<v Antonio Cisternino>They find the in terms of the way they
+work.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1118-1
+00:13:08.091 --> 00:13:15.570
+<v Antonio Cisternino>So in an integer as in Java is 32 bit
+integer is not left to the implementation</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1118-2
+00:13:15.570 --> 00:13:20.244
+<v Antonio Cisternino>on the platform. 32 bits.
+This means that if you.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1159-0
+00:13:20.444 --> 00:13:28.888
+<v Antonio Cisternino>If you box, remember the boxing operation.
+If you box the the integer then the cost</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1159-1
+00:13:28.888 --> 00:13:37.231
+<v Antonio Cisternino>will be 4 byte plus either 8 or 16 bytes.
+So on a 64 bits architecture an integer,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1159-2
+00:13:37.231 --> 00:13:39.844
+<v Antonio Cisternino>a boxed integer will cost.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1189-0
+00:13:40.044 --> 00:13:48.113
+<v Antonio Cisternino>Few 20 bytes, that's it.
+So there is a specification of document</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1189-1
+00:13:48.113 --> 00:13:53.574
+<v Antonio Cisternino>which is the one that you didn't store.
+No,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1189-2
+00:13:53.574 --> 00:13:59.284
+<v Antonio Cisternino>I mean what you are showing here is
+specific.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1226-0
+00:13:59.564 --> 00:14:05.279
+<v Antonio Cisternino>Yeah, it's the open source implementation.
+Open source implementation,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1226-1
+00:14:05.279 --> 00:14:09.948
+<v Antonio Cisternino>some part is by specification of somebody.
+Exactly. Yeah.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1226-2
+00:14:09.948 --> 00:14:16.307
+<v Antonio Cisternino>So basically the size of the header is
+the in the specification you find there</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1226-3
+00:14:16.307 --> 00:14:19.044
+<v Antonio Cisternino>is the fact that you you got them.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1254-0
+00:14:19.084 --> 00:14:30.026
+<v Antonio Cisternino>Meta table and the header object? No,
+because it's a private decision.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1254-1
+00:14:30.026 --> 00:14:34.804
+<v Antonio Cisternino>So 334 is C# and so 335 is.net.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1298-0
+00:14:35.284 --> 00:14:40.294
+<v Antonio Cisternino>The runtime, yeah,
+basically back in the past since both</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1298-1
+00:14:40.294 --> 00:14:45.304
+<v Antonio Cisternino>Java and.net were closed source,
+then Microsoft said OK,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1298-2
+00:14:45.304 --> 00:14:50.225
+<v Antonio Cisternino>we release the specification on a
+standardization body.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1298-3
+00:14:50.225 --> 00:14:54.444
+<v Antonio Cisternino>Anyone can implement a runtime compatible
+with.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1328-0
+00:14:55.404 --> 00:15:03.702
+<v Antonio Cisternino>With this and in fact Mono as big as big
+was implemented and used for several</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1328-1
+00:15:03.702 --> 00:15:10.724
+<v Antonio Cisternino>years and was another implementation of
+the runtime and and then.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1355-0
+00:15:11.004 --> 00:15:16.888
+<v Antonio Cisternino>I think it will be.
+I mean if you want to make an exercise,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1355-1
+00:15:16.888 --> 00:15:23.458
+<v Antonio Cisternino>it's it's interesting to read or I mean
+it's a quite big document,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1355-2
+00:15:23.458 --> 00:15:26.204
+<v Antonio Cisternino>but you will learn a lot of.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1363-0
+00:15:26.364 --> 00:15:29.416
+<v Antonio Cisternino>Uh,
+things by reading the specification of</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1363-1
+00:15:29.416 --> 00:15:30.764
+<v Antonio Cisternino>the of the runtime.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1369-0
+00:15:33.524 --> 00:15:36.084
+<v Antonio Cisternino>Right. Let's go back to.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1374-0
+00:15:37.444 --> 00:15:39.604
+<v Antonio Cisternino>Was looking. There we are.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1376-0
+00:15:42.764 --> 00:15:42.804
+<v Antonio Cisternino>O.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1383-0
+00:15:45.004 --> 00:15:50.604
+<v Antonio Cisternino>Uh, the synchronization. It's interesting.
+Uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1385-0
+00:15:53.124 --> 00:15:54.244
+<v Antonio Cisternino>The uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1408-0
+00:15:57.044 --> 00:16:03.373
+<v Antonio Cisternino>To synchronize,
+they use 32 bits anyway and is this</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1408-1
+00:16:03.373 --> 00:16:08.484
+<v Antonio Cisternino>volatile and sync and sync block value OK?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1432-0
+00:16:10.164 --> 00:16:18.596
+<v Antonio Cisternino>But if you are a 64 bits,
+you simply declare another the word.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1432-1
+00:16:18.596 --> 00:16:24.484
+<v Antonio Cisternino>The words is a 32 bit integer,
+so the word.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1464-0
+00:16:25.204 --> 00:16:30.331
+<v Antonio Cisternino>Which is unused just to align things into
+the memory. OK,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1464-1
+00:16:30.331 --> 00:16:37.049
+<v Antonio Cisternino>so you always have to remember how things
+gets laid off, laid out in there.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1464-2
+00:16:37.049 --> 00:16:41.204
+<v Antonio Cisternino>I mean the compiler uses a lot of
+assumptions.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1494-0
+00:16:41.684 --> 00:16:45.553
+<v Antonio Cisternino>Typically in pretty much all the
+languages,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1494-1
+00:16:45.553 --> 00:16:52.234
+<v Antonio Cisternino>if you write fields in the order,
+they will be simply laid out sequentially</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1494-2
+00:16:52.234 --> 00:16:57.422
+<v Antonio Cisternino>into the memory,
+but you have to consider some phenomenon,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1494-3
+00:16:57.422 --> 00:16:59.004
+<v Antonio Cisternino>some architecture.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1537-0
+00:16:59.204 --> 00:17:06.013
+<v Antonio Cisternino>Align data to 30 degrees.
+So in this case you need to insert some</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1537-1
+00:17:06.013 --> 00:17:11.377
+<v Antonio Cisternino>padding to ensure that everything aligns
+to get it.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1537-2
+00:17:11.377 --> 00:17:18.804
+<v Antonio Cisternino>Otherwise it would be too expensive to go
+down and unpack the thing OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1571-0
+00:17:19.084 --> 00:17:24.268
+<v Antonio Cisternino>So especially in C++ or C code,
+you will see a lot of these three</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1571-1
+00:17:24.268 --> 00:17:30.473
+<v Antonio Cisternino>processor directives that are used to
+control these aspects so that the memory</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1571-2
+00:17:30.473 --> 00:17:36.364
+<v Antonio Cisternino>layouts is the most definition possible
+given the particular architecture.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1594-0
+00:17:36.364 --> 00:17:45.216
+<v Antonio Cisternino>And the the layout of the memory,
+especially in implementing objects,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1594-1
+00:17:45.216 --> 00:17:51.538
+<v Antonio Cisternino>is really,
+really important because guess what if</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1594-2
+00:17:51.538 --> 00:17:52.044
+<v Antonio Cisternino>you.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1629-0
+00:17:52.324 --> 00:17:58.640
+<v Antonio Cisternino>Right in the order from the base class
+down to the derived class,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1629-1
+00:17:58.640 --> 00:18:04.860
+<v Antonio Cisternino>the fields of of of an object,
+then the operation of outcasting.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1629-2
+00:18:04.860 --> 00:18:09.644
+<v Antonio Cisternino>It's easy because you simply move the
+base point.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1669-0
+00:18:10.724 --> 00:18:17.311
+<v Antonio Cisternino>Not to point to the part of the with the
+pointer pointing to the object,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1669-1
+00:18:17.311 --> 00:18:24.079
+<v Antonio Cisternino>basically you can see all the fields or
+only the fields of the base class.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1669-2
+00:18:24.079 --> 00:18:30.124
+<v Antonio Cisternino>And so basically just reinterpreting the
+memory will give you the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1701-0
+00:18:30.124 --> 00:18:37.986
+<v Antonio Cisternino>The inheritance relation.
+Notice that this is true only if you have</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1701-1
+00:18:37.986 --> 00:18:45.964
+<v Antonio Cisternino>a single instance inheritance. OK,
+so this is true only if I have a.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1744-0
+00:18:45.964 --> 00:18:51.858
+<v Antonio Cisternino>A sequence of classes that enates one
+from the other on a single line with</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1744-1
+00:18:51.858 --> 00:18:56.730
+<v Antonio Cisternino>fields. In that case,
+the base pointer is the base pointer to</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1744-2
+00:18:56.730 --> 00:19:02.781
+<v Antonio Cisternino>the class and also to the object on the
+the other classes up to the root and</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1744-3
+00:19:02.781 --> 00:19:03.724
+<v Antonio Cisternino>that's easy.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1788-0
+00:19:04.084 --> 00:19:10.073
+<v Antonio Cisternino>If you want to do multiple inheritance,
+this is terrible because this is not true</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1788-1
+00:19:10.073 --> 00:19:16.208
+<v Antonio Cisternino>that the memory layout is the same and so
+to access some fields you have to jump in</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1788-2
+00:19:16.208 --> 00:19:21.832
+<v Antonio Cisternino>the in this structure because clearly
+there will be the common part and then</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1788-3
+00:19:21.832 --> 00:19:22.124
+<v Antonio Cisternino>the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1824-0
+00:19:22.124 --> 00:19:25.117
+<v Antonio Cisternino>Uh,
+parse that that they're coming from</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1824-1
+00:19:25.117 --> 00:19:29.830
+<v Antonio Cisternino>different uh inheritance uh relations uh
+into into the layout.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1824-2
+00:19:29.830 --> 00:19:34.319
+<v Antonio Cisternino>And so this is one of the reasons because
+uh Java and then.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1824-3
+00:19:34.319 --> 00:19:38.284
+<v Antonio Cisternino>net and pretty much everyone has said OK,
+thanks uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1865-0
+00:19:38.404 --> 00:19:43.612
+<v Antonio Cisternino>OK to multiple,
+but we restrict a little bit so that</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1865-1
+00:19:43.612 --> 00:19:50.883
+<v Antonio Cisternino>interface is just a mental table but
+without any state and so I can I the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1865-2
+00:19:50.883 --> 00:19:57.564
+<v Antonio Cisternino>layout of the memory is the easiest one
+and the most efficient one.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1906-0
+00:19:58.164 --> 00:20:03.436
+<v Antonio Cisternino>Perhaps the most the main reason,
+because multiple inheritance has been</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1906-1
+00:20:03.436 --> 00:20:09.220
+<v Antonio Cisternino>ditched by many systems at some point,
+because it's so much more convenient to</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1906-2
+00:20:09.220 --> 00:20:14.272
+<v Antonio Cisternino>have a single inheritance from the
+standpoint of implementation that</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1906-3
+00:20:14.272 --> 00:20:15.004
+<v Antonio Cisternino>everybody.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1939-0
+00:20:15.404 --> 00:20:21.348
+<v Antonio Cisternino>I buy it to them. OK,
+so that's the header and basically an</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1939-1
+00:20:21.348 --> 00:20:29.470
+<v Antonio Cisternino>instance of this class is preceding every
+object and as you can see you have some</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1939-2
+00:20:29.470 --> 00:20:32.244
+<v Antonio Cisternino>helpers, but helpers are OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1965-0
+00:20:32.604 --> 00:20:42.212
+<v Antonio Cisternino>They don't occupy space into the memory
+plus the state which is a negative offset</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/1965-1
+00:20:42.212 --> 00:20:47.484
+<v Antonio Cisternino>with respect to the the thing.
+So basically.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2007-0
+00:20:48.004 --> 00:20:55.840
+<v Antonio Cisternino>We create in the little machine the
+object abstraction by just a position of</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2007-1
+00:20:55.840 --> 00:21:02.047
+<v Antonio Cisternino>two objects of C++. OK,
+that's curious and we use a point in</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2007-2
+00:21:02.047 --> 00:21:07.644
+<v Antonio Cisternino>between of these two objects into the
+memory and that.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2012-0
+00:21:12.724 --> 00:21:13.364
+<v Antonio Cisternino>OK, right.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2016-0
+00:21:14.764 --> 00:21:16.244
+<v Antonio Cisternino>Let's go back to.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2017-0
+00:21:18.604 --> 00:21:18.644
+<v Antonio Cisternino>Uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2020-0
+00:21:21.204 --> 00:21:21.884
+<v Antonio Cisternino>No.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2033-0
+00:21:24.524 --> 00:21:30.404
+<v Antonio Cisternino>To the documentation and let's have a
+look at other interesting parts.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2035-0
+00:21:31.884 --> 00:21:32.164
+<v Antonio Cisternino>Of uh uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2038-0
+00:21:35.524 --> 00:21:36.484
+<v Antonio Cisternino>Of the book.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2040-0
+00:21:37.964 --> 00:21:39.564
+<v Antonio Cisternino>Of the runtime.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2043-0
+00:21:46.404 --> 00:21:46.484
+<v Antonio Cisternino>Um.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2080-0
+00:21:49.404 --> 00:21:58.672
+<v Antonio Cisternino>So I will spend a little bit of time on
+type system because at the end of the day</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2080-1
+00:21:58.672 --> 00:22:05.001
+<v Antonio Cisternino>the contribution of.
+net and Java was to have a runtime</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2080-2
+00:22:05.001 --> 00:22:08.844
+<v Antonio Cisternino>support for programming languages.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2106-0
+00:22:08.924 --> 00:22:16.000
+<v Antonio Cisternino>The rich text system. And again,
+you know we need garbage collection to</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2106-1
+00:22:16.000 --> 00:22:22.192
+<v Antonio Cisternino>have a garbage collection.
+We need precise memory information.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2106-2
+00:22:22.192 --> 00:22:23.764
+<v Antonio Cisternino>We learned that.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2139-0
+00:22:24.044 --> 00:22:30.114
+<v Antonio Cisternino>That is essential,
+and so since we need to to have the full</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2139-1
+00:22:30.114 --> 00:22:38.207
+<v Antonio Cisternino>layout of all the objects at runtime,
+why don't we create a runtime which other</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2139-2
+00:22:38.207 --> 00:22:39.724
+<v Antonio Cisternino>elements types?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2165-0
+00:22:40.484 --> 00:22:48.577
+<v Antonio Cisternino>In itself it makes sense because in any
+case you will need that information for</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2165-1
+00:22:48.577 --> 00:22:56.164
+<v Antonio Cisternino>implementing the garbage collection and
+so in any case that is needed. OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2212-0
+00:23:02.124 --> 00:23:07.157
+<v Antonio Cisternino>So as you can see,
+when you start browsing things using your</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2212-1
+00:23:07.157 --> 00:23:13.841
+<v Antonio Cisternino>knowledge of how the system should behave,
+it makes sense. I would have started.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2212-2
+00:23:13.841 --> 00:23:17.884
+<v Antonio Cisternino>I mean I started from damage collection
+because.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2252-0
+00:23:18.364 --> 00:23:23.930
+<v Antonio Cisternino>We spent some time on garbage collection,
+so for me it was easier to start from</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2252-1
+00:23:23.930 --> 00:23:27.826
+<v Antonio Cisternino>that page and the market and compaction
+and everything.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2252-2
+00:23:27.826 --> 00:23:30.957
+<v Antonio Cisternino>It's very well similar to what we
+described,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2252-3
+00:23:30.957 --> 00:23:36.244
+<v Antonio Cisternino>but otherwise I would have started with
+the types, because types are kings.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2279-0
+00:23:36.524 --> 00:23:44.587
+<v Antonio Cisternino>I mean that being in Java or in.net,
+you have to voice the entry point is a</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2279-1
+00:23:44.587 --> 00:23:50.634
+<v Antonio Cisternino>static method. OK,
+so type is king and since the type is</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2279-2
+00:23:50.634 --> 00:23:51.164
+<v Antonio Cisternino>king.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2308-0
+00:23:51.644 --> 00:23:58.476
+<v Antonio Cisternino>You have the the the main information
+about the interesting part.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2308-1
+00:23:58.476 --> 00:24:06.964
+<v Antonio Cisternino>So major data structure one day and by
+the system method table we already bumped.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2344-0
+00:24:07.244 --> 00:24:13.820
+<v Antonio Cisternino>The EE class.
+The EE class EE we already commented.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2344-1
+00:24:13.820 --> 00:24:23.051
+<v Antonio Cisternino>This stands for execution environment.
+EE class is basically the runtime</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2344-2
+00:24:23.051 --> 00:24:26.844
+<v Antonio Cisternino>representation of a.net class.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2356-0
+00:24:26.884 --> 00:24:35.804
+<v Antonio Cisternino>So loaded into the memory,
+so the type loader that is big enough to.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2387-0
+00:24:36.564 --> 00:24:44.755
+<v Antonio Cisternino>To be worth having a a chapter in this
+because that is crucial in these elements.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2387-1
+00:24:44.755 --> 00:24:52.845
+<v Antonio Cisternino>Basically reads the binary and allocates
+EE classes so that in the memory of the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2387-2
+00:24:52.845 --> 00:24:53.644
+<v Antonio Cisternino>runtime.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2414-0
+00:24:53.924 --> 00:25:00.793
+<v Antonio Cisternino>The EE class is available there.
+Notice that the lifetime,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2414-1
+00:25:00.793 --> 00:25:09.524
+<v Antonio Cisternino>the lifespan of an EE class is program
+execution almost in the sense that.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2430-0
+00:25:09.524 --> 00:25:14.298
+<v Antonio Cisternino>Uh,
+it is such a core notion that the class</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2430-1
+00:25:14.298 --> 00:25:18.204
+<v Antonio Cisternino>can be loaded but can't be unloaded.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2462-0
+00:25:19.764 --> 00:25:24.685
+<v Antonio Cisternino>Because making the class loadable and
+unloadable,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2462-1
+00:25:24.685 --> 00:25:31.870
+<v Antonio Cisternino>it will be so expensive in terms of
+performance that nobody ever thought</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2462-2
+00:25:31.870 --> 00:25:34.724
+<v Antonio Cisternino>about it. In fact, both Java.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2504-0
+00:25:35.604 --> 00:25:41.010
+<v Antonio Cisternino>Java's notion which is called class
+loader that you can customize.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2504-1
+00:25:41.010 --> 00:25:47.142
+<v Antonio Cisternino>So in Java the class loader is the type
+loader which dynamically fetch some</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2504-2
+00:25:47.142 --> 00:25:53.839
+<v Antonio Cisternino>source and creates the equivalent of the
+EE class in the Java with virtual machine</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2504-3
+00:25:53.839 --> 00:25:54.404
+<v Antonio Cisternino>memory.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2540-0
+00:25:55.644 --> 00:26:00.352
+<v Antonio Cisternino>Andin.
+net there was the the loader uses a box,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2540-1
+00:26:00.352 --> 00:26:05.452
+<v Antonio Cisternino>a container which is called the
+application domain.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2540-2
+00:26:05.452 --> 00:26:11.043
+<v Antonio Cisternino>So inside the processor.
+net processor you have multiple</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2540-3
+00:26:11.043 --> 00:26:13.004
+<v Antonio Cisternino>application domains.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2574-0
+00:26:13.724 --> 00:26:18.420
+<v Antonio Cisternino>And in Java you can unload the class
+loader in.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2574-1
+00:26:18.420 --> 00:26:26.343
+<v Antonio Cisternino>net you can unload the application domain.
+All the types inside this box will be</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2574-2
+00:26:26.343 --> 00:26:31.430
+<v Antonio Cisternino>unloaded,
+but these are traumatic operation that is</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2574-3
+00:26:31.430 --> 00:26:32.604
+<v Antonio Cisternino>really done.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2599-0
+00:26:32.884 --> 00:26:40.674
+<v Antonio Cisternino>I mean there are use cases,
+but I mean it's it's expensive.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2599-1
+00:26:40.674 --> 00:26:48.724
+<v Antonio Cisternino>The other thing that is true for instance
+for.net is that if.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2625-0
+00:26:48.724 --> 00:26:57.113
+<v Antonio Cisternino>If you call invoke methods of objects of
+a different application domain,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2625-1
+00:26:57.113 --> 00:27:03.204
+<v Antonio Cisternino>so I have an object living in an
+application domain.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2642-0
+00:27:03.924 --> 00:27:08.544
+<v Antonio Cisternino>Another object living in another
+application domain and these two</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2642-1
+00:27:08.544 --> 00:27:12.044
+<v Antonio Cisternino>application domain lives inside the same
+process.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2689-0
+00:27:13.844 --> 00:27:20.321
+<v Antonio Cisternino>Even if they are in the same memory,
+even if they are generated by the same</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2689-1
+00:27:20.321 --> 00:27:25.689
+<v Antonio Cisternino>just in time compiler,
+nevertheless they use interoperability.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2689-2
+00:27:25.689 --> 00:27:31.058
+<v Antonio Cisternino>So when you invoke the object on the
+other application domain,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2689-3
+00:27:31.058 --> 00:27:33.444
+<v Antonio Cisternino>it's like invoking a method.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2714-0
+00:27:33.524 --> 00:27:37.463
+<v Antonio Cisternino>Of a different process. OK,
+so remember marshalling,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2714-1
+00:27:37.463 --> 00:27:43.631
+<v Antonio Cisternino>marshalling will be done and marshalling
+will be done and you pay a lot of cycles.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2714-2
+00:27:43.631 --> 00:27:48.684
+<v Antonio Cisternino>This to stress the fact that you need
+this big block and big boxes.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2720-0
+00:27:48.884 --> 00:27:53.324
+<v Antonio Cisternino>Uh and E classes once they uh loaded the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2767-0
+00:27:55.204 --> 00:27:59.461
+<v Antonio Cisternino>It's difficult one that without
+restarting the program.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2767-1
+00:27:59.461 --> 00:28:04.098
+<v Antonio Cisternino>Then there is the method desk,
+which is clearly description.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2767-2
+00:28:04.098 --> 00:28:08.507
+<v Antonio Cisternino>It is the descriptor of the method,
+the field descriptor,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2767-3
+00:28:08.507 --> 00:28:12.764
+<v Antonio Cisternino>the type descriptor and the cluster.
+OK and guess what?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2801-0
+00:28:13.684 --> 00:28:18.378
+<v Antonio Cisternino>Method descriptor,
+feed descriptor and type descriptor are</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2801-1
+00:28:18.378 --> 00:28:23.788
+<v Antonio Cisternino>the basis for reflection,
+our information needed by the run down to</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2801-2
+00:28:23.788 --> 00:28:28.164
+<v Antonio Cisternino>book keep and ensure the execution.
+And you know what?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2826-0
+00:28:28.484 --> 00:28:34.689
+<v Antonio Cisternino>Let's expose them also to application for
+implementing the introspection part of</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2826-1
+00:28:34.689 --> 00:28:39.132
+<v Antonio Cisternino>the reflection,
+which is I want to look inside me and see</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2826-2
+00:28:39.132 --> 00:28:41.124
+<v Antonio Cisternino>what what's happening. OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2838-0
+00:28:42.884 --> 00:28:46.965
+<v Antonio Cisternino>Type loader.
+Use it to load types and create most of</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2838-1
+00:28:46.965 --> 00:28:49.044
+<v Antonio Cisternino>the primary data structure.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2861-0
+00:28:50.724 --> 00:28:55.695
+<v Antonio Cisternino>10 cast too.
+So there are operations in the type</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2861-1
+00:28:55.695 --> 00:29:01.884
+<v Antonio Cisternino>system of.net and Java.
+The typical example is the downcast.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2872-0
+00:29:03.484 --> 00:29:08.175
+<v Antonio Cisternino>OK,
+so I have a a reference to an object of a</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2872-1
+00:29:08.175 --> 00:29:10.724
+<v Antonio Cisternino>of a class A and I wanna.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2888-0
+00:29:12.004 --> 00:29:20.284
+<v Antonio Cisternino>Convert into a reference to an object of
+the class B where B met from A.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2907-0
+00:29:21.604 --> 00:29:26.636
+<v Antonio Cisternino>That is down.
+So you're going down in the inheritance.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2907-1
+00:29:26.636 --> 00:29:30.204
+<v Antonio Cisternino>That check can be performed statically.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2930-0
+00:29:32.044 --> 00:29:39.179
+<v Antonio Cisternino>And so you need a runtime type check.
+It does a little bit of cost at runtime</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2930-1
+00:29:39.179 --> 00:29:45.124
+<v Antonio Cisternino>and the contrast is exactly this report
+to this this this thing.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2961-0
+00:29:47.644 --> 00:29:54.815
+<v Antonio Cisternino>And then obviously.
+So this is this gives you an idea of how</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/2961-1
+00:29:54.815 --> 00:30:03.044
+<v Antonio Cisternino>the type system is central to the
+functioning of a complex from time.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3005-0
+00:30:04.124 --> 00:30:07.483
+<v Antonio Cisternino>Honestly,
+this is also for the Python runtime.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3005-1
+00:30:07.483 --> 00:30:11.842
+<v Antonio Cisternino>This is also for the JavaScript runtime,
+for the Go runtime.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3005-2
+00:30:11.842 --> 00:30:15.629
+<v Antonio Cisternino>I mean we're starting this because it's
+it's richer,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3005-3
+00:30:15.629 --> 00:30:21.132
+<v Antonio Cisternino>but basically this design is similar.
+It's simplified because clearly if the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3005-4
+00:30:21.132 --> 00:30:23.204
+<v Antonio Cisternino>runtime is a single language.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3030-0
+00:30:23.844 --> 00:30:28.728
+<v Antonio Cisternino>Without many fields,
+then it would be easy to implement,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3030-1
+00:30:28.728 --> 00:30:33.269
+<v Antonio Cisternino>but basically the constituents are
+exactly the same.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3030-2
+00:30:33.269 --> 00:30:38.924
+<v Antonio Cisternino>OK also Python uses the garbage collector,
+it has objects and so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3056-0
+00:30:40.684 --> 00:30:48.121
+<v Antonio Cisternino>Similar needs as the Java dotnet runtime.
+So this is basically errors.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3056-1
+00:30:48.121 --> 00:30:55.244
+<v Antonio Cisternino>Errors give you an idea of the type
+system. So the the type system.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3087-0
+00:30:55.604 --> 00:31:00.317
+<v Antonio Cisternino>The loader,
+the type system depends from the loader.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3087-1
+00:31:00.317 --> 00:31:05.740
+<v Antonio Cisternino>The cheat interface just in time depends
+on the type system.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3087-2
+00:31:05.740 --> 00:31:11.164
+<v Antonio Cisternino>Obviously the garbage collection depends
+on the type system.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3107-0
+00:31:11.444 --> 00:31:15.913
+<v Antonio Cisternino>The JIT, the Jct.
+compiler depends both the the sorry</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3107-1
+00:31:15.913 --> 00:31:22.284
+<v Antonio Cisternino>depends on the interface of the JIT and
+the GC depends on the Jct. compiler.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3109-0
+00:31:23.604 --> 00:31:23.644
+<v Antonio Cisternino>Uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3120-0
+00:31:26.044 --> 00:31:30.844
+<v Antonio Cisternino>Depending system the the meta depends on
+the meta data.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3146-0
+00:31:32.324 --> 00:31:40.283
+<v Antonio Cisternino>And reflection is the initial part in the
+intersection, the generation of code,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3146-1
+00:31:40.283 --> 00:31:47.644
+<v Antonio Cisternino>security and type system depends one on
+each other, basically dependency.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3171-0
+00:31:48.284 --> 00:31:54.968
+<v Antonio Cisternino>Application domain AD loader type system
+depends on application domain and and the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3171-1
+00:31:54.968 --> 00:31:59.075
+<v Antonio Cisternino>loader.
+The reflection depends on the type system,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3171-2
+00:31:59.075 --> 00:32:00.524
+<v Antonio Cisternino>so as you can see.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3189-0
+00:32:01.684 --> 00:32:06.064
+<v Antonio Cisternino>Everything is intertwined.
+Basically this is the full runtime.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3189-1
+00:32:06.064 --> 00:32:10.027
+<v Antonio Cisternino>All the services,
+the the core services are mentioned in</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3189-2
+00:32:10.027 --> 00:32:10.444
+<v Antonio Cisternino>there.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3192-0
+00:32:11.604 --> 00:32:11.724
+<v Antonio Cisternino>OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3193-0
+00:32:14.604 --> 00:32:14.684
+<v Antonio Cisternino>O.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3196-0
+00:32:17.484 --> 00:32:17.804
+<v Antonio Cisternino>Bet me.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3210-0
+00:32:19.844 --> 00:32:26.444
+<v Antonio Cisternino>There are a few keywords that one I like
+and that we will take down uh today.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3233-0
+00:32:28.084 --> 00:32:35.901
+<v Antonio Cisternino>So first thing that you have to get
+familiar with is the name the stub.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3233-1
+00:32:35.901 --> 00:32:40.244
+<v Antonio Cisternino>Have you heard the name stub in English?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3245-0
+00:32:41.204 --> 00:32:49.004
+<v Antonio Cisternino>Table is basically something that actor
+as a placeholder and.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3286-0
+00:32:50.084 --> 00:32:56.563
+<v Antonio Cisternino>Will pretend to offer service but it
+actually not implementing service that is</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3286-1
+00:32:56.563 --> 00:33:02.714
+<v Antonio Cisternino>stop OK and the virtual stop dispatcher
+is a very important element of the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3286-2
+00:33:02.714 --> 00:33:08.044
+<v Antonio Cisternino>virtual machine and also very clever part
+of the implementation.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3311-0
+00:33:08.324 --> 00:33:16.498
+<v Antonio Cisternino>Because we said that by code,
+the base compile machines such as java.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3311-1
+00:33:16.498 --> 00:33:22.804
+<v Antonio Cisternino>net are resigned so that the by code can
+be compiled.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3332-0
+00:33:25.124 --> 00:33:30.115
+<v Antonio Cisternino>So there are tools that in.
+net it is even a part of the design.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3332-1
+00:33:30.115 --> 00:33:33.724
+<v Antonio Cisternino>There are tools that allows you to
+precompile.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3380-0
+00:33:35.204 --> 00:33:41.389
+<v Antonio Cisternino>The high head of timing compile support.
+So basically you read the assembly,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3380-1
+00:33:41.389 --> 00:33:46.369
+<v Antonio Cisternino>you read all the methods,
+you compile the methods so that you</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3380-2
+00:33:46.369 --> 00:33:52.635
+<v Antonio Cisternino>already have the the machine code.
+The vector machine keeps working as usual,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3380-3
+00:33:52.635 --> 00:33:54.964
+<v Antonio Cisternino>but you already have all the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3397-0
+00:33:55.044 --> 00:34:06.564
+<v Antonio Cisternino>The code of the methods already compiled,
+but it is more common.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3432-0
+00:34:07.924 --> 00:34:16.849
+<v Antonio Cisternino>The main one typically is program size
+that simply runtime module that is called</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3432-1
+00:34:16.849 --> 00:34:22.358
+<v Antonio Cisternino>the JIT.
+The just in time compiler is responsible</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3432-2
+00:34:22.358 --> 00:34:25.884
+<v Antonio Cisternino>for compiling methods on demand.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3440-0
+00:34:26.484 --> 00:34:32.209
+<v Antonio Cisternino>And the.
+net implementation implements a clever</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3440-1
+00:34:32.209 --> 00:34:32.924
+<v Antonio Cisternino>trick.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3477-0
+00:34:32.964 --> 00:34:38.717
+<v Antonio Cisternino>That makes the runtime.
+Remember when yesterday I said there are</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3477-1
+00:34:38.717 --> 00:34:42.965
+<v Antonio Cisternino>two implemented.
+There is the interpreted light</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3477-2
+00:34:42.965 --> 00:34:47.833
+<v Antonio Cisternino>orchestrator in which the runtime is the
+orchestrator.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3477-3
+00:34:47.833 --> 00:34:52.524
+<v Antonio Cisternino>Say I call this then you get the return
+of that and.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3516-0
+00:34:52.964 --> 00:34:58.780
+<v Antonio Cisternino>It's a on the execution.
+Another approach is that I layout things</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3516-1
+00:34:58.780 --> 00:35:05.477
+<v Antonio Cisternino>so that when I say go at some point I'm
+sure that it will call me back when</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3516-2
+00:35:05.477 --> 00:35:09.530
+<v Antonio Cisternino>needed.
+So I'm generating the things so I can</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3516-3
+00:35:09.530 --> 00:35:11.204
+<v Antonio Cisternino>generate also hook.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3569-0
+00:35:11.204 --> 00:35:19.040
+<v Antonio Cisternino>That can point to me and I'll be invoked.
+The the stab in the meta table is one of</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3569-1
+00:35:19.040 --> 00:35:24.610
+<v Antonio Cisternino>these examples. So the meta table,
+when a title is loaded,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3569-2
+00:35:24.610 --> 00:35:31.124
+<v Antonio Cisternino>is initialized with a pointer to a
+section of code that is the same.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3594-0
+00:35:31.124 --> 00:35:39.275
+<v Antonio Cisternino>For all the application which is the stub,
+which basically says that we not get</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3594-1
+00:35:39.275 --> 00:35:47.324
+<v Antonio Cisternino>confined, there's no method here. OK,
+but your code does take the method stub.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3635-0
+00:35:47.764 --> 00:35:54.001
+<v Antonio Cisternino>So the method the table finds the
+location of the index of the method you</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3635-1
+00:35:54.001 --> 00:35:58.720
+<v Antonio Cisternino>want in poker.
+You jump to the location and you jump to</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3635-2
+00:35:58.720 --> 00:36:02.850
+<v Antonio Cisternino>the stub.
+The stub triggers the the just in time</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3635-3
+00:36:02.850 --> 00:36:05.884
+<v Antonio Cisternino>compiler, the just in time compiler.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3665-0
+00:36:06.404 --> 00:36:14.782
+<v Antonio Cisternino>Given the location of the call that is in
+the method table that is in in the in the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3665-1
+00:36:14.782 --> 00:36:21.564
+<v Antonio Cisternino>in the the bound to the time knows where
+they might go this and so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3694-0
+00:36:21.764 --> 00:36:28.873
+<v Antonio Cisternino>From the call, just from the call,
+he knows how where the bytecode is,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3694-1
+00:36:28.873 --> 00:36:33.779
+<v Antonio Cisternino>given the bytecode compiles in a
+dedicated heap.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3694-2
+00:36:33.779 --> 00:36:37.684
+<v Antonio Cisternino>So beware also the JIT requires a neap.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3722-0
+00:36:37.844 --> 00:36:43.761
+<v Antonio Cisternino>Because you need a place where to store
+the generated code.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3722-1
+00:36:43.761 --> 00:36:51.650
+<v Antonio Cisternino>So in the code heap you will get the
+binary code at the end of the compilation.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3722-2
+00:36:51.650 --> 00:36:53.524
+<v Antonio Cisternino>Notice I said that.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3756-0
+00:36:54.044 --> 00:36:59.591
+<v Antonio Cisternino>Object dot sorter.
+So you will expect the sorter and invoke</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3756-1
+00:36:59.591 --> 00:37:04.399
+<v Antonio Cisternino>it. But actually you did.
+You didn't do the sorter.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3756-2
+00:37:04.399 --> 00:37:09.484
+<v Antonio Cisternino>So far you see the invoke the the JIT has
+finished so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3804-0
+00:37:10.244 --> 00:37:15.604
+<v Antonio Cisternino>As soon the compilation finishes,
+there is the second step which is the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3804-1
+00:37:15.604 --> 00:37:19.251
+<v Antonio Cisternino>back patching.
+We already encountered this term.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3804-2
+00:37:19.251 --> 00:37:22.973
+<v Antonio Cisternino>Same idea in the context of a garbage
+collection.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3804-3
+00:37:22.973 --> 00:37:29.152
+<v Antonio Cisternino>Back patching was if you move the object,
+you have to obtain all the references so</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3804-4
+00:37:29.152 --> 00:37:29.524
+<v Antonio Cisternino>that.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3846-0
+00:37:29.924 --> 00:37:35.861
+<v Antonio Cisternino>The guarantee stays coherent and guess
+what? Same thing here.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3846-1
+00:37:35.861 --> 00:37:40.937
+<v Antonio Cisternino>So once the stub triggers the just in
+time compiler,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3846-2
+00:37:40.937 --> 00:37:45.917
+<v Antonio Cisternino>just in time compiler fails,
+compiles the bytecode,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3846-3
+00:37:45.917 --> 00:37:49.364
+<v Antonio Cisternino>then the method table is backpacked.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3887-0
+00:37:49.444 --> 00:37:55.855
+<v Antonio Cisternino>And then to the method you get a
+different address which is not anymore,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3887-1
+00:37:55.855 --> 00:38:02.880
+<v Antonio Cisternino>but it is the actor code and then you
+jump to the actor code because I see I've</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3887-2
+00:38:02.880 --> 00:38:08.764
+<v Antonio Cisternino>invoked the sort method and then that
+method gets invoked. OK, so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3901-0
+00:38:09.124 --> 00:38:14.093
+<v Antonio Cisternino>If you understand this basic principle,
+it's the the rest of the runtime is</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3901-1
+00:38:14.093 --> 00:38:15.204
+<v Antonio Cisternino>tricky, but it's.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3936-0
+00:38:17.084 --> 00:38:22.624
+<v Antonio Cisternino>That's easy to understand. OK,
+and the good thing is that if I try to</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3936-1
+00:38:22.624 --> 00:38:27.769
+<v Antonio Cisternino>measure the cost in terms of operation of
+performing this thing,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3936-2
+00:38:27.769 --> 00:38:31.884
+<v Antonio Cisternino>the cost is pretty much the same as the C
+or C++ 4.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3962-0
+00:38:32.764 --> 00:38:36.701
+<v Antonio Cisternino>OK,
+so you pay me when you hit the first time</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3962-1
+00:38:36.701 --> 00:38:43.804
+<v Antonio Cisternino>the stop, the stop triggers the the, the,
+the, the compiler after that invocation.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3975-0
+00:38:45.284 --> 00:38:48.495
+<v Antonio Cisternino>Then you don't pay any more on the
+compiling,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3975-1
+00:38:48.495 --> 00:38:52.124
+<v Antonio Cisternino>but it is like having the compiling
+definition, OK?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/3988-0
+00:38:53.484 --> 00:39:02.804
+<v Antonio Cisternino>Java that had the the just in time
+compiler as an add on.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4021-0
+00:39:03.684 --> 00:39:07.758
+<v Antonio Cisternino>As a different strategy,
+there's a similar operation,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4021-1
+00:39:07.758 --> 00:39:13.943
+<v Antonio Cisternino>but actually the first I don't remember
+there was a number something like the 1st</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4021-2
+00:39:13.943 --> 00:39:20.204
+<v Antonio Cisternino>50 application invocation of a method are
+interpreted because you are interpreted.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4069-0
+00:39:20.404 --> 00:39:27.441
+<v Antonio Cisternino>And after you you you cross the number,
+I remember it came up a little longer.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4069-1
+00:39:27.441 --> 00:39:34.389
+<v Antonio Cisternino>Then the G is pretty good under the
+principle that if you involve few times a</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4069-2
+00:39:34.389 --> 00:39:38.219
+<v Antonio Cisternino>man,
+it's not worth paying the cost of the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4069-3
+00:39:38.219 --> 00:39:39.644
+<v Antonio Cisternino>computation, OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4099-0
+00:39:40.164 --> 00:39:44.713
+<v Antonio Cisternino>In this respect, the design of.
+net and Java is radically different</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4099-1
+00:39:44.713 --> 00:39:48.058
+<v Antonio Cisternino>because.
+net has been designed to be compiled and</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4099-2
+00:39:48.058 --> 00:39:52.941
+<v Antonio Cisternino>so there is no or refresh of any
+interpreter and everything is basically</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4099-3
+00:39:52.941 --> 00:39:55.884
+<v Antonio Cisternino>up to the services provided by the
+runtime.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4102-0
+00:39:58.684 --> 00:39:58.804
+<v Antonio Cisternino>OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4132-0
+00:40:00.804 --> 00:40:05.119
+<v Antonio Cisternino>This I again,
+I suggest you to read this not for.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4132-1
+00:40:05.119 --> 00:40:11.247
+<v Antonio Cisternino>Don't think about the examiner.
+It's an interesting bread for you. OK,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4132-2
+00:40:11.247 --> 00:40:16.684
+<v Antonio Cisternino>I don't think there are other things.
+Yeah, I was remembering.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4134-0
+00:40:17.124 --> 00:40:17.884
+<v Antonio Cisternino>Something.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4145-0
+00:40:21.644 --> 00:40:27.564
+<v Antonio Cisternino>OK,
+this is the layout in memory of testing.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4155-0
+00:40:29.324 --> 00:40:33.564
+<v Antonio Cisternino>So there is the meta table. No,
+I was looking.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4159-0
+00:40:36.524 --> 00:40:38.244
+<v Antonio Cisternino>Do another diagram.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4169-0
+00:40:48.084 --> 00:40:51.404
+<v Antonio Cisternino>No, I mean, there are interesting facts.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4208-0
+00:40:56.204 --> 00:41:00.814
+<v Antonio Cisternino>Let me tell you this. This is a nice one.
+I'm sorry,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4208-1
+00:41:00.814 --> 00:41:04.989
+<v Antonio Cisternino>there are things that I so this is
+interesting.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4208-2
+00:41:04.989 --> 00:41:11.948
+<v Antonio Cisternino>So the notion of static is ill defined or
+it's well defined in the sense of the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4208-3
+00:41:11.948 --> 00:41:14.644
+<v Antonio Cisternino>semantics of the language, but.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4224-0
+00:41:14.644 --> 00:41:22.602
+<v Antonio Cisternino>Uh, post some issues.
+So now by now you know that any language</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4224-1
+00:41:22.602 --> 00:41:26.644
+<v Antonio Cisternino>typically has static memory. Uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4238-0
+00:41:27.364 --> 00:41:34.731
+<v Antonio Cisternino>Automatic memory. The stack of variables.
+Set it up. Dynamic memory. OK,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4238-1
+00:41:34.731 --> 00:41:38.364
+<v Antonio Cisternino>these are the three years of memory.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4277-0
+00:41:40.084 --> 00:41:47.327
+<v Antonio Cisternino>In fact the static memory is global and
+in a multithreaded application you may</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4277-1
+00:41:47.327 --> 00:41:54.937
+<v Antonio Cisternino>have some synchronization problem because
+the different and visibility of the same</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4277-2
+00:41:54.937 --> 00:41:56.404
+<v Antonio Cisternino>static elements.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4284-0
+00:41:57.724 --> 00:42:01.884
+<v Antonio Cisternino>So uh,
+there is the ability in the runtime. Uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4310-0
+00:42:07.284 --> 00:42:13.569
+<v Antonio Cisternino>To annotate, there we are.
+There is a custom attribute that what it</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4310-1
+00:42:13.569 --> 00:42:18.838
+<v Antonio Cisternino>is. I see it. OK,
+here the address static attribute that</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4310-2
+00:42:18.838 --> 00:42:23.644
+<v Antonio Cisternino>allows you to say this be the static by
+the static.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4358-0
+00:42:24.004 --> 00:42:27.756
+<v Antonio Cisternino>Into the local memory of the not of the
+process.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4358-1
+00:42:27.756 --> 00:42:31.662
+<v Antonio Cisternino>So two different threads executing the
+same class.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4358-2
+00:42:31.662 --> 00:42:37.558
+<v Antonio Cisternino>It will see different values for the
+static potentially see different values</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4358-3
+00:42:37.558 --> 00:42:43.148
+<v Antonio Cisternino>for the static members because the
+programmer said that I want that this</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4358-4
+00:42:43.148 --> 00:42:43.684
+<v Antonio Cisternino>static.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4402-0
+00:42:43.724 --> 00:42:48.815
+<v Antonio Cisternino>Everything is static to the current
+thread and not to the process. OK,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4402-1
+00:42:48.815 --> 00:42:53.905
+<v Antonio Cisternino>this is another element that makes a
+distinction between Java and net.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4402-2
+00:42:53.905 --> 00:42:57.490
+<v Antonio Cisternino>Java was more around a bit clean and say
+contain.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4402-3
+00:42:57.490 --> 00:43:02.724
+<v Antonio Cisternino>net was more like I wanna give you the
+ability to hook into the runtime.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4434-0
+00:43:03.284 --> 00:43:09.605
+<v Antonio Cisternino>To be as performer as a safe holder and
+so this is clearly something that a</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4434-1
+00:43:09.605 --> 00:43:16.343
+<v Antonio Cisternino>programmer may want to do and so I give
+you the ability to do it even if you are</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4434-2
+00:43:16.343 --> 00:43:19.004
+<v Antonio Cisternino>in a safe type safe environment.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4438-0
+00:43:20.604 --> 00:43:23.764
+<v Antonio Cisternino>OK, I don't think there is much.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4442-0
+00:43:24.404 --> 00:43:27.084
+<v Antonio Cisternino>Uh, more interesting things.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4444-0
+00:43:29.484 --> 00:43:29.564
+<v Antonio Cisternino>So.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4461-0
+00:43:33.364 --> 00:43:40.044
+<v Antonio Cisternino>Let's go to the method descriptor that we
+said that is, uh, an important thing.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4469-0
+00:43:41.924 --> 00:43:45.884
+<v Antonio Cisternino>Let me skip. I was looking for this.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4483-0
+00:43:48.044 --> 00:43:53.706
+<v Antonio Cisternino>Diagram,
+which is another diagram that is really</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4483-1
+00:43:53.706 --> 00:43:56.364
+<v Antonio Cisternino>important important so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4515-0
+00:43:59.804 --> 00:44:04.779
+<v Antonio Cisternino>The method descriptor describe the
+methods,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4515-1
+00:44:04.779 --> 00:44:09.979
+<v Antonio Cisternino>so clearly it is related to the method
+table.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4515-2
+00:44:09.979 --> 00:44:16.084
+<v Antonio Cisternino>I have one type type as a method table
+that we don't.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4532-0
+00:44:16.084 --> 00:44:21.735
+<v Antonio Cisternino>Uh, there's lots of. Of course,
+the method table may have, uh,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4532-1
+00:44:21.735 --> 00:44:24.964
+<v Antonio Cisternino>the section of the negative methods.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4583-0
+00:44:25.924 --> 00:44:31.938
+<v Antonio Cisternino>From the base class or from the interface
+and then so the the thing I said about</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4583-1
+00:44:31.938 --> 00:44:36.615
+<v Antonio Cisternino>the layout of the memory field supplies
+also to the map table.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4583-2
+00:44:36.615 --> 00:44:42.406
+<v Antonio Cisternino>The method table is wanted type and it
+contains all for every method there is</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4583-3
+00:44:42.406 --> 00:44:45.004
+<v Antonio Cisternino>the slot with the pointer the code.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4609-0
+00:44:45.044 --> 00:44:54.007
+<v Antonio Cisternino>Of that method and the descriptor as you
+can see basically gives the information</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4609-1
+00:44:54.007 --> 00:45:00.535
+<v Antonio Cisternino>about the method,
+the number of the slot inside the method</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4609-2
+00:45:00.535 --> 00:45:02.084
+<v Antonio Cisternino>table so that.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4634-0
+00:45:02.164 --> 00:45:07.697
+<v Antonio Cisternino>The meta table stays as thin as possible.
+OK, why?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4634-1
+00:45:07.697 --> 00:45:13.772
+<v Antonio Cisternino>Because you may remember from your
+architecture course,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4634-2
+00:45:13.772 --> 00:45:17.244
+<v Antonio Cisternino>inside the CPU there are caches.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4669-0
+00:45:19.564 --> 00:45:24.697
+<v Antonio Cisternino>And cache is very important.
+There is one cache,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4669-1
+00:45:24.697 --> 00:45:33.496
+<v Antonio Cisternino>2 cache and whenever you break the cache
+barrier, you have to wait a lot of cycles.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4669-2
+00:45:33.496 --> 00:45:36.324
+<v Antonio Cisternino>So the size of the runtime.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4706-0
+00:45:36.404 --> 00:45:42.995
+<v Antonio Cisternino>Data structures are important and so when
+they design the all the reflection</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4706-1
+00:45:42.995 --> 00:45:47.447
+<v Antonio Cisternino>related information about the types in
+the runtime,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4706-2
+00:45:47.447 --> 00:45:53.524
+<v Antonio Cisternino>they tend to split the data structures
+that are conceptually together.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4746-0
+00:45:53.924 --> 00:45:59.548
+<v Antonio Cisternino>In two smaller pieces so that there is a
+hot part and a cold part.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4746-1
+00:45:59.548 --> 00:46:05.424
+<v Antonio Cisternino>The hot part is the one like the meta
+table. Meta table gets invoked.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4746-2
+00:46:05.424 --> 00:46:10.965
+<v Antonio Cisternino>It's like being cached. OK,
+the meta desk most of the time is not</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4746-3
+00:46:10.965 --> 00:46:11.804
+<v Antonio Cisternino>needed so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4780-0
+00:46:12.244 --> 00:46:15.735
+<v Antonio Cisternino>Uh,
+even if from a programming standpoint you</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4780-1
+00:46:15.735 --> 00:46:21.504
+<v Antonio Cisternino>may think it will be OK having a a meta
+table of method desk and inside the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4780-2
+00:46:21.504 --> 00:46:27.044
+<v Antonio Cisternino>method desk adding the point that it
+would work would have been working.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4817-0
+00:46:27.564 --> 00:46:34.341
+<v Antonio Cisternino>The same from a performance perspective,
+it makes much much more sense to separate</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4817-1
+00:46:34.341 --> 00:46:40.710
+<v Antonio Cisternino>the two data structures so that the hot
+part is in cache and the rest will be</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4817-2
+00:46:40.710 --> 00:46:43.404
+<v Antonio Cisternino>accessed only if needed and this.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4821-0
+00:46:43.564 --> 00:46:46.764
+<v Antonio Cisternino>Tends to improve the performance.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4825-0
+00:46:47.924 --> 00:46:49.884
+<v Antonio Cisternino>On the whole stuff.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4826-0
+00:46:52.804 --> 00:46:53.084
+<v Antonio Cisternino>Yeah.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4853-0
+00:47:00.004 --> 00:47:06.402
+<v Antonio Cisternino>And this is the mechanics I was
+mentioning before.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4853-1
+00:47:06.402 --> 00:47:16.564
+<v Antonio Cisternino>So as you can see there is the method
+desk describe the the relates in the slot.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4898-0
+00:47:18.164 --> 00:47:25.778
+<v Antonio Cisternino>It may it may be linked to the code,
+but typically this lot points to the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4898-1
+00:47:25.778 --> 00:47:34.421
+<v Antonio Cisternino>pre-code which as you can see is I loaded
+to the EAX register the pointer to the to</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4898-2
+00:47:34.421 --> 00:47:36.684
+<v Antonio Cisternino>the management filter.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4943-0
+00:47:37.764 --> 00:47:43.196
+<v Antonio Cisternino>And then you jump to the stop.
+So you know that in that register you</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4943-1
+00:47:43.196 --> 00:47:49.572
+<v Antonio Cisternino>have to point that the the stop knows how
+to do and then it triggers it triggers</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4943-2
+00:47:49.572 --> 00:47:56.106
+<v Antonio Cisternino>the digest in time and then you backpack
+this slot to point straight to the native</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4943-3
+00:47:56.106 --> 00:47:57.444
+<v Antonio Cisternino>coder instead of.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4946-0
+00:47:57.444 --> 00:48:02.004
+<v Antonio Cisternino>Of the to the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4953-0
+00:48:05.084 --> 00:48:07.604
+<v Antonio Cisternino>OK, I don't think that there are.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4957-0
+00:48:09.124 --> 00:48:11.204
+<v Antonio Cisternino>Yeah, there is a.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4969-0
+00:48:13.404 --> 00:48:17.444
+<v Antonio Cisternino>Here, as you can see here,
+you've also find the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4970-0
+00:48:18.284 --> 00:48:18.844
+<v Antonio Cisternino>The.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4985-0
+00:48:20.404 --> 00:48:24.145
+<v Antonio Cisternino>Uh,
+assembly fragments relevant to understand</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4985-1
+00:48:24.145 --> 00:48:27.724
+<v Antonio Cisternino>the internal working of the of the
+runtime.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4988-0
+00:48:31.164 --> 00:48:31.284
+<v Antonio Cisternino>OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/4996-0
+00:48:34.084 --> 00:48:40.244
+<v Antonio Cisternino>Now it's time to introduce.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5031-0
+00:48:41.204 --> 00:48:46.590
+<v Antonio Cisternino>Few other elements that are really
+important. The stack.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5031-1
+00:48:46.590 --> 00:48:52.826
+<v Antonio Cisternino>The stack is king in modern programming.
+We already mentioned it.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5031-2
+00:48:52.826 --> 00:48:59.724
+<v Antonio Cisternino>We said that there are these records that
+are called activation records.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5034-0
+00:49:00.004 --> 00:49:03.004
+<v Antonio Cisternino>Which basically contains.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5083-0
+00:49:04.884 --> 00:49:09.834
+<v Antonio Cisternino>Function arguments and local variables.
+So whenever you call,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5083-1
+00:49:09.834 --> 00:49:15.342
+<v Antonio Cisternino>which at the end of the day is simply a
+jump to a location recorder,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5083-2
+00:49:15.342 --> 00:49:20.212
+<v Antonio Cisternino>a machine language develop,
+you preload on top of the stack.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5083-3
+00:49:20.212 --> 00:49:23.804
+<v Antonio Cisternino>So whatever thread you have a stack
+pointer.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5125-0
+00:49:24.244 --> 00:49:30.881
+<v Antonio Cisternino>Which traditionally stored in a specific
+register of the CPU because the CPU is</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5125-1
+00:49:30.881 --> 00:49:36.689
+<v Antonio Cisternino>aware about this thing and the stack
+pointer is the top of the stack.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5125-2
+00:49:36.689 --> 00:49:42.164
+<v Antonio Cisternino>You simply allocate the new that you
+change the top of the stack.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5150-0
+00:49:43.164 --> 00:49:50.765
+<v Antonio Cisternino>And of course you have to provide enough
+information to unwield this stack</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5150-1
+00:49:50.765 --> 00:49:55.833
+<v Antonio Cisternino>allocation.
+So you you have to record that in the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5150-2
+00:49:55.833 --> 00:49:58.164
+<v Antonio Cisternino>stack itself the eight.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5187-0
+00:49:58.164 --> 00:50:05.626
+<v Antonio Cisternino>Of the of this activation record and the
+return address because that is not</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5187-1
+00:50:05.626 --> 00:50:11.419
+<v Antonio Cisternino>statically known.
+The return is depends on who is what and</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5187-2
+00:50:11.419 --> 00:50:17.604
+<v Antonio Cisternino>so typically when you call you set the
+return address so that.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5214-0
+00:50:17.924 --> 00:50:25.702
+<v Antonio Cisternino>At the end of the function,
+the CPU will jumps back to the return</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5214-1
+00:50:25.702 --> 00:50:33.244
+<v Antonio Cisternino>address and keep run. OK,
+so the stack is very, very important.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5220-0
+00:50:33.284 --> 00:50:37.124
+<v Antonio Cisternino>And the net stack is one of the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5229-0
+00:50:39.844 --> 00:50:43.364
+<v Antonio Cisternino>Coolest implementation of stacker I am
+aware of.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5232-0
+00:50:44.324 --> 00:50:45.404
+<v Antonio Cisternino>Beats beauty.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5246-0
+00:50:47.324 --> 00:50:53.324
+<v Antonio Cisternino>So they use the number of tricks to do
+some magic. Why?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5247-0
+00:50:54.684 --> 00:50:54.724
+<v Antonio Cisternino>Uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5249-0
+00:50:58.364 --> 00:50:59.004
+<v Antonio Cisternino>When?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5256-0
+00:51:05.004 --> 00:51:07.324
+<v Antonio Cisternino>When you are in C#.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5261-0
+00:51:08.964 --> 00:51:12.244
+<v Antonio Cisternino>And you invoke a method.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5296-0
+00:51:14.804 --> 00:51:21.760
+<v Antonio Cisternino>Then you allocate allocate an activation
+record which is known as managed.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5296-1
+00:51:21.760 --> 00:51:29.364
+<v Antonio Cisternino>So managed is a term which refers to the
+code that is managed by intermediate OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5316-0
+00:51:30.204 --> 00:51:35.991
+<v Antonio Cisternino>So if I invoke AC sharp method or a sharp
+method,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5316-1
+00:51:35.991 --> 00:51:42.124
+<v Antonio Cisternino>then I will get a managed record on top
+of a static.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5324-0
+00:51:43.884 --> 00:51:51.124
+<v Antonio Cisternino>But suppose that this managed the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5338-0
+00:51:52.964 --> 00:51:59.764
+<v Antonio Cisternino>C# function invokes some DLL function of
+the operating system.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5369-0
+00:52:01.684 --> 00:52:11.141
+<v Antonio Cisternino>This function will need some stack space
+for its inner work because a stack is</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5369-1
+00:52:11.141 --> 00:52:17.844
+<v Antonio Cisternino>also for the C code,
+not just for the networks, so the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5408-0
+00:52:17.844 --> 00:52:23.219
+<v Antonio Cisternino>Architects had this brilliant idea to
+allow a single stack for all the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5408-1
+00:52:23.219 --> 00:52:28.821
+<v Antonio Cisternino>invocation, those of the runtime,
+but also those of the internal runtime,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5408-2
+00:52:28.821 --> 00:52:32.530
+<v Antonio Cisternino>because sometimes you call an internal
+function.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5408-3
+00:52:32.530 --> 00:52:36.164
+<v Antonio Cisternino>Each internal function will need a stack
+frame.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5410-0
+00:52:37.084 --> 00:52:38.884
+<v Antonio Cisternino>And so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5429-0
+00:52:39.844 --> 00:52:46.484
+<v Antonio Cisternino>The stack become a very complicated
+structure which reflects not only the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5429-1
+00:52:46.484 --> 00:52:49.804
+<v Antonio Cisternino>managed code, but all the invocation.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5437-0
+00:52:53.364 --> 00:52:57.164
+<v Antonio Cisternino>But clearly this complicates some tasks.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5448-0
+00:52:59.444 --> 00:53:06.044
+<v Antonio Cisternino>Why? Because it I mean if I called the uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5467-0
+00:53:07.204 --> 00:53:11.494
+<v Antonio Cisternino>An operating system functionality.
+This operating system functionality calls</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5467-1
+00:53:11.494 --> 00:53:13.444
+<v Antonio Cisternino>a function. They call the function.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5497-0
+00:53:15.324 --> 00:53:21.380
+<v Antonio Cisternino>And you know what? I pass the pointer,
+the reference to a method of mine.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5497-1
+00:53:21.380 --> 00:53:25.718
+<v Antonio Cisternino>You know in C you can pass a pointer to
+an ADMC, OK,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5497-2
+00:53:25.718 --> 00:53:29.564
+<v Antonio Cisternino>so that it can be called back by the C
+itself.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5499-0
+00:53:29.884 --> 00:53:30.524
+<v Antonio Cisternino>Uh, so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5536-0
+00:53:32.444 --> 00:53:38.366
+<v Antonio Cisternino>Suppose I have a function in C.
+This function takes as input a function</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5536-1
+00:53:38.366 --> 00:53:42.561
+<v Antonio Cisternino>pointer.
+Internally it calls the function pointer.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5536-2
+00:53:42.561 --> 00:53:47.084
+<v Antonio Cisternino>So from the managed code C# I invoke this
+AC function.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5571-0
+00:53:47.644 --> 00:53:53.121
+<v Antonio Cisternino>And I pass the reference to a method
+which is basically a function.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5571-1
+00:53:53.121 --> 00:53:58.195
+<v Antonio Cisternino>So I pass it to the unmanaged code,
+nothing code, no.net code.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5571-2
+00:53:58.195 --> 00:54:02.222
+<v Antonio Cisternino>This calls another internal.
+It's in the library.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5571-3
+00:54:02.222 --> 00:54:05.524
+<v Antonio Cisternino>It calls another function, another stack.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5582-0
+00:54:06.044 --> 00:54:13.284
+<v Antonio Cisternino>This internal function calls the pointer
+that I passed from C# and so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5611-0
+00:54:14.484 --> 00:54:22.690
+<v Antonio Cisternino>Now there is AC sharp method that gets
+invoked from the C code and so another</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5611-1
+00:54:22.690 --> 00:54:29.844
+<v Antonio Cisternino>managed stack frame will be allocated and
+so on. So as you can see.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5638-0
+00:54:29.924 --> 00:54:40.164
+<v Antonio Cisternino>The stack of the magnification is super
+rich and you need a lot of machinery in</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5638-1
+00:54:40.164 --> 00:54:45.924
+<v Antonio Cisternino>the runtime to be able to inspect the
+stack.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5643-0
+00:54:46.284 --> 00:54:49.964
+<v Antonio Cisternino>Why stack inspection is important?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5682-0
+00:54:50.964 --> 00:54:56.585
+<v Antonio Cisternino>On this of course is the thread.
+Why stack inspection is important.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5682-1
+00:54:56.585 --> 00:55:01.297
+<v Antonio Cisternino>The 1st and most important reason is
+garbage collection.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5682-2
+00:55:01.297 --> 00:55:07.911
+<v Antonio Cisternino>We said that most of the roots of the
+mark phase of a collector starts from the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5682-3
+00:55:07.911 --> 00:55:08.324
+<v Antonio Cisternino>cell.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5716-0
+00:55:10.444 --> 00:55:18.102
+<v Antonio Cisternino>And so the stack and clearly I don't want
+to look for roots in the unmanaged.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5716-1
+00:55:18.102 --> 00:55:24.386
+<v Antonio Cisternino>I don't care about this.
+I want to start here and then navigate</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5716-2
+00:55:24.386 --> 00:55:25.564
+<v Antonio Cisternino>the manager.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5744-0
+00:55:25.844 --> 00:55:29.218
+<v Antonio Cisternino>A stack frame and ignore the remaining
+frames.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5744-1
+00:55:29.218 --> 00:55:35.032
+<v Antonio Cisternino>And the technique they used is brilliant.
+They basically annotate the stack with</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5744-2
+00:55:35.032 --> 00:55:38.764
+<v Antonio Cisternino>small data structures that are called
+stack frames.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5769-0
+00:55:40.364 --> 00:55:48.751
+<v Antonio Cisternino>So basically before calling the C code,
+you insert few bytes in the stack</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5769-1
+00:55:48.751 --> 00:55:54.871
+<v Antonio Cisternino>annotating.
+I just call this OK and so on so that you</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5769-2
+00:55:54.871 --> 00:55:55.324
+<v Antonio Cisternino>can.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5814-0
+00:55:55.684 --> 00:56:01.239
+<v Antonio Cisternino>Browse this stack with this additional
+data structure so that you can be</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5814-1
+00:56:01.239 --> 00:56:05.349
+<v Antonio Cisternino>constructed which part is managed,
+which part is not,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5814-2
+00:56:05.349 --> 00:56:11.436
+<v Antonio Cisternino>which class or method refers to so that I
+know for the reference pointer to the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5814-3
+00:56:11.436 --> 00:56:14.404
+<v Antonio Cisternino>heap and I then recall the stack fully.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5816-0
+00:56:14.404 --> 00:56:16.524
+<v Antonio Cisternino>At any time, OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5818-0
+00:56:23.164 --> 00:56:23.244
+<v Antonio Cisternino>Add.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5824-0
+00:56:26.684 --> 00:56:30.844
+<v Antonio Cisternino>Here you got the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5835-0
+00:56:34.284 --> 00:56:40.804
+<v Antonio Cisternino>A description of this behavior I just
+outlined. And guess what?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5842-0
+00:56:43.684 --> 00:56:47.444
+<v Antonio Cisternino>You have a full discussion about.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5846-0
+00:56:48.604 --> 00:56:50.484
+<v Antonio Cisternino>All the frames.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5865-0
+00:56:52.244 --> 00:57:01.284
+<v Antonio Cisternino>So in the VM there is a frame dotation
+header file with all the frames.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5895-0
+00:57:02.804 --> 00:57:08.974
+<v Antonio Cisternino>And as you can see there are a lot of
+frames. Pre stub method frame.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5895-1
+00:57:08.974 --> 00:57:16.039
+<v Antonio Cisternino>It represents a call to pre stub stub
+dispatch frame represent a call into the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5895-2
+00:57:16.039 --> 00:57:18.364
+<v Antonio Cisternino>virtual call stop manager.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5936-0
+00:57:18.644 --> 00:57:26.308
+<v Antonio Cisternino>P invoke call iframe protects argument
+where the call to together is made and so</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5936-1
+00:57:26.308 --> 00:57:30.566
+<v Antonio Cisternino>on. OK,
+so the technique with this is really</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5936-2
+00:57:30.566 --> 00:57:36.338
+<v Antonio Cisternino>ADVANCED technique.
+The technique they used is they annotate</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5936-3
+00:57:36.338 --> 00:57:37.284
+<v Antonio Cisternino>the stack.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5971-0
+00:57:37.604 --> 00:57:44.896
+<v Antonio Cisternino>Of the thread so that at any time the
+runtime can go and can go and perform a</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5971-1
+00:57:44.896 --> 00:57:52.374
+<v Antonio Cisternino>step worker to reconstruct fully for many
+purposes. For instance, the P invoke.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/5971-2
+00:57:52.374 --> 00:57:54.244
+<v Antonio Cisternino>P invoke stands for.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6007-0
+00:57:54.364 --> 00:58:01.065
+<v Antonio Cisternino>Platform Invoker, what it was this one.
+P Invoker is a feature of the runtime</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6007-1
+00:58:01.065 --> 00:58:06.907
+<v Antonio Cisternino>stands for Platform Invoke.
+So the thing that I mentioned yesterday</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6007-2
+00:58:06.907 --> 00:58:11.804
+<v Antonio Cisternino>about the fact that you can annotate the
+method and say.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6049-0
+00:58:12.164 --> 00:58:16.735
+<v Antonio Cisternino>DLL report Monday. OK,
+so basically I can say this man,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6049-1
+00:58:16.735 --> 00:58:22.693
+<v Antonio Cisternino>this is DLL and this is the name of the
+endpoint and and you get all the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6049-2
+00:58:22.693 --> 00:58:28.324
+<v Antonio Cisternino>interface and the marshalling and the of
+the arguments made for you.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6081-0
+00:58:28.724 --> 00:58:34.465
+<v Antonio Cisternino>Generated for you by the runtime itself.
+So that is called clustering more.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6081-1
+00:58:34.465 --> 00:58:39.903
+<v Antonio Cisternino>Clearly if I invoke AC method,
+the C method can go around into the map.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6081-2
+00:58:39.903 --> 00:58:44.360
+<v Antonio Cisternino>In fact you need some.
+It's considered an unsafe operation</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6081-3
+00:58:44.360 --> 00:58:44.964
+<v Antonio Cisternino>because.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6133-0
+00:58:45.284 --> 00:58:51.549
+<v Antonio Cisternino>And actually protects argument when a
+call to the get IEL staff or collide is</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6133-1
+00:58:51.549 --> 00:58:55.244
+<v Antonio Cisternino>made to get a create IEL staff for a
+manager.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6133-2
+00:58:55.244 --> 00:59:01.349
+<v Antonio Cisternino>So they tried to introduce enough
+information to for instance check whether</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6133-3
+00:59:01.349 --> 00:59:05.204
+<v Antonio Cisternino>the stack is has been corrupted by an
+external.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6146-0
+00:59:05.284 --> 00:59:10.110
+<v Antonio Cisternino>Code or not,
+that is the purpose of that particular</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6146-1
+00:59:10.110 --> 00:59:14.564
+<v Antonio Cisternino>frame. OK, so by annotating the stack,
+you can.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6190-0
+00:59:15.124 --> 00:59:19.084
+<v Antonio Cisternino>You can.
+There is the debugger because sometimes</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6190-1
+00:59:19.084 --> 00:59:25.146
+<v Antonio Cisternino>you need the debugging and the debugger
+you love to be able to stop in the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6190-2
+00:59:25.146 --> 00:59:29.026
+<v Antonio Cisternino>execution.
+Of course the runtime to support the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6190-3
+00:59:29.026 --> 00:59:34.764
+<v Antonio Cisternino>debugger must introduce some elements,
+otherwise you wouldn't be able.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6192-0
+00:59:35.044 --> 00:59:36.124
+<v Antonio Cisternino>To have a debugger.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6194-0
+00:59:37.684 --> 00:59:40.724
+<v Antonio Cisternino>Uh, exceptions, of course.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6197-0
+00:59:43.084 --> 00:59:45.444
+<v Antonio Cisternino>And and so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6205-0
+00:59:47.564 --> 00:59:52.124
+<v Antonio Cisternino>Here you find all the the frames.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6259-0
+00:59:54.644 --> 01:00:00.232
+<v Antonio Cisternino>So this is the frame is a class. Again,
+they use the fact that C++ precisely</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6259-1
+01:00:00.232 --> 01:00:03.788
+<v Antonio Cisternino>defines the layout in memory of the C++
+classes.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6259-2
+01:00:03.788 --> 01:00:08.069
+<v Antonio Cisternino>So whenever you see a class in a code
+complicated as this,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6259-3
+01:00:08.069 --> 01:00:13.004
+<v Antonio Cisternino>you don't have to think as a just as a
+software engineering entity.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6286-0
+01:00:13.204 --> 01:00:20.903
+<v Antonio Cisternino>Is a way to have a layout of a memory
+with some method attached to to to them.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6286-1
+01:00:20.903 --> 01:00:25.386
+<v Antonio Cisternino>OK,
+so it's more than that and and so you get</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6286-2
+01:00:25.386 --> 01:00:29.284
+<v Antonio Cisternino>some methods and and there is the frame.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6291-0
+01:00:29.724 --> 01:00:34.044
+<v Antonio Cisternino>Frames type. There is a list.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6299-0
+01:00:37.004 --> 01:00:42.284
+<v Antonio Cisternino>Frames frame. Oh,
+I don't remember where it is.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6344-0
+01:00:45.044 --> 01:00:49.801
+<v Antonio Cisternino>It's too late.
+There are I think it there are the the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6344-1
+01:00:49.801 --> 01:00:55.438
+<v Antonio Cisternino>there is a there are a dozen frame types
+in the in the runtime.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6344-2
+01:00:55.438 --> 01:01:01.164
+<v Antonio Cisternino>So it's a extensively used this technique
+to mark the the stack.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6347-0
+01:01:02.124 --> 01:01:03.084
+<v Antonio Cisternino>Using these frames.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6399-0
+01:01:04.484 --> 01:01:10.438
+<v Antonio Cisternino>And then there is an interface which is
+super crucial that is called stack Walker,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6399-1
+01:01:10.438 --> 01:01:16.391
+<v Antonio Cisternino>which is responsible to encapsulate in a
+single place the process of stack walking</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6399-2
+01:01:16.391 --> 01:01:22.130
+<v Antonio Cisternino>and then you pass the function to the
+stack Walker so that for every frame that</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6399-3
+01:01:22.130 --> 01:01:23.564
+<v Antonio Cisternino>should be inspected.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6412-0
+01:01:24.164 --> 01:01:28.391
+<v Antonio Cisternino>Given the nature of the stack work,
+you would be called back with the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6412-1
+01:01:28.391 --> 01:01:30.564
+<v Antonio Cisternino>information that has been annotated.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6414-0
+01:01:34.684 --> 01:01:34.764
+<v Antonio Cisternino>Uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6416-0
+01:01:36.804 --> 01:01:38.244
+<v Antonio Cisternino>And that's uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6422-0
+01:01:39.484 --> 01:01:42.444
+<v Antonio Cisternino>That's an important part.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6425-0
+01:01:45.764 --> 01:01:46.764
+<v Antonio Cisternino>Type loader.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6428-0
+01:01:54.524 --> 01:01:54.924
+<v Antonio Cisternino>So.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6467-0
+01:01:57.524 --> 01:02:01.962
+<v Antonio Cisternino>This is the typical when you create an
+instance and you get a type,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6467-1
+01:02:01.962 --> 01:02:06.791
+<v Antonio Cisternino>the object points to the type,
+but in fact it points to the method table.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6467-2
+01:02:06.791 --> 01:02:11.751
+<v Antonio Cisternino>But we said that there is a one method
+table per type, so it is equivalent.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6467-3
+01:02:11.751 --> 01:02:12.404
+<v Antonio Cisternino>It's just.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6468-0
+01:02:13.324 --> 01:02:13.404
+<v Antonio Cisternino>Uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6470-0
+01:02:18.364 --> 01:02:18.404
+<v Antonio Cisternino>Oh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6492-0
+01:02:20.564 --> 01:02:26.695
+<v Antonio Cisternino>That's interesting. OK. Actually,
+I did my internship with Andrew in</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6492-1
+01:02:26.695 --> 01:02:30.604
+<v Antonio Cisternino>Microsoft Research. I didn't know this,
+OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6494-0
+01:02:32.164 --> 01:02:32.924
+<v Antonio Cisternino>So uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6497-0
+01:02:36.644 --> 01:02:37.564
+<v Antonio Cisternino>This is.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6500-0
+01:02:39.964 --> 01:02:40.684
+<v Antonio Cisternino>The setup.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6528-0
+01:02:42.004 --> 01:02:47.972
+<v Antonio Cisternino>Type uh the the data structure user the
+to describe types inside the runtime. Oh,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6528-1
+01:02:47.972 --> 01:02:51.829
+<v Antonio Cisternino>by the way,
+I forgot to say one very important thing</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6528-2
+01:02:51.829 --> 01:02:52.484
+<v Antonio Cisternino>about um.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6545-0
+01:02:53.764 --> 01:02:59.270
+<v Antonio Cisternino>Type in the in the net which are very
+different than Java and many other</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6545-1
+01:02:59.270 --> 01:03:01.004
+<v Antonio Cisternino>languages so typically.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6574-0
+01:03:02.484 --> 01:03:05.411
+<v Antonio Cisternino>You see,
+when you do a complicated runtime,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6574-1
+01:03:05.411 --> 01:03:09.668
+<v Antonio Cisternino>then you you require skilled people to
+maintain and develop it.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6574-2
+01:03:09.668 --> 01:03:13.859
+<v Antonio Cisternino>If you simplify the design,
+you will find more people to work,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6574-3
+01:03:13.859 --> 01:03:14.724
+<v Antonio Cisternino>able to work.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6576-0
+01:03:16.244 --> 01:03:17.564
+<v Antonio Cisternino>But actually, um.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6609-0
+01:03:19.204 --> 01:03:26.073
+<v Antonio Cisternino>You have in the.net type.
+They wanted to go beyond the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6609-1
+01:03:26.073 --> 01:03:35.564
+<v Antonio Cisternino>discrimination of value types and
+reference type or typical job in Java in.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6642-0
+01:03:35.924 --> 01:03:42.271
+<v Antonio Cisternino>Is not inherited from object.
+This is clearly rules in the design and</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6642-1
+01:03:42.271 --> 01:03:49.887
+<v Antonio Cisternino>at some point a solution of work has been
+let's introduce a wrapper we call integer</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6642-2
+01:03:49.887 --> 01:03:52.244
+<v Antonio Cisternino>which represent an object.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6665-0
+01:03:52.244 --> 01:03:59.101
+<v Antonio Cisternino>With an integer value. OK,
+NET was interested in having a fully</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6665-1
+01:03:59.101 --> 01:04:06.814
+<v Antonio Cisternino>single deep detect system where
+everything was inherited from object on</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6665-2
+01:04:06.814 --> 01:04:07.564
+<v Antonio Cisternino>and so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6711-0
+01:04:07.844 --> 01:04:12.436
+<v Antonio Cisternino>The decision was let's keep a little bit
+of C++.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6711-1
+01:04:12.436 --> 01:04:19.933
+<v Antonio Cisternino>So in C++ you know that there are types
+and and there is the location location.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6711-2
+01:04:19.933 --> 01:04:26.212
+<v Antonio Cisternino>If I have a class in C+,
+if I say new then the object is allocated</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6711-3
+01:04:26.212 --> 01:04:27.524
+<v Antonio Cisternino>into the heap.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6749-0
+01:04:27.764 --> 01:04:32.620
+<v Antonio Cisternino>If I if I declare a local variable of
+that type,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6749-1
+01:04:32.620 --> 01:04:39.754
+<v Antonio Cisternino>then the value is allocated on the stack.
+OK, so in C++ the allocation,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6749-2
+01:04:39.754 --> 01:04:45.204
+<v Antonio Cisternino>the position of allocation is orthogonal
+to the class.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6769-0
+01:04:45.644 --> 01:04:51.950
+<v Antonio Cisternino>In Java,
+all the class types are in the heap,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6769-1
+01:04:51.950 --> 01:05:00.724
+<v Antonio Cisternino>so no way to allocate on the stack
+objects set reference class.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6827-0
+01:05:00.804 --> 01:05:05.726
+<v Antonio Cisternino>The integers, the numbers,
+they are stored on the stack and they are</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6827-1
+01:05:05.726 --> 01:05:09.436
+<v Antonio Cisternino>always copied around. OK,
+so at the end of the day,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6827-2
+01:05:09.436 --> 01:05:14.215
+<v Antonio Cisternino>this makes difference in terms of the
+copy. If you copy an object,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6827-3
+01:05:14.215 --> 01:05:18.923
+<v Antonio Cisternino>you are copying the reference of the
+object. If you copy a value,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6827-4
+01:05:18.923 --> 01:05:20.564
+<v Antonio Cisternino>you have a copy of the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6852-0
+01:05:20.604 --> 01:05:29.347
+<v Antonio Cisternino>The bits of that value, that's the one.
+So in document they try to have a more</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6852-1
+01:05:29.347 --> 01:05:37.204
+<v Antonio Cisternino>flexible component. So they said OK,
+the type system has a very tight.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6887-0
+01:05:37.524 --> 01:05:44.442
+<v Antonio Cisternino>And reference that if you declare,
+I tell you in C# which is easier.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6887-1
+01:05:44.442 --> 01:05:49.556
+<v Antonio Cisternino>OK if in C# I declare a class that is a
+reference.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6887-2
+01:05:49.556 --> 01:05:52.764
+<v Antonio Cisternino>So if I if I say new of a class.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6892-0
+01:05:54.124 --> 01:05:58.404
+<v Antonio Cisternino>That will the object will be annotated in
+the it's garbage correct.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6897-0
+01:05:59.404 --> 01:06:03.204
+<v Antonio Cisternino>If you declare a strut.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6926-0
+01:06:05.404 --> 01:06:13.252
+<v Antonio Cisternino>That is a very and therefore the
+semantics of that structured object is</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6926-1
+01:06:13.252 --> 01:06:18.484
+<v Antonio Cisternino>the one of coping bits like integers and
+other.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6931-0
+01:06:20.124 --> 01:06:23.084
+<v Antonio Cisternino>How many type in eggs?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6981-0
+01:06:24.124 --> 01:06:31.143
+<v Antonio Cisternino>In any case, from object. So the compiler,
+whenever you upcast a value type</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6981-1
+01:06:31.143 --> 01:06:36.776
+<v Antonio Cisternino>including an integer into an object which
+is the superclass,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/6981-2
+01:06:36.776 --> 01:06:42.964
+<v Antonio Cisternino>automatically the compiler will emit A
+boxing instruction for you.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7012-0
+01:06:43.964 --> 01:06:51.019
+<v Antonio Cisternino>So basically it creates a a a wrapper
+with the object header and the the bits</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7012-1
+01:06:51.019 --> 01:06:58.435
+<v Antonio Cisternino>are included and this is allocated into
+the heap and it becomes a reference type.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7012-2
+01:06:58.435 --> 01:07:00.244
+<v Antonio Cisternino>So in the.net world.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7043-0
+01:07:00.764 --> 01:07:04.691
+<v Antonio Cisternino>A type can be inserted in the object in
+the heap,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7043-1
+01:07:04.691 --> 01:07:11.131
+<v Antonio Cisternino>and if there are two objects without any
+need to create any class that browse the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7043-2
+01:07:11.131 --> 01:07:15.764
+<v Antonio Cisternino>value itself, you may say OK,
+this is just for theory, no?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7075-0
+01:07:16.844 --> 01:07:25.016
+<v Antonio Cisternino>There are easy data structure that are so
+inefficient. Now you know why.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7075-1
+01:07:25.016 --> 01:07:32.964
+<v Antonio Cisternino>I mean if if I am creating a 2D graphics
+or a 3D graphics application.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7093-0
+01:07:33.324 --> 01:07:38.613
+<v Antonio Cisternino>OK,
+let's say I use 32 bits to represent the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7093-1
+01:07:38.613 --> 01:07:42.844
+<v Antonio Cisternino>coordinates on a screen. OK, so XM1.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7131-0
+01:07:44.284 --> 01:07:51.038
+<v Antonio Cisternino>In if if I allocate value types,
+I just pay 8 bytes to store the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7131-1
+01:07:51.038 --> 01:07:58.103
+<v Antonio Cisternino>coordinates of my system.
+If I if I want a 64 bit platform which is</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7131-2
+01:07:58.103 --> 01:08:01.324
+<v Antonio Cisternino>normal today and I do the same.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7136-0
+01:08:01.404 --> 01:08:05.564
+<v Antonio Cisternino>Then these eight bytes become suddenly
+painful.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7143-0
+01:08:08.524 --> 01:08:11.044
+<v Antonio Cisternino>So you understand that for?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7193-0
+01:08:12.764 --> 01:08:16.839
+<v Antonio Cisternino>Very importantly,
+useful data structures such as points,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7193-1
+01:08:16.839 --> 01:08:20.700
+<v Antonio Cisternino>points, 3D, complex numbers,
+and it can go on and on.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7193-2
+01:08:20.700 --> 01:08:26.562
+<v Antonio Cisternino>The dichotomy of the class types is very
+tight in Java is terrible because if you</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7193-3
+01:08:26.562 --> 01:08:31.924
+<v Antonio Cisternino>want to do the right thing in software
+engineering, you pay a lot of rent.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7203-0
+01:08:32.124 --> 01:08:38.406
+<v Antonio Cisternino>A lot of because of all the object had
+that that also Java has you have to pay</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7203-1
+01:08:38.406 --> 01:08:38.724
+<v Antonio Cisternino>for.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7253-0
+01:08:40.044 --> 01:08:46.522
+<v Antonio Cisternino>The meta the meta table pointers you have
+to pay for. OK in.net they said no.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7253-1
+01:08:46.522 --> 01:08:52.003
+<v Antonio Cisternino>So let's allow to create the value types,
+structured value types.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7253-2
+01:08:52.003 --> 01:08:57.734
+<v Antonio Cisternino>In Java you have you have integer impact
+if you look at the American</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7253-3
+01:08:57.734 --> 01:08:59.644
+<v Antonio Cisternino>implementation in Java.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7288-0
+01:08:59.724 --> 01:09:06.251
+<v Antonio Cisternino>They use the integers X into X into Y.
+You use explicitly to arguments instead</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7288-1
+01:09:06.251 --> 01:09:12.530
+<v Antonio Cisternino>of having a class and process for
+efficiency purposes. That is 1 technique.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7288-2
+01:09:12.530 --> 01:09:17.404
+<v Antonio Cisternino>There are others techniques to do the
+same, but basically.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7312-0
+01:09:17.684 --> 01:09:23.655
+<v Antonio Cisternino>Is always is rooted to this.
+So you see that understanding the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7312-1
+01:09:23.655 --> 01:09:30.195
+<v Antonio Cisternino>internals of the runtimes allows you to
+make a wide decision in your</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7312-2
+01:09:30.195 --> 01:09:32.564
+<v Antonio Cisternino>implementation hopefully.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7314-0
+01:09:32.684 --> 01:09:35.004
+<v Antonio Cisternino>And so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7321-0
+01:09:36.124 --> 01:09:40.124
+<v Antonio Cisternino>The the types are are loaded. Oh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7329-0
+01:09:44.444 --> 01:09:48.164
+<v Antonio Cisternino>Um, let me stay on this schema now.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7361-0
+01:09:49.804 --> 01:09:54.926
+<v Antonio Cisternino>Because I didn't spend enough time to
+this schema.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7361-1
+01:09:54.926 --> 01:10:02.761
+<v Antonio Cisternino>net as another big difference in Java.
+JVM is does not support the parametric</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7361-2
+01:10:02.761 --> 01:10:03.564
+<v Antonio Cisternino>polygon.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7369-0
+01:10:04.884 --> 01:10:09.564
+<v Antonio Cisternino>So types inside the Java Virtual Machines
+are without parameters.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7374-0
+01:10:11.004 --> 01:10:15.284
+<v Antonio Cisternino>dot net this a different choice.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7397-0
+01:10:17.284 --> 01:10:24.676
+<v Antonio Cisternino>Which is not because they were smarter
+and Java people's number is that Java</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7397-1
+01:10:24.676 --> 01:10:26.884
+<v Antonio Cisternino>started with I without.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7443-0
+01:10:29.204 --> 01:10:34.474
+<v Antonio Cisternino>And by the time people started saying,
+can we have parameters in types and</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7443-1
+01:10:34.474 --> 01:10:39.112
+<v Antonio Cisternino>methods? It was too late.
+There were too many Java Vector machine</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7443-2
+01:10:39.112 --> 01:10:44.030
+<v Antonio Cisternino>installed worldwide to have to replace
+all of that. So Java said, OK,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7443-3
+01:10:44.030 --> 01:10:47.684
+<v Antonio Cisternino>let's find a less impactful
+implementation of Java.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7486-0
+01:10:47.964 --> 01:10:51.340
+<v Antonio Cisternino>.
+net was was released in 2001 and in 2004</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7486-1
+01:10:51.340 --> 01:10:56.443
+<v Antonio Cisternino>they released their net itself.
+The platform was so young it was</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7486-2
+01:10:56.443 --> 01:11:01.076
+<v Antonio Cisternino>completely acceptable to to do the
+extension. OK. In fact,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7486-3
+01:11:01.076 --> 01:11:06.964
+<v Antonio Cisternino>in Java there was an alternative
+implementation made by Robert Cartwright.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7501-0
+01:11:07.164 --> 01:11:14.841
+<v Antonio Cisternino>That was proposed to some ICC statement,
+but eventually they decided to not to go</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7501-1
+01:11:14.841 --> 01:11:15.684
+<v Antonio Cisternino>that way.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7518-0
+01:11:16.804 --> 01:11:24.785
+<v Antonio Cisternino>So here you see the real difference.
+The real difference is that a type</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7518-1
+01:11:24.785 --> 01:11:26.004
+<v Antonio Cisternino>descriptor.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7554-0
+01:11:27.604 --> 01:11:35.480
+<v Antonio Cisternino>Is related to function so param type of
+descriptor type variable descriptor.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7554-1
+01:11:35.480 --> 01:11:42.844
+<v Antonio Cisternino>So this is these are the parameters so at
+runtime if I have stack of T.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7586-0
+01:11:43.644 --> 01:11:48.449
+<v Antonio Cisternino>Then the type descriptor will have T as a
+parameter. OK,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7586-1
+01:11:48.449 --> 01:11:55.108
+<v Antonio Cisternino>so all the reflection data reflects type
+parameters both at the type level and</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7586-2
+01:11:55.108 --> 01:12:00.250
+<v Antonio Cisternino>also at the method level,
+because C# allows also for generic</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7586-3
+01:12:00.250 --> 01:12:00.924
+<v Antonio Cisternino>methods.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7598-0
+01:12:01.484 --> 01:12:10.564
+<v Antonio Cisternino>You can have the parameter also on the
+level of the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7627-0
+01:12:12.844 --> 01:12:21.192
+<v Antonio Cisternino>Of course there are also the array type,
+these people because arrays are treated</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7627-1
+01:12:21.192 --> 01:12:27.684
+<v Antonio Cisternino>natively and so you have also that and
+last but not least.net.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7640-0
+01:12:28.324 --> 01:12:36.444
+<v Antonio Cisternino>Type system has also another feature
+which is known as delegate.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7644-0
+01:12:39.324 --> 01:12:41.604
+<v Antonio Cisternino>Have you ever heard this?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7673-0
+01:12:44.204 --> 01:12:53.718
+<v Antonio Cisternino>So a delegator is a very simple thing,
+very powerful. It was the first attempt.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7673-1
+01:12:53.718 --> 01:12:57.524
+<v Antonio Cisternino>It's by now it's even different.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7676-0
+01:12:58.004 --> 01:13:01.044
+<v Antonio Cisternino>Difficult to explain this display.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7684-0
+01:13:03.284 --> 01:13:06.484
+<v Antonio Cisternino>Oh, gateway timeout is not nice.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7688-0
+01:13:11.644 --> 01:13:11.804
+<v Antonio Cisternino>Oh, OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7690-0
+01:13:18.644 --> 01:13:18.884
+<v Antonio Cisternino>Huh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7693-0
+01:13:26.164 --> 01:13:26.964
+<v Antonio Cisternino>I'm late.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7695-0
+01:13:28.604 --> 01:13:28.804
+<v Antonio Cisternino>Um.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7706-0
+01:13:32.884 --> 01:13:38.644
+<v Antonio Cisternino>Here we are. OK,
+can you show me an example?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7712-0
+01:13:40.084 --> 01:13:44.644
+<v Antonio Cisternino>Of delegate creation and.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7729-0
+01:13:46.204 --> 01:13:54.564
+<v Antonio Cisternino>Used in C#. So to explain delegates,
+perhaps the best and easiest way is to.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7736-0
+01:13:58.604 --> 01:14:03.684
+<v Antonio Cisternino>To use a an example so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7774-0
+01:14:07.324 --> 01:14:10.477
+<v Antonio Cisternino>Hey,
+we're so used to Lambda pass a single</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7774-1
+01:14:10.477 --> 01:14:16.564
+<v Antonio Cisternino>function as an argument that that is even
+difficult to understand why the same was</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7774-2
+01:14:16.564 --> 01:14:20.671
+<v Antonio Cisternino>revolutionary when they did,
+but if we go back in time,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7774-3
+01:14:20.671 --> 01:14:21.844
+<v Antonio Cisternino>Java was having.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7775-0
+01:14:23.124 --> 01:14:24.204
+<v Antonio Cisternino>Pure uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7811-0
+01:14:25.164 --> 01:14:29.498
+<v Antonio Cisternino>Inheritance approach.
+So basically class and interface,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7811-1
+01:14:29.498 --> 01:14:33.213
+<v Antonio Cisternino>that's it.
+So if I needed to pass a function to</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7811-2
+01:14:33.213 --> 01:14:37.624
+<v Antonio Cisternino>another method,
+the only option we were left with was to</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7811-3
+01:14:37.624 --> 01:14:39.404
+<v Antonio Cisternino>implement an interface.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7814-0
+01:14:41.204 --> 01:14:45.084
+<v Antonio Cisternino>OK, so to pass.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7815-0
+01:14:46.124 --> 01:14:46.164
+<v Antonio Cisternino>Uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7865-0
+01:14:48.044 --> 01:14:53.476
+<v Antonio Cisternino>As I don't know,
+an action to a button in the UI to be</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7865-1
+01:14:53.476 --> 01:15:00.883
+<v Antonio Cisternino>involved in when once the button is
+pressed required you to implement some</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7865-2
+01:15:00.883 --> 01:15:05.821
+<v Antonio Cisternino>interface.
+The interface is OK interface with the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7865-3
+01:15:05.821 --> 01:15:07.204
+<v Antonio Cisternino>single method.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7899-0
+01:15:07.244 --> 01:15:12.076
+<v Antonio Cisternino>I don't know in action argument. OK,
+it's OK,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7899-1
+01:15:12.076 --> 01:15:19.953
+<v Antonio Cisternino>but what is the the limit that the type
+has a name if I took two different</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7899-2
+01:15:19.953 --> 01:15:23.524
+<v Antonio Cisternino>interface with the same signature?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7909-0
+01:15:24.204 --> 01:15:28.444
+<v Antonio Cisternino>Those were two different interfaces
+because they have a different name.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7941-0
+01:15:30.204 --> 01:15:40.936
+<v Antonio Cisternino>In C when you have a a a function pointer
+of type in the and in return that is the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7941-1
+01:15:40.936 --> 01:15:46.884
+<v Antonio Cisternino>name.
+I don't have a adding so if I pass any.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7980-0
+01:15:47.164 --> 01:15:55.092
+<v Antonio Cisternino>Function pointer of a function and takes
+it and returns it. OK,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7980-1
+01:15:55.092 --> 01:16:05.373
+<v Antonio Cisternino>so the inheritance type system allows you
+to have some sort of high order function</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/7980-2
+01:16:05.373 --> 01:16:06.364
+<v Antonio Cisternino>passing.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8013-0
+01:16:06.604 --> 01:16:13.417
+<v Antonio Cisternino>But with this limit that is bound to the
+you have to create and so there was a lot</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8013-1
+01:16:13.417 --> 01:16:19.574
+<v Antonio Cisternino>of extra code to be written in the
+especially in the context of the UI and</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8013-2
+01:16:19.574 --> 01:16:23.924
+<v Antonio Cisternino>the web that were main application user
+at the time.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8050-0
+01:16:25.124 --> 01:16:32.402
+<v Antonio Cisternino>And so.net came up with this idea. OK,
+let's introduce the delegate type.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8050-1
+01:16:32.402 --> 01:16:39.975
+<v Antonio Cisternino>The delegate type is like the type say
+version of the function point of C So</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8050-2
+01:16:39.975 --> 01:16:41.844
+<v Antonio Cisternino>this delegate type.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8073-0
+01:16:42.284 --> 01:16:50.640
+<v Antonio Cisternino>That we call math operation is something
+that takes 2 integer and returns one</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8073-1
+01:16:50.640 --> 01:16:55.567
+<v Antonio Cisternino>integer. OK,
+so any method that supports that</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8073-2
+01:16:55.567 --> 01:16:57.924
+<v Antonio Cisternino>signature to me is OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8074-0
+01:17:00.524 --> 01:17:00.684
+<v Antonio Cisternino>What?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8076-0
+01:17:02.004 --> 01:17:03.764
+<v Antonio Cisternino>Uh, now.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8095-0
+01:17:07.604 --> 01:17:18.484
+<v Antonio Cisternino>In this case I have a static which is OK,
+so add is A + B multiply A * B.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8123-0
+01:17:20.044 --> 01:17:27.987
+<v Antonio Cisternino>So math operation of OP1 is equal add.
+So basically add is a method with the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8123-1
+01:17:27.987 --> 01:17:33.764
+<v Antonio Cisternino>right signature so you can create a
+delegate out of it.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8139-0
+01:17:35.164 --> 01:17:39.203
+<v Antonio Cisternino>Multiply.
+You can do the same and then you can</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8139-1
+01:17:39.203 --> 01:17:44.444
+<v Antonio Cisternino>write line and see the difference and
+everything works fine.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8146-0
+01:17:49.404 --> 01:17:50.724
+<v Antonio Cisternino>Um delegate supports also.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8193-0
+01:17:53.244 --> 01:17:57.649
+<v Antonio Cisternino>Multicast. This is useful, for instance,
+for events.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8193-1
+01:17:57.649 --> 01:18:02.801
+<v Antonio Cisternino>So when you add some of delegates,
+in fact you're not adding.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8193-2
+01:18:02.801 --> 01:18:09.284
+<v Antonio Cisternino>You basically create a list of function
+pointers. So if I invoke the compile,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8193-3
+01:18:09.284 --> 01:18:10.364
+<v Antonio Cisternino>the combined.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8220-0
+01:18:10.844 --> 01:18:16.132
+<v Antonio Cisternino>All the methods in the in the list will
+be invoked.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8220-1
+01:18:16.132 --> 01:18:20.810
+<v Antonio Cisternino>So there is a for each hidden down there.
+OK,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8220-2
+01:18:20.810 --> 01:18:25.284
+<v Antonio Cisternino>now here we are considering static
+methods.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8224-0
+01:18:26.404 --> 01:18:29.804
+<v Antonio Cisternino>This will work also with the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8276-0
+01:18:31.364 --> 01:18:36.690
+<v Antonio Cisternino>Instance. So the delegatedin.
+net is not just the function point,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8276-1
+01:18:36.690 --> 01:18:40.885
+<v Antonio Cisternino>it's a pair.
+It's a pair in which you have the this</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8276-2
+01:18:40.885 --> 01:18:47.583
+<v Antonio Cisternino>pointer because an instance matter to be
+invoked requires to know the reference to</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8276-3
+01:18:47.583 --> 01:18:50.084
+<v Antonio Cisternino>the instance of the object. OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8296-0
+01:18:50.764 --> 01:18:56.288
+<v Antonio Cisternino>So it's a pair. One is the this pointer.
+If the method is starting,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8296-1
+01:18:56.288 --> 01:19:02.461
+<v Antonio Cisternino>that pointer will be null or and and
+sorry the function that the pointer to</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8296-2
+01:19:02.461 --> 01:19:04.004
+<v Antonio Cisternino>the method. OK, so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8323-0
+01:19:04.844 --> 01:19:14.524
+<v Antonio Cisternino>This reflects to the this function
+pointer. OK, so in.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8323-1
+01:19:14.524 --> 01:19:20.684
+<v Antonio Cisternino>net you have value types delegates.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8328-0
+01:19:21.004 --> 01:19:24.684
+<v Antonio Cisternino>Pointers and.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8357-0
+01:19:26.084 --> 01:19:32.199
+<v Antonio Cisternino>Parametric types.
+And so the description used by the type</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8357-1
+01:19:32.199 --> 01:19:39.157
+<v Antonio Cisternino>loader are more complicated. Oh,
+now I don't think I want to. Oh,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8357-2
+01:19:39.157 --> 01:19:40.844
+<v Antonio Cisternino>there is a yeah.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8370-0
+01:19:43.004 --> 01:19:52.484
+<v Antonio Cisternino>You see the EE class is the cold data.
+The meta table is hot data. OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8375-0
+01:19:53.724 --> 01:19:56.604
+<v Antonio Cisternino>And uh, and that's it. Uh, well.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8412-0
+01:20:00.604 --> 01:20:04.165
+<v Antonio Cisternino>And this is what happens when you have
+generics,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8412-1
+01:20:04.165 --> 01:20:08.235
+<v Antonio Cisternino>which becomes much more complicated,
+of course. I mean,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8412-2
+01:20:08.235 --> 01:20:12.232
+<v Antonio Cisternino>it's not more complicated concept.
+It's just trickier.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8412-3
+01:20:12.232 --> 01:20:16.084
+<v Antonio Cisternino>You have more code to write,
+more cases to consider.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8420-0
+01:20:16.524 --> 01:20:21.324
+<v Antonio Cisternino>And type descriptor are complicated
+because.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8461-0
+01:20:22.764 --> 01:20:28.901
+<v Antonio Cisternino>You don't want to generate a EE class for
+every sensation of the time because that</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8461-1
+01:20:28.901 --> 01:20:33.337
+<v Antonio Cisternino>will cost too much.
+So there are a lot of optimization that</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8461-2
+01:20:33.337 --> 01:20:37.477
+<v Antonio Cisternino>are possible.
+That's really tricky and beyond the scope</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8461-3
+01:20:37.477 --> 01:20:40.804
+<v Antonio Cisternino>of this class.
+How much time have been left?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8465-0
+01:20:41.164 --> 01:20:44.804
+<v Antonio Cisternino>Reasonably an author to.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8493-0
+01:20:46.004 --> 01:20:52.624
+<v Antonio Cisternino>Have a one final look.
+This is a very overview of the threads.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8493-1
+01:20:52.624 --> 01:21:00.084
+<v Antonio Cisternino>Threads are are interesting objects.
+Thread were were made popular by.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8511-0
+01:21:01.004 --> 01:21:10.329
+<v Antonio Cisternino>Job. Excellent.
+Brands were introduced by operating</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8511-1
+01:21:10.329 --> 01:21:11.764
+<v Antonio Cisternino>systems.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8544-0
+01:21:13.084 --> 01:21:17.376
+<v Antonio Cisternino>In the in the 90s,
+but the the habit was to use some</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8544-1
+01:21:17.376 --> 01:21:24.178
+<v Antonio Cisternino>external library to support threading. OK,
+so having a representation of the motion</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8544-2
+01:21:24.178 --> 01:21:29.604
+<v Antonio Cisternino>of thread inside the execution
+environment that was Java at first.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8558-0
+01:21:29.764 --> 01:21:37.684
+<v Antonio Cisternino>Threads are an instance of very important
+concept in programming.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8568-0
+01:21:39.324 --> 01:21:46.124
+<v Antonio Cisternino>So you you entered it because they said
+very important. That's it's also waiting.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8583-0
+01:21:46.924 --> 01:21:55.004
+<v Antonio Cisternino>Threads.
+So in as in Java we have a class thread.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8628-0
+01:21:56.764 --> 01:22:04.205
+<v Antonio Cisternino>But that is a trick that has become these
+days so popular that we don't even notice</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8628-1
+01:22:04.205 --> 01:22:11.292
+<v Antonio Cisternino>anymore. The thread is not just a class.
+Red is the representation of an active</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8628-2
+01:22:11.292 --> 01:22:16.164
+<v Antonio Cisternino>part of the operating system.
+The thread class is not.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8679-0
+01:22:16.524 --> 01:22:21.616
+<v Antonio Cisternino>Do any other pass into the runtime
+because it's not just data,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8679-1
+01:22:21.616 --> 01:22:25.577
+<v Antonio Cisternino>it represents an executable entity that
+you use,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8679-2
+01:22:25.577 --> 01:22:30.023
+<v Antonio Cisternino>you create and which has a behavior that
+is different.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8679-3
+01:22:30.023 --> 01:22:36.004
+<v Antonio Cisternino>So you can instantiate as many strings
+and you're just allocating on the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8704-0
+01:22:36.124 --> 01:22:41.168
+<v Antonio Cisternino>If you allocate you say new thread and
+you you start it,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8704-1
+01:22:41.168 --> 01:22:46.742
+<v Antonio Cisternino>you have a completely different dynamics
+in the executive. OK,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8704-2
+01:22:46.742 --> 01:22:50.724
+<v Antonio Cisternino>so threads are important because on one
+end.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8734-0
+01:22:51.244 --> 01:22:58.300
+<v Antonio Cisternino>The the threads sometimes have to
+interact with the runtime. Why?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8734-1
+01:22:58.300 --> 01:23:04.822
+<v Antonio Cisternino>There is collection.
+You can't let a thread run and you know</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8734-2
+01:23:04.822 --> 01:23:08.564
+<v Antonio Cisternino>right into the memory while you're.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8772-0
+01:23:09.644 --> 01:23:16.591
+<v Antonio Cisternino>Remaining points around.
+So threats in fact are in the in the when</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8772-1
+01:23:16.591 --> 01:23:24.990
+<v Antonio Cisternino>they call them managed threats which are
+system threat plus the ability to spend</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8772-2
+01:23:24.990 --> 01:23:28.204
+<v Antonio Cisternino>its execution at certain point.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8776-0
+01:23:28.604 --> 01:23:32.084
+<v Antonio Cisternino>Because that is required by the damage
+collection.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8806-0
+01:23:33.764 --> 01:23:39.327
+<v Antonio Cisternino>And a data which represents the thread in
+terms of an object.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8806-1
+01:23:39.327 --> 01:23:46.055
+<v Antonio Cisternino>So basically we created a sort of
+imposter that represents a runtime pair,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8806-2
+01:23:46.055 --> 01:23:49.644
+<v Antonio Cisternino>you know with a runtime object which is.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8813-0
+01:23:49.724 --> 01:23:54.084
+<v Antonio Cisternino>The um, that's right. This is uh uh uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8847-0
+01:23:57.244 --> 01:24:06.538
+<v Antonio Cisternino>True for threads, it is true for Windows,
+it is true for files and many other</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8847-1
+01:24:06.538 --> 01:24:12.138
+<v Antonio Cisternino>objects.
+And so nowadays it is quite common to</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8847-2
+01:24:12.138 --> 01:24:14.044
+<v Antonio Cisternino>expose elements.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8893-0
+01:24:14.124 --> 01:24:21.486
+<v Antonio Cisternino>That are not properly just data.
+They have some behavior to map styles and</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8893-1
+01:24:21.486 --> 01:24:27.671
+<v Antonio Cisternino>objects, element of the machine,
+whether that is a GPU, a CPU,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8893-2
+01:24:27.671 --> 01:24:33.364
+<v Antonio Cisternino>a thread and some other thing,
+everything gets converted.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8924-0
+01:24:33.964 --> 01:24:40.293
+<v Antonio Cisternino>In a type of system into a type so that
+as a programmer you don't have to resort</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8924-1
+01:24:40.293 --> 01:24:45.294
+<v Antonio Cisternino>to external libraries.
+So this is a quite popular pattern and I</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8924-2
+01:24:45.294 --> 01:24:49.044
+<v Antonio Cisternino>think that was a good moment to stress
+this so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8974-0
+01:24:49.324 --> 01:24:55.653
+<v Antonio Cisternino>The thread clearly as supports for the
+synchronization and guess what?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8974-1
+01:24:55.653 --> 01:25:02.605
+<v Antonio Cisternino>The sync block in the object header is
+the same for that is used to implement</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/8974-2
+01:25:02.605 --> 01:25:08.844
+<v Antonio Cisternino>synchronization in threads.
+So you can use any object to synchronize.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9005-0
+01:25:08.884 --> 01:25:14.375
+<v Antonio Cisternino>And that's the reason because you can
+create instances of the object class</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9005-1
+01:25:14.375 --> 01:25:20.232
+<v Antonio Cisternino>because you can use them as a semaphore.
+So if you don't need the extra fields,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9005-2
+01:25:20.232 --> 01:25:23.087
+<v Antonio Cisternino>who cares?
+Because an object is also a</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9005-3
+01:25:23.087 --> 01:25:24.844
+<v Antonio Cisternino>synchronization element.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9036-0
+01:25:28.164 --> 01:25:32.307
+<v Antonio Cisternino>I don't want it to go more in in in
+details.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9036-1
+01:25:32.307 --> 01:25:38.752
+<v Antonio Cisternino>The only thing that I think it's
+interesting is the garbage collector</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9036-2
+01:25:38.752 --> 01:25:43.724
+<v Antonio Cisternino>tries to be as respectful as possible of
+concurrency.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9084-0
+01:25:44.244 --> 01:25:49.417
+<v Antonio Cisternino>So it runs with two modalities.
+In one modality basically suspends all</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9084-1
+01:25:49.417 --> 01:25:52.988
+<v Antonio Cisternino>the threads.
+So there are tricks that allows the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9084-2
+01:25:52.988 --> 01:25:58.671
+<v Antonio Cisternino>threads to be suspended because the the
+managed code is generated by the JIT,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9084-3
+01:25:58.671 --> 01:26:03.844
+<v Antonio Cisternino>so the JIT can insert a specific
+operation to check and stop a thread.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9114-0
+01:26:03.924 --> 01:26:11.273
+<v Antonio Cisternino>Thread from execution and once all the
+threads are suspended then the garbage</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9114-1
+01:26:11.273 --> 01:26:17.491
+<v Antonio Cisternino>collection can operate.
+And of course this stops the full runtime</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9114-2
+01:26:17.491 --> 01:26:19.564
+<v Antonio Cisternino>under some conditions.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9139-0
+01:26:19.684 --> 01:26:26.674
+<v Antonio Cisternino>You can stop only the threads that are
+interested by the objects and the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9139-1
+01:26:26.674 --> 01:26:32.132
+<v Antonio Cisternino>remaining thread can be left executing
+without problems.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9139-2
+01:26:32.132 --> 01:26:35.004
+<v Antonio Cisternino>So and then there are threads.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9181-0
+01:26:35.044 --> 01:26:38.590
+<v Antonio Cisternino>Special threads.
+There is a thread internally that is the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9181-1
+01:26:38.590 --> 01:26:42.258
+<v Antonio Cisternino>finalizer thread,
+which is a thread which is responsible to</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9181-2
+01:26:42.258 --> 01:26:46.904
+<v Antonio Cisternino>finalize the objects and zero the memory.
+That's a special thread that is a</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9181-3
+01:26:46.904 --> 01:26:51.244
+<v Antonio Cisternino>background thread that used.
+There are the garbage collection threads.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9201-0
+01:26:52.964 --> 01:27:00.295
+<v Antonio Cisternino>The debugger thread and uh and the thread
+pool threads uh are all these are special</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9201-1
+01:27:00.295 --> 01:27:02.564
+<v Antonio Cisternino>threads inside the the uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9226-0
+01:27:03.284 --> 01:27:10.012
+<v Antonio Cisternino>Virtual machine. So I will like to spend.
+I'll be 10 minutes late. I'm sorry,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9226-1
+01:27:10.012 --> 01:27:15.445
+<v Antonio Cisternino>but so that I I finished this section,
+so be a little patient.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9226-2
+01:27:15.445 --> 01:27:17.084
+<v Antonio Cisternino>I want to show you.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9233-0
+01:27:19.324 --> 01:27:22.764
+<v Antonio Cisternino>So do you agree that the runtime is not?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9266-0
+01:27:24.604 --> 01:27:30.175
+<v Antonio Cisternino>An easy code base. OK,
+so I forked the runtime.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9266-1
+01:27:30.175 --> 01:27:37.603
+<v Antonio Cisternino>When you fork on GitHub,
+basically you create a new copy of the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9266-2
+01:27:37.603 --> 01:27:38.764
+<v Antonio Cisternino>rebel, OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9306-0
+01:27:40.684 --> 01:27:44.568
+<v Antonio Cisternino>Now I have a.
+net runtime on my GitHub and Codex,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9306-1
+01:27:44.568 --> 01:27:49.229
+<v Antonio Cisternino>which has been launched by a few months
+ago. Unfortunately,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9306-2
+01:27:49.229 --> 01:27:54.044
+<v Antonio Cisternino>it's not free available,
+but it makes sense. As you will see,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9306-3
+01:27:54.044 --> 01:27:59.404
+<v Antonio Cisternino>it costs a lot of resources,
+so it makes sense that you have to pay.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9331-0
+01:27:59.884 --> 01:28:07.314
+<v Antonio Cisternino>The allows you to attach them.
+You can also use the use the open source</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9331-1
+01:28:07.314 --> 01:28:12.473
+<v Antonio Cisternino>version which is cool.
+You can find it on Github.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9331-2
+01:28:12.473 --> 01:28:14.124
+<v Antonio Cisternino>It's called CLI.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9370-0
+01:28:14.964 --> 01:28:20.637
+<v Antonio Cisternino>Recommendation and execute it inside at
+least a container. OK,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9370-1
+01:28:20.637 --> 01:28:27.931
+<v Antonio Cisternino>because some genius lab run and BI which
+execute the common line commands on the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9370-2
+01:28:27.931 --> 01:28:32.884
+<v Antonio Cisternino>laptop and get down into the database
+files, etcetera.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9378-0
+01:28:34.324 --> 01:28:40.364
+<v Antonio Cisternino>Because the in case of allocination,
+it can go very bad. Uh, so uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9412-0
+01:28:43.364 --> 01:28:48.354
+<v Antonio Cisternino>This is correct.
+So I basically attach it to my repo to a</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9412-1
+01:28:48.354 --> 01:28:52.484
+<v Antonio Cisternino>particular branch main of my vehicle the
+thing.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9412-2
+01:28:52.484 --> 01:28:58.764
+<v Antonio Cisternino>And now I can ask question and also ask
+to do bug piece or code changes.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9424-0
+01:28:59.164 --> 01:29:08.124
+<v Antonio Cisternino>That AI will perform.
+So what I'm gonna do now is to.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9426-0
+01:29:10.204 --> 01:29:10.604
+<v Antonio Cisternino>Ask uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9433-0
+01:29:12.924 --> 01:29:17.644
+<v Antonio Cisternino>A question about so how?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9434-0
+01:29:19.804 --> 01:29:19.884
+<v Antonio Cisternino>Uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9435-0
+01:29:21.444 --> 01:29:21.484
+<v Antonio Cisternino>Oh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9437-0
+01:29:23.884 --> 01:29:24.044
+<v Antonio Cisternino>Um.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9439-0
+01:29:26.724 --> 01:29:27.004
+<v Antonio Cisternino>Hmm.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9446-0
+01:29:34.644 --> 01:29:38.124
+<v Antonio Cisternino>Let me first start so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9450-0
+01:29:40.844 --> 01:29:46.564
+<v Antonio Cisternino>Um, does the GC uh?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9456-0
+01:29:48.284 --> 01:29:49.684
+<v Antonio Cisternino>Stops all the threads.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9459-0
+01:29:53.084 --> 01:29:54.444
+<v Antonio Cisternino>To operate.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9467-0
+01:29:57.964 --> 01:30:01.364
+<v Antonio Cisternino>OK, so that's my question to the AI.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9501-0
+01:30:03.804 --> 01:30:09.502
+<v Antonio Cisternino>So now this is an agent. OK,
+what does it mean by the fact that this</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9501-1
+01:30:09.502 --> 01:30:15.529
+<v Antonio Cisternino>is an agent? This is a background task.
+It may run for minutes. In fact,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9501-2
+01:30:15.529 --> 01:30:17.924
+<v Antonio Cisternino>if I look at what's going on.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9528-0
+01:30:20.124 --> 01:30:25.245
+<v Antonio Cisternino>Actually a container gets allocated in
+the cloud.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9528-1
+01:30:25.245 --> 01:30:32.516
+<v Antonio Cisternino>The system perform a pool of the of the
+repo of course since I have an</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9528-2
+01:30:32.516 --> 01:30:34.564
+<v Antonio Cisternino>environment the the.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9556-0
+01:30:34.644 --> 01:30:39.736
+<v Antonio Cisternino>The the container has been already
+populated,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9556-1
+01:30:39.736 --> 01:30:48.480
+<v Antonio Cisternino>but nevertheless the system will do a
+pull in case it does change it and after</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9556-2
+01:30:48.480 --> 01:30:50.804
+<v Antonio Cisternino>this if we are lucky.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9590-0
+01:30:51.404 --> 01:30:58.273
+<v Antonio Cisternino>And I I can get enough GPU in a
+reasonable amount of time.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9590-1
+01:30:58.273 --> 01:31:06.189
+<v Antonio Cisternino>You will see the AI that will start
+browsing the code by using SAD.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9590-2
+01:31:06.189 --> 01:31:08.284
+<v Antonio Cisternino>SAD is a very old.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9619-0
+01:31:08.564 --> 01:31:16.088
+<v Antonio Cisternino>Tool from the 70s. It's a Linux tool,
+so basically the AI and all the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9619-1
+01:31:16.088 --> 01:31:24.364
+<v Antonio Cisternino>algorithms that orchestrate the problems.
+I use it to analyze the code base.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9650-0
+01:31:24.724 --> 01:31:30.698
+<v Antonio Cisternino>Not just by having everything in the
+context of the model,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9650-1
+01:31:30.698 --> 01:31:35.963
+<v Antonio Cisternino>but perhaps they use the read, analyze,
+read again.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9650-2
+01:31:35.963 --> 01:31:40.924
+<v Antonio Cisternino>So basically the loop is let's read on
+the file.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9676-0
+01:31:41.444 --> 01:31:48.898
+<v Antonio Cisternino>Find the read me and understand,
+summarize, remix, etc. There we are.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9676-1
+01:31:48.898 --> 01:31:56.564
+<v Antonio Cisternino>Actually you can even configure runtimes
+and actually you can even run.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9691-0
+01:31:56.884 --> 01:32:05.084
+<v Antonio Cisternino>Unique test so that you can check that
+proposed changes are sound and.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9722-0
+01:32:06.884 --> 01:32:11.202
+<v Antonio Cisternino>OK, oh,
+probably my previous container has been</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9722-1
+01:32:11.202 --> 01:32:15.429
+<v Antonio Cisternino>ditched,
+so it's rebuilding the container from</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9722-2
+01:32:15.429 --> 01:32:19.747
+<v Antonio Cisternino>scratch.
+In a short time it will be possible to</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9722-3
+01:32:19.747 --> 01:32:23.884
+<v Antonio Cisternino>create your own container for for these
+days.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9725-0
+01:32:24.444 --> 01:32:26.844
+<v Antonio Cisternino>Uh, and so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9763-0
+01:32:29.124 --> 01:32:36.355
+<v Antonio Cisternino>Some pointer. Yeah,
+actually that's the default image.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9763-1
+01:32:36.355 --> 01:32:45.164
+<v Antonio Cisternino>That's the default image of the which
+supports Go, Swift and Rust.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9799-0
+01:32:45.524 --> 01:32:49.218
+<v Antonio Cisternino>So if you ever ask code it's already
+there,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9799-1
+01:32:49.218 --> 01:32:55.935
+<v Antonio Cisternino>you can inject your share comments and
+install any other things and then I hope</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9799-2
+01:32:55.935 --> 01:33:00.217
+<v Antonio Cisternino>it will.
+Otherwise I have a copy so I already need</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9799-3
+01:33:00.217 --> 01:33:02.484
+<v Antonio Cisternino>this kind of experiment so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9814-0
+01:33:02.804 --> 01:33:08.593
+<v Antonio Cisternino>I can reset,
+but it's pretty impressive to see it at</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9814-1
+01:33:08.593 --> 01:33:11.324
+<v Antonio Cisternino>work and it's impressive.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9818-0
+01:33:12.604 --> 01:33:14.924
+<v Antonio Cisternino>No installation were erformed.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9851-0
+01:33:18.604 --> 01:33:23.365
+<v Antonio Cisternino>LS OK,
+so as you can see now the eye is acting,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9851-1
+01:33:23.365 --> 01:33:28.224
+<v Antonio Cisternino>so it's not just using information in the
+model,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9851-2
+01:33:28.224 --> 01:33:33.084
+<v Antonio Cisternino>but actually it's issuing comments to the
+shell.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9897-0
+01:33:33.524 --> 01:33:40.356
+<v Antonio Cisternino>Reading the out of the common deciding
+the next section and then keeps going</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9897-1
+01:33:40.356 --> 01:33:46.212
+<v Antonio Cisternino>until she's reasonably convinced that
+producing the right answer.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9897-2
+01:33:46.212 --> 01:33:53.044
+<v Antonio Cisternino>And what is impressive that in minutes
+you will get incredible answers from.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9923-0
+01:33:53.124 --> 01:33:59.774
+<v Antonio Cisternino>These things which is able to make a
+sense of a very large and complicated</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9923-1
+01:33:59.774 --> 01:34:06.424
+<v Antonio Cisternino>codebase giving you both the details.
+So where there are the lines of code</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9923-2
+01:34:06.424 --> 01:34:09.084
+<v Antonio Cisternino>which answer to your question.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9929-0
+01:34:09.804 --> 01:34:14.204
+<v Antonio Cisternino>But also an overview so you can pose of.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9930-0
+01:34:15.404 --> 01:34:15.444
+<v Antonio Cisternino>Uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9988-0
+01:34:18.444 --> 01:34:21.833
+<v Antonio Cisternino>In Workstation,
+I said it here without conclusion,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9988-1
+01:34:21.833 --> 01:34:27.347
+<v Antonio Cisternino>the connector suspend all managed thread
+calling suspend EE before it runs through</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9988-2
+01:34:27.347 --> 01:34:32.795
+<v Antonio Cisternino>the collection phases and only resumes
+when restart E after the work is complete.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/9988-3
+01:34:32.795 --> 01:34:38.044
+<v Antonio Cisternino>That is the classic stop the work poster
+where no managed threads can execute.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10013-0
+01:34:38.204 --> 01:34:46.191
+<v Antonio Cisternino>What she runs and of course you have
+where this information is coming from and</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10013-1
+01:34:46.191 --> 01:34:54.481
+<v Antonio Cisternino>actually he found she found information
+in the book of the runtime and so clearly</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10013-2
+01:34:54.481 --> 01:34:56.604
+<v Antonio Cisternino>she used information.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10058-0
+01:34:56.964 --> 01:35:00.978
+<v Antonio Cisternino>And when concurrent background GC is
+enabled,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10058-1
+01:35:00.978 --> 01:35:06.301
+<v Antonio Cisternino>so we learned that the runtime can use
+the GC in both modes,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10058-2
+01:35:06.301 --> 01:35:11.536
+<v Antonio Cisternino>which is the default for the workstation
+garbage collector.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10058-3
+01:35:11.536 --> 01:35:16.684
+<v Antonio Cisternino>The runtime still performs shortstop the
+worst suspension.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10107-0
+01:35:16.804 --> 01:35:20.195
+<v Antonio Cisternino>To start and finish the background
+collection.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10107-1
+01:35:20.195 --> 01:35:25.173
+<v Antonio Cisternino>But most of the marking as weeping
+happens on the background garbage</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10107-2
+01:35:25.173 --> 01:35:30.657
+<v Antonio Cisternino>collector thread while other managed
+threads keep allocating and executing.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10107-3
+01:35:30.657 --> 01:35:36.284
+<v Antonio Cisternino>So basically they have two implementation,
+one is thread safe and is able to.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10154-0
+01:35:36.324 --> 01:35:40.122
+<v Antonio Cisternino>In background,
+but of course you have to briefly suspend</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10154-1
+01:35:40.122 --> 01:35:45.584
+<v Antonio Cisternino>everything before starting the macro base
+because you have to say oh you have I'm</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10154-2
+01:35:45.584 --> 01:35:50.581
+<v Antonio Cisternino>doing the collection where and so the the
+the the managed code will change</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10154-3
+01:35:50.581 --> 01:35:55.844
+<v Antonio Cisternino>behaviour to cooperate with the garbage
+collector until it would be a problem.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10179-0
+01:35:55.964 --> 01:36:08.435
+<v Antonio Cisternino>And also this has been extracted.
+So I can also ask for can you show me</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10179-1
+01:36:08.435 --> 01:36:14.324
+<v Antonio Cisternino>where the right barrier of the GC?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10187-0
+01:36:14.524 --> 01:36:24.004
+<v Antonio Cisternino>Gets updated when a reference is set.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10228-0
+01:36:32.684 --> 01:36:37.623
+<v Antonio Cisternino>OK,
+now should be much quicker because the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10228-1
+01:36:37.623 --> 01:36:42.792
+<v Antonio Cisternino>container is already allocated,
+as you said,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10228-2
+01:36:42.792 --> 01:36:49.684
+<v Antonio Cisternino>but by doing that we're not actually
+learning how to do it.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10256-0
+01:36:49.764 --> 01:36:58.220
+<v Antonio Cisternino>That's correct. That's correct. In fact,
+I mean not entirely because in the second</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10256-1
+01:36:58.220 --> 01:37:05.352
+<v Antonio Cisternino>part of the course we will start to do
+some practice on how we use AI</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10256-2
+01:37:05.352 --> 01:37:07.084
+<v Antonio Cisternino>programming here.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10298-0
+01:37:07.524 --> 01:37:15.185
+<v Antonio Cisternino>And and it's not entirely correct.
+Basically if you say write me this if you</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10298-1
+01:37:15.185 --> 01:37:20.258
+<v Antonio Cisternino>write OK,
+then you have to review the pull request</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10298-2
+01:37:20.258 --> 01:37:25.133
+<v Antonio Cisternino>anyway.
+But in this way you can get a comment of</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10298-3
+01:37:25.133 --> 01:37:26.924
+<v Antonio Cisternino>the full code and.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10346-0
+01:37:27.204 --> 01:37:30.655
+<v Antonio Cisternino>In the AI,
+the most important part is the if you</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10346-1
+01:37:30.655 --> 01:37:35.234
+<v Antonio Cisternino>pose a stupid question,
+we get a stupid answer and and so that's</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10346-2
+01:37:35.234 --> 01:37:40.446
+<v Antonio Cisternino>the reason because as part of the
+assignment we will expect you to attach</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10346-3
+01:37:40.446 --> 01:37:46.010
+<v Antonio Cisternino>the question you pose to the system and I
+will double check the output because</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10346-4
+01:37:46.010 --> 01:37:46.644
+<v Antonio Cisternino>actually.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10380-0
+01:37:47.204 --> 01:37:53.141
+<v Antonio Cisternino>That is the important part.
+Then here as you can I I hope,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10380-1
+01:37:53.141 --> 01:38:00.890
+<v Antonio Cisternino>but I'm pretty sure so now MD 64 the
+helper that executes when the jit meets</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10380-2
+01:38:00.890 --> 01:38:03.204
+<v Antonio Cisternino>and it checks variance.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10417-0
+01:38:03.764 --> 01:38:12.253
+<v Antonio Cisternino>You see there is write barrier dot S is
+an assembly file so they have some</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10417-1
+01:38:12.253 --> 01:38:20.855
+<v Antonio Cisternino>assembly and here I I got the code.
+So actually this kind of implementation</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10417-2
+01:38:20.855 --> 01:38:23.684
+<v Antonio Cisternino>honestly is for software.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10463-0
+01:38:23.684 --> 01:38:29.789
+<v Antonio Cisternino>The block and then this would not be the
+last time we'll see this content stuff</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10463-1
+01:38:29.789 --> 01:38:35.130
+<v Antonio Cisternino>because this is going in production right
+now in a lot of conference.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10463-2
+01:38:35.130 --> 01:38:41.235
+<v Antonio Cisternino>So the developer is can you implement the
+and the end you get do you want me to</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10463-3
+01:38:41.235 --> 01:38:43.524
+<v Antonio Cisternino>create a new request for this?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10467-0
+01:38:43.524 --> 01:38:46.444
+<v Antonio Cisternino>We'll go to the You look at it, yes.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10500-0
+01:38:47.524 --> 01:38:55.693
+<v Antonio Cisternino>I worked with some quite big open source
+and the hard part is actually the fine</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10500-1
+01:38:55.693 --> 01:39:03.964
+<v Antonio Cisternino>stuff and if you do it by that you do not
+learn how to find stuff. I want to be.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10540-0
+01:39:04.164 --> 01:39:11.774
+<v Antonio Cisternino>I mean you gave like like my grandpa.
+I mean I agree my grandpa said that if we</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10540-1
+01:39:11.774 --> 01:39:19.289
+<v Antonio Cisternino>use calculator we will have lost the
+ability to make computations mathematical</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10540-2
+01:39:19.289 --> 01:39:23.284
+<v Antonio Cisternino>calculation by hand, which is partly true.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10583-0
+01:39:23.364 --> 01:39:29.477
+<v Antonio Cisternino>So clearly it is different.
+I mean it's clearly valuable because it</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10583-1
+01:39:29.477 --> 01:39:36.309
+<v Antonio Cisternino>allows to jumpstart work at a speed at
+which would be impossible otherwise.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10583-2
+01:39:36.309 --> 01:39:40.444
+<v Antonio Cisternino>But if you look at the question I just
+posed.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10632-0
+01:39:40.804 --> 01:39:45.981
+<v Antonio Cisternino>I mean that's not a question that tell me
+what this thing is about. I said OK,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10632-1
+01:39:45.981 --> 01:39:48.995
+<v Antonio Cisternino>I know that there is a right barrier.
+I know.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10632-2
+01:39:48.995 --> 01:39:53.255
+<v Antonio Cisternino>Please can you help me find a relevant
+place in the culture? OK.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10632-3
+01:39:53.255 --> 01:39:58.104
+<v Antonio Cisternino>So again it's it's not a tool is how you
+used to to get the value. So no,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10632-4
+01:39:58.104 --> 01:40:00.004
+<v Antonio Cisternino>I don't think that if you're.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10658-0
+01:40:00.084 --> 01:40:04.244
+<v Antonio Cisternino>A a non a reasonable programmer.
+Basically,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10658-1
+01:40:04.244 --> 01:40:11.713
+<v Antonio Cisternino>it's basically useless to do these things.
+If you are a reasonable programmer,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10658-2
+01:40:11.713 --> 01:40:15.684
+<v Antonio Cisternino>you can pose the right questions, but you.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10701-0
+01:40:15.684 --> 01:40:21.721
+<v Antonio Cisternino>Should be an advanced program to be able
+to read the answer. Yes, exactly.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10701-1
+01:40:21.721 --> 01:40:26.149
+<v Antonio Cisternino>As you said,
+you you made a very because you know what</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10701-2
+01:40:26.149 --> 01:40:32.589
+<v Antonio Cisternino>the GCEs and where you can find to be
+partially already know the answer and you</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10701-3
+01:40:32.589 --> 01:40:35.084
+<v Antonio Cisternino>already know about the finding.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10707-0
+01:40:35.684 --> 01:40:40.164
+<v Antonio Cisternino>That's the one we. Oh, yeah. Oh,
+I mean that.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10721-0
+01:40:41.364 --> 01:40:48.022
+<v Antonio Cisternino>I can say,
+can you give me an overview of the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10721-1
+01:40:48.022 --> 01:40:49.324
+<v Antonio Cisternino>security?</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10726-0
+01:40:51.084 --> 01:40:55.244
+<v Antonio Cisternino>Issues uh in uh coding.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10756-0
+01:40:59.524 --> 01:41:04.047
+<v Antonio Cisternino>And you can get a full security view on
+the runtime.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10756-1
+01:41:04.047 --> 01:41:10.959
+<v Antonio Cisternino>I don't know what will come out of all of
+these and how long will take something</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10756-2
+01:41:10.959 --> 01:41:13.604
+<v Antonio Cisternino>that I'm not going to keep you.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10790-0
+01:41:14.564 --> 01:41:20.399
+<v Antonio Cisternino>But nevertheless, yes, I agree,
+but that's the way it it works.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10790-1
+01:41:20.399 --> 01:41:25.960
+<v Antonio Cisternino>I mean from the AI,
+it's not just the the code that you type</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10790-2
+01:41:25.960 --> 01:41:28.604
+<v Antonio Cisternino>in or you paste it in GPT or.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10802-0
+01:41:31.124 --> 01:41:37.279
+<v Antonio Cisternino>Uh, others said to get the answer. Uh.
+Now this the system.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10802-1
+01:41:37.279 --> 01:41:39.844
+<v Antonio Cisternino>This is true for this Uh.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10827-0
+01:41:40.724 --> 01:41:50.046
+<v Antonio Cisternino>Large comp IT company in Giza,
+so not in New York or in California.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10827-1
+01:41:50.046 --> 01:41:55.804
+<v Antonio Cisternino>Is is using a code generator from traffic.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10856-0
+01:41:56.284 --> 01:42:00.429
+<v Antonio Cisternino>Which is a similar support.
+So it is what it is,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10856-1
+01:42:00.429 --> 01:42:06.942
+<v Antonio Cisternino>but the reality is that the word is
+already on that page and clearly it's an</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10856-2
+01:42:06.942 --> 01:42:11.764
+<v Antonio Cisternino>unfair battle if you pretend that OK,
+so as you can see.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10899-0
+01:42:12.244 --> 01:42:17.144
+<v Antonio Cisternino>We we got algorithmic complexity attacks
+on collection.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10899-1
+01:42:17.144 --> 01:42:23.357
+<v Antonio Cisternino>Untrusted keys can be the level
+deliberately trigger hash collision or</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10899-2
+01:42:23.357 --> 01:42:30.707
+<v Antonio Cisternino>worst case bucket behaviour in dictionary
+and so on really that that that those are</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10899-3
+01:42:30.707 --> 01:42:31.844
+<v Antonio Cisternino>not that big.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10903-0
+01:42:31.844 --> 01:42:35.644
+<v Antonio Cisternino>They are, but I mean not.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10933-0
+01:42:37.604 --> 01:42:44.713
+<v Antonio Cisternino>Compiler, Azure, etcetera, etcetera.
+I mean that's that's an example and</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10933-1
+01:42:44.713 --> 01:42:51.335
+<v Antonio Cisternino>perhaps it's not complete.
+But nevertheless I I thought it was will</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10933-2
+01:42:51.335 --> 01:42:53.964
+<v Antonio Cisternino>be interesting to show you.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10969-0
+01:42:54.564 --> 01:43:01.510
+<v Antonio Cisternino>Where from the programming standpoint the
+I is is not just copilot inside Visual</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10969-1
+01:43:01.510 --> 01:43:06.226
+<v Antonio Cisternino>Studio code that helps you write the
+single line code.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/10969-2
+01:43:06.226 --> 01:43:09.484
+<v Antonio Cisternino>Currently we are able to get debugger.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11002-0
+01:43:09.804 --> 01:43:15.146
+<v Antonio Cisternino>In our city impact at the University of
+Pisa,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11002-1
+01:43:15.146 --> 01:43:24.552
+<v Antonio Cisternino>this week we are accepting the request to
+to the record and a production record.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11002-2
+01:43:24.552 --> 01:43:28.964
+<v Antonio Cisternino>The reality is that we even developed.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11003-0
+01:43:29.044 --> 01:43:29.284
+<v Antonio Cisternino>1.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11037-0
+01:43:29.444 --> 01:43:34.001
+<v Antonio Cisternino>An application from scratch using this.
+I mean that we said OK,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11037-1
+01:43:34.001 --> 01:43:39.626
+<v Antonio Cisternino>I need an application which implementsin.
+net, a sound through authentication.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11037-2
+01:43:39.626 --> 01:43:43.684
+<v Antonio Cisternino>These are the keys and I got the record
+in five minutes.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11085-0
+01:43:46.444 --> 01:43:50.851
+<v Antonio Cisternino>And I got a pull request and then I kept
+updating the pull request.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11085-1
+01:43:50.851 --> 01:43:55.517
+<v Antonio Cisternino>So that is becoming common in common.
+But my point in showing you this,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11085-2
+01:43:55.517 --> 01:43:59.729
+<v Antonio Cisternino>it was exactly the one you were saying.
+I mean to be productive,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11085-3
+01:43:59.729 --> 01:44:01.284
+<v Antonio Cisternino>to be useful this thing.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11116-0
+01:44:01.644 --> 01:44:08.259
+<v Antonio Cisternino>Is the question that makes the difference.
+So definitely because you have to become</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11116-1
+01:44:08.259 --> 01:44:11.881
+<v Antonio Cisternino>a good programmer that understands
+semantics,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11116-2
+01:44:11.881 --> 01:44:16.684
+<v Antonio Cisternino>syntax and all the things because to pose
+the question that.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11161-0
+01:44:17.084 --> 01:44:20.575
+<v Antonio Cisternino>You need them to read the answer even
+more,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11161-1
+01:44:20.575 --> 01:44:24.384
+<v Antonio Cisternino>because if you misinterpret the code
+generated,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11161-2
+01:44:24.384 --> 01:44:29.701
+<v Antonio Cisternino>you may accept a line of code that
+immediately produce no results.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11161-3
+01:44:29.701 --> 01:44:35.335
+<v Antonio Cisternino>And then when your car is riding,
+you turn left and the car goes right</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11161-4
+01:44:35.335 --> 01:44:36.604
+<v Antonio Cisternino>because someone.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11206-0
+01:44:36.684 --> 01:44:41.637
+<v Antonio Cisternino>Accept the wrong pull request. OK,
+so that's important because the</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11206-1
+01:44:41.637 --> 01:44:47.254
+<v Antonio Cisternino>productivity that this tool brings
+inevitably will lead the world in making</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11206-2
+01:44:47.254 --> 01:44:52.576
+<v Antonio Cisternino>the AI generate programs because at the
+end of the day it's so quicker,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11206-3
+01:44:52.576 --> 01:44:56.124
+<v Antonio Cisternino>it's so more effective that that's the
+reality.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11253-0
+01:44:56.324 --> 01:44:59.972
+<v Antonio Cisternino>But at the same time,
+without knowing all the things,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11253-1
+01:44:59.972 --> 01:45:03.822
+<v Antonio Cisternino>you've seen how many things there are
+inside at runtime.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11253-2
+01:45:03.822 --> 01:45:08.280
+<v Antonio Cisternino>Without a full on scanning,
+you will basically be unabled and you</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11253-3
+01:45:08.280 --> 01:45:13.684
+<v Antonio Cisternino>will you be you will be controlled by AI
+and not vice versa. And that's a risk.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11278-0
+01:45:14.084 --> 01:45:18.746
+<v Antonio Cisternino>Which is not a risk only for your job,
+but also for the humanity,</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11278-1
+01:45:18.746 --> 01:45:24.396
+<v Antonio Cisternino>because then eventually this software
+goes into the piece we use all things and</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11278-2
+01:45:24.396 --> 01:45:26.444
+<v Antonio Cisternino>so that that is a problem so.</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11285-0
+01:45:27.924 --> 01:45:32.402
+<v Antonio Cisternino>Thank you.
+I think we can stop and have a nice</v>
+
+6a0cdd93-5fc7-472a-85aa-ce29696bc370/11285-1
+01:45:32.402 --> 01:45:33.164
+<v Antonio Cisternino>weekend.</v>
