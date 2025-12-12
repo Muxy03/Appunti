@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAGISTRALE/ADVANCED PROGRAMMING.md",
+                "file": "MAGISTRALE/MAGISTRALE INFO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ADVANCED PROGRAMMING"
+              "title": "MAGISTRALE INFO"
             }
           }
         ]
@@ -224,11 +224,11 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "8ecbeedd8669d71e",
+  "active": "da11e0c78283f36d",
   "lastOpenFiles": [
+    "MAGISTRALE/ADVANCED PROGRAMMING.md",
     "IMMAGINI/Pasted image 20251211213406.png",
     "Untitled.base",
-    "MAGISTRALE/ADVANCED PROGRAMMING.md",
     "MAGISTRALE/MAGISTRALE INFO.md",
     "MAGISTRALE/RECORDS/ADVANCED PROGRAMMING/Lezione del 16_10_2025.vtt",
     "MAGISTRALE/RECORDS/ADVANCED PROGRAMMING/Non confermato 202261.crdownload",
@@ -271,7 +271,6 @@
     "MAGISTRALE/EXTRA/ALGODESIGN Assignments/AlgoDesignAssignment6.md",
     "MAGISTRALE 1/Assignments/Pasted image 20250506000429.png",
     "MAGISTRALE/EXTRA/ALGODESIGN Assignments/AlgoDesignAssignment5.md",
-    "IMMAGINI/Pasted image 20250327003753.png",
     "Untitled.canvas"
   ]
 }
