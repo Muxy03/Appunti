@@ -1,0 +1,3443 @@
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/19-0
+<v Antonio Cisternino>Ooh, even a camera. I'm impressed.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/20-0
+<v Antonio Cisternino>Sure.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/26-0
+<v Antonio Cisternino>On tablet.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/29-0
+<v Antonio Cisternino>That's true.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/31-0
+<v Antonio Cisternino>No. In the first time, see.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/34-0
+<v Antonio Cisternino>Right.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/41-0
+<v Antonio Cisternino>So today we start.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/58-0
+<v Antonio Cisternino>Digging down so far,
+we spent most of the time talking about</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/58-1
+<v Antonio Cisternino>programming languages.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/60-0
+<v Antonio Cisternino>None.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/76-0
+<v Antonio Cisternino>Because T to enter all the programming
+language, all the instructions,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/76-1
+<v Antonio Cisternino>all these elements are basically there to.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/79-0
+<v Antonio Cisternino>Understand.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/112-0
+<v Antonio Cisternino>A programme not just by looking, you know,
+at the simple constructs,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/112-1
+<v Antonio Cisternino>but to have a full understanding of the
+implications of any single punctuation,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/112-2
+<v Antonio Cisternino>comma, semi colon or whatever in your.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/124-0
+<v Antonio Cisternino>In in a in a programme that you wrote,
+or more likely that has been generated.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/144-0
+<v Antonio Cisternino>Just to give you an example,
+I just accepted the the first automatic</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/144-1
+<v Antonio Cisternino>pull request from.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/173-0
+<v Antonio Cisternino>From BAI in one of the official system of
+University of Peace,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/173-1
+<v Antonio Cisternino>so it is official that there was a bad
+fix entirely produced by the I I posed</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/173-2
+<v Antonio Cisternino>the question. Of course I review.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/198-0
+<v Antonio Cisternino>Truly the, the, the,
+the the proposal changes and I was</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/198-1
+<v Antonio Cisternino>convinced.
+So I accepted the good request into the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/198-2
+<v Antonio Cisternino>main system so.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/220-0
+<v Antonio Cisternino>This is something and it I mean this one
+was easy enough,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/220-1
+<v Antonio Cisternino>but actually it's nevertheless it's a
+first. So now we start looking at how.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/236-0
+<v Antonio Cisternino>The runtime is implemented so this week
+will be dedicated to the runtime.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/237-0
+<v Antonio Cisternino>Uh.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/269-0
+<v Antonio Cisternino>The runtime is a fairly complicated
+object.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/269-1
+<v Antonio Cisternino>I will use the DOT net runtime in our
+conversation first because I know and I</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/269-2
+<v Antonio Cisternino>actually I even contributed to this code
+base.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/310-0
+<v Antonio Cisternino>23 years ago,
+so I know the thing in rather detail,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/310-1
+<v Antonio Cisternino>even though I just re browsed the full
+source code. I did work to the.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/310-2
+<v Antonio Cisternino>net frameworkfor.
+net framework from Microsoft.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/343-0
+<v Antonio Cisternino>Being discontinued and when they created
+the.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/343-1
+<v Antonio Cisternino>net core version it it has been changed
+and simplified to be portable so some of</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/343-2
+<v Antonio Cisternino>things I I found some others I didn't but
+nevertheless.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/374-0
+<v Antonio Cisternino>That was easy. Enough enough to catch up,
+and the original concepts are still there.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/374-1
+<v Antonio Cisternino>So it's something that it's rather simple
+to browse,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/374-2
+<v Antonio Cisternino>so this week will be dedicated to.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/396-0
+<v Antonio Cisternino>Several aspects. So first of all,
+we will have to cope and understand how</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/396-1
+<v Antonio Cisternino>to face a real large code base.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/417-0
+<v Antonio Cisternino>How can you search information inside?
+How can you validate your hypothesis</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/417-1
+<v Antonio Cisternino>without having to go through a project
+that in this case?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/421-0
+<v Antonio Cisternino>I think it was.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/447-0
+<v Antonio Cisternino>3000 human years of work OK in the sense
+that the original runtime has been</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/447-1
+<v Antonio Cisternino>developed by a team of 600 people working
+secretly for five years. So.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/484-0
+<v Antonio Cisternino>OK. And in general,
+it's basically impossible for you to</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/484-1
+<v Antonio Cisternino>understand it's it's like leaving,
+I don't know in Mexico City or a Cairo,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/484-2
+<v Antonio Cisternino>I mean in a city that which is so large
+that is basically impossible for.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/510-0
+<v Antonio Cisternino>A citizen to have visited every street in
+that city. Nevertheless,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/510-1
+<v Antonio Cisternino>you still live there and the same is when
+you have to maintain a code that has an</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/510-2
+<v Antonio Cisternino>history.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/558-0
+<v Antonio Cisternino>So it's unlikely that you will know all
+the corners of that code and and so you</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/558-1
+<v Antonio Cisternino>have to learn how to leverage in your
+knowledge about constructs,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/558-2
+<v Antonio Cisternino>feed programming, language features,
+binding models,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/558-3
+<v Antonio Cisternino>etcetera so that you can go and say, OK,
+I need.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/589-0
+<v Antonio Cisternino>To answer this question, how does it work?
+The garbage collector in the in the net</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/589-1
+<v Antonio Cisternino>and then you start with simple things and
+sometimes they work.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/589-2
+<v Antonio Cisternino>Sometimes it's not as easy and you have
+to dig down more to understand the the.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/608-0
+<v Antonio Cisternino>The thing but before reaching there,
+I think time is ripe to spend half an</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/608-1
+<v Antonio Cisternino>hour.
+No more than that into the concept of.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/624-0
+<v Antonio Cisternino>Source code management,
+source code management.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/624-1
+<v Antonio Cisternino>How many of you have used the git ends up?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/633-0
+<v Antonio Cisternino>How many of you have created the pull
+request?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/634-0
+<v Antonio Cisternino>No.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/662-0
+<v Antonio Cisternino>Time is improving,
+so I may even shrink it, but nevertheless,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/662-1
+<v Antonio Cisternino>for those who didn't wave the their hand
+few words I think are important to say I</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/662-2
+<v Antonio Cisternino>mean.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/663-0
+<v Antonio Cisternino>And.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/667-0
+<v Antonio Cisternino>In the 80s.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/708-0
+<v Antonio Cisternino>Source control was made,
+so this is a first hand story.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/708-1
+<v Antonio Cisternino>I think it's nice because it gives you a
+hand about software engineering evolution</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/708-2
+<v Antonio Cisternino>and so during the 80s and end of the 80s
+beginning of the 90s in Microsoft,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/708-3
+<v Antonio Cisternino>they started developing office.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/743-0
+<v Antonio Cisternino>Back then,
+Word was a super important programme.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/743-1
+<v Antonio Cisternino>There was a system for for PCs that was
+called Wordstar.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/743-2
+<v Antonio Cisternino>There was a text based editor and
+Microsoft started developing the suite,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/743-3
+<v Antonio Cisternino>the office suite.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/768-0
+<v Antonio Cisternino>Back then,
+they were already using network file</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/768-1
+<v Antonio Cisternino>systems.
+So basically the the rapper was on a</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/768-2
+<v Antonio Cisternino>shared drive in the net in the local
+network.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/779-0
+<v Antonio Cisternino>And and there was a directory source code.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/815-0
+<v Antonio Cisternino>And in inside there was all the officers
+code and and of course all the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/815-1
+<v Antonio Cisternino>programmers kept writing their own piece
+of code and there were no Visual Studio</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/815-2
+<v Antonio Cisternino>code or any other idea.
+Was barely the the the note panda.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/851-0
+<v Antonio Cisternino>So they were writing and developing the
+code,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/851-1
+<v Antonio Cisternino>and so of course there was some
+probability that some change to the part</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/851-2
+<v Antonio Cisternino>of the code will break some other part of
+the code.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/851-3
+<v Antonio Cisternino>So the rule of the land was that every
+night.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/877-0
+<v Antonio Cisternino>There was one person in charge for
+compiling and managing and checking that</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/877-1
+<v Antonio Cisternino>the code base.
+The code base was consistent,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/877-2
+<v Antonio Cisternino>which was of course an extra worker and.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/904-0
+<v Antonio Cisternino>If the code was broken by someone they
+picked up the the guy who did break the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/904-1
+<v Antonio Cisternino>the code base and now became the new code
+branch mountainer OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/912-0
+<v Antonio Cisternino>And so that was the way of managing code.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/914-0
+<v Antonio Cisternino>40 years ago.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/919-0
+<v Antonio Cisternino>The end of the 90s.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/944-0
+<v Antonio Cisternino>Source code management system became
+rather popular beginning of 2000,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/944-1
+<v Antonio Cisternino>so the idea that the codebase is
+basically a lead thing where you have.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/965-0
+<v Antonio Cisternino>To,
+you need to be able to perform a number</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/965-1
+<v Antonio Cisternino>of operations.
+One is the the ability to freeze the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/965-2
+<v Antonio Cisternino>state of the code.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/970-0
+<v Antonio Cisternino>Branching.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/977-0
+<v Antonio Cisternino>So what is a branch?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/991-0
+<v Antonio Cisternino>OK.
+And why do you think it's important to</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/991-1
+<v Antonio Cisternino>make a a snapshot?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1000-0
+<v Antonio Cisternino>Certainly want the same.
+You can mark a point in point in time.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1027-0
+<v Antonio Cisternino>And basically the the system keep tracks
+of the changes so that you can go back</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1027-1
+<v Antonio Cisternino>and forward. That's one main object,
+main goal and the original.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1028-0
+<v Antonio Cisternino>Umm.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1059-0
+<v Antonio Cisternino>There,
+there were a number of concurrent</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1059-1
+<v Antonio Cisternino>revisioning system.
+CVS was one of the popular and basically</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1059-2
+<v Antonio Cisternino>the the.
+The typical model was there is a main</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1059-3
+<v Antonio Cisternino>branch.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1085-0
+<v Antonio Cisternino>Which is basically where the latest and
+version of the software typical in</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1085-1
+<v Antonio Cisternino>development is,
+and then when a product was released,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1085-2
+<v Antonio Cisternino>you take a picture.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1105-0
+<v Antonio Cisternino>And and then there is give me one second
+because this, Stefano, Stefano,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1105-1
+<v Antonio Cisternino>Stefano so Stefano Isabelliato.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1106-0
+<v Antonio Cisternino>So now let's join it will join 30 post.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1110-0
+<v Antonio Cisternino>Be me.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1113-0
+<v Antonio Cisternino>Be me.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1126-0
+<v Antonio Cisternino>No. Yeah. See. See. Confer more epic,
+you know, shuffa and picture the far.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1131-0
+<v Antonio Cisternino>No, no, no ****. Turn on that.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1133-0
+<v Antonio Cisternino>No, see.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1137-0
+<v Antonio Cisternino>No, that's all. No, no. Did I say that?
+Bye.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1139-0
+<v Antonio Cisternino>Occam.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1141-0
+<v Antonio Cisternino>The positive.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1143-0
+<v Antonio Cisternino>C Sharon.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1159-0
+<v Antonio Cisternino>Sorry, because we have engineer. Yeah,
+I have to be sure that everything's OK,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1159-1
+<v Antonio Cisternino>so.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1164-0
+<v Antonio Cisternino>Every branch was basically.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1175-0
+<v Antonio Cisternino>Sorry, it was the. It was.
+The message was based with the AI.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1203-0
+<v Antonio Cisternino>Yeah. No, no, no, it wasn't. No.
+The problem there was more physical,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1203-1
+<v Antonio Cisternino>actually.
+They were installing the new firefighting</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1203-2
+<v Antonio Cisternino>system inside the centre in engineer.
+Yeah, and.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1238-0
+<v Antonio Cisternino>There was a a company that it was
+performing the installation.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1238-1
+<v Antonio Cisternino>It wasn't university people and they they
+ended the installation,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1238-2
+<v Antonio Cisternino>they did the check that is mandatory and
+the check went bad in the sense that the.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1249-0
+<v Antonio Cisternino>File System filed and that so data centre
+are complicated because.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1283-0
+<v Antonio Cisternino>To shut them down in case of fire is very
+difficult.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1283-1
+<v Antonio Cisternino>So firefighting system basically there
+are number approach.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1283-2
+<v Antonio Cisternino>The one we use use a powder that
+suffocate the the the combustion thrown</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1283-3
+<v Antonio Cisternino>at a high pressure.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1308-0
+<v Antonio Cisternino>So there was a leakage.
+So the full teaching classroom,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1308-1
+<v Antonio Cisternino>etcetera were invaded by these white
+smoke. Yeah, and.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1322-0
+<v Antonio Cisternino>That that is one part,
+but the the the extra pressure basically</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1322-1
+<v Antonio Cisternino>did break water pipe.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1358-0
+<v Antonio Cisternino>And and so water was popularised and
+power supplied through the fan inject</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1358-1
+<v Antonio Cisternino>ingested the water internally.
+So there was a number of short circuits</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1358-2
+<v Antonio Cisternino>and so.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1390-0
+<v Antonio Cisternino>It's been quite complicated and so
+actually all engineering part of the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1390-1
+<v Antonio Cisternino>hospital,
+a few other areas are without Wi-Fi</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1390-2
+<v Antonio Cisternino>network and everything and we're trying
+to restart as soon as possible,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1390-3
+<v Antonio Cisternino>but it's complicated.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1433-0
+<v Antonio Cisternino>It's happened in the days when we have
+based on rain beat that much. Yeah,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1433-1
+<v Antonio Cisternino>that that happened in the that that day.
+But basically that was only a part of the,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1433-2
+<v Antonio Cisternino>I mean of course that in make more things
+more difficult for.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1469-0
+<v Antonio Cisternino>Students that evacuated the so that so no,
+it it wasn't a replication,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1469-1
+<v Antonio Cisternino>but I can tell you some story at some
+point, but not now. OK,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1469-2
+<v Antonio Cisternino>so basically you have the vertical branch
+with all the releases, so.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1479-0
+<v Antonio Cisternino>And you branch the version one went to 1.
+1 excel.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1487-0
+<v Antonio Cisternino>And that was OK, because let me pull up.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1496-0
+<v Antonio Cisternino>Our tragic BT friend so that I can.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1503-0
+<v Antonio Cisternino>Generate few interesting diagrams.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1518-0
+<v Antonio Cisternino>Programming.
+Can you show diagram of a typical typical</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1518-1
+<v Antonio Cisternino>no typical?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1522-0
+<v Antonio Cisternino>CVS evolution.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1526-0
+<v Antonio Cisternino>With the branches.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1551-0
+<v Antonio Cisternino>So originally the idea was simply being
+able to track the differences. In fact,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1551-1
+<v Antonio Cisternino>the original source control revision
+systems.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1585-0
+<v Antonio Cisternino>Where implemented by using Shell Commons
+and a lot of the tool of diff.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1585-1
+<v Antonio Cisternino>Diff is a very historical tool in in
+Linux that makes you have the difference</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1585-2
+<v Antonio Cisternino>between 2 files.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1613-0
+<v Antonio Cisternino>And and things were OK,
+but the basically the model of the CVS or</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1613-1
+<v Antonio Cisternino>similar.
+So the original source revisioning system.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1630-0
+<v Antonio Cisternino>We're originally designed for a single
+company or a single group of developers,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1630-1
+<v Antonio Cisternino>not that large.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1642-0
+<v Antonio Cisternino>So at some point Linux was becoming an
+important operating system.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1644-0
+<v Antonio Cisternino>And.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1648-0
+<v Antonio Cisternino>The model.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1677-0
+<v Antonio Cisternino>Which define the.
+This is a typical evolution.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1677-1
+<v Antonio Cisternino>So you branch when you branch,
+you can start from the so branch A.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1711-0
+<v Antonio Cisternino>If I move on the branch AI have the
+source code that particular in that</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1711-1
+<v Antonio Cisternino>particular branch,
+then I can modify that particular branch</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1711-2
+<v Antonio Cisternino>and obtain a new version in that branch
+and so basically the source control looks</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1711-3
+<v Antonio Cisternino>like a tree.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1745-0
+<v Antonio Cisternino>Use case use case I release version one,
+there is a bug in version one.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1745-1
+<v Antonio Cisternino>The main branch keeps going,
+so it's not any more compatible with</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1745-2
+<v Antonio Cisternino>version one.
+It's it's inconsistent possibly.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1785-0
+<v Antonio Cisternino>Or with bugs or whatever.
+So you want to move,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1785-1
+<v Antonio Cisternino>you want to fix the bug in that
+particular vision you create you you do</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1785-2
+<v Antonio Cisternino>the changes, you commit the changes,
+and that's the new version.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1785-3
+<v Antonio Cisternino>So that was the original.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1797-0
+<v Antonio Cisternino>Way of using these things and it was
+pretty solid and continue as I was saying</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1797-1
+<v Antonio Cisternino>Linux.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1836-0
+<v Antonio Cisternino>Was too complicated since the beginning.
+I mean, you know,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1836-1
+<v Antonio Cisternino>is a project that started almost as an in
+an operating system force.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1836-2
+<v Antonio Cisternino>So it was basically a student project to
+explain how an operating system can be</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1836-3
+<v Antonio Cisternino>implemented.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1858-0
+<v Antonio Cisternino>Then things get becomes serious.
+It's become and it's become what we know</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1858-1
+<v Antonio Cisternino>today. And Lena started the turbo,
+which was the original author, became.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1889-0
+<v Antonio Cisternino>The so-called benevolent dictator,
+the benevolent dictator,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1889-1
+<v Antonio Cisternino>is the name that is said in the open
+source project,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1889-2
+<v Antonio Cisternino>where there is one person that.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1918-0
+<v Antonio Cisternino>Is recognised as the leader of the
+project and he's benevolent.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1918-1
+<v Antonio Cisternino>He accept all the pull requests and all
+the contribution from everybody.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1918-2
+<v Antonio Cisternino>But he decide whether to include
+something or not. Dictator.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1931-0
+<v Antonio Cisternino>And Linux is basically still the
+benevolent dictator of the Linux project.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1971-0
+<v Antonio Cisternino>And at some point, he said, OK, CVS,
+this kind of revisioning system are</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1971-1
+<v Antonio Cisternino>simply not enough to sustain a project
+like Linux with multiple companies</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1971-2
+<v Antonio Cisternino>contributing to the project multiple.
+I mean CVS you have.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/1976-0
+<v Antonio Cisternino>Users which are.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2011-0
+<v Antonio Cisternino>Basically,
+in the same authentication system it's a</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2011-1
+<v Antonio Cisternino>company sort of implementation.
+Linux was like.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2011-2
+<v Antonio Cisternino>I mean you don't want the first
+contributor to break Linux code for the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2011-3
+<v Antonio Cisternino>for the whole world.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2041-0
+<v Antonio Cisternino>So we need some new mechanism to work in
+in this new world where we have too many</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2041-1
+<v Antonio Cisternino>developers that may destroy an artefact
+which is shared.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2046-0
+<v Antonio Cisternino>Among so many peoples so.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2084-0
+<v Antonio Cisternino>He set out in implementing with a number
+of people,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2084-1
+<v Antonio Cisternino>a new system for for controlling revision.
+There was more scalable and it's called</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2084-2
+<v Antonio Cisternino>Git. OK,
+and Git has become the de facto standard</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2084-3
+<v Antonio Cisternino>today. So but it is important.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2107-0
+<v Antonio Cisternino>That you understand that Git is also the
+most complicated of the of the control</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2107-1
+<v Antonio Cisternino>revision source system,
+because it implements operations.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2113-0
+<v Antonio Cisternino>I I think I can say that I.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2154-0
+<v Antonio Cisternino>Control maybe 30% of Git mean git is a
+very complicated and for many project you</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2154-1
+<v Antonio Cisternino>don't really use all the features that
+are included.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2154-2
+<v Antonio Cisternino>But if I have to ask you what are the
+main operation that you do?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2159-0
+<v Antonio Cisternino>When you use it, that's.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2161-0
+<v Antonio Cisternino>None.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2167-0
+<v Antonio Cisternino>So so a lot of.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2173-0
+<v Antonio Cisternino>Branch matching.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2184-0
+<v Antonio Cisternino>OK, that's that's a potential use of.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2241-0
+<v Antonio Cisternino>Of of a git in general, you have.
+So when you have multiple branches just</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2241-1
+<v Antonio Cisternino>to explain what is the problem.
+When you when you start branching,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2241-2
+<v Antonio Cisternino>of course branches may have a common
+ancestor,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2241-3
+<v Antonio Cisternino>and of course you're not touching all the
+code base so.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2271-0
+<v Antonio Cisternino>If you are in this node of branch B of
+branch A and and you found the bug which</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2271-1
+<v Antonio Cisternino>in fact has been introduced in the here
+before the branching,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2271-2
+<v Antonio Cisternino>of course this bug will affect the main
+the branch A but also the branch B.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2303-0
+<v Antonio Cisternino>So at some point you say, OK,
+but now I'm on branch A and I want to</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2303-1
+<v Antonio Cisternino>change the the bug here,
+but only this part of the bug fix I'm</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2303-2
+<v Antonio Cisternino>making should be merged into the other
+branches.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2342-0
+<v Antonio Cisternino>Which means basically all the changes you
+made to the code are copied and merged</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2342-1
+<v Antonio Cisternino>with other changes that already in the
+meantime happened in the other branches.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2342-2
+<v Antonio Cisternino>Because I know that this is a common
+problem, OK? And so that is a typical.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2375-0
+<v Antonio Cisternino>Thing that is complicated. So in general,
+for instance,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2375-1
+<v Antonio Cisternino>CVS was having a model that was much
+simpler.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2375-2
+<v Antonio Cisternino>You can merge changes from a bench on
+into the main branch. Easy,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2375-3
+<v Antonio Cisternino>but this is too.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2418-0
+<v Antonio Cisternino>Simple for Linux because you may have a
+change depending on the models in the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2418-1
+<v Antonio Cisternino>kernel.
+Another one depending on C groups and so</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2418-2
+<v Antonio Cisternino>how can I measure the changes and they
+started introducing new concepts such as</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2418-3
+<v Antonio Cisternino>rebase that you just.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2448-0
+<v Antonio Cisternino>Mentioning mentioned which helps managing
+complicated managing strategies. OK,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2448-1
+<v Antonio Cisternino>but apart from this there is a slightly
+advanced the use of git when I start.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2452-0
+<v Antonio Cisternino>A project don't get. What should I do?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2454-0
+<v Antonio Cisternino>Mm-hmm.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2467-0
+<v Antonio Cisternino>It in it if you're creating an empty repo
+or clone typically, which is.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2474-0
+<v Antonio Cisternino>What does clone? What clone does?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2522-0
+<v Antonio Cisternino>Yeah.
+So basically clone makes a copy of an</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2522-1
+<v Antonio Cisternino>existing repository.
+And beware this is important because the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2522-2
+<v Antonio Cisternino>clone is more than the original
+initialization of a repo in CVS.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2522-3
+<v Antonio Cisternino>In CVS you were just say OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2539-0
+<v Antonio Cisternino>There is a server which contains all the
+source code.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2539-1
+<v Antonio Cisternino>I want a copy of this particular branch
+to work easy.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2565-0
+<v Antonio Cisternino>Clone is more than that because you can
+take a repo which may not even be even</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2565-1
+<v Antonio Cisternino>your repo make a local copy of that repo.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2587-0
+<v Antonio Cisternino>And in this respect is something that you
+must become familiar with because you are</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2587-1
+<v Antonio Cisternino>making a copy even of your own report.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2596-0
+<v Antonio Cisternino>So where the clones leaves leaves in your
+disc.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2629-0
+<v Antonio Cisternino>Which is a completely different operation
+than connecting it to an external server.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2629-1
+<v Antonio Cisternino>So your changes anything is local to your
+cloned copy, so clone is.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2630-0
+<v Antonio Cisternino>None.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2633-0
+<v Antonio Cisternino>Let me see if.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2638-0
+<v Antonio Cisternino>Come on. Are you serious?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2641-0
+<v Antonio Cisternino>Hunts.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2664-0
+<v Antonio Cisternino>If I ask you with another,
+you can replace. OK. No,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2664-1
+<v Antonio Cisternino>that's not the interesting part.
+We will look into it after.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2666-0
+<v Antonio Cisternino>OK so.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2682-0
+<v Antonio Cisternino>Clone I start with a project I do clone,
+so I create a new repository on my</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2682-1
+<v Antonio Cisternino>machine.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2711-0
+<v Antonio Cisternino>So this respects the distributed nature
+of the Linux kernel development.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2711-1
+<v Antonio Cisternino>Everyone makes a copy,
+works with the copy, and then you want to.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2734-0
+<v Antonio Cisternino>Merge changes if someone the dictator
+says OK, you can merge this. OK,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2734-1
+<v Antonio Cisternino>so clone after clone.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2737-0
+<v Antonio Cisternino>Come on.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2757-0
+<v Antonio Cisternino>Let's make simple operations first.
+So you did clone. Now you have.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2757-1
+<v Antonio Cisternino>We can even do it maybe.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2768-0
+<v Antonio Cisternino>You you start editing the files in your
+local directory stashing.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2771-0
+<v Antonio Cisternino>So.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2814-0
+<v Antonio Cisternino>Is that make the changes?
+Possibly you respect the style of the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2814-1
+<v Antonio Cisternino>repo. If it's code that you didn't write.
+So typically there are guidelines in the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2814-2
+<v Antonio Cisternino>project that tells you please do this,
+don't do that, etcetera.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2833-0
+<v Antonio Cisternino>Which typically people violate
+systematically, so,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2833-1
+<v Antonio Cisternino>OK and eventually you have a number of
+useful comments. So let me.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2838-0
+<v Antonio Cisternino>Come online. Let me go.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2842-0
+<v Antonio Cisternino>Somewhere where I have.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2846-0
+<v Antonio Cisternino>I repo just to.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2849-0
+<v Antonio Cisternino>Actually.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2874-0
+<v Antonio Cisternino>I knew that I I wasn't born.
+I was telling that it was originally born</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2874-1
+<v Antonio Cisternino>due to the issue with the yards,
+because before the the yard were made by.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2906-0
+<v Antonio Cisternino>So if someone wants to make a,
+they have to send an e-mail with their</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2906-1
+<v Antonio Cisternino>clients in it with changes.
+Then someone who's back and forth in the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2906-2
+<v Antonio Cisternino>invalid support and do the revenues so
+they invent.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2908-0
+<v Antonio Cisternino>Yeah.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2909-0
+<v Antonio Cisternino>Yeah.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2927-0
+<v Antonio Cisternino>This is one of the problems,
+so just to let let me first show a few</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2927-1
+<v Antonio Cisternino>comments and then we comment so.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2944-0
+<v Antonio Cisternino>It follows a convention that has been
+basically introduced by Hadoop.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2954-0
+<v Antonio Cisternino>Almost 12 weeks ago of having a command.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2992-0
+<v Antonio Cisternino>With with the number of subcommons.
+So if I say Git I get the the list of</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/2992-1
+<v Antonio Cisternino>verbs that I can use and if I say and I
+have clone and in it of course.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3000-0
+<v Antonio Cisternino>And then I was expecting other you know.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3016-0
+<v Antonio Cisternino>Kind of calm answer and tell me the less
+it's OK and and then you you can say.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3056-0
+<v Antonio Cisternino>You can collaborate with other.
+You can rebase manager.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3056-1
+<v Antonio Cisternino>You can change your code base.
+You can show you can examine this title.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3056-2
+<v Antonio Cisternino>So this is another big important part to
+track the evolution of the software. So.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3059-0
+<v Antonio Cisternino>Its status for instance.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3079-0
+<v Antonio Cisternino>Tell me.
+Look in this you have changes in in these</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3079-1
+<v Antonio Cisternino>files that are not been yet in the repo
+so.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3106-0
+<v Antonio Cisternino>Actors in a in a source repository are
+the current directory.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3106-1
+<v Antonio Cisternino>That is where you make the changes.
+Then there is the repository.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3127-0
+<v Antonio Cisternino>Which is where all the branches and
+everything are stored. When you clone you,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3127-1
+<v Antonio Cisternino>you're cloning the repository, you're not.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3176-0
+<v Antonio Cisternino>Simply copying the current version. OK,
+so you are creating a new repository on</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3176-1
+<v Antonio Cisternino>your machine and then all the operation
+on the source code.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3176-2
+<v Antonio Cisternino>If you create the the the branch,
+that branch leaves on your machine.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3176-3
+<v Antonio Cisternino>If you create a file you if you are the
+new file to the repository that files</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3176-4
+<v Antonio Cisternino>goes into.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3181-0
+<v Antonio Cisternino>To the in in that local repository.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3216-0
+<v Antonio Cisternino>And because of this cloning,
+at some point it's OK,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3216-1
+<v Antonio Cisternino>but I did some useful work to the Linux
+kernel.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3216-2
+<v Antonio Cisternino>I want to match these changes into the
+real repository,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3216-3
+<v Antonio Cisternino>not into my local repository.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3221-0
+<v Antonio Cisternino>So at some point, a number of.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3256-0
+<v Antonio Cisternino>Operations have been introduced between
+repositories,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3256-1
+<v Antonio Cisternino>so if you if a repository is a clone of
+another repository then you can use</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3256-2
+<v Antonio Cisternino>specific command to.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3303-0
+<v Antonio Cisternino>Make some align operations from one to
+the other. So first of all,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3303-1
+<v Antonio Cisternino>Git is not simply dedicated to manage the
+source code,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3303-2
+<v Antonio Cisternino>but basically is an organic model in
+which you have multiple repository that</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3303-3
+<v Antonio Cisternino>have a relation between them. So actually.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3327-0
+<v Antonio Cisternino>The repository knows from which it was
+Clonated cloned and and then through the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3327-1
+<v Antonio Cisternino>comments you can not only change your
+repository but also related repository.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3337-0
+<v Antonio Cisternino>Using mechanisms that are called full
+requests.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3368-0
+<v Antonio Cisternino>OK,
+but before digging into the notion of the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3368-1
+<v Antonio Cisternino>pull request,
+which is an interesting notion,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3368-2
+<v Antonio Cisternino>let's keep looking at this.
+So status is a typical.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3411-0
+<v Antonio Cisternino>Common new issue that shows you the files
+that you've changed it and are not yet</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3411-1
+<v Antonio Cisternino>committed to the repository.
+So the typical operations are checkout.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3411-2
+<v Antonio Cisternino>In CVS it was called checkout because
+there was no clone.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3443-0
+<v Antonio Cisternino>So you did check out an existing source.
+You have a local copy.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3443-1
+<v Antonio Cisternino>You modify the files of that local copy,
+and then you want to commit your changes</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3443-2
+<v Antonio Cisternino>back into the repository.
+The source the the source revision system.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3477-0
+<v Antonio Cisternino>Cheques,
+whether the files have changed in the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3477-1
+<v Antonio Cisternino>meantime.
+Because if you imagine there are multiple</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3477-2
+<v Antonio Cisternino>developers,
+these multiple developers keep changing</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3477-3
+<v Antonio Cisternino>the files so some conflict may arise.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3511-0
+<v Antonio Cisternino>And there are several kind of conflicts.
+One is you added a different portion of</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3511-1
+<v Antonio Cisternino>the file, which is OK,
+so I can manage the sections and the code</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3511-2
+<v Antonio Cisternino>may become inconsistent because of this
+merging or.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3557-0
+<v Antonio Cisternino>To developers edit exactly the same line
+of the same file.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3557-1
+<v Antonio Cisternino>That's a conflict that you have to
+resolve manually,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3557-2
+<v Antonio Cisternino>and so the system says no, no, no.
+I'm sorry I can't commit until you</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3557-3
+<v Antonio Cisternino>resolve this conflict for me.
+And you have to fix some.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3557-4
+<v Antonio Cisternino>And typically you get some support that
+shows that.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3596-0
+<v Antonio Cisternino>The the different alternatives to to
+choose from,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3596-1
+<v Antonio Cisternino>and that is the typical life cycle.
+So you add files to the repo,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3596-2
+<v Antonio Cisternino>all the files that have not been
+explicitly added to the.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3616-0
+<v Antonio Cisternino>So if I create a file not upon full dot
+TXT in this directory, so I created the.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3623-0
+<v Antonio Cisternino>The now I say need status.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3663-0
+<v Antonio Cisternino>And I have school that has been added to
+the untracked files.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3663-1
+<v Antonio Cisternino>So if you create a file which is not part
+of the repository,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3663-2
+<v Antonio Cisternino>the system understands it and say OK,
+sorry, this is untracked.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3663-3
+<v Antonio Cisternino>So you want you want to meet.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3693-0
+<v Antonio Cisternino>That I track the changes also to this
+file because it becomes part of the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3693-1
+<v Antonio Cisternino>repository pressed operation.
+You have to say add to the. Oh,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3693-2
+<v Antonio Cisternino>that's interesting.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3696-0
+<v Antonio Cisternino>It add.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3700-0
+<v Antonio Cisternino>Scores and EJ.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3714-0
+<v Antonio Cisternino>Sample election this should be added. OK,
+so now it status.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3719-0
+<v Antonio Cisternino>I have now the modified files.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3746-0
+<v Antonio Cisternino>The new file added to the repository,
+so the repository is not yet populated</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3746-1
+<v Antonio Cisternino>with the file and untracked files.
+Now I cannot say I want to commit.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3769-0
+<v Antonio Cisternino>OK, commit.
+Typically they say don't commit all</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3769-1
+<v Antonio Cisternino>because when you commit you also have to
+provide some description of what you're</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3769-2
+<v Antonio Cisternino>committing.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3770-0
+<v Antonio Cisternino>Umm.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3779-0
+<v Antonio Cisternino>So sort of is that source region.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3791-0
+<v Antonio Cisternino>Yes,
+sample that action so I can explicitly</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3791-1
+<v Antonio Cisternino>commit the file.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3798-0
+<v Antonio Cisternino>Now I get an inline editor, hopefully.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3803-0
+<v Antonio Cisternino>There we are and I can say.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3838-0
+<v Antonio Cisternino>As you can see,
+there are changes to be committed.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3838-1
+<v Antonio Cisternino>Change it not staged for commit,
+so this will not be committed into the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3838-2
+<v Antonio Cisternino>repo.
+So after this operation only sample</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3838-3
+<v Antonio Cisternino>election SQL will be.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3841-0
+<v Antonio Cisternino>I did that.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3845-0
+<v Antonio Cisternino>Sample sequel.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3860-0
+<v Antonio Cisternino>Script to create the BB with the sample
+election for.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3861-0
+<v Antonio Cisternino>Uh.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3865-0
+<v Antonio Cisternino>Testing bar *******.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3867-0
+<v Antonio Cisternino>Here we are.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3869-0
+<v Antonio Cisternino>Now.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3877-0
+<v Antonio Cisternino>I write and inside the local repository.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3878-0
+<v Antonio Cisternino>Hmm.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3883-0
+<v Antonio Cisternino>That's interesting.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3886-0
+<v Antonio Cisternino>In those.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3892-0
+<v Antonio Cisternino>Invite bright operation.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3912-0
+<v Antonio Cisternino>No, this is, yeah. And we are able.
+So if I, I suspect what is the problem,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3912-1
+<v Antonio Cisternino>but I'm I'm not gonna.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3916-0
+<v Antonio Cisternino>I'm not absolutely.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3918-0
+<v Antonio Cisternino>Hmm.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3920-0
+<v Antonio Cisternino>Oops.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3925-0
+<v Antonio Cisternino>OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3930-0
+<v Antonio Cisternino>Secret file to.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3937-0
+<v Antonio Cisternino>Create an index sample.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3938-0
+<v Antonio Cisternino>Yeah.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3943-0
+<v Antonio Cisternino>Sample election.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3948-0
+<v Antonio Cisternino>Oh, I don't know what I did click, sorry.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3951-0
+<v Antonio Cisternino>For texting or.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3952-0
+<v Antonio Cisternino>Mm-hmm.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3954-0
+<v Antonio Cisternino>Yeah.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3956-0
+<v Antonio Cisternino>Ah.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3972-0
+<v Antonio Cisternino>What's the compass?
+What is the Iraq which is?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3974-0
+<v Antonio Cisternino>It's me.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3976-0
+<v Antonio Cisternino>Yeah.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3979-0
+<v Antonio Cisternino>OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3983-0
+<v Antonio Cisternino>Of sequel script.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3994-0
+<v Antonio Cisternino>To create a sample action for testing
+purposes.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/3996-0
+<v Antonio Cisternino>Right.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4000-0
+<v Antonio Cisternino>OK, the status.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4024-0
+<v Antonio Cisternino>Now the the file has been added to the
+repository and it's not change it,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4024-1
+<v Antonio Cisternino>so there are no changes if I.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4027-0
+<v Antonio Cisternino>Note but the.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4033-0
+<v Antonio Cisternino>If I edit that file.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4039-0
+<v Antonio Cisternino>OK, so this is.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4045-0
+<v Antonio Cisternino>I simply add the a single.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4047-0
+<v Antonio Cisternino>Thing.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4085-0
+<v Antonio Cisternino>This sample action now is in the modified
+files.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4085-1
+<v Antonio Cisternino>The system is smart enough that if it's
+not using just the date of the change.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4085-2
+<v Antonio Cisternino>So I removed the change and as you can
+see now.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4118-0
+<v Antonio Cisternino>The there is no more like the sample
+election sequel in the list because is it</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4118-1
+<v Antonio Cisternino>equivalent to the the the version that
+you have in the repository? OK so.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4120-0
+<v Antonio Cisternino>This is the basic cycle.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4167-0
+<v Antonio Cisternino>I obtain I have a repository,
+I check out some,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4167-1
+<v Antonio Cisternino>some somehow the source code.
+This may happen by cloning in the gate or</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4167-2
+<v Antonio Cisternino>check by making check out in other
+systems. Nevertheless,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4167-3
+<v Antonio Cisternino>I have a repository and.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4211-0
+<v Antonio Cisternino>The directory with the current files I
+work on the files and then using a number</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4211-1
+<v Antonio Cisternino>of commands I update the repo.
+The repo is the one who is shared across</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4211-2
+<v Antonio Cisternino>multiple developers in the Git.
+Reality is that the repo you're working</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4211-3
+<v Antonio Cisternino>in is.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4237-0
+<v Antonio Cisternino>Your own because when you clone,
+you have a local copy of the full</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4237-1
+<v Antonio Cisternino>repository.
+Then you use operation between</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4237-2
+<v Antonio Cisternino>repositories to align everything OK and
+so the typically.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4247-0
+<v Antonio Cisternino>The typical operations that you perform
+are.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4277-0
+<v Antonio Cisternino>Pull and push. So pull is.
+I wanna take all the changes from the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4277-1
+<v Antonio Cisternino>original repository of which this is a
+clone and I won't wanna bring all the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4277-2
+<v Antonio Cisternino>changes.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4306-0
+<v Antonio Cisternino>In into my local copy or push which is I
+want to synchronise this repository with</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4306-1
+<v Antonio Cisternino>the remote repository.
+Both operations assume that you are the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4306-2
+<v Antonio Cisternino>owner.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4343-0
+<v Antonio Cisternino>Of the the repository.
+If you're not the owner of the source</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4343-1
+<v Antonio Cisternino>repository,
+then clearly you can't pull into that.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4343-2
+<v Antonio Cisternino>It's not yours, so you're you.
+You get an error then in that case you</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4343-3
+<v Antonio Cisternino>can create a pull request.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4371-0
+<v Antonio Cisternino>So you say, OK, I am,
+I have cloned cloned your repository.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4371-1
+<v Antonio Cisternino>My version is better than yours I think.
+Please take all my changes in this pull</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4371-2
+<v Antonio Cisternino>request.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4392-0
+<v Antonio Cisternino>And so basically make a pool.
+So in usually when you when you use it in</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4392-1
+<v Antonio Cisternino>the very simple way git.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4429-0
+<v Antonio Cisternino>You clone your,
+you create your repository on GitHub,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4429-1
+<v Antonio Cisternino>let's say OK or in any other git system.
+GitHub is one of the most popular.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4429-2
+<v Antonio Cisternino>So let's say GitHub.
+You create your repository on GitHub even.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4466-0
+<v Antonio Cisternino>On the web, not even writing anything. OK,
+then you clone the repository you work on</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4466-1
+<v Antonio Cisternino>the repository and you pull your change.
+You can meet locally and you pull changes.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4466-2
+<v Antonio Cisternino>That's the normal work workflow.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4495-0
+<v Antonio Cisternino>When you create a pull request,
+basically you are in inverting the source</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4495-1
+<v Antonio Cisternino>and the destination.
+So basically say hey I clone for you.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4495-2
+<v Antonio Cisternino>Can you pull from me?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4519-0
+<v Antonio Cisternino>OK,
+so you're switching the roles in the two</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4519-1
+<v Antonio Cisternino>repository.
+I want you to pull these changes into</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4519-2
+<v Antonio Cisternino>mine. OK, let's try to see this.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4527-0
+<v Antonio Cisternino>Let me switch to another more simple
+repository.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4530-0
+<v Antonio Cisternino>OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4532-0
+<v Antonio Cisternino>Hmm.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4535-0
+<v Antonio Cisternino>There are a number.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4537-0
+<v Antonio Cisternino>Uh.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4541-0
+<v Antonio Cisternino>OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4558-0
+<v Antonio Cisternino>So this is the graphical rendering of
+course of the pool request. OK so.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4561-0
+<v Antonio Cisternino>Actually.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4574-0
+<v Antonio Cisternino>This is the one I created the using
+charge PT so that's.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4584-0
+<v Antonio Cisternino>And if I click here,
+I can review the changes OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4616-0
+<v Antonio Cisternino>So in this case it's a very basic change,
+which is I want to add the line this line</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4616-1
+<v Antonio Cisternino>to insert this assignment that was not
+there before, OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4654-0
+<v Antonio Cisternino>Of course the the pull request in this
+particular example that is very simple.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4654-1
+<v Antonio Cisternino>So you may say oh,
+you use ABI to add one line of code. Yes,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4654-2
+<v Antonio Cisternino>because the problem wasn't adding the
+line of code, but.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4698-0
+<v Antonio Cisternino>I did use the AI to double check if my
+memories about the code,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4698-1
+<v Antonio Cisternino>the repo that I developed so I know it.
+We're right because I want to try to fix</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4698-2
+<v Antonio Cisternino>a bug, but I wasn't sure of the same.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4753-0
+<v Antonio Cisternino>Fix of that particular field.
+So I had some conversation with AI asking</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4753-1
+<v Antonio Cisternino>questions about where it is used and can
+I, etcetera, etcetera.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4753-2
+<v Antonio Cisternino>So I did all the analysis and mix it with
+AI and eventually she proposed me.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4753-3
+<v Antonio Cisternino>You can fix it like this and review the
+code that commits.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4781-0
+<v Antonio Cisternino>And then say OK,
+create the pull request and then I merged</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4781-1
+<v Antonio Cisternino>the pull request inside the the repo.
+So in this case the AI cloned the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4781-2
+<v Antonio Cisternino>repository, the AI is not owner.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4815-0
+<v Antonio Cisternino>Of the repository so created the pull
+request on the repository.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4815-1
+<v Antonio Cisternino>I asked the owner of the repository.
+I accepted to pull those particular</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4815-2
+<v Antonio Cisternino>changes to my repository OK and so now
+this is part.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4829-0
+<v Antonio Cisternino>Of the the thing and of course the the
+code become weekly a three.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4831-0
+<v Antonio Cisternino>None.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4834-0
+<v Antonio Cisternino>Let me check.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4835-0
+<v Antonio Cisternino>Hmm.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4844-0
+<v Antonio Cisternino>I don't want to going in into this
+business.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4862-0
+<v Antonio Cisternino>Because basically three that I can browse
+and see all the various changes,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4862-1
+<v Antonio Cisternino>I can try to use the UI or.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4868-0
+<v Antonio Cisternino>Other means to select the branch.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4871-0
+<v Antonio Cisternino>To select.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4898-0
+<v Antonio Cisternino>The bed is so this branch is old is 4
+years old.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4898-1
+<v Antonio Cisternino>This is another three years old Branch,
+and as you can see there are active</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4898-2
+<v Antonio Cisternino>branches.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4924-0
+<v Antonio Cisternino>That recently we use a leisure at
+University of Calabria for electing</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4924-1
+<v Antonio Cisternino>director.
+So we we did some release branches to</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4924-2
+<v Antonio Cisternino>ensure that everything was was OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4960-0
+<v Antonio Cisternino>And pull request and then of course you
+can go and browse the branch and in this</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4960-1
+<v Antonio Cisternino>case you you.
+I'm looking at the source code as it was</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4960-2
+<v Antonio Cisternino>when I did the the the branch. OK,
+so conceptually it's fairly.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4987-0
+<v Antonio Cisternino>Nice and easy,
+but it's something that I'm happy that</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4987-1
+<v Antonio Cisternino>most of the class using this mechanism
+because it is.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4987-2
+<v Antonio Cisternino>It's a good way to work and it will
+become more and more important.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/4988-0
+<v Antonio Cisternino>Uh.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5003-0
+<v Antonio Cisternino>With the the AI because basically it will
+be important to see the differences.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5011-0
+<v Antonio Cisternino>OK, so if I go to my codecs.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5016-0
+<v Antonio Cisternino>There we are. This is.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5018-0
+<v Antonio Cisternino>The.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5021-0
+<v Antonio Cisternino>My conversation.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5043-0
+<v Antonio Cisternino>OK.
+And here as you can see inside the eye,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5043-1
+<v Antonio Cisternino>I already have the proposed changes
+within the editor.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5066-0
+<v Antonio Cisternino>So that's something you have to get used
+to,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5066-1
+<v Antonio Cisternino>because that's that has become the normal
+way of doing this.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5066-2
+<v Antonio Cisternino>This kind of development, OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5081-0
+<v Antonio Cisternino>Right. And at some point, not, not today,
+we will dedicate sometime also in.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5111-0
+<v Antonio Cisternino>I will show you a full code browsing
+session using the eye OK because it's</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5111-1
+<v Antonio Cisternino>something that you have to get familiar
+with because now also.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5141-0
+<v Antonio Cisternino>Google released the AI studio anthropic
+release the their own version,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5141-1
+<v Antonio Cisternino>open AI release.
+The Visual Studio code plug in to to do</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5141-2
+<v Antonio Cisternino>codecs inside Visual Studio code.
+So that's becoming the norm.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5143-0
+<v Antonio Cisternino>OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5147-0
+<v Antonio Cisternino>Right. So.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5158-0
+<v Antonio Cisternino>You were mentioning stash.
+Why are you using the stash?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5160-0
+<v Antonio Cisternino>And.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5172-0
+<v Antonio Cisternino>They're not really dead,
+and so I just asked them. I used to.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5204-0
+<v Antonio Cisternino>And what happens to this?
+That should change. Yeah,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5204-1
+<v Antonio Cisternino>it's really with a little start where you
+can both and and they are just,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5204-2
+<v Antonio Cisternino>they're waiting for you to stop the line.
+It couldn't back to the action box with</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5204-3
+<v Antonio Cisternino>the there is change.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5208-0
+<v Antonio Cisternino>Basically stashes.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5256-0
+<v Antonio Cisternino>Small assignments use the IM study about
+the stash operation.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5256-1
+<v Antonio Cisternino>Conceptually stashes I'd like to
+basically freeze these changes that I</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5256-2
+<v Antonio Cisternino>made because I need the the clean
+repository that because I need to do some</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5256-3
+<v Antonio Cisternino>operation because there are some.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5299-0
+<v Antonio Cisternino>Operation that are impossible if you have
+changes to the the current branch.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5299-1
+<v Antonio Cisternino>So you want to suspend those changes.
+Basically, no,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5299-2
+<v Antonio Cisternino>you want to go and do something else and
+go back and restore them.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5299-3
+<v Antonio Cisternino>So it's like having a stack of changes
+that I want to suspend and then restore.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5328-0
+<v Antonio Cisternino>Lots of people I know they stash and they
+never retrieve.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5328-1
+<v Antonio Cisternino>They use it just as a way to remove
+changes to the branch,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5328-2
+<v Antonio Cisternino>which of course works, but right?
+So that's basically very quick overview</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5328-3
+<v Antonio Cisternino>of the.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5362-0
+<v Antonio Cisternino>Of these tools and why this is important
+because when you start browsing the code</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5362-1
+<v Antonio Cisternino>of a real code base,
+the most important parts are not only the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5362-2
+<v Antonio Cisternino>information that you will find inside of
+the the source files, but also.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5390-0
+<v Antonio Cisternino>The comments, the dates,
+so if you if you see the I see I'm</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5390-1
+<v Antonio Cisternino>browsing the core Clr which is the
+runtime the.net runtime source code.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5395-0
+<v Antonio Cisternino>And you see the latest.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5421-0
+<v Antonio Cisternino>Pull Request accepted and then you say
+last commit message end date for each and</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5421-1
+<v Antonio Cisternino>every elements.
+And of course you can see that there are</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5421-2
+<v Antonio Cisternino>part.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5425-0
+<v Antonio Cisternino>Five years ago.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5432-0
+<v Antonio Cisternino>It it is a code that is there since.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5466-0
+<v Antonio Cisternino>I'm not. I won't say from the beginning,
+but almost OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5466-1
+<v Antonio Cisternino>And so the information about the change
+helps you a lot to understand the core</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5466-2
+<v Antonio Cisternino>things, active things etcetera,
+etcetera and and comments are important.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5509-0
+<v Antonio Cisternino>Because they helps you to understand what
+was the change that have been made.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5509-1
+<v Antonio Cisternino>The last changes made of course.
+Then you can go and and see the pull</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5509-2
+<v Antonio Cisternino>request or to see the story of the single
+file to see all the evolution since the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5509-3
+<v Antonio Cisternino>beginning.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5518-0
+<v Antonio Cisternino>OK, that's all possible, but nevertheless,
+let's not go to that level of.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5548-0
+<v Antonio Cisternino>So how did I find this?
+Usually you have to you you browse and go</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5548-1
+<v Antonio Cisternino>on GitHub.
+Most of the source code is available on</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5548-2
+<v Antonio Cisternino>GitHub GitHub. There are few other.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5574-0
+<v Antonio Cisternino>Repository code repository repositories
+worldwide available,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5574-1
+<v Antonio Cisternino>but GitHub is still the the the most big
+one. It has been acquired by Microsoft.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5609-0
+<v Antonio Cisternino>Say six or seven years ago.
+So basically it is owned by Microsoft.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5609-1
+<v Antonio Cisternino>It provides essentially a free service.
+The only thing you have to pay is if you</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5609-2
+<v Antonio Cisternino>want nowadays AI.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5643-0
+<v Antonio Cisternino>Related services. Then you have to pay.
+Otherwise you can use it freely also for</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5643-1
+<v Antonio Cisternino>creating private repositories.
+So service communication.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5643-2
+<v Antonio Cisternino>Unfortunately we I signed an agreement
+with GitHub a few years ago for the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5643-3
+<v Antonio Cisternino>enterprise.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5685-0
+<v Antonio Cisternino>Level.
+Suddenly they discontinued this and then</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5685-1
+<v Antonio Cisternino>I reapply and they said you're welcome to
+the enterprise level and that's OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5685-2
+<v Antonio Cisternino>But you didn't give me,
+I'm sorry to inform you that it was a</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5685-3
+<v Antonio Cisternino>joke. I mean,
+so actually we are not having copilot.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5685-4
+<v Antonio Cisternino>So please stop me.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5712-0
+<v Antonio Cisternino>And asking a copilot licence because we
+have to pay, we don't have money, so it's,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5712-1
+<v Antonio Cisternino>I can tell you use the free version and
+free here is not perfect but it works OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5742-0
+<v Antonio Cisternino>So.
+net is 1 organisation and and it is</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5742-1
+<v Antonio Cisternino>maintained by the NET Foundation which is
+an open foundation which is supervised</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5742-2
+<v Antonio Cisternino>the evolutionofthe.net framework.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5781-0
+<v Antonio Cisternino>As you can see,
+there are areas in which the organisation</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5781-1
+<v Antonio Cisternino>being important repositories,
+because of course there are a lot of</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5781-2
+<v Antonio Cisternino>repositories in this thing and of course
+in ASP in.net you you find the runtime.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5811-0
+<v Antonio Cisternino>The Roslyn is basically the platform
+which is used to create the compilers.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5811-1
+<v Antonio Cisternino>Actually when we browse the C# compiler I
+was browsing the Roslyn.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5838-0
+<v Antonio Cisternino>Asp.net Core,
+which is the web framework which is very</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5838-1
+<v Antonio Cisternino>popular waveforms, is an old framework.
+Then of course there are documents and.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5839-0
+<v Antonio Cisternino>Umm.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5845-0
+<v Antonio Cisternino>And others. So if you look.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5891-0
+<v Antonio Cisternino>The University of Pisa,
+you will find that there is the simu 5G,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5891-1
+<v Antonio Cisternino>which is an open source simulator system
+that has been developed by engineers and</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5891-2
+<v Antonio Cisternino>it's being used by Intel and many other
+big corporation as part of.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5896-0
+<v Antonio Cisternino>The development,
+as you can see it's A and then there are.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5938-0
+<v Antonio Cisternino>Few other repos from a survey I did.
+I think we are the most active university</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5938-1
+<v Antonio Cisternino>having repository public on guitar but
+with open source that is not just the I</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5938-2
+<v Antonio Cisternino>am source code and I committed I mean
+that that's not open source.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5948-0
+<v Antonio Cisternino>That's just you release the SUS code. OK,
+so runtime looks like.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5960-0
+<v Antonio Cisternino>The interesting place to to go to
+understand the the the runtime.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5961-0
+<v Antonio Cisternino>Umm.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5967-0
+<v Antonio Cisternino>Of course, with the gate.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5985-0
+<v Antonio Cisternino>Sees them a number of tools that have
+been developed around the geek system. OK,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/5985-1
+<v Antonio Cisternino>so when you?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6012-0
+<v Antonio Cisternino>Go.
+You will find the number of badges and</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6012-1
+<v Antonio Cisternino>everything.
+You can some you can automate a number of</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6012-2
+<v Antonio Cisternino>processes,
+unit testing how many of you have.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6020-0
+<v Antonio Cisternino>Created unit test or know what they are
+OK?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6051-0
+<v Antonio Cisternino>And fewer than just using git.
+Long story short,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6051-1
+<v Antonio Cisternino>unit test is creating small applications
+that test single functionality in</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6051-2
+<v Antonio Cisternino>software and then use a tool.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6077-0
+<v Antonio Cisternino>That runs all the tests and gives you a
+beautiful report. OK?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6077-1
+<v Antonio Cisternino>And it will be nice to be able to run
+tests after any changes,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6077-2
+<v Antonio Cisternino>so you are able to see.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6100-0
+<v Antonio Cisternino>The you're you're see,
+you're able to see whether there are</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6100-1
+<v Antonio Cisternino>obvious errors,
+unit tests that are not enough to get rid</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6100-2
+<v Antonio Cisternino>of errors. Another quick story.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6119-0
+<v Antonio Cisternino>Have you ever got in Windows?
+The question will you wanna send the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6119-1
+<v Antonio Cisternino>feedback to Microsoft when an application
+crashes?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6147-0
+<v Antonio Cisternino>Why, in your opinion,
+I mean that if it's a Microsoft</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6147-1
+<v Antonio Cisternino>application, you may say, OK,
+it's windows,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6147-2
+<v Antonio Cisternino>it's natural that Microsoft asked me to
+send the feedback to Microsoft,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6147-3
+<v Antonio Cisternino>but why should I send?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6148-0
+<v Antonio Cisternino>Umm.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6164-0
+<v Antonio Cisternino>The information to Microsoft,
+if it's Adobe or some other application.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6172-0
+<v Antonio Cisternino>So actually it the nice it was 2008.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6181-0
+<v Antonio Cisternino>And Microsoft was having a problem that.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6222-0
+<v Antonio Cisternino>Any bug seem like a bug of the operating
+system,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6222-1
+<v Antonio Cisternino>even if it was not OK because windows is
+a rather open platform in not in terms of</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6222-2
+<v Antonio Cisternino>the source code,
+but of who can write drivers or elements</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6222-3
+<v Antonio Cisternino>etcetera.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6257-0
+<v Antonio Cisternino>And so they were full of drivers that
+kept crashing the operating system,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6257-1
+<v Antonio Cisternino>but it wasn't operating system fault.
+It was fault of the drivers.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6257-2
+<v Antonio Cisternino>So they started a number of actions to
+try to reduce these.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6284-0
+<v Antonio Cisternino>Perception that the operating system was
+faulty,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6284-1
+<v Antonio Cisternino>while it in fact it was not the operating
+system but components, external,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6284-2
+<v Antonio Cisternino>exterminated a lot,
+and then they they thought that it was</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6284-3
+<v Antonio Cisternino>would have been a good idea.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6294-0
+<v Antonio Cisternino>Because if you have a a bug in Adobe.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6295-0
+<v Antonio Cisternino>It's.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6309-0
+<v Antonio Cisternino>Difficult that you write to Adobe and
+Adobe will fix the bike for you.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6344-0
+<v Antonio Cisternino>Unless you're a very big customer. OK,
+so they said. OK, as a Microsoft,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6344-1
+<v Antonio Cisternino>we see all the crashes,
+we get all the reports.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6344-2
+<v Antonio Cisternino>We builds internal statistics and all the.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6375-0
+<v Antonio Cisternino>Very common crashes from all the users
+over all over the world.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6375-1
+<v Antonio Cisternino>We collect them and then we call Adobe.
+If I hey,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6375-2
+<v Antonio Cisternino>Adobe has a big problem because this
+crash is happening million times.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6417-0
+<v Antonio Cisternino>You have to work on that. OK,
+that was the the original reason.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6417-1
+<v Antonio Cisternino>The second reason that is I think even
+more interesting is that they have steel</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6417-2
+<v Antonio Cisternino>today.
+And if they are not the only one internal</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6417-3
+<v Antonio Cisternino>statistics.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6441-0
+<v Antonio Cisternino>That estimate the likelihood that by
+fixing a bug in the in in the code base,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6441-1
+<v Antonio Cisternino>you will introduce a new another bug.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6478-0
+<v Antonio Cisternino>In the small code base that I I developed,
+after five years,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6478-1
+<v Antonio Cisternino>I wasn't sure that the changes I was
+about to make was reasonable or not</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6478-2
+<v Antonio Cisternino>because the risk is that you don't.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6511-0
+<v Antonio Cisternino>Remember all the assumption you made in
+that particular thing,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6511-1
+<v Antonio Cisternino>and so you may break the the code base
+and unit test. We all know they're good,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6511-2
+<v Antonio Cisternino>but they're not complete in spotting
+these these things and so.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6548-0
+<v Antonio Cisternino>So internally they know that they have
+all the statistics, commits,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6548-1
+<v Antonio Cisternino>bugs etcetera and so they they have an
+estimate,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6548-2
+<v Antonio Cisternino>let's say 20% or 2% probability to
+introduce a new bug by fixing another bug.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6548-3
+<v Antonio Cisternino>OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6569-0
+<v Antonio Cisternino>Now they started asking the question,
+is it worth fixing a bug?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6569-1
+<v Antonio Cisternino>Because if a bug is rare enough?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6598-0
+<v Antonio Cisternino>Maybe a good idea and don't fix it
+because we may create more problems than</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6598-1
+<v Antonio Cisternino>the the problem we fix. OK,
+so that's the reason because you got that</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6598-2
+<v Antonio Cisternino>that thing.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6621-0
+<v Antonio Cisternino>So in very large code bases you have to
+consider also this kind of phenomenon</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6621-1
+<v Antonio Cisternino>over time and and and therefore browsing.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6634-0
+<v Antonio Cisternino>The code base becomes something that is
+liking a treasure.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6634-1
+<v Antonio Cisternino>Finding a search for the treasure.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6635-0
+<v Antonio Cisternino>And.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6666-0
+<v Antonio Cisternino>And of course the automation mechanics
+try to reduce as much as possible the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6666-1
+<v Antonio Cisternino>likeliness to introduce bug in in the
+repo. OK, and so there are.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6691-0
+<v Antonio Cisternino>Agents that now automatically check out
+the repo bills run the tests and and even</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6691-1
+<v Antonio Cisternino>try to fix bugs. Let me see if there are.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6699-0
+<v Antonio Cisternino>You know, I think I have pizza pizza.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6702-0
+<v Antonio Cisternino>Or a column.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6704-0
+<v Antonio Cisternino>There we are.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6729-0
+<v Antonio Cisternino>So I'm getting a lot of pull requests
+made by agents by both by the AI. OK,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6729-1
+<v Antonio Cisternino>so there are boats that go around and say
+OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6743-0
+<v Antonio Cisternino>The mermaid has moved from 10.
+9 zero to 1094.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6748-0
+<v Antonio Cisternino>Wanna upgrade it OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6753-0
+<v Antonio Cisternino>And so yes or no, and these are.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6760-0
+<v Antonio Cisternino>But they did. They did. I did match this.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6790-0
+<v Antonio Cisternino>I think as you can see,
+there are a lot of automated pull request</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6790-1
+<v Antonio Cisternino>generated and in general if I go and look
+for the pull request,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6790-2
+<v Antonio Cisternino>this is compatibility.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6817-0
+<v Antonio Cisternino>I give in. For me,
+I I get information about the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6817-1
+<v Antonio Cisternino>compatibility of this. So say OK,
+if this is the dependable so it cheques</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6817-2
+<v Antonio Cisternino>for dependencies changes and so I say.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6843-0
+<v Antonio Cisternino>From 1311 to 1520 compatibility 78%
+should I merge want to take the risk or</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6843-1
+<v Antonio Cisternino>you want to stay safe and don't touch?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6858-0
+<v Antonio Cisternino>And and then of course I can go and look
+at the proposal changes there are.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6894-0
+<v Antonio Cisternino>Cheques that have been made automatically,
+so there are no conflicts in this thing,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6894-1
+<v Antonio Cisternino>and so I may say, OK,
+merge and I accept the merge. OK,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6894-2
+<v Antonio Cisternino>so as you can see the tool set now that
+we have these tools such as git.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6898-0
+<v Antonio Cisternino>To manage and.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6932-0
+<v Antonio Cisternino>Manipulate the source not just as a bunch
+of text files,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6932-1
+<v Antonio Cisternino>but a more organic tree like structure
+that is made of text files brought to a</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6932-2
+<v Antonio Cisternino>lot of tools that automatically.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6939-0
+<v Antonio Cisternino>Keeps changing. They they they work.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6943-0
+<v Antonio Cisternino>OK, so now that.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6980-0
+<v Antonio Cisternino>All these clearly the bigger the project,
+the more appreciated is OK and there are</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6980-1
+<v Antonio Cisternino>conventions such as source is where
+typical you find the source code of</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/6980-2
+<v Antonio Cisternino>something so runtime source hopefully
+will be.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7001-0
+<v Antonio Cisternino>The runtime source code,
+not always this happen,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7001-1
+<v Antonio Cisternino>so don't be too optimistic,
+but if you're lucky enough,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7001-2
+<v Antonio Cisternino>at least that then.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7009-0
+<v Antonio Cisternino>The the first browsing typically involves.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7033-0
+<v Antonio Cisternino>Looking at the names and trying to guess
+from the names, a reasonable construction.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7033-1
+<v Antonio Cisternino>So there are things that you may know
+core Clr.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7064-0
+<v Antonio Cisternino>You may know that Clr stands for stands
+for common language runtime,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7064-1
+<v Antonio Cisternino>which is the name of the virtual machine.
+The net virtual machine.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7064-2
+<v Antonio Cisternino>So of course Clr likely will contain the
+virtual machine code.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7093-0
+<v Antonio Cisternino>Mono for all people that mono was the
+open source implementationof.netbefore.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7093-1
+<v Antonio Cisternino>net became open source,
+and so you will find interesting part</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7093-2
+<v Antonio Cisternino>coming from the mono.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7117-0
+<v Antonio Cisternino>Legacy tests and tools and tasks you may
+easily guess libraries you open and you</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7117-1
+<v Antonio Cisternino>find that there are all.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7120-0
+<v Antonio Cisternino>The library set.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7135-0
+<v Antonio Cisternino>That you have in in a project like this.
+So I mean if you wanna see system.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7137-0
+<v Antonio Cisternino>System IO.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7176-0
+<v Antonio Cisternino>Zip compression.
+You go there and you find the source code</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7176-1
+<v Antonio Cisternino>of the system IO compression and so you
+can see how the zip file zip is</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7176-2
+<v Antonio Cisternino>implemented. Zip is implemented and so on.
+OK, so that's.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7178-0
+<v Antonio Cisternino>Easy enough, OK?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7180-0
+<v Antonio Cisternino>So.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7184-0
+<v Antonio Cisternino>Corsilla is.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7187-0
+<v Antonio Cisternino>You do the same.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7221-0
+<v Antonio Cisternino>You start looking around,
+you hope to see some greet me.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7221-1
+<v Antonio Cisternino>Sorry in a very large code base you won't
+find. Let me.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7221-2
+<v Antonio Cisternino>It may cost you six months of work only
+just to understand the code base. OK,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7221-3
+<v Antonio Cisternino>so don't.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7250-0
+<v Antonio Cisternino>Think that this is an easy job so and my
+goal in these three classes is to see how</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7250-1
+<v Antonio Cisternino>a real virtual machine is implemented.
+This is a production 1,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7250-2
+<v Antonio Cisternino>so it's interesting.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7282-0
+<v Antonio Cisternino>How a number of techniques,
+which include both garbage collection,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7282-1
+<v Antonio Cisternino>so the ability to garbage collect
+generated code at runtime by the runtime</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7282-2
+<v Antonio Cisternino>itself, which is a.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7324-0
+<v Antonio Cisternino>Fairly interesting technique can be
+implemented in terms of high level object</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7324-1
+<v Antonio Cisternino>that were discussed until now, types,
+type system etcetera.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7324-2
+<v Antonio Cisternino>And you will learn how the understanding
+of the type system is essential to</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7324-3
+<v Antonio Cisternino>understand the source code of the virtual
+machine.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7344-0
+<v Antonio Cisternino>But we also take you put the chance to
+learn how to browse browse something so</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7344-1
+<v Antonio Cisternino>complicated. OK,
+so let's have a first look.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7345-0
+<v Antonio Cisternino>None.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7350-0
+<v Antonio Cisternino>So there are DLLS.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7361-0
+<v Antonio Cisternino>Are dynamic linking libraries what are
+dynamic linking libraries?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7363-0
+<v Antonio Cisternino>So.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7375-0
+<v Antonio Cisternino>Phoenix and Windows users dot SO or DLL.
+What are?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7392-0
+<v Antonio Cisternino>Maybe friends is that they can be shared
+with problems.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7422-0
+<v Antonio Cisternino>Yes, basically it's correct.
+So when you develop very large project is</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7422-1
+<v Antonio Cisternino>unlikely that you have all the source
+code. You will use libraries,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7422-2
+<v Antonio Cisternino>libraries are basically.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7442-0
+<v Antonio Cisternino>Pre compiled piece of code and if we stay
+on the system level so let's say C.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7478-0
+<v Antonio Cisternino>You will have all in.
+See everything is a function.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7478-1
+<v Antonio Cisternino>You can't have nested functions.
+So a library basically is a set of</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7478-2
+<v Antonio Cisternino>functions and you have a table.
+Inside this the the binary that which</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7478-3
+<v Antonio Cisternino>says this function this address.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7480-0
+<v Antonio Cisternino>Yeah.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7519-0
+<v Antonio Cisternino>Once you have the library,
+the linker which is part of the compiler</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7519-1
+<v Antonio Cisternino>is responsible to resolve all the symbols
+compiles,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7519-2
+<v Antonio Cisternino>so you get all the fragments and then you
+have to put everything together into a</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7519-3
+<v Antonio Cisternino>single executor.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7542-0
+<v Antonio Cisternino>By attaching calls from one binary model
+to the other binary model.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7542-1
+<v Antonio Cisternino>So when you compile GCC,
+you get obj files, which are basically.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7574-0
+<v Antonio Cisternino>Compiled modules that have not yet been
+linked with the remaining libraries,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7574-1
+<v Antonio Cisternino>and that's basically the libraries and
+typically you can statically link the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7574-2
+<v Antonio Cisternino>libraries.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7600-0
+<v Antonio Cisternino>So literally I want to copy paste the the
+this library,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7600-1
+<v Antonio Cisternino>that library etcetera into a single
+executable.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7600-2
+<v Antonio Cisternino>All the libraries are internal to this
+executable.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7603-0
+<v Antonio Cisternino>That's the easy.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7616-0
+<v Antonio Cisternino>What are the potential disadvantages of
+statically linking?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7619-0
+<v Antonio Cisternino>Bye brisa.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7652-0
+<v Antonio Cisternino>So first of all,
+if I want to update then I have to update</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7652-1
+<v Antonio Cisternino>the to recompile to recreate and this is
+clearly one. So if I have 10 programmes.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7671-0
+<v Antonio Cisternino>On my file system,
+all of them are using the C runtime which</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7671-1
+<v Antonio Cisternino>is aligned. How many copy.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7695-0
+<v Antonio Cisternino>Copies of the C runtime will I have in in
+my system.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7695-1
+<v Antonio Cisternino>Then if you statically compile you are
+occupying more space.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7741-0
+<v Antonio Cisternino>Because for every programme using a very
+common library you will get a copy of the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7741-1
+<v Antonio Cisternino>library inside the the the executable.
+Of course the linker is not stupid.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7741-2
+<v Antonio Cisternino>The linker typically copies only those
+portions of the file.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7758-0
+<v Antonio Cisternino>That would be of the library that would
+be used.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7758-1
+<v Antonio Cisternino>So if part of the library is not used and
+will not be linked OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7799-0
+<v Antonio Cisternino>But nevertheless, it will cost today.
+Probably we will be happy we have enough</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7799-1
+<v Antonio Cisternino>space to not go and statically link in
+the 90s when our drives can be 50</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7799-2
+<v Antonio Cisternino>megabytes. I can tell you space was.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7802-0
+<v Antonio Cisternino>The most important aspect to think about.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7808-0
+<v Antonio Cisternino>And so being able to share a library.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7821-0
+<v Antonio Cisternino>In the first place was a good thing
+because you were saving space.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7861-0
+<v Antonio Cisternino>So you have the dynamically linked
+libraries which are basically same thing,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7861-1
+<v Antonio Cisternino>but the library is loaded at the
+dynamically at runtime and it's not</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7861-2
+<v Antonio Cisternino>linked statically inside the executable.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7872-0
+<v Antonio Cisternino>Let me see if now GPT improves back and
+show diagram.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7873-0
+<v Antonio Cisternino>That.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7885-0
+<v Antonio Cisternino>Exemplify DLS and linking.
+Now what is the problem?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7900-0
+<v Antonio Cisternino>So in a binary file,
+how do you think you invoke?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7900-1
+<v Antonio Cisternino>You end up invoking a function.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7920-0
+<v Antonio Cisternino>So what is the instruction in the
+assembly code that will be generating</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7920-1
+<v Antonio Cisternino>when invoke a function?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7935-0
+<v Antonio Cisternino>Call to the name. The name is assembly,
+but then in machine languages.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7956-0
+<v Antonio Cisternino>The address and where this address is
+based in relatively inside the executable</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7956-1
+<v Antonio Cisternino>file. OK so.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7984-0
+<v Antonio Cisternino>When you statically link a file,
+that's easy because you statically know</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7984-1
+<v Antonio Cisternino>the address of the function that you are
+linking. So the linker.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/7984-2
+<v Antonio Cisternino>Basically there's all this fixing because.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8030-0
+<v Antonio Cisternino>Every module in the compilation as a
+table import and export.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8030-1
+<v Antonio Cisternino>Export is the list of file of addresses
+of the function contained in the module.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8030-2
+<v Antonio Cisternino>Any import are the list of function that
+are required by that module.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8030-3
+<v Antonio Cisternino>So when the linker starts.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8058-0
+<v Antonio Cisternino>Looks for the old incoming,
+computes the actual address of the module,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8058-1
+<v Antonio Cisternino>and then back patch the code so that you
+get the actual address. That's easy.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8058-2
+<v Antonio Cisternino>Now when you go and do.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8068-0
+<v Antonio Cisternino>The dynamic linking actually you are
+having this.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8090-0
+<v Antonio Cisternino>Basically architecture this basic
+architecture.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8090-1
+<v Antonio Cisternino>So the code of the library the DLL is
+shared by two programmes.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8093-0
+<v Antonio Cisternino>But of course.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8121-0
+<v Antonio Cisternino>Now the address of the programme,
+the the address of the function is not</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8121-1
+<v Antonio Cisternino>anymore the same for the two programmes
+because they have different layouts,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8121-2
+<v Antonio Cisternino>they have different bytes internally.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8129-0
+<v Antonio Cisternino>So how can we fix that?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8169-0
+<v Antonio Cisternino>Yes and no. The the, the,
+the the quickest.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8169-1
+<v Antonio Cisternino>So yeah you so when you use a dynamic
+library,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8169-2
+<v Antonio Cisternino>typically you have a static library.
+So that for you as a programmer you don't</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8169-3
+<v Antonio Cisternino>have to know.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8187-0
+<v Antonio Cisternino>All the details of the invocation. OK,
+so in this sense, yes.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8187-1
+<v Antonio Cisternino>But what happens under the hood is.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8217-0
+<v Antonio Cisternino>You simply have a table.
+The table contains the pointer to the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8217-1
+<v Antonio Cisternino>function of the dynamic link in library.
+So basically whenever you invoke in your</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8217-2
+<v Antonio Cisternino>code. So if Programme 1 invokes.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8226-0
+<v Antonio Cisternino>The function full basically goes into a
+table which is.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8261-0
+<v Antonio Cisternino>Available in the process user in the
+process space which gives you the actual</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8261-1
+<v Antonio Cisternino>address of that particular entry point.
+You jump, you call to that. OK,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8261-2
+<v Antonio Cisternino>so basically dynamic linking libraries
+are.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8270-0
+<v Antonio Cisternino>I mean to share the address from
+different address spaces.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8275-0
+<v Antonio Cisternino>No, this one last thing.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8284-0
+<v Antonio Cisternino>This works thanks to the operating system.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8314-0
+<v Antonio Cisternino>Because the library will be loaded into
+the memory of multiple processes and of</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8314-1
+<v Antonio Cisternino>course also the memory is not infinite,
+not only the fight system,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8314-2
+<v Antonio Cisternino>even worse than anything.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8350-0
+<v Antonio Cisternino>You don't want to load too many times.
+Library dot dot DNA, so you don't want.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8350-1
+<v Antonio Cisternino>You do want not only that both processes
+can share the library,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8350-2
+<v Antonio Cisternino>but also that in memory the library is
+exactly the same.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8352-0
+<v Antonio Cisternino>How can you mean?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8356-0
+<v Antonio Cisternino>Any ideas?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8371-0
+<v Antonio Cisternino>So what is the one of the essential
+functions of the operating system?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8373-0
+<v Antonio Cisternino>People.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8379-0
+<v Antonio Cisternino>And meet your man, OK?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8411-0
+<v Antonio Cisternino>If your memory means that every process
+believes to have a flat under space,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8411-1
+<v Antonio Cisternino>wonderful.
+But the truth is that then you produce is</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8411-2
+<v Antonio Cisternino>a wall map to the actual pages where the
+information is stored. OK,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8411-3
+<v Antonio Cisternino>Victor memory is.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8445-0
+<v Antonio Cisternino>A core man is one of the operating system.
+Now if you have the,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8445-1
+<v Antonio Cisternino>the and how it is implemented that there
+are there is support at the CPU level.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8445-2
+<v Antonio Cisternino>There are data structure that are called
+page table entries PT ES.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8471-0
+<v Antonio Cisternino>There are also the PTD's that are page
+table directory which basically associate</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8471-1
+<v Antonio Cisternino>into special data structure the process
+address to the real memory page. OK.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8512-0
+<v Antonio Cisternino>Now, because you have this mechanism,
+you can make part of the memory of of two</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8512-1
+<v Antonio Cisternino>different process to be in fact shared,
+even though they are mapping into</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8512-2
+<v Antonio Cisternino>different different spaces. OK,
+because you take.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8549-0
+<v Antonio Cisternino>The the the the memory pages
+corresponding to the virtual pages and</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8549-1
+<v Antonio Cisternino>you make them pointing to the same
+physical memory location or and this can</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8549-2
+<v Antonio Cisternino>be but that will be expensive or you can
+say.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8551-0
+<v Antonio Cisternino>I've got an idea.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8568-0
+<v Antonio Cisternino>Actually,
+this idea was from Microsoft and the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8568-1
+<v Antonio Cisternino>Linux copy that if you want to know the
+full story.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8607-0
+<v Antonio Cisternino>We are. Let me talk in terms of 32 bits,
+which is easy.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8607-1
+<v Antonio Cisternino>I have 4 gigabyte so the process can
+write only the 1st 2 gigabytes from 2</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8607-2
+<v Antonio Cisternino>gigabytes to 4 gigabytes of memory that's
+read all.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8645-0
+<v Antonio Cisternino>And so all the processes see the same
+memory because it's read only.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8645-1
+<v Antonio Cisternino>So there's no way to corrupt those pages.
+And you guess what?</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8645-2
+<v Antonio Cisternino>All the dynamic libraries are mapped into
+into the same addresses in all the</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8645-3
+<v Antonio Cisternino>processes.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8672-0
+<v Antonio Cisternino>And we simplify a little bit the
+implementation,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8672-1
+<v Antonio Cisternino>so DLLS are a crucial mechanism that
+makes the software works, and it's also.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8708-0
+<v Antonio Cisternino>Terrible because most of the it's the
+main reason why our system keeps crashing</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8708-1
+<v Antonio Cisternino>today after update,
+because of course it's difficult to</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8708-2
+<v Antonio Cisternino>ensure that when I updated library DLL.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8740-0
+<v Antonio Cisternino>Programme one and Programme 2 will be OK
+with the new version of the LED,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8740-1
+<v Antonio Cisternino>so dynamic linking has become one of the
+most important mechanisms of modern</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8740-2
+<v Antonio Cisternino>operating systems.
+But at the same time it's also.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8770-0
+<v Antonio Cisternino>Point of which is very, very,
+very important. And as you can see,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8770-1
+<v Antonio Cisternino>you have to understand also these
+mechanics if you want to really</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8770-2
+<v Antonio Cisternino>understand the programming because as we
+would see.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8806-0
+<v Antonio Cisternino>One of the big contribution of javaand.
+net was to make standard the dynamic</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8806-1
+<v Antonio Cisternino>loading in Java.
+You can add classes to that will be</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8806-2
+<v Antonio Cisternino>loaded by an an existing.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8837-0
+<v Antonio Cisternino>A running programme without even stopping
+the process and that running port</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8837-1
+<v Antonio Cisternino>programme will be can be able to load the
+code that was not even there when you</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8837-2
+<v Antonio Cisternino>started the programme and of net the same
+OK so.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8871-0
+<v Antonio Cisternino>The ability of dynamically linking and
+loading is a core mechanics that has been</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8871-1
+<v Antonio Cisternino>used by modern runtime quite a lot to
+work and to give you features that you</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8871-2
+<v Antonio Cisternino>can perceive at the programming language
+level.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8908-0
+<v Antonio Cisternino>That otherwise won't be there.
+So all these things are intertwined,</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8908-1
+<v Antonio Cisternino>one with each other and and so you have
+all the time you must be able to look at</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8908-2
+<v Antonio Cisternino>all the stack to fully understand what's
+going on in your programme otherwise.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8914-0
+<v Antonio Cisternino>You've not not separate time programme.
+See you on Wednesday.</v>
+
+6ac2fd61-b917-4233-af97-fd23fb3d3186/8921-0
+<v Antonio Cisternino>I.</v>

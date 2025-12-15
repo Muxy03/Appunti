@@ -1,0 +1,3815 @@
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4-0
+<v Antonio Cisternino>The class, so I say I decided to.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5-0
+<v Antonio Cisternino>The restaurant.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6-0
+<v Antonio Cisternino>So.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8-0
+<v Antonio Cisternino>I think I can share the screen.
+There we are.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12-0
+<v Antonio Cisternino>So first of all, few no on Monday.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/14-0
+<v Antonio Cisternino>We will do another round of exercise.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/23-0
+<v Antonio Cisternino>For the coming project,
+I expect to propose the overview with the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/23-1
+<v Antonio Cisternino>project that should be done in no more
+than.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/27-0
+<v Antonio Cisternino>Let's say 10 days, not full time. OK,
+so that so that you can allocate your</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/27-1
+<v Antonio Cisternino>time.
+My my point is not to to renew in in this.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/32-0
+<v Antonio Cisternino>It is more to challenge you and spend
+some time and learning something and</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/32-1
+<v Antonio Cisternino>force you to do procedures that are
+uncommon. OK, so don't don't worry,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/32-2
+<v Antonio Cisternino>most of the exam will be the oral exam.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/35-0
+<v Antonio Cisternino>For which please starting and try to be
+as prepared as you can be.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/36-0
+<v Antonio Cisternino>Uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/42-0
+<v Antonio Cisternino>I'm still generating the notes and they
+are coming.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/42-1
+<v Antonio Cisternino>You still have video transcriptions and
+etcetera. So and you can find the.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/43-0
+<v Antonio Cisternino>Yeah.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/45-0
+<v Antonio Cisternino>OK.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/70-0
+<v Antonio Cisternino>You can find it on the web documentation,
+whatever,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/70-1
+<v Antonio Cisternino>but please there are the notes from
+Andrea also the previous year because at</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/70-2
+<v Antonio Cisternino>the end of the day.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/76-0
+<v Antonio Cisternino>We COVID the pretty much.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/101-0
+<v Antonio Cisternino>Similar set of topics.
+The main point that I really care for you</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/101-1
+<v Antonio Cisternino>is please try to understand two things,
+the abstract concept. I don't care.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/104-0
+<v Antonio Cisternino>Nothing about.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/141-0
+<v Antonio Cisternino>I don't know active workflows in a chart
+or a sync in C# or promises in JavaScript.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/141-1
+<v Antonio Cisternino>I mean today there are these two years
+and there will be something else. OK,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/141-2
+<v Antonio Cisternino>so there's no but you.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/175-0
+<v Antonio Cisternino>Must focus on the idea that that
+particular scene that hides in the behind</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/175-1
+<v Antonio Cisternino>and so try to understand if you want to
+start studying and I mean and try to see</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/175-2
+<v Antonio Cisternino>if you get it.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/206-0
+<v Antonio Cisternino>Ask yourself questions. I mean,
+I'd like to have monads,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/206-1
+<v Antonio Cisternino>but I'm working in Rasta.
+How can I have a monadic style</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/206-2
+<v Antonio Cisternino>computation expressly in Rasta?
+That's the right question.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/223-0
+<v Antonio Cisternino>OK,
+this raster for me with this or should I</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/223-1
+<v Antonio Cisternino>implement the runtime because there is no
+sufferings?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/231-0
+<v Antonio Cisternino>OK, so these are basically and so the.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/266-0
+<v Antonio Cisternino>The the the project will try to push you
+on these with the help of the eye,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/266-1
+<v Antonio Cisternino>which is really valuable because before
+the only option was to go to the library,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/266-2
+<v Antonio Cisternino>take the book or go to the.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/303-0
+<v Antonio Cisternino>Later, years later, take a book,
+read your book, and if you're lucky,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/303-1
+<v Antonio Cisternino>learn something more. If you're unlucky,
+no. OK,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/303-2
+<v Antonio Cisternino>so AI can be a super big asset to
+implement to learn.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/337-0
+<v Antonio Cisternino>Things,
+but you have to do try yourself and you</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/337-1
+<v Antonio Cisternino>have to understand the right questions.
+Can you explain me the scoping policy of</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/337-2
+<v Antonio Cisternino>the Python PROGRAMMING language and so on
+so.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/352-0
+<v Antonio Cisternino>In this way you can find yourself the
+question. So my personal goal is this.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/352-1
+<v Antonio Cisternino>I can tell you.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/370-0
+<v Antonio Cisternino>I'm talking to more and more in
+industries and everyone is after the code</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/370-1
+<v Antonio Cisternino>through AI so.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/401-0
+<v Antonio Cisternino>It's important that you spend time there.
+OK,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/401-1
+<v Antonio Cisternino>so there will be basically I I spent some
+time thinking into the details.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/401-2
+<v Antonio Cisternino>There will be basically three kind of
+projects.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/443-0
+<v Antonio Cisternino>So one,
+I mean all the same generate the outputs,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/443-1
+<v Antonio Cisternino>I mean the output,
+the prompts and the check always. OK,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/443-2
+<v Antonio Cisternino>basically I found that it is useful to
+classify tasks in three.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/460-0
+<v Antonio Cisternino>Categories. One is software generation,
+so some of the project will be generating</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/460-1
+<v Antonio Cisternino>software Excel.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/484-0
+<v Antonio Cisternino>Be doable, but not too easy.
+And then you submit the code with the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/484-1
+<v Antonio Cisternino>problems and some consideration about how
+do you think it was?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/496-0
+<v Antonio Cisternino>Another one is explore feature X or
+language Y or system Y.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/500-0
+<v Antonio Cisternino>That's another one.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/532-0
+<v Antonio Cisternino>The third one is explore system X and
+tell me something about it as we did with</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/532-1
+<v Antonio Cisternino>the CLR. OK,
+and in that case you will do a little bit</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/532-2
+<v Antonio Cisternino>of copy testing.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/565-0
+<v Antonio Cisternino>Back and forth to ask questions about
+some feature of the of the thing. No, no,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/565-1
+<v Antonio Cisternino>it will be only one assignment,
+which of course I will share in the.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/575-0
+<v Antonio Cisternino>And uh,
+it's a it's a single exam that's OK.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/595-0
+<v Antonio Cisternino>And since me and Andrea,
+we are on different side of the spectrum</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/595-1
+<v Antonio Cisternino>in so many ways,
+I think it will be interesting,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/595-2
+<v Antonio Cisternino>dear Alexa.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/606-0
+<v Antonio Cisternino>And I I also the grade will be
+interesting because uh,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/606-1
+<v Antonio Cisternino>the way and there uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/635-0
+<v Antonio Cisternino>Does the the evaluation follow a
+different way of mind than me?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/635-1
+<v Antonio Cisternino>And I mean no one is necessary right or
+wrong, but basically we're different,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/635-2
+<v Antonio Cisternino>so we will have to negotiate at some
+point.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/651-0
+<v Antonio Cisternino>OK, tell Andrea,
+we should tell Andrea we'll review this</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/651-1
+<v Antonio Cisternino>so.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/667-0
+<v Antonio Cisternino>OK,
+so today I decide that it is good if we</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/667-1
+<v Antonio Cisternino>spend some time.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/678-0
+<v Antonio Cisternino>Talking about the runtime execution
+environment.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/710-0
+<v Antonio Cisternino>The software is not just the PROGRAMMING
+language, it's not judgment semantics,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/710-1
+<v Antonio Cisternino>but it's a complex artifact with a lot of
+dependencies. I often tend to.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/739-0
+<v Antonio Cisternino>To say that software is like eggs,
+there is a best before they eat because</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/739-1
+<v Antonio Cisternino>you implement the software and you do
+nothing and the software stops working.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/741-0
+<v Antonio Cisternino>At some point.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/767-0
+<v Antonio Cisternino>OK, so to some extent,
+one may say that we did something wrong</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/767-1
+<v Antonio Cisternino>because we started with the computer
+science as a mathematical.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/774-0
+<v Antonio Cisternino>Apply discipline when everything was
+basically.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/806-0
+<v Antonio Cisternino>Pure, correct. You do the verification.
+So that is verification.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/806-1
+<v Antonio Cisternino>We do the requirements analysis and then
+you write the software and this software</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/806-2
+<v Antonio Cisternino>will run for it and it's.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/808-0
+<v Antonio Cisternino>And it's false there. Uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/851-0
+<v Antonio Cisternino>Sometimes, by accident,
+I mean there are bugs.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/851-1
+<v Antonio Cisternino>Sometimes it's by the nature of the
+problem we're addressing,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/851-2
+<v Antonio Cisternino>because most of the system we use today
+are not doing mathematical computations</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/851-3
+<v Antonio Cisternino>by itself. We're not anymore.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/885-0
+<v Antonio Cisternino>Mathematic computer science started in
+the context of World War 2, I mean,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/885-1
+<v Antonio Cisternino>and so numerical computation in general,
+cryptography and and then engineering.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/885-2
+<v Antonio Cisternino>So in the evolution, the prominent part.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/923-0
+<v Antonio Cisternino>In the 90s it was making computations and
+that was the mathematical numerical part.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/923-1
+<v Antonio Cisternino>OK,
+but then we introduced the UI and UI as</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/923-2
+<v Antonio Cisternino>we commented,
+there is event three reacts to an</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/923-3
+<v Antonio Cisternino>external environment that can be.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/955-0
+<v Antonio Cisternino>Fully modelled into a formal model.
+We're not, at least for now,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/955-1
+<v Antonio Cisternino>we're not able to provide a full model of
+a human being,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/955-2
+<v Antonio Cisternino>which is the the one assessing the finger
+thinking on the mouse.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/959-0
+<v Antonio Cisternino>And the same applies for Internet of
+Things.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/985-0
+<v Antonio Cisternino>Where the dependency comes from the
+outside automotive. In general,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/985-1
+<v Antonio Cisternino>all the controlling systems are governed
+by the unpredictable states that may come</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/985-2
+<v Antonio Cisternino>from outside.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/986-0
+<v Antonio Cisternino>Uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1018-0
+<v Antonio Cisternino>And then there is the fact that in the
+beginning it seemed not so relevant,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1018-1
+<v Antonio Cisternino>but again,
+because at the beginning we were</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1018-2
+<v Antonio Cisternino>implementing the mathematics,
+all three segments we were implementing.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1024-0
+<v Antonio Cisternino>It was, uh, so established discipline.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1045-0
+<v Antonio Cisternino>Then you can go and implement the lean
+pack or some other library which</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1045-1
+<v Antonio Cisternino>implement linear alt graph.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1075-0
+<v Antonio Cisternino>And you know that that library will be
+used for very long time,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1075-1
+<v Antonio Cisternino>but this part of programming,
+I won't say it's over,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1075-2
+<v Antonio Cisternino>but almost most of the.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1103-0
+<v Antonio Cisternino>Mathematical algorithms,
+physical simulation,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1103-1
+<v Antonio Cisternino>etcetera has been mostly implemented and
+so now we have to implement modern</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1103-2
+<v Antonio Cisternino>systems and then you see.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1106-0
+<v Antonio Cisternino>The physicist.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1142-0
+<v Antonio Cisternino>Let's start using Python.
+Biologists use Python.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1142-1
+<v Antonio Cisternino>It's a more interesting piece because in
+physics division was C or C++.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1142-2
+<v Antonio Cisternino>The large has been programmed using C++
+OK.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1167-0
+<v Antonio Cisternino>It was ******** fortune, OK,
+and suddenly they started writing pipe.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1167-1
+<v Antonio Cisternino>Why?
+Because they started modelling in their</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1167-2
+<v Antonio Cisternino>system theories that are not yet
+consolidated.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1199-0
+<v Antonio Cisternino>So an environment in which you can easily
+change the code to update the model</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1199-1
+<v Antonio Cisternino>becomes more appealing than it was before,
+but suddenly you are exploring new ideas,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1199-2
+<v Antonio Cisternino>so.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1200-0
+<v Antonio Cisternino>Uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1228-0
+<v Antonio Cisternino>The whole point is software started as a
+mathematical entity and now has become an</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1228-1
+<v Antonio Cisternino>artifact.
+They will be probably generated by AI.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1245-0
+<v Antonio Cisternino>Which capture a set of requirements and
+elements that tend to evolve overtime.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1275-0
+<v Antonio Cisternino>Because the world evolves,
+society evolves, service evolve,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1275-1
+<v Antonio Cisternino>and suddenly things that are very
+important are not anymore,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1275-2
+<v Antonio Cisternino>and at the same time,
+new things become important.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1295-0
+<v Antonio Cisternino>Including marketing because I mean I
+didn't really feel the need for the new</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1295-1
+<v Antonio Cisternino>UI in the iOS software.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1321-0
+<v Antonio Cisternino>So that's part of the life and this
+process,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1321-1
+<v Antonio Cisternino>this is one of the first times that I'm
+sharing this this opinion.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1321-2
+<v Antonio Cisternino>So I mean these are.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1359-0
+<v Antonio Cisternino>Real opinion, OK, take them.
+It is the introduction to the set of</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1359-1
+<v Antonio Cisternino>tools,
+but I mean I'm trying to share with you</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1359-2
+<v Antonio Cisternino>my views in terms of how in my lifespan
+I've seen evolving software development.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1394-0
+<v Antonio Cisternino>And one of the consequences of this
+evolution is that we spend less and less</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1394-1
+<v Antonio Cisternino>time in software engine at the end of 90s
+software development moving from</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1394-2
+<v Antonio Cisternino>waterfall model.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1423-0
+<v Antonio Cisternino>It was a very rigid,
+NASA oriented software development</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1423-1
+<v Antonio Cisternino>methodology which was clearly devised to
+implement a system that is meant to last</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1423-2
+<v Antonio Cisternino>to a more agile form.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1430-0
+<v Antonio Cisternino>Our software development, uh,
+acknowledging that software was uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1434-0
+<v Antonio Cisternino>I become a more.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1439-0
+<v Antonio Cisternino>Evolving, evolving, uh, structure.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1442-0
+<v Antonio Cisternino>So uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1454-0
+<v Antonio Cisternino>And now, now, because of AI,
+many of the pillars.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1467-0
+<v Antonio Cisternino>Of software engineering are I mean
+software reuse. Is that important?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1494-0
+<v Antonio Cisternino>When I open the cloud,
+I found that I in the various demo of the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1494-1
+<v Antonio Cisternino>I I've asked it to implement the Mandel
+broad fractile viewer at least 10 times.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1529-0
+<v Antonio Cisternino>And I never got the idea. Oh,
+I already have the implementation.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1529-1
+<v Antonio Cisternino>Let's reuse that. I'm not doing the work.
+Yeah. So in principle,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1529-2
+<v Antonio Cisternino>why should I write the software so that
+it can be reused?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1569-0
+<v Antonio Cisternino>I can't get the sort of new every time.
+At the same time you kind of come and are</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1569-1
+<v Antonio Cisternino>raising like that.
+So once we have a model and you just do</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1569-2
+<v Antonio Cisternino>the specification of the.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1597-0
+<v Antonio Cisternino>Of software and it was from you.
+So it's very software engineering as a</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1597-1
+<v Antonio Cisternino>big different. No,
+it's one part of software engineering.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1597-2
+<v Antonio Cisternino>So I'm not saying that software
+engineering is that completely different.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1597-3
+<v Antonio Cisternino>Professor Di Vasi.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1633-0
+<v Antonio Cisternino>That we share with this recording will be
+happy to hear me say that he was right</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1633-1
+<v Antonio Cisternino>when he did his PhD in writing natural
+language requirements for software</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1633-2
+<v Antonio Cisternino>engineering.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1677-0
+<v Antonio Cisternino>OK,
+so the requirement parts are clearly</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1677-1
+<v Antonio Cisternino>there to stay because requirements
+basically the attempt to tell in natural</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1677-2
+<v Antonio Cisternino>language as specific as possible the
+requirements from the system I need to be</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1677-3
+<v Antonio Cisternino>developed but the other part.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1684-0
+<v Antonio Cisternino>Of software engineering that was
+basically reusing human work.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1735-0
+<v Antonio Cisternino>Something libraries for cryptography,
+etcetera, etcetera.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1735-1
+<v Antonio Cisternino>Some of them of course will remain. OK,
+but some of them in principle you can</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1735-2
+<v Antonio Cisternino>simply regenerate every time the code is
+OK. OK,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1735-3
+<v Antonio Cisternino>so the part of software use I think it
+will be.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1753-0
+<v Antonio Cisternino>Complicated to maintain and it is already
+complicated.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1753-1
+<v Antonio Cisternino>Have you ever used pip in Python and sub?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1763-0
+<v Antonio Cisternino>OK, I'm sorry, sorry.
+I'm really sorry for you. Uh,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1763-1
+<v Antonio Cisternino>so when you do PP install.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1777-0
+<v Antonio Cisternino>Have you asked yourself how many
+libraries you're downloading on your</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1777-1
+<v Antonio Cisternino>system?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1800-0
+<v Antonio Cisternino>And perhaps the most important question
+is what happens if some implemented of</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1800-1
+<v Antonio Cisternino>one of those packages will change the
+semantics to software?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1802-0
+<v Antonio Cisternino>2.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1847-0
+<v Antonio Cisternino>And I mean you know what,
+since every package depends on other</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1847-1
+<v Antonio Cisternino>packages, you have all sorts of conflicts,
+SQL dependencies,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1847-2
+<v Antonio Cisternino>one package may want one version of the
+of of of a of a package and another a</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1847-3
+<v Antonio Cisternino>different version and all these.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1890-0
+<v Antonio Cisternino>Should be taken care of,
+which when you do PP install,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1890-1
+<v Antonio Cisternino>everything is fine.
+Ask yourself in two years from now that</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1890-2
+<v Antonio Cisternino>software that I did PP install people
+will be still up and running.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1890-3
+<v Antonio Cisternino>If it breaks, how can I update?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1900-0
+<v Antonio Cisternino>After two years with packages that have
+evolved on different routes and paths.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1946-0
+<v Antonio Cisternino>Thank you. I try on this.
+I mean two years is the typical.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1946-1
+<v Antonio Cisternino>I don't want to see anymore that software
+part.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1946-2
+<v Antonio Cisternino>So I'm I'm sure that the problem appears
+after two months,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1946-3
+<v Antonio Cisternino>but realistic when you finish a software
+survey.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1956-0
+<v Antonio Cisternino>So that was the two years,
+but I agree that two months is probably</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1956-1
+<v Antonio Cisternino>more up to date.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1957-0
+<v Antonio Cisternino>So uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/1970-0
+<v Antonio Cisternino>I think in a advanced programming course,
+it's becoming really important to.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2006-0
+<v Antonio Cisternino>Stop,
+retouch things that goes beyond the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2006-1
+<v Antonio Cisternino>programming language,
+which are runtime environments,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2006-2
+<v Antonio Cisternino>not in the sense of CLR or Java,
+but in the sense of lifecycle management</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2006-3
+<v Antonio Cisternino>or software and how it is evolving.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2007-0
+<v Antonio Cisternino>Mhm.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2008-0
+<v Antonio Cisternino>So uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2043-0
+<v Antonio Cisternino>The program originally was basically an
+executable file with a well-defined</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2043-1
+<v Antonio Cisternino>format which the loader,
+the operated system is capable of loading</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2043-2
+<v Antonio Cisternino>to the memory into the newly created
+process memory.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2049-0
+<v Antonio Cisternino>And then jump to the first instruction,
+go and have fun.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2060-0
+<v Antonio Cisternino>On Windows,
+it's easy because it's dot EXE.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2093-0
+<v Antonio Cisternino>Extension that is a program.
+Today the program is a more complicated</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2093-1
+<v Antonio Cisternino>definition because when you have a web
+server,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2093-2
+<v Antonio Cisternino>the program web server is up and running,
+but I can still add a new dev folder into.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2123-0
+<v Antonio Cisternino>Some directory and yet a new web
+application up and running it,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2123-1
+<v Antonio Cisternino>but I didn't compile anything and
+moreover I basically compiled a dynamic</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2123-2
+<v Antonio Cisternino>linking library, not an executable file.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2159-0
+<v Antonio Cisternino>Thanks to the mechanisms we discussed at
+some point of the VLL.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2159-1
+<v Antonio Cisternino>So what's happening is that as the
+software progress in its evolution,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2159-2
+<v Antonio Cisternino>it's too restricted to think that the
+program is self-contained is an</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2159-3
+<v Antonio Cisternino>executable.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2172-0
+<v Antonio Cisternino>Because we need as we move on,
+we are creating frameworks.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2214-0
+<v Antonio Cisternino>So that we have to develop only the small
+slots with the behavior we need without</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2214-1
+<v Antonio Cisternino>having to rewrite anything. OK.
+And so in this respect,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2214-2
+<v Antonio Cisternino>if I look at other software today,
+the software today is a complicated</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2214-3
+<v Antonio Cisternino>entity we trust.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2238-0
+<v Antonio Cisternino>Dependency in terms of packages of
+libraries that your particular platform</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2238-1
+<v Antonio Cisternino>provides to get some functionality that
+has been already developed.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2240-0
+<v Antonio Cisternino>And there's one by.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2272-0
+<v Antonio Cisternino>The second part is it is very likely that
+your program is not a fully executable</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2272-1
+<v Antonio Cisternino>process.
+It is more and more likely that it will</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2272-2
+<v Antonio Cisternino>be loaded somewhere else,
+one of the most popular.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2275-0
+<v Antonio Cisternino>Uh,
+C stands uh is of course the web browser.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2311-0
+<v Antonio Cisternino>JavaScript, Reactor, AngularJS,
+WebAssembly and so on are basically the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2311-1
+<v Antonio Cisternino>program is loaded by the browser,
+which is a processor.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2311-2
+<v Antonio Cisternino>So basically your program is managed by
+another program.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2317-0
+<v Antonio Cisternino>The same applies to, I mean,
+plug these and everything.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2353-0
+<v Antonio Cisternino>Sometimes this happens in java.
+net through the dynamic loader,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2353-1
+<v Antonio Cisternino>and this is one of the reasons,
+to my opinion,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2353-2
+<v Antonio Cisternino>why CC and even Rust code is less popular,
+I mean.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2392-0
+<v Antonio Cisternino>Is used and it absolves very important
+tasks that are system level tasks.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2392-1
+<v Antonio Cisternino>I mean typically the building blocks of
+our system are still C, Rust, C++,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2392-2
+<v Antonio Cisternino>etcetera.
+But then the way you compose this huge</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2392-3
+<v Antonio Cisternino>amount.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2416-0
+<v Antonio Cisternino>The amount of code we are collectively
+developing and maintaining through</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2416-1
+<v Antonio Cisternino>industry and open source contributors is
+basically glued together through this</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2416-2
+<v Antonio Cisternino>mechanism which range from.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2449-0
+<v Antonio Cisternino>Packages doing compilation and run times
+which possibly alter the semantics of of</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2449-1
+<v Antonio Cisternino>the code.
+Remember when we studied the custom</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2449-2
+<v Antonio Cisternino>attributes?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2480-0
+<v Antonio Cisternino>And I show you the web pages in C# that
+have the annotations.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2480-1
+<v Antonio Cisternino>I use it as an example.
+You say OK a low anonymous or HTTP get.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2519-0
+<v Antonio Cisternino>This this function,
+this method should be exposed as a get on</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2519-1
+<v Antonio Cisternino>the web server.
+That meaning this basically in the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2519-2
+<v Antonio Cisternino>program I I said this is a method but I
+also annotate it so that another program</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2519-3
+<v Antonio Cisternino>can turn that method into a web endpoint.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2533-0
+<v Antonio Cisternino>So it is not anymore a problem,
+it's just has been taken and attached to</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2533-1
+<v Antonio Cisternino>to some external entity.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2545-0
+<v Antonio Cisternino>And 10 years ago I would have say that
+these are components.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2576-0
+<v Antonio Cisternino>Honestly,
+today components are too little to</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2576-1
+<v Antonio Cisternino>explain this big thing.
+Those are libraries, components,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2576-2
+<v Antonio Cisternino>web points, APIs, all these things, right?
+And these things are growing so much that.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2580-0
+<v Antonio Cisternino>The Italian Public Administration.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2596-0
+<v Antonio Cisternino>Which is known to be very innovative,
+digital and ahead of the rest of the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2596-1
+<v Antonio Cisternino>world.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2624-0
+<v Antonio Cisternino>At last produced an API based system
+which is called PDMD in which all the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2624-1
+<v Antonio Cisternino>public administration offers service to
+other public administration.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2652-0
+<v Antonio Cisternino>With authentication,
+authorization and everything. OK,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2652-1
+<v Antonio Cisternino>so we are basically disaggregating our
+software and create collections of</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2652-2
+<v Antonio Cisternino>software and runtimes which together.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2684-0
+<v Antonio Cisternino>Uh, think by interoperability,
+by martial running and machining,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2684-1
+<v Antonio Cisternino>and all the mechanics we introduced at
+some point are able to use one each other</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2684-2
+<v Antonio Cisternino>and provide some usable services.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2691-0
+<v Antonio Cisternino>OK, so when you're looking at like this.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2739-0
+<v Antonio Cisternino>And then you think of a program as a main
+and then it is sort of really a main is</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2739-1
+<v Antonio Cisternino>not a program, main is an exercise.
+The program is tell me what is the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2739-2
+<v Antonio Cisternino>runtime,
+not in terms of the programming language</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2739-3
+<v Antonio Cisternino>support, but in.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2747-0
+<v Antonio Cisternino>Term of operating system and software and
+how you use it.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2777-0
+<v Antonio Cisternino>And of course we also have to maintain
+software, which is the other main part.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2777-1
+<v Antonio Cisternino>So for the first part we briefly and
+shortly also because you're already using,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2777-2
+<v Antonio Cisternino>so it's OK, introduce Git.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2794-0
+<v Antonio Cisternino>It is basically what was standard for
+repository and code evolution management.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2799-0
+<v Antonio Cisternino>And so that is the one part.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2804-0
+<v Antonio Cisternino>And the other part is uh um.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2839-0
+<v Antonio Cisternino>The set of programs that allows you to
+manage all this complexity,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2839-1
+<v Antonio Cisternino>which of course have a root which is in
+system administration, so Linux shares,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2839-2
+<v Antonio Cisternino>PowerShell on Windows,
+Zshell on Mac and so on.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2859-0
+<v Antonio Cisternino>But clearly that is too few. I mean,
+you can't write a system in bash.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2859-1
+<v Antonio Cisternino>It's too incomplete, but honestly,
+it won't work.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2888-0
+<v Antonio Cisternino>You can pick up some other share,
+but as we started trying to automate in a</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2888-1
+<v Antonio Cisternino>systematically and managing very large
+number of servers to serve very.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2915-0
+<v Antonio Cisternino>Large applications into one place led us
+to develop a number of systems that try</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2915-1
+<v Antonio Cisternino>to address the main problem of making
+application run.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2939-0
+<v Antonio Cisternino>Provide in the application the
+environment which provides to the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2939-1
+<v Antonio Cisternino>application all the required resources so
+that it can perform its service.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2974-0
+<v Antonio Cisternino>So today if you give me a program,
+it's not enough to some extent because I</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2974-1
+<v Antonio Cisternino>basically don't have enough information
+to to do.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2974-2
+<v Antonio Cisternino>So attempts originally were let's use
+scripting engine.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2976-0
+<v Antonio Cisternino>Trev Puppet.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2988-0
+<v Antonio Cisternino>How many have heard about Chef,
+Puppet or similar hands up?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2994-0
+<v Antonio Cisternino>OK, let's start with this.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2998-0
+<v Antonio Cisternino>What is back the?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/2999-0
+<v Antonio Cisternino>What?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3013-0
+<v Antonio Cisternino>Our system to like Chef or Puppet or
+Ansible, Ansible no one.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3015-0
+<v Antonio Cisternino>To.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3025-0
+<v Antonio Cisternino>Set up execution environment for
+applications.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3048-0
+<v Antonio Cisternino>OK, so Chef, Pop,
+Ansible are basically orchestration and</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3048-1
+<v Antonio Cisternino>orchestrate speech so that if I need to
+have the.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3090-0
+<v Antonio Cisternino>Bodi Bodi library installed on my 7500
+systems. I say OK, this is the recipe.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3090-1
+<v Antonio Cisternino>This is the reason because the chef is
+called like this. This is the recipe.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3090-2
+<v Antonio Cisternino>Please go on to all the notes and provide
+the Bodi Bodi library onto.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3095-0
+<v Antonio Cisternino>All the noise. OK,
+so that is basically the.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3103-0
+<v Antonio Cisternino>Infrastructure as a code is the the name.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3105-0
+<v Antonio Cisternino>Uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3122-0
+<v Antonio Cisternino>So they have become popular in our
+paradine, which is the evolution of.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3123-0
+<v Antonio Cisternino>The uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3128-0
+<v Antonio Cisternino>Agile method so.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3135-0
+<v Antonio Cisternino>Have you heard about extreme programming?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3136-0
+<v Antonio Cisternino>OK.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3170-0
+<v Antonio Cisternino>OK, so people are good.
+It's programming basically is you need to</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3170-1
+<v Antonio Cisternino>you have to you need to coverage to break
+your code so that you can improve it and</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3170-2
+<v Antonio Cisternino>so on. It's very like major philosophy.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3178-0
+<v Antonio Cisternino>And and evolution has become something
+that is called DevOps.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3218-0
+<v Antonio Cisternino>So a system where development and
+operations.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3218-1
+<v Antonio Cisternino>So development is development operations,
+especially in or data centers refers all</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3218-2
+<v Antonio Cisternino>the to keep the systems.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3261-0
+<v Antonio Cisternino>OK. And so the in the DevOps world,
+basically you meet the two and you have</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3261-1
+<v Antonio Cisternino>very frequent cycles of upgrade.
+You can shut down the system.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3261-2
+<v Antonio Cisternino>I'm pretty sure that if Facebook or or
+TikTok or whatever shuts down the service</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3261-3
+<v Antonio Cisternino>for two hours all the weeks it would be
+upset.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3294-0
+<v Antonio Cisternino>For maintenance and so we had to devise
+methodologies and software stack that</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3294-1
+<v Antonio Cisternino>allows us to provision in a lightweight
+form runtimes that allows us.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3310-0
+<v Antonio Cisternino>First, to quickly deploy a new system,
+which means to provide the right</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3310-1
+<v Antonio Cisternino>execution environment to the program we
+we brought second.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3311-0
+<v Antonio Cisternino>Uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3318-0
+<v Antonio Cisternino>That is able to manage for scalability.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3352-0
+<v Antonio Cisternino>Because the the the guy which writes the
+Google index code or the search code</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3352-1
+<v Antonio Cisternino>writes for processing a query,
+but then you need the system that scales</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3352-2
+<v Antonio Cisternino>up to server millions of query per second.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3362-0
+<v Antonio Cisternino>Third,
+the ability to have a different version</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3362-1
+<v Antonio Cisternino>of the same software, who is it here?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3391-0
+<v Antonio Cisternino>So yeah, and typically the goal is OK,
+I made this upgrade to the software.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3391-1
+<v Antonio Cisternino>We don't know if it works,
+so there is alpha and beta.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3396-0
+<v Antonio Cisternino>OK, it works. Will the users be happy?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3429-0
+<v Antonio Cisternino>Of this and so the solution is you know
+what? I start both services,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3429-1
+<v Antonio Cisternino>old and new version.
+Then I use a software which is called</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3429-2
+<v Antonio Cisternino>load balancer which hides the service
+itself.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3451-0
+<v Antonio Cisternino>And simply say OK, you pick this request,
+you pick the request and so on.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3451-1
+<v Antonio Cisternino>And so it's OK 5% of the people new
+service, rest the whole service.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3472-0
+<v Antonio Cisternino>And if you're happy, OK,
+let's finish and install everything. OK,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3472-1
+<v Antonio Cisternino>so in this super complicated world.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3477-0
+<v Antonio Cisternino>The only thing that we found.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3483-0
+<v Antonio Cisternino>I think mostly because of people.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3517-0
+<v Antonio Cisternino>Andrew not just is you know what at the
+end of the day if I can save all the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3517-1
+<v Antonio Cisternino>directory with all the packages that two
+years ago I downloaded and I can keep.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3526-0
+<v Antonio Cisternino>The operating system stable around that
+software can run for it.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3527-0
+<v Antonio Cisternino>I mean.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3576-0
+<v Antonio Cisternino>But now I need a way to freeze the
+software stack starting from the system.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3576-1
+<v Antonio Cisternino>Whenever I upgrade the system,
+some libraries will change,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3576-2
+<v Antonio Cisternino>some libraries the changes library will
+influence packages that are used in those</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3576-3
+<v Antonio Cisternino>libraries.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3597-0
+<v Antonio Cisternino>And so on and support and your
+application will crash.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3597-1
+<v Antonio Cisternino>So every update on any components
+potentially can break the system.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3597-2
+<v Antonio Cisternino>That's that's the thing. So.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3600-0
+<v Antonio Cisternino>There are, of course, methods.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3620-0
+<v Antonio Cisternino>To try to avoid obvious breaking,
+one of these is unit testing.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3620-1
+<v Antonio Cisternino>How many of you have heard about unit
+testing?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3631-0
+<v Antonio Cisternino>Good.
+So unit testing is a natural way to face</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3631-1
+<v Antonio Cisternino>this.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3633-0
+<v Antonio Cisternino>Let's take.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3639-0
+<v Antonio Cisternino>Let's be more concrete.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3644-0
+<v Antonio Cisternino>And take some example.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3647-0
+<v Antonio Cisternino>Uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3649-0
+<v Antonio Cisternino>I will take.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3656-0
+<v Antonio Cisternino>This, but this is not the project.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3660-0
+<v Antonio Cisternino>Which I was looking for.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3669-0
+<v Antonio Cisternino>I mean, I'm looking also for that,
+but it's.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3670-0
+<v Antonio Cisternino>Oh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3672-0
+<v Antonio Cisternino>Uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3674-0
+<v Antonio Cisternino>Uh uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3706-0
+<v Antonio Cisternino>Let me take Oraculum,
+which is in this in this respect. I mean,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3706-1
+<v Antonio Cisternino>it's not because Oraculum is beautiful,
+it's just because I wrote the code base</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3706-2
+<v Antonio Cisternino>so I know that there is something I'm
+looking for it.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3751-0
+<v Antonio Cisternino>So just the as a a quick example again
+runtime management.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3751-1
+<v Antonio Cisternino>Someone had really an idea on Java to say
+hey you know what since we have this</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3751-2
+<v Antonio Cisternino>ability to load the things I can write
+the program which basically.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3785-0
+<v Antonio Cisternino>Execute methods that are labeled to some
+somehow so that I can run multiple tests.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3785-1
+<v Antonio Cisternino>You need tests,
+so you're familiar with the with the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3785-2
+<v Antonio Cisternino>concept, so I won't spend much on this.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3802-0
+<v Antonio Cisternino>The only thing which is worth saying that
+is a good example of existing environment.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3802-1
+<v Antonio Cisternino>Basically I'm writing all these.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3803-0
+<v Antonio Cisternino>Uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3848-0
+<v Antonio Cisternino>Oh,
+it is complaining because I don't have I</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3848-1
+<v Antonio Cisternino>have to upgrade the.net version.
+It's OK and so test method.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3848-2
+<v Antonio Cisternino>This is like a small main which is the
+unit test,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3848-3
+<v Antonio Cisternino>but I want to run these many programs one
+after the other end.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3882-0
+<v Antonio Cisternino>Checks some properties.
+So basically the test method annotation</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3882-1
+<v Antonio Cisternino>informs the runtime which is not the
+executable.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3882-2
+<v Antonio Cisternino>So this is not a program as a whole,
+but it's a bunch of function you want to</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3882-3
+<v Antonio Cisternino>test and some runtime.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3898-0
+<v Antonio Cisternino>In this case,
+the end unit runtime will load these</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3898-1
+<v Antonio Cisternino>things and run all the tests and give me
+a beautiful UI. OK.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3910-0
+<v Antonio Cisternino>OK. And and and so on. OK, so this is the.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3912-0
+<v Antonio Cisternino>You need test.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3920-0
+<v Antonio Cisternino>Now also the unit test is.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3952-0
+<v Antonio Cisternino>Complicated because you're checking only
+some features of your software.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3952-1
+<v Antonio Cisternino>In fact the software also other tests are
+run such as the regression test.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3964-0
+<v Antonio Cisternino>Because not all the corruption may be
+caught by unit testing.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3964-1
+<v Antonio Cisternino>So it's unit testing is.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3982-0
+<v Antonio Cisternino>A good thing to do,
+but not that important.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/3982-1
+<v Antonio Cisternino>I mean not not exhausted. OK, so.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4012-0
+<v Antonio Cisternino>How can we ensure,
+given the status of the art,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4012-1
+<v Antonio Cisternino>the friend and unit testing requires
+development skills if you if the software</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4012-2
+<v Antonio Cisternino>is not open source then?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4032-0
+<v Antonio Cisternino>You know that the solution is getting
+back, so who cares about the testing?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4032-1
+<v Antonio Cisternino>Let's find a way to freeze the full
+computing stack.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4035-0
+<v Antonio Cisternino>First answer, virtual machines.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4081-0
+<v Antonio Cisternino>Something that I use it to free this that
+you can see around Windows 2000 or even</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4081-1
+<v Antonio Cisternino>Windows NT4 on top of the visualization
+system and and so the system of the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4081-2
+<v Antonio Cisternino>virtual machine gives me a stable
+environment that I can.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4117-0
+<v Antonio Cisternino>Even think of not upgrade.
+I don't care because it's sandbox and of</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4117-1
+<v Antonio Cisternino>course then I have to protect from the
+outside from for cyber security attacks.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4117-2
+<v Antonio Cisternino>But apart from that can freeze this
+software and let this software to last</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4117-3
+<v Antonio Cisternino>for very long time.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4150-0
+<v Antonio Cisternino>Until nobody understands anymore nothing
+of that thing and then you will pay for</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4150-1
+<v Antonio Cisternino>implement an equivalent version with new
+technology.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4150-2
+<v Antonio Cisternino>So basically that now the problem is.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4153-0
+<v Antonio Cisternino>So how many of you have installed a big
+machine?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4170-0
+<v Antonio Cisternino>That's good.
+So what is now that you all install the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4170-1
+<v Antonio Cisternino>what is the drawback of the machine?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4172-0
+<v Antonio Cisternino>Me.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4175-0
+<v Antonio Cisternino>Yeah, everybody.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4201-0
+<v Antonio Cisternino>Uh, it it's the must be, you say? Yeah.
+So yeah, the hypervisor we had.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4201-1
+<v Antonio Cisternino>Basically we need a program, uh,
+which is called hypervisor.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4201-2
+<v Antonio Cisternino>Technically it also slows down.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4231-0
+<v Antonio Cisternino>I'd like to explain to you how does it
+work. The Egg Advisor. This is beautiful,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4231-1
+<v Antonio Cisternino>but I don't have time,
+but basically just to give you the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4231-2
+<v Antonio Cisternino>problem is that there are interrupts.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4260-0
+<v Antonio Cisternino>They have to be called by against the
+reducing sensor or other that should</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4260-1
+<v Antonio Cisternino>percolate down to the cost of the
+reducing system. OK,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4260-2
+<v Antonio Cisternino>and so it is very sophisticated.
+There is a slowdown of the machine,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4260-3
+<v Antonio Cisternino>but thanks to VMware.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4267-0
+<v Antonio Cisternino>Where this slow down gradually went down
+to.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4294-0
+<v Antonio Cisternino>The amount which is acceptable 10% would
+say OK advantage I can have Windows,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4294-1
+<v Antonio Cisternino>Linux,
+Mac running on the same system and</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4294-2
+<v Antonio Cisternino>disadvantage overhead.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4295-0
+<v Antonio Cisternino>Hello.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4303-0
+<v Antonio Cisternino>Forced to start any with the machine you
+have to move.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4342-0
+<v Antonio Cisternino>And more resources because if I have
+three Linux boxes,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4342-1
+<v Antonio Cisternino>I'm paying 3 file systems, 3 kernels,
+3 whatever. OK,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4342-2
+<v Antonio Cisternino>this is so the solution which is
+basically.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4366-0
+<v Antonio Cisternino>Thing I want to cover the most day and I
+want to show you with practical example</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4366-1
+<v Antonio Cisternino>interesting stuff are basically bound to
+a technology that has been mostly</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4366-2
+<v Antonio Cisternino>developed in Google.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4373-0
+<v Antonio Cisternino>How many of you have developed the
+container?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4379-0
+<v Antonio Cisternino>That's a lesson. That's good. That's good.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4387-0
+<v Antonio Cisternino>What is a container since you're all
+familiar with the container?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4388-0
+<v Antonio Cisternino>OK.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4410-0
+<v Antonio Cisternino>Oh, yes, this, this. I mean,
+actually in that source that that,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4410-1
+<v Antonio Cisternino>but technically what it is, a container.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4414-0
+<v Antonio Cisternino>It's not ADM. It's not, no.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4419-0
+<v Antonio Cisternino>As the meeting.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4445-0
+<v Antonio Cisternino>Is that it's about the container shipper
+that the as a container in the and the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4445-1
+<v Antonio Cisternino>and the that the smaller.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4468-0
+<v Antonio Cisternino>Small small container are the single
+application that don't have I mean inside</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4468-1
+<v Antonio Cisternino>of the and the just the dependency the
+application the and the not.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4500-0
+<v Antonio Cisternino>All they'll get the system inside.
+This probably can be a good requirement</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4500-1
+<v Antonio Cisternino>for a container system,
+but actually the definition depends on</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4500-2
+<v Antonio Cisternino>the container itself.
+What it is a container?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4500-3
+<v Antonio Cisternino>Have you always installed the container?
+You should know.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4514-0
+<v Antonio Cisternino>From a an operating systems standpoint,
+what is a container with the help?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4521-0
+<v Antonio Cisternino>A container is a set of rocesses.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4527-0
+<v Antonio Cisternino>Of the current operating system.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4537-0
+<v Antonio Cisternino>Which are confined in the structures of
+the current.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4551-0
+<v Antonio Cisternino>Through a mechanism which in Linux is
+called C groups container groups.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4588-0
+<v Antonio Cisternino>So that when you execute system APIs,
+the operating system will give you back a</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4588-1
+<v Antonio Cisternino>subset of the information.
+If I look at the process,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4588-2
+<v Antonio Cisternino>a list of the processes even though.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4614-0
+<v Antonio Cisternino>A container is a process like any other
+process in the operating system.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4614-1
+<v Antonio Cisternino>This container will see only process
+related information, so main works,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4614-2
+<v Antonio Cisternino>networks, etcetera,
+limited to each container group.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4618-0
+<v Antonio Cisternino>So I in score.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4669-0
+<v Antonio Cisternino>The containers are a way to partition the
+tables of the operating system so that</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4669-1
+<v Antonio Cisternino>you can hide from the operating and from
+a process information about other process.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4718-0
+<v Antonio Cisternino>Why?
+Because in programming and before also in</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4718-1
+<v Antonio Cisternino>your privacy system, names are everything.
+So if you hide a name,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4718-2
+<v Antonio Cisternino>the resource will be accessible.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4794-0
+<v Antonio Cisternino>Right.
+So now you know what it is that what you</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4794-1
+<v Antonio Cisternino>installed or run.
+So a container is a process or a set of</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4794-2
+<v Antonio Cisternino>process. When you do, when you do fork,
+you create a new process.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4794-3
+<v Antonio Cisternino>That process will belong to the same C
+root.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4863-0
+<v Antonio Cisternino>And so it will see the resources of the
+neighbors.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4863-1
+<v Antonio Cisternino>This is one of the two parts of the
+containers.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4863-2
+<v Antonio Cisternino>It's our processes in AC group of the
+current on Windows.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4863-3
+<v Antonio Cisternino>There are containers and they use.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4909-0
+<v Antonio Cisternino>With the subsystems,
+but I mean if someone speeds us through</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4909-1
+<v Antonio Cisternino>the eye,
+but they are available on by the way.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4924-0
+<v Antonio Cisternino>We will talk later.
+What is the second major ingredients of</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4924-1
+<v Antonio Cisternino>containers?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4984-0
+<v Antonio Cisternino>What do you mean by?
+I mean one is the process,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4984-1
+<v Antonio Cisternino>but we know that application require data.
+So yeah,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4984-2
+<v Antonio Cisternino>like ingredient of a container is the
+data.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4984-3
+<v Antonio Cisternino>What is the interesting about the
+container data?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/4992-0
+<v Antonio Cisternino>Did you guys hear me?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5000-0
+<v Antonio Cisternino>Few goals. I mean then.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5003-0
+<v Antonio Cisternino>The.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5016-0
+<v Antonio Cisternino>Give me one second, Stefano.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5018-0
+<v Antonio Cisternino>Oh, oh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5025-0
+<v Antonio Cisternino>So.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5030-0
+<v Antonio Cisternino>Uh, the basically.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5054-0
+<v Antonio Cisternino>The problem uh uh,
+so one of the possibilities on machine uh</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5054-1
+<v Antonio Cisternino>is the disk.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5128-0
+<v Antonio Cisternino>I have two Ubuntu, some very certain.
+I pay twice the cost to disk with the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5128-1
+<v Antonio Cisternino>same data.
+Then of course the storage can do the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5128-2
+<v Antonio Cisternino>duplication or some other techniques,
+but I mean some of you that will attend</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5128-3
+<v Antonio Cisternino>the ICT infrastructure course.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5147-0
+<v Antonio Cisternino>This one, uh, next semester.
+We'll learn more about that.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5189-0
+<v Antonio Cisternino>But in any case,
+there is a problem with the file system</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5189-1
+<v Antonio Cisternino>occupy a lot of space.
+So the other ingredient is a differential</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5189-2
+<v Antonio Cisternino>file system.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5247-0
+<v Antonio Cisternino>So a format that has been standardised
+that allows you to express basically like</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5247-1
+<v Antonio Cisternino>the git. It's like the git,
+but apply to a file system.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5247-2
+<v Antonio Cisternino>So you have the the git expressing other.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5307-0
+<v Antonio Cisternino>Segments.
+These segments have versions and so you</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5307-1
+<v Antonio Cisternino>can inherit from the Ubuntu image and
+then change the file system and you get a</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5307-2
+<v Antonio Cisternino>differential file system.
+So on the system there will be a copy of</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5307-3
+<v Antonio Cisternino>the.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5351-0
+<v Antonio Cisternino>Parent container and and and every
+container then has the differences so you</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5351-1
+<v Antonio Cisternino>don't have to pay much in terms of pays.
+Of course this also makes very very</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5351-2
+<v Antonio Cisternino>fragile.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5399-0
+<v Antonio Cisternino>In and and slow the differential file
+system. In fact they say OK,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5399-1
+<v Antonio Cisternino>but please the real data don't put on on
+the differential file system. OK.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5401-0
+<v Antonio Cisternino>So.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5403-0
+<v Antonio Cisternino>Help.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5473-0
+<v Antonio Cisternino>We can introduce the last two and most
+important things so that you have a</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5473-1
+<v Antonio Cisternino>reasonable perspective of what's going on
+in the software distribution space.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5473-2
+<v Antonio Cisternino>This that I'm showing you is not the only
+option, of course.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5563-0
+<v Antonio Cisternino>But it's becoming this de facto standard
+of most software development.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5563-1
+<v Antonio Cisternino>So I decided to focus on this.
+Of course there are still application</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5563-2
+<v Antonio Cisternino>that are installed with the good old
+install shield or some variant of Windows.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5563-3
+<v Antonio Cisternino>There are the packages of Mac, etcetera.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5640-0
+<v Antonio Cisternino>But these are basically the traditional.
+They are the package manager that</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5640-1
+<v Antonio Cisternino>typically allows you to download the
+packages, etc. And so all these.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5640-2
+<v Antonio Cisternino>But containers in this respect are
+becoming a key element that you have to</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5640-3
+<v Antonio Cisternino>understand,
+especially if you wanna be able to.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5679-0
+<v Antonio Cisternino>Debug your application and so I decided
+that to explore the runtime.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5679-1
+<v Antonio Cisternino>It was good to spend time on this, OK.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5682-0
+<v Antonio Cisternino>So.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5686-0
+<v Antonio Cisternino>Question.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5739-0
+<v Antonio Cisternino>You have to pay attention. No,
+I'm I'm joking to raise the hand. Oh, yes.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5739-1
+<v Antonio Cisternino>Oh, don't you. We have drives. OK,
+so this is a double file.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5739-2
+<v Antonio Cisternino>What is the purpose of this?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5741-0
+<v Antonio Cisternino>Find.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5779-0
+<v Antonio Cisternino>OK.
+The reality is that things are much</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5779-1
+<v Antonio Cisternino>simpler than this in the sense that
+basically there are operation which say</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5779-2
+<v Antonio Cisternino>that that that basically say OK.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5784-0
+<v Antonio Cisternino>Those are.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5785-0
+<v Antonio Cisternino>Um.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5799-0
+<v Antonio Cisternino>One second,
+step back and we'll restart 'cause I.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5824-0
+<v Antonio Cisternino>OK,
+can I run Windows and Linux container on</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5824-1
+<v Antonio Cisternino>the same Linux machine?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5826-0
+<v Antonio Cisternino>Oh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5835-0
+<v Antonio Cisternino>You will use it on things so.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5845-0
+<v Antonio Cisternino>You're saying no. Why?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5915-0
+<v Antonio Cisternino>That's why we're using it. Oh, it's not.
+It is. It's not why we use containers.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5915-1
+<v Antonio Cisternino>It would be nice to be able to run both
+operating system.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5915-2
+<v Antonio Cisternino>Technically there is a configuration that
+allows you,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5915-3
+<v Antonio Cisternino>but basically the reason is what I.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5919-0
+<v Antonio Cisternino>Just talking.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/5935-0
+<v Antonio Cisternino>It's a data structure in the curve,
+which means one curve.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6013-0
+<v Antonio Cisternino>So it is true that they can run on a
+container on Ubuntu and the other with</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6013-1
+<v Antonio Cisternino>red out. This is true, but the kernel,
+it will be the only one and it's the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6013-2
+<v Antonio Cisternino>kernel of the operating system that is
+run on the container.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6075-0
+<v Antonio Cisternino>But the kernel has become reasonably
+stable in terms of API,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6075-1
+<v Antonio Cisternino>so the kernel changes,
+but in terms of implementation.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6075-2
+<v Antonio Cisternino>But the system calls are basically stable
+since a very long time.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6133-0
+<v Antonio Cisternino>And so if you look at operating system,
+the operating system is made by the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6133-1
+<v Antonio Cisternino>kernel,
+plus a lot of dynamic linking libraries.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6133-2
+<v Antonio Cisternino>The evolving part of the system is mostly
+on the DLLS that are stored.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6208-0
+<v Antonio Cisternino>Into the this that are loaded by the
+processor.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6208-1
+<v Antonio Cisternino>So whenever you're using the C runtime,
+the C runtime gives you F open to open a</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6208-2
+<v Antonio Cisternino>file. Internally it uses the open 3D, OK.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6265-0
+<v Antonio Cisternino>The open is all is stays the same,
+but if you upgrade and improve the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6265-1
+<v Antonio Cisternino>standards in that time,
+you can change the F open implementation</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6265-2
+<v Antonio Cisternino>without touching the kernel.
+Do you agree with this?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6269-0
+<v Antonio Cisternino>So basically.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6343-0
+<v Antonio Cisternino>Since this the kernel is stable and the
+the the run the the runtime of the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6343-1
+<v Antonio Cisternino>application is loaded and depends upon
+DLL that are loaded into the process and</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6343-2
+<v Antonio Cisternino>are stored in the file system,
+then I can create.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6369-0
+<v Antonio Cisternino>A good illusion that I'm running
+different distribution on the same.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6440-0
+<v Antonio Cisternino>Beware,
+with container it's almost impossible to</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6440-1
+<v Antonio Cisternino>run a five version ago Linux,
+some version five version ago and and</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6440-2
+<v Antonio Cisternino>Linux today. OK,
+it typically don't work because also the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6440-3
+<v Antonio Cisternino>current.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6519-0
+<v Antonio Cisternino>But different distribution just differ
+from the file system and DLLS,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6519-1
+<v Antonio Cisternino>so you can do it.
+So every process will load a different</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6519-2
+<v Antonio Cisternino>set of DLLS and we're using a different
+way the system calls and you get the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6519-3
+<v Antonio Cisternino>flavor of redactor versus.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6575-0
+<v Antonio Cisternino>And then you want to over there. OK,
+set up price in Windows, but no,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6575-1
+<v Antonio Cisternino>I can't mix and match because the kernel
+loaded is one you're saving because you</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6575-2
+<v Antonio Cisternino>have only one kernel loaded.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6588-0
+<v Antonio Cisternino>And all these, all these are processes.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6654-0
+<v Antonio Cisternino>Which I think in the operating system.
+So one operating system, many processes.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6654-1
+<v Antonio Cisternino>Processes have the impression to run on
+different operating system,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6654-2
+<v Antonio Cisternino>less overhead than running virtual
+machine pay price to pay.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6719-0
+<v Antonio Cisternino>Less isolation,
+no network identity because in the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6719-1
+<v Antonio Cisternino>virtual machine you can have a little
+leak talking to and you'll see them</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6719-2
+<v Antonio Cisternino>answer like a network feature in the
+container slope you are connected to a</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6719-3
+<v Antonio Cisternino>bridge.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6731-0
+<v Antonio Cisternino>Networking off it. OK, having said that.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6738-0
+<v Antonio Cisternino>I can go where I was.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6801-0
+<v Antonio Cisternino>This file simply execute the commands
+that you can even run at the common line</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6801-1
+<v Antonio Cisternino>one after each other.
+So I mean it's a model interaction and</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6801-2
+<v Antonio Cisternino>basically this thing says OK.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6847-0
+<v Antonio Cisternino>The cooperation I have are I can create a
+new container which means in the essence</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6847-1
+<v Antonio Cisternino>of my system from an existing one,
+so from a a set of existing.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6850-0
+<v Antonio Cisternino>Fires.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6871-0
+<v Antonio Cisternino>And uh,
+execute the commands in the current</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6871-1
+<v Antonio Cisternino>kernel using that file system.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6923-0
+<v Antonio Cisternino>It's nice when you when you see the
+containers this way,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6923-1
+<v Antonio Cisternino>everything becomes much clearer unless we
+simply.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6923-2
+<v Antonio Cisternino>So this one is beautiful and I encourage
+you to.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6926-0
+<v Antonio Cisternino>Uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6953-0
+<v Antonio Cisternino>You can download the community version of
+Visual Studio.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6953-1
+<v Antonio Cisternino>I don't know if Visual Studio.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/6955-0
+<v Antonio Cisternino>Uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7017-0
+<v Antonio Cisternino>If Visual Studio code supports the same
+scaffolding,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7017-1
+<v Antonio Cisternino>but basically this is the template that
+Microsoft generates when you want to add</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7017-2
+<v Antonio Cisternino>Docker to your project.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7092-0
+<v Antonio Cisternino>OK, and I'm using it to teach.
+I learned a lot from. I mean,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7092-1
+<v Antonio Cisternino>I probably I really learned about Docker
+by studying this code because most of the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7092-2
+<v Antonio Cisternino>Docker file are pretty obvious and so you
+end up looking and say OK, that's.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7109-0
+<v Antonio Cisternino>Easy.
+This one is more tricky and it's</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7109-1
+<v Antonio Cisternino>therefore it's interesting and there is
+this.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7128-0
+<v Antonio Cisternino>URL that I'm gonna share on the on our
+team.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7130-0
+<v Antonio Cisternino>Uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7135-0
+<v Antonio Cisternino>I share it in the.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7184-0
+<v Antonio Cisternino>Docker template.
+This is a good a good read.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7184-1
+<v Antonio Cisternino>So I suggest you to have a look if you
+want to understand because basically they.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7213-0
+<v Antonio Cisternino>Want to introduce in a development
+environment support for the office so</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7213-1
+<v Antonio Cisternino>that you can processes running.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7261-0
+<v Antonio Cisternino>OK, why?
+Because when you start the process in a</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7261-1
+<v Antonio Cisternino>container, how do you debug this thing?
+How can you attach this thing that is?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7363-0
+<v Antonio Cisternino>There is still Docker exact,
+there are ways,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7363-1
+<v Antonio Cisternino>but I mean there is no easy way to debug.
+OK, so Microsoft said, OK,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7363-2
+<v Antonio Cisternino>let's support the debug inside a
+container.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7363-3
+<v Antonio Cisternino>And so I think that this is interesting.
+Of course I I I'm pretty sure that</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7363-4
+<v Antonio Cisternino>similar things are available also on
+other platforms.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7384-0
+<v Antonio Cisternino>I use this, so I let's start with this.
+OK,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7384-1
+<v Antonio Cisternino>let's try to read now what's happening.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7424-0
+<v Antonio Cisternino>From somewhere.
+So there is a standard public repository.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7424-1
+<v Antonio Cisternino>Take an image that is called ASP dot ASP
+net version 8.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7429-0
+<v Antonio Cisternino>Let's call it base.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7489-0
+<v Antonio Cisternino>So this way of working is called a model.
+I mean there is a mode,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7489-1
+<v Antonio Cisternino>so the subsequent commands after from
+will be executed assuming that this</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7489-2
+<v Antonio Cisternino>container is loaded.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7516-0
+<v Antonio Cisternino>So basically a new differential file
+system is created starting from this the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7516-1
+<v Antonio Cisternino>runtime of Docker.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7544-0
+<v Antonio Cisternino>Will fetch the image and install it.
+So even if it's an old image,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7544-1
+<v Antonio Cisternino>it's still there stability.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7600-0
+<v Antonio Cisternino>Then you say OK,
+there is a user that is called app.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7600-1
+<v Antonio Cisternino>This is executed as a user app.
+The working directory is root app.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7622-0
+<v Antonio Cisternino>So it is like I did the I entered in this
+new environment I say CD slash cap.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7691-0
+<v Antonio Cisternino>And then you say expose port 8080. OK,
+now this is interesting about containers,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7691-1
+<v Antonio Cisternino>but it also relates to the software.
+I mean sockets are fit and finite you</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7691-2
+<v Antonio Cisternino>have.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7694-0
+<v Antonio Cisternino>How many orts?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7713-0
+<v Antonio Cisternino>65K Yes, more or less. Yes, 16 bits, yeah.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7790-0
+<v Antonio Cisternino>And every port is now bound to a service.
+Port 8 is HTTP,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7790-1
+<v Antonio Cisternino>443 is HTTPS and so on and so forth,
+25 SMTP and so on. OK,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7790-2
+<v Antonio Cisternino>so I say OK this container outside.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7797-0
+<v Antonio Cisternino>Can expose port 8080.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7808-0
+<v Antonio Cisternino>But because the computer so.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7892-0
+<v Antonio Cisternino>An operating system can start multiple
+instances of the same container.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7892-1
+<v Antonio Cisternino>If I run twice this thing I will have
+that the first starts and take hold of</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7892-2
+<v Antonio Cisternino>port 8080.
+The second one will crashes because 8080</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7892-3
+<v Antonio Cisternino>is already taken.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7901-0
+<v Antonio Cisternino>But when I program,
+I need to know the port.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7989-0
+<v Antonio Cisternino>So the solution has been you know what?
+There are two ports,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7989-1
+<v Antonio Cisternino>TCP ports in containers.
+One is the internal one.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7989-2
+<v Antonio Cisternino>And so this means that these containers
+expose only one port to the outside,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/7989-3
+<v Antonio Cisternino>which is 8080.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8057-0
+<v Antonio Cisternino>But then when the container will be
+started,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8057-1
+<v Antonio Cisternino>you will say OK port 8080 of this
+container corresponds to port 80 of the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8057-2
+<v Antonio Cisternino>machine you map.
+It is like a net at home when you do the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8057-3
+<v Antonio Cisternino>network address translation OK and so in
+this way.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8064-0
+<v Antonio Cisternino>Uh, you fix that, OK?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8127-0
+<v Antonio Cisternino>This is the definition.
+Now we change image.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8127-1
+<v Antonio Cisternino>So this this building process is
+interesting because as you can see we are</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8127-2
+<v Antonio Cisternino>creating multiple containers and a
+sophisticated build. So this one.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8145-0
+<v Antonio Cisternino>Starts from a different container,
+which is the.net SDK version 8.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8152-0
+<v Antonio Cisternino>We call it builder.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8160-0
+<v Antonio Cisternino>We pass an argument.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8180-0
+<v Antonio Cisternino>In the environment,
+you remember environment variables.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8180-1
+<v Antonio Cisternino>What are environment variables?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8243-0
+<v Antonio Cisternino>Environment variables are a set a pair,
+a set of pairs name value that are</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8243-1
+<v Antonio Cisternino>defined and attached to the process and
+in Linux when in Unix when you when you</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8243-2
+<v Antonio Cisternino>fork.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8270-0
+<v Antonio Cisternino>The new process will receive the
+environment variable,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8270-1
+<v Antonio Cisternino>so you can write your software and in
+fact.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8328-0
+<v Antonio Cisternino>There are APIs to read the environment
+variables and then your software can be</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8328-1
+<v Antonio Cisternino>can change its behaviour using the
+environment variables.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8328-2
+<v Antonio Cisternino>Now environment variables are rather.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8422-0
+<v Antonio Cisternino>Annoying and in fact they are little used
+in model system for configuration because</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8422-1
+<v Antonio Cisternino>it's difficult to pass structured values.
+They are flat list,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8422-2
+<v Antonio Cisternino>so if all the application use environment
+variables it will become a mess.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8503-0
+<v Antonio Cisternino>So in principle you can use for
+configuration,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8503-1
+<v Antonio Cisternino>but for decades we changed the
+configuration into files, ETC on Linux,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8503-2
+<v Antonio Cisternino>the register on Windows. OK,
+so basically we said OK,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8503-3
+<v Antonio Cisternino>let's store the configuration of our
+application somewhere else because</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8503-4
+<v Antonio Cisternino>environment variables are too complicated
+to use.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8580-0
+<v Antonio Cisternino>Then containers brought them back.
+Now environment variables are beautiful</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8580-1
+<v Antonio Cisternino>and more and more programs have learned
+have learned how to use to be configured</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8580-2
+<v Antonio Cisternino>using environment variables because they
+are a handy way.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8604-0
+<v Antonio Cisternino>To configure software from containers. OK,
+Spotlight, let's move on. OK, work deer.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8672-0
+<v Antonio Cisternino>You go into the source directory,
+then you say I want to copy.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8672-1
+<v Antonio Cisternino>By definition,
+by default the copy is from the host to</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8672-2
+<v Antonio Cisternino>the container. So copy from the local,
+from my shell, from the current directory.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8708-0
+<v Antonio Cisternino>Into the science directory in the
+container.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8708-1
+<v Antonio Cisternino>So this changes the the differential file
+system. It adds a new file under science.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8713-0
+<v Antonio Cisternino>Then you run.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8779-0
+<v Antonio Cisternino>A process in that container, so this.
+net restore will be run inside the the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8779-1
+<v Antonio Cisternino>container where the SDK includes also the.
+net command, so it's already there.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8815-0
+<v Antonio Cisternino>And you you execute the restore which is
+basically like pip install.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8815-1
+<v Antonio Cisternino>It downloads all the dependencies that
+are stored in the C# project.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8851-0
+<v Antonio Cisternino>Then you say OK copy from local.
+There is the current directory where the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8851-1
+<v Antonio Cisternino>source code is to the.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8863-0
+<v Antonio Cisternino>Current directory inside the container
+SFC source.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8880-0
+<v Antonio Cisternino>Now we enter into the directory signs.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8913-0
+<v Antonio Cisternino>And we run the build command.
+So now I'm building the the application</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8913-1
+<v Antonio Cisternino>inside the container.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8982-0
+<v Antonio Cisternino>You may say, why are you doing this thing?
+I mean,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8982-1
+<v Antonio Cisternino>why don't you compile on the local system?
+Because the container is more similar to</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/8982-2
+<v Antonio Cisternino>the target environment,
+so the dependencies.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9022-0
+<v Antonio Cisternino>Of your software are closer to the
+runtime environment,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9022-1
+<v Antonio Cisternino>less likely to find bugs due to the
+software stack.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9071-0
+<v Antonio Cisternino>Much better.
+And in fact this thing on Windows works</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9071-1
+<v Antonio Cisternino>because Microsoft implemented the Windows
+Linux subsystem.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9071-2
+<v Antonio Cisternino>So you have Linux running inside Windows,
+otherwise it won't work.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9116-0
+<v Antonio Cisternino>Then you say OK finish.
+So build is basically containing the the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9116-1
+<v Antonio Cisternino>the source and the binary version of the
+program. OK.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9159-0
+<v Antonio Cisternino>Now oh, this is a rename for clarity.
+The build image I call it also publish,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9159-1
+<v Antonio Cisternino>but this is really for clarity.
+Otherwise it's it's an alias.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9213-0
+<v Antonio Cisternino>You said again the environment variable
+and then you say OK.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9213-1
+<v Antonio Cisternino>net publish which is a common of the
+runtime.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9213-2
+<v Antonio Cisternino>This project we the build the
+configuration.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9231-0
+<v Antonio Cisternino>Environment variable in the directory of
+publisher.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9233-0
+<v Antonio Cisternino>Uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9261-0
+<v Antonio Cisternino>And don't use a post. OK,
+so this is a command that I run into the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9261-1
+<v Antonio Cisternino>target container.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9281-0
+<v Antonio Cisternino>Right now, last,
+do you remember the base container?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9333-0
+<v Antonio Cisternino>Before,
+which is what so far is only this</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9333-1
+<v Antonio Cisternino>container.
+This container basically contains only</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9333-2
+<v Antonio Cisternino>the binary, the runtime, not the SDK,
+the compilers.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9339-0
+<v Antonio Cisternino>Needed to run the application.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9375-0
+<v Antonio Cisternino>And then you say, OK,
+let's call the runtime image as final.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9375-1
+<v Antonio Cisternino>Just remember that this is the final step.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9445-0
+<v Antonio Cisternino>Let's go into the slash app directory and
+then you say copy.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9445-1
+<v Antonio Cisternino>This time we say the source explicitly
+from publish, but publish is this,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9445-2
+<v Antonio Cisternino>which is basically that and so from the
+container publish.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9484-0
+<v Antonio Cisternino>Take the directory slash app slash public
+publish and copy it in the directory</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9484-1
+<v Antonio Cisternino>slash app of this container.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9510-0
+<v Antonio Cisternino>Finally, the entry point of this is.
+net with the DLL as an argument.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9514-0
+<v Antonio Cisternino>Hmm.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9515-0
+<v Antonio Cisternino>Is it?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9567-0
+<v Antonio Cisternino>No, they're not.
+Technically you're cloning the container.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9567-1
+<v Antonio Cisternino>So when you say from base,
+you say OK base, leave it base.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9567-2
+<v Antonio Cisternino>I create a new container based on base.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9570-0
+<v Antonio Cisternino>Can you read?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9584-0
+<v Antonio Cisternino>Oh, no, no, these are.
+So here we have basis from container.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9591-0
+<v Antonio Cisternino>Build this another container.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9594-0
+<v Antonio Cisternino>Uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9632-0
+<v Antonio Cisternino>Publishes another container.
+Final is another container.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9632-1
+<v Antonio Cisternino>So you create 4 containers,
+but basically these are volatile</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9632-2
+<v Antonio Cisternino>containers.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9643-0
+<v Antonio Cisternino>It will be discarded at the end of the
+process.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9671-0
+<v Antonio Cisternino>Yes, but during the during the the, the,
+the, the builder,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9671-1
+<v Antonio Cisternino>those are different containers.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9732-0
+<v Antonio Cisternino>I think that the and then start building
+or they keep alive until the. No, no,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9732-1
+<v Antonio Cisternino>I mean thank you for the question.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9808-0
+<v Antonio Cisternino>I mean, thank you for the question.
+Containers are not something that is that</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9808-1
+<v Antonio Cisternino>are running. Containers are.
+We said that containers are made of two</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9808-2
+<v Antonio Cisternino>things,
+a differential file system plus a number</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9808-3
+<v Antonio Cisternino>of processes in the same container.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9831-0
+<v Antonio Cisternino>So I can insist that even though there
+are not processing because you still have</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9831-1
+<v Antonio Cisternino>the.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9865-0
+<v Antonio Cisternino>The device is differential. OK,
+so the container exists simply it has no</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9865-1
+<v Antonio Cisternino>running activities.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9875-0
+<v Antonio Cisternino>But there is no container value.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9905-0
+<v Antonio Cisternino>Container running is just a container
+that has at least one process running</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9905-1
+<v Antonio Cisternino>that is a running container.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9924-0
+<v Antonio Cisternino>I hope now we have a a better
+understanding of the container technology.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9926-0
+<v Antonio Cisternino>So.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9981-0
+<v Antonio Cisternino>In this way we are able to create a
+container that can be published on a on a</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/9981-1
+<v Antonio Cisternino>directory so that other people can
+download it as a version.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10005-0
+<v Antonio Cisternino>So every change can be compiled to a
+different version of the container.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10092-0
+<v Antonio Cisternino>Right and and it is self-contained.
+It is contained.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10092-1
+<v Antonio Cisternino>So all the PP installed files, all the.
+net dependencies,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10092-2
+<v Antonio Cisternino>all the libraries needed in that
+particular pressure are basically frozen</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10092-3
+<v Antonio Cisternino>in this differential.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10177-0
+<v Antonio Cisternino>File system and as long as we don't
+change too much the Linux kernel API and</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10177-1
+<v Antonio Cisternino>we preserve the semantics of the existing
+calls,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10177-2
+<v Antonio Cisternino>this container will be able to run and we
+can continue to upgrade the the kernel of</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10177-3
+<v Antonio Cisternino>the system to make it boost,
+more flexible, more efficient, whatever.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10233-0
+<v Antonio Cisternino>OK,
+so that's the core and it's crucial in in</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10233-1
+<v Antonio Cisternino>software development because and in fact
+Google originally,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10233-2
+<v Antonio Cisternino>you know for which Google,
+for what Google implemented this</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10233-3
+<v Antonio Cisternino>technology.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10292-0
+<v Antonio Cisternino>Search because it was impractical to run
+as the problem they had. They don't want.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10292-1
+<v Antonio Cisternino>They didn't want user to be able to
+access data from other searches.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10292-2
+<v Antonio Cisternino>They may contain sensitive data.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10364-0
+<v Antonio Cisternino>OK,
+so they needed some isolation so that if</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10364-1
+<v Antonio Cisternino>some search process crashes,
+you don't have the full search engine</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10364-2
+<v Antonio Cisternino>crashes or in this case. So they said OK,
+yes,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10364-3
+<v Antonio Cisternino>but the virtual machine is not a good
+idea.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10364-4
+<v Antonio Cisternino>It's too expensive because we receive.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10426-0
+<v Antonio Cisternino>Billions queries per day.
+And so they they worked on this</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10426-1
+<v Antonio Cisternino>technology so that basically every search
+that you perform on Google is run on a</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10426-2
+<v Antonio Cisternino>different container,
+which is just like starting a process.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10483-0
+<v Antonio Cisternino>Work destroy the process so everything is
+always cleaned up,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10483-1
+<v Antonio Cisternino>but the container gives to the code a
+consistent environment and so they can</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10483-2
+<v Antonio Cisternino>make the search engine evolve over time
+thanks to this.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10492-0
+<v Antonio Cisternino>OK, now if you have a uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10574-0
+<v Antonio Cisternino>The containers.
+It is fairly natural to describe your</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10574-1
+<v Antonio Cisternino>software as a set of different services
+because apart from the desktop</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10574-2
+<v Antonio Cisternino>application and even there you can
+discuss server side services are</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10574-3
+<v Antonio Cisternino>typically created by using multiple.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10627-0
+<v Antonio Cisternino>People application because we specialized
+every layer in the application stack to</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10627-1
+<v Antonio Cisternino>perform well some function.
+So for instance you may have you may have</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10627-2
+<v Antonio Cisternino>the.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10661-0
+<v Antonio Cisternino>This is a web application. OK,
+So what you may have the the web server</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10661-1
+<v Antonio Cisternino>that can be ng Apache OK.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10740-0
+<v Antonio Cisternino>And this is the front end and this
+software is specialised to implement all</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10740-1
+<v Antonio Cisternino>the HTTP protocol,
+update the HTTP protocols,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10740-2
+<v Antonio Cisternino>implement all the restriction,
+all the configuration policies, rewrite,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10740-3
+<v Antonio Cisternino>reverse proxy, DLS certificates, etcetera.
+OK, all the huge complexity.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10773-0
+<v Antonio Cisternino>And that's the first layer.
+Then I may have a single layer which is</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10773-1
+<v Antonio Cisternino>your application server, your program.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10829-0
+<v Antonio Cisternino>And now was a break down the HTTP server
+without having to worry about security</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10829-1
+<v Antonio Cisternino>standards etcetera,
+because there is the front web server</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10829-2
+<v Antonio Cisternino>which they care and just reverse the
+request.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10889-0
+<v Antonio Cisternino>To be to to your application.
+OK and and and in this way you can use</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10889-1
+<v Antonio Cisternino>Tomcat for Java, Castle or.net, Python,
+whatever for Python and so on. OK.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10927-0
+<v Antonio Cisternino>And that's happened because that is a
+simpler web server just to serve the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10927-1
+<v Antonio Cisternino>requests and transform them into code
+execution.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10948-0
+<v Antonio Cisternino>Then unfortunately a lot of application
+requires databases.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10998-0
+<v Antonio Cisternino>So I may need another ITS running.
+How do I debug this thing?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/10998-1
+<v Antonio Cisternino>How can I develop something so
+complicated and be sure that this can?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11086-0
+<v Antonio Cisternino>Can be thrown into the execution.
+The answer is that you have the ability</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11086-1
+<v Antonio Cisternino>to compose containers.
+Docker composer is the easiest form and</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11086-2
+<v Antonio Cisternino>this is the example of a Docker compose
+file and it is also.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11132-0
+<v Antonio Cisternino>An example of the YAML file.
+Remember Mark Kaplan at some point I</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11132-1
+<v Antonio Cisternino>mentioned. This is exactly a YAML file.
+Again, save effort in parsing so.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11137-0
+<v Antonio Cisternino>Let's look at the.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11159-0
+<v Antonio Cisternino>Uh, so there are these.
+There is a closed services and we have.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11185-0
+<v Antonio Cisternino>Three services in to run this application.
+The first Service is the front end.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11221-0
+<v Antonio Cisternino>The front end uses as image engines,
+so the front end is running using the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11221-1
+<v Antonio Cisternino>engines.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11228-0
+<v Antonio Cisternino>Restart in case of failure always.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11232-0
+<v Antonio Cisternino>You map.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11292-0
+<v Antonio Cisternino>So you say, OK,
+if the container tries to open this file</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11292-1
+<v Antonio Cisternino>inside his file system,
+ETC nginx confdefault.conf,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11292-2
+<v Antonio Cisternino>which is the default place of the nginx
+configuration.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11312-0
+<v Antonio Cisternino>Map it onto the local file system in this
+file and Jinx.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11318-0
+<v Antonio Cisternino>Uh.com OK.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11382-0
+<v Antonio Cisternino>So as you can see,
+containers are nice because can be easily</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11382-1
+<v Antonio Cisternino>hooked.
+This means that if someone can have</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11382-2
+<v Antonio Cisternino>access to your machine,
+all the containers are broken,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11382-3
+<v Antonio Cisternino>of course as a root, but.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11440-0
+<v Antonio Cisternino>Then you say, OK,
+ports port 80 of the container maps to</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11440-1
+<v Antonio Cisternino>the system port 80.
+Port 443 maps on to port 443. OK, easy.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11440-2
+<v Antonio Cisternino>So this is the first year.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11445-0
+<v Antonio Cisternino>Then you have.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11465-0
+<v Antonio Cisternino>No, sorry, the application tier signs.
+So this is the software.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11545-0
+<v Antonio Cisternino>Environment.
+You see why environment has become is now</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11545-1
+<v Antonio Cisternino>popular again because you can specify all
+the variables to configure in this file</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11545-2
+<v Antonio Cisternino>and so without having to read files,
+mapping files, etcetera,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11545-3
+<v Antonio Cisternino>everything is easy.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11598-0
+<v Antonio Cisternino>So here I say OK port 8080,
+port 8080 on port 8080.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11598-1
+<v Antonio Cisternino>So this means that with this I'm saying
+port 8080 of the container is mapped on</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11598-2
+<v Antonio Cisternino>port 8080 of this system.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11700-0
+<v Antonio Cisternino>Depends on.
+Of course when you start composing you</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11700-1
+<v Antonio Cisternino>say OK, yes I can run,
+but I need the DP please and I'm sharing</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11700-2
+<v Antonio Cisternino>the network.
+This is not a CS admin courses,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11700-3
+<v Antonio Cisternino>so if you're interested you come to the
+other course.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11700-4
+<v Antonio Cisternino>Otherwise you ask the AI how the networks
+in Docker works.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11738-0
+<v Antonio Cisternino>It's out of the scope of today and now I
+say OK,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11738-1
+<v Antonio Cisternino>I want to run SQL Server 2022 as a
+container and.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11814-0
+<v Antonio Cisternino>The administration password is this and
+I'm recording and projecting this because</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11814-1
+<v Antonio Cisternino>it's a debug password.
+Of course this is not the password of the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11814-2
+<v Antonio Cisternino>of the real database,
+but it allows me to quickly.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11879-0
+<v Antonio Cisternino>Manage and and debug things.
+I accept the end user license agreement</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11879-1
+<v Antonio Cisternino>because otherwise it won't start. So yes,
+I agree and and the port is this and you</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11879-2
+<v Antonio Cisternino>know what?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11943-0
+<v Antonio Cisternino>The slash up data directory of the
+database maps onto my system science data.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11943-1
+<v Antonio Cisternino>OK,
+so with this that you've got an idea of</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11943-2
+<v Antonio Cisternino>what's going on with all data.
+So the first part was OK, this is how we.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11986-0
+<v Antonio Cisternino>Which is becoming a natural way to
+package software,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11986-1
+<v Antonio Cisternino>and this is how you can combine the
+software you package it into complex</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/11986-2
+<v Antonio Cisternino>systems.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12029-0
+<v Antonio Cisternino>Now if you have all this this machinery,
+it's fairly easy, not trivial,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12029-1
+<v Antonio Cisternino>but fairly easy to create a cluster that
+is capable of running contents.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12049-0
+<v Antonio Cisternino>The most popular implementation of in
+source is called Kubernetes.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12143-0
+<v Antonio Cisternino>So Kubernetes is basically a scheduler of
+container and it is likely a place where</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12143-1
+<v Antonio Cisternino>your software will land into.
+So the reason because I decided that at</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12143-2
+<v Antonio Cisternino>least one class should be devoted to this
+is that the first question that you may</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12143-3
+<v Antonio Cisternino>get is how do I?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12146-0
+<v Antonio Cisternino>I debug this thing.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12167-0
+<v Antonio Cisternino>How can I check something?
+Because I can show you a running system.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12169-0
+<v Antonio Cisternino>Oh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12173-0
+<v Antonio Cisternino>OK.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12176-0
+<v Antonio Cisternino>Right.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12212-0
+<v Antonio Cisternino>Oh, let me zoom in. There we are.
+So this is the way we are deploying.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12290-0
+<v Antonio Cisternino>Part of our application as a university,
+we have a registry,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12290-1
+<v Antonio Cisternino>a Docker registry where we push images
+and we download the images.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12290-2
+<v Antonio Cisternino>So whenever we release a new version,
+we publish on the registry the new</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12290-3
+<v Antonio Cisternino>version and we update and we pull on.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12299-0
+<v Antonio Cisternino>The systems using that image,
+the new version.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12372-0
+<v Antonio Cisternino>OK, so if I ask if I say PS dot A-A,
+as you can see there are no processes on</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12372-1
+<v Antonio Cisternino>the machine.
+If I look the the there is no software if</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12372-2
+<v Antonio Cisternino>I try to run.net here.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12375-0
+<v Antonio Cisternino>Note net.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12441-0
+<v Antonio Cisternino>OK,
+even though the container of in this case</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12441-1
+<v Antonio Cisternino>is based on.net. OK,
+this is because if I do Docker,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12441-2
+<v Antonio Cisternino>Docker PS now I'm asking let me show the
+containers running.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12465-0
+<v Antonio Cisternino>And we have engines and we have version
+07.3 of Sibilla.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12479-0
+<v Antonio Cisternino>OK, now I can say Docker exact C.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12481-0
+<v Antonio Cisternino>Bash.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12488-0
+<v Antonio Cisternino>This is how.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12497-0
+<v Antonio Cisternino>Hmm, sorry, dash TI.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12506-0
+<v Antonio Cisternino>Otherwise, OK, it's not interactive.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12560-0
+<v Antonio Cisternino>So I just started with this command a
+process bash inside the container group</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12560-1
+<v Antonio Cisternino>of the container. So now if I say PS oops.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12563-0
+<v Antonio Cisternino>Oh, yes.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12578-0
+<v Antonio Cisternino>Kil is still there. Grab is still there.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12652-0
+<v Antonio Cisternino>I can list and if I look at user beam you
+will find that there are very few</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12652-1
+<v Antonio Cisternino>comments of the standard comments because
+with containers I can restrict the number</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12652-2
+<v Antonio Cisternino>of comments that are deployed.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12710-0
+<v Antonio Cisternino>To only those commands that are required
+to run the environment so that if some</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12710-1
+<v Antonio Cisternino>attacker breaks in,
+not only is it confined,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12710-2
+<v Antonio Cisternino>but it's also asked to struggle to
+install the commands because they are not</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12710-3
+<v Antonio Cisternino>available.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12761-0
+<v Antonio Cisternino>OK.
+And so this is how and now since also</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12761-1
+<v Antonio Cisternino>this has been generated in the same way
+as you we just there is the app and in</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12761-2
+<v Antonio Cisternino>the app.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12818-0
+<v Antonio Cisternino>There actually there is the output of
+compilation using the Docker file that we</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12818-1
+<v Antonio Cisternino>just commented and as you can see all the
+versions needed to run this thing are</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12818-2
+<v Antonio Cisternino>here frozen forever.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12822-0
+<v Antonio Cisternino>In my directory.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12898-0
+<v Antonio Cisternino>If I wanted to move the service,
+I am only to restore the Docker,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12898-1
+<v Antonio Cisternino>pull the image,
+run the image and that I want to make it</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12898-2
+<v Antonio Cisternino>parallel. I run 2 instances,
+I put a load balancer on top and so on.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12965-0
+<v Antonio Cisternino>So this is the good thing.
+With Kubernetes you scale out to multiple</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12965-1
+<v Antonio Cisternino>servers. You can say OK,
+move all the containers from that machine</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/12965-2
+<v Antonio Cisternino>to that machine so that I can service the
+server and so on.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13050-0
+<v Antonio Cisternino>And so you can do all the operations,
+but this is also the contract between and</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13050-1
+<v Antonio Cisternino>it is becoming the dominant contract
+between the software,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13050-2
+<v Antonio Cisternino>so the developers and the operations,
+which is the IT admins that have to run</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13050-3
+<v Antonio Cisternino>in a secure way these things.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13108-0
+<v Antonio Cisternino>For the curious of you,
+this is a script that I found online</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13108-1
+<v Antonio Cisternino>which basically transform the common
+Docker compose into a Linux service.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13114-0
+<v Antonio Cisternino>So I simply say uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13116-0
+<v Antonio Cisternino>Uh.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13181-0
+<v Antonio Cisternino>Restart the system control, CB restart,
+restart all the commands and so when the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13181-1
+<v Antonio Cisternino>system starts it was use Docker Composer
+and if you look at the Docker Composer.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13184-0
+<v Antonio Cisternino>There is.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13244-0
+<v Antonio Cisternino>And the image is on our registry.
+There are some volumes,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13244-1
+<v Antonio Cisternino>there are some ports mapped,
+some environment and then there is the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13244-2
+<v Antonio Cisternino>front end with the certificates.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13249-0
+<v Antonio Cisternino>Running and jinx.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13319-0
+<v Antonio Cisternino>But if I go here and I say N Jinx,
+there is no N Jinx, right?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13319-1
+<v Antonio Cisternino>So I hope with these two have guided you
+first into the problem of where the</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13319-2
+<v Antonio Cisternino>software is.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13323-0
+<v Antonio Cisternino>Is executed.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13366-0
+<v Antonio Cisternino>Second,
+how can we preserve all the dependencies</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13366-1
+<v Antonio Cisternino>that we're creating that are more and
+more difficult to track?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13429-0
+<v Antonio Cisternino>And the answer can be different.
+I mean you can always have a scripts that</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13429-1
+<v Antonio Cisternino>format a machine,
+install all the software and then copy</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13429-2
+<v Antonio Cisternino>the files.
+But the most common option as of today.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13485-0
+<v Antonio Cisternino>Is you create containers and then the IT
+administration provides an environment</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13485-1
+<v Antonio Cisternino>where you can run containers.
+Container has become the contract between</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13485-2
+<v Antonio Cisternino>you.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13543-0
+<v Antonio Cisternino>The developer and the people in charge of
+running the system container may be</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13543-1
+<v Antonio Cisternino>popular by people install and this is not
+a joke because it was becoming so</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13543-2
+<v Antonio Cisternino>complicated.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13628-0
+<v Antonio Cisternino>That I mean they existed before,
+but the Docker has become so popular</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13628-1
+<v Antonio Cisternino>because it was so difficult to preserve
+all the dependencies that are in this way</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13628-2
+<v Antonio Cisternino>and that's it.
+And so this is a good thing.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13628-3
+<v Antonio Cisternino>But also another example is the NVIDIA
+software stack on Linux if you have.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13703-0
+<v Antonio Cisternino>And afford and then and then the the the
+software is distributed as container</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13703-1
+<v Antonio Cisternino>because at some point it was so
+complicated to recompile things, do this,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13703-2
+<v Antonio Cisternino>do that, et cetera,
+that eventually we just said, OK,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13703-3
+<v Antonio Cisternino>you know what?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13735-0
+<v Antonio Cisternino>This is the core thing. That's it.
+Everything you need.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13735-1
+<v Antonio Cisternino>You don't have to spend enough day
+struggling to make my software work.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13785-0
+<v Antonio Cisternino>And now it's become not standard. Yeah,
+the spectrum of software environments and</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13785-1
+<v Antonio Cisternino>really made their own down lecture.
+Where something like I remember to repeat</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13785-2
+<v Antonio Cisternino>also where something like in the
+environment.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13790-0
+<v Antonio Cisternino>Oh, so why don't we the?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13866-0
+<v Antonio Cisternino>It's complicated because in in the in
+this world of, you know,</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13866-1
+<v Antonio Cisternino>open source and you unfortunately don't
+have to you need any driving license to</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13866-2
+<v Antonio Cisternino>write software.
+Anyone can go out there and write a</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13866-3
+<v Antonio Cisternino>software that becomes popular and no one
+really plans that.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13922-0
+<v Antonio Cisternino>The need for it.
+So the Python environment developed in a</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13922-1
+<v Antonio Cisternino>in a moment in which Docker were not so
+available and it's a Python only solution</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13922-2
+<v Antonio Cisternino>with each other similar features,
+but it's more likely to be broken.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13994-0
+<v Antonio Cisternino>Because it depends on the LS of the
+system.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13994-1
+<v Antonio Cisternino>So when you go and upgrade the system,
+there is some light events that then will</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13994-2
+<v Antonio Cisternino>break.
+Whereas if you restore the container pipe</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/13994-3
+<v Antonio Cisternino>and maybe inside use the Python hand.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/14032-0
+<v Antonio Cisternino>Sense it in some case,
+then you can get the best of the both</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/14032-1
+<v Antonio Cisternino>world,
+but there is really some of the lab in</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/14032-2
+<v Antonio Cisternino>this.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/14034-0
+<v Antonio Cisternino>Right.</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/14037-0
+<v Antonio Cisternino>Other questions?</v>
+
+edd5e360-1479-4643-b6d5-fd824bf2e151/14056-0
+<v Antonio Cisternino>OK. Thank you. Have a nice week, Canada.
+Next week we exercise ourselves.</v>

@@ -1,0 +1,3819 @@
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6-0
+<v Antonio Cisternino>Share the screen.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7-0
+<v Antonio Cisternino>0.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13-0
+<v Antonio Cisternino>O.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14-0
+<v Antonio Cisternino>Let me.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17-0
+<v Antonio Cisternino>So today and tomorrow will be.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/29-0
+<v Antonio Cisternino>Anyways, because we will browse.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/37-0
+<v Antonio Cisternino>Avevi complex?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/41-0
+<v Antonio Cisternino>Sul code base.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/52-0
+<v Antonio Cisternino>And so it will at the same time.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/93-0
+<v Antonio Cisternino>These two classes will have different
+purposes and goal and probably in many</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/93-1
+<v Antonio Cisternino>ways very important to the main goal of
+this course, so the run time.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/144-0
+<v Antonio Cisternino>We said that is the number of services
+that are available during the execution</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/144-1
+<v Antonio Cisternino>of a program that typically can be
+compiled by the compiler. OK,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/144-2
+<v Antonio Cisternino>so we said that the runtime support,
+the programming language as.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/190-0
+<v Antonio Cisternino>May vary.
+In the case of the interpreted languages</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/190-1
+<v Antonio Cisternino>is basically everything.
+In the case even of C,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/190-2
+<v Antonio Cisternino>there is a the standard C library,
+which is minimal but not empty.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/235-0
+<v Antonio Cisternino>Runtime support to support the language
+and in the standard library you have</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/235-1
+<v Antonio Cisternino>functions such as files,
+such as memory allocation,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/235-2
+<v Antonio Cisternino>dynamic memory allocation.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/274-0
+<v Antonio Cisternino>Malloch and free are defined in the
+standard C run time and printf we said</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/274-1
+<v Antonio Cisternino>that it's even an interpreter because it
+has a little bit of interpretation in</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/274-2
+<v Antonio Cisternino>there, so.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/295-0
+<v Antonio Cisternino>No matter whether the language is system
+oriented and highly compiled or.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/307-0
+<v Antonio Cisternino>Close to an interpreter,
+there is some runtime support.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/331-0
+<v Antonio Cisternino>During the 90s,
+this is a very brief recap just to set</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/331-1
+<v Antonio Cisternino>things in the right perspective.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/379-0
+<v Antonio Cisternino>Everybody was re-implementing over and
+over in C plus plus the same code,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/379-1
+<v Antonio Cisternino>so reference counting.
+Now I can mention it without having to</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/379-2
+<v Antonio Cisternino>explain it. Caper's collection.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/388-0
+<v Antonio Cisternino>Multithreading UI Graphics.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/401-0
+<v Antonio Cisternino>And so at some point,
+the industrial world started to say.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/420-0
+<v Antonio Cisternino>Maybe we have to make the runtime support
+grow.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/444-0
+<v Antonio Cisternino>Because in the modern programming,
+having only the printf and few other</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/444-1
+<v Antonio Cisternino>things, it's too little.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/469-0
+<v Antonio Cisternino>In order to support modern programming,
+OK,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/469-1
+<v Antonio Cisternino>and that was basically one of the main
+reasons for Java.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/530-0
+<v Antonio Cisternino>Probably even more for dotnet,
+dotnet started in 96 as a secret project,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/530-1
+<v Antonio Cisternino>mostly because Microsoft tried to use
+Java,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/530-2
+<v Antonio Cisternino>but some microsystem that was the company
+developing Java made a legal action.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/532-0
+<v Antonio Cisternino>Ora.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/587-0
+<v Antonio Cisternino>Implementation issues and so Microsoft
+started a secret project that was dotnet</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/587-1
+<v Antonio Cisternino>in 96 and it took them a team of 600
+people working for five years in order to</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/587-2
+<v Antonio Cisternino>deliver.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/589-0
+<v Antonio Cisternino>this runtime.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/598-0
+<v Antonio Cisternino>Java in dotnet are the last.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/606-0
+<v Antonio Cisternino>Pig Execution Environment.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/645-0
+<v Antonio Cisternino>I mean,
+there are no other attempts to provide in</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/645-1
+<v Antonio Cisternino>such a structured way a comprehensive set
+of feature for a programming language.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/663-0
+<v Antonio Cisternino>And in case of the net,
+there was the additional goal to be a</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/663-1
+<v Antonio Cisternino>general.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/715-0
+<v Antonio Cisternino>Runtime support,
+so usually the runtime of C,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/715-1
+<v Antonio Cisternino>so you got the compiler and the C runtime,
+you have rust and the C rust runtime</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/715-2
+<v Antonio Cisternino>etcetera.
+So typically there is some sort of</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/715-3
+<v Antonio Cisternino>coupling between.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/760-0
+<v Antonio Cisternino>The language and the runtime Java was
+mostly started like that,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/760-1
+<v Antonio Cisternino>so basically it was Java,
+Java compiler and Java virtual machine</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/760-2
+<v Antonio Cisternino>designed only to run Java compile code,
+even though.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/802-0
+<v Antonio Cisternino>Later,
+other programming languages have been</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/802-1
+<v Antonio Cisternino>developed to target the Java byte code
+that wasn't part of the original design</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/802-2
+<v Antonio Cisternino>of the system and on the other hand.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/840-0
+<v Antonio Cisternino>Dotnet came up with the idea of creating
+a general purpose multi-language runtime</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/840-1
+<v Antonio Cisternino>OK, so there was it was declared.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/900-0
+<v Antonio Cisternino>That the dotnet runtime should have been
+a universal runtime for all the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/900-1
+<v Antonio Cisternino>programming languages,
+because all programming languages require</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/900-2
+<v Antonio Cisternino>garbage collection, just in time,
+type system, dynamic type checking,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/900-3
+<v Antonio Cisternino>etcetera.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/964-0
+<v Antonio Cisternino>OK, and so they said, OK,
+let's design a universal runtime. In fact,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/964-1
+<v Antonio Cisternino>the first name,
+the intername was one of many was URT</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/964-2
+<v Antonio Cisternino>universal runtime. OK,
+in fact dotnet was decided something like</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/964-3
+<v Antonio Cisternino>few weeks before.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1003-0
+<v Antonio Cisternino>The public announcement before there were
+a plethora of internal names in the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1003-1
+<v Antonio Cisternino>project that have changed over the years
+and to validate this strong idea.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1041-0
+<v Antonio Cisternino>That the runtime was able to to be
+targeted by different programming</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1041-1
+<v Antonio Cisternino>real-world programming languages,
+Microsoft started a secret project.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1085-0
+<v Antonio Cisternino>Around 99 there was called project seven,
+so might have implemented seven</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1085-1
+<v Antonio Cisternino>programming languages for targeting the
+runtime and academia would have</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1085-2
+<v Antonio Cisternino>implemented.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1086-0
+<v Antonio Cisternino>Other.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1129-0
+<v Antonio Cisternino>Sorry.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1161-0
+<v Antonio Cisternino>Yeah, so to the audience, I'm sorry,
+I didn't notice that I had a muted mic,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1161-1
+<v Antonio Cisternino>so long story short, the run time.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1207-0
+<v Antonio Cisternino>Java,
+virtual machine and dotnet are pretty</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1207-1
+<v Antonio Cisternino>unique and they eventually represented
+the attempt to create a universal runtime</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1207-2
+<v Antonio Cisternino>for targeting multiple languages,
+very short resume.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1233-0
+<v Antonio Cisternino>What I said so far, sorry,
+so that is the universal runtime,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1233-1
+<v Antonio Cisternino>so it's interesting to browse a code base.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1258-0
+<v Antonio Cisternino>Of such a complexity on multiple levels
+with respect to this course, OK, so.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1300-0
+<v Antonio Cisternino>During the last class,
+I briefly introduced git and started</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1300-1
+<v Antonio Cisternino>poking around in the in the code base,
+now today I will try to introduce you.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1350-0
+<v Antonio Cisternino>Possibly with interaction with the class,
+the core concepts,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1350-1
+<v Antonio Cisternino>and then we will learn a couple of ways
+of browsing the code base,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1350-2
+<v Antonio Cisternino>one is by using your knowledge directly.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1363-0
+<v Antonio Cisternino>The other one is by using your knowledge
+and asking question to the AI.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1417-0
+<v Antonio Cisternino>And you will see that it's interesting,
+it's definitely interesting. In fact,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1417-1
+<v Antonio Cisternino>in GitHub now you have co-pilot to
+interrupt with the code base because it's</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1417-2
+<v Antonio Cisternino>clearly the way everybody's going to so.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1420-0
+<v Antonio Cisternino>Questo modo.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1425-0
+<v Antonio Cisternino>This is oops.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1428-0
+<v Antonio Cisternino>On time.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1433-0
+<v Antonio Cisternino>Sorry, OK.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1437-0
+<v Antonio Cisternino>Solisis ha.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1441-0
+<v Antonio Cisternino>The repo.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1485-0
+<v Antonio Cisternino>And the first interesting thing is that
+this repo is a sort of history of</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1485-1
+<v Antonio Cisternino>computer science,
+in the sense that there are pieces of</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1485-2
+<v Antonio Cisternino>code that have been developed starting
+from the 90s.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1527-0
+<v Antonio Cisternino>OK, so you see different code styling,
+the evolution of the way people the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1527-1
+<v Antonio Cisternino>pragmatics of program development and
+also the names because there are.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1575-0
+<v Antonio Cisternino>Names such as, for instance,
+EE execution environment,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1575-1
+<v Antonio Cisternino>which is something that if you see EE,
+you won't think about execution</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1575-2
+<v Antonio Cisternino>environment as a completion.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1601-0
+<v Antonio Cisternino>But the EE class is a crucial data
+structure that makes the runtime work. OK,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1601-1
+<v Antonio Cisternino>so let's try to list.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1649-0
+<v Antonio Cisternino>The elements that you believe will be
+useful in the in the implementation in a</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1649-1
+<v Antonio Cisternino>runtime. OK, I mentioned a few keywords,
+so I mean clearly we need a garbage.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1652-0
+<v Antonio Cisternino>Collector.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1672-0
+<v Antonio Cisternino>Why?
+Because we learned that memory safety is</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1672-1
+<v Antonio Cisternino>important and.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1685-0
+<v Antonio Cisternino>In the 90s, even the GCC compiler.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1733-0
+<v Antonio Cisternino>If you think, I mean,
+GCC is the c compiler and c is a</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1733-1
+<v Antonio Cisternino>programming language without automatic
+memory management,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1733-2
+<v Antonio Cisternino>but the compiler started using a garbage
+collector to work inside.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1769-0
+<v Antonio Cisternino>And that was mentioned as a proof that
+now even the C compiler needed a garbage</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1769-1
+<v Antonio Cisternino>collection,
+so in the modern run time we need garbage</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1769-2
+<v Antonio Cisternino>collection.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1779-0
+<v Antonio Cisternino>OK, so garbage collection,
+then what do we need?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1788-0
+<v Antonio Cisternino>Memory manager, which is.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1808-0
+<v Antonio Cisternino>What are the functionality apart from the
+garbage collection, which of course is?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1860-0
+<v Antonio Cisternino>No,
+garbage collector for me is all but</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1860-1
+<v Antonio Cisternino>you're right.
+I mean memory management is not just the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1860-2
+<v Antonio Cisternino>garbage collection.
+Garbage collector is part of the memory</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1860-3
+<v Antonio Cisternino>management,
+but this means stack manipulation.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1862-0
+<v Antonio Cisternino>If you remember.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1912-0
+<v Antonio Cisternino>The activation records are basically a
+block of memory that is allocated on top</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1912-1
+<v Antonio Cisternino>of the stack and contain local variables
+for the thread executing,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1912-2
+<v Antonio Cisternino>so every thread has a stack.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1977-0
+<v Antonio Cisternino>Which is a segment into the memory of the
+process,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1977-1
+<v Antonio Cisternino>and there is a stack pointer which tells
+you where is the top of the stack,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1977-2
+<v Antonio Cisternino>and whenever you invoke a new function or
+method,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/1977-3
+<v Antonio Cisternino>you load a new activation record on top
+of the stack.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2078-0
+<v Antonio Cisternino>So stack manipulation is an essential
+activity and we will learn that that is</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2078-1
+<v Antonio Cisternino>really, really important. By the way,
+stack manipulation is also important</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2078-2
+<v Antonio Cisternino>because if you remember garbage
+collection, garbage collection.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2139-0
+<v Antonio Cisternino>Collection process works starting from
+the roots and we commented that one of</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2139-1
+<v Antonio Cisternino>the main sources for the roots.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2224-0
+<v Antonio Cisternino>Is the stack,
+and so one of the things that the runtime</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2224-1
+<v Antonio Cisternino>should be able is to walk and navigate
+through the stack to find the roots and</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2224-2
+<v Antonio Cisternino>to start the mark phase.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2233-0
+<v Antonio Cisternino>Of the garbage collection, okay.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2236-0
+<v Antonio Cisternino>Bene.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2291-0
+<v Antonio Cisternino>Runtime, this is the run time, so I mean,
+we're trying to list essential,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2291-1
+<v Antonio Cisternino>so how do you think you can load the code?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2300-0
+<v Antonio Cisternino>You need a loader?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2378-0
+<v Antonio Cisternino>The loader is an essential component,
+you have a binary file,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2378-1
+<v Antonio Cisternino>you want to load into the memory of the
+process all the necessary information so</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2378-2
+<v Antonio Cisternino>that you can execute the program.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2399-0
+<v Antonio Cisternino>Now,
+one of the legacy of the contribution.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2420-0
+<v Antonio Cisternino>Second rosario, c'è una lezione,
+ti posso vai shop.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2487-0
+<v Antonio Cisternino>I can so the loader is one of the
+greatest contribution that Java made was</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2487-1
+<v Antonio Cisternino>OK, we need type safe code because.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2578-0
+<v Antonio Cisternino>You're too young,
+but when I was your age the PC kept</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2578-1
+<v Antonio Cisternino>crashing for null point of the
+referentiation,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2578-2
+<v Antonio Cisternino>so you're living in a world which is
+basically type safe so you don't have.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2652-0
+<v Antonio Cisternino>The real experience of what does it mean
+to have mostly C code that keep crashing</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2652-1
+<v Antonio Cisternino>because the programmer don't follow
+properly the conventions? OK so,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2652-2
+<v Antonio Cisternino>but in the 90s it was, I mean.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2728-0
+<v Antonio Cisternino>You kept rebooting your machine because
+programs kept blowing up because of</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2728-1
+<v Antonio Cisternino>dangling references and so back then it
+was really, really important.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2758-0
+<v Antonio Cisternino>To have type programming because there
+was an impact in the real world.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2851-0
+<v Antonio Cisternino>And Java, if you remember,
+was originally introduced also for the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2851-1
+<v Antonio Cisternino>Internet of things,
+so to program washing machine et cetera,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2851-2
+<v Antonio Cisternino>and a crushing washing machine is not a
+good idea, so type safety.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2915-0
+<v Antonio Cisternino>Was really important and so the loader of
+the runtime in the only two examples we</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/2915-1
+<v Antonio Cisternino>have of runtimes,
+which are Java and dotnet.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3005-0
+<v Antonio Cisternino>Is the type loader.
+So if you remember when we commented the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3005-1
+<v Antonio Cisternino>intermediate language, the byte code,
+we said, OK, the byte code,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3005-2
+<v Antonio Cisternino>what it is is basically the definition of
+types plus the byte code of the methods.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3108-0
+<v Antonio Cisternino>That is roughly a reasonable definition
+of the content,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3108-1
+<v Antonio Cisternino>if you remember from the reflection OK,
+and so the loader clearly is a key</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3108-2
+<v Antonio Cisternino>element because is the component
+responsible for laying out the memory.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3154-0
+<v Antonio Cisternino>And create all the elements so that the
+runtime can start executing.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3154-1
+<v Antonio Cisternino>Notice that this you may think that this
+is.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3165-0
+<v Antonio Cisternino>An easy notion, it's not.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3201-0
+<v Antonio Cisternino>Because Java when Java started,
+Java started as an interpreter.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3290-0
+<v Antonio Cisternino>Because washing machines et cetera,
+no EV code to execute et cetera.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3290-1
+<v Antonio Cisternino>But now when no,
+back then when even Java introduced an</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3290-2
+<v Antonio Cisternino>optimization called.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3296-0
+<v Antonio Cisternino>Just in time compiler.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3407-0
+<v Antonio Cisternino>So basically I compile on the fly the
+byte code so that you execute execute</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3407-1
+<v Antonio Cisternino>machine language for every method,
+so the overhead you pay it it's neglected</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3407-2
+<v Antonio Cisternino>and so you have a code which is.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3412-0
+<v Antonio Cisternino>Almost as fast as sì.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3444-0
+<v Antonio Cisternino>The last time I checked Java was still
+One point six.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3517-0
+<v Antonio Cisternino>X with respect to C,
+which still is the most fast programming</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3517-1
+<v Antonio Cisternino>language you can have,
+but you have to write a lot of code,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3517-2
+<v Antonio Cisternino>so I mean, the runtime can basically.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3574-0
+<v Antonio Cisternino>Come close to the performance of the C
+language 1.6 if you wonder Python is 67 X.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3674-0
+<v Antonio Cisternino>OK,
+that's if you were interested from where</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3674-1
+<v Antonio Cisternino>this number comes,
+if you look for Linux shutout,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3674-2
+<v Antonio Cisternino>there is an initiative to have multiple
+benchmarks and programming languages and</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3674-3
+<v Antonio Cisternino>have.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3733-0
+<v Antonio Cisternino>Yeah,
+and they test different algorithms and</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3733-1
+<v Antonio Cisternino>the average is this score. OK,
+it's clearly roughly,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3733-2
+<v Antonio Cisternino>you can clearly find.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3834-0
+<v Antonio Cisternino>Bad situations in which this statement is
+not entirely true,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3834-1
+<v Antonio Cisternino>but it's on the average true and in fact
+we use Java quite a lot and dotnet mostly</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3834-2
+<v Antonio Cisternino>on the Microsoft side because originally
+it was Microsoft only technology and so.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3928-0
+<v Antonio Cisternino>It was bound to Windows and since 2016
+has become open source and it's fully</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3928-1
+<v Antonio Cisternino>multiplatform,
+so now it's on part with Java OK,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3928-2
+<v Antonio Cisternino>so the loader is very important because.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3991-0
+<v Antonio Cisternino>One of the the important elements that
+was introduced by Java and dotnet</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/3991-1
+<v Antonio Cisternino>preserved is the ability to load types at
+runtime.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4008-0
+<v Antonio Cisternino>So you can extend literally.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4023-0
+<v Antonio Cisternino>A program while it's executing.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4165-0
+<v Antonio Cisternino>If you think of mission critical code,
+this is really important.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4165-1
+<v Antonio Cisternino>Think of a driver model, driver model,
+the driver model pattern is basically I</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4165-2
+<v Antonio Cisternino>have an adapter that say, OK,
+this is the interface of my device,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4165-3
+<v Antonio Cisternino>you implement the interface and through
+the interface I'm able to.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4234-0
+<v Antonio Cisternino>Use your device OK,
+we all use it to that basically thanks to</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4234-1
+<v Antonio Cisternino>dynamic loading you can device a folder
+in your system where you can put a binary</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4234-2
+<v Antonio Cisternino>file.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4325-0
+<v Antonio Cisternino>That implements the interface that you
+know,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4325-1
+<v Antonio Cisternino>so at compile time I know the interface
+and through the loader I can dynamically</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4325-2
+<v Antonio Cisternino>load this new executable that wasn't even
+present at compile time.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4372-0
+<v Antonio Cisternino>OK, so in this way dynamic loading,
+so loader is important for the.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4472-0
+<v Antonio Cisternino>Loading type, loading, etc. OK,
+and of course is responsible also for</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4472-1
+<v Antonio Cisternino>reading the binary format,
+because the loader is the component which</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4472-2
+<v Antonio Cisternino>is responsible for reading the binary
+format.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4479-0
+<v Antonio Cisternino>and loads information to the memory.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4497-0
+<v Antonio Cisternino>Other components, we mentioned git.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4502-0
+<v Antonio Cisternino>Just in time.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4509-0
+<v Antonio Cisternino>Allora la mensa?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4517-0
+<v Antonio Cisternino>Exception ending.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4530-0
+<v Antonio Cisternino>And is also monitoring.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4535-0
+<v Antonio Cisternino>And performance.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4540-0
+<v Antonio Cisternino>And the bug.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4590-0
+<v Antonio Cisternino>This kind of series, I mean,
+system have the bad habit of crashing and</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4590-1
+<v Antonio Cisternino>then you must be able to understand.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4672-0
+<v Antonio Cisternino>What's going on? So the bug is important.
+When I was working at the dotnet runtime,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4672-1
+<v Antonio Cisternino>there was Dario Russo, who was in Italian,
+that was responsible for the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4672-2
+<v Antonio Cisternino>implementation of the reflection.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4755-0
+<v Antonio Cisternino>And actually it was able to debug by,
+it was looked like matrix,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4755-1
+<v Antonio Cisternino>it was able to read the output of the JIT
+in an exadecimal display.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4810-0
+<v Antonio Cisternino>and do the debugging of memory,
+just reading the bytes.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4810-1
+<v Antonio Cisternino>Someone has to be able to do that.
+Otherwise,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4810-2
+<v Antonio Cisternino>we all suffer of that painful activity.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4818-0
+<v Antonio Cisternino>Hello.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4821-0
+<v Antonio Cisternino>Yeah.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4905-0
+<v Antonio Cisternino>Let's let's write it there. I mean,
+most of the dynamic memory management is</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4905-1
+<v Antonio Cisternino>performed through garbage collection,
+but it's not the only option.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4905-2
+<v Antonio Cisternino>There are inside the runtime dynamic
+allocation.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4953-0
+<v Antonio Cisternino>The most use is to allocate the heap
+segment that are garbage collected,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/4953-1
+<v Antonio Cisternino>but it's not the only there is still one,
+I mean.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5021-0
+<v Antonio Cisternino>OS functions OK,
+quindi so io file network because Modern</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5021-1
+<v Antonio Cisternino>time require network Java became popular
+because.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5119-0
+<v Antonio Cisternino>They implemented the socket abstraction
+in an acceptable way.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5119-1
+<v Antonio Cisternino>If you don't have suffered to see sockets,
+you don't really get how revolutionary</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5119-2
+<v Antonio Cisternino>was Java.
+Java made the web connection so easy.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5143-0
+<v Antonio Cisternino>Ma you can create a web server in few
+lines of code.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5198-0
+<v Antonio Cisternino>So that was revolutionary back then,
+so network has become part of the runtime</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5198-1
+<v Antonio Cisternino>with Java and of course with dotnute UI.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5275-0
+<v Antonio Cisternino>User interface,
+because in the 90s command line wasn't</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5275-1
+<v Antonio Cisternino>anymore the normal way of using computer,
+so event driven programming became</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5275-2
+<v Antonio Cisternino>popular thanks to Java.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5318-0
+<v Antonio Cisternino>And thanks to dotnet that moved on from
+that point in dotnet,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5318-1
+<v Antonio Cisternino>they tried to create a.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5324-0
+<v Antonio Cisternino>User Interface.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5388-0
+<v Antonio Cisternino>They will host code can be compiled for
+the native graphical user interface for</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5388-1
+<v Antonio Cisternino>instance of Windows,
+but also for the web interface.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5471-0
+<v Antonio Cisternino>And it was an ambitious project that
+affected the architecture of web</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5471-1
+<v Antonio Cisternino>application for four years,
+and it's worth mentioning because the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5471-2
+<v Antonio Cisternino>ambition was okay conceptually the web.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5548-0
+<v Antonio Cisternino>Browser is a renderer similar to the
+native UI renderer,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5548-1
+<v Antonio Cisternino>and so why should we write different
+applications for the desktop or for the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5548-2
+<v Antonio Cisternino>web and many of the frameworks of today's?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5641-0
+<v Antonio Cisternino>Still are trying to go after this
+incredible idea that back then was really,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5641-1
+<v Antonio Cisternino>really, but they failed to. I mean,
+the problem also with Java, with the UI,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5641-2
+<v Antonio Cisternino>it was that UI.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5654-0
+<v Antonio Cisternino>Specially back then was where marketing.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5759-0
+<v Antonio Cisternino>Was happening? I mean,
+cool interfaces were nice and so when you</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5759-1
+<v Antonio Cisternino>start to use the subset that can be
+implemented both on the web browser and</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5759-2
+<v Antonio Cisternino>on the desktop,
+you end up having a very limited set of</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5759-3
+<v Antonio Cisternino>UI.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5846-0
+<v Antonio Cisternino>Functionalities,
+and so eventually Microsoft,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5846-1
+<v Antonio Cisternino>when publicly announced,
+came up with two libraries,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5846-2
+<v Antonio Cisternino>winforms and webforms.
+Basically the type system was the same,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5846-3
+<v Antonio Cisternino>so the design.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5908-0
+<v Antonio Cisternino>Went through,
+but basically they separated the project</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5908-1
+<v Antonio Cisternino>because otherwise the risk was to make
+unhappy both desktop programmers and web</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5908-2
+<v Antonio Cisternino>programmers, OK?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5921-0
+<v Antonio Cisternino>The is still one important thing.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5938-0
+<v Antonio Cisternino>Oh yeah, or is function,
+let's say threads.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/5941-0
+<v Antonio Cisternino>Wecher.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6014-0
+<v Antonio Cisternino>Security,
+I will mention security is a it's</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6014-1
+<v Antonio Cisternino>important Java and dotnet introduce it in
+the runtime because of this dynamic</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6014-2
+<v Antonio Cisternino>loading mechanism.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6057-0
+<v Antonio Cisternino>The we introduced the a word in which a
+process contains code not written by the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6057-1
+<v Antonio Cisternino>same motor.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6130-0
+<v Antonio Cisternino>And so there is a risk that since you
+have access to the memory,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6130-1
+<v Antonio Cisternino>you can corrupt or read illegally data
+since you are in the in the same memory</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6130-2
+<v Antonio Cisternino>space.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6202-0
+<v Antonio Cisternino>And so the so-called code access security
+was introduced so that Java and dotnet</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6202-1
+<v Antonio Cisternino>could have been used in.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6217-0
+<v Antonio Cisternino>Banking on financial systems, OK.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6224-0
+<v Antonio Cisternino>That was another feature.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6229-0
+<v Antonio Cisternino>Another one.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6239-0
+<v Antonio Cisternino>The calling I would say the.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6245-0
+<v Antonio Cisternino>Interoperability.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6361-0
+<v Antonio Cisternino>Interoperability is a broad area which is
+fundamental and at which Java wasn't that</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6361-1
+<v Antonio Cisternino>good because Java was like we made the
+perfect language,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6361-2
+<v Antonio Cisternino>everybody would write Java code and so
+interoperability in Java was designed.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6402-0
+<v Antonio Cisternino>To be hard because everything should have
+been Java, OK,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6402-1
+<v Antonio Cisternino>and that was one of the flows personally
+I think of Java.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6503-0
+<v Antonio Cisternino>This idea that interrupt with other
+languages should have been difficult</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6503-1
+<v Antonio Cisternino>because everything was should have been
+in Java,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6503-2
+<v Antonio Cisternino>but interoperability is essential because
+you want to be able to use other</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6503-3
+<v Antonio Cisternino>libraries and systems.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6588-0
+<v Antonio Cisternino>Written and developed in any other
+language,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6588-1
+<v Antonio Cisternino>so the libraries follows a number.
+If you remember,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6588-2
+<v Antonio Cisternino>there are a lot of conventions,
+some of them imposed by the actual</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6588-3
+<v Antonio Cisternino>architecture.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6591-0
+<v Antonio Cisternino>By the CPU.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6595-0
+<v Antonio Cisternino>OK.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6689-0
+<v Antonio Cisternino>Others imposed by the operating system,
+so the PE,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6689-1
+<v Antonio Cisternino>portable executable is a standard which
+tells you how to organize the physical</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6689-2
+<v Antonio Cisternino>representation of an executable.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6795-0
+<v Antonio Cisternino>Okay,
+because the executable inside must be</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6795-1
+<v Antonio Cisternino>able to contain not only the code,
+of course there is the code segment,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6795-2
+<v Antonio Cisternino>but for instance there is the text
+portion where you can insert textual or</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6795-3
+<v Antonio Cisternino>binary, I mean data not.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6886-0
+<v Antonio Cisternino>Program inside the binary,
+and so all this there is a a a a formula</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6886-1
+<v Antonio Cisternino>that is called cof,
+which was standardized mostly by Unix,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6886-2
+<v Antonio Cisternino>Linux, et cetera,
+and Microsoft did the PE,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6886-3
+<v Antonio Cisternino>which is a particular.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6997-0
+<v Antonio Cisternino>Distance of this format OK,
+so there are a number of conventions that</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6997-1
+<v Antonio Cisternino>you have to follow to be able to work,
+and one of the convention that we</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/6997-2
+<v Antonio Cisternino>mentioned is how do we load the arguments
+on top of the activation record?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7087-0
+<v Antonio Cisternino>OK,
+because we said that the activation</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7087-1
+<v Antonio Cisternino>record is the set of data which contains
+the arguments that you're passing to a</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7087-2
+<v Antonio Cisternino>function or a method from the
+implementation standpoint and say it now</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7087-3
+<v Antonio Cisternino>and that's it.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7138-0
+<v Antonio Cisternino>From an implementation standpoint,
+a method is just a function with an extra</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7138-1
+<v Antonio Cisternino>argument, which is the this point, OK.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7154-0
+<v Antonio Cisternino>So I will talk mostly.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7240-0
+<v Antonio Cisternino>Of functions and methods in a in a
+interexchangeable way,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7240-1
+<v Antonio Cisternino>because at the end of the day are
+callable objects and the static method is</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7240-2
+<v Antonio Cisternino>basically a function and.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7286-0
+<v Antonio Cisternino>Instance method is simply a static method
+plus one more argument,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7286-1
+<v Antonio Cisternino>which is this point. OK, so.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7390-0
+<v Antonio Cisternino>From now on,
+we think like everything is a function</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7390-1
+<v Antonio Cisternino>which simplifies our thinking.
+So basically in the activation,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7390-2
+<v Antonio Cisternino>when you do the call,
+you have first to load on top of the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7390-3
+<v Antonio Cisternino>arguments.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7400-0
+<v Antonio Cisternino>You need to have the return address.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7425-0
+<v Antonio Cisternino>There will be also some room for local
+variables.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7487-0
+<v Antonio Cisternino>There are some other information that may
+be required, for instance,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7487-1
+<v Antonio Cisternino>for implementing status scoping,
+you may need.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7573-0
+<v Antonio Cisternino>To have some extra information on the
+stack,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7573-1
+<v Antonio Cisternino>I'm not going to go in further details on
+that,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7573-2
+<v Antonio Cisternino>but that's we will see that stack is an
+interesting place.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7573-3
+<v Antonio Cisternino>All these conventions basically are
+essentially.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7630-0
+<v Antonio Cisternino>Essential because those depends on the
+programming language, on the compiler, OK,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7630-1
+<v Antonio Cisternino>I mean,
+should we load from the first to the last</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7630-2
+<v Antonio Cisternino>or from the last to the first?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7722-0
+<v Antonio Cisternino>As long as you read and write in the same
+way, who cares?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7722-1
+<v Antonio Cisternino>But when you start trying to invoke
+external libraries,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7722-2
+<v Antonio Cisternino>then this becomes of paramount importance
+because.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7774-0
+<v Antonio Cisternino>The binaries have been obtained from
+different programming language, possibly,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7774-1
+<v Antonio Cisternino>or even the same programming language,
+but different compilers.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7778-0
+<v Antonio Cisternino>And so.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7793-0
+<v Antonio Cisternino>Sì, has become a de facto standard.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7814-0
+<v Antonio Cisternino>Because linux was developed in sì e in
+Windows two.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7817-0
+<v Antonio Cisternino>Penso.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7864-0
+<v Antonio Cisternino>The DLS all the libraries inside the
+operating system follows the calling</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7864-1
+<v Antonio Cisternino>conventions of C.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7867-0
+<v Antonio Cisternino>No.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7945-0
+<v Antonio Cisternino>A variation of this,
+so the calling convention remember that</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7945-1
+<v Antonio Cisternino>the C programming language allows for the
+print F and print F, not only print F,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7945-2
+<v Antonio Cisternino>print F is.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7980-0
+<v Antonio Cisternino>A good function to keep in mind,
+printf allows for a variable number of</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/7980-1
+<v Antonio Cisternino>arguments, remember?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8060-0
+<v Antonio Cisternino>So this means that when you load the
+arguments on top of the stack,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8060-1
+<v Antonio Cisternino>you the collee,
+so you load the I am the caller,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8060-2
+<v Antonio Cisternino>I call the load the stack with the
+arguments.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8137-0
+<v Antonio Cisternino>Then I call,
+so in the CPU I issue a call instruction,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8137-1
+<v Antonio Cisternino>I call the destination function which
+will receive on top of the stack all the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8137-2
+<v Antonio Cisternino>arguments.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8162-0
+<v Antonio Cisternino>And she start working,
+then eventually you want to return from</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8162-1
+<v Antonio Cisternino>that function.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8201-0
+<v Antonio Cisternino>And someone has to clear the stack
+because the activation record is no</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8201-1
+<v Antonio Cisternino>longer needed.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8206-0
+<v Antonio Cisternino>Now.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8223-0
+<v Antonio Cisternino>Who is responsible to clear the stack?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8231-0
+<v Antonio Cisternino>The colis o the coler.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8245-0
+<v Antonio Cisternino>That's the point, I mean.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8349-0
+<v Antonio Cisternino>From a language programming perspective,
+who cares is the right answer to the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8349-1
+<v Antonio Cisternino>question,
+because as long as someone loves,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8349-2
+<v Antonio Cisternino>someone removes, I don't really care,
+but from interoperability,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8349-3
+<v Antonio Cisternino>if you decide to have variable arguments.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8379-0
+<v Antonio Cisternino>Then you have this problem,
+only the caller will be able to unload.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8382-0
+<v Antonio Cisternino>Che.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8409-0
+<v Antonio Cisternino>And this means that ad every function
+call you will pay.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8487-0
+<v Antonio Cisternino>The stack clearance in the I mean,
+those instruction will be executed anyway,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8487-1
+<v Antonio Cisternino>okay,
+so from a performance standpoint there is</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8487-2
+<v Antonio Cisternino>no difference because I have to unload
+the stack and so.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8599-0
+<v Antonio Cisternino>Whether is the collee in making those
+operations or the caller,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8599-1
+<v Antonio Cisternino>the amount of instructions executed will
+be the same. So I mean,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8599-2
+<v Antonio Cisternino>there's no performance issues there,
+but there is a problem,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8599-3
+<v Antonio Cisternino>the size of the executable file.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8698-0
+<v Antonio Cisternino>Will become bigger for C because every
+function call you have in the call will</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8698-1
+<v Antonio Cisternino>have the instructions to unload the stack,
+so the C declaration calling convention</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8698-2
+<v Antonio Cisternino>typically is not.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8730-0
+<v Antonio Cisternino>So appreciated,
+special it was not appreciated in the 90s.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8775-0
+<v Antonio Cisternino>When the hard drive was 20 megabytes,
+and so those few bytes for every call</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8775-1
+<v Antonio Cisternino>were expensive on a PC.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8842-0
+<v Antonio Cisternino>And so the alternative was the Pascal.
+Pascal now is basically dead,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8842-1
+<v Antonio Cisternino>but back then it was popular,
+remember the P code, and so the.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8923-0
+<v Antonio Cisternino>In the,
+because Pascal didn't have variable</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8923-1
+<v Antonio Cisternino>arguments as a programming language,
+the collee convention assumed that it was</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8923-2
+<v Antonio Cisternino>the collee to unload the stack before
+returning.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/8932-0
+<v Antonio Cisternino>And that is non.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9016-0
+<v Antonio Cisternino>As a standard deckl and has become a
+reference for operating system so that</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9016-1
+<v Antonio Cisternino>you reduce the footprint of the
+executable of the operating system, OK.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9035-0
+<v Antonio Cisternino>So that that's basically so
+interoperability is.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9056-0
+<v Antonio Cisternino>I just discussed.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9081-0
+<v Antonio Cisternino>Loading the activation record e unloading
+the activation record.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9086-0
+<v Antonio Cisternino>OK, suppose.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9091-0
+<v Antonio Cisternino>You have.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9114-0
+<v Antonio Cisternino>A point class,
+let me write like this x and y.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9150-0
+<v Antonio Cisternino>How would you pass this data structure in
+the variable on top of the stack?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9234-0
+<v Antonio Cisternino>Again, it's a convention,
+I may pass y first and x after or vice</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9234-1
+<v Antonio Cisternino>versa.
+I can use a different alignment of bits</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9234-2
+<v Antonio Cisternino>from for the number for the number
+representation, the alignment.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9242-0
+<v Antonio Cisternino>Eccetera OK, so.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9253-0
+<v Antonio Cisternino>There is a huge problem of marshaling.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9260-0
+<v Antonio Cisternino>And I'm marshalling.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9345-0
+<v Antonio Cisternino>Data structures,
+marshaling is the activity to load the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9345-1
+<v Antonio Cisternino>donkey back OK and unloading OK,
+you have to basically take your objects,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9345-2
+<v Antonio Cisternino>load them.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9425-0
+<v Antonio Cisternino>In a way which can be supported by the
+donkey and then unload it and restore the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9425-1
+<v Antonio Cisternino>order of things. OK,
+that's the origin of the name.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9425-2
+<v Antonio Cisternino>And so the marshalling is basically
+happens when a binary.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9448-0
+<v Antonio Cisternino>Representation of an object which is in
+memory.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9544-0
+<v Antonio Cisternino>Should be transformed so that someone
+else can receive it,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9544-1
+<v Antonio Cisternino>then this someone else may generate
+another structured value that I have to</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9544-2
+<v Antonio Cisternino>decode in order to be able.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9637-0
+<v Antonio Cisternino>To obtain the return value which is
+structured in my internal presentation.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9637-1
+<v Antonio Cisternino>OK,
+so all these things inside happen also at</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9637-2
+<v Antonio Cisternino>the programming language level at the run
+time, but the point is that.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9711-0
+<v Antonio Cisternino>Interoperability becomes of a paramount
+importance because the language spoken by</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9711-1
+<v Antonio Cisternino>your program is different typically than
+the language spoken by another library,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9711-2
+<v Antonio Cisternino>which.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9727-0
+<v Antonio Cisternino>By the way,
+can be a binary library at DLL.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9735-0
+<v Antonio Cisternino>But can also be.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9807-0
+<v Antonio Cisternino>A web service, a rest API, a soap message,
+and so the marshaling and marshaling</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9807-1
+<v Antonio Cisternino>activities are of crucial importance
+because.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9893-0
+<v Antonio Cisternino>You need to be able to pass structured
+information to other services and read</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9893-1
+<v Antonio Cisternino>structured information as a result,
+so JSON has become popular as a way of</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9893-2
+<v Antonio Cisternino>marshaling and marshaling objects.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9973-0
+<v Antonio Cisternino>XML has been used used using XML schema
+definition,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9973-1
+<v Antonio Cisternino>XSD has been used to implement the soap
+standard for making the same through the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/9973-2
+<v Antonio Cisternino>network.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10076-0
+<v Antonio Cisternino>OK,
+and that has become one of the most</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10076-1
+<v Antonio Cisternino>important things whenever you use some
+remote services by adding a library to</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10076-2
+<v Antonio Cisternino>your your system and then you call a
+method,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10076-3
+<v Antonio Cisternino>basically what's happening behind the
+code in is.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10165-0
+<v Antonio Cisternino>Someone prepares, marshal the data,
+creates the sockets,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10165-1
+<v Antonio Cisternino>pass whatever it should be passed,
+waits for the results,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10165-2
+<v Antonio Cisternino>parses the result and then returns the
+structured value so that you don't have</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10165-3
+<v Antonio Cisternino>to bother.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10218-0
+<v Antonio Cisternino>About this thing, and in fact,
+the first example of this concept was</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10218-1
+<v Antonio Cisternino>called RPC, remote procedure call.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10316-0
+<v Antonio Cisternino>But at the end of the day,
+whether it's a web service, an HTTP API,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10316-1
+<v Antonio Cisternino>a rest API,
+or an RPC or binary interoperability,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10316-2
+<v Antonio Cisternino>the sequence is always the same,
+you invoke a function which is local to</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10316-3
+<v Antonio Cisternino>your.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10395-0
+<v Antonio Cisternino>Program, this function takes the data,
+performs the marshaling,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10395-1
+<v Antonio Cisternino>ensures that the data are in the correct
+format as expected by the collee,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10395-2
+<v Antonio Cisternino>invokes the collee whether it is by
+invoking.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10490-0
+<v Antonio Cisternino>Another process,
+opening a socket to a remote place,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10490-1
+<v Antonio Cisternino>all the same,
+wait for the result as long as you get</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10490-2
+<v Antonio Cisternino>the result,
+parse back the result and return the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10490-3
+<v Antonio Cisternino>structural result to the caller.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10546-0
+<v Antonio Cisternino>OK,
+that's the the general pattern for</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10546-1
+<v Antonio Cisternino>interoperability dotnet was really
+interesting because they created the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10546-2
+<v Antonio Cisternino>runtime.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10651-0
+<v Antonio Cisternino>In a way which was designed to
+interoperate with all the system,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10651-1
+<v Antonio Cisternino>so it is very easy to use external
+libraries in dot net by using custom</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10651-2
+<v Antonio Cisternino>attributes, remember custom attributes.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10727-0
+<v Antonio Cisternino>Now we will see one of the successful
+applications,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10727-1
+<v Antonio Cisternino>so if the if a if a dynamic link linking
+library a dll as a function let's say foo</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10727-2
+<v Antonio Cisternino>declared then.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10750-0
+<v Antonio Cisternino>I can or let's say add,
+so if I know that a function.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10766-0
+<v Antonio Cisternino>As di signature Inside DLL.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10781-0
+<v Antonio Cisternino>I can say DLL import.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10784-0
+<v Antonio Cisternino>Mai.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10799-0
+<v Antonio Cisternino>My DLL do DLL.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10815-0
+<v Antonio Cisternino>E automatically the run time.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10883-0
+<v Antonio Cisternino>Here I would say typically external
+external something and then the run time</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10883-1
+<v Antonio Cisternino>automatically will will perform the
+invocation.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10966-0
+<v Antonio Cisternino>Of the add function inside the that
+particular DLL,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10966-1
+<v Antonio Cisternino>so all the complex work that has to be
+done to marshal the arguments and marshal</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/10966-2
+<v Antonio Cisternino>the results.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11019-0
+<v Antonio Cisternino>Will be performed by the runtime thanks
+to that annotation. OK,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11019-1
+<v Antonio Cisternino>so interoperability is important. OK,
+so now we have a.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11049-0
+<v Antonio Cisternino>Rather exhaustive list of all the
+services that a modern runtime should</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11049-1
+<v Antonio Cisternino>provide.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11067-0
+<v Antonio Cisternino>Really what made complicated.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11078-0
+<v Antonio Cisternino>In Java, in dotnet.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11119-0
+<v Antonio Cisternino>It was basically the just in time
+compiler and the ambition to have a</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11119-1
+<v Antonio Cisternino>standard by code.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11136-0
+<v Antonio Cisternino>OK, this makes things more complicated.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11140-0
+<v Antonio Cisternino>Now.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11143-0
+<v Antonio Cisternino>Ciao.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11170-0
+<v Antonio Cisternino>How do you think the execution should
+happen?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11190-0
+<v Antonio Cisternino>I mean,
+should should it work like an interpreter?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11192-0
+<v Antonio Cisternino>Or.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11198-0
+<v Antonio Cisternino>In a different way.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11285-0
+<v Antonio Cisternino>I have a Java code,
+I have a dotnet code compiled,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11285-1
+<v Antonio Cisternino>I have the binary,
+I say okay JVM run this Java name of the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11285-2
+<v Antonio Cisternino>assembly of the class or dotnet and run
+and the assembly.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11290-0
+<v Antonio Cisternino>And then WhatsApp?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11302-0
+<v Antonio Cisternino>So the execution.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11320-0
+<v Antonio Cisternino>Can basically follow two approaches one
+is.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11338-0
+<v Antonio Cisternino>Orchestrated by the execution environment.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11366-0
+<v Antonio Cisternino>That was basically the Java approach. OK,
+so if you want to.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11425-0
+<v Antonio Cisternino>Be able to interpret things typically you
+need that the virtual machine is the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11425-1
+<v Antonio Cisternino>orchestrator OK,
+so basically the virtual machine loads</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11425-2
+<v Antonio Cisternino>the class.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11516-0
+<v Antonio Cisternino>Then creates all the data structure,
+then starts the execution of method upon</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11516-1
+<v Antonio Cisternino>the return. Should I do something? OK,
+I transfer the control to someone else.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11516-2
+<v Antonio Cisternino>OK, so the orchestration of the.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11637-0
+<v Antonio Cisternino>Program execution is mostly done by the
+execution environment and you can try to</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11637-1
+<v Antonio Cisternino>figure out in your mind like an
+interpreter.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11637-2
+<v Antonio Cisternino>So there is a main loop which says, OK,
+what's the next step?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11637-3
+<v Antonio Cisternino>Then you invoke the next step,
+you wait for the result.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11648-0
+<v Antonio Cisternino>And then you decide the next action, okay?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11655-0
+<v Antonio Cisternino>The other way, the other.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11672-0
+<v Antonio Cisternino>Approach is a passive callback approach.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11679-0
+<v Antonio Cisternino>What do I mean for by this?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11735-0
+<v Antonio Cisternino>You,
+if you in the in the in the in the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11735-1
+<v Antonio Cisternino>virtual machine,
+all the code that is executed is is</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11735-2
+<v Antonio Cisternino>generated by the virtual machine itself.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11737-0
+<v Antonio Cisternino>OK.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11809-0
+<v Antonio Cisternino>So if I have a C Sharp method that would
+will be in byte code and run time will</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11809-1
+<v Antonio Cisternino>generate the actual assembly and machine
+language code on the fly for me.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11904-0
+<v Antonio Cisternino>OK,
+so that's so something that I can do is</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11904-1
+<v Antonio Cisternino>to generate the executable and do exactly
+what the C compiler does,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11904-2
+<v Antonio Cisternino>the C compiler when compiles the program
+generates.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11926-0
+<v Antonio Cisternino>Callbacks to the run time,
+which provide the service.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/11944-0
+<v Antonio Cisternino>So something that I can do is to.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12038-0
+<v Antonio Cisternino>Leverage on this core idea and create a
+passive system which simply loads,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12038-1
+<v Antonio Cisternino>and for this reason the loader is very
+important,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12038-2
+<v Antonio Cisternino>you lay out all the memory and then you
+generate stubs all over the places.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12065-0
+<v Antonio Cisternino>That ensures that you will be called back
+when a service from the runtime is needed.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12128-0
+<v Antonio Cisternino>Example,
+One of the first implementation of the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12128-1
+<v Antonio Cisternino>dotnet runtime,
+when the just in time was compiling a</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12128-2
+<v Antonio Cisternino>jump backward.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12210-0
+<v Antonio Cisternino>OK,
+so because you have the jump instruction,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12210-1
+<v Antonio Cisternino>the jump instruction scope is so you can
+jump only inside the method,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12210-2
+<v Antonio Cisternino>so you can jump everywhere,
+but nevertheless you have the jump and</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12210-3
+<v Antonio Cisternino>this is.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12291-0
+<v Antonio Cisternino>How the while or for loop is implemented,
+so whenever you have a jump instruction</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12291-1
+<v Antonio Cisternino>which jumps to a previous instruction,
+typically that's the sign of a loop.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12334-0
+<v Antonio Cisternino>The just in time compiler emitted a check,
+should I run the garbage collection OK?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12419-0
+<v Antonio Cisternino>So in the program as the loop,
+but the just in time annotated the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12419-1
+<v Antonio Cisternino>executable code so that you ensure that
+the garbage collector will be invoked.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12515-0
+<v Antonio Cisternino>Otherwise,
+the risk is that nobody calls the garbage</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12515-1
+<v Antonio Cisternino>collector and the system will remain
+without memory. OK,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12515-2
+<v Antonio Cisternino>so if you decide to go for a word in
+which the code execute naturally in into</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12515-3
+<v Antonio Cisternino>the memory.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12608-0
+<v Antonio Cisternino>You have to ensure that some services of
+the runtime gets called at the proper</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12608-1
+<v Antonio Cisternino>time,
+then you can inject callback to the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12608-2
+<v Antonio Cisternino>internal libraries and this is the dot
+net approach and personally I love it.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12614-0
+<v Antonio Cisternino>ah but that's my feeling.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12634-0
+<v Antonio Cisternino>Me so molto difficult to understand the
+code, so.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12712-0
+<v Antonio Cisternino>But in general it's more efficient. OK,
+so those are basically the all the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12712-1
+<v Antonio Cisternino>elements. OK, now you know about types,
+you know about syntax, compilation,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12712-2
+<v Antonio Cisternino>runtime.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12783-0
+<v Antonio Cisternino>Scope, et cetera,
+so you have all the ingredients to try to</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12783-1
+<v Antonio Cisternino>understand how these things gets in fact
+implemented in a real use case.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12785-0
+<v Antonio Cisternino>So.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12884-0
+<v Antonio Cisternino>This is the runtime.
+First thing I'm going to do is let's do</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12884-1
+<v Antonio Cisternino>as I would have done,
+as I did 20 years ago. I mean,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12884-2
+<v Antonio Cisternino>I was able to download dot net source
+code on my machine.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12995-0
+<v Antonio Cisternino>I waited something like half an hour to
+get the full source code base of my PC</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12995-1
+<v Antonio Cisternino>and then I started looking around trying
+to understanding something so complicated</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/12995-2
+<v Antonio Cisternino>without any clue how to start. You start,
+they were of course read me.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13047-0
+<v Antonio Cisternino>How to build and this kind of things,
+but things were really complicated and I</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13047-1
+<v Antonio Cisternino>started wondering, wondering myself,
+how do I contribute to this thing?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13110-0
+<v Antonio Cisternino>Since it's so complicated to understand,
+OK,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13110-1
+<v Antonio Cisternino>so you start browsing and clearly source
+is the typical place where you go.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13187-0
+<v Antonio Cisternino>You have to figure out names and then you
+have also to enter because sometimes</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13187-1
+<v Antonio Cisternino>names are not so intuitive,
+for instance if I want to have a look at</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13187-2
+<v Antonio Cisternino>the object class.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13274-0
+<v Antonio Cisternino>Which was actually the first class I
+accessed when I had access to the run</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13274-1
+<v Antonio Cisternino>time,
+because it's pervasive in the type system,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13274-2
+<v Antonio Cisternino>but you never see the implementation,
+so I was curious to see how it was</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13274-3
+<v Antonio Cisternino>implemented.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13279-0
+<v Antonio Cisternino>You have to look.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13333-0
+<v Antonio Cisternino>In rather counterintuitive place,
+which is system private core lib,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13333-1
+<v Antonio Cisternino>because actually that is where you find.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13338-0
+<v Antonio Cisternino>The implementation.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13344-0
+<v Antonio Cisternino>I see.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13353-0
+<v Antonio Cisternino>The object core.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13425-0
+<v Antonio Cisternino>And I see some C sharp and I say, come on,
+how is that possible? I mean,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13425-1
+<v Antonio Cisternino>this is the runtime.
+How can I write things in C sharp in the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13425-2
+<v Antonio Cisternino>runtime? OK.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13523-0
+<v Antonio Cisternino>First of all,
+I notice that there is a partial,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13523-1
+<v Antonio Cisternino>so this is not the full definition of the
+class,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13523-2
+<v Antonio Cisternino>and this is a unique trait to dotnet,
+which is a very geeky thing for</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13523-3
+<v Antonio Cisternino>programming lovers.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13614-0
+<v Antonio Cisternino>Basically, Microsoft said OK,
+is expensive to maintain a C plus plus</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13614-1
+<v Antonio Cisternino>code base,
+so let's define a mechanism in which I</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13614-2
+<v Antonio Cisternino>can define a class,
+for instance the object class partly in C</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13614-3
+<v Antonio Cisternino>plus plus.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13720-0
+<v Antonio Cisternino>E partly in dotnet. OK,
+because at the end of the day the layout</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13720-1
+<v Antonio Cisternino>of the memory of the object is the same,
+and so that should be doable. OK,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13720-2
+<v Antonio Cisternino>so I found the part of the object class
+definition.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13771-0
+<v Antonio Cisternino>But is only the part which is not the
+core part,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13771-1
+<v Antonio Cisternino>it's the one that allows you to have the
+get type implementation.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13843-0
+<v Antonio Cisternino>And the unsafe keyword which is available
+in C Sharp allows you to have a block</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13843-1
+<v Antonio Cisternino>which is which contains pointer
+management which is available.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13851-0
+<v Antonio Cisternino>This intrinsic.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13933-0
+<v Antonio Cisternino>Annotation relates its limited to the
+runtime,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13933-1
+<v Antonio Cisternino>and basically it's a notation that helps
+the runtime to generate the proper call</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13933-2
+<v Antonio Cisternino>to the internal functions.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13966-0
+<v Antonio Cisternino>Because, of course,
+the calling convention internally is</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13966-1
+<v Antonio Cisternino>different than the calling convention.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13975-0
+<v Antonio Cisternino>Among methods.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13979-0
+<v Antonio Cisternino>Ok.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13986-0
+<v Antonio Cisternino>Let's try again.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/13995-0
+<v Antonio Cisternino>Where do you look for?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14080-0
+<v Antonio Cisternino>In C++ it is part of the runtime there is
+chicken and egg problem.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14080-1
+<v Antonio Cisternino>You're creating through the abstraction
+all the types that are needed to obtain C</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14080-2
+<v Antonio Cisternino>Sharp up and running. Okay, so.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14148-0
+<v Antonio Cisternino>You need to have a core set of objects
+defined in C++ and not in C sharp itself,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14148-1
+<v Antonio Cisternino>otherwise it wouldn't bootstrap OK so.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14177-0
+<v Antonio Cisternino>You may look inside,
+I will go and look inside the VM,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14177-1
+<v Antonio Cisternino>hopefully.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14211-0
+<v Antonio Cisternino>Object is so core,
+it will be part of the VM,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14211-1
+<v Antonio Cisternino>maybe I'm lucky, I'm looking around.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14250-0
+<v Antonio Cisternino>I see names that are encourage me,
+such as class, maybe there is also object.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14288-0
+<v Antonio Cisternino>EE, as you can see,
+there are a number of EE files,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14288-1
+<v Antonio Cisternino>those are interesting.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14300-0
+<v Antonio Cisternino>Object looks like that.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14305-0
+<v Antonio Cisternino>Maybe.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14356-0
+<v Antonio Cisternino>OK,
+object model CLR object is is a common</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14356-1
+<v Antonio Cisternino>base part to all CLR objects. Yes,
+we found.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14398-0
+<v Antonio Cisternino>So now you see that comments are properly
+made in general when you write programs.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14470-0
+<v Antonio Cisternino>If you have for each a in array the line
+of code on top,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14470-1
+<v Antonio Cisternino>I go over the elements of the array,
+why are you inserting that?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14494-0
+<v Antonio Cisternino>It's clearly a stupid comment,
+OK comment sul limit to.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14574-0
+<v Antonio Cisternino>Illustrate non obvious things such as
+this one or to implementation choices</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14574-1
+<v Antonio Cisternino>that may have been different.
+So it's a good thing to remember why you</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14574-2
+<v Antonio Cisternino>picked up that, OK?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14580-0
+<v Antonio Cisternino>There are some notes.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14674-0
+<v Antonio Cisternino>There are a number of forward
+declarations in C++,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14674-1
+<v Antonio Cisternino>there is this notion of forward
+declaration. So you say, okay,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14674-2
+<v Antonio Cisternino>there is a class method table,
+don't worry,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14674-3
+<v Antonio Cisternino>I tell you it's there so that you can,
+I can use it, okay?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14678-0
+<v Antonio Cisternino>Anna Anna.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14682-0
+<v Antonio Cisternino>At last.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14709-0
+<v Antonio Cisternino>We find that basically the object has no
+fields.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14733-0
+<v Antonio Cisternino>Tecnically not is not a tightly true,
+but almost.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14752-0
+<v Antonio Cisternino>And it has only a protected member,
+which is.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14758-0
+<v Antonio Cisternino>Method table.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14842-0
+<v Antonio Cisternino>So when you studied the type system and
+the inheritance,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14842-1
+<v Antonio Cisternino>you know that the essence of inheritance
+polymorphism is the is a relation,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14842-2
+<v Antonio Cisternino>so if I have.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14930-0
+<v Antonio Cisternino>A superclass and a class that inherits
+from that superclass an instance,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14930-1
+<v Antonio Cisternino>whenever is expected an instance of an
+object of the superclass,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14930-2
+<v Antonio Cisternino>I must be allowed to indicate the an
+object of the inherit class.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14936-0
+<v Antonio Cisternino>OK, that's by definition.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14939-0
+<v Antonio Cisternino>Niente.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/14973-0
+<v Antonio Cisternino>This means that because you can override
+the implementation of the methods.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15061-0
+<v Antonio Cisternino>That you can statically know which method
+should be invoked in C plus plus.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15061-1
+<v Antonio Cisternino>There was a big,
+huge debate during the 90s because.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15136-0
+<v Antonio Cisternino>In C plus plus,
+the programming may decide whether AAA</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15136-1
+<v Antonio Cisternino>method is virtual or not by virtual means
+this method can be overridden by a</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15136-2
+<v Antonio Cisternino>derived class if.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15181-0
+<v Antonio Cisternino>If it's not virtual,
+then I don't care statically,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15181-1
+<v Antonio Cisternino>I must be able to know which version
+should I invoke.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15238-0
+<v Antonio Cisternino>And if you need a virtual method,
+you need some form of runtime type</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15238-1
+<v Antonio Cisternino>checking, because only a runtime.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15348-0
+<v Antonio Cisternino>When you call,
+you will have the reference to the object</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15348-1
+<v Antonio Cisternino>and you will know the type so that you
+can invoke the right version of some</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15348-2
+<v Antonio Cisternino>method. OK,
+and so the method table has become a</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15348-3
+<v Antonio Cisternino>crucial data structure of any.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15431-0
+<v Antonio Cisternino>Runtime also the C Plus Plus runtime
+because you need a table in which you</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15431-1
+<v Antonio Cisternino>have all the pointers to the method
+implementations or da particular class</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15431-2
+<v Antonio Cisternino>thanks to this.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15438-0
+<v Antonio Cisternino>You can implement the override.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15445-0
+<v Antonio Cisternino>And you can make.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15523-0
+<v Antonio Cisternino>Different object coming from different
+classes to point to different methods,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15523-1
+<v Antonio Cisternino>even to support the overriding of the
+method. OK, so this is the method.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15569-0
+<v Antonio Cisternino>Table is a crucial element and Java said,
+you know what, all the methods are vital,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15569-1
+<v Antonio Cisternino>that's it.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15672-0
+<v Antonio Cisternino>Why? Because by the end of the 90s,
+it was basically impossible to tell the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15672-1
+<v Antonio Cisternino>overhead of having an indirection in the
+call, because clearly,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15672-2
+<v Antonio Cisternino>if I have a method table with all the
+pointers to the code for every.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15770-0
+<v Antonio Cisternino>Method, when I want to call the method,
+I have to go to the method table and then</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15770-1
+<v Antonio Cisternino>jump to the address.
+And so clearly there is some little bit</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15770-2
+<v Antonio Cisternino>little of red already by the end of the
+90s,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15770-3
+<v Antonio Cisternino>it was impossible to tell the difference.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15824-0
+<v Antonio Cisternino>Between a code not using virtual methods
+and a code using virtual methods so Java</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15824-1
+<v Antonio Cisternino>set you know what?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15827-0
+<v Antonio Cisternino>O Vito.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15853-0
+<v Antonio Cisternino>Ma ci si dico,
+scrivi if you allow to to decide.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15937-0
+<v Antonio Cisternino>Being sketch much more complicated so in
+modern run times you whenever you have a</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15937-1
+<v Antonio Cisternino>type,
+you in fact have the pointer to the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15937-2
+<v Antonio Cisternino>method table and you have a method table
+for every.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/15939-0
+<v Antonio Cisternino>Class.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16029-0
+<v Antonio Cisternino>So whenever I load the class into the
+memory,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16029-1
+<v Antonio Cisternino>I have only one method table that is
+shared across all the objects instances</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16029-2
+<v Antonio Cisternino>of that particular class,
+which means that this point.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16043-0
+<v Antonio Cisternino>Tell me the class of the object.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16127-0
+<v Antonio Cisternino>Good so at run time you can always say
+what is the class to which a particular</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16127-1
+<v Antonio Cisternino>object belongs to,
+and the answer is look at the at the.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16130-0
+<v Antonio Cisternino>Metho table.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16152-0
+<v Antonio Cisternino>Because there is one method table per
+type.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16209-0
+<v Antonio Cisternino>OK, so this is a browsing style,
+it's complicated because if you want to</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16209-1
+<v Antonio Cisternino>learn how to work the git.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16224-0
+<v Antonio Cisternino>Things gets much more complicated.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16297-0
+<v Antonio Cisternino>OK,
+because you will see a bunch of concepts</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16297-1
+<v Antonio Cisternino>that even if you are familiar with the
+programming language abstraction,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16297-2
+<v Antonio Cisternino>you may fail to understand.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16406-0
+<v Antonio Cisternino>There are technicalities optimizations
+that are not so easy to spot,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16406-1
+<v Antonio Cisternino>so the code browsing that you
+instinctively tend to do in a large code</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16406-2
+<v Antonio Cisternino>place will not work.
+There's no easy way to go and read a</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16406-3
+<v Antonio Cisternino>story.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16518-0
+<v Antonio Cisternino>And everything is clear and neat.
+It's much more.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16518-1
+<v Antonio Cisternino>If you are browsing a website,
+that's easy. You look at the web URL,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16518-2
+<v Antonio Cisternino>you look at the corresponding page,
+you understand the routing mechanism of</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16518-3
+<v Antonio Cisternino>the particular runtime and then.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16619-0
+<v Antonio Cisternino>You understand the code generation?
+It's still easy,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16619-1
+<v Antonio Cisternino>but here here is not that easy because
+there are so many elements that are</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16619-2
+<v Antonio Cisternino>interacting one with each other that even
+reading the code is complicated.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16619-3
+<v Antonio Cisternino>So let's look for instance.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16634-0
+<v Antonio Cisternino>One CPP file.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16637-0
+<v Antonio Cisternino>Su.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16710-0
+<v Antonio Cisternino>It is full of register code gen gen
+initialized registered state and then you</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16710-1
+<v Antonio Cisternino>start calling internal services and there
+are thousands of names and unless you are.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16788-0
+<v Antonio Cisternino>An expert in this particular thing,
+even looking at simple stuff such as how</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16788-1
+<v Antonio Cisternino>the add instruction is compiled is
+complicated, OK,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16788-2
+<v Antonio Cisternino>so browsing the code base.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16795-0
+<v Antonio Cisternino>So complicated.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16883-0
+<v Antonio Cisternino>It's not easy. So of course,
+the first thing you must do is look for</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16883-1
+<v Antonio Cisternino>documentation.
+There should be some documentation,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16883-2
+<v Antonio Cisternino>in particular the documentation of the
+CLR if you.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16898-0
+<v Antonio Cisternino>Go into the docs of the run time.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16981-0
+<v Antonio Cisternino>There is a beautiful design,
+I will start with the design because</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16981-1
+<v Antonio Cisternino>design is architectural,
+so I can look around and trying to</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/16981-2
+<v Antonio Cisternino>understand the concepts.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17039-0
+<v Antonio Cisternino>Not the details and of course I'm
+interested in the core CLR,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17039-1
+<v Antonio Cisternino>which is the and then I find that there
+are.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17049-0
+<v Antonio Cisternino>Free folders, GT is easy.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17128-0
+<v Antonio Cisternino>Profiling, you may guess botr,
+this is what it is bot because bot now</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17128-1
+<v Antonio Cisternino>for us sounds like bot chatbot,
+but technically it's an acronym and it's</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17128-2
+<v Antonio Cisternino>is book of the runtime, OK?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17210-0
+<v Antonio Cisternino>So you find an entire book,
+which I encourage you to read as an</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17210-1
+<v Antonio Cisternino>exercise.
+It is full of really interesting</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17210-2
+<v Antonio Cisternino>information, it is generally readable and.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17240-0
+<v Antonio Cisternino>I will use part of it just to give you
+some.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17339-0
+<v Antonio Cisternino>Information OK, so as you can see,
+there is a frequently asked question,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17339-1
+<v Antonio Cisternino>an introduction to the runtime.
+It's interesting when you go to the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17339-2
+<v Antonio Cisternino>introduction because you see that this
+has been.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17343-0
+<v Antonio Cisternino>Britten in 2007.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17346-0
+<v Antonio Cisternino>Ok.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17372-0
+<v Antonio Cisternino>Which is basically 10 years after the
+definition, clearly.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17466-0
+<v Antonio Cisternino>The documentation of the runtime
+internally to Microsoft there was a lot</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17466-1
+<v Antonio Cisternino>of documentation, but that was private.
+When Microsoft started working on an open</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17466-2
+<v Antonio Cisternino>source release of the framework,
+then some documentation has been.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17573-0
+<v Antonio Cisternino>Redefined also because the open source
+version of the.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17573-1
+<v Antonio Cisternino>net has been simplified in some aspects,
+but those are very specific with respect</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17573-2
+<v Antonio Cisternino>to the original implementation,
+which was too Windows dependent.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17624-0
+<v Antonio Cisternino>In some functions,
+so basically they redefine some notion so</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17624-1
+<v Antonio Cisternino>that the porting was easier than it was
+originally OK.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17729-0
+<v Antonio Cisternino>In the list we can see important things.
+Garbage collection design first. OK,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17729-1
+<v Antonio Cisternino>garbage collection is important.
+Garbage collection is important because</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17729-2
+<v Antonio Cisternino>the performance of your system will
+depend upon the efficiency.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17735-0
+<v Antonio Cisternino>Of the garbage collection.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17743-0
+<v Antonio Cisternino>Trading is important.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17759-0
+<v Antonio Cisternino>Rio jit is the name of jit.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17830-0
+<v Antonio Cisternino>Type system is important,
+type loader is important,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17830-1
+<v Antonio Cisternino>method descriptor is important,
+method descriptor is the descriptor of</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17830-2
+<v Antonio Cisternino>the method of the method table.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17840-0
+<v Antonio Cisternino>Is one of the elements is where the code
+lies in these systems.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17855-0
+<v Antonio Cisternino>Virtuous Tab,
+we will discuss something around but not.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17860-0
+<v Antonio Cisternino>Stuck working.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17915-0
+<v Antonio Cisternino>Stuck working,
+we will find it's a very important</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17915-1
+<v Antonio Cisternino>activity because the stack is a place
+full of information and a lot of services</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17915-2
+<v Antonio Cisternino>inside the runtime is made.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17921-0
+<v Antonio Cisternino>By performing stack walking.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17940-0
+<v Antonio Cisternino>Private con leap and calling in into the
+run time, this is important.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17980-0
+<v Antonio Cisternino>Because remember the object class in C
+Sharp that was invoking C Plus Plus part</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/17980-1
+<v Antonio Cisternino>of code that should be documented because
+it's tricky.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18018-0
+<v Antonio Cisternino>And then other important things,
+the API is a convention about the layout</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18018-1
+<v Antonio Cisternino>of binaries. OK, so I mean, it's not.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18028-0
+<v Antonio Cisternino>OK in the last 15 minutes or so.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18039-0
+<v Antonio Cisternino>I will start with the garbage collection.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18092-0
+<v Antonio Cisternino>Because basically we discuss it
+abstractly the garbage collector,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18092-1
+<v Antonio Cisternino>now we have the opportunity to read and
+test ourselves if the things that we</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18092-2
+<v Antonio Cisternino>discussed during the general introduction
+of garbage collection.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18100-0
+<v Antonio Cisternino>Helps us reading this documentation.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18125-0
+<v Antonio Cisternino>The two components that belong to GC are
+the allocator and the collector.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18189-0
+<v Antonio Cisternino>Of course, I mean,
+I didn't explicitly mention,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18189-1
+<v Antonio Cisternino>but it was implicit because you have to
+function in the garbage collection.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18189-2
+<v Antonio Cisternino>On one hand, you need to allocate memory,
+remember in the copy collector,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18189-3
+<v Antonio Cisternino>you're appending data, et cetera.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18194-0
+<v Antonio Cisternino>And then you have the collector, which is.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18231-0
+<v Antonio Cisternino>When the markers we, when the markers we,
+for copy Collection eccetera happens to</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18231-1
+<v Antonio Cisternino>free the memory actually OK so.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18233-0
+<v Antonio Cisternino>The design.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18283-0
+<v Antonio Cisternino>The allocator gets called by the
+allocation helpers in the execution</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18283-1
+<v Antonio Cisternino>engine with the following information,
+the size requested,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18283-2
+<v Antonio Cisternino>the thread allocation context.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18297-0
+<v Antonio Cisternino>And flags that indicate things like
+whether.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18352-0
+<v Antonio Cisternino>This is a finalizable object or not?
+So what is a finalizable object?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18352-1
+<v Antonio Cisternino>Remember the destructor,
+both Java and dotnet have a similar</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18352-2
+<v Antonio Cisternino>notion, the object may override.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18419-0
+<v Antonio Cisternino>A method which is called finalize that
+will be called just before the garbage</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18419-1
+<v Antonio Cisternino>collections dispose the object OK to free
+resources has never been really popular</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18419-2
+<v Antonio Cisternino>because you can't predict when it will be
+called. It depends on how much memory.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18461-0
+<v Antonio Cisternino>You have in your system,
+and so it's never been really popular as</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18461-1
+<v Antonio Cisternino>a as a as a function,
+but it's it has its useful use cases and</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18461-2
+<v Antonio Cisternino>the garbage protection must.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18520-0
+<v Antonio Cisternino>Know whether a particular object has a
+finalizer or not,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18520-1
+<v Antonio Cisternino>because in that case it should do
+something,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18520-2
+<v Antonio Cisternino>otherwise it will simply skip that OK,
+so you have a bunch of flags that tells</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18520-3
+<v Antonio Cisternino>you information relevant information.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18523-0
+<v Antonio Cisternino>About the object.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18546-0
+<v Antonio Cisternino>The GC does not have special treatment
+for different kinds of object types.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18616-0
+<v Antonio Cisternino>It consults the EE to get the size of an
+object. This is important.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18616-1
+<v Antonio Cisternino>Remember that precise collection requires
+at run time that you are able to fully</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18616-2
+<v Antonio Cisternino>know all the elements of an object,
+in particular the references,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18616-3
+<v Antonio Cisternino>the pointers.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18633-0
+<v Antonio Cisternino>Because that is essential for the
+marketing face of the garbage collection</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18633-1
+<v Antonio Cisternino>process.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18668-0
+<v Antonio Cisternino>Based on size,
+the GC divides objects into two</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18668-1
+<v Antonio Cisternino>categories,
+small objects smaller than eighty five</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18668-2
+<v Antonio Cisternino>kilobytes.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18691-0
+<v Antonio Cisternino>Eighty five thousand bytes and large
+objects greater than 85,000 bytes.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18696-0
+<v Antonio Cisternino>Why is that?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18702-0
+<v Antonio Cisternino>NY eighty five.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18709-0
+<v Antonio Cisternino>Why not seventy three forty two?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18776-0
+<v Antonio Cisternino>Empirically,
+so they run billions of computations and</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18776-1
+<v Antonio Cisternino>they found out that 85,000 is reasonable,
+is the best compromise because of course,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18776-2
+<v Antonio Cisternino>if it's larger,
+you will pay some more cost if it's</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18776-3
+<v Antonio Cisternino>smaller.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18822-0
+<v Antonio Cisternino>Some others 85 empirically has become a
+good, it's a constant,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18822-1
+<v Antonio Cisternino>maybe can be changed,
+but basically that is the reason, right?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18822-2
+<v Antonio Cisternino>And why we like to classify.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18826-0
+<v Antonio Cisternino>Objects in large and small.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18831-0
+<v Antonio Cisternino>To prevent.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18860-0
+<v Antonio Cisternino>Fragmentation of the memory,
+because so basically large objects,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18860-1
+<v Antonio Cisternino>first of all, tend to live longer.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18914-0
+<v Antonio Cisternino>I mean,
+if you're spending in your programming</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18914-1
+<v Antonio Cisternino>effort in allocating more than 85
+kilobytes,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18914-2
+<v Antonio Cisternino>that object is relevant for you. I mean,
+it's not just few variables,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18914-3
+<v Antonio Cisternino>it's likely to be an important object.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18952-0
+<v Antonio Cisternino>Whether it's an array of lots of things
+or whatever it is, nevertheless,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18952-1
+<v Antonio Cisternino>it clearly has a meaning,
+and so it is likely that it will last for</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18952-2
+<v Antonio Cisternino>long time, not only.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/18977-0
+<v Antonio Cisternino>What the copy collection does when you do
+the collection, you allocate a new heap.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19022-0
+<v Antonio Cisternino>You copy the survive the object in the
+new heap and so if I have an object with</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19022-1
+<v Antonio Cisternino>85 K,
+then the cost of the copy collection</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19022-2
+<v Antonio Cisternino>would be significant.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19075-0
+<v Antonio Cisternino>And this will slow my process,
+and so it makes sense to classify these</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19075-1
+<v Antonio Cisternino>two classes because large objects,
+for instance,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19075-2
+<v Antonio Cisternino>are located in a single generation.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19116-0
+<v Antonio Cisternino>We mark and sweep and without generations,
+because the cost of managing and copying</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19116-1
+<v Antonio Cisternino>between generations objects is not
+neglectable if objects are too large.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19170-0
+<v Antonio Cisternino>OK,
+so when the GC gives out memory to the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19170-1
+<v Antonio Cisternino>locator,
+so in terms of allocation context, OK,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19170-2
+<v Antonio Cisternino>there are let me skip. I mean,
+I encourage you to read it because there</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19170-3
+<v Antonio Cisternino>are a lot of interesting things.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19198-0
+<v Antonio Cisternino>So the allocator is designed to achieve
+the following,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19198-1
+<v Antonio Cisternino>triggering a garbage collection when
+appropriate.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19206-0
+<v Antonio Cisternino>Preserving object locality.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19272-0
+<v Antonio Cisternino>Because as I already anticipated when I
+was talking about garbage collection,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19272-1
+<v Antonio Cisternino>garbage collection is typically not
+implemented in a single heap,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19272-2
+<v Antonio Cisternino>typically you allocate heap in size of
+let's say one megabyte.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19296-0
+<v Antonio Cisternino>RAM, which is reasonable,
+and then you manage that heap through</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19296-1
+<v Antonio Cisternino>garbage collection, OK, and so.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19350-0
+<v Antonio Cisternino>Having objects that reference objects in
+different types may have some costs,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19350-1
+<v Antonio Cisternino>not in terms of performance because I
+mean it's memory,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19350-2
+<v Antonio Cisternino>but for instance in terms of blocking
+because the gamers collector.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19398-0
+<v Antonio Cisternino>To operate must suspend the execution of
+one or more threads,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19398-1
+<v Antonio Cisternino>and so if you spread too much information
+to the memory,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19398-2
+<v Antonio Cisternino>you may generate contention for the
+concurrent execution.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19419-0
+<v Antonio Cisternino>Efficient cache usage, of course,
+efficient locking, because one of the.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19489-0
+<v Antonio Cisternino>Criticism that are made that was made to
+garbage collection is that garbage</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19489-1
+<v Antonio Cisternino>collection, specialty copy collection,
+requires you to stop the execution</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19489-2
+<v Antonio Cisternino>because you're copying objects around,
+which means that you can't execute.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19538-0
+<v Antonio Cisternino>Anything during this process,
+because otherwise the risk is that some</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19538-1
+<v Antonio Cisternino>code will touch some object that has been
+moved,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19538-2
+<v Antonio Cisternino>but the reference has not yet been
+updated. OK, and so.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19587-0
+<v Antonio Cisternino>When the garbage collection is triggered,
+some part of your application will stop</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19587-1
+<v Antonio Cisternino>and the naive implementation stops
+everything,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19587-2
+<v Antonio Cisternino>then you collect and then you resume
+everything, but clearly this is rather.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19607-0
+<v Antonio Cisternino>Expensive,
+there are concurrent approaches that may</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19607-1
+<v Antonio Cisternino>reduce this phenomenon.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19625-0
+<v Antonio Cisternino>Memory integrity,
+the GC always zeroes out the memory.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19681-0
+<v Antonio Cisternino>For newly allocated objects, OK,
+this is for security.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19681-1
+<v Antonio Cisternino>This ensures for instance there are there
+is no spill of information by allocating</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19681-2
+<v Antonio Cisternino>and allocating objects because the
+garbage collection gives you back zero</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19681-3
+<v Antonio Cisternino>memory all the time.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19688-0
+<v Antonio Cisternino>Keeping the hip crawlable.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19748-0
+<v Antonio Cisternino>So the allocator make sure to make a free
+object out of left over memory in each</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19748-1
+<v Antonio Cisternino>allocation quantum.
+So basically if there are 30 bytes left</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19748-2
+<v Antonio Cisternino>in an allocation quantum and the next
+object is.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19790-0
+<v Antonio Cisternino>Forty bytes,
+the allocator will make the 30 bytes a</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19790-1
+<v Antonio Cisternino>free object and get a new allocation.
+This is the what you do when you saturate</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19790-2
+<v Antonio Cisternino>the hip, OK and.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19808-0
+<v Antonio Cisternino>Guess what you have unlock to allocate,
+and this is the allocate easy and nat.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19826-0
+<v Antonio Cisternino>The collector,
+clearly the collector is the most</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19826-1
+<v Antonio Cisternino>interesting part.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19829-0
+<v Antonio Cisternino>So.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19842-0
+<v Antonio Cisternino>The GC is a generational collector.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19909-0
+<v Antonio Cisternino>Which means that objects are logically
+divided into generations,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19909-1
+<v Antonio Cisternino>and we already studied this.
+So you start with generation zero is</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19909-2
+<v Antonio Cisternino>where allocation happens,
+and then collector will move across</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19909-3
+<v Antonio Cisternino>generation from generation n to
+generation n plus one.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19977-0
+<v Antonio Cisternino>For small objects,
+the heap is divided into three</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19977-1
+<v Antonio Cisternino>generations.
+This is an implementation choice.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19977-2
+<v Antonio Cisternino>Of course, you can imagine n generation,
+but at the end of the day,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19977-3
+<v Antonio Cisternino>in this implementation,
+you have three generations, gen zero,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19977-4
+<v Antonio Cisternino>gen one and gen two.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/19986-0
+<v Antonio Cisternino>For large object,
+there's one generation gen three.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20000-0
+<v Antonio Cisternino>This gives you also a int gentry is is
+marquez VIP.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20002-0
+<v Antonio Cisternino>Che.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20018-0
+<v Antonio Cisternino>Gen zero and Gen One are referred as
+ephemeral.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20019-0
+<v Antonio Cisternino>So.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20060-0
+<v Antonio Cisternino>Is where objects that are short-lived
+tend to stay because time from different</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20060-1
+<v Antonio Cisternino>collection makes are wider than the
+lifespan of that particular object.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20061-0
+<v Antonio Cisternino>So.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20089-0
+<v Antonio Cisternino>The managed dip is a set of managed dip
+segments, as I was telling,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20089-1
+<v Antonio Cisternino>so it's not a single pool of memory.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20132-0
+<v Antonio Cisternino>Here you find you find few information,
+I'm just stopping on the relevant the</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20132-1
+<v Antonio Cisternino>flow of a garbage collection,
+there is a mark face the mark face.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20180-0
+<v Antonio Cisternino>Is important both in copy collection and
+in mark and sweep because mark, we said,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20180-1
+<v Antonio Cisternino>is the way we prove that an object is
+still reachable from the roots and</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20180-2
+<v Antonio Cisternino>potentially accessible.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20186-0
+<v Antonio Cisternino>During the rest of the program execution.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20239-0
+<v Antonio Cisternino>There is, and this is interesting,
+a plan phase,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20239-1
+<v Antonio Cisternino>the plan phase simulates a compaction to
+determine the effective result if</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20239-2
+<v Antonio Cisternino>compaction is product.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20254-0
+<v Antonio Cisternino>The GC starts an actual compaction,
+otherwise it sweeps.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20292-0
+<v Antonio Cisternino>So technically the ephemeral generation
+are hybrid, they're not copy collectors.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20292-1
+<v Antonio Cisternino>I tricked you, I was too simplified.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20310-0
+<v Antonio Cisternino>Because there are situations in which the
+copy collection is not convenient.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20357-0
+<v Antonio Cisternino>And so the implementation say, OK,
+let's simulate. I did the mark,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20357-1
+<v Antonio Cisternino>so I know what I should free.
+Now let me do a simulation.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20357-2
+<v Antonio Cisternino>Is it convenient to do a copy a
+compaction?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20370-0
+<v Antonio Cisternino>Through copy collection, yes or no,
+it's not convenient, then I do this weep.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20415-0
+<v Antonio Cisternino>It is convenient,
+then I do the compaction,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20415-1
+<v Antonio Cisternino>so if I do the sweep,
+then clearly the allocator will allocate</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20415-2
+<v Antonio Cisternino>blocks in that segment, not.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20426-0
+<v Antonio Cisternino>Appending as it is custom for the copy
+collector.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20434-0
+<v Antonio Cisternino>Ib CC decide to compact.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20482-0
+<v Antonio Cisternino>Then reference must be updated.
+It is a the compact phase is important</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20482-1
+<v Antonio Cisternino>because you have to backpatch.
+That's the titter backpatch backpatch</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20482-2
+<v Antonio Cisternino>means that you go.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20510-0
+<v Antonio Cisternino>Back and you update the reference to the
+object because you move the object and so</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20510-1
+<v Antonio Cisternino>you have to update its reference.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20578-0
+<v Antonio Cisternino>And of course,
+as you can see from the comment,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20578-1
+<v Antonio Cisternino>this space is very straightforward since
+the plan phase already calculated the new</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20578-2
+<v Antonio Cisternino>addresses the object should move to OK,
+because you simulate,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20578-3
+<v Antonio Cisternino>so you already pre-compute the target and
+so.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20593-0
+<v Antonio Cisternino>If you do it, you already have it,
+so you have just to update the sweep face.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20638-0
+<v Antonio Cisternino>The Swift face looks for the dead space
+in between live objects.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20638-1
+<v Antonio Cisternino>It creates free objects in place of these
+dead spaces. OK,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20638-2
+<v Antonio Cisternino>so the one we already commented.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20679-0
+<v Antonio Cisternino>So you basically mark us free the blocks
+so that the allocator later will find</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20679-1
+<v Antonio Cisternino>these chunks and will allocate objects
+again in that in that space, that's it,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20679-2
+<v Antonio Cisternino>okay?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20682-0
+<v Antonio Cisternino>Of course.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20703-0
+<v Antonio Cisternino>Decide whether to compact or not a
+segment is relevant because if you.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20766-0
+<v Antonio Cisternino>Do only the sweeping.
+The risk is that you fragmented so much</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20766-1
+<v Antonio Cisternino>the heap that the empty spaces are too
+small, and so if you aggregate together,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20766-2
+<v Antonio Cisternino>you will have not space to allocate the
+new object, but since.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20811-0
+<v Antonio Cisternino>All the leftovers are small enough,
+you have to allocate a new segment to</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20811-1
+<v Antonio Cisternino>allocate a new wasting memory,
+so it's all about trade off and when you</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20811-2
+<v Antonio Cisternino>are implementing the runtime.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20860-0
+<v Antonio Cisternino>Of a language you are,
+you are as close as the CPU as possible</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20860-1
+<v Antonio Cisternino>and the costs are measured in single
+instructions,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20860-2
+<v Antonio Cisternino>so strategies that you may have studied.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20893-0
+<v Antonio Cisternino>Interpreting systems,
+which are doable when you're dealing with</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20893-1
+<v Antonio Cisternino>processes,
+there are big things are simply not</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20893-2
+<v Antonio Cisternino>possible at the programming language
+level.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20895-0
+<v Antonio Cisternino>OK.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20904-0
+<v Antonio Cisternino>Let's physical architecture.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20953-0
+<v Antonio Cisternino>Which is basically pseudo code that helps
+you to understand the logic.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20953-1
+<v Antonio Cisternino>And then there are few comments about the
+concurrent garbage collector.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20953-2
+<v Antonio Cisternino>There is one thing.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20991-0
+<v Antonio Cisternino>With which I finish that I didn't mention
+during the garbage collection because</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/20991-1
+<v Antonio Cisternino>it's just an optimization,
+but it's really important.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21048-0
+<v Antonio Cisternino>To keep in mind,
+it applies for sure at dotnet,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21048-1
+<v Antonio Cisternino>but it's not the only place where it has
+been used in dotnet made a huge</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21048-2
+<v Antonio Cisternino>difference when we was introduced,
+which is a technique known as right</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21048-3
+<v Antonio Cisternino>barrier.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21058-0
+<v Antonio Cisternino>What is a right bad? It's a big mask.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21100-0
+<v Antonio Cisternino>So there are data structures that are
+called cards into the memory,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21100-1
+<v Antonio Cisternino>which are just bits,
+every bit maps infect to the a part of</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21100-2
+<v Antonio Cisternino>the memory.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21134-0
+<v Antonio Cisternino>And the goal is to record all the
+assignments to reference that is made by</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21134-1
+<v Antonio Cisternino>your program,
+so if your program has a store.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21178-0
+<v Antonio Cisternino>Location or store field,
+which are the intermediate language</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21178-1
+<v Antonio Cisternino>instructions to store a value into a
+local variable or field,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21178-2
+<v Antonio Cisternino>which is a reference.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21218-0
+<v Antonio Cisternino>Then this will trigger a bit set in the
+right barrier to indicate that that field</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21218-1
+<v Antonio Cisternino>has changed value. OK, why is that?
+Because.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21255-0
+<v Antonio Cisternino>This allows you to not have to browse all
+the time, all the memory. Basically,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21255-1
+<v Antonio Cisternino>when the garbage collection starts,
+you say, OK, let me look.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21309-0
+<v Antonio Cisternino>Which part of the memory has been changed?
+I just collect that part because the rest</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21309-1
+<v Antonio Cisternino>is as it was before in the previous run,
+so it's already okay, right?</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21309-2
+<v Antonio Cisternino>So the right barrier,
+it's interesting because of.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21314-0
+<v Antonio Cisternino>Of course, the cost of assigning.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21370-0
+<v Antonio Cisternino>A reference,
+it costs you more operation because it</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21370-1
+<v Antonio Cisternino>costs you to set the reference plus set
+the bit mask somewhere,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21370-2
+<v Antonio Cisternino>but at the same time this reduce the time
+significantly.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21428-0
+<v Antonio Cisternino>Of the garbage collection execution,
+which is much more relevant so and when</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21428-1
+<v Antonio Cisternino>you write clearly you are spending more
+computing cycle to do that,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21428-2
+<v Antonio Cisternino>but the when you do the assignment it's
+threat safe.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21476-0
+<v Antonio Cisternino>So technically you can write without
+affecting the concurrency,</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21476-1
+<v Antonio Cisternino>whereas the garbage collection in any
+case will affect the concurrency of a</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21476-2
+<v Antonio Cisternino>program.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21559-0
+<v Antonio Cisternino>And so clearly in the equation and the
+balance of the performance cost less to</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21559-1
+<v Antonio Cisternino>pay a little bit more for a reassignment
+to a reference rather than having to roll</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21559-2
+<v Antonio Cisternino>all the keep all the time. OK,
+so the right barrier is an interesting</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21559-3
+<v Antonio Cisternino>technique which actually is in production.
+I don't know.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21615-0
+<v Antonio Cisternino>If Java uses but for sure dotnet uses OK,
+so tomorrow we will start and complete</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21615-1
+<v Antonio Cisternino>this,
+we will look into the type loader type</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21615-2
+<v Antonio Cisternino>layout stack rolling and we will have
+also an example of how to browse.</v>
+
+cddc6d26-30ca-46bc-8f94-9aa1cb732f71/21624-0
+<v Antonio Cisternino>With AI a code base like this OK,
+thank you.</v>

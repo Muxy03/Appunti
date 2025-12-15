@@ -1,0 +1,3929 @@
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9-0
+<v Antonio Cisternino>Yeah, it's.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/12-0
+<v Antonio Cisternino>Perfect. Ready.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/15-0
+<v Antonio Cisternino>Right.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/33-0
+<v Antonio Cisternino>So welcome.
+Let's continue where we stopped yesterday.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/33-1
+<v Antonio Cisternino>So.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/36-0
+<v Antonio Cisternino>First of all, uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/42-0
+<v Antonio Cisternino>Little assignment for everybody.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/74-0
+<v Antonio Cisternino>So the assignment is to post it in the
+class because in the class there is the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/74-1
+<v Antonio Cisternino>option to have assignments.
+We will not formally review so feel free,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/74-2
+<v Antonio Cisternino>but please may do it.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/81-0
+<v Antonio Cisternino>Was a it is a part of the journey. Uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/87-0
+<v Antonio Cisternino>Pick up at least two programming
+languages.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/118-0
+<v Antonio Cisternino>I can give you a number,
+at least I will mention a few now and</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/118-1
+<v Antonio Cisternino>investigate possibly with the AI help by
+posing the right questions,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/118-2
+<v Antonio Cisternino>whether the programming language.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/147-0
+<v Antonio Cisternino>Supports lexical closures and if the
+support is complete or there is some</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/147-1
+<v Antonio Cisternino>approximation, spoiler Pascal so.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/165-0
+<v Antonio Cisternino>Don't use Pascal because I'm about
+spoiled.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/165-1
+<v Antonio Cisternino>Uh allows to uh a function to return a
+procedure or a function.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/179-0
+<v Antonio Cisternino>A procedure in Pascal is a a function
+returning void, so and Pascal.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/227-0
+<v Antonio Cisternino>In fact, did allow to return the function,
+but in a way in which basically you can</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/227-1
+<v Antonio Cisternino>refer only to the environment in the
+module. OK, so basically the scope,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/227-2
+<v Antonio Cisternino>the lifetime of the scope.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/267-0
+<v Antonio Cisternino>Of the of the function that you return is
+the same as the container.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/267-1
+<v Antonio Cisternino>So there is no technical issue in in
+having essentially a closure because the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/267-2
+<v Antonio Cisternino>rule by which you can return a function
+being restricted to avoid complication in</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/267-3
+<v Antonio Cisternino>the implementation.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/294-0
+<v Antonio Cisternino>OK,
+so technically it implements a little bit</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/294-1
+<v Antonio Cisternino>lexical closures, but not entirely. OK,
+so this is an example of partial</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/294-2
+<v Antonio Cisternino>implementation.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/320-0
+<v Antonio Cisternino>So you can investigate C, JavaScript,
+JavaScript. We basically introduce.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/320-1
+<v Antonio Cisternino>We know it's available.
+You can pick up MLF sharp, Visual Basic,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/320-2
+<v Antonio Cisternino>C#, Java.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/325-0
+<v Antonio Cisternino>Rust, Python, Lua.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/326-0
+<v Antonio Cisternino>Pearl.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/343-0
+<v Antonio Cisternino>I mean pick up even programming languages
+that are not so popular these days.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/343-1
+<v Antonio Cisternino>I mean Fortune, Cobol.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/346-0
+<v Antonio Cisternino>PowerShell.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/347-0
+<v Antonio Cisternino>Um.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/376-0
+<v Antonio Cisternino>Bash C shell because that reality also
+shell are in fact scripting languages,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/376-1
+<v Antonio Cisternino>but they are Turing equivalent.
+So in principle you can have also their</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/376-2
+<v Antonio Cisternino>lexical closure, so investigate.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/407-0
+<v Antonio Cisternino>And and and then maybe at some point we
+will ask for your outputs so that we can.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/407-1
+<v Antonio Cisternino>I will post the form in in the assignment
+so that you can.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/430-0
+<v Antonio Cisternino>Upload the if you want the finding.
+It's not mandatory,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/430-1
+<v Antonio Cisternino>but we encourage you so that we can have
+some discussion and we can keep going</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/430-2
+<v Antonio Cisternino>with this experimentation, OK?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/457-0
+<v Antonio Cisternino>Now we found out that the scoping names
+are important.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/457-1
+<v Antonio Cisternino>Scope is a an essential element of
+programming because scope defines the.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/489-0
+<v Antonio Cisternino>Scope where a name has some meaning and
+the meaning means it has a value,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/489-1
+<v Antonio Cisternino>it has a type and and and implicitly even
+though with static scope the scope is</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/489-2
+<v Antonio Cisternino>defined.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/521-0
+<v Antonio Cisternino>Independently from the execution.
+Nevertheless,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/521-1
+<v Antonio Cisternino>we all know that the scope will affect
+also the execution.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/521-2
+<v Antonio Cisternino>We should briefly introduce the the the
+notion of activation records.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/544-0
+<v Antonio Cisternino>That we commented that activation records
+are a key structure that it is commonly</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/544-1
+<v Antonio Cisternino>used in.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/578-0
+<v Antonio Cisternino>Basically all modern languages to
+implement the automatic allocation and</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/578-1
+<v Antonio Cisternino>allocation of the memory which is induced
+by the scope.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/578-2
+<v Antonio Cisternino>Today we start talking about the memory
+management in a deeper way.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/612-0
+<v Antonio Cisternino>Which means that we start with the
+explicit memory allocation,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/612-1
+<v Antonio Cisternino>so malloc and free of C,
+new and delete of C, C++ and so on. OK,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/612-2
+<v Antonio Cisternino>so where the programmer is responsible
+for allocating.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/615-0
+<v Antonio Cisternino>And they're locating the memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/645-0
+<v Antonio Cisternino>And and then we introduce 2 automatic
+techniques for managing the memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/645-1
+<v Antonio Cisternino>The first one is reference counting.
+Reference counting is a very simple idea.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/666-0
+<v Antonio Cisternino>And then we move on to a little bit more
+sophisticated approach,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/666-1
+<v Antonio Cisternino>which is the garbage collection, OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/673-0
+<v Antonio Cisternino>Um, of course I will refer.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/708-0
+<v Antonio Cisternino>So already during the last class we
+discussed that the memory is a stream of</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/708-1
+<v Antonio Cisternino>cells. OK,
+then it's up to the language reinterpret</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/708-2
+<v Antonio Cisternino>those bytes as data structures.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/747-0
+<v Antonio Cisternino>And in fact the layout of the memory is
+crucial for instance for interoperability.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/747-1
+<v Antonio Cisternino>So at some point we will start talking
+about marshalling and marshalling that</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/747-2
+<v Antonio Cisternino>are common serialisation and
+deserialisation which is similar are</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/747-3
+<v Antonio Cisternino>common.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/789-0
+<v Antonio Cisternino>A way of allow different programming
+language to share data structures and if</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/789-1
+<v Antonio Cisternino>you share CPU values,
+so integer for instance or double that</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/789-2
+<v Antonio Cisternino>easy because it's the CPU which ensure
+interoperability.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/789-3
+<v Antonio Cisternino>But even if you take a very simple data
+structure such as.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/842-0
+<v Antonio Cisternino>You know coordinate XY,
+then you can store Y&amp;</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/842-1
+<v Antonio Cisternino>X or XY and the compiler will decide this.
+And so if you have two different</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/842-2
+<v Antonio Cisternino>compilers and you want to share the
+memory,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/842-3
+<v Antonio Cisternino>then the reinterpretation of the bytes
+depends upon the compiler and there are.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/843-0
+<v Antonio Cisternino>And that.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/873-0
+<v Antonio Cisternino>There are standards in the calling
+conventions and also there we will see</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/873-1
+<v Antonio Cisternino>that there are interesting aspects.
+So the memory that we are talking today</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/873-2
+<v Antonio Cisternino>is the sequence of byte memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/903-0
+<v Antonio Cisternino>At some point we will restart talking
+about the memory in terms of how do we</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/903-1
+<v Antonio Cisternino>lay out objects,
+classes and and and types.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/903-2
+<v Antonio Cisternino>But first we need to introduce all the.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/922-0
+<v Antonio Cisternino>Typing operations that allow us to define
+types in our languages. OK, so.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/926-0
+<v Antonio Cisternino>Let's start the uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/942-0
+<v Antonio Cisternino>I want to simulate a malloc re execution
+in C AR style.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/950-0
+<v Antonio Cisternino>Can you generate an empty heap?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/953-0
+<v Antonio Cisternino>Visually.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/975-0
+<v Antonio Cisternino>And then I will ask for allocate and the
+allocate and you display the updated heap.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/987-0
+<v Antonio Cisternino>This is really an experiment.
+I don't know if if. I think it will work,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/987-1
+<v Antonio Cisternino>but uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1036-0
+<v Antonio Cisternino>We'll see. OK,
+so I'm pretty sure that all of you know</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1036-1
+<v Antonio Cisternino>that malloc and free are the basic C
+operations to allocate this.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1036-2
+<v Antonio Cisternino>Pleasely dynamic memory and the allocate.
+We already commented that static memory</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1036-3
+<v Antonio Cisternino>can be.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1080-0
+<v Antonio Cisternino>Computed at compile time and it will be
+allocated statically,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1080-1
+<v Antonio Cisternino>so for all the execution and we just
+commented that automatic memory</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1080-2
+<v Antonio Cisternino>parameters,
+local variables can be allocated and they</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1080-3
+<v Antonio Cisternino>allocated on the stack. OK,
+so basically today we start talking about</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1080-4
+<v Antonio Cisternino>the heap.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1086-0
+<v Antonio Cisternino>Which is the portion,
+typically the largest portion of.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1124-0
+<v Antonio Cisternino>Memory management of a of a processor is
+where dynamic memory gets allocated.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1124-1
+<v Antonio Cisternino>Notice that because the memory is a very
+long stream,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1124-2
+<v Antonio Cisternino>there is the problem that if you make the
+stack grow.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1158-0
+<v Antonio Cisternino>Eventually you may bump into the heap,
+so the compiler has to decide the the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1158-1
+<v Antonio Cisternino>maximum size of the stack,
+because otherwise it will be impossible</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1158-2
+<v Antonio Cisternino>to allocate the heap or vice versa.
+OK and.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1198-0
+<v Antonio Cisternino>This is the main and basic reason why you
+may get Stack Overflow errors.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1198-1
+<v Antonio Cisternino>So if you in your program you use
+recursion and the recursion generates too</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1198-2
+<v Antonio Cisternino>many activation records on the stack.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1214-0
+<v Antonio Cisternino>You may keep the the maximum size for the
+stack and and you will get some error the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1214-1
+<v Antonio Cisternino>stack overflow error.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1223-0
+<v Antonio Cisternino>So far so good. I will say OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1234-0
+<v Antonio Cisternino>So we got 1000 slots in in our heap.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1272-0
+<v Antonio Cisternino>And and I'm I'm about to to discuss the
+very first implementation,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1272-1
+<v Antonio Cisternino>which is actually part of the C
+programming language book,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1272-2
+<v Antonio Cisternino>which is the original Kenny and Ricci
+programming book.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1318-0
+<v Antonio Cisternino>And I encourage you to go and find the
+implementation and read implementation</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1318-1
+<v Antonio Cisternino>because malloc and free are easy to
+implement and it is very very instructive</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1318-2
+<v Antonio Cisternino>to learn how to manage the heap because
+you may be.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1347-0
+<v Antonio Cisternino>Convinced that the heap allocation is
+some magic or that the malloc is</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1347-1
+<v Antonio Cisternino>basically no cost operation in term of
+execution and when you start posing</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1347-2
+<v Antonio Cisternino>yourself.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1383-0
+<v Antonio Cisternino>How can I implement the malloc given an
+array of bytes?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1383-1
+<v Antonio Cisternino>You will quickly ends up understanding
+that you will need some data structure to</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1383-2
+<v Antonio Cisternino>manage the memory because at some point
+you need to understand which blocks.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1417-0
+<v Antonio Cisternino>Are allocated and which blocks are still
+free.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1417-1
+<v Antonio Cisternino>Now we all know that programs tend to
+allocate and deallocate memory rather</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1417-2
+<v Antonio Cisternino>frequently.
+There are programming languages such as.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1458-0
+<v Antonio Cisternino>Java or.
+net C in particular inherits so many</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1458-1
+<v Antonio Cisternino>things from Java which basically made the
+same choices that actually allocates</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1458-2
+<v Antonio Cisternino>tremendously amount and they allocate
+amount of data, for instance in Java.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1497-0
+<v Antonio Cisternino>You all sum up strings,
+you concatenate string,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1497-1
+<v Antonio Cisternino>and you may remember that strings are
+read only, so they're not buffers.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1497-2
+<v Antonio Cisternino>And when you sum 2 strings,
+a new strings will get allocated and</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1497-3
+<v Antonio Cisternino>therefore.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1543-0
+<v Antonio Cisternino>The original 2 strings,
+if they are not anymore needed,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1543-1
+<v Antonio Cisternino>they can be freed. OK,
+so the heap is a continuous place where</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1543-2
+<v Antonio Cisternino>you get allocation, the location,
+allocation, the location,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1543-3
+<v Antonio Cisternino>allocation and the location. OK,
+so this has some implication in terms of</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1543-4
+<v Antonio Cisternino>the policies and the cost of management.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1554-0
+<v Antonio Cisternino>In the data structure,
+so let me uh my move Malloc.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1557-0
+<v Antonio Cisternino>My look then.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1569-0
+<v Antonio Cisternino>OK, let's see the output of a Malloc 10.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1574-0
+<v Antonio Cisternino>Uh, so why this thing compute?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1591-0
+<v Antonio Cisternino>How will you manage a single product by a
+new Mallon 10 months?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1593-0
+<v Antonio Cisternino>Anyone.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1599-0
+<v Antonio Cisternino>To the expansion that it updates the the
+and we.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1634-0
+<v Antonio Cisternino>So for example at the start,
+I see that they want to target 10 bytes,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1634-1
+<v Antonio Cisternino>10 bytes hopefully is smaller than the.
+Oh, let's say even 10 kilobytes. Honestly,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1634-2
+<v Antonio Cisternino>I mean that I said 10 just because I say.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1637-0
+<v Antonio Cisternino>I saw 1000 so.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1641-0
+<v Antonio Cisternino>And whatever he said.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1642-0
+<v Antonio Cisternino>Like.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1644-0
+<v Antonio Cisternino>Um, please.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1667-0
+<v Antonio Cisternino>So you yes. So you said OK,
+we need a structure.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1667-1
+<v Antonio Cisternino>Where where do we store this data
+structure?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1683-0
+<v Antonio Cisternino>And then the stack gets allocated and
+allocated.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1683-1
+<v Antonio Cisternino>So how can we pretend that this will last?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1689-0
+<v Antonio Cisternino>So we need to build.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1720-0
+<v Antonio Cisternino>Based on the structure that you I'm
+getting from the output here and where do</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1720-1
+<v Antonio Cisternino>we store?
+So you know what the heap initially is.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1723-0
+<v Antonio Cisternino>And right.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1739-0
+<v Antonio Cisternino>So because we have heap is empty,
+am I wasting memory if I use those bytes?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1741-0
+<v Antonio Cisternino>No.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1777-0
+<v Antonio Cisternino>OK, because we see that it's empty,
+it's there where it's allocated.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1777-1
+<v Antonio Cisternino>So I can be a data structure using the
+heap itself.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1777-2
+<v Antonio Cisternino>This particular data structure has a name
+and the name is.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1779-0
+<v Antonio Cisternino>Free list.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1808-0
+<v Antonio Cisternino>Which also hints you in the fact that
+probably the quickest way to make another</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1808-1
+<v Antonio Cisternino>structure which is made by Vox is to use
+a single linked list.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1838-0
+<v Antonio Cisternino>Right, because uh,
+maybe starts always at the same place.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1838-1
+<v Antonio Cisternino>So if I have the the freeze pointer at
+the beginning,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1838-2
+<v Antonio Cisternino>I can still browser the list of the free
+blocks and since those are free blocks.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1870-0
+<v Antonio Cisternino>I can write in in in that memory the next
+pointer to the next block and so on. OK,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1870-1
+<v Antonio Cisternino>so now the three the blocks are size 32
+bytes or now this.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1903-0
+<v Antonio Cisternino>It's perhaps even too detailed because
+it's simulated also the alignment because</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1903-1
+<v Antonio Cisternino>in the memory you you can't really
+allocate a single byte because this view</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1903-2
+<v Antonio Cisternino>requires you to align to some.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1926-0
+<v Antonio Cisternino>Multiple of two value.
+The other side is 16 bytes,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1926-1
+<v Antonio Cisternino>so at least the other of the free list
+and actually allocated bytes are.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1936-0
+<v Antonio Cisternino>Indicated in the map. So now we got to OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1940-0
+<v Antonio Cisternino>Let's say, um.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1941-0
+<v Antonio Cisternino>Uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1944-0
+<v Antonio Cisternino>Void star.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1947-0
+<v Antonio Cisternino>B2 equal.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1950-0
+<v Antonio Cisternino>Malloca.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1953-0
+<v Antonio Cisternino>32.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1957-0
+<v Antonio Cisternino>And void star.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1970-0
+<v Antonio Cisternino>B3 equal malloc 64.
+So now I'm allocating few other bytes.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/1971-0
+<v Antonio Cisternino>See.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2007-0
+<v Antonio Cisternino>So now I've asked to allocate blocks and
+the out is very easy because you go to</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2007-1
+<v Antonio Cisternino>the top of the list,
+which is at the beginning of the the heap,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2007-2
+<v Antonio Cisternino>you have the first.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2041-0
+<v Antonio Cisternino>Block which is let's go back.
+The first block was here that this was</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2041-1
+<v Antonio Cisternino>the heap when we started.
+The first two blocks are have been</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2041-2
+<v Antonio Cisternino>allocated so the the free list pointer
+will.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2053-0
+<v Antonio Cisternino>Point to the first three block and the
+size is so this one.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2095-0
+<v Antonio Cisternino>Is 976 bytes. OK,
+so basically the list includes the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2095-1
+<v Antonio Cisternino>pointer,
+the next and the size of the three block.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2095-2
+<v Antonio Cisternino>And we said this is not costing anything
+to us because we're using the free space</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2095-3
+<v Antonio Cisternino>available in memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2131-0
+<v Antonio Cisternino>But it's not entirely a free ride because
+by now, remembering algorithms,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2131-1
+<v Antonio Cisternino>you should already have guessed that
+there is some cost and the cost is linear</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2131-2
+<v Antonio Cisternino>of model. So if you leave the.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2142-0
+<v Antonio Cisternino>Thinking that allocation is super fast,
+easy, that is untrue because.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2177-0
+<v Antonio Cisternino>You have to all the trees, but wow.
+But now we still don't have a problem.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2177-1
+<v Antonio Cisternino>We allocated continuously.
+So again I have the first.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2186-0
+<v Antonio Cisternino>Model of 10. This is the model of 32.
+This is the model of 64.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2208-0
+<v Antonio Cisternino>We know the addresses in the memory,
+etcetera, and then we have a single block,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2208-1
+<v Antonio Cisternino>so speed constant.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2233-0
+<v Antonio Cisternino>We will see that this strategy of
+offending it is very good in a form of</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2233-1
+<v Antonio Cisternino>garbage collection.
+Let me so now I want to try a free.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2248-0
+<v Antonio Cisternino>P2 as proposed by by the way. OK,
+so now I'm reading the point of block 2.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2269-0
+<v Antonio Cisternino>Now things are getting more interesting
+because I decided to use block 2 because</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2269-1
+<v Antonio Cisternino>it's in between the block one and block 3.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2273-0
+<v Antonio Cisternino>So now.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2300-0
+<v Antonio Cisternino>The situation is the one that is depicted
+depicted here. You see allocated, empty,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2300-1
+<v Antonio Cisternino>allocated.
+We got a hole in in our tape and.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2303-0
+<v Antonio Cisternino>Because this is the free.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2319-0
+<v Antonio Cisternino>And we also our free list points now to
+block one and then.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2358-0
+<v Antonio Cisternino>Inside there will be a pointer to block 3,
+which is the the largest block.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2358-1
+<v Antonio Cisternino>So if we iterate this process of allocate,
+the allocate, allocate, the allocate,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2358-2
+<v Antonio Cisternino>the list may become very complicated and
+the heat will.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2359-0
+<v Antonio Cisternino>Rodman.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2395-0
+<v Antonio Cisternino>So the risk is that if you sum up all the
+bytes that are still market free,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2395-1
+<v Antonio Cisternino>you have a lot of memory,
+but then your program tries to malloc a</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2395-2
+<v Antonio Cisternino>block large large enough which.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2402-0
+<v Antonio Cisternino>Technically it's impossible and you will
+get an end.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2404-0
+<v Antonio Cisternino>OK, so.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2431-0
+<v Antonio Cisternino>First thing that we learn by looking at
+this and this is coming from the 70s and</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2431-1
+<v Antonio Cisternino>we're still using it,
+the free list approach.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2457-0
+<v Antonio Cisternino>The what what happens is that you may
+have internal fragmentation of the data</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2457-1
+<v Antonio Cisternino>structure,
+which I think is something that you</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2457-2
+<v Antonio Cisternino>already studied in a different course
+memory fragmentation.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2475-0
+<v Antonio Cisternino>Architectures. Yeah, you're right.
+And what is the solution in when you have</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2475-1
+<v Antonio Cisternino>fragmentation in architectures?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2486-0
+<v Antonio Cisternino>Defragment that. OK,
+so can we defragment our knee?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2490-0
+<v Antonio Cisternino>Do you think it is regional?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2491-0
+<v Antonio Cisternino>Hmm.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2529-0
+<v Antonio Cisternino>You can. I mean, don't worry,
+you can in case I will translate.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2529-1
+<v Antonio Cisternino>So is it fast? Yes, that's the point.
+So in architectures,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2529-2
+<v Antonio Cisternino>the number of cycles for doing anything
+inside an operating systems system.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2562-0
+<v Antonio Cisternino>Are significant,
+so you can pay the cost of moving blocks</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2562-1
+<v Antonio Cisternino>of bytes from one part of the memory to
+the other part of the memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2562-2
+<v Antonio Cisternino>But in this case it will be too much
+expensive because.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2587-0
+<v Antonio Cisternino>We are at the instruction level of the
+CPU,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2587-1
+<v Antonio Cisternino>so if we have a reorganization of the
+heap to compact and restore things.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2618-0
+<v Antonio Cisternino>The risk is that you will end up needing
+so much cycles then that will be</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2618-1
+<v Antonio Cisternino>basically unacceptable in terms of the
+performance. OK,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2618-2
+<v Antonio Cisternino>so but this has consequences,
+so for instance.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2638-0
+<v Antonio Cisternino>In C for instance,
+there are programming patterns that</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2638-1
+<v Antonio Cisternino>encourage you to allocate multiple each.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2691-0
+<v Antonio Cisternino>So basically instead of saying I have a
+very large big heap, one big heap,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2691-1
+<v Antonio Cisternino>you start changing and say you know what,
+I start allocating the memory in charts,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2691-2
+<v Antonio Cisternino>big chart that's one MB and I have the
+first heap of one MB and when I exhaust</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2691-3
+<v Antonio Cisternino>these heap of one MB,
+I allocate another heap.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2724-0
+<v Antonio Cisternino>For one MB and when the one MB,
+the first one megabyte heap is empty,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2724-1
+<v Antonio Cisternino>I throw away everything and I will start
+to reduce the impact of adding for each</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2724-2
+<v Antonio Cisternino>allocation to jump across.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2755-0
+<v Antonio Cisternino>Thousands,
+because if I do man lock free man lock</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2755-1
+<v Antonio Cisternino>free thousand times,
+you may end up with a very long long list.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2755-2
+<v Antonio Cisternino>Yes,
+of course there are some optimization if</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2755-3
+<v Antonio Cisternino>I find out that two blocks that are.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2796-0
+<v Antonio Cisternino>Three and an addition,
+then I can join them in a single block.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2796-1
+<v Antonio Cisternino>OK, that I can try.
+It will cost a little bit,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2796-2
+<v Antonio Cisternino>but still it's accepted.
+So can you see another reason?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2796-3
+<v Antonio Cisternino>Because moving these blocks by the.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2800-0
+<v Antonio Cisternino>To fill the gap is not a good idea.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2829-0
+<v Antonio Cisternino>Perfect.
+If I start moving and the program</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2829-1
+<v Antonio Cisternino>directly has pointers or references.
+So basically pointers in C you can print</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2829-2
+<v Antonio Cisternino>the address.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2871-0
+<v Antonio Cisternino>In in Java are there,
+but basically you don't see them,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2871-1
+<v Antonio Cisternino>but nevertheless it's still a memory
+address even though you can't do much the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2871-2
+<v Antonio Cisternino>data. So if I move around the memory,
+I end up with a big problem.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2871-3
+<v Antonio Cisternino>I have to find all the pointers to the
+block.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2920-0
+<v Antonio Cisternino>And rewrite the pointer so that they will
+point to the new location.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2920-1
+<v Antonio Cisternino>So compacting is not just a matter of an
+algorithm to reorganize the bytes into</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2920-2
+<v Antonio Cisternino>other structure.
+I also have to ensure that all the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2920-3
+<v Antonio Cisternino>pointers will stay safe otherwise.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2953-0
+<v Antonio Cisternino>You will break the whole system and
+that's a problem. OK, so basically,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2953-1
+<v Antonio Cisternino>as you can see,
+even in the simplest form of memory</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2953-2
+<v Antonio Cisternino>management, the free list,
+we already bump into a number of problems</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2953-3
+<v Antonio Cisternino>that you have to take into account.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2981-0
+<v Antonio Cisternino>Both when you are programming,
+I don't know video game programming or</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2981-1
+<v Antonio Cisternino>when you read the program generated
+because memory is the most used thing in</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/2981-2
+<v Antonio Cisternino>a program.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3011-0
+<v Antonio Cisternino>Everything in the program goes by
+allocating, allocating, allocating,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3011-1
+<v Antonio Cisternino>navigating, browsing,
+the reference appointed, copy,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3011-2
+<v Antonio Cisternino>a value from here to there,
+copy back from there to here and so on.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3011-3
+<v Antonio Cisternino>OK, so basically.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3047-0
+<v Antonio Cisternino>This is the most used data structure of
+your program, the heap,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3047-1
+<v Antonio Cisternino>and so you have to pay attention that
+bogus situation may not keep too much the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3047-2
+<v Antonio Cisternino>performance of your system.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3075-0
+<v Antonio Cisternino>And that's a big, big problem.
+So you have always to pay attention.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3075-1
+<v Antonio Cisternino>You want a real world example,
+you know the two main game consoles.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3111-0
+<v Antonio Cisternino>Two of the three main consoles for video
+gaming are PlayStation and Xbox.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3111-1
+<v Antonio Cisternino>Xbox was launched in 2001 by Microsoft
+and you get what they just launched.net.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3111-2
+<v Antonio Cisternino>So at some point they said OK,
+you have to write computer games using.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3111-3
+<v Antonio Cisternino>net.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3153-0
+<v Antonio Cisternino>OK.
+And and and at some point Microsoft</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3153-1
+<v Antonio Cisternino>released a different virtual machine than
+the standard one.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3153-2
+<v Antonio Cisternino>So there was the common length runtime
+for normal programs and then there was a</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3153-3
+<v Antonio Cisternino>different runtime for.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3182-0
+<v Antonio Cisternino>The Xbox and what was the difference?
+The memory management because the the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3182-1
+<v Antonio Cisternino>memory management in a game may generate
+so at every frame of a computer game.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3182-2
+<v Antonio Cisternino>So this means hundreds time.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3189-0
+<v Antonio Cisternino>For a second may heat up to 30,
+000 objects.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3233-0
+<v Antonio Cisternino>OK, so every single loop of a game,
+the game internally represents all the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3233-1
+<v Antonio Cisternino>resources, the 3D, the the textures,
+the the physics engine, etcetera.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3233-2
+<v Antonio Cisternino>Every so everything that is represented
+typically in the graph, this graph.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3274-0
+<v Antonio Cisternino>There is a module in the program which
+basically read the graphs and generate</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3274-1
+<v Antonio Cisternino>the frame to be sent to the graphics so
+that you can see your beautiful game and</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3274-2
+<v Antonio Cisternino>and at every single frame you will end up
+touching 30,000.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3276-0
+<v Antonio Cisternino>Objects.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3281-0
+<v Antonio Cisternino>OK, in the average you can be unlocked.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3324-0
+<v Antonio Cisternino>All your gamers need to know because when
+you see the game lag here,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3324-1
+<v Antonio Cisternino>that is typically because either you are
+trying to load an asset from the disk or</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3324-2
+<v Antonio Cisternino>you're touching for that particular frame
+to make objects OK and.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3352-0
+<v Antonio Cisternino>When I was working to Xbox and to Kinect,
+we were counting every single operation</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3352-1
+<v Antonio Cisternino>to ensure that that you stay inside the
+time slot by.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3390-0
+<v Antonio Cisternino>That and age of operation to ensure the
+maximum performance of the game. OK,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3390-1
+<v Antonio Cisternino>so all this to say, OK,
+memory management is essential is.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3390-2
+<v Antonio Cisternino>I mean if I look at the programs,
+the programs basically read.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3420-0
+<v Antonio Cisternino>Files and and so parts and be free and
+and then it's executing out and therefore</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3420-1
+<v Antonio Cisternino>they use that structure.
+Therefore the memory from time to time</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3420-2
+<v Antonio Cisternino>they start writing down.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3449-0
+<v Antonio Cisternino>In the future, in a future class,
+we will spend some time talking about the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3449-1
+<v Antonio Cisternino>persistent memory,
+but let me because I think it's a good</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3449-2
+<v Antonio Cisternino>moment to share this message right now.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3465-0
+<v Antonio Cisternino>I know that you've been told that the
+disk is bad and that this case slow is</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3465-1
+<v Antonio Cisternino>not entirely true anymore.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3503-0
+<v Antonio Cisternino>SSD drives and there are even faster
+technologies than the SSDs now almost</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3503-1
+<v Antonio Cisternino>match the performance of the memory.
+So nowadays it is possible to write</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3503-2
+<v Antonio Cisternino>programs.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3551-0
+<v Antonio Cisternino>That writes straight on the disk and the
+performance is basically the same as they</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3551-1
+<v Antonio Cisternino>were using the memory. OK,
+if if you some of you are programmers,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3551-2
+<v Antonio Cisternino>look for a library which is called Ross
+DB. You will find on them.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3551-3
+<v Antonio Cisternino>It was has been developed by.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3595-0
+<v Antonio Cisternino>Originated by Google,
+then it has been maintained by Facebook</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3595-1
+<v Antonio Cisternino>and it is basically a persistent hash
+table.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3595-2
+<v Antonio Cisternino>OK and and there you you you do the hash
+table operations and those are persisted</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3595-3
+<v Antonio Cisternino>on this that library has been designed.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3599-0
+<v Antonio Cisternino>And uh, develop it. Um.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3621-0
+<v Antonio Cisternino>We sort state this in mind.
+So all the algorithms are being designed</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3621-1
+<v Antonio Cisternino>to be super fast and not taking over
+mechanical drive, OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3633-0
+<v Antonio Cisternino>One last comment,
+exactly these data structures.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3633-1
+<v Antonio Cisternino>I use it into all your drives.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3673-0
+<v Antonio Cisternino>Because you think that your driver by now
+is your solid-state driver is a driver,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3673-1
+<v Antonio Cisternino>but it's not.
+Actually that's an ungraded system.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3673-2
+<v Antonio Cisternino>Actually I contributed to do two of them
+and it does.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3706-0
+<v Antonio Cisternino>Because they have very interesting and
+fascinating algorithms because if you</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3706-1
+<v Antonio Cisternino>keep powering your disk drive,
+it will lose all the data once a week.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3706-2
+<v Antonio Cisternino>So there is a small thread inside your
+drive which basically rewrite all the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3706-3
+<v Antonio Cisternino>sets.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3745-0
+<v Antonio Cisternino>And once a week,
+and you know you've got a lot of</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3745-1
+<v Antonio Cisternino>algorithms like this because inside
+you've got even bytes and you have to</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3745-2
+<v Antonio Cisternino>manage it and to ensure because you know
+that if you write inside a NAND drive.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3791-0
+<v Antonio Cisternino>You are basically consuming a little bit
+at the gate and you can't write for in</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3791-1
+<v Antonio Cisternino>the same place because you were in source
+to the cell.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3791-2
+<v Antonio Cisternino>Then this small very small operating
+system inside the disk drive basically</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3791-3
+<v Antonio Cisternino>turns and.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3799-0
+<v Antonio Cisternino>Copy blocks around so that the drive is
+consuming heavily.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3831-0
+<v Antonio Cisternino>And so in this way you're you're you're
+you're OK that your drive will not finish</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3831-1
+<v Antonio Cisternino>working suddenly because you finished
+with the maximum number of writing in</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3831-2
+<v Antonio Cisternino>your disk. OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3877-0
+<v Antonio Cisternino>And in fact, if you look at your drive,
+typically you have at least twice the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3877-1
+<v Antonio Cisternino>capacity of true space and the extra
+capacity is used to stretch the lifetime</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3877-2
+<v Antonio Cisternino>of your drive. OK,
+all the algorithms inside your drives are</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3877-3
+<v Antonio Cisternino>basically memory management arguments.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3904-0
+<v Antonio Cisternino>Algorithm that move blocks around with
+very similar considerations.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3904-1
+<v Antonio Cisternino>And of course they must be more and more
+efficient.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3904-2
+<v Antonio Cisternino>And so we'll spend some time later
+talking about how do we access.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3937-0
+<v Antonio Cisternino>The disk because access to the disk has
+changed in the last 10 years and I think</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3937-1
+<v Antonio Cisternino>that servers even allow for persistent
+memory run points.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3971-0
+<v Antonio Cisternino>So even the fact that RAM is volatile,
+technically it is ending.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3971-1
+<v Antonio Cisternino>So since 2017 there is a standard that
+allows you to insert memory modules in</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/3971-2
+<v Antonio Cisternino>server that are the system.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4020-0
+<v Antonio Cisternino>OK, so no saving.
+You simply dump the memory of the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4020-1
+<v Antonio Cisternino>processor. No more files. That's it. OK,
+right. So this is basically the the point.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4020-2
+<v Antonio Cisternino>So you have the free list and so the cost
+is proportionately the length of the list</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4020-3
+<v Antonio Cisternino>and.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4036-0
+<v Antonio Cisternino>If the heap is big enough,
+you may end up having thousands of set</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4036-1
+<v Antonio Cisternino>because you're always when when I ask.
+So let let me do another example.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4043-0
+<v Antonio Cisternino>I hope I computed things rightly.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4044-0
+<v Antonio Cisternino>Uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4047-0
+<v Antonio Cisternino>Avoid star.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4051-0
+<v Antonio Cisternino>Before equal malloc 8.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4061-0
+<v Antonio Cisternino>And see if I'm right. So now I'm asking.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4078-0
+<v Antonio Cisternino>8 bytes and I and I have a space for 32
+bytes that have been freed.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4079-0
+<v Antonio Cisternino>So.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4100-0
+<v Antonio Cisternino>I love this thing. OK,
+so the block one is the malloc of eight</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4100-1
+<v Antonio Cisternino>that is on B4 and.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4109-0
+<v Antonio Cisternino>There is the leftover from the split.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4145-0
+<v Antonio Cisternino>Which is a good example of the fact that
+any all the times when you are located,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4145-1
+<v Antonio Cisternino>you typically are not lucky enough to
+find a block which is the the same size</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4145-2
+<v Antonio Cisternino>of the requested.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4159-0
+<v Antonio Cisternino>Allocation to be done and So what happens
+is you split the the block.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4174-0
+<v Antonio Cisternino>And so, but now if I'm free, if I free.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4175-0
+<v Antonio Cisternino>Before.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4205-0
+<v Antonio Cisternino>Now I started with a free list of of two
+elements. I've got still two elements.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4205-1
+<v Antonio Cisternino>Now I may have three elements even though
+two are ads.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4208-0
+<v Antonio Cisternino>OK, so uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4239-0
+<v Antonio Cisternino>Oh,
+actually she implemented the more</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4239-1
+<v Antonio Cisternino>efficient.
+So actually she mentioned back the blocks,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4239-2
+<v Antonio Cisternino>but that dependent depends on how smart
+the memory algorithm management is. OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4268-0
+<v Antonio Cisternino>The the the canning and enrich
+implementation.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4268-1
+<v Antonio Cisternino>So the original C model of free
+implementation didn't do the separate</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4268-2
+<v Antonio Cisternino>operation.
+So basically you end up having multiple</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4268-3
+<v Antonio Cisternino>blocks even though they were.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4287-0
+<v Antonio Cisternino>OK, OK,
+so that is the most simple and easy way</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4287-1
+<v Antonio Cisternino>of managing memory, which is.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4289-0
+<v Antonio Cisternino>Smaller can free.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4312-0
+<v Antonio Cisternino>Let think now in terms of the programmer,
+who's responsible for allocating the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4312-1
+<v Antonio Cisternino>memory? You say, oh, programmer,
+that's it, yes.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4350-0
+<v Antonio Cisternino>But if you are a function,
+imagine you're a function and and you</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4350-1
+<v Antonio Cisternino>need some dynamic memory because it's not
+a local variable,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4350-2
+<v Antonio Cisternino>neither a static variable,
+so you need to write in a.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4369-0
+<v Antonio Cisternino>Yeah,
+memory that will be allocated dynamically.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4369-1
+<v Antonio Cisternino>Would you allocate or would you ask for
+an allocated block where to run?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4386-0
+<v Antonio Cisternino>Which is the fabric.
+So who prefers to allocate memory inside</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4386-1
+<v Antonio Cisternino>the function? Hands up.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4400-0
+<v Antonio Cisternino>OK,
+who prepares to receive our preallocated</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4400-1
+<v Antonio Cisternino>memory? Heads up.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4414-0
+<v Antonio Cisternino>OK,
+so some that was they were for allocating</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4414-1
+<v Antonio Cisternino>inside the function one.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4445-0
+<v Antonio Cisternino>I have to create a responsible to bake.
+So I will try it because I really as</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4445-1
+<v Antonio Cisternino>clearly I need to be sharing that but to
+me I mean if I'm wrong.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4488-0
+<v Antonio Cisternino>The intuition is if I insert the model
+inside the function caller,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4488-1
+<v Antonio Cisternino>I will reduce the number of model calls
+all around the code.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4488-2
+<v Antonio Cisternino>This will typically help maintenance of
+the code because everything is localized</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4488-3
+<v Antonio Cisternino>in that.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4515-0
+<v Antonio Cisternino>Function and you declare that that
+function requires some memory allocated,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4515-1
+<v Antonio Cisternino>which is totally acceptable as a
+management,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4515-2
+<v Antonio Cisternino>someone of the those that say that to
+receive allocated memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4540-0
+<v Antonio Cisternino>I remember I was just thinking. Yeah,
+that's fine. No, it's OK. I mean,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4540-1
+<v Antonio Cisternino>I don't think you ever thought about this
+thing.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4540-2
+<v Antonio Cisternino>The argument may be in this way I can
+control.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4580-0
+<v Antonio Cisternino>How I allocate the memory in the program?
+I don't trust the function.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4580-1
+<v Antonio Cisternino>I wanna be a master of my life and
+especially master of my memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4580-2
+<v Antonio Cisternino>So I prefer to malloc my memory and then
+pass the function the point and the point</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4580-3
+<v Antonio Cisternino>the function is a function and.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4623-0
+<v Antonio Cisternino>In a function that is not designed to
+have side effects such as modify the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4623-1
+<v Antonio Cisternino>release on my behalf,
+which is an acceptable argument too.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4623-2
+<v Antonio Cisternino>And both arguments are so acceptable that
+programmers use it both and that is.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4667-0
+<v Antonio Cisternino>One of the main reasons for memory images
+in C programs,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4667-1
+<v Antonio Cisternino>because those are human conventions and
+humans tend to be to be perfect,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4667-2
+<v Antonio Cisternino>but they're not as perfect as machines,
+and so at some point someone will forget</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4667-3
+<v Antonio Cisternino>to read.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4702-0
+<v Antonio Cisternino>You get garbage in your memory,
+or even worse,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4702-1
+<v Antonio Cisternino>you did something that is still needed.
+And this is not because programmers are</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4702-2
+<v Antonio Cisternino>stupid,
+it's because the end of life of a</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4702-3
+<v Antonio Cisternino>dynamically allocated area of your memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4748-0
+<v Antonio Cisternino>It may be very,
+very far from where the memory has been</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4748-1
+<v Antonio Cisternino>originated to the point that you may have
+even forget why you allocated that.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4748-2
+<v Antonio Cisternino>You reserving the pointer and you decide
+that I did.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4748-3
+<v Antonio Cisternino>I get rid of it without thinking that
+that pointer is still valid for someone</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4748-4
+<v Antonio Cisternino>else.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4783-0
+<v Antonio Cisternino>OK,
+so there is no nothing that there are</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4783-1
+<v Antonio Cisternino>conventions and debates,
+but basically nothing more than that.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4783-2
+<v Antonio Cisternino>Of course,
+if you do the right thing in malloc and</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4783-3
+<v Antonio Cisternino>free, the program will be perfect.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4813-0
+<v Antonio Cisternino>But we had an issue.
+You had a lot of crashes in your life</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4813-1
+<v Antonio Cisternino>that only issue that programs are not
+perfect.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4813-2
+<v Antonio Cisternino>OK and and so someone started thinking,
+how can I?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4829-0
+<v Antonio Cisternino>Manage automatically the heap.
+Are there algorithms that I can invoke?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4868-0
+<v Antonio Cisternino>That may be costly,
+but we just learned that even the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4868-1
+<v Antonio Cisternino>simplest form of allocation has some
+complexity.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4868-2
+<v Antonio Cisternino>The good thing about the complexity of
+the malloc free pair is that is you pay a</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4868-3
+<v Antonio Cisternino>single link at least the visit only at.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4872-0
+<v Antonio Cisternino>Small look and free time.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4888-0
+<v Antonio Cisternino>OK,
+the rest of all the access to the memory</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4888-1
+<v Antonio Cisternino>cost you just the cost of accepting the
+memory, nothing.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4913-0
+<v Antonio Cisternino>Of course, if we want to move,
+someone may come up with a simple idea.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4913-1
+<v Antonio Cisternino>So if it's true that every.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4924-0
+<v Antonio Cisternino>Piece of the memory can be still useful.
+Why don't we declare it?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4972-0
+<v Antonio Cisternino>So every client of the block of a memory
+say OK, I'm a client,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4972-1
+<v Antonio Cisternino>I will use it and when the client is not
+needing that block anymore, say OK,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4972-2
+<v Antonio Cisternino>I release it.
+But this release is not like the three</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/4972-3
+<v Antonio Cisternino>that goes in three.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5001-0
+<v Antonio Cisternino>But basically says OK one less.
+So if I I'm interested in a block of</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5001-1
+<v Antonio Cisternino>memory, say one more and if I release it,
+I say one less.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5001-2
+<v Antonio Cisternino>Of course if everybody follows.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5028-0
+<v Antonio Cisternino>This convention you will get a counter
+that's that tells you how many clients</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5028-1
+<v Antonio Cisternino>declare that that block of memory is
+still useful and can be deallocated of</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5028-2
+<v Antonio Cisternino>course.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5039-0
+<v Antonio Cisternino>If someone forget about trees,
+I will end up with some garbage into the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5039-1
+<v Antonio Cisternino>memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5083-0
+<v Antonio Cisternino>Garbage is better than than link
+references in general because then in</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5083-1
+<v Antonio Cisternino>references.
+So you the allocate the memory ahead of</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5083-2
+<v Antonio Cisternino>time will lead to crashes.
+Garbage is simply you are only using the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5083-3
+<v Antonio Cisternino>memory, so in case you forget to.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5117-0
+<v Antonio Cisternino>Taking breeze,
+you may end up having a process that</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5117-1
+<v Antonio Cisternino>keeps growing in memory until it exhausts
+the memory, but it will not be a crash.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5117-2
+<v Antonio Cisternino>So this technique, very very simple,
+is called reference counting, right?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5117-3
+<v Antonio Cisternino>So the reference.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5123-0
+<v Antonio Cisternino>Now show me a diagram that.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5124-0
+<v Antonio Cisternino>Uh uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5134-0
+<v Antonio Cisternino>Shows uh reference counting so.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5145-0
+<v Antonio Cisternino>Cost.
+Now we need a reference counter for every</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5145-1
+<v Antonio Cisternino>block.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5152-0
+<v Antonio Cisternino>So one of the nice thing of the.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5153-0
+<v Antonio Cisternino>Uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5157-0
+<v Antonio Cisternino>Hmm.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5160-0
+<v Antonio Cisternino>OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5197-0
+<v Antonio Cisternino>It already generated the the the main
+problem situation for reference counting.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5197-1
+<v Antonio Cisternino>So in this example you have to have
+variables A&amp;</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5197-2
+<v Antonio Cisternino>B and the object created at one of
+reference.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5199-0
+<v Antonio Cisternino>Right.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5200-0
+<v Antonio Cisternino>Uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5244-0
+<v Antonio Cisternino>As soon as you introduce another
+reference, the counter gets incremented.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5244-1
+<v Antonio Cisternino>This means that every time you add a
+reference, you pay an addition,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5244-2
+<v Antonio Cisternino>you have to increment the counter and for
+every object you pay 4 bytes.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5279-0
+<v Antonio Cisternino>Which is the reference counter because
+that is attached to the object. OK,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5279-1
+<v Antonio Cisternino>so this is costing much more than the
+free list because the free list overhead</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5279-2
+<v Antonio Cisternino>in terms of space was 0 because we use
+the free memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5308-0
+<v Antonio Cisternino>To to allocate the structure.
+In this case, no.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5308-1
+<v Antonio Cisternino>In this case we allocate a little bit of
+family with every allocated blocker to</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5308-2
+<v Antonio Cisternino>keep track of the numbers. OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5343-0
+<v Antonio Cisternino>20 years ago that would have been a
+problem.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5343-1
+<v Antonio Cisternino>Now today we are wasting so much memory
+that this is not anymore a problem.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5343-2
+<v Antonio Cisternino>So I'm not going to pretend that this is
+terrible. OK,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5343-3
+<v Antonio Cisternino>we will see when we will study runtimes
+that the typical object has 12 bytes</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5343-4
+<v Antonio Cisternino>occupied.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5374-0
+<v Antonio Cisternino>OK,
+so every single thing you you make an</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5374-1
+<v Antonio Cisternino>empty object for once. OK,
+every single object you allocate a lot of</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5374-2
+<v Antonio Cisternino>strings, 12 bytes for each string.
+That's it. OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5386-0
+<v Antonio Cisternino>Problem.
+The first problem is you have to follow</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5386-1
+<v Antonio Cisternino>the convention.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5405-0
+<v Antonio Cisternino>So every time you assign the reference to
+an object into the memory to a variable,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5405-1
+<v Antonio Cisternino>you have to say plus one.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5409-0
+<v Antonio Cisternino>Right. Uh, every time.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5450-0
+<v Antonio Cisternino>A variable change value and so stops
+referencing the object.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5450-1
+<v Antonio Cisternino>You have to issue a decrease.
+So this may be explicit.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5450-2
+<v Antonio Cisternino>You will find reference counting
+libraries that allows you.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5482-0
+<v Antonio Cisternino>To keep track of the object,
+but basically it's you,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5482-1
+<v Antonio Cisternino>the programmer that you're supposed to do
+under that and when you release,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5482-2
+<v Antonio Cisternino>you say release. OK,
+so basically the department of.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5534-0
+<v Antonio Cisternino>Increasing and decreasing the counter is
+is is up on you.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5534-1
+<v Antonio Cisternino>The good thing is that when you free you
+may you may make damage.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5534-2
+<v Antonio Cisternino>When you release it you simply say I
+already called the address.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5534-3
+<v Antonio Cisternino>Now I'm releasing so it's a safer
+operation unless you forgot.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5561-0
+<v Antonio Cisternino>To call Andrea and in fact all the 90s
+were dominated by reference counting</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5561-1
+<v Antonio Cisternino>because the two main component models at
+the level of the operating system POM and</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5561-2
+<v Antonio Cisternino>Corpa.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5594-0
+<v Antonio Cisternino>We're using reference counting to decide
+when a component was ready to be</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5594-1
+<v Antonio Cisternino>allocated and and and at some point
+programmer say I am smart,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5594-2
+<v Antonio Cisternino>I'm about to use this object.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5631-0
+<v Antonio Cisternino>But for very small time, so to save time,
+I don't call the so that I don't have to</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5631-1
+<v Antonio Cisternino>pay in between someone best and dangling
+reference and dash. OK, so.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5665-0
+<v Antonio Cisternino>The protocol is easy,
+but if you stop using the protocol by</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5665-1
+<v Antonio Cisternino>calling at ref before using and releasing
+the reference when you're not using it,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5665-2
+<v Antonio Cisternino>it's risky because you may end up with
+inconsistent memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5719-0
+<v Antonio Cisternino>Now the assignment is an operation that
+the compiler understands in general the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5719-1
+<v Antonio Cisternino>runtime of the programming language
+understands.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5719-2
+<v Antonio Cisternino>So as remember when yesterday we were
+talking about this, we said OK,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5719-3
+<v Antonio Cisternino>whenever there is this statement in
+JavaScript.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5759-0
+<v Antonio Cisternino>The Java Vito machine first assigned to
+this and then invokes the function.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5759-1
+<v Antonio Cisternino>Similar things.
+I mean you see an assignment reference</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5759-2
+<v Antonio Cisternino>the compiler in general who can inject
+increase the number of the reference and</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5759-3
+<v Antonio Cisternino>when you lose that you issue the.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5787-0
+<v Antonio Cisternino>The reference to that object.
+This is for instance something that</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5787-1
+<v Antonio Cisternino>Python does.
+The CPython implementation managed most</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5787-2
+<v Antonio Cisternino>of the memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5800-0
+<v Antonio Cisternino>Is managed through reference counting.
+Motivation is faster than alternatives</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5800-1
+<v Antonio Cisternino>problems.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5837-0
+<v Antonio Cisternino>Because Java is using garbage collection,
+JavaScript is using garbage collection.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5837-1
+<v Antonio Cisternino>net is using garbage collection.
+Go is using garbage collection.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5837-2
+<v Antonio Cisternino>So why all these are not using reference
+counting but only garbage collection?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5856-0
+<v Antonio Cisternino>Answer is there is a situation that is
+fairly easy to create in which you get.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5857-0
+<v Antonio Cisternino>Loops.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5871-0
+<v Antonio Cisternino>In the references.
+So basically if I have object A which</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5871-1
+<v Antonio Cisternino>depends.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5898-0
+<v Antonio Cisternino>From object B and vice versa.
+So inside the object you've got the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5898-1
+<v Antonio Cisternino>reference one to the other.
+These two objects are not referenced by</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5898-2
+<v Antonio Cisternino>anyone else.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5933-0
+<v Antonio Cisternino>So they are not reachable,
+they are useless,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5933-1
+<v Antonio Cisternino>but they will stay alive because they
+have the target to one.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5933-2
+<v Antonio Cisternino>And because we as programmers we tend to
+create graphs rather than trees,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5933-3
+<v Antonio Cisternino>we graph the loop.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5934-0
+<v Antonio Cisternino>East.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5979-0
+<v Antonio Cisternino>To the state-of-the-art.
+OK and so the risk is we are now</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5979-1
+<v Antonio Cisternino>generating garbage because of this
+pathologic situation.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5979-2
+<v Antonio Cisternino>In Viton for instance,
+whenever there is a loop,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5979-3
+<v Antonio Cisternino>then that part of the memory gets
+allocated in a heap which is garbage</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5979-4
+<v Antonio Cisternino>collected and it's not reference garbage.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5980-0
+<v Antonio Cisternino>I.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/5981-0
+<v Antonio Cisternino>OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6023-0
+<v Antonio Cisternino>By now,
+I hope to have convinced you that most of</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6023-1
+<v Antonio Cisternino>the programming languages are not using
+the memory as a single heap.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6023-2
+<v Antonio Cisternino>So the runtime,
+the libraries that come with your program,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6023-3
+<v Antonio Cisternino>as we said at some point.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6059-0
+<v Antonio Cisternino>Come with functions that that manage the
+the the the which means that you can</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6059-1
+<v Antonio Cisternino>malloc live blocks because we said that
+the the drawback of the malloc.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6098-0
+<v Antonio Cisternino>The drawback of the model is when you
+keep allocating and allocation and this</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6098-1
+<v Antonio Cisternino>will fragment and freeze.
+OK and also you will pay because you find</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6098-2
+<v Antonio Cisternino>the holes that are larger than you need,
+so you fragment the least.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6098-3
+<v Antonio Cisternino>Those are the two.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6109-0
+<v Antonio Cisternino>Uh,
+problems that you have with the Uh model</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6109-1
+<v Antonio Cisternino>operations, but if I manage.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6144-0
+<v Antonio Cisternino>A heap with malloc of large blocks,
+same size.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6144-1
+<v Antonio Cisternino>Those are not problems because when you
+will browse the prelist,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6144-2
+<v Antonio Cisternino>you will find exactly the same plot
+because all the slots are created equal.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6182-0
+<v Antonio Cisternino>OK,
+so the typical runtime of a programming</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6182-1
+<v Antonio Cisternino>language takes a multi heap approach in
+which there is basically the memory of</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6182-2
+<v Antonio Cisternino>the processor used as a collection of
+heaps and then.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6229-0
+<v Antonio Cisternino>Every heap is managed with different
+policies,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6229-1
+<v Antonio Cisternino>so you may perfectly live with explicit
+allocation,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6229-2
+<v Antonio Cisternino>reference counting and garbage collection
+in the very same program.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6229-3
+<v Antonio Cisternino>Don't think that those are alternatives.
+Typically they are combined every heap</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6229-4
+<v Antonio Cisternino>count.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6246-0
+<v Antonio Cisternino>With its own memory manager that can be
+manually allocated,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6246-1
+<v Antonio Cisternino>explicitly reference counted or garbage
+collected, right?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6258-0
+<v Antonio Cisternino>This now lives for the remaining time
+with.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6262-0
+<v Antonio Cisternino>The garbage collection so.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6274-0
+<v Antonio Cisternino>I'm not pretending to be exhaustive in
+garbage collection.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6302-0
+<v Antonio Cisternino>I'm going to give you enough information
+to understand the major garbage</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6302-1
+<v Antonio Cisternino>collection strategies adopted by main run
+times, java.net, JavaScript, and so on.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6304-0
+<v Antonio Cisternino>OK, uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6335-0
+<v Antonio Cisternino>Now can you generate the diagram that
+shows a situation to illustrate the mark</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6335-1
+<v Antonio Cisternino>and sweep garbage collection mark and
+sweep?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6341-0
+<v Antonio Cisternino>So what we learn?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6342-0
+<v Antonio Cisternino>With the.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6343-0
+<v Antonio Cisternino>Uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6348-0
+<v Antonio Cisternino>What we learn?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6360-0
+<v Antonio Cisternino>From the reference nothing is that that
+basically it would be nice.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6397-0
+<v Antonio Cisternino>That we are able to detect in the heap
+the objects that may be referred by the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6397-1
+<v Antonio Cisternino>program in the future. OK,
+those that we are sure will not be</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6397-2
+<v Antonio Cisternino>referred anymore.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6409-0
+<v Antonio Cisternino>In the rest of the execution of the
+program can be free.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6409-1
+<v Antonio Cisternino>Are you convinced by that?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6424-0
+<v Antonio Cisternino>Now let's go back to names.
+Yesterday I made I made a statement.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6424-1
+<v Antonio Cisternino>I said in programming.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6459-0
+<v Antonio Cisternino>Names are everything.
+It goes through names, you access objects.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6459-1
+<v Antonio Cisternino>OK,
+so if you don't have a name that refers</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6459-2
+<v Antonio Cisternino>that object, that object is unreachable.
+That is, for instance,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6459-3
+<v Antonio Cisternino>very important in security.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6497-0
+<v Antonio Cisternino>Was one of the main technique of security
+is hiding,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6497-1
+<v Antonio Cisternino>removing a name so that no way the
+program can access that particular name.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6497-2
+<v Antonio Cisternino>OK,
+that is one of the itself of security is</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6497-3
+<v Antonio Cisternino>exactly play with the names.
+It has not great contain this were made</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6497-4
+<v Antonio Cisternino>this way.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6499-0
+<v Antonio Cisternino>OK, uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6501-0
+<v Antonio Cisternino>Now.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6511-0
+<v Antonio Cisternino>We said in the examples I I made U here.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6514-0
+<v Antonio Cisternino>I said OK, uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6542-0
+<v Antonio Cisternino>Oh,
+let me let me go very back to the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6542-1
+<v Antonio Cisternino>beginning. There we are. Oh,
+the first was Mallo 10. What I did forget.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6572-0
+<v Antonio Cisternino>The variable name. OK,
+so basically this value would have been</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6572-1
+<v Antonio Cisternino>temporary stored and then discarded.
+Can anyone refer to malloc 10? No,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6572-2
+<v Antonio Cisternino>because you've lost the name.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6574-0
+<v Antonio Cisternino>Hmm.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6580-0
+<v Antonio Cisternino>So in the other cases, I said OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6592-0
+<v Antonio Cisternino>Void star before equal allocate O what is
+before?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6598-0
+<v Antonio Cisternino>A pointer and where it where it is stored.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6640-0
+<v Antonio Cisternino>The way in the stack. OK,
+I I I I wrote it in a in a declaration in</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6640-1
+<v Antonio Cisternino>a function which is basically a local
+variable of a function and so it's in</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6640-2
+<v Antonio Cisternino>either in the stack or in the static
+memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6677-0
+<v Antonio Cisternino>OK,
+of course I may also have inside an</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6677-1
+<v Antonio Cisternino>object a reference to another object,
+as we just commented here in the objects</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6677-2
+<v Antonio Cisternino>in the reference counting because objects
+may refer.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6715-0
+<v Antonio Cisternino>To other objects. OK,
+but eventually when you start following</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6715-1
+<v Antonio Cisternino>the chain,
+you will end up either in a static memory</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6715-2
+<v Antonio Cisternino>or in a local memory,
+because everything in dynamic memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6724-0
+<v Antonio Cisternino>Ends up in my variable a equal new
+something.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6745-0
+<v Antonio Cisternino>OK.
+And so and we know as we just commented</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6745-1
+<v Antonio Cisternino>if we we we just write new something
+without assigning that is lost.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6750-0
+<v Antonio Cisternino>OK, so I don't think.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6751-0
+<v Antonio Cisternino>That uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6797-0
+<v Antonio Cisternino>You will be surprised.
+Then in garbage collection we start</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6797-1
+<v Antonio Cisternino>talking about roots.
+Roots are a crucial concept of garbage</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6797-2
+<v Antonio Cisternino>collection,
+and if you want to really understand the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6797-3
+<v Antonio Cisternino>runtime of a programming language,
+you must understand roots.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6800-0
+<v Antonio Cisternino>Roots are key acts.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6831-0
+<v Antonio Cisternino>So here the roots are two local variables,
+X&amp;YX refer to object one,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6831-1
+<v Antonio Cisternino>which in turn refers to object 2.
+So we know that object 2 is reachable.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6863-0
+<v Antonio Cisternino>Potentially through X passing through
+object YY is not referring to anything.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6863-1
+<v Antonio Cisternino>Let's say that indeed we also have object
+3 which is not referenced by the rules.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6876-0
+<v Antonio Cisternino>So beware,
+because this is a very important element</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6876-1
+<v Antonio Cisternino>that will be.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6891-0
+<v Antonio Cisternino>One of the main consideration that made
+interest in the rust memory management.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6898-0
+<v Antonio Cisternino>That Monday I'm there will present.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6914-0
+<v Antonio Cisternino>The garage collection say if through the
+root an object is reachable,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6914-1
+<v Antonio Cisternino>then I found it.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6925-0
+<v Antonio Cisternino>This will not mean that that object will
+be accessed.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6943-0
+<v Antonio Cisternino>It's a conservative approach.
+If it's reachable, then don't touch it.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6980-0
+<v Antonio Cisternino>And so if you don't free delete in C++
+the object,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6980-1
+<v Antonio Cisternino>if you don't set to null fields or
+variable,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/6980-2
+<v Antonio Cisternino>you may end up to have a lot of garbage
+because the assumption of the.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7006-0
+<v Antonio Cisternino>Uh,
+the relation is if it's reachable from</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7006-1
+<v Antonio Cisternino>the root, then don't touch it.
+And so if you don't bring the point the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7006-2
+<v Antonio Cisternino>reference to other object,
+basically you are locking those objects.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7057-0
+<v Antonio Cisternino>So the Martin's weeper is a fairly
+intuitive algorithm. So you take an heap,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7057-1
+<v Antonio Cisternino>you use an allocation of the heaper like
+the model of three.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7057-2
+<v Antonio Cisternino>Typically garbage collection,
+especially garbage collectors,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7057-3
+<v Antonio Cisternino>especially the origin on garbage
+collectors.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7097-0
+<v Antonio Cisternino>When implemented in C and they were using
+map and free.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7097-1
+<v Antonio Cisternino>So don't think that this thing is
+completely separated.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7097-2
+<v Antonio Cisternino>It basically tries to build some
+automation on top of the explicit</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7097-3
+<v Antonio Cisternino>management. OK,
+so it's not a different story.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7101-0
+<v Antonio Cisternino>OK, so basically you say.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7127-0
+<v Antonio Cisternino>How can I tell that object one and object
+two are still prepared and object three</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7127-1
+<v Antonio Cisternino>is not?
+The only thing that I can do is I find</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7127-2
+<v Antonio Cisternino>all the rules.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7128-0
+<v Antonio Cisternino>Uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7137-0
+<v Antonio Cisternino>I start browsing all the references.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7139-0
+<v Antonio Cisternino>Uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7158-0
+<v Antonio Cisternino>Starting from the roots and I mark all
+the objects that are still reachable as.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7166-0
+<v Antonio Cisternino>I reach you.
+So you're basically making the visit of a</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7166-1
+<v Antonio Cisternino>graph.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7167-0
+<v Antonio Cisternino>That is.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7178-0
+<v Antonio Cisternino>And you're marking every node of the
+graph where every node is an object.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7210-0
+<v Antonio Cisternino>So the mark phase simply says OK,
+object one and object two will be</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7210-1
+<v Antonio Cisternino>marketed. Object three,
+not because it's in the deeper,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7210-2
+<v Antonio Cisternino>but it will make it accessible anymore.
+Sorry, so object three is unmarked.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7216-0
+<v Antonio Cisternino>Therefore,
+second phase of the algorithm with.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7238-0
+<v Antonio Cisternino>OK,
+so object 3 will be the allocated object</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7238-1
+<v Antonio Cisternino>one and object 2 will stay alive.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7243-0
+<v Antonio Cisternino>So Martin's whip is very intuitive.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7275-0
+<v Antonio Cisternino>And it's been used for a very long time
+and it's been used with different</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7275-1
+<v Antonio Cisternino>approaches.
+There is the precise garbage collection,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7275-2
+<v Antonio Cisternino>which means the runtime because you
+understand that.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7320-0
+<v Antonio Cisternino>I tricked you in thinking that this thing
+is completely easy.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7320-1
+<v Antonio Cisternino>So now suppose that you are a compiler.
+You have to lay out data structures so</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7320-2
+<v Antonio Cisternino>that the garbage collector software has
+complete information about where all the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7320-3
+<v Antonio Cisternino>pointers are.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7351-0
+<v Antonio Cisternino>Because if I have an object which is an
+interest distance of of a class with 20</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7351-1
+<v Antonio Cisternino>fields,
+which of those fields are references?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7351-2
+<v Antonio Cisternino>Which of those are just integers or
+clause?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7381-0
+<v Antonio Cisternino>That is relevant.
+So the precise garbage collection assumes</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7381-1
+<v Antonio Cisternino>that at runtime you know the full layout
+of the map.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7381-2
+<v Antonio Cisternino>So basically you can reconstruct fully.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7421-0
+<v Antonio Cisternino>All the pointers and and every part of
+the memory you know if it's a value or a</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7421-1
+<v Antonio Cisternino>pointer and so you can implement the
+bundle script. OK,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7421-2
+<v Antonio Cisternino>there is an alternative approach which
+has been popular in during the 90s.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7422-0
+<v Antonio Cisternino>Uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7453-0
+<v Antonio Cisternino>And and is that it's not precise.
+So basically we release the assumption</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7453-1
+<v Antonio Cisternino>that you know the full layout of the
+memory. It was popular in C++.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7460-0
+<v Antonio Cisternino>And you say OK if I browse the memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7501-0
+<v Antonio Cisternino>And I see something which is an address
+that looks like an address to the heap.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7501-1
+<v Antonio Cisternino>I assume it is an address of the heap and
+I couldn't see the heap reachable.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7501-2
+<v Antonio Cisternino>So basically you go through the map.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7549-0
+<v Antonio Cisternino>Every four or eight bytes,
+depending on the architecture,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7549-1
+<v Antonio Cisternino>you look at the memory,
+not knowing whether that is a string,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7549-2
+<v Antonio Cisternino>is an object, is whatever it is, and say,
+oh,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7549-3
+<v Antonio Cisternino>this looks like a pointer and this
+pointer is a valid would be a valid</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7549-4
+<v Antonio Cisternino>pointer in the heap. Let's mark.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7605-0
+<v Antonio Cisternino>So this approach is clearly less precise
+because you may be unlucky and you will</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7605-1
+<v Antonio Cisternino>find some bytes that look like pointer,
+but it's not a pointer.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7605-2
+<v Antonio Cisternino>So you may lock an object that would have
+been freed,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7605-3
+<v Antonio Cisternino>but overall was effective and it's been
+used in languages that don't have.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7652-0
+<v Antonio Cisternino>Too much documentation at runtime about
+the layout of the memory,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7652-1
+<v Antonio Cisternino>and C was exactly one of these languages.
+So C is the language that during the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7652-2
+<v Antonio Cisternino>computation throw away a lot of
+information.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7652-3
+<v Antonio Cisternino>So the resulting program is semantically
+equivalent to the source program,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7652-4
+<v Antonio Cisternino>but all your.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7700-0
+<v Antonio Cisternino>Beautiful class object inheritance will
+be thrown away by the compiler and self</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7700-1
+<v Antonio Cisternino>by memory.
+So in that case precise collection is</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7700-2
+<v Antonio Cisternino>impossible because you don't have enough
+information at runtime to reconstruct the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7700-3
+<v Antonio Cisternino>full state of the memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7704-0
+<v Antonio Cisternino>And so the rules.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7706-0
+<v Antonio Cisternino>OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7716-0
+<v Antonio Cisternino>Things that roots are so important that
+there are.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7730-0
+<v Antonio Cisternino>Hidden places in the implementation of
+the runtime to create fake roots.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7750-0
+<v Antonio Cisternino>Example,
+have you ever heard about remoting?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7750-1
+<v Antonio Cisternino>Remoting is the technique in which you
+create a remote object.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7792-0
+<v Antonio Cisternino>And then through the network you involve
+these methods. OK, so there are protocols,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7792-1
+<v Antonio Cisternino>servers and all these things.
+So the server that has the remote object</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7792-2
+<v Antonio Cisternino>creates the object,
+but that object is not referenced by</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7792-3
+<v Antonio Cisternino>anyone.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7833-0
+<v Antonio Cisternino>In that process because the user is on
+the other side of the network and so for</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7833-1
+<v Antonio Cisternino>instance runtimes have a special place
+where these objects are tracked and they</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7833-2
+<v Antonio Cisternino>are considered routes as well as the
+stack.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7847-0
+<v Antonio Cisternino>And the static memory. OK,
+so roots may be complicated because I</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7847-1
+<v Antonio Cisternino>give you.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7884-0
+<v Antonio Cisternino>This year I'm not doing it.
+20 years ago I was given a class of two</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7884-1
+<v Antonio Cisternino>hours in which I extended this.
+net runtime during the class by adding a</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7884-2
+<v Antonio Cisternino>new instruction to the little machine
+called the Load Hello World.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7915-0
+<v Antonio Cisternino>To support the most compiled version
+program of the history,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7915-1
+<v Antonio Cisternino>which basically was loading at the Hello
+World string on the stack for compiling</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7915-2
+<v Antonio Cisternino>and adding the instruction was super easy.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7946-0
+<v Antonio Cisternino>Because clearly the full virtual machine
+was designed to be extensible.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7946-1
+<v Antonio Cisternino>So with very few actions I was able to
+add the the new instruction, the compiler,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7946-2
+<v Antonio Cisternino>the disassembler,
+all the thing were updated automatically.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7981-0
+<v Antonio Cisternino>And then the most difficult thing was to
+find a place where to store the Hello</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7981-1
+<v Antonio Cisternino>Worlds thing,
+because the Hello Worlds thing is an</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7981-2
+<v Antonio Cisternino>object and if you create the object
+without a root and the first gather</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/7981-3
+<v Antonio Cisternino>collection, you go with the object.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8025-0
+<v Antonio Cisternino>OK,
+so even those who implement the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8025-1
+<v Antonio Cisternino>programming language,
+the runtime sometimes need rules to lock</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8025-2
+<v Antonio Cisternino>object into the memory because the
+garbage collector is pitiless.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8025-3
+<v Antonio Cisternino>When the garbage collector passes,
+it turns away everything.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8074-0
+<v Antonio Cisternino>OK, so this is the marking sweep.
+We just commented that this,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8074-1
+<v Antonio Cisternino>I mean we said that this can be
+implemented in terms of malloc and free.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8074-2
+<v Antonio Cisternino>OK.
+But we also commented that if we keep</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8074-3
+<v Antonio Cisternino>malloc and free, malloc and free,
+small object, large object.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8122-0
+<v Antonio Cisternino>That is a bad thing because we fragment
+our and the cost will grow over time.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8122-1
+<v Antonio Cisternino>So the mark and sweep is with JavaStreams
+because JavaStreams is just OK streams</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8122-2
+<v Antonio Cisternino>are a very good dimension,
+so they are the worst.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8135-0
+<v Antonio Cisternino>The enemy of the markets we collect. OK,
+do we have alternatives?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8135-1
+<v Antonio Cisternino>Let's invent another algorithm.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8143-0
+<v Antonio Cisternino>The copy collector.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8148-0
+<v Antonio Cisternino>The copy collector, basically.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8152-0
+<v Antonio Cisternino>The heap.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8167-0
+<v Antonio Cisternino>Is divided into semi spaces or I have two
+heaps, same thing. OK, so.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8204-0
+<v Antonio Cisternino>When I allocate,
+I allocate in the let's say in the front</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8204-1
+<v Antonio Cisternino>space allocation.
+Now it's easy because I'm just tapping</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8204-2
+<v Antonio Cisternino>thing in a time. OK, so first allocation,
+first object, second location.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8223-0
+<v Antonio Cisternino>Push their allocation, push and that's it.
+I don't care.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8223-1
+<v Antonio Cisternino>When do you trigger the garbage
+collection when you fill up?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8254-0
+<v Antonio Cisternino>The available space then I need the
+collection now to keep low the cost of</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8254-1
+<v Antonio Cisternino>allocation, which is simply an addition.
+So you know how much I did allocate of</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8254-2
+<v Antonio Cisternino>this.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8277-0
+<v Antonio Cisternino>And I say plus something. So it's very,
+very cheap.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8277-1
+<v Antonio Cisternino>I only to remember how much of this has
+been already allocated.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8277-2
+<v Antonio Cisternino>It's just a number.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8288-0
+<v Antonio Cisternino>But when I filled up the full space,
+then things get, uh, complicated.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8296-0
+<v Antonio Cisternino>So the copy collector basically says.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8297-0
+<v Antonio Cisternino>Um.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8337-0
+<v Antonio Cisternino>I copy all the line objects.
+So the mark phase is basically it's the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8337-1
+<v Antonio Cisternino>sweep phase which is different.
+The the we we know that it's still</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8337-2
+<v Antonio Cisternino>reachable through the rules.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8363-0
+<v Antonio Cisternino>Object one and then object 2 is reachable
+through the next field of object one and</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8363-1
+<v Antonio Cisternino>so object 2 is still reachable and object
+three garbage collectable because it's</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8363-2
+<v Antonio Cisternino>energy full. So basically.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8395-0
+<v Antonio Cisternino>You start copying the objects. OK,
+so you go through the front space,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8395-1
+<v Antonio Cisternino>you find all the LI objects and you copy
+the bytes of those objects in the two</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8395-2
+<v Antonio Cisternino>space iterate copying.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8397-0
+<v Antonio Cisternino>OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8398-0
+<v Antonio Cisternino>Uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8410-0
+<v Antonio Cisternino>And so in the two space I will end U
+having the two.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8413-0
+<v Antonio Cisternino>A live object, Sir.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8415-0
+<v Antonio Cisternino>OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8418-0
+<v Antonio Cisternino>Now.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8443-0
+<v Antonio Cisternino>I preserved all the objects in the to
+space.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8443-1
+<v Antonio Cisternino>The front space contains only useless
+memory, the object that have been copied,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8443-2
+<v Antonio Cisternino>so.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8472-0
+<v Antonio Cisternino>I can empty the fool from space, OK,
+which is one of you comment is a form of</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8472-1
+<v Antonio Cisternino>data fragmentation.
+And what do we what did we say?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8496-0
+<v Antonio Cisternino>About the frag,
+we have to change the memory of the roots.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8496-1
+<v Antonio Cisternino>We have to go back,
+find all the roots that refer to.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8524-0
+<v Antonio Cisternino>Objects that we just copied and we need
+to update the pointers so that everything</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8524-1
+<v Antonio Cisternino>will stay the same,
+otherwise it will be broken.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8524-2
+<v Antonio Cisternino>OK and typically that phase is.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8530-0
+<v Antonio Cisternino>Uh, naming. Um, backpatching.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8535-0
+<v Antonio Cisternino>OK, you go back and batch.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8568-0
+<v Antonio Cisternino>Hopping the the second slide of being
+like moving that dust in the other side</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8568-1
+<v Antonio Cisternino>and not really really developing mainly.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8605-0
+<v Antonio Cisternino>That's basically the brief spaces.
+I didn't comment,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8605-1
+<v Antonio Cisternino>it was implicit is as soon as I finished
+to copy what was the two space will</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8605-2
+<v Antonio Cisternino>become the front space,
+so the current heap and the two space is</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8605-3
+<v Antonio Cisternino>considered empty.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8607-0
+<v Antonio Cisternino>You don't even clean it.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8641-0
+<v Antonio Cisternino>You you will continue in the front space
+because you copy the in the front space</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8641-1
+<v Antonio Cisternino>the the of the line by accumulating so
+you can go on and keep some locating</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8641-2
+<v Antonio Cisternino>using the front space.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8663-0
+<v Antonio Cisternino>OK,
+so basically you start again in the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8663-1
+<v Antonio Cisternino>previous situation and you go in cycles.
+In this way you're able to copy for that.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8669-0
+<v Antonio Cisternino>Now it is expensive.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8729-0
+<v Antonio Cisternino>Because we have to browse.
+So first of all,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8729-1
+<v Antonio Cisternino>it works only if you're a precise method.
+Imprecise collection is not the best type</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8729-2
+<v Antonio Cisternino>of collection.
+It's not possible with the copy collector</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8729-3
+<v Antonio Cisternino>because you can't go and like this. OK,
+so first of all, this is applicable only.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8741-0
+<v Antonio Cisternino>Precise memory collection.
+So at runtime you know every byte to</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8741-1
+<v Antonio Cisternino>which variable belongs.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8763-0
+<v Antonio Cisternino>Second thing,
+this is clearly convenient only if at the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8763-1
+<v Antonio Cisternino>at each collection the object that
+survives are few.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8797-0
+<v Antonio Cisternino>OK, if I have to copy 70% of the heap,
+that will be terrible.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8797-1
+<v Antonio Cisternino>You have to copy a lot of memory to save
+only 30%, that would be acceptable.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8836-0
+<v Antonio Cisternino>In terms of efficiency,
+also because you will have to backpatch</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8836-1
+<v Antonio Cisternino>more and more pointers,
+so all the costs will go up and that</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8836-2
+<v Antonio Cisternino>would be convenient. OK,
+so copy collection is very, very nice.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8869-0
+<v Antonio Cisternino>When you allocate,
+you allocate lots of objects that are</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8869-1
+<v Antonio Cisternino>shortly needed,
+so between a cycle and the next</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8869-2
+<v Antonio Cisternino>collection cycle.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8872-0
+<v Antonio Cisternino>Most of the objects are dead.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8900-0
+<v Antonio Cisternino>Because it seems that they just you're
+right, technically,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8900-1
+<v Antonio Cisternino>I mean for the sake of explanation,
+the helpful AI introduced the.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8927-0
+<v Antonio Cisternino>The front space and to space.
+Typically you have the heap that you</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8927-1
+<v Antonio Cisternino>allocate of some size where you do the
+copy collection as soon as you're ready.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8969-0
+<v Antonio Cisternino>To do the collection itself,
+you allocate the new space,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8969-1
+<v Antonio Cisternino>you do the copy collection,
+you free the original. OK,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8969-2
+<v Antonio Cisternino>so technically you're not allocating
+twice the memory. But yes,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/8969-3
+<v Antonio Cisternino>to do the copy collection you need to be
+able to allocate.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9018-0
+<v Antonio Cisternino>Another leaf of the same size,
+or even smaller,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9018-1
+<v Antonio Cisternino>but in general it's the same size. OK,
+so the copy collection works only being</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9018-2
+<v Antonio Cisternino>under the assumption that we're not doing
+it with the full memory of the process,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9018-3
+<v Antonio Cisternino>but we basically go to the heap pool.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9075-0
+<v Antonio Cisternino>Of the process we take,
+let's say one MB and then I need another</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9075-1
+<v Antonio Cisternino>MB to do the collection.
+I free the MB and then that's acceptable.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9075-2
+<v Antonio Cisternino>OK, that's been very long.
+If you try to apply this algorithm to the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9075-3
+<v Antonio Cisternino>full memory process,
+that would be impractical in impractical.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9107-0
+<v Antonio Cisternino>So it requires A sophisticated
+hierarchical way of managing heaps.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9107-1
+<v Antonio Cisternino>So basically you create heaps from the
+process memory and then every heap is</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9107-2
+<v Antonio Cisternino>managed internally with a different
+policy.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9148-0
+<v Antonio Cisternino>That we're about to see that is where the
+copy collection is used.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9148-1
+<v Antonio Cisternino>So the copy collection basically works
+well under the assumption that most of</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9148-2
+<v Antonio Cisternino>the object that they are located in the
+front space.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9184-0
+<v Antonio Cisternino>When I trigger the garbage collection
+because I exhausted the the space,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9184-1
+<v Antonio Cisternino>those objects, most of them are dead.
+So the number of objects that I will copy,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9184-2
+<v Antonio Cisternino>the number of pointers that I have to
+backpack is limited.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9190-0
+<v Antonio Cisternino>Sounds a lot like the streams of Java.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9235-0
+<v Antonio Cisternino>OK, so the copy collection,
+if you want to think one main big example</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9235-1
+<v Antonio Cisternino>of copy collection are immutable things
+because you need to compose them.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9235-2
+<v Antonio Cisternino>You keep generating new objects and
+deleting old one every time in your</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9235-3
+<v Antonio Cisternino>programming.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9276-0
+<v Antonio Cisternino>Title string plus the value plus on this
+tree which is every day.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9276-1
+<v Antonio Cisternino>Thank your copy collection for its
+efficiency. OK,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9276-2
+<v Antonio Cisternino>because you are generating 3 strings,
+generate the 4th by combining the three</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9276-3
+<v Antonio Cisternino>and then throw away the.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9288-0
+<v Antonio Cisternino>The the first three things.
+So that's typical of screen manipulation,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9288-1
+<v Antonio Cisternino>which is big, so it's OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9306-0
+<v Antonio Cisternino>But if we if our objects in our program,
+I don't know a computer game are not</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9306-1
+<v Antonio Cisternino>strings.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9334-0
+<v Antonio Cisternino>And they are not so shortly because in a
+computer, in a computer game, the scenery,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9334-1
+<v Antonio Cisternino>so all the the the the free rent in here
+is for very long.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9374-0
+<v Antonio Cisternino>Time the same.
+I'll be a very good player and keep</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9374-1
+<v Antonio Cisternino>changing scenes.
+The reality is that the copy collection</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9374-2
+<v Antonio Cisternino>is not such a good option because most of
+the objects allocated are alive.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9416-0
+<v Antonio Cisternino>So all the operation will cost because
+you have to move a lot of memory and</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9416-1
+<v Antonio Cisternino>clearly that is linear in the number of
+bytes you're moving and you will</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9416-2
+<v Antonio Cisternino>backpatch a a large number of elements.
+So in that case it's not convenient.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9448-0
+<v Antonio Cisternino>Mark and sweep, on the other hand,
+suffer a lot if you allocate, allocate,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9448-1
+<v Antonio Cisternino>allocate, allocate,
+OK and so fragments when you do the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9448-2
+<v Antonio Cisternino>JavaScript.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9452-0
+<v Antonio Cisternino>So thank you.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9467-0
+<v Antonio Cisternino>The olicy is bound to the lifespan of an
+object.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9483-0
+<v Antonio Cisternino>Which is clearly empirical because it
+depends by the particular program.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9526-0
+<v Antonio Cisternino>I just outlined.
+So if we're doing web application,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9526-1
+<v Antonio Cisternino>lots of strings because we keep
+generating HTML computer games,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9526-2
+<v Antonio Cisternino>long-lived objects.
+Those are main classes,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9526-3
+<v Antonio Cisternino>but you can make a runtime for every
+application so you can say OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9529-0
+<v Antonio Cisternino>Let's try to combine uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9530-0
+<v Antonio Cisternino>Uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9545-0
+<v Antonio Cisternino>Uh hierarchical uh garbage collector with
+the copy in Gen. 0 and mark and.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9547-0
+<v Antonio Cisternino>In Gen. 1.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9549-0
+<v Antonio Cisternino>Uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9559-0
+<v Antonio Cisternino>So you have once you get used to the idea
+that there is no.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9590-0
+<v Antonio Cisternino>Once you get used to the idea that there
+is no single leap in your memory process,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9590-1
+<v Antonio Cisternino>but also you can have multiple leaps and
+every.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9604-0
+<v Antonio Cisternino>And heap is basically an array of bytes
+and every heap can be managed with</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9604-1
+<v Antonio Cisternino>different policies then.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9607-0
+<v Antonio Cisternino>OK. Oh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9609-0
+<v Antonio Cisternino>Yeah.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9614-0
+<v Antonio Cisternino>For decal.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9656-0
+<v Antonio Cisternino>GC with the Gen. 0 copy collector and Gen.
+1 mark and sweet.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9656-1
+<v Antonio Cisternino>So the idea is if we allocate dynamically
+heaps and manage heaps in with these</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9656-2
+<v Antonio Cisternino>policies, we can combine different.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9658-0
+<v Antonio Cisternino>Policies and empirically.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9701-0
+<v Antonio Cisternino>Most of the objects allocated by a
+program either are very short-lived,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9701-1
+<v Antonio Cisternino>looks a string,
+or they tend to be long-lived. Of course,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9701-2
+<v Antonio Cisternino>there are magic numbers when we will
+browse.net.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9742-0
+<v Antonio Cisternino>One time we we will find magic numbers
+with comments that says empirically we</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9742-1
+<v Antonio Cisternino>did the test and this is the best number
+we can for all the tests we run. OK,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9742-2
+<v Antonio Cisternino>so there's no better way.
+It's empirical evidence. It's not theory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9742-3
+<v Antonio Cisternino>OK, but nevertheless works.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9755-0
+<v Antonio Cisternino>The work works thanks to this,
+so it's OK and and basically what you do,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9755-1
+<v Antonio Cisternino>you say OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9793-0
+<v Antonio Cisternino>I allocate generate heaps in generation,
+so we call generation 0 where the new</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9793-1
+<v Antonio Cisternino>operation will take place.
+That is generation 0. OK,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9793-2
+<v Antonio Cisternino>so the allocation is always super fast.
+We said it's just plus something.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9794-0
+<v Antonio Cisternino>Uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9803-0
+<v Antonio Cisternino>Uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9834-0
+<v Antonio Cisternino>Then as soon as we finish Gen. 0 heap,
+we fill it up. We do the mark and sweep,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9834-1
+<v Antonio Cisternino>sorry, the copy collection,
+but we copy the objects in another heap</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9834-2
+<v Antonio Cisternino>that is called generation one.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9876-0
+<v Antonio Cisternino>Which is managed using the mark and sweep
+and eventually the free list. OK,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9876-1
+<v Antonio Cisternino>because we know that if that object
+survived so long,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9876-2
+<v Antonio Cisternino>it's likely to live and so this long live
+will reduce the fragmentation.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9894-0
+<v Antonio Cisternino>Of the market sweep managed the heap,
+which was basically the major back back</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9894-1
+<v Antonio Cisternino>back back back drop.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9924-0
+<v Antonio Cisternino>OK, so basically the idea is you in Gen.
+0 you allocate objects, you collect,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9924-1
+<v Antonio Cisternino>you are, you move objects to Gen. one,
+those Boolean lead.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9963-0
+<v Antonio Cisternino>You backpatch,
+so you pay your backpatching and then you</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9963-1
+<v Antonio Cisternino>go and ideally you can iterate this
+process and you can introduce generation</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9963-2
+<v Antonio Cisternino>2, generation 3 and so on.
+So I mean you can complicate things as</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9963-3
+<v Antonio Cisternino>much as you want.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/9966-0
+<v Antonio Cisternino>But basically, uh, the uh.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10006-0
+<v Antonio Cisternino>Most of the time,
+generational garbage collection includes</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10006-1
+<v Antonio Cisternino>a couple of generations, zero and one,
+plus a large object heap,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10006-2
+<v Antonio Cisternino>because large objects, when are allocated,
+typically are long-lived.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10041-0
+<v Antonio Cisternino>Uh, I don't remember exactly the number,
+but it's something around 1.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10041-1
+<v Antonio Cisternino>5 kilobyte in the run.
+net runtime is the minimum size of a</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10041-2
+<v Antonio Cisternino>large collected object.
+So in case you're making in your program</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10041-3
+<v Antonio Cisternino>new.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10085-0
+<v Antonio Cisternino>An object which is 2 kilobytes,
+then automatically the runtime will use</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10085-1
+<v Antonio Cisternino>the large object heap,
+which is not a copy collector.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10085-2
+<v Antonio Cisternino>It's just a Martin sweep because copying
+1.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10085-3
+<v Antonio Cisternino>5 kilobytes is expensive and it's
+pointless to do the copy OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10123-0
+<v Antonio Cisternino>Remember when I said about the Xbox,
+the two version of the CLR, etc.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10123-1
+<v Antonio Cisternino>Now I can tell the full story, the.
+net implementation for it was 2005.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10123-2
+<v Antonio Cisternino>net implementation for Xbox.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10151-0
+<v Antonio Cisternino>Was removing the generational garbage
+collection and replacing it by a mark and</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10151-1
+<v Antonio Cisternino>sweep collector.
+Reason because you're not allocating so</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10151-2
+<v Antonio Cisternino>many strings.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10169-0
+<v Antonio Cisternino>Which are the main customers of the copy
+collector and basically the copy</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10169-1
+<v Antonio Cisternino>collector were was slowing down all the
+games.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10170-0
+<v Antonio Cisternino>OK.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10208-0
+<v Antonio Cisternino>To witness how empiric evaluation is
+dominant in this automatic memory</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10208-1
+<v Antonio Cisternino>management.
+Don't think that there is something much</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10208-2
+<v Antonio Cisternino>better than this.
+I mean these are strategies we said that.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10247-0
+<v Antonio Cisternino>Imperfect,
+because if the programmer does not</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10247-1
+<v Antonio Cisternino>cooperate and do not release reference,
+you keep alive object that should be</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10247-2
+<v Antonio Cisternino>reclaimed and so it's not even a
+guarantee that you're not generating</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10247-3
+<v Antonio Cisternino>garbage.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10257-0
+<v Antonio Cisternino>The only thing that a precise garbage
+collector, or even an unprecise, ensures.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10312-0
+<v Antonio Cisternino>Is that you have no dangling references.
+Dangling references are pointers that</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10312-1
+<v Antonio Cisternino>refers to memory areas that are not valid
+anymore,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10312-2
+<v Antonio Cisternino>which is the worst situation for a
+program because typically we'll end up in</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10312-3
+<v Antonio Cisternino>a crash because the program will.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10341-0
+<v Antonio Cisternino>Interpret that pointer and the memory in
+the wrong way. We write the memory,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10341-1
+<v Antonio Cisternino>corrupt the memory and eventually the
+system will crash. For instance,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10341-2
+<v Antonio Cisternino>the Ariane 5 rocket that I mentioned at
+the very first class.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10343-0
+<v Antonio Cisternino>OK, so.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10382-0
+<v Antonio Cisternino>I think it was a long journey.
+Now I hope you know a little bit more</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10382-1
+<v Antonio Cisternino>about memory management.
+Memory management is something that you</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10382-2
+<v Antonio Cisternino>have to consider every time you write a
+single line of your program.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10417-0
+<v Antonio Cisternino>Because memory management is 50% to 80%
+of the time of your program was better</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10417-1
+<v Antonio Cisternino>because it's a take from the memory,
+copy in the register, add,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10417-2
+<v Antonio Cisternino>subtract or whatever put back in the
+memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10445-0
+<v Antonio Cisternino>Starts again.
+So that is the most intensive,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10445-1
+<v Antonio Cisternino>one of the most intensive operations.
+You know what are exception to that? CERN.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10445-2
+<v Antonio Cisternino>At CERN they use a lot of Monte Carlo.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10449-0
+<v Antonio Cisternino>You know, Monte Carlo, Monte Carlo, you.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10491-0
+<v Antonio Cisternino>You generate random numbers and do things.
+That is something that stays mostly in</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10491-1
+<v Antonio Cisternino>the CPU and so it's not memory intensive,
+but any other program I know of and in</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10491-2
+<v Antonio Cisternino>fact you know that.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10534-0
+<v Antonio Cisternino>There is this physical law by which if
+you want a high clock in your CPU,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10534-1
+<v Antonio Cisternino>you have to reduce the the core count. OK,
+CERN is buying a lot of CPU with super</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10534-2
+<v Antonio Cisternino>high clock,
+fewer clock count because they need just</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10534-3
+<v Antonio Cisternino>to go fast in Monte Carlo, but.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10565-0
+<v Antonio Cisternino>That is so exceptional that they even
+order CPUs different from the rest of the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10565-1
+<v Antonio Cisternino>world for that. OK,
+but the rest of the world requires memory.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10565-2
+<v Antonio Cisternino>And just to give you a real world example,
+you know what is the bandwidth of the</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10565-3
+<v Antonio Cisternino>memory today?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10573-0
+<v Antonio Cisternino>Depending how much memory you can
+transmit per second.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10617-0
+<v Antonio Cisternino>You have to.
+If you want to become an advanced</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10617-1
+<v Antonio Cisternino>programmer,
+you have to understand that because you</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10617-2
+<v Antonio Cisternino>have to dimension your program under that
+assumption.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10617-3
+<v Antonio Cisternino>So the high bandwidth memory for Intel
+today is one terabyte per second.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10617-4
+<v Antonio Cisternino>The high bandwidth memory for NVIDIA is
+one terabyte per second.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10641-0
+<v Antonio Cisternino>OK,
+that is the HPM and it gives you the idea</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10641-1
+<v Antonio Cisternino>who how much is important memory to CPU
+transfer, right?</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10664-0
+<v Antonio Cisternino>See you.
+Unfortunately I will not be there,</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10664-1
+<v Antonio Cisternino>but I mean I will try to attend remotely.
+I will be traveling Monday.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10664-2
+<v Antonio Cisternino>There will be Andrea that will introduce
+you to Rust.</v>
+
+ade27e6a-0173-401f-a397-beb512fd27d7/10666-0
+<v Antonio Cisternino>Thank you.</v>

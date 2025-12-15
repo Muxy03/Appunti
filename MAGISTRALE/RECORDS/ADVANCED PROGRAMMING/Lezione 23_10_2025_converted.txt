@@ -1,0 +1,3523 @@
+
+d6ce23af-8459-4da3-a018-07d45177655a/11-0
+<v Antonio Cisternino>So.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/17-0
+<v Antonio Cisternino>So.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/24-0
+<v Antonio Cisternino>We did it. CPU is there.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/37-0
+<v Antonio Cisternino>So let's um.
+Basically the idea for today is uh to um.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/41-0
+<v Antonio Cisternino>Keep going with the.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/50-0
+<v Antonio Cisternino>Examples of meta programming I'd like to.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/65-0
+<v Antonio Cisternino>Discuss a little bit more than I did
+yesterday the aspects of cogeneration.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/69-0
+<v Antonio Cisternino>And also uh.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/95-0
+<v Antonio Cisternino>Try to dig down the relation between the
+runtime,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/95-1
+<v Antonio Cisternino>the library and and your code because as
+we said.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/98-0
+<v Antonio Cisternino>Meet the programming now has become.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/116-0
+<v Antonio Cisternino>One of the main pillars of of our systems
+because we are basically using frameworks</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/116-1
+<v Antonio Cisternino>that are.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/143-0
+<v Antonio Cisternino>Are developed and grow on and on to the
+point in which you're writing a small</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/143-1
+<v Antonio Cisternino>amount of code and your program is GB big.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/170-0
+<v Antonio Cisternino>And so yesterday we basically had the
+first overview.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/170-1
+<v Antonio Cisternino>Today we spent some time not introducing
+the really new notion,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/170-2
+<v Antonio Cisternino>but we will keep going and learn from
+these notions.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/181-0
+<v Antonio Cisternino>OK,
+so the first thing I'd like to bring up</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/181-1
+<v Antonio Cisternino>again.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/187-0
+<v Antonio Cisternino>Is the whitespace compiler.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/197-0
+<v Antonio Cisternino>Because I mean the white space compiler
+is clearly.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/220-0
+<v Antonio Cisternino>A compiler,
+but it is also clearly an interesting</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/220-1
+<v Antonio Cisternino>example of reflection and technically
+reflection and intersection because</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/220-2
+<v Antonio Cisternino>actually.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/253-0
+<v Antonio Cisternino>The system Oh no, sorry,
+it's not technically an example of</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/253-1
+<v Antonio Cisternino>reflection in itself,
+because the behaviour of the compiler</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/253-2
+<v Antonio Cisternino>does not depend from the user of the
+reflection,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/253-3
+<v Antonio Cisternino>but actually it uses the reflection API.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/272-0
+<v Antonio Cisternino>To operate.
+And so it's a good example since we</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/272-1
+<v Antonio Cisternino>already discussed its purpose to look and
+discuss a few other things.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/276-0
+<v Antonio Cisternino>OK, so.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/296-0
+<v Antonio Cisternino>First good thing is that we we we don't
+need to explain the purpose of this code</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/296-1
+<v Antonio Cisternino>and we can focus on the compile.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/300-0
+<v Antonio Cisternino>Uh method which uh uh.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/316-0
+<v Antonio Cisternino>Is the method responsible for actually
+generating the code using the reflection</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/316-1
+<v Antonio Cisternino>API?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/338-0
+<v Antonio Cisternino>So it it's oh, here we are.
+So the main code basically performs few</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/338-1
+<v Antonio Cisternino>things that are interesting for our
+purpose.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/362-0
+<v Antonio Cisternino>Because the assembly name is part of the
+reflection API and then we will see the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/362-1
+<v Antonio Cisternino>compile method which receives.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/365-0
+<v Antonio Cisternino>The IEL generator so.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/367-0
+<v Antonio Cisternino>Um.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/371-0
+<v Antonio Cisternino>First of all that.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/374-0
+<v Antonio Cisternino>To understand.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/423-0
+<v Antonio Cisternino>The to really understand the reflection
+API of any platform.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/423-1
+<v Antonio Cisternino>If you remember yesterday I said I've
+asked you what are the reflection support</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/423-2
+<v Antonio Cisternino>in JavaScript and we conclude that
+basically you have two constructs,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/423-3
+<v Antonio Cisternino>one is for.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/458-0
+<v Antonio Cisternino>Var and in dictionary so that you can
+enumerate the keys of the dictionary and</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/458-1
+<v Antonio Cisternino>in fact it's inspect the structure of of
+of the objects.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/458-2
+<v Antonio Cisternino>And the second one is type of which is
+something that only.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/492-0
+<v Antonio Cisternino>The interpreter can give you that given
+the variable,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/492-1
+<v Antonio Cisternino>it gives you the actual type as a string
+of the the value. In Java,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/492-2
+<v Antonio Cisternino>the reflection API gives you access to
+classes, methods.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/519-0
+<v Antonio Cisternino>Etc. Fields, parameters of the methods,
+types, etc. In.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/519-1
+<v Antonio Cisternino>net you have few other objects,
+so in general.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/559-0
+<v Antonio Cisternino>Especially for compiled language,
+if you have any reflection reflection</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/559-1
+<v Antonio Cisternino>support which is not necessary.
+I mean there are C has no reflection,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/559-2
+<v Antonio Cisternino>C++ has no reflection,
+C++ has some library implementing</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/559-3
+<v Antonio Cisternino>reflection,
+but basically the language does not</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/559-4
+<v Antonio Cisternino>provide reflection.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/585-0
+<v Antonio Cisternino>Raster. No. In general,
+all those programming languages that want</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/585-1
+<v Antonio Cisternino>to reduce the overhead at runtime tend to
+avoid the reflection because reflection.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/611-0
+<v Antonio Cisternino>Comes with the extra cost.
+That's specially if you want to write</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/611-1
+<v Antonio Cisternino>system level code,
+you may not want to pay and the cost is</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/611-2
+<v Antonio Cisternino>not necessarily CPU cycles.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/620-0
+<v Antonio Cisternino>Because the larger cost that any.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/658-0
+<v Antonio Cisternino>Language has to pay is the in memory
+database that you have to build to</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/658-1
+<v Antonio Cisternino>represent all the reflection element,
+all the elements that are required to</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/658-2
+<v Antonio Cisternino>reflect to the user.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/661-0
+<v Antonio Cisternino>Uh, the the the uh.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/666-0
+<v Antonio Cisternino>The program structure, OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/693-0
+<v Antonio Cisternino>We also commented and I didn't spend much
+time on this notion and I think it now</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/693-1
+<v Antonio Cisternino>it's a good idea to bring it up again.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/706-0
+<v Antonio Cisternino>That in general to be able to reflect the
+the execution of the current program.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/718-0
+<v Antonio Cisternino>You need to have the information about
+the current program, OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/719-0
+<v Antonio Cisternino>So.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/721-0
+<v Antonio Cisternino>The.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/727-0
+<v Antonio Cisternino>Let me fetch.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/731-0
+<v Antonio Cisternino>A diagram that I'm sure I.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/733-0
+<v Antonio Cisternino>Mm.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/736-0
+<v Antonio Cisternino>OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/738-0
+<v Antonio Cisternino>So let me spend.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/743-0
+<v Antonio Cisternino>Few second around the.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/749-0
+<v Antonio Cisternino>A art of my life. There we are.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/752-0
+<v Antonio Cisternino>I was looking for these.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/753-0
+<v Antonio Cisternino>O.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/757-0
+<v Antonio Cisternino>In general.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/786-0
+<v Antonio Cisternino>This is the the diagram that stands
+behind any reflection support you can</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/786-1
+<v Antonio Cisternino>imagine. OK,
+so I write my system in the programming</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/786-2
+<v Antonio Cisternino>language.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/789-0
+<v Antonio Cisternino>OK, so um.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/822-0
+<v Antonio Cisternino>If I transform my programming,
+my programmer,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/822-1
+<v Antonio Cisternino>I want to perceive the the transformation
+as if it happens at the programming</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/822-2
+<v Antonio Cisternino>language level.
+OK if I inspect my programmer.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/846-0
+<v Antonio Cisternino>I wanted to talk about the types and
+things that I wrote in my code.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/846-1
+<v Antonio Cisternino>I don't want to predicate on something
+else, OK?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/885-0
+<v Antonio Cisternino>But in fact,
+in environments such as Java or.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/885-1
+<v Antonio Cisternino>net in general in compiled languages,
+as you can see,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/885-2
+<v Antonio Cisternino>I keep mentioning Java and.
+net because at the end of the day we have</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/885-3
+<v Antonio Cisternino>either C, Rust, etcetera,
+so system level languages.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/921-0
+<v Antonio Cisternino>Or system with the runtime such as JVM
+and CLR and then the rest is some</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/921-1
+<v Antonio Cisternino>self-contained architecture with the
+interpreter and just in time compiler,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/921-2
+<v Antonio Cisternino>but basically Python Go.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/954-0
+<v Antonio Cisternino>All these languages tend to come with
+their own runtime. So but in any case,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/954-1
+<v Antonio Cisternino>if there is a level which is the level of
+abstraction of my language and then I</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/954-2
+<v Antonio Cisternino>have the target level which is.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/985-0
+<v Antonio Cisternino>Not equivalent. OK,
+so at runtime the intermediate language</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/985-1
+<v Antonio Cisternino>that will be executed by the virtual
+machine is different than microgramming</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/985-2
+<v Antonio Cisternino>language. Then I need to provide.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1007-0
+<v Antonio Cisternino>To programmer, to programmers,
+the illusion of accessing the source code</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1007-1
+<v Antonio Cisternino>of the program,
+even though actually that source code</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1007-2
+<v Antonio Cisternino>does not exist anymore.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1043-0
+<v Antonio Cisternino>And what made popular reflection with
+Java?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1043-1
+<v Antonio Cisternino>Because reflection was available in small
+talk, it was available in Lisp,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1043-2
+<v Antonio Cisternino>it was available in many, many places.
+We commented that Lisp introduces quasi</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1043-3
+<v Antonio Cisternino>quotation and quotation, etc.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1083-0
+<v Antonio Cisternino>So what made popular in Java was the fact
+that Java was the first compiling,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1083-1
+<v Antonio Cisternino>I think the first compiled language that
+were able to provide a reflection API</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1083-2
+<v Antonio Cisternino>even though it was compiled and it was a
+brilliant idea.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1102-0
+<v Antonio Cisternino>Was you know what? Uh,
+in Java everything is a class at runtime.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1102-1
+<v Antonio Cisternino>So uh,
+in the Java virtual machine there is the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1102-2
+<v Antonio Cisternino>notion of the class, so the class is not.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1135-0
+<v Antonio Cisternino>Eliminated at compile time as it happens
+in C and therefore there is a subset of</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1135-1
+<v Antonio Cisternino>the objects that defines a particular
+program of the source language and.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1167-0
+<v Antonio Cisternino>Of the intermediate language that are
+basically equivalent. OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1167-1
+<v Antonio Cisternino>and so I can give the impression to the
+programmer that when it explore the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1167-2
+<v Antonio Cisternino>program through the reflection API, it's.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1202-0
+<v Antonio Cisternino>Exploring its source code rather than the
+compiled version. OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1202-1
+<v Antonio Cisternino>so the choice of having a bytecode with
+that retains classes, methods,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1202-2
+<v Antonio Cisternino>annotations on top of the.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1229-0
+<v Antonio Cisternino>Methods,
+etcetera had a very profounding impact on</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1229-1
+<v Antonio Cisternino>the design system after,
+mostly because this idea allowed for</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1229-2
+<v Antonio Cisternino>supports that otherwise will not be
+possible.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1267-0
+<v Antonio Cisternino>The ability for a compiled language to
+inspect part of its own structure at</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1267-1
+<v Antonio Cisternino>runtime without having everything.
+Because I mean of course I could I can</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1267-2
+<v Antonio Cisternino>devise a a system that takes that
+includes all this C code.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1306-0
+<v Antonio Cisternino>Inside the binary,
+so I ship the executable plus a section,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1306-1
+<v Antonio Cisternino>the text section of the program with the
+C code and I do basically what the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1306-2
+<v Antonio Cisternino>debugger does in the compiler code.
+I have few pointers that allows me to.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1345-0
+<v Antonio Cisternino>Read the source code and I can show you
+the source code that we all know.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1345-1
+<v Antonio Cisternino>When you compile the system with
+debugging,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1345-2
+<v Antonio Cisternino>you get the stack trace with a lot of
+information.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1345-3
+<v Antonio Cisternino>So I'm not questioning that is of course
+possible, but it's impractical.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1370-0
+<v Antonio Cisternino>One of the reason because people like
+compiling the compiling languages is to</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1370-1
+<v Antonio Cisternino>not distribute the source code.
+So clearly that was another element blah</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1370-2
+<v Antonio Cisternino>blah blah. OK,
+so but it's important to having.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1412-0
+<v Antonio Cisternino>In mind,
+this kind of diagram in this context is</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1412-1
+<v Antonio Cisternino>about cogeneration,
+but this applies also to reflection.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1412-2
+<v Antonio Cisternino>So basically you you'd like to have an
+API which gives the impression to operate</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1412-3
+<v Antonio Cisternino>at the programming language level even
+though.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1442-0
+<v Antonio Cisternino>You are operating at the intermediate
+language level, OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1442-1
+<v Antonio Cisternino>and we already commented that there are
+things that emerge from the binary and</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1442-2
+<v Antonio Cisternino>that you can see through the reflection
+API.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1469-0
+<v Antonio Cisternino>And as the compilers and the languages
+gets more sophisticated and as long as</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1469-1
+<v Antonio Cisternino>the sugaring processes take place.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1497-0
+<v Antonio Cisternino>You will see more and more elements in
+the binary that are not present at the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1497-1
+<v Antonio Cisternino>language level in your program.
+So we commented when in in C#.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1531-0
+<v Antonio Cisternino>We discussed the comprehension,
+the ability to express an enumeration as</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1531-1
+<v Antonio Cisternino>a single function with the yield
+construct. If you remember,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1531-2
+<v Antonio Cisternino>we disassembled the.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1561-0
+<v Antonio Cisternino>The the compiling the version and the
+result was basically a type,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1561-1
+<v Antonio Cisternino>a class type with a a finite state
+machine which represents the the the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1561-2
+<v Antonio Cisternino>computation. OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1597-0
+<v Antonio Cisternino>If you enumerate the types,
+you will find that type that is not</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1597-1
+<v Antonio Cisternino>present in your program. OK,
+so first of all, the most user,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1597-2
+<v Antonio Cisternino>the most sophisticated reflection APIs
+available typically.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1635-0
+<v Antonio Cisternino>Allows you to see the structure of the
+runtime.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1635-1
+<v Antonio Cisternino>The farthest is the runtime from the
+source language,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1635-2
+<v Antonio Cisternino>the more you will feel that you're
+inspecting exploring something which is</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1635-3
+<v Antonio Cisternino>not the the the actual your program. OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1682-0
+<v Antonio Cisternino>So this is something that you always have
+to keep in mind.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1682-1
+<v Antonio Cisternino>So one of the typical question that you
+have to when you start doing reflection</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1682-2
+<v Antonio Cisternino>processes, you have to ask yourself, OK,
+what is the difference between the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1682-3
+<v Antonio Cisternino>runtime representation and and my
+language representation?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1683-0
+<v Antonio Cisternino>Is that?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1718-0
+<v Antonio Cisternino>The farthest,
+they are the less common concept they</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1718-1
+<v Antonio Cisternino>will have to be shared. OK,
+and that's that's a critical aspect when</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1718-2
+<v Antonio Cisternino>we come to reflection and in fact Java
+didn't even have.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1753-0
+<v Antonio Cisternino>In the reflection API,
+the ability of generating code.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1753-1
+<v Antonio Cisternino>So basically the reflection API gave the
+program the ability to inspect classes,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1753-2
+<v Antonio Cisternino>methods, interfaces, annotations.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1803-0
+<v Antonio Cisternino>And types and that's it. No code,
+no way to read the bytecode of the method.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1803-1
+<v Antonio Cisternino>Why?
+Because the bytecode is not equivalent to</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1803-2
+<v Antonio Cisternino>the source code,
+and so they decided to not expose that</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1803-3
+<v Antonio Cisternino>part. Now if you are a compiler writer,
+that's a pity.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1849-0
+<v Antonio Cisternino>Because it's very painful in general to
+generate the physical representation of a</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1849-1
+<v Antonio Cisternino>binary program,
+you have to implement a lot of rules in</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1849-2
+<v Antonio Cisternino>order to have a correct output from your
+compiler.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1849-3
+<v Antonio Cisternino>So everybody was hoping to have a
+reflection API for generating</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1849-4
+<v Antonio Cisternino>intermediate language.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1885-0
+<v Antonio Cisternino>Something that Microsoft did with.
+net and it was one of the difference why</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1885-1
+<v Antonio Cisternino>I'm making this long introduction because
+there are names in the reflection API</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1885-2
+<v Antonio Cisternino>that you may not understand.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1924-0
+<v Antonio Cisternino>Because they are not related to your
+program or to the object that you define,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1924-1
+<v Antonio Cisternino>but to some runtime elements.
+Assembly in in the case of the common</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1924-2
+<v Antonio Cisternino>language runtimes is one of these.
+So in Java you will know that you.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1951-0
+<v Antonio Cisternino>Generate classes,
+so every binary file contains the class</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1951-1
+<v Antonio Cisternino>definition. That's it.
+And this for the good and the bad.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1951-2
+<v Antonio Cisternino>It has nice things and bad things as a
+choice.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1995-0
+<v Antonio Cisternino>One of you you can bundle your classes
+together in a zip file,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1995-1
+<v Antonio Cisternino>but it's just a way to aggregate them,
+to ship them, etcetera.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1995-2
+<v Antonio Cisternino>The jar file at the end of the day is a
+zip file plus a manifest,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/1995-3
+<v Antonio Cisternino>and so it's a it's a zip.
+It's a container.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2027-0
+<v Antonio Cisternino>In.net, for several reason,
+they decided to introduce another level</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2027-1
+<v Antonio Cisternino>which is called the assembly,
+and the assembly is the binary. OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2027-2
+<v Antonio Cisternino>so the output of the compiler is not a
+binary file for each class.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2068-0
+<v Antonio Cisternino>It is DLL or executable,
+but that's just the extension.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2068-1
+<v Antonio Cisternino>The binary format,
+of course it was started on Windows,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2068-2
+<v Antonio Cisternino>implements the raw format is a variant of
+the port.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2102-0
+<v Antonio Cisternino>Executable file,
+which is a standard format,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2102-1
+<v Antonio Cisternino>and internally you have a database with
+all the types defined in that in that</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2102-2
+<v Antonio Cisternino>assembly. OK,
+so the assembly is a group of class or</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2102-3
+<v Antonio Cisternino>types or other elements.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2138-0
+<v Antonio Cisternino>In a binary format with all the metadata
+that you require to be able to parse them</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2138-1
+<v Antonio Cisternino>and to analyze them. OK,
+that those informations are used by a</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2138-2
+<v Antonio Cisternino>runtime to load the types,
+but they are also.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2162-0
+<v Antonio Cisternino>A boundary for your programming.
+So you are familiar with private.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2162-1
+<v Antonio Cisternino>Private means in Java private is when you
+declare something private is accessible</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2162-2
+<v Antonio Cisternino>only in the class.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2165-0
+<v Antonio Cisternino>Uh, protected.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2193-0
+<v Antonio Cisternino>Private plus inherited public everyone in.
+net. You also have internal.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2193-1
+<v Antonio Cisternino>Internal is public but only inside the
+assembly.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2248-0
+<v Antonio Cisternino>So the existence of the assembly is not
+just a file for packaging,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2248-1
+<v Antonio Cisternino>is also a boundary that you feel when
+you're programming so that you don't have</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2248-2
+<v Antonio Cisternino>to assume that something that is used
+publicly by your life.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2284-0
+<v Antonio Cisternino>Library is publicly available to the rest
+of the world. OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2284-1
+<v Antonio Cisternino>so it's basically a compromise to allow a
+sort of public, but only for my code,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2284-2
+<v Antonio Cisternino>not public for everybody else. OK,
+two stupid questions. One,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2284-3
+<v Antonio Cisternino>the same piece that the level of or using
+the?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2332-0
+<v Antonio Cisternino>I mean the assembly is the container of
+the the intermediate language.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2332-1
+<v Antonio Cisternino>So basically the name of assembly is the
+the binary file that contains the code.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2332-2
+<v Antonio Cisternino>It contains the byte code.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2336-0
+<v Antonio Cisternino>Methods that will be just in time
+compiled by the runtime.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2383-0
+<v Antonio Cisternino>Classes types.
+So basically it is similar to the zip</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2383-1
+<v Antonio Cisternino>file to some extent of Java because it
+collects all the classes,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2383-2
+<v Antonio Cisternino>but being defined organically,
+technically you have a full database,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2383-3
+<v Antonio Cisternino>so there is when you.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2421-0
+<v Antonio Cisternino>Open the database,
+you will find the table of the types with</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2421-1
+<v Antonio Cisternino>all the pointers to the file where
+there's some type definition starts,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2421-2
+<v Antonio Cisternino>etcetera, etcetera.
+So it's an application of types</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2421-3
+<v Antonio Cisternino>technically with bytecode inside,
+but at the same time there are,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2421-4
+<v Antonio Cisternino>I don't know.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2438-0
+<v Antonio Cisternino>Crypto signatures are integrated in the
+file, etcetera. So technically it is.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2475-0
+<v Antonio Cisternino>You can't see the classes,
+so in the zip file you get a a bunch of</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2475-1
+<v Antonio Cisternino>files compressed.
+In this case you have a database which</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2475-2
+<v Antonio Cisternino>represents all the types in this, OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2516-0
+<v Antonio Cisternino>And so for instance,
+the byte code is in the same section for</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2516-1
+<v Antonio Cisternino>all the methods of all the classes,
+because you have the table that tells you</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2516-2
+<v Antonio Cisternino>this byte code belongs to this method. OK,
+so that's it. But this is a technicality.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2516-3
+<v Antonio Cisternino>I don't think it's really important,
+but it's.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2553-0
+<v Antonio Cisternino>Really important on the other side the
+the fact that this as a consequence both</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2553-1
+<v Antonio Cisternino>in the semantic of the language because
+now you have a scope of visibility of</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2553-2
+<v Antonio Cisternino>names which is internal and is defined in
+terms of this container.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2601-0
+<v Antonio Cisternino>And in reflection of course you have
+something that for instance is Java is</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2601-1
+<v Antonio Cisternino>not present and not is not even present
+in C# because technically the assembly is</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2601-2
+<v Antonio Cisternino>the output of the compiler.
+So inside the language there is no</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2601-3
+<v Antonio Cisternino>assembly.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2635-0
+<v Antonio Cisternino>I I'm not declaring an assembly,
+it's just the project that I'm compiling</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2635-1
+<v Antonio Cisternino>that will produce the assembly. OK,
+and so the assembly here you perceive it</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2635-2
+<v Antonio Cisternino>only because you're using the reflection
+API,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2635-3
+<v Antonio Cisternino>otherwise you won't be able to perceive
+this.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2636-0
+<v Antonio Cisternino>Now.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2652-0
+<v Antonio Cisternino>One of the things that.
+net made available was the ability to</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2652-1
+<v Antonio Cisternino>build an assembly.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2653-0
+<v Antonio Cisternino>Hmm.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2692-0
+<v Antonio Cisternino>So you you get the API for code
+generation and this was missing in Java.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2692-1
+<v Antonio Cisternino>So in Java the intersection,
+so the ability through the reflection API</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2692-2
+<v Antonio Cisternino>to manipulate the state of the program.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2735-0
+<v Antonio Cisternino>It's limited to invoke methods or set
+fields,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2735-1
+<v Antonio Cisternino>so you can dynamically in Java write a
+program which invoke the methods.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2735-2
+<v Antonio Cisternino>Not because you you you wrote in your
+program invoke this method,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2735-3
+<v Antonio Cisternino>but because you write a program that say
+OK, let's find through the API.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2766-0
+<v Antonio Cisternino>The method invoke and call it and you can
+generate the code at runtime.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2766-1
+<v Antonio Cisternino>So this is possible.
+So you can even write a program that</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2766-2
+<v Antonio Cisternino>invokes methods that were unknown.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2798-0
+<v Antonio Cisternino>Compile time. OK,
+of course you pay some overhead because</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2798-1
+<v Antonio Cisternino>you have to browse the data structure.
+You can you have to assemble several</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2798-2
+<v Antonio Cisternino>things to to obtain this,
+but nevertheless it is possible,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2798-3
+<v Antonio Cisternino>but you can't.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2822-0
+<v Antonio Cisternino>Generate a class in Java through the API.
+Of course there are libraries that build</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2822-1
+<v Antonio Cisternino>this limitation,
+but I mean if I look at the standard</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2822-2
+<v Antonio Cisternino>library, it's not there.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2823-0
+<v Antonio Cisternino>Um.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2855-0
+<v Antonio Cisternino>In.
+net was introduced and this has changed</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2855-1
+<v Antonio Cisternino>quite a lot. So this is the.
+net core open source version of the code</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2855-2
+<v Antonio Cisternino>generation. It was different.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2859-0
+<v Antonio Cisternino>When the framework was Windows only.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2895-0
+<v Antonio Cisternino>There are design choices.
+They try to simplify some assumption so</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2895-1
+<v Antonio Cisternino>that it was easy to port to different
+operating systems. Don't mind,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2895-2
+<v Antonio Cisternino>but basically the idea is there.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2921-0
+<v Antonio Cisternino>So the assembly name is an object which
+represents the name of the assembly wall.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2921-1
+<v Antonio Cisternino>Then I create I create a persisted
+assembly builder.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2939-0
+<v Antonio Cisternino>Which is the class that that we use to
+generate the physical representation,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2939-1
+<v Antonio Cisternino>the bytes of my executable and.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2953-0
+<v Antonio Cisternino>OK,
+and I have an assembly name and then I</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2953-1
+<v Antonio Cisternino>have to provide.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2992-0
+<v Antonio Cisternino>The core assembly.
+The core assembly is basically the system</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2992-1
+<v Antonio Cisternino>library. OK,
+in this way I can output a binary which</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/2992-2
+<v Antonio Cisternino>depends on a different version of the
+runtime.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3027-0
+<v Antonio Cisternino>But these are technicality.
+But it's nice because I mean,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3027-1
+<v Antonio Cisternino>I want to target the very same runtime
+I'm using, so I don't really care. OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3027-2
+<v Antonio Cisternino>so I say OK, I use the reflection API.
+I've show you, I've shown you.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3066-0
+<v Antonio Cisternino>That you can use get type yesterday.
+You can also use the type of which is</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3066-1
+<v Antonio Cisternino>equivalent.
+The difference is that when you do dot</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3066-2
+<v Antonio Cisternino>get type or in Java dot get class you
+have an object and you ask what is the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3066-3
+<v Antonio Cisternino>class of this object.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3077-0
+<v Antonio Cisternino>In this case I have the type name,
+the type name object and I wanna the.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3124-0
+<v Antonio Cisternino>Instance of the reflection which
+represents the the object class, right?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3124-1
+<v Antonio Cisternino>And then I know that one of the fields of
+of of the type definition is the assembly</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3124-2
+<v Antonio Cisternino>where it is defined.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3144-0
+<v Antonio Cisternino>And so I use it to say, OK,
+I want to create an assembly builder with</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3144-1
+<v Antonio Cisternino>this name and with the same runtime of
+the class object. OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3186-0
+<v Antonio Cisternino>There are thousands of discussion about
+what is the right way,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3186-1
+<v Antonio Cisternino>should I expose the argument, should I,
+should I not, etcetera.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3186-2
+<v Antonio Cisternino>So sometimes you may find verbose and you
+may ask what why there is no.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3209-0
+<v Antonio Cisternino>Overloaded that this code automatically
+and there are multiple answers to that.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3209-1
+<v Antonio Cisternino>OK,
+so I mean I'm not going to go there now.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3243-0
+<v Antonio Cisternino>This assembly builder internally.
+So the assembly builder is something that</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3243-1
+<v Antonio Cisternino>is capable of creating a builder.
+They're an assembly,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3243-2
+<v Antonio Cisternino>the assembly internally as a notion,
+which in this case is.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3287-0
+<v Antonio Cisternino>Only for computation purpose.
+So I mean it's only physical</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3287-1
+<v Antonio Cisternino>representation.
+It has no counterpart in terms of the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3287-2
+<v Antonio Cisternino>semantics, which is it is defined module.
+So technically the assembly contains</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3287-3
+<v Antonio Cisternino>modules which contains types.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3314-0
+<v Antonio Cisternino>But the module is a very old concept that
+has basically no consequences.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3314-1
+<v Antonio Cisternino>So I mean I'm mentioning just because I'm
+defining a dynamic module and so now you</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3314-2
+<v Antonio Cisternino>know.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3356-0
+<v Antonio Cisternino>Let's go to more interesting use of the
+reflection API.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3356-1
+<v Antonio Cisternino>So from the module builder,
+because the assembly contains modules,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3356-2
+<v Antonio Cisternino>the modules contains types.
+So from the module builder I say define</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3356-3
+<v Antonio Cisternino>type.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3364-0
+<v Antonio Cisternino>Which is like if I'm writing class
+manually in my C# file.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3371-0
+<v Antonio Cisternino>I provide the name of the class.
+That's easy.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3375-0
+<v Antonio Cisternino>And I provide.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3404-0
+<v Antonio Cisternino>The types attribute OK because the type
+is not necessary class.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3404-1
+<v Antonio Cisternino>There are it may be a structure in
+document, a value type,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3404-2
+<v Antonio Cisternino>something that has.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3434-0
+<v Antonio Cisternino>This is not a reference type.
+It's not created in the heap.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3434-1
+<v Antonio Cisternino>It's created as a value like integers. OK,
+dotnet allows for creating also</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3434-2
+<v Antonio Cisternino>structures that have the value semantics
+and other reference.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3457-0
+<v Antonio Cisternino>Yeah, it's possible.
+There are delegates and a few other</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3457-1
+<v Antonio Cisternino>things that will at some point we will
+discuss when we will talk about runtimes,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3457-2
+<v Antonio Cisternino>so.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3467-0
+<v Antonio Cisternino>In this case I say OK,
+I label the type as a class public.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3473-0
+<v Antonio Cisternino>So by class WS may.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3496-0
+<v Antonio Cisternino>And as you can see,
+we are generating binary,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3496-1
+<v Antonio Cisternino>but the constituent is the same as in the
+source file public class WS name.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3498-0
+<v Antonio Cisternino>OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3527-0
+<v Antonio Cisternino>Then now that I have the type builder,
+it's like a matriusk.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3527-1
+<v Antonio Cisternino>So assembly module type methods. OK,
+everything is contained in in what is</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3527-2
+<v Antonio Cisternino>basically a tree.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3557-0
+<v Antonio Cisternino>Of course we know that the same as in
+Java in.net, there is the main method,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3557-1
+<v Antonio Cisternino>the static, which is the entry point.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3562-0
+<v Antonio Cisternino>So I define the method main.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3564-0
+<v Antonio Cisternino>We've uh uh.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3575-0
+<v Antonio Cisternino>Some attributes.
+So in this case I have a lot of.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3586-0
+<v Antonio Cisternino>Enumerations.
+In this case I have the method attribute</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3586-1
+<v Antonio Cisternino>enumeration.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3627-0
+<v Antonio Cisternino>And so this is public and static.
+So as you can see the reflection API is a</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3627-1
+<v Antonio Cisternino>huge database with all the the
+represented the binary,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3627-2
+<v Antonio Cisternino>the value representation of all the
+traits which characterize your code.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3640-0
+<v Antonio Cisternino>Then of course this is a method,
+so it must provide a return type void.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3644-0
+<v Antonio Cisternino>Public static void main.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3647-0
+<v Antonio Cisternino>Uh, and then?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3683-0
+<v Antonio Cisternino>You need the parameters,
+so new type new type.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3683-1
+<v Antonio Cisternino>This is a syntax to create an array of
+types because the arguments of a of a</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3683-2
+<v Antonio Cisternino>method can be expressed as a as an array.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3715-0
+<v Antonio Cisternino>And in this case we have only one member
+which is type of array of streaming.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3715-1
+<v Antonio Cisternino>So because the main method that other
+than argument and array of stream so that</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3715-2
+<v Antonio Cisternino>we are are so that we are used to see OK
+so as you can see.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3739-0
+<v Antonio Cisternino>We are literally manipulating the the
+type structure to create a new type</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3739-1
+<v Antonio Cisternino>without having to do with things thanks
+to the reflection API.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3755-0
+<v Antonio Cisternino>Notice that in this part,
+apart from the module,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3755-1
+<v Antonio Cisternino>that honestly is an old thing.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3778-0
+<v Antonio Cisternino>The the the type definition,
+the method definition,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3778-1
+<v Antonio Cisternino>even the assembly definition can be
+perceived by the programmer at the C#</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3778-2
+<v Antonio Cisternino>level.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3807-0
+<v Antonio Cisternino>So yes, I it's verbose,
+but at the end of the day I basically</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3807-1
+<v Antonio Cisternino>wrote another syntax for writing public
+class WS mine, open brace, public static.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3811-0
+<v Antonio Cisternino>Void main.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3812-0
+<v Antonio Cisternino>Now.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3829-0
+<v Antonio Cisternino>We part from the source code because I
+create an intermediate language generator</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3829-1
+<v Antonio Cisternino>and that was.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3848-0
+<v Antonio Cisternino>This is where we part ways with the the
+language, because I'm not emitting C#,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3848-1
+<v Antonio Cisternino>I'm emitting the.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3850-0
+<v Antonio Cisternino>DIA generator.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3853-0
+<v Antonio Cisternino>OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3896-0
+<v Antonio Cisternino>This program is a white space program is
+a class of my compiler,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3896-1
+<v Antonio Cisternino>so we're not in the reflection space.
+I parse using my parser, the program,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3896-2
+<v Antonio Cisternino>I create a compiler.
+Now at the compiler I said OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3896-3
+<v Antonio Cisternino>can you generate?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3919-0
+<v Antonio Cisternino>The method because the program will be
+generated in the main method of my output.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3919-1
+<v Antonio Cisternino>So the output would be a single class WS
+main plus a main method that is.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3954-0
+<v Antonio Cisternino>That host body will contain the
+equivalentin.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3954-1
+<v Antonio Cisternino>net of the of the whitespace program that
+I'm compiling and so I pass the IR</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3954-2
+<v Antonio Cisternino>generator.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3962-0
+<v Antonio Cisternino>So let me go to the definition of
+compiler.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3964-0
+<v Antonio Cisternino>And again.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3995-0
+<v Antonio Cisternino>We keep going in the in this sort of
+taking the tree structure of the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/3995-1
+<v Antonio Cisternino>definition of the type and we keep going
+in that way. So in my.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4000-0
+<v Antonio Cisternino>Program.
+I need few local variables I need.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4044-0
+<v Antonio Cisternino>A stack because if you remember I did
+mention,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4044-1
+<v Antonio Cisternino>but I mean it was just a mention the
+whitespace stack because whitespace is</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4044-2
+<v Antonio Cisternino>stack oriented machine.
+The semantics of the stack is not</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4044-3
+<v Antonio Cisternino>equivalent to the stack.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4070-0
+<v Antonio Cisternino>Of the intermediate language.
+So I had to introduce especially a new</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4070-1
+<v Antonio Cisternino>stack.
+I can't really use the virtual machine</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4070-2
+<v Antonio Cisternino>stack directly, so basically I say OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4082-0
+<v Antonio Cisternino>I need the the BRIL generator.
+I want to declare a local.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4109-0
+<v Antonio Cisternino>Of type stack.
+So this is like variable S stack S is the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4109-1
+<v Antonio Cisternino>the equivalent of C#. OK,
+so this is like stack S.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4135-0
+<v Antonio Cisternino>That's the declaration. OK.
+And then I need a couple of helpers of</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4135-1
+<v Antonio Cisternino>type object. So this is sorry.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4168-0
+<v Antonio Cisternino>This is like object block one and sorry
+and this is like object block 2.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4168-1
+<v Antonio Cisternino>OK so as you can see through the API I'm
+basically generating every bit.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4183-0
+<v Antonio Cisternino>As if I was writing the code and even at
+the declaration level,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4183-1
+<v Antonio Cisternino>basically I'm on par with C#.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4226-0
+<v Antonio Cisternino>Then here I use the reflection API.
+So here I'm not generating,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4226-1
+<v Antonio Cisternino>I'm reading and I go to the type stack.
+So through type of a stack I get the an</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4226-2
+<v Antonio Cisternino>object which represent the stack class.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4243-0
+<v Antonio Cisternino>And I say,
+can you give me the reflection object</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4243-1
+<v Antonio Cisternino>which represents the method push with
+this signature?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4259-0
+<v Antonio Cisternino>Which is push single argument with object
+and I have a method info object.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4268-0
+<v Antonio Cisternino>Which represents the metal push of the
+class stack.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4290-0
+<v Antonio Cisternino>OK,
+I do the same for the pop and for the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4290-1
+<v Antonio Cisternino>peak,
+which are the three operations that are</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4290-2
+<v Antonio Cisternino>used by my implementation.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4291-0
+<v Antonio Cisternino>No.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4335-0
+<v Antonio Cisternino>I take all the instructions,
+so I already passed it. I did everything.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4335-1
+<v Antonio Cisternino>I only have to emit and the emission
+typically is the emit a number of</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4335-2
+<v Antonio Cisternino>operation into the target language.
+This is typical of any compiler, so.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4374-0
+<v Antonio Cisternino>So if I have to emit the push of the
+white space, then I emit what? OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4374-1
+<v Antonio Cisternino>now we part from the language.
+You see the difference.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4374-2
+<v Antonio Cisternino>Until here it was basically OK,
+different syntax.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4386-0
+<v Antonio Cisternino>But I understand what's going on.
+When you reach this place, you say, OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4386-1
+<v Antonio Cisternino>what? What is load lock?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4418-0
+<v Antonio Cisternino>Because here there is no direct C#
+counterpart for this instruction.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4418-1
+<v Antonio Cisternino>That is a virtual machine instruction is
+a lower level concept and C# compiler</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4418-2
+<v Antonio Cisternino>basically.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4446-0
+<v Antonio Cisternino>Converts your code into this set.
+It is a sort of assembly,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4446-1
+<v Antonio Cisternino>so this load lock loads on the open stack
+a local variable,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4446-2
+<v Antonio Cisternino>so I'm allocating on top of the operand
+stack.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4451-0
+<v Antonio Cisternino>The reference to the stack local variable.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4458-0
+<v Antonio Cisternino>Then I I load onto the operating stack.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4464-0
+<v Antonio Cisternino>An integer, a constant.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4469-0
+<v Antonio Cisternino>Which is the result of this.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4507-0
+<v Antonio Cisternino>Then I invoke the box operation because
+it has to become an object.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4507-1
+<v Antonio Cisternino>So this is the equivalent of box that
+Andrea mentioned on Rust,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4507-2
+<v Antonio Cisternino>but this happens at the runtime type at
+runtime.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4510-0
+<v Antonio Cisternino>Because I mean invoking.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4543-0
+<v Antonio Cisternino>The push method and the push method
+requires an object,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4543-1
+<v Antonio Cisternino>but I want to push an integer,
+so I need to box the integer inside an</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4543-2
+<v Antonio Cisternino>object, push the object. OK,
+this is the idea.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4569-0
+<v Antonio Cisternino>Notice here the only thing that I provide
+to the box operation is the type of the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4569-1
+<v Antonio Cisternino>box which is integer. Why? Because so.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4571-0
+<v Antonio Cisternino>Let's say.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4573-0
+<v Antonio Cisternino>Do you open on stack?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4580-0
+<v Antonio Cisternino>Here, let's say it's empty.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4584-0
+<v Antonio Cisternino>Uh, after this the open stack.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4591-0
+<v Antonio Cisternino>Contains the stack reference, OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4594-0
+<v Antonio Cisternino>After this.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4602-0
+<v Antonio Cisternino>There is this fix me because actually the.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4650-0
+<v Antonio Cisternino>White space allows to to use arbitrary
+precision integers by specifying as many</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4650-1
+<v Antonio Cisternino>bits as you want,
+but I assuming that I'm using only 32</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4650-2
+<v Antonio Cisternino>bits. OK,
+so that's I'm not fully implementing the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4650-3
+<v Antonio Cisternino>specification of the language, but the.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4653-0
+<v Antonio Cisternino>For uh, so the up stack here.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4659-0
+<v Antonio Cisternino>Uh, we contain. Oh, good.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4691-0
+<v Antonio Cisternino>Thanks AI stack ref and an integer. OK,
+because on top of the stack I first push</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4691-1
+<v Antonio Cisternino>the stack reference,
+then I pushed an integer which is the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4691-2
+<v Antonio Cisternino>value I want to push in in the stack now.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4693-0
+<v Antonio Cisternino>You're.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4697-0
+<v Antonio Cisternino>Yes, Sir.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4732-0
+<v Antonio Cisternino>Oh, that's nice. Yeah,
+part is the comments and understands what</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4732-1
+<v Antonio Cisternino>I'm doing in the comments.
+That's interesting.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4732-2
+<v Antonio Cisternino>The open stack now contains because the
+box what it does.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4739-0
+<v Antonio Cisternino>It pop.
+It expects on top of the stack an integer.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4739-1
+<v Antonio Cisternino>It's there.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4752-0
+<v Antonio Cisternino>So it pops the value.
+It creates the object using that value.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4791-0
+<v Antonio Cisternino>The equivalent of the integer plus
+instance in Java and pushes on the stack</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4791-1
+<v Antonio Cisternino>the reference to this new object.
+So basically now I have the reference to</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4791-2
+<v Antonio Cisternino>an object which contains the integer.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4796-0
+<v Antonio Cisternino>That's the the the core of the box
+operation.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4800-0
+<v Antonio Cisternino>And then?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4803-0
+<v Antonio Cisternino>I emit a virtual call.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4830-0
+<v Antonio Cisternino>OK,
+so now I'm calling the method which</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4830-1
+<v Antonio Cisternino>method push M.
+So this is the definition of the method</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4830-2
+<v Antonio Cisternino>through the reflection API.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4863-0
+<v Antonio Cisternino>And that's it,
+because the arguments will be taken from</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4863-1
+<v Antonio Cisternino>the stack of operands and which are the
+arguments.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4863-2
+<v Antonio Cisternino>The 1st is the argument and the 2nd is
+the this pointer because push M is a.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4893-0
+<v Antonio Cisternino>Instance method of a class,
+so you need this reference and so the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4893-1
+<v Antonio Cisternino>stack reference is the actual object
+stack object on which I want to invoke</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4893-2
+<v Antonio Cisternino>the push method.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4916-0
+<v Antonio Cisternino>And the object is the argument of the the
+push method. OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4916-1
+<v Antonio Cisternino>so this happens in general with the
+bytecode and.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4951-0
+<v Antonio Cisternino>Basically,
+the operation is always the same.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4951-1
+<v Antonio Cisternino>You push arguments,
+you push this argument,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4951-2
+<v Antonio Cisternino>then to all the arguments, then covert,
+you unload and the result will be after</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4951-3
+<v Antonio Cisternino>this the OP stack.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4956-0
+<v Antonio Cisternino>See. Oops. Oh, yes, good AI.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4993-0
+<v Antonio Cisternino>I'm impressed about actually because
+basically the AI understood what I was</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4993-1
+<v Antonio Cisternino>doing here and understood that after this
+call the stack will be empty because you</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/4993-2
+<v Antonio Cisternino>pop the argument, you pop this,
+you invoke the method.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5012-0
+<v Antonio Cisternino>And since it's a void method because it
+has side effects,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5012-1
+<v Antonio Cisternino>nothing will be pushed again as a result.
+So the stack is empty.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5058-0
+<v Antonio Cisternino>OK, so this is what's going on.
+So when we first inspected this code,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5058-1
+<v Antonio Cisternino>we said OK barely,
+we got this which emits code,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5058-2
+<v Antonio Cisternino>emits code using the reflection API and
+as you can see this is a typical code you</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5058-3
+<v Antonio Cisternino>end up writing.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5085-0
+<v Antonio Cisternino>When you use reflection,
+either you browse the type system by get</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5085-1
+<v Antonio Cisternino>type, get method, get property, get field,
+whatever it is.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5085-2
+<v Antonio Cisternino>So you can browse the structure of your
+program or.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5098-0
+<v Antonio Cisternino>You can generate by using the very same
+model which is generating a tree.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5120-0
+<v Antonio Cisternino>And then the library is responsible for
+when I finish this process.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5120-1
+<v Antonio Cisternino>Let me undo all this.
+Now it's not really helpful.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5125-0
+<v Antonio Cisternino>OK, um, once I finished.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5128-0
+<v Antonio Cisternino>What is the main?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5131-0
+<v Antonio Cisternino>There we are.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5169-0
+<v Antonio Cisternino>I go to the type builder and say OK can
+you create the type?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5169-1
+<v Antonio Cisternino>So I'm basically baking all the byte code
+and say OK the meta definition is done.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5169-2
+<v Antonio Cisternino>Now I want to create the type and.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5172-0
+<v Antonio Cisternino>And then I generate uh.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5200-0
+<v Antonio Cisternino>The metadata and then I use a class that
+I received from the reflection API that</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5200-1
+<v Antonio Cisternino>actually generate all the the binary
+itself, so.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5229-0
+<v Antonio Cisternino>I create the PE builder.
+PE stands for portable executable,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5229-1
+<v Antonio Cisternino>which is the the physical representation
+of the binary file.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5239-0
+<v Antonio Cisternino>And I add the the metadata,
+I add the the the stream of.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5266-0
+<v Antonio Cisternino>Internet Internet language and then I
+create a BLOB builder which is a binary</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5266-1
+<v Antonio Cisternino>large object builder and then at last I
+serialize.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5279-0
+<v Antonio Cisternino>Inside the the thing and I write all the
+content to a particular file, OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5322-0
+<v Antonio Cisternino>The orig notice that the original API,
+it was like assembly build the right. OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5322-1
+<v Antonio Cisternino>so all these lines that you see were not
+present because the original reflection</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5322-2
+<v Antonio Cisternino>API.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5360-0
+<v Antonio Cisternino>Assuming you you create an assembly,
+you can write it to the file which may be</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5360-1
+<v Antonio Cisternino>a reasonable assumption.
+But then when you want to do more</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5360-2
+<v Antonio Cisternino>sophisticated thing that that would be
+complicated.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5360-3
+<v Antonio Cisternino>So they basically unpack it all the
+processing to all these.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5402-0
+<v Antonio Cisternino>Classes.
+So you have several places where you can</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5402-1
+<v Antonio Cisternino>do extra things that were impossible
+before. OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5402-2
+<v Antonio Cisternino>so when you comply against some
+complicated API, in general,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5402-3
+<v Antonio Cisternino>this is not because there is some civic
+behind the API which asks for more work</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5402-4
+<v Antonio Cisternino>from you.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5432-0
+<v Antonio Cisternino>But it's just the need to have enough
+control for specific use cases,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5432-1
+<v Antonio Cisternino>and it's fairly natural to witness APIs
+that start easy and gets complicated and</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5432-2
+<v Antonio Cisternino>and and so on. OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5435-0
+<v Antonio Cisternino>OK, so.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5436-0
+<v Antonio Cisternino>We.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5440-0
+<v Antonio Cisternino>Are are left with.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5443-0
+<v Antonio Cisternino>1.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5491-0
+<v Antonio Cisternino>Final but really important example of
+meta programming. OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5491-1
+<v Antonio Cisternino>so so far we said OK,
+meta programming can be performed by</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5491-2
+<v Antonio Cisternino>generating the string of my program.
+If I am in an interpreted world,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5491-3
+<v Antonio Cisternino>I can evolve the string. That's it.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5534-0
+<v Antonio Cisternino>OK, and that's possible.
+And of course if I eval then that string</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5534-1
+<v Antonio Cisternino>of code will have access to the
+environment of my program and so I can</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5534-2
+<v Antonio Cisternino>insert preference to my my variables and
+this is.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5566-0
+<v Antonio Cisternino>The most basic form of meta programming
+advantage is very flexible,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5566-1
+<v Antonio Cisternino>disadvantage syntax error and
+inconsistent code is very likely to</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5566-2
+<v Antonio Cisternino>happen. There are also security concern.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5572-0
+<v Antonio Cisternino>Which I am overlooking,
+but security is important.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5573-0
+<v Antonio Cisternino>Uh.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5578-0
+<v Antonio Cisternino>How many of you have a?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5584-0
+<v Antonio Cisternino>I heard about SQL injection attack.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5589-0
+<v Antonio Cisternino>Yeah, I knew it. What it is?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5614-0
+<v Antonio Cisternino>So basically you say if I assume that the
+programmer that will generate the the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5614-1
+<v Antonio Cisternino>code to the database.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5635-0
+<v Antonio Cisternino>Is a programmer that writes a code such
+as var. I know bar is the parameter.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5657-0
+<v Antonio Cisternino>Coming from the web,
+OK and then you say OK S equal select the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5657-1
+<v Antonio Cisternino>no. The typical thing is S from P.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5690-0
+<v Antonio Cisternino>Where F is equal bar.
+This is a typical code that the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5690-1
+<v Antonio Cisternino>programmer can write.
+That's nice because if I I'm lucky enough</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5690-2
+<v Antonio Cisternino>to find this,
+which is very likely all the filters.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5717-0
+<v Antonio Cisternino>Are typically written this way.
+Then I if I'm a good hacker and can say</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5717-1
+<v Antonio Cisternino>OK, far is, I don't know, she's the Nino,
+which is the argument.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5748-0
+<v Antonio Cisternino>That will be attached to to the to the no.
+So sorry,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5748-1
+<v Antonio Cisternino>let's let's use that because otherwise
+it's different.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5748-2
+<v Antonio Cisternino>Let me use 2025 which is the year of the
+filter and then I can add the insert into.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5758-0
+<v Antonio Cisternino>TAB values and blah blah OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5786-0
+<v Antonio Cisternino>So basically an attacker may exploit the
+fact that you are string training things</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5786-1
+<v Antonio Cisternino>to insert extra code in your program that
+will be evaluated in this case by your</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5786-2
+<v Antonio Cisternino>database.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5810-0
+<v Antonio Cisternino>And this is the core of a SQL injection.
+By the way,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5810-1
+<v Antonio Cisternino>these days everybody's talking about
+prompt injection because many,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5810-2
+<v Antonio Cisternino>many programs are using AI and so.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5847-0
+<v Antonio Cisternino>You can say, OK,
+let's assume that this will be passive to</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5847-1
+<v Antonio Cisternino>a model.
+So let me insert some instruction,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5847-2
+<v Antonio Cisternino>unwanted instruction in the model by
+typing in extra extra things. OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5847-3
+<v Antonio Cisternino>so this is another effect of.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5874-0
+<v Antonio Cisternino>Manipulating code as a string,
+you may also be prone to this kind of</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5874-1
+<v Antonio Cisternino>attack.
+So because there is no type checking,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5874-2
+<v Antonio Cisternino>there's no way to to know that that
+string is not just the number you were</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5874-3
+<v Antonio Cisternino>you're waiting for.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5875-0
+<v Antonio Cisternino>Next.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5899-0
+<v Antonio Cisternino>Right,
+so we said this is for string</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5899-1
+<v Antonio Cisternino>manipulation. Then we said OK Lisp.
+Since in Lisp everything is a list.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5951-0
+<v Antonio Cisternino>And lots of parentheses.
+Then Lisp introduces this idea that I can</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5951-1
+<v Antonio Cisternino>quote the list,
+and in that case the list will not be</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5951-2
+<v Antonio Cisternino>evaluated by the interpreter,
+but you can pass it around and eventually</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5951-3
+<v Antonio Cisternino>evaluate advantage.
+At least you're sure that the list.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/5958-0
+<v Antonio Cisternino>The S expression of the lisp is
+syntactically correct. OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6007-0
+<v Antonio Cisternino>Now we said OK we we took F sharp as an
+example in F sharp quotation which allow</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6007-1
+<v Antonio Cisternino>quotation and quasi quotation syntax.
+In this case I can even type check</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6007-2
+<v Antonio Cisternino>because the F sharp compiler knows about
+types.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6035-0
+<v Antonio Cisternino>And if you try to generate code which
+violate the type system,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6035-1
+<v Antonio Cisternino>you will get an error even if you are
+quoting the code. OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6035-2
+<v Antonio Cisternino>and so all these are basically
+restrictions.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6074-0
+<v Antonio Cisternino>Of the code generation to get some
+properties. So string maximum flexibility,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6074-1
+<v Antonio Cisternino>maximum risk.
+The more complicated these the quotation</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6074-2
+<v Antonio Cisternino>support,
+the more the less flexibility you will</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6074-3
+<v Antonio Cisternino>get, the more.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6108-0
+<v Antonio Cisternino>Safety you will receive. OK,
+quotation is a general purpose mechanism</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6108-1
+<v Antonio Cisternino>that allows you to quote general code.
+That's not the only option. Oh,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6108-2
+<v Antonio Cisternino>by the way, and we said in this example.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6113-0
+<v Antonio Cisternino>That basically the compiler the sugars.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6148-0
+<v Antonio Cisternino>The quotation into a data structure which
+represents the the quotation that later</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6148-1
+<v Antonio Cisternino>you can browse to compile or interpret as
+we we see with this our custom eval</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6148-2
+<v Antonio Cisternino>implementation.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6163-0
+<v Antonio Cisternino>Before the end of the class,
+please remind me that I have to show you</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6163-1
+<v Antonio Cisternino>one thing.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6178-0
+<v Antonio Cisternino>I forgot to do it at the beginning.
+So now last but not least as they say.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6187-0
+<v Antonio Cisternino>Let's go back to eligiate source code.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6226-0
+<v Antonio Cisternino>Elisa is full of interesting programming
+patterns. When I developed it,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6226-1
+<v Antonio Cisternino>I I used a lot of these things.
+Let me go into the controllers.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6226-2
+<v Antonio Cisternino>Let me go into the API.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6231-0
+<v Antonio Cisternino>And let me let's welcome the.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6232-0
+<v Antonio Cisternino>Link.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6241-0
+<v Antonio Cisternino>No, no, I'm looking for. There we are.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6267-0
+<v Antonio Cisternino>To the for a link that I briefly
+mentioned yesterday,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6267-1
+<v Antonio Cisternino>but now it's time to spend a little bit
+more time in understanding what really is</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6267-2
+<v Antonio Cisternino>this. OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6297-0
+<v Antonio Cisternino>So link language integrated query is a
+way to provide inside the programming</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6297-1
+<v Antonio Cisternino>language a syntax which has no semantics.
+Clearly it has the semantics.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6330-0
+<v Antonio Cisternino>I mean because if the semantics will be
+provided by some external provider,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6330-1
+<v Antonio Cisternino>but since I said that I want to select
+something,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6330-2
+<v Antonio Cisternino>I expect that this will select something.
+OK, so.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6358-0
+<v Antonio Cisternino>The language is there's not mandate that
+we implement the semantics,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6358-1
+<v Antonio Cisternino>but clearly you are expecting from the
+provider that some semantics will be</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6358-2
+<v Antonio Cisternino>satisfied.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6396-0
+<v Antonio Cisternino>But technically that's not. OK,
+so the language.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6396-1
+<v Antonio Cisternino>So now we we went back to the compiler to
+the language definition.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6396-2
+<v Antonio Cisternino>Basically these sugars we learned that
+this the sugaring is much more common</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6396-3
+<v Antonio Cisternino>than you may have taught before.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6420-0
+<v Antonio Cisternino>Before this course,
+the sugars to another source code OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6420-1
+<v Antonio Cisternino>but basically allows me to express SQL
+like syntax access,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6420-2
+<v Antonio Cisternino>so the current access to a collection OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6449-0
+<v Antonio Cisternino>They did something reasonable because
+honestly see the the sequel was really</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6449-1
+<v Antonio Cisternino>bad inside because you say select water
+from but when you say well select water.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6490-0
+<v Antonio Cisternino>You don't know yet from where and until
+the query is not fully defined,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6490-1
+<v Antonio Cisternino>you will typically be unable to to
+completion because there's not no,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6490-2
+<v Antonio Cisternino>there's not known the source code.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6523-0
+<v Antonio Cisternino>And so you have to wait. In fact,
+many SQL query writer select,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6523-1
+<v Antonio Cisternino>start from and then go back and
+substitute the start with the name of the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6523-2
+<v Antonio Cisternino>field so you get the type checking. OK,
+so that's.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6544-0
+<v Antonio Cisternino>Bad design error in the in the in the in
+the sequel.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6544-1
+<v Antonio Cisternino>So they tried to to speak a little bit
+the the approach and say OK from see in</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6544-2
+<v Antonio Cisternino>this collection.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6581-0
+<v Antonio Cisternino>OK,
+from C in this collection where the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6581-1
+<v Antonio Cisternino>election of K is equal to the ID selector
+C So this in in will be combined to</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6581-2
+<v Antonio Cisternino>select C from a politician commission
+where.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6584-0
+<v Antonio Cisternino>K is equal to ID.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6616-0
+<v Antonio Cisternino>Basically the same thing. OK,
+the interesting thing about this string</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6616-1
+<v Antonio Cisternino>is that it's just the request to the
+compiler to produce a data structure</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6616-2
+<v Antonio Cisternino>which implements a standard interface.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6625-0
+<v Antonio Cisternino>And by itself is unable to do anything.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6646-0
+<v Antonio Cisternino>Now let's ask a map how this link
+expression will be the sugar red the.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6652-0
+<v Antonio Cisternino>Got it in C#.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6666-0
+<v Antonio Cisternino>So while we hope to get a reasonable
+effort from the AI.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6668-0
+<v Antonio Cisternino>OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6672-0
+<v Antonio Cisternino>I hate these stuff.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6674-0
+<v Antonio Cisternino>English.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6689-0
+<v Antonio Cisternino>American way of excelling. You're good.
+Time to time is too much, nevertheless.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6697-0
+<v Antonio Cisternino>Find little sugary form is varquery.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6714-0
+<v Antonio Cisternino>Under score context dot polling station
+Commission which is basically the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6714-1
+<v Antonio Cisternino>collection dot where.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6716-0
+<v Antonio Cisternino>Lambda.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6722-0
+<v Antonio Cisternino>dot select Lambda.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6763-0
+<v Antonio Cisternino>OK, so as you can see under the hood,
+the functional aspects keep popping up</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6763-1
+<v Antonio Cisternino>even in AC sharp programming language
+where that didn't start as a function</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6763-2
+<v Antonio Cisternino>with functional elements.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6767-0
+<v Antonio Cisternino>They were in use it like in the in the.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6779-0
+<v Antonio Cisternino>OK. Oh, by the way,
+for those of you that are curious.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6783-0
+<v Antonio Cisternino>Where and select the.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6800-0
+<v Antonio Cisternino>So where, which is clearly a method,
+technically it's not a method of the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6800-1
+<v Antonio Cisternino>class pollination Commission.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6803-0
+<v Antonio Cisternino>Awesome.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6816-0
+<v Antonio Cisternino>They have our, um,
+metals that are attached.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6841-0
+<v Antonio Cisternino>By the programming name.
+So they are called extensions methods in</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6841-1
+<v Antonio Cisternino>C#.
+So basically you can define a static</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6841-2
+<v Antonio Cisternino>method somewhere else. Sorry,
+Giuseppe the.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6874-0
+<v Antonio Cisternino>Ask GPT in between. OK,
+so this square is basically a static</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6874-1
+<v Antonio Cisternino>method defined in a library and it is
+described as an extension method.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6874-2
+<v Antonio Cisternino>So basically.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6887-0
+<v Antonio Cisternino>The language gives you the impression
+that you can invoke this word method on</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6887-1
+<v Antonio Cisternino>on a.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6931-0
+<v Antonio Cisternino>Objects of some kind as if it was a
+method of that class. OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6931-1
+<v Antonio Cisternino>so you can add the methods to existing
+classes, even compile classes.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6931-2
+<v Antonio Cisternino>Technically you don't have access to the
+private members nor the protected members.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6961-0
+<v Antonio Cisternino>OK,
+so if you like using a a starting method</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6961-1
+<v Antonio Cisternino>that takes as the first argument at this
+point. So it's just syntactic sugar again.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6961-2
+<v Antonio Cisternino>OK, so this attached method implements.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6981-0
+<v Antonio Cisternino>The where Peter and and applies to all
+the collections so you can use the the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6981-1
+<v Antonio Cisternino>links in that set.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6994-0
+<v Antonio Cisternino>Even not on database,
+but just on ordinary collection in memory.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/6994-1
+<v Antonio Cisternino>OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7005-0
+<v Antonio Cisternino>As long as you have the ability to give a
+a meaning to these singers.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7007-0
+<v Antonio Cisternino>In general.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7009-0
+<v Antonio Cisternino>Um.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7011-0
+<v Antonio Cisternino>These.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7065-0
+<v Antonio Cisternino>You can get the the expression.
+So the structure which represents the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7065-1
+<v Antonio Cisternino>query then will be passed to a driver
+that says please can you combine this</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7065-2
+<v Antonio Cisternino>into SQL?
+So if you are implementing the Postgres</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7065-3
+<v Antonio Cisternino>driver, it's available.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7103-0
+<v Antonio Cisternino>You will get the SQL,
+the Post SQL version of the query.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7103-1
+<v Antonio Cisternino>If you use the Oracle provided,
+you will get Oracle PLSQL if you have so</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7103-2
+<v Antonio Cisternino>typical driving model. OK,
+so the compiler basically the sugars that</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7103-3
+<v Antonio Cisternino>syntax.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7105-0
+<v Antonio Cisternino>Into a data structure.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7140-0
+<v Antonio Cisternino>And this data structure will be browsed
+to provide a different syntax depending</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7140-1
+<v Antonio Cisternino>on this object here,
+which is the collection that you want to</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7140-2
+<v Antonio Cisternino>browse OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7153-0
+<v Antonio Cisternino>And this allows for extensible model for
+a declarative syntax inside the language.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7157-0
+<v Antonio Cisternino>Who expressed that?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7161-0
+<v Antonio Cisternino>Queries in a.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7200-0
+<v Antonio Cisternino>In a flexible way and so also this is a
+form of meta programming because</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7200-1
+<v Antonio Cisternino>technically you are producing a data
+structure that at runtime you want to</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7200-2
+<v Antonio Cisternino>expect and you want to convert into a
+collection.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7210-0
+<v Antonio Cisternino>Technically the result the the type
+return by this is.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7214-0
+<v Antonio Cisternino>And I quitable.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7217-0
+<v Antonio Cisternino>OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7223-0
+<v Antonio Cisternino>So that is not.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7242-0
+<v Antonio Cisternino>It is an object which represents a source
+that can be prepared for retrieving data</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7242-1
+<v Antonio Cisternino>of some type.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7245-0
+<v Antonio Cisternino>OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7250-0
+<v Antonio Cisternino>Before I forget and then.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7268-0
+<v Antonio Cisternino>We start with the final part.
+Remember yesterday when I told you beware,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7268-1
+<v Antonio Cisternino>we run into.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7270-0
+<v Antonio Cisternino>An hallucination.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7309-0
+<v Antonio Cisternino>It was this example, let X equal 10,
+put it is X + 5 and the output supposed</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7309-1
+<v Antonio Cisternino>by the A I was a data structure which
+included the let X.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7343-0
+<v Antonio Cisternino>And I told you yesterday,
+this is an hallucination. OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7343-1
+<v Antonio Cisternino>I didn't think, honestly,
+that it would have been interesting.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7343-2
+<v Antonio Cisternino>So I did it yesterday evening.
+I didn't think that it would have been a</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7343-3
+<v Antonio Cisternino>nice idea to actually run the code.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7346-0
+<v Antonio Cisternino>Let's do it.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7356-0
+<v Antonio Cisternino>All right. OK, so the output is.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7357-0
+<v Antonio Cisternino>Uh.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7399-0
+<v Antonio Cisternino>Quote quoted is of type quotation
+expression of integer.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7399-1
+<v Antonio Cisternino>So this means this is a quotation of an
+expression and the return is an integer</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7399-2
+<v Antonio Cisternino>value.
+This is the inferred type by the F sharp.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7404-0
+<v Antonio Cisternino>It is called op addition.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7405-0
+<v Antonio Cisternino>And.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7448-0
+<v Antonio Cisternino>There is get the value of the property
+called X. OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7448-1
+<v Antonio Cisternino>so as you can see it's very different
+than the output of the AI.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7448-2
+<v Antonio Cisternino>I didn't look for this,
+but this is a good example of</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7448-3
+<v Antonio Cisternino>hallucination and.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7503-0
+<v Antonio Cisternino>The reason?
+Because you have to pay really attention</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7503-1
+<v Antonio Cisternino>to the output of the A I,
+because it seems so natural that even I</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7503-2
+<v Antonio Cisternino>almost got treated by the A I.
+But then I said, oh,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7503-3
+<v Antonio Cisternino>that's impossible because a quoted value
+can't include something that is outside.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7533-0
+<v Antonio Cisternino>Side of the court.
+So this is not possible. OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7533-1
+<v Antonio Cisternino>and that was the reason because beware,
+this is not right. But as you can see,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7533-2
+<v Antonio Cisternino>most of the time the AI is right, so it's.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7560-0
+<v Antonio Cisternino>Difficult to pay always attention.
+You tend to trust something that most of</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7560-1
+<v Antonio Cisternino>the time is right,
+but you can get huge errors in in in the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7560-2
+<v Antonio Cisternino>output and this is the example so.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7569-0
+<v Antonio Cisternino>OK.
+I thought that that would have been</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7569-1
+<v Antonio Cisternino>interesting. All right.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7572-0
+<v Antonio Cisternino>First of all.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7578-0
+<v Antonio Cisternino>Any questions about this?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7591-0
+<v Antonio Cisternino>Or cons.
+Did you ever use the the Reflection API</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7591-1
+<v Antonio Cisternino>in your program, Sir?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7593-0
+<v Antonio Cisternino>Example.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7595-0
+<v Antonio Cisternino>We.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7627-0
+<v Antonio Cisternino>TypeScript is different but link,
+yes link is is is similar.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7627-1
+<v Antonio Cisternino>As you see many many features of the
+language tend to be copied from one to</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7627-2
+<v Antonio Cisternino>the other.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7660-0
+<v Antonio Cisternino>And we're basically creating a bit
+language by merging all the languages</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7660-1
+<v Antonio Cisternino>together and that's it. Nevertheless,
+I hope you appreciate how delicate it is</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7660-2
+<v Antonio Cisternino>the balance between what?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7682-0
+<v Antonio Cisternino>Is compilable from what is not.
+I mean in Java we said OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7682-1
+<v Antonio Cisternino>in the binary we retain types. Nice idea,
+not methods, OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7718-0
+<v Antonio Cisternino>In Python you need all the source code at
+runtime.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7718-1
+<v Antonio Cisternino>Basically there are example of Python
+compilers,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7718-2
+<v Antonio Cisternino>but no Python compiler is fully
+compatible, compatible with C Python,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7718-3
+<v Antonio Cisternino>so there are only approximations.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7768-0
+<v Antonio Cisternino>I don't Python, for instance, is a.
+net implementation implementation of</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7768-1
+<v Antonio Cisternino>Python, which compiles for.net.
+But there are parts of the language that</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7768-2
+<v Antonio Cisternino>are not covered. Why?
+Because if you want to implement the eval,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7768-3
+<v Antonio Cisternino>you need to interpret. That's it. OK,
+so it's true.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7807-0
+<v Antonio Cisternino>That languages keep copying on each other,
+but the choices of what you allow in the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7807-1
+<v Antonio Cisternino>language or not will determine also the
+performance. So yesterday,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7807-2
+<v Antonio Cisternino>from a different angle with respect of
+the tradition, I briefly.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7835-0
+<v Antonio Cisternino>Introduce to you the the idea that in
+principle the arguments of a function</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7835-1
+<v Antonio Cisternino>invocation may be evaluated before the
+invocation or only when the the parameter</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7835-2
+<v Antonio Cisternino>is used.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7877-0
+<v Antonio Cisternino>Which is lazy,
+eager versus lazy evaluation.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7877-1
+<v Antonio Cisternino>And we said OK with quotation,
+we can recover the lazy evaluation but</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7877-2
+<v Antonio Cisternino>under control,
+not by using inside the language.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7877-3
+<v Antonio Cisternino>This makes it more efficient,
+the language, the language implementation.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7915-0
+<v Antonio Cisternino>Drastically. OK, right. So final,
+I think very important example.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7915-1
+<v Antonio Cisternino>Now I'm resorting to the AI and I'm
+hoping that this thing will work.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7915-2
+<v Antonio Cisternino>Can you generate a very simple example?</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7930-0
+<v Antonio Cisternino>Of AC program that browses a type class
+and generate the.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7938-0
+<v Antonio Cisternino>Um, HTTP wrapper for the methods.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7942-0
+<v Antonio Cisternino>Uh, with the.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7947-0
+<v Antonio Cisternino>A custom attribute.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7955-0
+<v Antonio Cisternino>ITTP get and Http://post.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7956-0
+<v Antonio Cisternino>Pizza.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7961-0
+<v Antonio Cisternino>Be smaller for the class.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7974-0
+<v Antonio Cisternino>I hope with this will not get thing for
+implementation.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7977-0
+<v Antonio Cisternino>OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7983-0
+<v Antonio Cisternino>There we are.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7986-0
+<v Antonio Cisternino>Hmm.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/7988-0
+<v Antonio Cisternino>Looks like.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8005-0
+<v Antonio Cisternino>OK,
+let's see and commend the output being</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8005-1
+<v Antonio Cisternino>suspicious for hallucinations.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8011-0
+<v Antonio Cisternino>So what I asked is.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8031-0
+<v Antonio Cisternino>Basically what many libraries,
+including Python, do.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8031-1
+<v Antonio Cisternino>I want to expose my type as a Web API.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8070-0
+<v Antonio Cisternino>I mean,
+Web API became popular mostly because of</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8070-1
+<v Antonio Cisternino>reflection,
+because it became suddenly easy to write</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8070-2
+<v Antonio Cisternino>your program and have some meta program
+that given an input,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8070-3
+<v Antonio Cisternino>the class API generates a web interface
+to its methods, OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8108-0
+<v Antonio Cisternino>So probably class my APII want to be able
+to label.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8108-1
+<v Antonio Cisternino>We already commented custom attributes
+are a way to add extra annotation to the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8108-2
+<v Antonio Cisternino>metadata of the object in in this case
+the method.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8108-3
+<v Antonio Cisternino>So a lobe will be annotated with cat.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8109-0
+<v Antonio Cisternino>The.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8153-0
+<v Antonio Cisternino>Hello returns a string,
+so hello world that will be returned and</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8153-1
+<v Antonio Cisternino>and and the attributes are actually this
+is correct are classes which you know is</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8153-2
+<v Antonio Cisternino>from a system attribute which is a so all
+the custom attributes in the.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8163-0
+<v Antonio Cisternino>Otherwise you can't use it as a notation.
+OK, so that's a rule, so.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8167-0
+<v Antonio Cisternino>Now I get the type.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8169-0
+<v Antonio Cisternino>Oh.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8179-0
+<v Antonio Cisternino>Of the the type representation of my APA
+class.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8184-0
+<v Antonio Cisternino>And and say OK for each.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8190-0
+<v Antonio Cisternino>Method M in methods.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8220-0
+<v Antonio Cisternino>For all the public instance methods.
+So basically we are filtering all the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8220-1
+<v Antonio Cisternino>methods of my API type looking only for
+public and instance.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8225-0
+<v Antonio Cisternino>If I have some.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8270-0
+<v Antonio Cisternino>HTTP get attribute. OK,
+this is how you can check and dot get</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8270-1
+<v Antonio Cisternino>customer attribute type of the attribute
+and if you get something different than</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8270-2
+<v Antonio Cisternino>null the this particular method has been
+annotated with HTTP get.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8276-0
+<v Antonio Cisternino>Then you write line get name of the
+method.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8323-0
+<v Antonio Cisternino>And and and the call of the method,
+because I mean this is an example that</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8323-1
+<v Antonio Cisternino>it's not including the web part, OK,
+but honestly that that is not a problem.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8323-2
+<v Antonio Cisternino>If you develop the web server,
+it's fairly easy. You receive and you can.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8334-0
+<v Antonio Cisternino>Either generate or invoke depending on
+the approach. Same applies to the poster.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8335-0
+<v Antonio Cisternino>Um.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8339-0
+<v Antonio Cisternino>This join here.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8342-0
+<v Antonio Cisternino>That's interesting.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8378-0
+<v Antonio Cisternino>OK,
+you see how the AI can over fit or so</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8378-1
+<v Antonio Cisternino>actually OK, it's an example,
+but in general you don't know the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8378-2
+<v Antonio Cisternino>arguments of a method, so in this case.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8409-0
+<v Antonio Cisternino>The generated code assume that if it's
+labeled the HTTP get,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8409-1
+<v Antonio Cisternino>then the matter will have no arguments.
+If it's supposed,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8409-2
+<v Antonio Cisternino>it will get all the arguments,
+which makes no sense honestly.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8436-0
+<v Antonio Cisternino>But nevertheless and then you output post
+etcetera.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8436-1
+<v Antonio Cisternino>So when you execute you will get get a
+low will call my API dot a low and post.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8468-0
+<v Antonio Cisternino>Equal string message will be calling my
+API dot X. OK,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8468-1
+<v Antonio Cisternino>why this example is important?
+Because and honestly I I will say thanks</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8468-2
+<v Antonio Cisternino>to AI.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8491-0
+<v Antonio Cisternino>It's a very interesting example because
+it's the core of any Web API wrapper</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8491-1
+<v Antonio Cisternino>generator. Of course,
+if you go and explore.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8535-0
+<v Antonio Cisternino>All the web servers are now open source,
+so it's fairly easy.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8535-1
+<v Antonio Cisternino>You can inspect and check how it works,
+but basically the core will be always</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8535-2
+<v Antonio Cisternino>this. You get the type,
+you browse the methods,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8535-3
+<v Antonio Cisternino>you filter the methods depending on
+interesting attributes that may be.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8559-0
+<v Antonio Cisternino>Maybe public and instance or custom and
+then you decide what to do given that</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8559-1
+<v Antonio Cisternino>type. OK, that's the typical code.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8560-0
+<v Antonio Cisternino>That uh.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8583-0
+<v Antonio Cisternino>You will write or you will make generator
+for browsing and making useful things</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8583-1
+<v Antonio Cisternino>from the methods. This is what.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8596-0
+<v Antonio Cisternino>The code that I began with yesterday,
+yesterday is doing.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8631-0
+<v Antonio Cisternino>In the program, so the builder,
+the host builder which is used in the asp.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8631-1
+<v Antonio Cisternino>net framework.
+There's this basically I give to the web</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8631-2
+<v Antonio Cisternino>builder the type startup.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8637-0
+<v Antonio Cisternino>The web builder will perform.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8669-0
+<v Antonio Cisternino>Type of startup.
+We'll get the type and we'll start</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8669-1
+<v Antonio Cisternino>browsing and say is there create service
+method? Then let's invoke it.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8669-2
+<v Antonio Cisternino>Is there this other method? Let's do it.
+OK, so at the end of the day.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8704-0
+<v Antonio Cisternino>That is the core of the code that you end
+up writing when you wanna meet a</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8704-1
+<v Antonio Cisternino>programmer in the in the modern world.
+Of course this is the.net version.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8704-2
+<v Antonio Cisternino>The Java version is very similar.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8751-0
+<v Antonio Cisternino>If you have no reflection,
+you can't do it.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8751-1
+<v Antonio Cisternino>And in fact I don't think that there are
+so many web framework in Rust because web</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8751-2
+<v Antonio Cisternino>is basically string processing and and so
+it's a nightmare to do it in C or on or</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8751-3
+<v Antonio Cisternino>in in Rust or similar languages.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8780-0
+<v Antonio Cisternino>But in Python you have similar patterns.
+Of course in in Python you have other</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8780-1
+<v Antonio Cisternino>option to label methods and function,
+but basically the idea is always the same.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8780-2
+<v Antonio Cisternino>You basically write a program that takes
+as input.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8810-0
+<v Antonio Cisternino>Another program part of itself,
+technically explore and do something.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8810-1
+<v Antonio Cisternino>One of the most popular application is
+the web, of course,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8810-2
+<v Antonio Cisternino>because we keep going in writing code
+from and to the web.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8849-0
+<v Antonio Cisternino>Oh, I forget to to let me mention.
+Of course,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8849-1
+<v Antonio Cisternino>since I'm doing this code here and I'm
+exploring the Web API,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8849-2
+<v Antonio Cisternino>I can even go farther. So for instance,
+if I decided to say OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8875-0
+<v Antonio Cisternino>This the method echo takes as input an
+integer instead of a string.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8875-1
+<v Antonio Cisternino>Then when you receive the web request to
+the echo and you don't get an integer.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8900-0
+<v Antonio Cisternino>You can.
+You will generate the code that tries to</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8900-1
+<v Antonio Cisternino>convert the argument to an integer,
+and if you fail, you raise an exception.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8900-2
+<v Antonio Cisternino>No SQL injection.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8928-0
+<v Antonio Cisternino>OK, so the web has become really popular,
+but that's not the only application.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8928-1
+<v Antonio Cisternino>There are a lot of programs that are
+developed like this in database.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8945-0
+<v Antonio Cisternino>Because if you think the database defines
+a data structure and then you have to.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8998-0
+<v Antonio Cisternino>Obtain a a similar data structure in your
+programming language.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8998-1
+<v Antonio Cisternino>So typically you use a lot of reflection
+to generate wrappers for your database so</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8998-2
+<v Antonio Cisternino>that you can keep on writing my my table
+dot field name equal and then the insert</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/8998-3
+<v Antonio Cisternino>or the update statement would.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9043-0
+<v Antonio Cisternino>Be generated for you by the same
+machinery and so on.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9043-1
+<v Antonio Cisternino>So in general the database wrapper are
+known as ORM,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9043-2
+<v Antonio Cisternino>Object Relational Mapping and which
+basically are meta programming here which</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9043-3
+<v Antonio Cisternino>states as input the definition.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9087-0
+<v Antonio Cisternino>From the database,
+generate a bunch of classes and given the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9087-1
+<v Antonio Cisternino>classes,
+they explore the data model and generate</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9087-2
+<v Antonio Cisternino>SQL statement to automate things for you.
+Link has been probably the most</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9087-3
+<v Antonio Cisternino>successful implementation of this concept,
+but it's not the only one. There are many.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9113-0
+<v Antonio Cisternino>Others in many other languages and if you
+look for your system,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9113-1
+<v Antonio Cisternino>if you need to access the database,
+you will look for another library that</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9113-2
+<v Antonio Cisternino>will perform this kind of things and.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9116-0
+<v Antonio Cisternino>To pay the.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9151-0
+<v Antonio Cisternino>Likely for Andrea next class.
+At some point we started writing this</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9151-1
+<v Antonio Cisternino>code. I already said this yesterday,
+but let me stress it again.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9151-2
+<v Antonio Cisternino>We started writing this code for one.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9180-0
+<v Antonio Cisternino>Essential reason types inheritance,
+polymorphism, parametric polymorphism,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9180-1
+<v Antonio Cisternino>inheritance, polymorphism,
+all the algebra to reuse go through types.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9214-0
+<v Antonio Cisternino>Software of few limitation.
+One of these is that the type system</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9214-1
+<v Antonio Cisternino>should be coherent and this is easy in
+the same project.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9214-2
+<v Antonio Cisternino>It's basically enforceable in multiple
+projects and and so the ability to hook.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9237-0
+<v Antonio Cisternino>In in types with less restriction than
+type operators allow to write more</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9237-1
+<v Antonio Cisternino>flexible runtimes.
+OK and so eventually these.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9276-0
+<v Antonio Cisternino>So passive classes and interfaces as the
+main way to do things,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9276-1
+<v Antonio Cisternino>which does not mean that they are useless
+is that this goes on top and in fact as</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9276-2
+<v Antonio Cisternino>you seen is I define a class with.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9320-0
+<v Antonio Cisternino>Methods, et cetera, et cetera,
+because class are still useful.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9320-1
+<v Antonio Cisternino>But basically through reflection you can
+be more direct in the operation without</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9320-2
+<v Antonio Cisternino>having to cope with the restriction of
+the typing model, which can be.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9320-3
+<v Antonio Cisternino>Of course you pay something, but clearly.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9365-0
+<v Antonio Cisternino>If you are generating HTTP wrappers,
+a TCP connection is done.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9365-1
+<v Antonio Cisternino>An SSL encrypted the channel is
+established.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9365-2
+<v Antonio Cisternino>You encrypt and encrypt things. Of course,
+browsing the types through reflection is</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9365-3
+<v Antonio Cisternino>API is basically neglectable with.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9411-0
+<v Antonio Cisternino>With respect to the rest, OK,
+so in all the situation in which you</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9411-1
+<v Antonio Cisternino>perform so much operations,
+it's not that inefficient to use the</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9411-2
+<v Antonio Cisternino>reflection API, and that's a good point.
+Clearly,</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9411-3
+<v Antonio Cisternino>if you want to do a Monte Carlo system,
+this would be a suicide because basically</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9411-4
+<v Antonio Cisternino>you will slow down significantly your.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9415-0
+<v Antonio Cisternino>In that case, we will not use reflections,
+OK.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9437-0
+<v Antonio Cisternino>Nice. So I think we can stop here.
+Thank you. No, it was the hallucination.</v>
+
+d6ce23af-8459-4da3-a018-07d45177655a/9444-0
+<v Antonio Cisternino>I I was worried to forget about that. OK.
+Thank you.</v>

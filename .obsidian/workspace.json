@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAGISTRALE/MAGISTRALE INFO.md",
+                "file": "MAGISTRALE/ADVANCED PROGRAMMING.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MAGISTRALE INFO"
+              "title": "ADVANCED PROGRAMMING"
             }
           }
         ]
@@ -226,21 +226,22 @@
   },
   "active": "da11e0c78283f36d",
   "lastOpenFiles": [
+    "PDF/ADVANCED PROGRAMMING/25-MonadsInJava_by_MarioFusco.pdf",
+    "PDF/ADVANCED PROGRAMMING/03-Scott-ch2.pdf",
+    "PDF/ADVANCED PROGRAMMING/03-ALSU-ch4.pdf",
+    "PDF/ADVANCED PROGRAMMING/01-GabrielliMartini-ch1.pdf",
+    "PDF/ADVANCED PROGRAMMING/OneDrive_1_15-12-2025/25-MonadsInJava_by_MarioFusco.pdf",
+    "PDF/ADVANCED PROGRAMMING/OneDrive_1_15-12-2025/03-Scott-ch2.pdf",
+    "PDF/ADVANCED PROGRAMMING/OneDrive_1_15-12-2025/03-ALSU-ch4.pdf",
+    "PDF/ADVANCED PROGRAMMING/OneDrive_1_15-12-2025/01-GabrielliMartini-ch1.pdf",
+    "PDF/ADVANCED PROGRAMMING/OneDrive_1_15-12-2025",
+    "PDF/ADVANCED PROGRAMMING/OneDrive_1_15-12-2025.zip",
+    "PDF/ADVANCED PROGRAMMING/Non confermato 124345.crdownload",
+    "MAGISTRALE/MAGISTRALE INFO.md",
     "MAGISTRALE/ADVANCED PROGRAMMING.md",
     "IMMAGINI/Pasted image 20251211213406.png",
-    "Untitled.base",
-    "MAGISTRALE/MAGISTRALE INFO.md",
-    "MAGISTRALE/RECORDS/ADVANCED PROGRAMMING/Lezione del 16_10_2025.vtt",
-    "MAGISTRALE/RECORDS/ADVANCED PROGRAMMING/Non confermato 202261.crdownload",
-    "MAGISTRALE/RECORDS/ADVANCED PROGRAMMING/Lezione del 2_10_2025.vtt",
-    "MAGISTRALE/RECORDS/ADVANCED PROGRAMMING/Non confermato 547475.crdownload",
-    "MAGISTRALE/RECORDS/ADVANCED PROGRAMMING/Lezione del 1_10_2025.vtt",
-    "MAGISTRALE/RECORDS/ADVANCED PROGRAMMING/Non confermato 202197.crdownload",
     "PDF/Esercizio 26_02.md",
     "MAGISTRALE/COMPETITIVE PROGRAMMING.md",
-    "PDF/COMPETITIVE PROGRAMMING/DynamicProgramming.pdf",
-    "PDF/COMPETITIVE PROGRAMMING/Mos 2025.pdf",
-    "PDF/COMPETITIVE PROGRAMMING/Pearls 2025.pdf",
     "3 ANNO/CLOUD COMPUTING.md",
     "MAGISTRALE/SOFTWARE VERIFICATION.md",
     "MAGISTRALE/EXTRA/Lecture Notes ADVANCED PRO/04 - predictive_parsing_whitespace.md",

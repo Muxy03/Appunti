@@ -1,0 +1,3469 @@
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/12-0
+<v Antonio Cisternino>So.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/15-0
+<v Antonio Cisternino>Today will be complicated for me and for
+you too.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/18-0
+<v Antonio Cisternino>In the sense that I want to explore with
+you.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/20-0
+<v Antonio Cisternino>A feature Um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/26-0
+<v Antonio Cisternino>Um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/45-0
+<v Antonio Cisternino>And it relates with the concept that we
+will start today to introduce,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/45-1
+<v Antonio Cisternino>which is meet the program.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/52-0
+<v Antonio Cisternino>And I decided to use F sharp so.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/57-0
+<v Antonio Cisternino>Not because I'm sadic.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/74-0
+<v Antonio Cisternino>But basically because F sharp has been
+quite influential PROGRAMMING language in</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/74-1
+<v Antonio Cisternino>the last decade.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/76-0
+<v Antonio Cisternino>Now.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/117-0
+<v Antonio Cisternino>Start sort of stabilized,
+but for some time it's been a very, very,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/117-1
+<v Antonio Cisternino>very creative language and it started
+with as an ML porting in.net.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/132-0
+<v Antonio Cisternino>To show that it was possible to have
+functional PROGRAMMING languages to run</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/132-1
+<v Antonio Cisternino>on top of a runtime.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/170-0
+<v Antonio Cisternino>Like the.net runtime,
+which is similar to the Java runtime,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/170-1
+<v Antonio Cisternino>it's not the only experiment because also
+the Scala language did the very same</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/170-2
+<v Antonio Cisternino>thing on to the Java platform and JVM so.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/207-0
+<v Antonio Cisternino>Those were the years where there was this
+push to have to have to use a runtime</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/207-1
+<v Antonio Cisternino>that was not the same runtime of the
+language because in the functional</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/207-2
+<v Antonio Cisternino>PROGRAMMING language tradition because
+there are some operations.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/253-0
+<v Antonio Cisternino>That have to be implemented in an
+efficient way.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/253-1
+<v Antonio Cisternino>There are concepts such as lexical
+closure that requires special</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/253-2
+<v Antonio Cisternino>implementation.
+The tradition was that both the compiler</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/253-3
+<v Antonio Cisternino>and the runtime were basically designed
+around the.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/274-0
+<v Antonio Cisternino>Programming language. OK,
+so it was challenging at the end of the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/274-1
+<v Antonio Cisternino>90s,
+the idea of being able to write a first</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/274-2
+<v Antonio Cisternino>class.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/310-0
+<v Antonio Cisternino>High order functional PROGRAMMING
+language that is industrial grade. OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/310-1
+<v Antonio Cisternino>nowadays we'll use it too.
+Many of the functional PROGRAMMING</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/310-2
+<v Antonio Cisternino>concepts have permeated a lot of other
+languages other than the functional</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/310-3
+<v Antonio Cisternino>PROGRAMMING languages.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/352-0
+<v Antonio Cisternino>Not in the full implementation.
+Typically the processes they retained the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/352-1
+<v Antonio Cisternino>typical easy pattern and easy to use and
+nice to have patterns without having to</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/352-2
+<v Antonio Cisternino>go into all the intricacies of.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/389-0
+<v Antonio Cisternino>Yeah.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/397-0
+<v Antonio Cisternino>Language. So for instance,
+C introduces the var so that you can say</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/397-1
+<v Antonio Cisternino>var a equal to and a becomes of type int
+because it receives an integer in the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/397-2
+<v Antonio Cisternino>first assignment,
+which is a form of type inference,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/397-3
+<v Antonio Cisternino>but it is a very simple.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/421-0
+<v Antonio Cisternino>Form of a type inference.
+There is no generalization in the sense</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/421-1
+<v Antonio Cisternino>that we we've seen the last during the
+last class. So in in this context,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/421-2
+<v Antonio Cisternino>F sharp.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/423-0
+<v Antonio Cisternino>Was interesting.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/461-0
+<v Antonio Cisternino>Not just because,
+I mean of the language itself.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/461-1
+<v Antonio Cisternino>It was because in a particular historical
+moment,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/461-2
+<v Antonio Cisternino>now a significant number of experts in
+PROGRAMMING languages were hired by Bill</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/461-3
+<v Antonio Cisternino>Gates in Italy.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/496-0
+<v Antonio Cisternino>It was the end. It was 97.
+Bill Gates was still a CEO of Microsoft</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/496-1
+<v Antonio Cisternino>and started an internal organization that
+still is one of the largest research</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/496-2
+<v Antonio Cisternino>organization in computer science
+worldwide.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/533-0
+<v Antonio Cisternino>Which is Microsoft Research and he
+basically did an academic spin off.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/533-1
+<v Antonio Cisternino>So usually universities do industrial
+spin offs and actually he did an academic</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/533-2
+<v Antonio Cisternino>spin off.
+So he started overpaying a lot of</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/533-3
+<v Antonio Cisternino>brilliant.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/571-0
+<v Antonio Cisternino>Minds and brought them mostly to
+Cambridge,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/571-1
+<v Antonio Cisternino>UK and and there there were there was a
+former student of us, Luca Cadeli.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/602-0
+<v Antonio Cisternino>He was has been a great researcher in
+type theory and many other things.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/602-1
+<v Antonio Cisternino>There was Tony Hoare,
+the inventor of quicksort and many other</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/602-2
+<v Antonio Cisternino>things. There was Simon Peyton Jones,
+the author of Askill.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/643-0
+<v Antonio Cisternino>And many other Russo, Andrew Kennedy,
+Don Seim, etcetera.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/643-1
+<v Antonio Cisternino>So there was a in that particular and it
+was a story of let's say 10 to 15 years</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/643-2
+<v Antonio Cisternino>where that particular lab started to
+create things.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/673-0
+<v Antonio Cisternino>Creating things that influenced all the
+world and then as many time as in many</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/673-1
+<v Antonio Cisternino>cases that moment passed,
+people started moving away and and so now</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/673-2
+<v Antonio Cisternino>basically.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/683-0
+<v Antonio Cisternino>Business as usual and PROGRAMMING
+languages went back to.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/719-0
+<v Antonio Cisternino>Practitioner that don't spend too much
+time in studying the core nature of</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/719-1
+<v Antonio Cisternino>functional or PROGRAMMING language
+teachers. So I mean if I look at.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/765-0
+<v Antonio Cisternino>If you want to see the difference when a
+PROGRAMMING language has been designed by</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/765-1
+<v Antonio Cisternino>experts or by practitioner, practitioner,
+you can find Perl, you can find Python,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/765-2
+<v Antonio Cisternino>and then the typical thing is that the
+practitioner starts.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/813-0
+<v Antonio Cisternino>By implementing the core of the language,
+and you can easily guess that it's easy</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/813-1
+<v Antonio Cisternino>to write an interpreter in the beginning.
+You implement the for loop,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/813-2
+<v Antonio Cisternino>the while loop,
+a few things about variables,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/813-3
+<v Antonio Cisternino>and you got a PROGRAMMING language.
+So it's an exercise you can start your</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/813-4
+<v Antonio Cisternino>own programming.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/862-0
+<v Antonio Cisternino>Language by for fun and you can have it.
+And then you don't know a lot of things</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/862-1
+<v Antonio Cisternino>that we're studying during this course on
+how to represent specific concepts inside</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/862-2
+<v Antonio Cisternino>the language,
+how to properly implement the scoping of</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/862-3
+<v Antonio Cisternino>variables inside the language.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/889-0
+<v Antonio Cisternino>You know you end up writing an
+implementation which dominated Python for</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/889-1
+<v Antonio Cisternino>several years.
+I already mentioned this thing.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/889-2
+<v Antonio Cisternino>The scoping rule of Python was known as
+LGB rule.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/922-0
+<v Antonio Cisternino>A lot of global and yeah,
+I don't remember for what stands for and</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/922-1
+<v Antonio Cisternino>and it wasn't properly a static scope.
+There are examples that show that it was</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/922-2
+<v Antonio Cisternino>almost static scoping,
+but it wasn't fully static scoping.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/951-0
+<v Antonio Cisternino>And and it was just by implementation.
+I mean there was no design and and</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/951-1
+<v Antonio Cisternino>parallel even worse in parallel arguments
+to functions that were passed using a</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/951-2
+<v Antonio Cisternino>global array.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/994-0
+<v Antonio Cisternino>So there was no formal arguments, binding,
+etcetera.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/994-1
+<v Antonio Cisternino>And this is one way in which PROGRAMMING
+languages are developed. Unfortunately,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/994-2
+<v Antonio Cisternino>it looks like that the population of of
+programmers on on this earth tends to</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/994-3
+<v Antonio Cisternino>like these kind of PROGRAMMING languages.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1029-0
+<v Antonio Cisternino>In the 90s there was Visual Basic,
+terrible, but it was super popular.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1029-1
+<v Antonio Cisternino>Then we got Per, super popular,
+now Python.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1029-2
+<v Antonio Cisternino>So apparently maybe it's the fact that
+typically this initiative by programmers.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1078-0
+<v Antonio Cisternino>Tend to be easy to understand in the
+beginning,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1078-1
+<v Antonio Cisternino>so you it's easy to get a traction.
+When you go to more structured languages,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1078-2
+<v Antonio Cisternino>things gets much more complicated and you
+face a barrier to enter.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1078-3
+<v Antonio Cisternino>You feel that to become productive,
+you have to study and so you say, OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1078-4
+<v Antonio Cisternino>let's go for Python.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1090-0
+<v Antonio Cisternino>And you have delusion to be more
+productive on the long run,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1090-1
+<v Antonio Cisternino>then you pay because.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1158-0
+<v Antonio Cisternino>If the problem is complicated,
+there's no way to simplify it by the mean</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1158-1
+<v Antonio Cisternino>of the PROGRAMMING language.
+So at the end of the day,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1158-2
+<v Antonio Cisternino>it's just an illusion.
+But you you've come so far in in your</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1158-3
+<v Antonio Cisternino>PROGRAMMING that now everything is in
+that language.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1158-4
+<v Antonio Cisternino>You will stay that with that language,
+trying to patch that language, OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1158-5
+<v Antonio Cisternino>and this is typically.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1185-0
+<v Antonio Cisternino>A story. On the other hand,
+when you have researchers,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1185-1
+<v Antonio Cisternino>you may get very subtle things and you
+can get very beautiful contracts,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1185-2
+<v Antonio Cisternino>constructs.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1206-0
+<v Antonio Cisternino>That may seem very,
+very difficult to face.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1206-1
+<v Antonio Cisternino>One of these is the concept of monads.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1222-0
+<v Antonio Cisternino>So the monadic calculus,
+at the end of the day, it's, I will say,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1222-1
+<v Antonio Cisternino>rather intuitive.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1255-0
+<v Antonio Cisternino>Only when it's like first order logic.
+First order logic is intuitive to those</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1255-1
+<v Antonio Cisternino>people that have understood the first
+logic to the rest of the world is totally</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1255-2
+<v Antonio Cisternino>not really comprehensible. So.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1256-0
+<v Antonio Cisternino>But.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1302-0
+<v Antonio Cisternino>Let's start.
+So I will keep going with the eye and</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1302-1
+<v Antonio Cisternino>this will be very complicated for me.
+So I apologize in advance because I spend</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1302-2
+<v Antonio Cisternino>my weekend reviewing all the
+computational expression because it's a</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1302-3
+<v Antonio Cisternino>feature which is still complicated to me.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1337-0
+<v Antonio Cisternino>After 20 years and I wrote several books
+on that fact,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1337-1
+<v Antonio Cisternino>so I will do my best to make it as easy
+to understand as possible,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1337-2
+<v Antonio Cisternino>but it's something that I still struggle
+to fully comprehend myself.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1374-0
+<v Antonio Cisternino>So I will try to give you this example of
+a feature of a language which is very</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1374-1
+<v Antonio Cisternino>flexible, very powerful.
+It includes a lot of things of features</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1374-2
+<v Antonio Cisternino>that are super cool, but at the same time.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1405-0
+<v Antonio Cisternino>It's complicated,
+OK and and and it's nice to use.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1405-1
+<v Antonio Cisternino>We got an example with the sequence that
+I showed during the last class,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1405-2
+<v Antonio Cisternino>but now I want to try to explain how.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1437-0
+<v Antonio Cisternino>The de sugaring process plus the
+functional programming language plus</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1437-1
+<v Antonio Cisternino>other things allows you to have a
+programming language that allows you to</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1437-2
+<v Antonio Cisternino>twist and change the semantics of the of
+the.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1463-0
+<v Antonio Cisternino>Language itself without having to write
+your own compiler. OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1463-1
+<v Antonio Cisternino>so this is a typical thing that is in
+functional programming this ambition to</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1463-2
+<v Antonio Cisternino>make.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1508-0
+<v Antonio Cisternino>To to be to avoid to write your own
+parser plus compiler and being able to</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1508-1
+<v Antonio Cisternino>twist the syntax of the language to the
+point in which you can define your own</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1508-2
+<v Antonio Cisternino>sub-language on top of the existing
+language. OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1508-3
+<v Antonio Cisternino>this also as a weakness of the fact that.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1551-0
+<v Antonio Cisternino>That writing a parser is annoying still
+today. OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1551-1
+<v Antonio Cisternino>so the parse part is typically something
+that if you have to,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1551-2
+<v Antonio Cisternino>you will implement it,
+but it's really not nice,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1551-3
+<v Antonio Cisternino>never a nice code, typically complicated,
+difficult to.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1574-0
+<v Antonio Cisternino>Contain difficult to debug, etc.
+So programmers spend a lot of time to</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1574-1
+<v Antonio Cisternino>avoid to write parsers because it's
+annoying code, difficult to deal with.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1575-0
+<v Antonio Cisternino>Uh.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1622-0
+<v Antonio Cisternino>You know XMLXML basically became popular
+because it was a way to not write your</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1622-1
+<v Antonio Cisternino>own parser and and being able to parse a
+data structure using a standard parser</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1622-2
+<v Antonio Cisternino>and and so on.
+So there are a lot of examples.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1622-3
+<v Antonio Cisternino>Jason it was.
+It's another example that has.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1662-0
+<v Antonio Cisternino>Being.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1665-0
+<v Antonio Cisternino>Mainstream,
+and it's basically another way to avoid</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1665-1
+<v Antonio Cisternino>the parsing part. OK,
+because everybody hates to write parses.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1665-2
+<v Antonio Cisternino>If you don't know how to write a parser,
+it's complicated.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1665-3
+<v Antonio Cisternino>If you know how to write a parser,
+you know how to do,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1665-4
+<v Antonio Cisternino>but still it's a pain to do,
+and so you don't like to do it.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1666-0
+<v Antonio Cisternino>Right, so.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1680-0
+<v Antonio Cisternino>Can you show me the definition of bind
+and return in Haskell?</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1682-0
+<v Antonio Cisternino>Um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1683-0
+<v Antonio Cisternino>Um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1687-0
+<v Antonio Cisternino>Manoj had uh.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1694-0
+<v Antonio Cisternino>Been basically, uh, zoom.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1697-0
+<v Antonio Cisternino>I'm interested in the first.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1724-0
+<v Antonio Cisternino>The first definition from Askell and then
+I will move on on to C#.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1724-1
+<v Antonio Cisternino>Basically I think that in this respect in
+Askell it's easy to to read.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1726-0
+<v Antonio Cisternino>So um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1729-0
+<v Antonio Cisternino>First of all.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1737-0
+<v Antonio Cisternino>One for functional functional programming,
+we said that.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1747-0
+<v Antonio Cisternino>Um brings a lot of value in terms of
+concurrent programming.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1784-0
+<v Antonio Cisternino>The immutability of the state has a lot
+of advantages because basically you avoid</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1784-1
+<v Antonio Cisternino>the race conditions.
+It's not the only advantage. I mean,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1784-2
+<v Antonio Cisternino>this is clearly one of the reason because
+functional programming became popular.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1814-0
+<v Antonio Cisternino>In in programming because with parallel
+computers writing parallel code you you</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1814-1
+<v Antonio Cisternino>you get less contention in shared data
+and this brings to.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1847-0
+<v Antonio Cisternino>Less locks and more efficient programming.
+So functional programming brought a lot</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1847-1
+<v Antonio Cisternino>of value because even if you have some
+part of mutable state,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1847-2
+<v Antonio Cisternino>you can restrict the.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1885-0
+<v Antonio Cisternino>The part of the state which is mutable
+and the rest it's not and you can prove</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1885-1
+<v Antonio Cisternino>it it will not be accepted accessed
+statically.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1885-2
+<v Antonio Cisternino>So you can reduce the locking operation
+during the execution of the code and</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1885-3
+<v Antonio Cisternino>that's something that we already said.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1914-0
+<v Antonio Cisternino>In the previous classes,
+but from a mathematical standpoint,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1914-1
+<v Antonio Cisternino>if I want to prove the properties of my
+code, then if you don't have side effects,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1914-2
+<v Antonio Cisternino>it's much easier.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1949-0
+<v Antonio Cisternino>And it's basically impossible, I will say,
+to prove properties of a concurrent</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1949-1
+<v Antonio Cisternino>program program with mutable state. Why?
+Because the concurrency introduce an</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1949-2
+<v Antonio Cisternino>aspect which is non-deterministic.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1997-0
+<v Antonio Cisternino>Because it it depends on the timing on
+the IO operation of your program.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1997-1
+<v Antonio Cisternino>So the way in which threads alternate
+into the CPU and so the timing in the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1997-2
+<v Antonio Cisternino>execution of a program,
+it will likely be different from one</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/1997-3
+<v Antonio Cisternino>execution to the other and so.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2022-0
+<v Antonio Cisternino>So if you have a concurrent program with
+mutable state,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2022-1
+<v Antonio Cisternino>it's basically impossible to determine
+ahead of time the behaviour of this</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2022-2
+<v Antonio Cisternino>program.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2057-0
+<v Antonio Cisternino>OK,
+in fact you can even have some unwanted</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2057-1
+<v Antonio Cisternino>behaviour emerging by the interaction of
+these things when you,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2057-2
+<v Antonio Cisternino>and this is not the course,
+when you study parallel programming,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2057-3
+<v Antonio Cisternino>you learn that.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2098-0
+<v Antonio Cisternino>If the the the the minimum risk,
+which is not the only one,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2098-1
+<v Antonio Cisternino>but the minimum risk you you you will
+take is that if you read the variable and</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2098-2
+<v Antonio Cisternino>then you set the variable without
+synchronizing it, then the risk is the.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2139-0
+<v Antonio Cisternino>A bank account gets corrupted and you may
+think you may become richer or poorer</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2139-1
+<v Antonio Cisternino>more than you you should be because of of
+an error. OK, and so this is one reason.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2139-2
+<v Antonio Cisternino>But the the if you are purely functional,
+this means that.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2162-0
+<v Antonio Cisternino>Basically, you don't have side effects.
+You can try at least to mitigate and</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2162-1
+<v Antonio Cisternino>prove properties about your program,
+even if it's executed in in parallel.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2164-0
+<v Antonio Cisternino>So uh.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2190-0
+<v Antonio Cisternino>But I mean,
+can you give me an example even for an</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2190-1
+<v Antonio Cisternino>ASCALE program of data structure which is
+which has side effects?</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2199-0
+<v Antonio Cisternino>Even in this smallest programmer you can
+write.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2227-0
+<v Antonio Cisternino>So what is a data structure that is
+mutable and for sure you need it even for</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2227-1
+<v Antonio Cisternino>a smallest program,
+even in a functional programming language</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2227-2
+<v Antonio Cisternino>such as Askel.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2228-0
+<v Antonio Cisternino>Please.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2256-0
+<v Antonio Cisternino>List you can write programs without with
+read only lists and so in the list may be</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2256-1
+<v Antonio Cisternino>mutable, but in that that's not there.
+It's a more basic thing that nobody</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2256-2
+<v Antonio Cisternino>thinks about.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2288-0
+<v Antonio Cisternino>Stack or heap? Oh,
+that that that is taken care by the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2288-1
+<v Antonio Cisternino>programming language. So technically,
+of course the programming language</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2288-2
+<v Antonio Cisternino>requires some to be mutable.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2330-0
+<v Antonio Cisternino>Anytime you pass values to a function and
+you bind the the, the, the,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2330-1
+<v Antonio Cisternino>the formal parameter to the actual value,
+you're basically mutating things.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2330-2
+<v Antonio Cisternino>But the point is that that particular
+mutation is local and is only for that</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2330-3
+<v Antonio Cisternino>activation, so I'm not.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2337-0
+<v Antonio Cisternino>Writing, uh, in general.
+Now there is something more.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2343-0
+<v Antonio Cisternino>Think of input output.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2363-0
+<v Antonio Cisternino>Streams or what is the first program that
+you've been told to write the very first</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2363-1
+<v Antonio Cisternino>day? Hello world.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2364-0
+<v Antonio Cisternino>Earth.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2367-0
+<v Antonio Cisternino>Where are you printing?</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2371-0
+<v Antonio Cisternino>And the standard output is the console.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2382-0
+<v Antonio Cisternino>And the console do the console has a a
+state.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2416-0
+<v Antonio Cisternino>Yes,
+I mean that is the buffer of the console.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2416-1
+<v Antonio Cisternino>Can I have interference in the console?
+Oh,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2416-2
+<v Antonio Cisternino>that's easy on Linux if you start two
+programs that outputs.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2448-0
+<v Antonio Cisternino>I don't know prime numbers and you use
+the background operator.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2448-1
+<v Antonio Cisternino>You can have two processes writing on the
+console and you you will get interleaving</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2448-2
+<v Antonio Cisternino>at the console of two programs, so.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2449-0
+<v Antonio Cisternino>Yeah.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2465-0
+<v Antonio Cisternino>That was a pain for functional
+programmers that even the purest</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2465-1
+<v Antonio Cisternino>programmer.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2499-0
+<v Antonio Cisternino>Did depend on the IO which by its nature
+is it has side effect because the the the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2499-1
+<v Antonio Cisternino>stream accumulates the values and the
+console changes the value and technically.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2531-0
+<v Antonio Cisternino>If you execute twice the same function,
+you will get two different results on the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2531-1
+<v Antonio Cisternino>output. OK,
+so that's basically and so at some point</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2531-2
+<v Antonio Cisternino>programmers functional programmers says
+OK.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2552-0
+<v Antonio Cisternino>Can we imagine a way to have a pure
+functional programming language where</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2552-1
+<v Antonio Cisternino>there are no side effects,
+not even the console?</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2572-0
+<v Antonio Cisternino>And and basically the answer was we can
+try to hide or I mean to give a formal</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2572-1
+<v Antonio Cisternino>definition which.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2575-0
+<v Antonio Cisternino>Uh makes.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2576-0
+<v Antonio Cisternino>Uh.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2580-0
+<v Antonio Cisternino>The uh output.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2600-0
+<v Antonio Cisternino>Part of our function and so basically I
+can purely define as a function even the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2600-1
+<v Antonio Cisternino>console.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2634-0
+<v Antonio Cisternino>And and and so the result of this
+thinking, I mean,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2634-1
+<v Antonio Cisternino>I'm trying to shrink a very long story in
+a very small space.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2634-2
+<v Antonio Cisternino>It was this particular structure and
+pattern.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2674-0
+<v Antonio Cisternino>Of programming that is known as a monad.
+In F it's called the computational</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2674-1
+<v Antonio Cisternino>expression,
+and I can tell you because I wrote the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2674-2
+<v Antonio Cisternino>book with the author of the language,
+we decided not to use the monad because</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2674-3
+<v Antonio Cisternino>everybody is scared by the monad term.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2698-0
+<v Antonio Cisternino>It sounds like academic,
+and so apparently computational</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2698-1
+<v Antonio Cisternino>expression were less scary than than on
+it, but basically it's the same thing.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2698-2
+<v Antonio Cisternino>It's made by basically two simple
+operations.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2699-0
+<v Antonio Cisternino>Um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2714-0
+<v Antonio Cisternino>One operation is the return operation
+which given a value.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2721-0
+<v Antonio Cisternino>You can basically create a a monad with
+that value.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2730-0
+<v Antonio Cisternino>And the main operation is the bind.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2748-0
+<v Antonio Cisternino>OK.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2764-0
+<v Antonio Cisternino>And the bind is an interesting function.
+Now you should be able to read the the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2764-1
+<v Antonio Cisternino>syntax, so let's.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2789-0
+<v Antonio Cisternino>I know about the cabining etcetera,
+but let's read.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2789-1
+<v Antonio Cisternino>So if you give me a monad with the which
+contains values of type A, let's say.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2792-0
+<v Antonio Cisternino>And uh.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2808-0
+<v Antonio Cisternino>If you give me a function that given an A,
+it returns me a monod of type B.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2814-0
+<v Antonio Cisternino>Then I return a monad of type B.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2820-0
+<v Antonio Cisternino>Did you hear the crash in your mind?</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2823-0
+<v Antonio Cisternino>So.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2837-0
+<v Antonio Cisternino>When you hear the crash in your mind,
+think of the sequence.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2839-0
+<v Antonio Cisternino>Because.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2846-0
+<v Antonio Cisternino>If I have an integer.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2864-0
+<v Antonio Cisternino>Can I mix integers and sequences? No,
+I need to create a sequencer of an</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2864-1
+<v Antonio Cisternino>integer.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2865-0
+<v Antonio Cisternino>OK.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2909-0
+<v Antonio Cisternino>So the return operation hides this.
+I want to create from possibly a sequence</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2909-1
+<v Antonio Cisternino>of value or a single value the sequence
+itself. OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2909-2
+<v Antonio Cisternino>and so that that is the the the role that
+the return operation.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2940-0
+<v Antonio Cisternino>Place. Personally,
+I think that Returner is not such a good</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2940-1
+<v Antonio Cisternino>name,
+but nevertheless maybe I'm a tool C</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2940-2
+<v Antonio Cisternino>programmer to think of Returner other
+than just returning from function.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2951-0
+<v Antonio Cisternino>And and the the the second part is OK if
+I have a sequence.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2967-0
+<v Antonio Cisternino>And I want to transform all the elements
+of the sequencer.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2967-1
+<v Antonio Cisternino>What they need the sequencer.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2998-0
+<v Antonio Cisternino>And a function that basically transform
+every element of the sequence into</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/2998-1
+<v Antonio Cisternino>another value that may be even a
+different type and so the bind operation.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3030-0
+<v Antonio Cisternino>Basically performs this.
+I I I have values. I have a set of values.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3030-1
+<v Antonio Cisternino>I I unpack each of this value into the
+actual value.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3030-2
+<v Antonio Cisternino>I transform the value and I give back.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3052-0
+<v Antonio Cisternino>Uh, the the the the box of value. OK,
+so the the model, uh,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3052-1
+<v Antonio Cisternino>the modern thinking basically allows you
+to uh create.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3093-0
+<v Antonio Cisternino>Sort of containers around the values and
+then you define the operation in terms of</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3093-1
+<v Antonio Cisternino>the two of these two primitives.
+And so for instance I can have the monad</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3093-2
+<v Antonio Cisternino>console which represents this.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3125-0
+<v Antonio Cisternino>The state of the console and when I
+output something I will get back a new</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3125-1
+<v Antonio Cisternino>console with the current output that has
+been updated.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3125-2
+<v Antonio Cisternino>OK and so in this way I can hide inside
+the the monad.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3135-0
+<v Antonio Cisternino>The input,
+output and the state of the console. OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3135-1
+<v Antonio Cisternino>so this is the route.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3149-0
+<v Antonio Cisternino>And in fact,
+there are some examples that are very</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3149-1
+<v Antonio Cisternino>famous. There is maybe monad.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3151-0
+<v Antonio Cisternino>Uh.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3156-0
+<v Antonio Cisternino>Where you can basically say.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3170-0
+<v Antonio Cisternino>You can but using the main they may be
+modern that you can create the.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3192-0
+<v Antonio Cisternino>Container that allows you to talk about
+values that may be contained or not.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3192-1
+<v Antonio Cisternino>So there is just X or nothing and and
+then.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3206-0
+<v Antonio Cisternino>You create you manipulate values that are
+three more values or nothing.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3213-0
+<v Antonio Cisternino>But let me, uh, skip this. Uh, it was to.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3218-0
+<v Antonio Cisternino>Can you show me?</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3230-0
+<v Antonio Cisternino>The computational expression in F sharp.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3232-0
+<v Antonio Cisternino>Or maybe.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3239-0
+<v Antonio Cisternino>So in F sharp is comments.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3242-0
+<v Antonio Cisternino>No, no.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3253-0
+<v Antonio Cisternino>In F# so now I am asking the to create
+the.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3288-0
+<v Antonio Cisternino>So as you can see,
+the A I knows that rather well all these</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3288-1
+<v Antonio Cisternino>things.
+So you can if you know the things you can,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3288-2
+<v Antonio Cisternino>you can ask and you can play as as long
+as you think you fully understood this</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3288-3
+<v Antonio Cisternino>thing.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3289-0
+<v Antonio Cisternino>Um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3329-0
+<v Antonio Cisternino>I don't know on there how you managed to
+fully understand Mona, but I I had met.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3329-1
+<v Antonio Cisternino>I oh OK oh right. We took I got it. No,
+I mean that.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3367-0
+<v Antonio Cisternino>So there are,
+you know that every subject has a several</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3367-1
+<v Antonio Cisternino>levels of of understanding. OK,
+so it's fairly easy to understand the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3367-2
+<v Antonio Cisternino>sequence and things, the console,
+etcetera. At some point I say, OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3367-3
+<v Antonio Cisternino>let's meet, let's develop my own.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3391-0
+<v Antonio Cisternino>Monad.
+And at that point you hear crash in your</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3391-1
+<v Antonio Cisternino>mind, say, OK,
+I have to go back and stop it.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3391-2
+<v Antonio Cisternino>I I I do actually I I found my my line.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3410-0
+<v Antonio Cisternino>In the distribution monitor that will
+that we will discuss by the end of this</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3410-1
+<v Antonio Cisternino>difficult class. Let's start.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3442-0
+<v Antonio Cisternino>Why did I start with Askle?
+Because Askle basically introduced a</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3442-1
+<v Antonio Cisternino>function and an operator.
+You may have guessed that this is the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3442-2
+<v Antonio Cisternino>definition of an operator and so.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3450-0
+<v Antonio Cisternino>In the application there we are you say
+access.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3488-0
+<v Antonio Cisternino>Stream F and this is the definition. OK,
+so in F sharp things were more</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3488-1
+<v Antonio Cisternino>interesting in many ways,
+so because they introduced the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3488-2
+<v Antonio Cisternino>de-sugaring in the language so.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3507-0
+<v Antonio Cisternino>Uh,
+this idea of the monitor is not just</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3507-1
+<v Antonio Cisternino>built around the an operator and a
+function return in binder, but.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3522-0
+<v Antonio Cisternino>Uh,
+you define a type with several Uh methods.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3522-1
+<v Antonio Cisternino>Of course the first two methods are
+return and bind.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3544-0
+<v Antonio Cisternino>But there are some other methods that
+allows for supporting the programming</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3544-1
+<v Antonio Cisternino>language in creating a new syntax.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3557-0
+<v Antonio Cisternino>So the maybe builder is a type and is is
+is equivalent to the.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3558-0
+<v Antonio Cisternino>Lisa.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3581-0
+<v Antonio Cisternino>Um, but basically here you use the syntax.
+So there is a is a type type in in in F</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3581-1
+<v Antonio Cisternino>sharp is like a class in.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3616-0
+<v Antonio Cisternino>In C# here there is the implicit
+constructor.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3616-1
+<v Antonio Cisternino>So basically you say there is an empty
+constructor. That's it.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3616-2
+<v Antonio Cisternino>Member is the keyword that allows you to
+introduce the name of a.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3643-0
+<v Antonio Cisternino>A method or a field in the class.
+This under score we learn that is I don't</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3643-1
+<v Antonio Cisternino>want to give a name.
+OK and this is because this member is a</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3643-2
+<v Antonio Cisternino>method.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3681-0
+<v Antonio Cisternino>You you may think this under score as the
+this argument. OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3681-1
+<v Antonio Cisternino>so this dot returning it refers to the
+fact that it is you need this this</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3681-2
+<v Antonio Cisternino>element in the language.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3720-0
+<v Antonio Cisternino>And of course this is a function even
+though it's a a method of the class maybe</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3720-1
+<v Antonio Cisternino>builder,
+so it's not using the this reference.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3720-2
+<v Antonio Cisternino>And so you say I don't want to give a
+name to this reference and the function</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3720-3
+<v Antonio Cisternino>return X simply return some X.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3727-0
+<v Antonio Cisternino>Single line. It's complicated bind so the.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3728-0
+<v Antonio Cisternino>Now.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3731-0
+<v Antonio Cisternino>I'm basically have.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3734-0
+<v Antonio Cisternino>Let's go back.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3775-0
+<v Antonio Cisternino>This is the signature of the operation
+bind and it's an abstract concept.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3775-1
+<v Antonio Cisternino>If I have a value,
+a monad of a certain value and you give</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3775-2
+<v Antonio Cisternino>me a function that given the value give
+me.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3778-0
+<v Antonio Cisternino>Back another morning.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3790-0
+<v Antonio Cisternino>Containing a different value,
+then I can apply the binder so.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3806-0
+<v Antonio Cisternino>This is the implementation of the bind
+for this particular monad,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3806-1
+<v Antonio Cisternino>which is the maybe monad.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3815-0
+<v Antonio Cisternino>So we know that the bind should take.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3820-0
+<v Antonio Cisternino>Uh, monadic value.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3834-0
+<v Antonio Cisternino>And the function that should be applied
+to that. OK, so if.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3845-0
+<v Antonio Cisternino>OPT, which is the first argument,
+which if you remember is M of A.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3846-0
+<v Antonio Cisternino>So.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3853-0
+<v Antonio Cisternino>If OPT is like some V.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3865-0
+<v Antonio Cisternino>This is a a more sophisticated form of
+pattern matching.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3906-0
+<v Antonio Cisternino>If you remember,
+with tuples you basically give a names by</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3906-1
+<v Antonio Cisternino>giving the structure during the
+assignment and and and and then you you</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3906-2
+<v Antonio Cisternino>do a match.
+So if the structure has this form,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3906-3
+<v Antonio Cisternino>name the first argument like this,
+the second argument like this.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3930-0
+<v Antonio Cisternino>If it's nested, you can go nest,
+but actually the language supports even a</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3930-1
+<v Antonio Cisternino>a match operation that allows you to do
+more sophisticated things.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3938-0
+<v Antonio Cisternino>So if OPT is like some V, so some.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3940-0
+<v Antonio Cisternino>E.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3968-0
+<v Antonio Cisternino>Is a label. It is defined somewhere.
+It's part of the language. V is a value.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3968-1
+<v Antonio Cisternino>OK,
+so some V sum is a label and V is a value,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3968-2
+<v Antonio Cisternino>so it's a variable.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3971-0
+<v Antonio Cisternino>Value.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3991-0
+<v Antonio Cisternino>Then so if I have some V then apply
+return the result of applying the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3991-1
+<v Antonio Cisternino>function to the V value.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/3997-0
+<v Antonio Cisternino>I have a value. I apply.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4004-0
+<v Antonio Cisternino>I don't have a value I return now.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4034-0
+<v Antonio Cisternino>So in this way I can basically create an
+execution of something that until you</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4034-1
+<v Antonio Cisternino>have some value, you apply the function.
+If you don't have a value, you do nothing.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4066-0
+<v Antonio Cisternino>Let me skip the combine.
+For instance is the column.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4066-1
+<v Antonio Cisternino>It allows you to to say OK if I have a
+monad A and a monad B.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4094-0
+<v Antonio Cisternino>So if A is none, result is none.
+If I have some value then the result is B.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4094-1
+<v Antonio Cisternino>It's a a rule to to have the the sequence
+first A and then B so.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4101-0
+<v Antonio Cisternino>Then you create an instance of this class
+maybe.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4106-0
+<v Antonio Cisternino>OK.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4117-0
+<v Antonio Cisternino>So suppose I have a function that is
+called divide XY.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4144-0
+<v Antonio Cisternino>So we can't divide by zero. So if Y is 0,
+you say none,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4144-1
+<v Antonio Cisternino>no value because it's not allowed.
+Otherwise you say some X / Y.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4146-0
+<v Antonio Cisternino>Easy.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4157-0
+<v Antonio Cisternino>Now I can have a safe computation which
+says maybe.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4167-0
+<v Antonio Cisternino>And now things gets more interesting.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4179-0
+<v Antonio Cisternino>This is the lead bang is like the return
+operation.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4181-0
+<v Antonio Cisternino>We.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4182-0
+<v Antonio Cisternino>Um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4184-0
+<v Antonio Cisternino>Oh.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4187-0
+<v Antonio Cisternino>Uh, sorry, uh.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4191-0
+<v Antonio Cisternino>The sugar to bind, I said that.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4232-0
+<v Antonio Cisternino>So maybe let bang is like bind. OK,
+so basically here you have some sugaring</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4232-1
+<v Antonio Cisternino>that allows us to. I mean,
+let's let's do like this.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4232-2
+<v Antonio Cisternino>I told you it would have been complicated.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4235-0
+<v Antonio Cisternino>So let let me let let's do like this. Uh.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4272-0
+<v Antonio Cisternino>Let's read this code,
+let's overlook the banger,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4272-1
+<v Antonio Cisternino>which has some semantics,
+but more or less. And you say, OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4272-2
+<v Antonio Cisternino>if I read this chunk of code,
+that would be a is the result of dividing</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4272-3
+<v Antonio Cisternino>10 by 2.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4275-0
+<v Antonio Cisternino>B is the result of.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4279-0
+<v Antonio Cisternino>Dividing a by zero.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4323-0
+<v Antonio Cisternino>And I want to return B + 1.
+So this resembles a lot like a standard</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4323-1
+<v Antonio Cisternino>body of a function.
+And when I read this thing,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4323-2
+<v Antonio Cisternino>I can believe I'm living in a world where
+A is a number, B is a number, and B + 1.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4342-0
+<v Antonio Cisternino>One is a number. OK,
+so I have this illusion of of working it,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4342-1
+<v Antonio Cisternino>but we know that divide 10 to return some
+5.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4349-0
+<v Antonio Cisternino>Is that OK? Because uh, divide 10 to.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4377-0
+<v Antonio Cisternino>Execute this two is different than 0,
+so I return sum of 10 / 2 which is 5 SI</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4377-1
+<v Antonio Cisternino>return sum 5.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4378-0
+<v Antonio Cisternino>I.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4409-0
+<v Antonio Cisternino>And this is a feature of ML that allows
+you to have labels in front of values. OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4409-1
+<v Antonio Cisternino>so sum 5 is sum of something and so sum
+is a label that allows you to tag the.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4411-0
+<v Antonio Cisternino>The value.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4420-0
+<v Antonio Cisternino>And so this is some five, so it's not 5.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4425-0
+<v Antonio Cisternino>Find tells me that.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4428-0
+<v Antonio Cisternino>Even.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4430-0
+<v Antonio Cisternino>The.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4432-0
+<v Antonio Cisternino>Monadic.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4448-0
+<v Antonio Cisternino>MAN function which is the rest the the
+the code will be the rest of the.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4450-0
+<v Antonio Cisternino>Of the function.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4457-0
+<v Antonio Cisternino>I give you the another monad in return.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4469-0
+<v Antonio Cisternino>So let me can you the sugar safer
+computation so.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4475-0
+<v Antonio Cisternino>Let us come help from home.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4479-0
+<v Antonio Cisternino>Yes.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4480-0
+<v Antonio Cisternino>Off.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4483-0
+<v Antonio Cisternino>O.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4494-0
+<v Antonio Cisternino>The F compiler basically transform.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4511-0
+<v Antonio Cisternino>This syntax that looks like an ordinary
+functional imperative syntax.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4518-0
+<v Antonio Cisternino>Into a sequence of applications of
+functions.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4527-0
+<v Antonio Cisternino>And every so let bang with the sugar to
+bind.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4539-0
+<v Antonio Cisternino>And so let bang divide a equal divide 10
+two is bind.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4549-0
+<v Antonio Cisternino>And two and then a function was
+argumented name is a.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4581-0
+<v Antonio Cisternino>And the body is the rest of the
+computational expression. Again,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4581-1
+<v Antonio Cisternino>I have let band B divide A by zero and so
+here I find divide A.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4592-0
+<v Antonio Cisternino>By zero and then the function of the bind
+is B.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4598-0
+<v Antonio Cisternino>And then there is the return which is.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4600-0
+<v Antonio Cisternino>Return.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4607-0
+<v Antonio Cisternino>Maybe return P + 1.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4609-0
+<v Antonio Cisternino>Where it be.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4614-0
+<v Antonio Cisternino>Is the result of.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4637-0
+<v Antonio Cisternino>So remember that return returns a monad.
+OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4637-1
+<v Antonio Cisternino>so given a value you will get a result as
+a monad, so.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4652-0
+<v Antonio Cisternino>When you do divide them by two,
+you will get some 5.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4654-0
+<v Antonio Cisternino>Sound 5.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4662-0
+<v Antonio Cisternino>Will will a will be 5 because.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4667-0
+<v Antonio Cisternino>The bind takes it.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4672-0
+<v Antonio Cisternino>Let me go back.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4676-0
+<v Antonio Cisternino>I knew it so.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4700-0
+<v Antonio Cisternino>This is the signature of the bind
+operation.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4700-1
+<v Antonio Cisternino>So if you give me some five and a
+function that takes five and gives me</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4700-2
+<v Antonio Cisternino>back.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4732-0
+<v Antonio Cisternino>Some as or none, nothing or none.
+Then I I return that that that thing.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4732-1
+<v Antonio Cisternino>This is what's happening.
+So if you look at that, where is it?</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4732-2
+<v Antonio Cisternino>There we are. Divide 10 by 2.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4749-0
+<v Antonio Cisternino>Gives me sum five,
+so sum corresponds to M and five is the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4749-1
+<v Antonio Cisternino>value. A will be bound to five.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4761-0
+<v Antonio Cisternino>So I execute the maybe bind divide 5 by 0.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4765-0
+<v Antonio Cisternino>That will return none.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4771-0
+<v Antonio Cisternino>So B will be none.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4773-0
+<v Antonio Cisternino>And when you.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4786-0
+<v Antonio Cisternino>Somehow when you call the return,
+what is the definition of return?</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4792-0
+<v Antonio Cisternino>Yeah, no.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4797-0
+<v Antonio Cisternino>Oh, we get.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4798-0
+<v Antonio Cisternino>Huh.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4801-0
+<v Antonio Cisternino>Let me see.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4806-0
+<v Antonio Cisternino>OK. Hello.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4807-0
+<v Antonio Cisternino>OK.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4818-0
+<v Antonio Cisternino>Me cash. Sorry,
+I was injuring myself in this day.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4848-0
+<v Antonio Cisternino>So I hope that this is the the the
+sugaring and I was looking that the I</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4848-1
+<v Antonio Cisternino>even the sugar it more so it basically.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4855-0
+<v Antonio Cisternino>Uh,
+in line the the definition and this is.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4877-0
+<v Antonio Cisternino>What by substituting a bind return things
+looks like.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4877-1
+<v Antonio Cisternino>So mesh divide 10 by two with none.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4878-0
+<v Antonio Cisternino>Done.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4908-0
+<v Antonio Cisternino>Sum a which is 5 match divide a by zero
+and if it's none, none.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4908-1
+<v Antonio Cisternino>If it's sum then B + 1. OK,
+so basically the definition of bind.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4912-0
+<v Antonio Cisternino>Makes this none.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4933-0
+<v Antonio Cisternino>Because you're dividing by zero.
+If I was dividing by one,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4933-1
+<v Antonio Cisternino>I would have returned P + 1, which is 6.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4977-0
+<v Antonio Cisternino>And this is the fully the sugared version.
+So I've always been partnered with the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4977-1
+<v Antonio Cisternino>with the MLM programs when you lose the
+types because it may do some explicit</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/4977-2
+<v Antonio Cisternino>that a lot in particular the the in the
+definition.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5008-0
+<v Antonio Cisternino>One of the may be that you presented the
+opt. What is the type of optimism?</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5008-1
+<v Antonio Cisternino>This is a very independently which can be
+some.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5008-2
+<v Antonio Cisternino>So there's an independent definition of
+an optional.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5034-0
+<v Antonio Cisternino>So OPT is just the name,
+but basically you're right,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5034-1
+<v Antonio Cisternino>some X and none are a primitive.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5054-0
+<v Antonio Cisternino>Uh are defined in in C# as a type,
+which is the option type. Yeah, yeah,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5054-1
+<v Antonio Cisternino>so then then exactly.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5069-0
+<v Antonio Cisternino>In the sense that there maybe is the
+option type. Yeah, basically, yeah.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5083-0
+<v Antonio Cisternino>OK, then you have the main model,
+which is defined by the yeah,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5083-1
+<v Antonio Cisternino>so basically.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5113-0
+<v Antonio Cisternino>Because it so if if you use a the option
+type.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5113-1
+<v Antonio Cisternino>So let me explain this discussion we're
+having with them there.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5113-2
+<v Antonio Cisternino>So in F sharp there is a.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5121-0
+<v Antonio Cisternino>A type that is, uh, show me the option.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5129-0
+<v Antonio Cisternino>Type definition in F# so uh.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5157-0
+<v Antonio Cisternino>There we are. OK,
+so this is the definition of the.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5157-1
+<v Antonio Cisternino>I should probably have introduced it
+before. So in F in in ML you can define.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5181-0
+<v Antonio Cisternino>Types that are discriminated unions,
+they're called.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5181-1
+<v Antonio Cisternino>So basically you can say the value can be
+or none or some with some value.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5183-0
+<v Antonio Cisternino>OK.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5219-0
+<v Antonio Cisternino>In F sharper in ML,
+this is super nice because you can define</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5219-1
+<v Antonio Cisternino>trees in this way. OK,
+so it's the discriminated union type is</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5219-2
+<v Antonio Cisternino>very very useful and it's something that
+you sorely miss.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5235-0
+<v Antonio Cisternino>In Java, C#, etcetera.
+So it is similar to the union type in in</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5235-1
+<v Antonio Cisternino>C.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5239-0
+<v Antonio Cisternino>So if you have the.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5271-0
+<v Antonio Cisternino>If you program in C, there is the union.
+Now in C union is rather unsafe because</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5271-1
+<v Antonio Cisternino>basically you say OK,
+the value can be either this structure or</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5271-2
+<v Antonio Cisternino>the these other structure.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5299-0
+<v Antonio Cisternino>Uh and and and the memory is shared so
+you can uh reinterpret the beats in</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5299-1
+<v Antonio Cisternino>different ways and it's rather uh
+insecure uh in in in in ML and in a scale.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5337-0
+<v Antonio Cisternino>Discriminated unions are type safe,
+but that basically are the same notion.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5337-1
+<v Antonio Cisternino>So you you basically use a label to give
+the semantics of every case and so if you</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5337-2
+<v Antonio Cisternino>if you see some too.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5370-0
+<v Antonio Cisternino>This means that that is an option type
+and is using this case and not the first</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5370-1
+<v Antonio Cisternino>case in the value. OK,
+it's a way to label label values or</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5370-2
+<v Antonio Cisternino>structure or objects in your program.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5411-0
+<v Antonio Cisternino>To do several things such as pattern
+matching.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5411-1
+<v Antonio Cisternino>So pattern matching is used on these
+discriminated union values.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5411-2
+<v Antonio Cisternino>So this divide will return me an option
+type.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5441-0
+<v Antonio Cisternino>And the option type can be either none
+and then I say what happens if it's none</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5441-1
+<v Antonio Cisternino>and if it's some value,
+I I say what happens with that value. OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5441-2
+<v Antonio Cisternino>that's practically the discrimination.
+Thank you.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5442-0
+<v Antonio Cisternino>Um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5445-0
+<v Antonio Cisternino>So um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5446-0
+<v Antonio Cisternino>Um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5475-0
+<v Antonio Cisternino>In F sharp what what's happening is that
+this notion of the mono the is used to</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5475-1
+<v Antonio Cisternino>create this synthetic sugar.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5484-0
+<v Antonio Cisternino>That allows you to take this rather
+unreadable.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5509-0
+<v Antonio Cisternino>Sequence of application which is a pure
+functional application and give me back a</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5509-1
+<v Antonio Cisternino>syntax that is.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5547-0
+<v Antonio Cisternino>More easy to understand for everybody. OK,
+so that's so monad are we said that</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5547-1
+<v Antonio Cisternino>monads are a way to have these values
+with two operations so you can box around</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5547-2
+<v Antonio Cisternino>a value.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5590-0
+<v Antonio Cisternino>Some behaviour and basically the bind
+operation allows you to unbox this value,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5590-1
+<v Antonio Cisternino>take the value,
+use the value in a function,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5590-2
+<v Antonio Cisternino>get the results,
+which again is in a monadic form and</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5590-3
+<v Antonio Cisternino>return that and and this applies to the
+incredible number.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5597-0
+<v Antonio Cisternino>Of programming patterns,
+sequence are an obvious one asynchronous.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5620-0
+<v Antonio Cisternino>Asynchronous programming as exactly the
+same structure, so if you use the.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5633-0
+<v Antonio Cisternino>Asynchronous the How many of you have
+used the promises in JavaScript?</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5652-0
+<v Antonio Cisternino>You used a monad. You didn't know.
+You didn't know,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5652-1
+<v Antonio Cisternino>but actually you were using a monad.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5662-0
+<v Antonio Cisternino>If you use a sync in C shar using the
+same thing.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5664-0
+<v Antonio Cisternino>OK, um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5677-0
+<v Antonio Cisternino>And in fact one of the successful use
+case that shows how this uh.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5682-0
+<v Antonio Cisternino>Language feature is.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5697-0
+<v Antonio Cisternino>Flexible is that.
+Can you show me an idea of how a sync is</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5697-1
+<v Antonio Cisternino>implemented?</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5701-0
+<v Antonio Cisternino>And F sharp.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5710-0
+<v Antonio Cisternino>I hope this will not bring all the
+details.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5752-0
+<v Antonio Cisternino>But it's nice to see.
+So if I have a a type which represents an</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5752-1
+<v Antonio Cisternino>asynchronous computation,
+so a sync of type T,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5752-2
+<v Antonio Cisternino>then I can use exactly this because the
+asynchronous computation is a computation.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5793-0
+<v Antonio Cisternino>That eventually returns a value,
+so it has exactly the same structure.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5793-1
+<v Antonio Cisternino>I have a value I build around the notion
+of, but this value is not yet available.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5793-2
+<v Antonio Cisternino>It will eventually become available.
+I create something around this that I</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5793-3
+<v Antonio Cisternino>call a synchronous.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5809-0
+<v Antonio Cisternino>Which has multiple states because it may
+have already computed value or not,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5809-1
+<v Antonio Cisternino>so it has a state and.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5813-0
+<v Antonio Cisternino>No, I even did.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5836-0
+<v Antonio Cisternino>No, no, I'm not going through this.
+I'm sorry. No way. Sorry. Can you show me?</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5836-1
+<v Antonio Cisternino>Let me show you an example.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5851-0
+<v Antonio Cisternino>Of async use in F sharp.
+Let me show you the example,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5851-1
+<v Antonio Cisternino>not the definition,
+because the definition requires.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5860-0
+<v Antonio Cisternino>Uh,
+the understanding of continuation passing</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5860-1
+<v Antonio Cisternino>style code.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5864-0
+<v Antonio Cisternino>Which is beyond the scope.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5867-0
+<v Antonio Cisternino>O.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5891-0
+<v Antonio Cisternino>Work is a function which has two
+arguments, name and Ms.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5891-1
+<v Antonio Cisternino>which stands for milliseconds I would say.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5898-0
+<v Antonio Cisternino>So and here you use the the async.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5926-0
+<v Antonio Cisternino>You see the syntax is is exactly the same,
+but actually a sync has been defined in</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5926-1
+<v Antonio Cisternino>terms of bind the return and and some
+other constructs. OK, so.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5935-0
+<v Antonio Cisternino>Here I get some print F so then then.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5988-0
+<v Antonio Cisternino>This bang we learned that is has to do
+with the modern operation.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5988-1
+<v Antonio Cisternino>So what characterized the C#, the F sharp,
+the sugaring is that there is not just</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5988-2
+<v Antonio Cisternino>left bang which is equivalent to bind.
+There is also do bang for bang and few</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5988-3
+<v Antonio Cisternino>other constructs to compile more.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5990-0
+<v Antonio Cisternino>Interesting piece of code.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/5998-0
+<v Antonio Cisternino>But basically you do a sync sleep.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6015-0
+<v Antonio Cisternino>Milliseconds.
+This is non blocking delay because you</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6015-1
+<v Antonio Cisternino>want to suspend this computation,
+not the thread so.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6026-0
+<v Antonio Cisternino>Then you type in finished and you return
+the second.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6029-0
+<v Antonio Cisternino>And.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6044-0
+<v Antonio Cisternino>Using the async monad,
+you can say OK A is task B.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6058-0
+<v Antonio Cisternino>Having every second and then B is task B.
+This is the output. This is the.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6060-0
+<v Antonio Cisternino>The time.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6090-0
+<v Antonio Cisternino>And now this is an example of execution.
+So task K starts on thread #9,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6090-1
+<v Antonio Cisternino>finish and so and so forth. OK,
+and in this way you can.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6097-0
+<v Antonio Cisternino>Compose asynchronous programs, OK.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6103-0
+<v Antonio Cisternino>This is not meant to be.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6153-0
+<v Antonio Cisternino>To dedicate the the class,
+the asynchronous.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6153-1
+<v Antonio Cisternino>At some point we will have some
+discussion on asynchronous programming,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6153-2
+<v Antonio Cisternino>but for the moment it was just to comment
+an example of a monad different than the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6153-3
+<v Antonio Cisternino>sequencer,
+which is exactly the same machinery,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6153-4
+<v Antonio Cisternino>so as you can see.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6163-0
+<v Antonio Cisternino>The language has this rather abstract
+notion of computational expression really.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6202-0
+<v Antonio Cisternino>Above the average to in difficulty to
+understand,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6202-1
+<v Antonio Cisternino>but if you get it then suddenly you
+you're able to twist the syntax of the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6202-2
+<v Antonio Cisternino>language to a point in which you can talk
+about sequences,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6202-3
+<v Antonio Cisternino>but you can talk also about.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6241-0
+<v Antonio Cisternino>Asynchronous computation and and of
+course every time you define a new</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6241-1
+<v Antonio Cisternino>monadic domain,
+the semantics of the constructs will</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6241-2
+<v Antonio Cisternino>change because if I do let bang in the
+maybe that was.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6266-0
+<v Antonio Cisternino>Uh,
+just to talk to to treat the maybe values.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6266-1
+<v Antonio Cisternino>Uh in in this case let bang and do bang
+is a a wait operation.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6266-2
+<v Antonio Cisternino>So when here there was.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6269-0
+<v Antonio Cisternino>Do bang this was.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6293-0
+<v Antonio Cisternino>Execute asynchronously this sleep for
+milliseconds and wait the execution the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6293-1
+<v Antonio Cisternino>end of the execution when this.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6307-0
+<v Antonio Cisternino>Finishes, then continue.
+So it is like await the end of sleep.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6308-0
+<v Antonio Cisternino>Hmm.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6311-0
+<v Antonio Cisternino>And um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6331-0
+<v Antonio Cisternino>And let bank do the same.
+So it is I assign the result of an</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6331-1
+<v Antonio Cisternino>asynchronous computation as soon as it it
+is available.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6333-0
+<v Antonio Cisternino>OK.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6353-0
+<v Antonio Cisternino>And then there is also the task which
+uses a different library, but honestly,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6353-1
+<v Antonio Cisternino>let me strip this. OK now.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6359-0
+<v Antonio Cisternino>Can you show me um?</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6366-0
+<v Antonio Cisternino>The implementation of.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6373-0
+<v Antonio Cisternino>Distribution computational expression.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6384-0
+<v Antonio Cisternino>We will finish this class with an
+assignment for you.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6394-0
+<v Antonio Cisternino>Until until now, the classes were like,
+uh, OK.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6439-0
+<v Antonio Cisternino>There is this notion,
+there is this other notion,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6439-1
+<v Antonio Cisternino>study these notions, etcetera.
+Try to understand.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6439-2
+<v Antonio Cisternino>Now I think I will suggest you to to have
+a run and try to really understand these</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6439-3
+<v Antonio Cisternino>things because there are several.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6445-0
+<v Antonio Cisternino>Aspects that are mixed together in this
+in this process.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6476-0
+<v Antonio Cisternino>So there is the the sugaring syntax,
+the monadic framework in which you create</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6476-1
+<v Antonio Cisternino>things and the same syntax for totally
+different application domain.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6478-0
+<v Antonio Cisternino>In the same programming language.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6480-0
+<v Antonio Cisternino>Me.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6487-0
+<v Antonio Cisternino>In many ways for me this.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6491-0
+<v Antonio Cisternino>Has been perhaps the most.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6499-0
+<v Antonio Cisternino>Uh, interesting Mona that that probably.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6514-0
+<v Antonio Cisternino>Let me understand how flexible and
+powerful is this this thing.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6522-0
+<v Antonio Cisternino>This, for instance,
+relates to quantum computing this</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6522-1
+<v Antonio Cisternino>particular model.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6527-0
+<v Antonio Cisternino>I said quantum computing.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6532-0
+<v Antonio Cisternino>Yes, so.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6536-0
+<v Antonio Cisternino>Um, so the um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6571-0
+<v Antonio Cisternino>What is a distribution of values? I mean,
+there are several ways to to characterize,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6571-1
+<v Antonio Cisternino>but basically distribution of values can
+be seen as a sequence. OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6571-2
+<v Antonio Cisternino>so a sequence of values that possess some
+distribution.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6581-0
+<v Antonio Cisternino>For instance,
+we know that the die 6 will be.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6597-0
+<v Antonio Cisternino>Sequence of values that are generated by
+rolling a dice with six faces.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6602-0
+<v Antonio Cisternino>And and so.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6631-0
+<v Antonio Cisternino>If you look at this way of looking at
+other distributions as a sequence of</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6631-1
+<v Antonio Cisternino>values that have some distribution, OK,
+then I can compose.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6644-0
+<v Antonio Cisternino>The values of of the distribution one at
+a time, so.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6649-0
+<v Antonio Cisternino>How are distributed to thy sum?</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6685-0
+<v Antonio Cisternino>I create the distribution, so I take,
+I pick a value from the first die,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6685-1
+<v Antonio Cisternino>then I pick the value from second die and
+then I sum these two values.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6709-0
+<v Antonio Cisternino>OK,
+so if I start extracting values from die</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6709-1
+<v Antonio Cisternino>six,
+I will see 123546 distributed in a</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6709-2
+<v Antonio Cisternino>uniform way.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6732-0
+<v Antonio Cisternino>The same apply to line 6 and then when I
+return a + P then I will get that</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6732-1
+<v Antonio Cisternino>different distribution because you all
+know that two is less likely than.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6733-0
+<v Antonio Cisternino>That.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6735-0
+<v Antonio Cisternino>Hmm.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6737-0
+<v Antonio Cisternino>Yeah.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6758-0
+<v Antonio Cisternino>Because there are multiple ways to obtain
+given to rules 6 with respect to two or</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6758-1
+<v Antonio Cisternino>12 that are obtained only by getting one
+and six.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6783-0
+<v Antonio Cisternino>And and so as you can see then to the
+assign sum can be treated as a list of</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6783-1
+<v Antonio Cisternino>values.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6791-0
+<v Antonio Cisternino>And so you can filter some etcetera, OK.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6797-0
+<v Antonio Cisternino>So the idea is.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6854-0
+<v Antonio Cisternino>If I have a sequence of of samples that I
+know they possess some distribution in</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6854-1
+<v Antonio Cisternino>the values,
+then I can take the various samples and</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6854-2
+<v Antonio Cisternino>start summing, dividing, etcetera,
+and obtain a new sequence of samples that</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6854-3
+<v Antonio Cisternino>will possess a different distribution.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6886-0
+<v Antonio Cisternino>There are a number of theorems that you
+may remember or not.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6886-1
+<v Antonio Cisternino>I don't know from your statistics and
+probability classes by which you can</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6886-2
+<v Antonio Cisternino>transform distribution.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6897-0
+<v Antonio Cisternino>The sequence of values from 1
+distribution to another by using</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6897-1
+<v Antonio Cisternino>arithmetic operations. OK.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6898-0
+<v Antonio Cisternino>Or.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6911-0
+<v Antonio Cisternino>OK,
+let's see how this idea of of having</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6911-1
+<v Antonio Cisternino>functions that.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6915-0
+<v Antonio Cisternino>Uh, return uh.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6933-0
+<v Antonio Cisternino>Sequence of samples with a given
+distribution.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6933-1
+<v Antonio Cisternino>How can be implemented in terms of this
+model?</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6936-0
+<v Antonio Cisternino>So let's see.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6939-0
+<v Antonio Cisternino>The example.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6952-0
+<v Antonio Cisternino>So first of it, first of all,
+we need something that represents the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6952-1
+<v Antonio Cisternino>distribution of values.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6970-0
+<v Antonio Cisternino>So there is a distribution of some value
+of type A with a given probability.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6973-0
+<v Antonio Cisternino>OK, so um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6976-0
+<v Antonio Cisternino>We have the.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6985-0
+<v Antonio Cisternino>This function that allows me to normalize.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6989-0
+<v Antonio Cisternino>A distribution.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/6997-0
+<v Antonio Cisternino>I have the return function.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7004-0
+<v Antonio Cisternino>Which returns a distribution.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7006-0
+<v Antonio Cisternino>Of type A.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7015-0
+<v Antonio Cisternino>And the return simply if I have a value.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7045-0
+<v Antonio Cisternino>X the distribution of that particular
+value is X,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7045-1
+<v Antonio Cisternino>so the value with probability one, right?
+I mean if I have a constant by definition</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7045-2
+<v Antonio Cisternino>is the value with probability one.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7052-0
+<v Antonio Cisternino>Bind. How does it work? The bind?</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7066-0
+<v Antonio Cisternino>So because the distribution is a least of
+pairs.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7068-0
+<v Antonio Cisternino>Then.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7070-0
+<v Antonio Cisternino>No.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7109-0
+<v Antonio Cisternino>This is a nice syntax to declare at least
+in line. OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7109-1
+<v Antonio Cisternino>so the these brackets are simply say OK
+the least resulting by this code inside.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7109-2
+<v Antonio Cisternino>It's a short and nice to have to
+manipulate this in a programming.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7126-0
+<v Antonio Cisternino>Language that supports lists.
+So if I have a distribution D and a</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7126-1
+<v Antonio Cisternino>function that given.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7133-0
+<v Antonio Cisternino>The sample value returns a new
+distribution.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7152-0
+<v Antonio Cisternino>So this is the bind we learn.
+So for every X with probability P in the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7152-1
+<v Antonio Cisternino>distribution D.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7154-0
+<v Antonio Cisternino>Then.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7159-0
+<v Antonio Cisternino>You take the function F.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7172-0
+<v Antonio Cisternino>You apply F to the to X,
+you obtain a new value.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7185-0
+<v Antonio Cisternino>Which is distributed. And so you say, OK,
+let's apply F to X.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7200-0
+<v Antonio Cisternino>This is a distribution,
+so it's a sequence.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7200-1
+<v Antonio Cisternino>This sequence is a list for every element
+of this list.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7213-0
+<v Antonio Cisternino>Eagle so return the value Y and the with
+the probability P.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7216-0
+<v Antonio Cisternino>Times 2.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7218-0
+<v Antonio Cisternino>OK.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7251-0
+<v Antonio Cisternino>It is the combined probability of the two
+samples.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7251-1
+<v Antonio Cisternino>If I have a value with probability and
+another value with a different</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7251-2
+<v Antonio Cisternino>probability,
+the function applies returns apply to the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7251-3
+<v Antonio Cisternino>value.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7262-0
+<v Antonio Cisternino>Another value,
+the combined probability is the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7262-1
+<v Antonio Cisternino>multiplication of the two probabilities.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7278-0
+<v Antonio Cisternino>The normalization procedure just ensure
+that the probability mass is 1.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7279-0
+<v Antonio Cisternino>That's it.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7310-0
+<v Antonio Cisternino>Now with this you can say OK return and
+bind have been defined.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7310-1
+<v Antonio Cisternino>Then I have few more so the empty
+distribution is an empty list.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7351-0
+<v Antonio Cisternino>0 written from simply the identity
+function returns D The combine is the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7351-1
+<v Antonio Cisternino>sequence. So if I have two distribution,
+this tells me how to combine to the two</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7351-2
+<v Antonio Cisternino>different distributions.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7352-0
+<v Antonio Cisternino>Uh.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7371-0
+<v Antonio Cisternino>And and and the run is simply normalize
+the distribution. OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7371-1
+<v Antonio Cisternino>so you simply create a new distribution
+and then you use it.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7387-0
+<v Antonio Cisternino>And and of course typically you want a
+number of distribution that are known,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7387-1
+<v Antonio Cisternino>so you get the uniform distribution.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7402-0
+<v Antonio Cisternino>Which simply you give me a list of values
+and I give you a distribution.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7410-0
+<v Antonio Cisternino>And you say all the elements of the least.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7458-0
+<v Antonio Cisternino>Contains X with probability one because
+are all equal and then you normalize it</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7458-1
+<v Antonio Cisternino>because in this way you get one over the
+length of the list automatically. OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7458-2
+<v Antonio Cisternino>so this normalize here simply ensures
+that the sum of all the probabilities in</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7458-3
+<v Antonio Cisternino>my distribution is 1.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7460-0
+<v Antonio Cisternino>That's it.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7473-0
+<v Antonio Cisternino>And the ID is uniform of the values from
+1 to D.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7484-0
+<v Antonio Cisternino>And the Bernoulli is categorical,
+which is defined before.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7507-0
+<v Antonio Cisternino>Which introduced 2 categories,
+so there is true with probability P and</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7507-1
+<v Antonio Cisternino>false with probability 1 -, P.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7510-0
+<v Antonio Cisternino>But no distribution.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7532-0
+<v Antonio Cisternino>The expectation is defined here and
+sample is simply something that takes a</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7532-1
+<v Antonio Cisternino>value from the distribution.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7540-0
+<v Antonio Cisternino>And needs you generate a random number.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7544-0
+<v Antonio Cisternino>And you take a value.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7552-0
+<v Antonio Cisternino>With probability and then you you pick
+the value.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7557-0
+<v Antonio Cisternino>So basically as you can see.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7601-0
+<v Antonio Cisternino>We we did something which may look very
+complicated because we are combining</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7601-1
+<v Antonio Cisternino>monadic and probability distribution to
+get together.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7601-2
+<v Antonio Cisternino>But basically if I look at it from a
+programming perspective,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7601-3
+<v Antonio Cisternino>I've been able to create in my language
+an algebra.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7608-0
+<v Antonio Cisternino>Of probability distribution that allows
+me to combine the values.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7622-0
+<v Antonio Cisternino>Of different distribution and reason
+about distribution in a constructive way.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7641-0
+<v Antonio Cisternino>And so applications.
+There are a lot of application.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7641-1
+<v Antonio Cisternino>Of course there are all the applications
+that.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7654-0
+<v Antonio Cisternino>Uh,
+all the obvious applications uh that you</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7654-1
+<v Antonio Cisternino>have uh in um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7658-0
+<v Antonio Cisternino>And statistics, but.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7685-0
+<v Antonio Cisternino>There are also other applications,
+so a former colleague of yours did his</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7685-1
+<v Antonio Cisternino>PhD with me and we basically created the.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7690-0
+<v Antonio Cisternino>I'm one of the Uh to estimate the Um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7698-0
+<v Antonio Cisternino>Error propagation in physics experiments.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7726-0
+<v Antonio Cisternino>Because typically when you do an
+experiment in physics,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7726-1
+<v Antonio Cisternino>you never get from a sensor the exact
+value.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7726-2
+<v Antonio Cisternino>There is always a small oscillation.
+In physics they use a lot of.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7756-0
+<v Antonio Cisternino>Monte Carlo methods.
+So basically they create a statistical</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7756-1
+<v Antonio Cisternino>model of the experiment,
+then they run billions of simulation and</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7756-2
+<v Antonio Cisternino>they look how.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7767-0
+<v Antonio Cisternino>The distribution of values relates to the
+actual experiment.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7778-0
+<v Antonio Cisternino>So old people,
+but this problem the problem with this</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7778-1
+<v Antonio Cisternino>way of.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7823-0
+<v Antonio Cisternino>Proceeding is that it's basically
+impossible to understand that what's</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7823-1
+<v Antonio Cisternino>going on in the each part of an
+experiment. So you can simply say, OK,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7823-2
+<v Antonio Cisternino>the experiment is compatible with the our
+theory.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7856-0
+<v Antonio Cisternino>With this degree,
+with a number of Sigma degrees of</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7856-1
+<v Antonio Cisternino>reliability, at some point they did,
+I think in grants also they did an</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7856-2
+<v Antonio Cisternino>experiment and.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7879-0
+<v Antonio Cisternino>The connector of an optical fibre was not
+entirely. I mean,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7879-1
+<v Antonio Cisternino>it was something like less than a
+millimetre, so it was transmitting light,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7879-2
+<v Antonio Cisternino>but it was slightly.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7882-0
+<v Antonio Cisternino>Out of socket.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7903-0
+<v Antonio Cisternino>Result. If you look around in the news,
+you still find the old news that</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7903-1
+<v Antonio Cisternino>physicists found a way to go faster than
+light.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7909-0
+<v Antonio Cisternino>Because uh, that's small amount. Uh oh.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7942-0
+<v Antonio Cisternino>Micrometers, I will say,
+stretched the the path to the point in</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7942-1
+<v Antonio Cisternino>which all the computation showed that the
+whole thing propagated faster than the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7942-2
+<v Antonio Cisternino>light. It took the physicist.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7983-0
+<v Antonio Cisternino>Months to sort the problem out because
+basically they don't have a way to</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7983-1
+<v Antonio Cisternino>decompose all the computations in their
+experiments.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7983-2
+<v Antonio Cisternino>So they started working to to understand
+if they found a way to go faster than</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/7983-3
+<v Antonio Cisternino>light or not.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8003-0
+<v Antonio Cisternino>And the the answer was not.
+I think some minister at the time,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8003-1
+<v Antonio Cisternino>maybe even some stupid comment that made
+into the news, but nevertheless.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8035-0
+<v Antonio Cisternino>Basically,
+this is because in the programming</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8035-1
+<v Antonio Cisternino>languages, one of the reasons,
+not the only one.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8035-2
+<v Antonio Cisternino>There's no easy way to model the error of
+the measure we our programming languages.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8043-0
+<v Antonio Cisternino>Are designed to pass around only numbers.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8062-0
+<v Antonio Cisternino>OK,
+and it's complicated to pass around the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8062-1
+<v Antonio Cisternino>number and the error value result.
+Nobody does.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8080-0
+<v Antonio Cisternino>And then when something like this happens,
+that's complicated.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8080-1
+<v Antonio Cisternino>So one approach can be to create a
+monitor of.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8111-0
+<v Antonio Cisternino>Numbers and errors and then whenever you
+pass around in your code you pass around</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8111-1
+<v Antonio Cisternino>not the numbers but the monad of the
+values and then when you sum up.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8152-0
+<v Antonio Cisternino>You not only sum up the actual value,
+but also you propagate the error by using</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8152-1
+<v Antonio Cisternino>the error propagation arithmetics.
+And at the end of this process you don't</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8152-2
+<v Antonio Cisternino>only have the expected value,
+but also the range of expected error.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8152-3
+<v Antonio Cisternino>Thanks.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8185-0
+<v Antonio Cisternino>To the programming language. OK,
+so you may think that this is complicated</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8185-1
+<v Antonio Cisternino>and this is true if you think of a
+ordinary UI program server.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8185-2
+<v Antonio Cisternino>But if you start using doing programming,
+real programming, real programming is not.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8212-0
+<v Antonio Cisternino>The the app in the phone,
+I mean that is clearly where most of the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8212-1
+<v Antonio Cisternino>money come from,
+but actual and real difficult programs</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8212-2
+<v Antonio Cisternino>are those that are implementing.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8236-0
+<v Antonio Cisternino>Through the dynamic simulation and that
+made a lot of difference in the real</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8236-1
+<v Antonio Cisternino>world and these are complicated programs
+where it's important to.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8262-0
+<v Antonio Cisternino>Create the proper abstractions in your
+program to detect problems.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8262-1
+<v Antonio Cisternino>Just to give you another example,
+ENI Italian oil company found a huge.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8264-0
+<v Antonio Cisternino>Uh gas uh um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8266-0
+<v Antonio Cisternino>Um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8270-0
+<v Antonio Cisternino>Just meant I don't want that.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8280-0
+<v Antonio Cisternino>In in front of Libya only by doing
+simulation.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8314-0
+<v Antonio Cisternino>So actually when you model things
+properly,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8314-1
+<v Antonio Cisternino>you run on HPC clusters and you obtain
+numbers that are physically relevant.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8314-2
+<v Antonio Cisternino>Technically you may even end up.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8343-0
+<v Antonio Cisternino>Saving a lot of digging under the sea to
+find resources,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8343-1
+<v Antonio Cisternino>which has a lot of consequences also
+related to sustainability.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8343-2
+<v Antonio Cisternino>So all this requires.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8378-0
+<v Antonio Cisternino>Programming languages that are not Python
+because requires programming language</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8378-1
+<v Antonio Cisternino>that allows you to model things.
+You need to model a lot of physical</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8378-2
+<v Antonio Cisternino>equations,
+and so of course the functional</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8378-3
+<v Antonio Cisternino>programming languages tend to be more apt.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8404-0
+<v Antonio Cisternino>To model mathematics and the ability to
+use of the language to represent types,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8404-1
+<v Antonio Cisternino>metrics or computational expression,
+etcetera.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8428-0
+<v Antonio Cisternino>Gives a lot of value and in fact in
+finance, as I told you, F sharply,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8428-1
+<v Antonio Cisternino>especially in the London,
+finance is very popular, but.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8468-0
+<v Antonio Cisternino>I'd like to tell you that in ENI they use
+it at some point F sharp because they did</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8468-1
+<v Antonio Cisternino>a scouting research and decided that that
+was the best programming language for</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8468-2
+<v Antonio Cisternino>simulating,
+but that's not the way it works.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8528-0
+<v Antonio Cisternino>It works. It worked like I was.
+I became an F# fan.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8528-1
+<v Antonio Cisternino>At some point I was involved by at the
+time I think it was AMD and I came there</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8528-2
+<v Antonio Cisternino>and said OK, let's use F# and say OK,
+let's use F# and I think they still have</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8528-3
+<v Antonio Cisternino>some code that I did in F# and the same.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8531-0
+<v Antonio Cisternino>By to to violence, so um.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8534-0
+<v Antonio Cisternino>Long story short.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8565-0
+<v Antonio Cisternino>So I hope you now start seeing how
+complicated may become thinking about</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8565-1
+<v Antonio Cisternino>small lines of code,
+because the more expressive you want to</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8565-2
+<v Antonio Cisternino>be.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8593-0
+<v Antonio Cisternino>The more sophisticated is the algebra
+behind the a simple line of code,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8593-1
+<v Antonio Cisternino>and the time you may have to spend to
+understand a single line of code may be</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8593-2
+<v Antonio Cisternino>significant.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8625-0
+<v Antonio Cisternino>And you may say, what was the point?
+I can use a simpler code and so I don't</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8625-1
+<v Antonio Cisternino>have to bother in understanding all this.
+And the answer is no.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8625-2
+<v Antonio Cisternino>I mean it makes sense to spend time.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8666-0
+<v Antonio Cisternino>In understanding the code because the
+behaviour of this operator bind once you</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8666-1
+<v Antonio Cisternino>get it is the same all the time.
+You don't have to prove anymore that it</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8666-2
+<v Antonio Cisternino>works like it is supposed to work,
+so the ability to have.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8693-0
+<v Antonio Cisternino>Constructs that are depending on that
+particular pattern,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8693-1
+<v Antonio Cisternino>like the computational expression in in F
+allows us to create domain specific</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8693-2
+<v Antonio Cisternino>languages.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8713-0
+<v Antonio Cisternino>So subparts of the language with a
+different semantics than the original</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8713-1
+<v Antonio Cisternino>language that helps us to model.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8739-0
+<v Antonio Cisternino>Useless things such as the maybe or
+useful things such as sequence or</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8739-1
+<v Antonio Cisternino>asynchronous programming or even the
+distribution algebra.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8755-0
+<v Antonio Cisternino>Which, by the way,
+the distribution algebra is rather</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8755-1
+<v Antonio Cisternino>interesting for one reason.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8756-0
+<v Antonio Cisternino>Uh.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8759-0
+<v Antonio Cisternino>What it is?</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8804-0
+<v Antonio Cisternino>It it is.
+So there is a theory that is called the</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8804-1
+<v Antonio Cisternino>sampling theory in statistics,
+which says states that if you model</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8804-2
+<v Antonio Cisternino>samples in a of a distribution,
+you can represent distribution that are</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8804-3
+<v Antonio Cisternino>not analytics.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8839-0
+<v Antonio Cisternino>So technically if you represent the the
+list of samples and you brings everything</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8839-1
+<v Antonio Cisternino>to that list of samples,
+then you can model any distribution,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8839-2
+<v Antonio Cisternino>even those that are not possible to be
+analytically.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8861-0
+<v Antonio Cisternino>Represented and so and sampling is very
+compute friendly.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8861-1
+<v Antonio Cisternino>So this distribution builder it's
+interesting for for for for this.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8871-0
+<v Antonio Cisternino>And all these it is basically possible
+only because.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8906-0
+<v Antonio Cisternino>This is a high order programming language
+where you can manipulate functions and</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8906-1
+<v Antonio Cisternino>everything is a function.
+Function can be passed while pass it</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8906-2
+<v Antonio Cisternino>around and at the same time.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8946-0
+<v Antonio Cisternino>It combines with the de-sugaring that we
+we we saw it it has been heavily used</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8946-1
+<v Antonio Cisternino>that also in that in C#,
+which is a good techniques to give us a</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8946-2
+<v Antonio Cisternino>syntax that is more human readable than a
+sequence of applications that.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8971-0
+<v Antonio Cisternino>Sometimes are really hard to read. OK,
+so I think we can stop here. I did.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/8971-1
+<v Antonio Cisternino>I didn't do much confusion assignment.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/9020-0
+<v Antonio Cisternino>Please,
+I mean you you will find if you look for</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/9020-1
+<v Antonio Cisternino>F# computational expressions,
+you will find a lot of documentation</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/9020-2
+<v Antonio Cisternino>online.
+Try to review and read the documentation</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/9020-3
+<v Antonio Cisternino>of the computational expressions,
+not because you have to become an F#</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/9020-4
+<v Antonio Cisternino>programmer.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/9043-0
+<v Antonio Cisternino>But because it's interesting to read that,
+because it's probably one of the most</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/9043-1
+<v Antonio Cisternino>complicated piece of a programming
+language I am aware of where.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/9076-0
+<v Antonio Cisternino>The sugaring, higher order, types,
+everything is in the same place.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/9076-1
+<v Antonio Cisternino>So if you want to challenge yourself in
+understanding a programming language,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/9076-2
+<v Antonio Cisternino>this is a good place to start with and.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/9108-0
+<v Antonio Cisternino>On Wednesday we will introduce another
+form of meta programming in a more</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/9108-1
+<v Antonio Cisternino>explicit way.
+So on Wednesday I will show you how first</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/9108-2
+<v Antonio Cisternino>how F# allows you to.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/9142-0
+<v Antonio Cisternino>Manipulate the program itself,
+and then we will discuss what meta</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/9142-1
+<v Antonio Cisternino>programming means and why it is important
+to be aware of,</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/9142-2
+<v Antonio Cisternino>because most of the world we live in
+today is built upon.</v>
+
+95c0137e-8b9a-4c3a-892a-38153aaedf27/9145-0
+<v Antonio Cisternino>Metaprogramming techniques. Thank you.</v>

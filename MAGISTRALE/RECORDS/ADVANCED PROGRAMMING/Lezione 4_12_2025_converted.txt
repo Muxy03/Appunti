@@ -1,0 +1,2953 @@
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6-0
+Welcome back.
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7-0
+Welcome back.
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/10-0
+<v Antonio Cisternino>And welcome basically. Um.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/14-0
+<v Antonio Cisternino>Some extent to the last class of this
+course, so first of all.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/45-0
+<v Antonio Cisternino>So Wednesday, not class, Thursday,
+yes class.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/45-1
+<v Antonio Cisternino>But basically we conclude today in terms
+of the course itself and yesterday</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/45-2
+<v Antonio Cisternino>evening I spoke with.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/67-0
+<v Antonio Cisternino>And we agreed that, I mean, it's OK,
+we're covering what we intended to cover</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/67-1
+<v Antonio Cisternino>and and so on next Thursday.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/86-0
+<v Antonio Cisternino>We will be dedicated to illustrate the
+projects,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/86-1
+<v Antonio Cisternino>answer the questions about the exam
+another.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/114-0
+<v Antonio Cisternino>Useful information because we didn't talk
+about much about this aspect.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/114-1
+<v Antonio Cisternino>Then we agreed that we,
+your legs will not.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/145-0
+<v Antonio Cisternino>Be strictly the date of the exam.
+So that is the session.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/145-1
+<v Antonio Cisternino>We will give you an agenda with slot of
+one hour so that you can pick up one slot.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/175-0
+<v Antonio Cisternino>And we're flexible on on on this part.
+So when you are ready,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/175-1
+<v Antonio Cisternino>you did your project,
+we will give you some instructions about</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/175-2
+<v Antonio Cisternino>the submission because of course we need.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/199-0
+<v Antonio Cisternino>Sometime a little bit of time to evaluate,
+so you will get a deadline to submit the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/199-1
+<v Antonio Cisternino>project and then eventually maybe other
+deadlines say if you miss the first.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/210-0
+<v Antonio Cisternino>Mm-hmm. The uh,
+the other uh is negotiable.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/210-1
+<v Antonio Cisternino>I mean we can have uh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/247-0
+<v Antonio Cisternino>On discussion we are allocating one hour
+per student,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/247-1
+<v Antonio Cisternino>so it will be sparse in the between
+January and February and OK,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/247-2
+<v Antonio Cisternino>I mean it it will be me and.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/280-0
+<v Antonio Cisternino>Asking questions and you try to answer
+after this. OK,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/280-1
+<v Antonio Cisternino>so that's for the organizational part.
+So on Monday we are exercising</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/280-2
+<v Antonio Cisternino>co-generation yesterday.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/296-0
+<v Antonio Cisternino>Code analysis. Today we do the last part,
+which is feature exploration. OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/306-0
+<v Antonio Cisternino>Which means either a language.
+Initially I thought about TypeScript.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/332-0
+<v Antonio Cisternino>But then I thought that I didn't promise
+you to talk more about and so I thought</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/332-1
+<v Antonio Cisternino>that it will be interesting to study the
+binary object model components.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/334-0
+<v Antonio Cisternino>Uh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/363-0
+<v Antonio Cisternino>Typical of the 90s and the second-half of
+the 90s that were basically that still</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/363-1
+<v Antonio Cisternino>are at least for com inside the system
+that we use every day.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/372-0
+<v Antonio Cisternino>And so I think it's interesting to
+understand from a language.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/378-0
+<v Antonio Cisternino>Perspective and the architecture, OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/393-0
+<v Antonio Cisternino>So so that basically an assignment
+potential assignment will be find.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/423-0
+<v Antonio Cisternino>Describe the calling for the component
+model technologies,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/423-1
+<v Antonio Cisternino>the semantics and all the relevant
+aspects in terms of PROGRAMMING and</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/423-2
+<v Antonio Cisternino>metaprogramming.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/462-0
+<v Antonio Cisternino>They these these multi language systems,
+OK specification.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/462-1
+<v Antonio Cisternino>So it's interesting because it is a a
+technology especially common that was</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/462-2
+<v Antonio Cisternino>based on C++ in many ways.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/496-0
+<v Antonio Cisternino>And so it was about the layout of memory
+of V tables,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/496-1
+<v Antonio Cisternino>mostly to expose services in a binary
+form instead of search form.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/496-2
+<v Antonio Cisternino>OK was the way Microsoft introduced it to
+have interoperability among binary.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/514-0
+<v Antonio Cisternino>Binary components in the open source
+world.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/514-1
+<v Antonio Cisternino>At some point a popular alternative came
+up that was called Bonobo.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/549-0
+<v Antonio Cisternino>And as I already mentioned,
+the Mozilla Foundation adopted a</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/549-1
+<v Antonio Cisternino>simplified version of the common standard
+for the plugin model for Firefox,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/549-2
+<v Antonio Cisternino>but now plugins deprecated.
+That's history.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/553-0
+<v Antonio Cisternino>Of computing and PROGRAMMING languages.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/576-0
+<v Antonio Cisternino>So let let's start trying to pose the
+question and then again I will try to</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/576-1
+<v Antonio Cisternino>involve you. So I am.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/578-0
+<v Antonio Cisternino>Working.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/592-0
+<v Antonio Cisternino>To my assignment for ADVANCED programming.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/594-0
+<v Antonio Cisternino>Course.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/604-0
+<v Antonio Cisternino>I need to describe and understand.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/612-0
+<v Antonio Cisternino>From a language, a PROGRAMMING language.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/616-0
+<v Antonio Cisternino>Language.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/627-0
+<v Antonio Cisternino>And calm technologies.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/653-0
+<v Antonio Cisternino>So to avoid the effect that we had
+yesterday, we closed,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/653-1
+<v Antonio Cisternino>it may be useful to say, OK,
+I will ask you.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/657-0
+<v Antonio Cisternino>Questions and you.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/659-0
+<v Antonio Cisternino>We'll answer.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/660-0
+<v Antonio Cisternino>We.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/678-0
+<v Antonio Cisternino>Paragraph information that I will use to
+compose my project.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/690-0
+<v Antonio Cisternino>OK,
+so in this way basically we're saying</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/690-1
+<v Antonio Cisternino>don't generate 10 pages ahead of time.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/691-0
+<v Antonio Cisternino>But.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/696-0
+<v Antonio Cisternino>So.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/728-0
+<v Antonio Cisternino>As you can see now,
+I didn't get an attempt of submission</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/728-1
+<v Antonio Cisternino>only before we begin.
+Here are two guiding principle will</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/728-2
+<v Antonio Cisternino>follow PROGRAMMING language focus.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/764-0
+<v Antonio Cisternino>I will emphasize interface definition
+mechanism, type systems, bind the models,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/764-1
+<v Antonio Cisternino>runtime semantics,
+memory and object lifecycle management.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/764-2
+<v Antonio Cisternino>But as you can see already I'm getting
+useful information.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/799-0
+<v Antonio Cisternino>Around the development aspects and then
+assignment ready paragraph to be copy</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/799-1
+<v Antonio Cisternino>paste. OK, first question,
+what is the first question you will ask</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/799-2
+<v Antonio Cisternino>when you have to find find about CORBA
+and COM technologies?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/802-0
+<v Antonio Cisternino>Hmm.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/817-0
+<v Antonio Cisternino>First of all, I will say, uh,
+give me a short introduction about CORBA.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/830-0
+<v Antonio Cisternino>I mean, I doubt that you are the,
+you know, car bar. So I mean.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/839-0
+<v Antonio Cisternino>By the way,
+it's an acronym which stands for Common</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/839-1
+<v Antonio Cisternino>Object Uh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/847-0
+<v Antonio Cisternino>We are runtime broker architecture.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/890-0
+<v Antonio Cisternino>Request. Sorry,
+Broker architecture is a middleware</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/890-1
+<v Antonio Cisternino>standard developed by the Object
+Management Group to enable communication</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/890-2
+<v Antonio Cisternino>between software components written in
+different PROGRAMMING languages and</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/890-3
+<v Antonio Cisternino>running on heterogeneous platforms.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/923-0
+<v Antonio Cisternino>From a PROGRAMMING language perspective,
+Corpa provides a language neutral</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/923-1
+<v Antonio Cisternino>abstraction,
+language neutral abstraction of</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/923-2
+<v Antonio Cisternino>distributed objects through the interface
+definition language IDL.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/945-0
+<v Antonio Cisternino>IDL was really popular,
+a statically typed specification language</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/945-1
+<v Antonio Cisternino>that compiles into language specific
+stops and skeleton.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/990-0
+<v Antonio Cisternino>These generated bindings allow developers
+to invoke methods on remote object as if</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/990-1
+<v Antonio Cisternino>they were local with the underlying
+object request broker and doing</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/990-2
+<v Antonio Cisternino>serialization, network transport,
+object activation and lifecycle</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/990-3
+<v Antonio Cisternino>management.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1034-0
+<v Antonio Cisternino>Corbus design reflects the 19th vision of
+distributed object system,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1034-1
+<v Antonio Cisternino>strong timing across network boundaries,
+explicit interface contracts and</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1034-2
+<v Antonio Cisternino>standardized runtime services such as
+naming, transactions and security.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1047-0
+<v Antonio Cisternino>That they meant to make distributed
+programming resemble conventional object</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1047-1
+<v Antonio Cisternino>oriented development OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1049-0
+<v Antonio Cisternino>OK now.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1057-0
+<v Antonio Cisternino>Then we got this book like definition.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1060-0
+<v Antonio Cisternino>Bot nest.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1084-0
+<v Antonio Cisternino>Before moving to COM,
+I think that there should be a couple of</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1084-1
+<v Antonio Cisternino>question that should be part of this
+CORBA related part.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1087-0
+<v Antonio Cisternino>Sorry?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1120-0
+<v Antonio Cisternino>So yes, but syntax of what?
+Because basically we just learned that</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1120-1
+<v Antonio Cisternino>Corba generates something that is called
+stub and skeleton according to the.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1165-0
+<v Antonio Cisternino>IDL specification.
+So this means that I can ask for an</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1165-1
+<v Antonio Cisternino>example of usage in Java or C or C or
+Pascal or whatever and I will get some</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1165-2
+<v Antonio Cisternino>Pascal or C or C or Java.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1166-0
+<v Antonio Cisternino>Call the.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1192-0
+<v Antonio Cisternino>So if I may suggest you,
+when you start digging into new features,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1192-1
+<v Antonio Cisternino>don't be shy and ask for those things
+that you don't know.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1197-0
+<v Antonio Cisternino>I mean, what are stubs?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1199-0
+<v Antonio Cisternino>And um.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1203-0
+<v Antonio Cisternino>And.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1235-0
+<v Antonio Cisternino>First of all, I mean,
+you know what are stubs and skeleton?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1235-1
+<v Antonio Cisternino>I know because I am old enough to have
+implemented them,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1235-2
+<v Antonio Cisternino>but basically I I doubt that you know
+what a skeleton is or a stub is.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1255-0
+<v Antonio Cisternino>OK, yes,
+if you think to the meaning of stub,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1255-1
+<v Antonio Cisternino>the stub is a sort of placeholder.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1304-0
+<v Antonio Cisternino>And the skeleton is the structure that
+you have to feel in in in IT in computer</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1304-1
+<v Antonio Cisternino>science.
+So basically the stab refers the fact</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1304-2
+<v Antonio Cisternino>that you want to be able to invoke a
+local object as if it was implemented in</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1304-3
+<v Antonio Cisternino>my process, but actually.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1309-0
+<v Antonio Cisternino>Stop is responsible for serializing.
+This is what the text says.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1334-0
+<v Antonio Cisternino>The the the parameters for the invoking
+the code to serialize it into some form</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1334-1
+<v Antonio Cisternino>that the receiver is able to deserialize
+the.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1375-0
+<v Antonio Cisternino>Pass to the skeleton that in the meantime
+you use it to implement the service and</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1375-1
+<v Antonio Cisternino>then the result will follow the opposite
+path and the people has the impression of</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1375-2
+<v Antonio Cisternino>the calling a local method,
+but you in fact invoke the a remote</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1375-3
+<v Antonio Cisternino>object.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1377-0
+<v Antonio Cisternino>OK, uh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1380-0
+<v Antonio Cisternino>Can you?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1408-0
+<v Antonio Cisternino>Help me understand stub and skeletons and
+ideal because another thing that is</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1408-1
+<v Antonio Cisternino>interesting from a programming language.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1410-0
+<v Antonio Cisternino>Perspective is.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1463-0
+<v Antonio Cisternino>That we have a language which is called
+interface definition language which is a</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1463-1
+<v Antonio Cisternino>statically type specification language.
+So I mean this is relevant to the our</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1463-2
+<v Antonio Cisternino>discussion. What it is,
+what are what is the semantics of this</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1463-3
+<v Antonio Cisternino>thing,
+how things are defined in this in this?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1468-0
+<v Antonio Cisternino>It's like language. Sorry, excuse me.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1476-0
+<v Antonio Cisternino>So the IDL is the foundation.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1525-0
+<v Antonio Cisternino>Oh,
+the enables language independent</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1525-1
+<v Antonio Cisternino>integrality.
+Remember when we discussed about XML</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1525-2
+<v Antonio Cisternino>schema, IDL is a precursor.
+Basically it is a way to define types and</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1525-3
+<v Antonio Cisternino>these types should be portable across
+multiple languages, so.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1540-0
+<v Antonio Cisternino>Every language typically defines a
+mapping between the types defined in the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1540-1
+<v Antonio Cisternino>IDL and the types in the language.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1542-0
+<v Antonio Cisternino>And uh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1599-0
+<v Antonio Cisternino>And this formal language is is the core
+because is it defines the contracts.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1599-1
+<v Antonio Cisternino>So you express the contracts of your API.
+So IDL is a statically typed and we know</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1599-2
+<v Antonio Cisternino>what it means declarative language.
+So it means declarative.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1634-0
+<v Antonio Cisternino>Language.
+I don't think we explicitly mentioned it,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1634-1
+<v Antonio Cisternino>but basically it's a language which has
+no dynamic semantics and there is no</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1634-2
+<v Antonio Cisternino>execution.
+It's only use it to declare something</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1634-3
+<v Antonio Cisternino>without any comments or statements or
+something.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1667-0
+<v Antonio Cisternino>Usually solid solely for specifying the
+structure of remote interface,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1667-1
+<v Antonio Cisternino>operation parameters,
+exception and user defined type.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1667-2
+<v Antonio Cisternino>So it is like a place where you can
+define type system and.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1676-0
+<v Antonio Cisternino>Service uh signatures,
+so return value arguments and name of the.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1717-0
+<v Antonio Cisternino>Because AVL is not tied to any
+programming language,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1717-1
+<v Antonio Cisternino>it seems is intentionally minimal and
+similar to C++.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1717-2
+<v Antonio Cisternino>And the reason was because back then C++
+was the most popular programming language</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1717-3
+<v Antonio Cisternino>and so clearly you use this.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1746-0
+<v Antonio Cisternino>The generated stub is the client side
+proxy that exposed the IDL defined</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1746-1
+<v Antonio Cisternino>methods as if they were regular local
+methods in the target programming</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1746-2
+<v Antonio Cisternino>language.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1748-0
+<v Antonio Cisternino>When I.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1756-0
+<v Antonio Cisternino>Client in moves an operation on the stub.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1810-0
+<v Antonio Cisternino>The stab is responsible for marshaling
+the method parameters into the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1810-1
+<v Antonio Cisternino>standardized combat Y format.
+So basically the serialization process is</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1810-2
+<v Antonio Cisternino>governed by a standard and the binary
+representation of objects is standard.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1846-0
+<v Antonio Cisternino>So there is a well defined procedure to
+take, I don't know, a tree,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1846-1
+<v Antonio Cisternino>generate a sequence of bytes that
+represents that particular tree memory,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1846-2
+<v Antonio Cisternino>and then on the other side you revert the
+process and you get back an in memory</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1846-3
+<v Antonio Cisternino>tree.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1849-0
+<v Antonio Cisternino>Possibly in a different programming
+language.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1895-0
+<v Antonio Cisternino>OK,
+the skeleton is the service side</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1895-1
+<v Antonio Cisternino>counterpart of the stub.
+It receive incoming requests from the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1895-2
+<v Antonio Cisternino>object request broker.
+So you need some runtime on your machine</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1895-3
+<v Antonio Cisternino>that is listening on the network for
+request, allocates the objects and then.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1922-0
+<v Antonio Cisternino>Parse the request,
+invoke your skeleton and sends back the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1922-1
+<v Antonio Cisternino>results. OK,
+this is typically the the way it works.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1922-2
+<v Antonio Cisternino>OK, can you generate?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1924-0
+<v Antonio Cisternino>A simple example.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1949-0
+<v Antonio Cisternino>In the add operation. So at some point,
+as your colleague was suggesting,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1949-1
+<v Antonio Cisternino>you'd like to see something apart from
+text. OK, so.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1950-0
+<v Antonio Cisternino>We.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/1958-0
+<v Antonio Cisternino>So as you can see the IDL.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2018-0
+<v Antonio Cisternino>As ACC C++ like syntax with just the
+signature of things.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2018-1
+<v Antonio Cisternino>So it also recalls Java,
+which ultimately is inspired by C++</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2018-2
+<v Antonio Cisternino>syntax.
+So there is an interface because it's a</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2018-3
+<v Antonio Cisternino>declarative language.
+Typically you don't have.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2048-0
+<v Antonio Cisternino>Passes because there is no implementation,
+so everything is an interface with the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2048-1
+<v Antonio Cisternino>signature and the calculator interface
+has another operation that takes an input</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2048-2
+<v Antonio Cisternino>to all arguments.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2087-0
+<v Antonio Cisternino>Because you know that in programming
+languages you can pass by ref or by value</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2087-1
+<v Antonio Cisternino>or by name or by many other ways
+arguments. So if you pass by reference,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2087-2
+<v Antonio Cisternino>the function is able or the method is
+able to alter the external value.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2129-0
+<v Antonio Cisternino>So in general,
+when you marshal data across the network,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2129-1
+<v Antonio Cisternino>pass by reference is not a good idea
+because you don't have anymore the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2129-2
+<v Antonio Cisternino>reference.
+And in actually arguments can be</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2129-3
+<v Antonio Cisternino>annotated, say OK,
+this is an input parameter of this method.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2145-0
+<v Antonio Cisternino>Also output parameter that basically are
+copied back to the caller with a new</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2145-1
+<v Antonio Cisternino>value that will be received by the caller.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2157-0
+<v Antonio Cisternino>OK, so this is an example of IDL file.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2163-0
+<v Antonio Cisternino>And this is an example.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2189-0
+<v Antonio Cisternino>Conceptually, so not not fully,
+but basically gives you the idea.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2189-1
+<v Antonio Cisternino>The stub inherits from calculator.
+It implements the add method.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2192-0
+<v Antonio Cisternino>Function and basically.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2198-0
+<v Antonio Cisternino>Its implementation is.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2207-0
+<v Antonio Cisternino>Create a request to the object request
+broker.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2224-0
+<v Antonio Cisternino>Create a request object with the
+arguments to be marshalled.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2224-1
+<v Antonio Cisternino>Invoke the request.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2275-0
+<v Antonio Cisternino>Get the result, return the result. OK,
+so this is the typical in</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2275-1
+<v Antonio Cisternino>interoperability among processes.
+Even today with HTML we're doing this.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2275-2
+<v Antonio Cisternino>I mean you take an object,
+you generate the JSON, you send the JSON.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2275-3
+<v Antonio Cisternino>On the other side, JSON is parsed.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2284-0
+<v Antonio Cisternino>Back you want me to add the Jason,
+you send the Jason in return and that's</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2284-1
+<v Antonio Cisternino>it. Same idea, OK?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2325-0
+<v Antonio Cisternino>And this is the stub.
+So the stub basically is I create an</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2325-1
+<v Antonio Cisternino>instance of the stub and then I say dot
+add.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2325-2
+<v Antonio Cisternino>I have the impression that the add method
+will be executed in inside my process,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2325-3
+<v Antonio Cisternino>but in fact.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2338-0
+<v Antonio Cisternino>I I'm invoking the request on the object
+request broker and and and invoke a</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2338-1
+<v Antonio Cisternino>remote service the skeleton.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2353-0
+<v Antonio Cisternino>Uh in uh pseudo uh code is basically the
+uh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2390-0
+<v Antonio Cisternino>The code that is that can be generated,
+which eventually calls your</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2390-1
+<v Antonio Cisternino>implementation of the other function. OK,
+so basically you receive a request,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2390-2
+<v Antonio Cisternino>you deserialize the arguments.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2402-0
+<v Antonio Cisternino>You compute the you invoke local
+implementation.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2402-1
+<v Antonio Cisternino>You send back the result OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2446-0
+<v Antonio Cisternino>And the implementation is simply
+something that implements A calculator</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2446-1
+<v Antonio Cisternino>and overrides the function by saying a AB
+is AA plus B. That's it.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2446-2
+<v Antonio Cisternino>So typically the skeleton was generated
+from the IDL.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2456-0
+<v Antonio Cisternino>And you were responsible for implementing
+just the service, the servant.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2464-0
+<v Antonio Cisternino>OK,
+that was basically the core architecture.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2467-0
+<v Antonio Cisternino>Next question.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2494-0
+<v Antonio Cisternino>I think that there there can be at least
+one more question on the Corpus side</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2494-1
+<v Antonio Cisternino>before moving to to calm, of course.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2501-0
+<v Antonio Cisternino>OK, we can um.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2512-0
+<v Antonio Cisternino>There were official implementations of
+CORBA.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2520-0
+<v Antonio Cisternino>The question because it's cross language.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2524-0
+<v Antonio Cisternino>So there were um.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2527-0
+<v Antonio Cisternino>Uh, implementation.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2539-0
+<v Antonio Cisternino>With several object requests broken,
+but both commercial and open.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2559-0
+<v Antonio Cisternino>And it was fairly big. I mean,
+for many years,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2559-1
+<v Antonio Cisternino>everyone was saying that that was the
+future, so.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2578-0
+<v Antonio Cisternino>OK,
+another question I I will hint I do you</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2578-1
+<v Antonio Cisternino>think we asked all the interesting
+questions to the IDL language?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2598-0
+<v Antonio Cisternino>IDL we said it's declarative language to
+specify interface and types.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2605-0
+<v Antonio Cisternino>So we got an example of the interface.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2613-0
+<v Antonio Cisternino>What do you think will be interesting now
+to to learn?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2648-0
+<v Antonio Cisternino>Which types you can create and define
+because the expressivity of the IDL will</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2648-1
+<v Antonio Cisternino>be crucial because it can make easy or
+difficult to implement support.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2657-0
+<v Antonio Cisternino>On a particular programming language,
+if you pick up, for instance, a union.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2666-0
+<v Antonio Cisternino>You know union type in in C.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2677-0
+<v Antonio Cisternino>Yes or no? OK,
+e-mail types are available in Java.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2693-0
+<v Antonio Cisternino>No union in Java is implemented through
+inheritance or interfaces.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2738-0
+<v Antonio Cisternino>So now if the IDL supports for union,
+then I have to struggle in Java to</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2738-1
+<v Antonio Cisternino>implement it. So it's relevant the typing,
+the type definition language in IDL</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2738-2
+<v Antonio Cisternino>because it may determine situation in
+which the mapping is not easy.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2743-0
+<v Antonio Cisternino>From one language to the other.
+So let's ask.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2765-0
+<v Antonio Cisternino>What are so a good advanced programming
+course question will be what are the type</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2765-1
+<v Antonio Cisternino>constructors?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2771-0
+<v Antonio Cisternino>Available in IDL.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2799-0
+<v Antonio Cisternino>Right,
+because type constructors we learned are</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2799-1
+<v Antonio Cisternino>basically those constructs that allows
+you to create new types starting from</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2799-2
+<v Antonio Cisternino>existing types to combine them.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2802-0
+<v Antonio Cisternino>OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2810-0
+<v Antonio Cisternino>Basic types as it is in any type system.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2813-0
+<v Antonio Cisternino>Straza.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2824-0
+<v Antonio Cisternino>Like C records unions enums.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2849-0
+<v Antonio Cisternino>And modules use it as namespaces.
+So can you you generate an IDL definition</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2849-1
+<v Antonio Cisternino>of?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2852-0
+<v Antonio Cisternino>Student object.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2854-0
+<v Antonio Cisternino>So.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2871-0
+<v Antonio Cisternino>In the university module there is a an
+animation which is status enrolled,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2871-1
+<v Antonio Cisternino>suspended or graduated.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2874-0
+<v Antonio Cisternino>Yes.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2876-0
+<v Antonio Cisternino>Hmm.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2891-0
+<v Antonio Cisternino>No, I don't get you. Sorry.
+I said that it's uh, you know, yeah.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2894-0
+<v Antonio Cisternino>The enumeration, yeah.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2912-0
+<v Antonio Cisternino>Then there is this student record is a
+structure.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2912-1
+<v Antonio Cisternino>A structure is basically the sequence of
+fields.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2933-0
+<v Antonio Cisternino>Each one with its type.
+From this example you can also learn that</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2933-1
+<v Antonio Cisternino>there are sequences,
+so you can express lists arrays.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2967-0
+<v Antonio Cisternino>And then the interface students student
+allows you to get a student record,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2967-1
+<v Antonio Cisternino>updated status,
+enroll in a course and list courses of</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2967-2
+<v Antonio Cisternino>that student. OK, so basically.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2997-0
+<v Antonio Cisternino>This interface student is like the class
+student. It is not students,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2997-1
+<v Antonio Cisternino>it's just one student.
+Then another interface may give you the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2997-2
+<v Antonio Cisternino>reference to the student class of
+interface so that you can invoke its</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2997-3
+<v Antonio Cisternino>services.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/2998-0
+<v Antonio Cisternino>Right.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3006-0
+<v Antonio Cisternino>And so we got some help, right?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3056-0
+<v Antonio Cisternino>So by now if I if I were doing the
+assignment,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3056-1
+<v Antonio Cisternino>probably I would have spent more time you
+know in asking for examples maybe can you</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3056-2
+<v Antonio Cisternino>tell me a place where it's it's been used
+so that I can look and go and look and</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3056-3
+<v Antonio Cisternino>etcetera, but I mean.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3065-0
+<v Antonio Cisternino>We have finished time,
+so we have to simplify the process, OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3067-0
+<v Antonio Cisternino>Uh, now.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3077-0
+<v Antonio Cisternino>Let's ask her. Can you now describe calm?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3118-0
+<v Antonio Cisternino>Unlike CORBA,
+which relies on a language neutral IDL,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3118-1
+<v Antonio Cisternino>COM is fundamentally a binary standard.
+It defines how objects must layout their</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3118-2
+<v Antonio Cisternino>method tables in memory. So basically.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3121-0
+<v Antonio Cisternino>The key names are uh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3155-0
+<v Antonio Cisternino>Binary and method tables. OK,
+so basically the two were different</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3155-1
+<v Antonio Cisternino>because Microsoft was a more technical
+specification than Corpa.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3166-0
+<v Antonio Cisternino>Even though at some point even Microsoft
+adopted the IDL.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3186-0
+<v Antonio Cisternino>This, for instance,
+is a paragraph that I would have probably</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3186-1
+<v Antonio Cisternino>questioned during verification.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3214-0
+<v Antonio Cisternino>But now we got the most interesting parts.
+From a programming language perspective,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3214-1
+<v Antonio Cisternino>COM is easily grounded in the interface
+polymorphism. Nice. We know what it means.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3245-0
+<v Antonio Cisternino>Binary compatibility and lifetime
+management. So interface polymorphism,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3245-1
+<v Antonio Cisternino>first key question element,
+binary compatibility,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3245-2
+<v Antonio Cisternino>second key element and lifetime
+management, memory management.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3247-0
+<v Antonio Cisternino>Third pillar.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3258-0
+<v Antonio Cisternino>The fundamental interface is called I
+unknown.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3294-0
+<v Antonio Cisternino>It defines 3 methods that will all come.
+It's like object. I unknown.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3294-1
+<v Antonio Cisternino>I unknown is called I unknown because
+when you get the pointer to that</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3294-2
+<v Antonio Cisternino>interface,
+you don't know basically anything about</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3294-3
+<v Antonio Cisternino>that language.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3297-0
+<v Antonio Cisternino>Uh, that that component, so unknown.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3343-0
+<v Antonio Cisternino>And the methods that must be implemented
+by any common object includes query</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3343-1
+<v Antonio Cisternino>interface.
+So I can ask what what can you do for me?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3343-2
+<v Antonio Cisternino>I mean you object,
+I have your unknown pointer.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3360-0
+<v Antonio Cisternino>We need to know which interface you are
+implemented so they can invoke your</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3360-1
+<v Antonio Cisternino>services. OK,
+so it's a form of reflection if you want</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3360-2
+<v Antonio Cisternino>OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3365-0
+<v Antonio Cisternino>And address release.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3369-0
+<v Antonio Cisternino>Hmm, which is?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3381-0
+<v Antonio Cisternino>Hmm yes, but if you see two methods,
+address and release.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3385-0
+<v Antonio Cisternino>Reference counting.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3422-0
+<v Antonio Cisternino>Whenever you copy the reference into your
+code to an object, you call that ref,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3422-1
+<v Antonio Cisternino>increment the counter,
+and whenever you stop using a pointer,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3422-2
+<v Antonio Cisternino>you call release and so the counter if
+the counter is good.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3427-0
+<v Antonio Cisternino>Back to zero,
+you can reallocate the component.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3439-0
+<v Antonio Cisternino>These methods form the minimal runtime
+contractor OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3444-0
+<v Antonio Cisternino>Now there are, I mean.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3486-0
+<v Antonio Cisternino>You can think a world like Bluetooth in
+which the Bluetooth interfaces are well</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3486-1
+<v Antonio Cisternino>defined. There is a specification,
+there is a car interface,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3486-2
+<v Antonio Cisternino>headset interface with all the methods
+that you have to implement.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3493-0
+<v Antonio Cisternino>By the way,
+also Bluetooth started during those days,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3493-1
+<v Antonio Cisternino>so.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3534-0
+<v Antonio Cisternino>It is it recall resembles both CORBA and
+common in the way it has been implemented.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3534-1
+<v Antonio Cisternino>So in Bluetooth you got a device.
+The device supports a number of</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3534-2
+<v Antonio Cisternino>interfaces.
+Every interface provides functionalities.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3566-0
+<v Antonio Cisternino>Which is basically a common object and
+and we all know that sometimes you'd like</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3566-1
+<v Antonio Cisternino>to be to attach these to, I don't know,
+JavaScript or to Visual Basic back then,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3566-2
+<v Antonio Cisternino>so to our uninterpreted language.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3599-0
+<v Antonio Cisternino>They would like to use any object without,
+you know, bothering about types.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3599-1
+<v Antonio Cisternino>That is something that would like to.
+And so basically an interface called IDs</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3599-2
+<v Antonio Cisternino>batch was introduced so that you can.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3610-0
+<v Antonio Cisternino>Basically interpret the method calls by
+using strings. That was basically.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3641-0
+<v Antonio Cisternino>And and in this way,
+even the interpreted language were able</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3641-1
+<v Antonio Cisternino>to consume com objects without having to
+be compiled as it was for standard C++</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3641-2
+<v Antonio Cisternino>implementation.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3659-0
+<v Antonio Cisternino>And of course,
+at some point the distributed COM was</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3659-1
+<v Antonio Cisternino>introduced to implement distributed
+systems.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3666-0
+<v Antonio Cisternino>Sorry, I don't know who is.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3694-0
+<v Antonio Cisternino>OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3697-0
+<v Antonio Cisternino>Next one.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3706-0
+<v Antonio Cisternino>Show me AC plus plus example.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3711-0
+<v Antonio Cisternino>So.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3757-0
+<v Antonio Cisternino>This is an example which actually
+overlooks the class ID.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3757-1
+<v Antonio Cisternino>So the fact that the registry was the
+operating system data structure to</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3757-2
+<v Antonio Cisternino>support the COM interface so that the
+registry of binary components is</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3757-3
+<v Antonio Cisternino>available into the Windows registry.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3771-0
+<v Antonio Cisternino>And the original Windows registry was
+invented to support this,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3771-1
+<v Antonio Cisternino>and then it became the mess that it is
+today.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3773-0
+<v Antonio Cisternino>So.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3790-0
+<v Antonio Cisternino>Typically you implement uh uh uh you
+include the the header file with the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3790-1
+<v Antonio Cisternino>definition of the uh unknown.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3811-0
+<v Antonio Cisternino>You define a GUID,
+which is the unique identifier that you</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3811-1
+<v Antonio Cisternino>can generate, and it's unique,
+very likely unique worldwide.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3831-0
+<v Antonio Cisternino>And then your interface I calculator
+inherits from I unknown and it has three</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3831-1
+<v Antonio Cisternino>arguments add.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3865-0
+<v Antonio Cisternino>Two arguments are used as a in input
+parameters and the last argument is used</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3865-1
+<v Antonio Cisternino>as a return. Why?
+Because in this world they decided that</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3865-2
+<v Antonio Cisternino>the return of a COM service is an.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3897-0
+<v Antonio Cisternino>Handle H result a number which is the
+handle to a result which may be OK</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3897-1
+<v Antonio Cisternino>success or a bunch of error.
+I'm pretty sure that you've seen if you</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3897-2
+<v Antonio Cisternino>use it Windows H result in some error.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3932-0
+<v Antonio Cisternino>So when you get Windows complaining about
+something,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3932-1
+<v Antonio Cisternino>there is H result is and a number.
+That number is the code of the error</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3932-2
+<v Antonio Cisternino>basically,
+and it's has been returned by the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3932-3
+<v Antonio Cisternino>invocation to the COM object.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3967-0
+<v Antonio Cisternino>And this standard call.
+Remember that the calling convention is</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3967-1
+<v Antonio Cisternino>not unique,
+so you have to decide in which order you</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3967-2
+<v Antonio Cisternino>will load parameters and who is loading
+the stack and who is unloading the stack.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3997-0
+<v Antonio Cisternino>Standard code refers that the calling
+convention when you invoke this add</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3997-1
+<v Antonio Cisternino>function is that it is the callee,
+not the caller which unloads the stack.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/3997-2
+<v Antonio Cisternino>So.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4005-0
+<v Antonio Cisternino>The caller loads the stack.
+The callee unloads the stack.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4039-0
+<v Antonio Cisternino>Basically,
+it's impossible to have variable</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4039-1
+<v Antonio Cisternino>arguments functions in this way,
+because we said that in C variable</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4039-2
+<v Antonio Cisternino>arguments requires that it's the caller
+which unloads the stack at the return.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4041-0
+<v Antonio Cisternino>OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4060-0
+<v Antonio Cisternino>Now you can implement.
+So you create a calculator which</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4060-1
+<v Antonio Cisternino>implements the I calculator interface.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4062-0
+<v Antonio Cisternino>You have a.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4074-0
+<v Antonio Cisternino>A ref count, a reference count,
+and then you increment the reference</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4074-1
+<v Antonio Cisternino>count if.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4092-0
+<v Antonio Cisternino>The release decrease the reference count
+and if it's zero, you delete this object,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4092-1
+<v Antonio Cisternino>you can free the object.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4103-0
+<v Antonio Cisternino>Uh,
+and of course the add method simply</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4103-1
+<v Antonio Cisternino>performs the add the query interface.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4107-0
+<v Antonio Cisternino>Uh, simply says OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4127-0
+<v Antonio Cisternino>If you ask for the ID of the interface
+unknown or the ID of the interface</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4127-1
+<v Antonio Cisternino>calculator.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4128-0
+<v Antonio Cisternino>Later.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4160-0
+<v Antonio Cisternino>OK, you you can say it's me.
+You return the pointer to the interface,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4160-1
+<v Antonio Cisternino>otherwise error.
+There is no interface implemented.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4160-2
+<v Antonio Cisternino>If you ask for an interface which is not
+implemented, you return.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4162-0
+<v Antonio Cisternino>No interface.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4172-0
+<v Antonio Cisternino>You are asking me for something I don't
+know how to do.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4175-0
+<v Antonio Cisternino>So.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4183-0
+<v Antonio Cisternino>How you use it? You create the component.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4185-0
+<v Antonio Cisternino>Uh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4212-0
+<v Antonio Cisternino>You query the interface of the calculator
+which is uh implementing I unknown.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4212-1
+<v Antonio Cisternino>So you have you know that you can invoke
+a query interface, so you pass the ID.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4214-0
+<v Antonio Cisternino>You get.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4225-0
+<v Antonio Cisternino>The I calculator pointer into the
+variable.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4244-0
+<v Antonio Cisternino>And then you invoke the service and you
+release the object,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4244-1
+<v Antonio Cisternino>the interface and also the object. OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4245-0
+<v Antonio Cisternino>O.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4250-0
+<v Antonio Cisternino>Now we learn that these.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4251-0
+<v Antonio Cisternino>Uh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4254-0
+<v Antonio Cisternino>Is.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4261-0
+<v Antonio Cisternino>The specific the basic of a con
+specification.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4277-0
+<v Antonio Cisternino>We also just learned that there is this.
+Can you tell me more about the?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4280-0
+<v Antonio Cisternino>Lus ID.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4303-0
+<v Antonio Cisternino>So COM runtime uses the class ID to
+resolve how and where a component should</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4303-1
+<v Antonio Cisternino>be instantiated.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4330-0
+<v Antonio Cisternino>And so in the open typically operating
+system implementation it is you ask for</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4330-1
+<v Antonio Cisternino>the Co creating instance to create an
+object and then you get the pointer.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4332-0
+<v Antonio Cisternino>OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4338-0
+<v Antonio Cisternino>This is an example class definition.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4342-0
+<v Antonio Cisternino>What about types?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4352-0
+<v Antonio Cisternino>I knew that IDL was available.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4355-0
+<v Antonio Cisternino>Come.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4373-0
+<v Antonio Cisternino>Yes, COM as an IDL,
+but its role and semantics differ</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4373-1
+<v Antonio Cisternino>significantly from COBBA.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4374-0
+<v Antonio Cisternino>Huh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4393-0
+<v Antonio Cisternino>And so you learn something.
+The COMDL is a metadata specification</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4393-1
+<v Antonio Cisternino>language.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4409-0
+<v Antonio Cisternino>That complements cons binary layout rules,
+but does not define the model,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4409-1
+<v Antonio Cisternino>the object model itself.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4432-0
+<v Antonio Cisternino>So in basically in com you can avoid to
+have IDL,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4432-1
+<v Antonio Cisternino>whereas in core by was mandatory to have
+the IDL.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4469-0
+<v Antonio Cisternino>And in fact in Windows there was a binary
+format which is called type libraries DLB</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4469-1
+<v Antonio Cisternino>that you still find in Windows
+implementation which contain the binary</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4469-2
+<v Antonio Cisternino>definition of the types of a component.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4490-0
+<v Antonio Cisternino>So that you you have the student type and
+so if you have an interface which returns</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4490-1
+<v Antonio Cisternino>the student type,
+you know how the student type should be</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4490-2
+<v Antonio Cisternino>should be defined.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4492-0
+<v Antonio Cisternino>B.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4494-0
+<v Antonio Cisternino>Um.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4513-0
+<v Antonio Cisternino>The natural question would be let's
+compare IDL and Microsoft IDL.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4516-0
+<v Antonio Cisternino>Here you get something OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4529-0
+<v Antonio Cisternino>Now that we learn that much,
+what would be your next question?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4553-0
+<v Antonio Cisternino>Do you think you understand fully the
+memory management because you know that</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4553-1
+<v Antonio Cisternino>COM is using reference counting?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4562-0
+<v Antonio Cisternino>What is V?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4576-0
+<v Antonio Cisternino>How can we ask for checking the full
+lifetime of an object? What is the?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4579-0
+<v Antonio Cisternino>Lifetime.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4582-0
+<v Antonio Cisternino>Cycle.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4594-0
+<v Antonio Cisternino>So Long story short, uh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4632-0
+<v Antonio Cisternino>Basically you use the corporate instance
+which invokes the components class</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4632-1
+<v Antonio Cisternino>factory.
+So basically all these binary components</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4632-2
+<v Antonio Cisternino>were compiled down to either an
+executable file or a DLL file.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4665-0
+<v Antonio Cisternino>Inside the DLL they were standard entry
+points. One of these was the factory,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4665-1
+<v Antonio Cisternino>which is the component which is
+responsible to create new objects.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4693-0
+<v Antonio Cisternino>And the class factory creates the
+instance of the interface you're asking</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4693-1
+<v Antonio Cisternino>for. That's where.
+And then this counting performs the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4693-2
+<v Antonio Cisternino>memory management.
+We don't the new defense.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4727-0
+<v Antonio Cisternino>So for instance,
+the programmer to avoid to pay the cost</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4727-1
+<v Antonio Cisternino>of the reference counting may sleep
+because I know it's just now, etcetera,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4727-2
+<v Antonio Cisternino>and typically that was one of the most
+common programming.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4763-0
+<v Antonio Cisternino>Those days,
+because people didn't call a draft to say</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4763-1
+<v Antonio Cisternino>the few cycles of computation,
+and then suddenly the object was disposed</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4763-2
+<v Antonio Cisternino>and you got some banging records.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4766-0
+<v Antonio Cisternino>And they are your problem was.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4785-0
+<v Antonio Cisternino>The simple are references that we learned
+that are a problem with reference</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4785-1
+<v Antonio Cisternino>counting. OK, so these were there now.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4796-0
+<v Antonio Cisternino>Another aspect that will be interesting
+is you said that.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4800-0
+<v Antonio Cisternino>Comma is about.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4809-0
+<v Antonio Cisternino>Find a representation of.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4813-0
+<v Antonio Cisternino>Memory layouts.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4818-0
+<v Antonio Cisternino>Can you show me?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4832-0
+<v Antonio Cisternino>An example of memory layout of different
+interfaces.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4833-0
+<v Antonio Cisternino>Mhm.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4836-0
+<v Antonio Cisternino>OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4844-0
+<v Antonio Cisternino>There we are. I was, uh, looking for this.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4852-0
+<v Antonio Cisternino>So typically you have a pointer.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4877-0
+<v Antonio Cisternino>To the I unknown because everything is an
+interface and because of C++ standard,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4877-1
+<v Antonio Cisternino>C++ standards typically layouts pointers.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4906-0
+<v Antonio Cisternino>To, uh, in case of vitron methods,
+but point to the methods into the virtual</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4906-1
+<v Antonio Cisternino>table,
+which is a data structure that if you</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4906-2
+<v Antonio Cisternino>remember the.net is part of the EE class.
+OK, it's the implementation, so.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4946-0
+<v Antonio Cisternino>If we add the pointer,
+we have basically the pointer to the base</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4946-1
+<v Antonio Cisternino>of these three fields object,
+which contains the pointers to the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4946-2
+<v Antonio Cisternino>methods.
+So if I want to invoke the address,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4946-3
+<v Antonio Cisternino>in fact I'm simply jumping.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4978-0
+<v Antonio Cisternino>To the pointer address,
+the address pointer address has no</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4978-1
+<v Antonio Cisternino>arguments apart from the this.
+So you have to load the this point of</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4978-2
+<v Antonio Cisternino>this pointer onto the stack that I invoke
+that ref.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4980-0
+<v Antonio Cisternino>Padre will be executive in that.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4998-0
+<v Antonio Cisternino>You respected the the memory layout.
+When you loaded the stack,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/4998-1
+<v Antonio Cisternino>you unload this. Let's see.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5011-0
+<v Antonio Cisternino>You invoke the other net code and you
+your program was written in C++. It works.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5013-0
+<v Antonio Cisternino>Release the same story.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5024-0
+<v Antonio Cisternino>So now if I have an object which
+implements a.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5052-0
+<v Antonio Cisternino>Two interfaces,
+in this case I log and I calculator.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5052-1
+<v Antonio Cisternino>In this case you will have simply the
+metal tables just ordered together.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5055-0
+<v Antonio Cisternino>So I am on and then.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5094-0
+<v Antonio Cisternino>I log, I calculator and I log. OK,
+so if you at the point at the point that</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5094-1
+<v Antonio Cisternino>points to the I unknown through the
+unknown,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5094-2
+<v Antonio Cisternino>you say OK I I want the I log and then I
+will get the pointer.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5096-0
+<v Antonio Cisternino>Do this.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5126-0
+<v Antonio Cisternino>And then this will point to the table of
+methods of I log.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5126-1
+<v Antonio Cisternino>If I ask for a calculator,
+I get a different pointer to the base</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5126-2
+<v Antonio Cisternino>address where I find the.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5130-0
+<v Antonio Cisternino>Uh, the thing and so.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5135-0
+<v Antonio Cisternino>Each interface will have.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5179-0
+<v Antonio Cisternino>The I unknown methods plus the interface
+methods and who cares?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5179-1
+<v Antonio Cisternino>Because at the end of the day these are
+just pointers to functions.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5179-2
+<v Antonio Cisternino>They are not implementation,
+so you can replicate the interface</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5179-3
+<v Antonio Cisternino>without damaging the type system.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5182-0
+<v Antonio Cisternino>So conceptually the.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5225-0
+<v Antonio Cisternino>I calculator and I log both implements.
+I am known and we know that in case of</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5225-1
+<v Antonio Cisternino>multiple inheritance this would be a
+diamond and a problem,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5225-2
+<v Antonio Cisternino>but without state we have no problem.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5237-0
+<v Antonio Cisternino>Because there is no shared state to take
+care about and so basically you use.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5283-0
+<v Antonio Cisternino>You can replicate the the fields without
+any problem and the system and the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5283-1
+<v Antonio Cisternino>semantics will keep working without any
+problem.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5283-2
+<v Antonio Cisternino>Typically the query interface with will
+be the same point to the same method</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5283-3
+<v Antonio Cisternino>because in the class I will have only one.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5291-0
+<v Antonio Cisternino>Web interface implementation or other F
+release implementation.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5297-0
+<v Antonio Cisternino>OK, as you can see here.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5301-0
+<v Antonio Cisternino>You get uh uh few examples.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5329-0
+<v Antonio Cisternino>Why this matters to for language
+interoperability?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5329-1
+<v Antonio Cisternino>Because every interface pointer just is
+just a pointer to V table pointers.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5332-0
+<v Antonio Cisternino>OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5337-0
+<v Antonio Cisternino>What will be another question?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5348-0
+<v Antonio Cisternino>Oh, by the way, historical not this not.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5380-0
+<v Antonio Cisternino>One of the early names of.
+net runtime of the CLR was core COR.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5380-1
+<v Antonio Cisternino>If you look at the source code,
+you still find traces about this early</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5380-2
+<v Antonio Cisternino>name and core.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5412-0
+<v Antonio Cisternino>Core was stood for back then to be common
+object runtime. OK,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5412-1
+<v Antonio Cisternino>so net was originally conceived as a
+basically as a way to implement</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5412-2
+<v Antonio Cisternino>components inside Windows.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5434-0
+<v Antonio Cisternino>Using a common object runtime with same
+type definitions, etcetera.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5434-1
+<v Antonio Cisternino>So before moving into the natural
+comparison between core by cone.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5435-0
+<v Antonio Cisternino>Uh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5437-0
+<v Antonio Cisternino>Um.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5440-0
+<v Antonio Cisternino>What? Uh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5444-0
+<v Antonio Cisternino>Ecom introduces.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5484-0
+<v Antonio Cisternino>In COM because I mean I skip it,
+but basically COM was just the in process</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5484-1
+<v Antonio Cisternino>component creation or out of process.
+So basically also in COM you can have a</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5484-2
+<v Antonio Cisternino>stub and a skeleton.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5505-0
+<v Antonio Cisternino>And at some point, I think it was 97,
+Microsoft introduced DCOM,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5505-1
+<v Antonio Cisternino>which was a distributed component object
+model like CORBA, OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5553-0
+<v Antonio Cisternino>So DCOM extends the component object
+model from a local in process component</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5553-1
+<v Antonio Cisternino>system to a fully distributed
+architecture. OK,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5553-2
+<v Antonio Cisternino>so a component is not anymore inside the
+process,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5553-3
+<v Antonio Cisternino>can be outside into another process or
+even on a on into a a different machine.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5586-0
+<v Antonio Cisternino>This complicates memory management
+because if you release a common component</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5586-1
+<v Antonio Cisternino>you see the and you feel the memory,
+but if the call is hosted by a different</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5586-2
+<v Antonio Cisternino>process, possibly.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5631-0
+<v Antonio Cisternino>I have to terminate the frost because
+it's not needed anymore. OK,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5631-1
+<v Antonio Cisternino>so the DECOM specification introduces a
+lot of challenges,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5631-2
+<v Antonio Cisternino>especially in the network communications,
+because if you are referring to an object</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5631-3
+<v Antonio Cisternino>which is running on a different machine.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5676-0
+<v Antonio Cisternino>Then it's complicated because you don't
+know whether if your caller stop it to to</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5676-1
+<v Antonio Cisternino>work and so I so I have machine A with
+the service.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5676-2
+<v Antonio Cisternino>Machine A asked to machine BA component.
+The component is allocated in machine B</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5676-3
+<v Antonio Cisternino>machine B.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5704-0
+<v Antonio Cisternino>A machine A dies and you have garbage in
+machine B because nobody knows that that</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5704-1
+<v Antonio Cisternino>component will not be referred to anyone
+by anyone. OK,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5704-2
+<v Antonio Cisternino>that is basically the situation and.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5705-0
+<v Antonio Cisternino>Oh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5738-0
+<v Antonio Cisternino>And basically they started doing a little
+bit of ping inside the net. OK,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5738-1
+<v Antonio Cisternino>so machine A was pinging machine B.
+Are you still there? And vice versa.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5738-2
+<v Antonio Cisternino>And this seemed a good idea, but then.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5770-0
+<v Antonio Cisternino>It didn't really scale up well.
+If you were allocating doses of hundreds</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5770-1
+<v Antonio Cisternino>or thousands of components,
+you may end up separating the bandwidth</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5770-2
+<v Antonio Cisternino>because of this thing.
+So that was a problem, OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5774-0
+<v Antonio Cisternino>Can you compare?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5776-0
+<v Antonio Cisternino>Uh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5779-0
+<v Antonio Cisternino>Call BA and calm.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5802-0
+<v Antonio Cisternino>So as you can see the original prompt
+that say I need to do an assignment</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5802-1
+<v Antonio Cisternino>influence the all the remaining statement.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5808-0
+<v Antonio Cisternino>Please.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5817-0
+<v Antonio Cisternino>Generate a table with differences.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5842-0
+<v Antonio Cisternino>So basically the idea was use it the only
+to define structured type by Microsoft,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5842-1
+<v Antonio Cisternino>not the full interfaces.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5851-0
+<v Antonio Cisternino>Names in CORBA for interface GUID based.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5858-0
+<v Antonio Cisternino>Uh, for com and so on and so forth, OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5859-0
+<v Antonio Cisternino>Uh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5890-0
+<v Antonio Cisternino>So one of the success of COM,
+I think it was the way Microsoft made</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5890-1
+<v Antonio Cisternino>office evolve because COM was introduced.
+Let me ask just for.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5891-0
+<v Antonio Cisternino>Uh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5905-0
+<v Antonio Cisternino>I heard that COM was introduced to
+implement.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5906-0
+<v Antonio Cisternino>Orly.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5926-0
+<v Antonio Cisternino>Have you ever heard OLE Ole?
+Because sometimes you may have seen on</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5926-1
+<v Antonio Cisternino>Windows Ole 32 DLL crashing.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5928-0
+<v Antonio Cisternino>So all it was.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5954-0
+<v Antonio Cisternino>This idea that in the 90s was very
+revolutionary of object linking and embed.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5954-1
+<v Antonio Cisternino>So you will know that you can insert into
+more than acceptable.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5956-0
+<v Antonio Cisternino>Or analogy.com.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5990-0
+<v Antonio Cisternino>I mean,
+I guess you eventually end up doing this</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5990-1
+<v Antonio Cisternino>kind of things.
+This is basically possible because I mean,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/5990-2
+<v Antonio Cisternino>of course you may assume that as it
+happens in open office.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6020-0
+<v Antonio Cisternino>Everything is compiled in Django,
+more than Excel equivalence can</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6020-1
+<v Antonio Cisternino>interoperate because they've been
+compiled together. OK, so that's OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6020-2
+<v Antonio Cisternino>They need something if insert the Excel.
+OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6056-0
+<v Antonio Cisternino>But when in Office you were able to
+include the Adobe PDF documents inside a</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6056-1
+<v Antonio Cisternino>Word file.
+Adobe Acrobat was a different program</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6056-2
+<v Antonio Cisternino>developed by a different company.
+It might have been the the source files.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6087-0
+<v Antonio Cisternino>So basically the idea was OK,
+let's define a set of interfaces by which</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6087-1
+<v Antonio Cisternino>I can create allocate a component,
+then there are interfaces that I can</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6087-2
+<v Antonio Cisternino>invoke.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6089-0
+<v Antonio Cisternino>To get.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6140-0
+<v Antonio Cisternino>Generate the view, load the file,
+the data is here, etcetera.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6140-1
+<v Antonio Cisternino>So that I can generate a small window
+that shows the rendering of the etcetera.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6140-2
+<v Antonio Cisternino>OK,
+that that was basically the object</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6140-3
+<v Antonio Cisternino>thinking and embedding technology and it
+was quite revolutionary in office</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6140-4
+<v Antonio Cisternino>information because.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6166-0
+<v Antonio Cisternino>It opened up the ability to mix and match
+data coming from different sources with</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6166-1
+<v Antonio Cisternino>programs implemented by different vendors,
+and so that was one of the.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6177-0
+<v Antonio Cisternino>Original healer applications that made a
+call popular so.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6191-0
+<v Antonio Cisternino>Word is a common component that can be
+embedded in cell or vice versa.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6227-0
+<v Antonio Cisternino>Word was used as an editor in Outlook.
+Outlook was a program.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6227-1
+<v Antonio Cisternino>Word was a different program and the two
+were able to share some pictures on the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6227-2
+<v Antonio Cisternino>screen and cooperate together.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6237-0
+<v Antonio Cisternino>OK, nice. At some point myself started to.
+net.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6250-0
+<v Antonio Cisternino>So they implemented the very same comp by
+layouts in dotnet.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6294-0
+<v Antonio Cisternino>And silently replaced the the the core
+component definition of C++ components</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6294-1
+<v Antonio Cisternino>with.
+net counterparts and so they made the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6294-2
+<v Antonio Cisternino>migrate from C++ binary object code to.
+net runtime.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6300-0
+<v Antonio Cisternino>Intermediate language code in a
+transpiring way.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6308-0
+<v Antonio Cisternino>That was quite significantly as an
+engineering lead.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6352-0
+<v Antonio Cisternino>And in fact,
+the name for components that were able to</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6352-1
+<v Antonio Cisternino>displace graphics was known as Active X.
+You may have heard of or seen some error</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6352-2
+<v Antonio Cisternino>message about Active X components failing
+to load or something like that.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6355-0
+<v Antonio Cisternino>Pretty common, OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6360-0
+<v Antonio Cisternino>I will probably conclude.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6377-0
+<v Antonio Cisternino>This enquiry,
+an investigation with what are Bom Corb</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6377-1
+<v Antonio Cisternino>counterpart?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6378-0
+<v Antonio Cisternino>These.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6419-0
+<v Antonio Cisternino>OK,
+I mean clearly COM and CORBA address a</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6419-1
+<v Antonio Cisternino>well defined problem,
+the ability to invoke remote components</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6419-2
+<v Antonio Cisternino>now that they are not basically used
+anymore. I mean they still inside windows,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6419-3
+<v Antonio Cisternino>but this is just legacy, but basically.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6438-0
+<v Antonio Cisternino>They're gone. What are the alternatives?
+Because we it's still interesting to be</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6438-1
+<v Antonio Cisternino>able to invoke remote object services.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6453-0
+<v Antonio Cisternino>And basically the trace was binary
+interoperability,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6453-1
+<v Antonio Cisternino>cross language interoperability.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6477-0
+<v Antonio Cisternino>So.net is an alternative.
+It defines types.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6477-1
+<v Antonio Cisternino>It allows you to combine classes like
+very much like Java.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6479-0
+<v Antonio Cisternino>Windows Runtime.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6483-0
+<v Antonio Cisternino>Which basically.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6501-0
+<v Antonio Cisternino>Uh is inspired from com.
+They have thrown away a bunch of legacy</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6501-1
+<v Antonio Cisternino>stuff.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6521-0
+<v Antonio Cisternino>And it's usually Windows 1011.
+So basically the con components</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6521-1
+<v Antonio Cisternino>architecture is still underneath some
+some somehow.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6523-0
+<v Antonio Cisternino>Uh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6538-0
+<v Antonio Cisternino>And there are bindings for C++, C#,
+Rust and JavaScript. That's interesting.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6569-0
+<v Antonio Cisternino>Webassembly component model.
+We discussed it already.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6569-1
+<v Antonio Cisternino>The Webassembly we we did some,
+but we didn't discover this aspect which</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6569-2
+<v Antonio Cisternino>has some.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6602-0
+<v Antonio Cisternino>Similar points to that you share with
+between Webassembly and COM and GRCP for</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6602-1
+<v Antonio Cisternino>internal microservices which is an open
+standard GRPC.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6631-0
+<v Antonio Cisternino>From Google is also similar to CORBA and
+distributed object system and for</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6631-1
+<v Antonio Cisternino>distributed object system I would have
+said yes, REST is the real.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6647-0
+<v Antonio Cisternino>Heritage of the the Corba platform.
+The rest is basically this approach in</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6647-1
+<v Antonio Cisternino>which you.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6662-0
+<v Antonio Cisternino>Use URLs to define object structures,
+verbs to define operations and.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6668-0
+<v Antonio Cisternino>HTT as a transport rotocol.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6671-0
+<v Antonio Cisternino>Grahql.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6678-0
+<v Antonio Cisternino>Meta launch the the Grahql standard.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6695-0
+<v Antonio Cisternino>Apache 3 and Arrow,
+which basically focus on serialization.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6736-0
+<v Antonio Cisternino>Message brokers, Kafka, Rabi, QMQ,
+Nets are all these are basically</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6736-1
+<v Antonio Cisternino>specialized version of distributed
+objects in which basically you have</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6736-2
+<v Antonio Cisternino>queues of objects with ties,
+but basically it's the same thing.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6741-0
+<v Antonio Cisternino>And of course cloud native microservices.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6744-0
+<v Antonio Cisternino>Why?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6749-0
+<v Antonio Cisternino>First, binary, uh, fragility.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6753-0
+<v Antonio Cisternino>Specially calm.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6803-0
+<v Antonio Cisternino>In CORBA complexity was complicated and
+distributed objects were never</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6803-1
+<v Antonio Cisternino>transparent.
+So you wrote an application with the stub</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6803-2
+<v Antonio Cisternino>and you were convinced that you were
+invoking a local method and then the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6803-3
+<v Antonio Cisternino>application crashes because the remote
+server was out.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6813-0
+<v Antonio Cisternino>That was terrible. OK,
+vendor looking for Microsoft.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6854-0
+<v Antonio Cisternino>Deployment was not easy.
+The versioning was complicated to</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6854-1
+<v Antonio Cisternino>maintain, so I I would agree. OK,
+now I got all this information.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6854-2
+<v Antonio Cisternino>I read the information,
+I decide which questions were made sense,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6854-3
+<v Antonio Cisternino>etcetera.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6879-0
+<v Antonio Cisternino>Now I'm ready.
+It was several part of my project.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6879-1
+<v Antonio Cisternino>I joined together the the text.
+I assured that the final result is a</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6879-2
+<v Antonio Cisternino>readable project. I mean so.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6910-0
+<v Antonio Cisternino>I may even have to review a little bit
+the English so that it looks like a</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6910-1
+<v Antonio Cisternino>single document.
+I may ask the I can you please fix that.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6910-2
+<v Antonio Cisternino>It's OK. I am the processor.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6928-0
+<v Antonio Cisternino>That you have to submit the and now
+unlike with one big problem,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6928-1
+<v Antonio Cisternino>how can get convinced that all this
+information is true?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6933-0
+<v Antonio Cisternino>Double check. Double check. I mean.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6942-0
+<v Antonio Cisternino>Yes, in principle you can, uh,
+ask your builder uh.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6988-0
+<v Antonio Cisternino>But honestly,
+I wouldn't trust too much this approach</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6988-1
+<v Antonio Cisternino>because there is some risk that both are
+losing anything and you're submitting the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6988-2
+<v Antonio Cisternino>better. I mean,
+you can get a first impression out of</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/6988-3
+<v Antonio Cisternino>this book and please check this and get.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7013-0
+<v Antonio Cisternino>Feedback,
+but probably I will also Google for some,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7013-1
+<v Antonio Cisternino>I don't know, core by example,
+for instance to check whether the idea</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7013-2
+<v Antonio Cisternino>examples make sense.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7062-0
+<v Antonio Cisternino>Or if there are similar examples that or
+better examples,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7062-1
+<v Antonio Cisternino>I can go and check for the idea
+specification and have a quick read to be</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7062-2
+<v Antonio Cisternino>sure that the unions are allowed or not
+or any of the information.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7089-0
+<v Antonio Cisternino>That they are reported. OK,
+so the verification in my opinion will</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7089-1
+<v Antonio Cisternino>take you more time than the than the
+generation because we will go through</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7089-2
+<v Antonio Cisternino>your submissions.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7092-0
+<v Antonio Cisternino>And I mean, of course.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7130-0
+<v Antonio Cisternino>We will review,
+but not with the spirit of giving a grade</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7130-1
+<v Antonio Cisternino>the project.
+We will review how you did the do the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7130-2
+<v Antonio Cisternino>check and of course if it's insufficient,
+you took the risk of getting false</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7130-3
+<v Antonio Cisternino>information out.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7157-0
+<v Antonio Cisternino>Of your submission and you are
+responsible for it because in all the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7157-1
+<v Antonio Cisternino>legal framework of the AI,
+whether it's documents or programs or any</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7157-2
+<v Antonio Cisternino>other.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7159-0
+<v Antonio Cisternino>Artifactor.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7184-0
+<v Antonio Cisternino>If you submit something generated by the
+I,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7184-1
+<v Antonio Cisternino>you're taking responsibility for the
+content. This is what the law.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7211-0
+<v Antonio Cisternino>132 of 2025 in this country states.
+So if you submit some information</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7211-1
+<v Antonio Cisternino>generated code through AAI,
+you're responsible for it.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7245-0
+<v Antonio Cisternino>And so you will get beautiful questions
+during your exams in that case,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7245-1
+<v Antonio Cisternino>which is our implementation of taking
+responsibility of the verification. OK,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7245-2
+<v Antonio Cisternino>so please try to do your best.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7288-0
+<v Antonio Cisternino>To double check the information,
+which means that find the relevant part</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7288-1
+<v Antonio Cisternino>of the generated text that you think they
+are relevant and in the verification</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7288-2
+<v Antonio Cisternino>document say OK,
+I did check this because I think it's</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7288-3
+<v Antonio Cisternino>relevant.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7317-0
+<v Antonio Cisternino>I need check that because I think it's
+read out.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7317-1
+<v Antonio Cisternino>I googled and found that this is impact
+is true. I found a lot of information.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7317-2
+<v Antonio Cisternino>I found the corpus specification.
+I mean there are.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7330-0
+<v Antonio Cisternino>Multiple potential answer,
+but please find the rule. Don't get.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7360-0
+<v Antonio Cisternino>Don't think that if you double check with
+another AI,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7360-1
+<v Antonio Cisternino>that's enough because it's not OK.
+There is some risk that you're passing</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7360-2
+<v Antonio Cisternino>through the common relevant information.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7384-0
+<v Antonio Cisternino>It is an easy way to get your first
+impression.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7384-1
+<v Antonio Cisternino>You can get some help with where to focus,
+yes,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7384-2
+<v Antonio Cisternino>but don't feel that that is the only
+available option on the table.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7390-0
+<v Antonio Cisternino>Any comments or questions?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7421-0
+<v Antonio Cisternino>So I don't know if it's my flu or the
+light or whatever you sounds like type</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7421-1
+<v Antonio Cisternino>and perhaps you also have the right to.
+So I think.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7445-0
+<v Antonio Cisternino>If there are no comments,
+we can stop early.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7445-1
+<v Antonio Cisternino>That was the final example of a final
+project.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7445-2
+<v Antonio Cisternino>You will get the least of projects.
+I forgot a few things to stress first.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7460-0
+<v Antonio Cisternino>Project is individual.
+You are allowed to discuss,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7460-1
+<v Antonio Cisternino>but eventually you have to submit an
+individual project.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7470-0
+<v Antonio Cisternino>Second,
+I don't know how many project will we</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7470-1
+<v Antonio Cisternino>will publish.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7499-0
+<v Antonio Cisternino>For sure more than 20,
+but I'm not sure we will be able to</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7499-1
+<v Antonio Cisternino>produce 70 or 80 projects as the number
+as the students declared to be interested</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7499-2
+<v Antonio Cisternino>in this course on the Antarctica, so.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7502-0
+<v Antonio Cisternino>Of course.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7504-0
+<v Antonio Cisternino>Two students may.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7509-0
+<v Antonio Cisternino>Do the same project because we are lucky.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7542-0
+<v Antonio Cisternino>Because this project will be somehow
+under specified. OK,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7542-1
+<v Antonio Cisternino>because I mean then I think that you
+should say OK,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7542-2
+<v Antonio Cisternino>I have to take on this problem.
+I want to focus on this and I think that</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7542-3
+<v Antonio Cisternino>that.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7572-0
+<v Antonio Cisternino>Is for the game,
+so you will have some freedom on.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7572-1
+<v Antonio Cisternino>I will try to give you some direction,
+but you may say OK yes,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7572-2
+<v Antonio Cisternino>but I focus on this because otherwise it
+will be to be as an assignment.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7607-0
+<v Antonio Cisternino>And it's OK.
+So even if two students take the same</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7607-1
+<v Antonio Cisternino>project,
+I don't see any particular issue because</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7607-2
+<v Antonio Cisternino>if those are equivalent project,
+it's impossible and it was impossible</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7607-3
+<v Antonio Cisternino>before AI.
+We deny that both the dice even more,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7607-4
+<v Antonio Cisternino>it's impossible.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7641-0
+<v Antonio Cisternino>OK, so I mean,
+I hope that you will try to do this</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7641-1
+<v Antonio Cisternino>project for yourself and to learn things,
+not just to spread the exam,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7641-2
+<v Antonio Cisternino>because at the end of the day, as we said,
+this is just a a filter to pass students</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7641-3
+<v Antonio Cisternino>that.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7666-0
+<v Antonio Cisternino>Have to perform this experience that will
+believe it's important for you in the</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7666-1
+<v Antonio Cisternino>future.
+And so please take the opportunity,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7666-2
+<v Antonio Cisternino>not try to cheat. It's not helping anyone,
+especially you.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7667-0
+<v Antonio Cisternino>OK.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7698-0
+<v Antonio Cisternino>OK. Yes, yes, I, I, I, I'm really sorry.
+The the last four weeks of it has been</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7698-1
+<v Antonio Cisternino>more than thought for me and so I'm late.
+I know, sorry,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7698-2
+<v Antonio Cisternino>but it's a promise that I will.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7728-0
+<v Antonio Cisternino>It's we've been two major press prices in
+the 80,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7728-1
+<v Antonio Cisternino>one both probably no the one engineer
+engineer will be the notice,</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7728-2
+<v Antonio Cisternino>but the last one in mid November.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7733-0
+<v Antonio Cisternino>Has been quite difficult to go through
+and then the.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7768-0
+<v Antonio Cisternino>Second authentication factor is you have
+no idea how many of your colleagues are</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7768-1
+<v Antonio Cisternino>writing me personally.
+I mean you're 47001 and then there are</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7768-2
+<v Antonio Cisternino>students that said this is my mobile
+number. Can you call me?</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7787-0
+<v Antonio Cisternino>I mean,
+how can you think that someone is calling</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7787-1
+<v Antonio Cisternino>47,000 students? OK, so yes,
+sorry and thanks for your patience.</v>
+
+da7debfb-9945-4d37-8bf1-b91787c6aacd/7788-0
+<v Antonio Cisternino>Um.</v>
