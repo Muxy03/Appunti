@@ -22,7 +22,18 @@ Ecco un esempio numerico basato sulla sequenza: **10, 1, 3, 5, 1, 7**.
 
 In questo modo, Alice ha la certezza di ottenere almeno 14 punti, superando i 13 di Bob.
 
+# Sqrt
+
+![[Pasted image 20260209004410.png]]
+
+```rust
+fn sqrt(v: u64) -> u64 {
+    binary_search_range(0, v + 1, |x| x * x <= v).unwrap()
+}
+```
 # Social Distacing
+
+![[Pasted image 20260209004448.png]]
 
 Il problema del distanziamento sociale (**Social Distancing**) è una sfida algoritmica che richiede di posizionare un numero $C$ di persone (o punti) all'interno di un set di $n$ intervalli disgiunti sulla retta reale, in modo che la distanza minima tra due persone consecutive sia massimizzata.
 
@@ -100,6 +111,10 @@ funzione solve_social_distancing(intervalli, C):
 
 # Longest K-good segment
 
+>The array _a_ with _n_ integers is given. Let's call the sequence of one or more consecutive elements in _a_ segment. Also let's call the segment k-good if it contains no more than _k_ different values.
+>
+>Find any longest k-good segment.
+
 Il problema del **Longest K-good segment** (o _subarray_) richiede di identificare la porzione continua più lunga di un array che contenga al massimo $K$ valori diversi.
 
 ### La Strategia: Two Pointers (Finestra Scorrevole)
@@ -160,6 +175,48 @@ funzione longest_k_good_segment(A, K):
     ritorna (risultato_sinistro, risultato_destro)
 ```
 
+```rust
+use std::collections::HashMap;
+use std::io::{self, BufRead};
+
+fn main() {
+	let a: Vec<i32> = vec![1,2,1,3,2];
+    let n = a.len();
+    let k = 2;
+    
+    // Two pointers approach
+    let mut left = 0;
+    let mut best_left = 0;
+    let mut best_right = 0;
+    let mut max_length = 0;
+    let mut count: HashMap<i32, usize> = HashMap::new();
+    
+    for right in 0..n {
+        // Add current element to the window
+        *count.entry(a[right]).or_insert(0) += 1;
+        
+        // Shrink window if we have more than k distinct values
+        while count.len() > k {
+            *count.get_mut(&a[left]).unwrap() -= 1;
+            if count[&a[left]] == 0 {
+                count.remove(&a[left]);
+            }
+            left += 1;
+        }
+        
+        // Update best segment if current is longer
+        let current_length = right - left + 1;
+        if current_length > max_length {
+            max_length = current_length;
+            best_left = left;
+            best_right = right;
+        }
+    }
+    
+    // Output: length and 1-indexed positions
+    println!("{} {}", best_left + 1, best_right + 1);
+}
+```
 ### Analisi del funzionamento
 
 1. **Mantenimento della finestra**: Il puntatore `R` definisce la fine del segmento e il puntatore `L` l'inizio,.
@@ -168,23 +225,20 @@ funzione longest_k_good_segment(A, K):
    
 # Closet Pair of Points
 
+![[Pasted image 20260209004706.png]]
+
 Il problema del **Closest Pair of Points** consiste nel trovare la coppia di punti con la minima distanza euclidea all'interno di un insieme di $n$ punti in un piano. Mentre un approccio a forza bruta richiede tempo $O(n^2)$, esistono diverse strategie ottimizzate:
 
-### 1. Divide et Impera ($O(n \log n)$)
-
-Questa strategia divide ricorsivamente l'insieme di punti in due metà (sinistra e destra) tramite una linea verticale $L$.
-
-- **Ricorsione:** Si trova la distanza minima $\delta$ separatamente nelle due metà.
-- **Combinazione:** Si controlla se esiste una coppia "a cavallo" della linea $L$ con distanza minore di $\delta$. Per farlo, si analizza una striscia di larghezza $2\delta$ attorno a $L$.
-- **Proprietà Geometrica:** Grazie alla struttura dello spazio, all'interno della striscia ogni punto deve essere confrontato solo con un numero costante di altri punti (al massimo 6 o 8) ordinati per coordinata $y$.
-
-### 2. Sweep-line con BST ($O(n \log n)$)
+### Sweep-line con BST ($O(n \log n)$)
 
 Si processano i punti ordinati per coordinata $x$. Si mantiene un albero binario di ricerca (BST) contenente i punti già visti che si trovano entro una distanza $\delta$ (la minima attuale) dal punto corrente sulla coordinata $x$. Il BST è ordinato per coordinata $y$, permettendo di identificare rapidamente i candidati vicini.
 
-Ecco lo pseudocodice per risolvere il problema del **Closest Pair of Points** in tempo $O(n \log n)$ utilizzando la tecnica della **sweep-line** supportata da un **BST**,.
+Ecco il codice per risolvere il problema del **Closest Pair of Points** in tempo $O(n \log n)$ utilizzando la tecnica della **sweep-line** supportata da un **BST**.
 
-### Pseudocodice Closest Pair (Sweep-line + BST)
+![](https://pages.di.unipi.it/rossano/assets/img/SweepLine/ClosestPair.svg)
+
+ Each of these squares, including its perimeter, can contain at most one point. Assume, for the sake of contradiction, that a square contains two points, denoted as q and q'. the distance between q and q' is smaller than $\delta$. if point q' exists, it would have already been processed by the sweep line because it has x-coordinate smaller than p ((x,y) point). However, this is not possible, beacuse otherwise the value of $\delta$ would be smaller than its current value.
+### Codice Closest Pair (Sweep-line + BST)
 
 ```rust
 pub fn distance_squared(p: (i64, i64), q: (i64, i64)) -> i64 {
@@ -242,7 +296,21 @@ pub fn closest_pair(points: &mut [(i64, i64)]) -> Option<i64> {
 }
 ```
 
+### Complessità
+
+![[Pasted image 20260208234314.png]]
+
 # Frog and Mosquitos
+
+>There are _n_ frogs sitting on the coordinate axis _Ox_. For each frog two values _x__i_, _t__i_ are known — the position and the initial length of the tongue of the _i_-th frog (it is guaranteed that all positions _x__i_ are different). _m_ mosquitoes one by one are landing to the coordinate axis. For each mosquito two values are known _p__j_ — the coordinate of the position where the _j_-th mosquito lands and _b__j_ — the size of the _j_-th mosquito. Frogs and mosquitoes are represented as points on the coordinate axis.
+>
+>The frog can eat mosquito if mosquito is in the same position with the frog or to the right, and the distance between them is not greater than the length of the tongue of the frog.
+>
+>If at some moment several frogs can eat a mosquito the leftmost frog will eat it (with minimal _x__i_). After eating a mosquito the length of the tongue of a frog increases with the value of the size of eaten mosquito. It's possible that after it the frog will be able to eat some other mosquitoes (the frog should eat them in this case).
+>
+>For each frog print two values — the number of eaten mosquitoes and the length of the tongue after landing all mosquitoes and after eating all possible mosquitoes by frogs.
+>
+>Each mosquito is landing to the coordinate axis only after frogs eat all possible mosquitoes landed before. Mosquitoes are given in order of their landing to the coordinate axis.
 
 Il problema delle rane e delle zanzare (**Frogs and Mosquitos**) richiede di gestire $n$ rane posizionate sull'asse X, ognuna con una lingua di lunghezza iniziale $t_i$, e $m$ zanzare che atterrano in posizioni $b_j$ con un valore nutritivo $a_j$.
 
@@ -436,6 +504,8 @@ $O(T*n)$ time, but actually is $\Theta(n)$ because the cost of the "for k in K" 
 
 # Maximum Number of overlapping intervals
 
+![[Pasted image 20260209004919.png]]
+
 Given n intervals $[s_i,e_i]$ we say that two intervals overlaps if
 
 $$
@@ -485,6 +555,12 @@ A\[i] = RangeSum(i,i+1)
 
 # Ilya and Queries
 
+>Ilya the Lion wants to help all his friends with passing exams. They need to solve the following problem to pass the IT exam.
+>
+>You've got string _s_ = _s_1_s_2... _s__n_ (_n_ is the length of the string), consisting only of characters "." and "#" and _m_ queries. Each query is described by a pair of integers _l__i_, _r__i_ (1 ≤ _l__i_ < _r__i_ ≤ _n_). The answer to the query _l__i_, _r__i_ is the number of such integers _i_ (_l__i_ ≤ _i_ < _r__i_), that _s__i_ = _s__i_ + 1.
+>
+>Ilya the Lion wants to help his friends but is there anyone to help him? Help Ilya, solve the problem.
+
 Il problema **Ilya and Queries** richiede di gestire una stringa binaria (composta da caratteri come 'a' e 'b') e di rispondere a diverse query su intervalli $[i, j]$. L'obiettivo di ogni query è contare quante volte appare una coppia di caratteri consecutivi uguali all'interno di quel range.
 
 ### La Strategia Risolutiva
@@ -500,7 +576,7 @@ Per risolvere il problema in modo efficiente, si utilizza la tecnica delle **som
 - **Tempo**: $O(n + m)$, dove $n$ è la lunghezza della stringa (per il preprocessamento) e $m$ è il numero di query.
 - **Spazio**: $O(n)$ per memorizzare l'array delle somme prefisse.
 
-# Little girl and Queries
+# Little girl and Maximum
 
 Il problema richiede di permutare gli elementi di un array $A$ per massimizzare la somma totale di diverse query di intervallo (range sum) $Q$,.
 
@@ -788,6 +864,8 @@ Una soluzione ottimale in tempo $O(n \log n)$ si basa sull'utilizzo dei **Fenwic
 - **Spazio**: $O(n)$ per memorizzare il Fenwick Tree e le mappature.
 
 # Update the Array
+
+>You have an array containing n elements initially all 0. You need to do a number of update operations on it. In each update you specify l, r and val which are the starting index, ending index and value to be added. After each update, you add the 'val' to all elements from index l to r. After 'u' updates are over, there will be q queries each containing an index for which you have to print the element at that index.
 
 Il problema **Update the Array** richiede di gestire un array $A$ di $n$ elementi (inizialmente tutti pari a 0) supportando due operazioni principali: l'aggiornamento di un intero intervallo $[i, j]$ con un valore $v$ e l'accesso al valore di un singolo elemento $A[i]$.
 
