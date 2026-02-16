@@ -50,7 +50,7 @@ La chiave per risolvere questo problema non è cercare direttamente il posiziona
 
 Per verificare se una specifica distanza $d$ è raggiungibile, si utilizza un approccio **greedy** (miope) molto efficiente:
 
-1. Si ordina inizialmente il set di intervalli (se non lo è già).
+1. Si ordina inizialmente il set di intervalli (per estremo sinistro).
 2. Si posiziona la prima persona all'estremo sinistro del primo intervallo disponibile.
 3. Per ogni persona successiva, si cerca il primo punto valido che si trovi a una distanza di almeno $d$ dalla persona precedente.
 4. Se il punto calcolato cade in uno spazio vuoto tra due intervalli, la persona viene spostata all'inizio dell'intervallo successivo disponibile.
@@ -104,6 +104,37 @@ funzione solve_social_distancing(intervalli, C):
     ritorna risposta
 ```
 
+```rust
+fn select_intervals(intervals: &mut Vec<(usize, usize)>, c: usize) -> Option<usize> {
+
+    let l = intervals
+        .iter()
+        .fold(0, |acc, interval| acc + interval.1 - interval.0 + 1); // overall length
+
+    if l < c {
+        // there is no solution
+        return None;
+    }
+
+    intervals.sort_unstable();
+
+    // A closure implements our predicate
+    let pred = |d: usize| -> bool {
+        let mut last_selected = intervals[0].0;
+        let mut cnt = 1;
+        for &interval in intervals.iter() {
+            while interval.0.max(last_selected + d) <= interval.1 {
+                last_selected = interval.0.max(last_selected + d);
+                cnt += 1;
+            }
+        }
+
+        cnt >= c
+    };
+
+    binary_search_range(1, l + 1, pred)
+}
+```
 ### Analisi della Complessità
 
 - **Tempo:** $O(n \log L)$, dove $n$ è il numero di intervalli e $L$ è la coordinata massima.
@@ -177,7 +208,6 @@ funzione longest_k_good_segment(A, K):
 
 ```rust
 use std::collections::HashMap;
-use std::io::{self, BufRead};
 
 fn main() {
 	let a: Vec<i32> = vec![1,2,1,3,2];
@@ -921,7 +951,7 @@ Questa tecnica è estremamente efficiente rispetto a un approccio banale (che ri
 
 # Dynamic Prefix-Sums with Range-Update
 
-Il problema del **Dynamic Prefix-Sums con Range-Update** richiede di gestire un array in cui è possibile aggiungere un valore $v$ a tutti gli elementi in un intervallo $[l, r]$ e, contemporaneamente, calcolare la somma dei primi $i$ elementi in tempo logaritmico $O(\log n)$,.
+Il problema del **Dynamic Prefix-Sums con Range-Update** richiede di gestire un array in cui è possibile aggiungere un valore $v$ a tutti gli elementi in un intervallo $[l, r]$ e, contemporaneamente, calcolare la somma dei primi $i$ elementi in tempo logaritmico $O(\log n)$.
 
 ### La sfida tecnica
 
@@ -1067,7 +1097,7 @@ Sommando questi prodotti per ogni possibile $j$ (da $1$ a $n-2$), si ottiene il 
 
 Per evitare una scansione lineare per ogni $j$, che porterebbe a una complessità $O(n^2)$, si può utilizzare un **Fenwick Tree** (o Binary Indexed Tree) per contare gli elementi in tempo logaritmico $O(\log n)$,.
 
-- **Passaggio a sinistra**: Si scansiona l'array da sinistra a destra. Per ogni elemento $A[j]$, si interroga il BIT per sapere quanti elementi minori di $A[j]$ sono stati inseriti finora, quindi si aggiunge $A[j]$ al BIT,.
+- **Passaggio a sinistra**: Si scansiona l'array da sinistra a destra. Per ogni elemento $A[j]$, si interroga il BIT per sapere quanti elementi minori di $A[j]$ sono stati inseriti finora, quindi si aggiunge $A[j]$ al BIT.
 - **Passaggio a destra**: Si esegue una procedura simile partendo da destra per contare gli elementi maggiori, oppure si calcola il valore per differenza conoscendo le frequenze totali.
 
 ### 3. Gestione di valori grandi (Remapping)
@@ -1087,8 +1117,7 @@ Questa tecnica è una generalizzazione di quella usata per il problema del _Coun
 
 # ST Range Update with lazy propagation
 
-#TODO FROM IPAD
-
+![[Pasted image 20260211122102.png]]
 # Persistent ST
 
 Un **Persistent Segment Tree** è una variante del Segment Tree che permette di mantenere e interrogare tutte le versioni passate della struttura dati dopo ogni aggiornamento.
@@ -1112,7 +1141,7 @@ Invece di copiare l'intero albero (che costerebbe $O(n)$), si sfruttano le propr
 - **Riutilizzo dei nodi**: I nodi che non appartengono a questo percorso rimangono invariati e vengono "condivisi" tra la vecchia e la nuova versione.
 - **Puntatori**: La nuova radice punterà a una combinazione di nuovi nodi (quelli modificati) e nodi esistenti della versione precedente.
 
-#TODO FROM IPAD
+![[Pasted image 20260211122115.png]]
 ### Complessità
 
 - **Tempo**: $O(\log n)$ per ogni aggiornamento, poiché si visitano e creano solo i nodi lungo un singolo percorso.
@@ -1242,7 +1271,7 @@ Questa tecnica sfrutta la proprietà che il minimo di un intervallo può essere 
 - **Query**: Per un intervallo $[i, j]$, si selezionano due blocchi pre-calcolati di lunghezza $2^k$ (dove $2^k$ è la più grande potenza di 2 che non supera la lunghezza dell'intervallo) che coprono interamente il range sovrapponendosi.
 - **Efficienza**: È una delle soluzioni più comuni grazie al tempo di query costante e allo spazio gestibile.
 
-#TODO FROM IPAD
+![[Pasted image 20260211122207.png]]
 ### 3. Alberi Cartesiani e LCA ($O(n)$ spazio, $O(1)$ query)
 
 Una tecnica avanzata permette di ridurre lo spazio a lineare trasformando l'RMQ in un problema di **Lowest Common Ancestor (LCA)** su un albero,,.
@@ -1251,7 +1280,7 @@ Una tecnica avanzata permette di ridurre lo spazio a lineare trasformando l'RMQ 
 - **Logica**: Il minimo tra due indici $i$ e $j$ corrisponde esattamente al Lowest Common Ancestor dei nodi $i$ e $j$ nell'albero costruito.
 - **Risultato**: Utilizzando algoritmi specifici per l'LCA, si ottiene una query $O(1)$ con spazio $O(n)$.
 
-#TODO FROM IPAD
+![[Pasted image 20260211122244.png]]
 
 # Colored Range Query
 
@@ -1387,7 +1416,7 @@ La strategia ottimale prevede di calcolare il profitto massimo $M[i]$ per ogni c
 
 È possibile visualizzare il problema come la ricerca del **cammino più lungo** in un Grafo Diretto Aciclico (DAG). In questo modello, ogni casa è un nodo e gli archi collegano solo case compatibili (non adiacenti), con pesi corrispondenti al valore del bottino.
 
-#TODO FROM IPAD
+![[Pasted image 20260211121817.png]]
 ### Efficienza
 
 - **Tempo:** $O(n)$, in quanto è sufficiente una singola passata attraverso l'array delle case.
@@ -1562,6 +1591,7 @@ L'approccio standard scompone il problema in sottoproblemi basati sui prefissi d
 
 - **Definizione del sottoproblema**: $LIS(i)$ rappresenta la lunghezza della più lunga sottosequenza crescente che termina esattamente con l'elemento in posizione $i$.
 - **Relazione di ricorrenza**: Per calcolare $LIS(i)$, si esaminano tutti gli elementi precedenti $j < i$. Se $A[j] < A[i]$, l'elemento $i$ può estendere la sottosequenza che terminava in $j$. La formula è: $LIS(i) = 1 + \max({LIS(j) \mid j < i \text{ e } A[j] < A[i]} \cup {0})$.
+- LIS(i) = 1 (j not exists) | 1+max(LIS(j) | 1 $\le$ j < i and A\[j] < A\[i])
 - **Risultato finale**: La soluzione globale è il valore massimo presente nella tabella delle $LIS(i)$ calcolate.
 
 ### 2. Modellazione tramite DAG ($O(n^2)$)
@@ -1576,6 +1606,7 @@ Il problema può essere ridotto alla ricerca del **cammino più lungo** in un Gr
 
 Per gestire sequenze molto grandi, è possibile abbattere la complessità temporale a $O(n \log n)$ utilizzando il concetto di **posizioni dominanti**.
 
+- position i dominates position j iff LIS(i) >= LIS(j) and A\[i] < A\[j] => 
 - **Intuizione**: Invece di confrontare ogni elemento con tutti i precedenti, si mantiene un array (o un BST) che memorizza il più piccolo valore finale possibile per ogni lunghezza di sottosequenza trovata finora.
 - **Procedura**: Per ogni nuovo elemento della sequenza, si esegue una **ricerca binaria** (predecessor query) nell'array delle posizioni dominanti per trovare la sottosequenza più lunga che esso può estendere.
 - **Aggiornamento**: Se l'elemento permette di ottenere una sottosequenza di lunghezza esistente con un valore finale più piccolo, si aggiorna la posizione dominante corrispondente; altrimenti, si crea una nuova lunghezza massima.
@@ -1809,7 +1840,7 @@ A differenza di una lista collegata standard dove la ricerca è lineare ($O(n)$)
 - **Livelli superiori:** Includono sottoinsiemi di elementi scelti casualmente con una probabilità che decresce esponenzialmente ($1/2, 1/4, 1/8$, ecc.).
 - **Ricerca:** L'algoritmo inizia dal livello più alto, saltando ampie porzioni di dati (come in un'autostrada), e scende ai livelli inferiori solo quando si avvicina al valore target.
 
-#TODO FROM IPAD
+![[Pasted image 20260211121946.png]]
 
 ### Efficienza e Complessità
 
