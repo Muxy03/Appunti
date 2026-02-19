@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -226,11 +227,22 @@
   },
   "active": "3131e815799396cc",
   "lastOpenFiles": [
+    "MAGISTRALE/PROGRAM ANALYSIS.md",
+    "MAGISTRALE/COMPILATION TECHNIQUES.md",
+    "IMMAGINI/Pasted image 20260218144440.png",
+    "Pasted image 20260218144440.png",
+    "PDF/COMPILATION/LinguaggiI.pdf",
+    "PDF/COMPILATION/Non confermato 360344.crdownload",
+    "MAGISTRALE/PARALLEL AND DISTRIBUTED SYSTEM.md",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/4-Classification.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/3-MMexample-LeisersonMIT.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/2-Intro.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/1-Presentation.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM",
     "PDF/COMPILATION/IntroMio.pdf",
     "PDF/COMPILATION/Non confermato 611595.crdownload",
     "PDF/COMPILATION",
     "MAGISTRALE/EXTRA/Competitive Summary.md",
-    "MAGISTRALE/COMPILATION TECHNIQUES.md",
     "Pasted image 20260211122244.png",
     "Pasted image 20260211122207.png",
     "Pasted image 20260211122115.png",
@@ -239,17 +251,7 @@
     "Pasted image 20260211121817.png",
     "IMMAGINI/Pasted image 20260209004919.png",
     "IMMAGINI/Pasted image 20260209004706.png",
-    "IMMAGINI/Pasted image 20260209004448.png",
-    "IMMAGINI/Pasted image 20260209004410.png",
     "3 ANNO/INTELLIGENZA ARTIFICIALE.md",
-    "PDF/COMPETITIVE PROGRAMMING/Sliding Window Maximum.pdf",
-    "PDF/COMPETITIVE PROGRAMMING/SlidingWindowMaxima.pdf",
-    "PDF/COMPETITIVE PROGRAMMING/Binary search 2025.pdf",
-    "PDF/COMPETITIVE PROGRAMMING/Rmq 2025.pdf",
-    "PDF/COMPETITIVE PROGRAMMING/Prefix sums 2025.pdf",
-    "PDF/COMPETITIVE PROGRAMMING/Pearls 2025.pdf",
-    "PDF/COMPETITIVE PROGRAMMING/Mos 2025.pdf",
-    "PDF/COMPETITIVE PROGRAMMING/FenwickTree 2025.pdf",
     "MAGISTRALE/MAGISTRALE INFO.md",
     "MAGISTRALE/ADVANCED PROGRAMMING.md",
     "MAGISTRALE/COMPETITIVE PROGRAMMING.md",
@@ -271,7 +273,6 @@
     "MAGISTRALE/SOFTWARE COMPOSITION.md",
     "MAGISTRALE/ALGORITHM DESIGN.md",
     "MAGISTRALE/EXTRA/ALGODESIGN Assignments/Assignment7.md",
-    "MAGISTRALE/QUANTUM COMPUTING.md",
     "Untitled.canvas"
   ]
 }

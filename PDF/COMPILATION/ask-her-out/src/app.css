@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  --color-rose: #ff6b9d;
+  --color-deep-rose: #c9184a;
+  --color-blush: #ffb3c6;
+  --color-cream: #fff8f0;
+  --color-gold: #d4af37;
+  --color-midnight: #1a1423;
+  
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Crimson Text', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-cream);
+  color: var(--color-midnight);
+  overflow-x: hidden;
+}
+
+#app {
+  min-height: 100vh;
+}
