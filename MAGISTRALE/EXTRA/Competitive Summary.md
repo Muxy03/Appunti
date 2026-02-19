@@ -141,7 +141,7 @@ Immaginiamo l'array $A =$ con $K=3$:
 - **Tempo**: **$O(n)$**, poiché entrambi i puntatori si muovono solo in avanti, visitando ogni elemento al massimo una volta.
 - **Spazio**: **$O(K)$** (o $O(n)$ nel caso peggiore per la mappa), necessario per mantenere il conteggio dei valori distinti.
 
-Ecco lo pseudocodice dettagliato per risolvere il problema del **Longest K-good segment** utilizzando la tecnica dei **due puntatori** (sliding window),.
+Ecco lo pseudocodice dettagliato per risolvere il problema del **Longest K-good segment** utilizzando la tecnica dei **due puntatori** (sliding window).
 
 ```
 funzione longest_k_good_segment(A, K):
@@ -219,8 +219,8 @@ fn main() {
 ```
 ### Analisi del funzionamento
 
-1. **Mantenimento della finestra**: Il puntatore `R` definisce la fine del segmento e il puntatore `L` l'inizio,.
-2. **Conteggio Efficiente**: L'uso di una mappa (o di un array di frequenze se i valori sono limitati) permette di sapere in tempo reale quanti valori distinti sono presenti nella finestra attuale,.
+1. **Mantenimento della finestra**: Il puntatore `R` definisce la fine del segmento e il puntatore `L` l'inizio.
+2. **Conteggio Efficiente**: L'uso di una mappa (o di un array di frequenze se i valori sono limitati) permette di sapere in tempo reale quanti valori distinti sono presenti nella finestra attuale.
 3. **Complessità**: Poiché entrambi i puntatori si muovono solo in avanti, l'algoritmo visita ogni elemento al massimo due volte, garantendo un tempo di esecuzione **$O(n)$**.
    
 # Closet Pair of Points
@@ -388,7 +388,7 @@ $$P(\text{All win}) = P(\text{random permutation has no cycle longer than 50})$$
 only one cycle with length  l > 50 is possible
 
 $$
-\binom{100}{l}*(l-1)!*(100-l!) = \frac{100!}{l}
+\binom{100}{l}*(l-1)!*(100-l)! = \frac{100!}{l}
 $$
 
 $$
@@ -406,21 +406,21 @@ $$P(win) = 1 - (H_{100} - H_{50}) \approx 0.3118$$
 
 # Duplicate elements in an Array
 
-Il problema consiste nel trovare un duplicato in un array di $n+1$ elementi dove i valori sono compresi tra $0$ e $n-1$, garantendo la presenza di almeno un valore ripetuto per il principio dei cassetti (Pigeonhole Principle),. Esistono diverse strategie per affrontare questa sfida, variando drasticamente in termini di efficienza temporale e spaziale.
+Il problema consiste nel trovare un duplicato in un array di $n+1$ elementi dove i valori sono compresi tra $0$ e $n-1$, garantendo la presenza di almeno un valore ripetuto per il principio dei cassetti (Pigeonhole Principle). Esistono diverse strategie per affrontare questa sfida, variando drasticamente in termini di efficienza temporale e spaziale.
 
 ### 1. Soluzioni a Spazio Lineare ($O(n)$)
 
-L'approccio più immediato consiste nell'utilizzare una struttura dati ausiliaria per tenere traccia degli elementi incontrati durante la scansione dell'array,.
+L'approccio più immediato consiste nell'utilizzare una struttura dati ausiliaria per tenere traccia degli elementi incontrati durante la scansione dell'array.
 
-- **Hash Set:** Si scansiona l'array da sinistra a destra inserendo ogni elemento in un Hash Set; l'algoritmo si ferma quando si tenta di inserire un valore già presente,. Questo metodo richiede tempo $O(n)$ ma anche spazio $O(n)$.
-- **Bit Vector (Direct Access Table):** Poiché l'intervallo dei valori è noto e limitato, si può utilizzare un vettore di bit di dimensione $n$. Si imposta il bit in posizione $k$ a 1 quando si incontra il valore $k$; se il bit è già 1, il valore è un duplicato,. Sebbene più efficiente in pratica rispetto a una mappa, richiede comunque spazio proporzionale a $n$.
+- **Hash Set:** Si scansiona l'array da sinistra a destra inserendo ogni elemento in un Hash Set; l'algoritmo si ferma quando si tenta di inserire un valore già presente. Questo metodo richiede tempo $O(n)$ ma anche spazio $O(n)$.
+- **Bit Vector (Direct Access Table):** Poiché l'intervallo dei valori è noto e limitato, si può utilizzare un vettore di bit di dimensione $n$. Si imposta il bit in posizione $k$ a 1 quando si incontra il valore $k$; se il bit è già 1, il valore è un duplicato. Sebbene più efficiente in pratica rispetto a una mappa, richiede comunque spazio proporzionale a $n$.
 
 ### 2. Ricostruzione Bit a Bit ($O(n \log n)$ tempo, $O(1)$ spazio)
 
-Se l'array è di sola lettura e lo spazio è estremamente limitato, è possibile identificare il duplicato bit dopo bit eseguendo $\log n$ passaggi sull'array,.
+Se l'array è di sola lettura e lo spazio è estremamente limitato, è possibile identificare il duplicato bit dopo bit eseguendo $\log n$ passaggi sull'array.
 
-- **Logica:** Per ogni posizione del bit (da quello meno significativo a quello più significativo), si conta quante volte compare lo 0 e quante volte compare l'1 tra i numeri dell'array,.
-- Confrontando questi conteggi con la distribuzione attesa per i numeri da $0$ a $n-1$, è possibile determinare se il bit corrispondente del duplicato sia 0 o 1,. Questo approccio garantisce uno spazio costante $O(1)$ ma richiede più tempo a causa dei molteplici passaggi.
+- **Logica:** Per ogni posizione del bit (da quello meno significativo a quello più significativo), si conta quante volte compare lo 0 e quante volte compare l'1 tra i numeri dell'array.
+- Confrontando questi conteggi con la distribuzione attesa per i numeri da $0$ a $n-1$, è possibile determinare se il bit corrispondente del duplicato sia 0 o 1. Questo approccio garantisce uno spazio costante $O(1)$ ma richiede più tempo a causa dei molteplici passaggi.
 - Best if no  random access
 
 ### 3. Destroying A $\Theta(n)$ time and O(1) space
@@ -557,7 +557,7 @@ A\[i] = RangeSum(i,i+1)
 
 >Ilya the Lion wants to help all his friends with passing exams. They need to solve the following problem to pass the IT exam.
 >
->You've got string _s_ = _s_1_s_2... _s__n_ (_n_ is the length of the string), consisting only of characters "." and "#" and _m_ queries. Each query is described by a pair of integers _l__i_, _r__i_ (1 ≤ _l__i_ < _r__i_ ≤ _n_). The answer to the query _l__i_, _r__i_ is the number of such integers _i_ (_l__i_ ≤ _i_ < _r__i_), that _s__i_ = _s__i_ + 1.
+>You've got string _s_ = _s_1_s_2... _s__n_ (_n_ is the length of the string), consisting only of characters "." and "#" and _m_ queries. Each query is described by a pair of integers _l__i_, _r__i_ (1 ≤ _l__i_ < _r__i_ ≤ _n_). The answer to the query _l__i_, _r__i_ is the number of such integers _i_ (_l__i_ ≤ _i_ < _r__i_), that _s__i_ = _s__i_ + 1.
 >
 >Ilya the Lion wants to help his friends but is there anyone to help him? Help Ilya, solve the problem.
 
@@ -578,7 +578,7 @@ Per risolvere il problema in modo efficiente, si utilizza la tecnica delle **som
 
 # Little girl and Maximum
 
-Il problema richiede di permutare gli elementi di un array $A$ per massimizzare la somma totale di diverse query di intervallo (range sum) $Q$,.
+Il problema richiede di permutare gli elementi di un array $A$ per massimizzare la somma totale di diverse query di intervallo (range sum) $Q$.
 
 ![[Pasted image 20260205173230.png]]
 ```rust
@@ -921,15 +921,15 @@ Questa tecnica è estremamente efficiente rispetto a un approccio banale (che ri
 
 # Dynamic Prefix-Sums with Range-Update
 
-Il problema del **Dynamic Prefix-Sums con Range-Update** richiede di gestire un array in cui è possibile aggiungere un valore $v$ a tutti gli elementi in un intervallo $[l, r]$ e, contemporaneamente, calcolare la somma dei primi $i$ elementi in tempo logaritmico $O(\log n)$,.
+Il problema del **Dynamic Prefix-Sums con Range-Update** richiede di gestire un array in cui è possibile aggiungere un valore $v$ a tutti gli elementi in un intervallo $[l, r]$ e, contemporaneamente, calcolare la somma dei primi $i$ elementi in tempo logaritmico $O(\log n)$.
 
 ### La sfida tecnica
 
-In una struttura statica, le somme prefisse si calcolano in $O(1)$, ma l'aggiornamento richiede $O(n)$. Per rendere dinamiche entrambe le operazioni, si utilizza solitamente il **Fenwick Tree** (o Binary Indexed Tree),. Tuttavia, un Fenwick Tree standard supporta nativamente solo aggiornamenti puntuali e query di intervallo, o aggiornamenti di intervallo e query puntuali (tramite l'array delle differenze). Risolvere contemporaneamente **aggiornamenti di intervallo** e **somme di intervallo** richiede un approccio più sofisticato.
+In una struttura statica, le somme prefisse si calcolano in $O(1)$, ma l'aggiornamento richiede $O(n)$. Per rendere dinamiche entrambe le operazioni, si utilizza solitamente il **Fenwick Tree** (o Binary Indexed Tree). Tuttavia, un Fenwick Tree standard supporta nativamente solo aggiornamenti puntuali e query di intervallo, o aggiornamenti di intervallo e query puntuali (tramite l'array delle differenze). Risolvere contemporaneamente **aggiornamenti di intervallo** e **somme di intervallo** richiede un approccio più sofisticato.
 
 ### Soluzione con due Fenwick Tree
 
-L'approccio ottimale prevede l'utilizzo di due Fenwick Tree distinti ($BIT_1$ e $BIT_2$) per tracciare i cambiamenti necessari a ricostruire la somma totale,.
+L'approccio ottimale prevede l'utilizzo di due Fenwick Tree distinti ($BIT_1$ e $BIT_2$) per tracciare i cambiamenti necessari a ricostruire la somma totale.
 
 1. **Array delle differenze**: Si definisce un array ausiliario $D$ tale che l'elemento originale $A[i]$ sia la somma prefissa di $D$ ($A[i] = \sum_{k=1}^i D[k]$). Un aggiornamento nell'intervallo $[l, r]$ di valore $v$ si traduce in due aggiornamenti puntuali su $D$: $+v$ in posizione $l$ e $-v$ in posizione $r+1$.
 2. **Scomposizione della Somma**: La somma prefissa di $A$ fino a $i$ è $\sum_{k=1}^i A[k]$. Sostituendo $A[k]$ con la sua definizione basata su $D$, otteniamo che ogni $D[m]$ compare nella somma totale $(i - m + 1)$ volte. Matematicamente: $\sum_{k=1}^i A[k] = (i + 1) \sum_{m=1}^i D[m] - \sum_{m=1}^i (m \cdot D[m])$.
@@ -982,7 +982,7 @@ impl RangeUpdate {
 ```
 ### Complessità e Performance
 
-Grazie a questa scomposizione, sia l'aggiornamento dell'intervallo che la query della somma prefissa possono essere eseguiti in **$O(\log n)$**,. Questa tecnica è considerata estremamente efficiente e superiore in velocità rispetto ad altre strutture come i Segment Tree in molti scenari di programmazione competitiva.
+Grazie a questa scomposizione, sia l'aggiornamento dell'intervallo che la query della somma prefissa possono essere eseguiti in **$O(\log n)$**. Questa tecnica è considerata estremamente efficiente e superiore in velocità rispetto ad altre strutture come i Segment Tree in molti scenari di programmazione competitiva.
 
 # Segment Tree
 
@@ -1065,9 +1065,9 @@ Sommando questi prodotti per ogni possibile $j$ (da $1$ a $n-2$), si ottiene il 
 
 ### 2. Ottimizzazione con Fenwick Tree (BIT)
 
-Per evitare una scansione lineare per ogni $j$, che porterebbe a una complessità $O(n^2)$, si può utilizzare un **Fenwick Tree** (o Binary Indexed Tree) per contare gli elementi in tempo logaritmico $O(\log n)$,.
+Per evitare una scansione lineare per ogni $j$, che porterebbe a una complessità $O(n^2)$, si può utilizzare un **Fenwick Tree** (o Binary Indexed Tree) per contare gli elementi in tempo logaritmico $O(\log n)$.
 
-- **Passaggio a sinistra**: Si scansiona l'array da sinistra a destra. Per ogni elemento $A[j]$, si interroga il BIT per sapere quanti elementi minori di $A[j]$ sono stati inseriti finora, quindi si aggiunge $A[j]$ al BIT,.
+- **Passaggio a sinistra**: Si scansiona l'array da sinistra a destra. Per ogni elemento $A[j]$, si interroga il BIT per sapere quanti elementi minori di $A[j]$ sono stati inseriti finora, quindi si aggiunge $A[j]$ al BIT.
 - **Passaggio a destra**: Si esegue una procedura simile partendo da destra per contare gli elementi maggiori, oppure si calcola il valore per differenza conoscendo le frequenze totali.
 
 ### 3. Gestione di valori grandi (Remapping)
@@ -1076,18 +1076,20 @@ Se gli interi nell'array $A$ sono molto grandi o sparsi, la dimensione del Fenwi
 
 1. Si ordinano i valori distinti presenti in $A$.
 2. Si sostituisce ogni valore con il suo "rango" (la sua posizione nell'ordinamento).
-3. L'array risultante conterrà solo valori nell'intervallo $[1, n]$, permettendo l'uso di un BIT di dimensioni contenute,.
+3. L'array risultante conterrà solo valori nell'intervallo $[1, n]$, permettendo l'uso di un BIT di dimensioni contenute.
 
 ### Complessità Finale
 
-- **Tempo**: $O(n \log n)$, dominato dall'ordinamento per il remapping e dalle $n$ operazioni sul Fenwick Tree,.
-- **Spazio**: $O(n)$ per memorizzare il Fenwick Tree e gli array ausiliari per i conteggi,.
+- **Tempo**: $O(n \log n)$, dominato dall'ordinamento per il remapping e dalle $n$ operazioni sul Fenwick Tree.
+- **Spazio**: $O(n)$ per memorizzare il Fenwick Tree e gli array ausiliari per i conteggi.
 
 Questa tecnica è una generalizzazione di quella usata per il problema del _Counting Inversions_, dove però si cercano coppie "fuori ordine" anziché triplette ordinate.
 
 # ST Range Update with lazy propagation
 
 #TODO FROM IPAD
+![[Pasted image 20260209195942.png]]
+![[Pasted image 20260209200208.png]]
 
 # Persistent ST
 
@@ -1113,6 +1115,8 @@ Invece di copiare l'intero albero (che costerebbe $O(n)$), si sfruttano le propr
 - **Puntatori**: La nuova radice punterà a una combinazione di nuovi nodi (quelli modificati) e nodi esistenti della versione precedente.
 
 #TODO FROM IPAD
+
+![[Pasted image 20260210132214.png]]
 ### Complessità
 
 - **Tempo**: $O(\log n)$ per ogni aggiornamento, poiché si visitano e creano solo i nodi lungo un singolo percorso.
@@ -1137,6 +1141,8 @@ L'algoritmo mantiene un risultato corrente e due puntatori che delimitano l'inte
 
 - **`add(pos)`**: Aggiunge l'elemento alla posizione `pos` nel calcolo corrente.
 - **`remove(pos)`**: Rimuove l'elemento alla posizione `pos` dal calcolo corrente.
+- curr_i < i || curr_j > j => remove
+- curr_i > i || curr_j < j => add
 
 ```rust
 pub fn three_or_more(a: &[usize], queries: &[(usize, usize)]) -> Vec<usize> {
@@ -1223,20 +1229,20 @@ Grazie all'ordinamento per blocchi, i puntatori non "viaggiano" troppo :
 
 # Static RMQ
 
-Il problema **Static RMQ** (Range Minimum Query) consiste nel trovare il valore minimo (o la sua posizione) all'interno di un intervallo specifico $[i, j]$ di un array che non subisce modifiche nel tempo,,. L'obiettivo ideale è ottenere una risposta in tempo costante $O(1)$ con una fase di pre-elaborazione efficiente,.
+Il problema **Static RMQ** (Range Minimum Query) consiste nel trovare il valore minimo (o la sua posizione) all'interno di un intervallo specifico $[i, j]$ di un array che non subisce modifiche nel tempo,. L'obiettivo ideale è ottenere una risposta in tempo costante $O(1)$ con una fase di pre-elaborazione efficiente.
 
 Ecco le principali strategie risolutive analizzate nei sorgenti:
 
 ### 1. Tabulazione Completa ($O(n^2)$ spazio, $O(1)$ query)
 
-L'approccio più semplice consiste nel pre-calcolare le risposte per ogni possibile coppia di indici $[i, j]$ e memorizzarle in una tabella,.
+L'approccio più semplice consiste nel pre-calcolare le risposte per ogni possibile coppia di indici $[i, j]$ e memorizzarle in una tabella.
 
 - **Vantaggio**: La query è un semplice accesso a una matrice.
-- **Svantaggio**: Richiede tempo e spazio quadratici, rendendolo inutilizzabile per array di grandi dimensioni,.
+- **Svantaggio**: Richiede tempo e spazio quadratici, rendendolo inutilizzabile per array di grandi dimensioni.
 
 ### 2. Sparse Table ($O(n \log n)$ spazio, $O(1)$ query)
 
-Questa tecnica sfrutta la proprietà che il minimo di un intervallo può essere ottenuto combinando i risultati di due intervalli sovrapposti la cui lunghezza è una potenza di 2,.
+Questa tecnica sfrutta la proprietà che il minimo di un intervallo può essere ottenuto combinando i risultati di due intervalli sovrapposti la cui lunghezza è una potenza di 2.
 
 - **Pre-elaborazione**: Si calcolano i minimi per tutti gli intervalli di lunghezza $2^k$. Ogni posizione $i$ memorizza circa $\log n$ risposte.
 - **Query**: Per un intervallo $[i, j]$, si selezionano due blocchi pre-calcolati di lunghezza $2^k$ (dove $2^k$ è la più grande potenza di 2 che non supera la lunghezza dell'intervallo) che coprono interamente il range sovrapponendosi.
@@ -1245,7 +1251,7 @@ Questa tecnica sfrutta la proprietà che il minimo di un intervallo può essere 
 #TODO FROM IPAD
 ### 3. Alberi Cartesiani e LCA ($O(n)$ spazio, $O(1)$ query)
 
-Una tecnica avanzata permette di ridurre lo spazio a lineare trasformando l'RMQ in un problema di **Lowest Common Ancestor (LCA)** su un albero,,.
+Una tecnica avanzata permette di ridurre lo spazio a lineare trasformando l'RMQ in un problema di **Lowest Common Ancestor (LCA)** su un albero,.
 
 - **Costruzione**: Si crea un **Albero Cartesiano** in cui la radice è il valore minimo dell'array e i sottoalberi sinistro e destro sono costruiti ricorsivamente sulle porzioni rimanenti dell'array.
 - **Logica**: Il minimo tra due indici $i$ e $j$ corrisponde esattamente al Lowest Common Ancestor dei nodi $i$ e $j$ nell'albero costruito.
@@ -1633,21 +1639,21 @@ Per risolvere l'**Activity Selection Problem**, la strategia greedy si basa su u
 
 ### La Dimostrazione (Argomento di Scambio)
 
-La dimostrazione mostra che se esiste una soluzione ottima che non include l'attività che finisce per prima, possiamo trasformarla in una soluzione altrettanto valida che invece la include,.
+La dimostrazione mostra che se esiste una soluzione ottima che non include l'attività che finisce per prima, possiamo trasformarla in una soluzione altrettanto valida che invece la include.
 
 1. **Ipotesi:** Sia $A_k$ un sottoinsieme massimo (una soluzione ottima) di attività compatibili in $S_k$. Supponiamo che $a_j$ sia l'attività in $A_k$ con il tempo di fine più anticipato.
 2. **Caso 1 ($a_j = a_m$):** Se l'attività che finisce prima nella nostra soluzione ottima è proprio $a_m$, il lemma è già dimostrato.
 3. **Caso 2 ($a_j \neq a_m$):** Se $a_j$ è diversa da $a_m$, costruiamo un nuovo insieme $A'_k$ sostituendo $a_j$ con $a_m$ ($A'_k = A_k \setminus {a_j} \cup {a_m}$).
-4. **Verifica della compatibilità:** Poiché $a_m$ è l'attività che finisce prima in assoluto nel sottoproblema, il suo tempo di fine $f_m$ è minore o uguale al tempo di fine $f_j$ di $a_j$ ($f_m \le f_j$),. Dato che $A_k$ era un insieme compatibile e $a_j$ era la prima a finire, $a_m$ non può interferire con nessuna delle altre attività rimaste in $A_k \setminus {a_j}$,.
-5. **Conclusione:** Poiché l'insieme $A'_k$ ha lo stesso numero di attività di $A_k$ ($|A'_k| = |A_k|$), esso è ancora una soluzione di dimensione massima, ma questa volta include $a_m$,.
+4. **Verifica della compatibilità:** Poiché $a_m$ è l'attività che finisce prima in assoluto nel sottoproblema, il suo tempo di fine $f_m$ è minore o uguale al tempo di fine $f_j$ di $a_j$ ($f_m \le f_j$). Dato che $A_k$ era un insieme compatibile e $a_j$ era la prima a finire, $a_m$ non può interferire con nessuna delle altre attività rimaste in $A_k \setminus {a_j}$.
+5. **Conclusione:** Poiché l'insieme $A'_k$ ha lo stesso numero di attività di $A_k$ ($|A'_k| = |A_k|$), esso è ancora una soluzione di dimensione massima, ma questa volta include $a_m$.
 
 ### Ottimalità dell'Algoritmo (Per Induzione)
 
 Sulla base di questo lemma, possiamo dimostrare per induzione che l'algoritmo greedy produce sempre una soluzione ottima:
 
 - **Passo Induttivo:** Dopo aver scelto l'attività $a_1$ (quella che finisce prima), il lemma ci assicura che questa scelta è "sicura" e fa parte di almeno una soluzione ottima.
-- **Riduzione:** Una volta effettuata la scelta, restiamo con un unico sottoproblema: trovare la soluzione ottima per le attività che iniziano dopo la fine di $a_1$,.
-- **Conclusione:** Per l'ipotesi induttiva, l'algoritmo continuerà a fare scelte ottimali su sottoproblemi sempre più piccoli fino a completare la pianificazione massima,.
+- **Riduzione:** Una volta effettuata la scelta, restiamo con un unico sottoproblema: trovare la soluzione ottima per le attività che iniziano dopo la fine di $a_1$.
+- **Conclusione:** Per l'ipotesi induttiva, l'algoritmo continuerà a fare scelte ottimali su sottoproblemi sempre più piccoli fino a completare la pianificazione massima.
 
 Questo approccio permette di risolvere il problema in tempo $\Theta(n)$ se le attività sono già ordinate per tempo di fine, o in $O(n \log n)$ se è necessario l'ordinamento iniziale.
 
