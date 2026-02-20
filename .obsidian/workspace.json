@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAGISTRALE/COMPILATION TECHNIQUES.md",
+                "file": "MAGISTRALE/PROGRAM ANALYSIS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "COMPILATION TECHNIQUES"
+              "title": "PROGRAM ANALYSIS"
             }
           }
         ]
@@ -227,21 +227,22 @@
   },
   "active": "3131e815799396cc",
   "lastOpenFiles": [
+    "PDF/COMPILATION/proton-recovery-kit.pdf",
+    "PDF/COMPILATION/Non confermato 579682.crdownload",
+    "MAGISTRALE/PARALLEL AND DISTRIBUTED SYSTEM.md",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/5-SLURM.pdf",
     "MAGISTRALE/PROGRAM ANALYSIS.md",
     "MAGISTRALE/COMPILATION TECHNIQUES.md",
     "IMMAGINI/Pasted image 20260218144440.png",
     "Pasted image 20260218144440.png",
     "PDF/COMPILATION/LinguaggiI.pdf",
     "PDF/COMPILATION/Non confermato 360344.crdownload",
-    "MAGISTRALE/PARALLEL AND DISTRIBUTED SYSTEM.md",
     "PDF/PARALLEL AND DISTRIBUTED SYSTEM/4-Classification.pdf",
     "PDF/PARALLEL AND DISTRIBUTED SYSTEM/3-MMexample-LeisersonMIT.pdf",
     "PDF/PARALLEL AND DISTRIBUTED SYSTEM/2-Intro.pdf",
     "PDF/PARALLEL AND DISTRIBUTED SYSTEM/1-Presentation.pdf",
     "PDF/PARALLEL AND DISTRIBUTED SYSTEM",
     "PDF/COMPILATION/IntroMio.pdf",
-    "PDF/COMPILATION/Non confermato 611595.crdownload",
-    "PDF/COMPILATION",
     "MAGISTRALE/EXTRA/Competitive Summary.md",
     "Pasted image 20260211122244.png",
     "Pasted image 20260211122207.png",
@@ -272,7 +273,6 @@
     "MAGISTRALE/EXTRA/ALGODESIGN Assignments/Assignment8.md",
     "MAGISTRALE/SOFTWARE COMPOSITION.md",
     "MAGISTRALE/ALGORITHM DESIGN.md",
-    "MAGISTRALE/EXTRA/ALGODESIGN Assignments/Assignment7.md",
     "Untitled.canvas"
   ]
 }

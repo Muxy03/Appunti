@@ -4,3 +4,7 @@ esame scritto seguito da un orale
 # 19/2/26
 
 #TODO slides 
+
+# 20/2/26
+
+#TODO slides 
