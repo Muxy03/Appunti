@@ -23,3 +23,6 @@ wa -> w = word and a = symbol of the alphabet
 
 ![[LinguaggiI.pdf#page=70]]
 
+# 23/2/26
+
+![[LinguaggiI.pdf]]

@@ -1117,14 +1117,7 @@ Questa tecnica è una generalizzazione di quella usata per il problema del _Coun
 
 # ST Range Update with lazy propagation
 
-<<<<<<< HEAD
-#TODO FROM IPAD
-![[Pasted image 20260209195942.png]]
-![[Pasted image 20260209200208.png]]
-
-=======
 ![[Pasted image 20260211122102.png]]
->>>>>>> 85108b5a5a091a4ff9094436f2042b31fca70b5c
 # Persistent ST
 
 Un **Persistent Segment Tree** è una variante del Segment Tree che permette di mantenere e interrogare tutte le versioni passate della struttura dati dopo ogni aggiornamento.
@@ -1148,11 +1141,7 @@ Invece di copiare l'intero albero (che costerebbe $O(n)$), si sfruttano le propr
 - **Riutilizzo dei nodi**: I nodi che non appartengono a questo percorso rimangono invariati e vengono "condivisi" tra la vecchia e la nuova versione.
 - **Puntatori**: La nuova radice punterà a una combinazione di nuovi nodi (quelli modificati) e nodi esistenti della versione precedente.
 
-<<<<<<< HEAD
-#TODO FROM IPAD
 
-![[Pasted image 20260210132214.png]]
-=======
 ![[Pasted image 20260211122115.png]]
 >>>>>>> 85108b5a5a091a4ff9094436f2042b31fca70b5c
 ### Complessità
@@ -1901,3 +1890,6 @@ Questa categoria è più sottile e richiede di ordinare i mostri per **valore de
     - Se riesci a sconfiggere tutti i mostri, stampa **"YES"** seguito dall'ordine degli indici.
 
 Questa strategia garantisce la correttezza in tempo $O(n \log n)$, dominato dalla fase di ordinamento.
+
+---
+
