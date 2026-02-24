@@ -1523,7 +1523,7 @@ Il problema presenta una **substruttura ottimale**: una soluzione ottima per $i$
 
 ### Varianti e Ottimizzazioni
 
-1. **Reclupero della soluzione:** È possibile ricostruire l'insieme degli oggetti scelti tracciando a ritroso le decisioni memorizzate nella tabella $M$ in tempo $O(n)$.
+1. **Recupero della soluzione:** È possibile ricostruire l'insieme degli oggetti scelti tracciando a ritroso le decisioni memorizzate nella tabella $M$ in tempo $O(n)$.
 2. **Knapsack basato sui valori:** Se i pesi sono molto grandi ma i valori sono piccoli, si può utilizzare una ricorrenza alternativa che minimizza il peso per un dato profitto, con complessità $O(n^2 v_{max})$.
 3. **Approssimazione (PTAS):** Per istanze con valori molto grandi, si possono arrotondare e scalare i valori degli oggetti per ottenere una soluzione entro un fattore $(1 + \epsilon)$ dall'ottimo in tempo polinomiale.
 
@@ -1648,7 +1648,6 @@ Data la sequenza $S = [2, -1, 4, 3, 5, -1, 3, 2]$, i calcoli procedono come segu
 - **Spaziale:** È richiesto uno spazio **$O(n)$** per memorizzare gli array di supporto necessari ai calcoli della LIS e della LDS.
 
 ## Largest independent set on trees
-
 ![[Pasted image 20260206172136.png]]
 # Greedy
 

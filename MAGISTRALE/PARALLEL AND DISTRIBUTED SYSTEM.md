@@ -13,3 +13,13 @@
 # 19/2/26
 
 ![[5-SLURM.pdf]]
+
+# 20/2/26
+
+![[5-SLURM.pdf]]
+
+#  24/2/26
+
+![[6-Shared-Memory.pdf]]
+
+#TODO Controlla codice e registrazione
