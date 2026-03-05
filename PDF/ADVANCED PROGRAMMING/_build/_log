@@ -1,0 +1,10 @@
+### Starting build.
+# Target: /home/muxy/.opam/5.2.0/bin/ocamlc.opt -config, tags: {  }
+/home/muxy/.opam/5.2.0/bin/ocamlc.opt -config
+Backtrace:
+  - Failed to build the target parser.mli
+      - Building parser.mli:
+          - Failed to build all of these:
+              - Building parser.mly
+              - Building parser.mlypack
+# Compilation unsuccessful.

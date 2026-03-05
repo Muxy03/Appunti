@@ -23,3 +23,13 @@
 ![[6-Shared-Memory.pdf]]
 
 #TODO Controlla codice e registrazione
+
+# 25/2/26
+
+![[6-Shared-Memory.pdf]]
+
+# 27/2/26
+
+![[7-SIMD-on-CPU.pdf]]
+
+#TODO check codes

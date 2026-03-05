@@ -10,3 +10,15 @@ esame scritto seguito da un orale
 # 20/2/26
 
 ![[ProgramAnalysis-02-Denotational-v2.pdf]]
+
+# 26/2/26
+
+![[ProgramAnalysis-03-HL.pdf]]
+
+# 27/2/26
+
+![[ProgramAnalysis-04-TotalCorrectness.pdf]]
+
+# 5/3/26
+
+![[ProgramAnalysis-05-IL-draft.pdf]]

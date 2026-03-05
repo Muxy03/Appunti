@@ -26,3 +26,19 @@ wa -> w = word and a = symbol of the alphabet
 # 23/2/26
 
 ![[LinguaggiI.pdf]]
+
+# 26/2/26
+
+![[Lexer.pdf]]
+
+# 2/3/26
+
+![[ParsingMio.pdf]]
+
+# 4/3/26
+
+![[ParsingMio.pdf]]
+
+# 5/3/26
+
+![[ParsingMio.pdf]]

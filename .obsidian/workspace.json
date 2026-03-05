@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "51aaa9902106689e",
+        "id": "31743966fa0273a4",
         "type": "tabs",
         "children": [
           {
-            "id": "5dd86cb00740b476",
+            "id": "7422b8cd8b243467",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MAGISTRALE/PARALLEL AND DISTRIBUTED SYSTEM.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "PARALLEL AND DISTRIBUTED SYSTEM"
+              "title": "Nuova scheda"
             }
           }
         ]
@@ -44,7 +40,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Esplora risorse"
             }
           },
           {
@@ -211,13 +207,13 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:Apri selezione rapida": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota del giorno": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "bases:Crea nuova Base": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:New drawing": false,
@@ -225,26 +221,26 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "5dd86cb00740b476",
+  "active": "7422b8cd8b243467",
   "lastOpenFiles": [
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/6-Shared-Memory.pdf",
-    "MAGISTRALE/PROGRAM ANALYSIS.md",
     "MAGISTRALE/PARALLEL AND DISTRIBUTED SYSTEM.md",
+    "MAGISTRALE/PROGRAM ANALYSIS.md",
+    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-05-IL-draft.pdf",
+    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-04-TotalCorrectness.pdf",
+    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-03-HL.pdf",
+    "PDF/PROGRAM ANALYSIS/OneDrive_1_05-03-2026/ProgramAnalysis-05-IL-draft.pdf",
+    "PDF/PROGRAM ANALYSIS/OneDrive_1_05-03-2026/ProgramAnalysis-04-TotalCorrectness.pdf",
+    "PDF/PROGRAM ANALYSIS/OneDrive_1_05-03-2026/ProgramAnalysis-03-HL.pdf",
+    "PDF/PROGRAM ANALYSIS/OneDrive_1_05-03-2026",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/7-SIMD-on-CPU.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/Non confermato 468780.crdownload",
+    "PDF/PROGRAM ANALYSIS/OneDrive_1_05-03-2026.zip",
+    "MAGISTRALE/CT Laboratoty.md",
     "MAGISTRALE/COMPILATION TECHNIQUES.md",
-    "PDF/COMPILATION/Lexer.pdf",
-    "PDF/COMPILATION/Non confermato 669039.crdownload",
     "MAGISTRALE/EXTRA/Competitive Summary.md",
     "IMMAGINI/Pasted image 20260206172136.png",
-    "PDF/COMPETITIVE PROGRAMMING/DynamicProgramming.pdf",
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-02-Denotational-v2.pdf",
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-01-Introduction.pdf",
-    "PDF/PROGRAM ANALYSIS",
-    "PDF/COMPILATION/proton-recovery-kit.pdf",
-    "PDF/COMPILATION/Non confermato 579682.crdownload",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/5-SLURM.pdf",
     "IMMAGINI/Pasted image 20260218144440.png",
     "Pasted image 20260218144440.png",
-    "PDF/COMPILATION/LinguaggiI.pdf",
     "Pasted image 20260211122244.png",
     "Pasted image 20260211122207.png",
     "Pasted image 20260211122115.png",
@@ -272,7 +268,6 @@
     "MAGISTRALE/EXTRA/AlgoDesign Dimostrazioni.md",
     "MAGISTRALE/EXTRA/ALGODESIGN Assignments/Assignment8.md",
     "MAGISTRALE/SOFTWARE COMPOSITION.md",
-    "MAGISTRALE/ALGORITHM DESIGN.md",
     "Untitled.canvas"
   ]
 }
