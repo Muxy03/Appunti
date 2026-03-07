@@ -33,3 +33,7 @@
 ![[7-SIMD-on-CPU.pdf]]
 
 #TODO check codes
+
+# 6/3/26
+
+![[7-SIMT-on-GPU.pdf]]

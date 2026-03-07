@@ -22,3 +22,7 @@ esame scritto seguito da un orale
 # 5/3/26
 
 ![[ProgramAnalysis-05-IL-draft.pdf]]
+
+# 6/3/26
+
+![[ProgramAnalysis-06-RealIL.pdf]]
