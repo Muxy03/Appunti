@@ -42,3 +42,7 @@ wa -> w = word and a = symbol of the alphabet
 # 5/3/26
 
 ![[ParsingMio.pdf]]
+
+# 9/3/26
+
+![[ParsingMio.pdf]]

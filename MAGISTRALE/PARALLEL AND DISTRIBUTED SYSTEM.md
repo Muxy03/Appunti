@@ -37,3 +37,7 @@
 # 6/3/26
 
 ![[7-SIMT-on-GPU.pdf]]
+
+# 9/3/26
+
+![[7-SIMT-on-GPU.pdf]]
