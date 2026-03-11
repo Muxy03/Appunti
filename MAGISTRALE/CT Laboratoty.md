@@ -11,3 +11,7 @@ Laboratory
 # 4/3/26
 
 ![[types.pdf]]
+
+# 11/3/26
+
+![[cfg.pdf]]

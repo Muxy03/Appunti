@@ -38,6 +38,11 @@
 
 ![[7-SIMT-on-GPU.pdf]]
 
-# 9/3/26
+# 10/3/26
 
 ![[7-SIMT-on-GPU.pdf]]
+
+# 11/3/26
+
+![[8-Metrics_and_Laws.pdf]]
+

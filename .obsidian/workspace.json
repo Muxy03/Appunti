@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -227,20 +226,20 @@
   },
   "active": "7422b8cd8b243467",
   "lastOpenFiles": [
+    "MAGISTRALE/CT Laboratoty.md",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/8-Metrics_and_Laws.pdf",
+    "PDF/COMPILATION/Laboratory/Non confermato 433750.crdownload",
+    "PDF/COMPILATION/Laboratory/cfg.pdf",
+    "PDF/COMPILATION/Laboratory/Non confermato 543065.crdownload",
+    "PDF/COMPILATION/Laboratory/Non confermato 741756.crdownload",
+    "PDF/COMPILATION/Laboratory/Non confermato 54144.crdownload",
+    "MAGISTRALE/PARALLEL AND DISTRIBUTED SYSTEM.md",
     "MAGISTRALE/COMPILATION TECHNIQUES.md",
     "MAGISTRALE/PROGRAM ANALYSIS.md",
-    "MAGISTRALE/PARALLEL AND DISTRIBUTED SYSTEM.md",
     "PDF/PROGRAM ANALYSIS/ProgramAnalysis-05-IL-draft.pdf",
     "PDF/PROGRAM ANALYSIS/ProgramAnalysis-04-TotalCorrectness.pdf",
     "PDF/PROGRAM ANALYSIS/ProgramAnalysis-03-HL.pdf",
     "PDF/PROGRAM ANALYSIS/OneDrive_1_05-03-2026/ProgramAnalysis-05-IL-draft.pdf",
-    "PDF/PROGRAM ANALYSIS/OneDrive_1_05-03-2026/ProgramAnalysis-04-TotalCorrectness.pdf",
-    "PDF/PROGRAM ANALYSIS/OneDrive_1_05-03-2026/ProgramAnalysis-03-HL.pdf",
-    "PDF/PROGRAM ANALYSIS/OneDrive_1_05-03-2026",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/7-SIMD-on-CPU.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/Non confermato 468780.crdownload",
-    "PDF/PROGRAM ANALYSIS/OneDrive_1_05-03-2026.zip",
-    "MAGISTRALE/CT Laboratoty.md",
     "MAGISTRALE/EXTRA/Competitive Summary.md",
     "IMMAGINI/Pasted image 20260206172136.png",
     "IMMAGINI/Pasted image 20260218144440.png",
