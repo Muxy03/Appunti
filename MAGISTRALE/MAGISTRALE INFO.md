@@ -7,7 +7,8 @@
 
 ![[Pasted image 20250825151008.png]]
 
+# Calendario 2026
 
-# SESSIONE INVERNALE 
-8/1/26    | 30 /1/26 ADVANCED PROGRAMMING
-14/1/26 |  5/2/26    COMPETITIVE PROGRAMMING
+
+![[Pasted image 20260312193136.png]]
+
