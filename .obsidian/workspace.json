@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAGISTRALE/MAGISTRALE INFO.md",
+                "file": "MAGISTRALE/PROGRAM ANALYSIS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MAGISTRALE INFO"
+              "title": "PROGRAM ANALYSIS"
             }
           }
         ]
@@ -227,6 +227,8 @@
   },
   "active": "7422b8cd8b243467",
   "lastOpenFiles": [
+    "MAGISTRALE/PARALLEL AND DISTRIBUTED SYSTEM.md",
+    "MAGISTRALE/MAGISTRALE INFO.md",
     "IMMAGINI/Pasted image 20260312193136.png",
     "Pasted image 20260312193136.png",
     "MAGISTRALE/PROGRAM ANALYSIS.md",
@@ -235,7 +237,6 @@
     "PDF/COMPILATION/Non confermato 36271.crdownload",
     "PDF/COMPILATION/Bottom_up_Parsing.pdf",
     "PDF/COMPILATION/Non confermato 565324.crdownload",
-    "MAGISTRALE/PARALLEL AND DISTRIBUTED SYSTEM.md",
     "MAGISTRALE/CT Laboratoty.md",
     "PDF/PARALLEL AND DISTRIBUTED SYSTEM/8-Metrics_and_Laws.pdf",
     "PDF/COMPILATION/Laboratory/Non confermato 433750.crdownload",
@@ -252,9 +253,7 @@
     "Pasted image 20260211122115.png",
     "Pasted image 20260211122102.png",
     "Pasted image 20260211121946.png",
-    "Pasted image 20260211121817.png",
     "3 ANNO/INTELLIGENZA ARTIFICIALE.md",
-    "MAGISTRALE/MAGISTRALE INFO.md",
     "MAGISTRALE/ADVANCED PROGRAMMING.md",
     "MAGISTRALE/COMPETITIVE PROGRAMMING.md",
     "PDF/Esercizio 26_02.md",

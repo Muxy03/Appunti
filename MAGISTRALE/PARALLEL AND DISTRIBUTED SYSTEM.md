@@ -46,3 +46,6 @@
 
 ![[8-Metrics_and_Laws.pdf]]
 
+# 12/3/26
+
+![[9-TypesOfParallelism.pdf]]
