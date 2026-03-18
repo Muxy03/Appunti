@@ -49,3 +49,11 @@
 # 12/3/26
 
 ![[9-TypesOfParallelism.pdf]]
+
+# 17/3/26
+
+![[10-C++Essentials.pdf]]
+
+# 18/3/26
+
+![[11-C++ConcurrencyBasics.pdf]]
