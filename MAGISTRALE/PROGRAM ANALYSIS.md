@@ -29,8 +29,16 @@ esame scritto seguito da un orale
 
 # 12/3/26
 
-#TODO slides ?
+![[ProgramAnalysis-07-MoreIL-NC.pdf]]
 
 # 13/3/26
 
-![[ProgramAnalysis-07-MoreIL-NC.pdf]]
+![[ProgramAnalysis-08-SIL.pdf]]
+
+# 19/3/26
+
+![[ProgramAnalysis-09-SL.pdf]]
+
+# 20/3/26
+
+![[ProgramAnalysis-10-ISL-SepSIL.pdf]]

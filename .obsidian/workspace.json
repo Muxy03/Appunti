@@ -11,10 +11,14 @@
             "id": "19d9b8a6fa4cf236",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "MAGISTRALE/PROGRAM ANALYSIS.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nuova scheda"
+              "title": "PROGRAM ANALYSIS"
             }
           }
         ]
@@ -223,13 +227,16 @@
   },
   "active": "19d9b8a6fa4cf236",
   "lastOpenFiles": [
+    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-10-ISL-SepSIL.pdf",
+    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-09-SL.pdf",
+    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-08-SIL.pdf",
+    "MAGISTRALE/COMPILATION TECHNIQUES.md",
     "MAGISTRALE/CT Laboratoty.md",
     "MAGISTRALE/PARALLEL AND DISTRIBUTED SYSTEM.md",
     "PDF/PARALLEL AND DISTRIBUTED SYSTEM/11-C++ConcurrencyBasics.pdf",
     "PDF/PARALLEL AND DISTRIBUTED SYSTEM/11-C++ConcurrencyBasics.pdf.crdownload",
     "PDF/PARALLEL AND DISTRIBUTED SYSTEM/10-C++Essentials.pdf",
     "PDF/PARALLEL AND DISTRIBUTED SYSTEM/10-C++Essentials.pdf.crdownload",
-    "MAGISTRALE/COMPILATION TECHNIQUES.md",
     "PDF/COMPILATION/ContextsensitiveAnalysisv.pdf",
     "PDF/COMPILATION/Non confermato 589260.crdownload",
     "MAGISTRALE/PROGRAM ANALYSIS.md",
@@ -238,8 +245,6 @@
     "Pasted image 20260312193136.png",
     "PDF/COMPILATION/TableConstruction.pdf",
     "PDF/COMPILATION/Non confermato 36271.crdownload",
-    "PDF/COMPILATION/Bottom_up_Parsing.pdf",
-    "PDF/COMPILATION/Non confermato 565324.crdownload",
     "MAGISTRALE/EXTRA/Competitive Summary.md",
     "IMMAGINI/Pasted image 20260206172136.png",
     "IMMAGINI/Pasted image 20260218144440.png",
