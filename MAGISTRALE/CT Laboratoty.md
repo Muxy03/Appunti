@@ -19,3 +19,7 @@ Laboratory
 # 18/3/26
 
 ![[dataflow.pdf]]
+
+# 25/3/26
+
+![[optimizations.pdf]]

@@ -60,3 +60,7 @@ wa -> w = word and a = symbol of the alphabet
 # 19/3/26
 
 ![[ContextsensitiveAnalysisv.pdf]]
+
+# 26/3/26
+
+#TODO slides 

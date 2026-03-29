@@ -42,3 +42,11 @@ esame scritto seguito da un orale
 # 20/3/26
 
 ![[ProgramAnalysis-10-ISL-SepSIL.pdf]]
+
+# 26/3/26
+
+![[ProgramAnalysis-11-IntroAI-basic.pdf]]
+
+# 27/3/26
+
+![[ProgramAnalysis-12-IntroAI-formal.pdf]]
