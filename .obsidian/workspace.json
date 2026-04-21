@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "735f1e0cd2ab4420",
+        "id": "f7907623e08d7280",
         "type": "tabs",
         "children": [
           {
-            "id": "259798929ea4047d",
+            "id": "71c80d77eb068047",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -225,22 +224,22 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "259798929ea4047d",
+  "active": "71c80d77eb068047",
   "lastOpenFiles": [
     "MAGISTRALE/COMPILATION TECHNIQUES.md",
-    "PDF/COMPILATION/Laboratory/optimizations.pdf",
-    "PDF/COMPILATION/Laboratory/Non confermato 440672.crdownload",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/10-C++Essentials.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/notes2024spm-Danelutto.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/9-TypesOfParallelism.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/8-Metrics_and_Laws.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/6-Shared-Memory.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/4-Classification.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/5-SLURM.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/3-MMexample-LeisersonMIT.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/2-Intro.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/1-Presentation.pdf",
+    "MAGISTRALE/PARALLEL AND DISTRIBUTED SYSTEM.md",
     "MAGISTRALE/CT Laboratoty.md",
     "MAGISTRALE/PROGRAM ANALYSIS.md",
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-12-IntroAI-formal.pdf",
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-11-IntroAI-basic.pdf",
-    "PDF/COMPILATION/Laboratory/semantics.pdf",
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-10-ISL-SepSIL.pdf",
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-09-SL.pdf",
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-08-SIL.pdf",
-    "MAGISTRALE/PARALLEL AND DISTRIBUTED SYSTEM.md",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/11-C++ConcurrencyBasics.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/11-C++ConcurrencyBasics.pdf.crdownload",
     "MAGISTRALE/MAGISTRALE INFO.md",
     "IMMAGINI/Pasted image 20260312193136.png",
     "Pasted image 20260312193136.png",
