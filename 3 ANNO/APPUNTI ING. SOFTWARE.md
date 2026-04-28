@@ -1,3 +1,5 @@
+[LINK DIDAWIKI](https://didawiki.di.unipi.it/doku.php/informatica/is-a/aa2324#esami)
+
 # MODELLI DI CICLO DI VITA:
 
 processo software = percorso da svolgere per sviluppare un prodotto o sistema software
