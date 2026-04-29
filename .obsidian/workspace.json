@@ -4,21 +4,67 @@
     "type": "split",
     "children": [
       {
-        "id": "f7907623e08d7280",
+        "id": "e2614a030ddfa895",
         "type": "tabs",
         "children": [
           {
-            "id": "71c80d77eb068047",
+            "id": "7a135b3690161436",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAGISTRALE/CT Laboratoty.md",
+                "file": "MAGISTRALE/EXTRA/SPM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CT Laboratoty"
+              "title": "SPM"
+            }
+          },
+          {
+            "id": "8961ea6897266b7a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MAGISTRALE/EXTRA/PROGRAM-ANALYSIS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PROGRAM-ANALYSIS"
+            }
+          },
+          {
+            "id": "735d93eb358ea5eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MAGISTRALE/EXTRA/COMPILATION_TECHNIQUES.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "COMPILATION_TECHNIQUES"
+            }
+          }
+        ]
+      },
+      {
+        "id": "3c63df53bf4d6da4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c3cfb33d1fbae547",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/PARALLEL AND DISTRIBUTED SYSTEM/7-SIMD-on-CPU.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "7-SIMD-on-CPU"
             }
           }
         ]
@@ -78,7 +124,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "86a565f332d200b8",
@@ -140,10 +187,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TIROCINIO/2024-10-21.md"
+                "file": "MAGISTRALE/EXTRA/SPM.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2024-10-21"
+              "title": "Struttura di SPM"
             }
           },
           {
@@ -152,8 +202,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -171,23 +221,13 @@
             }
           },
           {
-            "id": "be9612ad9f838820",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
-            }
-          },
-          {
             "id": "4513f022c4b6f6cf",
             "type": "leaf",
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           },
           {
@@ -198,6 +238,16 @@
               "state": {},
               "icon": "viewIcon",
               "title": "Markdown-Autocomplete"
+            }
+          },
+          {
+            "id": "c695f11e02de3527",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ],
@@ -224,35 +274,38 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "71c80d77eb068047",
+  "active": "7a135b3690161436",
   "lastOpenFiles": [
-    "test.md",
-    "MAGISTRALE/CT Laboratoty.md",
-    "MAGISTRALE/COMPILATION TECHNIQUES.md",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/10-C++Essentials.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/notes2024spm-Danelutto.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/9-TypesOfParallelism.pdf",
+    "MAGISTRALE/EXTRA/COMPILATION_TECHNIQUES.md",
+    "MAGISTRALE/MAGISTRALE INFO.md",
+    "MAGISTRALE/EXTRA/SPM.md",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/7-SIMD-on-CPU.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/7-SIMT-on-GPU.pdf",
     "PDF/PARALLEL AND DISTRIBUTED SYSTEM/8-Metrics_and_Laws.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/6-Shared-Memory.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/4-Classification.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/5-SLURM.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/3-MMexample-LeisersonMIT.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/2-Intro.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/1-Presentation.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/9-TypesOfParallelism.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/12-WorkloadBalancing.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/13-ModelsOfComputation.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/15-ThreadAffinity.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/16-OpenMP1.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/17-OpenMP2.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/C++-PSTL.pdf",
+    "MAGISTRALE/EXTRA/PROGRAM-ANALYSIS.md",
+    "Pasted image 20260428214401.png",
+    "Pasted image 20260428214334.png",
+    "Pasted image 20260428214317.png",
+    "Pasted image 20260428214258.png",
+    "Pasted image 20260428214158.png",
+    "Pasted image 20260428214146.png",
+    "Pasted image 20260428214134.png",
+    "Pasted image 20260428214107.png",
+    "Pasted image 20260428214019.png",
+    "Pasted image 20260428214004.png",
+    "MAGISTRALE/CT Laboratoty.md",
+    "test.md",
+    "MAGISTRALE/COMPILATION TECHNIQUES.md",
     "MAGISTRALE/PARALLEL AND DISTRIBUTED SYSTEM.md",
     "MAGISTRALE/PROGRAM ANALYSIS.md",
-    "MAGISTRALE/MAGISTRALE INFO.md",
-    "IMMAGINI/Pasted image 20260312193136.png",
-    "Pasted image 20260312193136.png",
     "MAGISTRALE/EXTRA/Competitive Summary.md",
-    "IMMAGINI/Pasted image 20260206172136.png",
-    "IMMAGINI/Pasted image 20260218144440.png",
-    "Pasted image 20260218144440.png",
-    "Pasted image 20260211122244.png",
-    "Pasted image 20260211122207.png",
-    "Pasted image 20260211122115.png",
-    "Pasted image 20260211122102.png",
-    "Pasted image 20260211121946.png",
     "3 ANNO/INTELLIGENZA ARTIFICIALE.md",
     "MAGISTRALE/ADVANCED PROGRAMMING.md",
     "MAGISTRALE/COMPETITIVE PROGRAMMING.md",
@@ -268,10 +321,6 @@
     "MAGISTRALE/GAME THEORY.md",
     "MAGISTRALE/EXTRA/Algorithm Design Slides.md",
     "MAGISTRALE/EXTRA/PSC-QUESTIONS.md",
-    "Excalidraw/Drawing 2025-07-21 01.05.39.excalidraw.md",
-    "MAGISTRALE/EXTRA/AlgoDesign Dimostrazioni.md",
-    "MAGISTRALE/EXTRA/ALGODESIGN Assignments/Assignment8.md",
-    "MAGISTRALE/SOFTWARE COMPOSITION.md",
     "Untitled.canvas"
   ]
 }

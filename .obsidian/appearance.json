@@ -2,5 +2,6 @@
   "accentColor": "#caa5f7",
   "baseFontSize": 15,
   "theme": "obsidian",
-  "cssTheme": "Catppuccin"
+  "cssTheme": "Catppuccin",
+  "textFontFamily": "JetBrainsMono Nerd Font"
 }
