@@ -24,9 +24,44 @@ In questo modo, Alice ha la certezza di ottenere almeno 14 punti, superando i 13
 
 # Sqrt
 
+Un **predicato monotono** è una funzione booleana (che restituisce `true` o `false`) definita su un intervallo di valori ordinati, la quale cambia il suo stato al massimo una sola volta lungo tutto l'intervallo.
+
+FFFTTT or TTTFFF
+
+Grazie alla monotonia, non serve testare tutti i valori: se il predicato è `true` per un valore X, sai già che sarà `true` per tutti i valori precedenti (o successivi, a seconda del tipo di monotonia), permettendoti di scartare metà dell'intervallo di ricerca a ogni passo.
+
 ![[Pasted image 20260209004410.png]]
 
 ```rust
+use num::FromPrimitive;
+use num::Num;
+use std::cmp::PartialOrd;
+
+fn binary_search_range<T, F>(low: T, high: T, pred: F) -> Option<T>
+where
+    T: Num + PartialOrd + FromPrimitive + Copy,
+    F: Fn(T) -> bool,
+{
+    let mut low = low;
+    let mut high = high;
+
+    let mut ans = None;
+
+    while low < high {
+        let middle = low + (high - low) / FromPrimitive::from_u64(2).unwrap();
+
+        match pred(middle) {
+            true => {
+                low = middle + T::one();
+                ans = Some(middle)
+            }
+            false => high = middle,
+        }
+    }
+
+    ans
+}
+
 fn sqrt(v: u64) -> u64 {
     binary_search_range(0, v + 1, |x| x * x <= v).unwrap()
 }
@@ -65,73 +100,74 @@ L'algoritmo è estremamente efficiente:
 
 Questa funzione verifica se è possibile posizionare $C$ persone mantenendo una distanza minima $d$.
 
-```
-funzione is_feasible(intervalli, C, d):
-    conteggio = 1 # Piazza la prima persona all'inizio del primo intervallo
-    ultima_pos = intervalli.inizio
-
-    per ogni intervallo in intervalli:
-        # Trova la prima posizione valida nell'intervallo corrente
-        prossima_pos = max(intervallo.inizio, ultima_pos + d)
-
-        # Piazza quante più persone possibile in questo intervallo
-        mentre prossima_pos <= intervallo.fine:
-            conteggio = conteggio + 1
-            ultima_pos = prossima_pos
-            se conteggio >= C:
-                ritorna VERO
-            prossima_pos = ultima_pos + d
-
-    ritorna FALSO
-
-# L'algoritmo principale cerca il valore massimo di $d$ in un intervallo di ricerca $[0, L]$.
-
-funzione solve_social_distancing(intervalli, C):
-    ordina_intervalli(intervalli) # Ordinamento per estremo sinistro
-
-    low = 0
-    high = posizione_massima - posizione_minima
-    risposta = 0
-
-    mentre low <= high:
-        mid = (low + high) / 2
-        se is_feasible(intervalli, C, mid):
-            risposta = mid # d è possibile, proviamo una distanza maggiore
-            low = mid + 1
-        altrimenti:
-            high = mid - 1 # d è troppo grande, proviamo una minore
-
-    ritorna risposta
-```
-
 ```rust
+// Questa funzione calcola la "massima distanza minima" possibile per 
+// posizionare 'c' elementi all'interno di una lista di 'intervals'.
 fn select_intervals(intervals: &mut Vec<(usize, usize)>, c: usize) -> Option<usize> {
 
+    // 1. CALCOLO DELLO SPAZIO TOTALE
+    // Sommiamo la lunghezza di tutti gli intervalli per trovare il 
+    // numero totale di posizioni ("slot") disponibili.
     let l = intervals
         .iter()
         .fold(0, |acc, interval| acc + interval.1 - interval.0 + 1); // overall length
 
+    // 2. CONTROLLO CASO IMPOSSIBILE
+    // Se ci sono meno posizioni totali rispetto al numero di elementi (c) 
+    // da inserire, è impossibile trovare una soluzione.
     if l < c {
         // there is no solution
         return None;
     }
 
+    // 3. ORDINAMENTO
+    // Ordiniamo gli intervalli in modo crescente in base al loro inizio.
+    // Questo è essenziale per poterli scorrere da sinistra a destra
+    // in modo "Greedy" (ingordo).
     intervals.sort_unstable();
 
-    // A closure implements our predicate
+    // 4. PREDICATO PER LA RICERCA BINARIA
+    // Questa funzione anonima (closure) verifica se è possibile 
+    // posizionare 'c' elementi mantenendo una distanza minima di 'd' tra loro.
     let pred = |d: usize| -> bool {
+        
+        // Piazziamo il primo elemento esattamente all'inizio del primo intervallo
         let mut last_selected = intervals[0].0;
+        
+        // Abbiamo appena piazzato 1 elemento, quindi il contatore parte da 1
         let mut cnt = 1;
+        
+        // Scorriamo tutti gli intervalli da sinistra verso destra
         for &interval in intervals.iter() {
+            
+            // Calcoliamo dove dovremmo mettere il prossimo elemento:
+            // Deve stare a distanza 'd' dall'ultimo ('last_selected + d').
+            // Tuttavia, se c'è un "buco" vuoto tra l'ultimo elemento e l'intervallo 
+            // attuale, il minimo punto valido sarà l'inizio dell'intervallo stesso ('interval.0').
+            // Usiamo 'max' per prendere la posizione valida più a destra tra le due.
+            // 
+            // Il ciclo 'while' continua a inserire elementi finché questa posizione 
+            // valida cade all'interno dell'intervallo corrente (<= interval.1).
             while interval.0.max(last_selected + d) <= interval.1 {
+                
+                // Aggiorniamo la posizione dell'ultimo elemento inserito
                 last_selected = interval.0.max(last_selected + d);
+                
+                // Incrementiamo il contatore degli elementi inseriti con successo
                 cnt += 1;
             }
         }
 
+        // Se alla fine siamo riusciti a piazzare almeno 'c' elementi a distanza 'd',
+        // allora questa distanza 'd' è fattibile (ritorna true).
         cnt >= c
     };
 
+    // 5. RICERCA BINARIA SULLA RISPOSTA
+    // Invece di provare tutte le distanze possibili (da 1 a 'l'), usiamo una 
+    // ricerca binaria. Sfruttiamo la funzione esterna 'binary_search_range'
+    // per cercare nell'intervallo [1, l + 1) il valore MASSIMO di 'd' per cui 
+    // il nostro predicato 'pred' restituisce 'true'.
     binary_search_range(1, l + 1, pred)
 }
 ```

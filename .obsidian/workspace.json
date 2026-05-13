@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "c76aa1f19976c395",
+    "id": "1906e7e15c75d13a",
     "type": "split",
     "children": [
       {
-        "id": "e2614a030ddfa895",
+        "id": "7a0da5b56893e227",
         "type": "tabs",
         "children": [
           {
-            "id": "7a135b3690161436",
+            "id": "c6cbf082133eccba",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,66 +22,49 @@
             }
           },
           {
-            "id": "8961ea6897266b7a",
+            "id": "73f7c721b0adecc7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAGISTRALE/EXTRA/PROGRAM-ANALYSIS.md",
+                "file": "MAGISTRALE/MAGISTRALE INFO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PROGRAM-ANALYSIS"
+              "title": "MAGISTRALE INFO"
             }
           },
           {
-            "id": "735d93eb358ea5eb",
+            "id": "6017b7e6caf1b966",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAGISTRALE/EXTRA/COMPILATION_TECHNIQUES.md",
+                "file": "MAGISTRALE/EXTRA/Competitive Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "COMPILATION_TECHNIQUES"
+              "title": "Competitive Summary"
             }
           }
-        ]
-      },
-      {
-        "id": "3c63df53bf4d6da4",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "c3cfb33d1fbae547",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/PARALLEL AND DISTRIBUTED SYSTEM/7-SIMD-on-CPU.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "7-SIMD-on-CPU"
-            }
-          }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "49501336cbc31ebb",
+    "id": "80eb160be96b4654",
     "type": "split",
     "children": [
       {
-        "id": "b77b90549b93f15b",
+        "id": "92f23ab18b2f5d4a",
         "type": "tabs",
         "children": [
           {
-            "id": "8ecbeedd8669d71e",
+            "id": "2b4711f9cf2518d5",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -94,7 +77,7 @@
             }
           },
           {
-            "id": "d8fd889e91ea6aaf",
+            "id": "2d35c8fb817693a1",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -107,17 +90,17 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Ricerca"
             }
           },
           {
-            "id": "264b0cc456385189",
+            "id": "42b5eae8be0c39ea",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "Segnalibri"
             }
           }
         ]
@@ -128,20 +111,20 @@
     "collapsed": true
   },
   "right": {
-    "id": "86a565f332d200b8",
+    "id": "f04f779604d8eaa1",
     "type": "split",
     "children": [
       {
-        "id": "5f5321b311e81053",
+        "id": "4f9557758bb4502d",
         "type": "tabs",
         "children": [
           {
-            "id": "12c90b09f3ad78d6",
+            "id": "f348ebc1778fee32",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "INTERAZIONE UOMO MACCHINA.md",
+                "file": "PDF/ADVANCED PROGRAMMING/21-AP25-Monads.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,63 +134,40 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for INTERAZIONE UOMO MACCHINA"
+              "title": "Riferimenti a 21-AP25-Monads"
             }
           },
           {
-            "id": "c9058ae3c49e6a61",
+            "id": "be2066be02ed62d6",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TIROCINIO/2024-10-21.md",
+                "file": "PDF/ADVANCED PROGRAMMING/21-AP25-Monads.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2024-10-21"
+              "title": "Collegamenti in uscita da 21-AP25-Monads"
             }
           },
           {
-            "id": "6c412e5300e5346d",
+            "id": "1356fa07db9fdd9e",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
-            "id": "3fd0c09311dc0569",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "MAGISTRALE/EXTRA/SPM.md",
-                "followCursor": false,
+                "useHierarchy": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
-              "icon": "lucide-list",
-              "title": "Struttura di SPM"
+              "icon": "lucide-tags",
+              "title": "Etichette"
             }
           },
           {
-            "id": "b0896687679117f9",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "fd302bd154e9b3f3",
+            "id": "3dbd725f504b0d82",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -217,45 +177,29 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "All properties"
+              "title": "Tutte le proprietà"
             }
           },
           {
-            "id": "4513f022c4b6f6cf",
+            "id": "bd9cecf47c9c0468",
             "type": "leaf",
             "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
-            }
-          },
-          {
-            "id": "3b0b874f623af78c",
-            "type": "leaf",
-            "state": {
-              "type": "side-panel-control-view",
-              "state": {},
-              "icon": "viewIcon",
-              "title": "Markdown-Autocomplete"
-            }
-          },
-          {
-            "id": "c695f11e02de3527",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "type": "outline",
+              "state": {
+                "file": "PDF/ADVANCED PROGRAMMING/21-AP25-Monads.pdf",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Struttura di 21-AP25-Monads"
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 431.5,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
@@ -266,61 +210,37 @@
       "daily-notes:Apri nota del giorno": false,
       "templates:Inserisci modello": false,
       "command-palette:Apri riquadro comandi": false,
-      "bases:Crea nuova Base": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-advanced-slides:Show Slide Preview": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
+      "bases:Crea nuova Base": false
     }
   },
-  "active": "7a135b3690161436",
+  "active": "6017b7e6caf1b966",
   "lastOpenFiles": [
-    "MAGISTRALE/EXTRA/COMPILATION_TECHNIQUES.md",
-    "MAGISTRALE/MAGISTRALE INFO.md",
+    "IMMAGINI/Pasted image 20260512220330.png",
+    "IMMAGINI/Pasted image 20260512220321.png",
+    "IMMAGINI/Pasted image 20260512220312.png",
+    "IMMAGINI/Pasted image 20260512220301.png",
+    "IMMAGINI/Pasted image 20260512220250.png",
+    "IMMAGINI/Pasted image 20260512220237.png",
+    "IMMAGINI/Pasted image 20260512220220.png",
+    "IMMAGINI/Pasted image 20260512220210.png",
+    "IMMAGINI/Pasted image 20260512220158.png",
+    "IMMAGINI/Pasted image 20260512220148.png",
+    "IMMAGINI/Pasted image 20260512220138.png",
+    "PDF/COMPILATION/COMP-05-RUST_COMPILATION.pdf",
+    "PDF/COMPILATION/Non confermato 756814.crdownload",
     "MAGISTRALE/EXTRA/SPM.md",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/7-SIMD-on-CPU.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/7-SIMT-on-GPU.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/8-Metrics_and_Laws.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/9-TypesOfParallelism.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/12-WorkloadBalancing.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/13-ModelsOfComputation.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/15-ThreadAffinity.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/16-OpenMP1.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/17-OpenMP2.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/C++-PSTL.pdf",
-    "MAGISTRALE/EXTRA/PROGRAM-ANALYSIS.md",
-    "Pasted image 20260428214401.png",
-    "Pasted image 20260428214334.png",
-    "Pasted image 20260428214317.png",
-    "Pasted image 20260428214258.png",
-    "Pasted image 20260428214158.png",
-    "Pasted image 20260428214146.png",
-    "Pasted image 20260428214134.png",
-    "Pasted image 20260428214107.png",
-    "Pasted image 20260428214019.png",
-    "Pasted image 20260428214004.png",
-    "MAGISTRALE/CT Laboratoty.md",
-    "test.md",
-    "MAGISTRALE/COMPILATION TECHNIQUES.md",
-    "MAGISTRALE/PARALLEL AND DISTRIBUTED SYSTEM.md",
-    "MAGISTRALE/PROGRAM ANALYSIS.md",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/20-MPI2.pdf",
+    "MAGISTRALE/MAGISTRALE INFO.md",
     "MAGISTRALE/EXTRA/Competitive Summary.md",
-    "3 ANNO/INTELLIGENZA ARTIFICIALE.md",
-    "MAGISTRALE/ADVANCED PROGRAMMING.md",
-    "MAGISTRALE/COMPETITIVE PROGRAMMING.md",
-    "PDF/Esercizio 26_02.md",
-    "3 ANNO/CLOUD COMPUTING.md",
-    "MAGISTRALE/SOFTWARE VERIFICATION.md",
-    "MAGISTRALE/EXTRA/Lecture Notes ADVANCED PRO/04 - predictive_parsing_whitespace.md",
-    "MAGISTRALE/EXTRA/Lecture Notes ADVANCED PRO/03 - top_down_parsing.md",
-    "MAGISTRALE/EXTRA/Lecture Notes ADVANCED PRO/02 - pl_transformation.md",
-    "MAGISTRALE/EXTRA/Lecture Notes ADVANCED PRO/01 - language_stack.md",
-    "MAGISTRALE/EXTRA/Lecture Notes ADVANCED PRO/00 - advanced_prog_intro.md",
-    "Binary Search For adj lists.md",
-    "MAGISTRALE/GAME THEORY.md",
-    "MAGISTRALE/EXTRA/Algorithm Design Slides.md",
-    "MAGISTRALE/EXTRA/PSC-QUESTIONS.md",
-    "Untitled.canvas"
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/_SPM_Questions_and_Answers.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/19-MPI1.pdf",
+    "MAGISTRALE/EXTRA/PROGRAM-ANALYSIS.md",
+    "PDF/PROGRAM ANALYSIS/hal.pdf",
+    "PDF/COMPETITIVE PROGRAMMING/SlidingWindowMaxima.pdf",
+    "PDF/COMPILATION/COMP-04-RUST_COMPILATION.pdf",
+    "PDF/COMPILATION/Non confermato 336621.crdownload",
+    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-21-CFA.pdf",
+    "Project Modular Module 3 by Andrea Mussari.md",
+    "MAGISTRALE/PROGRAM ANALYSIS.md"
   ]
 }
