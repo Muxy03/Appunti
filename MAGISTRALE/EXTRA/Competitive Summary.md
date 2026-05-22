@@ -485,6 +485,8 @@ L'approccio più immediato consiste nell'utilizzare una struttura dati ausiliari
 
 Se l'array è di sola lettura e lo spazio è estremamente limitato, è possibile identificare il duplicato bit dopo bit eseguendo $\log n$ passaggi sull'array.
 
+![[Pasted image 20260518005559.png]]
+
 - **Logica:** Per ogni posizione del bit (da quello meno significativo a quello più significativo), si conta quante volte compare lo 0 e quante volte compare l'1 tra i numeri dell'array.
 - Confrontando questi conteggi con la distribuzione attesa per i numeri da $0$ a $n-1$, è possibile determinare se il bit corrispondente del duplicato sia 0 o 1. Questo approccio garantisce uno spazio costante $O(1)$ ma richiede più tempo a causa dei molteplici passaggi.
 - Best if no  random access
@@ -516,7 +518,11 @@ Questa tecnica è estremamente efficiente perché garantisce un tempo di esecuzi
 S and F met => S moved by m steps, F moved by 2m steps
 
 m = a + b = (steps before the cycle) + (steps inside the cycle)
-2m = a + b + k * l (length of the loop) => a = k * l - b -> steps by F = steps by S  (in Phase 2)
+
+2m = a + b + k * l => a = k * l - b -> steps by F = steps by S  (in Phase 2)
+
+k = quanti giri completi ha fatto F all'interno del ciclo prima di scontrarsi con S
+l = length of the loop
 
 # Majority Element
 
@@ -535,6 +541,8 @@ Questa è la soluzione ottimale che non richiede spazio extra. Si basa su un sis
 
 - **Fase di Selezione:** Mantieni un candidato `C` e un `counter`. Scansiona l'array: se il `counter` è 0, assegna l'elemento corrente a `C` e imposta il `counter` a 1. Se l'elemento successivo è uguale a `C`, incrementa il `counter`; altrimenti, decrementalo.
 - we can use an occurence of the majority element to "kill" another element
+
+#TODO appunti ipad
 ### 3. Support Insertion/Deletion
 
 È possibile ricostruire l'elemento bit dopo bit: per ogni posizione binaria, si contano quanti numeri hanno lo 0 e quanti l'1. L'elemento di maggioranza deve avere, in ogni posizione, il bit che appare più frequentemente. Questo metodo è utile se gli inserimenti e le cancellazioni avvengono in modo dinamico.

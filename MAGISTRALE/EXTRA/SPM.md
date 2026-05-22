@@ -844,6 +844,155 @@ Prefix computation usually refers to the inclusive version (`std::inclusive_scan
 ![[Pasted image 20260512220330.png]]
 
 
+## 21-MPI3.pdf
+
+![[Pasted image 20260521152326.png]]
+
+![[Pasted image 20260521152337.png]]
+
+![[Pasted image 20260521152413.png]]
+
+![[Pasted image 20260521152428.png]]
+
+![[Pasted image 20260521152441.png]]
+
+![[Pasted image 20260521152449.png]]
+
+![[Pasted image 20260521152458.png]]
+
+![[Pasted image 20260521152512.png]]
+
+![[Pasted image 20260521152525.png]]
+
+![[Pasted image 20260521152537.png]]
+
+![[Pasted image 20260521152603.png]]
+
+![[Pasted image 20260521152614.png]]
+
+![[Pasted image 20260521152625.png]]
+
+![[Pasted image 20260521152636.png]]
+
+![[Pasted image 20260521152647.png]]
+
+![[Pasted image 20260521152658.png]]
+
+![[Pasted image 20260521152709.png]]
+
+![[Pasted image 20260521152719.png]]
+
+![[Pasted image 20260521152729.png]]
+
+![[Pasted image 20260521152743.png]]
+
+
+## 22-StructuredParallelProgramming.pdf
+
+![[Pasted image 20260521152842.png]]
+
+![[Pasted image 20260521152853.png]]
+
+![[Pasted image 20260521152904.png]]
+
+![[Pasted image 20260521152912.png]]
+
+![[Pasted image 20260521152922.png]]
+
+![[Pasted image 20260521152936.png]]
+
+![[Pasted image 20260521163308.png]]
+
+![[Pasted image 20260521163322.png]]
+
+![[Pasted image 20260521163333.png]]
+
+![[Pasted image 20260521163349.png]]
+
+![[Pasted image 20260521180027.png]]
+
+![[Pasted image 20260521180039.png]]
+
+![[Pasted image 20260521180101.png]]
+
+![[Pasted image 20260521180113.png]]
+
+![[Pasted image 20260521180123.png]]
+
+![[Pasted image 20260521180131.png]]
+
+![[Pasted image 20260521180140.png]]
+
+![[Pasted image 20260521180149.png]]
+
+![[Pasted image 20260521180159.png]]
+
+![[Pasted image 20260521180208.png]]
+
+![[Pasted image 20260521180219.png]]
+
+![[Pasted image 20260521180232.png]]
+
+![[Pasted image 20260521180243.png]]
+
+![[Pasted image 20260521180252.png]]
+
+![[Pasted image 20260521180303.png]]
+
+![[Pasted image 20260521180313.png]]
+
+![[Pasted image 20260521180324.png]]
+
+![[Pasted image 20260521180332.png]]
+
+![[Pasted image 20260521180342.png]]
+
+![[Pasted image 20260521180351.png]]
+
+![[Pasted image 20260521180359.png]]
+
+![[Pasted image 20260521180411.png]]
+
+![[Pasted image 20260521180420.png]]
+
+![[Pasted image 20260521180431.png]]
+
+![[Pasted image 20260521180444.png]]
+
+![[Pasted image 20260521180500.png]]
+
+![[Pasted image 20260521180511.png]]
+
+![[Pasted image 20260521180523.png]]
+
+![[Pasted image 20260521180534.png]]
+
+![[Pasted image 20260521180549.png]]
+
+![[Pasted image 20260521180601.png]]
+
+![[Pasted image 20260521180613.png]]
+
+![[Pasted image 20260521180743.png]]
+
+![[Pasted image 20260521180755.png]]
+
+![[Pasted image 20260521180804.png]]
+
+![[Pasted image 20260521180817.png]]
+
+![[Pasted image 20260521180827.png]]
+
+![[Pasted image 20260521180836.png]]
+
+![[Pasted image 20260521180850.png]]
+
+![[Pasted image 20260521180900.png]]
+
+![[Pasted image 20260521180908.png]]
+
+![[Pasted image 20260521180919.png]]
+
 ## C++
 
 ![[10-C++Essentials.pdf]]
@@ -855,3 +1004,296 @@ Prefix computation usually refers to the inclusive version (`std::inclusive_scan
 ![[C++-PSTL.pdf]]
 
 ![[C++-Ranges.pdf]]
+
+
+---
+
+## Answers
+
+BOH?:
+- [ ] Control Parallelism
+- [ ] Task Parallelism
+
+Latency = time spent for executing a single task in a computation.
+
+Completion Time = time spent since the beginning of the execution of the first task through the end of the last task.
+
+Throughput = amount of tasks computed per unit of time.
+
+Service Time = the duration required to produce the results of a task within a sequence, starting immediately after the results of the preceding task have been delivered. (no wating time)
+
+>Data Parallelism:
+>
+>Data Parallelism is achieved by dividing an initial task into subtasks, whose partial results are then combined to produce the final outcome.
+>
+>The same operation (or kernel function) is applied to data elements (or blocks of data elements) in parallel on multiple Workers.
+>
+>partition the task + merge the partial results = computational overhead.
+>
+>The main challenge of this approach lies in balancing the time spent splitting tasks and managing parallel execution against the performance gains from parallelism.
+
+>Stream Parallelism:
+>
+>Stream Parallelism involves the parallel execution of tasks from an input stream, where tasks become available at different times. The interarrival time between tasks significantly impacts the potential for parallel computation. If there are no dependencies between tasks, the computation becomes embarrassingly parallel. Stream Parallelism doesn’t reduce the execution time of individual tasks but increases the overall throughput of the application, which in turn reduces the total completion time. It’s important to note that the stream of tasks can be infinite.
+>
+>not all tasks are available simultaneously.
+>
+>input stream = continuous, ordered sequence of computational or operational units (called tasks) of the same type that are processed one after the other.
+
+>Data vs Stream:
+>
+>Data Parallelism reduces the execution time (latency) of a task by breaking it down into smaller subtasks, each processing a portion of the input data in parallel. In contrast, Stream Parallelism does not reduce the latency of individual tasks. Instead, it improves the overall throughput of the application by executing multiple independent tasks concurrently when available, thereby reducing the total completion time of the application.
+
+>Structured Programming vs Unstructured:
+>
+>Structured Programming refers to models where parallelism is achieved using well-established patterns that represent common parallel computations (e.g. the building blocks in FastFlow or constructs in OMP). In contrast, Unstructured Programming relies on lower-level abstractions like threads, processes, and communication or synchronization primitives, requiring the programmer to manage parallel execution man- ually(e.g. the std::thread library).
+>
+>![[Pasted image 20260522020936.png]]
+>
+>Structured Parallel Programs offer several benefits: they are easier to design and implement, as many parallelism-related responsibilities are shifted from the programmer to the tools. This allows for the possibility of automatic tuning and optimization. Additionally, structured parallel programs provide better portability, ensuring consistent functionality and performance across different systems to a certain extent.
+
+Shapes = patterns
+
+>Stream Parallel Patterns:
+>
+>Stream Parallel Shapes are used to process streams of tasks. Formally, a stream is defined as < x1, x2, . . . , xn, xn+1, . . . >, where each task xi becomes available at different points in time. Streams can also be infinite, continuously producing items over time.
+>
+>>Pipeline:
+>>Pipeline parallelism is a parallel design pattern that enhances computational efficiency by dividing a computation into a sequence of stages, where each stage processes data and passes its output to the next stage. The stages operate concurrently, enabling overlapping computation and improved throughput.
+>>
+>>![[Pasted image 20260522022100.png]]
+>
+>>Farm:
+>>a Farm is a computing pattern that enhances computational efficiency by replicating the same (stateless) function F k times. Each function replica is executed by a stage called Worker.
+>>
+>>![[Pasted image 20260522022337.png]]
+
+>Data Parallelism Patterns:
+>All Data Parallel Shapes operate on an input ”data collection” to produce a result, typically derived from the results of subcomputations performed on partitions of the data. It is possible for the input collection to have overlapping elements.
+>
+>>Map:
+>>A map is a data-parallel pattern in which a single function F can be applied independently to each element of an input collection, producing an output collection of the same cardinality.
+>>
+>>![[Pasted image 20260522022622.png]]
+>
+>>Reduce:
+>>A reduce is a data-parallel pattern that combines the elements of an input collection into a single output using an associative binary operator.
+>>
+>>![[Pasted image 20260522023331.png]]
+>
+>>Prefix:
+>>computes the vector of the m partial ”sums” of a collection with m items, using a usually associative and commutative binary function.
+>>
+>>prefix(+,<1,2,3,4>) = <1,1+2,1+2+3,1+2+3+4>
+>
+>>Stencil:
+>>this operation takes two functions, f and g, and applies them to a collection of items, producing an isomorphic output collection.
+>>
+>>stencil(f, g, ⟨x1,..., xm⟩) = ⟨f (g(1, ⟨x1, . . . , xm⟩)),..., f (g(m, ⟨x1,..., xm⟩))⟩
+>>
+>>where g(i, ⟨x1,..., xm⟩) computes the neighborhood set for the ith item in the input collec- tion, and f applies a function to the elements of this neighborhood.
+>
+>>Divide & Conquer:
+>> computes a result by dividing the input task in subtasks, computing per each subtask a partial result which will be combined into the final result.
+
+>Map vs Farm:
+>Map and Farm are both parallel shapes, but they differ in structure and application. Map is a data-parallel shape, where a function f is applied to each element of a given collection C. The result, map(f, C), is a new collection C′ that is isomorphic to the original. The parallelism in the Map pattern arises from computing the function on distinct elements of the collection concurrently. The Farm pattern is a stream-parallel shape. It applies a function f to all items in an input stream. The output does not need to preserve the ordering or structure of the input collection. Farms can be parallelized when the processing of distinct elements is independent, allowing for concurrent execution of tasks without dependencies between them.
+
+>Number of Workers in Farm (using Service Time):
+>
+>>Farm as three-stage pipeline:
+>>Te = Service Time of Emitter
+>>nw = \#Workers
+>>Tw = the time that each Collector spends for computing a single task
+>>Tc = Service Time of Collector
+>>
+>>ServiceTime(Farm) = max(Te,$\frac{Tw}{nw}$,Tc)
+>>
+>>![[Pasted image 20260522162721.png]]
+>
+>>Farm as Client-Server (Emitter,Collecort = Clients | Workers = servers):
+>>InterarrivalTime = the time between the arrivals of two con- secutive clients or requests at the server. In other words, it measures how frequently new requests (clients) arrive.
+>>
+>>DepartureTime = he time at which a client or request finishes receiving service from the server and leaves the system. In other words, it is the time when the server has completed processing the request and the client has departed.
+>>
+>>UtilizationFactor = he utilization factor in a client-server setting, particularly for an input queue, is a measure of how much of the server’s capacity is being used to process client requests. It helps determine whether the server is under-utilized, optimally utilized, or overloaded.
+>>
+>>Tea = InterarrivalTime Emitter send tasks to the Workers
+>>Tep = DepartureTime Emitter = Tea (1 Emitter => sequential exec)
+>>
+>>(Assuming use Round Robin for send tasks to Workers)
+>>
+>>$p_i = \frac{1}{n_w}$ = prob of Worker i receives a task
+>>
+>>$Ta = n_w \times Tea$ = InterarrivalTime of a Worker
+>>
+>>$p=\frac{Tw}{n_w \times Tea}$ = Utilization Factor of the input queue
+>>
+>>![[Pasted image 20260522163841.png]]
+
+
+![[Pasted image 20260522164028.png]]
+
+
+>Which techniques for distributing the workload have we seen?
+>
+>![[Pasted image 20260522215114.png]]
+>
+>![[Pasted image 20260522215245.png]]
+>
+>![[Pasted image 20260522215415.png]]
+>
+>![[Pasted image 20260522215540.png]]
+>
+>![[Pasted image 20260522215705.png]]
+
+>What is the Cache Coherency Protocol?
+>
+>![[Pasted image 20260522222709.png]]
+>
+>![[Pasted image 20260522222822.png]]
+>
+>![[Pasted image 20260522222839.png]]
+>
+>![[Pasted image 20260522222855.png]]
+
+
+>What is False Sharing?
+>
+>![[Pasted image 20260522231141.png]]
+>
+>![[Pasted image 20260522231241.png]]
+>
+>A possible solution employed by Cache Coherency Protocols to False Sharing?
+>![[Pasted image 20260522232716.png]]
+
+
+>What states the Amdahl’s Law?
+>
+>Amdahl's Law = that the amount of non-parallelizable work in an application deter- mines the maximum speedup we may achieve in parallelizing the application.
+>
+>s = percent of total work is sequential.
+>p = (1-s) = percent of total works that can be parallelized.
+>Assume the whole application sequentially completes in $T_s$ unit of time. 
+>
+>![[Pasted image 20260523001041.png|626]]
+>
+>What are the limitations of Amdahl’s Law?
+>
+>The Amdahl’s Laws functions only in situations where the problem size is constant and the number of processors varies (strong scalability). When dealing with cases where the data size grows as more parallel resources are added (weak scalability), the time spent in the parallelizable part $(1 − f ) \times T_s$may grow faster in comparison to the non-parallelized part $f \times T_s$. For this reason Gustafsson introduced its law and the concept of Scaled Speedup.
+
+>What states the Gustafsson’s Law?
+>
+>![[Pasted image 20260523001334.png]]
+>
+>![[Pasted image 20260523001348.png]]
+
+>Scaled Speedup (generalization of the Gustafsson’s Law):
+>$$\frac{T(1)}{T(n)} = \frac{p+(1-p)\times n}{1} = p+n+n\times p = n-(n-1)\times p$$
+
+![[Pasted image 20260523001918.png]]
+
+![[Pasted image 20260523002006.png]]
+
+![[Pasted image 20260523002034.png]]
+
+![[Pasted image 20260523002617.png]]
+
+![[Pasted image 20260523003553.png]]
+
+>C++ Memory Models:
+>
+>![[Pasted image 20260523003718.png]]
+>
+>![[Pasted image 20260523003750.png]]
+>
+>![[Pasted image 20260523003806.png]]
+
+![[Pasted image 20260523003952.png]]
+
+>What are the memory ordering options provided by atomic operations?
+>
+>The memory ordering options are passed as parameters for the atomic operations. By providing a memory ordering options you enforce the Memory Model ordering associated to that ordering option on that operations. 
+>
+>Sequentially Consistent Ordering -> memory order seq cst (default option).
+>
+>Acquire-Release Ordering:
+>>memory order consume: its all about data dependencies, introducing data dependency nuances to the inter-thread happens-before relationships (FROM THE C++17 STANDARD ONWARD ITS SAID TO NOT USE IT).
+>
+>>memory order acquire: can synchronize with a memory order release operation done on the same shared variable.
+>
+>>memory order release: can synchronize with a memory order acquire operation done on the same shared variable.
+>
+>>memory order acq rel: read-modify-write operations behave as both an acquire and a release, so a prior store can synchronize with such an operation, and it can syn- chronize with a subsequent load.
+>
+>Relaxed Ordering -> memory order relaxed: employs a Relaxed Ordering Memory Model (all synchro- nizations and consistent memory order goes a PUTTANE).
+
+![[Pasted image 20260523005310.png]]
+
+![[Pasted image 20260523005414.png]]
+
+
+>What theoretical computer models for Shared Memory Architectures have we seen?
+>
+>A theoretical computer model is a idealized architecture that does not consider many charac- teristics of real computer systems (i.e. memory access time, caches, etc. . . ). In this way when designing algorithms using a theoretical computer model we can focus only on the parallel as- pects of the computation, without needing to overcome any technological limitations.
+>
+>>PRAM (Parallel Random Access Machine):
+>>
+>>The theoretical architecture consists of n identical processors Pi.i ∈ [0, n − 1] operation in lock-steps. For each step a processor Pi execute an instruction cycle composed of three phases:
+>>
+>>>Read Phase: each processor can simultaneously read a single data item from a distinct shared memory cell and store it in a local register.
+>>>
+>>>Compute Phase: each processor can perform a fundamental operation on its local data and store the result in a register.
+>>>
+>>>Write Phase: each processor can simultaneously write a data item to a shared memory cell. The Exclusive Write PRAM variant allows writing only distinct cells. The Concurrent Write PRAM variant allows processors to write on the same location, which could lead to race conditions.
+>>>
+>>
+>>Three-phase PRAM instructions are executed synchronously. Communication in PRAM is implemented in terms of reading and writing to shared memory. The shard memory ca be accessed in a uniform way s.t. each processor has access to any memory location in a unito of time.
+>>
+>>![[Pasted image 20260523010159.png]]
+>
+>>BSP (Bulk Synchronous Parallel):
+>>
+>>This theoretical architecture consists of 3 parts:
+>>
+>>![[Pasted image 20260523010342.png]]
+>>
+>>BSP(p, r, g, l):
+>>
+>>p = number of processors in the network
+>>r = computational ratio (FLOPS)
+>>g = cost of communicating a data world
+>>l = global synchronization cost
+>>
+>>![[Pasted image 20260523010645.png]]
+>
+>>Work-Span Model:
+>>
+>>his theoretical architecture abstract the parallel application into several components s.t. each is a sequential portion of the application. Then we represent the application as a graph s.t. each node is a component (i.e. sequential portion) and the arcs describe dependencies between them. Given two components A and B s.t. A → B is a dependecy read as: A produces some data that is needed by B.
+>>
+>>Work = total amount of time spent executing the application.
+>>
+>>Span = he total amount of work needed to complete the longest chain of compo- nents from the input component (those with no input dependencies) and the output component (those that do not need to satisfy other component dependencies). The ”longest” chain is the chain of components from input to output that requires the longest time to compute. The time spenti compute the Span is declared as $t_{\infty}$.
+>>
+>>![[Pasted image 20260523010859.png]]
+>
+>>Data-Flow and Macro Data-Flow:
+>>
+>>is a general approach to parallelism based on data dependencies among the programs operations. It is interpreter as a Graph where each node is an instruction and edges represent data dependencies (i.e. read-after-write dependencies) among those instructions. Macro Data-Flow is a Data-Flow where instead of interpreting the nodes as single instructions, they are represented as entire sequential functions or block of code.
+
+
+>Difference regarding speedup between the Work Span Model and the Am- dahl’s Law:
+>
+>The Work Span Model is more pessimistic than Amdahl’s Law, since it further limits possibilities for parallel execution beyond serial fraction.
+
+
+FLOPS = Floating Point Operations Per Second = how many floating-point arithmetic operations (such as addition, subtraction, multiplication, and division of real numbers) a system can perform in one second.
+
+>Brent's Lemma:
+>
+>![[Pasted image 20260523011226.png]]
+
+![[Pasted image 20260523011323.png]]
+
+![[Pasted image 20260523011358.png]]
+
