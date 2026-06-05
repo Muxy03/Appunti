@@ -1,4 +1,4 @@
-![[Pasted image 20260510225631.png]]## 01-Introduction.pdf
+## 01-Introduction.pdf
 
 a program *c* syntax, its meaning *\[\[c]]* semantics
 
@@ -113,6 +113,8 @@ Machine-assisted Proving:
 
 ![[Pasted image 20260508014803.png]]
 
+![[2025-03-11 - 08b - Kleene.pdf#page=52]]
+
 ![[Pasted image 20260508014838.png]]
 
 ![[Pasted image 20260508014944.png]]
@@ -127,9 +129,41 @@ Machine-assisted Proving:
 
 ![[Pasted image 20260508015316.png]]
 
+![[Pasted image 20260605161612.png]]
+
 ![[Pasted image 20260508015501.png]]
 
-#TODO QUESTIONS
+### Question 1
+
+Dato il comando $c \triangleq (z := x) + (z := y)$ (scelta non deterministica) e la pre-condizione $P \triangleq (x = y = 0)$:
+
+1. **Cosa è $[[c]]P$ ?**
+    - **Risposta:** $(x = y = z = 0)$. Entrambi i rami portano allo stesso stato finale.
+2. **Esempio di sovra-approssimazione:**
+    - **Risposta:** $(x = y = 0)$. Questo insieme include lo stato reale ma è meno preciso (non specifica il valore di $z$).
+3. **Esempio di sotto-approssimazione:**
+    - **Risposta:** $(x = y = z = 0)$. In questo caso, essendo il calcolo esatto, la sotto-approssimazione coincide con il risultato reale.
+4. **Cosa è $wlp(c, z=0)$?**
+    - **Risposta:** $(x = 0 \wedge y = 0)$. La _weakest liberal precondition_ richiede che **tutti** i rami possibili terminino in uno stato dove $z=0$.
+5. **Cosa è $wpp(c, z=0)$?**
+    - **Risposta:** $(x = 0 \vee y = 0)$. La _weakest possible precondition_ richiede che **almeno uno** dei rami termini in uno stato dove $z=0$.
+
+---
+
+### Question 2
+
+Dato $c \triangleq \text{if } x < y \text{ then } x := y \text{ else } (\text{while true do skip})$ e specifica di correttezza $Q \triangleq (x = y = 0)$:
+
+1. **Cosa è $wlp(c, Q)$?**
+    - **Risposta:** $(x \ge y \vee y = 0)$. Se $x \ge y$, il programma non termina (soddisfacendo vacuamente la proprietà "se termina, allora $Q$"). Se $x < y$, deve valere $y = 0$ affinché l'assegnamento $x := y$ risulti in $x=0$.
+2. **Cosa è $wpp(c, Q)$?**
+    - **Risposta:** $(x < y \wedge y = 0)$. Affinché esista **almeno** una computazione che termina in $Q$, dobbiamo evitare il ramo divergente (quindi $x < y$) e garantire che il risultato sia zero (quindi $y = 0$).
+
+---
+
+### Question 3
+
+![[Pasted image 20260605163129.png]]
 
 ---
 ## 03-HL.pdf
@@ -1432,7 +1466,7 @@ Logical correctness:
 
 ---
 ## Control Flow Analysis (CFA)
-
+![[Pasted image 20260510225631.png]]
 ### 17:
 
 ![[Pasted image 20260510225634.png]]

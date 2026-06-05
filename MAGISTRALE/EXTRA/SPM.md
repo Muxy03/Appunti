@@ -176,7 +176,7 @@ CPI_MEM-MISS = cycles for a cache miss (50-200 cycles for LLC miss (DRAM access)
 
 ![[Pasted image 20260428212504.png]]
 
-![[Pasted image 20260428212516.png]]
+![[Pasted image 20260527184828.png]]
 
 ![[Pasted image 20260428212531.png]]
 
@@ -1010,9 +1010,10 @@ Prefix computation usually refers to the inclusive version (`std::inclusive_scan
 
 ## Answers
 
-BOH?:
-- [ ] Control Parallelism
-- [ ] Task Parallelism
+Domande da ignorare:
+- [ ] FastFlow
+- [ ] What is Data-Flow and Macro Data-Flow?
+- [ ] What is Control Parallelism?
 
 Latency = time spent for executing a single task in a computation.
 
@@ -1042,7 +1043,7 @@ Service Time = the duration required to produce the results of a task within a s
 
 >Data vs Stream:
 >
->Data Parallelism reduces the execution time (latency) of a task by breaking it down into smaller subtasks, each processing a portion of the input data in parallel. In contrast, Stream Parallelism does not reduce the latency of individual tasks. Instead, it improves the overall throughput of the application by executing multiple independent tasks concurrently when available, thereby reducing the total completion time of the application.
+>Data Parallelism reduces the execution time (latency) of a task by breaking it down into smaller subtasks, each processing a portion of the input data in parallel. In contrast, Stream Parallelism does not reduce the latency of individual tasks. Instead, it improves the overall throughput of the application by executing multiple independent tasks concurrently when available, there by reducing the total completion time of the application.
 
 >Structured Programming vs Unstructured:
 >
@@ -1297,3 +1298,101 @@ FLOPS = Floating Point Operations Per Second = how many floating-point arithmeti
 
 ![[Pasted image 20260523011358.png]]
 
+![[Pasted image 20260525013307.png]]
+
+![[Pasted image 20260525013325.png]]
+
+>![[Pasted image 20260525161953.png]]
+>
+>![[Pasted image 20260525162024.png]]
+>
+>![[Pasted image 20260525162102.png]]
+
+Array Of Structures = simply stores the records consecutively in a single array.
+
+Structure Of Arrays = uses one array per dimension. Each array only stores the values of the associated element dimension.
+
+![[Pasted image 20260525173951.png]]
+
+![[Pasted image 20260525174048.png]]
+
+![[Pasted image 20260525174124.png]]
+
+Time Execution in a MPI Application -> call `MPI Wtime()` at the beginning and end of a computation.
+
+![[Pasted image 20260525174319.png]]
+
+![[Pasted image 20260525174337.png]]
+
+![[Pasted image 20260525174350.png]]
+
+![[Pasted image 20260525174401.png]]
+
+![[Pasted image 20260525174411.png]]
+
+>How create new datatypes in MPI?
+>
+>Its possible to use the predefined data provided by MPI as building blocks for allowing program- mers to define their own derived types. There are three kinds of derived datatypes:
+>
+>MPI::Datatype Create contiguous(int count): creates a new datatype defined as count contiguous elements of another existing type.
+>
+>MPI::Datatype Create vector(mucho texto ): it can be used to reference equally-spaced, fixed-sized blocks of data. Each block is simply a concatenation of block-length elemnts of an old datatype and the spacing stride between blocks is multiple of the extent of the base datatype. The number of blocks in th e datatype is specified by count.
+>
+>MPI::Datatype Create struct(mucho texto ): this is the more general datatype. It allows for the replication of a base datatype in non-contiguous blocks. However, block sizes and strides can vary.
+
+
+![[Pasted image 20260525174539.png]]
+
+![[Pasted image 20260525174549.png]]
+
+![[Pasted image 20260525174600.png]]
+
+![[Pasted image 20260525174616.png]]
+
+![[Pasted image 20260525174626.png]]
+
+![[Pasted image 20260525174634.png]]
+
+![[Pasted image 20260525174645.png]]
+
+![[Pasted image 20260525174653.png]]
+
+>Network Topology:
+>
+>Network Topologies determines the scalability and performance of a parallel computer architec- ture. A network is interpreted as a connected graph whose nodes are switches/processors and edges represents communication link. They classified as:
+>
+>Direct Networks: all nodes have a processor attached, e.e. there are direct connection between processors.
+>
+>Indirect Networks: there could also be intermediate routing-only nodes.
+>
+>There are three features used to compare the qualities of different network topologies:
+>
+>![[Pasted image 20260525174814.png]]
+
+
+>Topologies:
+>
+>![[Pasted image 20260525175453.png]]
+>
+>Binary Tree: we can represent an interconnection network as a binary tree of height and depth d denoted as BTd. The n = 2d − 1 nodes are arranged in a complete binary tree of depth d. Each node that isn’t a root or a leave is connected to its parent and its children, thus deg(BTd) = 3. The longest distance in a BTd occurs when travelling between a leaf node on the left half of the tree to one on the right half or vice versa. It requires going up to the root and then down again, thus diam(BTd) = 2 × (d − 1) = 2 × log2(n + 1). Note that the degree is constant and the diameter is low. The bisection width bw(BTd) = 1: just remove the link of the root and we ave split the network in two halves.
+>
+>![[Pasted image 20260525175534.png]]
+
+
+>Foster’s Parallel Algorithm Design Methodology
+>
+>Assume we have a problem or sequential program to parallelize. There isn’t a clear recepie to do so, having several different possible solutions. In order to explore possible parallel solutions there is the parallel algorithm design methodology developed by Foster. It is subdivided in four stages:
+>
+>![[Pasted image 20260525175621.png]]
+>
+>![[Pasted image 20260525175632.png]]
+
+![[Pasted image 20260525175645.png]]
+
+>![[Pasted image 20260525175739.png]]
+>
+>![[Pasted image 20260525175806.png]]
+
+
+
+## MODULI

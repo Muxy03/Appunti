@@ -615,6 +615,7 @@ pub fn max_overlapping(intervals: &[(usize, usize)]) -> usize {
 }
 ```
 
+the correctness of the solution is based on a specific detail in the sorting step: since `begin` is considered smaller than `end`, if two points are the same, we first have pairs with `begin` and then pairs with `end`.
 # Static Prefix Search
 
 Given A\[1,n] of integers, we would like to support:
@@ -629,22 +630,44 @@ A\[i] = RangeSum(i,i+1)
 
 # Ilya and Queries
 
->Ilya the Lion wants to help all his friends with passing exams. They need to solve the following problem to pass the IT exam.
->
->You've got string _s_ = _s_1_s_2... _s__n_ (_n_ is the length of the string), consisting only of characters "." and "#" and _m_ queries. Each query is described by a pair of integers _l__i_, _r__i_ (1 ≤ _l__i_ < _r__i_ ≤ _n_). The answer to the query _l__i_, _r__i_ is the number of such integers _i_ (_l__i_ ≤ _i_ < _r__i_), that _s__i_ = _s__i_ + 1.
->
->Ilya the Lion wants to help his friends but is there anyone to help him? Help Ilya, solve the problem.
+![[Pasted image 20260601010317.png]]
 
-Il problema **Ilya and Queries** richiede di gestire una stringa binaria (composta da caratteri come 'a' e 'b') e di rispondere a diverse query su intervalli $[i, j]$. L'obiettivo di ogni query è contare quante volte appare una coppia di caratteri consecutivi uguali all'interno di quel range.
+Binary vector B\[1,n] such that B\[i] == 1 if $s_i == s_{i+1}$, else 0.
 
-### La Strategia Risolutiva
+q(l,r) = $\sum_{i=l}^{r-1} B[i]$ -> uery can be solved in constant time by computing prefix-sums on vector B.
 
-Per risolvere il problema in modo efficiente, si utilizza la tecnica delle **somme prefisse**:
+q(3,6) = P\[5] - P\[2]
 
-1. **Array Ausiliario**: Si crea un array $B$ di numeri interi dove $B[k] = 1$ se il carattere in posizione $k$ è uguale al carattere in $k+1$ ($S[k] == S[k+1]$), altrimenti $B[k] = 0$.
-2. **Trasformazione in Range Sum**: La query originale viene trasformata in una somma di intervallo sull'array $B$. Nello specifico, per un intervallo $[i, j]$, il risultato è la somma degli elementi di $B$ tra l'indice $i$ e $j-1$.
-3. **Somme Prefisse**: Calcolando preventivamente le somme prefisse di $B$, ogni query può essere risolta in tempo costante $O(1)$.
+```rust
+#[derive(Debug)]
+struct Ilya {
+    psums: Vec<usize>,
+}
 
+impl Ilya {
+    pub fn new(s: &str) -> Self {
+        let psums = s
+            .as_bytes()
+            .windows(2)
+            .map(|w| if w[0] == w[1] { 1usize } else { 0usize })
+            .scan(0, |sum, e| {
+                *sum += e;
+                Some(*sum)
+            })
+            .collect::<Vec<_>>();
+
+        Self { psums }
+    }
+
+    // Queries use 0-based indexing
+    pub fn q(&self, i: usize, j: usize) -> usize {
+        assert!(i < j);
+        assert!(j <= self.psums.len());
+
+        self.psums[j - 1] - if i != 0 { self.psums[i - 1] } else { 0 }
+    }
+}
+```
 ### Complessità
 
 - **Tempo**: $O(n + m)$, dove $n$ è la lunghezza della stringa (per il preprocessamento) e $m$ è il numero di query.
@@ -668,9 +691,9 @@ pub fn little_girl(a: &[i64], q: &[(usize, usize)]) -> i64 {
         assert!(l <= r);
         assert!(r < u.len());
 
-        u[l] += 1;
+        u[l] += 1; // marks where the frequency "starts rising"
         if r + 1 < u.len() {
-            u[r + 1] -= 1;
+            u[r + 1] -= 1; // marks where it "stops rising"
         }
     }
 
@@ -752,16 +775,26 @@ pub fn number_of_ways(a: &[i64]) -> usize {
 
 Il **Fenwick Tree**, noto anche come **Binary Indexed Tree (BIT)**, è una struttura dati che permette di mantenere somme prefisse e aggiornare elementi in un array in tempo logaritmico $O(\log n)$.
 
-Ecco i dettagli fondamentali della sua struttura:
+![](https://pages.di.unipi.it/rossano/assets/img/fenwick/FT_level_3.svg)
 
-- **Rappresentazione Implicita:** A differenza degli alberi basati su nodi e puntatori, il BIT è memorizzato interamente in un **array**. Ogni cella dell'array memorizza la somma di un particolare intervallo di elementi dell'array originale.
-- **Logica del LSB (Least Significant Bit):** La struttura sfrutta la rappresentazione binaria degli indici. L'ampiezza dell'intervallo coperto da una posizione $i$ è determinata dal suo bit meno significativo impostato a 1 (LSB). Questo valore si calcola rapidamente con l'operazione bitwise `i & (-i)`.
-- **Navigazione dell'Albero:**
-    - **Query di Somma Prefissa:** Per calcolare la somma fino all'indice $i$, si parte da quel punto e si "risale" verso lo zero sottraendo ripetutamente l'LSB dall'indice corrente.
-    - **Aggiornamento (Add):** Per aggiungere un valore a un elemento in posizione $i$, si aggiorna la cella corrispondente e si "scendono" i nodi influenzati sommando ripetutamente l'LSB all'indice fino a raggiungere la dimensione massima dell'array.
-- **Efficienza:** Entrambe le operazioni richiedono $O(\log n)$ tempo. In pratica, il Fenwick Tree è spesso preferito al Segment Tree per la sua estrema velocità e semplicità di implementazione, risultando fino a 2-4 volte più rapido nei test reali.
+![[Pasted image 20260601035328.png]]
 
-- ![[Pasted image 20260205181133.png]]
+![[Pasted image 20260601035454.png]]
+
+sum(i) query -> from node i to node 0.
+add(i,v) query -> node i + v, right_sibiling + v, right_sibiling of parent +v, ... 
+
+
+Example sum(7):
+	FT\[7] + FT\[6] + FT\[4] + 0
+	0111 -> 0110 -> 0100 -> 0000
+
+Example add(5,\_):
+	FT\[5] -> FT\[6] -> FT\[8]
+	0101 -> 0110 -> 1000
+
+parent(i) = i - (i & -i);
+right_sibiling(i) = i + (i & -i);
 
 ```rust
 #[derive(Debug)]
@@ -832,24 +865,8 @@ Il problema del **Counting Inversions** consiste nel contare quante coppie di el
 
 ![[Pasted image 20260205174731.png]]
 
-Ecco le strategie principali per risolverlo:
-
-### 1. Approccio Merge Sort ($O(n \log n)$)
-
-Questa è la soluzione classica basata sul paradigma _Divide et Impera_.
-
-- **Divisione**: Si divide l'array in due metà e si contano ricorsivamente le inversioni in ciascuna parte.
-- **Conteggio durante il Merge**: Il passaggio cruciale avviene quando si fondono le due metà già ordinate ($A$ e $B$). Se un elemento $b_j$ della metà destra viene inserito nell'array finale prima di un elemento $a_i$ della metà sinistra, allora $b_j$ forma un'inversione con **tutti** gli elementi rimanenti in $A$.
-- Poiché i puntatori si muovono in modo lineare, il conteggio totale avviene in tempo $O(n \log n)$.
-
-### 2. Approccio Fenwick Tree o BIT ($O(n \log n)$)
-
-Un'alternativa elegante sfrutta il **Binary Indexed Tree** (BIT).
-
-- Si scansiona l'array (solitamente da destra a sinistra) e per ogni elemento si interroga il BIT per sapere quanti elementi più piccoli sono già stati incontrati.
-- Dopo ogni interrogazione, si aggiorna il BIT incrementando la frequenza del valore corrente.
-- Se i valori nell'array sono molto grandi, si esegue prima un **remapping** (compressione delle coordinate) per mantenere la dimensione del BIT proporzionale a $n$.
-- rank remapping => A\[i] -> position of A\[i] in A sorted (increasing order)
+Se i valori nell'array sono molto grandi, si esegue prima un **remapping** (compressione delle coordinate) per mantenere la dimensione del BIT proporzionale a $n$.
+rank remapping => A\[i] -> position of A\[i] in A sorted (increasing order)
 
 ```rust
 pub fn counting_inversions(a: &[u64]) -> usize {
@@ -862,6 +879,7 @@ pub fn counting_inversions(a: &[u64]) -> usize {
 
     let mut count: usize = 0;
     for &e in a {
+	    // the number of elements larger than e (A[j]) that we've already processed
         count += ft.range_sum((e + 1) as usize, max) as usize;
         ft.add(e as usize, 1);
     }
@@ -881,56 +899,59 @@ Una soluzione ottimale in tempo $O(n \log n)$ si basa sull'utilizzo dei **Fenwic
 ![[Pasted image 20260205182307.png]]
 
 ```rust
-  // Input di esempio: (l, r)
-    let raw_segments = vec![(1, 5), (7, 12), (2, 10), (3, 4), (6, 8), (9, 11)];
-    let n = raw_segments.len();
+pub fn nested_segments(segments: &[(i64, i64)]) -> Vec<i64> {
+    let n = segments.len();
+    if n == 0 {
+        return vec![];
+    }
 
-    // 1. Prepariamo i segmenti mantenendo l'ID originale per l'output
-    let mut segments: Vec<(i32, i32, usize)> = raw_segments
+    // Coordinate compress all endpoints to 0-based indices
+    let mut coords: Vec<i64> = segments.iter().flat_map(|&(l, r)| [l, r]).collect();
+    coords.sort_unstable();
+    coords.dedup();
+    let compress = |x: i64| coords.partition_point(|&c| c < x);
+
+    let mut indexed: Vec<(usize, usize, usize)> = segments
         .iter()
         .enumerate()
-        .map(|(i, &(l, r))| (l, r, i))
+        .map(|(i, &(l, r))| (i, compress(l), compress(r)))
         .collect();
 
-    // 2. Compressione delle coordinate per gli endpoint destri (R)
-    // Dobbiamo mappare i valori R unici in indici 0..n-1
-    let mut r_coords: Vec<i32> = raw_segments.iter().map(|s| s.1).collect();
-    r_coords.sort_unstable();
-    r_coords.dedup();
+    let m = coords.len();
+    let mut tree = FenwickTree::with_len(m);
 
-    let get_r_index = |val: i32| -> usize {
-        r_coords.binary_search(&val).unwrap()
-    };
-
-    // 3. Inizializziamo il Fenwick Tree con la dimensione corretta (numero di R unici)
-    let mut ft = FenwickTree::with_len(r_coords.len());
-    
-    // Popoliamo il BIT con tutti i segmenti (basandoci sugli indici compressi)
-    for &(_, r, _) in &segments {
-        ft.add(get_r_index(r), 1);
+    // Initialize: add 1 at each right endpoint
+    for &(_, _, r) in &indexed {
+        tree.add(r, 1);
     }
 
-    // 4. Ordiniamo i segmenti per L crescente (Sweep Line)
-    segments.sort_by_key(|s| s.0);
+    // Sort by left endpoint ascending
+    indexed.sort_unstable_by_key(|&(_, l, _)| l);
 
-    let mut results = vec![0; n];
-
-    // 5. Processiamo i segmenti
-    for (l, r, original_id) in segments {
-        let r_idx = get_r_index(r);
-        
-        // Rimuoviamo il contributo del segmento corrente
-        ft.add(r_idx, -1);
-        
-        // Contiamo quanti segmenti hanno R < r_attuale
-        // Poiché L è crescente, quelli rimasti nel BIT hanno L > l_attuale
-        results[original_id] = ft.sum(r_idx);
+    let mut result = vec![0i64; n];
+    for &(i, _, r) in &indexed {
+        // Count segments with right endpoint in [0, r-1]
+        result[i] = if r > 0 { tree.sum(r - 1) } else { 0 };
+        tree.add(r, -1);
     }
 
-    // 6. Stampa i risultati nell'ordine originale
-    for res in results {
-        println!("{}", res);
+    result
+}
+
+fn main() {
+    let segments = vec![
+        (1, 10),
+        (2, 9),
+        (3, 6),
+        (4, 5),
+        (7, 8),
+    ];
+
+    let result = nested_segments(&segments);
+    for (i, ((l, r), count)) in segments.iter().zip(result.iter()).enumerate() {
+        println!("Segment {i} [{l}, {r}] contains {count} segment(s)");
     }
+}
 ```
 ### Complessità
 
@@ -939,15 +960,12 @@ Una soluzione ottimale in tempo $O(n \log n)$ si basa sull'utilizzo dei **Fenwic
 
 # Update the Array
 
->You have an array containing n elements initially all 0. You need to do a number of update operations on it. In each update you specify l, r and val which are the starting index, ending index and value to be added. After each update, you add the 'val' to all elements from index l to r. After 'u' updates are over, there will be q queries each containing an index for which you have to print the element at that index.
-
-Il problema **Update the Array** richiede di gestire un array $A$ di $n$ elementi (inizialmente tutti pari a 0) supportando due operazioni principali: l'aggiornamento di un intero intervallo $[i, j]$ con un valore $v$ e l'accesso al valore di un singolo elemento $A[i]$.
-
+![[Pasted image 20260602014102.png]]
 ### Strategia: Array delle Differenze + Fenwick Tree
 
 Per risolvere entrambe le operazioni in tempo logaritmico $O(\log n)$, si utilizza un **Fenwick Tree** (o BIT) applicato a un array ausiliario delle differenze $D$.
 
-1. **Rappresentazione Implicita**: L'array originale $A$ è rappresentato in modo che ogni elemento $A[i]$ sia la somma prefissa dell'array delle differenze $D$, ovvero $A[i] = \sum_{k=1}^{i} D[k]$.
+1. **Rappresentazione Implicita**: L'array originale $A$ è rappresentato in modo che ogni elemento $A[i]$ sia la somma prefissa dell'array delle differenze $B$, ovvero $A[i] = \sum_{k=1}^{i} B[k]$.
 2. **Operazione di Update (Range Update)**: Per aggiungere un valore $v$ a tutti gli elementi nell'intervallo $[i, j]$, non si modificano tutti i valori di $A$. Invece, si aggiorna l'array delle differenze $D$ in soli due punti:
     - Si aggiunge $v$ a $D[i]$.
     - Si sottrae $v$ da $D[j+1]$. Questo garantisce che la somma prefissa (ovvero il valore di $A$) aumenti di $v$ solo per gli indici compresi tra $i$ e $j$.
@@ -971,45 +989,43 @@ impl UpdateArray {
     }
 
     pub fn access(&self, i: usize) -> i64 {
-        self.ft.sum(i)
+        self.ft.sum(i) // A[i] = \sum B[0..=i]
     }
 
     pub fn range_update(&mut self, l: usize, r: usize, v: i64) {
         assert!(l <= r);
         assert!(r < self.ft.len());
 
-        self.ft.add(l, v);
+        self.ft.add(l, v); // → prefix sums increase by v starting at l
         if r + 1 < self.ft.len() {
-            self.ft.add(r + 1, -v);
+            self.ft.add(r + 1, -v); // → prefix sums stop increasing after r
         }
     }
 }
 ```
 
+Visually, for `range_update(2, 4, 3)` on a size-6 array:
+```
+Index:      0    1    2    3    4    5
+B delta:         0   +3    0    0   -3
+Prefix sum: 0    0    3    3    3    0   ← this is A[i]
+```
 ### Complessità
 
 - **Tempo**: Entrambe le operazioni, `Update(i, j, v)` e `Access(i)`, richiedono **$O(\log n)$** grazie alla struttura del Fenwick Tree.
 - **Spazio**: **$O(n)$** per memorizzare l'albero.
 
-Questa tecnica è estremamente efficiente rispetto a un approccio banale (che richiederebbe tempo lineare $O(n)$ per ogni aggiornamento di intervallo) e trasforma un problema di "aggiornamento di un range" in un problema di "aggiornamento puntuale e query prefissa".
-
 # Dynamic Prefix-Sums with Range-Update
 
-Il problema del **Dynamic Prefix-Sums con Range-Update** richiede di gestire un array in cui è possibile aggiungere un valore $v$ a tutti gli elementi in un intervallo $[l, r]$ e, contemporaneamente, calcolare la somma dei primi $i$ elementi in tempo logaritmico $O(\log n)$.
+![[Pasted image 20260602015030.png]]
 
-### La sfida tecnica
-
-In una struttura statica, le somme prefisse si calcolano in $O(1)$, ma l'aggiornamento richiede $O(n)$. Per rendere dinamiche entrambe le operazioni, si utilizza solitamente il **Fenwick Tree** (o Binary Indexed Tree). Tuttavia, un Fenwick Tree standard supporta nativamente solo aggiornamenti puntuali e query di intervallo, o aggiornamenti di intervallo e query puntuali (tramite l'array delle differenze). Risolvere contemporaneamente **aggiornamenti di intervallo** e **somme di intervallo** richiede un approccio più sofisticato.
+![[Pasted image 20260602015205.png]]
 
 ### Soluzione con due Fenwick Tree
 
-L'approccio ottimale prevede l'utilizzo di due Fenwick Tree distinti ($BIT_1$ e $BIT_2$) per tracciare i cambiamenti necessari a ricostruire la somma totale.
+![[Pasted image 20260602015243.png]]
 
-1. **Array delle differenze**: Si definisce un array ausiliario $D$ tale che l'elemento originale $A[i]$ sia la somma prefissa di $D$ ($A[i] = \sum_{k=1}^i D[k]$). Un aggiornamento nell'intervallo $[l, r]$ di valore $v$ si traduce in due aggiornamenti puntuali su $D$: $+v$ in posizione $l$ e $-v$ in posizione $r+1$.
-2. **Scomposizione della Somma**: La somma prefissa di $A$ fino a $i$ è $\sum_{k=1}^i A[k]$. Sostituendo $A[k]$ con la sua definizione basata su $D$, otteniamo che ogni $D[m]$ compare nella somma totale $(i - m + 1)$ volte. Matematicamente: $\sum_{k=1}^i A[k] = (i + 1) \sum_{m=1}^i D[m] - \sum_{m=1}^i (m \cdot D[m])$.
-3. **Gestione dei due alberi**:
-    - **$BIT_1$** memorizza i valori $D[m]$ per calcolare il termine $\sum D[m]$.
-    - **$BIT_2$** memorizza i valori $(m \cdot D[m])$ per calcolare il termine correttivo $\sum (m \cdot D[m])$.
+![[Pasted image 20260602015404.png]]
 
 ```rust
 #[derive(Debug)]
@@ -1045,29 +1061,92 @@ impl RangeUpdate {
     pub fn range_update(&mut self, l: usize, r: usize, v: i64) {
         self.ft1.add(l, v);
 
-        self.ft2.add(l, -v * (l as i64 - 1));
+        self.ft2.add(l, -v * (l as i64 - 1)); // correction at l
 
         if r + 1 < self.len() {
             self.ft1.add(r + 1, -v);
-            self.ft2.add(r + 1, v * r as i64);
+            self.ft2.add(r + 1, v * r as i64); // correction at r+1
         }
     }
 }
 ```
-### Complessità e Performance
 
-Grazie a questa scomposizione, sia l'aggiornamento dell'intervallo che la query della somma prefissa possono essere eseguiti in **$O(\log n)$**. Questa tecnica è considerata estremamente efficiente e superiore in velocità rispetto ad altre strutture come i Segment Tree in molti scenari di programmazione competitiva.
+Sure! Let's use array `A = [0, 0, 0, 0, 0]` (size 5) and apply `range_update(1, 3, 4)` (add 4 to indices 1..=3), then query `sum(0)` through `sum(4)`.
 
+### Step 1: Initial state
+
+Both trees are all zeros:
+
+```
+FT1 = [0, 0, 0, 0, 0]
+FT2 = [0, 0, 0, 0, 0]
+```
+
+### Step 2: `range_update(l=1, r=3, v=4)`
+
+Four point updates happen:
+
+|Tree|Position|Delta|Reason|
+|---|---|---|---|
+|`FT1`|1|`+4`|start of range|
+|`FT1`|4|`-4`|cancel after range|
+|`FT2`|1|`-4*(1-1) = 0`|correction at l|
+|`FT2`|4|`+4*3 = +12`|correction at r+1|
+
+So after the update the logical difference arrays look like:
+
+```
+FT1 point values: [0, +4,  0,  0, -4]
+FT2 point values: [0,  0,  0,  0, +12]
+```
+
+### Step 3: Querying `sum(i) = FT1.sum(i) * i + FT2.sum(i)`
+
+Remember `FT1.sum(i)` and `FT2.sum(i)` are **prefix sums** of their point values.
+
+|i|FT1.sum(i)|× i|FT2.sum(i)|Total|Expected|
+|---|---|---|---|---|---|
+|0|0|0|0|**0**|0 ✓|
+|1|4|4|0|**4**|4 ✓|
+|2|4|8|0|**8**|8 ✓|
+|3|4|12|0|**12**|12 ✓|
+|4|0|0|12|**12**|12 ✓|
+
+The expected prefix sums come from `A = [0, 4, 4, 4, 0]` after the update:
+
+- `sum(0)` = 0
+- `sum(1)` = 4
+- `sum(2)` = 4+4 = 8
+- `sum(3)` = 4+4+4 = 12
+- `sum(4)` = 4+4+4+0 = 12
+
+### Step 4: Let's also verify `access(i)`
+
+`access(i) = sum(i) - sum(i-1)`:
+
+|i|sum(i)|sum(i-1)|A[i]|
+|---|---|---|---|
+|0|0|—|**0** ✓|
+|1|4|0|**4** ✓|
+|2|8|4|**4** ✓|
+|3|12|8|**4** ✓|
+|4|12|12|**0** ✓|
+
+The key insight is that `FT2.sum(i)` stays `0` inside the range `[1,3]` (so `FT1.sum(i) * i` does the right thing there), and then jumps to `+12` at `i=4` to compensate for `FT1.sum(4) * 4 = 0` — restoring the correct constant `v*(r-l+1) = 4*3 = 12`.
+
+| Operation             | `RangeUpdate` | Naive array | `UpdateArray` |
+| --------------------- | ------------- | ----------- | ------------- |
+| `range_update(l,r,v)` | **O(log n)**  | O(n)        | O(log n)      |
+| `sum(i)`              | **O(log n)**  | O(n)        | O(n)          |
+| `access(i)`           | **O(log n)**  | O(1)        | O(log n)      |
+| Space                 | **O(n)**      | O(n)        | O(n)          |
 # Segment Tree
 
-Il **Segment Tree** è una struttura dati estremamente flessibile utilizzata per risolvere problemi di query su intervalli (come somme, minimi o massimi) e aggiornamenti dinamici in tempo logaritmico $O(\log n)$.
+![[Pasted image 20260602021201.png]]
 
-### Struttura e Costruzione
+![[Pasted image 20260602021258.png]]
 
-- **Rappresentazione ad Albero**: È un albero binario costruito sopra gli elementi di un array. La radice rappresenta l'intero intervallo $[0, n-1]$, mentre le foglie corrispondono alle singole posizioni dell'array originale.
-- **Nodi Interni**: Ogni nodo intermedio è responsabile di un sotto-intervallo specifico e memorizza la "risposta" (somma, minimo, ecc.) per quel range. Questo valore viene calcolato combinando i risultati dei suoi due figli.
-- **Memorizzazione**: Viene solitamente implementato tramite un **vettore**, dove i nodi sono indicizzati in modo simile a un heap: se un nodo è in posizione $i$, i suoi figli si trovano in $2i$ e $2i+1$. A differenza del Fenwick Tree, richiede spazio extra per memorizzare i nodi interni.
-
+![[Pasted image 20260602021604.png]]
 ### Funzionamento delle Operazioni
 
 1. **Aggiornamento (Update)**: Quando un elemento viene modificato, è necessario aggiornare tutti i nodi lungo il percorso dalla foglia alla radice ($O(\log n)$). Ogni nodo viene ricalcolato semplicemente guardando i nuovi valori dei suoi figli.
@@ -1096,13 +1175,163 @@ Ecco come si implementano le operazioni richieste:
 - **RangeSum(i, j):** La query attraversa l'albero combinando i valori dei nodi che coprono completamente o parzialmente l'intervallo $[i, j]$. Grazie alla struttura dell'albero, vengono visitati al massimo $4 \log n$ nodi, garantendo una complessità $O(\log n)$.
 - **Search(s):** Poiché l'array non contiene numeri negativi, le somme dei prefissi sono monotone. Invece di una ricerca binaria esterna (che costerebbe $O(\log^2 n)$), puoi "scendere" nell'albero in $O(\log n)$. Se la somma memorizzata nel figlio sinistro è $\ge s$, ti muovi a sinistra; altrimenti, sottrai la somma del figlio sinistro da $s$ e ti muovi a destra.
 
-Rispetto al Fenwick Tree, il Segment Tree richiede più memoria (circa $4n$ nodi) ma è più flessibile per generalizzare il problema a operazioni non invertibili come il minimo o il massimo (RMQ).
+```rust
+pub struct SegmentTree {
+    n: usize,
+    tree: Vec<i64>,
+}
+
+impl SegmentTree {
+    pub fn with_len(n: usize) -> Self {
+        Self {
+            n,
+            tree: vec![0; 4 * n],
+        }
+    }
+
+    pub fn add(&mut self, i: usize, v: i64) {
+        self.add_rec(1, 0, self.n - 1, i, v);
+    }
+
+    fn add_rec(&mut self, node: usize, l: usize, r: usize, i: usize, v: i64) {
+        if l == r {
+            self.tree[node] += v;
+            return;
+        }
+        let mid = (l + r) / 2;
+        if i <= mid {
+            self.add_rec(2 * node, l, mid, i, v);
+        } else {
+            self.add_rec(2 * node + 1, mid + 1, r, i, v);
+        }
+        self.tree[node] = self.tree[2 * node] + self.tree[2 * node + 1];
+    }
+
+    pub fn range_sum(&self, i: usize, j: usize) -> i64 {
+        self.range_sum_rec(1, 0, self.n - 1, i, j)
+    }
+
+    fn range_sum_rec(&self, node: usize, l: usize, r: usize, i: usize, j: usize) -> i64 {
+        if i > r || j < l {
+            return 0;
+        }
+        if i <= l && r <= j {
+            return self.tree[node];
+        }
+        let mid = (l + r) / 2;
+        self.range_sum_rec(2 * node, l, mid, i, j)
+            + self.range_sum_rec(2 * node + 1, mid + 1, r, i, j)
+    }
+
+    // Returns the smallest i such that sum(A[0..=i]) >= s
+    pub fn search(&self, s: i64) -> Option<usize> {
+        if self.tree[1] < s {
+            return None; // total sum < s, no such prefix exists
+        }
+        Some(self.search_rec(1, 0, self.n - 1, s))
+    }
+
+    fn search_rec(&self, node: usize, l: usize, r: usize, s: i64) -> usize {
+        if l == r {
+            return l;
+        }
+        let mid = (l + r) / 2;
+        let left_sum = self.tree[2 * node];
+        if left_sum >= s {
+            self.search_rec(2 * node, l, mid, s)
+        } else {
+            self.search_rec(2 * node + 1, mid + 1, r, s - left_sum)
+        }
+    }
+}
+
+fn main() {
+    //        idx:  0   1   2   3   4
+    // A          = [3,  1,  4,  1,  5]
+    // prefix sum = [3,  4,  8,  9, 14]
+    let mut st = SegmentTree::with_len(5);
+    for (i, &v) in [3i64, 1, 4, 1, 5].iter().enumerate() {
+        st.add(i, v);
+    }
+
+    println!("--- RangeSum ---");
+    println!("sum(0..=2) = {}", st.range_sum(0, 2)); // 3+1+4 = 8
+    println!("sum(1..=3) = {}", st.range_sum(1, 3)); // 1+4+1 = 6
+    println!("sum(0..=4) = {}", st.range_sum(0, 4)); // 14
+
+    println!("\n--- Search ---");
+    println!("search(1)  = {:?}", st.search(1));  // idx 0 (prefix 3 >= 1)
+    println!("search(3)  = {:?}", st.search(3));  // idx 0 (prefix 3 >= 3)
+    println!("search(4)  = {:?}", st.search(4));  // idx 1 (prefix 4 >= 4)
+    println!("search(5)  = {:?}", st.search(5));  // idx 1 (prefix 4? no → idx 2, prefix 8 >= 5)
+    println!("search(9)  = {:?}", st.search(9));  // idx 3 (prefix 9 >= 9)
+    println!("search(14) = {:?}", st.search(14)); // idx 4 (prefix 14 >= 14)
+    println!("search(15) = {:?}", st.search(15)); // None  (total is only 14)
+
+    println!("\n--- Add then re-query ---");
+    st.add(1, 10); // A[1] becomes 11, prefix sums: [3, 14, 18, 19, 24]
+    println!("After add(1, 10):");
+    println!("sum(0..=4) = {}", st.range_sum(0, 4)); // 24
+    println!("search(14) = {:?}", st.search(14));    // idx 1 (prefix 14 >= 14)
+}
+```
+
+### Example walkthrough
+
+Starting array `A = [3, 1, 4, 1, 5]`, prefix sums are:
+
+|index|0|1|2|3|4|
+|---|---|---|---|---|---|
+|A[i]|3|1|4|1|5|
+|prefix sum|3|4|8|9|14|
+
+**`search(5)` descent through the tree:**
+
+```
+Root covers [0,4], sum=14 ≥ 5 → descend
+  Left  covers [0,2], sum=8 ≥ 5 → go left
+    Left  covers [0,1], sum=4 < 5 → go right, s = 5-4 = 1
+      Right covers [2,2], sum=4 ≥ 1 → leaf!
+→ returns index 2  (prefix sum 8 ≥ 5, and prefix sum at 1 was only 4)
+```
+
+**Output:**
+
+```
+--- RangeSum ---
+sum(0..=2) = 8
+sum(1..=3) = 6
+sum(0..=4) = 14
+
+--- Search ---
+search(1)  = Some(0)
+search(3)  = Some(0)
+search(4)  = Some(1)
+search(5)  = Some(2)
+search(9)  = Some(3)
+search(14) = Some(4)
+search(15) = None
+
+--- Add then re-query ---
+After add(1, 10):
+sum(0..=4) = 24
+search(14) = Some(1)
+```
+
+### Complexity recap
+
+| Operation         | Cost     | Why                                                  |
+| ----------------- | -------- | ---------------------------------------------------- |
+| `add(i, v)`       | O(log n) | Walk from leaf to root updating sums                 |
+| `range_sum(i, j)` | O(log n) | At most 4 log n nodes visited                        |
+| `search(s)`       | O(log n) | Single root-to-leaf descent, no binary search needed |
+| Space             | O(n)     | Tree array of size 4n                                |
 
 # ST Problem 2
 
 A\[1,n] integers
 - add(i,v)
-- occs(i,j,v) = report the number of occurences ov v in A\[i..j]
+- occs(i,j,v) = report the number of occurences of v in A\[i..j]
 
 Per risolvere il problema del conteggio delle occorrenze in un intervallo dinamico con un **Segment Tree**, ogni nodo dell'albero deve memorizzare una struttura dati (come una `HashMap` o un vettore ordinato) che tenga traccia delle frequenze di tutti gli elementi presenti nel suo sotto-intervallo.
 
@@ -1111,7 +1340,148 @@ Ecco come funzionano le operazioni:
 - **`add(i, v)`**: Quando si aggiorna un elemento $A[i]$, l'algoritmo risale dalla foglia corrispondente fino alla radice. In ogni nodo incontrato lungo il percorso, si aggiorna la struttura dati interna (ad esempio, rimuovendo o decrementando il vecchio valore e inserendo o incrementando il nuovo) in tempo logaritmico rispetto alla profondità dell'albero.
 - **`occs(i, j, v)`**: La query di intervallo decompone il range $[i, j]$ in al più $O(\log n)$ nodi. Per ogni nodo che rientra completamente nell'intervallo richiesto, si interroga la sua mappa (o il suo vettore) per ottenere il numero di occorrenze di $v$, sommando poi i risultati parziali.
 
-**Complessità e considerazioni:** Questa soluzione richiede uno spazio di $O(n \log n)$ per memorizzare le informazioni distribuite nei nodi. Il tempo per ogni operazione dipende dall'efficienza della struttura dati scelta per i nodi: con una `HashMap`, il tempo atteso è $O(\log n)$, mentre con un vettore ordinato (usando la ricerca binaria) è $O(\log^2 n)$.
+```rust
+use std::collections::HashMap;
+
+pub struct SegmentTree {
+    n: usize,
+    tree: Vec<HashMap<i64, usize>>,
+    values: Vec<i64>, // current value at each leaf
+}
+
+impl SegmentTree {
+    pub fn with_len(n: usize) -> Self {
+        Self {
+            n,
+            tree: vec![HashMap::new(); 4 * n],
+            values: vec![0; n],
+        }
+    }
+
+    pub fn add(&mut self, i: usize, v: i64) {
+        let old = self.values[i];
+        self.values[i] = v;
+        self.add_rec(1, 0, self.n - 1, i, old, v);
+    }
+
+    fn add_rec(&mut self, node: usize, l: usize, r: usize, i: usize, old: i64, new: i64) {
+        // Remove old value, insert new value
+        if old != 0 {
+            let cnt = self.tree[node].entry(old).or_insert(0);
+            if *cnt > 0 { *cnt -= 1; }
+            if *cnt == 0 { self.tree[node].remove(&old); }
+        }
+        *self.tree[node].entry(new).or_insert(0) += 1;
+
+        if l == r { return; }
+        let mid = (l + r) / 2;
+        if i <= mid {
+            self.add_rec(2 * node, l, mid, i, old, new);
+        } else {
+            self.add_rec(2 * node + 1, mid + 1, r, i, old, new);
+        }
+    }
+
+    pub fn occs(&self, i: usize, j: usize, v: i64) -> usize {
+        self.occs_rec(1, 0, self.n - 1, i, j, v)
+    }
+
+    fn occs_rec(&self, node: usize, l: usize, r: usize, i: usize, j: usize, v: i64) -> usize {
+        if i > r || j < l { return 0; }
+        if i <= l && r <= j {
+            return *self.tree[node].get(&v).unwrap_or(&0);
+        }
+        let mid = (l + r) / 2;
+        self.occs_rec(2 * node, l, mid, i, j, v)
+            + self.occs_rec(2 * node + 1, mid + 1, r, i, j, v)
+    }
+}
+
+fn main() {
+    //       idx: 0  1  2  3  4  5  6
+    // A        = [3, 1, 4, 1, 5, 1, 3]
+    let mut st = SegmentTree::with_len(7);
+    for (i, &v) in [3i64, 1, 4, 1, 5, 1, 3].iter().enumerate() {
+        st.add(i, v);
+    }
+
+    println!("--- occs queries ---");
+    println!("occs(0,6,1) = {}", st.occs(0, 6, 1)); // 3
+    println!("occs(0,6,3) = {}", st.occs(0, 6, 3)); // 2
+    println!("occs(0,6,5) = {}", st.occs(0, 6, 5)); // 1
+    println!("occs(1,5,1) = {}", st.occs(1, 5, 1)); // 2  (indices 1,3)
+    println!("occs(2,4,1) = {}", st.occs(2, 4, 1)); // 1  (index 3)
+    println!("occs(0,6,7) = {}", st.occs(0, 6, 7)); // 0  (not present)
+
+    println!("\n--- add(2, 1): A[2] changes from 4 to 1 ---");
+    st.add(2, 1);
+    // A = [3, 1, 1, 1, 5, 1, 3]
+    println!("occs(0,6,1) = {}", st.occs(0, 6, 1)); // 4
+    println!("occs(0,6,4) = {}", st.occs(0, 6, 4)); // 0  (removed)
+    println!("occs(1,3,1) = {}", st.occs(1, 3, 1)); // 3  (indices 1,2,3)
+}
+```
+
+### How the tree looks after initialization
+
+`A = [3, 1, 4, 1, 5, 1, 3]`
+
+Every node stores a `HashMap` counting all values in its covered range:
+
+```
+Root [0,6]:    {3:2, 1:3, 4:1, 5:1}
+  [0,3]:       {3:1, 1:2, 4:1}
+    [0,1]:     {3:1, 1:1}
+      [0,0]:   {3:1}
+      [1,1]:   {1:1}
+    [2,3]:     {4:1, 1:1}
+      [2,2]:   {4:1}
+      [3,3]:   {1:1}
+  [4,6]:       {5:1, 1:1, 3:1}
+    [4,5]:     {5:1, 1:1}
+      [4,4]:   {5:1}
+      [5,5]:   {1:1}
+    [6,6]:     {3:1}
+```
+
+### Walkthrough: `occs(1, 5, 1)`
+
+We want count of `1` in `A[1..=5] = [1, 4, 1, 5, 1]`, answer is **3**.
+
+```
+Root [0,6]  → partial overlap → descend
+  [0,3]     → partial overlap → descend
+    [0,1]   → partial overlap → descend
+      [0,0] → out of range   → 0
+      [1,1] → fully inside   → map.get(1) = 1
+    [2,3]   → fully inside   → map.get(1) = 1
+  [4,6]     → partial overlap → descend
+    [4,5]   → fully inside   → map.get(1) = 1
+    [6,6]   → out of range   → 0
+
+Total = 1 + 1 + 1 = 3 ✓
+```
+
+### Walkthrough: `add(2, 1)` — changing `A[2]` from `4` to `1`
+
+Walking **root to leaf**, each node on the path removes `4` and adds `1`:
+
+```
+Root [0,6]: {3:2, 1:3, 4:1} → {3:2, 1:4}
+  [0,3]:    {3:1, 1:2, 4:1} → {3:1, 1:3}
+    [2,3]:  {4:1, 1:1}      → {1:2}
+      [2,2]:{4:1}            → {1:1}   ← leaf
+```
+
+### Complexity
+
+|Operation|Time|Space|
+|---|---|---|
+|`add(i, v)`|O(log n) per node × O(1) HashMap ops = **O(log n)**|—|
+|`occs(i, j, v)`|O(log n) nodes × O(1) HashMap lookup = **O(log n)**|—|
+|Total space|—|**O(n log n)** — each element appears in O(log n) nodes|
+
+The O(n log n) space is the key tradeoff: each value is stored once per level of the tree (there are log n levels), so the total number of HashMap entries across all nodes is O(n log n).
 
 # ST Problem 3
 
@@ -1122,12 +1492,167 @@ Ecco come si implementano le operazioni:
 - **`add(i, v)`**: L'algoritmo parte dalla foglia corrispondente all'indice $i$ e risale verso la radice aggiornando circa $O(\log n)$ nodi. In ogni nodo, è necessario rimuovere il vecchio valore $A[i]$ e inserire il nuovo valore aggiornato nella struttura dati interna (BST o vettore) per mantenere l'ordinamento.
 - **`successor(i, j, k)`**: La query decompone l'intervallo richiesto $[i, j]$ in un massimo di $O(\log n)$ nodi canonici. Per ogni nodo coinvolto, si interroga la struttura interna per trovare il minimo elemento $\ge k$ (tramite ricerca binaria o ricerca nel BST). Il successore globale dell'intervallo sarà il minimo tra tutti i successori locali trovati.
 
-**Complessità e considerazioni:** Questa struttura richiede uno spazio di **$O(n \log n)$** per memorizzare gli elementi duplicati nei vari livelli dell'albero. Il tempo di esecuzione per entrambe le operazioni è tipicamente **$O(\log^2 n)$** se si usa la ricerca binaria su vettori ordinati, ma può essere ottimizzato in base alla struttura interna scelta.
+```rust
+use std::collections::BTreeMap;
+
+pub struct SegmentTree {
+    n: usize,
+    tree: Vec<BTreeMap<i64, usize>>, // value -> count (handles duplicates)
+    values: Vec<i64>,
+}
+
+impl SegmentTree {
+    pub fn with_len(n: usize) -> Self {
+        Self {
+            n,
+            tree: vec![BTreeMap::new(); 4 * n],
+            values: vec![0; n],
+        }
+    }
+
+    pub fn add(&mut self, i: usize, v: i64) {
+        let old = self.values[i];
+        self.values[i] = v;
+        self.add_rec(1, 0, self.n - 1, i, old, v);
+    }
+
+    fn add_rec(&mut self, node: usize, l: usize, r: usize, i: usize, old: i64, new: i64) {
+        // Remove old, insert new in this node's BTreeMap
+        if old != 0 {
+            let cnt = self.tree[node].entry(old).or_insert(0);
+            if *cnt > 0 { *cnt -= 1; }
+            if *cnt == 0 { self.tree[node].remove(&old); }
+        }
+        *self.tree[node].entry(new).or_insert(0) += 1;
+
+        if l == r { return; }
+        let mid = (l + r) / 2;
+        if i <= mid {
+            self.add_rec(2 * node, l, mid, i, old, new);
+        } else {
+            self.add_rec(2 * node + 1, mid + 1, r, i, old, new);
+        }
+    }
+
+    // Returns the smallest value y in A[i..=j] such that y >= k
+    pub fn successor(&self, i: usize, j: usize, k: i64) -> Option<i64> {
+        self.successor_rec(1, 0, self.n - 1, i, j, k)
+    }
+
+    fn successor_rec(&self, node: usize, l: usize, r: usize,
+                     i: usize, j: usize, k: i64) -> Option<i64> {
+        if i > r || j < l { return None; }
+        if i <= l && r <= j {
+            // Find smallest key >= k in this node's BTreeMap
+            return self.tree[node].range(k..).next().map(|(&v, _)| v);
+        }
+        let mid = (l + r) / 2;
+        let left  = self.successor_rec(2 * node,     l,       mid, i, j, k);
+        let right = self.successor_rec(2 * node + 1, mid + 1, r,   i, j, k);
+        match (left, right) {
+            (Some(a), Some(b)) => Some(a.min(b)),
+            (Some(a), None)    => Some(a),
+            (None,    Some(b)) => Some(b),
+            (None,    None)    => None,
+        }
+    }
+}
+
+fn main() {
+    //       idx: 0   1   2   3   4   5   6
+    // A        = [5,  3,  8,  1,  9,  2,  7]
+    let mut st = SegmentTree::with_len(7);
+    for (i, &v) in [5i64, 3, 8, 1, 9, 2, 7].iter().enumerate() {
+        st.add(i, v);
+    }
+
+    println!("A = [5, 3, 8, 1, 9, 2, 7]");
+    println!();
+    println!("--- successor queries ---");
+    println!("successor(0,6, 1) = {:?}", st.successor(0, 6, 1)); // Some(1) — 1 itself
+    println!("successor(0,6, 4) = {:?}", st.successor(0, 6, 4)); // Some(5) — smallest >= 4
+    println!("successor(0,6, 6) = {:?}", st.successor(0, 6, 6)); // Some(7)
+    println!("successor(0,6,10) = {:?}", st.successor(0, 6,10)); // None — nothing >= 10
+    println!("successor(1,4, 4) = {:?}", st.successor(1, 4, 4)); // Some(8) — A[1..=4]={3,8,1,9}
+    println!("successor(0,2, 6) = {:?}", st.successor(0, 2, 6)); // Some(8) — A[0..=2]={5,3,8}
+    println!("successor(3,5, 3) = {:?}", st.successor(3, 5, 3)); // Some(9) — A[3..=5]={1,9,2}
+
+    println!();
+    println!("--- add(2, 4): A[2] changes from 8 to 4 ---");
+    st.add(2, 4);
+    // A = [5, 3, 4, 1, 9, 2, 7]
+    println!("successor(0,2, 4) = {:?}", st.successor(0, 2, 4)); // Some(4) — was Some(5)
+    println!("successor(0,6, 8) = {:?}", st.successor(0, 6, 8)); // Some(9) — 8 is gone
+    println!("successor(1,4, 4) = {:?}", st.successor(1, 4, 4)); // Some(4) — was Some(8)
+}
+```
+
+### How the tree looks after initialization
+
+`A = [5, 3, 8, 1, 9, 2, 7]`
+
+Each node stores a sorted `BTreeMap` of all values in its range:
+
+```
+Root [0,6]:  {1,2,3,5,7,8,9}
+  [0,3]:     {1,3,5,8}
+    [0,1]:   {3,5}
+      [0,0]: {5}
+      [1,1]: {3}
+    [2,3]:   {1,8}
+      [2,2]: {8}
+      [3,3]: {1}
+  [4,6]:     {2,7,9}
+    [4,5]:   {2,9}
+      [4,4]: {9}
+      [5,5]: {2}
+    [6,6]:   {7}
+```
+
+### Walkthrough: `successor(1, 4, 4)`
+
+Range `A[1..=4] = [3, 8, 1, 9]`, looking for smallest value `>= 4`. Answer: **8**.
+
+```
+Root [0,6]  → partial overlap → descend
+  [0,3]     → partial overlap → descend
+    [0,1]   → partial overlap → descend
+      [0,0] → out of range   → None
+      [1,1] → fully inside   → BTree.range(4..).next() = None  (only 3)
+    [2,3]   → fully inside   → BTree.range(4..).next() = Some(8)
+  [4,6]     → partial overlap → descend
+    [4,5]   → partial overlap → descend
+      [4,4] → fully inside   → BTree.range(4..).next() = Some(9)
+      [5,5] → out of range   → None
+    [6,6]   → out of range   → None
+
+min(Some(8), Some(9)) = Some(8) ✓
+```
+
+### Walkthrough: `add(2, 4)` — changing `A[2]` from `8` to `4`
+
+Walking root to leaf, each node removes `8` and inserts `4`:
+
+```
+Root [0,6]: {1,2,3,5,7,8,9} → {1,2,3,4,5,7,9}
+  [0,3]:    {1,3,5,8}       → {1,3,4,5}
+    [2,3]:  {1,8}           → {1,4}
+      [2,2]:{8}             → {4}        ← leaf
+```
+
+### Complexity
+
+|Operation|Time|Space|
+|---|---|---|
+|`add(i, v)`|O(log²n) — O(log n) nodes × O(log n) BTreeMap insert/remove|—|
+|`successor(i, j, k)`|O(log²n) — O(log n) nodes × O(log n) BTreeMap range query|—|
+|Total space|—|O(n log n) — each value lives in O(log n) nodes|
+
+The `BTreeMap` gives us O(log n) per operation on each node, and we touch O(log n) nodes, hence O(log²n) overall. If we used a sorted `Vec` with binary search for a read-heavy workload, `successor` would stay O(log²n) but `add` would become O(n log n) due to shifting — so `BTreeMap` is the right tradeoff here for a dynamic dataset.
 
 # Triplets
 
-Il problema di contare le triplette $(i, j, k)$ tali che $A[i] < A[j] < A[k]$ con indici $i < j < k$ può essere risolto efficacemente sfruttando la logica dell'elemento centrale e strutture dati avanzate per ottimizzare i tempi di ricerca.
-
+![[Pasted image 20260602025208.png]]
 ### 1. Strategia dell'elemento centrale
 
 L'approccio più intuitivo per superare la forza bruta $O(n^3)$ consiste nel fissare l'elemento $A[j]$ come il "centro" della tripletta. Per ogni posizione $j$, il numero di triplette valide è dato dal prodotto tra:
@@ -1152,12 +1677,167 @@ Se gli interi nell'array $A$ sono molto grandi o sparsi, la dimensione del Fenwi
 2. Si sostituisce ogni valore con il suo "rango" (la sua posizione nell'ordinamento).
 3. L'array risultante conterrà solo valori nell'intervallo $[1, n]$, permettendo l'uso di un BIT di dimensioni contenute.
 
-### Complessità Finale
+```rust
+#[derive(Debug)]
+pub struct FenwickTree {
+    tree: Vec<i64>,
+}
 
-- **Tempo**: $O(n \log n)$, dominato dall'ordinamento per il remapping e dalle $n$ operazioni sul Fenwick Tree.
-- **Spazio**: $O(n)$ per memorizzare il Fenwick Tree e gli array ausiliari per i conteggi.
+impl FenwickTree {
+    pub fn with_len(n: usize) -> Self {
+        Self { tree: vec![0; n + 1] }
+    }
+    pub fn len(&self) -> usize {
+        self.tree.len() - 1
+    }
+    pub fn add(&mut self, i: usize, delta: i64) {
+        let mut i = i + 1;
+        while i < self.tree.len() {
+            self.tree[i] += delta;
+            i += i & i.wrapping_neg();
+        }
+    }
+    pub fn sum(&self, i: usize) -> i64 {
+        let mut i = i + 1;
+        let mut s = 0;
+        while i > 0 {
+            s += self.tree[i];
+            i -= i & i.wrapping_neg();
+        }
+        s
+    }
+    pub fn range_sum(&self, l: usize, r: usize) -> i64 {
+        self.sum(r) - if l == 0 { 0 } else { self.sum(l - 1) }
+    }
+}
 
-Questa tecnica è una generalizzazione di quella usata per il problema del _Counting Inversions_, dove però si cercano coppie "fuori ordine" anziché triplette ordinate.
+pub fn count_triplets(a: &[usize]) -> i64 {
+    let n = a.len();
+    if n < 3 { return 0; }
+
+    // Remap values to [0, n-1] via coordinate compression
+    let mut sorted = a.to_vec();
+    sorted.sort_unstable();
+    sorted.dedup();
+    let compress = |x: usize| sorted.partition_point(|&c| c < x);
+    let a: Vec<usize> = a.iter().map(|&x| compress(x)).collect();
+    let m = sorted.len(); // number of distinct values
+
+    // left[j] = number of elements in A[0..j] strictly less than A[j]
+    let mut left = vec![0i64; n];
+    let mut ft = FenwickTree::with_len(m);
+    for j in 0..n {
+        left[j] = if a[j] > 0 { ft.sum(a[j] - 1) } else { 0 };
+        ft.add(a[j], 1);
+    }
+
+    // right[j] = number of elements in A[j+1..n] strictly greater than A[j]
+    let mut right = vec![0i64; n];
+    let mut ft = FenwickTree::with_len(m);
+    for j in (0..n).rev() {
+        right[j] = ft.range_sum(a[j] + 1, m - 1);
+        ft.add(a[j], 1);
+    }
+
+    // For each j, count triplets with A[j] as the middle element
+    (1..n - 1).map(|j| left[j] * right[j]).sum()
+}
+
+fn main() {
+    let a = vec![2, 1, 3, 0, 5, 4];
+    println!("A = {:?}", a);
+    println!("Count of triplets (i<j<k, A[i]<A[j]<A[k]) = {}", count_triplets(&a));
+
+    println!();
+    let b = vec![0, 1, 2, 3, 4];
+    println!("A = {:?}", b);
+    println!("Count = {} (expected {})", count_triplets(&b), 10); // C(5,3)=10
+
+    println!();
+    let c = vec![4, 3, 2, 1, 0];
+    println!("A = {:?}", c);
+    println!("Count = {} (expected 0)", count_triplets(&c)); // strictly decreasing
+}
+```
+
+### Full walkthrough with `A = [2, 1, 3, 0, 5, 4]`
+
+**Step 1: Coordinate compression**
+
+Values sorted: `[0, 1, 2, 3, 4, 5]` — already in `[0..5]`, so remapping is identity here.
+
+---
+
+**Step 2: Left pass** — for each `j`, count elements to its left that are `< A[j]`
+
+Scanning left to right, inserting into FT after querying:
+
+|j|A[j]|FT state (before)|left[j] = sum(A[j]-1)|
+|---|---|---|---|
+|0|2|empty|0|
+|1|1|{2:1}|0|
+|2|3|{2:1, 1:1}|2|
+|3|0|{2:1, 1:1, 3:1}|0|
+|4|5|{2:1,1:1,3:1,0:1}|4|
+|5|4|{2:1,1:1,3:1,0:1,5:1}|4|
+
+```
+left = [0, 0, 2, 0, 4, 4]
+```
+
+---
+
+**Step 3: Right pass** — for each `j`, count elements to its right that are `> A[j]`
+
+Scanning right to left, inserting into FT after querying:
+
+|j|A[j]|FT state (before)|right[j] = range_sum(A[j]+1, 5)|
+|---|---|---|---|
+|5|4|empty|0|
+|4|5|{4:1}|0|
+|3|0|{4:1, 5:1}|2|
+|2|3|{4:1,5:1,0:1}|2|
+|1|1|{4:1,5:1,0:1,3:1}|2|
+|0|2|{4:1,5:1,0:1,3:1,1:1}|2|
+
+```
+right = [2, 2, 2, 2, 0, 0]
+```
+
+---
+
+**Step 4: Combine** — only middle elements `j = 1..=4`
+
+|j|A[j]|left[j]|right[j]|left × right|
+|---|---|---|---|---|
+|1|1|0|2|0|
+|2|3|2|2|**4**|
+|3|0|0|2|0|
+|4|5|4|0|0|
+
+**Total = 4**
+
+The 4 valid triplets are:
+
+```
+(0,2,4): A[0]=2 < A[2]=3 < A[4]=5 ✓
+(0,2,5): A[0]=2 < A[2]=3 < A[5]=4 ✓
+(1,2,4): A[1]=1 < A[2]=3 < A[4]=5 ✓
+(1,2,5): A[1]=1 < A[2]=3 < A[5]=4 ✓
+```
+
+---
+
+### Complexity
+
+|Phase|Cost|
+|---|---|
+|Coordinate compression|O(n log n)|
+|Left pass (n FT queries + inserts)|O(n log n)|
+|Right pass (n FT queries + inserts)|O(n log n)|
+|Final sum|O(n)|
+|**Total**|**O(n log n)**|
+|**Space**|**O(n)**|
 
 # ST Range Update with lazy propagation
 
@@ -1187,7 +1867,6 @@ Invece di copiare l'intero albero (che costerebbe $O(n)$), si sfruttano le propr
 
 
 ![[Pasted image 20260211122115.png]]
->>>>>>> 85108b5a5a091a4ff9094436f2042b31fca70b5c
 ### Complessità
 
 - **Tempo**: $O(\log n)$ per ogni aggiornamento, poiché si visitano e creano solo i nodi lungo un singolo percorso.
@@ -1195,7 +1874,7 @@ Invece di copiare l'intero albero (che costerebbe $O(n)$), si sfruttano le propr
 
 # Mo's Algo
 
-L'**Algoritmo di Mo** è una tecnica potente per risolvere problemi di query su intervalli (range queries) in modalità **offline**, ovvero quando tutte le query sono note in anticipo.
+![[Pasted image 20260602235327.png]]
 
 ### 1. La Strategia Core: Reordinamento
  

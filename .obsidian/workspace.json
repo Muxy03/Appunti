@@ -36,36 +36,33 @@
             }
           },
           {
-            "id": "28e217682624f197",
+            "id": "b9d4ab31485e8c84",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "PDF/PARALLEL AND DISTRIBUTED SYSTEM/14-C++LockFreeProgramming.pdf"
+                "file": "PDF/PARALLEL AND DISTRIBUTED SYSTEM/19-MPI1.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "14-C++LockFreeProgramming"
+              "title": "19-MPI1"
             }
-          }
-        ]
-      },
-      {
-        "id": "8d21ae48241d18dd",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "4966c96c8b3104cf",
+            "id": "f0154879d014cb27",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "PDF/PARALLEL AND DISTRIBUTED SYSTEM/_SPM_Questions_and_Answers.pdf"
+                "file": "MAGISTRALE/EXTRA/PROGRAM-ANALYSIS.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "_SPM_Questions_and_Answers"
+              "icon": "lucide-file",
+              "title": "PROGRAM-ANALYSIS"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -122,8 +119,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "f04f779604d8eaa1",
@@ -201,13 +197,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MAGISTRALE/EXTRA/SPM.md",
+                "file": "MAGISTRALE/EXTRA/PROGRAM-ANALYSIS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di SPM"
+              "title": "Struttura di PROGRAM-ANALYSIS"
             }
           }
         ],
@@ -229,32 +225,33 @@
       "bases:Crea nuova Base": false
     }
   },
-  "active": "6017b7e6caf1b966",
+  "active": "f0154879d014cb27",
   "lastOpenFiles": [
+    "IMMAGINI/Pasted image 20260605163129.png",
+    "IMMAGINI/Pasted image 20260605161741.png",
+    "IMMAGINI/Pasted image 20260605161612.png",
+    "IMMAGINI/Pasted image 20260602235327.png",
+    "IMMAGINI/Pasted image 20260602025208.png",
+    "IMMAGINI/Pasted image 20260602021604.png",
+    "IMMAGINI/Pasted image 20260602021258.png",
+    "IMMAGINI/Pasted image 20260602021201.png",
+    "IMMAGINI/Pasted image 20260602015404.png",
+    "IMMAGINI/Pasted image 20260602015243.png",
+    "IMMAGINI/Pasted image 20260602015205.png",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/19-MPI1.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/18-DistributedSystems-Background.pdf",
+    "MAGISTRALE/EXTRA/PROGRAM-ANALYSIS.md",
+    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-02-Denotational-v2.pdf",
+    "PDF/SOFTWARE COMPOSITION/2025-03-11 - 08b - Kleene.pdf",
     "MAGISTRALE/EXTRA/SPM.md",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/14-C++LockFreeProgramming.pdf",
-    "Pasted image 20260523011358.png",
-    "Pasted image 20260523011323.png",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/_SPM_Questions_and_Answers.pdf",
-    "Pasted image 20260523011226.png",
-    "Pasted image 20260523010859.png",
-    "Pasted image 20260523010645.png",
-    "Pasted image 20260523010342.png",
-    "Pasted image 20260523010159.png",
-    "Pasted image 20260523005414.png",
-    "Pasted image 20260523005310.png",
-    "Pasted image 20260523003952.png",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/13-ModelsOfComputation.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/6-Shared-Memory.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/12-WorkloadBalancing.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/22-StructuredParallelProgramming.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/9-TypesOfParallelism.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/17-OpenMP2.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/16-OpenMP1.pdf",
     "MAGISTRALE/MAGISTRALE INFO.md",
     "MAGISTRALE/EXTRA/Competitive Summary.md",
-    "PDF/COMPILATION/Papers.pdf",
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis_exercises_b.pdf",
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis_exercises_a.pdf",
-    "MAGISTRALE/EXTRA/PROGRAM-ANALYSIS.md",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/22-StructuredParallelProgramming.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/15-ThreadAffinity.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/13-ModelsOfComputation.pdf",
+    "PDF/PROGRAM ANALYSIS/SL-3-540-44802-0_1.pdf",
     "Project Modular Module 3 by Andrea Mussari.md",
     "MAGISTRALE/PROGRAM ANALYSIS.md"
   ]

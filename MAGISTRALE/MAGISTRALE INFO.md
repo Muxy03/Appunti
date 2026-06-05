@@ -19,6 +19,7 @@
 | SPM              | 3/6    | 24/6   | 16/7   |
 | COMPILATION      | 9/6    | 30/6   | 22/7   |
 | PROGRAM ANALYSIS | 3/6    | 24/6   | 14/7   |
+|                  |        |        |        |
 
 SPM -> (deadline project)
 COMPILATION -> (dead line project)
