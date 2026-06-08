@@ -41,10 +41,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "PDF/PARALLEL AND DISTRIBUTED SYSTEM/19-MPI1.pdf"
+                "file": "PDF/PARALLEL AND DISTRIBUTED SYSTEM/22-StructuredParallelProgramming.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "19-MPI1"
+              "title": "22-StructuredParallelProgramming"
             }
           },
           {
@@ -62,7 +62,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -119,7 +119,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "f04f779604d8eaa1",
@@ -225,33 +226,33 @@
       "bases:Crea nuova Base": false
     }
   },
-  "active": "f0154879d014cb27",
+  "active": "b9d4ab31485e8c84",
   "lastOpenFiles": [
-    "IMMAGINI/Pasted image 20260605163129.png",
-    "IMMAGINI/Pasted image 20260605161741.png",
-    "IMMAGINI/Pasted image 20260605161612.png",
-    "IMMAGINI/Pasted image 20260602235327.png",
-    "IMMAGINI/Pasted image 20260602025208.png",
-    "IMMAGINI/Pasted image 20260602021604.png",
-    "IMMAGINI/Pasted image 20260602021258.png",
-    "IMMAGINI/Pasted image 20260602021201.png",
-    "IMMAGINI/Pasted image 20260602015404.png",
-    "IMMAGINI/Pasted image 20260602015243.png",
-    "IMMAGINI/Pasted image 20260602015205.png",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/19-MPI1.pdf",
+    "IMMAGINI/Pasted image 20260606191011.png",
+    "IMMAGINI/Pasted image 20260606190522.png",
+    "IMMAGINI/Pasted image 20260606185912.png",
+    "IMMAGINI/Pasted image 20260606185553.png",
+    "IMMAGINI/Pasted image 20260606184145.png",
+    "IMMAGINI/Pasted image 20260606184100.png",
+    "IMMAGINI/Pasted image 20260606183926.png",
+    "IMMAGINI/Pasted image 20260606183746.png",
+    "IMMAGINI/Pasted image 20260606183546.png",
+    "IMMAGINI/Pasted image 20260606180619.png",
+    "IMMAGINI/Pasted image 20260606180553.png",
     "PDF/PARALLEL AND DISTRIBUTED SYSTEM/18-DistributedSystems-Background.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/22-StructuredParallelProgramming.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/21-MPI3.pdf",
+    "MAGISTRALE/EXTRA/SPM.md",
     "MAGISTRALE/EXTRA/PROGRAM-ANALYSIS.md",
+    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-04-TotalCorrectness.pdf",
+    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-03-HL.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/20-MPI2.pdf",
+    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/19-MPI1.pdf",
     "PDF/PROGRAM ANALYSIS/ProgramAnalysis-02-Denotational-v2.pdf",
     "PDF/SOFTWARE COMPOSITION/2025-03-11 - 08b - Kleene.pdf",
-    "MAGISTRALE/EXTRA/SPM.md",
     "PDF/PARALLEL AND DISTRIBUTED SYSTEM/17-OpenMP2.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/16-OpenMP1.pdf",
     "MAGISTRALE/MAGISTRALE INFO.md",
     "MAGISTRALE/EXTRA/Competitive Summary.md",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/22-StructuredParallelProgramming.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/15-ThreadAffinity.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/13-ModelsOfComputation.pdf",
-    "PDF/PROGRAM ANALYSIS/SL-3-540-44802-0_1.pdf",
     "Project Modular Module 3 by Andrea Mussari.md",
     "MAGISTRALE/PROGRAM ANALYSIS.md"
   ]

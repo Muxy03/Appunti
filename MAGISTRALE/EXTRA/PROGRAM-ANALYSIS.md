@@ -204,6 +204,12 @@ Dato $c \triangleq \text{if } x < y \text{ then } x := y \text{ else } (\text{wh
 
 ![[Pasted image 20260508022300.png]]
 
+Floyd's Example:
+![[Pasted image 20260606180553.png]]
+
+Hoare's Example:
+![[Pasted image 20260606180619.png]]
+
 ![[Pasted image 20260508022351.png]]
 
 ![[Pasted image 20260508022617.png]]
@@ -214,7 +220,32 @@ Dato $c \triangleq \text{if } x < y \text{ then } x := y \text{ else } (\text{wh
 
 ![[Pasted image 20260508023434.png]]
 
-#TODO Exercises
+Exercises:
+
+![[Pasted image 20260606183546.png]]
+
+- **Risposta:** **Non valida** in generale (Assomiglia alla _Frame Rule_, ma senza restrizioni).
+- **Controesempio:** Se c modifica le variabili presenti in R, la proprietà R potrebbe non conservarsi. Es: {true}x:=0{x=0} è valida, ma {true∧x=1}x:=0{x=0∧x=1} non lo è, poiché il risultato è x=0 e non può valere contemporaneamente x=1.
+
+![[Pasted image 20260606183746.png]]
+
+- **Risposta:** **Valida.**
+- **Motivo:** Se il comando porta tutti gli stati di P in Q, a maggior ragione vi porterà un loro sottoinsieme (P∧R)
+
+![[Pasted image 20260606183926.png]]
+
+- **Risposta:** **Non valida.**
+- **Motivo:** Non si può restringere la post-condizione arbitrariamente. Se il programma garantisce Q, non è detto che garantisca anche una proprietà aggiuntiva R non specificata.
+
+![[Pasted image 20260606184100.png]]
+
+- **Risposta:** **Valida.**
+- **Motivo:** Se sia partendo da P che partendo da R finiamo in Q, allora anche partendo dalla loro unione finiremo in Q.
+
+![[Pasted image 20260606184145.png]]
+
+- **Risposta:** **Non valida.**
+- **Motivo:** Questa regola varrebbe per la composizione di due comandi diversi (c1​;c2​), ma non per lo stesso comando eseguito una sola volta. Es: se x:=x+1 porta x=0 in x=1 (P→R) e x=1 in x=2 (R→Q), non è vero che una sola esecuzione porta x=0 in x=2.
 
 ---
 
@@ -225,6 +256,8 @@ Dato $c \triangleq \text{if } x < y \text{ then } x := y \text{ else } (\text{wh
 ![[Pasted image 20260508023901.png]]
 
 ![[Pasted image 20260508023936.png]]
+
+![[Pasted image 20260606185553.png]]
 
 ![[Pasted image 20260508024007.png]]
 
@@ -273,7 +306,77 @@ $\text{while b do c} \triangleq (b?;c)*;\lnot b?$
 
 ![[Pasted image 20260508025710.png]]
 
-#TODO Questions
+Questions:
+
+### 2:
+![[Pasted image 20260606185912.png]]
+
+Dobbiamo applicare la **regola del condizionale**, che richiede la verifica di due rami distinti come premesse:
+#### 1. Ramo "Then" (Premessa 1)
+
+Dobbiamo dimostrare che: ${ \text{true} \wedge x \ge y } , z := x , { z = \max(x, y) }$.
+
+- **Assioma dell'Assegnamento:** Partendo dalla post-condizione, otteniamo ${ x = \max(x, y) } , z := x , { z = \max(x, y) }$.
+- **Regola di Conseguenza:** Poiché l'implicazione logica $(x \ge y) \implies (x = \max(x, y))$ è valida, possiamo rafforzare la precondizione.
+- **Risultato:** ${ x \ge y } , z := x , { z = \max(x, y) }$.
+
+#### 2. Ramo "Else" (Premessa 2)
+
+Dobbiamo dimostrare che: ${ \text{true} \wedge \neg(x \ge y) } , z := y , { z = \max(x, y) }$.
+
+- **Semplificazione:** La precondizione $\text{true} \wedge \neg(x \ge y)$ equivale a $x < y$ (ovvero $y > x$).
+- **Assioma dell'Assegnamento:** Otteniamo ${ y = \max(x, y) } , z := y , { z = \max(x, y) }$.
+- **Regola di Conseguenza:** Poiché l'implicazione logica $(x < y) \implies (y = \max(x, y))$ è valida, rafforziamo la precondizione.
+- **Risultato:** ${ x < y } , z := y , { z = \max(x, y) }$.
+
+#### Conclusione
+
+Avendo dimostrato entrambi i rami, la regola del condizionale ci permette di concludere che la tripla originale è valida.
+
+### 3:
+![[Pasted image 20260606190522.png]]
+
+Dobbiamo verificare che, se le premesse sono valide, allora anche la conclusione è necessariamente valida.
+
+#### 1. Assunzione delle premesse
+
+Supponiamo che le premesse della regola siano valide:
+
+1. ${P1} , r , {Q1}$ è valida, il che significa che $[[r ]]P1 \subseteq Q1$.
+2. ${P2} , r , {Q2}$ è valida, il che significa che $[[r ]]P2 \subseteq Q2$.
+
+#### 2. Proprietà di monotonia
+
+La semantica di un comando $[[r]]$ è **monotona** rispetto all'inclusione degli insiemi. Poiché l'intersezione $P1 \wedge P2$ (ovvero $P1 \cap P2$) è un sottoinsieme di entrambi gli insiemi iniziali ($P1 \cap P2 \subseteq P1$ e $P1 \cap P2 \subseteq P2$), per la proprietà di monotonia avremo che:
+
+- $[[r ]](P1 \wedge P2) \subseteq [[r ]]P1$
+- $[[r ]](P1 \wedge P2) \subseteq [[r ]]P2$
+
+#### 3. Derivazione della conclusione
+
+Combinando i punti precedenti:
+
+- Dato che $[[r ]](P1 \wedge P2) \subseteq [[r ]]P1$ e sappiamo che $[[r ]]P1 \subseteq Q1$, allora $[[r ]](P1 \wedge P2) \subseteq Q1$.
+- Dato che $[[r ]](P1 \wedge P2) \subseteq [[r ]]P2$ e sappiamo che $[[r ]]P2 \subseteq Q2$, allora $[[r ]](P1 \wedge P2) \subseteq Q2$.
+
+Poiché l'insieme degli stati finali raggiungibili $[[r ]](P1 \wedge P2)$ è contenuto sia in $Q1$ che in $Q2$, esso deve essere contenuto nella loro intersezione: $$[[r ]](P1 \wedge P2) \subseteq (Q1 \wedge Q2)$$
+
+Questo dimostra che la tripla ${P1 \wedge P2} , r , {Q1 \wedge Q2}$ è valida, confermando la correttezza della regola.
+
+### 4:
+![[Pasted image 20260606191011.png]]
+
+This rule for assignment is **not sound** because it incorrectly applies substitution in a forward direction, leading to postconditions that do not accurately describe the reachable states.
+
+To prove its unsoundness, consider the following counterexample:
+
+- **Triple:** ${y = x} , x := 0 , {y = 0}$
+- **Initial State:** Let the starting state be $\sigma = [x \mapsto 1, y \mapsto 1]$. This state satisfies the precondition $P \equiv (y = x)$.
+- **Execution:** After executing the command $x := 0$, the new state becomes $\sigma' = [x \mapsto 0, y \mapsto 1]$.
+- **Verification:** In the final state $\sigma'$, the variable $y$ is still $1$. Therefore, the postcondition $P[0/x] \equiv (y = 0)$ is **false**.
+
+Since we reached a state that does not satisfy the postcondition, the rule is invalid. The correct way to reason forward is using **Floyd’s axiom**: ${P} , x := a , { \exists x' . P[x'/x] \wedge x = a[x'/x] }$.
+
 
 ---
 

@@ -1395,4 +1395,185 @@ Time Execution in a MPI Application -> call `MPI Wtime()` at the beginning and e
 
 
 
-## MODULI
+
+## OMP:
+### 1. The Core Execution Model: Fork-Join
+
+An oral exam often starts with the fundamental model. You must be able to cleanly define OpenMP's behavior.
+
+- **The Fork-Join Model:** An OpenMP program begins execution as a single thread, called the **master thread** (or initial thread), running sequentially. When the master thread encounters a parallel construct (`#pragma omp parallel`), it **forks** a team of worker threads.
+
+- **Implicit Barrier:** At the end of the parallel region, there is an **implicit synchronization barrier**. The worker threads finish their assignments and wait; once all threads arrive, they are dissolved (or returned to a thread pool), and the master thread **joins** back to resume sequential execution.
+### 2. Data Scoping: The Source of Most Bugs & Exam Questions
+
+Professors love to give you a snippet on a whiteboard and ask: _"Is there a race condition here?"_ You must master the rules of memory scoping:
+
+- **`shared`**: All threads access the exact same memory location for this variable. This is highly efficient but dangerous—simultaneous reads and writes without synchronization cause a **data race**.
+
+- **`private`**: Each thread allocates an uninitialized copy of the variable on its local execution stack. Threads cannot see each other's private copies. The initial value from before the parallel region is lost, and the value after the region is undefined.
+
+- **`firstprivate`**: Similar to `private`, but each thread’s local copy is initialized with the value that the variable held right before entering the parallel region.
+
+- **`lastprivate`**: The thread that executes the _sequentially last iteration_ of a loop (or the lexically last section) copies its local value back into the original outer variable.
+
+- **Default Scoping Rule:** By default, variables declared _outside_ the parallel construct are `shared`, while variables declared _inside_ the construct (like a loop counter `i`) are automatically `private`.
+    
+	- _Exam Tip:_ Tell the professor you always use **`default(none)`**. This forces you to explicitly scope every variable, eliminating implicit bugs and proving you have full control over the memory layout.
+
+
+### 3. Loop Worksharing & Scheduling Policies
+
+When you use `#pragma omp parallel for`, OpenMP doesn't just spawn threads; it divides loop iterations among them. How it divides them depends on the **schedule clause**:
+
+#### Static Scheduling (`schedule(static, chunk_size)`)
+
+- **Mechanic:** Iterations are divided into blocks of `chunk_size` and allocated to threads in a round-robin fashion _at compile time_. If no chunk size is given, the iterations are split into roughly equal chunks ($N / P$) and assigned statically.
+ 
+- **Trade-off:** Minimal runtime overhead because the assignment is predetermined. However, it suffers from severe **load imbalance** if the computational cost of iterations varies (e.g., in an upper-triangular matrix computation or Mandelbrot set).
+
+
+#### Dynamic Scheduling (`schedule(dynamic, chunk_size)`)
+
+- **Mechanic:** Iterations are broken down into `chunk_size` blocks. At runtime, threads request a chunk from a shared internal queue, compute it, and come back to grab another until the queue is empty.
+
+- **Trade-off:** Excellent for **irregular workloads** (load balancing). However, it introduces significant **runtime synchronization overhead** because threads must continuously lock and access the shared task queue.
+
+
+#### Guided Scheduling (`schedule(guided, chunk_size)`)
+
+- **Mechanic:** Similar to dynamic, but the chunk size decreases exponentially over time. Large chunks are given out initially to reduce overhead, and smaller chunks are handed out toward the end to fine-tune load balancing. The chunk size never drops below the specified `chunk_size` parameter.
+    
+### 4. Advanced Tasking Model (OpenMP 3.0+)
+
+If the professor asks how to parallelize irregular structures like **pointer-chasing loops (linked lists)**, **divide-and-conquer graphs (quicksort)**, or **unbounded streams**, a standard `parallel for` fails because the number of iterations is unknown at compile time. This is where the **Tasking Model** shines.
+
+- **What is a Task?** A task (`#pragma omp task`) is an independent unit of work composed of executable code, its associated data environment (captured at creation), and internal control variables.
+    
+- **The Mechanics:** When a thread encounters a task directive, it doesn't necessarily execute it immediately. Instead, it packages it and places it into a **Task Pool**. The OpenMP runtime scheduler allocates these deferred tasks to any available thread in the parallel team.
+    
+- **Orchestration & Synchronization:**
+    
+    - **`#pragma omp taskwait`**: Blocks the current task until all child tasks generated within it have completely finished.
+        
+    - **`#pragma omp taskgroup`**: A broader barrier that waits for all nested tasks created within the group block to complete.
+        
+    - **Task Dependencies (`depend(in: x)`, `depend(out: y)`)**: Introduced in OpenMP 4.0. You can build directed acyclic graphs (DAGs) of tasks. A task with an `in(x)` dependency will stall until a sibling task with an `out(x)` dependency finishes, allowing you to explicitly model complex pipelines and avoid heavy barriers.
+        
+
+### 5. Memory Model: Consistency & Reductions
+
+Professors frequently ask about how threads safely aggregate data and how they see changes made by other threads.
+
+- **`reduction(operator: variable)`**: Used to safely aggregate values across threads (e.g., computing a sum). Under the hood, OpenMP creates a _private copy_ of the variable for each thread, initialized to the identity value of the operator (e.g., `0` for `+`, `1` for `*`). Threads update their private copies locally. At the implicit barrier, the runtime safely reduces all private copies into the original shared variable using internal lock-free or atomic mechanisms.
+    
+- **The `flush` Construct:** OpenMP operates on a _weakly ordered_ memory model. A thread can temporarily keep variables in its hardware registers or local cache instead of writing them back to main memory immediately. The `#pragma omp flush` directive forces a thread to synchronize its temporary view of memory with the global memory space.
+    
+    - _Exam Note:_ Directives like `barrier`, critical regions, and atomic entries imply a hidden flush operation.
+        
+
+### 6. Hardware Awareness: Thread Affinity & NUMA (High Score Territory)
+
+To get the highest mark, you must prove you understand how software interacts with actual supercomputing nodes. This is a favorite topic of Prof. Torquati.
+
+- **The NUMA Problem (Non-Uniform Memory Access):** Modern multi-socket servers split main memory across different CPU sockets. Accessing a memory address attached to your _own_ socket is much faster than fetching it across the interconnect from a remote socket.
+    
+- **The First-Touch Allocation Policy:** Linux does not allocate physical memory when you call `malloc` or `new`. Physical page allocation happens **the very first time a thread writes data to that page**. If your sequential master thread initializes an entire array, that array will sit entirely on the master's NUMA socket. When worker threads on other sockets try to read it, they face a severe memory bandwidth bottleneck.
+    
+    - _Solution:_ Always initialize your data in parallel using an identical loop structure to the execution loops, ensuring memory pages map to the node closest to the thread handling them.
+        
+- **Affinity Environment Variables:** You can control where threads live using two key environment variables:
+    
+    - **`OMP_PLACES`**: Defines the hardware blocks (e.g., `threads`, `cores`, `sockets`) where OpenMP threads can be pinned.
+        
+    - **`OMP_PROC_BIND`**: Controls whether threads are allowed to migrate between places.
+        
+        - `close`: Places child threads physically close to the parent thread (excellent for cache locality when sharing data).
+            
+        - `spread`: Distributes threads evenly across all cores and sockets (maximizes available memory bandwidth and avoids cache contention).
+            
+
+### 💡 Core Oral Exam Strategies for OpenMP
+
+1. **Be Ready to Compare:** Always be prepared to contrast OpenMP with **MPI**. OpenMP uses implicit communication via shared variables inside a single node's memory architecture (low latency, high risk of race conditions). MPI uses explicit message passing across distributed memory address spaces (high programmability overhead, excellent scalability across multiple nodes).
+
+2. **Explain the Performance Trade-offs:** If a professor asks you why you don't always use `schedule(dynamic, 1)`, don't just say "it's slow." Explain that the performance degradation is caused by _cache thrashing_ (false sharing) and _lock contention_ on the runtime's internal task queues.
+
+3. **Trace Thread Interleaving:** If they give you an un-synchronized loop, explain the exact interleaving steps of an interleaved read-modify-write operation that results in lost updates.
+## MPI:
+I have created a report on MPI for you. You can follow the creation progress in the Studio tab.
+
+MPI (Message Passing Interface) is the de facto standard for programming distributed-memory systems, such as compute clusters and supercomputers. It provides a portable and high-performance interface where independent processes communicate by explicitly sending and receiving messages.
+
+### 1. The SPMD Execution Model
+
+The most common execution model in MPI is **SPMD (Single Program Multiple Data)**. In this model:
+
+- The same executable is launched across multiple processes.
+- Each process has its own **private address space**.
+- Processes distinguish their roles using a unique integer ID called a **rank**.
+- Control statements (like `if` or `switch`) allow processes to follow different execution paths based on their rank.
+
+### 2. Core Functions and "Hello World"
+
+A simple MPI program can be written using only six core library routines:
+
+- `MPI_Init`: Initializes the MPI environment.
+- `MPI_Comm_size`: Determines the total number of processes.
+- `MPI_Comm_rank`: Determines the rank of the calling process.
+- `MPI_Send` / `MPI_Recv`: Basic blocking point-to-point communication.
+- `MPI_Finalize`: Terminates the MPI environment.
+
+**Example: Minimal "Hello World"**
+
+```
+#include <mpi.h>
+#include <cstdio>
+
+int main(int argc, char *argv[]) {
+    MPI_Init(&argc, &argv);
+    int size, rank;
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    std::printf("Hello from rank %d of %d\n", rank, size);
+    MPI_Finalize();
+}
+```
+
+_In this example, every process prints its rank, but they all belong to the universal communicator `MPI_COMM_WORLD`._
+
+### 3. Communication Taxonomy
+
+MPI distinguishes between different communication patterns and completion semantics:
+
+- **Point-to-Point**: Communication between one sender and one receiver.
+- **Blocking**: The call returns only when the local buffer can be safely reused (e.g., `MPI_Send`).
+- **Non-blocking**: The call returns immediately, allowing the process to **overlap computation and communication** (e.g., `MPI_Isend`, `MPI_Irecv`). Completion must be checked later using `MPI_Wait` or `MPI_Test`.
+- **Synchronous**: Employs **rendezvous semantics**, where the send cannot complete until the matching receive has started (e.g., `MPI_Ssend`).
+
+### 4. Collective Communication
+
+Collectives involve all processes within a communicator and are often more efficient than manual point-to-point implementations.
+
+- **Barrier**: Synchronizes all processes at a specific point.
+- **Broadcast (`MPI_Bcast`)**: Sends the same data from a "root" process to all others.
+- **Scatter / Gather**: Distributes data blocks to processes or collects them back into a single array.
+- **Reduce (`MPI_Reduce`)**: Aggregates data from all processes using an operation like sum or max.
+
+### 5. Advanced Features
+
+- **Derived Datatypes**: Allow sending non-contiguous memory regions (like matrix columns) or complex structures without manual packing.
+- **Communicator Management**: Users can split existing communicators into smaller groups using `MPI_Comm_split` to organize communication by rows or columns in a grid.
+- **Hybrid Programming**: MPI processes can use threads (like **OpenMP**) for on-node parallelism, which requires initializing MPI with `MPI_Init_thread`.
+# MODULI
+## 1:
+
+https://gemini.google.com/share/d/17BQOBaDe6F3VP9FouBYQqYJxyFFrUP8q?usp=sharing
+
+## 2:
+https://gemini.google.com/share/d/1FgiIsBZPORxZQAwp1pnrLBEC6X4H0Rga?usp=sharing
+
+## 3:
+https://gemini.google.com/share/d/1S4gPlj_VraI3LLLWLUH7glrw6S6jRfv2?usp=sharing
+
+## 4:
+https://gemini.google.com/share/d/1aud4ZXBKIu5GLVHtvakA82qJYO88oAxQ?usp=sharing
