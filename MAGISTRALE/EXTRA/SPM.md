@@ -1008,6 +1008,53 @@ Prefix computation usually refers to the inclusive version (`std::inclusive_scan
 
 ---
 
+
+## Formule
+
+![[Pasted image 20260608143740.png]]
+
+$R_{Peak} = ClockFrequency \times ProcessorsChips \times ProcessingCores \times FLOPperCycle$
+
+![[Pasted image 20260608145742.png]]
+
+![[Pasted image 20260608145906.png]]
+
+![[Pasted image 20260608145937.png]]
+
+![[Pasted image 20260608150103.png]]
+
+![[Pasted image 20260608150308.png]]
+
+![[Pasted image 20260608150325.png]]
+
+![[Pasted image 20260608151324.png]]
+
+![[Pasted image 20260608151340.png]]
+
+![[Pasted image 20260608151406.png]]
+
+![[Pasted image 20260608151453.png]]
+
+![[Pasted image 20260608151750.png]]
+
+![[Pasted image 20260608152022.png]]
+
+![[Pasted image 20260608152339.png]]
+
+![[Pasted image 20260608152436.png]]
+
+![[Pasted image 20260608152558.png]]
+
+![[Pasted image 20260608152616.png]]
+
+![[Pasted image 20260608152637.png]]
+
+![[Pasted image 20260608152710.png]]
+
+![[Pasted image 20260608152952.png]]
+
+![[Pasted image 20260608153005.png]]
+
 ## Answers
 
 Domande da ignorare:
