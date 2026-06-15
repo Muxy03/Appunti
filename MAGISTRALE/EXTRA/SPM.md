@@ -1614,10 +1614,78 @@ Collectives involve all processes within a communicator and are often more effic
 # MODULI
 ## 1:
 
-https://gemini.google.com/share/d/17BQOBaDe6F3VP9FouBYQqYJxyFFrUP8q?usp=sharing
+> https://gemini.google.com/share/d/17BQOBaDe6F3VP9FouBYQqYJxyFFrUP8q?usp=sharing
+
+"The mapping kernel exhibits very low Operational Intensity—defined as the ratio of operations executed per byte of data transferred from main memory. For every iteration, we read 8 bytes (keys[i]) and write 8 bytes (part_id[i]), but perform only a small handful of low-latency bitwise arithmetic ops.
+
+This places our application strictly in the memory-bound region of the Roofline model. The sequential baseline loop optimized with GCC's -O3 already fully saturates the CPU's memory bus bandwidth. Because the bottleneck is moving data across the von Neumann bottleneck (from DRAM to caches) rather than ALU processing cycles, increasing our compute throughput via manual AVX2 vectorization yields no actual execution time reduction."
+
+"While AVX2 includes native support for multiplying 32-bit integers, it lacks a single, native instruction to compute the low 64 bits of a 64-bit element multiplication across a vector (_mm256_mullo_epi64 was only introduced later in AVX-512). To overcome this hardware limitation in AVX2, we must break down the 64-bit multiplication into partial 32-bit cross-products using _mm256_mul_epu32, shift the upper bits, and manually accumulate them back into a final vector."
+
 
 ## 2:
-https://gemini.google.com/share/d/1FgiIsBZPORxZQAwp1pnrLBEC6X4H0Rga?usp=sharing
+
+> https://gemini.google.com/share/d/1FgiIsBZPORxZQAwp1pnrLBEC6X4H0Rga?usp=sharing
+
+"To prevent False Sharing and contention. If all threads continuously incremented a shared global histogram, the cache line holding the histogram would constantly bounce between the L1 caches of different cores (cache invalidation), killing performance. Private contiguous sub-arrays keep memory accesses completely independent."
+
+"While Amdahl's Law says the sequential fraction limits speedup, the size of the histogram P (e.g., 256 partitions) is extremely small. The parallelization overhead (thread coordination, barrier synchronization) would take longer than simply executing a few hundred iterations sequentially on a single core."
+
+```cpp
+const size_t N = rel.size();
+vector<Record> out(N);
+vector<size_t> thread_offsets(nthreads * P, 0);
+// First, we allocate the global out array which will hold the perfectly partitioned data. We also create thread_offsets, a flattened 2D array (size Threads × Partitions) that will store the exact starting index in out for every single thread, for every single partition.
+
+for (uint32_t p = 0; p < P; ++p) {
+  size_t running = EPF[p];
+  for (size_t t = 0; t < nthreads; ++t) {
+    thread_offsets[t * P + p] = running;
+    running += local_hists[t * P + p];
+  }
+}
+/*
+EPF[p]: (Exclusive Prefix Sum) tells us exactly where Partition $p$ starts in the global out array.
+The inner loop: For a given partition $p$, we iterate through all the threads ($t=0$ to $nthreads-1$).
+We tell thread 0 to start writing its elements for partition $p$ at the running index (which is initially EPF[p]).
+We then add local_hists[t * P + p] (the number of items thread 0 is going to write to partition $p$) to running.
+Now, running points to the exact index where thread 1 should start writing.
+Exam talking point: By doing this, we divide the global space of each partition into non-overlapping sub-intervals owned by specific threads.
+*/
+
+vector<thread> threads(nthreads);
+for (size_t t = 0; t < nthreads; ++t) {
+  threads[t] = thread([&, t]() {
+    auto [begin, end] = thread_chunk(N, nthreads, t);
+    
+    // Each thread gets its own write-cursor array
+    vector<size_t> cursor(&thread_offsets[t * P], &thread_offsets[t * P] + P);
+
+    /*
+    Each thread computes which chunk of the input relation (rel) it is responsible for scanning.
+    The cursor array: Each thread makes a local copy of its specific row from the thread_offsets matrix. 
+    This local cursor holds $P$ integers, representing the exact indices where this specific thread should write its next element for each partition.
+    Exam talking point: Why a local copy? If all threads shared the global thread_offsets array to update their write positions, it would cause massive False Sharing (cache lines bouncing between CPU cores). Making it a local variable ensures it stays fast and private in the core's L1 cache.
+    */
+
+    for (size_t i = begin; i < end; ++i) {
+          const uint32_t pid = compute_partition_id(rel[i].key, P, seed);
+          out[cursor[pid]++] = rel[i];
+        }
+      });
+
+      /*
+	  The thread iterates through its assigned chunk of the input data.
+	  
+	  It computes the partition ID (pid) for the current record.
+	  
+	  It writes the record directly into the global out array at the index pointed to by cursor[pid].
+	  
+	  cursor[pid]++: It instantly increments its local cursor so the next record for that partition is written in the next slot.
+      */
+  }
+
+```
 
 ## 3:
 https://gemini.google.com/share/d/1S4gPlj_VraI3LLLWLUH7glrw6S6jRfv2?usp=sharing
