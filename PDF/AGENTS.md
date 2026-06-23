@@ -584,3 +584,56 @@ pandoc Program_Analysis_Complete_Study_Guide.md \
 ```
 
 The PDF is the primary deliverable.
+
+---
+
+# Deep Content Coverage
+
+Every lecture section must be delved into thoroughly, not summarized.
+
+For each lecture include:
+
+* all definitions (with formal notation)
+* all theorems (with full statements)
+* all proofs and proof sketches
+* all inference rules (every rule for every logic)
+* all algorithms (with pseudocode, complexity, examples)
+* all worked examples from the lecture
+* all exercises (with official solutions when available)
+* formal semantics for each logic
+* soundness and completeness results
+* edge cases and counterexamples
+* all "Observation", "Remark", "Note", "Warning" annotations
+
+The guide must be self-contained for exam preparation without requiring the original lecture PDFs. No section should feel shallow or incomplete. Prioritize depth over brevity.
+
+---
+
+# List Formatting Rules
+
+All ordered and unordered lists must follow strict markdown conventions:
+
+1. Unordered lists MUST use `- ` (hyphen + space) at line start.
+2. Nested unordered items MUST use `  - ` (2-space indent + hyphen + space).
+3. Further nesting: `    - ` (4 spaces), then `      - ` (6 spaces), etc.
+4. Ordered lists MUST use `1. `, `2. `, etc.
+5. A blank line MUST precede every list (no list directly after a heading or text line).
+6. No blank lines between items of the same list.
+7. Continuation lines within a list item MUST be indented to align with the text after the list marker.
+8. Never mix `* ` or `+ ` with `- ` — use `- ` consistently.
+
+---
+
+# Cleanup After Generation
+
+After the study guide and PDF are successfully generated:
+
+1. Delete ALL temporary extraction files (e.g., `/tmp/pa-extracted/`).
+2. Delete ALL virtual environments created for the task (e.g., `/tmp/pa-venv/`).
+3. Delete ALL intermediate build files (HTML, test PDFs, etc.).
+4. Delete ALL downloaded tools (e.g., pandoc binary at `/home/muxy/bin/pandoc`).
+5. Verify no trace remains of the generation process outside the final output files.
+
+Only the two output files should remain:
+* `Program_Analysis_Complete_Study_Guide.md`
+* `Program_Analysis_Complete_Study_Guide.pdf`
