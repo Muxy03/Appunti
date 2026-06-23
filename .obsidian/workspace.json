@@ -41,10 +41,22 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "PDF/PROGRAM ANALYSIS/ProgramAnalysis-13-Galois-draft.pdf"
+                "file": "PDF/PROGRAM ANALYSIS/ProgramAnalysis-16-LCL.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "ProgramAnalysis-13-Galois-draft"
+              "title": "ProgramAnalysis-16-LCL"
+            }
+          },
+          {
+            "id": "98b11a9e5c0b2d9f",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/PROGRAM ANALYSIS/ProgramAnalysis-02-Denotational-v2.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "ProgramAnalysis-02-Denotational-v2"
             }
           }
         ],
@@ -214,6 +226,11 @@
   },
   "active": "b61a5c8a37f5ac16",
   "lastOpenFiles": [
+    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-02-Denotational-v2.pdf",
+    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-16-LCL.pdf",
+    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-15-AbstractAnalysis.pdf",
+    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-14-AbstractDomains-draft.pdf",
+    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-13-Galois-draft.pdf",
     "PDF/PROGRAM ANALYSIS/ProgramAnalysis-12-IntroAI-formal.pdf",
     "PDF/PROGRAM ANALYSIS/ProgramAnalysis-11-IntroAI-basic.pdf",
     "PDF/PROGRAM ANALYSIS/ProgramAnalysis-10-ISL-SepSIL.pdf",
@@ -223,11 +240,6 @@
     "PDF/PROGRAM ANALYSIS/ProgramAnalysis-07-MoreIL-NC.pdf",
     "PDF/PROGRAM ANALYSIS/ProgramAnalysis-08-SIL.pdf",
     "MAGISTRALE/MAGISTRALE INFO.md",
-    "PDF/PROGRAM ANALYSIS/Exercises/ProgramAnalysis_exercises_a_solutions.pdf",
-    "PDF/PROGRAM ANALYSIS/Exercises/ProgramAnalysis_exercises_a.pdf",
-    "PDF/PROGRAM ANALYSIS/Exercises",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/20-MPI2.pdf",
-    "PDF/PARALLEL AND DISTRIBUTED SYSTEM/21-MPI3.pdf",
     "MAGISTRALE/EXTRA/Competitive Summary.md",
     "Pasted image 20260608153005.png",
     "Pasted image 20260608152952.png",
