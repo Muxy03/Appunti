@@ -37,7 +37,7 @@ The value of Y defines the lecture topic and must be used to organize the final 
 
 Also process every PDF contained in:
 
-/home/muxy/Documents/Notes/PDF/PROGRAM ANALYSIS/Exercises
+/home/muxy/Documenti/Appunti/PDF/PROGRAM ANALYSIS/Exercises
 
 These files may contain:
 
@@ -67,7 +67,7 @@ Never replace official material with generated content.
 
 Generated content should only supplement missing explanations.
 
----
+
 
 # Lecture-Based Organization
 
