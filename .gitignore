@@ -1,1 +1,3 @@
 *.sh
+.opencode/
+AGENTS.md
