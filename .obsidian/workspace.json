@@ -6,49 +6,68 @@
       {
         "id": "b89713db26c5221d",
         "type": "tabs",
+        "dimension": 58.309248554913296,
         "children": [
           {
-            "id": "15583803d14f40f2",
+            "id": "292ec6a0ff9cbc8c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAGISTRALE/EXTRA/PROGRAMANALYSIS.md",
+                "file": "PDF/COMPILATION/COMPILATION_REVIEW_HANDOUT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PROGRAMANALYSIS"
+              "title": "COMPILATION_REVIEW_HANDOUT"
             }
           },
           {
-            "id": "81712daf13fc0d6e",
+            "id": "93a50d6f1d95e659",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MAGISTRALE/EXTRA/CT_Project_Preparazione_Orale.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CT_Project_Preparazione_Orale"
+            }
+          }
+        ]
+      },
+      {
+        "id": "b88b153dcf7880a9",
+        "type": "tabs",
+        "dimension": 41.690751445086704,
+        "children": [
+          {
+            "id": "9fdb8bef27b6aed3",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "PDF/PROGRAM ANALYSIS/ProgramAnalysis-CFA-for-Pi.pdf"
+                "file": "PDF/COMPILATION/Bottom_up_Parsing.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "ProgramAnalysis-CFA-for-Pi"
+              "title": "Bottom_up_Parsing"
             }
           },
           {
-            "id": "6149b2dfb64f241b",
+            "id": "db0275bf85d53096",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "MAGISTRALE/EXTRA/COMPILATION_TECHNIQUES.md",
-                "mode": "source",
-                "source": false
+                "file": "PDF/COMPILATION/TableConstruction.pdf"
               },
-              "icon": "lucide-file",
-              "title": "COMPILATION_TECHNIQUES"
+              "icon": "lucide-file-text",
+              "title": "TableConstruction"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,10 +87,12 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Esplora risorse"
+              "title": "Esplora file"
             }
           },
           {
@@ -80,7 +101,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "⊢",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -184,13 +205,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MAGISTRALE/EXTRA/PROGRAM-ANALYSIS.md",
-                "followCursor": false,
+                "file": "PDF/COMPILATION/COMPILATION_REVIEW_HANDOUT.md",
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di PROGRAM-ANALYSIS"
+              "title": "Struttura"
             }
           }
         ],
@@ -203,39 +224,46 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Apri selezione rapida": false,
+      "switcher:Apri selettore rapido": false,
+      "daily-notes:Apri nota giornaliera": false,
       "graph:Apri vista grafo": false,
       "canvas:Crea nuova lavagna": false,
-      "daily-notes:Apri nota del giorno": false,
       "templates:Inserisci modello": false,
       "command-palette:Apri riquadro comandi": false,
       "bases:Crea nuova Base": false
     }
   },
-  "active": "81712daf13fc0d6e",
+  "active": "292ec6a0ff9cbc8c",
   "lastOpenFiles": [
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-CFA-for-FUN.pdf",
-    "MAGISTRALE/EXTRA/PROGRAMANALYSIS.md",
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-17-CFA.pdf",
-    "Pasted image 20260713001704.png",
-    "Pasted image 20260713001642.png",
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-16-LCL.pdf",
-    "Pasted image 20260712234805.png",
-    "MAGISTRALE/EXTRA/COMPILATION_TECHNIQUES.md",
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-15-AbstractAnalysis.pdf",
-    "Pasted image 20260712192206.png",
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-14-AbstractDomains-draft.pdf",
-    "Pasted image 20260712184606.png",
+    "IMMAGINI/Pasted image 20260906181334.png",
+    "IMMAGINI/Pasted image 20260906180738.png",
+    "IMMAGINI/Pasted image 20260906180553.png",
+    "IMMAGINI/Pasted image 20260906180346.png",
+    "IMMAGINI/Pasted image 20260906180300.png",
+    "IMMAGINI/Pasted image 20260906180134.png",
+    "IMMAGINI/Pasted image 20260906175233.png",
+    "IMMAGINI/Pasted image 20260906174625.png",
+    "IMMAGINI/Pasted image 20260906164822.png",
+    "IMMAGINI/Pasted image 20260906163902.png",
+    "IMMAGINI/Pasted image 20260906163802.png",
     "PDF/PROGRAM ANALYSIS/ProgramAnalysis-13-Galois-draft.pdf",
-    "Pasted image 20260712183629.png",
-    "Pasted image 20260712182132.png",
-    "Pasted image 20260712181138.png",
-    "Pasted image 20260712175451.png",
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-12-IntroAI-formal.pdf",
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-11-IntroAI-basic.pdf",
-    "Pasted image 20260712170801.png",
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-10-ISL-SepSIL.pdf",
-    "PDF/PROGRAM ANALYSIS/ProgramAnalysis-09-SL.pdf",
+    "MAGISTRALE/EXTRA/COMPILATION_REVIEW_HANDOUT.md",
+    "PDF/COMPILATION/Bottom_up_Parsing.pdf",
+    "PDF/COMPILATION/COMPILATION_REVIEW_HANDOUT.md",
+    "PDF/COMPILATION/TableConstruction.pdf",
+    "PDF/COMPILATION/ParsingMio.pdf",
+    "PDF/COMPILATION/Lexer.pdf",
+    "PDF/COMPILATION/LinguaggiI.pdf",
+    "MAGISTRALE/EXTRA/CT_Project_Preparazione_Orale.md",
+    "MAGISTRALE/EXTRA/COMPILATION_TECHNIQUES.md",
+    "PDF/COMPILATION/RegisterAlloc2.pdf",
+    "PDF/COMPILATION/Laboratory/report.pdf",
+    "PDF/COMPILATION/IntroCodeGeneration.pdf",
+    "PDF/COMPILATION/TheProcedureAbstraction.pdf",
+    "prompt_rust_claude.md",
+    "PDF/COMPILATION/report.md",
+    "MAGISTRALE/EXTRA/PSC/SOFTWARE COMPOSITION LLM.md",
+    "MAGISTRALE/EXTRA/PROGRAMANALYSIS.md",
     "PDF/PROGRAM ANALYSIS/03-Hoare-Logic-and-Total-Correctness.md",
     "ProgramAnalysis.md",
     "MAGISTRALE/EXTRA/ProgramAnalysis.md",
@@ -252,12 +280,6 @@
     "PDF/PROGRAM ANALYSIS/README.md",
     "1..md",
     "PDF/PROGRAM ANALYSIS/program-analysis-summary.md",
-    "PDF/PROGRAM ANALYSIS/12-cfa-for-fun.md",
-    "PDF/PROGRAM ANALYSIS/02-fonte-reading-material.md",
-    "PDF/PROGRAM ANALYSIS/11-cfa-for-pi-calculus.md",
-    "PDF/PROGRAM ANALYSIS/10-cfa-control-flow-analysis.md",
-    "PDF/PROGRAM ANALYSIS/09-lcl-local-completeness-logic.md",
-    "PDF/PROGRAM ANALYSIS/08-abstract-domains-e-abstract-analysis.md",
-    "PDF/PROGRAM ANALYSIS/07-abstract-interpretation-introai-e-galois.md"
+    "PDF/PROGRAM ANALYSIS/12-cfa-for-fun.md"
   ]
 }
