@@ -6,7 +6,6 @@
       {
         "id": "b89713db26c5221d",
         "type": "tabs",
-        "dimension": 58.309248554913296,
         "children": [
           {
             "id": "292ec6a0ff9cbc8c",
@@ -23,6 +22,18 @@
             }
           },
           {
+            "id": "93efa7dc4e42ad3d",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/COMPILATION/RegisterAlloc2.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "RegisterAlloc2"
+            }
+          },
+          {
             "id": "93a50d6f1d95e659",
             "type": "leaf",
             "state": {
@@ -34,37 +45,6 @@
               },
               "icon": "lucide-file",
               "title": "CT_Project_Preparazione_Orale"
-            }
-          }
-        ]
-      },
-      {
-        "id": "b88b153dcf7880a9",
-        "type": "tabs",
-        "dimension": 41.690751445086704,
-        "children": [
-          {
-            "id": "9fdb8bef27b6aed3",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/COMPILATION/Bottom_up_Parsing.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Bottom_up_Parsing"
-            }
-          },
-          {
-            "id": "db0275bf85d53096",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/COMPILATION/TableConstruction.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "TableConstruction"
             }
           }
         ]
@@ -235,31 +215,32 @@
   },
   "active": "292ec6a0ff9cbc8c",
   "lastOpenFiles": [
-    "IMMAGINI/Pasted image 20260906181334.png",
-    "IMMAGINI/Pasted image 20260906180738.png",
-    "IMMAGINI/Pasted image 20260906180553.png",
-    "IMMAGINI/Pasted image 20260906180346.png",
-    "IMMAGINI/Pasted image 20260906180300.png",
-    "IMMAGINI/Pasted image 20260906180134.png",
-    "IMMAGINI/Pasted image 20260906175233.png",
-    "IMMAGINI/Pasted image 20260906174625.png",
-    "IMMAGINI/Pasted image 20260906164822.png",
-    "IMMAGINI/Pasted image 20260906163902.png",
-    "IMMAGINI/Pasted image 20260906163802.png",
+    "IMMAGINI/Pasted image 20260908185446.png",
+    "IMMAGINI/Pasted image 20260908185323.png",
+    "IMMAGINI/Pasted image 20260908184548.png",
+    "IMMAGINI/Pasted image 20260908182507.png",
+    "IMMAGINI/Pasted image 20260908182435.png",
+    "IMMAGINI/Pasted image 20260908182415.png",
+    "IMMAGINI/Pasted image 20260908182404.png",
+    "IMMAGINI/Pasted image 20260908182313.png",
+    "IMMAGINI/Pasted image 20260908182000.png",
+    "IMMAGINI/Pasted image 20260908181836.png",
+    "IMMAGINI/Pasted image 20260908181708.png",
+    "MAGISTRALE/EXTRA/CT_Project_Preparazione_Orale.md",
+    "PDF/COMPILATION/COMPILATION_REVIEW_HANDOUT.md",
+    "PDF/COMPILATION/RegisterAlloc2.pdf",
+    "PDF/COMPILATION/IntroCodeGeneration.pdf",
+    "PDF/COMPILATION/OptimizationI.pdf",
+    "PDF/COMPILATION/TheProcedureAbstraction.pdf",
+    "PDF/COMPILATION/Data-Flow2.pdf",
+    "MAGISTRALE/MAGISTRALE INFO.md",
+    "PDF/COMPILATION/Data-FlowFirst.pdf",
+    "PDF/COMPILATION/ParsingMio.pdf",
+    "PDF/COMPILATION/ContextsensitiveAnalysisv.pdf",
     "PDF/PROGRAM ANALYSIS/ProgramAnalysis-13-Galois-draft.pdf",
     "MAGISTRALE/EXTRA/COMPILATION_REVIEW_HANDOUT.md",
     "PDF/COMPILATION/Bottom_up_Parsing.pdf",
-    "PDF/COMPILATION/COMPILATION_REVIEW_HANDOUT.md",
-    "PDF/COMPILATION/TableConstruction.pdf",
-    "PDF/COMPILATION/ParsingMio.pdf",
-    "PDF/COMPILATION/Lexer.pdf",
-    "PDF/COMPILATION/LinguaggiI.pdf",
-    "MAGISTRALE/EXTRA/CT_Project_Preparazione_Orale.md",
     "MAGISTRALE/EXTRA/COMPILATION_TECHNIQUES.md",
-    "PDF/COMPILATION/RegisterAlloc2.pdf",
-    "PDF/COMPILATION/Laboratory/report.pdf",
-    "PDF/COMPILATION/IntroCodeGeneration.pdf",
-    "PDF/COMPILATION/TheProcedureAbstraction.pdf",
     "prompt_rust_claude.md",
     "PDF/COMPILATION/report.md",
     "MAGISTRALE/EXTRA/PSC/SOFTWARE COMPOSITION LLM.md",
@@ -279,7 +260,6 @@
     "PDF/PROGRAM ANALYSIS/01-Introduction.md",
     "PDF/PROGRAM ANALYSIS/README.md",
     "1..md",
-    "PDF/PROGRAM ANALYSIS/program-analysis-summary.md",
-    "PDF/PROGRAM ANALYSIS/12-cfa-for-fun.md"
+    "PDF/PROGRAM ANALYSIS/program-analysis-summary.md"
   ]
 }

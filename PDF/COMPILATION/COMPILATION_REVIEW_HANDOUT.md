@@ -55,65 +55,110 @@
 ---
 
 <a id="cap1"></a>
+<a id="cap1"></a>
 ## CAPITOLO 1: Introduzione e Architettura dei Compilatori
-**Source:** *IntroMio.pdf* (52 slide)
+
+**Source:** _IntroMio.pdf_
+
+> **Nota di revisione:** questo capitolo è stato ricontrollato per intero contro il testo completo di `IntroMio.pdf` (incluse le slide con diagrammi, fornite come immagini trascritte). Il nucleo era già corretto (definizioni compilatore/interprete, AOT/JIT, principi fondamentali, architettura a due/tre passate, front-end/back-end). Sono stati integrati sei blocchi di contenuto concreto assenti dalla stesura precedente: (1) il diagramma delle fasi del compilatore con lo strato "Infrastructure", (2) un secondo esempio concreto di analisi lessicale (tokenizzazione di un while-loop, con un token invalido), (3) un secondo esempio di AST (per lo stesso while-loop), (4) la tabella operazionale formale di ILOC, (5) il codice ILOC realmente generato per instruction selection/register allocation/instruction scheduling sull'esempio $a=(a\times2\times b\times c)\times d$ (con conteggio dei cicli prima/dopo lo scheduling), (6) l'esempio di loop-invariant code motion presentato nell'introduzione del corso.
 
 ### 1.1 Definizioni Formali e Concetti Fondamentali
-*   **Definizione di Compilatore (Compiler):** "un programma che prende altri programmi e li prepara per l'esecuzione"; più precisamente, un programma che traduce un programma sorgente in un linguaggio target, in genere l'instruction set di un'architettura hardware, oppure — nel caso dei *source-to-source translator* — un altro linguaggio ad alto livello orientato all'uomo [IntroMio.pdf, Slide 9].
-*   **Compilatori vs Interpreti:** entrambi sono programmi che traducono codice scritto in un linguaggio ad alto livello in codice macchina; la differenza fondamentale è **quando e come** avviene la traduzione [IntroMio.pdf, Slide 10].
-    *   **Compilatore:** traduce l'intero programma in codice macchina *prima* dell'esecuzione. Funzionamento: (1) si scrive il sorgente; (2) il compilatore traduce tutto il codice in un solo passaggio; (3) viene prodotto un file eseguibile; (4) l'eseguibile viene lanciato. Caratteristiche: la traduzione avviene una sola volta prima dell'esecuzione; il risultato è un programma eseguibile separato; l'esecuzione è generalmente più veloce; gli errori sono mostrati tutti insieme dopo la compilazione. Analogia della slide: compilare è come tradurre un intero libro prima di stamparlo — una volta tradotto lo si può leggere quante volte si vuole senza ritradurlo [IntroMio.pdf, Slide 11].
-    *   **Interprete:** legge il programma e i suoi dati di input e traduce/esegue riga per riga, a runtime. Funzionamento: (1) si scrive il sorgente; (2) l'interprete legge una riga; (3) la traduce ed esegue immediatamente; (4) passa alla riga successiva. Caratteristiche: la traduzione avviene durante l'esecuzione; non viene prodotto alcun file eseguibile separato; l'esecuzione è generalmente più lenta; gli errori appaiono immediatamente, interrompendo l'esecuzione. Analogia della slide: un interprete è come un traduttore simultaneo che traduce ogni frase mentre viene pronunciata [IntroMio.pdf, Slide 12].
-    *   **Tabella di confronto (slide):**
 
-        | | Compilatore | Interprete |
+- **Definizione di Compilatore (Compiler):** "un programma che prende altri programmi e li prepara per l'esecuzione"; più precisamente, un programma che traduce un programma sorgente in un linguaggio target, in genere l'instruction set di un'architettura hardware, oppure — nel caso dei _source-to-source translator_ — un altro linguaggio ad alto livello orientato all'uomo [IntroMio.pdf].
+- **Compilatori vs Interpreti:** entrambi sono programmi che traducono codice scritto in un linguaggio ad alto livello in codice macchina; la differenza fondamentale è **quando e come** avviene la traduzione [IntroMio.pdf].
+    - **Compilatore:** traduce l'intero programma in codice macchina _prima_ dell'esecuzione. Funzionamento: (1) si scrive il sorgente; (2) il compilatore traduce tutto il codice in un solo passaggio; (3) viene prodotto un file eseguibile; (4) l'eseguibile viene lanciato. Caratteristiche: la traduzione avviene una sola volta prima dell'esecuzione; il risultato è un programma eseguibile separato; l'esecuzione è generalmente più veloce; gli errori sono mostrati tutti insieme dopo la compilazione. Analogia della slide: compilare è come tradurre un intero libro prima di stamparlo — una volta tradotto lo si può leggere quante volte si vuole senza ritradurlo [IntroMio.pdf].
+        
+    - **Interprete:** legge il programma e i suoi dati di input e traduce/esegue riga per riga, a runtime. Funzionamento: (1) si scrive il sorgente; (2) l'interprete legge una riga; (3) la traduce ed esegue immediatamente; (4) passa alla riga successiva. Caratteristiche: la traduzione avviene durante l'esecuzione; non viene prodotto alcun file eseguibile separato; l'esecuzione è generalmente più lenta; gli errori appaiono immediatamente, interrompendo l'esecuzione. Analogia della slide: un interprete è come un traduttore simultaneo che traduce ogni frase mentre viene pronunciata [IntroMio.pdf].
+        
+    - **Tabella di confronto (slide):**
+        
+        ||Compilatore|Interprete|
         |---|---|---|
-        | Traduzione | Tutto il programma in una volta | Riga per riga |
-        | Output | Crea un file eseguibile | Nessun eseguibile separato |
-        | Velocità di esecuzione | Più veloce | Più lenta |
-        | Errori | Mostrati dopo la compilazione | Mostrati immediatamente |
-
-        [IntroMio.pdf, Slide 13]
-*   **Proprietà dell'implementazione, non del linguaggio:** essere compilato o interpretato **non è una proprietà intrinseca del linguaggio**, ma della sua specifica implementazione [IntroMio.pdf, Slide 14]:
-    *   *C* e *C++* sono tipicamente compilati; *Scheme* è tipicamente interpretato [IntroMio.pdf, Slide 14].
-    *   *Python* è tipicamente interpretato, ma CPython compila prima il sorgente in bytecode per poi interpretarlo tramite macchina virtuale; PyPy usa la compilazione JIT; Cython o Nuitka traducono Python direttamente in codice C compilato [IntroMio.pdf, Slide 14].
-    *   *Java* è sia compilato sia interpretato: `javac` compila il sorgente in bytecode, che la JVM può poi interpretare oppure compilare JIT in codice macchina nativo [IntroMio.pdf, Slide 14].
-*   **AOT (Ahead-Of-Time) vs JIT (Just-In-Time):** entrambe sono tecniche per tradurre codice in codice macchina; la differenza sta in **quando** avviene la traduzione [IntroMio.pdf, Slide 15].
-    *   **AOT:** la traduzione avviene interamente in anticipo, prima del runtime. Produce un eseguibile standalone, ha startup rapido, prestazioni prevedibili, nessun overhead di compilazione durante l'esecuzione. Analogia della slide: l'AOT è come cucinare un pasto completamente prima di servirlo [IntroMio.pdf, Slide 16].
-    *   **JIT:** la compilazione avviene durante l'esecuzione. Il codice parte interpretato o parzialmente compilato; le parti più eseguite ("hot spot") vengono identificate e compilate a runtime in codice nativo ottimizzato, con prestazioni che migliorano progressivamente. Startup più lento, ma può raggiungere prestazioni molto elevate adattandosi al comportamento reale del programma. Analogia della slide: il JIT è come iniziare a cucinare mentre gli ospiti stanno già mangiando, migliorando la ricetta a ogni ripetizione [IntroMio.pdf, Slide 17].
+        |Traduzione|Tutto il programma in una volta|Riga per riga|
+        |Output|Crea un file eseguibile|Nessun eseguibile separato|
+        |Velocità di esecuzione|Più veloce|Più lenta|
+        |Errori|Mostrati dopo la compilazione|Mostrati immediatamente|
+        
+        [IntroMio.pdf]
+        
+- **Proprietà dell'implementazione, non del linguaggio:** essere compilato o interpretato **non è una proprietà intrinseca del linguaggio**, ma della sua specifica implementazione [IntroMio.pdf]:
+    - _C_ e _C++_ sono tipicamente compilati; _Scheme_ è tipicamente interpretato [IntroMio.pdf].
+    - _Python_ è tipicamente interpretato, ma CPython compila prima il sorgente in bytecode per poi interpretarlo tramite macchina virtuale; PyPy usa la compilazione JIT; Cython o Nuitka traducono Python direttamente in codice C compilato [IntroMio.pdf].
+    - _Java_ è sia compilato sia interpretato: `javac` compila il sorgente in bytecode, che la JVM può poi interpretare oppure compilare JIT in codice macchina nativo [IntroMio.pdf].
+- **AOT (Ahead-Of-Time) vs JIT (Just-In-Time):** entrambe sono tecniche per tradurre codice in codice macchina; la differenza sta in **quando** avviene la traduzione [IntroMio.pdf].
+    - **AOT:** la traduzione avviene interamente in anticipo, prima del runtime. Produce un eseguibile standalone, ha startup rapido, prestazioni prevedibili, nessun overhead di compilazione durante l'esecuzione. Analogia della slide: l'AOT è come cucinare un pasto completamente prima di servirlo [IntroMio.pdf].
+    - **JIT:** la compilazione avviene durante l'esecuzione. Il codice parte interpretato o parzialmente compilato; le parti più eseguite ("hot spot") vengono identificate e compilate a runtime in codice nativo ottimizzato, con prestazioni che migliorano progressivamente. Startup più lento, ma può raggiungere prestazioni molto elevate adattandosi al comportamento reale del programma. Analogia della slide: il JIT è come iniziare a cucinare mentre gli ospiti stanno già mangiando, migliorando la ricetta a ogni ripetizione [IntroMio.pdf].
 
 ### 1.2 Perché Studiare i Compilatori, e Perché Sono Difficili
-*   **Motivazioni (slide):** comprensione profonda dei linguaggi di programmazione; ottimizzazione delle prestazioni (velocità/memoria); base per la progettazione di nuovi linguaggi; i compilatori sono il cuore di IDE, debugger, analizzatori statici; problem solving trasferibile ad altri campi (algoritmi, strutture dati); numerose opportunità di ricerca aperta, specie in programmazione parallela e analisi del codice [IntroMio.pdf, Slide 18].
-*   **La compilazione è interdisciplinare (slide):** attinge ad Intelligenza Artificiale (algoritmi greedy, ricerca euristica), Algoritmi (algoritmi su grafi, union-find, programmazione dinamica), Teoria (DFA e PDA, pattern matching, algoritmi a punto fisso), Sistemi (allocazione e naming, sincronizzazione, località), Architettura (gestione di pipeline e gerarchia di memoria, uso dell'instruction set) [IntroMio.pdf, Slide 19].
-*   **Riduzione del costo dell'astrazione (slide):** l'informatica è "l'arte di creare oggetti virtuali e renderli utili"; un compilatore ben scritto rende tale astrazione economicamente sostenibile — il costo di esecuzione dovrebbe riflettere il lavoro sottostante e non il modo in cui il programmatore ha scelto di scriverlo; un cambiamento nell'espressione dovrebbe comportare un piccolo cambiamento di prestazioni; non ci si può però aspettare che il compilatore inventi algoritmi migliori (non ci si aspetta che il compilatore trasformi un bubblesort in un quicksort) [IntroMio.pdf, Slide 20].
-*   **Citazione storica (John Backus, primo compilatore FORTRAN):** se il primo compilatore FORTRAN avesse prodotto codice anche solo la metà più lento del codice scritto a mano, l'accettazione del sistema sarebbe stata in serio pericolo, e l'adozione di linguaggi come FORTRAN sarebbe stata seriamente ritardata [IntroMio.pdf, Slide 21].
+
+- **Motivazioni (slide):** comprensione profonda dei linguaggi di programmazione; ottimizzazione delle prestazioni (velocità/memoria); base per la progettazione di nuovi linguaggi; i compilatori sono il cuore di IDE, debugger, analizzatori statici; problem solving trasferibile ad altri campi (algoritmi, strutture dati); numerose opportunità di ricerca aperta, specie in programmazione parallela e analisi del codice [IntroMio.pdf].
+- **La compilazione è interdisciplinare (slide):** attinge ad Intelligenza Artificiale (algoritmi greedy, ricerca euristica), Algoritmi (algoritmi su grafi, union-find, programmazione dinamica), Teoria (DFA e PDA, pattern matching, algoritmi a punto fisso), Sistemi (allocazione e naming, sincronizzazione, località), Architettura (gestione di pipeline e gerarchia di memoria, uso dell'instruction set) [IntroMio.pdf].
+- **Riduzione del costo dell'astrazione (slide):** l'informatica è "l'arte di creare oggetti virtuali e renderli utili"; un compilatore ben scritto rende tale astrazione economicamente sostenibile — il costo di esecuzione dovrebbe riflettere il lavoro sottostante e non il modo in cui il programmatore ha scelto di scriverlo; un cambiamento nell'espressione dovrebbe comportare un piccolo cambiamento di prestazioni; non ci si può però aspettare che il compilatore inventi algoritmi migliori (non ci si aspetta che il compilatore trasformi un bubblesort in un quicksort) [IntroMio.pdf].
+- **Citazione storica (John Backus, primo compilatore FORTRAN):** se il primo compilatore FORTRAN avesse prodotto codice anche solo la metà più lento del codice scritto a mano, l'accettazione del sistema sarebbe stata in serio pericolo, e l'adozione di linguaggi come FORTRAN sarebbe stata seriamente ritardata [IntroMio.pdf].
 
 ### 1.3 Principi Fondamentali della Compilazione
-*   **I due principi fondamentali (slide):**
-    1.  Il compilatore **deve preservare il significato** del programma che sta compilando [IntroMio.pdf, Slide 23].
-    2.  Il compilatore **deve migliorare** il programma di input in qualche modo percepibile [IntroMio.pdf, Slide 23].
-*   **Vista ad alto livello (slide):** un compilatore è una scatola nera Source Code → Compiler → Machine Code (con possibili Errori in output). Implicazioni: deve riconoscere programmi legali (e illegali); deve generare codice corretto; deve gestire lo storage di tutte le variabili (e del codice); deve concordare con OS e linker sul formato del codice oggetto — un grande salto rispetto al linguaggio assembly [IntroMio.pdf, Slide 25].
+
+- **I due principi fondamentali (slide):**
+    1. Il compilatore **deve preservare il significato** del programma che sta compilando [IntroMio.pdf].
+    2. Il compilatore **deve migliorare** il programma di input in qualche modo percepibile [IntroMio.pdf].
+- **Vista ad alto livello (slide):** un compilatore è una scatola nera Source Code → Compiler → Machine Code (con possibili Errori in output). Implicazioni: deve riconoscere programmi legali (e illegali); deve generare codice corretto; deve gestire lo storage di tutte le variabili (e del codice); deve concordare con OS e linker sul formato del codice oggetto — un grande salto rispetto al linguaggio assembly [IntroMio.pdf].
 
 ### 1.4 Architettura del Compilatore
-*   **Compilatore tradizionale a due passate (Two-pass compiler, slide):**
-    $$\text{Source Code} \rightarrow \text{Front End} \xrightarrow{\text{IR}} \text{Back End} \rightarrow \text{Machine Code}$$
-    Il Front-End dipende principalmente dal linguaggio sorgente, il Back-End dipende principalmente dalla macchina target. Implicazioni della divisione: si usa una rappresentazione intermedia (IR); il Front-End mappa il sorgente legale in IR; il Back-End mappa l'IR in codice macchina target; l'uso di più passate consente codice migliore. **Il Front-End ha complessità $O(n)$ o $O(n \log n)$; il Back-End è NP-Completo** [IntroMio.pdf, Slide 26].
-*   **Vantaggi della divisione in due passate — Separation of Concerns (slide):** è un classico principio dell'ingegneria del software. Poiché l'IR incapsula tutta la conoscenza che il compilatore ha sul programma, uno stesso Front-End può essere accoppiato a più Back-End differenti per generare codice per diverse macchine target, e uno stesso Back-End può essere riusato per più linguaggi sorgente che condividono la stessa IR — evitando così di dover scrivere un compilatore dedicato per ogni coppia (linguaggio, macchina target) [IntroMio.pdf, Slide 27].
-*   **Compilatore tradizionale a tre parti (Three-part compiler, slide):** si inserisce un **Ottimizzatore (Middle-End)** fra Front-End e Back-End:
-    $$\text{Source Code} \rightarrow \text{Front End} \xrightarrow{\text{IR}} \text{Optimizer} \xrightarrow{\text{IR}} \text{Back End} \rightarrow \text{Machine Code}$$
-    Il compito dell'ottimizzatore (Code Improvement) è analizzare e trasformare l'IR; il suo obiettivo primario è ridurre il tempo di esecuzione del codice compilato, e/o ridurre lo spazio occupato, il consumo energetico, i page fault; **deve comunque preservare il "significato" del codice** [IntroMio.pdf, Slide 28].
+
+- **Compilatore tradizionale a due passate (Two-pass compiler, slide):** $$\text{Source Code} \rightarrow \text{Front End} \xrightarrow{\text{IR}} \text{Back End} \rightarrow \text{Machine Code}$$ Il Front-End dipende principalmente dal linguaggio sorgente, il Back-End dipende principalmente dalla macchina target. Implicazioni della divisione: si usa una rappresentazione intermedia (IR); il Front-End mappa il sorgente legale in IR; il Back-End mappa l'IR in codice macchina target; l'uso di più passate consente codice migliore. **Il Front-End ha complessità $O(n)$ o $O(n \log n)$; il Back-End è NP-Completo** [IntroMio.pdf].
+    
+- **Vantaggi della divisione in due passate — Separation of Concerns (slide):** è un classico principio dell'ingegneria del software. Poiché l'IR incapsula tutta la conoscenza che il compilatore ha sul programma: **la stessa architettura (Front-End) può avere come target diverso codice macchina** — uno stesso Front-End può essere accoppiato a più Back-End differenti per generare codice per diverse macchine target; e **la stessa architettura (Back-End) può avere come target un diverso codice sorgente** — uno stesso Back-End può essere riusato per più linguaggi sorgente che condividono la stessa IR [IntroMio.pdf]. Questo evita di dover scrivere un compilatore dedicato per ogni coppia (linguaggio, macchina target).
+    
+- **Compilatore tradizionale a tre parti (Three-part compiler, slide):** si inserisce un **Ottimizzatore (Middle-End)** fra Front-End e Back-End: $$\text{Source Code} \rightarrow \text{Front End} \xrightarrow{\text{IR}} \text{Optimizer} \xrightarrow{\text{IR}} \text{Back End} \rightarrow \text{Machine Code}$$ Il compito dell'ottimizzatore (Code Improvement) è analizzare e trasformare l'IR; il suo obiettivo primario è ridurre il tempo di esecuzione del codice compilato, e/o ridurre lo spazio occupato, il consumo energetico, i page fault; **deve comunque preservare il "significato" del codice** [IntroMio.pdf].
+    
+- **Le fasi del compilatore in dettaglio, con l'infrastruttura condivisa (slide "The phases of a Compiler"):** ciascuna delle tre macro-fasi si articola a sua volta in componenti concrete:
+    
+    - **Front End:** _Scanner_ → _Parser_ → _Elaboration_ (elaborazione/analisi semantica).
+    - **Optimizer:** una sequenza di passate _Optimization 1_, _Optimization 2_, …, _Optimization n_.
+    - **Back End:** _Instruction Selection_ → _Instruction Scheduling_ → _Register Allocation_.
+    
+    Tutte le componenti di tutte e tre le fasi si appoggiano a un livello comune di **Infrastructure** (strutture dati condivise — symbol table, gestione degli errori, rappresentazione della IR, ecc.) [IntroMio.pdf]. **Nell'architettura reale, ciascuna fase è divisa in una serie di passate**; l'ottimizzatore in particolare contiene passate che usano analisi e trasformazioni distinte per migliorare il codice [IntroMio.pdf].
+    
 
 ### 1.5 Il Front-End: Scanner, Parser, Grammatiche
-*   **Responsabilità del Front-End (slide):** riconoscere programmi legali (e illegali); segnalare gli errori in modo utile; produrre la IR e una mappa di storage preliminare; dare forma (shape) al codice per il resto del compilatore; buona parte della costruzione del Front-End può essere automatizzata [IntroMio.pdf, Slide 30].
-*   **Lo Scanner (analisi lessicale):** mappa il flusso di caratteri in un flusso di parole (*lexical analysis*); determina se il flusso di caratteri costituisce una parola legale; produce coppie *parola & parte del discorso* — ad es. `x = x + y ;` diventa `<id,x> <op,=> <id,x> <op,+> <id,y> <op,;>`; parole tipiche includono numeri, identificatori, `+`, `–`, `new`, `while`, `if`. La velocità è importante: i testi accademici raccomandano la generazione automatica dello scanner, ma nella pratica commerciale gli scanner sono spesso scritti a mano [IntroMio.pdf, Slide 31].
-*   **Il Parser (analisi sintattica):** verifica la sintassi e segnala errori; determina se il flusso di parole è una frase legale del linguaggio sorgente; costruisce la IR per il programma sorgente. I parser scritti a mano sono relativamente facili da costruire, ma la maggior parte dei testi raccomanda l'uso di generatori automatici di parser [IntroMio.pdf, Slide 33].
-*   **Grammatiche per il Front-End (definizione formale, slide):** una grammatica $G = (S, N, T, P)$ dove $S$ è il simbolo iniziale, $N$ è l'insieme dei non-terminali, $T$ è l'insieme dei terminali (parole), $P$ è l'insieme delle produzioni o regole di riscrittura $P: N \rightarrow N \cup T$. È scritta in una variante della forma di Backus-Naur (BNF) [IntroMio.pdf, Slide 34].
-*   **SheepNoise, la grammatica "giocattolo" del corso (slide):**
+
+- **Responsabilità del Front-End (slide):** riconoscere programmi legali (e illegali); segnalare gli errori in modo utile; produrre la IR e una mappa di storage preliminare; dare forma (shape) al codice per il resto del compilatore; buona parte della costruzione del Front-End può essere automatizzata [IntroMio.pdf].
+    
+- **Lo Scanner (analisi lessicale):** mappa il flusso di caratteri in un flusso di parole (_lexical analysis_); determina se il flusso di caratteri costituisce una parola legale; produce coppie _parola & parte del discorso_ — ad es. `x = x + y ;` diventa `<id,x> <op,=> <id,x> <op,+> <id,y> <op,;>`; parole tipiche includono numeri, identificatori, `+`, `–`, `new`, `while`, `if`. La velocità è importante: i testi accademici raccomandano la generazione automatica dello scanner, ma nella pratica commerciale gli scanner sono spesso scritti a mano [IntroMio.pdf].
+    
+- **Esempio concreto di analisi lessicale (slide "Lexical analysis"):** l'obiettivo è dividere il programma in singole parole dotate di senso. Per il frammento
+    
+    ```
+    while (y < z) {
+        int x = a + b;
+        y += x; }
+    ```
+    
+    lo scanner produce la sequenza di token:
+    
+    ```
+    T_While, T_LeftParen, T_Identifier(y), T_Less, T_Identifier(z), T_RightParen, T_OpenBrace,
+    T_Int, T_Identifier(x), T_Assign, T_Identifier(a), T_Plus, T_Identifier(b), T_Semicolon,
+    T_Identifier(y), T_PlusAssign, T_Identifier(x), T_Semicolon, T_CloseBrace
+    ```
+    
+    [IntroMio.pdf]. La slide sottolinea inoltre un caso di errore lessicale: **`1g2h3i` non è né un identificatore valido né un numero valido** — nessuna regola lessicale del linguaggio lo riconosce, quindi lo scanner lo segnalerebbe come errore [IntroMio.pdf].
+    
+- **Il Parser (analisi sintattica):** verifica la sintassi e segnala errori; determina se il flusso di parole è una frase legale del linguaggio sorgente; costruisce la IR per il programma sorgente. I parser scritti a mano sono relativamente facili da costruire, ma la maggior parte dei testi raccomanda l'uso di generatori automatici di parser [IntroMio.pdf].
+    
+- **Grammatiche per il Front-End (definizione formale, slide):** una grammatica $G = (S, N, T, P)$ dove $S$ è il simbolo iniziale, $N$ è l'insieme dei non-terminali, $T$ è l'insieme dei terminali (parole), $P$ è l'insieme delle produzioni o regole di riscrittura $P: N \rightarrow N \cup T$. È scritta in una variante della forma di Backus-Naur (BNF) [IntroMio.pdf].
+    
+- **SheepNoise, la grammatica "giocattolo" del corso (slide):**
+    
     ```
     SheepNoise → SheepNoise baa
                | baa
     ```
-    Definisce l'insieme dei belati che una pecora emette in circostanze normali [IntroMio.pdf, Slide 34]. Questa stessa grammatica ricompare come esempio guida per il parsing bottom-up LR(1) nel Cap. 5.
-*   **Grammatica per espressioni semplici (slide):**
+    
+    Definisce l'insieme dei belati che una pecora emette in circostanze normali [IntroMio.pdf]. Questa stessa grammatica ricompare come esempio guida per il parsing bottom-up LR(1) nel Cap. 5.
+    
+- **Grammatica per espressioni semplici (slide):**
+    
     ```
     S = Goal                     1. Goal → Expr
     T = { number, id, +, - }     2. Expr  → Expr Op Term
@@ -123,29 +168,47 @@
                                  6. Op    → +
                                  7.        | -
     ```
-    Definisce espressioni semplici con `+` e `-` su numeri e identificatori; è un esempio di **grammatica context-free (CFG)** [IntroMio.pdf, Slide 35].
-*   **Derivazione di `x + 2 - y` (slide):** dato un CFG possiamo derivare frasi per sostituzione ripetuta; per *riconoscere* una frase valida si inverte il processo, partendo da `x + 2 - y`:
-
-    | Produzione | Risultato          |
-    | ---------- | ------------------ |
-    | —          | `Goal`             |
-    | 1          | `Expr`             |
-    | 2          | `Expr Op Term`     |
-    | 5          | `Expr Op y`        |
-    | 7          | `Expr - y`         |
-    | 2          | `Expr Op Term - y` |
-    | 4          | `Expr Op 2 - y`    |
-    | 6          | `Expr + 2 - y`     |
-    | 3          | `Term + 2 - y`     |
-    | 5          | `x + 2 - y`        |
-
-    [IntroMio.pdf, Slide 36]
-*   **Parse Tree vs Abstract Syntax Tree (AST) (slide):** per riconoscere se `x + 2 - y` appartiene al linguaggio si costruisce l'albero di parsing (*parsing tree* o *syntax tree*), che include ogni non-terminale coinvolto nella derivazione [IntroMio.pdf, Slide 37]. I compilatori usano spesso un **Abstract Syntax Tree** al posto del parse tree: l'AST riassume la struttura grammaticale senza includere i dettagli della derivazione, è molto più conciso, e può essere usato direttamente come rappresentazione intermedia [IntroMio.pdf, Slide 38].
+    
+    Definisce espressioni semplici con `+` e `-` su numeri e identificatori; è un esempio di **grammatica context-free (CFG)** [IntroMio.pdf].
+    
+- **Derivazione di `x + 2 - y` (slide):** dato un CFG possiamo derivare frasi per sostituzione ripetuta; per _riconoscere_ una frase valida si inverte il processo, partendo da `x + 2 - y`:
+    
+    |Produzione|Risultato|
+    |---|---|
+    |—|`Goal`|
+    |1|`Expr`|
+    |2|`Expr Op Term`|
+    |5|`Expr Op y`|
+    |7|`Expr - y`|
+    |2|`Expr Op Term - y`|
+    |4|`Expr Op 2 - y`|
+    |6|`Expr + 2 - y`|
+    |3|`Term + 2 - y`|
+    |5|`x + 2 - y`|
+    
+    [IntroMio.pdf]
+    
+- **Parse Tree vs Abstract Syntax Tree (AST) (slide):** per riconoscere se `x + 2 - y` appartiene al linguaggio si costruisce l'albero di parsing (_parsing tree_ o _syntax tree_), che include ogni non-terminale coinvolto nella derivazione [IntroMio.pdf]. I compilatori usano spesso un **Abstract Syntax Tree** al posto del parse tree: l'AST riassume la struttura grammaticale senza includere i dettagli della derivazione, è molto più conciso, e può essere usato direttamente come rappresentazione intermedia [IntroMio.pdf].
+    
+- **Secondo esempio di AST (slide "Syntax analysis"):** per il frammento già usato nell'esempio lessicale,
+    
+    ```
+    while (y < z) {
+        int x = a + b;
+        y += x; }
+    ```
+    
+    l'AST prodotto ha come radice `While`, con due figli: la condizione `<` (con figli `y`, `z`) e il corpo `Sequence`, che a sua volta ha due figli `=` — il primo con figli `x` e `+(a,b)`, il secondo con figli `y` e `+(y,x)` [IntroMio.pdf]. Questo esempio illustra concretamente come l'AST **elimini i dettagli della derivazione grammaticale** (non ci sono nodi per `Stmt`, `Block`, ecc.) mantenendo solo la struttura semantica rilevante — coerentemente con la nota della slide precedente ("l'AST riassume la struttura grammaticale senza includere il dettaglio della derivazione") [IntroMio.pdf].
+    
 
 ### 1.6 La Rappresentazione Intermedia (IR): AST vs Codice a Tre Indirizzi
+
 Consideriamo l'espressione sorgente `a = b × c + d` come esempio guida (slide):
-*   **Se la IR è l'Abstract Syntax Tree**, il Front-End produce un albero con radice `=`, il cui sottoalbero destro è `+`, con figli `×(b,c)` e `d` [IntroMio.pdf, Slide 40].
-*   **Se la IR è codice a tre indirizzi (Three-Address Code)**, considerando lo statement esteso `a = b×c+d; e = f + b×c+d`, il Front-End produce (slide):
+
+- **Se la IR è l'Abstract Syntax Tree**, il Front-End produce un albero con radice `=`, il cui sottoalbero destro è `+`, con figli `×(b,c)` e `d` [IntroMio.pdf].
+    
+- **Se la IR è codice a tre indirizzi (Three-Address Code)**, considerando lo statement esteso `a = b×c+d; e = f + b×c+d`, il Front-End produce (slide):
+    
     ```
     load  @b   ⇒ r1
     load  @c   ⇒ r2
@@ -157,299 +220,618 @@ Consideriamo l'espressione sorgente `a = b × c + d` come esempio guida (slide):
     add   r5,r6 ⇒ r7
     store r7   ⇒ @e
     ```
-    [IntroMio.pdf, Slide 41]. Si osservi come al risultato di ogni singola operazione binaria venga assegnato un nome esplicito (un registro virtuale `r_i`), consentendone il riutilizzo nelle istruzioni successive (`r5`, calcolato per `a`, viene riusato nel calcolo di `e`) — un vantaggio strutturale del three-address code rispetto a una rappresentazione a stack puro.
-*   **About ILOC (slide):** ILOC (*Intermediate Language for an Optimizing Compiler*) è un linguaggio assembly per una semplice macchina RISC, usato nel corso come forma concreta di codice a tre indirizzi [IntroMio.pdf, Slide 45].
-*   **L'ottimizzatore e il contesto (slide):** la IR emessa dal Front-End viene generata guardando ogni statement isolatamente, quindi contiene codice che deve funzionare per qualunque contesto circostante. L'ottimizzatore può invece scoprire proprietà del contesto osservando l'intera IR, e usare questa conoscenza per migliorare il codice (ad es. eliminare ricalcoli invarianti in un ciclo) [IntroMio.pdf, Slide 42, 43].
+    
+    [IntroMio.pdf]. Si osservi come al risultato di ogni singola operazione binaria venga assegnato un nome esplicito (un registro virtuale `r_i`), consentendone il riutilizzo nelle istruzioni successive (`r5`, calcolato per `a`, viene riusato nel calcolo di `e`) — un vantaggio strutturale del three-address code rispetto a una rappresentazione a stack puro.
+    
+- **About ILOC (slide):** ILOC (_Intermediate Language for an Optimizing Compiler_) è un linguaggio assembly per una semplice macchina RISC, usato nel corso come forma concreta di codice a tre indirizzi [IntroMio.pdf]. **Tabella operazionale (slide "About ILOC"):**
+    
+    |Operazione ILOC|Significato|
+    |---|---|
+    |`loadAI r1,c2 ⇒ r3`|$\text{Memory}(r_1+c_2) \to r_3$|
+    |`loadI c1 ⇒ r2`|$c_1 \to r_2$|
+    |`mult r1,r2 ⇒ r3`|$r_1 \times r_2 \to r_3$|
+    |`storeAI r1 ⇒ r2,c3`|$r_1 \to \text{Memory}(r_2+c_3)$|
+    
+    [IntroMio.pdf]. Questa tabella fornisce la semantica precisa delle istruzioni ILOC usate negli esempi di questo capitolo e nei Cap. 9–11.
+    
+- **L'ottimizzatore e il contesto (slide):** la IR emessa dal Front-End viene generata guardando ogni statement isolatamente, quindi contiene codice che deve funzionare per qualunque contesto circostante. L'ottimizzatore può invece scoprire proprietà del contesto osservando l'intera IR, e usare questa conoscenza per migliorare il codice [IntroMio.pdf].
+    
+- **Esempio di ottimizzazione — loop invariant code motion (slide "Example of optimizations: loop invariant"):** dato il codice
+    
+    ```
+    b ← …
+    c ← …
+    a ← 1
+    for i = 1 to n
+        read d
+        a ← a × (2 × b × c) × d
+    end
+    ```
+    
+    l'ottimizzatore riconosce che la sottoespressione `2 × b × c` è **costante rispetto al ciclo** (non dipende da `i` né da `d`, che cambia solo dentro il loop tramite `read`) e la issa (hoist) fuori dal ciclo in un nuovo temporaneo:
+    
+    ```
+    b ← …
+    c ← …
+    a ← 1
+    t ← 2 × b × c
+    for i = 1 to n
+        read d
+        a ← a × d × t
+    end
+    ```
+    
+    [IntroMio.pdf]. Questo è il primo esempio concreto di loop-invariant code motion incontrato nel corso; la tecnica viene approfondita formalmente al Cap. 7 (§7.3) e applicata al calcolo di indirizzi array nei loop al Cap. 10 (§10.7).
+    
 
 ### 1.7 Il Back-End: Instruction Selection, Register Allocation, Instruction Scheduling
-*   **Responsabilità del Back-End (slide):** tradurre la IR in codice macchina target; scegliere le istruzioni per implementare ogni operazione della IR; decidere quali valori mantenere nei registri; riordinare le istruzioni per guadagnare efficienza. L'automazione ha avuto meno successo nel Back-End che nel Front-End [IntroMio.pdf, Slide 44].
-*   **Instruction Selection:** deve tradurre il codice IR in una sequenza di istruzioni dell'ISA target, sfruttando le caratteristiche della macchina target; assume un numero infinito di registri (virtuali); è tipicamente vista come un problema di pattern matching (metodi ad-hoc o pattern matching); la forma della IR influenza la tecnica scelta; le architetture RISC hanno semplificato questo problema [IntroMio.pdf, Slide 47]. Esempio: per l'istruzione sorgente `a = (a × 2 × b × c) × d`, una possibile selezione di istruzioni usa pattern di accesso a memoria del tipo `Memory(r1+c2) → r3` (con la costante `c1` caricata nel registro `r2`) e `r1 → Memory(r2+c3)` [IntroMio.pdf, Slide 46].
-*   **Register Allocation:** deve mappare i registri virtuali su registri fisici, gestendo un insieme limitato di risorse; può cambiare le scelte di istruzione e inserire istruzioni di LOAD/STORE aggiuntive quando i registri non bastano (*spilling*); **l'allocazione ottima è NP-Completa nella maggior parte dei contesti pratici**, per cui i compilatori ne approssimano la soluzione [IntroMio.pdf, Slide 48]. Sullo stesso esempio `a = (a × 2 × b × c) × d`, la slide confronta due allocazioni: una versione che usa solo **3 registri** contro una versione che ne usa **6**, mostrando concretamente l'impatto della pressione sui registri sulla forma finale del codice [IntroMio.pdf, Slide 49].
-*   **Instruction Scheduling:** riordina la sequenza di istruzioni per evitare stalli e interlock, usando produttivamente tutte le unità funzionali disponibili; può aumentare il tempo di vita delle variabili, cambiando così l'allocazione dei registri; **la schedulazione ottima è NP-Completa in quasi tutti i casi**, ma esistono tecniche euristiche ben sviluppate [IntroMio.pdf, Slide 50]. Esempio numerico (slide): prima della schedulazione, con costi per istruzione `LoadAI`/`StoreAI` = 3 cicli, `mult` = 2 cicli, tutte le altre istruzioni = 1 ciclo, si calcola il numero di cicli totali della sequenza non ottimizzata come base di confronto per la versione schedulata [IntroMio.pdf, Slide 51].
+
+- **Responsabilità del Back-End (slide):** tradurre la IR in codice macchina target; scegliere le istruzioni per implementare ogni operazione della IR; decidere quali valori mantenere nei registri; riordinare le istruzioni per guadagnare efficienza. L'automazione ha avuto meno successo nel Back-End che nel Front-End [IntroMio.pdf].
+- **Instruction Selection:** deve tradurre il codice IR in una sequenza di istruzioni dell'ISA target, sfruttando le caratteristiche della macchina target; assume un numero infinito di registri (virtuali); è tipicamente vista come un problema di pattern matching (metodi ad-hoc o pattern matching); la forma della IR influenza la tecnica scelta; le architetture RISC hanno semplificato questo problema [IntroMio.pdf].
+    - **Esempio concreto (slide "Instruction selection for a = (a × 2 × b × c) × d"):** il codice ILOC generato è:
+        
+        ```iloc
+        loadAI  rarp, @a ⇒ ra    // load 'a'loadI   2        ⇒ r2    // constant 2 into r2loadAI  rarp, @b ⇒ rb    // load 'b'loadAI  rarp, @c ⇒ rc    // load 'c'loadAI  rarp, @d ⇒ rd    // load 'd'mult    ra, r2   ⇒ ra    // ra ← a × 2mult    ra, rb   ⇒ ra    // ra ← (a × 2) × bmult    ra, rc   ⇒ ra    // ra ← (a × 2 × b) × cmult    ra, rd   ⇒ ra    // ra ← (a × 2 × b × c) × dstoreAI ra       ⇒ rarp, @a  // write ra back to 'a'
+        ```
+        
+        [IntroMio.pdf].
+- **Register Allocation:** deve mappare i registri virtuali su registri fisici, gestendo un insieme limitato di risorse; può cambiare le scelte di istruzione e inserire istruzioni di LOAD/STORE aggiuntive quando i registri non bastano (_spilling_); **l'allocazione ottima è NP-Completa nella maggior parte dei contesti pratici**, per cui i compilatori ne approssimano la soluzione [IntroMio.pdf].
+    - **Confronto concreto a 6 registri vs 3 registri (slide "Register allocation for a = (a × 2 × b × c) × d"):** la versione **non allocata** (una variabile per registro virtuale, 6 registri: $r_a,r_2,r_b,r_c,r_d$ più eventuali temporanei) coincide col codice di instruction selection sopra. La versione **allocata su soli 3 registri**, che riusa $r_1$ come accumulatore e $r_2$ come registro di scratch per ciascun operando caricato:
+        
+        ```iloc
+        loadAI rarp, @a ⇒ r1      // load 'a'add    r1, r1   ⇒ r1      // r1 ← a × 2   (implementato come somma)loadAI rarp, @b ⇒ r2      // load 'b'mult   r1, r2   ⇒ r1      // r1 ← (a × 2) × bloadAI rarp, @c ⇒ r2      // load 'c'mult   r1, r2   ⇒ r1      // r1 ← (a × 2 × b) × cloadAI rarp, @d ⇒ r2      // load 'd'mult   r1, r2   ⇒ r1      // r1 ← (a × 2 × b × c) × dstoreAI r1      ⇒ rarp, @a  // write ra back to 'a'
+        ```
+        
+        [IntroMio.pdf]. Il confronto rende esplicito il compromesso: usare **3 registri** invece di **6** riduce la pressione sui registri al prezzo di riusare (e quindi serializzare) $r_1$ e $r_2$ per più valori successivi.
+- **Instruction Scheduling:** riordina la sequenza di istruzioni per evitare stalli e interlock, usando produttivamente tutte le unità funzionali disponibili; può aumentare il tempo di vita delle variabili, cambiando così l'allocazione dei registri; **la schedulazione ottima è NP-Completa in quasi tutti i casi**, ma esistono tecniche euristiche ben sviluppate [IntroMio.pdf].
+    - **Esempio numerico completo (slide "Before/After the instruction scheduling"):** con costi `loadAI`/`storeAI` = 3 cicli, `mult` = 2 cicli, tutte le altre istruzioni (incluso `add`) = 1 ciclo, e assumendo la versione a 3 registri sopra:
+        
+        - **Prima della schedulazione** (esecuzione strettamente sequenziale, ogni istruzione attende il completamento della precedente): la tabella Start/End della slide mostra `loadAI` (cicli 1–3), `add` (4–4), `loadAI` (5–7), `mult` (8–9), `loadAI` (10–12), `mult` (13–14), `loadAI` (15–17), `mult` (18–19), `storeAI` (20–22) — **22 cicli totali** [IntroMio.pdf].
+        - **Dopo la schedulazione** (le tre `loadAI` indipendenti vengono anticipate ed eseguite in parallelo/sovrapposte, sfruttando unità funzionali multiple): `loadAI` (1–3), `loadAI` (2–4), `loadAI` (3–5), `add` (4–4), `mult` (5–6), `loadAI` (6–8), `mult` (7–8), `mult` (9–10), `storeAI` (11–13) — **13 cicli totali** [IntroMio.pdf].
+        
+        Lo scheduling riduce il tempo totale da 22 a 13 cicli (una riduzione di circa il 41%) semplicemente riordinando le istruzioni indipendenti per sovrapporne l'esecuzione, senza alcuna modifica al risultato calcolato [IntroMio.pdf].
+        
 
 ### 1.8 Esempi di Performance dell'Astrazione
-*   **Caso di studio (gcc 4.1, `-O3`, Intel T9600 @ 2.8GHz, array 10.000×10.000, slide):** tre varianti dello stesso azzeramento di matrice mostrano tempi di esecuzione molto diversi [IntroMio.pdf, Slide 22]:
-    *   *Row-major traversal:* `for(i) for(j) A[i][j]=0` → **0.51 s**.
-    *   *Column-major traversal:* `for(i) for(j) A[j][i]=0` → **1.65 s** (~15× più lento della forma a puntatore, per i continui cache miss).
-    *   *Forma a puntatore:* `p=&A[0][0]; t=n*n; for(i<t) *p++=0;` → **0.11 s** (la più veloce).
-    *   *Libreria standard:* `bzero(&A[0][0], n*n*sizeof(int))` → **0.52 s** (~5× più lento del puntatore).
-    Un buon compilatore dovrebbe conoscere questi trade-off, per ogni target, e generare sempre il codice migliore; nella pratica pochi compilatori reali ci riescono [IntroMio.pdf, Slide 22].
+
+- **Caso di studio (gcc 4.1, `-O3`, Intel T9600 @ 2.8GHz, array 10.000×10.000, slide "Simple Examples"):** tre varianti dello stesso azzeramento di matrice mostrano tempi di esecuzione molto diversi — **tutti e tre i loop hanno prestazioni distinte** [IntroMio.pdf]:
+    
+    - _Row-major traversal:_ `for(i) for(j) A[i][j]=0` → **0.51 s** ($\approx 5\times$ la versione a puntatore).
+    - _Column-major traversal:_ `for(i) for(j) A[j][i]=0` → **1.65 s** ($\approx 15\times$ la versione a puntatore, per i continui cache miss).
+    - _Forma a puntatore:_ `p=&A[0][0]; t=n*n; for(i<t) *p++=0;` → **0.11 s** (la più veloce).
+    - _Libreria standard:_ `bzero((void*)&A[0][0], n*n*sizeof(int))` → **0.52 s** ($\approx 5\times$ più lento della forma a puntatore).
+    
+    Un buon compilatore dovrebbe conoscere questi trade-off, per ogni target, e generare sempre il codice migliore; **pochi compilatori reali ci riescono** [IntroMio.pdf].
 
 
 <a id="cap2"></a>
 ## CAPITOLO 2: Fondamenti Formali dei Linguaggi e Automi
-**Source:** *LinguaggiI.pdf*
+
+**Source:** _LinguaggiI.pdf_
+
+> **Nota di revisione:** questo capitolo è stato ricontrollato per intero contro il testo integrale di `LinguaggiI.pdf` (fornito come testo semplice continuo, senza numerazione di pagina/slide affidabile — a differenza dei deck "a zip" con OCR per singola slide usati per altri capitoli). Per questo motivo le citazioni `[LinguaggiI.pdf, Slide N]` della versione precedente, che riportavano numerazioni specifiche, sono state sostituite da citazioni generiche `[LinguaggiI.pdf]`: non è possibile verificare a quale slide fisica corrisponda un dato passaggio, ma il contenuto stesso è stato confrontato riga per riga con la fonte. Sono stati integrati sette blocchi di contenuto assenti dalla stesura precedente: (1) gli esempi svolti di conversione DFA→RE con state elimination (inclusi i casi speciali "un solo stato finale" e "più stati finali"), (2) il "More Complex Example" e i due esercizi di minimizzazione DFA, (3) l'elenco completo degli esercizi sul Pumping Lemma regolare, (4) la definizione formale di Parse Tree con l'esempio guidato della grammatica booleana, (5) il secondo esempio di PDA (palindromo $ww^R$) e i relativi esercizi di design, (6) l'esempio completo di Grammatica Context-Sensitive per ${a^ib^ic^i}$, (7) il riepilogo esplicito della gerarchia dei linguaggi con automi corrispondenti. Il resto del capitolo (§2.1–2.5, §2.7 nucleo, §2.8 nucleo, §2.9 nucleo, §2.10 nucleo) era già corretto ed è qui preservato.
 
 ### 2.1 Alfabeti, Stringhe e Operazioni Formali
-*   **Definizione di Alfabeto (Alphabet):** Un alfabeto $\Sigma$ è un insieme finito e non vuoto di simboli [LinguaggiI.pdf, Slide 8, 87].
-    *   *Esempi:* $\Sigma_1 = \{a, b, c, \dots, z\}$ (lettere dell'alfabeto); $\Sigma_2 = \{0, 1\}$ (cifre binarie); $\Sigma_3 = \{(, )\}$ (parentesi tonde) [LinguaggiI.pdf, Slide 8, 87].
-*   **Definizione di Stringa (String):** Una stringa su un alfabeto $\Sigma$ è una sequenza finita di simboli appartenenti a $\Sigma$ [LinguaggiI.pdf, Slide 8, 87]. La *stringa vuota*, indicata con $\epsilon$, è la stringa priva di simboli [LinguaggiI.pdf, Slide 8, 88].
-*   **Lunghezza di una stringa $|x|$:** Corrisponde al numero di simboli che compongono la stringa $x$ [LinguaggiI.pdf, Slide 8, 88].
-    *   *Esempi:* $|abfbz| = 5$; $|110010| = 6$; $|\epsilon| = 0$ [LinguaggiI.pdf, Slide 8, 88].
-*   **Concatenazione di stringhe:** L'operazione che unisce due stringhe $x$ e $y$ accostandole per formare la stringa $xy$ [LinguaggiI.pdf, Slide 88]. È un'operazione associativa che ammette la stringa vuota $\epsilon$ come elemento neutro ($x\epsilon = \epsilon x = x$) [LinguaggiI.pdf, Slide 88].
-*   **Sottostringa, Prefisso e Suffisso:** Una stringa $s$ è una sottostringa di $x$ se esistono due stringhe $y$ e $z$ tali che $x = ysz$ [LinguaggiI.pdf, Slide 88].
-    *   Se $y = \epsilon$, allora $s$ è un **prefisso** di $x$ [LinguaggiI.pdf, Slide 88].
-    *   Se $z = \epsilon$, allora $s$ è un **suffisso** di $x$ [LinguaggiI.pdf, Slide 88].
-    *   $\epsilon$ è sia prefisso sia suffisso di qualsiasi stringa [LinguaggiI.pdf, Slide 89]. I prefissi di `abc` sono: $\epsilon$, `a`, `ab`, `abc` [LinguaggiI.pdf, Slide 89].
-*   **Potenze di un alfabeto (Powers of an alphabet):**
-    *   $\Sigma^n$ indica l'insieme di tutte le stringhe sull'alfabeto $\Sigma$ di lunghezza esattamente pari a $n$ [LinguaggiI.pdf, Slide 9, 89]. Per definizione, $\Sigma^0 = \{\epsilon\}$ [LinguaggiI.pdf, Slide 9, 89].
-    *   **Chiusura di Kleene (Kleene Closure) $\Sigma^*$:** L'insieme di tutte le stringhe di qualsiasi lunghezza finita (inclusa la stringa vuota) sull'alfabeto $\Sigma$ [LinguaggiI.pdf, Slide 9, 90]:
-        $$\Sigma^* = \bigcup_{i=0}^{\infty} \Sigma^i$$
-    *   **Chiusura Positiva (Positive Closure) $\Sigma^+$:** L'insieme di tutte le stringhe sull'alfabeto $\Sigma$ ad esclusione della stringa vuota [LinguaggiI.pdf, Slide 9, 90]:
-        $$\Sigma^+ = \bigcup_{i=1}^{\infty} \Sigma^i = \Sigma^* \setminus \{\epsilon\}$$
+
+- **Definizione di Alfabeto (Alphabet):** Un alfabeto $\Sigma$ è un insieme finito e non vuoto di simboli [LinguaggiI.pdf].
+    - _Esempi:_ $\Sigma_1 = {a, b, c, \dots, z}$ (lettere dell'alfabeto); $\Sigma_2 = {0, 1}$ (cifre binarie); $\Sigma_3 = {(, )}$ (parentesi tonde) [LinguaggiI.pdf].
+- **Definizione di Stringa (String):** Una stringa su un alfabeto $\Sigma$ è una sequenza finita di simboli appartenenti a $\Sigma$ [LinguaggiI.pdf]. La _stringa vuota_, indicata con $\epsilon$, è la stringa priva di simboli [LinguaggiI.pdf].
+- **Lunghezza di una stringa $|x|$:** Corrisponde al numero di simboli che compongono la stringa $x$ [LinguaggiI.pdf].
+    - _Esempi:_ $|abfbz| = 5$; $|110010| = 6$; $|))()(()| = 7$; $|\epsilon| = 0$ [LinguaggiI.pdf].
+- **Concatenazione di stringhe:** L'operazione che unisce due stringhe $x$ e $y$ accostandole per formare la stringa $xy$ [LinguaggiI.pdf]. È un'operazione associativa che ammette la stringa vuota $\epsilon$ come elemento neutro ($x\epsilon = \epsilon x = x$) [LinguaggiI.pdf].
+- **Sottostringa, Prefisso e Suffisso:** Una stringa $s$ è una sottostringa di $x$ se esistono due stringhe $y$ e $z$ tali che $x = ysz$ [LinguaggiI.pdf].
+    - Se $y = \epsilon$ (cioè $x = sz$), allora $s$ è un **prefisso** di $x$ [LinguaggiI.pdf].
+    - Se $z = \epsilon$ (cioè $x = ys$), allora $s$ è un **suffisso** di $x$ [LinguaggiI.pdf].
+    - $\epsilon$ è sia prefisso sia suffisso di qualsiasi stringa, inclusa $\epsilon$ stessa [LinguaggiI.pdf]. I prefissi di `abc` sono: $\epsilon$, `a`, `ab`, `abc` [LinguaggiI.pdf].
+- **Potenze di un alfabeto (Powers of an alphabet):**
+    - $\Sigma^n$ indica l'insieme di tutte le stringhe sull'alfabeto $\Sigma$ di lunghezza esattamente pari a $n$ [LinguaggiI.pdf]. Per definizione, $\Sigma^0 = {\epsilon}$ [LinguaggiI.pdf]. Esempio con $\Sigma={0,1}$: $\Sigma^0={\epsilon}$, $\Sigma^1={0,1}$, $\Sigma^2={00,01,10,11}$, $\Sigma^3={000,001,010,011,100,101,110,111}$ [LinguaggiI.pdf].
+    - **Chiusura di Kleene (Kleene Closure) $\Sigma^*$:** L'insieme di tutte le stringhe di qualsiasi lunghezza finita (inclusa la stringa vuota) sull'alfabeto $\Sigma$ [LinguaggiI.pdf]: $$\Sigma^* = \bigcup_{i=0}^{\infty} \Sigma^i$$
+    - **Chiusura Positiva (Positive Closure) $\Sigma^+$:** L'insieme di tutte le stringhe sull'alfabeto $\Sigma$ ad esclusione della stringa vuota [LinguaggiI.pdf]: $$\Sigma^+ = \bigcup_{i=1}^{\infty} \Sigma^i = \Sigma^* \setminus {\epsilon}$$
 
 ### 2.2 Teoria dei Linguaggi e Grammatiche Generative
-*   **Definizione di Linguaggio (Language):** Un linguaggio $L$ su un alfabeto $\Sigma$ è un sottoinsieme di $\Sigma^*$ ($L \subseteq \Sigma^*$) [LinguaggiI.pdf, Slide 10, 91].
-    *   *Esempi:* $L_1 = \{x \in \Sigma_1^* \mid x \text{ contiene la sottostringa "fool"}\}$; $L_2 = \{x \in \Sigma_2^* \mid x \text{ rappresenta un numero binario divisibile per 7}\}$ [LinguaggiI.pdf, Slide 91].
-*   **Operazioni sui linguaggi:** Poiché i linguaggi sono insiemi, ereditano le operazioni standard della teoria degli insiemi (Unione $A \cup B$, Intersezione $A \cap B$, Differenza $A \setminus B$, Complemento $\bar{A} = \Sigma^* \setminus A$) [LinguaggiI.pdf, Slide 11, 120]. Sono definite inoltre:
-    *   **Concatenazione di linguaggi:** $AB = \{ab \mid a \in A \land b \in B\}$ [LinguaggiI.pdf, Slide 11, 92].
-    *   **Chiusura di Kleene $L^*$:**
-        $$L^* = \bigcup_{i=0}^{\infty} L^i, \quad \text{dove } L^0 = \{\epsilon\}$$
-        [LinguaggiI.pdf, Slide 11, 92]. Nota: il linguaggio vuoto $\emptyset \neq \{\epsilon\}$ [LinguaggiI.pdf, Slide 92].
-*   **Definizione di Grammatica:** Una grammatica $G$ è definita formalmente come una quadrupla:
-    $$G = (\Sigma, N, S, P)$$
-    dove $\Sigma$ è l'alfabeto dei simboli terminali, $N$ è l'insieme dei simboli non terminali (con $\Sigma \cap N = \emptyset$), $S \in N$ è il simbolo non terminale iniziale (starting symbol) e $P$ è l'insieme finito di regole di produzione (rewriting rules) del tipo $U \rightarrow V$ [LinguaggiI.pdf, Slide 12, 93].
+
+- **Definizione di Linguaggio (Language):** Un linguaggio $L$ su un alfabeto $\Sigma$ è un sottoinsieme di $\Sigma^_$ ($L \subseteq \Sigma^_$) [LinguaggiI.pdf].
+    - _Esempi (slide):_ $L_1$ = insieme delle stringhe su $\Sigma_1$ che contengono la sottostringa "fool"; $L_2$ = insieme delle stringhe su $\Sigma_2$ che rappresentano un numero binario divisibile per 7 ($={111, 10001, 10101,\dots}$); $L_3$ = insieme delle stringhe su $\Sigma_3$ dove ogni '(' è seguita esattamente da 2 occorrenze di ')' ($={\epsilon, ), )), ()), )()), \dots}$); $L_4$ = numeri binari corrispondenti a un numero primo ($={10,11,101,111,1011,1101,\dots}$); $L_5$ = insieme delle parole legali inglesi; $L_6$ = insieme dei programmi C legali [LinguaggiI.pdf].
+- **Operazioni sui linguaggi:** Poiché i linguaggi sono insiemi, ereditano le operazioni standard della teoria degli insiemi (Unione $A \cup B$, Intersezione $A \cap B$, Differenza $A \setminus B$ quando $B\subseteq A$, Complemento $\bar{A} = \Sigma^* \setminus A$) [LinguaggiI.pdf]. Sono definite inoltre:
+    - **Concatenazione di linguaggi:** $AB = {ab \mid a \in A \land b \in B}$; esempio: ${0,1}{1,2}={01,02,11,12}$ [LinguaggiI.pdf].
+    - **Chiusura di Kleene $L^*$ e chiusura positiva $L^+$:** $$L^* = \bigcup_{i=0}^{\infty} L^i, \quad \text{dove } L^0 = {\epsilon} \qquad\qquad L^+ = \bigcup_{i=1}^{\infty} L^i$$ [LinguaggiI.pdf]. Nota: il linguaggio vuoto $\emptyset \neq {\epsilon}$ (il linguaggio contenente solo la stringa vuota) [LinguaggiI.pdf].
+    - _Ulteriori esempi (slide):_ l'insieme delle stringhe con $n$ occorrenze di 1 seguite da $n$ occorrenze di 0 (${\epsilon, 01, 0011, 000111,\dots}$); l'insieme delle stringhe con un numero uguale di occorrenze di 0 e 1 (${\epsilon,01,10,0011,0101,1001,\dots}$) [LinguaggiI.pdf].
+- **Il problema fondamentale (slide "Problems"):** data una stringa $w$, appartiene al linguaggio $L$? Due approcci: generare tutte le parole di $L$ e verificare se $w$ è tra queste, oppure disporre di un modo per _riconoscere_ quando una parola appartiene a $L$ [LinguaggiI.pdf].
+- **L'approccio generativo — Grammatiche:** partendo da un simbolo iniziale, usando le regole di riscrittura delle produzioni, si genera l'insieme di tutte le stringhe appartenenti al linguaggio [LinguaggiI.pdf].
+- **Definizione di Grammatica:** Una grammatica $G$ è definita formalmente come una quadrupla: $$G = (\Sigma, N, S, P)$$ dove $\Sigma$ è l'alfabeto dei simboli terminali, $N$ è l'insieme dei simboli non terminali, $S \in N$ è il simbolo non terminale iniziale (starting symbol) e $P$ è l'insieme finito di regole di produzione (rewriting rules) della forma $U \rightarrow V$, con $U \in (\Sigma \cup N)^+$ e $V \in (\Sigma \cup N)^*$ [LinguaggiI.pdf].
+- **Derivazioni e linguaggio generato:** una stringa $w \in \Sigma^*$ è generata da $G$ se esiste una derivazione che parte da $S$ e, riscrivendo ripetutamente tramite le produzioni di $P$, produce $w$. Il linguaggio generato da $G$, denotato $L(G)$, è l'insieme di tutte le stringhe derivabili usando $G$ [LinguaggiI.pdf].
+- **Esempio guida (slide, grammatica banale):** $G=({a},{S},S,P)$ con $P = {S\to\epsilon,\ S\to a,\ S\to aS}$ genera $L(G)={a^n\mid n\ge0}$ [LinguaggiI.pdf].
+- **Esempio guida — linguaggio con numero pari di 1 (slide):** $L_1$ = insieme delle stringhe con un numero pari di 1. Generata dalla grammatica $({0,1},{S,T},S,P)$ con:
+    
+    ```
+    S → ε | 0S | 1TT → 0T | 1S
+    ```
+    
+    Una stringa appartiene a $L_1$ se e solo se può essere generata da questa grammatica [LinguaggiI.pdf].
+- **Esempio di derivazione (slide):** la stringa `01010` appartiene a $L_1$? Si trova la derivazione: $$S \to 0S \to 01T \to 010T \to 0101S \to 01010S \to 01010$$ [LinguaggiI.pdf].
 
 ### 2.3 La Gerarchia di Chomsky e Complessità
-La Gerarchia di Chomsky classifica le grammatiche in quattro classi (Tipi) in base alle restrizioni applicate alla forma delle produzioni $U \rightarrow V$ (con $U \in (\Sigma \cup N)^+$ e $V \in (\Sigma \cup N)^*$) [LinguaggiI.pdf, Slide 13, 95, 96]:
 
-1.  **Tipo 0 (Unrestricted / Phrase-Structure):** Nessuna restrizione sulle produzioni. Riconosciute dalle **Macchine di Turing** [LinguaggiI.pdf, Slide 13, 96, 128, 129].
-2.  **Tipo 1 (Context-Sensitive):** Regole del tipo $\alpha A \beta \rightarrow \alpha \gamma \beta$ (oppure $|U| \le |V|$). Riconosciute dagli **automi a spazio limitato (Linear Bounded Automata, LBA)** [LinguaggiI.pdf, Slide 13, 95, 128, 129].
-3.  **Tipo 2 (Context-Free):** Regole della forma $A \rightarrow V$ con $A \in N$ (la parte sinistra deve essere un singolo non-terminale). Riconosciute dagli **Automi a Pila (Pushdown Automata - PDA)** [LinguaggiI.pdf, Slide 13, 96, 128, 129].
-4.  **Tipo 3 (Regular):** Regole della forma $A \rightarrow aB$ oppure $A \rightarrow a$ (Grammatiche Regolari Destre). Riconosciute dagli **Automi a Stati Finiti (FSA)** [LinguaggiI.pdf, Slide 13, 97, 128, 129].
+La Gerarchia di Chomsky classifica le grammatiche in quattro classi (Tipi) in base alle restrizioni applicate alla forma delle produzioni $U \rightarrow V$ (con $U \in (\Sigma \cup N)^+$ e $V \in (\Sigma \cup N)^*$) [LinguaggiI.pdf]. Una lingua è "di un tipo" se e solo se ammette una grammatica di quel tipo:
+
+1. **Tipo 0 (Unrestricted / Phrase-Structure):** Nessuna restrizione sulle produzioni. Riconosciute dalle **Macchine di Turing** [LinguaggiI.pdf].
+2. **Tipo 1 (Context-Sensitive):** vedi §2.11bis per la forma esatta e un esempio completo. Riconosciute dagli **automi a spazio limitato (Linear Bounded Automata, LBA)** [LinguaggiI.pdf].
+3. **Tipo 2 (Context-Free):** Regole della forma $A \rightarrow V$ con $A \in N$ (la parte sinistra deve essere un singolo non-terminale). Riconosciute dagli **Automi a Pila (Pushdown Automata - PDA)** [LinguaggiI.pdf].
+4. **Tipo 3 (Regular):** Regole della forma $A \rightarrow aB$ oppure $A \rightarrow a$ (Grammatiche Regolari Destre). Riconosciute dagli **Automi a Stati Finiti (FSA)** [LinguaggiI.pdf].
 
 #### Tabella di Decidibilità e Complessità dei Problemi d'Esame:
-*   **Membership ($w \in L(G)?$):** Decidibile in tempo polinomiale ($P$) per i linguaggi Regolari e Context-Free. Decidibile in spazio polinomiale ($PSPACE$) per i Context-Sensitive. Non decidibile ($U$ - Undecidable) per il Tipo 0 [LinguaggiI.pdf, Slide 13, 96, 128].
-*   **Emptiness ($L(G) = \emptyset?$):** Decidibile in tempo polinomiale ($P$) per Regolari e Context-Free. Non decidibile ($U$) per i Tipi 1 e 0 [LinguaggiI.pdf, Slide 13, 96, 128].
-*   **Equivalenza ($L(G_1) \equiv L(G_2)?$):** Decidibile in $PSPACE$ per i linguaggi regolari. Non decidibile ($U$) per tutti gli altri livelli della gerarchia [LinguaggiI.pdf, Slide 13, 96, 128].
+
+- **Membership ($w \in L(G)$?):** Decidibile in tempo polinomiale ($P$) per i linguaggi Regolari e Context-Free. Decidibile in spazio polinomiale ($PSPACE$) per i Context-Sensitive. Non decidibile ($U$ — Undecidable) per il Tipo 0 [LinguaggiI.pdf].
+- **Emptiness ($L(G) = \emptyset$?):** Decidibile in tempo polinomiale ($P$) per Regolari e Context-Free. Non decidibile ($U$) per i Tipi 1 e 0 [LinguaggiI.pdf].
+- **Equivalenza/Inclusione ($L(G_1) \subseteq L(G_2)$?):** Decidibile in $PSPACE$ per i linguaggi regolari. Non decidibile ($U$) per tutti gli altri livelli della gerarchia [LinguaggiI.pdf].
+
+#### Esempi della Gerarchia (slide "Examples of Language Hierarchy")
+
+La potenza espressiva cresce strettamente: $\text{regular} \subset \text{context-free} \subset \text{context-sensitive} \subset \text{phrase-structure}$ [LinguaggiI.pdf]:
+
+- $L_1 = {$stringhe su ${0,1}$ con un numero pari di 1$}$ è **regolare** [LinguaggiI.pdf].
+- $L_2 = {a^nb^n \mid n\in\mathbb{N}}$ è **context-free ma non regolare** (dimostrato col Pumping Lemma regolare, §2.8) [LinguaggiI.pdf].
+- $L_3 = {a^nb^nc^n \mid n\in\mathbb{N}}$ è **context-sensitive ma non context-free** (dimostrato col Pumping Lemma per CF, §2.10) [LinguaggiI.pdf].
+
+#### Relazione fra Linguaggi e Automi
+
+Un linguaggio è regolare $\iff$ accettato da un automa a stati finiti; context-free $\iff$ accettato da un automa a pila (PDA); context-sensitive $\iff$ accettato da un automa a spazio lineare limitato (Linear Bounded Automaton); phrase-structure $\iff$ accettato da una Macchina di Turing [LinguaggiI.pdf].
 
 ### 2.4 Automi a Stati Finiti e Cinque Formalismi Equivalenti
-I cinque formalismi equivalenti per rappresentare e riconoscere un linguaggio regolare sono:
-1.  **Grammatiche Regolari (RG)** [LinguaggiI.pdf, Slide 14, 97].
-2.  **Automi a Stati Finiti Deterministici (DFA)** [LinguaggiI.pdf, Slide 14, 97].
-3.  **Automi a Stati Finiti Non Deterministici (NFA)** [LinguaggiI.pdf, Slide 14, 97].
-4.  **Automi a Stati Finiti Non Deterministici con $\epsilon$-transizioni ($\epsilon-NFA$)** [LinguaggiI.pdf, Slide 14, 97].
-5.  **Espressioni Regolari (RE)** [LinguaggiI.pdf, Slide 14, 97].
 
-*   **Definizione di Grammatica Regolare Destra (Right Regular Grammar):** Una grammatica in cui ogni produzione ha la forma $A \rightarrow aB$ o $A \rightarrow a$ (con $A, B \in N$ e $a \in \Sigma$). Solo per il simbolo iniziale è ammessa la produzione $S \rightarrow \epsilon$ [LinguaggiI.pdf, Slide 14, 97].
-*   **Definizione Formale di DFA:** Un Automa a Stati Finiti Deterministico $M$ è una quintupla:
-    $$M = (Q, \Sigma, \delta, q_0, F)$$
-    dove $Q$ è un insieme finito di stati, $\Sigma$ è l'alfabeto di input, $\delta: Q \times \Sigma \rightarrow Q$ è la funzione di transizione deterministica, $q_0 \in Q$ è lo stato iniziale, $F \subseteq Q$ è l'insieme degli stati finali o accettanti [LinguaggiI.pdf, Slide 14, 98]. La funzione estesa alle stringhe $\hat{\delta}: Q \times \Sigma^* \rightarrow Q$ è definita per induzione:
-    $$\hat{\delta}(q, \epsilon) = q, \quad \hat{\delta}(q, wa) = \delta(\hat{\delta}(q, w), a)$$
-    Una stringa $x$ è accettata se $\hat{\delta}(q_0, x) \in F$ [LinguaggiI.pdf, Slide 15, 100, 101, 102].
-*   **Definizione Formale di NFA:** Un Automa a Stati Finiti Non Deterministico ammette transizioni multiple per lo stesso simbolo. Si differenzia dal DFA unicamente per la funzione di transizione, che restituisce un insieme di stati:
-    $$\delta: Q \times \Sigma \rightarrow \mathcal{P}(Q)$$
-    [LinguaggiI.pdf, Slide 16, 102].
-	$$\hat{\delta}(q, \epsilon) = \{q\}, \quad \hat{\delta}(q, wa) = \bigcup_{p \in \hat{\delta}(q, w)}\delta(p, a)$$
-    Una stringa $w$ è accettata se l'insieme di stati raggiungibili interseca gli stati accettanti: $\hat{\delta}(q_0, w) \cap F \neq \emptyset$ [LinguaggiI.pdf, Slide 16].
+I cinque formalismi equivalenti per rappresentare e riconoscere un linguaggio regolare sono:
+
+1. **Grammatiche Regolari (RG)** [LinguaggiI.pdf].
+2. **Automi a Stati Finiti Deterministici (DFA)** [LinguaggiI.pdf].
+3. **Automi a Stati Finiti Non Deterministici (NFA)** [LinguaggiI.pdf].
+4. **Automi a Stati Finiti Non Deterministici con $\epsilon$-transizioni ($\epsilon$-NFA)** [LinguaggiI.pdf].
+5. **Espressioni Regolari (RE)** [LinguaggiI.pdf].
+
+- **Definizione di Grammatica Regolare Destra (Right Regular Grammar):** Una grammatica in cui ogni produzione ha la forma $A \rightarrow aB$ o $A \rightarrow a$ (con $A, B \in N$ e $a \in \Sigma$). Solo per il simbolo iniziale è ammessa la produzione $S \rightarrow \epsilon$ [LinguaggiI.pdf].
+    - _Esempio (slide):_ $G=({a,b},{S,B},S,P)$ con $P={S\to aS\mid aB,\ B\to bB\mid b}$ genera $L(G)={a^nb^m\mid n,m>0}$ [LinguaggiI.pdf].
+- **Definizione Formale di DFA:** Un Automa a Stati Finiti Deterministico $M$ è una quintupla: $$M = (Q, \Sigma, \delta, q_0, F)$$ dove $Q$ è un insieme finito di stati, $\Sigma$ è l'alfabeto di input, $\delta: Q \times \Sigma \rightarrow Q$ è la funzione di transizione deterministica, $q_0 \in Q$ è lo stato iniziale, $F \subseteq Q$ è l'insieme degli stati finali o accettanti [LinguaggiI.pdf]. La funzione estesa alle stringhe $\hat{\delta}: Q \times \Sigma^* \rightarrow Q$ è definita per induzione: $$\hat{\delta}(q, \epsilon) = q, \quad \hat{\delta}(q, wa) = \delta(\hat{\delta}(q, w), a)$$ Una stringa $x$ è accettata se $\hat{\delta}(q_0, x) \in F$, e $L(M)={x\in\Sigma^*\mid\hat\delta(q_0,x)\in F}$ [LinguaggiI.pdf].
+- **Definizione Formale di NFA:** Un Automa a Stati Finiti Non Deterministico ammette transizioni multiple per lo stesso simbolo. Si differenzia dal DFA unicamente per la funzione di transizione, che restituisce un insieme di stati: $$\delta: Q \times \Sigma \rightarrow \mathcal{P}(Q)$$ [LinguaggiI.pdf]. Una stringa $w$ è accettata se l'insieme di stati raggiungibili interseca gli stati accettanti: $\hat{\delta}(q_0, w) \cap F \neq \emptyset$, cioè $L(M)={x\in\Sigma^*\mid\hat\delta(q_0,x)\cap F\neq\emptyset}$ [LinguaggiI.pdf]. Un fatto centrale (slide): **gli NFA non espandono la classe dei linguaggi accettabili** rispetto ai DFA [LinguaggiI.pdf].
 
 ### 2.5 Algoritmi di Trasformazione Costruttiva
-*   **Da Grammatiche Regolari a NFA (Theorem 1):** Dato $RG = (\Sigma, N, S, P)$, si costruisce l'equivalente $NFA = (N \cup \{F_{new}\}, \Sigma, \delta, S, F_{NFA})$ in cui:
-    1.  Se $A \rightarrow a \in P \Rightarrow F_{new} \in \delta(A, a)$ [LinguaggiI.pdf, Slide 27, 57, 103].
-    2.  Se $A \rightarrow aB \in P \Rightarrow B \in \delta(A, a)$ [LinguaggiI.pdf, Slide 27, 57, 103].
-    3.  L'insieme degli stati accettanti è $F_{NFA} = \{F_{new}\} \cup \{S\}$ se $S \rightarrow \epsilon \in P$, altrimenti $F_{NFA} = \{F_{new}\}$ [LinguaggiI.pdf, Slide 27, 57, 103].
-*   **Da NFA a Grammatiche Regolari (Theorem 2):** Dato un automa non deterministico $NFA = (Q, \Sigma, \delta, q_0, F)$, si costruisce l'equivalente grammatica regolare destra $RG = (\Sigma, Q', q_0', P)$ seguendo questi passi costruttivi [LinguaggiI.pdf, Slide 28, 58, 103]:
-    1.  **Regole per le transizioni:** Per ciascuna transizione nell'automa, se $B \in \delta(A, a)$ (con $A, B \in Q$ e $a \in \Sigma$), si aggiunge la produzione $A \rightarrow aB$ al set $P$.
-    2.  **Regole per gli stati finali:** Se lo stato di arrivo $B$ appartiene all'insieme degli stati finali dell'automa ($B \in F$), si aggiunge anche la produzione terminale $A \rightarrow a$ al set $P$.
-    3.  **Gestione della stringa vuota (start state in F):** 
-        *   Se lo stato iniziale appartiene agli stati finali dell'automa ($q_0 \in F$, ossia la stringa vuota $\epsilon$ appartiene al linguaggio), si introduce un nuovo simbolo iniziale non terminale $q$ (ponendo $Q' = Q \cup \{q\}$) e si aggiungono le produzioni $q \rightarrow q_0 \mid \epsilon$ in $P$, impostando il nuovo stato iniziale $q_0' = q$.
-        *   Altrimenti, se $q_0 \notin F$, si pone $Q' = Q$ e il simbolo iniziale rimane invariato ($q_0' = q_0$).
-*   **Da NFA a DFA (Subset Construction):** Algoritmo di determinizzazione. Dato l'NFA $M_N = (Q_N, \Sigma, \delta_N, q_0, F_N)$, si costruisce l'equivalente DFA $M_D = (Q_D, \Sigma, \delta_D, q_D, F_D)$ ponendo:
-    1.  $Q_D = \mathcal{P}(Q_N)$ (l'insieme delle parti di $Q_N$) [LinguaggiI.pdf, Slide 17].
-    2.  Lo stato iniziale del DFA è l'insieme singoletto contenente lo stato iniziale dell'NFA: $q_D = \{q_0\}$ [LinguaggiI.pdf, Slide 17].
-    3.  Per ciascuno stato macro-stato $P \in Q_D$ e simbolo $a \in \Sigma$, la transizione è data dall'unione delle transizioni dei singoli stati:
-        $$\delta_D(P, a) = \bigcup_{p \in P} \delta_N(p, a)$$
-        [LinguaggiI.pdf, Slide 17].
-    4.  $F_D = \{P \in Q_D \mid P \cap F_N \neq \emptyset\}$ (sono accettanti tutti i macro-stati che contengono almeno uno stato accettante dell'NFA) [LinguaggiI.pdf, Slide 17].
-    5.  Si eliminano tutti i macro-stati non raggiungibili a partire dallo stato iniziale $q_D$ [LinguaggiI.pdf, Slide 106, 107].
-    6. ![[Pasted image 20260906154737.png]]
-       
-*   **$\epsilon$-NFA ed eliminazione transizioni:**
-    *   Un $\epsilon$-NFA consente transizioni spontanee sulla stringa vuota $\epsilon$ [LinguaggiI.pdf, Slide 21, 108, 109, 110].
-    * $$\delta:Q \times (\Sigma \cup \{\epsilon\}) \rightarrow \wp(Q)$$
-    *   **$\epsilon$-closure (Epsilon-chiusura):** L'$\epsilon$-closure di uno stato $q$ (o di un insieme di stati $P$) è l'insieme di tutti gli stati raggiungibili da $q$ effettuando esclusivamente zero o più transizioni spontanee su $\epsilon$ [LinguaggiI.pdf, Slide 22, 108, 109, 110, 111].
-    * ![[Pasted image 20260906155210.png|461]]
-      
-    * ![[Pasted image 20260906155310.png|463]]
-      
-    *   **Conversione da $\epsilon$-NFA a NFA:** Dato l'$\epsilon$-NFA $E = (Q, \Sigma, \delta_E, q_0, F_E)$, si costruisce l'NFA equivalente $N = (Q, \Sigma, \delta_N, q_0, F_N)$ ponendo:
-        1.  $\delta_N(q, a) = \hat{\delta_E}(q, a) = \bigcup_{p \in \hat{\delta_E}(q, \epsilon)} \epsilon\text{-closure}(\delta_E(p, a))$ [LinguaggiI.pdf, Slide 23, 111, 112, 117].
-        2.  $F_N = F_E \cup \{q_0\}$ se $\epsilon\text{-closure}(q_0) \cap F_E \neq \emptyset$, altrimenti $F_N = F_E$ [LinguaggiI.pdf, Slide 23, 117, 118, 119].
+
+- **Da Grammatiche Regolari a NFA (Theorem 1):** Dato $RG = (\Sigma, N, S, P)$, si costruisce l'equivalente $NFA = (N \cup {F_{new}}, \Sigma, \delta, S, F_{NFA})$ in cui:
+    1. Se $A \rightarrow a \in P \Rightarrow \delta(A,a) \ni F_{new}$ [LinguaggiI.pdf].
+    2. Se $A \rightarrow aB \in P \Rightarrow \delta(A,a) \ni B$ [LinguaggiI.pdf].
+    3. $F_{NFA} = {F_{new}} \cup {S}$ se $S \rightarrow \epsilon \in P$, altrimenti $F_{NFA} = {F_{new}}$ [LinguaggiI.pdf].
+- **Da NFA a Grammatiche Regolari (Theorem 2):** Dato $NFA = (Q, \Sigma, \delta, q_0, F)$, si costruisce l'equivalente $RG = (\Sigma, Q', q_0', P)$:
+    1. **Transizioni:** se $B \in \delta(A, a)$, si aggiunge $A \rightarrow aB$ a $P$.
+    2. **Stati finali:** se $B \in F$, si aggiunge anche $A \rightarrow a$ a $P$.
+    3. **Stringa vuota:** se $q_0 \in F$ (cioè $\epsilon \in L$), si introduce un nuovo simbolo iniziale $q$ ($Q'=Q\cup{q}$), si aggiungono $q\to q_0\mid\epsilon$, e $q_0'=q$; altrimenti $Q'=Q$ e $q_0'=q_0$ [LinguaggiI.pdf].
+- **Da NFA a DFA (Subset Construction):** Dato $M_N = (Q_N, \Sigma, \delta_N, q_0, F_N)$, si costruisce $M_D = (Q_D, \Sigma, \delta_D, q_D, F_D)$:
+    1. $Q_D = \mathcal{P}(Q_N)$ [LinguaggiI.pdf].
+    2. $q_D = {q_0}$ [LinguaggiI.pdf].
+    3. $\delta_D(P, a) = \bigcup_{p \in P} \delta_N(p, a)$ per ciascun $P \in Q_D$, $a\in\Sigma$ [LinguaggiI.pdf].
+    4. $F_D = {P \in Q_D \mid P \cap F_N \neq \emptyset}$ [LinguaggiI.pdf].
+    5. Si eliminano tutti i macro-stati non raggiungibili a partire da $q_D$ [LinguaggiI.pdf].
+- **$\epsilon$-NFA ed eliminazione transizioni:**
+    - Un $\epsilon$-NFA consente transizioni spontanee sulla stringa vuota $\epsilon$; formalmente $\delta:Q\times(\Sigma\cup{\epsilon})\to\mathcal P(Q)$ [LinguaggiI.pdf].
+    - **$\epsilon$-closure:** l'insieme di tutti gli stati raggiungibili da $q$ (incluso $q$ stesso) effettuando esclusivamente zero o più transizioni su $\epsilon$; si estende a insiemi di stati come $\epsilon\text{-closure}(P)=\bigcup_{p\in P}\epsilon\text{-closure}(p)$ [LinguaggiI.pdf].
+    - La funzione estesa è $\hat\delta(q,\epsilon)=\epsilon\text{-closure}(q)$, $\hat\delta(q,wa)=\bigcup_{p\in\hat\delta(q,w)}\epsilon\text{-closure}(\delta(p,a))$; si noti che in generale $\hat\delta(q,a)\ne\delta(q,a)$ [LinguaggiI.pdf].
+    - **Conversione da $\epsilon$-NFA a NFA:** Dato $M = (Q, \Sigma, \delta, q_0, F)$, si costruisce l'NFA equivalente $M' = (Q, \Sigma, \delta', q_0, F')$ ponendo:
+        1. $\delta'(q, a) = \hat{\delta}(q, a)$ [LinguaggiI.pdf].
+        2. $F' = F \cup {q_0}$ se $\epsilon\text{-closure}(q_0) \cap F \neq \emptyset$, altrimenti $F' = F$ [LinguaggiI.pdf].
 
 #### Esempio Svolto di Determinizzazione (slide)
-NFA su $\Sigma = \{0,1\}$ con $F = \{q_2\}$:
 
-| $\delta_N$ | 0 | 1 |
+NFA su $\Sigma = {0,1}$ con $F = {q_2}$:
+
+|$\delta_N$|0|1|
 |---|---|---|
-| $\to q_0$ | $\{q_0\}$ | $\{q_0, q_1\}$ |
-| $q_1$ | $\{q_1\}$ | $\{q_0, q_2\}$ |
-| $*q_2$ | $\{q_1, q_2\}$ | $\{q_0, q_1, q_2\}$ |
+|$\to q_0$|${q_0}$|${q_0, q_1}$|
+|$q_1$|${q_1}$|${q_0, q_2}$|
+|$*q_2$|${q_1, q_2}$|${q_0, q_1, q_2}$|
 
 Costruzione dei **soli sottoinsiemi raggiungibili**:
-1.  $s_0 = \{q_0\}$: su 0 → $\{q_0\} = s_0$; su 1 → $\{q_0, q_1\} = s_1$ (nuovo);
-2.  $s_1 = \{q_0, q_1\}$: su 0 → $\{q_0\} \cup \{q_1\} = s_1$; su 1 → $\{q_0,q_1\} \cup \{q_0,q_2\} = \{q_0,q_1,q_2\} = s_2$ (nuovo);
-3.  $s_2 = \{q_0, q_1, q_2\}$: su 0 e su 1 → $s_2$ (stato pozzo).
 
-| $\delta_D$ | 0 | 1 |
+1. $s_0 = {q_0}$: su 0 → ${q_0} = s_0$; su 1 → ${q_0, q_1} = s_1$ (nuovo);
+2. $s_1 = {q_0, q_1}$: su 0 → ${q_0} \cup {q_1} = s_1$; su 1 → ${q_0,q_1} \cup {q_0,q_2} = {q_0,q_1,q_2} = s_2$ (nuovo);
+3. $s_2 = {q_0, q_1, q_2}$: su 0 e su 1 → $s_2$ (stato pozzo).
+
+|$\delta_D$|0|1|
 |---|---|---|
-| $\to s_0 = \{q_0\}$ | $s_0$ | $s_1$ |
-| $s_1 = \{q_0, q_1\}$ | $s_1$ | $s_2$ |
-| $*s_2 = \{q_0, q_1, q_2\}$ | $s_2$ | $s_2$ |
+|$\to s_0 = {q_0}$|$s_0$|$s_1$|
+|$s_1 = {q_0, q_1}$|$s_1$|$s_2$|
+|$*s_2 = {q_0, q_1, q_2}$|$s_2$|$s_2$|
 
-Finali = i macro-stati contenenti $q_2$ (solo $s_2$). Linguaggio riconosciuto: $L = \{x \in \{0,1\}^* \mid x \text{ contiene almeno 2 occorrenze di } 1\}$. (La tabella completa su $\mathcal{P}(Q_N)$ mostrerebbe che la maggior parte degli stati è irraggiungibile.)
+Finali = i macro-stati contenenti $q_2$ (solo $s_2$). Linguaggio riconosciuto: $L = {x \in {0,1}^* \mid x \text{ contiene almeno 2 occorrenze di } 1}$ [LinguaggiI.pdf]. (La tabella completa su $\mathcal{P}(Q_N)$ mostrerebbe che la maggior parte degli stati è irraggiungibile — la slide sottolinea esplicitamente questo punto come motivazione per costruire solo i sottoinsiemi effettivamente raggiungibili [LinguaggiI.pdf].)
+
+#### Esempio Svolto: da $\epsilon$-NFA a NFA
+
+$\epsilon$-NFA $M=({q_0,q_1,q_2,q_3,q_4},{0,1,\epsilon},\delta,q_0,{q_1,q_2,q_3})$ (slide): da $q_0$ si diramano transizioni $\epsilon$ verso $q_1$ e $q_3$, oltre a una transizione $\epsilon$ interna; $q_1\xrightarrow{0}q_1$; $q_2\xrightarrow{1}q_2$; $q_3\xrightarrow{0}q_4$; $q_4\xrightarrow{1}q_3$ [LinguaggiI.pdf]. Applicando la conversione (§2.5): la matrice di transizione dell'NFA equivalente $M'$ risulta
+
+|$\delta'$|0|1|
+|---|---|---|
+|$q_0$|${q_1,q_4}$|${q_2}$|
+|$q_1$|${q_1}$|$\emptyset$|
+|$q_2$|$\emptyset$|${q_2}$|
+|$q_3$|${q_4}$|$\emptyset$|
+|$q_4$|$\emptyset$|${q_3}$|
+
+con $F' = F \cup {q_0} = {q_0,q_1,q_2,q_3}$, poiché $\epsilon\text{-closure}(q_0)={q_0,q_1,q_3}$ interseca $F={q_1,q_2,q_3}$ [LinguaggiI.pdf].
 
 ### 2.6 Espressioni Regolari (RE) e Ulteriori Conversioni
-*   An inductive definition of RE and their language $L(r)$ [LinguaggiI.pdf, Slide 33, 120].
-* ![[Pasted image 20260906155833.png]]
-  
-*   **Da RE a $\epsilon$-NFA (Thompson's Inductive Construction):**
-    *   ![[Pasted image 20260906160013.png]]
-      
-    * ![[Pasted image 20260906160035.png]]
-      
-*   **Da DFA a RE (State Elimination Method):** Si eliminano progressivamente gli stati intermedi dell'automa riscrivendo le etichette degli archi come espressioni regolari. Per eliminare uno stato intermedio $q_s$ — con self-loop etichettato $S$, archi in ingresso $R_{is}$ e archi in uscita $R_{sj}$ — si aggiorna l'etichetta di ogni arco diretto da $q_i$ a $q_j$ (precedentemente $R_{ij}$) con:
-    $$R_{ij} \; := \; R_{ij} + R_{is}\, S^{*}\, R_{sj}$$
-    Il processo si ripete eliminando uno stato intermedio per volta, fino a ridurre l'automa a un unico stato iniziale e un unico stato finale: l'etichetta dell'arco residuo è l'espressione regolare del linguaggio [LinguaggiI.pdf, Slide 36, 37 / 124].
+
+- **Definizione induttiva di RE (slide):** dato un alfabeto finito $\Sigma$, sono espressioni regolari: $\emptyset$ (denota l'insieme vuoto), $\epsilon$ (denota ${\epsilon}$), ogni $a\in\Sigma$ (denota ${a}$). Se $r,s$ sono RE che denotano gli insiemi $R,S$, allora $(r+s)$, $(rs)$ e $r^_$ denotano rispettivamente $R\cup S$, $RS$ e $R^_$. $L(r)$ indica il linguaggio denotato da $r$ [LinguaggiI.pdf].
     
-    ![[Pasted image 20260906160222.png]]
+- **Esempi di RE (slide):**
     
-    ![[Pasted image 20260906160257.png]]
+    - $a\mid b^_$ denota ${\epsilon,\text{"a"},\text{"b"},\text{"bb"},\dots}$ — attenzione: qui l'unione lega più debolmente della concatenazione/Kleene, quindi è $a \mid (b^_)$, non $(a\mid b)^*$ [LinguaggiI.pdf].
+    - $(a+b)^*$ denota l'insieme con $\epsilon$ e tutte le stringhe formate da "a" e "b" [LinguaggiI.pdf].
+    - $ab^*(c+\epsilon)$ denota l'insieme delle stringhe che iniziano con "a", poi zero o più "b", e infine opzionalmente una "c" [LinguaggiI.pdf].
+    - $(0+(1(01^_0)^_1))^_$ e $(0^_+1^_+(01)^_)$ sono esempi ulteriori; quest'ultimo denota il linguaggio ${0,11,110,1001,1100,1111,\dots}$ [LinguaggiI.pdf].
+- **Da RE a $\epsilon$-NFA (Thompson's Inductive Construction, slide):**
     
-    ![[Pasted image 20260906160306.png]]
+    - _Casi base:_ per $\emptyset$ (automa senza transizioni accettanti), per $\epsilon$ (due stati uniti da una transizione $\epsilon$), per $a\in\Sigma$ (due stati uniti da una transizione $a$) [LinguaggiI.pdf].
+    - _Unione $R=S+T$:_ un nuovo stato iniziale e un nuovo stato finale, connessi in parallelo agli automi di $S$ e $T$ tramite transizioni $\epsilon$ [LinguaggiI.pdf].
+    - _Concatenazione $R=ST$:_ si collega lo stato finale dell'automa di $S$ allo stato iniziale dell'automa di $T$ [LinguaggiI.pdf].
+    - _Chiusura di Kleene $R=S^_$:* si introduce un nuovo stato iniziale/finale con un ciclo di transizioni $\epsilon$ che permette di ripetere l'automa di $S$ un numero arbitrario di volte, incluso zero [LinguaggiI.pdf].
+    - **Esempio svolto — conversione di $R=(ab+a)^*$ (slide):** si procede per passi, costruendo dapprima gli automi elementari per $a$ e $b$, poi $ab$ (concatenazione), poi $ab+a$ (unione con l'automa di $a$), infine $(ab+a)^*$ applicando la costruzione della chiusura di Kleene attorno all'intero automa di $ab+a$ [LinguaggiI.pdf].
+- **Da DFA a RE (State Elimination Method, Theorem 3):** per ogni DFA $D$ esiste una RE $r$ tale che $L(D)=L(r)$. Si eliminano progressivamente gli stati intermedi (né iniziali né finali) dell'automa, riscrivendo le etichette degli archi come espressioni regolari. Data la figura con stato da eliminare $s$, stati residui $q_1,\dots,q_k$ (con archi entranti $R_{i1},\dots,R_{ik}$ verso $s$) e $p_1,\dots,p_m$ (con archi uscenti $Q_1,\dots,Q_k$ da $s$), un self-loop $S$ su $s$, e archi diretti preesistenti $R_{ij}$ da $q_i$ a $p_j$, la nuova etichetta è: $$R_{ij} ; := ; R_{ij} + Q_i, S^{*}, P_j$$ Il processo si ripete eliminando uno stato intermedio per volta [LinguaggiI.pdf].
     
-    ![[Pasted image 20260906160345.png]]
+    - **Caso speciale — un solo stato finale coincidente con l'iniziale:** se, dopo l'eliminazione di tutti gli stati intermedi, resta un solo stato che è sia iniziale sia finale, con un self-loop etichettato $R$, l'espressione regolare cercata è semplicemente $R^*$ [LinguaggiI.pdf].
+    - **Caso speciale — un solo stato finale diverso dall'iniziale:** con stato iniziale $S$ e stato finale diverso $T$, e archi rimasti etichettati $R$ (self-loop su $S$), $S$ (arco $S\to T$), $U$ (self-loop su $T$), $T$ (arco $T\to S$), l'automa si descrive come: $$(R+SU^*T)^_SU^_$$ [LinguaggiI.pdf].
+    - **Caso generale — più stati finali:** con uno stato iniziale e $n$ stati finali $s_1,\dots,s_n$, si ripetono i passi precedenti per ciascun $s_i$ rendendo temporaneamente non finale ogni altro stato finale, ottenendo $n$ espressioni regolari distinte $R_1,\dots,R_n$; l'espressione regolare finale cercata è la loro unione: $$R_1 + R_2 + \dots + R_n$$ [LinguaggiI.pdf].
+- **Esempio Svolto 1 — DFA con 3 stati (slide "DFA→RE Example"):** automa con stato iniziale 3, stato intermedio 1, stato finale 2 (etichette $0,1$ sugli archi secondo lo schema della slide). Eliminando lo stato intermedio si ottiene prima la forma con archi $0{+}10$ (self-loop sul nuovo stato iniziale) e $11$, poi $0{+}1$ sul residuo; l'espressione regolare finale sintetizzata è: $$(0+10)^_,11,(0+1)^_$$ [LinguaggiI.pdf].
+    
+- **Esempio Svolto 2 — automa che accetta un numero pari di 1 (slide "Another Example"):** automa a 3 stati (1 iniziale, 2, 3), che riconosce le stringhe con un numero pari di occorrenze di 1. Eliminando lo stato 2 si ottiene un automa a 2 stati (1 iniziale/finale, 3 finale) con archi etichettati $0$ (self-loop su 1), $0{+}10^*1$ (self-loop su 3), $10^_1$ (arco $1\to3$). Poiché ci sono **due stati finali** (1 e 3), si applica il caso generale: si ottengono $R_1=0^_$ (rendendo non finale lo stato 3) e $R_2=0^*10^_1(0+10^_1)^_$ (rendendo non finale lo stato 1); l'espressione regolare sintetizzata finale è: $$0^_ + 0^*10^*1(0+10^_1)^_$$ [LinguaggiI.pdf].
+    
+- **Esercizi di conversione DFA→RE (slide, senza soluzione nelle slide originali):**
+    
+    1. $Q={q_0,q_1,q_2}$, $q_0$ iniziale, $q_2$ finale, con $\delta(q_0,a){=}q_1$, $\delta(q_0,b){=}q_0$, $\delta(q_1,a){=}q_1$, $\delta(q_1,b){=}q_2$, $\delta(q_2,a){=}q_1$, $\delta(q_2,b){=}q_0$ [LinguaggiI.pdf].
+    2. $Q={p_0,p_1,p_2,p_3}$, $p_0$ iniziale e finale, con $\delta(p_0,0){=}p_0$, $\delta(p_0,1){=}p_1$, $\delta(p_1,0){=}p_2$, $\delta(p_1,1){=}p_0$, $\delta(p_2,0){=}p_1$, $\delta(p_2,1){=}p_2$, $\delta(p_3,0){=}p_3$, $\delta(p_3,1){=}p_3$ [LinguaggiI.pdf].
+    
+    > **Nota metodologica:** questi due esercizi sono posti nelle slide senza soluzione fornita; non risolverli qui per rispettare la loro natura di esercizio d'auto-verifica, coerentemente con l'impostazione generale della dispensa quando la fonte lascia un esercizio aperto.
+    
 
 ### 2.7 Algoritmo di Minimizzazione del DFA
-Consente di trovare il DFA minimo equivalente riducendo il numero di stati. Si basa sul concetto di stati indistinguibili [LinguaggiI.pdf, Slide 35 / 133].
 
-*   **Algoritmo Pairwise DISTINCT-Table (Algoritmo Principale delle Slide d'Esame):**
-    Questo è l'algoritmo primario presentato in dettaglio nelle slide del corso d'esame. Utilizza una tabella triangolare inferiore per calcolare le coppie di stati distinguibili e poi fondere quelle indistinguibili [LinguaggiI.pdf, Slide 35 / 133].
-    1.  **Inizializzazione della Tabella triangolare:** Si crea una tabella triangolare inferiore chiamata `DISTINCT` per tutte le coppie di stati $(p, q)$ con $p \neq q$, inizialmente vuota (blank).
-    2.  **Passo Base (Stati finali vs non finali):** Per ogni coppia di stati $(p, q)$, se uno è uno stato finale (accettante) e l'altro non lo è, allora la coppia è immediatamente distinguibile. Si scrive $\epsilon$ nella corrispondente cella: $DISTINCT[p, q] = \epsilon$ [LinguaggiI.pdf, Slide 35 / 133].
-    3.  **Passo Induttivo (Loop Principale):** Si esegue un loop fino a quando un'intera iterazione non produce alcun cambiamento sulla tabella. Per ogni coppia di stati $(p, q)$ la cui cella è ancora vuota, e per ciascun simbolo dell'alfabeto $a \in \Sigma$:
-        *   Si calcolano i target di transizione $\delta(p, a)$ e $\delta(q, a)$.
-        *   Se la cella corrispondente ai target, $DISTINCT[ \delta(p, a), \delta(q, a) ]$, **non è vuota** (cioè i target sono già provati essere distinguibili), allora anche $(p, q)$ sono distinguibili. Si annota il simbolo che li distingue scrivendo $a$ nella cella: $DISTINCT[p, q] = a$ [LinguaggiI.pdf, Slide 35 / 133].
-    4.  **Fusione degli Stati equivalenti:** Al termine del ciclo, tutte le celle che sono rimaste vuote (blank) indicano che i relativi stati sono indistinguibili (equivalenti). Questi stati vengono uniti (fusi) tra loro per formare i nuovi stati del DFA minimo [LinguaggiI.pdf, Slide 35 / 133].
-    *   **Complessità temporale:** L'algoritmo pairwise DISTINCT-table ha complessità $O(k \cdot n^2)$, dove $n = |Q|$ è il numero di stati e $k = |\Sigma|$ è la cardinalità dell'alfabeto.
-    * ![[Pasted image 20260906160839.png]]
+Consente di trovare il DFA minimo equivalente riducendo il numero di stati. Si basa sul concetto di stati indistinguibili [LinguaggiI.pdf].
 
-*   **Algoritmo di Hopcroft (Alternativa O(n log n)):**
-    Le slide menzionano soltanto che esiste un algoritmo più complesso basato sulla partizione progressiva (Hopcroft's partition refinement) che raggiunge una complessità ottima di $O(k \cdot n \log n)$, ma l'algoritmo di riferimento per gli esercizi d'esame è quello pairwise della tabella DISTINCT descritto sopra [LinguaggiI.pdf, Slide 35 / 135].
+- **Algoritmo Pairwise DISTINCT-Table:**
+    
+    1. **Inizializzazione:** si crea una tabella triangolare inferiore `DISTINCT` per tutte le coppie di stati $(p,q)$ con $p\ne q$, inizialmente vuota.
+    2. **Passo base:** se $p$ è finale e $q$ non lo è (o viceversa), $DISTINCT[p,q]=\epsilon$ [LinguaggiI.pdf].
+    3. **Passo induttivo:** si itera finché non si verifica più alcun cambiamento; per ogni coppia $(p,q)$ con cella ancora vuota e ogni $a\in\Sigma$: se $DISTINCT[\delta(p,a),\delta(q,a)]$ non è vuota, allora $DISTINCT[p,q]=a$ [LinguaggiI.pdf].
+    4. **Fusione:** le coppie rimaste con cella vuota sono indistinguibili (equivalenti) e vengono fuse in un unico stato del DFA minimo [LinguaggiI.pdf].
+    
+    - **Complessità:** $O(k\cdot n^2)$, con $n=|Q|$, $k=|\Sigma|$ [LinguaggiI.pdf].
+- **Algoritmo di Hopcroft:** esiste un algoritmo più complesso, basato sulla partizione progressiva, con complessità ottima $O(k\cdot n\log n)$; l'algoritmo di riferimento per gli esercizi d'esame resta però quello pairwise sopra descritto [LinguaggiI.pdf].
 
-#### Esempio Svolto di Minimizzazione (slide: DFA per $(a|b)^+$)
-DFA con $s_0$ iniziale (non finale) e $s_1, s_2$ finali.
-1.  **Passo base:** una cella per volta, gli stati finali contro i non finali ⇒ $DISTINCT[s_0, s_1] = \epsilon$ e $DISTINCT[s_0, s_2] = \epsilon$;
-2.  **Loop principale:** nessuna coppia a cella vuota ha transizioni verso celle già marcate ⇒ nessun cambiamento in un'intera iterazione;
-3.  **Fusione:** $DISTINCT[s_1, s_2]$ resta vuota ⇒ $s_1 \equiv s_2$: il DFA minimo ha **2 stati**.
+#### Esempio Svolto "Very Simple" (slide: DFA per $(a|b)^+$)
+
+DFA con $s_0$ iniziale (non finale) e $s_1,s_2$ finali, entrambi raggiungibili da $s_0$ su $a$ o $b$:
+
+1. **Passo base:** $DISTINCT[s_0,s_1]=\epsilon$, $DISTINCT[s_0,s_2]=\epsilon$ (finale vs non finale).
+2. **Loop principale:** nessuna coppia a cella vuota ha transizioni verso celle già marcate ⇒ nessun cambiamento.
+3. **Fusione:** $DISTINCT[s_1,s_2]$ resta vuota ⇒ $s_1\equiv s_2$: si fondono in un unico stato (con self-loop su $a,b$); il DFA minimo ha **2 stati** [LinguaggiI.pdf].
+
+#### "More Complex Example" e Sfida d'Esame (slide)
+
+Oltre all'esempio "very simple" sopra, la slide presenta un secondo esempio più articolato ("More Complex Example"), risolto seguendo lo stesso schema: (1) si marcano con $\epsilon$ tutte le coppie stato-finale/stato-non-finale; (2) alla prima iterazione del loop principale si propagano le prime distinzioni indotte dalle transizioni verso coppie già marcate; (3) a una seconda iterazione si propagano ulteriori distinzioni derivate; (4) una terza iterazione non produce più cambiamenti (le celle rimaste vuote sono le coppie equivalenti); si combinano infine gli stati equivalenti per ottenere il DFA minimizzato [LinguaggiI.pdf]. Lo schema generale — passo base, iterazione fino al punto fisso, poi fusione — è identico indipendentemente dalla dimensione dell'automa.
+
+**Esercizi di minimizzazione (slide, senza soluzione nelle slide originali):**
+
+1. Automa a 8 stati ${A,\dots,H}$ con transizioni su ${0,1}$: $A{\to}(B,A)$, $B{\to}(A,C)$, $C{\to}(D,B)$, $D{\to}(D,A)$, $E{\to}(D,F)$, $F{\to}(G,E)$, $G{\to}(F,G)$, $H{\to}(G,H)$ [LinguaggiI.pdf].
+    
+2. Automa a 9 stati ${A,\dots,I}$ con transizioni su ${0,1}$: $A{\to}(B,E)$, $B{\to}(C,F)$, $C{\to}(D,H)$, $D{\to}(E,H)$, $E{\to}(F,I)$, $F{\to}(G,B)$, $G{\to}(H,B)$, $H{\to}(I,C)$, $I{\to}(A,E)$ [LinguaggiI.pdf].
+    
+    > **Nota metodologica:** anche questi esercizi restano aperti nelle slide originali; sono qui riportati per completezza come materiale di autoverifica, senza soluzione risolta.
+    
 
 ### 2.8 Proprietà di Chiusura e Limiti dei Linguaggi Regolari
-*   **Proprietà di Chiusura:** I linguaggi regolari sono chiusi rispetto alle operazioni di: Unione, Concatenazione, Kleene Closure, Complementazione, Intersezione e Differenza [LinguaggiI.pdf, Slide 40, 124].
-*   **Pumping Lemma per i Linguaggi Regolari:** Se $L$ è un linguaggio regolare infinito, esiste un intero $k$ (costante di pompaggio) tale che ogni stringa $z \in L$ con $|z| \ge k$ può essere decomposta in tre sottostringhe $z = uvw$ che soddisfano le seguenti condizioni [LinguaggiI.pdf, Slide 40, 122]:
-    1.  $|uv| \le k$
-    2.  $|v| > 0$
-    3.  $\forall i \ge 0: u v^i w \in L$
-*   **Uso in forma negativa per dimostrare la non-regolarità:** Per dimostrare che $L = \{a^n b^n \mid n \in \mathbb{N}\}$ non è regolare, prendiamo la stringa $z = a^k b^k \in L$ [LinguaggiI.pdf, Slide 41, 123]. Qualsiasi scomposizione $z = uvw$ con $|uv| \le k$ forza la stringa $v$ a essere composta esclusivamente da simboli `a` (poiché si trova interamente entro i primi $k$ caratteri di $z$) [LinguaggiI.pdf, Slide 41, 123]. Di conseguenza, pompando $v$ con $i=2$, la stringa risultante $u v^2 w = a^{k+|v|} b^k$ conterrà più simboli `a` che `b`, non appartenendo al linguaggio $L$, il che nega la tesi del lemma e dimostra che $L$ non è regolare [LinguaggiI.pdf, Slide 41, 123].
 
+- **Proprietà di Chiusura:** i linguaggi regolari sono chiusi rispetto a Unione, Concatenazione, Kleene Closure, Complementazione, Intersezione e Differenza [LinguaggiI.pdf].
+    
+- **Pumping Lemma per i Linguaggi Regolari:** se $L$ è un linguaggio regolare infinito, esiste un intero $k$ (costante di pompaggio) tale che ogni stringa $z\in L$ con $|z|\ge k$ può essere decomposta in tre sottostringhe $z=uvw$ che soddisfano [LinguaggiI.pdf]:
+    
+    1. $|uv|\le k$
+    2. $|v|>0$
+    3. $\forall i\ge0: uv^iw\in L$
+- **Uso in forma negativa:** per dimostrare che $L={a^nb^n\mid n\in\mathbb N}$ non è regolare, si prende $z=a^kb^k\in L$ [LinguaggiI.pdf]. Ogni scomposizione $z=uvw$ con $|uv|\le k$ forza $v$ a essere composta esclusivamente da simboli `a` [LinguaggiI.pdf]. Pompando con $i=2$, $uv^2w=a^{k+|v|}b^k$ contiene più `a` che `b`, non appartiene a $L$: contraddizione, quindi $L$ non è regolare [LinguaggiI.pdf].
+    
+- **Esercizi (slide, senza soluzione fornita nelle slide originali):** dimostrare che non sono regolari:
+    
+    1. $L_1={0^n1^m\mid n\le m}$
+    2. $L_2={0^n\mid n\text{ è una potenza di }2}$
+    3. $L_3={w^{2n}\mid w\in{0,1}^*,\ n=|w|}$
+    
+    [LinguaggiI.pdf]. (Notazione della slide: $w^{2n}$ indica la stringa $w$ ripetuta, con esponente pari alla lunghezza di $w$ moltiplicata per 2 — coerentemente con lo stile "esponente = ripetizione" già usato per $a^n$, $b^n$ altrove nella fonte.)
+    
 
 ### 2.9 Automi a Pila (Pushdown Automata)
-- ![[Pasted image 20260906161441.png]]
-  
-*   **Struttura:** controllo a stati finiti + nastro di input + **pila**; la testa legge la cima ed esegue *push*, *pop*, *empty*.
-*   **Definizione (slide):** $M = (Q, \Sigma, R, \delta, q_0, Z_0, F)$ con $R$ alfabeto dei simboli di pila, $Z_0 \in R$ simbolo iniziale, e
-    $$\delta : Q \times (\Sigma \cup \{\epsilon\}) \times R \to \mathcal{P}(Q \times R^*)$$
-*   **Descrizioni istantanee:** triple $(q, w, \gamma)$ — stato corrente, input residuo, contenuto della pila; un passo:
-    $$(q_0, aw, Z\eta) \vdash (q_1, w, \gamma\eta) \quad \text{se} \quad (q_1, \gamma) \in \delta(q_0, a, Z)$$
-*   **Linguaggio accettato:** per **stati finali** $F$, oppure per **pila vuota** (con $F = \emptyset$).
-*   **Esempio svolto (slide):** $L = \{x\,c\,x^R \mid x \in \{a,b\}^*\}$, riconosciuto **per pila vuota** da
-    $M = (\{q_0, q_1\}, \{a,b,c\}, \{Z,A,B\}, \delta, q_0, Z, \emptyset)$ con (celle non specificate riempibili in modo da forzare il rigetto):
 
-| $\delta$ | $a$ | $b$ | $c$ |
-|---|---|---|---|
-| $q_0, Z$ | $(q_0, ZA)$ | $(q_0, ZB)$ | $(q_1, \epsilon)$ |
-| $q_1, Z$ | $(q_1, Z)$ | $(q_1, Z)$ | — |
-| $q_1, A$ | $(q_1, \epsilon)$ | $(q_1, Z)$ | $(q_1, Z)$ |
-| $q_1, B$ | $(q_1, Z)$ | $(q_1, \epsilon)$ | $(q_1, Z)$ |
-
-**Traccia di `abcba`** (pila scritta dal fondo alla cima):
-```
-(q0, abcba, Z)  ⊢  (q0, bcba, ZA)   [δ(q0,a,Z)=(q0,ZA): push A]
-				⊢  (q0, cba,  ZBA)  [δ(q0,b,Z)=(q0,ZB): push B]
-				⊢  (q1, ba,   BA)   [δ(q0,c,Z)=(q1,ε):  pop Z, cambio stato]
-				⊢  (q1, a,    A)    [δ(q1,b,B)=(q1,ε):  pop B]
-				⊢  (q1, ε,    ε)    [δ(q1,a,A)=(q1,ε):  pop A]
-```
-
-Input consumato **e** pila vuota ⇒ accettato. La sintassi dei linguaggi di programmazione è progettata con marcatori (`if`, `while`, `then`, …) proprio perché il parsing sia realizzabile con un PDA **deterministico**.
+- **Struttura:** controllo a stati finiti + nastro di input + **pila**; la testa legge la cima ed esegue _push_, _pop_, _empty_ [LinguaggiI.pdf].
+    
+- **Definizione:** $M = (Q, \Sigma, R, \delta, q_0, Z_0, F)$ con $R$ alfabeto dei simboli di pila, $Z_0 \in R$ simbolo iniziale sulla pila, e $$\delta : Q \times (\Sigma \cup {\epsilon}) \times R \to \mathcal{P}(Q \times R^*)$$ [LinguaggiI.pdf].
+    
+- **Descrizioni istantanee:** triple $(q, w, \gamma)$ — stato corrente, input residuo, contenuto della pila; un passo: $$(q_0, aw, Z\eta) \vdash (q_1, w, \gamma\eta) \quad \text{se} \quad (q_1, \gamma) \in \delta(q_0, a, Z)$$ [LinguaggiI.pdf].
+    
+- **Linguaggio accettato:** per **stati finali** $F$, oppure per **pila vuota** (con $F = \emptyset$) [LinguaggiI.pdf].
+    
+- **Esempio Svolto 1 — $L={x,c,x^R \mid x \in {a,b}^*}$ (slide):** riconosciuto **per pila vuota** da $M = ({q_0, q_1}, {a,b,c}, {Z,A,B}, \delta, q_0, Z, \emptyset)$:
+    
+    |$\delta$|$a$|$b$|$c$|
+    |---|---|---|---|
+    |$q_0, Z$|$(q_0, ZA)$|$(q_0, ZB)$|$(q_1, \epsilon)$|
+    |$q_1, Z$|$(q_1, Z)$|$(q_1, Z)$|—|
+    |$q_1, A$|$(q_1, \epsilon)$|$(q_1, Z)$|$(q_1, Z)$|
+    |$q_1, B$|$(q_1, Z)$|$(q_1, \epsilon)$|$(q_1, Z)$|
+    
+    (celle non specificate riempibili in modo da forzare il rigetto) [LinguaggiI.pdf].
+    
+    **Traccia di `abcba`:**
+    
+    ```
+    (q0, abcba, Z)  ⊢  (q0, bcba, ZA)   [δ(q0,a,Z)=(q0,ZA): push A]
+                    ⊢  (q0, cba,  ZBA)  [δ(q0,b,Z)=(q0,ZB): push B]
+                    ⊢  (q1, ba,   BA)   [δ(q0,c,Z)=(q1,ε):  pop Z, cambio stato]
+                    ⊢  (q1, a,    A)    [δ(q1,b,B)=(q1,ε):  pop B]
+                    ⊢  (q1, ε,    ε)    [δ(q1,a,A)=(q1,ε):  pop A]
+    ```
+    
+    Input consumato **e** pila vuota ⇒ accettato [LinguaggiI.pdf]. La sintassi dei linguaggi di programmazione è progettata con marcatori (`if`, `while`, `then`, …) proprio perché il parsing sia realizzabile con un PDA **deterministico** [LinguaggiI.pdf].
+    
+- **Esempio Svolto 2 — palindromi $L={ww^R\mid w\in{a,b}^*}$ (slide "Example", distinto dal precedente):** automa $M$ con $Q={q_0,q_1}$, $\Sigma={a,b}$, $R={Z,A,B}$, riconosciuto anch'esso **per pila vuota**, ma con una relazione di transizione diversa dall'esempio precedente — qui il push avviene su $q_0$ per ogni simbolo letto (senza bisogno del marcatore `c` di separazione), e il "cambio fase" da accumulo a confronto è **non deterministico** (può avvenire su un qualunque simbolo di input, anziché su un marcatore esplicito):
+    
+    |$q_0$|$\epsilon$|$a$|$b$|
+    |---|---|---|---|
+    |$Z$|—|$(q_0,AZ)$|$(q_0,BZ)$|
+    |$A$|$(q_1,\epsilon)$|$(q_0,AA)$|$(q_0,BA)$|
+    |$B$|$(q_1,\epsilon)$|$(q_0,AB)$|$(q_0,BB)$|
+    
+    |$q_1$|$a$|$b$|
+    |---|---|---|
+    |$Z$|—|—|
+    |$A$|$(q_1,\epsilon)$|—|
+    |$B$|—|$(q_1,\epsilon)$|
+    
+    [LinguaggiI.pdf]. **Esercizio associato (slide, senza soluzione fornita):** scrivere le derivazioni necessarie per riconoscere la stringa `abbba` [LinguaggiI.pdf].
+    
+    - **Nota di correttezza (slide, enunciato senza dimostrazione):** vale il fatto generale — se $L=L(M)$ con $M$ PDA per pila vuota, allora esiste un PDA $M'$ equivalente per stati finali (e viceversa) [LinguaggiI.pdf].
+- **Esercizi di design PDA (slide, senza soluzione fornita nelle slide originali):** progettare un PDA che riconosca:
+    
+    1. ${w\in{0,1}^* \mid$ ogni prefisso di $w$ ha più 0 che 1$}$
+    2. ${w\in{0,1}^* \mid w$ ha un numero uguale di 0 e di 1$}$
+    
+    [LinguaggiI.pdf].
+    
 
 ### 2.10 Pumping Lemma per i Linguaggi Context-Free
-*   **Enunciato (slide):** se $L$ è context-free, esiste $k \in \mathbb{N}$ tale che per ogni $z \in L$ con $|z| \ge k$ esiste una scomposizione $z = u\,v\,w\,x\,y$ con:
-    1.  $|vwx| \le k$
-    2.  $|vx| > 0$
-    3.  $\forall i \ge 0: \; u\,v^i w\,x^i y \in L$
-*   **Uso in forma negativa:** se per ogni $k$ esiste $z \in L$, $|z| \ge k$, tale che **nessuna** scomposizione soddisfa le tre condizioni, allora $L$ non è context-free.
-*   **Esempio svolto (slide):** $L = \{a^n b^n c^n \mid n \in \mathbb{N}\}$ non è CF. Sia $z = a^k b^k c^k$. Poiché $|vwx| \le k$, $v$ e $x$ insieme coprono al più **due blocchi adiacenti** di lettere; pompando con $i \neq 0$ si alterano al più due dei tre esponenti (es. $a^k b^{k+i} c^{k+j}$ con $i + j \neq 0$), e la stringa ottenuta non appartiene a $L$. Contraddizione ⇒ $L$ non è CF. ∎
-*   **Esercizi (slide):** dire se sono CF: $\{0^n 1^{kn}\}$, $\{a^i b^j c^k \mid i = j \text{ o } j = k\}$, $\{a^i b^j c^k \mid k \neq i+j\}$, $\{w \mid w \neq vv\}$.
+
+- **Enunciato:** se $L$ è context-free, esiste $k \in \mathbb{N}$ tale che per ogni $z \in L$ con $|z| \ge k$ esiste una scomposizione $z = u,v,w,x,y$ con:
+    
+    1. $|vwx| \le k$
+    2. $|vx| > 0$
+    3. $\forall i \ge 0: ; u,v^i w,x^i y \in L$
+    
+    [LinguaggiI.pdf].
+    
+- **Uso in forma negativa:** se per ogni $k$ esiste $z \in L$, $|z| \ge k$, tale che **nessuna** scomposizione soddisfa le tre condizioni, allora $L$ non è context-free [LinguaggiI.pdf].
+    
+- **Esempio svolto:** $L = {a^n b^n c^n \mid n \in \mathbb{N}}$ non è CF. Sia $z = a^k b^k c^k$. Poiché $|vwx| \le k$, $v$ e $x$ insieme coprono al più **due blocchi adiacenti** di lettere; pompando con $i \neq 0$ si alterano al più due dei tre esponenti (es. $a^k b^{k+i} c^{k+j}$ con $i + j \neq 0$), e la stringa ottenuta non appartiene a $L$. Contraddizione ⇒ $L$ non è CF [LinguaggiI.pdf]. ∎
+    
+- **Esercizi (slide, senza soluzione fornita):** dire se sono context-free:
+    
+    1. ${0^n1^{3n}\mid n\ge0}$ _(nella fonte originale l'esponente appare come "0n13n"; si interpreta come $0^n1^{3n}$, coerentemente con la notazione "esponente=ripetizione" usata altrove — si segnala l'ambiguità della trascrizione OCR)_
+    2. ${0^n1^{kn}\mid n\ge0 \text{ e } k\ge0}$
+    3. ${a^ib^jc^k\mid i=j \text{ o } j=k}$
+    4. ${a^ib^jc^k\mid k\ne i+j}$
+    5. ${w\in{a,b}^*\mid w\ne vv}$
+    
+    [LinguaggiI.pdf].
+    
+- **Discussione dell'ultimo esercizio (slide, con soluzione schematica fornita nella fonte):** per ${w\mid w\ne vv}$ — se $|w|$ è dispari, allora banalmente $w\in L$ (non può essere $vv$ per nessun $v$); altrimenti (se $|w|$ è pari) occorre dimostrare l'esistenza di una grammatica generatrice. La slide fornisce lo schema: $$L = {a^Nb^M \mid N\ne M} \cup {\dots}$$ con produzioni suggerite $A\to a\mid aAa\mid aAb\mid bAa\mid bAb$, $B\to b\mid aBa\mid aBb\mid bBa\mid bBb$, $S\to A\mid B\mid BA\mid AB\mid\epsilon$ [LinguaggiI.pdf]. _(Lo schema è riportato così come appare nella fonte; la sua derivazione completa non è sviluppata nella slide originale.)_
+    
+- **Proprietà dei linguaggi CF:** chiusi rispetto a unione, concatenazione e Kleene closure. Il complemento di un linguaggio CF **non è sempre** CF. I linguaggi CF **non sono chiusi** rispetto all'intersezione. Decidibilità: emptiness, non-emptiness, finiteness, infiniteness, membership sono tutte decidibili per i linguaggi CF [LinguaggiI.pdf].
+    
+
+### 2.11 Grammatiche Context-Free: Definizione Formale, Parse Tree ed Esempio Guidato
+
+_(Sezione integrata: presente nel testo sorgente ma assente dalla stesura precedente del capitolo — il contenuto pratico del parsing CF è sviluppato al Cap. 4, ma la definizione formale e l'esempio del parse tree appartengono qui, alla trattazione dei fondamenti dei linguaggi.)_
+
+- **Definizione di Grammatica Context-Free:** $(\Sigma, N, S, P)$ è una grammatica dove ogni produzione ha la forma $U\to V$ con $U\in N$ (un singolo non-terminale) e $V\in(\Sigma\cup N)^+$; solo per il simbolo iniziale $S$ è ammessa $S\to\epsilon$ [LinguaggiI.pdf].
+- **Esempio guida — espressioni booleane (slide):** $G=({E},{or,and,not,(,),0,1},P,E)$ con produzioni:
+    
+    ```
+    E → 0E → 1E → (E or E)E → (E and E)E → (not E)
+    ```
+    
+    $G$ genera le possibili espressioni booleane [LinguaggiI.pdf].
+- **Definizione di Parse Tree:** data una grammatica $(\Sigma,N,S,P)$, il parse tree è la rappresentazione a grafo di una derivazione, definita come segue [LinguaggiI.pdf]:
+    - ogni vertice ha un'etichetta in $\Sigma\cup N\cup{\epsilon}$;
+    - l'etichetta della radice e di ogni vertice interno appartiene a $N$;
+    - se un vertice etichettato $A$ ha $k$ figli etichettati $X_1,\dots,X_k$, allora la produzione $A\to X_1\dots X_k$ appartiene a $P$;
+    - se un vertice è etichettato $\epsilon$, allora è una foglia ed è figlio unico.
+- **Esempio guidato — derivazione di `((0 or 1) and (not 0))` (slide):** applicando la grammatica sopra, la stringa `((0 or 1) and (not 0))` è generata dalla derivazione $E\Rightarrow(E\ and\ E)\Rightarrow((E\ or\ E)\ and\ E)\Rightarrow((0\ or\ E)\ and\ E)\Rightarrow((0\ or\ 1)\ and\ E)\Rightarrow((0\ or\ 1)\ and\ (not\ E))\Rightarrow((0\ or\ 1)\ and\ (not\ 0))$, il cui parse tree ha radice $E$ etichettata dalla produzione $E\to(E\ and\ E)$, il cui figlio sinistro (etichettato $E$) espande $E\to(E\ or\ E)$ generando le foglie `0` e `1`, e il cui figlio destro (etichettato $E$) espande $E\to(not\ E)$ generando la foglia `0` [LinguaggiI.pdf].
+- **Grammatiche equivalenti:** due grammatiche $G_1$ e $G_2$ sono equivalenti se $L(G_1)=L(G_2)$ [LinguaggiI.pdf].
+- **Esempio — $\Sigma^*$ è sempre un linguaggio CF (slide):** con $\Sigma={s_1,\dots,s_n}$, la grammatica $S\to\epsilon\mid s_1S\mid\dots\mid s_nS$ genera $\Sigma^*$ [LinguaggiI.pdf].
+- **Esempio — ${0^n1^n\mid n\ge0}$ (slide):** la grammatica $S\to ASB\mid\epsilon$, $A\to0$, $B\to1$ genera questo linguaggio (dimostrabile per induzione su $n$) [LinguaggiI.pdf].
+- **Esempio — palindromi su ${0,1}$ (slide):** la grammatica $S\to\epsilon\mid0\mid1\mid0S0\mid1S1$ genera esattamente le stringhe palindrome su ${0,1}$ (es. `0110`, `010` sono palindrome; `0101`, `01001` non lo sono). La dimostrazione di correttezza procede in due direzioni: (1) se $x$ è palindroma allora $S\Rightarrow^*x$, per induzione sulla lunghezza $|x|$; (2) se esiste una derivazione $S\Rightarrow^*x$ allora $x$ è palindroma, anch'essa per induzione sulla lunghezza della derivazione [LinguaggiI.pdf].
+
+### 2.12 Grammatiche Context-Sensitive: Esempio Completo
+
+_(Sezione integrata: assente dalla stesura precedente, che si limitava a definire il Tipo 1 senza esempio.)_
+
+- **Definizione (Type 1, slide):** una Grammatica Context-Sensitive ha produzioni della forma $U\to V$ con il solo vincolo $|U|\le|V|$ (la parte destra non può essere più corta della sinistra) [LinguaggiI.pdf].
+- **Perché servono (slide):** esistono insiemi ricorsivi che non sono generabili da alcuna grammatica context-free. In particolare, ${a^ib^ic^i\mid i\ge1}$ non è context-free (dimostrato al §2.10 tramite il Pumping Lemma per CF); si dimostra ora che tale linguaggio **è** invece generabile da una grammatica di Tipo 1 [LinguaggiI.pdf].
+- **Esempio svolto — grammatica di Tipo 1 per ${a^ib^ic^i\mid i\ge1}$ (slide):**
+    
+    ```
+    S  → aSBC | aBCCB → BCbB → bbbC → bccC → ccaB → ab
+    ```
+    
+    Questa grammatica genera esattamente il linguaggio ${a^ib^ic^i\mid i\ge1}$ [LinguaggiI.pdf]. Intuizione sul funzionamento: le prime produzioni ($S\to aSBC\mid aBC$) generano un numero uguale di simboli ausiliari $a$, $B$, $C$ in blocchi non ancora ordinati; la produzione $CB\to BC$ permette di "riordinare" i simboli ausiliari $B$ e $C$ scambiandoli di posizione finché non si raggiunge la forma $a^i B^i C^i$; le produzioni rimanenti (`bB→bb`, `bC→bc`, `cC→cc`, `aB→ab`) convertono progressivamente, da sinistra a destra, ciascun simbolo ausiliario $B$ in `b` e $C$ in `c`, preservando a ogni passo la lunghezza non decrescente richiesta dal vincolo $|U|\le|V|$ del Tipo 1 [LinguaggiI.pdf].
+
+### 2.13 Chomsky's Hierarchy — Riepilogo Grafico
+
+La gerarchia di Chomsky si rappresenta come quattro insiemi annidati (dal più ristretto al più ampio): Regular (Type 3) $\subset$ Context-Free (Type 2) $\subset$ Context-Sensitive (Type 1) $\subset$ Unrestricted/Phrase-Structure (Type 0) [LinguaggiI.pdf]. Ogni livello aggiunge potere espressivo al costo di una complessità computazionale via via crescente per i problemi di membership, emptiness ed equivalenza (tabella riassuntiva in §2.3) [LinguaggiI.pdf].<a id="cap3"></a>
+<a id="cap3"></a>
 
 <a id="cap3"></a>
 ## CAPITOLO 3: Analisi Lessicale (Lexing)
-**Source:** *Lexer.pdf*
 
-### 3.1 Il Ruolo del Lexer nella Pipeline del Front-End
-*   **Perché separare lo Scanner (analisi lessicale) dal Parser (analisi sintattica)?**
-    1.  **Semplicità del design:** Consente di gestire i dettagli di basso livello della lettura dei caratteri (spazi bianchi, commenti, formattazione) isolandoli dal parser [Lexer.pdf, Slide 4, 84].
-    2.  **Efficienza prestazionale:** Lo scanner è l'unica fase del compilatore che esamina ogni singolo carattere del sorgente [Lexer.pdf, Slide 85]. Un design ottimizzato e snello dello scanner permette di rimuovere preventivamente l'overhead di basso livello, consentendo al parser di operare su flussi di token molto più compatti, migliorando la velocità complessiva di compilazione [Lexer.pdf, Slide 4, 84].
-    3.  **Portabilità:** Rende il compilatore più modulare e semplice da manutenere [Lexer.pdf, Slide 4, 84].
-*   **Definizioni formali:**
-    *   **Token:** Una coppia ordinata $\langle\text{part of speech, lexeme}\rangle$ [Lexer.pdf, Slide 6, 84]. Rappresenta l'unità sintattica elementare che viene passata al parser (es. `NUMBER`, `IDENTIFIER`, `IF`) [Lexer.pdf, Slide 6, 84].
-    *   **Lessema (Lexeme):** La sequenza concreta di caratteri letta dal file sorgente che costituisce l'istanza del token (es. `3.14`, `x`, `while`) [Lexer.pdf, Slide 6, 84].
-    *   **Pattern:** La regola di corrispondenza, tipicamente espressa sotto forma di espressione regolare (RE), che descrive l'insieme dei possibili lessemi associabili a quel token [Lexer.pdf, Slide 6, 84].
-    *   **Errore Lessicale (Lexical Error):** Qualsiasi sequenza di caratteri che non corrisponde al pattern di alcun token legale definito nella grammatica lessicale del linguaggio (es. un identificatore che inizia con un numero o caratteri non consentiti) [Lexer.pdf, Slide 6, 84].
+**Source:** _Lexer.pdf_ (33 slide)
 
-### 3.2 Pipeline di Costruzione di uno Scanner Automatizzato
-La generazione automatica di uno scanner a partire da specifiche formali (come Lex o Flex) segue rigorosamente 5 fasi sequenziali:
-1.  **Specificare la micro-sintassi:** Si definiscono le espressioni regolari (RE) per ogni classe di token del linguaggio [Lexer.pdf, Slide 12, 85].
-2.  **Costruire l'$\epsilon$-NFA:** Si applica la costruzione induttiva di Thompson per ottenere un automa a stati finiti non deterministico con transizioni spontanee per ciascuna RE [Lexer.pdf, Slide 12, 85].
-3.  **Determinizzare l'automa (NFA to DFA):** Si applica l'algoritmo di subset construction per ottenere un DFA equivalente esente da scelte non deterministiche [Lexer.pdf, Slide 12, 85].
-4.  **Minimizzare il DFA:** Si applica l'algoritmo di Hopcroft per unire gli stati indistinguibili e ridurre al minimo le dimensioni della tabella di transizione [Lexer.pdf, Slide 12, 85].
-5.  **Generare il Driver Code:** Si converte la matrice di transizione risultante in un recognizer table-driven efficiente, in genere basato su cicli di lettura caratteri e lookup veloci [Lexer.pdf, Slide 12, 85].
+> **Nota di revisione:** questo capitolo è stato ricontrollato per intero contro il testo OCR completo delle 33 slide di `Lexer.pdf`. La versione precedente copriva correttamente il nucleo (definizioni, pipeline a 5 fasi, ambiguità lessicali, i due casi di studio sui registri ILOC, rollback ed eccezioni al modello DFA), ma mancavano: la tabella di confronto Scanning/Parsing, l'esempio della grammatica regolare per identificatori riscritta come RE, il catalogo di espressioni regolari per token comuni (identificatori, interi, decimali, reali, complessi), l'elenco dei generatori di scanner reali, e — soprattutto — l'intera distinzione tra le **tre strategie di implementazione** dello scanner (table-driven, direct-coded, hand-coded) con la tecnica di _character classification_. È stato inoltre integrato l'esercizio d'esame finale (lexer a mano per espressioni di assegnamento), risolto con una traccia completa.
 
-### 3.3 Risoluzione delle Ambiguità Lessicali
+### 3.1 Il Ruolo dello Scanner nella Pipeline del Front-End
+
+- **Compito del Front-End (slide "The Front End"):** il front-end si occupa del linguaggio di input: esegue un test di appartenenza (il codice appartiene al linguaggio sorgente?); verifica se il programma è ben formato semanticamente; costruisce una versione IR del codice per il resto del compilatore. Il front-end si occupa quindi sia della forma (sintassi) sia del significato (semantica) [Lexer.pdf, Slide 2].
+    
+- **Perché separare Scanner e Parser? (slide "The Front End" #2):**
+    
+    1. **Semplicità del design:** lo scanner classifica le parole, il parser costruisce derivazioni grammaticali; il parsing è più difficile e più lento. La separazione semplifica l'implementazione — gli scanner sono semplici, e uno scanner efficiente porta a un parser più veloce e più piccolo [Lexer.pdf, Slide 3].
+    2. Un **token** è una coppia $\langle$parte del discorso, lessema$\rangle$ [Lexer.pdf, Slide 3].
+    3. **Lo scanner è l'unica fase di compilazione che processa ogni singolo carattere dell'input** [Lexer.pdf, Slide 3].
+- **Tabella di confronto Scanning vs Parsing (slide "Our setting: the Front End"):**
+    
+    ||**Scanning**|**Parsing**|
+    |---|---|---|
+    |Specificare la sintassi|Espressioni regolari|Grammatiche context-free|
+    |Implementare il riconoscitore|Automa a stati finiti deterministico (DFA)|Automa a pila (push-down automaton)|
+    |Eseguire il lavoro|Azioni sulle transizioni dell'automa|(analogamente, azioni sulle transizioni/riduzioni)|
+    
+    [Lexer.pdf, Slide 4]. Questa tabella riassume in modo compatto il parallelismo strutturale tra le due fasi, che verrà approfondito nel Cap. 4 per il parsing.
+    
+
+### 3.2 Definizioni Formali
+
+- **Analisi Lessicale (Lexical Analysis):** riguarda le parole del vocabolario di un linguaggio (in opposizione alla grammatica, cioè la corretta costruzione delle frasi). Un **Analizzatore Lessicale** (lexer, scanner, o tokenizer) divide il programma di input, visto come flusso di caratteri, in una sequenza di **token** [Lexer.pdf, Slide 5].
+- **Token:** le "parole" del linguaggio di programmazione (parole chiave, numeri, commenti, parentesi, punto e virgola). I token sono classi di input concreto, chiamato **lessema** (lexeme) [Lexer.pdf, Slide 5].
+- **Ruolo unico dello scanner (slide "Lexical analysis"):** l'analisi lessicale è la primissima fase nella progettazione del compilatore, l'unica che analizza l'intero codice sorgente carattere per carattere. Un **lessema** è una sequenza di caratteri inclusa nel programma sorgente secondo il pattern di matching di un token. L'analizzatore lessicale aiuta a identificare i token nella symbol table. Una sequenza di caratteri che non è possibile scandire in alcun token valido è un **errore lessicale** [Lexer.pdf, Slide 7].
+- **Costruire un Analizzatore Lessicale (slide "Constructing a Lexical Analyser"):** due strategie — _a mano_, identificando i lessemi nell'input e restituendo i token; oppure _automaticamente_, tramite un generatore di analizzatori lessicali, che compila le specifiche dei lessemi in codice (l'analizzatore lessicale stesso). L'analisi lessicale decide se i singoli token sono ben formati; questo può essere espresso da un **linguaggio regolare** [Lexer.pdf, Slide 8].
+
+### 3.3 Grammatiche Regolari come Espressioni Regolari: l'Esempio degli Identificatori
+
+- **La sintassi di un linguaggio di programmazione può essere espressa da una grammatica regolare (slide):** esempio — la seguente grammatica genera tutti gli identificatori legali:
+    
+    ```
+    S → aT | … | zT | AT | … | ZTT → ε | 0T | … | 9T | S
+    ```
+    
+    che può essere espressa più elegantemente tramite un'espressione regolare: $$(a|\dots|z|A|\dots|Z)\ (a|\dots|z|A|\dots|Z|0|\dots|9)^*$$ [Lexer.pdf, Slide 10]. Questo esempio rende esplicito, con un caso concreto, il **Teorema 2** del Cap. 2 (§2.5): ogni grammatica regolare destra ammette un automa/una RE equivalente, e viceversa — qui applicato al caso pratico più comune nella progettazione di uno scanner.
+
+### 3.4 Espressioni Regolari per Token Comuni
+
+- **Identificatori (slide "Examples of Regular Expressions"):**
+    
+    ```
+    Letter     → (a|b|c|…|z|A|B|C|…|Z)Digit      → (0|1|2|…|9)Identifier → (Letter | _) (Letter | Digit | _)*
+    ```
+    
+    (i simboli in blu nella slide indicano terminali — caratteri nel flusso di input) [Lexer.pdf, Slide 11].
+- **Numeri (slide "Examples of Regular Expressions"):**
+    
+    ```
+    Integer → (+|-|ε) (0 | (1|2|3|…|9)(Digit*))Decimal → Integer . Digit*Real    → (Integer | Decimal) E (+|-|ε) Digit*     (esistono altre varianti molto più complesse)Complex → (Real, Real)
+    ```
+    
+    [Lexer.pdf, Slide 11]. **In pratica queste espressioni possono diventare molto più complesse** di quanto mostrato qui: la slide lo segnala esplicitamente come avvertenza [Lexer.pdf, Slide 11].
+
+### 3.5 Pipeline di Costruzione di uno Scanner Automatizzato
+
+Per convertire una specifica in codice, si seguono questi passi (slide "Automating Scanner Construction"):
+
+1. Scrivere le RE per il linguaggio di input [Lexer.pdf, Slide 20].
+2. Costruire un $\epsilon$-NFA che collezioni tutti gli NFA per le RE [Lexer.pdf, Slide 20].
+3. Costruire un NFA corrispondente all'$\epsilon$-NFA (eliminazione delle $\epsilon$-transizioni) [Lexer.pdf, Slide 20].
+4. Costruire il DFA che simula l'NFA (subset construction) [Lexer.pdf, Slide 20].
+5. Minimizzare sistematicamente il DFA [Lexer.pdf, Slide 20].
+6. Tradurlo in codice [Lexer.pdf, Slide 20].
+
+- **Generatori di scanner reali (slide):** Lex e Flex lavorano secondo queste linee, così come re2c, Ragel, ANTLR, JFlex, ocamllex, Alex, …. Gli algoritmi sono ben noti e ben compresi; la questione chiave è l'interfaccia col parser. **"You could build one in a weekend!"** [Lexer.pdf, Slide 20].
+
+### 3.6 Le Tre Strategie di Implementazione dello Scanner
+
+- **Panoramica (slide "Implementing Scanners"):** la costruzione complessiva è RE → $\epsilon$-NFA → NFA → DFA → DFA minimizzato. Per trasformare un DFA in codice si può scegliere tra: **scanner table-driven**, **scanner a codice diretto (direct-coded)**, **scanner scritti a mano (hand-coded)** — tutti e tre simulano comunque lo stesso DFA sottostante [Lexer.pdf, Slide 21].
+    
+- **Passi comuni a tutte le implementazioni (slide "Common Steps Across Different Implementations"):** leggono ripetutamente il prossimo carattere dell'input e simulano la transizione DFA corrispondente; il processo si ferma quando non c'è transizione uscente dallo stato corrente per quel carattere di input; se lo stato corrente è accettante, lo scanner riconosce la parola e la sua categoria sintattica; se lo stato corrente non è accettante, lo scanner deve determinare se ha superato uno stato finale in qualche punto precedente — se sì, deve fare **rollback** del proprio stato interno e del flusso di input e segnalare successo; se no, deve segnalare fallimento [Lexer.pdf, Slide 22]. Tutte e tre le strategie hanno **costo costante per carattere** (con costanti diverse) più il costo del rollback; differiscono nel modo in cui implementano la tabella di transizione e simulano le operazioni del DFA [Lexer.pdf, Slide 23].
+    
+- **① Scanner Table-Driven (slide "Table-Driven Scanners"):** finora si è usato uno skeleton semplificato; in pratica lo skeleton è più complesso, e deve gestire: classificazione dei caratteri (per la compressione della tabella), costruzione del lessema, riconoscimento di sottoespressioni. In pratica si combinano tutte le RE in un unico DFA, e si deve riconoscere le singole parole senza incappare nell'EOF [Lexer.pdf, Slide 24]:
+    
+    ```text
+    state ← s0;
+    while (state ≠ serror) do
+        char  ← NextChar()        // legge il prossimo carattere
+        state ← δ(state, char)    // esegue la transizione
+    ```
+    
+    - **Classificazione dei caratteri (Character Classification, slide "Character Classification"):** si raggruppano insieme i caratteri che hanno la stessa azione nel DFA — si combinano le colonne identiche nella tabella di transizione $\delta$; indicizzare $\delta$ per classe (anziché per singolo carattere) **restringe la tabella**:
+        
+        ```text
+        state ← s0;while (state ≠ serror) do    char  ← NextChar()          // legge il prossimo carattere    cat   ← CharCat(char)       // classifica il carattere    state ← δ(state, cat)       // esegue la transizione
+        ```
+        
+        [Lexer.pdf, Slide 25].
+    - **Costruzione del lessema (slide "Building the Lexeme"):** lo scanner produce la categoria sintattica (parte del discorso), ma la maggior parte delle applicazioni vuole anche il lessema (la parola) — problema banale: si salvano semplicemente i caratteri via via letti:
+        
+        ```text
+        state ← s0lexeme ← empty stringwhile (state ≠ serror) do    char   ← NextChar()              // legge il prossimo carattere    lexeme ← lexeme + char           // concatena al lessema    cat    ← CharCat(char)           // classifica il carattere    state  ← δ(state, cat)           // esegue la transizione
+        ```
+        
+        [Lexer.pdf, Slide 26].
+    - **Riconoscimento di sottoespressioni — Rollback (slide "Recognising subexpressions: RollBack"):** una pila (stack) traccia tutti gli stati attraversati:
+        
+        ```text
+        lexeme ← empty stringwhile (state ≠ serror) do    char ← NextChar();  lexeme ← lexeme + char    push(state);                       // ricorda tutti gli stati attraversati    cat ← CharCat(char);  state ← δ(state, cat)while (state ≠ sa) do                   // sa = ultimo stato finale incontrato    state ← pop();  truncate lexeme;  Rollback();
+        ```
+        
+        [Lexer.pdf, Slide 27]. (Questa è la stessa logica già presentata in dettaglio in §3.9.)
+    - **Costo:** per ogni carattere lo scanner table-driven esegue **due lookup in tabella** — uno in `CharCat`, uno in $\delta$ [Lexer.pdf, Slide 30].
+- **② Scanner a Codice Diretto (Direct-Coded, slide "Direct-Coded scanners"):** evita il doppio lookup per carattere dello scanner table-driven, traducendo direttamente la struttura degli stati in codice (tipicamente `switch`/`if` annidati anziché tabelle esplicite) — più efficiente a parità di comportamento. Se il test sullo stato è complesso (es. con molti case), il generatore di scanner dovrebbe considerare altri schemi, come la **ricerca binaria** [Lexer.pdf, Slide 30].
+    
+- **③ Scanner Scritti a Mano (Hand-Coded, slide "What About Hand-Coded Scanners?"):** molti (la maggior parte?) dei compilatori moderni usano scanner scritti a mano. Partire da un DFA semplifica il design e la comprensione — permette di usare vecchi trucchi in stile assembly, e di combinare stati simili. Gli scanner sono divertenti da scrivere: compatti, comprensibili, facili da debuggare [Lexer.pdf, Slide 32].
+    
+- **Riepilogo delle tre strategie:** tutte e tre simulano lo stesso DFA sottostante e hanno costo asintoticamente costante per carattere; differiscono per il fattore costante e per la manutenibilità/comprensibilità del codice risultante. Un generatore di scanner automatico (Lex, Flex, …) tipicamente produce codice table-driven o direct-coded; molti compilatori di produzione preferiscono comunque scanner hand-coded per motivi di velocità e controllo fine [Lexer.pdf, Slide 21, 30, 32].
+    
+- **Struttura concreta di uno scanner table-driven per i nomi di registro (slide "A table driven scanner for register names"):** il codice risultante si organizza tipicamente in cinque sezioni: inizializzazione, loop di scansione, rollback, sezione finale, stati finali — la stessa struttura concettuale del Cap. 3 §3.8 [Lexer.pdf, Slide 29].
+    
+
+### 3.7 Risoluzione delle Ambiguità Lessicali
+
 Durante la scansione possono sorgere conflitti in cui più regole o lessemi corrispondono all'input. Vengono usate due euristiche standard per risolverli deterministicamente:
-*   **Longest Match (Maximal Munch):** Lo scanner seleziona sempre il lessema più lungo possibile che corrisponde a una regola valida. Ad esempio, la stringa di input `while_var` verrà riconosciuta interamente come un unico identificatore `while_var` anziché come la parola chiave `while` seguita dall'identificatore `_var` [Lexer.pdf, Slide 13].
-*   **First Fit (Precedenza delle regole):** Se un lessema corrisponde esattamente e con la stessa lunghezza a più regole contemporaneamente, lo scanner preferisce la regola dichiarata per prima nella specifica lessicale. Questo risolve il conflitto tra le parole chiave (es. `if`, `while`) e gli identificatori generici: poiché le keyword sono dichiarate prima, l'input `if` viene mappato sul token della parola chiave `IF` anziché sull'identificatore generico [Lexer.pdf, Slide 13].
 
-### 3.4 Casi di Studio ed Esempi d'Esame
+- **Longest Match (Maximal Munch):** lo scanner seleziona sempre il lessema più lungo possibile che corrisponde a una regola valida. Ad esempio, la stringa di input `while_var` verrà riconosciuta interamente come un unico identificatore `while_var` anziché come la parola chiave `while` seguita dall'identificatore `_var` [Lexer.pdf].
+- **First Fit / Scelta della categoria da una RE ambigua (slide "Choosing a Category from an Ambiguous RE"):** si vuole un DFA unico, quindi si combinano tutte le RE in un solo automa — alcune stringhe possono corrispondere alla RE di più di una categoria sintattica (parole chiave contro identificatori generici). Lo scanner deve scegliere una categoria per gli stati finali ambigui: la risposta classica è **specificare la priorità in base all'ordine delle RE** (si restituisce la prima) [Lexer.pdf, Slide 28]. Esempio della slide: con `Identifier → Letter (Letter|Digit)*` e `key → if | …`, la stringa `ife` viene classificata come **identificatore** (poiché non coincide esattamente con `if`) [Lexer.pdf, Slide 28].
 
-**Caso di Studio 1 — specifica generica (slide).** `Register → r (0|…|9)(0|…|9)*`: almeno una cifra, lunghezza arbitraria. DFA:
+### 3.8 Casi di Studio ed Esempi d'Esame
+
+**Caso di Studio 1 — specifica generica per i registri ILOC (slide "Consider the problem of recognizing ILOC register names").** `Register → r (0|…|9)(0|…|9)*`: permette registri di numero arbitrario, richiede almeno una cifra [Lexer.pdf, Slide 12]. DFA:
 
 ```
         r            (0|…|9)
   s0 ───────► s1 ────────► s2 (finale)
-   │           │r            │r
-   ▼           ▼             ▼
-  (qualsiasi altro carattere porta allo stato di errore se)
 ```
 
-Comportamento: `r17` → $s_0, s_1, s_2$ accettato; `r` → $s_0, s_1$ rigettato; `0` → $s_e$ subito.
+con transizioni su ogni altro carattere verso lo stato d'errore $s_e$ [Lexer.pdf, Slide 12].
 
-**Skeleton recognizer (table-driven, O(1) per carattere):**
+**Comportamento (slide "DFA operation"):** `r17` attraversa $s_0,s_1,s_2$ e viene accettato; `r` attraversa $s_0,s_1$ e fallisce; `0` va direttamente a $s_e$ [Lexer.pdf, Slide 13].
+
+**Skeleton recognizer e tabella (slide "Example"):**
+
 ```
-Char  ← next character
-State ← s0
+Char ← next character;  State ← s0
 while (Char ≠ EOF)
     State ← δ(State, Char)
     Char  ← next character
 if (State is final) then report success else report failure
 ```
 
-| δ | r | 0…9 | altri |
-|---|---|---|---|
-| s0 | s1 | se | se |
-| s1 | se | s2 | se |
-| s2 | se | s2 | se |
-| se | se | se | se |
+Costo $O(1)$ per carattere (o per transizione); per essere utile, il DFA deve essere convertito in codice [Lexer.pdf, Slide 14]:
 
-**Tabella delle azioni α (slide):** affiancata a δ, associa a ogni transizione un'azione (tipicamente *catturare il lessema*):
+|δ|r|0…9|altri|
+|---|---|---|---|
+|s0|s1|se|se|
+|s1|se|s2|se|
+|s2|se|s2|se|
+|se|se|se|se|
+
+**Tabella delle azioni α (slide "Example" — aggiunta di azioni alle transizioni):** affiancata a δ, associa a ogni transizione un'azione (tipicamente _catturare il lessema_) [Lexer.pdf, Slide 15]:
 
 ```
 Char ← next character;   State ← s0
@@ -462,15 +844,10 @@ while (Char ≠ EOF)
 if (State is final) then report success else report failure
 ```
 
-*   **Caso di Studio 2 — Tighter Register Specification (slide):**
-    Nelle macchine virtuali come ILOC, i registri fisici sono spesso limitati da $r_0$ a $r_{31}$ [Lexer.pdf, Slide 15]. Se si usasse l'espressione regolare generica `r[0-9]+`, lo scanner accetterebbe lessemi errati come $r_{32}$ o $r_{99}$, delegando il controllo delle violazioni alle fasi semantiche successive.
-    Per bloccare gli errori lessicalmente alla fonte, le slide presentano una specifica rigorosa (tighter specification) tramite la seguente RE d'esame [Lexer.pdf, Slide 15 / 42]:
-    $$Register \rightarrow r \ ( \ (0 \mid 1 \mid 2)(Digit \mid \epsilon) \mid (4 \mid 5 \mid 6 \mid 7 \mid 8 \mid 9) \mid (3 \mid 30 \mid 31) \ )$$
-    *Nota semantica:* Questa espressione regolare d'esame accetta esattamente l'intervallo $[r_0, r_{31}]$. Analizzandone i rami: $(0|1|2)(Digit|\epsilon)$ genera $r_0 \dots r_2$, $r_{00} \dots r_{29}$; il ramo $(4|5|6|7|8|9)$ genera $r_4 \dots r_9$; il ramo $(3|30|31)$ genera $r_3, r_{30}, r_{31}$. L'unione copre esattamente i registri validi.
-
-    La relativa tabella di transizione $\delta$ e la tabella delle azioni $\alpha$ codificate nel driver dello scanner sono riprodotte di seguito [Lexer.pdf, Slide 15 / 43, 44]:
-
+- **Caso di Studio 2 — Tighter Register Specification (slide "What if we need a tighter specification?"):** Con `r Digit Digit*` si accetta anche `r00000` o `r99999` — lessemi errati se si vogliono limitare i registri a $r_0$–$r_{31}$ [Lexer.pdf, Slide 16]. La RE più stringente: $$Register \rightarrow r \ ( \ (0 \mid 1 \mid 2)(Digit \mid \epsilon) \mid (4 \mid 5 \mid 6 \mid 7 \mid 8 \mid 9) \mid (3 \mid 30 \mid 31) \ )$$ produce un DFA più complesso: più stati, stesso costo per transizione, stessa implementazione di base [Lexer.pdf, Slide 16]. _Nota storica della slide:_ più stati implicano una tabella più grande, un fatto che contava quando i computer avevano 128KB–640KB di RAM; oggi, con smartphone che hanno decine o centinaia di gigabyte di storage e laptop con 16–64GB di RAM, la preoccupazione può sembrare superata [Lexer.pdf, Slide 16].
+    
     ##### Tabella di Transizione $\delta$ (Tighter Register Specification):
+    
     ```
     +-------+-----+-----+-----+-----+-----+-----------+
     | State |  r  | 0,1 |  2  |  3  | 4-9 | All other |
@@ -485,72 +862,237 @@ if (State is final) then report success else report failure
     |  se   | se  | se  | se  | se  | se  |    se     |
     +-------+-----+-----+-----+-----+-----+-----------+
     ```
-
+    
+    [Lexer.pdf, Slide 18].
+    
     ##### Tabella delle Azioni $\alpha$ (Tighter Register Specification):
-    *(Nota: s1, s2, s3, s4, s5, s6 sono gli stati dell'automa; 'start' inizializza la lettura, 'add' cattura il carattere nel lessema corrente, 'exit' indica il completamento con successo se lo stato corrente è accettante)* [Lexer.pdf, Slide 15 / 44].
+    
+    |State|r|0,1|2|3|4-9|other|
+    |---|---|---|---|---|---|---|
+    |s0|1, start|e|e|e|e|e|
+    |s1|e|2, add|2, add|5, add|4, add|e|
+    |s2|e|3, add|3, add|3, add|3, add|e, exit|
+    |s3, s4, s6|e|e|e|e|e|e, exit|
+    |s5|e|6, add|e|e|e|e, exit|
+    |se|e|e|e|e|e|e|
+    
+    [Lexer.pdf, Slide 19]. Questa tabella gira nello **stesso skeleton recognizer** della specifica generica [Lexer.pdf, Slide 18].
+    
 
-| State      | r        | 0,1    | 2      | 3      | 4-9    | other   |
-| ---------- | -------- | ------ | ------ | ------ | ------ | ------- |
-| s0         | 1, start | e      | e      | e      | e      | e       |
-| s1         | e        | 2, add | 2, add | 5, add | 4, add | e       |
-| s2         | e        | 3, add | 3, add | 3, add | 3, add | e, exit |
-| s3, s4, s6 | e        | e      | e      | e      | e      | e, exit |
-| s5         | e        | 6, add | e      | e      | e      | e, exit |
-| se         | e        | e      | e      | e      | e      | e       |
+### 3.9 Rollback e Limiti degli Scanner DFA
 
-- Table-Driven Scanners
-	- ![[Pasted image 20260906163021.png]]
-	  
-  - Character Classification = Group together characters by their actions in the DFA
+- **Rollback (slide, cfr. §3.6):** avanzando lo scanner può superare l'ultimo stato finale; uno **stack degli stati traversati** permette di tornare indietro. Se non esiste alcun stato finale su cui tornare ⇒ **errore lessicale**. Tutte le implementazioni (table-driven, direct-coded, hand-coded) costano O(1) per carattere più il costo del rollback [Lexer.pdf, Slide 22, 23, 27].
+- **Eccezioni al modello DFA (slide "Building Scanners"):** tutta questa tecnologia permette di automatizzare la costruzione dello scanner: l'implementatore scrive le espressioni regolari, il generatore di scanner costruisce NFA, DFA, DFA minimo, e produce il codice (table-driven o direct-coded); questo produce in modo affidabile scanner veloci e robusti. Per la maggior parte delle feature linguistiche moderne, questo funziona — si dovrebbe pensarci due volte prima di introdurre una feature che sconfigge uno scanner DFA-based [Lexer.pdf, Slide 31]. Alcune eccezioni: _contextual keywords_ (`async`, `await`, `record` — keyword solo in certi contesti sintattici: richiedono cooperazione lexer/parser, indebolendo lo scanning puramente DFA-based) e sintassi **sensibile all'indentazione** (Python: il lexer traccia i livelli ed emette `INDENT`/`DEDENT`, andando oltre il semplice riconoscimento di linguaggi regolari). Storicamente le feature che rompono la regolarità lessicale non hanno avuto un successo particolare né un'adozione diffusa [Lexer.pdf, Slide 31].
 
-- Direct-Coded Scanners
-	- ![[Pasted image 20260906162833.png]]
+### 3.10 Esercizio Svolto d'Esame: Lexer a Mano per Espressioni di Assegnamento
 
-- Hand-Coded Scanners funny to write
-### 3.5 Rollback e Limiti degli Scanner DFA
-*   **Rollback (slide):** avanzando lo scanner può superare l'ultimo stato finale; uno **stack degli stati traversati** permette di tornare indietro:
-    ```
-    lexeme ← empty string
-    while (state ≠ s_error) do
-        char ← NextChar();  lexeme ← lexeme + char
-        push(state);  cat ← CharCat(char);  state ← δ(state, cat)
-    while (state ≠ s_a) do          // s_a = ultimo stato finale incontrato
-        state ← pop();  truncate lexeme;  Rollback()   // rewind dell'input
-    ```
-    Se non esiste alcun stato finale su cui tornare ⇒ **errore lessicale**. Tutte le implementazioni (table-driven, direct-coded, hand-coded) costano O(1) per carattere più il costo del rollback.
-*   **Priorità tra categorie (slide):** combinando tutte le RE in un unico DFA, alcune stringhe matchano più categorie (keyword vs identificatori): si risolve per **ordine di dichiarazione delle RE**. Esempio slide: con `Identifier → Letter (Letter|Digit)*` e `key → if | …`, la stringa `ife` è classificata come **identificatore**.
-*   **Eccezioni al modello DFA (slide):** *contextual keywords* (`async`, `await`, `record` — keyword solo in certi contesti sintattici: richiedono cooperazione lexer/parser) e sintassi **sensibile all'indentazione** (Python: il lexer traccia i livelli ed emette `INDENT`/`DEDENT`). Storicamente le feature che rompono la regolarità lessicale non hanno avuto successo.
+**Testo dell'esercizio (slide "Exercise"):** scrivere a mano un analizzatore lessicale che tokenizzi un semplice linguaggio di input per assegnamenti come `sum = a1 + 23 - value2`. Identificatori e numeri sono descritti dalle RE [Lexer.pdf, Slide 33]:
+
+- `IDENTIFIER → [a-zA-Z][a-zA-Z0-9]*` (una lettera seguita da lettere o cifre)
+- `NUMBER → [0-9]+` (una o più cifre)
+- i caratteri di spaziatura (spazio, tab, newline) vanno ignorati
+
+Implementare una funzione `NEXT_TOKEN()` che: (1) salta ogni spaziatura; (2) ispeziona il carattere corrente (lookahead); (3) riconosce il token valido più lungo; (4) consuma i caratteri corrispondenti; (5) restituisce il token identificato. Se si incontra un carattere non valido, si segnala un errore lessicale [Lexer.pdf, Slide 33].
+
+**Esempio di input e output atteso dato dalla slide:** per l'input `x = 10 + y` (nota: la slide riporta letteralmente `x = 10 + y.`, col punto finale — probabile refuso della fonte, ignorato nella traccia sottostante poiché `.` non è un carattere descritto da alcuna RE del linguaggio):
+
+```
+IDENTIFIER(x)
+ASSIGN
+NUMBER(10)
+PLUS
+IDENTIFIER(y)
+EOF
+```
+
+[Lexer.pdf, Slide 33].
+
+> **Nota metodologica:** l'implementazione di `NEXT_TOKEN()` e la traccia carattere-per-carattere non sono fornite nella slide originale (che pone solo l'esercizio); sono sviluppate qui applicando rigorosamente il modello a DFA table-driven di §3.6.
+
+**Implementazione di `NEXT_TOKEN()` (skeleton coerente con §3.6):**
+
+```text
+NEXT_TOKEN():
+    while (current_char is ' ' or '\t' or '\n')     // 1. salta la spaziatura
+        current_char ← NextChar()
+
+    if current_char = EOF then return EOF
+
+    if current_char is a letter then                // IDENTIFIER
+        lexeme ← empty string
+        while (current_char is a letter or a digit)
+            lexeme ← lexeme + current_char
+            current_char ← NextChar()
+        return IDENTIFIER(lexeme)
+
+    else if current_char is a digit then             // NUMBER
+        lexeme ← empty string
+        while (current_char is a digit)
+            lexeme ← lexeme + current_char
+            current_char ← NextChar()
+        return NUMBER(lexeme)
+
+    else if current_char = '=' then
+        current_char ← NextChar();  return ASSIGN
+    else if current_char = '+' then
+        current_char ← NextChar();  return PLUS
+    else if current_char = '-' then
+        current_char ← NextChar();  return MINUS
+    else
+        report lexical error, current_char
+```
+
+Questo è precisamente uno scanner **hand-coded** (§3.6, strategia ③): la struttura a `if`/`while` annidati, anziché una tabella $\delta$ esplicita, codifica direttamente il DFA sottostante — combinando i tre automi (IDENTIFIER, NUMBER, simboli singoli) in un'unica funzione tramite lookahead sul primo carattere, esattamente come richiesto dal punto 2–3 della traccia dell'esercizio (ispezionare il lookahead, riconoscere il token più lungo).
+
+**Traccia completa per l'input `x = 10 + y`:**
+
+|Chiamata a `NEXT_TOKEN()`|Caratteri consumati|Token restituito|
+|---|---|---|
+|1|`x` (lettera; nessuna lettera/cifra successiva — spazio)|`IDENTIFIER(x)`|
+|2|(salta spazio) `=` (nessun altro simbolo `=` atteso)|`ASSIGN`|
+|3|(salta spazio) `1`,`0` (cifre, poi spazio)|`NUMBER(10)`|
+|4|(salta spazio) `+`|`PLUS`|
+|5|(salta spazio) `y` (lettera; poi EOF)|`IDENTIFIER(y)`|
+|6|(nessun carattere: EOF)|`EOF`|
+
+Sequenza di output: `IDENTIFIER(x) ASSIGN NUMBER(10) PLUS IDENTIFIER(y) EOF` — coincide esattamente con l'output atteso dalla slide [Lexer.pdf, Slide 33]. Si noti che la regola del **longest match** (§3.7) è implicitamente rispettata dal `while` interno di ciascun ramo: lo scanner continua a consumare caratteri finché appartengono alla stessa classe (lettere/cifre per IDENTIFIER, cifre per NUMBER), fermandosi solo al primo carattere che non estende il lessema corrente.<a id="cap4"></a>
 
 <a id="cap4"></a>
 ## CAPITOLO 4: Parsing Top-Down e Parser LL(1)
-**Sources:** *ParsingMio.pdf / TableConstruction.pdf*
 
-### 4.1 Limiti dell'Analisi Lessicale e Introduzione al CFG
-*   **Perché i linguaggi regolari non bastano?**
-    Le espressioni regolari e gli automi a stati finiti non hanno memoria sufficiente per gestire strutture gerarchiche annidate arbitrarie o corrispondenze non locali. Non possono verificare se:
-    1.  Le parentesi tonde, quadre o graffe sono correttamente bilanciate ad un livello di annidamento arbitrario: $L = \{(^n )^n \mid n \ge 0\}$ non è regolare [ParsingMio.pdf, Slide 12, 134].
-    2.  I blocchi di codice annidati con strutture `begin ... end` o `{ ... }` sono bilanciati correttamente [ParsingMio.pdf, Slide 12, 134].
-    3.  Una lista di argomenti passata a funzioni annidate (es. `f(a, g(b, c), h(d))`) deve distinguere le virgole dei parametri interni da quelle dello scope esterno [ParsingMio.pdf, Slide 12, 134].
-*   **Definizione di Grammatica Context-Free (CFG):** Una grammatica context-free (Tipo 2) ha produzioni della forma:
-    $$A \rightarrow \beta$$
-    dove $A \in N$ è un singolo simbolo non terminale e $\beta \in (\Sigma \cup N)^+$ (e solo per il simbolo iniziale $S$ è ammessa la produzione $S \rightarrow \epsilon$ per generare la stringa vuota) [LinguaggiI.pdf, Slide 13, 42 / 96; ParsingMio.pdf, Slide 13, 78].
-*   **Derivazioni, Sentential Form e Parse Tree:**
-    *   Una **derivazione** consiste in una sequenza di passaggi di riscrittura a partire dal simbolo iniziale:
-        $$S \Rightarrow \gamma_0 \Rightarrow \gamma_1 \Rightarrow \dots \Rightarrow \gamma_n \Rightarrow w$$
-        [ParsingMio.pdf, Slide 14, 135].
-    *   Ogni $\gamma_i$ è una **forma sentenziale** (*sentential form*) se contiene almeno un non-terminale; se contiene solo terminali, allora è una frase o sentenza del linguaggio ($w \in L(G)$) [ParsingMio.pdf, Slide 14, 135].
-    *   **Leftmost derivation:** Ad ogni passo viene espanso il non-terminale più a sinistra [ParsingMio.pdf, Slide 14, 135].
-    *   **Rightmost derivation:** Ad ogni passo viene espanso il non-terminale più a destra [ParsingMio.pdf, Slide 135].
-    *   In una grammatica non ambigua, ogni stringa del linguaggio ammette esattamente un'unica derivazione leftmost e un'unica derivazione rightmost. La derivazione leftmost e la derivazione rightmost differiscono nel loro ordine di riscrittura, ma corrispondono entrambe allo stesso identico albero di parsing (*Parse Tree*) [ParsingMio.pdf, Slide 136].
-*   **Ambiguità:** Una grammatica è ambigua se esiste una frase che ammette più alberi di parsing differenti (o più derivazioni leftmost/rightmost distinte) [ParsingMio.pdf, Slide 136]. Un esempio tipico è il problema del *dangling-else* nei costrutti condizionali `if-then-else` [ParsingMio.pdf, Slide 136, 137].
+**Sources:** _ParsingMio.pdf_ (75 slide) / _TableConstruction.pdf_ (parte LL(1), slide 30)
 
-*   **Esempio svolto: dangling-else (slide).** Con
+> **Nota di revisione:** questo capitolo è stato ricontrollato per intero contro il testo OCR completo delle 75 slide di `ParsingMio.pdf`. Il nucleo era già corretto (FIRST/FOLLOW/FIRST⁺, tabella LL(1), skeleton parser, i due esercizi risolti begin-end e S→AB|eDa), ma mancavano interi algoritmi e dimostrazioni operative presenti nella fonte: (1) gli esempi motivazionali completi sui limiti dei linguaggi regolari, (2) la dimostrazione _operativa_ dell'ambiguità tramite due derivazioni concrete per `x-2*y` con parse tree diversi, (3) l'intera traccia di parsing top-down **con backtracking** (compreso un ramo che non termina), (4) l'algoritmo generale per l'eliminazione della ricorsione a sinistra **indiretta** (non solo immediata) con l'esempio svolto G,E,T, (5) il **parser ricorsivo a discesa** con pseudocodice esplicito per l'intera grammatica delle espressioni, (6) l'algoritmo generale di **left factoring** con esempio svolto, (7) la nozione di "ambiguità più profonda" dovuta all'overloading. Tutti questi blocchi sono ora integrati.
+
+### 4.1 Perché i Linguaggi Regolari Non Bastano
+
+- **Non tutti i linguaggi sono regolari (slide "Why Not Use Regular Languages & DFAs?"):** $RL \subset CFL \subset CSL$. Non è possibile costruire DFA per riconoscere linguaggi come [ParsingMio.pdf, Slide 4]:
+    
+    - $L = {p^kq^k}$
+    - $L = {wcw^R \mid w \in \Sigma^*}$
+    
+    Nessuno dei due è un linguaggio regolare [ParsingMio.pdf, Slide 4].
+    
+- **Costrutti dei linguaggi di programmazione che richiedono grammatiche più potenti (slide):**
+    
+    - Parentesi bilanciate con annidamento arbitrario, es. `f(g(h(x)))`: il linguaggio $L={(^n)^n \mid n\ge0}$ non è regolare [ParsingMio.pdf, Slide 4].
+    - Blocchi annidati `{...}` [ParsingMio.pdf, Slide 4].
+    - Coppie begin-end [ParsingMio.pdf, Slide 4].
+    - Argomenti di funzione annidati, es. `f(a, g(b,c), h(d,k(e)))`: la virgola dentro una chiamata annidata deve essere ignorata (non deve essere confusa con un separatore di primo livello) [ParsingMio.pdf, Slide 4].
+    - **Corrispondenza del numero di parametri: non è nemmeno context-free!** $L={vv}$ non è regolare (e, come visto al §2.10 con il Pumping Lemma per CF, ${w\mid w\ne vv}$ e varianti collegate non sono nemmeno context-free) [ParsingMio.pdf, Slide 4].
+
+### 4.2 Grammatiche Context-Free, Derivazioni e Ambiguità: Definizioni
+
+- **Definizione di Grammatica Context-Free (CFG):** produzioni della forma $A\to\beta$ con $A\in N$ un singolo non-terminale e $\beta\in(\Sigma\cup N)^+$ (solo per $S$ è ammessa $S\to\epsilon$) [LinguaggiI.pdf; ParsingMio.pdf, Slide 13].
+- **Derivazioni, Sentential Form e Parse Tree:**
+    - Una **derivazione** è una sequenza di passi di riscrittura $S\Rightarrow\gamma_0\Rightarrow\gamma_1\Rightarrow\dots\Rightarrow\gamma_n\Rightarrow\text{sentenza}$ [ParsingMio.pdf, Slide 7].
+    - Ogni $\gamma_i$ è una **forma sentenziale**; se contiene solo terminali è una sentenza di $L(G)$; se contiene uno o più non-terminali resta una forma sentenziale [ParsingMio.pdf, Slide 7].
+    - Per ottenere $\gamma_i$ da $\gamma_{i-1}$, si espande un non-terminale $A\in\gamma_{i-1}$ usando $A\to\beta$, sostituendo quella occorrenza di $A$ con $\beta$ [ParsingMio.pdf, Slide 7].
+    - **Leftmost derivation:** a ogni passo si espande il **primo** non-terminale (da sinistra) — produce una _left-sentential form_ [ParsingMio.pdf, Slide 6, 7].
+    - **Rightmost derivation:** a ogni passo si espande l'**ultimo** non-terminale (da destra) — produce una _right-sentential form_ [ParsingMio.pdf, Slide 6, 7].
+    - Queste sono le due derivazioni "sistematiche" di interesse (non ci si cura di derivazioni con ordine casuale) [ParsingMio.pdf, Slide 6].
+
+### 4.3 L'Ambiguità Aritmetica: un Esempio Operativo
+
+Consideriamo la grammatica "più utile del SheepNoise" (slide "A More Useful Grammar Than Sheep Noise"):
+
+```
+0. Expr → Expr Op Expr
+1.      | number
+2.      | id
+3. Op   → +
+4.      | -
+5.      | *
+6.      | /
+```
+
+[ParsingMio.pdf, Slide 5]. Deriviamo `x – 2 * y` (cioè `<id,x> - <num,2> * <id,y>`) in modo **leftmost**:
+
+|Regola|Forma Sentenziale|
+|---|---|
+|—|`Expr`|
+|0|`Expr Op Expr`|
+|2|`<id,x> Op Expr`|
+|4|`<id,x> - Expr`|
+|0|`<id,x> - Expr Op Expr`|
+|1|`<id,x> - <num,2> Op Expr`|
+|5|`<id,x> - <num,2> * Expr`|
+|2|`<id,x> - <num,2> * <id,y>`|
+
+[ParsingMio.pdf, Slide 5, 8]. Il parse tree corrispondente rappresenta `x – (2 * y)` [ParsingMio.pdf, Slide 9].
+
+**Ora deriviamo la STESSA stringa in modo rightmost:**
+
+|Regola|Forma Sentenziale|
+|---|---|
+|—|`Expr`|
+|0|`Expr Op Expr`|
+|2|`Expr Op <id,y>`|
+|5|`Expr * <id,y>`|
+|0|`Expr Op Expr * <id,y>`|
+|1|`Expr Op <num,2> * <id,y>`|
+|4|`Expr - <num,2> * <id,y>`|
+|2|`<id,x> - <num,2> * <id,y>`|
+
+[ParsingMio.pdf, Slide 8, 10]. **Sorprendentemente, il parse tree di questa derivazione rightmost rappresenta `(x – 2) * y` — un albero diverso dal precedente, con un significato diverso!** [ParsingMio.pdf, Slide 10]. **Questa ambiguità non va bene**: le due derivazioni (leftmost e rightmost) della stessa stringa producono alberi di parsing diversi, che implicano ordini di valutazione diversi [ParsingMio.pdf, Slide 8, 10].
+
+- **La causa del problema (slide "Derivations and Precedence"):** questa grammatica non ha alcuna nozione di **precedenza**, né di ordine di valutazione implicito [ParsingMio.pdf, Slide 11].
+- **Ambiguità anche fra due derivazioni leftmost (slide "Ambiguous Grammars" / "The Difference"):** la stessa grammatica ammette **due diverse derivazioni leftmost** per `x-2*y`, a seconda di quale produzione si sceglie al secondo passo (Regola 4, `Expr→Expr-Expr`, vs. Regola 0 seguita da ulteriore espansione): entrambe raggiungono con successo `x-2*y`, ma tramite alberi diversi [ParsingMio.pdf, Slide 14, 15, 16]. **Definizione formale di ambiguità (slide "Ambiguous Grammars — Definitions"):** una grammatica è ambigua se ammette più di una derivazione leftmost per una singola forma sentenziale, oppure più di una derivazione rightmost per una singola forma sentenziale. **Nota sottile:** le derivazioni leftmost e rightmost per una data forma sentenziale possono differire anche in una grammatica **non ambigua** — ma in tal caso devono comunque produrre lo **stesso parse tree** [ParsingMio.pdf, Slide 17].
+
+### 4.4 Rimuovere l'Ambiguità Aritmetica tramite la Precedenza
+
+Per aggiungere la precedenza (slide "Derivations and Precedence"): si crea un non-terminale per ciascun livello di precedenza; si isola la parte corrispondente della grammatica; si forza il parser a riconoscere prima le sotto-espressioni a precedenza più alta. Per le espressioni algebriche: parentesi per prime (livello 1), moltiplicazione e divisione poi (livello 2), sottrazione e addizione per ultime (livello 3) [ParsingMio.pdf, Slide 11].
+
+Aggiungendo la precedenza algebrica standard si ottiene:
+
+```
+0. Goal   → Expr
+1. Expr   → Expr + Term
+2.        | Expr - Term
+3.        | Term
+4. Term   → Term * Factor
+5.        | Term / Factor
+6.        | Factor
+7. Factor → ( Expr )
+8.        | number
+9.        | id
+```
+
+[ParsingMio.pdf, Slide 12]. Questa grammatica è leggermente più grande — richiede più passi di riscrittura per raggiungere alcuni terminali — ma codifica la precedenza attesa, e **produce lo stesso parse tree sotto derivazione sia leftmost sia rightmost**: la correttezza prevale sulla velocità del parser [ParsingMio.pdf, Slide 12]. _(Nota: una RE non può codificare la precedenza, né le parentesi — entrambe eccedono il potere di un'espressione regolare, motivando ulteriormente il passaggio a una CFG [ParsingMio.pdf, Slide 12].)_
+
+**Derivazione rightmost di `x-2*y` con la grammatica a precedenza (slide "Derivations and Precedence" #2):**
+
+|Regola|Forma Sentenziale|
+|---|---|
+|—|`Goal`|
+|0|`Expr`|
+|2|`Expr - Term`|
+|4|`Expr - Term * Factor`|
+|9|`Expr - Term * <id,y>`|
+|6|`Expr - Factor * <id,y>`|
+|8|`Expr - <num,2> * <id,y>`|
+|3|`Term - <num,2> * <id,y>`|
+|6|`Factor - <num,2> * <id,y>`|
+|9|`<id,x> - <num,2> * <id,y>`|
+
+Deriva `x – (2 * y)`, con il parse tree corretto — sia la derivazione leftmost sia quella rightmost producono ora **lo stesso** parse tree, perché la grammatica codifica direttamente ed esplicitamente la precedenza desiderata [ParsingMio.pdf, Slide 13].
+
+### 4.5 Il Caso Dangling-Else: Ambiguità e Disambiguazione
+
+- **Esempio classico (slide "Ambiguous Grammars"):**
+    
     ```
     Stmt → if Expr then Stmt
          | if Expr then Stmt else Stmt
          | … altre istruzioni …
     ```
-    la frase `if E1 then if E2 then S1 else S2` ammette **due parse tree** (else abbinato all'if interno o a quello esterno) ⇒ grammatica ambigua, e i due alberi implicano **semantiche diverse**. Riscrittura non ambigua (ogni else all'if più interno):
+    
+    Questa ambiguità è **inerente alla grammatica** [ParsingMio.pdf, Slide 17].
+    
+- **La forma sentenziale `if Expr1 then if Expr2 then Stmt1 else Stmt2` ammette due derivazioni (slide "Ambiguity"):** una che applica prima la produzione 2 poi la 1 (associando `else` all'`if` più esterno), l'altra che applica prima la 1 poi la 2 (associando `else` all'`if` più interno) — **parte del problema è che la struttura costruita dal parser determinerà l'interpretazione del codice, e queste due forme hanno significati diversi!** [ParsingMio.pdf, Slide 18].
+    
+- **Rimuovere l'ambiguità (slide "Ambiguity"):** occorre riscrivere la grammatica per evitare di generare il problema; si fa corrispondere ogni `else` all'`if` non ancora abbinato più interno (regola di buon senso):
+    
     ```
     0. Stmt     → if Expr then Stmt
     1.           | if Expr then WithElse else Stmt
@@ -558,92 +1100,385 @@ if (State is final) then report success else report failure
     3. WithElse → if Expr then WithElse else WithElse
     4.           | Other Statements
     ```
-    Intuizione: dentro `WithElse` non si può generare un else non accoppiato; un if finale senza else può arrivare solo dalla regola 0 ⇒ l'esempio ha un'unica derivazione rightmost.
-### 4.2 Parser LL(1) e Problemi di Ricorsione
-*   Il parsing top-down tenta di ricostruire una derivazione leftmost a partire dal simbolo iniziale, procedendo verso il basso.
-*   **Backtracking:** Se la grammatica contiene scelte non deterministiche, il parser deve andare per tentativi ed effettuare il backtracking su errore, il che degrada le performance.
-*   **Non-terminazione su Ricorsione a Sinistra:** Una grammatica è ricorsiva a sinistra se esiste una derivazione del tipo $A \Rightarrow^+ A\alpha$ [ParsingMio.pdf, Slide 138]. I parser top-down (LL) entrano in un ciclo infinito di chiamate ricorsive su grammatiche ricorsive a sinistra, portando alla non-terminazione del compilatore [ParsingMio.pdf, Slide 138].
-*   **Algoritmo di Eliminazione della Ricorsione a Sinistra Immediata:**
-    Data la regola $A \rightarrow A\alpha \mid \beta$ (dove $\beta$ non inizia con $A$), si riscrive introducendo un nuovo non-terminale $A'$:
-    $$A \rightarrow \beta A'$$
-    $$A' \rightarrow \alpha A' \mid \epsilon$$
-*   **Esempio di trasformazione generale (Slide d'Esame):**
-	* ![[Pasted image 20260906163802.png|502]]
-	  
-	- ![[Pasted image 20260906163902.png|500]]
     
-    Prendendo l'ordine di simboli $G, E, T$:
-    *   *Sorgente ricorsiva:*
-        $$E \rightarrow E + T \mid T$$
-        $$T \rightarrow E * T \mid id$$
-    *   *Dopo trasformazione:*
-        $$E \rightarrow T E'$$
-        $$E' \rightarrow + T E' \mid \epsilon$$
-        $$T \rightarrow id T'$$
-        $$T' \rightarrow E' * T T' \mid \epsilon$$
-        [ParsingMio.pdf, Slide 139].
-*   **Left Factoring:** Consente di rimuovere i prefissi comuni dalle produzioni per evitare backtracking:
-    $$A \rightarrow \alpha\beta_1 \mid \alpha\beta_2 \quad \Rightarrow \quad A \rightarrow \alpha A', \quad A' \rightarrow \beta_1 \mid \beta_2$$
+    Con questa grammatica l'esempio ha **una sola** derivazione rightmost [ParsingMio.pdf, Slide 19]. Intuizione: una volta entrati in `WithElse`, non si può più generare un `else` non abbinato; un `if` finale senza `else` può provenire solo dalla regola 0 — la grammatica forza la struttura a corrispondere al significato desiderato [ParsingMio.pdf, Slide 19].
+    
+- **Traccia della derivazione rightmost risultante (slide "Ambiguity" #4):** per `if Expr1 then if Expr2 then Stmt1 else Stmt2`, questa grammatica ammette **una sola** derivazione rightmost:
+    
+    |Regola|Forma Sentenziale|
+    |---|---|
+    |—|`Stmt`|
+    |0|`if Expr then Stmt`|
+    |1|`if Expr then if Expr then WithElse else Stmt`|
+    |2|`if Expr then if Expr then WithElse else S2`|
+    |4|`if Expr then if Expr then S1 else S2`|
+    |⋯|(altre produzioni per derivare gli `Expr` in `E1`, `E2`)|
+    |⋯|`if E1 then if E2 then S1 else S2`|
+    
+    [ParsingMio.pdf, Slide 20].
+    
 
-### 4.3 Calcolo Formale degli Insiemi di Parsing Predittivo
-Per costruire un parser deterministico con lookahead di un simbolo, calcoliamo tre insiemi fondamentali:
-*   **Insieme FIRST:** FIRST($\alpha$) è l'insieme di tutti i terminali che possono trovarsi all'inizio di una qualsiasi stringa derivata da $\alpha$. Se $\alpha \Rightarrow^* \epsilon$, allora $\epsilon \in \text{FIRST}(\alpha)$ [ParsingMio.pdf, Slide 15, 140, 142].
-*   **Insieme FOLLOW:** Per ogni non-terminale $A$, FOLLOW($A$) è l'insieme dei simboli terminali che possono apparire immediatamente dopo $A$ in una qualche forma sentenziale valida [ParsingMio.pdf, Slide 16, 142]. Se $S$ è lo start symbol, allora il marcatore di fine file $\$ \in \text{FOLLOW}(S)$ [ParsingMio.pdf, Slide 16, 142].
-*   **Insieme FIRST+ (Predictive Set):** Si applica a una singola produzione $A \rightarrow \beta$ ed è definito come:
-    $$\text{FIRST}^+(A \rightarrow \beta) = \begin{cases} \text{FIRST}(\beta) & \text{se } \epsilon \notin \text{FIRST}(\beta) \\ (\text{FIRST}(\beta) \setminus \{\epsilon\}) \cup \text{FOLLOW}(A) & \text{se } \epsilon \in \text{FIRST}(\beta) \end{cases}$$
-    [ParsingMio.pdf, Slide 17, 144].
+### 4.6 Ambiguità Più Profonda: Confusione Context-Sensitive
 
-### 4.4 Costruzione della Tabella di Parsing LL(1)
-*   **Proprietà LL(1):** Una grammatica è LL(1) se e solo se, per ogni coppia di produzioni distinte dello stesso non-terminale $A \rightarrow \alpha$ e $A \rightarrow \beta$, si ha:
-    $$\text{FIRST}^+(A \rightarrow \alpha) \cap \text{FIRST}^+(A \rightarrow \beta) = \emptyset$$
-    Questo garantisce la scelta di un'unica produzione adatta esaminando solo il simbolo corrente [ParsingMio.pdf, Slide 18, 140].
-*   **Algoritmo di Riempimento della Tabella:**
-    Per ciascuna produzione $A \rightarrow \beta$:
-    Per ciascun terminale $t \in \text{FIRST}^+(A \rightarrow \beta)$, aggiungi la produzione $A \rightarrow \beta$ alla cella $M[A, t]$ della tabella.
-    Se una qualsiasi cella contiene più di una produzione, la grammatica non è LL(1) [ParsingMio.pdf, Slide 18].
+- **Overloading come fonte di ambiguità più profonda (slide "Deeper Ambiguity"):** l'ambiguità di solito si riferisce a confusione nella CFG; l'overloading può creare un'ambiguità più profonda. Esempio: `a = f(17)` — in molti linguaggi Algol-like, `f` potrebbe essere sia una funzione sia una variabile indicizzata (array). Disambiguare questo caso richiede **contesto**: servono i valori delle dichiarazioni; è realmente una questione di **tipo**, non di sintassi context-free; richiede una soluzione extra-grammaticale (non esprimibile in una CFG) — va gestita con un meccanismo diverso, uscendo dalla grammatica anziché usare una grammatica più complessa [ParsingMio.pdf, Slide 21].
+- **Ambiguità — la parola finale (slide "Ambiguity - the Final Word"):** l'ambiguità nasce da due fonti distinte: confusione nella sintassi context-free (if-then-else), e confusione che richiede contesto per essere risolta (overloading). Per risolvere l'ambiguità: per rimuovere l'ambiguità context-free, si riscrive la grammatica; per gestire l'ambiguità context-sensitive serve cooperazione — conoscenza di dichiarazioni, tipi, … — accettando un **superset** di $L(G)$ e verificandolo con altri mezzi (analisi context-sensitive, Cap. 6); è un problema di design del linguaggio. **A volte il compilatore accetta esplicitamente una grammatica ambigua**, usando tecniche di parsing che "fanno la cosa giusta" — cioè selezionano sempre la stessa derivazione [ParsingMio.pdf, Slide 22].
 
-### 4.5 Caso di Studio Svolto: la Grammatica delle Espressioni Classica
+### 4.7 Parsing Top-Down: l'Algoritmo Generico con Backtracking
+
+- **Tecniche di parsing (slide "Parsing Techniques"):**
+    - **Top-down** (LL(1), recursive descent): parte dalla radice del parse tree e cresce verso le foglie; sceglie una produzione e prova a far corrispondere l'input; una scelta sbagliata può richiedere backtracking; alcune grammatiche sono _backtrack-free_ (parsing predittivo) [ParsingMio.pdf, Slide 23].
+    - **Bottom-up** (LR(1), operator precedence): parte dalle foglie e cresce verso la radice; man mano che l'input viene consumato, codifica le possibilità in uno stato interno; parte da uno stato valido per i primi token legali; gestisce una classe più ampia di grammatiche [ParsingMio.pdf, Slide 23].
+- **Algoritmo generico di parsing top-down (slide "Top-down Parsing"):** un parser top-down parte dalla radice del parse tree, etichettata col simbolo iniziale della grammatica.
+    
+    ```text
+    Costruire il nodo radice del parse treeRipetere finché la frontiera inferiore del parse tree non corrisponde alla stringa di input:    1. In un nodo etichettato A, selezionare una produzione con A sulla lhs e, per       ciascun simbolo della rhs, costruire il figlio appropriato    2. Quando un simbolo terminale viene aggiunto alla frontiera e non corrisponde       all'input, fare backtrack    3. Trovare il prossimo nodo da espandere (etichetta ∈ NT)
+    ```
+    
+    La chiave è scegliere la produzione giusta al passo 1 — quella scelta dovrebbe essere guidata dalla stringa di input [ParsingMio.pdf, Slide 24].
+
+### 4.8 Esempio Svolto: Parsing con Backtracking di `x – 2 * y`
+
+Applichiamo l'algoritmo generico di §4.7 alla grammatica a precedenza di §4.4, sull'input `x – 2 * y` [ParsingMio.pdf, Slide 25].
+
+**Primo tentativo (slide "Example"):** partendo da `Goal`, si espande fino a `<id,x> + Term` (scegliendo la Regola 1, `Expr→Expr+Term`), e si consuma `x`:
+
+|Regola|Forma Sentenziale|Input|
+|---|---|---|
+|—|`Goal`|$\uparrow$`x - 2 * y`|
+|0|`Expr`|$\uparrow$`x - 2 * y`|
+|1|`Expr + Term`|$\uparrow$`x - 2 * y`|
+|3|`Term + Term`|$\uparrow$`x - 2 * y`|
+|6|`Factor + Term`|$\uparrow$`x - 2 * y`|
+|9|`<id,x> + Term`|$\uparrow$`x - 2 * y`|
+|→|`<id,x> + Term`|`x` $\uparrow$`- 2 * y`|
+
+Ha funzionato bene, **eccetto che "–" non corrisponde a "+"**: il parser deve fare backtrack fino a qui [ParsingMio.pdf, Slide 27].
+
+**Secondo tentativo — si sceglie la Regola 2 al posto della 1 (slide "Example" #2):**
+
+|Regola|Forma Sentenziale|Input|
+|---|---|---|
+|—|`Goal`|$\uparrow$`x - 2 * y`|
+|0|`Expr`|$\uparrow$`x - 2 * y`|
+|2|`Expr - Term`|$\uparrow$`x - 2 * y`|
+|3|`Term - Term`|$\uparrow$`x - 2 * y`|
+|6|`Factor - Term`|$\uparrow$`x - 2 * y`|
+|9|`<id,x> - Term`|$\uparrow$`x - 2 * y`|
+|→|`<id,x> - Term`|`x` $\uparrow$`- 2 * y`|
+|→|`<id,x> - Term`|`x -` $\uparrow$`2 * y`|
+
+Ora "–" e "–" corrispondono; ora si può espandere `Term` per far corrispondere "2" [ParsingMio.pdf, Slide 28].
+
+**Terzo passo — espansione di `Term` troppo breve (slide "Example" #3):**
+
+|Regola|Forma Sentenziale|Input|
+|---|---|---|
+|→|`<id,x> - Term`|`x -` $\uparrow$`2 * y`|
+|6|`<id,x> - Factor`|`x -` $\uparrow$`2 * y`|
+|8|`<id,x> - <num,2>`|`x -` $\uparrow$`2 * y`|
+|→|`<id,x> - <num,2>`|`x - 2` $\uparrow$`* y`|
+
+"2" corrisponde a "2" — ma resta altro input e non ci sono più non-terminali da espandere: **l'espansione è terminata troppo presto ⇒ serve backtrack** [ParsingMio.pdf, Slide 29].
+
+**Quarto tentativo — successo (slide "Example" #4):** si riespande `Term` con la Regola 4 (`Term→Term*Factor`) invece della Regola 6:
+
+|Regola|Forma Sentenziale|Input|
+|---|---|---|
+|→|`<id,x> - Term`|`x -` $\uparrow$`2 * y`|
+|4|`<id,x> - Term * Factor`|`x -` $\uparrow$`2 * y`|
+|6|`<id,x> - Factor * Factor`|`x -` $\uparrow$`2 * y`|
+|8|`<id,x> - <num,2> * Factor`|`x -` $\uparrow$`2 * y`|
+|→|`<id,x> - <num,2> * Factor`|`x - 2` $\uparrow$`* y`|
+|→|`<id,x> - <num,2> * Factor`|`x - 2 *` $\uparrow$`y`|
+|9|`<id,x> - <num,2> * <id,y>`|`x - 2 *` $\uparrow$`y`|
+|→|`<id,x> - <num,2> * <id,y>`|`x - 2 * y`$\uparrow$|
+
+Questa volta si corrisponde e si consuma **tutto** l'input ⇒ **successo!** [ParsingMio.pdf, Slide 30]. **Il punto:** il parser deve fare la scelta giusta quando espande un non-terminale; le scelte sbagliate portano a sforzo sprecato [ParsingMio.pdf, Slide 30].
+
+**Un ramo pericoloso — non-terminazione (slide "Example" #5):** altre scelte di espansione sono possibili; una di queste **non termina**:
+
+|Regola|Forma Sentenziale|Input|
+|---|---|---|
+|—|`Goal`|$\uparrow$`x - 2 * y`|
+|0|`Expr`|$\uparrow$`x - 2 * y`|
+|1|`Expr + Term`|$\uparrow$`x - 2 * y`|
+|1|`Expr + Term + Term`|$\uparrow$`x - 2 * y`|
+|1|`Expr + Term + Term + Term`|$\uparrow$`x - 2 * y`|
+|1|e così via…|$\uparrow$`x - 2 * y`|
+
+Questa espansione **non consuma alcun input**: una scelta di espansione sbagliata porta alla non-terminazione — una proprietà pessima per un parser (e per un compilatore in generale) [ParsingMio.pdf, Slide 31].
+
+### 4.9 Ricorsione a Sinistra: Eliminazione Immediata e Generale (Indiretta)
+
+- **Definizione formale (slide "Left Recursion"):** una grammatica è ricorsiva a sinistra se $\exists A\in N$ tale che esiste una derivazione $A\Rightarrow^+A\alpha$, per qualche stringa $\alpha\in(N\cup\Sigma)^+$. La nostra classica grammatica delle espressioni è ricorsiva a sinistra — questo può portare a non-terminazione in un parser top-down. In un parser top-down, ogni ricorsione deve essere ricorsione **destra**; vogliamo convertire la ricorsione sinistra in ricorsione destra. **La non-terminazione è sempre una proprietà pessima in un compilatore** [ParsingMio.pdf, Slide 32].
+    
+- **Eliminazione della ricorsione sinistra immediata (slide "Eliminating Left Recursion"):** dato un frammento di grammatica della forma $Fee\to Fee,\alpha \mid \beta$ (dove né $\alpha$ né $\beta$ iniziano con $Fee$), si riscrive come: $$Fee \to \beta,Fie \qquad Fie \to \alpha,Fie \mid \epsilon$$ dove $Fie$ è un nuovo non-terminale. La nuova grammatica definisce lo **stesso linguaggio** della vecchia, usando solo ricorsione destra [ParsingMio.pdf, Slide 33].
+    
+- **Applicazione alla grammatica delle espressioni (slide "Eliminating Left Recursion" #2):** la grammatica delle espressioni contiene due casi di ricorsione sinistra (in `Expr` e in `Term`); applicando la trasformazione: $$Expr\to Term,Expr' \qquad Expr'\to{+},Term,Expr'\mid{-},Term,Expr'\mid\epsilon$$ $$Term\to Factor,Term' \qquad Term'\to{*},Factor,Term'\mid{/},Factor,Term'\mid\epsilon$$ Questi frammenti usano solo ricorsione destra [ParsingMio.pdf, Slide 34]. **Nota sulla associatività (slide, con cautela):** la ricorsione destra spesso implica associatività destra; tuttavia, sostituendo questi frammenti nella grammatica completa (§4.4), il risultato — pur essendo strutturalmente ricorsivo a destra — **resta left-associative come l'originale** dal punto di vista del linguaggio riconosciuto: la trasformazione naïve produce una grammatica corretta ma "non intuitiva" nella sua struttura [ParsingMio.pdf, Slide 34, 35]. _(Attenzione, nota metodologica: se in seguito si aggiungono azioni semantiche sintetizzate durante il parsing — es. per costruire un AST — occorre prestare attenzione a preservare esplicitamente l'associatività sinistra semantica, poiché la struttura sintattica destrorsa da sola non lo garantisce automaticamente in presenza di azioni naive.)_ Un parser top-down termina con questa grammatica trasformata, ma potrebbe comunque dover fare backtrack usandola tal quale, senza ulteriore fattorizzazione predittiva [ParsingMio.pdf, Slide 35].
+    
+- **Il problema più generale — ricorsione sinistra indiretta (slide "Eliminating Left Recursion" #3):** la trasformazione immediata elimina solo la ricorsione sinistra diretta. Cosa succede con la ricorsione sinistra indiretta più generale (es. $A\to B\gamma$, $B\to A\delta$)? **Algoritmo generale:**
+    
+    ```text
+    ordinare i non-terminali in una sequenza A1, A2, …, An
+    for i ← 1 to n
+        for s ← 1 to i-1
+            sostituire ogni produzione Ai → As γ con Ai → δ1γ | δ2γ | … | δkγ,
+                dove As → δ1 | δ2 | … | δk sono tutte le produzioni correnti per As
+        eliminare ogni ricorsione sinistra immediata su Ai
+            usando la trasformazione diretta (sopra)
+    ```
+    
+    Questo presuppone che la grammatica iniziale non abbia cicli ($A_i\Rightarrow^+A_i$) né produzioni $\epsilon$ [ParsingMio.pdf, Slide 36].
+    
+- **Come funziona l'algoritmo (slide "Eliminating Left Recursion" #4):**
+    
+    1. Si impone un ordine arbitrario sui non-terminali.
+    2. Il loop esterno scorre i non-terminali in ordine.
+    3. Il loop interno garantisce che una produzione che espande $A_i$ non contenga alcun non-terminale $A_s$ nella sua rhs, per $s<i$.
+    4. L'ultimo passo del loop esterno converte ogni ricorsione diretta su $A_i$ in ricorsione destra usando la trasformazione già vista.
+    5. I nuovi non-terminali sono aggiunti in fondo all'ordine e non hanno ricorsione sinistra.
+    
+    **Invariante:** all'inizio della $i$-esima iterazione del loop esterno, per ogni $k<i$, nessuna produzione che espande $A_k$ contiene un non-terminale $A_s$ nella sua rhs, per $s<k$ [ParsingMio.pdf, Slide 37].
+    
+- **Esempio Svolto — ordine $G,E,T$ (slide "Example"):**
+    
+    ![[Pasted image 20260907111522.png]]
+    
+    Grammatica finale: $G\to E$; $E\to TE'$; $E'\to{+}TE'\mid\epsilon$; $T\to id,T'$; $T'\to E'{*}T,T'\mid\epsilon$ [ParsingMio.pdf, Slide 38]. Si noti come il passo 3 introduca temporaneamente una nuova ricorsione sinistra immediata su $T$ (tramite la sostituzione), risolta poi al passo 4 — questo è il meccanismo generale con cui l'algoritmo gestisce le dipendenze indirette tra non-terminali.
+    
+
+### 4.10 Parsing Predittivo e Grammatiche LL(k)
+
+- **Come scegliere la produzione "giusta" (slide "Picking the Right Production"):** se sceglie la produzione sbagliata, un parser top-down può fare backtrack (§4.8). L'alternativa è guardare avanti nell'input (_lookahead_) e usare il contesto per scegliere correttamente. Quanto lookahead serve? In generale, una quantità arbitrariamente grande — si userebbero l'algoritmo di Cocke-Younger-Kasami (CYK) o l'algoritmo di Earley. Fortunatamente, ampie sottoclassi di CFG possono essere parsate con lookahead limitato, e la maggior parte dei costrutti dei linguaggi di programmazione ricade in queste sottoclassi. Tra le sottoclassi interessanti: le grammatiche **LL(1)** e **LR(1)** [ParsingMio.pdf, Slide 39].
+- **Grammatiche LL(k) (slide):** una grammatica LL è una CFG che può essere parsata da un parser LL, che analizza l'input da sinistra a destra (**L**eft-to-right) e costruisce una derivazione **L**eftmost. Un linguaggio che ammette una grammatica LL è detto linguaggio LL. Per un $k$ fissato, LL($k$) è una grammatica LL che può predire la produzione corretta da applicare con un lookahead di al più $k$ simboli: $$LL(0) \subset LL(1) \subset LL(2) \subset \dots \subset LL(*)$$ [ParsingMio.pdf, Slide 40, 42].
+- **Idea base del parsing predittivo (slide "Predictive Parsing"):** dato $A\to\alpha\mid\beta$, il parser dovrebbe poter scegliere (tra $\alpha$ e $\beta$) la produzione giusta per espandere $A$ nel parse tree, a ogni passo [ParsingMio.pdf, Slide 41, 43].
+- **Insieme FIRST (slide):** per un rhs $\alpha\in(N\cup\Sigma)^*$, FIRST($\alpha$) è l'insieme dei terminali che compaiono come primo simbolo in una qualche stringa derivata da $\alpha$: $x\in\text{FIRST}(\alpha) \iff \alpha\Rightarrow^*x\gamma$ per qualche $\gamma$ [ParsingMio.pdf, Slide 43, 54].
+- **La proprietà LL(1) (slide):** se $A\to\alpha$ e $A\to\beta$ compaiono entrambe nella grammatica, vorremmo $\text{FIRST}(\alpha)\cap\text{FIRST}(\beta)=\emptyset$ — questo permetterebbe al parser di fare la scelta corretta con un lookahead di esattamente un simbolo [ParsingMio.pdf, Slide 43]. **Questo è quasi corretto** — le produzioni $\epsilon$ complicano la definizione [ParsingMio.pdf, Slide 44].
+- **Il problema delle produzioni $\epsilon$ e FIRST⁺ (slide):** se $A\to\alpha$ e $A\to\beta$ ed $\epsilon\in\text{FIRST}(\alpha)$, occorre garantire che anche $\text{FIRST}(\beta)$ sia disgiunto da FOLLOW($A$), dove FOLLOW($A$) è l'insieme dei terminali che possono seguire immediatamente $A$ in una forma sentenziale. Si definisce: $$\text{FIRST}^+(A\to\alpha) = \begin{cases}\text{FIRST}(\alpha)\cup\text{FOLLOW}(A) & \text{se }\epsilon\in\text{FIRST}(\alpha)\ \text{FIRST}(\alpha) & \text{altrimenti}\end{cases}$$ Una grammatica è LL(1) se e solo se $A\to\alpha$ e $A\to\beta$ implica $\text{FIRST}^+(A\to\alpha)\cap\text{FIRST}^+(A\to\beta)=\emptyset$ [ParsingMio.pdf, Slide 44].
+- **Codice predittivo generico (slide "Predictive Parsing" #3):** data $A\to\beta_1\mid\beta_2\mid\beta_3$ con $\text{FIRST}^+(A\to\beta_i)\cap\text{FIRST}^+(A\to\beta_j)=\emptyset$ per $i\ne j$:
+    
+    ```text
+    /* trova una A */
+    if (parola_corrente ∈ FIRST(A→β1))      trova un β1 e restituisci vero
+    else if (parola_corrente ∈ FIRST(A→β2)) trova un β2 e restituisci vero
+    else if (parola_corrente ∈ FIRST(A→β3)) trova un β3 e restituisci vero
+    else segnala un errore e restituisci falso
+    ```
+    
+    (naturalmente "trovare un $\beta_i$" richiede più dettaglio — una procedura per ciascun non-terminale) [ParsingMio.pdf, Slide 45]. Le grammatiche con la proprietà LL(1) sono dette **grammatiche predittive**, perché il parser può "predire" l'espansione corretta a ogni punto del parsing; i parser che sfruttano questa proprietà sono detti **parser predittivi**. Un tipo di parser predittivo è il **parser ricorsivo a discesa** [ParsingMio.pdf, Slide 45].
+
+### 4.11 Calcolo Formale di FIRST e FOLLOW: le Regole Generali
+
+- **Regole per il calcolo di FIRST(X) (slide "Computing FIRST Sets"):**
+    - Per ogni terminale $X$: $\text{FIRST}(X)={X}$.
+    - Per ogni non-terminale $X$, se $X\to Y_1Y_2\dots Y_n$ è una produzione: $\text{FIRST}(Y_1)\subseteq\text{FIRST}(X)$; inoltre, se $Y_1,\dots,Y_k$ sono nullificabili ($Y_i\Rightarrow^*\epsilon$), allora anche $\text{FIRST}(Y_{k+1})\subseteq\text{FIRST}(X)$ [ParsingMio.pdf, Slide 55]. (Ci si interessa a FIRST(X) solo per i non-terminali; per i terminali è banale. Per determinare FIRST($A$) occorre ispezionare tutte le produzioni che hanno $A$ sulla sinistra [ParsingMio.pdf, Slide 56].)
+- **Regole per il calcolo di FOLLOW(X) (slide "Computing FOLLOW Sets"):**
+    - Se $S$ è il simbolo iniziale, \$$\in\text{FOLLOW}(S)$.
+    - Se $A\to\alpha B\beta$ è una produzione, $\text{FIRST}(\beta)\subseteq\text{FOLLOW}(B)$.
+    - Se $A\to\alpha B$ è una produzione, oppure $A\to\alpha B\beta$ con $\beta$ nullificabile, allora $\text{FOLLOW}(A)\subseteq\text{FOLLOW}(B)$ [ParsingMio.pdf, Slide 60]. (Ci si interessa a FOLLOW(X) solo per i non-terminali; per determinare FOLLOW($A$) occorre ispezionare tutte le produzioni che hanno $A$ sulla destra [ParsingMio.pdf, Slide 61].)
+- **Nota metodologica:** l'esempio completo di calcolo di FIRST/FOLLOW passo-passo su una grammatica $E,E',T,T',F$ — con la catena di ragionamento esplicita ("$E$ compare a sinistra in una sola produzione $E\to TE'$; quindi $\text{FIRST}(T)\subseteq\text{FIRST}(E)$; inoltre $T$ non è nullificabile; quindi $\text{FIRST}(E)=\text{FIRST}(T)$", e così via) [ParsingMio.pdf, Slide 57–66] — è la **stessa identica grammatica** già trattata come "Caso di Studio Svolto: la Grammatica delle Espressioni Classica" al §4.15 di questa dispensa (con `number`/`id`/parentesi al posto delle sole variabili $F$): si rimanda a quella sezione per la tabella FIRST/FOLLOW/FIRST⁺ completa e la tabella di parsing risultante, che coincidono.
+
+### 4.12 Recursive Descent Parsing: il Parser Ricorsivo a Discesa
+
+- **Idea (slide "Recursive Descent Parsing"):** data la grammatica delle espressioni dopo la trasformazione (eliminazione della ricorsione sinistra, §4.9): 
+	```
+		1.  Goal    → Expr
+		
+		2.  Expr    → Term Expr'
+		
+		3.  Expr'   → + Term Expr'
+		4.          | - Term Expr'
+		5.          | ε
+		
+		6.  Term    → Factor Term'
+		
+		7.  Term'   → * Factor Term'
+		8.          | / Factor Term'
+		9.          | ε
+		
+		10.  Factor  → ( Expr )
+		11.         | number
+		12.         | id
+	```
+	
+	questa grammatica produce un parser con **sei routine mutuamente ricorsive**: `Goal`, `Expr`, `EPrime`, `Term`, `TPrime`, `Factor` — ciascuna riconosce un non-terminale o un terminale. Il termine "discesa" (_descent_) si riferisce alla direzione in cui viene costruito il parse tree [ParsingMio.pdf, Slide 46].
+- **Implementazione procedurale (slide "Recursive Descent Parsing (Procedural)"):**
+    
+    ```text
+    Goal()    token ← next_token();    if (Expr() = true & token = EOF)        then procedi al prossimo passo di compilazione;        else            segnala errore di sintassi;            return false;Expr()    if (Term() = false)        then return false;        else return Eprime();
+    ```
+    
+    [ParsingMio.pdf, Slide 47].
+- **`Factor()` (slide "Recursive Descent Parsing II"):**
+    ```text
+	    Factor()
+	    if (token = Number) then
+	        token ← next_token();
+	        return true;
+	
+	    else if (token = Identifier) then
+	        token ← next_token();
+	        return true;
+	
+	    else if (token = Lparen) then
+	        token ← next_token();
+	
+	        if (Expr() = true and token = Rparen) then
+	            token ← next_token();
+	            return true;
+	        end if;
+	
+	    end if;
+	
+	    // Cercava Number, Identifier o "(".
+	    // È stato trovato un token diverso, oppure
+	    // Expr() o ")" è mancante dopo "(".
+	    segnala errore di sintassi;
+	    return false;
+    ```
+    
+    `EPrime`, `Term` e `TPrime` seguono le stesse linee di base [ParsingMio.pdf, Slide 48]. Questa è l'implementazione **manuale** (hand-coded) del parsing predittivo, complementare all'approccio table-driven di §4.14–4.16: entrambe realizzano lo stesso algoritmo LL(1), ma la prima lo codifica direttamente come struttura di chiamate a funzione, la seconda lo interpreta a partire da una tabella esplicita.
+
+### 4.13 Left Factoring: l'Algoritmo Generale e un Esempio Svolto
+
+- **Cosa fare se la grammatica non è LL(1)? (slide "What If My Grammar Is Not LL(1)?"):** si può trasformare una grammatica non-LL(1) in una LL(1)? In generale la risposta è no, ma **a volte sì**. Si assuma una grammatica $G$ con produzioni $A\to\alpha\beta_1$ e $A\to\alpha\beta_2$: se $\alpha$ deriva qualcosa di diverso da $\epsilon$, allora $\text{FIRST}^+(A\to\alpha\beta_1)\cap\text{FIRST}^+(A\to\alpha\beta_2)\ne\emptyset$ e la grammatica non è LL(1). Se si estrae il prefisso comune $\alpha$ in una produzione separata, si può rendere la grammatica LL(1): $$A\to\alpha A', \qquad A'\to\beta_1, \qquad A'\to\beta_2$$ Ora, se $\text{FIRST}^+(A'\to\beta_1)\cap\text{FIRST}^+(A'\to\beta_2)=\emptyset$, $G$ potrebbe essere LL(1) [ParsingMio.pdf, Slide 50].
+- **Algoritmo generale di Left Factoring (slide "Left Factoring"):** 
+    ```text
+		Per ogni non-terminale A:
+		
+		    trova il prefisso α più lungo comune a due o più alternative di A;
+		
+		    if α ≠ ε then
+		
+		        sostituisci tutte le produzioni
+		
+		            A → α β₁
+		              | α β₂
+		              | α β₃
+		              | ...
+		              | α βₙ
+		              | γ
+		
+		        con
+		
+		            A  → α A'
+		              | γ
+		
+		            A' → β₁
+		               | β₂
+		               | β₃
+		               | ...
+		               | βₙ
+		
+		    end if;
+		
+		Ripeti finché nessun non-terminale ha alternative nel lato destro
+		che condividono un prefisso comune.
+    ```
+    
+    Questa trasformazione rende LL(1) alcune grammatiche. **Esistono linguaggi per cui non esiste alcuna grammatica LL(1)** [ParsingMio.pdf, Slide 51].
+- **Esempio Svolto (slide "Left Factoring Example"):** si consideri una semplice grammatica delle espressioni right-recursive:
+    
+    ```
+		1.  Goal    → Expr
+		
+		2.  Expr    → Term + Expr
+		3.          | Term - Expr
+		4.          | Term
+		
+		5.  Term    → Factor * Term
+		6.          | Factor / Term
+		7.          | Factor
+		
+		8.  Factor  → number
+		9.          | id
+
+    ```
+    
+    [ParsingMio.pdf, Slide 52]. Sia in `Expr` (alternative 1,2,3 condividono il prefisso `Term`) sia in `Term` (alternative 4,5,6 condividono il prefisso `Factor`) c'è un prefisso comune. **Dopo il Left Factoring:**
+    
+    ```
+		1. Goal    → Expr
+		
+		2.  Expr    → Term Expr'
+		
+		3.  Expr'   → + Expr
+		4.          | - Expr
+		5.          | ε
+		
+		6.  Term    → Factor Term'
+		
+		7.  Term'   → * Term
+		8.          | / Term
+		9.          | ε
+		
+		10.  Factor  → number
+		11.         | id
+    ```
+    
+    [ParsingMio.pdf, Slide 53]. **Confronto con l'eliminazione della ricorsione sinistra (§4.9):** si noti la somiglianza strutturale con l'esito della rimozione della ricorsione sinistra — in entrambi i casi si introduce un nuovo non-terminale "primato" ($Expr'$, $Term'$) — ma qui il problema di partenza era una grammatica già priva di ricorsione sinistra (è _right_-recursive), bensì afflitta da **prefissi comuni** fra alternative dello stesso non-terminale; le due trasformazioni (eliminazione ricorsione sinistra e left factoring) risolvono quindi due patologie distinte che possono entrambe violare la condizione LL(1), pur producendo forme finali strutturalmente simili.
+
+### 4.14 Costruzione della Tabella di Parsing LL(1)
+
+- **Proprietà LL(1):** una grammatica è LL(1) se e solo se, per ogni coppia di produzioni distinte dello stesso non-terminale $A \rightarrow \alpha$ e $A \rightarrow \beta$, si ha $\text{FIRST}^+(A \rightarrow \alpha) \cap \text{FIRST}^+(A \rightarrow \beta) = \emptyset$ [ParsingMio.pdf, Slide 44].
+    
+- **Algoritmo di Riempimento della Tabella (slide "Building Top-down Parsers" — "Filling in TABLE[X,y]"):** per $X\in N$, $y\in\Sigma$:
+    
+    1. l'entry è la regola $X\to\beta$ se $y\in\text{FIRST}^+(X\to\beta)$;
+    2. l'entry è "errore" se la regola 1 non definisce alcuna produzione.
+    
+    Se una qualsiasi entry ha più di una regola, $G$ non è LL(1). Questo algoritmo è detto **algoritmo di costruzione della tabella LL(1)** [ParsingMio.pdf, Slide 74].
+    
+
+### 4.15 Caso di Studio Svolto: la Grammatica delle Espressioni Classica
+
 Grammatica (dopo eliminazione della ricorsione sinistra) con la numerazione delle slide:
+
 ```
-E → T E'
-E' → + TE'| \epsilon
-T → FT'
-T' → *FT'| \epsilon
-F → (E) | id | num
+0.  Goal   → Expr
+1.  Expr   → Term Expr'
+2.  Expr'  → + Term Expr'
+3.         | - Term Expr'
+4.         | ε
+5.  Term   → Factor Term'
+6.  Term'  → * Factor Term'
+7.         | / Factor Term'
+8.         | ε
+9.  Factor → ( Expr )
+10.         | number
+11.         | id
 ```
 
-**FIRST (slide, calcolati "dal basso"):** `FIRST(F) = FIRST(T) = FIRST(E) = FIRST(Goal) = {(, id, num}` (F non nullificabile); `FIRST(E') = {+, -, ε}`; `FIRST(T') = {*, /, ε}`.
-
-to determine FIRST(A), we must inspect all productions that have A on the left.
+**FIRST (slide, calcolati "dal basso"):** `FIRST(F) = FIRST(T) = FIRST(E) = FIRST(Goal) = {(, id, num}` (F non nullificabile); `FIRST(E') = {+, -, ε}`; `FIRST(T') = {*, /, ε}` [ParsingMio.pdf, Slide 57–59].
 
 **FOLLOW (slide, passo-passo):**
-*   `FOLLOW(E) = {$, )}` (start symbol; E compare in `F → (E)`);
-*   `FOLLOW(E') = FOLLOW(E) = {$, )}` (E' è ultimo in `E → T E'` e in `E' → + T E'`);
-*   `FOLLOW(T) = FIRST(E')\{ε} ∪ FOLLOW(E) ∪ FOLLOW(E') = {+, -, $, )}` (E' nullificabile);
-*   `FOLLOW(T') = FOLLOW(T) = {+, -, $, )}`;
-*   `FOLLOW(F) = FIRST(T')\{ε} ∪ FOLLOW(T) ∪ FOLLOW(T') = {*, /, +, -, $, )}` (T' nullificabile).
 
-to determine FOLLOW(A), we must inspect all productions that have A on the right.
+- `FOLLOW(E) = {$, )}` (start symbol; E compare in `F → (E)`);
+- `FOLLOW(E') = FOLLOW(E) = {$, )}` (E' è ultimo in `E → T E'` e in `E' → + T E'`);
+- `FOLLOW(T) = FIRST(E')\{ε} ∪ FOLLOW(E) ∪ FOLLOW(E') = {+, -, $, )}` (E' nullificabile);
+- `FOLLOW(T') = FOLLOW(T) = {+, -, $, )}`;
+- `FOLLOW(F) = FIRST(T')\{ε} ∪ FOLLOW(T) ∪ FOLLOW(T') = {*, /, +, -, $, )}` (T' nullificabile).
+
+[ParsingMio.pdf, Slide 62–66].
 
 **Tabella di parsing LL(1) (slide):**
 
-![[Pasted image 20260906164822.png|237]]
-
-| NT \ T | + | − | * | / | id | num | ( | ) | $ |
+|NT \ T|+|−|*|/|id|num|(|)|$|
 |---|---|---|---|---|---|---|---|---|---|
-| **Goal** | | | | | 0 | 0 | 0 | | |
-| **Expr** | | | | | 1 | 1 | 1 | | |
-| **Expr'** | 2 | 3 | | | | | | 4 | 4 |
-| **Term** | | | | | 5 | 5 | 5 | | |
-| **Term'** | 8 | 8 | 6 | 7 | | | | 8 | 8 |
-| **Factor** | | | | | 10 | 9 | 11 | | |
+|**Goal**|||||0|0|0|||
+|**Expr**|||||1|1|1|||
+|**Expr'**|2|3||||||4|4|
+|**Term**|||||5|5|5|||
+|**Term'**|8|8|6|7||||8|8|
+|**Factor**|||||10|9|11|||
 
-Nessuna cella contiene più di una produzione ⇒ **grammatica LL(1)**.
+[ParsingMio.pdf, Slide 67, 70, 71]. Nessuna cella contiene più di una produzione ⇒ **grammatica LL(1)**.
 
-### 4.6 Skeleton Parser LL(1) (table-driven)
+### 4.16 Skeleton Parser LL(1) (table-driven)
+
 ```
 word ← NextWord()
-push $ onto Stack  // la pila traccia la frontiera del parse tree
+push $ onto Stack                    // la pila traccia la frontiera del parse tree
 push the start symbol S onto Stack
 TOS ← top of Stack
 loop forever
@@ -651,107 +1486,113 @@ loop forever
         break & report success
     else if TOS is a terminal then
         if TOS matches word then
-            pop Stack; // recognized TOS
-            word ← NextWord()
+            pop Stack;  word ← NextWord()
         else report error looking for TOS
-    else  // TOS è un non-terminale
+    else                              // TOS è un non-terminale
         if TABLE[TOS, word] = A → B1B2…Bk then
             pop Stack
-            push Bk, Bk−1, …, B1 // in quest'ordine
+            push Bk, Bk−1, …, B1      // in quest'ordine
         else break & report error expanding TOS
     TOS ← top of Stack
 ```
 
-#### ✴️ Esercizio d'Esame: La grammatica begin-end (svolto)
-Grammatica esatta della slide finale di *TableConstruction.pdf* ("Construct the table for descendent parser…") [TableConstruction.pdf, Slide 30]:
-1.  $P \rightarrow begin\ L\ end$
-2.  $L \rightarrow ST$
-3.  $T \rightarrow ST \mid \epsilon$
-4.  $S \rightarrow id := E; \mid read(id); \mid write(E);$
-5.  $E \rightarrow FG$
-6.  $G \rightarrow + FG \mid \epsilon$
-7.  $F \rightarrow (E) \mid id$
+[ParsingMio.pdf, Slide 73].
 
-> **Nota metodologica:** questa soluzione non è presente nelle slide (che pongono l'esercizio senza risolverlo); è stata sviluppata in questa dispensa applicando rigorosamente gli algoritmi FIRST/FOLLOW/FIRST⁺ del §4.3-4.4, a partire dalla grammatica esatta trascritta dalla slide.
+#### ✴️ Esercizio d'Esame: La grammatica begin-end (svolto)
+
+Grammatica esatta della slide finale di _TableConstruction.pdf_ ("Construct the table for descendent parser…") [TableConstruction.pdf, Slide 30]:
+
+1. $P \rightarrow begin\ L\ end$
+2. $L \rightarrow ST$
+3. $T \rightarrow ST \mid \epsilon$
+4. $S \rightarrow id := E; \mid read(id); \mid write(E);$
+5. $E \rightarrow FG$
+6. $G \rightarrow + FG \mid \epsilon$
+7. $F \rightarrow (E) \mid id$
+
+> **Nota metodologica:** questa soluzione non è presente nelle slide (che pongono l'esercizio senza risolverlo); è stata sviluppata in questa dispensa applicando rigorosamente gli algoritmi FIRST/FOLLOW/FIRST⁺ del §4.10-4.11, a partire dalla grammatica esatta trascritta dalla slide.
 
 **Calcolo di FIRST (risalendo dai non-terminali "foglia" $F$, $G$):**
 
-| Simbolo | FIRST |
+|Simbolo|FIRST|
 |---|---|
-| $F$ | $\{ (,\ id \}$ ($F$ non nullificabile) |
-| $G$ | $\{ +,\ \epsilon \}$ |
-| $E$ | $\text{FIRST}(F) = \{ (,\ id \}$ ($E \rightarrow FG$, $F$ non nullificabile ⇒ $G$ non contribuisce) |
-| $S$ | $\{ id,\ read,\ write \}$ (le tre alternative iniziano con terminali distinti) |
-| $T$ | $\text{FIRST}(S) \cup \{\epsilon\} = \{ id,\ read,\ write,\ \epsilon \}$ |
-| $L$ | $\text{FIRST}(S) = \{ id,\ read,\ write \}$ ($S$ non nullificabile in $L \rightarrow ST$) |
-| $P$ | $\{ begin \}$ |
+|$F$|${ (,\ id }$ ($F$ non nullificabile)|
+|$G$|${ +,\ \epsilon }$|
+|$E$|$\text{FIRST}(F) = { (,\ id }$ ($E \rightarrow FG$, $F$ non nullificabile ⇒ $G$ non contribuisce)|
+|$S$|${ id,\ read,\ write }$ (le tre alternative iniziano con terminali distinti)|
+|$T$|$\text{FIRST}(S) \cup {\epsilon} = { id,\ read,\ write,\ \epsilon }$|
+|$L$|$\text{FIRST}(S) = { id,\ read,\ write }$ ($S$ non nullificabile in $L \rightarrow ST$)|
+|$P$|${ begin }$|
 
 **Calcolo di FOLLOW:**
-*   $\text{FOLLOW}(P) = \{ \$ \}$ (simbolo iniziale).
-*   $\text{FOLLOW}(L) \supseteq \text{FIRST}(end) = \{end\}$, da $P \rightarrow begin\ L\ end$ ⇒ $\text{FOLLOW}(L) = \{end\}$.
-*   $\text{FOLLOW}(T)$: $T$ è ultimo simbolo in $L \rightarrow ST$ ⇒ $\text{FOLLOW}(T) \supseteq \text{FOLLOW}(L) = \{end\}$; $T$ è ultimo anche in $T \rightarrow ST$ (auto-ricorsiva, nessuna informazione nuova) ⇒ $\text{FOLLOW}(T) = \{end\}$.
-*   $\text{FOLLOW}(S)$: in $L \rightarrow S\,T$, $S$ è seguito da $T$: $\text{FOLLOW}(S) \supseteq \text{FIRST}(T)\setminus\{\epsilon\} = \{id, read, write\}$; poiché $T$ è nullificabile, $\text{FOLLOW}(S) \supseteq \text{FOLLOW}(L) = \{end\}$. Stesso ragionamento per $T \rightarrow S\,T$. Quindi $\text{FOLLOW}(S) = \{ id,\ read,\ write,\ end \}$.
-*   $\text{FOLLOW}(E)$: $E$ compare in $S \rightarrow id := E;$ (seguito da `;`), in $S \rightarrow write(E);$ (seguito da `)`) e in $F \rightarrow (E)$ (seguito da `)`) ⇒ $\text{FOLLOW}(E) = \{ ;,\ ) \}$.
-*   $\text{FOLLOW}(G)$: $G$ è ultimo in $E \rightarrow FG$ ⇒ $\text{FOLLOW}(G) \supseteq \text{FOLLOW}(E) = \{;, )\}$; $G$ è ultimo anche in $G \rightarrow +FG$ (nessuna informazione nuova) ⇒ $\text{FOLLOW}(G) = \{ ;,\ ) \}$.
-*   $\text{FOLLOW}(F)$: in $E \rightarrow FG$, $F$ è seguito da $G$: $\text{FOLLOW}(F) \supseteq \text{FIRST}(G)\setminus\{\epsilon\} = \{+\}$; poiché $G$ è nullificabile, $\text{FOLLOW}(F) \supseteq \text{FOLLOW}(E) = \{;, )\}$. Stesso da $G \rightarrow +FG$. Quindi $\text{FOLLOW}(F) = \{ +,\ ;,\ ) \}$.
+
+- $\text{FOLLOW}(P) = { $ }$ (simbolo iniziale).
+- $\text{FOLLOW}(L) \supseteq \text{FIRST}(end) = {end}$, da $P \rightarrow begin\ L\ end$ ⇒ $\text{FOLLOW}(L) = {end}$.
+- $\text{FOLLOW}(T)$: $T$ è ultimo simbolo in $L \rightarrow ST$ ⇒ $\text{FOLLOW}(T) \supseteq \text{FOLLOW}(L) = {end}$; $T$ è ultimo anche in $T \rightarrow ST$ (auto-ricorsiva, nessuna informazione nuova) ⇒ $\text{FOLLOW}(T) = {end}$.
+- $\text{FOLLOW}(S)$: in $L \rightarrow S,T$, $S$ è seguito da $T$: $\text{FOLLOW}(S) \supseteq \text{FIRST}(T)\setminus{\epsilon} = {id, read, write}$; poiché $T$ è nullificabile, $\text{FOLLOW}(S) \supseteq \text{FOLLOW}(L) = {end}$. Stesso ragionamento per $T \rightarrow S,T$. Quindi $\text{FOLLOW}(S) = { id,\ read,\ write,\ end }$.
+- $\text{FOLLOW}(E)$: $E$ compare in $S \rightarrow id := E;$ (seguito da `;`), in $S \rightarrow write(E);$ (seguito da `)`) e in $F \rightarrow (E)$ (seguito da `)`) ⇒ $\text{FOLLOW}(E) = { ;,\ ) }$.
+- $\text{FOLLOW}(G)$: $G$ è ultimo in $E \rightarrow FG$ ⇒ $\text{FOLLOW}(G) \supseteq \text{FOLLOW}(E) = {;, )}$; $G$ è ultimo anche in $G \rightarrow +FG$ (nessuna informazione nuova) ⇒ $\text{FOLLOW}(G) = { ;,\ ) }$.
+- $\text{FOLLOW}(F)$: in $E \rightarrow FG$, $F$ è seguito da $G$: $\text{FOLLOW}(F) \supseteq \text{FIRST}(G)\setminus{\epsilon} = {+}$; poiché $G$ è nullificabile, $\text{FOLLOW}(F) \supseteq \text{FOLLOW}(E) = {;, )}$. Stesso da $G \rightarrow +FG$. Quindi $\text{FOLLOW}(F) = { +,\ ;,\ ) }$.
 
 **FIRST⁺ per ogni produzione e verifica LL(1):**
 
-| # | Produzione | FIRST⁺ |
+|#|Produzione|FIRST⁺|
 |---|---|---|
-| 1 | $P \rightarrow begin\ L\ end$ | $\{begin\}$ |
-| 2 | $L \rightarrow ST$ | $\{id, read, write\}$ |
-| 3 | $T \rightarrow ST$ | $\{id, read, write\}$ |
-| 4 | $T \rightarrow \epsilon$ | $\text{FOLLOW}(T) = \{end\}$ |
-| 5 | $S \rightarrow id := E;$ | $\{id\}$ |
-| 6 | $S \rightarrow read(id);$ | $\{read\}$ |
-| 7 | $S \rightarrow write(E);$ | $\{write\}$ |
-| 8 | $E \rightarrow FG$ | $\{(, id\}$ |
-| 9 | $G \rightarrow +FG$ | $\{+\}$ |
-| 10 | $G \rightarrow \epsilon$ | $\text{FOLLOW}(G) = \{;, )\}$ |
-| 11 | $F \rightarrow (E)$ | $\{(\}$ |
-| 12 | $F \rightarrow id$ | $\{id\}$ |
+|1|$P \rightarrow begin\ L\ end$|${begin}$|
+|2|$L \rightarrow ST$|${id, read, write}$|
+|3|$T \rightarrow ST$|${id, read, write}$|
+|4|$T \rightarrow \epsilon$|$\text{FOLLOW}(T) = {end}$|
+|5|$S \rightarrow id := E;$|${id}$|
+|6|$S \rightarrow read(id);$|${read}$|
+|7|$S \rightarrow write(E);$|${write}$|
+|8|$E \rightarrow FG$|${(, id}$|
+|9|$G \rightarrow +FG$|${+}$|
+|10|$G \rightarrow \epsilon$|$\text{FOLLOW}(G) = {;, )}$|
+|11|$F \rightarrow (E)$|${(}$|
+|12|$F \rightarrow id$|${id}$|
 
-Per $T$ (produzioni 3, 4): $\{id,read,write\} \cap \{end\} = \emptyset$. Per $G$ (produzioni 9, 10): $\{+\} \cap \{;,)\} = \emptyset$. Nessun'altra coppia di produzioni condivide lo stesso non-terminale a sinistra ⇒ **grammatica LL(1)**.
+Per $T$ (produzioni 3, 4): ${id,read,write} \cap {end} = \emptyset$. Per $G$ (produzioni 9, 10): ${+} \cap {;,)} = \emptyset$. Nessun'altra coppia di produzioni condivide lo stesso non-terminale a sinistra ⇒ **grammatica LL(1)**.
 
 **Tabella di parsing $M[A,t]$:**
 
-| NT \ T | begin | id | read | write | ( | ) | + | ; | end |
+|NT \ T|begin|id|read|write|(|)|+|;|end|
 |---|---|---|---|---|---|---|---|---|---|
-| **P** | 1 | | | | | | | | |
-| **L** | | 2 | 2 | 2 | | | | | |
-| **T** | | 3 | 3 | 3 | | | | | 4 |
-| **S** | | 5 | 6 | 7 | | | | | |
-| **E** | | 8 | | | 8 | | | | |
-| **G** | | | | | | 10 | 9 | 10 | |
-| **F** | | 12 | | | 11 | | | | |
+|**P**|1|||||||||
+|**L**||2|2|2||||||
+|**T**||3|3|3|||||4|
+|**S**||5|6|7||||||
+|**E**||8|||8|||||
+|**G**||||||10|9|10||
+|**F**||12|||11|||||
 
-**Traccia di parsing per `begin write ( id + id ) ; end` (skeleton parser di §4.6):**
+**Traccia di parsing per `begin write ( id + id ) ; end` (skeleton parser di §4.16):**
 
-| Pila (top a sinistra) | Input residuo | Regola / Azione |
+|Pila (top a sinistra)|Input residuo|Regola / Azione|
 |---|---|---|
-| `P $` | `begin write ( id + id ) ; end $` | $M[P,begin]$: prod. 1 → push `begin L end` |
-| `begin L end $` | `begin write ( id + id ) ; end $` | match `begin` |
-| `L end $` | `write ( id + id ) ; end $` | $M[L,write]$: prod. 2 → push `S T` |
-| `S T end $` | `write ( id + id ) ; end $` | $M[S,write]$: prod. 7 → push `write ( E ) ;` |
-| `write ( E ) ; T end $` | `write ( id + id ) ; end $` | match `write` |
-| `( E ) ; T end $` | `( id + id ) ; end $` | match `(` |
-| `E ) ; T end $` | `id + id ) ; end $` | $M[E,id]$: prod. 8 → push `F G` |
-| `F G ) ; T end $` | `id + id ) ; end $` | $M[F,id]$: prod. 12 → push `id` |
-| `id G ) ; T end $` | `id + id ) ; end $` | match `id` |
-| `G ) ; T end $` | `+ id ) ; end $` | $M[G,+]$: prod. 9 → push `+ F G` |
-| `+ F G ) ; T end $` | `+ id ) ; end $` | match `+` |
-| `F G ) ; T end $` | `id ) ; end $` | $M[F,id]$: prod. 12 → push `id` |
-| `id G ) ; T end $` | `id ) ; end $` | match `id` |
-| `G ) ; T end $` | `) ; end $` | $M[G,)]$: prod. 10 (ε) → pop, nessun push |
-| `) ; T end $` | `) ; end $` | match `)` |
-| `; T end $` | `; end $` | match `;` |
-| `T end $` | `end $` | $M[T,end]$: prod. 4 (ε) → pop, nessun push |
-| `end $` | `end $` | match `end` |
-| `$` | `$` | **successo** |
+|`P $`|`begin write ( id + id ) ; end $`|$M[P,begin]$: prod. 1 → push `begin L end`|
+|`begin L end $`|`begin write ( id + id ) ; end $`|match `begin`|
+|`L end $`|`write ( id + id ) ; end $`|$M[L,write]$: prod. 2 → push `S T`|
+|`S T end $`|`write ( id + id ) ; end $`|$M[S,write]$: prod. 7 → push `write ( E ) ;`|
+|`write ( E ) ; T end $`|`write ( id + id ) ; end $`|match `write`|
+|`( E ) ; T end $`|`( id + id ) ; end $`|match `(`|
+|`E ) ; T end $`|`id + id ) ; end $`|$M[E,id]$: prod. 8 → push `F G`|
+|`F G ) ; T end $`|`id + id ) ; end $`|$M[F,id]$: prod. 12 → push `id`|
+|`id G ) ; T end $`|`id + id ) ; end $`|match `id`|
+|`G ) ; T end $`|`+ id ) ; end $`|$M[G,+]$: prod. 9 → push `+ F G`|
+|`+ F G ) ; T end $`|`+ id ) ; end $`|match `+`|
+|`F G ) ; T end $`|`id ) ; end $`|$M[F,id]$: prod. 12 → push `id`|
+|`id G ) ; T end $`|`id ) ; end $`|match `id`|
+|`G ) ; T end $`|`) ; end $`|$M[G,)]$: prod. 10 (ε) → pop, nessun push|
+|`) ; T end $`|`) ; end $`|match `)`|
+|`; T end $`|`; end $`|match `;`|
+|`T end $`|`end $`|$M[T,end]$: prod. 4 (ε) → pop, nessun push|
+|`end $`|`end $`|match `end`|
+|`$`|`$`|**successo**|
 
 #### ✴️ Esercizio d'Esame: seconda grammatica LL(1) (svolto)
-Grammatica esatta della slide finale di *ParsingMio.pdf* [ParsingMio.pdf, Slide 75]:
+
+Grammatica esatta della slide finale di _ParsingMio.pdf_ [ParsingMio.pdf, Slide 75]:
+
 ```
 S → AB | eDa
 A → ab | c
@@ -759,61 +1600,65 @@ B → dC
 C → eC | g
 D → fD | g
 ```
-> **Nota metodologica:** anche in questo caso la soluzione non è presente nelle slide (l'esercizio è posto senza risoluzione). **Osservazione correttiva:** a differenza della grammatica begin-end, questa grammatica **non contiene alcuna produzione $\epsilon$** — nessun simbolo è nullificabile. Il titolo "grammatica con nullificabili" di una stesura precedente di questa dispensa era quindi impreciso ed è stato qui corretto: l'esempio è utile piuttosto per esercitare il calcolo di FIRST/FOLLOW su una grammatica interamente non nullificabile, con alternative lessicalmente disgiunte.
+
+> **Nota metodologica:** anche in questo caso la soluzione non è presente nelle slide (l'esercizio è posto senza risoluzione). **Osservazione correttiva:** a differenza della grammatica begin-end, questa grammatica **non contiene alcuna produzione $\epsilon$** — nessun simbolo è nullificabile. L'esempio è utile per esercitare il calcolo di FIRST/FOLLOW su una grammatica interamente non nullificabile, con alternative lessicalmente disgiunte.
 
 **FIRST:**
-*   $\text{FIRST}(D) = \{f, g\}$ ($D \rightarrow fD \mid g$)
-*   $\text{FIRST}(C) = \{e, g\}$ ($C \rightarrow eC \mid g$)
-*   $\text{FIRST}(B) = \{d\}$ ($B \rightarrow dC$)
-*   $\text{FIRST}(A) = \{a, c\}$ ($A \rightarrow ab \mid c$)
-*   $\text{FIRST}(S) = \text{FIRST}(A) \cup \{e\} = \{a, c, e\}$ ($S \rightarrow AB \mid eDa$)
+
+- $\text{FIRST}(D) = {f, g}$ ($D \rightarrow fD \mid g$)
+- $\text{FIRST}(C) = {e, g}$ ($C \rightarrow eC \mid g$)
+- $\text{FIRST}(B) = {d}$ ($B \rightarrow dC$)
+- $\text{FIRST}(A) = {a, c}$ ($A \rightarrow ab \mid c$)
+- $\text{FIRST}(S) = \text{FIRST}(A) \cup {e} = {a, c, e}$ ($S \rightarrow AB \mid eDa$)
 
 **FOLLOW:**
-*   $\text{FOLLOW}(S) = \{\$\}$ (simbolo iniziale).
-*   $\text{FOLLOW}(A)$: da $S \rightarrow AB$, $A$ seguito da $B$, $B$ non nullificabile ⇒ $\text{FOLLOW}(A) = \text{FIRST}(B) = \{d\}$.
-*   $\text{FOLLOW}(B)$: da $S \rightarrow AB$, $B$ ultimo simbolo ⇒ $\text{FOLLOW}(B) = \text{FOLLOW}(S) = \{\$\}$.
-*   $\text{FOLLOW}(D)$: da $S \rightarrow eDa$, $D$ seguito da `a` ⇒ $\text{FOLLOW}(D) \supseteq \{a\}$; da $D \rightarrow fD$, $D$ ultimo simbolo (auto-ricorsiva, nessuna informazione nuova) ⇒ $\text{FOLLOW}(D) = \{a\}$.
-*   $\text{FOLLOW}(C)$: da $B \rightarrow dC$, $C$ ultimo simbolo ⇒ $\text{FOLLOW}(C) \supseteq \text{FOLLOW}(B) = \{\$\}$; da $C \rightarrow eC$, nessuna informazione nuova ⇒ $\text{FOLLOW}(C) = \{\$\}$.
+
+- $\text{FOLLOW}(S) = {\$}$ (simbolo iniziale).
+- $\text{FOLLOW}(A)$: da $S \rightarrow AB$, $A$ seguito da $B$, $B$ non nullificabile ⇒ $\text{FOLLOW}(A) = \text{FIRST}(B) = {d}$.
+- $\text{FOLLOW}(B)$: da $S \rightarrow AB$, $B$ ultimo simbolo ⇒ $\text{FOLLOW}(B) = \text{FOLLOW}(S) = {\$}$.
+- $\text{FOLLOW}(D)$: da $S \rightarrow eDa$, $D$ seguito da `a` ⇒ $\text{FOLLOW}(D) \supseteq {a}$; da $D \rightarrow fD$, $D$ ultimo simbolo (auto-ricorsiva, nessuna informazione nuova) ⇒ $\text{FOLLOW}(D) = {a}$.
+- $\text{FOLLOW}(C)$: da $B \rightarrow dC$, $C$ ultimo simbolo ⇒ $\text{FOLLOW}(C) \supseteq \text{FOLLOW}(B) = {\$}$; da $C \rightarrow eC$, nessuna informazione nuova ⇒ $\text{FOLLOW}(C) = {\$}$.
 
 **FIRST⁺ e verifica LL(1)** (nessuna produzione è nullificabile, quindi $\text{FIRST}^+(A\rightarrow\beta)=\text{FIRST}(\beta)$ direttamente):
 
-| # | Produzione | FIRST⁺ |
+|#|Produzione|FIRST⁺|
 |---|---|---|
-| 1 | $S \rightarrow AB$ | $\{a, c\}$ |
-| 2 | $S \rightarrow eDa$ | $\{e\}$ |
-| 3 | $A \rightarrow ab$ | $\{a\}$ |
-| 4 | $A \rightarrow c$ | $\{c\}$ |
-| 5 | $B \rightarrow dC$ | $\{d\}$ |
-| 6 | $C \rightarrow eC$ | $\{e\}$ |
-| 7 | $C \rightarrow g$ | $\{g\}$ |
-| 8 | $D \rightarrow fD$ | $\{f\}$ |
-| 9 | $D \rightarrow g$ | $\{g\}$ |
+|1|$S \rightarrow AB$|${a, c}$|
+|2|$S \rightarrow eDa$|${e}$|
+|3|$A \rightarrow ab$|${a}$|
+|4|$A \rightarrow c$|${c}$|
+|5|$B \rightarrow dC$|${d}$|
+|6|$C \rightarrow eC$|${e}$|
+|7|$C \rightarrow g$|${g}$|
+|8|$D \rightarrow fD$|${f}$|
+|9|$D \rightarrow g$|${g}$|
 
-Per $S$: $\{a,c\} \cap \{e\} = \emptyset$. Per $A$: $\{a\}\cap\{c\}=\emptyset$. Per $C$: $\{e\}\cap\{g\}=\emptyset$. Per $D$: $\{f\}\cap\{g\}=\emptyset$ ⇒ **grammatica LL(1)**.
+Per $S$: ${a,c} \cap {e} = \emptyset$. Per $A$: ${a}\cap{c}=\emptyset$. Per $C$: ${e}\cap{g}=\emptyset$. Per $D$: ${f}\cap{g}=\emptyset$ ⇒ **grammatica LL(1)**.
 
 **Tabella di parsing $M[A,t]$:**
 
-| NT \ T | a | b | c | d | e | f | g |
+|NT \ T|a|b|c|d|e|f|g|
 |---|---|---|---|---|---|---|---|
-| **S** | 1 | | 1 | | 2 | | |
-| **A** | 3 | | 4 | | | | |
-| **B** | | | | 5 | | | |
-| **C** | | | | | 6 | | 7 |
-| **D** | | | | | | 8 | 9 |
+|**S**|1||1||2|||
+|**A**|3||4|||||
+|**B**||||5||||
+|**C**|||||6||7|
+|**D**||||||8|9|
 
-**Traccia di parsing per `abdg` (= $a\,b\,d\,g$):** $S \Rightarrow AB \Rightarrow abB \Rightarrow abdC \Rightarrow abdg$.
+**Traccia di parsing per `abdg` (= $a,b,d,g$):** $S \Rightarrow AB \Rightarrow abB \Rightarrow abdC \Rightarrow abdg$.
 
-| Pila | Input residuo | Regola / Azione |
+|Pila|Input residuo|Regola / Azione|
 |---|---|---|
-| `S $` | `a b d g $` | $M[S,a]$: prod.1 → push `A B` |
-| `A B $` | `a b d g $` | $M[A,a]$: prod.3 → push `a b` |
-| `a b B $` | `a b d g $` | match `a` |
-| `b B $` | `b d g $` | match `b` |
-| `B $` | `d g $` | $M[B,d]$: prod.5 → push `d C` |
-| `d C $` | `d g $` | match `d` |
-| `C $` | `g $` | $M[C,g]$: prod.7 → push `g` |
-| `g $` | `g $` | match `g` |
-| `$` | `$` | **successo** |
+|`S $`|`a b d g $`|$M[S,a]$: prod.1 → push `A B`|
+|`A B $`|`a b d g $`|$M[A,a]$: prod.3 → push `a b`|
+|`a b B $`|`a b d g $`|match `a`|
+|`b B $`|`b d g $`|match `b`|
+|`B $`|`d g $`|$M[B,d]$: prod.5 → push `d C`|
+|`d C $`|`d g $`|match `d`|
+|`C $`|`g $`|$M[C,g]$: prod.7 → push `g`|
+|`g $`|`g $`|match `g`|
+|`$`|`$`|**successo**|
+
 <a id="cap5"></a>
 ## CAPITOLO 5: Parsing Bottom-Up e Tabelle LR(1)
 **Sources:** *Bottom_up_Parsing.pdf* (verificato integralmente) / *TableConstruction.pdf*
@@ -1147,6 +1992,7 @@ Ogni cella contiene **al più un'azione** ⇒ **la grammatica è LR(1)** (rispos
 | LR(1) | veloce, linguaggi deterministici, automatizzabile, associatività a sinistra | working set grandi, messaggi d'errore poveri, tabelle grandi |
 
 <a id="cap6"></a>
+<a id="cap6"></a>
 ## CAPITOLO 6: Analisi Semantica e Sintassi Yacc
 
 **Source:** *ContextsensitiveAnalysisv.pdf*
@@ -1453,10 +2299,10 @@ Let's define the addition operator $(\oplus)$ over this domain as:
 ##### **Attribution Rules:**
 
 - **Rule 1:** $(S \rightarrow L\ \mathbf{0}\ \mathbf{0}) [\text{S.parity} \leftarrow \text{L.parity}]$ _(Since the two trailing `0`s always contribute an even amount to the parity $((\text{L.parity} \oplus \text{odd} \oplus \text{odd} = \text{L.parity} \oplus \text{even} = \text{L.parity}))$, the total parity of \(S) is identical to the parity of (L))_.
-- **Rule 2:** \(L_0 \rightarrow L_1\ B\) \[\text{L}_0\text{.parity} \leftarrow \text{L}_1\text{.parity} \oplus \text{B.parity}\]
-- **Rule 3:** \(L \rightarrow \epsilon\) \[\text{L.parity} \leftarrow \text{even}\]
-- **Rule 4:** \(B \rightarrow \mathbf{0}\) \[\text{B.parity} \leftarrow \text{odd}\]
-- **Rule 5:** \(B \rightarrow \mathbf{1}\) \[\text{B.parity} \leftarrow \text{even}\]
+- **Rule 2:** $(L_0 \rightarrow L_1\ B)$ $[\text{L}_0\text{.parity} \leftarrow \text{L}_1\text{.parity} \oplus \text{B.parity}]$
+- **Rule 3:** $(L \rightarrow \epsilon) \; [\text{L.parity} \leftarrow \text{even}]$
+- **Rule 4:** $(B \rightarrow \mathbf{0}) \; [\text{B.parity} \leftarrow \text{odd}]$
+- **Rule 5:** $(B \rightarrow \mathbf{1}) [\text{B.parity} \leftarrow \text{even}]$
 #### 3. Ad-Hoc Syntax-Directed Translation (SDT)
 
 Using **Yacc-like actions**, we can represent `even` as `0` and `odd` as `1`, performing addition modulo 2 (`% 2`) within the semantic stack [ContextsensitiveAnalysisv.pdf, Slide 29, 31, 32].
@@ -1471,26 +2317,45 @@ Using **Yacc-like actions**, we can represent `even` as `0` and `odd` as `1`, pe
 
 #### 4. Constructing the Evaluation for the String `110100`
 
-The suffix `00` matches the root rule \(S \rightarrow L\ \mathbf{0}\ \mathbf{0}\), while the prefix \(L\) is evaluated on `1101`.
+The suffix `00` matches the root rule $(S \rightarrow L\ \mathbf{0}\ \mathbf{0})$, while the prefix $(L)$ is evaluated on `1101`.
 
 ##### **Step-by-Step Bottom-Up Attribute Evaluation:**
 
-1. **Prefix Initialization (\(L_5 \rightarrow \epsilon\)):**
-    - \(\text{L}_5\text{.parity} = \text{even}\) (value = `0`)
-2. **First Digit (\(B_1 \rightarrow \mathbf{1}\)):**
-    - \(\text{B}_1\text{.parity} = \text{even}\) (value = `0`)
-    - \(\text{L}_4 \rightarrow \text{L}_5\ B_1 \Rightarrow \text{L}_4\text{.parity} = \text{even} \oplus \text{even} = \text{even}\) (value = `(0 + 0) % 2 = 0`)
-3. **Second Digit (\(B_2 \rightarrow \mathbf{1}\)):**
-    - \(\text{B}_2\text{.parity} = \text{even}\) (value = `0`)
-    - \(\text{L}_3 \rightarrow \text{L}_4\ B_2 \Rightarrow \text{L}_3\text{.parity} = \text{even} \oplus \text{even} = \text{even}\) (value = `(0 + 0) % 2 = 0`)
-4. **Third Digit (\(B_3 \rightarrow \mathbf{0}\)):**
-    - \(\text{B}_3\text{.parity} = \text{odd}\) (value = `1`)
-    - \(\text{L}_2 \rightarrow \text{L}_3\ B_3 \Rightarrow \text{L}_2\text{.parity} = \text{even} \oplus \text{odd} = \text{odd}\) (value = `(0 + 1) % 2 = 1`)
-5. **Fourth Digit (\(B_4 \rightarrow \mathbf{1}\)):**
-    - \(\text{B}_4\text{.parity} = \text{even}\) (value = `0`)
-    - \(\text{L}_1 \rightarrow \text{L}_2\ B_4 \Rightarrow \text{L}_1\text{.parity} = \text{odd} \oplus \text{even} = \text{odd}\) (value = `(1 + 0) % 2 = 1`)
-6. **Full Number (\(S \rightarrow \text{L}_1\ \mathbf{0}\ \mathbf{0}\)):**
-    - \(\text{S.parity} = \text{L}_1\text{.parity} = \mathbf{odd}\) (value = `1`)
+1. **Prefix Initialization ($L_5 \rightarrow \epsilon$):**
+    
+    - $L_5.\text{parity} = \text{even}$ (value = `0`)
+        
+2. **First Digit ($B_1 \rightarrow \mathbf{1}$):**
+    
+    - $B_1.\text{parity} = \text{even}$ (value = `0`)
+        
+    - $L_4 \rightarrow L_5\ B_1 \Rightarrow L_4.\text{parity} = \text{even} \oplus \text{even} = \text{even}$  
+        (value = `(0 + 0) % 2 = 0`)
+        
+3. **Second Digit ($B_2 \rightarrow \mathbf{1}$):**
+    
+    - $B_2.\text{parity} = \text{even}$ (value = `0`)
+        
+    - $L_3 \rightarrow L_4\ B_2 \Rightarrow L_3.\text{parity} = \text{even} \oplus \text{even} = \text{even}$  
+        (value = `(0 + 0) % 2 = 0`)
+        
+4. **Third Digit ($B_3 \rightarrow \mathbf{0}$):**
+    
+    - $B_3.\text{parity} = \text{odd}$ (value = `1`)
+        
+    - $L_2 \rightarrow L_3\ B_3 \Rightarrow L_2.\text{parity} = \text{even} \oplus \text{odd} = \text{odd}$  
+        (value = `(0 + 1) % 2 = 1`)
+        
+5. **Fourth Digit ($B_4 \rightarrow \mathbf{1}$):**
+    
+    - $B_4.\text{parity} = \text{even}$ (value = `0`)
+        
+    - $L_1 \rightarrow L_2\ B_4 \Rightarrow L_1.\text{parity} = \text{odd} \oplus \text{even} = \text{odd}$  
+        (value = `(1 + 0) % 2 = 1`)
+        
+6. **Full Number ($S \rightarrow L_1\ \mathbf{0}\ \mathbf{0}$):**
+    
+    - $S.\text{parity} = L_1.\text{parity} = \mathbf{odd}$ (value = `1`)
 
 ##### **Attributed Parse Tree Visualization:**
 
@@ -1519,8 +2384,8 @@ L5 (parity = even, $$ = 0) --> epsilon
 ```
 
 **Conclusion:** The string `110100` contains exactly **three** `0`s. Both translation schemes correctly evaluate to `odd` (or `1`), verifying the soundness and consistency of the implementations [ContextsensitiveAnalysisv.pdf, Slide 15, 29].
-
-
+<a id="cap7"></a>
+<a id="cap7"></a>
 ## CAPITOLO 7: Ottimizzazione del Codice (Middle-End)
 
 **Source:** _OptimizationI.pdf_
@@ -1675,7 +2540,22 @@ Questa sezione integra il paragrafo precedente con il trattamento formale comple
 #### Liveness: dalla definizione informale alla formalizzazione
 *   **Motivazione (slide "Liveness or Live Variables Analysis"):** il codice sorgente va tradotto in una IR (codice a tre indirizzi) con un numero potenzialmente illimitato di registri, ma il programma verrà eseguito su un processore con un numero finito (e piccolo) di registri fisici. Due variabili $a$ e $b$ possono condividere lo stesso registro fisico quando non sono mai "vive" simultaneamente.
 *   **Definizione (slide "Live Variables Analysis"):** una variabile $X$ è viva all'uscita di un comando $C$ se memorizza un valore che sarà effettivamente usato in futuro come R-value, senza un uso precedente come L-value. Una variabile non viva all'uscita di $C$ è detta **morta** (informazione usabile per la dead code elimination). **Questa è una proprietà indecidibile** in generale — da qui la necessità di un'approssimazione statica conservativa.
-*   **Esempio guida completo (slide, sul CFG del fattoriale):** si traccia a mano il live range di `b` — l'ultimo uso di `b` come r-value è nel comando 4; `b` è quindi vivo lungo l'arco $3\to4$; il comando 3 non assegna `b`, quindi `b` è vivo anche lungo $2\to3$; il comando 2 assegna `b`, quindi il valore di `b` lungo $1\to2$ non sarà più usato. Il live range di `b` è dunque $\{2\to3,\ 3\to4\}$. Analogamente si traccia `a` (vivo lungo $4\to5$, $5\to2$, $1\to2$; morto lungo $2\to3$, $3\to4$) e `c` (vivo lungo **ogni** arco: il compilatore può dedurne che, se `c` è locale, viene usata senza inizializzazione precedente — un warning). **Conseguenza pratica:** poiché `a` e `b` non sono mai vivi simultaneamente lungo lo stesso arco, **due registri bastano**: si può sostituire il nome `a` e il nome `b` con un'unica variabile `ab`, ottenendo un risparmio di un registro senza alterare la semantica.
+*   **Esempio guida completo (slide, sul CFG del fattoriale):** 
+	```text
+	1) a := 0;
+	
+	2) b := a + 1;
+	
+	3) c := c + b;
+	
+	4) a := b * 2;
+	
+	5) a < N;
+	
+	6) return c;
+	```
+  
+  si traccia a mano il live range di `b` — l'ultimo uso di `b` come r-value è nel comando 4; `b` è quindi vivo lungo l'arco $3\to4$; il comando 3 non assegna `b`, quindi `b` è vivo anche lungo $2\to3$; il comando 2 assegna `b`, quindi il valore di `b` lungo $1\to2$ non sarà più usato. Il live range di `b` è dunque $\{2\to3,\ 3\to4\}$. Analogamente si traccia `a` (vivo lungo $4\to5$, $5\to2$, $1\to2$; morto lungo $2\to3$, $3\to4$) e `c` (vivo lungo **ogni** arco: il compilatore può dedurne che, se `c` è locale, viene usata senza inizializzazione precedente — un warning). **Conseguenza pratica:** poiché `a` e `b` non sono mai vivi simultaneamente lungo lo stesso arco, **due registri bastano**: si può sostituire il nome `a` e il nome `b` con un'unica variabile `ab`, ottenendo un risparmio di un registro senza alterare la semantica.
 *   **Notazione formale su predecessori/successori (slide "We need a way to compute live variables"):** $pre[n]$ e $post[n]$ denotano rispettivamente i nodi predecessori e successori di $n$. $def[n]$ = variabili definite (assegnate come L-value) nel nodo $n$; $use[n]$ = variabili usate (lette come R-value) nel nodo $n$. Esempio dalla slide: $def[3]=\{c\}$, $use[3]=\{b,c\}$, $def[5]=\emptyset$, $use[5]=\{a\}$.
 *   **Formalizzazione della proprietà (slide "Formalization of the property"):** una variabile $x$ è viva lungo un arco $e\to f$ se esiste un cammino di esecuzione reale $P$ da $e$ a un nodo $n$ tale che: (1) $e\to f$ è il primo arco di $P$; (2) $x\in use[n]$; (3) per ogni nodo $n'\neq e,n$ in $P$, $x\notin def[n']$. Una variabile $x$ è **live-out** in $n$ se è viva lungo almeno un arco uscente da $n$; è **live-in** in $n$ se è viva lungo un qualsiasi arco entrante in $n$.
 *   **Le tre regole della soluzione approssimata (slide "Computing an approximation of Liveness property" / "Computing Liveness"):**
@@ -1726,8 +2606,8 @@ Ciascuna analisi del flusso di dati viene categorizzata in modo univoco sulla ba
     *   **Forward (In avanti):** L'informazione si propaga seguendo la direzione d'esecuzione del codice (dagli ingressi dei blocchi verso le uscite) [Data-Flow2.pdf, Slide 18, 12.1].
     *   **Backward (All'indietro):** L'informazione risale la corrente d'esecuzione, partendo dall'uscita del programma verso i blocchi d'ingresso [Data-Flow2.pdf, Slide 18, 12.1].
 2.  **Operatore di Merge (Combinazione):**
-    *   **May (Possibile / Unione \(\cup\)):** La proprietà vale se è vera lungo *almeno uno* dei cammini che convergono nel punto. Si associa all'operazione insiemistica di unione [Data-Flow2.pdf, Slide 18, 12.1].
-    *   **Must (Definito / Intersezione \(\cap\)):** La proprietà deve valere *su tutti* i cammini d'esecuzione che giungono al punto. Si associa all'operazione di intersezione [Data-Flow2.pdf, Slide 18, 12.1].
+    *   **May (Possibile / Unione $\cup$):** La proprietà vale se è vera lungo *almeno uno* dei cammini che convergono nel punto. Si associa all'operazione insiemistica di unione [Data-Flow2.pdf, Slide 18, 12.1].
+    *   **Must (Definito / Intersezione $\cap$):** La proprietà deve valere *su tutti* i cammini d'esecuzione che giungono al punto. Si associa all'operazione di intersezione [Data-Flow2.pdf, Slide 18, 12.1].
 
 **Catalogo delle quattro analisi (slide):**
 
@@ -1740,33 +2620,57 @@ Ciascuna analisi del flusso di dati viene categorizzata in modo univoco sulla ba
 
 ### 8.3 Analisi Classiche e Relazioni GEN/KILL
 *   **Live Variables (Liveness Analysis):**
-    *   *Classificazione:* Backward + May (Unione) [Data-FlowFirst.pdf, Slide 12; Data-Flow2.pdf, Slide 12, 12.1].
-    *   *Scopo:* Determinare se il valore memorizzato in una variabile verrà letto in futuro prima che la variabile stessa venga sovrascritta [Data-FlowFirst.pdf, Slide 12; Data-Flow2.pdf, Slide 37]. Se non è viva, la variabile è "morta" e l'assegnamento associato può essere rimosso (Dead Code Elimination) [Data-FlowFirst.pdf, Slide 12, 46].
-    *   *Equazioni di flusso:*
-        $$in[n] = use[n] \cup (out[n] \setminus def[n])$$
-        $$out[n] = \bigcup_{m \in post[n]} in[m]$$
-        [Data-FlowFirst.pdf, Slide 12; Data-Flow2.pdf, Slide 12, 11.1].
+	*   *Classificazione:* Backward + May (Unione) [Data-FlowFirst.pdf, Slide 12; Data-Flow2.pdf, Slide 12, 12.1].
+	*   *Scopo:* Determinare se il valore memorizzato in una variabile verrà letto in futuro prima che la variabile stessa venga sovrascritta [Data-FlowFirst.pdf, Slide 12; Data-Flow2.pdf, Slide 37]. Se non è viva, la variabile è "morta" e l'assegnamento associato può essere rimosso (Dead Code Elimination) [Data-FlowFirst.pdf, Slide 12, 46].
+	*   *Equazioni di flusso:*
+		* $$in[n] = use[n] \cup (out[n] \setminus def[n])$$
+		- $$out[n] = \bigcup_{m \in post[n]} in[m]$$
+	- ![[Pasted image 20260907191733.png|515]] 
+	  
+	  [Data-FlowFirst.pdf, Slide 12; Data-Flow2.pdf, Slide 12, 11.1].
 *   **Reaching Definitions:**
-    *   *Classificazione:* Forward + May (Unione) [Data-Flow2.pdf, Slide 18, 12.1].
-    *   *Scopo:* Trovare quali definizioni (assegnamenti a variabili) attive arrivano a un dato punto d'esecuzione senza essere sovrascritte.
+    * *Classificazione:* Forward + May (Unione) [Data-Flow2.pdf, Slide 18, 12.1].
+    * *Scopo:* Trovare quali definizioni (assegnamenti a variabili) attive arrivano a un dato punto d'esecuzione senza essere sovrascritte.
+	* *Equazioni di flusso:*
+		* $$kill_{RD}[p] = \{(x,q) \mid q \in Points \land \{x\} = def[q]\} \quad \text{se } \{x\} = def[p]$$
+		* $$gen_{RD}[p] = \{(x,p)\} \quad \text{se } \{x\} = def[p]$$
+		- $$RD_{entry}(p) = \begin{cases} \iota = \{(x,?) \;|\; x \in Vars \} & \text{se } p \text{ è il blocco iniziale} \\ \bigcup_{q \in pre[p]} RD_{exit}(q) & \text{altrimenti} \end{cases}$$
+		- $$RD_{exit}(p) = (RD_{entry}(p) \setminus kill_{RD}[p]) \cup gen_{RD}[p]$$
+	- ![[Pasted image 20260907191530.png|506]]
+	  
 *   **Available Expressions (AE):**
-    *   *Classificazione:* Forward + Must (Intersezione) [Data-Flow2.pdf, Slide 18, 44, 12.1].
-    *   *Scopo:* Identificare se un'espressione matematica è già stata calcolata lungo tutti i percorsi precedenti ed è ancora valida (consente l'eliminazione delle sottoespressioni comuni - CSE) [Data-Flow2.pdf, Slide 18, 44, 12.1].
-    *   *Equazioni:*
-        $$in[n] = \bigcap_{q \in pre[n]} out[q]$$
-        $$out[n] = gen[n] \cup (in[n] \setminus kill[n])$$
-        [Data-Flow2.pdf, Slide 43].
+	*   *Classificazione:* Forward + Must (Intersezione) [Data-Flow2.pdf, Slide 18, 44, 12.1].
+	*   *Scopo:* Identificare se un'espressione matematica è già stata calcolata lungo tutti i percorsi precedenti ed è ancora valida (consente l'eliminazione delle sottoespressioni comuni - CSE) [Data-Flow2.pdf, Slide 18, 44, 12.1].
+	*   *Equazioni:*
+	* Un'espressione $e \in E$ viene uccisa nel blocco $p$ se una qualsiasi delle sue variabili componenti viene modificata ( ridefinita tramite assegnamento) dal comando in $p$
+	  $$kill_{AE}([x := e']_p) = \{ e \in E \mid x \in vars(e) \}$$
+	- An expression $e \in E$ is generated in a program point $p$ ($e \in gen_{AE}(p)$) if e is evaluated in $p$ and no variable occurring in $e$ is modified in $p$.
+	  $$gen_{AE}([x := e]_p) = \{e\} \quad \text{se } x \notin vars(e)$$
+	  $$gen_{AE}([x := e]_p) = \emptyset \quad \text{se } x \in vars(e)$$
+	  $$gen_{AE}([e_1 > e_2]_p) = expr(\{e_1, e_2\})$$
+	  _dove_ $expr(S)$ _estrae solo gli elementi di_ $S$ _che sono effettivamente sottoespressioni_
+	- **Ingresso del blocco (**$AE_{entry}[p]$**):** $$AE_{entry}[p] = \begin{cases} \emptyset & \text{se } p \text{ è il blocco iniziale} \\ \bigcap_{q \in pre[p]} AE_{exit}[q] & \text{altrimenti} \end{cases}$$
+	- **Uscita del blocco (**$AE_{exit}[p]$**):** $$AE_{exit}[p] = (AE_{entry}[p] \setminus kill_{AE}[p]) \cup gen_{AE}[p]$$
+	- ![[Pasted image 20260907213902.png|473]]
+	  
+	  [Data-Flow2.pdf, Slide 43].
 *   **Very Busy Expressions (VBE):**
     *   *Classificazione:* Backward + Must (Intersezione) [Data-Flow2.pdf, Slide 18, 44, 45, 12.1].
     *   *Scopo:* Individuare se un'espressione verrà sicuramente calcolata in futuro a prescindere dal ramo d'esecuzione scelto, consentendo di anticiparne il calcolo (expression hoisting) per risparmiare spazio [Data-Flow2.pdf, Slide 44, 45].
     *   *Equazioni di flusso:*
-        $$out[n] = \begin{cases} \emptyset & \text{se } n \text{ è un nodo finale} \\ \bigcap_{q \in post[n]} in[q] & \text{altrimenti} \end{cases} \qquad in[n] = gen[n] \cup (out[n] \setminus kill[n])$$
-        con $kill[n] = kill_{AE}(n)$ (espressioni contenenti variabili ridefinite in $n$) mentre $gen[n] = gen_{VB}(n) \neq gen_{AE}(n)$: un'espressione è VB-generata se **valutata** in $n$ (es. $x := x + 1$ genera $x+1$ per VBE ma nulla per AE).
+        - **All'uscita del blocco (**$VB_{exit}[p]$**):** $$VB_{exit}[p] = \begin{cases} \emptyset & \text{se } p \text{ è un nodo finale} \\ \bigcap_{q \in post[p]} VB_{entry}[q] & \text{altrimenti} \end{cases}$$
+        - **All'ingresso del blocco (**$VB_{entry}[p]$**):** $$VB_{entry}[p] = (VB_{exit}[p] \setminus kill_{VB}[p]) \cup gen_{VB}[p]$$
+       - $kill_{VB}[p]$**:** Un'espressione viene uccisa se una qualsiasi delle sue variabili componenti viene definita (ridefinita) in $p$. L'insieme di uccisione è identico a quello delle Available Expressions ($kill_{VB} = kill_{AE}$)
+	   - $gen_{VB}[p]$**:** Un'espressione viene generata se viene valutata in $p$.
+	     **Differenza fondamentale con AE (**$gen_{VB} \neq gen_{AE}$**):** In un assegnamento come `x := x + 1`, l'espressione `x + 1` viene considerata generata per la VBE (poiché deve essere fisicamente valutata a runtime). Nelle Available Expressions, invece, l'assegnamento alla variabile `x` (che fa parte dell'espressione stessa) ne annulla la generazione a causa del _kill_ simultaneo, rendendola non disponibile.
+   - 
+     
+     ![[Pasted image 20260908020940.png|439]]
 
 ### 8.4 La Regola d'Oro dell'Inizializzazione
 La stabilità e la correttezza matematica del calcolo del punto fisso dipendono strettamente dall'inizializzazione corretta dei set all'inizio delle iterazioni [Data-Flow2.pdf, Slide 22, 12.2]:
-*   **Nei sistemi May (unione \(\cup\)):** Tutti i set `IN` e `OUT` (ad eccezione dei blocchi di ingresso) devono essere inizializzati al **set vuoto (\(\emptyset\))**. In questo modo, l'algoritmo risale dal basso verso l'alto (least fixed point) [Data-Flow2.pdf, Slide 22, 12.2].
-*   **Nei sistemi Must (intersezione \(\cap\)):** Tutti i set devono essere inizializzati al **set universale (\(\mathcal{U}\))**. Se si inizializzasse erroneamente al set vuoto, l'operazione di intersezione iniziale con l'insieme vuoto continuerebbe a produrre il vuoto ad ogni passo ("avvelenamento da intersezione"), facendo collassare l'intero sistema a $\emptyset$ [Data-Flow2.pdf, Slide 22, 12.2].
+*   **Nei sistemi May (unione $\cup$):** Tutti i set `IN` e `OUT` (ad eccezione dei blocchi di ingresso) devono essere inizializzati al **set vuoto ($\emptyset$)**. In questo modo, l'algoritmo risale dal basso verso l'alto (least fixed point) [Data-Flow2.pdf, Slide 22, 12.2].
+*   **Nei sistemi Must (intersezione $\cap$):** Tutti i set devono essere inizializzati al **set universale ($\mathcal{U}$)**. Se si inizializzasse erroneamente al set vuoto, l'operazione di intersezione iniziale con l'insieme vuoto continuerebbe a produrre il vuoto ad ogni passo ("avvelenamento da intersezione"), facendo collassare l'intero sistema a $\emptyset$ [Data-Flow2.pdf, Slide 22, 12.2].
 *   **Condizioni al bordo (boundary conditions):** alcuni set sono imposti a priori e non partecipano all'iterazione: per le analisi *forward* il nodo iniziale riceve un valore fissato (RD: $\iota = \{(x,?) \mid x \in Vars\}$, le definizioni "non ancora inizializzate"; AE: $\emptyset$); per le analisi *backward* i nodi finali hanno $out = \emptyset$ (sia LV che VBE).
 
 ### 8.5 Algoritmi Iterativi d'Esame: Esercizio di Liveness Svolto
@@ -1848,9 +2752,9 @@ La slide segnala esplicitamente **"fix point!"** subito dopo questa seconda iter
 
 ### 9.1 Le Tre Astrazioni delle Procedure
 La procedura è l'astrazione fondamentale per rendere gestibili e modulari i software di grandi dimensioni [TheProcedureAbstraction.pdf, Slide 152]. Offre tre astrazioni principali:
-1.  **Astrazione di Controllo:** Consente un unico punto di ingresso e uscita ordinato, con passaggio controllato dei parametri e gestione del flusso di ritorno [TheProcedureAbstraction.pdf, Slide 154, 155].
-2.  **Namespace pulito (Scoping):** Ogni procedura eredita uno spazio di nomi isolato. Le variabili locali sono visibili solo all'interno del proprio blocco d'esecuzione, e lo *shadowing* permette di oscurare variabili omonime dichiarate negli scope esterni [TheProcedureAbstraction.pdf, Slide 154].
-3.  **Interfaccia Uniforme e Compilazione Separata:** Permette a parti distinte del software di essere scritte, compilate in anticipo ed ottimizzate in modo indipendente, venendo poi unite durante la fase di collegamento (*linking*) [TheProcedureAbstraction.pdf, Slide 154].
+1.  **Control Abstraction**:** Consente un unico punto di ingresso e uscita ordinato, con passaggio controllato dei parametri e gestione del flusso di ritorno [TheProcedureAbstraction.pdf, Slide 154, 155].
+2.  **Clean Name Space:** Ogni procedura eredita uno spazio di nomi isolato. Le variabili locali sono visibili solo all'interno del proprio blocco d'esecuzione, e lo *shadowing* permette di oscurare variabili omonime dichiarate negli scope esterni [TheProcedureAbstraction.pdf, Slide 154].
+3.  **External Interface:** Permette a parti distinte del software di essere scritte, compilate in anticipo ed ottimizzate in modo indipendente, venendo poi unite durante la fase di collegamento (*linking*) [TheProcedureAbstraction.pdf, Slide 154].
 
 *   **Perché le procedure sono centrali (slide "Conceptual Overview"):** offrono information hiding, spazi di nomi distinti e separabili, interfacce uniformi. L'hardware sottostante supporta ben poco di queste astrazioni (capisce bit, byte, interi, reali e indirizzi, ma non entry/exit, interfacce, meccanismi call/return oltre il semplice trasferimento di controllo, spazi di nomi o scope annidati): parte del lavoro del compilatore è costruire queste astrazioni sopra l'hardware ("il compilatore mantiene fede alle bugie raccontate ai programmatori"), e parte è renderle efficienti (ruolo della code optimization) [TheProcedureAbstraction.pdf, slide "Conceptual Overview" / "The Procedure (More Abstract View)"].
 *   **Compile-time vs run-time (slide "Run Time versus Compile Time"):** le sequenze di linkage (e il codice del corpo della procedura) **eseguono** a runtime; il codice per la linkage viene però **emesso** a compile time; la convenzione di linkage stessa è progettata molto prima di entrambi questi momenti — un punto spesso fonte di confusione.
@@ -1962,25 +2866,11 @@ Poiché le procedure possono essere invocate ricorsivamente, lo spazio per le va
 
         I costi di accesso sono **fissi** indipendentemente dal livello; l'indirizzo del display può però consumare un registro dedicato [TheProcedureAbstraction.pdf, slide "Establishing Addressability — Using a Display"].
     *   **Manutenzione del Display (slide "Maintaining Display"):** all'ingresso nel livello $j$ si salva il vecchio contenuto di `Display[j]` in un campo dedicato dell'AR (**saved ptr.**) e vi si scrive l'ARP corrente; all'uscita dal livello $j$ si ripristina il valore salvato.
-*   **⚠️ Catena statica ≠ catena delle chiamate — esempio completo (slide "The static and call chain do not coincide!"):** con
-    ```
-    procedure main {
-      procedure p1 { ... }
-      procedure p2 {
-        procedure q1 { ... }
-        procedure q2 {
-          procedure r1 { ... }
-          procedure r2 {
-            call p1;   // call UP dal livello 3 al livello 1
-          }
-          call r2;     // call DOWN dal livello 2 al livello 3
-        }
-        call q2;       // call DOWN dal livello 1 al livello 2
-      }
-      call p2;         // call DOWN dal livello 0 al livello 1
-    }
-    ```
-    la **call history a runtime** è `Main → p2 → q2 → r2 → p1`, ma la **catena statica** (nesting lessicale) resta `Main → p2 → q2 → r2` — quando `r2` chiama `p1`, l'antenato lessicale di `p1` è `Main`, non `r2`: il link di accesso (o la voce di display) usato da `p1` fa riferimento all'ARP di `Main`, completamente scavalcando la catena dinamica delle chiamate. Questo è l'esempio concreto per cui, in generale, **l'antenato lessicale non coincide con il chiamante**.
+*   **⚠️ Catena statica ≠ catena delle chiamate — esempio completo (slide "The static and call chain do not coincide!"):**
+
+	![[Pasted image 20260908171022.png|479]]
+
+	la **call history a runtime** è `Main → p2 → q2 → r2 → p1`, ma la **catena statica** (nesting lessicale) resta `Main → p2 → q2 → r2` — quando `r2` chiama `p1`, l'antenato lessicale di `p1` è `Main`, non `r2`: il link di accesso (o la voce di display) usato da `p1` fa riferimento all'ARP di `Main`, completamente scavalcando la catena dinamica delle chiamate. Questo è l'esempio concreto per cui, in generale, **l'antenato lessicale non coincide con il chiamante**.
 *   **Confronto finale Access Links vs Display (slide "Establishing Addressability — Access Links Versus Display"):** entrambi aggiungono un qualche overhead a ogni chiamata. Gli access link hanno costo variabile col livello di riferimento — l'overhead è incorso solo su riferimenti e chiamate, e se gli AR sopravvivono alla procedura gli access link continuano comunque a funzionare correttamente. Il display ha costo fisso per ogni riferimento — riferimenti e chiamate devono caricare l'indirizzo del display (tipicamente un registro dedicato); la scelta migliore dipende dal rapporto tra accessi non-locali e chiamate. Per entrambi gli schemi, il compilatore deve comunque inserire codice in ogni chiamata e ritorno di procedura.
 *   **Procedure Linkage (Sequenze d'Invocazione):**
     La creazione e distruzione dell'ambiente d'esecuzione dell'AR è regolata da convenzioni di chiamata concordate (*linkage convention*) suddivise in:
@@ -2057,74 +2947,469 @@ Per gli elementi a lunghezza variabile: si colloca un descrittore nella locazion
 Rappresentare le variabili tramite coordinate statiche $\langle level, offset\rangle$ richiede quindi di: (a) mappare, **a runtime**, il livello lessicale in un indirizzo base dell'area dati; (b) emettere, **a tempo di compilazione**, il codice che esegue quella mappatura — è esattamente il problema risolto in modo duale da access link (costo variabile col livello, nessun registro dedicato permanente) e display (costo costante, un registro dedicato all'indirizzo del display).
 
 <a id="cap10"></a>
-## CAPITOLO 10: Generazione del Codice (Instruction Selection & Scheduling)
-**Source:** *IntroCodeGeneration.pdf*
+## CAPITOLO 10: Generazione del Codice (Instruction Selection, Code Shape, Array, Stringhe, Controllo di Flusso)
 
-### 10.1 Complessità e Vincoli del Back-End
-La generazione del codice nel Back-End deve tradurre la rappresentazione intermedia (IR) in codice assembly nativo risolvendo tre problemi NP-Completi strettamente accoppiati [IntroCodeGeneration.pdf, Slide 6, 50, 51]:
-1.  **Instruction Selection:** Seleziona le specifiche istruzioni hardware per implementare ciascuna operazione dell'IR [IntroCodeGeneration.pdf, Slide 51].
-2.  **Instruction Scheduling:** Riordina la sequenza di istruzioni per nascondere le latenze di esecuzione ed evitare stalli della pipeline hardware [IntroCodeGeneration.pdf, Slide 51].
-3.  **Register Allocation:** Mappa l'insieme potenzialmente illimitato di registri virtuali usati nell'IR sull'insieme finito di registri fisici dell'hardware reale [IntroCodeGeneration.pdf, Slide 51].
+**Source:** _IntroCodeGeneration.pdf_ (68 slide, Cooper & Torczon — Engineering a Compiler, cap. 7)
+
+> **Nota di revisione:** questo capitolo è stato interamente riscritto ed espanso confrontandolo slide per slide con il testo integrale OCR di `IntroCodeGeneration.pdf` (68 slide). La versione precedente copriva solo 4 sotto-sezioni (§10.1–10.4 originali, corrispondenti a poco più di un quarto del materiale sorgente); mancavano interamente: modelli di memoria, ambiguità dei valori, gestione dell'assegnamento come operatore, l'intera sezione sugli array (indirizzamento, false zero, layout multi-dimensionale, dope vector, range checking), l'ottimizzazione degli accessi array nei loop (LICM e operator strength reduction), la rappresentazione delle stringhe, e la rappresentazione di valori booleani/relazionali. Queste sezioni sono ora integrate qui per intero. La numerazione interna delle sotto-sezioni sostituisce integralmente quella della versione precedente.
+
+### 10.1 Struttura del Back-End e Modelli di Memoria
+
+- **Il back-end come "collo di bottiglia" del compilatore (slide "Structure of a Compiler"):** un compilatore è, in sostanza, molta roba veloce seguita da alcuni problemi difficili — la parte difficile risiede prevalentemente nella generazione del codice e nell'ottimizzazione. Per i sistemi multicore serve gestire parallelismo e condivisione; per le prestazioni su singolo core, allocazione e scheduling sono critici [IntroCodeGeneration.pdf, slide "Structure of a Compiler"]. Le tre fasi del back-end e le rispettive complessità computazionali:
+
+| Fase                    | Complessità            | Input                    | Output                   |
+| ----------------------- | ---------------------- | ------------------------ | ------------------------ |
+| fvInstruction Selection | $O(n)$                 | IR con registri $\infty$ | IR con registri $\infty$ |
+| Instruction Scheduling  | o veloce o NP-Completo | IR con registri $\infty$ | IR con registri $\infty$ |
+| Register Allocation     | NP-Completo            | IR con registri $\infty$ | codice con $k$ registri  |
+
+(Front-end/scanner-parser: $O(n\log n)$ a esponenziale nel caso peggiore per l'analisi sintattica generale, ma tipicamente lineare) [IntroCodeGeneration.pdf, slide "Structure of a Compiler"].    
+- **Il modello assunto dal corso (slide "Structure of a Compiler" #2):** la selezione delle istruzioni è considerata relativamente semplice (un problema già risolto negli anni '80); allocazione e scheduling sono le fasi complesse; il posizionamento delle operazioni non è ancora un problema critico — si assume un unico insieme di registri unificato [IntroCodeGeneration.pdf, slide "Structure of a Compiler" (2)].
+    
+- **Il ruolo della IR (slide "What about the IR?"):** si assume una IR di basso livello, RISC-like, come ILOC, con un numero di registri "sufficiente". ILOC è stato progettato appositamente per questo scopo, con: branch, compare e label; tag di memoria; gerarchia di load e store; predisposizione per più operazioni per ciclo [IntroCodeGeneration.pdf, slide "What about the IR?"].
+    
+- **Ruolo dell'ottimizzatore rispetto al front-end (slide "Analysis & Optimization"):** la traduzione prodotta dal front-end considera gli statement uno alla volta, man mano che vengono incontrati; questa IR iniziale codifica strategie implementative generali, valide in qualunque contesto circostante. A runtime il codice verrà eseguito in un contesto più vincolato e prevedibile: l'ottimizzatore analizza la forma IR del codice per scoprire fatti sul contesto e li usa per riscrivere (trasformare) il codice, in modo che calcoli la stessa risposta ma in modo più efficiente [IntroCodeGeneration.pdf, slide "Analysis & Optimization"].
+    
+- **Compiti del back-end (slide "The Back End"):** il back-end del compilatore attraversa la forma IR ed emette il codice per la macchina target: (1) seleziona le operazioni della macchina target per implementare ciascuna operazione IR (**instruction selection**); (2) sceglie un ordine in cui le operazioni verranno eseguite in modo efficiente (**instruction scheduling**); (3) decide quali valori risiederanno in registro e quali in memoria (**register allocation**) [IntroCodeGeneration.pdf, slide "The Back End"].
+    
+- **I due modelli di memoria (slide "Memory Models"):**
+    
+    - **Register-to-register model:** mantiene tutti i valori che possono legalmente essere immagazzinati in un registro dentro un registro; ignora i limiti hardware sul numero di registri disponibili; il back-end del compilatore deve inserire esplicitamente `load` e `store`. Usa **registri virtuali**!
+    - **Memory-to-memory model:** mantiene tutti i valori in memoria; promuove i valori a registro solo immediatamente prima del loro uso; il back-end del compilatore può rimuovere `load` e `store`.
+    - I compilatori per macchine RISC usano tipicamente il modello register-to-register, perché è più facile determinare quando i registri sono usati [IntroCodeGeneration.pdf, slide "Memory Models"].
+- **Le tre definizioni operative (slide "Definitions"):**
+    
+    - **Instruction selection:** mappa la IR in codice assembly; assume un modello di memoria e una code shape fissati; combina operazioni, usando i modi di indirizzamento (istruzioni con modalità registro+offset o registro-a-registro).
+    - **Instruction scheduling:** riordina le operazioni per nascondere le latenze; assume un programma fissato (un insieme di operazioni); cambia la domanda di registri.
+    - **Register allocation:** decide quali valori risiederanno in registro; cambia la mappatura di storage, e può aggiungere condivisioni spurie (_false sharing_); si occupa del posizionamento dei dati e delle operazioni di memoria.
+    
+    Questi tre problemi sono **strettamente accoppiati** e richiedono analisi statica [IntroCodeGeneration.pdf, slide "Definitions"].
+    
 
 ### 10.2 Il Concetto di "Code Shape"
-*   **Definizione di Code Shape:** Indica la scelta della specifica strategia implementativa (la "forma" del codice risultante) tra le molteplici alternative logicamente equivalenti messe a disposizione dall'ISA target [IntroCodeGeneration.pdf, Slide 12, 52].
-    *   *Esempio (Somma Ternaria):* La traduzione dell'espressione $x + y + z$ può essere implementata in modi diversi sfruttando le proprietà associative e commutative dell'addizione [IntroCodeGeneration.pdf, Slide 52]:
-        *   Forma 1: $(x + y) + z$ (un'istruzione `add` intermedia) [IntroCodeGeneration.pdf, Slide 52].
-        *   Forma 2: $(x + z) + y$ [IntroCodeGeneration.pdf, Slide 52].
-        *   Forma 3: $(y + z) + x$ [IntroCodeGeneration.pdf, Slide 52].
-    *   La scelta della forma ottimale dipende interamente dal contesto circostante e dalla conoscenza delle costanti (se $x$ e $z$ sono costanti, es. $2$ e $3$, il compilatore dovrebbe riordinare la somma per calcolare a tempo di compilazione $2+3=5$ tramite constant folding, riducendo le istruzioni a runtime) [IntroCodeGeneration.pdf, Slide 52].
 
-### 10.3 Postorder Treewalk Evaluator
-Un modo intuitivo per generare codice a partire da un Abstract Syntax Tree (AST) consiste nell'eseguire una visita ricorsiva in ordine postorder (*postorder treewalk*), che visita prima i figli e poi emette l'operazione associata al nodo padre [IntroCodeGeneration.pdf, Slide 15, 54].
-*   **Algoritmo ricorsivo formale `expr(node)`:**
-    ```text
-    expr(node) {
-        register result, t1, t2;
-        switch (type(node)) {
-            case x, /, +, - :
-                t1 <- expr(left child(node));
-                t2 <- expr(right child(node));
-                result <- NextRegister();
-                emit (op(node), t1, t2, result);
-                break;
-            case IDENTIFIER:
-                t1 <- base(node); // recupera l'indirizzo base rarp
-                t2 <- NextRegister();
-                emit (loadI, offset(node), none, t2);
-                result <- NextRegister();
-                emit (loadAO, t1, t2, result);
-                break;
-            case NUMBER:
-                result <- NextRegister();
-                emit (loadI, val(node), none, result);
-                break;
-        }
-        return result;
-    }
+- **Definizione (slide "Code Shape (Chapter 7)"):** il compilatore deve scegliere fra molte alternative implementative per ciascun costrutto su un dato processore; queste scelte hanno un impatto forte e diretto sulla qualità del codice finale prodotto. La _code shape_ è il prodotto finale di molte decisioni, grandi e piccole. **Impatto:** la code shape ha un forte impatto sul comportamento del codice compilato e sulla capacità dell'ottimizzatore e del back-end di migliorarlo ulteriormente; la code shape può codificare fatti importanti, oppure nasconderli [IntroCodeGeneration.pdf, slide "Code Shape (Chapter 7)"].
+    
+- **Esempio guida — lo statement `case` su un valore carattere (slide "Code Shape" #1):**
+    
+    1. **Cascata di if-then-else:** il costo dipende da dove si trova effettivamente il case cercato — $O(256)$.
+    2. **Ricerca binaria:** richiede un insieme denso di condizioni da cercare — costo uniforme $O(\log 256)$.
+    3. **Jump table:** cerca l'indirizzo in una tabella e salta a esso — si scambia spazio dati per velocità — costo uniforme (costante).
+    
+    Tutte queste sono implementazioni legali (e ragionevoli) dello statement switch; **le prestazioni dipendono dall'ordine dei case!** [IntroCodeGeneration.pdf, slide "Code Shape" #1].
+    
+- **Quale implementazione scegliere per lo switch? (slide "Which implementation for switch?"):** quella migliore per un particolare statement switch dipende da molti fattori, come: il numero di case e le loro frequenze relative di esecuzione; la conoscenza della struttura di costo del branching sul processore. Anche quando il compilatore non ha informazione sufficiente per scegliere, **deve comunque scegliere** una strategia implementativa: nessuna quantità di trasformazione può convertire un'implementazione in un'altra [IntroCodeGeneration.pdf, slide "Which implementation for switch?"].
+    
+- **Esempio guida — l'operazione ternaria $x+y+z$ (slide "Code Shape: the ternary operation x+y+z"):** ci sono diversi modi di implementare $x+y+z$, sfruttando la commutatività e l'associatività dell'addizione sugli interi:
+    
+    - $(x+y)+z$: `x+y → t1; t1+z → t2`
+    - $(x+z)+y$: `x+z → t1; t1+y → t2`
+    - $(y+z)+x$: `y+z → t1; t1+x → t2`
+    
+    _Cosa succede se il compilatore sa che $x$ è la costante 2 e $z$ è la costante 3?_ Il compilatore dovrebbe rilevare che $2+3$ è calcolabile e ripiegare (_fold_) il risultato nel codice. _Cosa succede se $y+z$ viene valutato prima altrove nel programma?_ La forma "migliore" per $x+y+z$ dipende dalla conoscenza contestuale — possono esserci diverse opzioni in conflitto tra loro [IntroCodeGeneration.pdf, slide "Code Shape: the ternary operation x+y+z"].
+    
+- **Perché non fidarsi semplicemente di ottimizzatore e back-end? (slide "Code Shape" #2):** ottimizzatore e back-end approssimano le risposte a molti problemi difficili; le singole passate del compilatore devono girare velocemente; spesso conviene codificare informazione utile direttamente nella IR — la forma di un'espressione o di una struttura di controllo, un valore mantenuto in registro piuttosto che in memoria. Derivare tale informazione può essere costoso, quando possibile; registrarla esplicitamente nella IR è spesso più facile ed economico [IntroCodeGeneration.pdf, slide "Code Shape" #2].
+    
+
+### 10.3 Postorder Treewalk Evaluator: Generazione del Codice per le Espressioni
+
+- **Come generare codice ILOC (slide "How to generate ILOC code"):** la forma a tre indirizzi permette al compilatore di nominare il risultato di ogni operazione e preservarlo per un riuso successivo; il compilatore usa sempre un nuovo registro, lasciando all'allocatore il compito di ridurli. Per generare il codice per un'espressione banale $a+b$, il compilatore emette codice che garantisce che i valori di $a$ e $b$ siano in registro. Se $a$ è memorizzato in memoria all'offset `@a` nel record di attivazione corrente (AR), il codice è:
+    
+    ```iloc
+    loadI @a       ⇒ r1
+    loadAO rarp,r1 ⇒ ra
     ```
-    [IntroCodeGeneration.pdf, Slide 15, 54, 55].
-*   **Traccia di traduzione naif per $x + y$:**
-    1.  *Chiamata per il nodo `x` (IDENTIFIER):*
-        *   Emette `loadI @x => r1` (carica l'offset di `x` in un registro temporaneo) [IntroCodeGeneration.pdf, Slide 56].
-        *   Emette `loadAO rarp, r1 => r2` (carica il valore reale dall'offset `rarp + r1` nel registro `r2`) [IntroCodeGeneration.pdf, Slide 56].
-    2.  *Chiamata per il nodo `y` (IDENTIFIER):*
-        *   Emette `loadI @y => r3` [IntroCodeGeneration.pdf, Slide 56].
-        *   Emette `loadAO rarp, r3 => r4` [IntroCodeGeneration.pdf, Slide 56].
-    3.  *Chiamata per il nodo operatore `+`:*
-        *   Emette `add r2, r4 => r5` (somma i valori e inserisce il risultato finale nel nuovo registro `r5`) [IntroCodeGeneration.pdf, Slide 56].
+    
+    [IntroCodeGeneration.pdf, slide "How to generate ILOC code"].
+- **L'idea del postorder treewalk (slide "Generating Code for Expressions"):** si assume un AST come input e ILOC come output; si usa un _valutatore treewalk in postordine_: visita e valuta i figli, poi emette il codice per l'operazione stessa, e restituisce il registro col risultato. La complessità dell'indirizzamento dei nomi viene sepolta in routine chiamate `base()`, `offset()` e `val()`. Funziona per espressioni semplici ed è facilmente estendibile ad altri operatori [IntroCodeGeneration.pdf, slide "Generating Code for Expressions"]:
+    ```text
+	expr(node) {
+		register result, t1, t2;
 
-### 10.4 Generazione del Codice per Strutture di Controllo
-*   **Generazione dei Cicli (Loops):** Un ciclo generico `while (cond) { body }` viene tradotto strutturando i blocchi sul Control Flow Graph (CFG) in tre parti principali:
-    1.  *Pre-test:* Valuta l'espressione condizionale e, in caso di esito falso, salta all'uscita tramite un'istruzione di salto condizionato.
-    2.  *Body:* Esegue il corpo del ciclo.
-    3.  *Post-test / Loop-back:* Esegue un salto incondizionato alla testa del pre-test per rivalutare la condizione.
-*   **Generazione del costrutto Case/Switch:**
-    La traduzione di un costrutto di selezione multipla `switch (x)` ammette tre diverse forme (shapes) alternative:
-    1.  **Linear Search (Scansione Lineare):** Genera una sequenza di istruzioni condizionali `if (x == c1) goto label1; else if (x == c2) ...`. Adatto per un numero ridotto di casi.
-    2.  **Binary Search (Ricerca Binaria):** Genera una struttura ad albero binario di confronti condizionali su un array ordinato delle costanti di case, riducendo la complessità di ricerca a $O(\log N)$.
-    3.  **Jump Table (Tabella dei Salti):** Genera una tabella contenente direttamente gli indirizzi dei blocchi di destinazione, indicizzata dal valore di `x` (previa sottrazione del limite inferiore). Esegue il salto in tempo costante $O(1)$ tramite l'istruzione di salto indiretto `jumpI`. È la forma più veloce ma richiede che il set dei case sia denso per evitare un eccessivo spreco di memoria dovuto a celle vuote.
+		switch (type(node)) {
+		
+			case *, /, +, -:
+				t1 <- expr(leftChild(node));
+				t2 <- expr(rightChild(node));
+		
+				result <- NextRegister();
+		
+				emit(
+					op(node),
+					t1,
+					t2,
+					result
+				);
+				break;
+		
+			case IDENTIFIER:
+				// Recupera il puntatore al record di attivazione
+				// contenente l'identificatore.
+				t1 <- base(node);
+		
+				// Carica l'offset dell'identificatore.
+				t2 <- NextRegister();
+				emit(
+					loadI,
+					offset(node),
+					none,
+					t2
+				);
+		
+				// Carica il valore memorizzato all'indirizzo base + offset.
+				result <- NextRegister();
+				emit(
+					loadAO,
+					t1,
+					t2,
+					result
+				);
+				break;
+		
+			case NUMBER:
+				result <- NextRegister();
+		
+				// Carica il valore costante.
+				emit(
+					loadI,
+					val(node),
+					none,
+					result
+				);
+				break;
+		}
 
-<a id="cap11"></a>
+    return result;
+}
+	```
+    
+- **Traccia completa per `x + y` (slide "Generating Code for Expressions (a naive translation)" #1):** con contatore di registri a 0, per l'albero `+(x,y)`:
+    
+    ```text
+		espr("x"):
+		    rarp ← ptr AR di x
+		
+		    r1 ← NextRegister();
+		    loadI @x ⇒ r1
+		
+		    r2 ← NextRegister();
+		    loadA0 rarp, r1 ⇒ r2
+		
+		
+		espr("y"):
+		    rarp ← ptr AR di y
+		
+		    r3 ← NextRegister();
+		    loadI @y ⇒ r3
+		
+		    r4 ← NextRegister();
+		    loadA0 rarp, r3 ⇒ r4
+		
+		
+		r5 ← NextRegister();
+		Emit(add, r2, r4, r5):
+		
+		add r2, r4 ⇒ r5
+    ```
+    
+    [IntroCodeGeneration.pdf, slide "Generating Code for Expressions (a naive translation)" #1].
+- **Traccia completa per `x + z×y` (slide "Generating Code for Expressions (a naive translation)" #2):** per l'albero `+(x, ×(z,y))`, visitando prima il figlio sinistro (`x`) e poi il destro (`z×y`):
+    
+    ```text
+	espr("x"):
+	    r1 ← NextRegister();
+	    loadI @x ⇒ r1
+	    r2 ← NextRegister();
+	    loadA0 rarp, r1 ⇒ r2
+	
+	espr("z"):
+	    r3 ← NextRegister();
+	    loadI @z ⇒ r3
+	    r4 ← NextRegister();
+	    loadA0 rarp, r3 ⇒ r4
+	
+	espr("y"):
+	    r5 ← NextRegister();
+	    loadI @y ⇒ r5
+	    r6 ← NextRegister();
+	    loadA0 rarp, r5 ⇒ r6
+	
+	r7 ← NextRegister();
+	Emit(mul, r4, r6, r7):
+	mult r4, r6 ⇒ r7
+	r8 ← NextRegister();
+	Emit(add, r2, r7, r8):
+	add r2, r7 ⇒ r8
+    ```
+    
+    [IntroCodeGeneration.pdf, slide "Generating Code for Expressions (a naive translation)" #2].
+- **Effetti della code shape sulla domanda di registri (slide "Effects of code shape on the demand of registers"):** le decisioni di code shape incorporate nel generatore di codice a treewalk hanno un effetto diretto sulla domanda di registri — il codice naive sopra usa **8 registri** oltre a `rarp`; l'allocatore di registri (fase successiva della compilazione) può ridurre la domanda a **3 registri + rarp**:
+    
+    ```iloc
+	loadI   @x        ⇒ r1
+	loadA0  rarp, r1  ⇒ r1
+	
+	loadI   @z        ⇒ r2
+	loadA0  rarp, r2  ⇒ r2
+	
+	loadI   @y        ⇒ r3
+	loadA0  rarp, r3  ⇒ r3
+	
+	mult    r2, r3    ⇒ r2
+	add     r1, r2    ⇒ r2
+    ```
+    
+    [IntroCodeGeneration.pdf, slide "Effects of code shape on the demand of registers"].
+- **La regola generale — quale figlio valutare per primo (slide, esempio senza titolo dopo "Effects..."):** confrontando due ordini di valutazione per lo stesso albero `x + z×y`, valutare prima `z×y` e poi `x` produce, dopo l'allocazione dei registri, una sequenza che usa **3 registri** in tutto:
+    
+    ```iloc
+    load   @z        ⇒ r1loadA0 rarp,r1   ⇒ r1load   @y        ⇒ r2loadA0 rarp,r2   ⇒ r2mult   r1,r2     ⇒ r1load   @x        ⇒ r2loadA0 rarp,r2   ⇒ r2add    r2,r1     ⇒ r1
+    ```
+    
+    **Regola generale: valutare per primo il figlio con maggiore domanda di registri.** Questa è precisamente una decisione di **code shape** [IntroCodeGeneration.pdf, slide sull'esempio "The best solution: alternate right and left children"].
+
+### 10.4 Estensioni del Treewalk: Valori in Registro, Parametri, Valori Ambigui
+
+- **Domande aperte sull'algoritmo semplice (slide "Some observations"):** cosa succede se l'IDENTIFIER è già in un registro? è in un'area dati globale? è un valore parametro (per valore o per riferimento)? [IntroCodeGeneration.pdf, slide "Some observations"].
+- **Estensione del caso IDENTIFIER (slide "Extending the Simple Treewalk Algorithm" #1):**
+    - _Valori già in un registro:_ se il valore è già in un registro, si restituisce direttamente il nome del registro; se non lo è, si carica come prima, ma si registra il fatto — occorre scegliere i nomi in modo da evitare di creare dipendenze spurie (_false dependences_).
+    - _Valori parametro:_ **call-by-value** ⇒ può essere gestito come se fosse una variabile locale, come prima; **call-by-reference** ⇒ richiede un'indirezione extra (3 istruzioni) — il valore potrebbe non poter restare in un registro attraverso un assegnamento (vedi §10.5).
+    - _Chiamate a funzione dentro un'espressione:_ si genera la sequenza di chiamata e si carica il valore di ritorno — questo **limita severamente** la capacità del compilatore di riordinare le operazioni [IntroCodeGeneration.pdf, slide "Extending the Simple Treewalk Algorithm" #1].
+- **Mantenere i valori in registro: il problema dell'ambiguità (slide "Keeping values in registers"):** in un modello di memoria register-to-register, il compilatore cerca di assegnare quanti più valori possibile a registri virtuali; l'allocatore mapperà poi l'insieme di registri virtuali su registri fisici, inserendo gli spill. **Tuttavia**, il compilatore può mantenere un valore in registro solo per un **valore non ambiguo**: un valore è non ambiguo se può essere acceduto con un solo nome [IntroCodeGeneration.pdf, slide "Keeping values in registers"].
+- **Il problema dei valori ambigui (slide "The problem with ambiguous values"):** si considerino `a` e `b` ambigui e il codice:
+    
+    ```
+    a := m+n;b := 13;c := a+b;
+    ```
+    
+    Se `a` e `b` si riferiscono alla stessa locazione, `c` ottiene il valore `26`; altrimenti `c` ottiene `m+n+13`. Il compilatore **non può** mantenere `a` in un registro durante l'assegnamento di `b`, a meno di dimostrare che gli insiemi di locazioni a cui i due nomi si riferiscono sono disgiunti — un'analisi che può essere costosa (**sharing analysis**) [IntroCodeGeneration.pdf, slide "The problem with ambiguous values"].
+- **Da dove nascono i valori ambigui? (slide "Where do ambiguous values arise?"):** i valori ambigui possono nascere in diversi modi: valori memorizzati in una variabile basata su puntatore; parametri formali call-by-reference; molti compilatori trattano i valori degli elementi di array come ambigui, perché non possono stabilire se due riferimenti `A[i,j]` e `A[n,m]` si riferiscano alla stessa locazione — per sicurezza il compilatore deve considerare quei valori come ambigui [IntroCodeGeneration.pdf, slide "Where do ambiguous values arise?"].
+
+### 10.5 Operatori Misti, Ordine di Valutazione e Gestione dell'Assegnamento
+
+- **Estensione ad altri operatori (slide "Extending the Simple Treewalk Algorithm" #2):** si valutano gli operandi, poi si esegue l'operazione; operazioni complesse (funzioni esponenziali e trigonometriche) possono trasformarsi in chiamate a libreria. **Espressioni a tipo misto:** si inserisce codice di conversione secondo necessità, da una tabella di conversione; la maggior parte dei linguaggi ha tabelle di conversione simmetriche e razionali. Se il tipo non può essere inferito a tempo di compilazione, il compilatore deve inserire codice per controlli a runtime che verifichino i casi illegali [IntroCodeGeneration.pdf, slide "Extending the Simple Treewalk Algorithm" #2].
+- **Ordine di valutazione (slide "Extending the Simple Treewalk Algorithm" #3):** si può usare commutatività e associatività per migliorare il codice per gli interi: per riconoscere che un valore è già stato calcolato ($a+b = b+a$), o per riconoscere che si possono calcolare sottoespressioni comuni (es. in `a+b+d` e `c+a+b` — cosa che non accade se si valuta sempre rigorosamente da sinistra a destra). **Non si dovrebbero riordinare le espressioni in virgola mobile!** Il sottoinsieme dei reali rappresentato su un calcolatore non preserva l'associatività: per `a-b-c` il risultato può dipendere dall'ordine di valutazione [IntroCodeGeneration.pdf, slide "Extending the Simple Treewalk Algorithm" #3].
+- **Gestione dell'assegnamento come operatore (slide "Handling Assignment (just another operator)"):** per `lhs ← rhs`, la strategia è: valutare `rhs` a un valore (un rvalue); valutare `lhs` a una locazione (un lvalue) — se l'lvalue è un registro, si fa una `move` del rhs; se è un indirizzo, si fa una `store` del rhs. Se rvalue e lvalue hanno tipi diversi: si valuta l'rvalue al suo tipo "naturale", poi si converte quel valore al tipo di `*lvalue`. **Gli scalari non ambigui vanno in registro; gli scalari ambigui o gli aggregati vanno in memoria** [IntroCodeGeneration.pdf, slide "Handling Assignment (just another operator)"].
+- **Assegnamento con tipo del rhs sconosciuto a compile-time (slide "Handling Assignment" #2):** è una proprietà del linguaggio e del programma specifico. Per la type-safety, il compilatore deve inserire un controllo a runtime (alcuni linguaggi e implementazioni ignorano la sicurezza — una cattiva idea); si aggiunge un campo tag ai dati per contenere l'informazione di tipo, controllato esplicitamente a runtime. Il codice per l'assegnamento diventa più complesso:
+    
+    ```text
+	evaluate rhs 
+	if type(lhs) ≠ rhs.tag 
+	    then 
+	    convert rhs to type(lhs) or signal a run-time error l
+	hs ← rhs
+    ```
+    
+    La scelta tra conversione ed eccezione a runtime dipende dai dettagli del linguaggio e del sistema dei tipi; è **molto più complesso** del controllo statico, e i costi ricadono a runtime anziché a compile-time [IntroCodeGeneration.pdf, slide "Handling Assignment" #2].
+- **Type-checking a tempo di compilazione (slide "Handling Assignment" #3):** l'obiettivo è eliminare la necessità sia di tag sia di controlli a runtime, determinando a compile-time il tipo di ciascuna sottoespressione, e usando un controllo runtime solo quando il compilatore non può determinare i tipi. Strategia di ottimizzazione: se il compilatore conosce il tipo, sposta il controllo a compile-time; a meno che i tag non servano per il garbage collector, li elimina; se un controllo è necessario, prova a sovrapporlo con altra computazione. Si può progettare il linguaggio in modo che tutti i controlli siano statici [IntroCodeGeneration.pdf, slide "Handling Assignment" #3].
+- **Riepilogo (slide "Code Generation for Expressions" — Summary):** il treewalk semplice produce codice ragionevole se si esegue prima la sottoespressione più esigente; si può implementare il treewalk esplicitamente, con una grammatica attribuita o una traduzione ad-hoc guidata dalla sintassi (§6.6). Si gestisce l'assegnamento come un operatore, inserendo conversioni secondo le regole specifiche del linguaggio; se il controllo a compile-time è impossibile, si controllano i tag a runtime [IntroCodeGeneration.pdf, slide "Code Generation for Expressions"].
+
+### 10.6 Generazione del Codice per gli Array
+
+- **Calcolo dell'indirizzo di un array monodimensionale (slide "Computing an Array Address of an array A[low:high]"):** dato `A[i]` con array dichiarato `A[low:high]`: $$\text{addr}(A[i]) = {@}A + (i - low) \times \text{sizeof}(A[i])$$ In generale: $\text{base}(A) + (i - low) \times \text{sizeof}(A[i])$. A seconda di come `A` è dichiarato, `@A` può essere un offset dall'ARP, un offset da un'etichetta globale, o un indirizzo arbitrario — i primi due sono costanti a tempo di compilazione. `sizeof` è quasi sempre una potenza di 2, nota a compile-time ⇒ si usa uno shift per velocità [IntroCodeGeneration.pdf, slide "Computing an Array Address of an array A[low:high]"].
+    
+- **Il "false zero" (slide "Computing an Array Address A[low:high]" / "The False Zero"):** se il compilatore conosce `low`, può ripiegare la sottrazione direttamente in `@A`, definendo: $${@}_0 = {@}A - (low \times w), \qquad w = \text{sizeof}(A[i])$$ L'indirizzo diventa allora ${@}A_0 + (i \times w)$ invece di ${@}A + (i-low)\times w$. Con `A[2..7]` e `w` tale che uno shift di 2 bit equivale a moltiplicare per $w$, il confronto di codice è (slide "The False Zero"):
+    
+    ```iloc
+    ; calcolo con @A                    ; calcolo con @A0
+    loadI   @A       ⇒ r@A              loadI   @A0      ⇒ r@A0
+    subI    ri, 2    ⇒ r1               lshiftI ri, 2    ⇒ r1
+    lshiftI r1, 2    ⇒ r2               loadA0  r@A0,r1  ⇒ rv
+    loadA0  r@A,r2   ⇒ rv
+    ```
+    
+    Usare il false zero **risparmia un'istruzione** (`subI`) a ogni accesso — la tecnica è redditizia quando l'array viene acceduto molte volte, ad esempio dentro un ciclo [IntroCodeGeneration.pdf, slide "The False Zero"].
+    
+- **Array multi-dimensionali: schemi di storage (slide "How does the compiler handle A[i,j]?"):** prima di tutto occorre concordare uno schema di memorizzazione:
+    
+    - **Row-major order** (la maggior parte dei linguaggi): memorizza come sequenza di righe consecutive; il subscript più a destra varia più rapidamente: `A[1,1], A[1,2], A[1,3], A[2,1], …`.
+    - **Column-major order** (Fortran): memorizza come sequenza di colonne; il subscript più a sinistra varia più rapidamente: `A[1,1], A[2,1], A[1,2], …`.
+    - **Indirection vectors** (Java): un vettore di puntatori a puntatori a … a valori; occupa molto più spazio, scambia indirezione per aritmetica, e non è amenable all'analisi [IntroCodeGeneration.pdf, slide "How does the compiler handle A[i,j]?"].
+    
+    Queste tre rappresentazioni hanno un comportamento di cache **distinto e diverso** [IntroCodeGeneration.pdf, slide "The Concept" / "Laying Out Arrays"].
+    
+- **Costo apparente e formule per due dimensioni (slide "Computing an Array Address" / "This stuff looks expensive!"):** per `A[i1,i2]`:
+    
+    - Row-major, due dimensioni: ${@}A + ((i_1-low_1)\times(high_2-low_2+1) + i_2-low_2) \times w$
+    - Column-major, due dimensioni: ${@}A + ((i_2-low_2)\times(high_1-low_1+1) + i_1-low_1) \times w$
+    - Indirection vectors, due dimensioni: `*(A[i1])[i2]`, dove `A[i1]` è a sua volta un riferimento ad array 1-D
+    
+    dove $w = \text{sizeof}(A[1,1])$ [IntroCodeGeneration.pdf, slide "Computing an Array Address"].
+    
+- **Ottimizzazione dell'indirizzo per `A[i,j]` in row-major (slide "Optimizing Address Calculation for A[i,j]"):** partendo da $${@}A + (i-low_1)\times(high_2-low_2+1)\times w + (j-low_2)\times w$$ si fattorizza in $${@}A + i\times(high_2-low_2+1)\times w + j\times w - (low_1\times(high_2-low_2+1)\times w) - (low_2\times w)$$ Se $low_i$, $high_i$ e $w$ sono noti, l'ultimo termine è una costante. Definendo $${@}A_0 = {@}A - (low_1\times(high_2-low_2+1)\times w) - (low_2\times w), \qquad len_2 = (high_2-low_2+1)$$ l'espressione dell'indirizzo diventa $${@}A_0 + (i\times len_2 + j)\times w$$ Se `@A` è noto, `@A0` è una costante nota, e $i \times len_2 + j$ è calcolabile con operazioni interamente a tempo di esecuzione ma su termini a costo ridotto [IntroCodeGeneration.pdf, slide "Optimizing Address Calculation for A[i,j]"].
+    
+- **Array come parametri attuali (slide "Array References"):** per array interi passati come parametri call-by-reference, serve l'informazione sulle dimensioni ⇒ si costruisce un **dope vector**; i suoi valori vengono memorizzati nella sequenza di chiamata; si passa l'indirizzo del dope vector nello slot del parametro; si genera il polinomio d'indirizzo completo a ogni riferimento. Miglioramenti possibili: scegliere il polinomio d'indirizzo basato sul false zero; pre-calcolare i termini fissi nella sequenza di prologo. Per il call-by-value: la maggior parte dei linguaggi passa gli array per riferimento — è una questione di design del linguaggio [IntroCodeGeneration.pdf, slide "Array References"]. Il **dope vector** stesso incorpora tipicamente i "false zero" già discussi, per rendere efficiente il calcolo dell'indirizzo anche quando i bound non sono noti a compile-time [IntroCodeGeneration.pdf, slide "The Dope vector"].
+    
+- **Range checking (slide "Range checking"):** un programma che referenzia elementi di array fuori dai limiti dichiarati non è ben formato. Alcuni linguaggi (come Java) richiedono che gli accessi fuori dai limiti siano rilevati e segnalati; in altri linguaggi i compilatori hanno incluso meccanismi per rilevare e segnalare questi accessi. Il modo semplice è introdurre un controllo a runtime che verifichi che il valore dell'indice cada nell'intervallo dell'array, usando l'informazione sui bound presente nel dope vector; alternativamente il compilatore dovrebbe dimostrare che un dato riferimento **non può** generare un accesso fuori dai limiti — **costoso!** [IntroCodeGeneration.pdf, slide "Range checking"].
+    
+- **Perché il calcolo degli indirizzi array conta così tanto (slide "Array Address Calculations"):** è una fonte primaria di overhead. Le applicazioni scientifiche fanno un uso estensivo di array e strutture array-like (algebra lineare computazionale, densa e sparsa); anche le applicazioni non scientifiche usano ampiamente gli array come rappresentazione di altre strutture dati (hash table, matrici di adiacenza, tabelle, strutture). I calcoli sugli array tendono a iterare su di essi: i loop eseguono più spesso del codice fuori dai loop, quindi i calcoli d'indirizzo array dentro i loop fanno una differenza enorme nell'efficienza di molte applicazioni compilate. Ridurre l'overhead del calcolo d'indirizzo array è stato un obiettivo primario dell'ottimizzazione fin dagli anni '50 [IntroCodeGeneration.pdf, slide "Array Address Calculations"].
+    
+
+### 10.7 Ottimizzazione degli Accessi Array nei Loop: LICM e Operator Strength Reduction
+
+Esempio guida usato in tutta la sezione (slide "Example: Array Address Calculations in a Loop"), con `A`, `B` array conformabili floating-point in **column-major order**:
+
+```fortran
+DO J = 1, N
+    A[I,J] = A[I,J] + B[I,J]
+END DO
+```
+
+- **Versione naïve (slide "Example: Array Address Calculations in a Loop" #1):** l'indirizzo viene ricalcolato per intero **due volte** a ogni iterazione:
+    
+    ```text
+    DO J = 1, N    
+	    R1 = @A0 + (J × len1 + I) × w    
+	    R2 = @B0 + (J × len1 + I) × w    
+	    MEM(R1) = MEM(R1) + MEM(R2)
+    END DO
+    ```
+    
+    (`len1` = numero di righe, poiché siamo in column-major order) [IntroCodeGeneration.pdf, slide "Example: Array Address Calculations in a Loop" #1].
+- **Loop-Invariant Code Motion (slide "Loop-invariant code motion"):** i calcoli comuni (quelli che non dipendono da `J`) vengono spostati **fuori** dal loop:
+    
+    ```text
+    R1 = I × w
+    c  = len1 × w  ! costante a tempo di compilazione
+    R2 = @A0 + R1
+    R3 = @B0 + R1
+    DO J = 1, N
+	    a  = J × c    
+	    R4 = R2 + a    
+	    R5 = R3 + a    
+	    MEM(R4) = MEM(R4) + MEM(R5)
+    END DO
+    ```
+    
+    [IntroCodeGeneration.pdf, slide "Loop-invariant code motion"].
+- **Operator Strength Reduction (§10.4.2 in EaC, slide "Operator Strength Reduction"):** la moltiplicazione `J × c` all'interno del loop viene convertita in una somma incrementale — `J` diventa a questo punto pura contabilità (_bookkeeping_):
+    
+    ```text
+    R1 = I × w
+    c  = len1 × w    ! costante a tempo di compilazione
+    R2 = @A0 + R1
+    R3 = @B0 + R1
+    DO J = 1, N    
+	    R2 = R2 + c    
+	    R3 = R3 + c    
+	    MEM(R2) = MEM(R2) + MEM(R3)
+    END DO
+    ```
+    
+    Da 2 calcoli d'indirizzo completi per iterazione (versione naïve, con moltiplicazioni) si arriva a due semplici addizioni per iterazione — una trasformazione progressiva che illustra concretamente come LICM e strength reduction cooperino per eliminare overhead ridondante dagli accessi array in loop [IntroCodeGeneration.pdf, slide "Operator Strength Reduction (§ 10.4.2 in EaC)"].
+
+### 10.8 Rappresentazione e Manipolazione delle Stringhe
+
+- **Le stringhe come caso a parte (slide "Representing and Manipulating Strings" #1):** le stringhe di caratteri differiscono da scalari, array e strutture; il supporto linguistico varia: in C la maggior parte delle manipolazioni avviene tramite chiamate a routine di libreria; altri linguaggi forniscono meccanismi di prima classe per specificare sottostringhe o concatenarle. L'unità fondamentale è il carattere — tipicamente 1 o 2 byte — e l'ISA target può (o non può) supportare operazioni a grana carattere. Le operazioni su stringa possono essere costose: le vecchie architetture CISC fornivano supporto esteso per la manipolazione di stringhe; le architetture RISC moderne si affidano al compilatore per codificare queste operazioni complesse usando un insieme di operazioni più semplici [IntroCodeGeneration.pdf, slide "Representing and Manipulating Strings" #1].
+    
+- **Due rappresentazioni comuni (slide "Representing and Manipulating Strings" #2):** per la stringa `"a string"`:
+    
+    - **Campo di lunghezza esplicito:** un intero che precede i dati contiene la lunghezza (il campo lunghezza può occupare più spazio del terminatore).
+    - **Terminazione nulla:** un carattere speciale (`\0`) segna la fine della stringa.
+    
+    È una questione di design del linguaggio. Ciascuna rappresentazione ha vantaggi e svantaggi propri; sfortunatamente, la terminazione nulla è quasi considerata la norma — un retaggio del design di C, ormai radicato nei design di sistemi operativi e API [IntroCodeGeneration.pdf, slide "Representing and Manipulating Strings" #2, #3].
+    
+- **Assegnamento di un singolo carattere (slide "Manipulating Strings" #1):**
+    
+    - _Con operazioni a livello di carattere:_ si calcola l'indirizzo del rhs e si carica il carattere; si calcola l'indirizzo del lhs e si memorizza il carattere.
+    - _Con sole operazioni a livello di parola_ (>1 carattere per parola): si calcola l'indirizzo della parola contenente il rhs e la si carica; si sposta il carattere nella posizione di destinazione all'interno della parola; si calcola l'indirizzo della parola contenente il lhs e la si carica; si maschera fuori il carattere corrente e si maschera dentro il nuovo carattere; si memorizza indietro la parola del lhs [IntroCodeGeneration.pdf, slide "Manipulating Strings" #1] (esempio: `a[1]=b[2]`).
+- **Assegnamento multi-carattere (slide "Manipulating Strings" #2):** due strategie: (1) avvolgere un loop attorno al codice per un singolo carattere; oppure (2) lavorare fino a un caso allineato-a-parola, ripetere spostamenti di parole intere, e gestire un eventuale caso finale a parola parziale — con operazioni a livello di carattere o con sole operazioni a livello di parola [IntroCodeGeneration.pdf, slide "Manipulating Strings" #2].
+    
+- **Concatenazione (slide "Manipulating Strings" #3):** la concatenazione di stringhe è un calcolo di lunghezza seguito da una coppia di assegnamenti dell'intera stringa — tocca ogni carattere; possono esserci problemi di lunghezza (overflow del buffer di destinazione) [IntroCodeGeneration.pdf, slide "Manipulating Strings" #3].
+    
+- **Calcolo della lunghezza (slide "Manipulating Strings" #4):** la rappresentazione scelta determina il costo del calcolo della lunghezza (immediato con campo esplicito, lineare con terminazione nulla). Il calcolo della lunghezza emerge anche in altri contesti: assegnamento di stringa intera o sottostringa; assegnamento controllato (per prevenire buffer overflow); concatenazione; valutazione di un parametro attuale call-by-value [IntroCodeGeneration.pdf, slide "Manipulating Strings" #4].
+    
+
+### 10.9 Valori Booleani e Relazionali
+
+- **Come rappresentarli (slide "Boolean & Relational Values" #1):** l'implementazione di espressioni booleane, relazionali e dei costrutti di controllo di flusso varia ampiamente con l'ISA. La risposta dipende dalla macchina target. Due approcci classici: **rappresentazione numerica (esplicita)** e **rappresentazione posizionale (implicita)**. La scelta migliore dipende sia dal contesto sia dall'ISA — alcuni casi funzionano meglio con la prima rappresentazione, altri con la seconda [IntroCodeGeneration.pdf, slide "Boolean & Relational Values" #1].
+- **Grammatica per riconoscere espressioni booleane e relazionali (slide "Boolean & Relational Expressions"):**
+    
+    ```
+	Expr     → Expr ∨ AndTerm
+	         | AndTerm
+	
+	AndTerm  → AndTerm ∧ RelExpr
+	         | RelExpr
+	
+	RelExpr  → RelExpr < NumExpr
+	         | RelExpr ≤ NumExpr
+	         | RelExpr = NumExpr
+	         | RelExpr ≠ NumExpr
+	         | RelExpr ≥ NumExpr
+	         | RelExpr > NumExpr
+	         | NumExpr
+	
+	NumExpr  → NumExpr + Term
+	         | NumExpr - Term
+	         | Term
+	
+	Term     → Term × Value
+	         | Term ÷ Value
+	         | Value
+	
+	Value    → ¬ Factor
+	         | Factor
+	
+	Factor   → ( Expr )
+	         | number
+    ```
+    
+    [IntroCodeGeneration.pdf, slide "Boolean & Relational Expressions"].
+- **Rappresentazione numerica (slide "Boolean & Relational Values" #2):** si assegnano valori numerici a TRUE e FALSE; si usano le operazioni hardware AND, OR e NOT; si usa un confronto per ottenere un booleano da una relazionale. Se la macchina target supporta operazioni booleane che calcolano il risultato booleano direttamente: `cmp_LT rx,ry → r1` con `r1=True` se `rx<ry`, `r1=False` altrimenti [IntroCodeGeneration.pdf, slide "Boolean & Relational Values" #2].
+- **Condition code (slide "Boolean & Relational Values" #3):** se la macchina target usa un condition code invece di operazioni booleane come `cmp_LT`, occorre usare un branch condizionale per interpretare il risultato del confronto. Se la macchina target calcola un codice risultato del confronto e serve memorizzare il risultato dell'operazione booleana:
+    
+    ```iloc
+    cmp r1,r2 ⇒ cc     ; imposta cc col codice per LT,LE,EQ,GE,GT,NE
+    cbr_LT cc l2,l3    ; PC=l2 se cc=LT, PC=l3 altrimenti
+    ```
+    
+    [IntroCodeGeneration.pdf, slide "Boolean & Relational Values" #3].
+	- **Rappresentazione posizionale (slide "Boolean & Relational Values" #4):** l'esempio precedente in realtà codifica il risultato nel condition code stesso (`cc`, o `r2` in altre varianti). Se il risultato viene usato per controllare un'operazione, potrebbe non essere necessario scriverlo esplicitamente da nessuna parte — questa è precisamente la **codifica posizionale** [IntroCodeGeneration.pdf, slide "Boolean & Relational Values" #4].
+	  ![[Pasted image 20260908181708.png]]
+	  
+- **Variazioni architetturali — conditional move e predicazione (slide "Other Architectural Variations"):** entrambe le tecniche semplificano il codice evitando i branch:
+    ![[Pasted image 20260908181836.png]]
+    
+    Entrambe le versioni evitano i branch; entrambe sono più corte del codice con condition code o confronto booleano. **Sono equivalenti al codice iniziale? Non sempre!** Sono migliori? Dipende: conta la dimensione del codice o il tempo di esecuzione? [IntroCodeGeneration.pdf, slide "Other Architectural Variations"].
+- **Esempio comparativo — `x ← a<b ∧ c<d` (slide "Boolean & Relational Values" #5, #6):** 
+  
+  ![[Pasted image 20260908182000.png|455]]
+  
+  qui il confronto booleano produce codice molto migliore rispetto al condition code [IntroCodeGeneration.pdf, slide "Boolean & Relational Values" #5]; anche il conditional move aiuta in questo caso, ma risulta **peggiore** del confronto booleano puro. **Il succo:** contesto e hardware determinano la scelta appropriata — non esiste una tecnica universalmente migliore [IntroCodeGeneration.pdf, slide "Boolean & Relational Values" #6].
+
+### 10.10 Generazione del Codice per il Controllo di Flusso
+
+- **If-then-else (slide "Control Flow" #1):** si segue il modello di valutazione di relazionali e booleani con i branch. **Branching contro predicazione:**
+    - _Frequenza di esecuzione:_ una distribuzione ineguale tra i rami ⇒ conviene fare il necessario per velocizzare il caso comune (favorendo il branching).
+    - _Quantità di codice in ciascun ramo:_ quantità ineguali significano che la predicazione può sprecare issue slot.
+    - _Flusso di controllo interno al costrutto:_ qualunque attività di branching dentro il costrutto complica i predicati e rende i branch più attraenti [IntroCodeGeneration.pdf, slide "Control Flow" #1].
+- **Short-circuit evaluation (slide "Short-circuit Evaluation"):** ottimizza la valutazione di espressioni booleane (valutazione lazy) — una volta determinato il valore, si salta il resto della valutazione. Per `if (x or y and z) then …`: se `x` è vero, non serve valutare `y` o `z` — si salta direttamente alla clausola "then". Su un PDP-11 o un VAX, lo short-circuiting risparmiava tempo; le architetture moderne possono favorire la valutazione dell'espressione completa, poiché le crescenti latenze di branch rendono costoso il percorso a corto circuito, mentre conditional move e predicazione possono rendere più economico il percorso completo. **Passato:** i compilatori analizzavano il codice per inserire corti circuiti. **Futuro:** i compilatori analizzano il codice per dimostrare la legalità della valutazione completa laddove il linguaggio specifica uno short-circuit [IntroCodeGeneration.pdf, slide "Short-circuit Evaluation"].
+- **Loop (slide "Control Flow" #2 / "Implementing Loops"):** si valuta la condizione prima del loop (se necessario — **pre-test**); si esegue il corpo del loop; si valuta la condizione dopo il loop (**post-test**); si effettua un branch di ritorno alla cima (se necessario). `while`, `for`, `do` e `until` si adattano tutti a questo modello base: Pre-test → Loop body → Post-test → Next block [IntroCodeGeneration.pdf, slide "Control Flow" #2]. Esempio concreto per `for (i=1; i<100; i++) { loop body }`: si genera un blocco di inizializzazione, un pre-test, il corpo, e il salto di ritorno al pre-test, seguito dallo statement successivo [IntroCodeGeneration.pdf, slide "Implementing Loops"].
+  
+  ![[Pasted image 20260908182313.png|443]]
+
+### 10.11 Case (Switch) Statements: le Tre Strategie di Ricerca
+
+- **Il modello concettuale a 4 parti (slide "Case (switch) Statements" / "Case Statements"):**
+    
+    1. Valutare l'espressione di controllo.
+    2. Effettuare il branch verso il case selezionato.
+    3. Eseguire il codice per quel case.
+    4. Effettuare il branch verso lo statement successivo al case (uso di `break`).
+    
+    Le parti 1, 3 e 4 sono ben comprese; **la parte 2 è la chiave**: serve un metodo efficiente per localizzare il codice designato. Molti compilatori forniscono diversi schemi di ricerca, ciascuno migliore in casi diversi [IntroCodeGeneration.pdf, slide "Case (switch) Statements" / "Case Statements"].
+    
+- **Le tre strategie (slide "Case Statements"):**
+    
+    1. **Linear Search:** costrutti if-then-else annidati (nested); adatta a un numero ridotto di case.
+       - ![[Pasted image 20260908182404.png]]
+    2. **Ricerca binaria:** si costruisce una tabella delle espressioni di case e la si cerca con ricerca binaria — richiede un insieme denso di condizioni.
+       - ![[Pasted image 20260908182435.png]]
+    1. **Calcolo diretto dell'indirizzo (jump table):** richiede un insieme di case denso; effettua il lookup dell'indirizzo in una tabella e vi salta direttamente — costo $O(1)$.
+       - ![[Pasted image 20260908182507.png]]
+    
+    [IntroCodeGeneration.pdf, slide "Case Statements", "Linear Search", "Binary Search", "Direct Address Computation"]. Questa classificazione ricalca esattamente quella già introdotta come esempio guida in §10.2 (il case su un valore carattere), qui formalizzata nelle sue quattro fasi comuni e nelle tre tecniche di ricerca applicabili alla fase 2.
 ## CAPITOLO 11 — Allocazione dei Registri
 
 **Fonti:** _RegisterAlloc1.pdf_ (Local Register Allocation), _RegisterAlloc2.pdf_ (Global Register Allocation via Graph Coloring)
@@ -2296,6 +3581,8 @@ _(RegisterAlloc2, "Building the Interference Graph")_
 
 **Costruzione del grafo (procedura in 3 punti):**
 
+![[Pasted image 20260908184548.png|493]]
+
 1. **Scoprire i live range:**
     - Costruire la forma **SSA** della procedura.
     - A ogni $\phi$-function, unire gli argomenti in un unico live range (gli argomenti della stessa $\phi$-function devono essere fusi insieme).
@@ -2352,6 +3639,8 @@ _(RegisterAlloc2, "Chaitin-Briggs Algorithm")_ **Osservazione chiave (Briggs):**
 
 #### 11.3.4 Esempi svolti
 
+![[Pasted image 20260908185323.png]]
+
 **(a) Chaitin, $k=3$.** Grafo su ${1,\dots,5}$ con archi ${1\text{-}2, 1\text{-}3, 2\text{-}4, 2\text{-}5, 3\text{-}4, 3\text{-}5, 4\text{-}5}$; gradi: $1{:}2$, $2{:}3$, $3{:}3$, $4{:}3$, $5{:}3$ — solo il nodo 1 ha grado $<3$.
 
 1. push 1 (grado $2<3$); la rimozione abbassa a 2 i gradi di 2 e 3.
@@ -2360,6 +3649,8 @@ _(RegisterAlloc2, "Chaitin-Briggs Algorithm")_ **Osservazione chiave (Briggs):**
 4. pop 5 → colore 1; pop 3 (vicini 1,4,5: solo 5 colorato) → colore 2; pop 4 (vicini 2,3,5: colori 1,2 usati) → colore 3; pop 2 → colore 2; pop 1 → colore 1.
 
 Colorazione valida su 3 registri, **senza alcuno spill**.
+
+![[Pasted image 20260908185446.png]]
 
 **(b) Briggs — optimistic coloring, $k=2$.** Grafo a diamante: archi $1\text{-}2, 2\text{-}4, 4\text{-}3, 3\text{-}1$; **tutti** i nodi hanno grado esattamente 2 ⇒ nessun nodo con grado $<2$: **Chaitin spillerebbe immediatamente** un nodo qualsiasi. Briggs pusha comunque un nodo, diciamo 1; la rimozione porta 2 e 3 a grado 1; push 3; ora 2 e 4 hanno grado $<2$; push 2, push 4. In fase di select: pop 4 → colore 1; pop 2 → colore 2; pop 3 → colore 2 (il vicino 4 ha colore 1); pop 1 → i vicini 2 e 3 usano entrambi colore 2 ⇒ **il colore 1 è disponibile!** 2-colorazione trovata, **zero spill**: proprio il caso che dimostra come il grado sia solo un limite superiore lasco.
 
@@ -2601,20 +3892,20 @@ Il "desugaring" è la trasformazione di costrutti sintattici di alto livello (zu
 
 #### Tabella dei desugaring principali (slide)
 
-| Sorgente | Forma desugarata |
-|---|---|
-| `for x in v { println!("{}", x); }` | `{ let mut iter = IntoIterator::into_iter(v); loop { match iter.next() { Some(x) => { println!("{}", x); } None => break, } } }` |
-| `let x = foo()?;` | `let x = match foo() { Ok(v) => v, Err(e) => return Err(From::from(e)), };` |
-| `let x = opt?;` (su `Option`) | `let x = match opt { Some(v) => v, None => return None, };` |
-| `v.push(10);` | `Vec::push(&mut v, 10);` |
-| `x.foo()` | `Foo::foo(&x)` oppure `Foo::foo(&mut x)` oppure `Foo::foo(&*x)`, a seconda della modalità di ricezione richiesta |
-| `if let Some(x) = opt { println!("{}", x); }` | `match opt { Some(x) => { println!("{}", x); } _ => {} }` |
-| `while let Some(x) = iter.next() { println!("{}", x); }` | `loop { match iter.next() { Some(x) => { println!("{}", x); } None => break, } }` |
-| `v[i]` (lettura) | `*std::ops::Index::index(&v, i)` |
-| `v[i] = 10;` | `*std::ops::IndexMut::index_mut(&mut v, i) = 10;` |
-| `fn f() -> i32 { 3 }` (return implicito) | `fn f() -> i32 { return 3; }` (espressione di coda) |
-| `let f = \|x\| x + 1;` (closure) | `struct Closure; impl Fn(i32) -> i32 for Closure { extern "rust-call" fn call(&self, (x,): (i32,)) -> i32 { x + 1 } } let f = Closure;` |
-| `let y = 10; let f = \|x\| x + y;` (cattura) | `struct Closure { y: i32 } impl Fn(i32) -> i32 for Closure { extern "rust-call" fn call(&self, (x,): (i32,)) -> i32 { x + self.y } } let f = Closure { y };` |
+| Sorgente                                                 | Forma desugarata                                                                                                                                             |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `for x in v { println!("{}", x); }`                      | `{ let mut iter = IntoIterator::into_iter(v); loop { match iter.next() { Some(x) => { println!("{}", x); } None => break, } } }`                             |
+| `let x = foo()?;`                                        | `let x = match foo() { Ok(v) => v, Err(e) => return Err(From::from(e)), };`                                                                                  |
+| `let x = opt?;` (su `Option`)                            | `let x = match opt { Some(v) => v, None => return None, };`                                                                                                  |
+| `v.push(10);`                                            | `Vec::push(&mut v, 10);`                                                                                                                                     |
+| `x.foo()`                                                | `Foo::foo(&x)` oppure `Foo::foo(&mut x)` oppure `Foo::foo(&*x)`, a seconda della modalità di ricezione richiesta                                             |
+| `if let Some(x) = opt { println!("{}", x); }`            | `match opt { Some(x) => { println!("{}", x); } _ => {} }`                                                                                                    |
+| `while let Some(x) = iter.next() { println!("{}", x); }` | `loop { match iter.next() { Some(x) => { println!("{}", x); } None => break, } }`                                                                            |
+| `v[i]` (lettura)                                         | `*std::ops::Index::index(&v, i)`                                                                                                                             |
+| `v[i] = 10;`                                             | `*std::ops::IndexMut::index_mut(&mut v, i) = 10;`                                                                                                            |
+| `fn f() -> i32 { 3 }` (return implicito)                 | `fn f() -> i32 { return 3; }` (espressione di coda)                                                                                                          |
+| `let f = \|x\| x + 1;` (closure)                         | `struct Closure; impl Fn(i32) -> i32 for Closure { extern "rust-call" fn call(&self, (x,): (i32,)) -> i32 { x + 1 } } let f = Closure;`                      |
+| `let y = 10; let f = \|x\| x + y;` (cattura)             | `struct Closure { y: i32 } impl Fn(i32) -> i32 for Closure { extern "rust-call" fn call(&self, (x,): (i32,)) -> i32 { x + self.y } } let f = Closure { y };` |
 
 [COMP-02_RUST_COMPILATION.pdf, Slide 8, 9, 10]
 
@@ -2950,10 +4241,11 @@ let l = a.len(); // ERRORE
 let a: (Vec<u32>, Vec<u32>) = (vec![1,2,3], vec![4,5,6]);
 let b = a;
 ```
-| Statement | GEN | KILL |
-|---|---|---|
-| init `a` | {a, a.0, a.1} | ∅ |
-| `b = a` | {b} | {a, a.0, a.1} |
+
+| Statement | GEN           | KILL          |
+| --------- | ------------- | ------------- |
+| init `a`  | {a, a.0, a.1} | ∅             |
+| `b = a`   | {b}           | {a, a.0, a.1} |
 
 Risultato: inizializzati = {b} — muovere il padre `a` uccide **tutti** i figli [COMP-03_RUST_COMPILATION.pdf, Slide 24].
 
@@ -2962,10 +4254,11 @@ Risultato: inizializzati = {b} — muovere il padre `a` uccide **tutti** i figli
 let a: (Vec<u32>, Vec<u32>) = (vec![1,2,3], vec![4,5,6]);
 let b = a.0;
 ```
-| Statement | GEN | KILL |
-|---|---|---|
-| init `a` | {a, a.0, a.1} | ∅ |
-| `b = a.0` | {b} | {a.0} |
+
+| Statement | GEN           | KILL  |
+| --------- | ------------- | ----- |
+| init `a`  | {a, a.0, a.1} | ∅     |
+| `b = a.0` | {b}           | {a.0} |
 
 Risultato: inizializzati = {a, a.1, b} — `a.0` è morto, ma `a.1` è ancora valido: muovere un figlio **non** uccide i fratelli [COMP-03_RUST_COMPILATION.pdf, Slide 25].
 
@@ -2975,11 +4268,12 @@ let a: (Vec<u32>, Vec<u32>) = (vec![1,2,3], vec![4,5,6]);
 let b = a.0;
 let c = a;   // ERRORE: use of partially moved value a
 ```
-| Statement | IN | GEN | KILL |
-|---|---|---|---|
-| init `a` | ∅ | {a, a.0, a.1} | ∅ |
-| `b = a.0` | {a, a.0, a.1} | {b} | {a.0} |
-| `c = a` | {a, a.1, b} | {c} | {a, a.0, a.1} |
+
+| Statement | IN            | GEN           | KILL          |
+| --------- | ------------- | ------------- | ------------- |
+| init `a`  | ∅             | {a, a.0, a.1} | ∅             |
+| `b = a.0` | {a, a.0, a.1} | {b}           | {a.0}         |
+| `c = a`   | {a, a.1, b}   | {c}           | {a, a.0, a.1} |
 
 [COMP-03_RUST_COMPILATION.pdf, Slide 26]
 
@@ -3073,14 +4367,13 @@ bb2: { _4 = closure { x: move _1 }; /* FnOnce, move di x */ }
 
 *   **Implementazioni del polimorfismo universale a confronto (slide):**
 
-    | Linguaggio | Meccanismo di bound | Idea principale d'implementazione | Trade-off principale |
-    |---|---|---|---|
-    | Haskell | Type class | Dictionary passing + polimorfismo parametrico | Codice compatto, chiamate indirette a meno di ottimizzazione |
-    | Java | Interfacce / bound | Type erasure | Compatto, meno specificità di tipo a runtime, indirezione |
-    | C++ | Template / concept | Monomorfizzazione | Veloce/specializzato, code bloat |
-    | C# | Interfacce / vincoli | Generics reificati, ibrido shared/specialized | Più informazione di tipo a runtime, tipi valore efficienti |
-
-    [COMP-05_RUST_COMPILATION.pdf, Slide 10]
+| Linguaggio | Meccanismo di bound | Idea principale d'implementazione | Trade-off principale |
+|---|---|---|---|
+| Haskell | Type class | Dictionary passing + polimorfismo parametrico | Codice compatto, chiamate indirette a meno di ottimizzazione |
+| Java | Interfacce / bound | Type erasure | Compatto, meno specificità di tipo a runtime, indirezione |
+| C++ | Template / concept | Monomorfizzazione | Veloce/specializzato, code bloat |
+| C# | Interfacce / vincoli | Generics reificati, ibrido shared/specialized | Più informazione di tipo a runtime, tipi valore efficienti |
+[COMP-05_RUST_COMPILATION.pdf, Slide 10]
 *   **Monomorfizzazione in Rust (slide):** Rust ha ampio supporto per i tipi generici, con polimorfismo universale esplicito e vincolato; i bound sono espressi tramite Trait. Rust **monomorfizza** tutti i tipi generici: il compilatore genera una copia distinta del codice di una funzione generica per ciascun tipo concreto necessario. La monomorfizzazione è il primo passo nel back-end del compilatore Rust: il MIR generico viene istanziato prima della generazione di codice. Stesso trade-off del C++: veloce/specializzato, ma con crescita del codice [COMP-05_RUST_COMPILATION.pdf, Slide 11].
 *   **Collection (slide):** per ogni entità generica il compilatore deve raccogliere tutti i tipi concreti che la istanziano; il codice che esegue questa raccolta si chiama **monomorphization collector**, eseguito appena prima dell'abbassamento del MIR e del codegen. `rustc_codegen_ssa::base::codegen_crate` invoca la query `collect_and_partition_mono_items`, che esegue la raccolta di monomorfizzazione e poi la partiziona in codegen unit [COMP-05_RUST_COMPILATION.pdf, Slide 12].
 *   **Mono item collection in dettaglio (modulo `rustc_monomorphize`, slide):** la raccolta dei mono item determina tutto ciò che deve generare codice di backend. Il collettore trova tutti gli item che produrranno artefatti LLVM/backend: funzioni, metodi, closure, `static`, e drop glue; deve anche scoprire ogni istanza monomorfizzata concreta di codice generico, inclusi i generics importati da altri crate. Un "mono item" rappresenta un artefatto di backend (qualcosa che diventa una funzione o un oggetto globale nella IR generata). I mono item dipendono l'uno dall'altro (es. una funzione che ne chiama un'altra), formando un **grafo diretto dei mono item**. L'algoritmo di raccolta lavora in due fasi: (1) trova le radici del grafo attraversando l'HIR del crate e raccogliendo gli item pubblici/non generici; (2) a partire da quelle radici, ispeziona ricorsivamente il MIR per scoprire tutti i mono item usati e le loro istanziazioni di tipo concrete [COMP-05_RUST_COMPILATION.pdf, Slide 13].
@@ -3106,57 +4399,56 @@ bb2: { _4 = closure { x: move _1 }; /* FnOnce, move di x */ }
     ```
 *   **Azioni del Type Checking (tabelle, slide):**
 
-    | Azione | Scopo |
-    |---|---|
-    | Controllo delle espressioni | Assicura la correttezza di tipo delle operazioni (compatibilità dell'assegnamento, tipi degli operandi, tipi di ritorno, coerenza dei rami) |
-    | Risoluzione dei metodi | Trova i metodi chiamabili (cerca in impl inherenti e di trait, catene di autoderef/autoref, valida il tipo del receiver) |
-    | Controllo degli obblighi di trait | Valida gli obblighi di trait (es. `T: Clone`, tutti gli obblighi impliciti, clausole `where`, supertrait) |
-    | Correttezza degli argomenti generici | Controlla argomenti di tipo/const/lifetime (arità, vincoli, tipi di const, well-formedness) |
-    | Controllo delle coercizioni | Valida conversioni implicite (`&mut T → &T`, array-to-slice, deref coercion, unsizing coercion) |
-    | Controllo dei pattern | Verifica match/destrutturazione (validità dei costruttori, tipi dei binding, supporto all'esaustività, coerenza delle varianti enum) |
-    | Controllo delle firme | Valida le interfacce di fn/closure (tipi dei parametri, tipi di ritorno, coerenza ABI, trait di chiamata delle closure `Fn`/`FnMut`/`FnOnce`) |
-    | Risoluzione degli operatori | Tipizzazione basata su trait degli operatori (`a + b` diventa `Add::add(a, b)`: esistenza del trait, compatibilità degli operandi, tipo del risultato) |
-    | Autoderef/autoref | Inserisce riferimenti/deref impliciti (`x.len()` può diventare `(*(*x)).len()`: legalità della catena di deref, inserimento del borrow, correttezza della mutabilità) |
-    | Controllo di well-formedness | Assicura tipi legali (`struct S<T: Copy> { x: T }`: bound, legalità ricorsiva, regole di varianza, sizedness, precondizioni di object safety) |
-    | Controllo di costruzione degli ADT | Valida enum/struct (`Some(3)` o `Point{x:1,y:2}`: esistenza dei campi, visibilità, tipi dei campi, arità) |
-
-    [COMP-06_RUST_COMPILATION.pdf, Slide 17, 18, 19, 20]
+| Azione | Scopo |
+|---|---|
+| Controllo delle espressioni | Assicura la correttezza di tipo delle operazioni (compatibilità dell'assegnamento, tipi degli operandi, tipi di ritorno, coerenza dei rami) |
+| Risoluzione dei metodi | Trova i metodi chiamabili (cerca in impl inherenti e di trait, catene di autoderef/autoref, valida il tipo del receiver) |
+| Controllo degli obblighi di trait | Valida gli obblighi di trait (es. `T: Clone`, tutti gli obblighi impliciti, clausole `where`, supertrait) |
+| Correttezza degli argomenti generici | Controlla argomenti di tipo/const/lifetime (arità, vincoli, tipi di const, well-formedness) |
+| Controllo delle coercizioni | Valida conversioni implicite (`&mut T → &T`, array-to-slice, deref coercion, unsizing coercion) |
+| Controllo dei pattern | Verifica match/destrutturazione (validità dei costruttori, tipi dei binding, supporto all'esaustività, coerenza delle varianti enum) |
+| Controllo delle firme | Valida le interfacce di fn/closure (tipi dei parametri, tipi di ritorno, coerenza ABI, trait di chiamata delle closure `Fn`/`FnMut`/`FnOnce`) |
+| Risoluzione degli operatori | Tipizzazione basata su trait degli operatori (`a + b` diventa `Add::add(a, b)`: esistenza del trait, compatibilità degli operandi, tipo del risultato) |
+| Autoderef/autoref | Inserisce riferimenti/deref impliciti (`x.len()` può diventare `(*(*x)).len()`: legalità della catena di deref, inserimento del borrow, correttezza della mutabilità) |
+| Controllo di well-formedness | Assicura tipi legali (`struct S<T: Copy> { x: T }`: bound, legalità ricorsiva, regole di varianza, sizedness, precondizioni di object safety) |
+| Controllo di costruzione degli ADT | Valida enum/struct (`Some(3)` o `Point{x:1,y:2}`: esistenza dei campi, visibilità, tipi dei campi, arità) |
+ [COMP-06_RUST_COMPILATION.pdf, Slide 17, 18, 19, 20]
 
 ### 12.13 Type Inference in rustc
 
 *   **Panoramica (slide):** l'inferenza di tipo di Rust è un sistema multi-dominio di generazione di vincoli + risoluzione di vincoli su: tipi, lifetime (regioni), obblighi di trait, proiezioni, e const generics. Si basa sull'algoritmo standard di Hindley-Milner (HM), esteso in vari modi per gestire subtyping, region inference, e tipi higher-ranked [COMP-06_RUST_COMPILATION.pdf, Slide 20].
 *   **Tabella delle azioni di inferenza (slide):**
 
-    | Azione di Inferenza | Scopo | Esempio | Vincolo |
-    |---|---|---|---|
-    | Inferenza variabile locale | Inferisce il tipo di una variabile | `let x = 3;` | `x: ?T1`; `?T1 = IntVar` (da `3`); `IntVar = i32` (fallback) |
-    | Inferenza tipo di ritorno | Inferisce il tipo del risultato | `fn f() { 3 }` | `return_type = body_type` |
-    | Inferenza argomenti generici | Inferisce parametri generici | `let v = Vec::new(); v.push(3);` | `v: Vec<?T1>`; `?T1 = i32` (dalla chiamata) |
-    | Inferenza parametri/risultato closure | Inferisce param/risultato closure | `let f = \|x\| x + 1;` | `x: ?T1`; `?T1: Add<i32>`; risultato `?T2 = i32` |
-    | Inferenza receiver di metodo | Inferisce la struttura del receiver | `x.push(3)` | `x: ?T1`; `?T1 = Vec<?T2>` (lookup metodo); `?T2 = i32` |
-    | Inferenza di riferimento | Inferisce il tipo del prestito | `let r = &x;` | `r: &'?R i32`; `region(x) ⊇ '?R` |
-    | Inferenza di lifetime | Inferisce l'estensione della regione | `let r = &x; println!("{}", r);` | `borrow_point ∈ '?R`; `use_point ∈ '?R` |
-    | Inferenza di reborrow | Restringe i prestiti annidati | `let y = &*x;` (con `x: &'a mut i32`) | `y: &'?R i32`; `'?R ⊆ 'a` |
-    | Inferenza obblighi di trait | Inferisce trait richiesti | `x.clone()` | `x: ?T1`; `?T: Clone` |
-    | Inferenza tipo associato | Risolve proiezioni | `Iterator::Item` | `<?T1 as Iterator>::Item = ?T2` |
-    | Unificazione dei rami | Unifica i tipi dei rami `match` | `let y = if cond {3} else {4};` | `arm1_type = ?T = arm2_type` |
-    | Inferenza array | Inferisce tipo/lunghezza elementi | `let a = [1,2,3];` | `a: [i32; 3]`; stesso tipo, lunghezza fissa |
-    | Inferenza HRTB | Inferisce lifetime higher-ranked | `for<'a> fn(&'a i32)` | variabili di regione legate, universi, placeholder |
-    | Inferenza subtyping/outlives | Inferisce contenimento di lifetime | `let x: &'static i32 = y;` | `y: &'?R i32`; `'?R: 'static` |
+| Azione di Inferenza | Scopo | Esempio | Vincolo |
+|---|---|---|---|
+| Inferenza variabile locale | Inferisce il tipo di una variabile | `let x = 3;` | `x: ?T1`; `?T1 = IntVar` (da `3`); `IntVar = i32` (fallback) |
+| Inferenza tipo di ritorno | Inferisce il tipo del risultato | `fn f() { 3 }` | `return_type = body_type` |
+| Inferenza argomenti generici | Inferisce parametri generici | `let v = Vec::new(); v.push(3);` | `v: Vec<?T1>`; `?T1 = i32` (dalla chiamata) |
+| Inferenza parametri/risultato closure | Inferisce param/risultato closure | `let f = \|x\| x + 1;` | `x: ?T1`; `?T1: Add<i32>`; risultato `?T2 = i32` |
+| Inferenza receiver di metodo | Inferisce la struttura del receiver | `x.push(3)` | `x: ?T1`; `?T1 = Vec<?T2>` (lookup metodo); `?T2 = i32` |
+| Inferenza di riferimento | Inferisce il tipo del prestito | `let r = &x;` | `r: &'?R i32`; `region(x) ⊇ '?R` |
+| Inferenza di lifetime | Inferisce l'estensione della regione | `let r = &x; println!("{}", r);` | `borrow_point ∈ '?R`; `use_point ∈ '?R` |
+| Inferenza di reborrow | Restringe i prestiti annidati | `let y = &*x;` (con `x: &'a mut i32`) | `y: &'?R i32`; `'?R ⊆ 'a` |
+| Inferenza obblighi di trait | Inferisce trait richiesti | `x.clone()` | `x: ?T1`; `?T: Clone` |
+| Inferenza tipo associato | Risolve proiezioni | `Iterator::Item` | `<?T1 as Iterator>::Item = ?T2` |
+| Unificazione dei rami | Unifica i tipi dei rami `match` | `let y = if cond {3} else {4};` | `arm1_type = ?T = arm2_type` |
+| Inferenza array | Inferisce tipo/lunghezza elementi | `let a = [1,2,3];` | `a: [i32; 3]`; stesso tipo, lunghezza fissa |
+| Inferenza HRTB | Inferisce lifetime higher-ranked | `for<'a> fn(&'a i32)` | variabili di regione legate, universi, placeholder |
+| Inferenza subtyping/outlives | Inferisce contenimento di lifetime | `let x: &'static i32 = y;` | `y: &'?R i32`; `'?R: 'static` |
 
-    [COMP-06_RUST_COMPILATION.pdf, Slide 21, 22, 23]
+[COMP-06_RUST_COMPILATION.pdf, Slide 21, 22, 23]
 *   **Vincoli di tipo generati (slide):**
 
-    | Tipo di vincolo | Significato |
-    |---|---|
-    | Uguaglianza | `?T = i32` |
-    | Subtyping | `'a : 'b` |
-    | Obblighi di trait | `?T : Clone` |
-    | Uguaglianza di proiezione | `<T as Trait>::Assoc = U` |
-    | Contenimento di regione | `'?R ⊆ 'a` |
-    | Uguaglianza di const | `?N = 4` |
+| Tipo di vincolo | Significato |
+|---|---|
+| Uguaglianza | `?T = i32` |
+| Subtyping | `'a : 'b` |
+| Obblighi di trait | `?T : Clone` |
+| Uguaglianza di proiezione | `<T as Trait>::Assoc = U` |
+| Contenimento di regione | `'?R ⊆ 'a` |
+| Uguaglianza di const | `?N = 4` |
 
-    [COMP-06_RUST_COMPILATION.pdf, Slide 24]
+[COMP-06_RUST_COMPILATION.pdf, Slide 24]
 
 ### 12.14 Unificazione del Primo Ordine e l'Algoritmo di Martelli–Montanari
 *   **Unificazione del primo ordine (definizione formale, slide):** dato un insieme finito $G = \{s_1 \doteq t_1, \dots, s_n \doteq t_n\}$ di equazioni potenziali, l'algoritmo applica regole per trasformarlo in una **sostituzione**, cioè un insieme equivalente di equazioni della forma $\{x_1 \doteq u_1, \dots, x_m \doteq u_m\}$ dove $x_1, \dots, x_m$ sono variabili distinte e $u_1, \dots, u_m$ sono termini che non contengono nessuna delle $x_i$. Se non esiste soluzione, l'algoritmo termina con $\bot$. $G\{x \mapsto t\}$ denota l'operazione di sostituire tutte le occorrenze della variabile $x$ nel problema $G$ con il termine $t$. I simboli costanti sono considerati simboli funzionali con arità zero [COMP-06_RUST_COMPILATION.pdf, Slide 28].
@@ -3172,15 +4464,15 @@ bb2: { _4 = closure { x: move _1 }; /* FnOnce, move di x */ }
 *   **Lint group (slide):** `rustc` ha il concetto di gruppo di lint, per attivare più warning tramite un unico nome — es. `nonstandard-style` imposta insieme `non-camel-case-types`, `non-snake-case`, `non-upper-case-globals`. Gruppi principali: `warnings` (tutti i lint impostati per emettere warning); `deprecated-safe` (funzioni erroneamente marcate `safe` in passato); `future-incompatible` (codice con problemi di compatibilità futura); `keyword-idents` (identificatori che diventeranno keyword in edizioni successive); `nonstandard-style` (violazioni delle convenzioni di naming); `refining-impl-trait`; `unused` (cose dichiarate ma non usate, o sintassi in eccesso) [COMP-06_RUST_COMPILATION.pdf, Slide 12].
 *   **Quando vengono eseguiti i lint — cinque momenti distinti (tabella, slide):**
 
-    | Tipo | Momento | Informazione disponibile | Uso tipico |
-    |---|---|---|---|
-    | Pre-expansion | Prima dell'espansione delle macro | AST grezzo, contesto limitato | compatibilità di edizione e casi sensibili alle macro, come `keyword_idents` |
-    | Early lint | Dopo l'espansione delle macro, prima dell'abbassamento | AST risolto, ma i tipi non sono ancora completi | lint puramente sintattici, come `unused_parens` |
-    | Late lint | Verso la fine dell'analisi, sull'HIR | HIR, tipi e semantica più ricca | controlli idiomatici o semantici, come `non_snake_case` o `invalid_value` |
-    | MIR / inline | Dentro il MIR, il borrowck o percorsi di codice specifici | stato specializzato del sottosistema | `arithmetic_overflow`, `unused_mut`, lint complessi di future-compat |
-    | Driver / tool lint | Registrazione esterna, esecuzione nelle stesse fasi di cui sopra | dipende dal pass registrato | Clippy e strumenti personalizzati via `register_lints` e `rustc_driver` |
+| Tipo | Momento | Informazione disponibile | Uso tipico |
+|---|---|---|---|
+| Pre-expansion | Prima dell'espansione delle macro | AST grezzo, contesto limitato | compatibilità di edizione e casi sensibili alle macro, come `keyword_idents` |
+| Early lint | Dopo l'espansione delle macro, prima dell'abbassamento | AST risolto, ma i tipi non sono ancora completi | lint puramente sintattici, come `unused_parens` |
+| Late lint | Verso la fine dell'analisi, sull'HIR | HIR, tipi e semantica più ricca | controlli idiomatici o semantici, come `non_snake_case` o `invalid_value` |
+| MIR / inline | Dentro il MIR, il borrowck o percorsi di codice specifici | stato specializzato del sottosistema | `arithmetic_overflow`, `unused_mut`, lint complessi di future-compat |
+| Driver / tool lint | Registrazione esterna, esecuzione nelle stesse fasi di cui sopra | dipende dal pass registrato | Clippy e strumenti personalizzati via `register_lints` e `rustc_driver` |
 
-    I lint girano in fasi di compilazione diverse a seconda del loro significato; molti lint sono raggruppati in pass eseguiti con un unico visitor, altri sono collocati dove servono nel codice [COMP-06_RUST_COMPILATION.pdf, Slide 13].
+I lint girano in fasi di compilazione diverse a seconda del loro significato; molti lint sono raggruppati in pass eseguiti con un unico visitor, altri sono collocati dove servono nel codice [COMP-06_RUST_COMPILATION.pdf, Slide 13].
 *   **Clippy (slide):** è la collezione ufficiale di lint di Rust — un ampio insieme di analisi statiche aggiuntive costruite sopra `rustc`, che aiutano gli sviluppatori a scrivere codice Rust più idiomatico, corretto, efficiente e manutenibile. Concettualmente: `rustc` verifica se il programma è Rust **valido**; Clippy verifica se è **buon** Rust. Clippy si integra direttamente nell'infrastruttura del compilatore, piuttosto che operare come parser o analizzatore separato: usa la stessa architettura di linting di `rustc`, registrando pass di lint personalizzati tramite il driver del compilatore ed eseguendoli dentro la normale pipeline di lint [COMP-06_RUST_COMPILATION.pdf, Slide 14].
 
 ### 12.16 Type Inference in uHaskell (Algorithm W)

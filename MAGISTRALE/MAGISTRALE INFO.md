@@ -23,3 +23,11 @@
 
 SPM -> (deadline project)
 COMPILATION -> (dead line project)
+
+# Calendario 26-27
+
+![[Pasted image 20260908020033.png]]
+
+![[Pasted image 20260908020313.png]]
+
+![[Pasted image 20260908020328.png]]
