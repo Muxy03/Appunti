@@ -22,18 +22,6 @@
             }
           },
           {
-            "id": "93efa7dc4e42ad3d",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/COMPILATION/RegisterAlloc2.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "RegisterAlloc2"
-            }
-          },
-          {
             "id": "93a50d6f1d95e659",
             "type": "leaf",
             "state": {
@@ -46,8 +34,21 @@
               "icon": "lucide-file",
               "title": "CT_Project_Preparazione_Orale"
             }
+          },
+          {
+            "id": "889da7eb9a625222",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/COMPILATION/ParsingMio.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "ParsingMio"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -213,8 +214,12 @@
       "bases:Crea nuova Base": false
     }
   },
-  "active": "292ec6a0ff9cbc8c",
+  "active": "93a50d6f1d95e659",
   "lastOpenFiles": [
+    "PDF/COMPILATION/RUST_COMPILATION_QA_v2.md",
+    "PDF/COMPILATION/ParsingMio.pdf",
+    "MAGISTRALE/EXTRA/CT_Project_Preparazione_Orale.md",
+    "PDF/COMPILATION/COMPILATION_REVIEW_HANDOUT.md",
     "IMMAGINI/Pasted image 20260908185446.png",
     "IMMAGINI/Pasted image 20260908185323.png",
     "IMMAGINI/Pasted image 20260908184548.png",
@@ -225,9 +230,6 @@
     "IMMAGINI/Pasted image 20260908182313.png",
     "IMMAGINI/Pasted image 20260908182000.png",
     "IMMAGINI/Pasted image 20260908181836.png",
-    "IMMAGINI/Pasted image 20260908181708.png",
-    "MAGISTRALE/EXTRA/CT_Project_Preparazione_Orale.md",
-    "PDF/COMPILATION/COMPILATION_REVIEW_HANDOUT.md",
     "PDF/COMPILATION/RegisterAlloc2.pdf",
     "PDF/COMPILATION/IntroCodeGeneration.pdf",
     "PDF/COMPILATION/OptimizationI.pdf",
@@ -235,7 +237,6 @@
     "PDF/COMPILATION/Data-Flow2.pdf",
     "MAGISTRALE/MAGISTRALE INFO.md",
     "PDF/COMPILATION/Data-FlowFirst.pdf",
-    "PDF/COMPILATION/ParsingMio.pdf",
     "PDF/COMPILATION/ContextsensitiveAnalysisv.pdf",
     "PDF/PROGRAM ANALYSIS/ProgramAnalysis-13-Galois-draft.pdf",
     "MAGISTRALE/EXTRA/COMPILATION_REVIEW_HANDOUT.md",
