@@ -330,7 +330,7 @@ Consideriamo l'espressione sorgente `a = b × c + d` come esempio guida (slide):
 
 ### 2.2 Teoria dei Linguaggi e Grammatiche Generative
 
-- **Definizione di Linguaggio (Language):** Un linguaggio $L$ su un alfabeto $\Sigma$ è un sottoinsieme di $\Sigma^_$ ($L \subseteq \Sigma^_$) [LinguaggiI.pdf].
+- **Definizione di Linguaggio (Language):** Un linguaggio $L$ su un alfabeto $\Sigma$ è un sottoinsieme di $\Sigma^*$ ($L \subseteq \Sigma^*$) [LinguaggiI.pdf].
     - _Esempi (slide):_ $L_1$ = insieme delle stringhe su $\Sigma_1$ che contengono la sottostringa "fool"; $L_2$ = insieme delle stringhe su $\Sigma_2$ che rappresentano un numero binario divisibile per 7 ($={111, 10001, 10101,\dots}$); $L_3$ = insieme delle stringhe su $\Sigma_3$ dove ogni '(' è seguita esattamente da 2 occorrenze di ')' ($={\epsilon, ), )), ()), )()), \dots}$); $L_4$ = numeri binari corrispondenti a un numero primo ($={10,11,101,111,1011,1101,\dots}$); $L_5$ = insieme delle parole legali inglesi; $L_6$ = insieme dei programmi C legali [LinguaggiI.pdf].
 - **Operazioni sui linguaggi:** Poiché i linguaggi sono insiemi, ereditano le operazioni standard della teoria degli insiemi (Unione $A \cup B$, Intersezione $A \cap B$, Differenza $A \setminus B$ quando $B\subseteq A$, Complemento $\bar{A} = \Sigma^* \setminus A$) [LinguaggiI.pdf]. Sono definite inoltre:
     - **Concatenazione di linguaggi:** $AB = {ab \mid a \in A \land b \in B}$; esempio: ${0,1}{1,2}={01,02,11,12}$ [LinguaggiI.pdf].
@@ -369,7 +369,7 @@ La Gerarchia di Chomsky classifica le grammatiche in quattro classi (Tipi) in ba
 
 La potenza espressiva cresce strettamente: $\text{regular} \subset \text{context-free} \subset \text{context-sensitive} \subset \text{phrase-structure}$ [LinguaggiI.pdf]:
 
-- $L_1 = {$stringhe su ${0,1}$ con un numero pari di 1$}$ è **regolare** [LinguaggiI.pdf].
+- $L_1={\text{stringhe su }\{0,1\} \text{ con un numero pari di }1}$ è **regolare** [LinguaggiI.pdf].
 - $L_2 = {a^nb^n \mid n\in\mathbb{N}}$ è **context-free ma non regolare** (dimostrato col Pumping Lemma regolare, §2.8) [LinguaggiI.pdf].
 - $L_3 = {a^nb^nc^n \mid n\in\mathbb{N}}$ è **context-sensitive ma non context-free** (dimostrato col Pumping Lemma per CF, §2.10) [LinguaggiI.pdf].
 
@@ -408,13 +408,19 @@ I cinque formalismi equivalenti per rappresentare e riconoscere un linguaggio re
     3. $\delta_D(P, a) = \bigcup_{p \in P} \delta_N(p, a)$ per ciascun $P \in Q_D$, $a\in\Sigma$ [LinguaggiI.pdf].
     4. $F_D = {P \in Q_D \mid P \cap F_N \neq \emptyset}$ [LinguaggiI.pdf].
     5. Si eliminano tutti i macro-stati non raggiungibili a partire da $q_D$ [LinguaggiI.pdf].
+       
+    6. ![[Pasted image 20260911182215.png|477]]
+       
 - **$\epsilon$-NFA ed eliminazione transizioni:**
     - Un $\epsilon$-NFA consente transizioni spontanee sulla stringa vuota $\epsilon$; formalmente $\delta:Q\times(\Sigma\cup{\epsilon})\to\mathcal P(Q)$ [LinguaggiI.pdf].
     - **$\epsilon$-closure:** l'insieme di tutti gli stati raggiungibili da $q$ (incluso $q$ stesso) effettuando esclusivamente zero o più transizioni su $\epsilon$; si estende a insiemi di stati come $\epsilon\text{-closure}(P)=\bigcup_{p\in P}\epsilon\text{-closure}(p)$ [LinguaggiI.pdf].
+      
+    - ![[Pasted image 20260911182519.png|489]]
+      
     - La funzione estesa è $\hat\delta(q,\epsilon)=\epsilon\text{-closure}(q)$, $\hat\delta(q,wa)=\bigcup_{p\in\hat\delta(q,w)}\epsilon\text{-closure}(\delta(p,a))$; si noti che in generale $\hat\delta(q,a)\ne\delta(q,a)$ [LinguaggiI.pdf].
-    - **Conversione da $\epsilon$-NFA a NFA:** Dato $M = (Q, \Sigma, \delta, q_0, F)$, si costruisce l'NFA equivalente $M' = (Q, \Sigma, \delta', q_0, F')$ ponendo:
-        1. $\delta'(q, a) = \hat{\delta}(q, a)$ [LinguaggiI.pdf].
-        2. $F' = F \cup {q_0}$ se $\epsilon\text{-closure}(q_0) \cap F \neq \emptyset$, altrimenti $F' = F$ [LinguaggiI.pdf].
+    - **Conversione da $\epsilon$-NFA a NFA:** Dato $E = (Q, \Sigma, \delta_E, q_0, F_E)$, si costruisce l'NFA equivalente $N = (Q, \Sigma, \delta_N, q_0, F_N)$ ponendo:
+        1. $\delta_N(q, a) = \hat{\delta_E}(q, a)$ [LinguaggiI.pdf].
+        2. $F_N = F_E \cup {q_0}$ se $\epsilon\text{-closure}(q_0) \cap F_E \neq \emptyset$, altrimenti $F_N = F_E$ [LinguaggiI.pdf].
 
 #### Esempio Svolto di Determinizzazione (slide)
 
@@ -456,29 +462,37 @@ con $F' = F \cup {q_0} = {q_0,q_1,q_2,q_3}$, poiché $\epsilon\text{-closure}(q_
 
 ### 2.6 Espressioni Regolari (RE) e Ulteriori Conversioni
 
-- **Definizione induttiva di RE (slide):** dato un alfabeto finito $\Sigma$, sono espressioni regolari: $\emptyset$ (denota l'insieme vuoto), $\epsilon$ (denota ${\epsilon}$), ogni $a\in\Sigma$ (denota ${a}$). Se $r,s$ sono RE che denotano gli insiemi $R,S$, allora $(r+s)$, $(rs)$ e $r^_$ denotano rispettivamente $R\cup S$, $RS$ e $R^_$. $L(r)$ indica il linguaggio denotato da $r$ [LinguaggiI.pdf].
+- **Definizione induttiva di RE (slide):** dato un alfabeto finito $\Sigma$, sono espressioni regolari: $\emptyset$ (denota l'insieme vuoto), $\epsilon$ (denota ${\epsilon}$), ogni $a\in\Sigma$ (denota ${a}$). Se $r,s$ sono RE che denotano gli insiemi $R,S$, allora $(r+s)$, $(rs)$ e $r^*$ denotano rispettivamente $R\cup S$, $RS$ e $R^*$. $L(r)$ indica il linguaggio denotato da $r$ [LinguaggiI.pdf].
     
 - **Esempi di RE (slide):**
     
-    - $a\mid b^_$ denota ${\epsilon,\text{"a"},\text{"b"},\text{"bb"},\dots}$ — attenzione: qui l'unione lega più debolmente della concatenazione/Kleene, quindi è $a \mid (b^_)$, non $(a\mid b)^*$ [LinguaggiI.pdf].
+    - $a\mid b^*$ denota ${\epsilon,\text{"a"},\text{"b"},\text{"bb"},\dots}$ — attenzione: qui l'unione lega più debolmente della concatenazione/Kleene, quindi è $a \mid (b^*)$, non $(a\mid b)^*$ [LinguaggiI.pdf].
     - $(a+b)^*$ denota l'insieme con $\epsilon$ e tutte le stringhe formate da "a" e "b" [LinguaggiI.pdf].
     - $ab^*(c+\epsilon)$ denota l'insieme delle stringhe che iniziano con "a", poi zero o più "b", e infine opzionalmente una "c" [LinguaggiI.pdf].
-    - $(0+(1(01^_0)^_1))^_$ e $(0^_+1^_+(01)^_)$ sono esempi ulteriori; quest'ultimo denota il linguaggio ${0,11,110,1001,1100,1111,\dots}$ [LinguaggiI.pdf].
+    - $(0+(1(01^*0)^*1))^*$ e $(0^*+1^*+(01)^*)$ sono esempi ulteriori; quest'ultimo denota il linguaggio ${0,11,110,1001,1100,1111,\dots}$ [LinguaggiI.pdf].
 - **Da RE a $\epsilon$-NFA (Thompson's Inductive Construction, slide):**
     
     - _Casi base:_ per $\emptyset$ (automa senza transizioni accettanti), per $\epsilon$ (due stati uniti da una transizione $\epsilon$), per $a\in\Sigma$ (due stati uniti da una transizione $a$) [LinguaggiI.pdf].
     - _Unione $R=S+T$:_ un nuovo stato iniziale e un nuovo stato finale, connessi in parallelo agli automi di $S$ e $T$ tramite transizioni $\epsilon$ [LinguaggiI.pdf].
     - _Concatenazione $R=ST$:_ si collega lo stato finale dell'automa di $S$ allo stato iniziale dell'automa di $T$ [LinguaggiI.pdf].
-    - _Chiusura di Kleene $R=S^_$:* si introduce un nuovo stato iniziale/finale con un ciclo di transizioni $\epsilon$ che permette di ripetere l'automa di $S$ un numero arbitrario di volte, incluso zero [LinguaggiI.pdf].
+    - _Chiusura di Kleene $R=S^*$:* si introduce un nuovo stato iniziale/finale con un ciclo di transizioni $\epsilon$ che permette di ripetere l'automa di $S$ un numero arbitrario di volte, incluso zero [LinguaggiI.pdf].
     - **Esempio svolto — conversione di $R=(ab+a)^*$ (slide):** si procede per passi, costruendo dapprima gli automi elementari per $a$ e $b$, poi $ab$ (concatenazione), poi $ab+a$ (unione con l'automa di $a$), infine $(ab+a)^*$ applicando la costruzione della chiusura di Kleene attorno all'intero automa di $ab+a$ [LinguaggiI.pdf].
+      
+    - ![[Pasted image 20260911183432.png|437]]
+      
+    - ![[Pasted image 20260911183503.png|454]]
+      
 - **Da DFA a RE (State Elimination Method, Theorem 3):** per ogni DFA $D$ esiste una RE $r$ tale che $L(D)=L(r)$. Si eliminano progressivamente gli stati intermedi (né iniziali né finali) dell'automa, riscrivendo le etichette degli archi come espressioni regolari. Data la figura con stato da eliminare $s$, stati residui $q_1,\dots,q_k$ (con archi entranti $R_{i1},\dots,R_{ik}$ verso $s$) e $p_1,\dots,p_m$ (con archi uscenti $Q_1,\dots,Q_k$ da $s$), un self-loop $S$ su $s$, e archi diretti preesistenti $R_{ij}$ da $q_i$ a $p_j$, la nuova etichetta è: $$R_{ij} ; := ; R_{ij} + Q_i, S^{*}, P_j$$ Il processo si ripete eliminando uno stato intermedio per volta [LinguaggiI.pdf].
+  
+  ![[Pasted image 20260911183615.png|571]]
+  
     
     - **Caso speciale — un solo stato finale coincidente con l'iniziale:** se, dopo l'eliminazione di tutti gli stati intermedi, resta un solo stato che è sia iniziale sia finale, con un self-loop etichettato $R$, l'espressione regolare cercata è semplicemente $R^*$ [LinguaggiI.pdf].
-    - **Caso speciale — un solo stato finale diverso dall'iniziale:** con stato iniziale $S$ e stato finale diverso $T$, e archi rimasti etichettati $R$ (self-loop su $S$), $S$ (arco $S\to T$), $U$ (self-loop su $T$), $T$ (arco $T\to S$), l'automa si descrive come: $$(R+SU^*T)^_SU^_$$ [LinguaggiI.pdf].
+    - **Caso speciale — un solo stato finale diverso dall'iniziale:** con stato iniziale $S$ e stato finale diverso $T$, e archi rimasti etichettati $R$ (self-loop su $S$), $S$ (arco $S\to T$), $U$ (self-loop su $T$), $T$ (arco $T\to S$), l'automa si descrive come: $$(R+SU^*T)^*SU^*$$ [LinguaggiI.pdf].
     - **Caso generale — più stati finali:** con uno stato iniziale e $n$ stati finali $s_1,\dots,s_n$, si ripetono i passi precedenti per ciascun $s_i$ rendendo temporaneamente non finale ogni altro stato finale, ottenendo $n$ espressioni regolari distinte $R_1,\dots,R_n$; l'espressione regolare finale cercata è la loro unione: $$R_1 + R_2 + \dots + R_n$$ [LinguaggiI.pdf].
-- **Esempio Svolto 1 — DFA con 3 stati (slide "DFA→RE Example"):** automa con stato iniziale 3, stato intermedio 1, stato finale 2 (etichette $0,1$ sugli archi secondo lo schema della slide). Eliminando lo stato intermedio si ottiene prima la forma con archi $0{+}10$ (self-loop sul nuovo stato iniziale) e $11$, poi $0{+}1$ sul residuo; l'espressione regolare finale sintetizzata è: $$(0+10)^_,11,(0+1)^_$$ [LinguaggiI.pdf].
+- **Esempio Svolto 1 — DFA con 3 stati (slide "DFA→RE Example"):** automa con stato iniziale 3, stato intermedio 1, stato finale 2 (etichette $0,1$ sugli archi secondo lo schema della slide). Eliminando lo stato intermedio si ottiene prima la forma con archi $0{+}10$ (self-loop sul nuovo stato iniziale) e $11$, poi $0{+}1$ sul residuo; l'espressione regolare finale sintetizzata è: $$(0+10)^*,11,(0+1)^*$$ [LinguaggiI.pdf].
     
-- **Esempio Svolto 2 — automa che accetta un numero pari di 1 (slide "Another Example"):** automa a 3 stati (1 iniziale, 2, 3), che riconosce le stringhe con un numero pari di occorrenze di 1. Eliminando lo stato 2 si ottiene un automa a 2 stati (1 iniziale/finale, 3 finale) con archi etichettati $0$ (self-loop su 1), $0{+}10^*1$ (self-loop su 3), $10^_1$ (arco $1\to3$). Poiché ci sono **due stati finali** (1 e 3), si applica il caso generale: si ottengono $R_1=0^_$ (rendendo non finale lo stato 3) e $R_2=0^*10^_1(0+10^_1)^_$ (rendendo non finale lo stato 1); l'espressione regolare sintetizzata finale è: $$0^_ + 0^*10^*1(0+10^_1)^_$$ [LinguaggiI.pdf].
+- **Esempio Svolto 2 — automa che accetta un numero pari di 1 (slide "Another Example"):** automa a 3 stati (1 iniziale, 2, 3), che riconosce le stringhe con un numero pari di occorrenze di 1. Eliminando lo stato 2 si ottiene un automa a 2 stati (1 iniziale/finale, 3 finale) con archi etichettati $0$ (self-loop su 1), $0{+}10^*1$ (self-loop su 3), $10^*1$ (arco $1\to3$). Poiché ci sono **due stati finali** (1 e 3), si applica il caso generale: si ottengono $R_1=0^*$ (rendendo non finale lo stato 3) e $R_2=0^*10^*1(0+10^*1)^*$ (rendendo non finale lo stato 1); l'espressione regolare sintetizzata finale è: $$0^* + 0^*10^*1(0+10^*1)^*$$ [LinguaggiI.pdf].
     
 - **Esercizi di conversione DFA→RE (slide, senza soluzione nelle slide originali):**
     
@@ -595,8 +609,8 @@ Oltre all'esempio "very simple" sopra, la slide presenta un secondo esempio più
     - **Nota di correttezza (slide, enunciato senza dimostrazione):** vale il fatto generale — se $L=L(M)$ con $M$ PDA per pila vuota, allora esiste un PDA $M'$ equivalente per stati finali (e viceversa) [LinguaggiI.pdf].
 - **Esercizi di design PDA (slide, senza soluzione fornita nelle slide originali):** progettare un PDA che riconosca:
     
-    1. ${w\in{0,1}^* \mid$ ogni prefisso di $w$ ha più 0 che 1$}$
-    2. ${w\in{0,1}^* \mid w$ ha un numero uguale di 0 e di 1$}$
+    1. $\{w\in{0,1}^* \mid$ ogni prefisso di $w$ ha più 0 che 1$\}$
+    2. $\{w\in{0,1}^* \mid w$ ha un numero uguale di 0 e di 1$\}$
     
     [LinguaggiI.pdf].
     
@@ -721,14 +735,19 @@ La gerarchia di Chomsky si rappresenta come quattro insiemi annidati (dal più r
 - **Identificatori (slide "Examples of Regular Expressions"):**
     
     ```
-    Letter     → (a|b|c|…|z|A|B|C|…|Z)Digit      → (0|1|2|…|9)Identifier → (Letter | _) (Letter | Digit | _)*
+    Letter     → (a|b|c|…|z|A|B|C|…|Z)
+    Digit      → (0|1|2|…|9)
+    Identifier → (Letter | _) (Letter | Digit | _)*
     ```
     
     (i simboli in blu nella slide indicano terminali — caratteri nel flusso di input) [Lexer.pdf, Slide 11].
 - **Numeri (slide "Examples of Regular Expressions"):**
     
     ```
-    Integer → (+|-|ε) (0 | (1|2|3|…|9)(Digit*))Decimal → Integer . Digit*Real    → (Integer | Decimal) E (+|-|ε) Digit*     (esistono altre varianti molto più complesse)Complex → (Real, Real)
+    Integer → (+|-|ε) (0 | (1|2|3|…|9)(Digit*))
+    Decimal → Integer . Digit*
+    Real    → (Integer | Decimal) E (+|-|ε) Digit* 
+    Complex → (Real, Real)
     ```
     
     [Lexer.pdf, Slide 11]. **In pratica queste espressioni possono diventare molto più complesse** di quanto mostrato qui: la slide lo segnala esplicitamente come avvertenza [Lexer.pdf, Slide 11].
@@ -764,21 +783,41 @@ Per convertire una specifica in codice, si seguono questi passi (slide "Automati
     - **Classificazione dei caratteri (Character Classification, slide "Character Classification"):** si raggruppano insieme i caratteri che hanno la stessa azione nel DFA — si combinano le colonne identiche nella tabella di transizione $\delta$; indicizzare $\delta$ per classe (anziché per singolo carattere) **restringe la tabella**:
         
         ```text
-        state ← s0;while (state ≠ serror) do    char  ← NextChar()          // legge il prossimo carattere    cat   ← CharCat(char)       // classifica il carattere    state ← δ(state, cat)       // esegue la transizione
+        state ← s0;
+        while (state ≠ serror) do    
+	        char  ← NextChar()          // legge il prossimo carattere    
+	        cat   ← CharCat(char)       // classifica il carattere    
+	        state ← δ(state, cat)       // esegue la transizione
         ```
         
         [Lexer.pdf, Slide 25].
     - **Costruzione del lessema (slide "Building the Lexeme"):** lo scanner produce la categoria sintattica (parte del discorso), ma la maggior parte delle applicazioni vuole anche il lessema (la parola) — problema banale: si salvano semplicemente i caratteri via via letti:
         
         ```text
-        state ← s0lexeme ← empty stringwhile (state ≠ serror) do    char   ← NextChar()              // legge il prossimo carattere    lexeme ← lexeme + char           // concatena al lessema    cat    ← CharCat(char)           // classifica il carattere    state  ← δ(state, cat)           // esegue la transizione
+        state ← s0
+        lexeme ← empty string
+        while (state ≠ serror) do    
+	        char   ← NextChar()              // legge il prossimo carattere    
+	        lexeme ← lexeme + char           // concatena al lessema    
+	        cat    ← CharCat(char)           // classifica il carattere    
+	        state  ← δ(state, cat)           // esegue la transizione
         ```
         
         [Lexer.pdf, Slide 26].
     - **Riconoscimento di sottoespressioni — Rollback (slide "Recognising subexpressions: RollBack"):** una pila (stack) traccia tutti gli stati attraversati:
         
         ```text
-        lexeme ← empty stringwhile (state ≠ serror) do    char ← NextChar();  lexeme ← lexeme + char    push(state);                       // ricorda tutti gli stati attraversati    cat ← CharCat(char);  state ← δ(state, cat)while (state ≠ sa) do                   // sa = ultimo stato finale incontrato    state ← pop();  truncate lexeme;  Rollback();
+        lexeme ← empty string
+        while (state ≠ serror) do    
+	        char ← NextChar();  
+	        lexeme ← lexeme + char    
+	        push(state); // ricorda tutti gli stati attraversati    
+	        cat ← CharCat(char);  
+	        state ← δ(state, cat)
+	        while (state ≠ sa) do // sa = ultimo stato finale incontrato    
+		        state ← pop();  
+		        truncate lexeme;  
+		        Rollback();
         ```
         
         [Lexer.pdf, Slide 27]. (Questa è la stessa logica già presentata in dettaglio in §3.9.)
@@ -1131,7 +1170,11 @@ Deriva `x – (2 * y)`, con il parse tree corretto — sia la derivazione leftmo
 - **Algoritmo generico di parsing top-down (slide "Top-down Parsing"):** un parser top-down parte dalla radice del parse tree, etichettata col simbolo iniziale della grammatica.
     
     ```text
-    Costruire il nodo radice del parse treeRipetere finché la frontiera inferiore del parse tree non corrisponde alla stringa di input:    1. In un nodo etichettato A, selezionare una produzione con A sulla lhs e, per       ciascun simbolo della rhs, costruire il figlio appropriato    2. Quando un simbolo terminale viene aggiunto alla frontiera e non corrisponde       all'input, fare backtrack    3. Trovare il prossimo nodo da espandere (etichetta ∈ NT)
+	Costruire il nodo radice del parse tree
+	Ripetere finché la frontiera inferiore del parse tree non corrisponde alla stringa di input:    
+    1. In un nodo etichettato A, selezionare una produzione con A sulla lhs e, per       ciascun simbolo della rhs, costruire il figlio appropriato    
+    2. Quando un simbolo terminale viene aggiunto alla frontiera e non corrisponde       all'input, fare backtrack    
+	3. Trovare il prossimo nodo da espandere (etichetta ∈ NT)
     ```
     
     La chiave è scegliere la produzione giusta al passo 1 — quella scelta dovrebbe essere guidata dalla stringa di input [ParsingMio.pdf, Slide 24].
@@ -1212,9 +1255,9 @@ Questa espansione **non consuma alcun input**: una scelta di espansione sbagliat
 
 - **Definizione formale (slide "Left Recursion"):** una grammatica è ricorsiva a sinistra se $\exists A\in N$ tale che esiste una derivazione $A\Rightarrow^+A\alpha$, per qualche stringa $\alpha\in(N\cup\Sigma)^+$. La nostra classica grammatica delle espressioni è ricorsiva a sinistra — questo può portare a non-terminazione in un parser top-down. In un parser top-down, ogni ricorsione deve essere ricorsione **destra**; vogliamo convertire la ricorsione sinistra in ricorsione destra. **La non-terminazione è sempre una proprietà pessima in un compilatore** [ParsingMio.pdf, Slide 32].
     
-- **Eliminazione della ricorsione sinistra immediata (slide "Eliminating Left Recursion"):** dato un frammento di grammatica della forma $Fee\to Fee,\alpha \mid \beta$ (dove né $\alpha$ né $\beta$ iniziano con $Fee$), si riscrive come: $$Fee \to \beta,Fie \qquad Fie \to \alpha,Fie \mid \epsilon$$ dove $Fie$ è un nuovo non-terminale. La nuova grammatica definisce lo **stesso linguaggio** della vecchia, usando solo ricorsione destra [ParsingMio.pdf, Slide 33].
+- **Eliminazione della ricorsione sinistra immediata (slide "Eliminating Left Recursion"):** dato un frammento di grammatica della forma $Fee\to Fee \; \alpha \mid \beta$ (dove né $\alpha$ né $\beta$ iniziano con $Fee$), si riscrive come: $$Fee \to \beta \; Fie \qquad Fie \to \alpha \; Fie \mid \epsilon$$ dove $Fie$ è un nuovo non-terminale. La nuova grammatica definisce lo **stesso linguaggio** della vecchia, usando solo ricorsione destra [ParsingMio.pdf, Slide 33].
     
-- **Applicazione alla grammatica delle espressioni (slide "Eliminating Left Recursion" #2):** la grammatica delle espressioni contiene due casi di ricorsione sinistra (in `Expr` e in `Term`); applicando la trasformazione: $$Expr\to Term,Expr' \qquad Expr'\to{+},Term,Expr'\mid{-},Term,Expr'\mid\epsilon$$ $$Term\to Factor,Term' \qquad Term'\to{*},Factor,Term'\mid{/},Factor,Term'\mid\epsilon$$ Questi frammenti usano solo ricorsione destra [ParsingMio.pdf, Slide 34]. **Nota sulla associatività (slide, con cautela):** la ricorsione destra spesso implica associatività destra; tuttavia, sostituendo questi frammenti nella grammatica completa (§4.4), il risultato — pur essendo strutturalmente ricorsivo a destra — **resta left-associative come l'originale** dal punto di vista del linguaggio riconosciuto: la trasformazione naïve produce una grammatica corretta ma "non intuitiva" nella sua struttura [ParsingMio.pdf, Slide 34, 35]. _(Attenzione, nota metodologica: se in seguito si aggiungono azioni semantiche sintetizzate durante il parsing — es. per costruire un AST — occorre prestare attenzione a preservare esplicitamente l'associatività sinistra semantica, poiché la struttura sintattica destrorsa da sola non lo garantisce automaticamente in presenza di azioni naive.)_ Un parser top-down termina con questa grammatica trasformata, ma potrebbe comunque dover fare backtrack usandola tal quale, senza ulteriore fattorizzazione predittiva [ParsingMio.pdf, Slide 35].
+- **Applicazione alla grammatica delle espressioni (slide "Eliminating Left Recursion" #2):** la grammatica delle espressioni contiene due casi di ricorsione sinistra (in `Expr` e in `Term`); applicando la trasformazione: $$Expr\to Term \; Expr' \qquad Expr'\to{+} \; Term \; Expr'\mid{-} \; Term \; Expr'\mid\epsilon$$ $$Term\to Factor,Term' \qquad Term'\to{*},Factor,Term'\mid{/},Factor,Term'\mid\epsilon$$ Questi frammenti usano solo ricorsione destra [ParsingMio.pdf, Slide 34]. **Nota sulla associatività (slide, con cautela):** la ricorsione destra spesso implica associatività destra; tuttavia, sostituendo questi frammenti nella grammatica completa (§4.4), il risultato — pur essendo strutturalmente ricorsivo a destra — **resta left-associative come l'originale** dal punto di vista del linguaggio riconosciuto: la trasformazione naïve produce una grammatica corretta ma "non intuitiva" nella sua struttura [ParsingMio.pdf, Slide 34, 35]. _(Attenzione, nota metodologica: se in seguito si aggiungono azioni semantiche sintetizzate durante il parsing — es. per costruire un AST — occorre prestare attenzione a preservare esplicitamente l'associatività sinistra semantica, poiché la struttura sintattica destrorsa da sola non lo garantisce automaticamente in presenza di azioni naive.)_ Un parser top-down termina con questa grammatica trasformata, ma potrebbe comunque dover fare backtrack usandola tal quale, senza ulteriore fattorizzazione predittiva [ParsingMio.pdf, Slide 35].
     
 - **Il problema più generale — ricorsione sinistra indiretta (slide "Eliminating Left Recursion" #3):** la trasformazione immediata elimina solo la ricorsione sinistra diretta. Cosa succede con la ricorsione sinistra indiretta più generale (es. $A\to B\gamma$, $B\to A\delta$)? **Algoritmo generale:**
     
@@ -1222,10 +1265,9 @@ Questa espansione **non consuma alcun input**: una scelta di espansione sbagliat
     ordinare i non-terminali in una sequenza A1, A2, …, An
     for i ← 1 to n
         for s ← 1 to i-1
-            sostituire ogni produzione Ai → As γ con Ai → δ1γ | δ2γ | … | δkγ,
-                dove As → δ1 | δ2 | … | δk sono tutte le produzioni correnti per As
-        eliminare ogni ricorsione sinistra immediata su Ai
-            usando la trasformazione diretta (sopra)
+            sostituire ogni produzione A_i → A_sγ con A_i → δ_1γ | δ_2γ | … | δ_kγ,
+                dove A_s → δ_1 | δ_2 | … | δ_k sono tutte le produzioni correnti per A_s
+        eliminare ogni ricorsione sinistra immediata su A_i usando la trasformazione diretta (sopra)
     ```
     
     Questo presuppone che la grammatica iniziale non abbia cicli ($A_i\Rightarrow^+A_i$) né produzioni $\epsilon$ [ParsingMio.pdf, Slide 36].
@@ -1254,7 +1296,16 @@ Questa espansione **non consuma alcun input**: una scelta di espansione sbagliat
 - **Idea base del parsing predittivo (slide "Predictive Parsing"):** dato $A\to\alpha\mid\beta$, il parser dovrebbe poter scegliere (tra $\alpha$ e $\beta$) la produzione giusta per espandere $A$ nel parse tree, a ogni passo [ParsingMio.pdf, Slide 41, 43].
 - **Insieme FIRST (slide):** per un rhs $\alpha\in(N\cup\Sigma)^*$, FIRST($\alpha$) è l'insieme dei terminali che compaiono come primo simbolo in una qualche stringa derivata da $\alpha$: $x\in\text{FIRST}(\alpha) \iff \alpha\Rightarrow^*x\gamma$ per qualche $\gamma$ [ParsingMio.pdf, Slide 43, 54].
 - **La proprietà LL(1) (slide):** se $A\to\alpha$ e $A\to\beta$ compaiono entrambe nella grammatica, vorremmo $\text{FIRST}(\alpha)\cap\text{FIRST}(\beta)=\emptyset$ — questo permetterebbe al parser di fare la scelta corretta con un lookahead di esattamente un simbolo [ParsingMio.pdf, Slide 43]. **Questo è quasi corretto** — le produzioni $\epsilon$ complicano la definizione [ParsingMio.pdf, Slide 44].
-- **Il problema delle produzioni $\epsilon$ e FIRST⁺ (slide):** se $A\to\alpha$ e $A\to\beta$ ed $\epsilon\in\text{FIRST}(\alpha)$, occorre garantire che anche $\text{FIRST}(\beta)$ sia disgiunto da FOLLOW($A$), dove FOLLOW($A$) è l'insieme dei terminali che possono seguire immediatamente $A$ in una forma sentenziale. Si definisce: $$\text{FIRST}^+(A\to\alpha) = \begin{cases}\text{FIRST}(\alpha)\cup\text{FOLLOW}(A) & \text{se }\epsilon\in\text{FIRST}(\alpha)\ \text{FIRST}(\alpha) & \text{altrimenti}\end{cases}$$ Una grammatica è LL(1) se e solo se $A\to\alpha$ e $A\to\beta$ implica $\text{FIRST}^+(A\to\alpha)\cap\text{FIRST}^+(A\to\beta)=\emptyset$ [ParsingMio.pdf, Slide 44].
+- **Il problema delle produzioni $\epsilon$ e FIRST⁺ (slide):** se $A\to\alpha$ e $A\to\beta$ ed $\epsilon\in\text{FIRST}(\alpha)$, occorre garantire che anche $\text{FIRST}(\beta)$ sia disgiunto da FOLLOW($A$), dove FOLLOW($A$) è l'insieme dei terminali che possono seguire immediatamente $A$ in una forma sentenziale. Si definisce: $$
+\mathrm{FIRST}^+(A \to \alpha)
+=
+\begin{cases}
+    \mathrm{FIRST}(\alpha) \cup \mathrm{FOLLOW}(A),
+    & \text{se } \epsilon \in \mathrm{FIRST}(\alpha), \\[4pt]
+    \mathrm{FIRST}(\alpha),
+    & \text{altrimenti}.
+\end{cases}
+$$ Una grammatica è LL(1) se e solo se $A\to\alpha$ e $A\to\beta$ implica $\text{FIRST}^+(A\to\alpha)\cap\text{FIRST}^+(A\to\beta)=\emptyset$ [ParsingMio.pdf, Slide 44].
 - **Codice predittivo generico (slide "Predictive Parsing" #3):** data $A\to\beta_1\mid\beta_2\mid\beta_3$ con $\text{FIRST}^+(A\to\beta_i)\cap\text{FIRST}^+(A\to\beta_j)=\emptyset$ per $i\ne j$:
     
     ```text
@@ -1270,7 +1321,7 @@ Questa espansione **non consuma alcun input**: una scelta di espansione sbagliat
 ### 4.11 Calcolo Formale di FIRST e FOLLOW: le Regole Generali
 
 - **Regole per il calcolo di FIRST(X) (slide "Computing FIRST Sets"):**
-    - Per ogni terminale $X$: $\text{FIRST}(X)={X}$.
+    - Per ogni terminale $X$: $\text{FIRST}(X)=\{X\}$.
     - Per ogni non-terminale $X$, se $X\to Y_1Y_2\dots Y_n$ è una produzione: $\text{FIRST}(Y_1)\subseteq\text{FIRST}(X)$; inoltre, se $Y_1,\dots,Y_k$ sono nullificabili ($Y_i\Rightarrow^*\epsilon$), allora anche $\text{FIRST}(Y_{k+1})\subseteq\text{FIRST}(X)$ [ParsingMio.pdf, Slide 55]. (Ci si interessa a FIRST(X) solo per i non-terminali; per i terminali è banale. Per determinare FIRST($A$) occorre ispezionare tutte le produzioni che hanno $A$ sulla sinistra [ParsingMio.pdf, Slide 56].)
 - **Regole per il calcolo di FOLLOW(X) (slide "Computing FOLLOW Sets"):**
     - Se $S$ è il simbolo iniziale, \$$\in\text{FOLLOW}(S)$.
@@ -1305,7 +1356,17 @@ Questa espansione **non consuma alcun input**: una scelta di espansione sbagliat
 - **Implementazione procedurale (slide "Recursive Descent Parsing (Procedural)"):**
     
     ```text
-    Goal()    token ← next_token();    if (Expr() = true & token = EOF)        then procedi al prossimo passo di compilazione;        else            segnala errore di sintassi;            return false;Expr()    if (Term() = false)        then return false;        else return Eprime();
+    Goal()    
+	    token ← next_token();    
+	    if (Expr() = true & token = EOF)        
+	    then procedi al prossimo passo di compilazione;        
+	    else            segnala errore di sintassi;            
+	    return false;
+	    
+	Expr()    
+		if (Term() = false)
+		then return false;
+		else return Eprime();
     ```
     
     [ParsingMio.pdf, Slide 47].
@@ -1486,7 +1547,8 @@ loop forever
         break & report success
     else if TOS is a terminal then
         if TOS matches word then
-            pop Stack;  word ← NextWord()
+            pop Stack;
+            word ← NextWord()
         else report error looking for TOS
     else                              // TOS è un non-terminale
         if TABLE[TOS, word] = A → B1B2…Bk then
@@ -2625,7 +2687,9 @@ Ciascuna analisi del flusso di dati viene categorizzata in modo univoco sulla ba
 	*   *Equazioni di flusso:*
 		* $$in[n] = use[n] \cup (out[n] \setminus def[n])$$
 		- $$out[n] = \bigcup_{m \in post[n]} in[m]$$
-	- ![[Pasted image 20260907191733.png|515]] 
+	- 1)a :=0 2) b:=a+1 3) c:=c+b 4) a:=b\*2 5) a < N 6) return c
+	  1->2, 2->3, 3->4,4->5,5->2,5->6
+	  ![[Pasted image 20260907191733.png|515]] 
 	  
 	  [Data-FlowFirst.pdf, Slide 12; Data-Flow2.pdf, Slide 12, 11.1].
 *   **Reaching Definitions:**
@@ -2752,7 +2816,7 @@ La slide segnala esplicitamente **"fix point!"** subito dopo questa seconda iter
 
 ### 9.1 Le Tre Astrazioni delle Procedure
 La procedura è l'astrazione fondamentale per rendere gestibili e modulari i software di grandi dimensioni [TheProcedureAbstraction.pdf, Slide 152]. Offre tre astrazioni principali:
-1.  **Control Abstraction**:** Consente un unico punto di ingresso e uscita ordinato, con passaggio controllato dei parametri e gestione del flusso di ritorno [TheProcedureAbstraction.pdf, Slide 154, 155].
+1.  **Control Abstraction**: Consente un unico punto di ingresso e uscita ordinato, con passaggio controllato dei parametri e gestione del flusso di ritorno [TheProcedureAbstraction.pdf, Slide 154, 155].
 2.  **Clean Name Space:** Ogni procedura eredita uno spazio di nomi isolato. Le variabili locali sono visibili solo all'interno del proprio blocco d'esecuzione, e lo *shadowing* permette di oscurare variabili omonime dichiarate negli scope esterni [TheProcedureAbstraction.pdf, Slide 154].
 3.  **External Interface:** Permette a parti distinte del software di essere scritte, compilate in anticipo ed ottimizzate in modo indipendente, venendo poi unite durante la fase di collegamento (*linking*) [TheProcedureAbstraction.pdf, Slide 154].
 
@@ -2957,11 +3021,11 @@ Rappresentare le variabili tramite coordinate statiche $\langle level, offset\ra
 
 - **Il back-end come "collo di bottiglia" del compilatore (slide "Structure of a Compiler"):** un compilatore è, in sostanza, molta roba veloce seguita da alcuni problemi difficili — la parte difficile risiede prevalentemente nella generazione del codice e nell'ottimizzazione. Per i sistemi multicore serve gestire parallelismo e condivisione; per le prestazioni su singolo core, allocazione e scheduling sono critici [IntroCodeGeneration.pdf, slide "Structure of a Compiler"]. Le tre fasi del back-end e le rispettive complessità computazionali:
 
-| Fase                    | Complessità            | Input                    | Output                   |
-| ----------------------- | ---------------------- | ------------------------ | ------------------------ |
-| fvInstruction Selection | $O(n)$                 | IR con registri $\infty$ | IR con registri $\infty$ |
-| Instruction Scheduling  | o veloce o NP-Completo | IR con registri $\infty$ | IR con registri $\infty$ |
-| Register Allocation     | NP-Completo            | IR con registri $\infty$ | codice con $k$ registri  |
+| Fase                   | Complessità            | Input                    | Output                   |
+| ---------------------- | ---------------------- | ------------------------ | ------------------------ |
+| Instruction Selection  | $O(n)$                 | IR con registri $\infty$ | IR con registri $\infty$ |
+| Instruction Scheduling | o veloce o NP-Completo | IR con registri $\infty$ | IR con registri $\infty$ |
+| Register Allocation    | NP-Completo            | IR con registri $\infty$ | codice con $k$ registri  |
 
 (Front-end/scanner-parser: $O(n\log n)$ a esponenziale nel caso peggiore per l'analisi sintattica generale, ma tipicamente lineare) [IntroCodeGeneration.pdf, slide "Structure of a Compiler"].    
 - **Il modello assunto dal corso (slide "Structure of a Compiler" #2):** la selezione delle istruzioni è considerata relativamente semplice (un problema già risolto negli anni '80); allocazione e scheduling sono le fasi complesse; il posizionamento delle operazioni non è ancora un problema critico — si assume un unico insieme di registri unificato [IntroCodeGeneration.pdf, slide "Structure of a Compiler" (2)].
@@ -3163,7 +3227,14 @@ Rappresentare le variabili tramite coordinate statiche $\langle level, offset\ra
 - **La regola generale — quale figlio valutare per primo (slide, esempio senza titolo dopo "Effects..."):** confrontando due ordini di valutazione per lo stesso albero `x + z×y`, valutare prima `z×y` e poi `x` produce, dopo l'allocazione dei registri, una sequenza che usa **3 registri** in tutto:
     
     ```iloc
-    load   @z        ⇒ r1loadA0 rarp,r1   ⇒ r1load   @y        ⇒ r2loadA0 rarp,r2   ⇒ r2mult   r1,r2     ⇒ r1load   @x        ⇒ r2loadA0 rarp,r2   ⇒ r2add    r2,r1     ⇒ r1
+    load   @z        ⇒ r1
+    loadA0 rarp,r1   ⇒ r1
+    load   @y        ⇒ r2
+    loadA0 rarp,r2   ⇒ r2
+    mult   r1,r2     ⇒ r1
+    load   @x        ⇒ r2
+    loadA0 rarp,r2   ⇒ r2
+    add    r2,r1     ⇒ r1
     ```
     
     **Regola generale: valutare per primo il figlio con maggiore domanda di registri.** Questa è precisamente una decisione di **code shape** [IntroCodeGeneration.pdf, slide sull'esempio "The best solution: alternate right and left children"].
