@@ -2,7 +2,7 @@
   "promptDelete": true,
   "alwaysUpdateLinks": true,
   "pdfExportSettings": {
-    "includeName": false,
+    "includeName": true,
     "pageSize": "A4",
     "landscape": false,
     "margin": "1",

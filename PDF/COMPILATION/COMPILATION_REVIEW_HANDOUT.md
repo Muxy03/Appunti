@@ -1588,7 +1588,7 @@ Grammatica esatta della slide finale di _TableConstruction.pdf_ ("Construct the 
 
 **Calcolo di FOLLOW:**
 
-- $\text{FOLLOW}(P) = { $ }$ (simbolo iniziale).
+- $\text{FOLLOW}(P) = \{ \$ \}$ (simbolo iniziale).
 - $\text{FOLLOW}(L) \supseteq \text{FIRST}(end) = {end}$, da $P \rightarrow begin\ L\ end$ ⇒ $\text{FOLLOW}(L) = {end}$.
 - $\text{FOLLOW}(T)$: $T$ è ultimo simbolo in $L \rightarrow ST$ ⇒ $\text{FOLLOW}(T) \supseteq \text{FOLLOW}(L) = {end}$; $T$ è ultimo anche in $T \rightarrow ST$ (auto-ricorsiva, nessuna informazione nuova) ⇒ $\text{FOLLOW}(T) = {end}$.
 - $\text{FOLLOW}(S)$: in $L \rightarrow S,T$, $S$ è seguito da $T$: $\text{FOLLOW}(S) \supseteq \text{FIRST}(T)\setminus{\epsilon} = {id, read, write}$; poiché $T$ è nullificabile, $\text{FOLLOW}(S) \supseteq \text{FOLLOW}(L) = {end}$. Stesso ragionamento per $T \rightarrow S,T$. Quindi $\text{FOLLOW}(S) = { id,\ read,\ write,\ end }$.
