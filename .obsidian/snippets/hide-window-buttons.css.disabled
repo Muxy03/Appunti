@@ -1,0 +1,13 @@
+/* Hide Obsidian/Electron window buttons */
+.titlebar-button-container,
+.titlebar-button,
+.mod-minimize,
+.mod-maximize,
+.mod-close {
+  display: none !important;
+}
+
+/* Remove leftover spacing from the hidden window buttons */
+.titlebar {
+  --frame-right-space: 0px !important;
+}

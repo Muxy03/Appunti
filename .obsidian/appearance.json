@@ -3,5 +3,6 @@
   "baseFontSize": 15,
   "theme": "obsidian",
   "cssTheme": "Catppuccin",
-  "textFontFamily": "JetBrainsMono Nerd Font"
+  "textFontFamily": "JetBrainsMono Nerd Font",
+  "enabledCssSnippets": []
 }
