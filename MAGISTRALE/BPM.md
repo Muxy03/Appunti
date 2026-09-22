@@ -1350,3 +1350,172 @@ e.g., different arrows for different dependencies
 
 Important concept: start, end, task, link, order, ownership, responsibility
 
+
+# 22/9
+
+Definition: a business process consists of a set of activities that are performed in coordination in an organizational and technical environment. These activities jointly realize a business goal.
+
+Orchestration = Each business process is enacted by a single organization
+
+Collaboration/Choreography = but it may interact with business processes performed by other organizations.
+
+Definition: business process model consists of a set of activity models and execution constraints between them
+
+Definition: business process instance represents a concrete case in the operational business of a company, consisting of activity instances
+
+Each activity model acts as a blueprint for a set of activity instances
+
+Each business process model acts as a blueprint for a set of business process instances (related to cases)
+
+If no confusion is possible, the term activity is used to refer to activity models (tasks) as well as activity instances
+
+Analogously, the term process is used to refer to process models as well as process instances
+
+Each business process starts and ends with a customer who requests a product and who receives the product as a result of the business process (a customer can be internal to the company)
+
+Each business process is assigned a process owner, who is responsible for the process
+
+the owner is in charge of making sure that process instances are conducted correctly, that business goals are met, and that process performances are measured and improved
+
+Each business process comprises a set of activities needed to realize the business goals
+
+tasks can be expressed at different levels of granularity (each unit of work is seen as an atomic action, possibly with a duration and a cost)
+
+Execution constraints are used to order activities in a way that enterprise resources are used efficiently and at the same time the business goals are met
+
+process orchestration languages are used to express execution constraints about distribution over time
+
+Each task may need some specific abilities (roles) to be carried out
+
+process orchestration languages are used to express execution constraints about distribution over space
+
+From informal textual descriptions (requirements) to a particular business process modelling notation
+
+Explicit business process models expressed in a graphical notation facilitate communication, so that different stakeholders can: communicate efficiently refine processes improve processes
+
+Definition: business process management includes concepts, methods, and techniques to support the design, administration, configuration, enactment, and analysis of business processes.
+
+We need explicit representation of business processes, their tasks and the execution constraints between them
+
+Business processes can then be subject to analysis, improvement, and enactment
+
+Business process models are the main artefact for implementing business processes
+
+This implementation can be done by organizational rules and policies, but it can also be done by business process management (software) system
+
+Definition: business process management system is a generic software system that is driven by explicit process representations to coordinate the enactment of business processes.
+
+Example: insurance claim
+
+1. recording the receipt of the claim 
+2. establishing the type of the claim 
+3. checking covering of client's policy 
+4. checking the premium (payments up to date?) 
+5. decision for rejection/admission: 
+6. if 3 or 4 has negative result: producing a rejection letter, then 12 
+7. if 3 & 4 have positive results: sending estimate amount to be paid, 
+8. recording client's reaction 
+9. assessment of objection: 
+10. if 9 has negative result: decision to revise 7 
+11. if 9 has positive result: payment of claim 
+12. filing and closure of claim
+
+```mermaid
+flowchart LR
+    n1("1<br/>recording")
+    n2("2<br/>type")
+    n3("3<br/>policy")
+    n4("4<br/>premium")
+    n5("5<br/>rejection?")
+    n6("6<br/>reject letter")
+    n7("7<br/>estimate")
+    n8("8<br/>reaction")
+    n9("9<br/>assessment?")
+    n10("10<br/>revision")
+    n11("11<br/>payment")
+    n12("12<br/>filing")
+
+    n1 --> n2
+    n2 --> n3
+    n2 --> n4
+    n3 --> n5
+    n4 --> n5
+    n5 --> n6
+    n5 --> n7
+    n6 --> n12
+    n7 --> n8
+    n8 --> n9
+    n9 --> n10
+    n10 --> n7
+    n9 --> n11
+    n11 --> n12
+```
+
+```mermaid
+flowchart LR
+    n1("1. recording")
+    n2("2. type")
+    n3("3. policy")
+    n4("4. premium")
+    n5("5. rejection?")
+    n6("6. reject letter")
+    n7("7. estimate")
+    n8("8. reaction")
+    n9("9. assessment?")
+    n10("10. revision")
+    n11("11. payment")
+    n12("12. filing")
+
+    gSplit{"+"}
+    gJoin{"+"}
+    gReject{"×"}
+    gEstimate{"×"}
+    gAssessment{"×"}
+    gFiling{"×"}
+
+    n1 --> n2
+    n2 --> gSplit
+
+    gSplit --> n3
+    gSplit --> n4
+    n3 --> gJoin
+    n4 --> gJoin
+
+    gJoin --> n5
+    n5 --> gReject
+
+    gReject --> n6
+    gReject --> gEstimate
+    n10 --> gEstimate
+    gEstimate --> n7
+
+    n7 --> n8
+    n8 --> n9
+    n9 --> gAssessment
+
+    gAssessment --> n10
+    gAssessment --> n11
+
+    n6 --> gFiling
+    n11 --> gFiling
+    gFiling --> n12
+
+    classDef task fill:#ffffff,stroke:#6b7280,stroke-width:2px,color:#111827;
+    classDef parallel fill:#d9f2dc,stroke:#3f7d44,stroke-width:2px,color:#3f7d44;
+    classDef exclusive fill:#fde2e2,stroke:#c94747,stroke-width:2px,color:#c94747;
+
+    class n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12 task;
+    class gSplit,gJoin parallel;
+    class gReject,gEstimate,gAssessment,gFiling exclusive;
+
+    linkStyle 2,3,4,5 stroke:#3f7d44,stroke-width:2px;
+    linkStyle 8,9,10,15,16,17,18 stroke:#c94747,stroke-width:2px;
+```
+
+![[Pasted image 20260922094853.png]]
+
+![[Pasted image 20260922104641.png]]
+
+![[Pasted image 20260922104650.png]]
+
+

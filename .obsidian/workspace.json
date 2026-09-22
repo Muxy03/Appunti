@@ -13,12 +13,42 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAGISTRALE/SOFTWARE VERIFICATION.md",
+                "file": "MAGISTRALE/BPM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SOFTWARE VERIFICATION"
+              "title": "BPM"
+            }
+          },
+          {
+            "id": "52c9b3b893d09c8a",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/BPM/Exercise_BPM_1.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Exercise_BPM_1"
+            }
+          }
+        ]
+      },
+      {
+        "id": "4f25215f931f731a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0849d0f77d7887b8",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/BPM/2026-09-22 - BPM - 03-visual-notation.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "2026-09-22 - BPM - 03-visual-notation"
             }
           }
         ]
@@ -187,15 +217,19 @@
       "bases:Crea nuova Base": false
     }
   },
-  "active": "daa3dbe4faa3eaa8",
+  "active": "0849d0f77d7887b8",
   "lastOpenFiles": [
-    "MAGISTRALE/SDC.md",
+    "MAGISTRALE/BPM.md",
+    "Pasted image 20260922104650.png",
+    "Pasted image 20260922104641.png",
     "PDF/BPM/Exercise_BPM_1.pdf",
-    "MAGISTRALE/EXTRA/Exercise BPM 1.md",
+    "Pasted image 20260922094853.png",
+    "PDF/BPM/2026-09-22 - BPM - 03-visual-notation.pdf",
     "MAGISTRALE/SOFTWARE VERIFICATION.md",
+    "MAGISTRALE/SDC.md",
+    "MAGISTRALE/EXTRA/Exercise BPM 1.md",
     "PDF/SOFTWARE VERIFICATION/exeSV_01.pdf",
     "PDF/SOFTWARE VERIFICATION/Non confermato 754137.crdownload",
-    "MAGISTRALE/BPM.md",
     "PDF/BPM/2026-09-17 - BPM - 02-business-processes.pdf",
     "Pasted image 20260920183530.png",
     "Pasted image 20260920183510.png",
@@ -209,10 +243,6 @@
     "PDF/SDC",
     "PDF/SOFTWARE VERIFICATION/sv_03.pdf",
     "Pasted image 20260919180441.png",
-    "Pasted image 20260919180316.png",
-    "Pasted image 20260919180259.png",
-    "Pasted image 20260919180159.png",
-    "PDF/SOFTWARE VERIFICATION/sv_02.pdf",
     "MAGISTRALE/MAGISTRALE INFO.md",
     "PDF/COMPILATION/RUST_COMPILATION_QA_v2.md",
     "MAGISTRALE/EXTRA/CT_Project_Preparazione_Orale.md",
