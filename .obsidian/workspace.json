@@ -13,42 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAGISTRALE/BPM.md",
+                "file": "MAGISTRALE/SOFTWARE VERIFICATION.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BPM"
-            }
-          },
-          {
-            "id": "52c9b3b893d09c8a",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/BPM/Exercise_BPM_1.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Exercise_BPM_1"
-            }
-          }
-        ]
-      },
-      {
-        "id": "4f25215f931f731a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0849d0f77d7887b8",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/BPM/2026-09-22 - BPM - 03-visual-notation.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "2026-09-22 - BPM - 03-visual-notation"
+              "title": "SOFTWARE VERIFICATION"
             }
           }
         ]
@@ -217,16 +187,21 @@
       "bases:Crea nuova Base": false
     }
   },
-  "active": "0849d0f77d7887b8",
+  "active": "daa3dbe4faa3eaa8",
   "lastOpenFiles": [
+    "MAGISTRALE/SDC.md",
+    "MAGISTRALE/SOFTWARE VERIFICATION.md",
+    "MAGISTRALE/AIF.md",
+    "PDF/SOFTWARE VERIFICATION/sv_06.pdf",
+    "PDF/SOFTWARE VERIFICATION/Non confermato 502745.crdownload",
+    "PDF/BPM/2026-09-24 - BPM - 04-Petri.pdf",
+    "PDF/SOFTWARE VERIFICATION/sv_05.pdf",
     "MAGISTRALE/BPM.md",
+    "PDF/BPM/2026-09-22 - BPM - 03-visual-notation.pdf",
     "Pasted image 20260922104650.png",
     "Pasted image 20260922104641.png",
     "PDF/BPM/Exercise_BPM_1.pdf",
     "Pasted image 20260922094853.png",
-    "PDF/BPM/2026-09-22 - BPM - 03-visual-notation.pdf",
-    "MAGISTRALE/SOFTWARE VERIFICATION.md",
-    "MAGISTRALE/SDC.md",
     "MAGISTRALE/EXTRA/Exercise BPM 1.md",
     "PDF/SOFTWARE VERIFICATION/exeSV_01.pdf",
     "PDF/SOFTWARE VERIFICATION/Non confermato 754137.crdownload",
@@ -238,10 +213,6 @@
     "Pasted image 20260920183101.png",
     "Pasted image 20260920182237.png",
     "PDF/SOFTWARE VERIFICATION/sv_04.pdf",
-    "PDF/SDC/L02_slides.pdf",
-    "PDF/SDC/L01_Slides.pdf",
-    "PDF/SDC",
-    "PDF/SOFTWARE VERIFICATION/sv_03.pdf",
     "Pasted image 20260919180441.png",
     "MAGISTRALE/MAGISTRALE INFO.md",
     "PDF/COMPILATION/RUST_COMPILATION_QA_v2.md",
@@ -262,7 +233,6 @@
     "PDF/PROGRAM ANALYSIS/06-Separation-Logic.md",
     "PDF/PROGRAM ANALYSIS/07-Abstract-Interpretation.md",
     "PDF/PROGRAM ANALYSIS/10-Control-Flow-Analysis-CFA.md",
-    "PDF/PROGRAM ANALYSIS/09-Local-Completeness-Logic-LCL.md",
-    "PDF/PROGRAM ANALYSIS/08-Abstract-Numerical-Domains.md"
+    "PDF/PROGRAM ANALYSIS/09-Local-Completeness-Logic-LCL.md"
   ]
 }

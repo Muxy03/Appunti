@@ -1019,3 +1019,7 @@ Il producer non deve più attendere direttamente il consumer. L'accoppiamento te
 - Ü. V. Çatalyürek e C. Aykanat, *Hypergraph-Partitioning-Based Decomposition for Parallel Sparse-Matrix Vector Multiplication*, 1999.
 - B. Hendrickson e T. G. Kolda, *Graph Partitioning Models for Parallel Computing*, 2000.
 - G. Karypis e V. Kumar, *A Fast and High Quality Multilevel Scheme for Partitioning Irregular Graphs*, 1998.
+
+# 23/9
+
+# 25/9

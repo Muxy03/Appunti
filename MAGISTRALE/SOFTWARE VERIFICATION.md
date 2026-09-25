@@ -2346,3 +2346,2866 @@ $$
    $$
 
    verifica automaticamente se il transition system soddisfa la specifica.
+
+# 22/9
+
+Exercise Sheet 1
+
+# 24/9
+
+## 1. Obiettivo della lezione
+
+Questa parte del corso introduce le **Linear Time Properties** per transition systems.
+
+I temi principali sono:
+
+- state-based view di un transition system;
+- execution fragments, path fragments e paths;
+- linear-time view e branching-time view;
+- traces;
+- Linear-Time properties;
+- relazione di soddisfacimento;
+- mutual exclusion e liveness;
+- trace inclusion;
+- refinement e data abstraction;
+- trace equivalence;
+- classificazione safety/liveness;
+- invariants;
+- invariant checking tramite DFS.
+
+---
+
+## 2. State-based view di un Transition System
+
+Un transition system ha forma:
+
+$$
+\mathcal{T}=(S,Act,\rightarrow,S_0,AP,L)
+$$
+
+dove:
+
+- $S$ è lo spazio degli stati;
+- $Act$ è l'insieme delle azioni;
+- $\rightarrow$ è la relazione di transizione;
+- $S_0\subseteq S$ è l'insieme degli stati iniziali;
+- $AP$ è l'insieme delle atomic propositions;
+- $L:S\rightarrow 2^{AP}$ è la labeling function.
+
+Nella **state-based view** si astraggono le action labels e si considera soltanto il grafo degli stati.
+
+```mermaid
+flowchart TB
+    T["Transition system T"]
+    G["State graph G_T"]
+    S["nodes = states S"]
+    E["edges = transitions without action labels"]
+
+    T -->|"abstraction from actions"| G
+    G --> S
+    G --> E
+```
+
+Le action labels rimangono importanti per:
+
+- interazioni e comunicazione;
+- fairness assumptions.
+
+Le atomic propositions e la labeling function sono invece utilizzate per specificare proprietà.
+
+---
+
+## 3. Predecessori e successori
+
+Per uno stato $s\in S$ definiamo:
+
+$$
+Post(s)=\{t\in S\mid s\rightarrow t\}
+$$
+
+e:
+
+$$
+Pre(s)=\{u\in S\mid u\rightarrow s\}
+$$
+
+Quindi:
+
+- $Post(s)$ contiene i successori immediati di $s$;
+- $Pre(s)$ contiene i predecessori immediati di $s$.
+
+```mermaid
+flowchart LR
+    U1["u1"] --> S["s"]
+    U2["u2"] --> S
+    S --> T1["t1"]
+    S --> T2["t2"]
+```
+
+In questo esempio:
+
+$$
+Pre(s)=\{u_1,u_2\}
+$$
+
+$$
+Post(s)=\{t_1,t_2\}
+$$
+
+---
+
+## 4. Execution fragments
+
+Un **execution fragment** è una sequenza di transizioni consecutive.
+
+Può essere infinita:
+
+$$
+s_0\xrightarrow{\alpha_0}s_1
+\xrightarrow{\alpha_1}s_2
+\xrightarrow{\alpha_2}\cdots
+$$
+
+oppure finita:
+
+$$
+s_0\xrightarrow{\alpha_0}s_1
+\xrightarrow{\alpha_1}\cdots
+\xrightarrow{\alpha_{n-1}}s_n
+$$
+
+Un execution fragment contiene quindi:
+
+- stati;
+- azioni.
+
+---
+
+## 5. Path fragments
+
+Un **path fragment** si ottiene proiettando un execution fragment soltanto sugli stati.
+
+Un path fragment infinito ha forma:
+
+$$
+\pi=s_0s_1s_2\ldots
+$$
+
+mentre uno finito ha forma:
+
+$$
+\pi=s_0s_1\ldots s_n.
+$$
+
+Deve valere:
+
+$$
+s_{i+1}\in Post(s_i)
+$$
+
+per ogni posizione valida $i$.
+
+Equivalentemente:
+
+$$
+s_i\rightarrow s_{i+1}.
+$$
+
+---
+
+## 6. Initial e maximal path fragments
+
+Un path fragment è **initial** se:
+
+$$
+s_0\in S_0.
+$$
+
+È **maximal** se:
+
+- è infinito, oppure
+- è finito e termina in uno stato terminale.
+
+Uno **path di $\mathcal{T}$** è quindi un path fragment:
+
+- initial;
+- maximal.
+
+Uno **path dello stato $s$** è invece un maximal path fragment che parte da $s$.
+
+---
+
+## 7. Notazione per i paths
+
+Definiamo:
+
+$$
+Paths(\mathcal{T})
+$$
+
+come l'insieme di tutti gli initial maximal path fragments del transition system.
+
+Definiamo inoltre:
+
+$$
+Paths(s)
+$$
+
+come l'insieme dei maximal path fragments che iniziano nello stato $s$.
+
+Per i path fragments finiti useremo:
+
+$$
+Paths_{fin}(\mathcal{T})
+$$
+
+e:
+
+$$
+Paths_{fin}(s).
+$$
+
+---
+
+## 8. Esempio di paths
+
+Consideriamo:
+
+```mermaid
+flowchart TB
+    S0["s0"]
+    S1["s1"]
+    S2["s2"]
+
+    S0 --> S1
+    S0 --> S2
+    S1 --> S1
+```
+
+Se $s_2$ è terminale, gli initial maximal paths sono:
+
+$$
+s_0s_1s_1s_1\ldots
+$$
+
+e:
+
+$$
+s_0s_2.
+$$
+
+Quindi:
+
+$$
+|Paths(\mathcal{T})|=2.
+$$
+
+Per $s_1$:
+
+$$
+Paths(s_1)=\{s_1^\omega\}
+$$
+
+dove:
+
+$$
+s_1^\omega=s_1s_1s_1\ldots
+$$
+
+I finite path fragments che partono da $s_1$ sono invece:
+
+$$
+Paths_{fin}(s_1)=
+\{s_1^n\mid n\in\mathbb{N},n\geq1\}.
+$$
+
+---
+
+## 9. Linear-time vs Branching-time
+
+Partiamo da:
+
+$$
+\mathcal{T}=(S,Act,\rightarrow,S_0,AP,L).
+$$
+
+Dopo aver astratto dalle azioni otteniamo:
+
+- state graph;
+- labeling tramite $L$.
+
+Da qui possiamo osservare il sistema secondo due prospettive.
+
+```mermaid
+flowchart TB
+    T["Transition system"]
+    G["State graph + labeling"]
+    LT["Linear-time view"]
+    BT["Branching-time view"]
+
+    T -->|"abstract from actions"| G
+    G --> LT
+    G --> BT
+```
+
+### Linear-time view
+
+La linear-time view è **path-based**.
+
+Considera:
+
+- sequenze di stati;
+- singole evoluzioni complete del sistema.
+
+La struttura di branching viene ignorata.
+
+### Branching-time view
+
+La branching-time view mantiene invece:
+
+- stati;
+- scelte nondeterministiche;
+- differenti rami futuri.
+
+La struttura di branching è quindi rilevante.
+
+---
+
+## 10. Dallo state graph alle traces
+
+Nella linear-time view non siamo interessati direttamente agli stati, ma a ciò che è **osservabile** negli stati.
+
+Data la labeling function:
+
+$$
+L:S\rightarrow 2^{AP},
+$$
+
+un path:
+
+$$
+\pi=s_0s_1s_2\ldots
+$$
+
+produce la sequenza:
+
+$$
+L(s_0)L(s_1)L(s_2)\ldots
+$$
+
+chiamata **trace**.
+
+```mermaid
+flowchart TB
+    E["Execution: states + actions"]
+    P["Path: states"]
+    T["Trace: sets of atomic propositions"]
+
+    E -->|"remove action labels"| P
+    P -->|"apply labeling L"| T
+```
+
+---
+
+## 11. Traces
+
+Per un path:
+
+$$
+\pi=s_0s_1s_2\ldots
+$$
+
+definiamo:
+
+$$
+trace(\pi)=L(s_0)L(s_1)L(s_2)\ldots
+$$
+
+Ogni elemento della trace è quindi un sottoinsieme di $AP$.
+
+Se il path è infinito:
+
+$$
+trace(\pi)\in(2^{AP})^\omega.
+$$
+
+Se è finito:
+
+$$
+trace(\pi)\in(2^{AP})^+.
+$$
+
+Nel seguito si assume spesso che il transition system **non abbia terminal states**. In questo caso tutte le traces rilevanti sono infinite.
+
+---
+
+## 12. Traces di un Transition System
+
+Definiamo:
+
+$$
+Traces(\mathcal{T})
+=
+\{trace(\pi)\mid\pi\in Paths(\mathcal{T})\}.
+$$
+
+Se il TS non ha stati terminali:
+
+$$
+Traces(\mathcal{T})\subseteq(2^{AP})^\omega.
+$$
+
+Per i finite path fragments:
+
+$$
+Traces_{fin}(\mathcal{T})
+=
+\{trace(\hat{\pi})\mid
+\hat{\pi}\in Paths_{fin}(\mathcal{T})\}.
+$$
+
+e quindi:
+
+$$
+Traces_{fin}(\mathcal{T})\subseteq(2^{AP})^*.
+$$
+
+---
+
+## 13. Esempio di trace
+
+Supponiamo:
+
+$$
+AP=\{a\}
+$$
+
+e un TS che possa produrre:
+
+$$
+\{a\},\emptyset,\emptyset,\emptyset,\ldots
+$$
+
+oppure:
+
+$$
+\emptyset,\emptyset,\emptyset,\ldots
+$$
+
+Allora:
+
+$$
+Traces(\mathcal{T})
+=
+\{\{a\}\emptyset^\omega,\emptyset^\omega\}.
+$$
+
+I prefissi finiti comprendono:
+
+$$
+\{a\}\emptyset^n
+$$
+
+per $n\geq0$, e:
+
+$$
+\emptyset^m
+$$
+
+per $m\geq1$.
+
+---
+
+## 14. Trattamento degli stati terminali
+
+Nel corso si preferisce spesso lavorare con transition systems senza terminal states.
+
+Prima si calcola:
+
+$$
+Reach(\mathcal{T})
+$$
+
+cioè l'insieme degli stati raggiungibili da almeno uno stato iniziale.
+
+Per ogni reachable terminal state $s$:
+
+- se $s$ rappresenta una terminazione prevista, si introduce un trap state;
+- se $s$ rappresenta un fault, ad esempio un deadlock, il design va corretto prima di procedere.
+
+```mermaid
+flowchart LR
+    S["terminal state s"]
+    STOP["stop"]
+    S --> STOP
+    STOP --> STOP
+```
+
+In questo modo una terminazione intenzionale viene trasformata in un comportamento infinito stabile.
+
+---
+
+## 15. Esempio: vending machine
+
+Le slide confrontano differenti implementazioni di una vending machine.
+
+Una prima implementazione usa uno stato intermedio `select`:
+
+```mermaid
+flowchart TB
+    PAY["pay"]
+    SEL["select"]
+    C["coke"]
+    S["sprite"]
+
+    PAY --> SEL
+    SEL --> C
+    SEL --> S
+    C --> PAY
+    S --> PAY
+```
+
+Un'altra implementazione rappresenta direttamente la scelta durante il pagamento:
+
+```mermaid
+flowchart TB
+    PAY["pay"]
+    PC["paid_c"]
+    PS["paid_s"]
+    C["coke"]
+    S["sprite"]
+
+    PAY --> PC
+    PAY --> PS
+    PC --> C
+    PS --> S
+    C --> PAY
+    S --> PAY
+```
+
+La state-based view astrae dalle azioni e osserva soltanto le atomic propositions.
+
+Per esempio:
+
+$$
+AP=\{coke,sprite\}
+$$
+
+oppure:
+
+$$
+AP=\{pay,drink\}.
+$$
+
+La labeling function potrebbe soddisfare:
+
+$$
+L(coke)=\{coke\}
+$$
+
+e:
+
+$$
+L(pay)=\emptyset.
+$$
+
+L'idea centrale è che sistemi strutturalmente diversi possono risultare indistinguibili nella linear-time view se generano le stesse traces.
+
+---
+
+## 16. Mutual exclusion con semaforo
+
+Consideriamo due processi:
+
+- $P_1$;
+- $P_2$.
+
+Ognuno attraversa gli stati:
+
+- `noncrit`;
+- `wait`;
+- `crit`.
+
+Un semaforo condiviso $y$ è inizializzato a:
+
+$$
+y=1.
+$$
+
+Per entrare nella critical section viene eseguita l'operazione:
+
+$$
+y>0:y:=y-1.
+$$
+
+All'uscita:
+
+$$
+y:=y+1.
+$$
+
+Lo state space contiene combinazioni delle control locations dei due processi e del valore di $y$.
+
+Per osservare la proprietà di mutua esclusione possiamo scegliere:
+
+$$
+AP=\{crit_1,crit_2\}.
+$$
+
+Oppure, per studiare anche liveness:
+
+$$
+AP=\{wait_1,crit_1,wait_2,crit_2\}.
+$$
+
+---
+
+## 17. Linear-Time Properties
+
+Una **Linear-Time property** su $AP$ è un linguaggio di parole infinite sull'alfabeto:
+
+$$
+\Sigma=2^{AP}.
+$$
+
+Formalmente:
+
+$$
+E\subseteq(2^{AP})^\omega.
+$$
+
+Quindi una LT property specifica **quali traces infinite sono ammesse**.
+
+Un transition system soddisfa una proprietà se tutte le sue traces appartengono al linguaggio della proprietà.
+
+---
+
+## 18. Proprietà MUTEX
+
+Per:
+
+$$
+AP=\{wait_1,crit_1,wait_2,crit_2\}
+$$
+
+la proprietà di mutua esclusione può essere definita come:
+
+$$
+MUTEX=
+\left\{
+A_0A_1A_2\ldots
+\in(2^{AP})^\omega
+\;\middle|\;
+\forall i\in\mathbb{N},
+\ crit_1\notin A_i
+\lor
+crit_2\notin A_i
+\right\}.
+$$
+
+Equivalentemente, in ogni posizione della trace:
+
+$$
+\neg(crit_1\land crit_2).
+$$
+
+Quindi i due processi non possono trovarsi contemporaneamente nelle rispettive critical sections.
+
+---
+
+## 19. Proprietà LIVE
+
+La proprietà di starvation freedom richiede che un processo che attende venga infine servito.
+
+Per esempio, intuitivamente:
+
+$$
+wait_1
+\Rightarrow
+\text{eventualmente }crit_1
+$$
+
+e:
+
+$$
+wait_2
+\Rightarrow
+\text{eventualmente }crit_2.
+$$
+
+Nelle slide la proprietà viene espressa sulle traces richiedendo che l'attesa ripetuta sia accompagnata dall'ingresso ripetuto nella critical section.
+
+L'idea è:
+
+$$
+\text{un processo non deve rimanere in attesa per sempre}.
+$$
+
+---
+
+## 20. Satisfaction relation per LT properties
+
+Sia $\mathcal{T}$ un TS senza terminal states su $AP$ e sia $E$ una LT property.
+
+Definiamo:
+
+$$
+\mathcal{T}\models E
+$$
+
+se e solo se:
+
+$$
+Traces(\mathcal{T})\subseteq E.
+$$
+
+Questa è la definizione fondamentale:
+
+$$
+\boxed{
+\mathcal{T}\models E
+\iff
+Traces(\mathcal{T})\subseteq E
+}
+$$
+
+Per uno stato $s$:
+
+$$
+s\models E
+\iff
+Traces(s)\subseteq E.
+$$
+
+---
+
+## 21. Mutual exclusion con semaforo: safety vs liveness
+
+Per il sistema con semaforo delle slide:
+
+$$
+T_{Sem}\models MUTEX.
+$$
+
+La mutua esclusione è garantita.
+
+Tuttavia:
+
+$$
+T_{Sem}\not\models LIVE.
+$$
+
+È infatti possibile avere un comportamento in cui un processo continua ad ottenere il semaforo mentre l'altro rimane in attesa indefinitamente.
+
+Quindi:
+
+- la soluzione è **safe**;
+- non è necessariamente **starvation-free**.
+
+---
+
+## 22. Peterson's Mutual Exclusion Algorithm
+
+Le slide confrontano il semaforo con l'algoritmo di Peterson.
+
+Per il transition system associato all'algoritmo di Peterson:
+
+$$
+T_{Pet}\models MUTEX
+$$
+
+e:
+
+$$
+T_{Pet}\models LIVE.
+$$
+
+Quindi Peterson garantisce sia:
+
+- mutual exclusion;
+- progress/starvation freedom nel modello considerato.
+
+Questo esempio evidenzia che safety e liveness sono proprietà differenti.
+
+---
+
+## 23. Trace inclusion
+
+Siano $T_1$ e $T_2$ due transition systems definiti sullo stesso insieme $AP$.
+
+La relazione:
+
+$$
+Traces(T_1)\subseteq Traces(T_2)
+$$
+
+significa che ogni comportamento osservabile di $T_1$ è anche ammesso da $T_2$.
+
+Un'importante conseguenza è:
+
+$$
+Traces(T_1)\subseteq Traces(T_2)
+\land
+T_2\models E
+\Rightarrow
+T_1\models E.
+$$
+
+Infatti:
+
+$$
+Traces(T_1)
+\subseteq
+Traces(T_2)
+\subseteq
+E.
+$$
+
+---
+
+## 24. Caratterizzazione tramite LT properties
+
+Per due TS $T_1$ e $T_2$, sono equivalenti:
+
+1. 
+
+$$
+Traces(T_1)\subseteq Traces(T_2)
+$$
+
+2. per ogni LT property $E$:
+
+$$
+T_2\models E
+\Rightarrow
+T_1\models E.
+$$
+
+Quindi la trace inclusion può essere vista come relazione fondamentale di preservazione delle Linear-Time properties.
+
+---
+
+## 25. Trace inclusion come refinement relation
+
+Nel ciclo di sviluppo:
+
+```mermaid
+flowchart TB
+    R["requirements"]
+    S["specification E"]
+    D1["design T_i"]
+    D2["refined design T_i+1"]
+
+    R --> S
+    S --> D1
+    D1 -->|"refinement"| D2
+```
+
+Una refinement relation può essere definita tramite trace inclusion:
+
+$$
+T_{i+1}\sqsubseteq T_i
+$$
+
+se:
+
+$$
+Traces(T_{i+1})
+\subseteq
+Traces(T_i).
+$$
+
+Interpretazione:
+
+> l'implementazione più concreta non introduce nuovi comportamenti osservabili rispetto alla specifica più astratta.
+
+Se:
+
+$$
+T_i\models E
+$$
+
+e:
+
+$$
+T_{i+1}\sqsubseteq T_i,
+$$
+
+allora:
+
+$$
+T_{i+1}\models E.
+$$
+
+---
+
+## 26. Risoluzione del nondeterminismo
+
+La trace inclusion compare naturalmente quando si elimina nondeterminismo.
+
+Supponiamo che uno stato possa scegliere tra due comportamenti:
+
+```mermaid
+flowchart TB
+    S["s"]
+    A["behavior A"]
+    B["behavior B"]
+
+    S --> A
+    S --> B
+```
+
+Un'implementazione può scegliere di mantenere soltanto uno dei due rami.
+
+Il nuovo sistema avrà meno traces:
+
+$$
+Traces(T')
+\subseteq
+Traces(T).
+$$
+
+Quindi la risoluzione del nondeterminismo può essere vista come un refinement.
+
+---
+
+## 27. Trace inclusion e data abstraction
+
+La trace inclusion è anche importante nelle astrazioni.
+
+Supponiamo di avere un programma con variabili numeriche potenzialmente molto grandi o infinite.
+
+Invece di mantenere tutti i valori concreti, si può costruire un sistema astratto basato soltanto su predicati rilevanti, ad esempio:
+
+$$
+x>0
+$$
+
+$$
+x=0
+$$
+
+$$
+x\equiv_2 y.
+$$
+
+L'astrazione genera tipicamente un sistema $T'$ che ammette almeno tutti i comportamenti concreti:
+
+$$
+Traces(T)\subseteq Traces(T').
+$$
+
+Quindi, se il sistema astratto soddisfa una proprietà:
+
+$$
+T'\models E,
+$$
+
+allora anche il sistema concreto la soddisfa:
+
+$$
+T\models E.
+$$
+
+```mermaid
+flowchart LR
+    T["Concrete TS T"]
+    TA["Abstract TS T'"]
+    P["Property E"]
+
+    T -->|"abstraction"| TA
+    TA -->|"verify"| P
+```
+
+L'astrazione può aggiungere comportamenti spurii, ma non deve eliminare comportamenti concreti se vuole essere usata in questo modo.
+
+---
+
+## 28. Trace equivalence
+
+Due transition systems $T_1$ e $T_2$ sono **trace equivalent** se:
+
+$$
+Traces(T_1)=Traces(T_2).
+$$
+
+Questo equivale a richiedere trace inclusion in entrambe le direzioni:
+
+$$
+Traces(T_1)\subseteq Traces(T_2)
+$$
+
+e:
+
+$$
+Traces(T_2)\subseteq Traces(T_1).
+$$
+
+Due sistemi trace equivalent soddisfano esattamente le stesse Linear-Time properties:
+
+$$
+T_1\models E
+\iff
+T_2\models E.
+$$
+
+---
+
+## 29. Trace equivalent vending machines
+
+Le due vending machines presentate nelle slide hanno strutture interne differenti, ma rispetto alle atomic propositions osservate producono lo stesso comportamento.
+
+Con:
+
+$$
+AP=\{pay,coke,sprite\},
+$$
+
+le traces hanno forma:
+
+$$
+\{pay\}\,
+\emptyset\,
+\{drink_1\}\,
+\{pay\}\,
+\emptyset\,
+\{drink_2\}
+\ldots
+$$
+
+con:
+
+$$
+drink_i\in\{coke,sprite\}.
+$$
+
+Quindi:
+
+$$
+Traces(T_1)=Traces(T_2).
+$$
+
+Di conseguenza:
+
+$$
+T_1
+$$
+
+e:
+
+$$
+T_2
+$$
+
+soddisfano le stesse LT properties su $AP$.
+
+---
+
+## 30. Classificazione delle LT properties
+
+Le proprietà Linear-Time vengono classificate principalmente in:
+
+- **safety properties**;
+- **liveness properties**.
+
+### Safety
+
+Idea intuitiva:
+
+> nothing bad will happen.
+
+Esempi:
+
+- mutual exclusion;
+- deadlock freedom;
+- ogni fase rossa è preceduta da una fase gialla.
+
+### Liveness
+
+Idea intuitiva:
+
+> something good will happen.
+
+Esempi:
+
+- ogni processo in attesa entrerà eventualmente nella critical section;
+- ogni filosofo mangerà infinitamente spesso.
+
+---
+
+## 31. Invariants come caso speciale di safety
+
+Gli invariants sono una classe particolarmente importante di safety properties.
+
+L'idea è:
+
+> no bad state will be reached.
+
+Una proprietà invariant può quindi essere verificata guardando soltanto gli stati raggiungibili.
+
+Non occorre analizzare esplicitamente intere traces infinite.
+
+---
+
+## 32. Logica proposizionale
+
+Le invariant conditions vengono espresse tramite propositional logic.
+
+Una formula può essere costruita con:
+
+$$
+\Phi ::= true
+\mid a
+\mid \Phi_1\land\Phi_2
+\mid\neg\Phi
+\mid\Phi_1\lor\Phi_2
+\mid\Phi_1\rightarrow\Phi_2
+\mid\ldots
+$$
+
+dove:
+
+$$
+a\in AP.
+$$
+
+---
+
+## 33. Semantica della logica proposizionale
+
+Sia:
+
+$$
+A\subseteq AP.
+$$
+
+Allora:
+
+$$
+A\models true
+$$
+
+sempre.
+
+Per una atomic proposition:
+
+$$
+A\models a
+\iff
+a\in A.
+$$
+
+Per la congiunzione:
+
+$$
+A\models\Phi_1\land\Phi_2
+$$
+
+se e solo se:
+
+$$
+A\models\Phi_1
+$$
+
+e:
+
+$$
+A\models\Phi_2.
+$$
+
+Per la negazione:
+
+$$
+A\models\neg\Phi
+\iff
+A\not\models\Phi.
+$$
+
+Per uno stato $s$:
+
+$$
+s\models\Phi
+\iff
+L(s)\models\Phi.
+$$
+
+---
+
+## 34. Definizione di invariant
+
+Sia $E$ una LT property su $AP$.
+
+$E$ è un **invariant** se esiste una formula proposizionale $\Phi$ tale che:
+
+$$
+E=
+\left\{
+A_0A_1A_2\ldots\in(2^{AP})^\omega
+\;\middle|\;
+\forall i\geq0,\ A_i\models\Phi
+\right\}.
+$$
+
+La formula:
+
+$$
+\Phi
+$$
+
+è chiamata **invariant condition**.
+
+Quindi una trace soddisfa l'invariant se $\Phi$ vale in ogni posizione della trace.
+
+---
+
+## 35. Esempio: mutual exclusion come invariant
+
+La proprietà:
+
+$$
+MUTEX
+$$
+
+può essere espressa tramite:
+
+$$
+\Phi=
+\neg crit_1
+\lor
+\neg crit_2.
+$$
+
+Equivalentemente:
+
+$$
+\Phi=
+\neg(crit_1\land crit_2).
+$$
+
+L'invariant corrispondente è:
+
+$$
+MUTEX=
+\left\{
+A_0A_1\ldots
+\mid
+\forall i\geq0,\ A_i\models\Phi
+\right\}.
+$$
+
+---
+
+## 36. Esempio: deadlock freedom
+
+Per cinque dining philosophers, supponiamo che:
+
+$$
+wait_j
+$$
+
+indichi che il filosofo $j$ è bloccato in attesa.
+
+Un deadlock globale corrisponderebbe a:
+
+$$
+wait_0\land wait_1\land wait_2\land wait_3\land wait_4.
+$$
+
+Quindi una invariant condition per la deadlock freedom è:
+
+$$
+\Phi=
+\neg wait_0
+\lor
+\neg wait_1
+\lor
+\neg wait_2
+\lor
+\neg wait_3
+\lor
+\neg wait_4.
+$$
+
+Cioè, in ogni stato raggiungibile almeno un filosofo non deve essere in attesa.
+
+---
+
+## 37. Satisfaction degli invariants
+
+Sia $E$ un invariant con invariant condition $\Phi$.
+
+Per un transition system senza terminal states:
+
+$$
+\mathcal{T}\models E
+$$
+
+se e solo se ogni trace soddisfa $E$:
+
+$$
+trace(\pi)\in E
+\quad
+\forall\pi\in Paths(\mathcal{T}).
+$$
+
+Questo equivale a dire:
+
+$$
+s\models\Phi
+$$
+
+per ogni stato che compare su un path iniziale.
+
+Ma tali stati sono esattamente gli stati raggiungibili.
+
+Quindi:
+
+$$
+\boxed{
+\mathcal{T}\models E
+\iff
+\forall s\in Reach(\mathcal{T}),\ s\models\Phi
+}
+$$
+
+Questo risultato rende l'invariant checking un problema di graph reachability.
+
+---
+
+## 38. Invariant checking come graph analysis
+
+Per verificare un invariant basta:
+
+1. partire dagli stati iniziali;
+2. esplorare gli stati raggiungibili;
+3. controllare $\Phi$ in ogni stato;
+4. fermarsi se viene trovato uno stato che viola $\Phi$.
+
+Si può utilizzare:
+
+- DFS;
+- BFS.
+
+```mermaid
+flowchart TB
+    S["Initial states"]
+    R["Explore reachable states"]
+    C{"Does every state satisfy Phi?"}
+    Y["Invariant holds"]
+    N["Counterexample path"]
+
+    S --> R
+    R --> C
+    C -->|"yes"| Y
+    C -->|"no"| N
+```
+
+---
+
+## 39. Error indication
+
+Se l'invariant è violato, il model checker deve fornire un initial path fragment:
+
+$$
+s_0s_1\ldots s_n
+$$
+
+tale che:
+
+$$
+s_i\models\Phi
+$$
+
+per:
+
+$$
+0\leq i<n
+$$
+
+ma:
+
+$$
+s_n\not\models\Phi.
+$$
+
+Questa sequenza costituisce il **counterexample**.
+
+---
+
+## 40. DFS-based invariant checking
+
+Schema principale:
+
+```text
+U := empty set
+pi := empty stack
+
+FOR ALL s0 in S0 DO
+    IF DFS(s0, Phi) THEN
+        return "no" and reverse(pi)
+    FI
+OD
+
+return "yes"
+```
+
+Dove:
+
+- $U$ contiene gli stati già processati;
+- $\pi$ è uno stack usato per ricostruire il counterexample.
+
+---
+
+## 41. DFS ricorsiva
+
+La procedura concettuale è:
+
+```text
+DFS(s, Phi):
+
+    Push(pi, s)
+
+    IF s not in U THEN
+
+        IF s does not satisfy Phi THEN
+            return true
+        FI
+
+        insert s into U
+
+        FOR ALL s' in Post(s) DO
+            IF DFS(s', Phi) THEN
+                return true
+            FI
+        OD
+    FI
+
+    Pop(pi)
+    return false
+```
+
+Interpretazione:
+
+- se viene raggiunto uno stato che viola $\Phi$, la ricerca termina;
+- lo stack contiene il path che porta allo stato errato;
+- gli stati già in $U$ non vengono riesplorati.
+
+---
+
+## 42. Esempio di invariant checking
+
+Consideriamo:
+
+```mermaid
+flowchart TB
+    S0["s0 : {a}"]
+    S1["s1 : {a}"]
+    S2["s2 : {a}"]
+    T["t : empty"]
+
+    S0 --> S1
+    S0 --> S2
+    S1 --> S1
+    S2 --> T
+```
+
+Invariant condition:
+
+$$
+\Phi=a.
+$$
+
+Abbiamo:
+
+$$
+s_0\models a
+$$
+
+$$
+s_1\models a
+$$
+
+$$
+s_2\models a
+$$
+
+ma:
+
+$$
+t\not\models a.
+$$
+
+La DFS può produrre il counterexample:
+
+$$
+s_0s_2t.
+$$
+
+Quindi:
+
+$$
+s_0\not\models\text{``always }a\text{''}.
+$$
+
+---
+
+## 43. Complessità intuitiva dell'invariant checking
+
+Con una normale DFS/BFS ogni stato raggiungibile viene processato al più una volta.
+
+Ogni transizione viene considerata durante l'esplorazione.
+
+Quindi il costo è lineare rispetto alla dimensione del reachable state graph:
+
+$$
+O(|S|+|\rightarrow|).
+$$
+
+Il limite pratico principale non è quindi l'algoritmo in sé, ma la dimensione dello state space.
+
+---
+
+## 44. Relazioni fondamentali da ricordare
+
+### Trace di un path
+
+$$
+trace(s_0s_1s_2\ldots)
+=
+L(s_0)L(s_1)L(s_2)\ldots
+$$
+
+### Traces del TS
+
+$$
+Traces(\mathcal{T})
+=
+\{trace(\pi)\mid\pi\in Paths(\mathcal{T})\}
+$$
+
+### LT property
+
+$$
+E\subseteq(2^{AP})^\omega
+$$
+
+### Satisfaction
+
+$$
+\mathcal{T}\models E
+\iff
+Traces(\mathcal{T})\subseteq E
+$$
+
+### Trace inclusion
+
+$$
+Traces(T_1)\subseteq Traces(T_2)
+$$
+
+### Preservation
+
+$$
+Traces(T_1)\subseteq Traces(T_2)
+\land
+T_2\models E
+\Rightarrow
+T_1\models E
+$$
+
+### Trace equivalence
+
+$$
+Traces(T_1)=Traces(T_2)
+$$
+
+### Invariant
+
+$$
+E=
+\{
+A_0A_1\ldots
+\mid
+\forall i,\ A_i\models\Phi
+\}
+$$
+
+### Invariant checking
+
+$$
+\mathcal{T}\models E
+\iff
+\forall s\in Reach(\mathcal{T}),\ s\models\Phi
+$$
+
+---
+
+## 45. Schema riassuntivo della lezione
+
+```mermaid
+flowchart TB
+    TS["Transition system"]
+    SG["State graph + labeling"]
+    PATH["Paths"]
+    TRACE["Traces"]
+    LT["Linear-Time property E"]
+    MC["Model checking"]
+    SAFE["Safety / invariants"]
+    DFS["DFS or BFS on reachable states"]
+
+    TS -->|"abstract actions"| SG
+    SG --> PATH
+    PATH -->|"apply L"| TRACE
+    TRACE --> MC
+    LT --> MC
+    LT --> SAFE
+    SAFE --> DFS
+```
+
+Il percorso concettuale è quindi:
+
+$$
+\text{Transition System}
+\rightarrow
+\text{Paths}
+\rightarrow
+\text{Traces}
+\rightarrow
+\text{LT Properties}
+\rightarrow
+\text{Model Checking}.
+$$
+
+---
+
+## 46. Concetti essenziali per l'esame
+
+Da saper spiegare bene:
+
+1. differenza tra execution fragment e path fragment;
+2. definizione di initial e maximal path;
+3. significato di $Paths(\mathcal{T})$;
+4. definizione di trace;
+5. differenza fra linear-time e branching-time view;
+6. definizione formale di LT property;
+7. significato di $\mathcal{T}\models E$;
+8. proprietà $MUTEX$;
+9. proprietà $LIVE$;
+10. perché il semaforo può garantire safety ma non liveness;
+11. perché Peterson soddisfa entrambe nel modello presentato;
+12. significato della trace inclusion;
+13. trace inclusion come refinement;
+14. trace inclusion e data abstraction;
+15. trace equivalence;
+16. safety vs liveness;
+17. definizione di invariant;
+18. invariant condition $\Phi$;
+19. equivalenza tra invariant checking e verifica di $\Phi$ su $Reach(\mathcal{T})$;
+20. DFS-based invariant checking e generazione del counterexample.
+
+---
+
+## 47. Mappa concettuale finale
+
+```mermaid
+flowchart LR
+    A["T = transition system"]
+    B["Paths(T)"]
+    C["Traces(T)"]
+    D["LT property E"]
+    E["T |= E"]
+    F["Safety"]
+    G["Liveness"]
+    H["Invariant"]
+    I["Reachability check"]
+
+    A --> B
+    B --> C
+    C --> E
+    D --> E
+    D --> F
+    D --> G
+    F --> H
+    H --> I
+```
+
+La relazione centrale dell'intera lezione è:
+
+$$
+\boxed{
+\mathcal{T}\models E
+\iff
+Traces(\mathcal{T})\subseteq E
+}
+$$
+
+e, per gli invariants:
+
+$$
+\boxed{
+\mathcal{T}\models E
+\iff
+\forall s\in Reach(\mathcal{T}),\ s\models\Phi
+}
+$$
+
+# 25/9
+## 1. Obiettivo della lezione
+
+Questa lezione approfondisce la parte di **Linear Time Properties** dedicata a safety properties, invariants, bad prefixes, prefix closure, finite trace inclusion ed equivalence.
+
+L'idea intuitiva fondamentale è:
+
+> una safety property afferma che **"nothing bad will happen"**.
+
+---
+
+## 2. Safety properties
+
+Una **safety property** descrive un comportamento nel quale qualcosa di indesiderato non deve mai accadere.
+
+Esempi:
+
+- mutual exclusion;
+- deadlock freedom;
+- ogni fase rossa deve essere preceduta da una fase gialla;
+- in una beverage machine, il numero di monete inserite non deve mai essere inferiore al numero di bevande erogate.
+
+Gli invariants sono una classe particolare di safety properties.
+
+```mermaid
+flowchart TB
+    S["Safety properties"]
+    I["Invariants"]
+    O["Other safety properties"]
+
+    S --> I
+    S --> O
+
+    I --> B1["No bad state is reached"]
+    O --> B2["No bad finite prefix occurs"]
+```
+
+---
+
+## 3. Esempi di invariants
+
+### Mutual exclusion
+
+$$
+\neg(crit_1 \land crit_2)
+$$
+
+Equivalentemente:
+
+$$
+\neg crit_1 \lor \neg crit_2.
+$$
+
+### Deadlock freedom
+
+Un deadlock globale corrisponde a:
+
+$$
+\bigwedge_{0\leq i<n} wait_i.
+$$
+
+La deadlock freedom richiede quindi:
+
+$$
+\neg\left(\bigwedge_{0\leq i<n} wait_i\right).
+$$
+
+Equivalentemente:
+
+$$
+\bigvee_{0\leq i<n}\neg wait_i.
+$$
+
+---
+
+## 4. Safety properties non invarianti
+
+Una safety property generale può dipendere dalla storia del sistema e non soltanto dallo stato corrente.
+
+Esempio:
+
+> every red phase is preceded by a yellow phase.
+
+Per verificarla bisogna sapere anche quale stato è stato osservato subito prima.
+
+Un altro esempio:
+
+> the total number of entered coins is never less than the total number of released drinks.
+
+---
+
+## 5. Bad prefix
+
+Una violazione di una safety property può essere riconosciuta dopo un numero finito di passi.
+
+Un **bad prefix** è un prefisso finito dopo il quale la proprietà non può più essere recuperata.
+
+Per la beverage machine:
+
+$$
+\{pay\}\{drink\}\{drink\}
+$$
+
+è un bad prefix.
+
+```mermaid
+flowchart LR
+    P["finite prefix"]
+    V{"Property irreparably violated?"}
+    B["Bad prefix"]
+    N["Not a bad prefix"]
+
+    P --> V
+    V -->|"yes"| B
+    V -->|"no"| N
+```
+
+---
+
+## 6. Definizione formale di Safety Property
+
+Sia:
+
+$$
+E\subseteq(2^{AP})^\omega.
+$$
+
+$E$ è una **safety property** se per ogni:
+
+$$
+\sigma=A_0A_1A_2\ldots
+\in(2^{AP})^\omega\setminus E
+$$
+
+esiste un prefisso finito:
+
+$$
+A_0A_1\ldots A_n
+$$
+
+tale che nessuna sua estensione infinita appartiene a $E$.
+
+Formalmente:
+
+$$
+E\cap
+\left\{
+\sigma'\in(2^{AP})^\omega
+\mid
+A_0\ldots A_n
+\text{ è prefisso di }\sigma'
+\right\}
+=
+\emptyset.
+$$
+
+---
+
+## 7. Insieme dei bad prefixes
+
+Definiamo:
+
+$$
+BadPref_E
+$$
+
+come l'insieme di tutti i bad prefixes di $E$.
+
+Formalmente:
+
+$$
+BadPref_E\subseteq(2^{AP})^+.
+$$
+
+Quindi una safety property può essere vista come l'insieme delle parole infinite che non hanno alcun bad prefix.
+
+---
+
+## 8. Minimal bad prefixes
+
+Un **minimal bad prefix** è un bad prefix per cui nessun prefisso proprio è già un bad prefix.
+
+Se:
+
+$$
+A_0A_1\ldots A_n\in BadPref_E,
+$$
+
+allora è minimale se:
+
+$$
+A_0\ldots A_i\notin BadPref_E
+$$
+
+per ogni $i<n$.
+
+Indichiamo il loro insieme con:
+
+$$
+MinBadPref_E.
+$$
+
+---
+
+## 9. Esempio: traffic light
+
+Sia:
+
+$$
+AP=\{red,yellow\}.
+$$
+
+La proprietà è:
+
+> ogni fase rossa è preceduta da una fase gialla.
+
+Formalmente:
+
+$$
+E=
+\left\{
+A_0A_1A_2\ldots
+\in(2^{AP})^\omega
+\;\middle|\;
+\forall i\in\mathbb{N},
+\ red\in A_i
+\Rightarrow
+i\geq1
+\land
+yellow\in A_{i-1}
+\right\}.
+$$
+
+```mermaid
+flowchart LR
+    Y["yellow"]
+    R["red"]
+    RY["red/yellow"]
+    G["green"]
+
+    Y --> R
+    R --> RY
+    RY --> G
+    G --> Y
+```
+
+Per questo sistema:
+
+$$
+\mathcal{T}\models E.
+$$
+
+---
+
+## 10. Violazione della proprietà del semaforo
+
+Un esempio di bad prefix è:
+
+$$
+\emptyset\ \{red\}\ \emptyset\ \{yellow\}.
+$$
+
+Il **minimal bad prefix** è già:
+
+$$
+\emptyset\ \{red\}.
+$$
+
+Da quel punto non è più possibile correggere il fatto che una fase rossa sia comparsa senza una fase gialla precedente.
+
+---
+
+## 11. Bad prefixes della proprietà traffic light
+
+Per la proprietà precedente:
+
+$$
+BadPref_E
+$$
+
+è l'insieme delle parole finite:
+
+$$
+A_0A_1\ldots A_n
+$$
+
+per cui esiste:
+
+$$
+i\in\{0,\ldots,n\}
+$$
+
+tale che:
+
+$$
+red\in A_i
+$$
+
+e:
+
+$$
+i=0
+\lor
+yellow\notin A_{i-1}.
+$$
+
+---
+
+## 12. Satisfaction delle Safety Properties
+
+Per una safety property $E$ e un TS $\mathcal{T}$:
+
+$$
+\mathcal{T}\models E
+\iff
+Traces(\mathcal{T})\subseteq E.
+$$
+
+Per le safety properties possiamo usare una caratterizzazione finitaria:
+
+$$
+\boxed{
+\mathcal{T}\models E
+\iff
+Traces_{fin}(\mathcal{T})\cap BadPref_E=\emptyset
+}
+$$
+
+Equivalentemente:
+
+$$
+\boxed{
+\mathcal{T}\models E
+\iff
+Traces_{fin}(\mathcal{T})\cap MinBadPref_E=\emptyset
+}
+$$
+
+---
+
+## 13. Finite traces
+
+Definiamo:
+
+$$
+Traces_{fin}(\mathcal{T})
+=
+\{
+trace(\hat{\pi})
+\mid
+\hat{\pi}
+\text{ è un initial finite path fragment di }\mathcal{T}
+\}.
+$$
+
+---
+
+## 14. Ogni invariant è una safety property
+
+Se $E$ è un invariant con invariant condition $\Phi$, un bad prefix è una parola finita:
+
+$$
+A_0\ldots A_n
+$$
+
+tale che:
+
+$$
+A_i\not\models\Phi
+$$
+
+per almeno un $i\in\{0,\ldots,n\}$.
+
+Un **minimal bad prefix** soddisfa:
+
+$$
+A_i\models\Phi
+$$
+
+per $i=0,\ldots,n-1$, ma:
+
+$$
+A_n\not\models\Phi.
+$$
+
+---
+
+## 15. Proprietà estreme
+
+### Proprietà vuota
+
+$$
+E=\emptyset
+$$
+
+è una safety property.
+
+Infatti:
+
+$$
+BadPref_E=(2^{AP})^+.
+$$
+
+È anche un invariant con invariant condition:
+
+$$
+false.
+$$
+
+### Proprietà universale
+
+$$
+E=(2^{AP})^\omega
+$$
+
+è anch'essa una safety property.
+
+In questo caso:
+
+$$
+BadPref_E=\emptyset.
+$$
+
+---
+
+## 16. Prefix di una parola infinita
+
+Per:
+
+$$
+\sigma=A_0A_1A_2\ldots
+$$
+
+definiamo:
+
+$$
+pref(\sigma)
+=
+\{
+A_0A_1\ldots A_n
+\mid
+n\geq0
+\}.
+$$
+
+---
+
+## 17. Prefix di una proprietà
+
+Per:
+
+$$
+E\subseteq(2^{AP})^\omega
+$$
+
+definiamo:
+
+$$
+pref(E)
+=
+\bigcup_{\sigma\in E}pref(\sigma).
+$$
+
+---
+
+## 18. Prefix closure
+
+La **prefix closure** di $E$ è:
+
+$$
+cl(E)
+=
+\left\{
+\sigma\in(2^{AP})^\omega
+\mid
+pref(\sigma)\subseteq pref(E)
+\right\}.
+$$
+
+Intuitivamente, $cl(E)$ contiene tutte le parole infinite i cui prefissi finiti rimangono compatibili con almeno una parola di $E$.
+
+---
+
+## 19. Caratterizzazione tramite Prefix Closure
+
+Teorema:
+
+$$
+\boxed{
+E\text{ è una safety property}
+\iff
+cl(E)=E
+}
+$$
+
+```mermaid
+flowchart LR
+    E["LT property E"]
+    C["prefix closure cl(E)"]
+
+    E --> C
+    C -->|"cl(E) = E"| S["E is safety"]
+```
+
+---
+
+## 20. Trace inclusion e LT properties
+
+Per due TS $T_1$ e $T_2$ sullo stesso $AP$:
+
+$$
+Traces(T_1)\subseteq Traces(T_2)
+$$
+
+se e solo se, per ogni LT property $E$:
+
+$$
+T_2\models E
+\Rightarrow
+T_1\models E.
+$$
+
+---
+
+## 21. Finite trace inclusion e Safety Properties
+
+Per le sole safety properties:
+
+$$
+\boxed{
+Traces_{fin}(T_1)
+\subseteq
+Traces_{fin}(T_2)
+}
+$$
+
+se e solo se:
+
+$$
+\boxed{
+\forall E\text{ safety},
+\quad
+T_2\models E
+\Rightarrow
+T_1\models E
+}
+$$
+
+Quindi per preservare tutte le safety properties basta confrontare le finite traces.
+
+---
+
+## 22. Idea della dimostrazione: direzione $\Rightarrow$
+
+Supponiamo:
+
+$$
+Traces_{fin}(T_1)
+\subseteq
+Traces_{fin}(T_2).
+$$
+
+Se:
+
+$$
+T_2\models E,
+$$
+
+allora:
+
+$$
+Traces_{fin}(T_2)
+\cap
+BadPref_E
+=
+\emptyset.
+$$
+
+Di conseguenza:
+
+$$
+Traces_{fin}(T_1)
+\cap
+BadPref_E
+\subseteq
+Traces_{fin}(T_2)
+\cap
+BadPref_E
+=
+\emptyset.
+$$
+
+Quindi:
+
+$$
+T_1\models E.
+$$
+
+---
+
+## 23. Idea della dimostrazione: direzione $\Leftarrow$
+
+Si considera:
+
+$$
+E=cl(Traces(T_2)).
+$$
+
+Usando:
+
+$$
+pref(Traces(T))
+=
+Traces_{fin}(T),
+$$
+
+si ottiene:
+
+$$
+E=
+\left\{
+\sigma
+\mid
+pref(\sigma)
+\subseteq
+Traces_{fin}(T_2)
+\right\}.
+$$
+
+Poiché $cl(E)=E$, $E$ è una safety property e $T_2\models E$.
+
+Per ipotesi:
+
+$$
+T_1\models E.
+$$
+
+Da cui si ricava:
+
+$$
+Traces_{fin}(T_1)
+\subseteq
+Traces_{fin}(T_2).
+$$
+
+---
+
+## 24. Finite trace equivalence
+
+Due transition systems sono **finite trace equivalent** se:
+
+$$
+Traces_{fin}(T_1)
+=
+Traces_{fin}(T_2).
+$$
+
+Questo vale se e solo se soddisfano esattamente le stesse safety properties.
+
+$$
+\boxed{
+Traces_{fin}(T_1)=Traces_{fin}(T_2)
+}
+$$
+
+se e solo se:
+
+$$
+\boxed{
+T_1\text{ e }T_2
+\text{ soddisfano le stesse safety properties}
+}
+$$
+
+---
+
+## 25. Riassunto delle relazioni
+
+### Trace inclusion
+
+$$
+Traces(T)\subseteq Traces(T')
+$$
+
+se e solo se:
+
+$$
+\forall E\text{ LT},
+\quad
+T'\models E
+\Rightarrow
+T\models E.
+$$
+
+### Finite trace inclusion
+
+$$
+Traces_{fin}(T)
+\subseteq
+Traces_{fin}(T')
+$$
+
+se e solo se:
+
+$$
+\forall E\text{ safety},
+\quad
+T'\models E
+\Rightarrow
+T\models E.
+$$
+
+### Trace equivalence
+
+$$
+Traces(T)=Traces(T')
+$$
+
+se e solo se $T$ e $T'$ soddisfano le stesse LT properties.
+
+### Finite trace equivalence
+
+$$
+Traces_{fin}(T)=Traces_{fin}(T')
+$$
+
+se e solo se $T$ e $T'$ soddisfano le stesse safety properties.
+
+---
+
+## 26. Trace inclusion implica finite trace inclusion
+
+Se:
+
+$$
+Traces(T)
+\subseteq
+Traces(T'),
+$$
+
+allora:
+
+$$
+Traces_{fin}(T)
+\subseteq
+Traces_{fin}(T').
+$$
+
+Poiché:
+
+$$
+Traces_{fin}(T)
+=
+pref(Traces(T)).
+$$
+
+---
+
+## 27. Il viceversa non vale in generale
+
+In generale:
+
+$$
+Traces_{fin}(T)
+\subseteq
+Traces_{fin}(T')
+$$
+
+non implica:
+
+$$
+Traces(T)
+\subseteq
+Traces(T').
+$$
+
+Le slide presentano un controesempio con:
+
+$$
+AP=\{b\}.
+$$
+
+Per un sistema:
+
+$$
+Traces(T)=\{\emptyset^\omega\}.
+$$
+
+Un altro sistema può imitare ogni prefisso finito di $\emptyset^\omega$, ma in ogni comportamento infinito raggiungere infine uno stato con $b$.
+
+Quindi le finite traces non distinguono i due sistemi rispetto a tutte le LT properties.
+
+---
+
+## 28. Proprietà che distingue i sistemi
+
+La proprietà:
+
+> eventually $b$
+
+distingue i sistemi.
+
+Nel controesempio:
+
+$$
+T\not\models E
+$$
+
+mentre:
+
+$$
+T'\models E.
+$$
+
+Questo mostra che una proprietà di tipo eventuality non può essere decisa osservando un solo prefisso finito.
+
+---
+
+## 29. Trace equivalence vs finite trace equivalence
+
+Se:
+
+$$
+Traces(T)
+=
+Traces(T'),
+$$
+
+allora:
+
+$$
+Traces_{fin}(T)
+=
+Traces_{fin}(T').
+$$
+
+Quindi:
+
+$$
+\boxed{
+\text{trace equivalence}
+\Rightarrow
+\text{finite trace equivalence}
+}
+$$
+
+Il viceversa non vale in generale, nemmeno per transition systems finiti.
+
+---
+
+## 30. Quando finite trace inclusion implica trace inclusion
+
+Supponiamo che:
+
+1. $T$ non abbia terminal states;
+2. $T'$ sia finito;
+3. 
+
+$$
+Traces_{fin}(T)
+\subseteq
+Traces_{fin}(T').
+$$
+
+Allora:
+
+$$
+\boxed{
+Traces(T)
+\subseteq
+Traces(T')
+}
+$$
+
+e quindi:
+
+$$
+Traces(T)
+\subseteq
+Traces(T')
+\iff
+Traces_{fin}(T)
+\subseteq
+Traces_{fin}(T').
+$$
+
+---
+
+## 31. Idea della dimostrazione
+
+Prendiamo un path infinito:
+
+$$
+\pi=s_0s_1s_2\ldots
+$$
+
+in $T$.
+
+Vogliamo trovare:
+
+$$
+\pi'=t_0t_1t_2\ldots
+$$
+
+in $T'$ tale che:
+
+$$
+trace(\pi)=trace(\pi').
+$$
+
+Ogni prefisso finito della trace di $\pi$ appartiene a $Traces_{fin}(T')$.
+
+Quindi $T'$ contiene path fragments compatibili di lunghezza arbitraria.
+
+Essendo $T'$ finito, si può estrarre un path infinito coerente con tutti questi prefissi.
+
+---
+
+## 32. Intuizione tramite unfolding
+
+```mermaid
+flowchart TB
+    T0["t0"]
+
+    T1["t1"]
+    T2["t2"]
+
+    T11["..."]
+    T12["..."]
+    T21["..."]
+    T22["..."]
+
+    T0 --> T1
+    T0 --> T2
+
+    T1 --> T11
+    T1 --> T12
+    T2 --> T21
+    T2 --> T22
+```
+
+Se esistono path fragments compatibili a ogni profondità e il sistema è finito, è possibile ottenere un path infinito.
+
+---
+
+## 33. Image-finiteness
+
+La finitezza totale di $T'$ non è strettamente necessaria.
+
+È sufficiente la **image-finiteness**.
+
+Per:
+
+$$
+T'=(S',Act,\rightarrow,S'_0,AP,L')
+$$
+
+per ogni stato $s\in S'$ e ogni $A\in2^{AP}$ deve essere finito:
+
+$$
+\{t\in Post(s)\mid L'(t)=A\}.
+$$
+
+Inoltre deve essere finito:
+
+$$
+\{s_0\in S'_0\mid L'(s_0)=A\}
+$$
+
+per ogni $A\in2^{AP}$.
+
+---
+
+## 34. Trace equivalence sotto ipotesi aggiuntive
+
+In generale:
+
+$$
+Traces_{fin}(T)=Traces_{fin}(T')
+$$
+
+non implica:
+
+$$
+Traces(T)=Traces(T').
+$$
+
+La direzione inversa vale sotto ipotesi aggiuntive, ad esempio:
+
+- $T$ e $T'$ sono finiti e senza terminal states;
+- oppure $T$ e $T'$ sono **AP-deterministic**.
+
+---
+
+## 35. Safety vs Liveness
+
+La distinzione concettuale è:
+
+### Safety
+
+Una violazione può essere dimostrata tramite un prefisso finito.
+
+$$
+\text{"something bad happened"}
+$$
+
+### Liveness
+
+Una violazione non è, in generale, rilevabile con un prefisso finito.
+
+Per esempio:
+
+$$
+\text{"eventually }b\text{"}.
+$$
+
+Dopo qualsiasi prefisso finito è ancora possibile che $b$ avvenga in futuro.
+
+```mermaid
+flowchart LR
+    S["Safety"]
+    BP["finite bad prefix"]
+    L["Liveness"]
+    INF["infinite behavior matters"]
+
+    S --> BP
+    L --> INF
+```
+
+---
+
+## 36. Formule fondamentali
+
+### Safety satisfaction
+
+$$
+\mathcal{T}\models E
+\iff
+Traces_{fin}(\mathcal{T})
+\cap
+BadPref_E
+=
+\emptyset.
+$$
+
+### Minimal bad prefixes
+
+$$
+\mathcal{T}\models E
+\iff
+Traces_{fin}(\mathcal{T})
+\cap
+MinBadPref_E
+=
+\emptyset.
+$$
+
+### Prefix closure
+
+$$
+cl(E)
+=
+\{
+\sigma\in(2^{AP})^\omega
+\mid
+pref(\sigma)\subseteq pref(E)
+\}.
+$$
+
+### Safety via prefix closure
+
+$$
+E\text{ safety}
+\iff
+cl(E)=E.
+$$
+
+### Finite trace inclusion
+
+$$
+Traces_{fin}(T_1)
+\subseteq
+Traces_{fin}(T_2)
+$$
+
+se e solo se:
+
+$$
+\forall E\text{ safety},
+\quad
+T_2\models E
+\Rightarrow
+T_1\models E.
+$$
+
+---
+
+## 37. Concetti da ricordare per l'esame
+
+1. definizione intuitiva di safety property;
+2. differenza tra invariant e safety property generale;
+3. definizione di bad prefix;
+4. definizione di minimal bad prefix;
+5. perché ogni invariant è una safety property;
+6. perché $\emptyset$ è una safety property;
+7. perché $(2^{AP})^\omega$ è una safety property;
+8. definizione di $pref(\sigma)$;
+9. definizione di $pref(E)$;
+10. definizione di $cl(E)$;
+11. teorema $E$ safety $\iff cl(E)=E$;
+12. satisfaction tramite bad prefixes;
+13. finite trace inclusion;
+14. finite trace equivalence;
+15. differenza fra trace equivalence e finite trace equivalence;
+16. perché finite trace inclusion non implica trace inclusion in generale;
+17. condizioni aggiuntive sotto cui l'implicazione inversa vale;
+18. significato di image-finiteness;
+19. differenza concettuale fra safety e liveness.
+
+---
+
+## 38. Mappa concettuale finale
+
+```mermaid
+flowchart TB
+    E["LT property E"]
+    S["Safety property"]
+    I["Invariant"]
+    BP["BadPref_E"]
+    MBP["MinBadPref_E"]
+    P["Prefix closure cl(E)"]
+    TF["Traces_fin(T)"]
+    SAT["T |= E"]
+    FI["Finite trace inclusion"]
+    FE["Finite trace equivalence"]
+
+    E --> S
+    I --> S
+    S --> BP
+    BP --> MBP
+    S --> P
+    P -->|"cl(E)=E"| S
+    TF --> SAT
+    BP --> SAT
+    TF --> FI
+    FI --> FE
+```
+
+La relazione centrale della lezione è:
+
+$$
+\boxed{
+\mathcal{T}\models E
+\iff
+Traces_{fin}(\mathcal{T})\cap BadPref_E=\emptyset
+}
+$$
+
+cioè: una safety property è violata quando il sistema produce un **prefisso finito irrimediabilmente cattivo**.
+
