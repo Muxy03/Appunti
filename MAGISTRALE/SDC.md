@@ -1022,4 +1022,1097 @@ Il producer non deve più attendere direttamente il consumer. L'accoppiamento te
 
 # 23/9
 
+---
+title: "Lezione 3 - Sorgenti e limiti della scalabilità I"
+course: "Scalable Distributed Computing"
+academic_year: "2026/2027"
+tags:
+  - distributed-systems
+  - scalability
+  - performance-modeling
+  - bottlenecks
+---
+## Obiettivo della lezione
+
+Una curva di scalabilità scadente è un'**osservazione**, non una diagnosi. Curve esteriormente simili possono essere prodotte da meccanismi interni diversi; di conseguenza richiedono interventi differenti.
+
+Il metodo seguito nella lezione è:
+
+```mermaid
+flowchart LR
+    O["Osservazione"] --> H["Ipotesi sul meccanismo"]
+    H --> M["Modello quantitativo minimo"]
+    M --> P["Predizione verificabile"]
+    P --> V["Misura e validazione"]
+    V --> D["Conferma o rifiuto dell'ipotesi"]
+```
+
+Il vero lavoro non consiste quindi nel dare un nome alla forma della curva, ma nello spiegare **perché** il sistema potrebbe produrla.
+
+## 1. Sistema di riferimento
+
+La lezione usa ripetutamente una piccola architettura astratta:
+
+```mermaid
+flowchart LR
+    I["Ingress"] --> Q["Coda delle richieste"]
+    Q --> W["Worker del servizio"]
+    W --> S["Servizio di stato condiviso"]
+    S --> D["Servizio downstream"]
+    D --> R["Risposte"]
+    C["Controllo"] -.-> W
+    C -.-> S
+```
+
+Non rappresenta un prodotto specifico. Serve a isolare diversi possibili limiti dello stesso percorso end-to-end:
+
+- lavoro non scalabile;
+- capacità fissa condivisa;
+- attesa e contesa;
+- lavoro aggiuntivo creato dalla scala;
+- coordinamento.
+
+La variabile di controllo principale è il numero $N$ di worker; gli osservabili principali sono throughput e latenza.
+
+## 2. Dal modello ideale al gap di scalabilità
+
+Per un lavoro fisso $W$, il modello ideale prevede:
+
+$$
+T_{\text{ideal}}(N)=\frac{W}{N}
+$$
+
+e quindi:
+
+$$
+S_{\text{ideal}}(N)=N
+$$
+
+Raddoppiando le risorse, il tempo dovrebbe dimezzarsi oppure la capacità utile dovrebbe raddoppiare. Un sistema reale può invece mostrare rendimenti decrescenti, un plateau o persino un calo delle prestazioni.
+
+Definiamo il **gap di scalabilità**:
+
+$$
+G(N)=T_{\text{real}}(N)-T_{\text{ideal}}(N)
+$$
+
+con:
+
+$$
+T_{\text{real}}(N)>T_{\text{ideal}}(N)
+$$
+
+La domanda diagnostica è: da quale meccanismo deriva $G(N)$?
+
+### 2.1 Forme qualitative da spiegare
+
+| Forma osservata | Possibile spiegazione iniziale |
+|---|---|
+| Crescita con rendimenti decrescenti | Lavoro non scalabile |
+| Plateau | Capacità fissa condivisa |
+| Picco seguito da declino | Contesa o overhead dipendente dalla scala |
+| Completamento dominato dalla coda | Il partecipante più lento determina il tempo |
+
+Queste associazioni sono ipotesi di partenza, non conclusioni automatiche.
+
+## 3. Amdahl come baseline diagnostica
+
+Benché un servizio online non sia normalmente un job batch, si può congelare analiticamente il workload per isolare l'effetto della sola parte non parallelizzabile.
+
+Siano:
+
+$$
+s=\frac{T_{\text{serial}}}{T(1)}
+$$
+
+e:
+
+$$
+1-s=\frac{T_{\text{parallel}}}{T(1)}
+$$
+
+La legge di Amdahl fornisce:
+
+$$
+S(N)=\frac{1}{s+\frac{1-s}{N}}
+$$
+
+Moltiplicando numeratore e denominatore per $N$:
+
+$$
+S(N)=\frac{N}{sN+1-s}
+$$
+
+Questa forma è utile per studiare marginalità e curvatura.
+
+> [!note]
+> Amdahl e Gustafson rispondono a domande diverse. Amdahl considera lavoro fisso e viene usata qui come baseline diagnostica; Gustafson considera lavoro utile scalato. La vicinanza tra Gustafson e weak scaling non li rende sinonimi.
+
+## 4. Rendimento marginale delle risorse
+
+### 4.1 Rilassamento continuo
+
+Le macchine sono discrete, quindi realmente $N\in\mathbb{N}$. Per studiare la forma della curva si estende temporaneamente il modello a $N\in\mathbb{R}^{+}$.
+
+Questo rilassamento permette di usare le derivate, ma non implica l'esistenza di frazioni di macchina. Le decisioni reali dovranno essere ricondotte a valori interi.
+
+### 4.2 Prima derivata
+
+Partendo da:
+
+$$
+S(N)=\frac{N}{sN+1-s}
+$$
+
+si ottiene:
+
+$$
+S'(N)=\frac{1-s}{(sN+1-s)^2}
+$$
+
+Per $0<s<1$:
+
+$$
+S'(N)>0
+$$
+
+ma:
+
+$$
+\lim_{N\to\infty}S'(N)=0
+$$
+
+Il beneficio marginale di ulteriori risorse rimane positivo, ma tende a zero.
+
+### 4.3 Seconda derivata e concavità
+
+Derivando ancora:
+
+$$
+S''(N)=-\frac{2s(1-s)}{(sN+1-s)^3}
+$$
+
+Per $0<s<1$:
+
+$$
+S''(N)<0
+$$
+
+La curva è concava: ogni risorsa aggiuntiva contribuisce meno della precedente.
+
+```mermaid
+flowchart TD
+    A["Più risorse"] --> B["Speedup ancora crescente"]
+    B --> C["Guadagno marginale più piccolo"]
+    C --> D["Rendimenti decrescenti"]
+```
+
+### 4.4 Guadagno discreto
+
+Per una decisione reale, il guadagno di un nodo aggiuntivo è:
+
+$$
+\Delta S(N)=S(N+1)-S(N)
+$$
+
+Le derivate descrivono la struttura della curva; la differenza finita risponde direttamente alla domanda “quanto guadagno aggiungendo un nodo?”.
+
+### 4.5 Esempio con $s=0.05$
+
+| $N$ | $S(N)$ | Efficienza $S(N)/N$ | $\Delta S(N)$ |
+|---:|---:|---:|---:|
+| $4$ | $3.48$ | $0.87$ | $0.63$ |
+| $16$ | $9.14$ | $0.57$ | $0.31$ |
+| $64$ | $15.42$ | $0.24$ | $0.06$ |
+
+Il sistema continua a migliorare, ma il valore economico di “un nodo in più” crolla molto prima di raggiungere il limite teorico.
+
+## 5. Quanto costa avvicinarsi al limite di Amdahl?
+
+Il limite massimo è:
+
+$$
+S_{\max}=\frac{1}{s}
+$$
+
+Supponiamo di volere almeno una frazione $\rho$ del limite:
+
+$$
+S(N)\geq\rho S_{\max}
+$$
+
+Sostituendo le formule:
+
+$$
+\frac{N}{sN+1-s}\geq\frac{\rho}{s}
+$$
+
+Poiché i denominatori sono positivi per $0<s<1$ e $N>0$:
+
+$$
+sN\geq\rho(sN+1-s)
+$$
+
+$$
+sN(1-\rho)\geq\rho(1-s)
+$$
+
+e quindi:
+
+$$
+N\geq\frac{\rho(1-s)}{s(1-\rho)}
+$$
+
+Con $s=0.05$, si ha $S_{\max}=20$:
+
+| Frazione $\rho$ | Speedup desiderato | $N$ continuo minimo |
+|---:|---:|---:|
+| $0.80$ | $16$ | $76$ |
+| $0.90$ | $18$ | $171$ |
+| $0.95$ | $19$ | $361$ |
+
+Gli ultimi punti percentuali sono molto costosi. Per il deployment si arrotonda verso l'alto a un numero intero ammissibile.
+
+## 6. Limite diagnostico di Amdahl
+
+Poiché $S'(N)>0$, Amdahl può descrivere una curva che cresce sempre più lentamente e si appiattisce verso un asintoto. Non può però descrivere una capacità che, superato un picco, **diminuisce**.
+
+```mermaid
+flowchart LR
+    A["Parte seriale"] --> B["Rendimenti decrescenti"]
+    B --> C["Appiattimento asintotico"]
+    C --> D["Nessun calo previsto"]
+```
+
+Se le prestazioni peggiorano aggiungendo risorse, è necessario introdurre un altro meccanismo nel modello.
+
+## 7. Capacità condivisa fissa
+
+Consideriamo ora worker scalabili seguiti da un servizio di stato con capacità fissa.
+
+Sia $x$ la capacità di un singolo worker. La capacità totale del tier dei worker è:
+
+$$
+X_{\text{workers}}(N)=Nx
+$$
+
+Sia $C$ la capacità massima della risorsa condivisa. Poiché ogni richiesta deve attraversare entrambi gli stadi:
+
+$$
+X(N)=\min\{Nx,C\}
+$$
+
+Il limite end-to-end è la capacità più piccola.
+
+### 7.1 Due regimi
+
+$$
+Nx<C\quad\Longrightarrow\quad X(N)=Nx
+$$
+
+$$
+Nx\geq C\quad\Longrightarrow\quad X(N)=C
+$$
+
+Il punto di attraversamento continuo è:
+
+$$
+N^{*}=\frac{C}{x}
+$$
+
+Il primo numero intero di worker capace di saturare la risorsa condivisa è:
+
+$$
+N_{\text{sat}}=\left\lceil\frac{C}{x}\right\rceil
+$$
+
+```mermaid
+flowchart LR
+    W["Capacità dei worker"] --> M{"Capacità minima"}
+    S["Capacità dello stato condiviso"] --> M
+    M --> X["Throughput end-to-end"]
+```
+
+### 7.2 Esempio
+
+Supponiamo:
+
+$$
+x=700\ \text{richieste/s per worker}
+$$
+
+e:
+
+$$
+C_{\text{state}}=10\,000\ \text{richieste/s}
+$$
+
+Allora:
+
+$$
+\frac{C_{\text{state}}}{x}=\frac{10\,000}{700}\approx14.29
+$$
+
+e quindi:
+
+$$
+N_{\text{sat}}=15
+$$
+
+Oltre circa $15$ worker, aggiungere capacità al solo tier dei worker non sposta il plateau.
+
+Con $20$ worker:
+
+$$
+20\cdot700=14\,000\ \text{richieste/s}
+$$
+
+ma il throughput end-to-end resta vicino a $10\,000$ richieste al secondo. Portando invece lo stato condiviso a $20\,000$ richieste al secondo, il tier dei worker torna a essere il limite attivo, vicino a $14\,000$ richieste al secondo.
+
+## 8. Migrazione del collo di bottiglia
+
+Rimuovere un collo di bottiglia non rende illimitato il sistema: può soltanto esporre il limite successivo.
+
+Se:
+
+$$
+C_{\text{state}}=10\,000,\qquad C_{\text{down}}=14\,000
+$$
+
+allora inizialmente:
+
+$$
+X(N)=\min\{700N,10\,000,14\,000\}
+$$
+
+Dopo aver portato lo stato a $20\,000$ richieste al secondo:
+
+$$
+X(N)=\min\{700N,20\,000,14\,000\}
+$$
+
+Il plateau dello stato scompare, ma compare quello del servizio downstream.
+
+```mermaid
+flowchart LR
+    B1["Bottleneck sullo stato"] --> I["Intervento sullo stato"]
+    I --> B2["Bottleneck downstream"]
+    B2 --> N["Nuova diagnosi"]
+```
+
+Un modello di capacità è utile perché permette di confrontare gli interventi **prima** del deployment.
+
+### 8.1 Predizioni verificabili
+
+Se la capacità condivisa fissa è la spiegazione corretta, aumentando $N$ oltre $N_{\text{sat}}$ dovremmo osservare:
+
+- throughput vicino a $C$;
+- risorsa condivisa prossima alla saturazione;
+- worker aggiuntivi sempre meno utilizzati;
+- spostamento del plateau quando aumenta $C$.
+
+Un modello utile non si limita ad adattarsi alla curva: suggerisce che cosa misurare dopo.
+
+## 9. Contesa e attesa
+
+Il bottleneck indica **dove** la capacità smette di crescere. La contesa descrive invece che cosa fanno i partecipanti in eccesso: attendono, si bloccano, ritentano oppure competono per punti di serializzazione interni.
+
+```mermaid
+flowchart LR
+    W1["Worker"] --> Q["Coda o attesa"]
+    W2["Worker"] --> Q
+    W3["Worker"] --> Q
+    W4["Worker"] --> Q
+    Q --> S["Stato condiviso"]
+```
+
+Supponiamo che il servizio di stato ammetta al massimo $8$ operazioni concorrenti e sia già sempre occupato:
+
+| Worker | Operazioni attive | Potenzialmente in attesa | Throughput utile |
+|---:|---:|---:|---:|
+| $8$ | $8$ | $0$ | $\approx C$ |
+| $16$ | $8$ | $8$ | $\approx C$ |
+| $32$ | $8$ | $24$ | $\approx C$ |
+
+Il throughput resta piatto, ma cresce la quantità di lavoro bloccato. Una curva piatta può quindi nascondere una contesa in rapido aumento.
+
+### 9.1 Modello minimo
+
+Un modello intenzionalmente semplice è:
+
+$$
+T(N)=T_{\text{useful}}(N)+T_{\text{wait}}(N)
+$$
+
+In un regime nel quale la contesa aumenta con il numero di worker:
+
+$$
+T'_{\text{wait}}(N)>0
+$$
+
+Predizione: se la contesa domina, aumentando $N$ devono crescere lunghezza delle code, tempo bloccato, lock-wait o retry, anche quando il throughput utile non cresce più.
+
+## 10. Contesa e overhead non sono la stessa cosa
+
+| Contesa | Overhead creato dalla scala |
+|---|---|
+| Gli attori non possono progredire perché una risorsa è occupata | Il sistema più grande esegue effettivamente più lavoro |
+| Crescono tempo in coda, blocchi e stalli | Crescono messaggi, byte, metadata, retry o sincronizzazioni |
+| Si misura il tempo di attesa | Si misura il volume totale di lavoro aggiuntivo |
+
+Le due cause possono coesistere e produrre curve simili, ma richiedono osservabili diversi per essere distinte.
+
+## 11. Osservabilità e diagnosi
+
+Per verificare i modelli servono metriche, ma anche l'osservabilità ha un costo: raccolta, trasferimento e analisi dei dati generano traffico e overhead. Occorre quindi raccogliere misure capaci di discriminare tra ipotesi senza perturbare eccessivamente il sistema.
+
+Esempio pratico discusso a lezione: se il database è il collo di bottiglia, non è detto che vada sostituito. Un indice o un miglioramento locale può rimuovere quel limite e far migrare il bottleneck altrove.
+
+## 12. Formulario essenziale
+
+| Concetto | Formula |
+|---|---|
+| Tempo ideale | $T_{\text{ideal}}(N)=W/N$ |
+| Gap di scalabilità | $G(N)=T_{\text{real}}(N)-T_{\text{ideal}}(N)$ |
+| Amdahl | $S(N)=\dfrac{N}{sN+1-s}$ |
+| Guadagno marginale continuo | $S'(N)=\dfrac{1-s}{(sN+1-s)^2}$ |
+| Curvatura | $S''(N)=-\dfrac{2s(1-s)}{(sN+1-s)^3}$ |
+| Guadagno discreto | $\Delta S(N)=S(N+1)-S(N)$ |
+| Risorse per una frazione del limite | $N\geq\dfrac{\rho(1-s)}{s(1-\rho)}$ |
+| Capacità end-to-end | $X(N)=\min\{Nx,C\}$ |
+| Primo punto di saturazione | $N_{\text{sat}}=\left\lceil C/x\right\rceil$ |
+| Tempo con contesa | $T(N)=T_{\text{useful}}(N)+T_{\text{wait}}(N)$ |
+
+## 13. Possibili domande d'esame
+
+### Perché una scarsa scalabilità non è già una diagnosi?
+
+Perché rendimenti decrescenti, plateau e declino possono derivare da parti seriali, capacità fisse, contesa o overhead. Bisogna formulare un meccanismo, derivarne una predizione e misurare osservabili capaci di distinguerlo dalle alternative.
+
+### Che cosa aggiungono le derivate alla legge di Amdahl?
+
+La prima derivata quantifica il rendimento marginale delle risorse; la seconda mostra che il rendimento è decrescente. L'asintoto indica il limite, mentre le derivate descrivono come ci si avvicina a esso.
+
+### Perché Amdahl non descrive il retrograde scaling?
+
+Per $0<s<1$, $S'(N)>0$ per ogni $N>0$. Lo speedup cresce sempre, anche se sempre più lentamente; non può diminuire senza introdurre un costo aggiuntivo dipendente dalla scala.
+
+### Come si determina il plateau causato da una capacità condivisa?
+
+Si modella il throughput come $X(N)=\min\{Nx,C\}$. Il primo numero di worker capace di saturare la risorsa è $N_{\text{sat}}=\lceil C/x\rceil$.
+
+### Qual è la differenza tra bottleneck e contesa?
+
+Il bottleneck determina la capacità massima attiva; la contesa determina quanto lavoro resta in attesa o compete quando troppi partecipanti raggiungono quella risorsa.
+
+## 14. Sintesi finale
+
+- Una curva anomala deve essere spiegata attraverso meccanismi verificabili.
+- Amdahl descrive rendimenti decrescenti e appiattimento, ma non un declino.
+- Avvicinarsi agli ultimi punti percentuali del limite può richiedere moltissime risorse.
+- Una capacità condivisa fissa produce un plateau modellabile mediante un minimo tra capacità.
+- Rimuovendo un bottleneck, il vincolo può migrare lungo il percorso end-to-end.
+- Throughput piatto e attesa crescente possono coesistere.
+- Contesa e overhead creato dalla scala sono fenomeni distinti e richiedono misure differenti.
+
+## Riferimenti principali
+
+- G. M. Amdahl, *Validity of the Single Processor Approach to Achieving Large Scale Computing Capabilities*, 1967.
+- N. J. Gunther, *A General Theory of Computational Scalability Based on Rational Functions*, 2008.
+- B. Schwartz, *Forecasting MySQL Scalability with the Universal Scalability Law*, 2011.
+- A. B. Bondi, *Characteristics of Scalability and Their Impact on Performance*, 2000.
+
 # 25/9
+
+---
+title: "Lezione 4 - Sorgenti e limiti della scalabilità II"
+course: "Scalable Distributed Computing"
+academic_year: "2026/2027"
+tags:
+  - distributed-systems
+  - scalability
+  - overhead
+  - stragglers
+  - universal-scalability-law
+---
+## Obiettivo della lezione
+
+La lezione completa l'analisi dei principali meccanismi che piegano una curva di scalabilità:
+
+- lavoro aggiuntivo creato dalla scala;
+- picco e successivo declino delle prestazioni;
+- straggler, code di latenza e sincronizzazione;
+- sbilanciamento del lavoro o delle velocità;
+- sintesi descrittiva mediante Universal Scalability Law.
+
+```mermaid
+flowchart TD
+    A["Aumento delle risorse"] --> O["Overhead dipendente dalla scala"]
+    A --> F["Maggiore fan-out"]
+    A --> C["Più coordinamento"]
+    O --> R["Picco e declino"]
+    F --> T["Dominio delle code di latenza"]
+    C --> R
+```
+
+## 1. La scala può creare nuovo lavoro
+
+Consideriamo un intervallo di osservazione fisso. Se ogni worker genera mediamente $h$ operazioni di controllo, il volume delle operazioni di controllo è:
+
+$$
+M_{\text{control}}(N)=hN
+$$
+
+Aggiungere worker non redistribuisce soltanto il lavoro utile: può creare heartbeat, rinnovi di lease, registrazioni di routing, bookkeeping dello scheduler, aggiornamenti di metadata e traffico di monitoraggio.
+
+La relazione precedente descrive il **volume di lavoro**, non ancora il tempo trascorso. Per modellare il tempo occorre un'ipotesi aggiuntiva. Nel regime operativo considerato, supponiamo che la penalità temporale sia approssimativamente lineare:
+
+$$
+H(N)=cN
+$$
+
+$c$ riassume il modo in cui il lavoro aggiuntivo si traduce in tempo.
+
+> [!warning]
+> Da $M_{\text{control}}(N)=hN$ non segue automaticamente $H(N)=cN$. La seconda formula è un'ulteriore ipotesi di modellazione.
+
+## 2. Modello con overhead lineare
+
+Per un lavoro utile fisso $W$:
+
+$$
+T(N)=\frac{W}{N}+H(N)=\frac{W}{N}+cN
+$$
+
+Il primo termine diminuisce aumentando le risorse; il secondo cresce.
+
+```mermaid
+flowchart LR
+    U["Riduzione del tempo utile"] --> B["Punto di bilanciamento"]
+    O["Crescita dell'overhead"] --> B
+    B --> M["Tempo totale minimo"]
+```
+
+Per valori piccoli di $N$ domina la riduzione del lavoro utile. Per valori grandi domina il costo creato dalla scala. Tra i due regimi esiste un minimo.
+
+## 3. Derivazione del numero ottimale di risorse
+
+### 3.1 Prima derivata
+
+$$
+T'(N)=-\frac{W}{N^2}+c
+$$
+
+Nel rilassamento continuo, un punto stazionario $N^{*}$ soddisfa:
+
+$$
+T'(N^{*})=0
+$$
+
+quindi:
+
+$$
+-\frac{W}{(N^{*})^2}+c=0
+$$
+
+$$
+\frac{W}{(N^{*})^2}=c
+$$
+
+e infine:
+
+$$
+N^{*}=\sqrt{\frac{W}{c}}
+$$
+
+In questo punto il beneficio marginale della divisione ulteriore del lavoro uguaglia il costo marginale introdotto dalla scala.
+
+### 3.2 Verifica del minimo
+
+La seconda derivata è:
+
+$$
+T''(N)=\frac{2W}{N^3}
+$$
+
+Per $W>0$ e $N>0$:
+
+$$
+T''(N)>0
+$$
+
+La funzione è strettamente convessa e $N^{*}$ è un minimo.
+
+### 3.3 Interpretazione dei due regimi
+
+Per $N<N^{*}$:
+
+$$
+T'(N)<0
+$$
+
+e aggiungere risorse riduce il tempo.
+
+Per $N>N^{*}$:
+
+$$
+T'(N)>0
+$$
+
+e l'overhead domina: aggiungere risorse rende il sistema più lento.
+
+Questa è una spiegazione quantitativa del **retrograde scaling**.
+
+## 4. Esempio numerico
+
+Siano:
+
+$$
+W=3600\ \text{node-seconds},\qquad c=1\ \text{s/node}
+$$
+
+Il modello prevede:
+
+$$
+N^{*}=\sqrt{\frac{3600}{1}}=60
+$$
+
+Con $N=30$:
+
+$$
+T(30)=\frac{3600}{30}+30=120+30=150\ \text{s}
+$$
+
+Con $N=60$:
+
+$$
+T(60)=\frac{3600}{60}+60=60+60=120\ \text{s}
+$$
+
+Con $N=120$:
+
+$$
+T(120)=\frac{3600}{120}+120=30+120=150\ \text{s}
+$$
+
+| $N$ | Termine utile | Overhead | Tempo totale |
+|---:|---:|---:|---:|
+| $30$ | $120$ s | $30$ s | $150$ s |
+| $60$ | $60$ s | $60$ s | $120$ s |
+| $120$ | $30$ s | $120$ s | $150$ s |
+
+Raddoppiare le risorse oltre l'ottimo peggiora le prestazioni.
+
+L'uguaglianza dei due contributi in $N^{*}$ è una conseguenza specifica della forma $W/N+cN$. Il criterio generale rimane:
+
+$$
+T'(N^{*})=0
+$$
+
+### 4.1 Deployment intero
+
+Poiché il numero di risorse è intero e $T(N)$ è convessa, si confrontano i due interi adiacenti al minimo continuo:
+
+$$
+N_{\mathbb{N}}^{*}
+=
+\operatorname*{arg\,min}_{n\in\{\lfloor N^{*}\rfloor,\lceil N^{*}\rceil\}}T(n)
+$$
+
+$N^{*}$ non è una dimensione universale del cluster: vale solo sotto le ipotesi del modello e cambia se cambia la forma dell'overhead.
+
+## 5. Workload scalato
+
+Supponiamo ora che il lavoro utile cresca linearmente con le risorse:
+
+$$
+W(N)=wN
+$$
+
+Con parallelismo ideale:
+
+$$
+T_{\text{useful}}(N)=\frac{W(N)}{N}=w
+$$
+
+Includendo il costo dipendente dalla scala:
+
+$$
+T(N)=w+H(N)
+$$
+
+e quindi:
+
+$$
+T'(N)=H'(N)
+$$
+
+Il termine di lavoro utile non cresce più con $N$; il comportamento dipende interamente dall'overhead:
+
+$$
+H'(N)\approx0\quad\Longrightarrow\quad T(N)\approx\text{costante}
+$$
+
+$$
+H'(N)>0\quad\Longrightarrow\quad T(N)\ \text{cresce con la scala}
+$$
+
+Anche quando il lavoro per risorsa resta costante, l'efficienza complessiva può peggiorare se l'overhead cresce con il numero di partecipanti.
+
+## 6. Strutture di coordinamento
+
+In un'architettura master-worker, il numero di relazioni worker-controller cresce come:
+
+$$
+O(N)
+$$
+
+Se ogni coppia di partecipanti può interagire, il numero di coppie non ordinate è:
+
+$$
+\frac{N(N-1)}{2}
+$$
+
+mentre il numero di relazioni ordinate è:
+
+$$
+N(N-1)
+$$
+
+| $N$ | Relazioni worker-controller | Coppie non ordinate |
+|---:|---:|---:|
+| $10$ | $10$ | $45$ |
+| $100$ | $100$ | $4950$ |
+
+Questa non è l'affermazione che ogni sistema esegua un all-to-all. È un motivo strutturale che mostra come alcune opportunità di coordinamento possano crescere molto più rapidamente della capacità utile.
+
+## 7. Code di latenza e completamento sincronizzato
+
+Consideriamo ora un job distribuito con barriera. La fase può terminare soltanto quando tutti i worker hanno completato.
+
+```mermaid
+flowchart TD
+    M["Master"] --> W1["Worker 1"]
+    M --> W2["Worker 2"]
+    M --> W3["Worker lento"]
+    W1 --> B["Completamento della fase"]
+    W2 --> B
+    W3 --> B
+```
+
+Il tempo medio dei worker non è il modello di completamento corretto:
+
+$$
+T_{\text{phase}}=\max_i T_i
+$$
+
+Con un costo di sincronizzazione:
+
+$$
+T_{\text{phase}}=\max_i T_i+T_{\text{sync}}
+$$
+
+La dipendenza strutturale impone il massimo: non è una scelta fatta solo per comodità matematica.
+
+### 7.1 Media sana, fase lenta
+
+Supponiamo che, su $100$ worker:
+
+- $99$ terminino in $10$ secondi;
+- $1$ termini in $40$ secondi.
+
+La media è:
+
+$$
+\frac{99\cdot10+40}{100}=10.3\ \text{s}
+$$
+
+ma la fase termina in:
+
+$$
+40\ \text{s}
+$$
+
+La media descrive il worker tipico; la barriera attende il massimo.
+
+## 8. Fan-out e latenza end-to-end
+
+Una richiesta può essere suddivisa in più rami paralleli, tutti necessari per il join finale.
+
+```mermaid
+flowchart LR
+    R["Richiesta"] --> A["Ramo A"]
+    R --> B["Ramo B"]
+    R --> C["Ramo lento"]
+    A --> J["Join"]
+    B --> J
+    C --> J
+```
+
+Se tutti i rami sono necessari:
+
+$$
+T_{\text{request}}=\max_i T_i
+$$
+
+Aumentando il fan-out aumenta la probabilità che almeno un ramo cada nella coda della distribuzione delle latenze. Una coda rara a livello del singolo servizio può quindi diventare frequente a livello end-to-end.
+
+## 9. Straggler in MapReduce
+
+Nel benchmark di sort del MapReduce originale, disabilitando i backup task si osservò una lunga coda finale:
+
+| Osservazione | Valore riportato |
+|---|---:|
+| Istante in cui mancavano solo $5$ reduce task | $960$ s |
+| Tempo aggiuntivo per gli ultimi straggler | circa $300$ s |
+| Tempo totale senza backup task | $1283$ s |
+| Aumento del tempo totale | $44\%$ |
+
+Pochi task lenti possono dominare il tempo di un job altrimenti massicciamente parallelo.
+
+## 10. Origine dello straggler
+
+Per il worker $i$, siano:
+
+- $W_i$ il lavoro assegnato;
+- $r_i$ la velocità di elaborazione.
+
+Il suo tempo è:
+
+$$
+T_i=\frac{W_i}{r_i}
+$$
+
+Se la fase attende tutti:
+
+$$
+T_{\text{completion}}=\max_i\frac{W_i}{r_i}
+$$
+
+Uno straggler può quindi derivare da due cause strutturalmente diverse:
+
+| Sbilanciamento del lavoro | Eterogeneità delle velocità |
+|---|---|
+| $W_i$ insolitamente grande | $r_i$ insolitamente piccolo |
+| Un worker riceve più lavoro | Un worker esegue più lentamente |
+| Problema di partizionamento o skew | Problema di hardware, runtime, rete o contesa |
+
+## 11. Esempi di sbilanciamento
+
+Con quattro worker identici di velocità $r$:
+
+$$
+[10,10,10,10]\quad\Longrightarrow\quad T_A=\frac{10}{r}
+$$
+
+$$
+[5,5,5,25]\quad\Longrightarrow\quad T_B=\frac{25}{r}
+$$
+
+Il lavoro totale è sempre $40$, ma la seconda fase dura $2.5$ volte la prima.
+
+Con $100$ unità su $10$ worker:
+
+- distribuzione bilanciata: ogni worker riceve $10$;
+- distribuzione skewed: nove worker ricevono $6$ e uno riceve $46$.
+
+Entrambe hanno:
+
+$$
+\sum_i W_i=100
+$$
+
+ma nel secondo caso il massimo è $46$ invece di $10$, quindi la fase sincronizzata può durare circa $4.6$ volte di più.
+
+## 12. Efficienza del bilanciamento
+
+Con worker aventi la stessa velocità $r$, confrontiamo tempo ideale e reale:
+
+$$
+E_{\text{balance}}=\frac{T_{\text{ideal}}}{T_{\text{completion}}}
+$$
+
+Sostituendo:
+
+$$
+E_{\text{balance}}=
+\frac{\operatorname{avg}(W_i)/r}{\max_i(W_i)/r}
+$$
+
+La velocità comune si semplifica:
+
+$$
+E_{\text{balance}}
+=
+\frac{\operatorname{avg}(W_i)}{\max_i(W_i)}
+\leq 1
+$$
+
+Per $[5,5,5,25]$:
+
+$$
+\operatorname{avg}(W_i)=10,\qquad\max_i(W_i)=25
+$$
+
+quindi:
+
+$$
+E_{\text{balance}}=\frac{10}{25}=0.4
+$$
+
+Rimane soltanto il $40\%$ dell'efficienza ideale di bilanciamento, anche se lavoro totale, hardware e numero di worker sono invariati.
+
+## 13. Sintesi dei meccanismi
+
+| Forma della curva o del tempo | Meccanismo principale |
+|---|---|
+| Appiattimento graduale | Lavoro non scalabile |
+| Plateau netto | Capacità condivisa fissa |
+| Picco e declino | Contesa oppure overhead creato dalla scala |
+| Completamento dominato dalla coda | Massimo, straggler o sbilanciamento |
+
+Il modello del massimo per job sincronizzati non deve essere sostituito da un modello di capacità media: descrivono oggetti differenti.
+
+## 14. Universal Scalability Law
+
+La **Universal Scalability Law** offre una famiglia descrittiva compatta a due parametri:
+
+$$
+C(N)=\frac{N}{1+\sigma(N-1)+\kappa N(N-1)}
+$$
+
+dove:
+
+- $\sigma$ rappresenta una penalità con crescita lineare, collegata alla componente seriale o alla contesa coerente con la forma di Amdahl;
+- $\kappa$ rappresenta una penalità dipendente dalla scala con crescita quadratica, associabile fenomenologicamente a coordinamento o interazioni tra partecipanti.
+
+> [!important]
+> In questa lezione la USL non viene derivata causalmente dai meccanismi del sistema di riferimento. $\sigma$ e $\kappa$ vanno trattati come coefficienti fenomenologici stimati dai dati, a meno che un modello specifico giustifichi un'interpretazione causale.
+
+### 14.1 Collegamento con Amdahl
+
+La forma classica è:
+
+$$
+S_A(N)=\frac{1}{\sigma+\frac{1-\sigma}{N}}
+$$
+
+Moltiplicando numeratore e denominatore per $N$:
+
+$$
+C_A(N)=\frac{N}{1+\sigma(N-1)}
+$$
+
+La derivata è:
+
+$$
+C_A'(N)=\frac{1-\sigma}{[1+\sigma(N-1)]^2}
+$$
+
+Per $0\leq\sigma<1$:
+
+$$
+C_A'(N)>0
+$$
+
+e, per $\sigma>0$:
+
+$$
+\lim_{N\to\infty}C_A(N)=\frac{1}{\sigma}
+$$
+
+La forma di Amdahl può piegarsi e saturare, ma non può produrre retrograde scaling.
+
+### 14.2 Ruolo del termine quadratico
+
+La USL aggiunge:
+
+$$
+\kappa N(N-1)
+$$
+
+Il numero di opportunità di interazione può crescere quadraticamente, mentre la capacità utile ideale cresce linearmente. Anche un costo molto piccolo per interazione può quindi diventare dominante.
+
+| $N$ | Relazioni ordinate $N(N-1)$ |
+|---:|---:|
+| $8$ | $56$ |
+| $32$ | $992$ |
+| $64$ | $4032$ |
+
+### 14.3 Casi notevoli
+
+- Se $\sigma=0$ e $\kappa=0$, allora $C(N)=N$: scalabilità lineare ideale.
+- Se $\kappa=0$ e $\sigma>0$, si ottiene la forma di Amdahl: crescita con saturazione asintotica.
+- Se $\kappa>0$, il termine quadratico può produrre un massimo seguito da declino.
+
+```mermaid
+flowchart TD
+    U["Modello USL"] --> I["Crescita lineare ideale"]
+    U --> A["Appiattimento tipo Amdahl"]
+    U --> P["Picco e declino"]
+    A --> S["Termine lineare"]
+    P --> K["Termine quadratico"]
+```
+
+La parola “Universal” non significa che la formula possa essere applicata senza validazione a qualunque sistema. È un modello compatto da adattare ai dati e interpretare con cautela.
+
+## 15. Formulario essenziale
+
+| Concetto | Formula |
+|---|---|
+| Volume di controllo | $M_{\text{control}}(N)=hN$ |
+| Tempo con overhead lineare | $T(N)=W/N+cN$ |
+| Derivata | $T'(N)=-W/N^2+c$ |
+| Ottimo continuo | $N^{*}=\sqrt{W/c}$ |
+| Convessità | $T''(N)=2W/N^3>0$ |
+| Workload scalato | $W(N)=wN$ |
+| Tempo con workload scalato | $T(N)=w+H(N)$ |
+| Fase sincronizzata | $T_{\text{phase}}=\max_i T_i+T_{\text{sync}}$ |
+| Tempo di un worker | $T_i=W_i/r_i$ |
+| Completamento | $T_{\text{completion}}=\max_i(W_i/r_i)$ |
+| Efficienza di bilanciamento | $E_{\text{balance}}=\operatorname{avg}(W_i)/\max_i(W_i)$ |
+| USL | $C(N)=\dfrac{N}{1+\sigma(N-1)+\kappa N(N-1)}$ |
+
+## 16. Possibili domande d'esame
+
+### Come può l'aumento delle risorse creare lavoro?
+
+Ogni nuovo partecipante può produrre heartbeat, lease, registrazioni, metadata, sincronizzazioni e traffico di monitoraggio. Il volume di queste operazioni dipende dalla scala e non esisterebbe nella stessa quantità in un sistema più piccolo.
+
+### Come si deriva $N^{*}$ nel modello $T(N)=W/N+cN$?
+
+Si pone a zero la derivata $T'(N)=-W/N^2+c$. Ne segue $W/(N^{*})^2=c$ e quindi $N^{*}=\sqrt{W/c}$. La seconda derivata positiva dimostra che è un minimo.
+
+### Perché la media non descrive una fase con barriera?
+
+La fase termina soltanto quando arriva l'ultimo partecipante. Il tempo è quindi determinato da $\max_i T_i$, non dalla media. Pochi straggler possono dominare il completamento.
+
+### Da quali cause può derivare uno straggler?
+
+Da un lavoro assegnato $W_i$ molto grande oppure da una velocità $r_i$ molto bassa. I due casi richiedono diagnosi e rimedi diversi.
+
+### Che cosa rappresentano $\sigma$ e $\kappa$ nella USL?
+
+$\sigma$ descrive una penalità lineare coerente con serializzazione o contesa; $\kappa$ descrive una penalità che cresce quadraticamente con la scala. Sono coefficienti descrittivi finché non viene giustificata una lettura causale.
+
+### Perché il termine quadratico può causare retrograde scaling?
+
+La capacità utile ideale cresce come $N$, mentre la penalità può crescere come $N(N-1)$. Per $N$ sufficientemente grande, la penalità domina il numeratore lineare e la capacità normalizzata diminuisce.
+
+## 17. Sintesi finale
+
+- La scala può generare lavoro aggiuntivo oltre a redistribuire quello utile.
+- Nel modello $W/N+cN$ esiste un numero ottimale di risorse; oltre quel punto il sistema rallenta.
+- Con workload scalato, il comportamento è determinato dalla crescita dell'overhead.
+- Nei job sincronizzati conta il partecipante più lento, non il partecipante medio.
+- Fan-out, skew ed eterogeneità amplificano le code di latenza.
+- La USL ricompone in una formula descrittiva crescita ideale, appiattimento e declino.
+- L'adattamento di una curva non sostituisce una diagnosi causale e deve essere validato con misure appropriate.
+
+## Riferimenti principali
+
+- G. M. Amdahl, *Validity of the Single Processor Approach to Achieving Large Scale Computing Capabilities*, 1967.
+- J. Dean e S. Ghemawat, *MapReduce: Simplified Data Processing on Large Clusters*, 2004.
+- N. J. Gunther, *A General Theory of Computational Scalability Based on Rational Functions*, 2008.
+- B. Schwartz, *Forecasting MySQL Scalability with the Universal Scalability Law*, 2011.
+- A. B. Bondi, *Characteristics of Scalability and Their Impact on Performance*, 2000.

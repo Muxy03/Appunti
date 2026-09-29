@@ -1519,3 +1519,285 @@ flowchart LR
 ![[Pasted image 20260922104650.png]]
 
 
+
+# 24/9
+
+## 1. Perché introdurre le reti di Petri
+
+I diagrammi di processo descrivono attività e percorsi possibili, ma per rispondere a domande come «qual è lo stato corrente del caso?» serve una semantica precisa dello stato e dei cambiamenti di stato. Le **reti di Petri** offrono una rappresentazione grafica semplice e una semantica formale per l'esecuzione dei processi. Qui sono impiegate come specifica **formale** (il comportamento delle istanze è definito senza ambiguità) e **astratta** (si prescinde dall'ambiente concreto di esecuzione). Le *workflow net* aggiungono vincoli strutturali adatti ai processi aziendali. (pp. 3–11, 40–46)
+
+La notazione grafica va letta assieme alle regole sui token: due disegni simili possono ammettere esecuzioni diverse. Nei grafici Mermaid seguenti, i **cerchi** rappresentano *place*, i **rettangoli** rappresentano *transition* e `●` segnala un token iniziale. Mermaid è usato come schema didattico: la semantica è quella definita dalle formule, non dal motore di disegno.
+
+## 2. Elementi di una rete
+
+| Elemento | Simbolo usuale | Interpretazione possibile |
+|---|---|---|
+| **Place** (*posto*) | Cerchio | Stato, condizione, buffer, deposito di risorse |
+| **Transition** (*transizione*) | Rettangolo | Attività, operazione, decisione, trasformazione |
+| **Token** (*marca*) | Punto dentro un posto | Caso, documento, messaggio, risorsa o semplice attivazione |
+| **Arc** (*arco*) | Freccia | Dipendenza tra un posto e una transizione |
+
+Un arco ammesso va da **posto a transizione** oppure da **transizione a posto**. Nella rete trattata dalle slide non ci sono archi diretti posto–posto o transizione–transizione. Un arco $p\to t$ indica che $t$ consuma un token da $p$ quando scatta; un arco $t\to p$ indica che $t$ produce un token in $p$. (pp. 12–15)
+
+```mermaid
+flowchart LR
+    p1(("p₁ ●")) --> t1["t₁"]
+    t1 --> p2(("p₂"))
+```
+
+**Attenzione:** il token non è un arco né un'attività. È contenuto in un posto e rappresenta l'informazione o la risorsa necessaria per abilitare una transizione.
+
+### Definizione formale
+
+Una rete di Petri marcata è una tupla
+
+$$
+N=(P,T,F,M_0),
+$$
+
+dove:
+
+- $P$ è un insieme finito di posti;
+- $T$ è un insieme finito di transizioni, con $P\cap T=\varnothing$;
+- $F\subseteq(P\times T)\cup(T\times P)$ è la relazione di flusso, cioè l'insieme degli archi;
+- $M_0:P\to\mathbb{N}$ è la **marcatura iniziale**: $M_0(p)$ è il numero di token inizialmente presenti in $p$.
+
+Una marcatura generica $M:P\to\mathbb{N}$ descrive invece lo **stato corrente** della rete. La struttura $P,T,F$ resta fissa durante l'esecuzione, mentre la marcatura cambia. (pp. 23, 29–30)
+
+### Pre-set e post-set
+
+Per qualsiasi nodo $x\in P\cup T$:
+
+$$
+{}^{\bullet}x=\{y\mid(y,x)\in F\},
+\qquad
+x^{\bullet}=\{y\mid(x,y)\in F\}.
+$$
+
+In particolare, ${}^{\bullet}t$ sono i posti **di ingresso** di $t$ (da cui consuma token), mentre $t^{\bullet}$ sono i posti **di uscita** (in cui produce token). Per un posto $p$, ${}^{\bullet}p$ sono le transizioni che producono token in $p$ e $p^{\bullet}$ quelle che li consumano. (pp. 24–27)
+
+## 3. Il token game: abilitazione e scatto
+
+Una transizione $t$ è **abilitata** nella marcatura $M$ quando ciascun posto di ingresso contiene almeno un token:
+
+$$
+M\vdash t\ \text{abilitata}
+\quad\Longleftrightarrow\quad
+\forall p\in{}^{\bullet}t,\;M(p)\geq 1.
+$$
+
+Quando $t$ **scatta** (*fires*), consuma un token da ciascun posto di ingresso e produce un token in ciascun posto di uscita. Indicando con $M\xrightarrow{t}M'$ lo scatto:
+
+$$
+M'(p)=M(p)-\mathbf{1}_{p\in{}^{\bullet}t}
+                 +\mathbf{1}_{p\in t^{\bullet}}.
+$$
+
+Qui $\mathbf{1}_{C}$ vale $1$ se la condizione $C$ è vera e $0$ altrimenti. Se un posto è sia ingresso sia uscita della stessa transizione, il consumo e la produzione si compensano. La formula riguarda le reti ordinarie delle slide, con archi non pesati. (pp. 28–30)
+
+Lo scatto è **atomico**. La semantica adottata nelle slide è **interleaving**: possono essere abilitate più transizioni nello stesso momento, ma si considera uno scatto per volta. Questo non esclude che la rete rappresenti attività indipendenti; semplicemente, le loro possibili esecuzioni sono descritte tramite diversi ordini di scatto. Il numero complessivo di token può aumentare o diminuire. (p. 30)
+
+### Esempio: due input, un output
+
+```mermaid
+flowchart LR
+    milk(("milk: 2 ●")) --> make["make cappuccino"]
+    coffee(("coffee: 3 ●")) --> make
+    make --> cup(("cappuccino: 1 ●"))
+```
+
+Con la marcatura mostrata nelle slide, $M(\text{milk})=2$, $M(\text{coffee})=3$ e $M(\text{cappuccino})=1$. Uno scatto di `make cappuccino` porta a $(1,2,2)$: consuma **un** token da ciascun input e aggiunge **un** token all'output. Dopo un secondo scatto la marcatura diventa $(0,1,3)$ e la transizione non è più abilitata, perché manca il latte. (p. 22)
+
+### Esempio di evoluzione
+
+Nell'esempio animato delle slide $t_1$ produce contemporaneamente token in $p_2$ e $p_3$; $t_2$ riporta un token da $p_3$ in $p_1$; $t_3$ usa $p_2$ e $p_3$ per produrre un token in $p_4$; $t_4$ riporta un token da $p_4$ in $p_3$. Con $M_0=\{p_1\}$, una sequenza possibile è: (pp. 31–39)
+
+| Scatto | Marcatura dopo lo scatto | Transizioni abilitate subito dopo |
+|---|---|---|
+| Inizio | $\{p_1\}$ | $t_1$ |
+| $t_1$ | $\{p_2,p_3\}$ | $t_2,t_3$ |
+| $t_2$ | $\{p_1,p_2\}$ | $t_1$ |
+| $t_1$ | $\{2p_2,p_3\}$ | $t_2,t_3$ |
+| $t_3$ | $\{p_2,p_4\}$ | $t_4$ |
+| $t_4$ | $\{p_2,p_3\}$ | $t_2,t_3$ |
+
+La scrittura $2p_2$ significa **due token nello stesso posto** $p_2$. È utile controllare la marcatura dopo ogni scatto prima di decidere quale transizione può scattare.
+
+## 4. Costrutti fondamentali
+
+### Sequenza
+
+Se $t_2$ richiede il token prodotto da $t_1$, $t_2$ può scattare solo dopo $t_1$. (p. 16)
+
+```mermaid
+flowchart LR
+    p1(("p₁ ●")) --> t1["t₁"] --> p2(("p₂")) --> t2["t₂"] --> p3(("p₃"))
+```
+
+### XOR split e XOR join
+
+Uno **XOR split** nasce quando due transizioni competono per lo **stesso token** di ingresso. Se una scatta, consuma quel token e l'altra non può più scattare per quella stessa istanza. Uno **XOR join** riunisce alternative: ciascuna transizione di ingresso può alimentare lo stesso posto successivo, senza attendere l'altra. (pp. 17–18)
+
+```mermaid
+flowchart LR
+    p(("p ●")) --> a["scegli A"] --> pa(("ramo A"))
+    p --> b["scegli B"] --> pb(("ramo B"))
+```
+
+### AND split e AND join
+
+Un **AND split** è una transizione con più posti di uscita: scattando produce un token **in ciascun ramo**. Un **AND join** è una transizione con più posti di ingresso: è abilitata solo quando **tutti** i rami richiesti hanno un token. (pp. 19–20)
+
+```mermaid
+flowchart LR
+    i(("inizio ●")) --> split["AND split"]
+    split --> pa(("pronto A")) --> a["A"] --> da(("A finita")) --> join["AND join"]
+    split --> pb(("pronto B")) --> b["B"] --> db(("B finita")) --> join
+    join --> o(("fine"))
+```
+
+In questo esempio $A$ e $B$ possono avvenire in entrambi gli ordini, ma il join aspetta entrambe. Non basta disegnare due frecce: conta **se partono da una sola transizione** (produzione di due token) oppure **dallo stesso posto verso due transizioni** (competizione per un token).
+
+### La figura chiamata «OR split»
+
+Le slide mostrano una rete in cui da un posto si può scegliere una transizione che produce solo il ramo alto, solo il ramo basso, oppure entrambi. È quindi una realizzazione esplicita delle tre possibilità $\{A\}$, $\{B\}$ e $\{A,B\}$ mediante **transizioni distinte**. Non è un nuovo tipo primitivo di arco nella definizione formale della rete. (p. 21)
+
+## 5. Workflow net (WfN)
+
+Una **workflow net** è una rete di Petri $(P,T,F)$ che soddisfa questi vincoli **strutturali**:
+
+1. esiste un posto iniziale distinto $i\in P$ con ${}^{\bullet}i=\varnothing$;
+2. esiste un posto finale distinto $o\in P$ con $o^{\bullet}=\varnothing$;
+3. ogni altro posto e ogni transizione appartengono ad **almeno un cammino** che va da $i$ a $o$.
+
+Il token in $i$ rappresenta un caso non ancora iniziato; un token in $o$ rappresenta un caso terminato. Il terzo vincolo impedisce che parti della rete siano totalmente estranee al percorso di un caso. Per discutere l'esecuzione di un singolo caso si usa tipicamente la marcatura iniziale $M_0=[i]$: un token in $i$ e nessuno negli altri posti. (pp. 40–47)
+
+```mermaid
+flowchart LR
+    i(("i ●")) --> receive["ricevi ordine"] --> p(("ordine ricevuto"))
+    p --> pack["prepara"] --> ready(("pronto")) --> send["spedisci"] --> o(("o"))
+```
+
+**Conseguenze strutturali:** $i$ è l'unico nodo senza archi entranti e $o$ l'unico nodo senza archi uscenti. Per esempio, se un altro nodo $v$ non avesse archi entranti, non potrebbe trovarsi lungo un cammino da $i$ a $o$, salvo coincidere con $i$. Analogamente per il nodo finale. (pp. 44–45)
+
+Per riconoscere una WfN, controlla le **direzioni** degli archi, poi chiediti per ogni nodo: «esiste un cammino da $i$ fino a questo nodo e da qui fino a $o$?». Un ciclo può essere ammesso se i suoi nodi appartengono comunque a un cammino da $i$ a $o$. Se un arco torna in $i$, il posto scelto non ha più pre-set vuoto; se un ramo termina in un altro nodo senza poter raggiungere $o$, il terzo vincolo fallisce. (pp. 48–59)
+
+> **Distinzione da ricordare:** appartenere a un cammino da $i$ a $o$ è una condizione sul **grafo**. Da sola non dimostra che tutti i cammini di esecuzione terminino, che non vi siano deadlock o che la marcatura finale contenga esattamente un token in $o$. Queste sono domande sul comportamento della rete.
+
+## 6. Decorazioni grafiche e sottoprocessi
+
+WoPeD mostra simboli decorati come **zucchero sintattico**: un'etichetta grafica compatta può essere espansa in una rete ordinaria. Per esempio, un AND split corrisponde a una transizione con più output; uno XOR split può essere espanso in transizioni alternative che condividono il posto di ingresso. Lo stesso vale per i join e per combinazioni di join e split. Le slide avvertono che alcune decorazioni si somigliano molto e che la loro posizione può cambiare il significato: per comprendere il comportamento, conviene espandere la forma abbreviata. (pp. 63–71)
+
+La presenza di un unico ingresso e di un'unica uscita aiuta anche la **strutturazione gerarchica**: una transizione può essere raffinata da un'intera workflow net che rappresenta un sottoprocesso. (pp. 72–74)
+
+## 7. Pattern di controllo nelle workflow net
+
+Le slide riepilogano sequenza, parallelismo, scelta, iterazione e vincoli di capacità. (pp. 75–97)
+
+| Pattern | Meccanismo nella rete | Proprietà da osservare |
+|---|---|---|
+| **Sequenza** | Token prodotto da $A$ e richiesto da $B$ | $B$ segue $A$ |
+| **Parallelismo** | AND split, due rami, AND join | Si eseguono sia $A$ sia $B$, in qualunque ordine |
+| **Scelta esplicita** | Transizione di scelta XOR, poi un ramo | La decisione si prende prima di abilitare $A$ o $B$ |
+| **Scelta differita** | Due transizioni $A$ e $B$ competono per un token | Entrambe possono essere inizialmente abilitate; decide quella che scatta per prima |
+| **Iterazione** | Arco di ritorno verso un punto precedente | Si ripete un'attività, con o senza esecuzione obbligatoria iniziale |
+| **Capacità o esclusione** | Posto che rappresenta una risorsa condivisa | Una sola attivazione o attività concorrente usa la risorsa alla volta |
+
+### Scelta esplicita e scelta differita
+
+Nella **scelta esplicita**, una transizione decide il ramo prima che l'attività $A$ o $B$ sia abilitata. Nella **scelta differita/implicita**, $A$ e $B$ sono entrambe abilitate finché condividono il token; scattando, una consuma il token e disabilita l'altra. Il risultato «eseguo A oppure B» può apparire simile, ma **il momento della decisione cambia**. In BPMN le slide collegano questa distinzione allo XOR gateway rispetto alla scelta basata su eventi. (pp. 80–84, 105)
+
+```mermaid
+flowchart LR
+    p(("token ●")) --> a["A può scattare"] --> endA(("esito A"))
+    p --> b["B può scattare"] --> endB(("esito B"))
+```
+
+Il diagramma mostra la **scelta differita**: non esiste una transizione separata che selezioni il ramo prima di $A$ o $B$.
+
+### Iterazione: almeno una volta oppure zero o più volte
+
+Nel ciclo **one or more** il token deve passare per $A$ prima di arrivare al punto in cui si decide se ripeterla o uscire. Nel ciclo **zero or more** esiste una via d'uscita che evita $A$ già alla prima decisione. (pp. 85–92)
+
+```mermaid
+flowchart LR
+    in(("ingresso ●")) --> a["A"] --> choice(("dopo A"))
+    choice --> repeat["ripeti"] --> ready(("pronto per A")) --> a
+    choice --> exit["esci"] --> out(("uscita"))
+```
+
+Questo schema rappresenta il caso **almeno una volta**. Per ottenere **zero o più volte**, il bivio va collocato *prima* di $A$, con un arco che arriva direttamente all'uscita.
+
+### Posto come risorsa: capacità e mutua esclusione
+
+Un posto con **un token di risorsa** può fungere da autorizzazione. La transizione d'ingresso in $A$ consuma quel token e quella d'uscita lo restituisce. Finché $A$ lo trattiene, un'altra attivazione che richiede la stessa risorsa deve aspettare: così si modellano «una pratica alla volta» o la mutua esclusione tra $A$ e $B$. Una diversa disposizione degli archi può imporre anche **alternanza**: $A$, poi $B$, poi di nuovo $A$. (pp. 93–95)
+
+La mutua esclusione descrive quali attività non possono essere **contemporaneamente in corso**; non significa necessariamente che uno dei due rami venga omesso.
+
+## 8. Trigger: chi o che cosa avvia una transizione
+
+L'abilitazione data dai token può essere accompagnata da un **trigger**, cioè un'annotazione che specifica la causa esterna o l'iniziativa necessaria per avviare l'attività. Le slide distinguono: (pp. 98–104)
+
+| Trigger | Significato | Esempio |
+|---|---|---|
+| Automatico | La transizione può partire automaticamente | Elaborazione interna |
+| User | Un utente prende l'iniziativa | Invio manuale di una richiesta |
+| External | Occorre un evento o messaggio esterno | Arriva una risposta |
+| Time | Scade un timer | Invio di un sollecito |
+
+Nell'esempio delle slide l'utente invia una richiesta; una risposta esterna può permettere di proseguire, mentre la scadenza di un timer può attivare un promemoria. I trigger **decorano** le transizioni e aggiungono informazione sul contesto di esecuzione; non cambiano la definizione strutturale di posto, transizione e arco.
+
+## 9. Esercizio finale: gestione di un danno auto
+
+La traccia delle slide descrive un'assicurazione che registra un sinistro, lo classifica come **semplice** o **complesso**, svolge i controlli, decide fra **OK** e **NOK** e invia comunque una lettera al cliente. Se l'esito è OK, effettua prima il pagamento. (pp. 106–108)
+
+- **Sinistro semplice:** `check insurance` e `phone garage` sono indipendenti, quindi si avviano in parallelo e si attende che entrambi finiscano.
+- **Sinistro complesso:** `check insurance` $\to$ `check damage history` $\to$ `phone garage`, in questo ordine.
+- I due rami si riuniscono prima della decisione.
+- **OK:** pagamento, poi lettera. **NOK:** lettera senza pagamento.
+
+```mermaid
+flowchart TD
+    start(("inizio")) --> register["registra sinistro"] --> classify{"classifica"}
+    classify -->|semplice| split["AND split"]
+    split --> si["controlla polizza"] --> sj["AND join"]
+    split --> sg["telefona officina"] --> sj
+    classify -->|complesso| ci["controlla polizza"] --> ch["controlla precedenti"] --> cg["telefona officina"]
+    sj --> decide{"decidi OK/NOK"}
+    cg --> decide
+    decide -->|OK| pay["paga"] --> letter["invia lettera"]
+    decide -->|NOK| letter
+    letter --> finish(("fine"))
+```
+
+Questo diagramma riassume il **flusso del caso**. In una rete di Petri espansa si inseriscono posti tra transizioni consecutive e si realizzano i bivi XOR con transizioni alternative. Nel ramo semplice l'AND join richiede due token, uno per ciascun compito concluso. Nel ramo complesso i compiti restano in sequenza. Il pagamento appartiene soltanto al ramo OK, mentre la lettera è raggiungibile da entrambi gli esiti.
+
+## 10. Domande utili per l'orale
+
+1. Quali sono i quattro componenti di $(P,T,F,M_0)$ e che cosa rappresenta una marcatura?
+2. Che differenza c'è tra posto, transizione e token?
+3. Che cosa sono ${}^{\bullet}t$ e $t^{\bullet}$? Come si definiscono per un posto?
+4. Quando una transizione è abilitata? Come si calcola la nuova marcatura dopo lo scatto?
+5. Cosa significa che lo scatto è atomico e la semantica è interleaving?
+6. Qual è la differenza strutturale e comportamentale tra XOR split e AND split?
+7. Perché un AND join deve attendere token da tutti i suoi ingressi?
+8. Quali sono le tre condizioni che definiscono una workflow net?
+9. Perché una workflow net ha un unico nodo senza archi entranti e uno senza archi uscenti?
+10. La sola definizione di workflow net garantisce che ogni caso finisca correttamente? Perché?
+11. Come si distingue una scelta esplicita da una scelta differita?
+12. Come si costruiscono cicli con una o più esecuzioni e con zero o più esecuzioni?
+13. Come può un singolo token rappresentare una risorsa che impone mutua esclusione?
+14. Quali trigger compaiono nelle slide e cosa aggiungono alla rete?
+15. Come modelleresti i due tipi di sinistro dell'esercizio finale e perché il ramo semplice richiede un AND join?
+
+### Schema conclusivo
+
+```mermaid
+flowchart TD
+    net["Rete di Petri: P, T, F, M₀"] --> semantics["Marcatura, abilitazione, scatto"]
+    net --> wfn["Workflow net: i, o, cammini i→o"]
+    semantics --> patterns["Sequenza, scelta, parallelismo, iterazione"]
+    wfn --> patterns
+    patterns --> process["Modello del processo"]
+    triggers["Trigger: user, external, time"] --> process
+```
