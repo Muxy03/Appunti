@@ -2116,3 +2116,7 @@ La capacità utile ideale cresce come $N$, mentre la penalità può crescere com
 - N. J. Gunther, *A General Theory of Computational Scalability Based on Rational Functions*, 2008.
 - B. Schwartz, *Forecasting MySQL Scalability with the Universal Scalability Law*, 2011.
 - A. B. Bondi, *Characteristics of Scalability and Their Impact on Performance*, 2000.
+
+# 30/9
+
+# 2/10

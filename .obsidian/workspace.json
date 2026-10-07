@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MAGISTRALE/SDC.md",
+                "file": "MAGISTRALE/AIF.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SDC"
+              "title": "AIF"
             }
           }
         ]
@@ -189,32 +189,33 @@
   },
   "active": "44e47550c77319da",
   "lastOpenFiles": [
-    "PDF/SDC/Scalable_Distributed_Computing_2026_L04.pdf",
-    "PDF/SDC/Scalable_Distributed_Computing_2026_L03.pdf",
-    "MAGISTRALE/BPM.md",
-    "MAGISTRALE/SDC.md",
-    "MAGISTRALE/AIF.md",
+    "PDF/AIF/6_CSP.pdf",
+    "PDF/AIF/Non confermato 645452.crdownload",
     "MAGISTRALE/SOFTWARE VERIFICATION.md",
-    "PDF/SOFTWARE VERIFICATION/sv_06.pdf",
-    "PDF/SOFTWARE VERIFICATION/Non confermato 502745.crdownload",
-    "PDF/BPM/2026-09-24 - BPM - 04-Petri.pdf",
-    "PDF/SOFTWARE VERIFICATION/sv_05.pdf",
-    "PDF/BPM/2026-09-22 - BPM - 03-visual-notation.pdf",
-    "Pasted image 20260922104650.png",
-    "Pasted image 20260922104641.png",
-    "PDF/BPM/Exercise_BPM_1.pdf",
-    "Pasted image 20260922094853.png",
+    "IMMAGINI/Pasted image 20260919015845.png",
+    "IMMAGINI/Pasted image 20260919180441.png",
+    "IMMAGINI/Pasted image 20260919180316.png",
+    "IMMAGINI/Pasted image 20260919180259.png",
+    "IMMAGINI/Pasted image 20260919180159.png",
+    "IMMAGINI/Pasted image 20260919175930.png",
+    "IMMAGINI/Pasted image 20260918183812.png",
+    "IMMAGINI/Pasted image 20260918183801.png",
+    "IMMAGINI/Pasted image 20260918183623.png",
+    "Pasted image 20260918183623<.png.md",
+    "IMMAGINI/Pasted image 20260918183557.png",
+    "MAGISTRALE/BPM.md",
+    "MAGISTRALE/AIF.md",
+    "PDF/SOFTWARE VERIFICATION/sv_08.pdf",
+    "PDF/SOFTWARE VERIFICATION/Non confermato 658245.crdownload",
+    "PDF/AIF/5_Local_Search.pdf",
+    "PDF/AIF/Non confermato 466333.crdownload",
+    "PDF/AIF/4_Search.pdf",
+    "PDF/AIF/Non confermato 380059.crdownload",
+    "MAGISTRALE/SDC.md",
+    "PDF/BPM/ProcessMiningTutorial.pdf",
+    "PDF/SOFTWARE VERIFICATION/exeSV_02.pdf",
+    "PDF/SOFTWARE VERIFICATION/Non confermato 690746.crdownload",
     "MAGISTRALE/EXTRA/Exercise BPM 1.md",
-    "PDF/SOFTWARE VERIFICATION/exeSV_01.pdf",
-    "PDF/SOFTWARE VERIFICATION/Non confermato 754137.crdownload",
-    "PDF/BPM/2026-09-17 - BPM - 02-business-processes.pdf",
-    "Pasted image 20260920183530.png",
-    "Pasted image 20260920183510.png",
-    "Pasted image 20260920183318.png",
-    "Pasted image 20260920183239.png",
-    "Pasted image 20260920183101.png",
-    "Pasted image 20260920182237.png",
-    "Pasted image 20260919180441.png",
     "MAGISTRALE/MAGISTRALE INFO.md",
     "PDF/COMPILATION/RUST_COMPILATION_QA_v2.md",
     "MAGISTRALE/EXTRA/CT_Project_Preparazione_Orale.md",
@@ -233,7 +234,6 @@
     "PDF/PROGRAM ANALYSIS/05-Sufficient-Incorrectness-Logic-SIL.md",
     "PDF/PROGRAM ANALYSIS/06-Separation-Logic.md",
     "PDF/PROGRAM ANALYSIS/07-Abstract-Interpretation.md",
-    "PDF/PROGRAM ANALYSIS/10-Control-Flow-Analysis-CFA.md",
-    "PDF/PROGRAM ANALYSIS/09-Local-Completeness-Logic-LCL.md"
+    "PDF/PROGRAM ANALYSIS/10-Control-Flow-Analysis-CFA.md"
   ]
 }

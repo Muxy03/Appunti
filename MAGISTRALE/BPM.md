@@ -1801,3 +1801,453 @@ flowchart TD
     patterns --> process["Modello del processo"]
     triggers["Trigger: user, external, time"] --> process
 ```
+
+# 29/9
+
+Appunti in italiano dalle slide **«2026-09-29 - BPM - 05-orchestration-collaboration»** di Roberto Bruni. I riferimenti `slide N` seguono la numerazione stampata nelle slide: dopo la 53 il PDF passa alla 60. I diagrammi Mermaid sono ricostruzioni schematiche per lo studio, non copie della notazione BPMN/EPC originale.
+
+## 1. Perché servono diagrammi di processo
+
+Un linguaggio grafico aiuta persone con competenze diverse a discutere lo stesso processo. Per essere utile, però, deve avere un **alfabeto riconoscibile**: forme, colori, frecce e significati vanno scelti con cura. Una notazione intuitiva e un numero contenuto di simboli facilitano la comunicazione. Le slide confrontano rapidamente BPMN, EPC e workflow net: usano forme diverse per inizi/fini, compiti e diramazioni. (slide 3–6)
+
+## 2. EPC: Event-driven Process Chain
+
+Una **EPC** rappresenta un processo come grafo ordinato di **eventi** e **funzioni**, con connettori logici per descrivere alternative e parallelismo. Nata nell'ambito del framework **ARIS**, è usata per rappresentare e riprogettare processi aziendali e per configurare sistemi ERP. Le slide citano **EPML**, un formato XML di scambio per diagrammi EPC. (slide 9–13, 23)
+
+| Elemento | Forma EPC | Significato |
+|---|---|---|
+| **Evento** | Esagono | Condizione o stato, per esempio «ordine ricevuto» |
+| **Funzione** | Rettangolo arrotondato | Attività che produce un cambiamento, per esempio «prepara fattura» |
+| **Connettore** | Cerchio con AND, XOR o OR | Relazione fra rami in apertura (*split*) o ricongiungimento (*join*) |
+| **Flusso di controllo** | Freccia tratteggiata | Dipendenza causale fra elementi |
+
+Un diagramma EPC **inizia e termina con eventi**. Gli eventi sono elementi passivi, leggibili come precondizioni o risultati; le funzioni sono gli elementi attivi che svolgono lavoro. Una funzione può essere raffinata con un altro diagramma EPC. (slide 14–18)
+
+```mermaid
+flowchart LR
+    e0{{"Evento: ordine ricevuto"}}
+    f1(["Funzione: controlla ordine"])
+    e1{{"Evento: ordine controllato"}}
+    f2(["Funzione: prepara spedizione"])
+    e2{{"Evento: spedizione pronta"}}
+    e0 -.-> f1 -.-> e1 -.-> f2 -.-> e2
+```
+
+### Connettori AND, XOR e OR
+
+I connettori possono comparire sia come **split** (un ingresso, più uscite) sia come **join** (più ingressi, un'uscita). La forma logica riassume i rami che si attivano o che devono essere ricongiunti. (slide 19–20)
+
+| Connettore | Split | Join, a grandi linee |
+|---|---|---|
+| **AND** ($\land$) | Attiva tutti i rami | Attende i rami attivati |
+| **XOR** | Sceglie esattamente un ramo | Ricongiunge percorsi alternativi |
+| **OR** ($\lor$) | Attiva uno o più rami | Ricongiunge gli ingressi effettivamente attivati |
+
+L'**OR join** è più delicato di un XOR join. Se è stato attivato un solo ramo, deve poter proseguire senza aspettarne uno impossibile; se sono stati attivati entrambi, deve produrre **una sola** prosecuzione comune. Quando arriva un solo ramo, potrebbe dover attendere finché l'altro arriva **oppure** finché si sa che non arriverà. Per decidere, può essere necessario conoscere lo stato del processo a monte: la semplice presenza locale di un token non basta sempre. (slide 21–22)
+
+Esempio: un OR split può richiedere sia la verifica del pagamento sia una verifica antifrode, oppure solo una delle due. L'OR join deve aspettare precisamente le verifiche che sono state avviate per quel caso.
+
+> Le slide introducono qui EPC in modo prevalentemente intuitivo. Il diagramma Mermaid visualizza il flusso, mentre la spiegazione del join descrive il comportamento desiderato; non attribuire automaticamente a un nodo Mermaid la semantica completa di un OR join.
+
+## 3. Tre punti di vista sullo stesso processo
+
+| Punto di vista | Che cosa descrive | Chi controlla le attività | Informazione principale |
+|---|---|---|---|
+| **Orchestrazione** | Un processo di una organizzazione | Un controllo centrale per quel processo | Ordine delle attività interne |
+| **Collaborazione** | Processi autonomi di più partecipanti | Ogni partecipante governa il proprio processo | Attività interne e scambi tra partecipanti |
+| **Coreografia** | Interazioni viste globalmente | Nessun controllore centrale di tutti i partecipanti | Quali scambi devono avvenire e con quale ordine |
+
+La distinzione è di **prospettiva**: il compratore può orchestrare il proprio lavoro e il rivenditore il proprio; mettendo insieme i due processi e i messaggi otteniamo una collaborazione; isolando gli scambi tra loro otteniamo una coreografia. (slide 25–41)
+
+### Orchestrazione: una prospettiva
+
+Il modello mostra le attività che una singola organizzazione può ordinare e controllare tramite il proprio sistema BPM. Nell'esempio del **rivenditore $R_1$**, dopo aver ricevuto l'ordine partono due rami concorrenti: in uno si invia la fattura e si attende il pagamento; nell'altro si spediscono i prodotti. L'ordine viene archiviato dopo il completamento di entrambi. Le slide esprimono lo stesso comportamento in EPC, workflow net e BPMN. (slide 26–30, 33)
+
+```mermaid
+flowchart LR
+    start(("inizio")) --> order["Ricevi ordine"] --> split{"AND split"}
+    split --> invoice["Invia fattura"] --> payment["Ricevi pagamento"] --> join{"AND join"}
+    split --> ship["Spedisci prodotti"] --> join
+    join --> archive["Archivia ordine"] --> finish(("fine"))
+```
+
+Qui la freccia interna `Invia fattura → Ricevi pagamento` esprime il vincolo del rivenditore. Il pagamento, però, deve arrivare da un altro partecipante: per capire se arriverà occorre considerare anche il processo del compratore.
+
+### Collaborazione: più prospettive
+
+Una **collaborazione** mette insieme i processi autonomi e mostra **come interagiscono**. Nelle slide i messaggi fra le corsie del compratore e del rivenditore sono disegnati con **archi tratteggiati**; possono rappresentare informazioni elettroniche o oggetti fisicamente trasportati. Il flusso interno a una corsia e lo scambio tra corsie hanno ruoli diversi. (slide 31–37)
+
+```mermaid
+flowchart TB
+    subgraph buyer["Compratore"]
+        b1["Effettua ordine"] --> b2["Riceve fattura"] --> b3["Salda fattura"]
+        b1 --> b4["Riceve prodotti"]
+    end
+    subgraph reseller["Rivenditore"]
+        r1["Riceve ordine"] --> r2["Invia fattura"] --> r3["Riceve pagamento"]
+        r1 --> r4["Spedisce prodotti"]
+    end
+    b1 -.->|ordine| r1
+    r2 -.->|fattura| b2
+    b3 -.->|pagamento| r3
+    r4 -.->|prodotti| b4
+```
+
+**Lettura:** le frecce continue schematizzano dipendenze all'interno dei partecipanti; le tratteggiate collegano l'invio da uno alla ricezione dell'altro. Il disegno non implica che un'organizzazione controlli direttamente le attività dell'altra.
+
+### Coreografia: prospettiva globale sugli scambi
+
+Una **coreografia** specifica le interazioni attese tra partecipanti come una sorta di contratto: spiega **come dovrebbero interagire**. Non rappresenta tutte le attività interne dei due processi, ma quelle legate alle interazioni. L'esempio delle slide contiene l'ordine dal compratore al rivenditore, la fattura nel verso opposto, il pagamento verso il rivenditore e la spedizione verso il compratore. Dopo l'ordine, il ramo fatturazione/pagamento e quello della spedizione possono procedere in parallelo nel modello $B_1$–$R_1$. (slide 38–41)
+
+```mermaid
+flowchart LR
+    order["Compratore → Rivenditore: ordine"] --> fork{"AND"}
+    fork --> invoice["Rivenditore → Compratore: fattura"] --> pay["Compratore → Rivenditore: pagamento"] --> join{"AND"}
+    fork --> goods["Rivenditore → Compratore: prodotti"] --> join
+    join --> endNode(("fine"))
+```
+
+Lo schema non include, per esempio, come il rivenditore prepara il pacco o come il compratore contabilizza la fattura: sono dettagli delle rispettive orchestrazioni.
+
+## 4. Compatibilità tra Buyer e Reseller
+
+Un'orchestrazione sensata **presa da sola** può non funzionare in combinazione con un'altra. Se un partecipante aspetta un messaggio che l'altro invierà solo **dopo** un messaggio atteso a sua volta, si crea un'attesa circolare. La compatibilità va quindi studiata collegando i due processi. (slide 42–53)
+
+### Le varianti nelle slide
+
+- $R_1$: dopo l'ordine, fattura/pagamento e spedizione sono rami indipendenti; archivia quando entrambi terminano.
+- $R_2$: dopo l'ordine, **invia fattura → riceve pagamento → spedisce prodotti**.
+- $B_1$: dopo l'ordine, la ricezione e il saldo della fattura possono procedere parallelamente alla ricezione dei prodotti.
+- $B_2$: riceve fattura e prodotti tramite rami paralleli, ma **salda dopo aver ricevuto i prodotti**.
+- $B_3$: attende **sia** fattura **sia** prodotti prima di saldare.
+- $B_4$: procede in sequenza **riceve fattura → riceve prodotti → salda fattura**.
+
+La tabella seguente completa l'esercizio della slide 52 assumendo che i messaggi possano essere consegnati e conservati fino a quando la ricezione corrispondente può avvenire, senza timeout aggiuntivi. `OK` significa che l'ordine delle attività consente il completamento; `blocco` indica un'attesa circolare. Le slide mostrano esplicitamente $R_1/B_1$ e $R_2/B_1$ come funzionanti e $R_2/B_4$ come problematico; le altre caselle sono dedotte dagli ordini rappresentati. (slide 43–53)
+
+| Rivenditore \ Compratore | $B_1$ | $B_2$ | $B_3$ | $B_4$ |
+|---|---|---|---|---|
+| **$R_1$** | OK | OK | OK | OK |
+| **$R_2$** | OK | Blocco | Blocco | Blocco |
+
+Per $R_2/B_4$ la dipendenza circolare è immediata. Indicando con $x\prec y$ che $x$ deve accadere prima di $y$:
+
+$$
+B_4:\quad\text{ricezione prodotti}\prec\text{pagamento},
+\qquad
+R_2:\quad\text{pagamento}\prec\text{spedizione prodotti}.
+$$
+
+In parole semplici: $B_4$ aspetta i prodotti per saldare, mentre $R_2$ aspetta il saldo per spedire. Lo stesso problema colpisce $B_2$ e $B_3$ con $R_2$, perché anche in quei modelli il saldo dipende dalla ricezione dei prodotti. Con $R_1$ la spedizione è indipendente dal pagamento, quindi quel ciclo di attesa non si forma.
+
+> Se si adottano semantiche diverse per la consegna dei messaggi, per esempio una ricezione sincrona senza coda, la compatibilità richiede un'analisi ulteriore. La matrice specifica l'ipotesi utilizzata, come è opportuno fare in una consegna formale.
+
+## 5. Esercizio dell'agenzia di viaggi
+
+La parte finale chiede di modellare una richiesta di viaggio con prenotazione di **volo** e **hotel**, possibilità di **cambiare date**, **confermare** o **annullare**. Le slide propongono versioni EPC, BPMN e workflow net dell'orchestrazione dell'agenzia, poi chiedono di progettare anche la coreografia, l'orchestrazione del turista e la collaborazione completa. In alcune figure dell'agenzia compare inoltre un controllo opzionale sull'auto. (slide 60–70)
+
+### Orchestrazione dell'agenzia
+
+Il modello seguente è una sintesi del nucleo comune delle figure: l'agenzia riceve la richiesta, prenota volo e hotel in parallelo, poi attende una risposta. Il cambio date riporta il processo alla prenotazione; conferma e annullamento chiudono su esiti diversi.
+
+```mermaid
+flowchart TD
+    start(("inizio")) --> request["Ricevi richiesta e date"] --> fork{"AND split"}
+    fork --> flight["Prenota volo"] --> join{"AND join"}
+    fork --> hotel["Prenota hotel"] --> join
+    join --> awaitReply["Attendi risposta del turista"] --> choice{"risposta"}
+    choice -->|cambia date| change["Aggiorna date"] --> fork
+    choice -->|conferma| confirm["Conferma prenotazione"] --> success(("successo"))
+    choice -->|annulla| cancel["Annulla prenotazione"] --> failure(("annullata"))
+```
+
+La relazione `cambia date → nuova prenotazione` è un **ciclo**. Un ritorno del flusso non garantisce da solo che la richiesta terminerà: il turista potrebbe chiedere altre modifiche. In BPMN, una risposta che dipende dall'arrivo di uno tra più messaggi può essere rappresentata con una scelta **basata su eventi**; la variante delle slide aggiunge trigger di messaggio a richiesta, cambio, conferma e annullamento. (slide 62–65)
+
+### Come cambiano i tre elaborati richiesti
+
+| Elaborato | Da mostrare | Da verificare |
+|---|---|---|
+| **Orchestrazione dell'agenzia** | Prenotazioni, attesa, cambio date, conferma/annullamento | I compiti interni sono nell'ordine previsto |
+| **Orchestrazione del turista** | Invio richiesta, ricezione proposta, scelta fra cambiare, confermare, annullare | Il turista attende solo messaggi che l'agenzia può inviare |
+| **Collaborazione** | Le due orchestrazioni e i messaggi che le collegano | Ogni invio ha una ricezione corrispondente e non nasce un'attesa circolare |
+| **Coreografia** | Solo le interazioni osservabili fra turista e agenzia | L'ordine globale degli scambi è coerente con entrambi i processi |
+
+Una possibile coreografia astratta è:
+
+```mermaid
+flowchart TD
+    req["Turista → Agenzia: richiesta e date"] --> proposal["Agenzia → Turista: proposta"]
+    proposal --> decide{"scelta del turista"}
+    decide -->|modifica| dates["Turista → Agenzia: nuove date"] --> proposal
+    decide -->|conferma| yes["Turista → Agenzia: conferma"] --> done(("accordo"))
+    decide -->|annulla| no["Turista → Agenzia: annullamento"] --> endNode(("fine"))
+```
+
+Questo schema è una **proposta di modellazione** per l'esercizio, non un diagramma già fornito dalle slide: i contenuti precisi della proposta e la gestione di prenotazioni precedenti dopo un cambio date andrebbero fissati nella specifica prima dell'implementazione.
+
+## 6. Domande per l'orale
+
+1. Che cosa rappresentano eventi, funzioni e connettori in un'EPC?
+2. Perché un'EPC inizia e termina con eventi?
+3. Qual è la differenza tra AND, XOR e OR come split e come join?
+4. Perché l'OR join è più difficile da interpretare di un AND join?
+5. Che cosa significa descrivere un processo da un solo punto di vista?
+6. Come si distinguono orchestrazione, collaborazione e coreografia nel caso Buyer–Reseller?
+7. Che differenza c'è tra il flusso di controllo interno e il flusso dei messaggi tra partecipanti?
+8. Perché due processi localmente plausibili possono essere incompatibili?
+9. Come si dimostra il blocco fra $B_4$ e $R_2$?
+10. Quali ipotesi sulla consegna dei messaggi servono per giudicare una matrice di compatibilità?
+11. Come modelleresti prenotazione parallela di volo e hotel, cambio date e annullamento?
+12. Quali attività dell'agenzia spariscono nella coreografia perché sono interne?
+
+### Schema riassuntivo
+
+```mermaid
+flowchart TD
+    orgA["Orchestrazione: compratore"] --> collab["Collaborazione: attività e messaggi"]
+    orgB["Orchestrazione: rivenditore"] --> collab
+    collab --> choreo["Coreografia: interazioni globali"]
+    epc["EPC: eventi, funzioni, connettori"] --> orgA
+    epc --> orgB
+```
+
+# 1/10
+
+Appunti dal PDF **ProcessMiningTutorial.pdf** (72 pagine; la numerazione stampata arriva a 73). Il notebook allegato `PM_01IntroToProcessMining.ipynb` è usato soltanto per integrare l'esempio pratico con pandas. I riferimenti «slide N» indicano il numero stampato sulla slide.
+
+## 1. Obiettivo del tutorial
+
+Il **process mining** è una famiglia di tecniche che collega analisi dei dati e gestione dei processi: usa gli **event log** generati durante l'esecuzione per capire come i processi operano davvero. Lo scopo è trasformare i dati degli eventi in conoscenza utile e poi in interventi verificabili. Le slide introducono una procedura esplorativa su un processo di acquisto, analizzato con **Disco**. (slide 2–4, 14–27)
+
+Una domanda centrale è: **il processo osservato coincide con quello progettato?** La risposta non si ricava soltanto dal diagramma prescritto; bisogna esaminare le tracce effettivamente registrate. Le tre domande operative del tutorial sono: (slide 5–6, 20)
+
+1. **Discovery:** come si svolge davvero il processo?
+2. **Conformance/compliance:** ci sono deviazioni dalle regole prescritte?
+3. **Performance:** vengono rispettati gli obiettivi di tempo?
+
+```mermaid
+flowchart LR
+    system["Sistema operativo / ERP"] --> log["Event log"]
+    log --> discovery["Discovery: modello osservato"]
+    log --> compliance["Conformance: deviazioni"]
+    log --> performance["Performance: tempi e colli di bottiglia"]
+    discovery --> action["Azioni sul processo"]
+    compliance --> action
+    performance --> action
+```
+
+Il PDF cita applicazioni oltre agli acquisti, per esempio ambito legale, sanitario e sicurezza: cambia il dominio, ma resta la necessità di collegare gli eventi a casi concreti. (slide 8–13)
+
+## 2. Caso di studio: processo di acquisto
+
+Lo scenario coinvolge **richiedente**, **responsabile del richiedente**, **addetto agli acquisti**, **fornitore** e **responsabile finanziario**. Gli eventi del processo sono registrati in un sistema **ERP** ed estratti in un file CSV. I problemi iniziali sono inefficienze operative, necessità di dimostrare la conformità e reclami per la durata delle pratiche. (slide 15–16, 22)
+
+Gli obiettivi dell'analisi sono:
+
+- ricostruire il processo nel dettaglio;
+- individuare deviazioni dalle linee guida sul pagamento;
+- verificare l'obiettivo di **completare ciascun caso entro 21 giorni**. (slide 17)
+
+Questa formulazione anticipa un principio importante: **definire le domande prima di scegliere grafici e filtri**. Senza una domanda precisa è facile produrre una mappa molto complessa ma poco utile. (slide 19–20)
+
+## 3. Event log: dati necessari
+
+Nel CSV esaminato nel tutorial **ogni riga rappresenta un evento**, ossia l'esecuzione registrata di un'attività per una determinata pratica. Le colonne mostrate sono: (slide 28–33)
+
+| Colonna | Uso nell'analisi |
+|---|---|
+| `Case ID` | Identifica la stessa istanza del processo attraverso più eventi |
+| `Activity` | Indica l'attività eseguita |
+| `Start Timestamp` | Istante di inizio dell'attività |
+| `Complete Timestamp` | Istante di completamento |
+| `Resource` | Persona o risorsa che ha svolto l'attività |
+| `Role` | Ruolo organizzativo della risorsa |
+
+Per esempio, se tre righe hanno lo stesso `Case ID`, appartengono alla **stessa pratica**; i loro timestamp e le loro attività permettono di ricostruirne l'evoluzione. Riordinando gli eventi di ogni caso si ottiene una **traccia**:
+
+$$
+\sigma_c=\langle a_1,a_2,\ldots,a_n\rangle,
+$$
+
+dove $c$ è il caso e $a_i$ è l'attività osservata nell'evento $i$ di quel caso. Due casi con la stessa sequenza di attività condividono una **variante**; possono comunque avere tempi e risorse differenti. Se le attività si sovrappongono, ordinare per inizio o fine può produrre letture diverse: bisogna dichiarare quale timestamp si usa.
+
+### Ispezione con pandas
+
+Il PDF propone l'ispezione in Excel o pandas; il notebook allegato mostra il caricamento del file e la conversione dei timestamp. Il seguente codice è una traccia da usare **quando si dispone di `PurchasingExample.csv`**:
+
+```python
+import pandas as pd
+
+logs = pd.read_csv("PurchasingExample.csv")
+logs["Start Timestamp"] = pd.to_datetime(logs["Start Timestamp"])
+logs["Complete Timestamp"] = pd.to_datetime(logs["Complete Timestamp"])
+
+num_events = len(logs)
+num_cases = logs["Case ID"].nunique()
+one_case = logs[logs["Case ID"] == 1].sort_values("Start Timestamp")
+```
+
+`len(logs)` conta le **righe/eventi**, mentre `nunique()` conta i **casi distinti**: le due quantità non vanno confuse. Il notebook usa anche filtri per osservare singoli casi. I timestamp vanno convertiti prima di calcolare durate o ordinamenti cronologici.
+
+## 4. Roadmap dell'analisi
+
+Le slide organizzano il lavoro in quattro passaggi. (slide 19–25, 69)
+
+```mermaid
+flowchart LR
+    q["1. Domande e perimetro"] --> extract["2. Estrazione dati"]
+    extract --> analyze["3. Analisi del log"]
+    analyze --> report["4. Risultati e azioni"]
+    report -.->|verifica dopo gli interventi| q
+```
+
+1. **Domande:** chiarire che cosa si cerca, quali casi rientrano nel perimetro e quali sistemi registrano gli eventi.
+2. **Estrazione:** ottenere dal sistema ERP un CSV o un estratto del database, mantenendo identificativi e timestamp coerenti.
+3. **Analisi:** scoprire il processo *as-is*, controllare regole e performance, approfondire casi e varianti.
+4. **Presentazione e azione:** discutere i risultati, modificare dove necessario il processo o il sistema e misurare nuovamente.
+
+Il ciclo non si conclude con la scoperta di una figura: il tutorial termina con **azione e verifica dei risultati**. (slide 69)
+
+## 5. Importazione e prima mappa del processo
+
+Nel tutorial si importa il CSV in Disco assegnando `Case ID` come identificatore del caso, `Activity` come attività, **entrambi** i timestamp ai campi temporali appropriati, `Resource` come risorsa e `Role` come attributo aggiuntivo (*Other*). (slide 33–34)
+
+La mappa ottenuta evidenzia:
+
+- **frequenza dell'attività** nei rettangoli;
+- **frequenza del collegamento** sugli archi fra attività;
+- sequenze, diramazioni, ritorni e percorsi di terminazione. (slide 35–36)
+
+Un arco $A\to B$ nella mappa indica un collegamento osservato tra le due attività nei casi visualizzati. Il numero riportato sull'arco conta le occorrenze di quel collegamento nella vista corrente. **Non è, da solo, una prova di causalità o una dichiarazione che $B$ debba sempre seguire $A$.**
+
+Tutti i **608 casi** del dataset iniziano con `Create Purchase Requisition`. La mappa mostra anche molte modifiche (*amendments*) delle richieste. (slide 35)
+
+### Il livello di dettaglio cambia ciò che si vede
+
+I controlli `Activities` e `Paths` regolano la complessità della mappa:
+
+- con poche attività visibili emergono i percorsi più frequenti;
+- aumentando `Activities` riappaiono anche attività rare, come `Amend Purchase Requisition`;
+- aumentando `Paths` riappaiono collegamenti meno frequenti fra attività già visibili. (slide 37–42)
+
+Il tutorial segnala **11 casi in ingresso** a `Amend Purchase Requisition` ma solo **8 apparentemente in uscita**. Dopo aver mostrato anche tutti i percorsi, gli altri **3** si vedono dirigersi a `Create Request for Quotation`. I casi non sono scomparsi dal log: era il **filtro visivo dei collegamenti** a nasconderli. (slide 39–42)
+
+```mermaid
+flowchart LR
+    incoming["11 casi entrano in Amend Purchase Requisition"] --> amend["Amend Purchase Requisition"]
+    amend --> visible["8 casi su percorsi inizialmente visibili"]
+    amend -.->|Paths al 100%| hidden["3 casi verso Create Request for Quotation"]
+```
+
+**Regola pratica:** prima di interpretare un flusso apparentemente incompleto, controllare il livello di dettaglio della mappa e i filtri applicati.
+
+## 6. Statistiche e varianti
+
+Nella vista `Statistics` si trovano **9.119 eventi** relativi a **608 casi** nel periodo **gennaio–ottobre 2011**. La durata della maggior parte dei casi arriva a circa **15–16 giorni**, ma alcuni superano **70–80 giorni**. Una media complessiva, da sola, nasconderebbe questa coda di casi lenti. (slide 43–44)
+
+Una definizione utile della durata di un caso completo $c$ è:
+
+$$
+D(c)=\max_{e\in c}\bigl(\operatorname{complete}(e)\bigr)
+     -\min_{e\in c}\bigl(\operatorname{start}(e)\bigr).
+$$
+
+La formula descrive il tempo fra primo inizio e ultimo completamento osservati. Quando un log contiene casi ancora aperti o timestamp mancanti, occorre definire esplicitamente come trattarli prima di confrontare le durate.
+
+Nella vista `Cases` si esaminano **varianti** e singole tracce. La **terza variante più frequente** termina dopo `Analyze Purchase Requisition` e riguarda circa **il 10,36%** dei casi. Il tutorial propone di indagare perché così tante richieste si interrompano: l'ipotesi è che le linee guida sugli acquisti non siano abbastanza chiare, ma l'event log da solo non dimostra la causa. (slide 45–48)
+
+| Vista | Domanda a cui risponde |
+|---|---|
+| **Mappa** | Quali attività e collegamenti sono osservati? |
+| **Statistiche** | Quanti casi/eventi ci sono e come sono distribuiti i tempi? |
+| **Varianti** | Quali sequenze si ripetono più spesso? |
+| **Singolo caso** | Che cosa è successo esattamente a questa pratica? |
+
+## 7. Verifica dell'obiettivo di 21 giorni
+
+Il target è completare il processo in **non più di 21 giorni**. Il tutorial applica un filtro sulle durate **superiori** alla soglia e isola **92 casi**, circa il **15%** dei 608 casi: (slide 49–52)
+
+$$
+\frac{92}{608}\cdot 100\approx15{,}1\%.
+$$
+
+Nel gruppo dei casi lenti sono state registrate **302 modifiche**. Il rapporto è $302/92\approx3{,}28$ modifiche per caso lento, coerente con l'approssimazione «circa tre» nelle slide. Questo è un **rapporto aggregato**: non significa che ciascuno dei 92 casi abbia esattamente tre modifiche. (slide 52)
+
+```mermaid
+flowchart LR
+    all["608 casi"] --> threshold{"Durata > 21 giorni?"}
+    threshold -->|sì| slow["92 casi lenti"]
+    threshold -->|no| rest["Altri casi"]
+    slow --> rework["302 amendments complessivi"]
+    slow --> inspect["Analisi dei tempi e dei percorsi"]
+```
+
+### Come individuare un collo di bottiglia
+
+Passando dalla frequenza alla vista **Performance**, il tutorial usa prima `Total duration` per vedere dove si accumula più tempo e poi `Mean duration` per valutare il tempo medio dei passaggi. Nel ciclo di rilavorazione, il ritorno al flusso normale richiede **in media più di 14 giorni**. Le slide suggeriscono di esaminare anche minimo e massimo: casi estremi e media rispondono a domande diverse. (slide 54–55)
+
+L'animazione fa scorrere i casi lungo la mappa nel tempo; i percorsi più usati diventano visivamente più spessi. È uno strumento per **esplorare e comunicare** dove si concentrano i casi, da affiancare alle statistiche delle durate. (slide 56–58)
+
+La conclusione operativa proposta dal tutorial è che `Analyze Request for Quotation` costituisce un'importante area di ritardo e che conviene rivedere quel segmento. L'associazione fra rilavorazioni e tempi lunghi è una **osservazione**; per dimostrare la causa dei ritardi e scegliere la modifica migliore servono approfondimenti con chi gestisce il processo. (slide 58, 64)
+
+## 8. Controllo di conformità
+
+Dopo aver **rimosso il filtro sui casi lenti**, il tutorial torna alla mappa di frequenza e al termine del processo. Qui si osservano **10 casi** che saltano l'attività dichiarata obbligatoria `Release Supplier's Invoice`: il flusso passa da `Send invoice` a `Authorize Supplier's Invoice payment`. (slide 59–63)
+
+```mermaid
+flowchart LR
+    send["Send invoice"] --> release["Release Supplier's Invoice"] --> authorize["Authorize Supplier's Invoice payment"]
+    send -.->|10 casi osservati: salto| authorize
+```
+
+Per confermare la deviazione, si seleziona l'arco sospetto con `Filter this path...` e si passa alla vista `Cases` per esaminare le **10 pratiche concrete**. Se quella release è effettivamente obbligatoria per quei casi, il comportamento osservato non è conforme alla regola. Le slide propongono come possibili azioni un vincolo nel sistema operativo oppure una formazione mirata. (slide 61–64)
+
+La quota rispetto al totale, calcolata dai numeri del tutorial, è:
+
+$$
+\frac{10}{608}\cdot100\approx1{,}64\%.
+$$
+
+Anche una deviazione relativamente rara può essere importante se riguarda un controllo di pagamento. Prima dell'intervento bisogna verificare che la regola sia davvero applicabile a tutti i dieci casi e che l'evento non manchi per un problema di registrazione.
+
+## 9. Vista organizzativa
+
+Nell'ultima fase le slide ricaricano i dati sostituendo la colonna interpretata come `Activity` con `Role`. La mappa mostra così il **passaggio delle pratiche tra ruoli**, anziché tra nomi di attività. Questo aiuta a cercare attese ai confini delle unità organizzative. Nel dataset analizzato gli **addetti agli acquisti** risultano associati ai maggiori ritardi nella vista mostrata. (slide 65–68)
+
+```mermaid
+flowchart LR
+    requester["Richiedente"] --> manager["Responsabile"]
+    manager --> purchasing["Addetto agli acquisti"]
+    purchasing --> supplier["Fornitore"]
+    supplier --> finance["Responsabile finanziario"]
+    finance -.->|possibili ritorni / passaggi| purchasing
+```
+
+Questo è uno **schema dei ruoli dello scenario**, non la trascrizione numerica della mappa organizzativa. Un tempo elevato su un passaggio fra ruoli segnala dove approfondire; non prova da solo che una persona o un reparto sia la causa del problema.
+
+Il bonus finale chiede di trattare sia `Activity` sia `Role` come dimensioni di attività: la granularità cambia e si può analizzare una coppia **attività–ruolo** invece della sola attività. È un esempio del principio che **gli stessi dati possono offrire più viste utili**. (slide 70–72)
+
+## 10. Le tre risposte del caso di studio
+
+| Domanda iniziale | Evidenza nel tutorial | Passo successivo suggerito |
+|---|---|---|
+| Com'è il processo reale? | Mappa osservata; molte modifiche; variante che si arresta dopo `Analyze Purchase Requisition` | Verificare se istruzioni e gestione delle richieste sono chiare |
+| Si rispettano le linee guida? | 10 casi percorrono il collegamento che salta `Release Supplier's Invoice` | Esaminare i casi e poi scegliere vincolo nel sistema o formazione |
+| Si termina entro 21 giorni? | 92 casi superano la soglia; il ciclo di rilavorazione e `Analyze Request for Quotation` concentrano ritardi | Analizzare la causa e riprogettare il segmento critico |
+
+Il risultato non è un unico diagramma «giusto»: frequenza, durata, varianti e passaggi fra ruoli mettono in evidenza aspetti diversi dello stesso log. Il process mining è quindi **interattivo ed esplorativo**. Dopo un cambiamento si raccolgono nuovi eventi e si controlla se l'obiettivo è stato raggiunto. (slide 69–72)
+
+## 11. Domande per ripassare
+
+1. Che cosa sono un evento, un caso, una traccia e una variante?
+2. Quali colonne del CSV permettono di ricostruire l'ordine e la durata delle attività?
+3. Come distingui il numero di eventi dal numero di casi?
+4. Qual è la differenza fra modello prescritto e mappa scoperta dal log?
+5. Perché tre casi sembravano sparire dopo `Amend Purchase Requisition`?
+6. Che cosa mostrano le frequenze nei nodi e sugli archi?
+7. Perché guardare soltanto la variante più frequente può essere fuorviante?
+8. Come è stato costruito il gruppo dei 92 casi lenti?
+9. Che differenza c'è fra durata totale e durata media di un passaggio?
+10. Come si indaga una presunta violazione della release della fattura?
+11. Perché un collegamento osservato nel log non dimostra automaticamente causalità?
+12. A cosa serve ricostruire la mappa per ruoli e come eviti di attribuire colpe dai soli tempi?
+13. Perché l'analisi deve proseguire dopo che viene modificato il processo?
