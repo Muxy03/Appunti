@@ -2251,3 +2251,268 @@ Il risultato non è un unico diagramma «giusto»: frequenza, durata, varianti e
 11. Perché un collegamento osservato nel log non dimostra automaticamente causalità?
 12. A cosa serve ricostruire la mappa per ruoli e come eviti di attribuire colpe dai soli tempi?
 13. Perché l'analisi deve proseguire dopo che viene modificato il processo?
+
+# 8/10
+
+**Fonte:** notebook `PM_02pm4py.ipynb`, lezione 2 del corso BPM 2026/2027 (Università di Pisa). Gli esempi e i risultati numerici qui sotto si riferiscono al log didattico del notebook e alla sua esecuzione salvata (PM4Py `2.7.17.2`).
+
+## 1. Idea generale
+
+Il **process mining** ricostruisce e valuta processi a partire dalle tracce lasciate dai sistemi informativi. Nel notebook si percorrono tre passaggi:
+
+```mermaid
+flowchart TD
+    A["Dati di eventi: CSV o XES"] --> B["Log formattato"]
+    B --> C["Filtraggio ed esplorazione"]
+    B --> D["Scoperta del modello"]
+    D --> E["Rete di Petri, BPMN o process map"]
+    B --> F["Conformance checking"]
+    E --> F
+    F --> G["Fitness e diagnosi delle deviazioni"]
+```
+
+Un **evento** è un'occorrenza di attività; un **caso** è un'istanza del processo; una **traccia** è la sequenza ordinata delle attività di un caso. Indicando con $C$ l'insieme dei casi e con $\sigma_c$ la traccia del caso $c$, un log può essere visto come una collezione di tracce:
+
+$$L=\{\!\{\sigma_c:c\in C\}\!\}.$$
+
+È una *multicollezione*: casi distinti possono avere la stessa sequenza. La sequenza di attività di una traccia è anche detta **variante**.
+
+Il log dimostrativo sulla gestione dei reclami contiene **6 casi, 42 eventi e 8 attività**. Tutti i casi iniziano con `register request`; tre terminano con `reject request` e tre con `pay compensation`. Il numero di righe del dataframe è il numero di **eventi**, non di casi.
+
+## 2. Preparare il log
+
+### Installazione e struttura dei dati
+
+Nel notebook si installa e importa la libreria:
+
+```python
+%pip install pm4py
+import pm4py
+import pandas as pd
+```
+
+Gli esempi caricano sei file didattici dal repository del corso, tra cui il log dei reclami in CSV e XES e due varianti modificate per la verifica di conformità. Il CSV usa il separatore `;` e contiene `case_id`, `activity`, `timestamp`, oltre a costo e risorsa. Un record rappresenta un evento; più record con lo stesso `case_id` formano la traccia di un caso.
+
+```python
+log = pd.read_csv("simplifiedCustomerComplaintHandling.csv", sep=";")
+log["timestamp"] = pd.to_datetime(log["timestamp"])
+log = pm4py.format_dataframe(
+    log,
+    case_id="case_id",
+    activity_key="activity",
+    timestamp_key="timestamp",
+)
+```
+
+`format_dataframe` associa i campi del CSV ai nomi convenzionali di PM4Py: `case:concept:name` (caso), `concept:name` (attività), `time:timestamp` (tempo). Conserva anche le colonne originarie nel dataframe mostrato dall'esempio. Controllare formato, fuso orario e ordinamento temporale è essenziale: una sequenza errata cambia tracce e relazioni direttamente successive. Se il formato delle date è noto, specificarlo esplicitamente evita ambiguità di parsing.
+
+Un file XES viene invece letto direttamente:
+
+```python
+log = pm4py.read_xes("simplifiedCustomerComplaintHandling.xes")
+start = pm4py.get_start_activities(log)
+end = pm4py.get_end_activities(log)
+```
+
+Nel risultato salvato, `start == {'register request': 6}` ed `end == {'reject request': 3, 'pay compensation': 3}`. Le frequenze si riferiscono ai casi che iniziano o finiscono con ciascuna attività. Il notebook esporta anche un dataframe formattato tramite `log.to_csv(...)` e `pm4py.write_xes(log, ...)`.
+
+| Formato | Uso nel notebook | Punto da ricordare |
+| --- | --- | --- |
+| CSV | Importazione con pandas; esportazione con `to_csv` | Occorre indicare le colonne di caso, attività e timestamp a PM4Py. |
+| XES | Importazione con `read_xes`; esportazione con `write_xes` | Convenzioni di attributi pensate per gli event log, come `concept:name`. |
+
+### Contare correttamente
+
+```python
+n_casi = log["case:concept:name"].nunique()
+n_eventi = len(log)
+n_attivita = log["concept:name"].nunique()
+```
+
+Nel CSV originale i nomi delle colonne sono `case_id` e `activity`. Dopo la formattazione, o leggendo XES, si possono usare i nomi convenzionali sopra. Un filtro che restituisce `23` righe restituisce **23 eventi**: per sapere quanti casi contiene bisogna contare gli identificativi distinti.
+
+## 3. Filtrare l'event log
+
+I filtri permettono di isolare casi o eventi prima di analizzare o scoprire un modello. Il parametro `retain=False` seleziona il complemento rispetto al criterio indicato.
+
+| Domanda | Funzione ed esempio | Unità del risultato |
+| --- | --- | --- |
+| Quali casi iniziano con un'attività? | `pm4py.filter_start_activities(log, {'register request'})` | Casi completi |
+| Quali casi finiscono con un'attività? | `pm4py.filter_end_activities(log, {'reject request'})` | Casi completi |
+| Quali casi contengono un valore di attributo? | `pm4py.filter_event_attribute_values(log, attribute_key='org:resource', level='case', values=['Pete'])` | Casi completi |
+| In quali casi $B$ segue subito $A$? | `pm4py.filter_directly_follows_relation(log, [('check ticket', 'examine casually')])` | Casi che soddisfano la relazione |
+| In quali casi $B$ compare più avanti di $A$? | `pm4py.filter_eventually_follows_relation(log, [('register request', 'reinitiate request')])` | Casi che soddisfano la relazione |
+
+Per una traccia $\sigma=\langle a_1,\ldots,a_n\rangle$:
+
+$$A\mathrel{>_\sigma}B\quad\Longleftrightarrow\quad\exists i<n:\ a_i=A\ \land\ a_{i+1}=B,$$
+
+$$A\mathrel{\leadsto_\sigma}B\quad\Longleftrightarrow\quad\exists i<j:\ a_i=A\ \land\ a_j=B.$$
+
+La prima relazione richiede **adiacenza**; la seconda ammette eventi intermedi. La direzione e l'ordine temporale contano in entrambe.
+
+Con `level='case'`, basta che **almeno un evento** abbia il valore cercato per selezionare **tutta** la traccia. Per esempio, selezionando i casi che contengono `cost:total == 200`, il risultato del notebook contiene tutti e sei i casi e anche eventi con costi `50`, `100` e `400`. Selezionando i casi con una risorsa `Pete` si ottengono i casi `1`, `3`, `4`, `5`; con `retain=False` si ottengono `2`, `6`. Quindi non si deve interpretare la colonna dei valori nel risultato come se ogni suo elemento soddisfacesse il predicato.
+
+Il filtro sulle attività finali restituisce **23 eventi in 3 casi** per `reject request` (`1`, `4`, `5`) e **19 eventi in 3 casi** per `pay compensation` (`2`, `3`, `6`).
+
+### Finestra temporale
+
+Il notebook prova `pm4py.filter_time_range(log, inizio, fine, mode=...)` con tre modalità:
+
+| `mode` | Criterio didattico | Effetto sul log |
+| --- | --- | --- |
+| `events` | Timestamp dell'evento nella finestra | Seleziona singoli eventi; può troncare una traccia. |
+| `traces_contained` | Traccia interamente compresa nella finestra | Mantiene i casi completi contenuti. |
+| `traces_intersecting` | Traccia che interseca la finestra | Mantiene i casi completi che la toccano. |
+
+La distinzione è tra *filtrare righe* e *filtrare casi*. Per analisi del controllo di flusso, troncare una traccia può creare falsi inizi, falsi finali o successioni fuorvianti. Nell'esempio la finestra va dal 30 al 31 dicembre 2010; il timestamp minimo del log è `2010-12-30 11:02:00+00:00`, il massimo `2011-01-24 14:56:00+00:00`.
+
+**Varianti:** il notebook presenta `filter_variants` in celle di tipo *raw* e intitola la sezione «does not currently work». Sono esempi illustrativi, non un passaggio eseguito con risultato verificato. Una variante richiede la corrispondenza dell'intera sequenza ordinata, non solo la presenza delle sue attività.
+
+## 4. Scoprire un modello
+
+La **process discovery** ricava un modello a partire dal comportamento osservato. Il notebook applica metodi diversi allo stesso log; il tipo di modello stabilisce che cosa si può leggere e, soprattutto, che cosa si può *eseguire*.
+
+### Rete di Petri con Inductive Miner
+
+```python
+pn, im, fm = pm4py.discover_petri_net_inductive(log)
+pm4py.view_petri_net(pn, im, fm)
+```
+
+`pn` è la rete, `im` la marcatura iniziale e `fm` quella finale. Una rete di Petri comprende **posti** (cerchi), **transizioni** (attività visibili oppure passi silenziosi) e **archi**. I **token** nei posti descrivono lo stato. Una transizione è abilitata quando tutti i posti in ingresso hanno i token necessari; eseguendola, consuma token in ingresso e produce token nei posti in uscita. Una transizione silenziosa cambia lo stato senza generare un evento visibile.
+
+Nel modello spiegato dal notebook, dopo `register request` sono possibili una scelta fra `examine thoroughly` e `examine casually` e, in parallelo, `check ticket`. `decide` attende il completamento dei due rami. Il caso può poi riprendere con `reinitiate request`, oppure terminare con `reject request` o `pay compensation`.
+
+```mermaid
+flowchart TD
+    R["register request"] --> P["Apertura dei rami paralleli"]
+    P --> T["check ticket"]
+    P --> X{"Scelta dell'esame"}
+    X --> E1["examine thoroughly"]
+    X --> E2["examine casually"]
+    T --> J["Sincronizzazione"]
+    E1 --> J
+    E2 --> J
+    J --> D["decide"]
+    D --> I["reinitiate request"]
+    I --> P
+    D --> F{"Esito finale"}
+    F --> N["reject request"]
+    F --> Y["pay compensation"]
+```
+
+*Schema concettuale del flusso narrato nel notebook, non trascrizione della rete di Petri generata.* La scelta impone un solo tipo di esame per quella iterazione; il parallelismo permette che `check ticket` avvenga prima o dopo l'esame. Un esempio di traccia ammessa riportato nel notebook è $\langle\text{register request},\text{examine thoroughly},\text{check ticket},\text{decide},\text{reject request}\rangle$.
+
+Il notebook include una funzione didattica `draw_marking_for_transition` che costruisce una marcatura nei posti di uscita di una transizione per visualizzarla: è una **visualizzazione semplificata**, non un simulatore completo di tutte le regole di abilitazione e consumo dei token.
+
+### Process tree e BPMN
+
+```python
+tree = pm4py.discover_process_tree_inductive(log)
+bpmn = pm4py.convert_to_bpmn(tree)
+pm4py.view_process_tree(tree)
+pm4py.view_bpmn(bpmn)
+```
+
+L'**albero di processo** è una rappresentazione strutturata del controllo di flusso, usata qui come passaggio verso **BPMN**. Nel modello BPMN spiegato dal notebook, il gateway `X` esprime una scelta esclusiva e il gateway `+` un parallelismo: i rami paralleli si sincronizzano prima di `decide`. BPMN e reti di Petri sono **notazioni differenti**: l'espressione del notebook «a richer Petri net» aiuta l'intuizione, ma non è una definizione formale di BPMN.
+
+### Directly Follows Graph (DFG)
+
+```python
+dfg, starts, ends = pm4py.discover_dfg(log)
+pm4py.view_dfg(dfg, starts, ends)
+```
+
+Un **DFG** collega attività osservate consecutivamente e conta le occorrenze degli archi. Per attività $A,B$:
+
+$$f_L(A,B)=\sum_{\sigma\in L}\sum_{i=1}^{|\sigma|-1}\mathbf{1}[\sigma_i=A\ \land\ \sigma_{i+1}=B].$$
+
+Il DFG è una sintesi delle successioni nel log: da un arco $A\to B$ non segue da solo che $A$ *causi* $B$, né che il modello imponga sempre quella sequenza. Due attività parallele possono apparire in entrambi gli ordini in tracce diverse. Per questo il notebook avverte di non dedurre automaticamente la semantica esecutiva da una process map.
+
+### Heuristics Net
+
+```python
+net = pm4py.discover_heuristics_net(log)
+pm4py.view_heuristics_net(net)
+
+net = pm4py.discover_heuristics_net(log, dependency_threshold=0.5)
+```
+
+L'**Heuristic Miner** considera frequenze e indizi di dipendenza, così può ridurre archi occasionali e riconoscere meglio il parallelismo rispetto al semplice conteggio del DFG. Il notebook mostra `dependency_threshold=0.5`, senza sviluppare la formula esatta della misura: è una soglia dell'algoritmo, **non** una probabilità generica da attribuire agli archi. Nell'esempio `check ticket` ed `examine thoroughly` possono risultare concorrenti anche se compaiono talvolta uno dopo l'altro nel log.
+
+| Modello | Informazione principale | Limite interpretativo |
+| --- | --- | --- |
+| DFG | Frequenze delle successioni immediate | Un arco osservato non basta a stabilire scelta, causalità o parallelismo. |
+| Heuristics Net | Dipendenze stimate con euristiche | Dipende dai dati e dalle soglie. |
+| Rete di Petri | Stato e comportamento eseguibile tramite token | Le transizioni silenziose e la sincronizzazione richiedono una lettura accurata. |
+| Process tree / BPMN | Scelta, parallelismo, cicli in forme strutturate o grafiche | La conversione cambia notazione e deve essere letta con la propria semantica. |
+
+## 5. Verifica di conformità
+
+La **conformance checking** confronta tracce osservate e comportamento ammesso dal modello. Il notebook riscopre la rete di Petri dal log originale, poi modifica **il caso 3** in due copie del CSV: in una elimina un evento `reinitiate request`; nell'altra lo duplica. Il confronto rende visibile che un modello capace di riprodurre il log originale può non riprodurre esattamente i log alterati.
+
+```mermaid
+flowchart TD
+    M["Rete di Petri ricavata dal log originale"] --> C["Confronto con i log"]
+    O["Originale: 6 casi"] --> C
+    R["Caso 3: reinitiate rimosso"] --> C
+    D["Caso 3: reinitiate duplicato"] --> C
+    C --> T["Token-based replay: fitness"]
+    C --> A["Alignment: fitness e mosse"]
+```
+
+### Token-based replay
+
+```python
+pm4py.fitness_token_based_replay(log, pn, im, fm)
+```
+
+Si tenta di riprodurre ciascuna traccia sulla rete. In presenza di discrepanze l'algoritmo può contare token **mancanti** e **rimasti**; una traccia perfettamente riproducibile ha fitness $1$, mentre una traccia non perfetta ha fitness inferiore a $1$ (secondo la misura restituita). `perc_fit_traces` è la percentuale di tracce perfettamente conformi; `average_trace_fitness` è la media delle fitness delle tracce. Non sono la stessa quantità.
+
+| Log | Tracce perfette | Fitness media delle tracce | Fitness del log |
+| --- | ---: | ---: | ---: |
+| Originale | 100% | 1,0000 | 1,0000 |
+| `reinitiate request` rimosso nel caso 3 | 83,33% | 0,9802 | 0,9785 |
+| `reinitiate request` duplicato nel caso 3 | 83,33% | 0,9896 | 0,9863 |
+
+I valori sono gli **output salvati nel notebook**. In entrambi i log modificati resta conforme $5/6$ delle tracce, ma le fitness aggregate differiscono perché le deviazioni hanno un effetto diverso sul replay.
+
+### Alignment
+
+```python
+pm4py.fitness_alignments(log, pn, im, fm)
+diagnostics = pm4py.conformance_diagnostics_alignments(log_modificato, pn, im, fm)
+```
+
+Un **alignment** mette in corrispondenza i passi della traccia con i passi di un'esecuzione ammessa dal modello. Cerca una corrispondenza di costo minimo secondo i costi delle mosse configurati. In termini concettuali, se $\Gamma(\sigma,N)$ è l'insieme degli alignment possibili tra la traccia $\sigma$ e il modello $N$:
+
+$$\gamma^*\in\operatorname*{arg\,min}_{\gamma\in\Gamma(\sigma,N)}\operatorname{cost}(\gamma).$$
+
+| Mossa `(log, modello)` | Significato |
+| --- | --- |
+| `(A, A)` | Mossa sincrona: l'evento è riproducibile nel modello. |
+| `(A, >>)` | Mossa solo nel log: evento osservato senza corrispondente passo del modello. |
+| `(>>, A)` | Mossa solo nel modello: il modello richiede o usa un passo non presente nella traccia. |
+| `(>>, None)` | Transizione silenziosa del modello; non è di per sé un'anomalia. |
+
+Nel caso 3 con la riapertura rimossa, l'output diagnostico include `(>>, 'reinitiate request')`: per proseguire nell'esecuzione compatibile con il modello occorre quel passo, che manca nel log modificato. L'output assegna a quella traccia `fitness: 0.9230769230769231`; il numero `cost: 10003` appartiene alla funzione di costo dell'algoritmo e non va interpretato come tre eventi o come unità di tempo.
+
+Il notebook riporta per gli alignment del **log originale** il 100% di tracce perfette e `averageFitness: 1.0`; `log_fitness` è circa `0.999979`, dunque non è esattamente $1$ in quell'output. Per il log con evento rimosso, le tracce perfette sono `83.333...%` e `averageFitness` è circa `0.98718`. I numeri di fitness ottenuti con alignment e token-based replay non vanno confrontati come se usassero necessariamente la stessa formula.
+
+**Come leggere la diagnosi:** leggendo la colonna del modello e scartando `>>`, si ottiene una sequenza consentita dal modello che si avvicina alla traccia osservata. La diagnosi spiega *dove* si trova la differenza; da sola non dice se sia sbagliato il dato registrato o se il modello debba essere aggiornato.
+
+## 6. Checklist per rifare l'esercizio
+
+1. Importare il log, identificare caso, attività e timestamp; controllare i conteggi di casi, eventi e attività.
+2. Confrontare attività iniziali e finali e verificare il significato di ogni filtro, soprattutto `level='case'` e le modalità temporali.
+3. Scoprire DFG, rete di Petri, process tree e BPMN; distinguere frequenze osservate da comportamento ammesso.
+4. Scoprire la rete **sul log originale** e usarla come riferimento comune per tutti i log da confrontare.
+5. Riportare separatamente percentuale di tracce perfette, fitness media e fitness del log; leggere le mosse dell'alignment per localizzare le deviazioni.
+
+### In sintesi
+
+- **Evento → caso → traccia → log** sono livelli distinti: `len(log)` conta righe/eventi.
+- **Scoperta** ricava un modello dai dati; **conformità** confronta i dati con un modello già scelto.
+- **DFG** riassume successioni; **Petri/BPMN** esprimono anche scelta, parallelismo e cicli.
+- **Fitness** quantifica l'aderenza; gli **alignment** mostrano le mosse che spiegano le divergenze.

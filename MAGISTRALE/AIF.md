@@ -179,10 +179,10 @@ Una percezione semplice è la coppia $(x_t,s_t)$, dove $x_t\in\{A,B\}$ è la pos
 La funzione riflessa presentata nelle slide è:
 
 ```text
-ReflexVacuumAgent(posizione, stato):
-    se stato = dirty: restituisci Suck
-    altrimenti se posizione = A: restituisci Right
-    altrimenti: restituisci Left
+function Reflex-Vacuum-Agent( [location,status]) returns an action 
+if status = Dirty then return Suck 
+else if location = A then return Right 
+else if location = B then return Left
 ```
 
 | Percezione corrente | Azione |
@@ -215,6 +215,8 @@ dove $M$ è la prestazione risultante, $p_{1:t}$ la storia osservata e $K$ la co
 | Successo garantito | Le azioni possono avere esiti incerti o diversi da quelli previsti. |
 
 La valutazione è **consequenzialista**: conta l'effetto delle azioni sull'ambiente. È perciò cruciale scegliere una misura delle prestazioni adeguata. Per esempio, «grammi di sporco raccolti in un'ora» potrebbe incentivare comportamenti che accumulano sporco invece di mantenere pulite le stanze. È un esempio di *Goodhart's law*: quando una metrica diventa un bersaglio da massimizzare, può perdere la capacità di rappresentare lo scopo desiderato.
+
+Goodhart’s law: «when a measure becomes a target, it ceases to be a good measure»
 
 **Esempio concreto della registrazione (circa 27–32 min):** si potrebbe premiare il numero di istanti in cui entrambe le stanze restano pulite, eventualmente aggiungendo il tempo necessario a ripulirle. Se invece si premiano solo i grammi raccolti, un robot potrebbe aspirare e poi riversare lo stesso sporco, ripetendo l'operazione: punteggio alto, casa non pulita. Il docente invita a osservare il comportamento degli agenti migliori oltre ai grafici della metrica, perché anche errori dell'ambiente simulato possono diventare scorciatoie sfruttate dall'ottimizzazione.
 
@@ -312,6 +314,8 @@ Rappresenta un **obiettivo** separatamente dalle regole immediate: usa il modell
 
 Raggiungere un obiettivo può richiedere di sacrificare una ricompensa immediata per un risultato migliore nel lungo periodo: l'azione migliore dipende dunque dall'orizzonte e dal criterio di valutazione.
 
+Maximize the immediate reward vs. maximize the expected long-term reward 
+Search: how to best navigate the possible options (decision tree) Planning: leverage the world’s knowledge to execute the best actions
 ### 6.4 Agente basato sull'utilità
 
 Un obiettivo binario dice se uno stato è desiderato; una **funzione di utilità** $U(s)$ permette di confrontare anche stati intermedi e risultati diversi. Nelle situazioni incerte si può confrontare l'utilità attesa:
@@ -1279,3 +1283,243 @@ più il costo di verificare i vincoli che coinvolgono le variabili fissate. È v
 7. Che cosa elimina la consistenza di nodo? Quando un arco $X\to Y$ è consistente?
 8. Quale informazione propaga MAC che il solo forward checking non usa?
 9. Perché un grafo di vincoli ad albero si risolve senza backtracking dopo la propagazione?
+
+# 8/10
+
+> **Fonti:** Andrea Cossu, *Search in Games* (`7_Games(1).pdf`, slide 1–33), trascrizione `aif7.vtt` (circa 95 minuti) e, per la prima parte ripresa dal docente, le slide *Constraint Satisfaction Problem* già usate nella lezione 6. La registrazione copre la propagazione dei vincoli nei CSP (circa 0–48 min) e poi i giochi fino alle strategie di tipo A/B (circa 48–94 min). MCTS e giochi stocastici sono nelle slide, ma vengono annunciati per la lezione successiva: sono riassunti in fondo come **anticipazione**.
+
+## 1. Ripresa dei CSP: inferenza prima e durante la ricerca
+
+Un CSP è descritto da variabili $X_i$, domini $D_i$ e vincoli $C$. Il backtracking assegna una variabile per volta. La **propagazione dei vincoli** riduce i domini senza enumerare un intero albero di assegnazioni: se un valore non può partecipare a nessuna soluzione compatibile con i vincoli già considerati, si elimina. Può semplificare il problema, rilevare un'impossibilità o, nei casi favorevoli, lasciare un solo valore per variabile.
+
+### 1.1 Consistenza di nodo e d'arco (circa 3–11 min)
+
+La **consistenza di nodo** applica i vincoli unari. Se $D_X=\{1,2,3,4\}$ e $X<3$, si ottiene $D_X=\{1,2\}$.
+
+Per un vincolo binario $C_{XY}$, l'arco diretto $X\to Y$ è **consistente** quando ogni valore ancora ammesso per $X$ possiede almeno un *supporto* nel dominio di $Y$:
+
+$$
+\forall x\in D_X\;\exists y\in D_Y:\ C_{XY}(x,y).
+$$
+
+Se $D_X=\{1,2,3\}$, $D_Y=\{2,3\}$ e il vincolo è $X<Y$, il valore $3$ non ha supporto e viene eliminato da $D_X$. La consistenza è **direzionale**: dopo aver verificato $X\to Y$ può essere ancora necessario verificare $Y\to X$. Un controllo ingenuo di un arco richiede fino a $O(d^2)$ coppie per domini di dimensione massima $d$.
+
+### 1.2 AC-3: propagare fino al punto fisso (circa 11–20 min)
+
+AC-3 parte con una coda di archi orientati. Dopo aver modificato il dominio di $X$, bisogna ricontrollare gli archi che arrivano a $X$, poiché un valore di un vicino potrebbe aver perso il suo supporto.
+
+```text
+AC3(coda iniziale di archi):
+    finché la coda non è vuota:
+        estrai (X, Y)
+        se REVISIONA(X, Y) ha eliminato valori da D_X:
+            se D_X è vuoto: restituisci fallimento
+            per ogni vicino Z di X diverso da Y:
+                inserisci (Z, X) nella coda
+    restituisci i domini ridotti
+
+REVISIONA(X, Y):
+    elimina da D_X ogni x per cui non esiste y in D_Y con C_XY(x, y)
+```
+
+```mermaid
+flowchart LR
+  Q["Estrai arco X → Y"] --> R["Rimuovi da X i valori senza supporto in Y"]
+  R --> E{"D_X vuoto?"}
+  E -- "sì" --> F["Fallimento"]
+  E -- "no, X cambiato" --> N["Reinserisci gli archi Z → X"]
+  N --> Q
+```
+
+AC-3 termina quando la coda è vuota o un dominio diventa vuoto. Nel primo caso il CSP è **arc-consistent**, ma non necessariamente risolto: incompatibilità che coinvolgono più variabili possono rimanere. Nel secondo caso il CSP corrente è impossibile. Per $c$ archi binari e domini di dimensione massima $d$, la stima presentata è $O(cd^3)$: una revisione costa fino a $O(d^2)$ e, al più, $O(d)$ riduzioni successive possono causare nuovi controlli di un arco.
+
+### 1.3 Forward checking e MAC (circa 20–27 min)
+
+Durante il backtracking, l'inferenza si applica **dopo ogni assegnazione**:
+
+| Metodo | Azione dopo $X=v$ | Quanto propaga? |
+| --- | --- | --- |
+| **Forward checking** | Elimina dai domini delle variabili libere $Y$ i valori incompatibili con $X=v$. | Un passo verso i vicini di $X$; non ricontrolla automaticamente i loro altri vincoli. |
+| **MAC** (*maintaining arc consistency*) | Avvia AC-3 dagli archi interessati dalla nuova assegnazione. | Propaga anche tra variabili ancora libere fino a consistenza d'arco. |
+
+Se un dominio si svuota **durante la ricerca**, si scarta quel ramo e si torna a provare un altro valore. Non significa necessariamente che l'intero CSP originale sia privo di soluzioni. MAC può potare più rami di forward checking, pagando più lavoro a ogni assegnazione.
+
+## 2. Altri approcci ai CSP spiegati prima dei giochi
+
+### 2.1 Ricerca locale e pesi dei vincoli (circa 27–35 min)
+
+Una formulazione alternativa parte da un'assegnazione **completa**, anche se viola vincoli. Con la regola **min-conflicts** si sceglie una variabile coinvolta in un conflitto e le si assegna il valore che lascia il minor numero di vincoli violati. Si può fissare un budget di passi e ripartire da un'altra assegnazione casuale: l'algoritmo può essere rapido, ma non garantisce in generale una soluzione o una prova di impossibilità.
+
+La variante di **constraint weighting** attribuisce inizialmente peso $w_j=1$ a ogni vincolo. Per scegliere una mossa valuta, per esempio,
+
+$$
+E(\alpha)=\sum_j w_j\,\mathbf 1[C_j\text{ è violato in }\alpha],
+$$
+
+poi incrementa i pesi dei vincoli ancora violati. Un vincolo che continua a creare difficoltà pesa così di più nelle scelte successive. Questi **pesi di ricerca** guidano l'algoritmo anche quando i vincoli sono tutti rigidi; sono distinti dai costi di eventuali preferenze morbide già presenti nella definizione del problema.
+
+### 2.2 Componenti, alberi e cutset (circa 35–48 min)
+
+Se il grafo dei vincoli si separa in componenti connesse, ciascuna può essere risolta indipendentemente: nella mappa australiana Tasmania è isolata. Se la componente più grande contiene $c$ variabili, una ricerca esaustiva su ogni componente può essere molto meno costosa che cercare su tutte le $n$ variabili insieme.
+
+Per un **CSP binario con grafo ad albero**, si sceglie una radice, si dispongono i nodi nell'ordine genitore–figlio, si propagano i vincoli dalle foglie alla radice e infine si assegnano i valori dalla radice alle foglie. Rendendo consistente ciascun arco $\text{genitore}\to\text{figlio}$ prima della scelta, per ogni valore rimasto del genitore esiste un valore compatibile del figlio: non serve backtracking. La stima delle slide è $O(nd^2)$ per $n$ variabili e domini di dimensione $d$.
+
+```mermaid
+flowchart TB
+  A --> B
+  A --> D
+  B --> C
+  D --> E
+  D --> F
+```
+
+Se il grafo ha cicli, il **cutset conditioning** fissa $c$ variabili la cui rimozione lascia un albero, prova le loro assegnazioni e risolve il residuo con l'algoritmo ad albero. Nel modello delle slide il costo indicativo è
+
+$$
+O\!\left(d^c(n-c)d^2\right),
+$$
+
+oltre al lavoro necessario per trovare un cutset adatto e verificare i vincoli sulle variabili fissate. Funziona bene se $c$ è piccolo; scegliere quali variabili fissare è esso stesso un problema.
+
+## 3. Giochi competitivi: modello del problema (circa 48–55 min)
+
+La seconda parte della lezione studia soprattutto **giochi deterministici, a due giocatori, a turni, a informazione perfetta e a somma zero**. «Informazione perfetta» significa che i giocatori conoscono lo stato rilevante del gioco; «somma zero» significa che ciò che guadagna uno corrisponde a ciò che perde l'altro, anche se un pareggio è possibile.
+
+| Componente | Significato |
+| --- | --- |
+| $s_0$ | Stato iniziale. |
+| $\operatorname{TO\!\text{-}\!MOVE}(s)$ | Giocatore cui spetta la mossa nello stato $s$. |
+| $\operatorname{ACTIONS}(s)$ | Mosse lecite. |
+| $\operatorname{RESULT}(s,a)$ | Stato dopo la mossa $a$; è una funzione nel caso deterministico. |
+| $\operatorname{IS\!\text{-}\!TERMINAL}(s)$ | Indica se la partita è finita. |
+| $U(s,p)$ | Utilità di un giocatore $p$ in uno stato terminale. |
+
+Le slide classificano scacchi, dama e Go come giochi deterministici a informazione perfetta; backgammon aggiunge esiti casuali; poker combina casualità e informazione imperfetta. La distinzione conta perché **minimax puro** assume transizioni determinate e stato pienamente osservato.
+
+Convenzionalmente chiamiamo i giocatori **MAX** e **MIN**, e misuriamo l'utilità dal punto di vista di MAX. MAX cerca di aumentarla; MIN cerca di ridurla. In un gioco a somma zero si può scegliere $U(s,\mathrm{MIN})=-U(s,\mathrm{MAX})$.
+
+## 4. Albero di gioco e minimax (circa 55–76 min)
+
+L'**albero di gioco** comprende tutte le sequenze di mosse a partire da una posizione fino alle posizioni terminali. Lo stesso stato può comparire su più cammini; i cicli possono perfino produrre un albero infinito se le regole non impongono un limite. In scacchi le slide usano come stime illustrative un fattore di ramificazione $b\simeq35$ e una durata media di circa 80 *ply* (mezze mosse): $35^{80}$ è fuori portata per una ricerca esaustiva.
+
+La scelta di MAX è un nodo **OR**: MAX può scegliere un'azione. Dal suo punto di vista le risposte possibili di MIN vanno tutte considerate, come in un nodo **AND** della ricerca avversaria. La soluzione è una **strategia condizionale**: per ogni possibile mossa dell'avversario indica la risposta appropriata.
+
+Il **valore minimax** $V(s)$ è l'utilità che MAX può garantire se da $s$ entrambi giocano ottimamente:
+
+$$
+V(s)=
+\begin{cases}
+U(s,\mathrm{MAX}), & \operatorname{IS\!\text{-}\!TERMINAL}(s),\\[3pt]
+\displaystyle\max_{a\in\operatorname{ACTIONS}(s)}V(\operatorname{RESULT}(s,a)), & \operatorname{TO\!\text{-}\!MOVE}(s)=\mathrm{MAX},\\[7pt]
+\displaystyle\min_{a\in\operatorname{ACTIONS}(s)}V(\operatorname{RESULT}(s,a)), & \operatorname{TO\!\text{-}\!MOVE}(s)=\mathrm{MIN}.
+\end{cases}
+$$
+
+```mermaid
+flowchart TB
+  A["MAX"] --> B["MIN: valore 3"]
+  A --> C["MIN: valore 2"]
+  B --> B1["3"]
+  B --> B2["8"]
+  C --> C1["2"]
+  C --> C2["6"]
+```
+
+Nel piccolo esempio, MIN sceglie $\min(3,8)=3$ nel ramo sinistro e $\min(2,6)=2$ nel destro; MAX sceglie il sinistro perché $\max(3,2)=3$. Per calcolare questi valori si esplora l'albero in profondità, si leggono le utilità terminali e si risale applicando alternativamente massimo e minimo.
+
+| Proprietà | Minimax completo |
+| --- | --- |
+| Completezza | Sì per un albero finito completamente esplorabile. |
+| Ottimalità | Garantisce a MAX il miglior esito **nel caso peggiore**, assumendo che MIN scelga la risposta migliore per sé. |
+| Tempo | $O(b^m)$, con $m$ profondità massima. |
+| Spazio | $O(bm)$ con DFS che conserva cammino e fratelli ancora da esplorare. |
+
+La registrazione (circa 69–73 min) osserva che contro un avversario fallibile si può desiderare una scelta che **non massimizza il minimo garantito**, ma aumenta le occasioni di vincere se l'avversario commette un errore. Per farlo serve un modello del suo comportamento o un altro criterio decisionale; minimax da solo non attribuisce probabilità alle sue mosse.
+
+### Più di due giocatori
+
+La slide 12 estende l'idea a un vettore di utilità per stato terminale, una componente per giocatore. Nel nodo del giocatore $i$ si seleziona il successore che massimizza **la componente $i$**, conservando il vettore del successore scelto. Non si riduce più generalmente a un solo valore scalare di MAX e MIN.
+
+## 5. Potatura α-β (circa 77–89 min)
+
+La **potatura alpha-beta** evita di esplorare rami che non possono influenzare la scelta finale, senza cambiare il valore minimax alla radice. Durante la visita in profondità si mantengono due soglie:
+
+- $\alpha$: il miglior valore che MAX può già garantire lungo il cammino considerato.
+- $\beta$: il miglior limite superiore che MIN può già imporre lungo quel cammino.
+
+Quando $\alpha\ge\beta$, i figli ancora inesplorati del nodo corrente non possono migliorare la scelta di un antenato e si tagliano.
+
+**Esempio:** alla radice MAX è già noto un ramo di valore 3. Si inizia un secondo ramo MIN e il suo primo figlio vale 2. Il valore finale di quel ramo MIN sarà **al più 2**, perché MIN può scegliere quel figlio anche se altri producono valori maggiori. MAX preferisce già il ramo di valore 3: non serve visitare gli altri figli del secondo ramo.
+
+```mermaid
+flowchart TB
+  A["MAX: può ottenere 3"] --> L["Ramo già valutato: 3"]
+  A --> R["Nuovo nodo MIN"]
+  R --> V["Primo figlio: 2"]
+  R -. "figli non necessari" .-> P["Potati"]
+```
+
+L'ordine delle mosse è decisivo: valutare presto mosse promettenti rende più stretti i limiti. Nel caso migliore la complessità temporale può scendere verso $O(b^{m/2})$, pur restando esponenziale; nel caso peggiore senza potature utili rimane $O(b^m)$. Una posizione tagliata non è «impossibile»: è soltanto irrilevante per **questa** decisione minimax.
+
+### Profondità limitata, valutazione e orizzonte
+
+Per giochi grandi si interrompe la ricerca a una profondità $\ell$ e si valuta una posizione non terminale mediante una funzione $E(s)$, costruita da caratteristiche pesate o appresa. Per esempio, in un gioco da tavolo si possono usare materiale, mobilità e sicurezza del re. Si sostituisce quindi temporaneamente l'utilità terminale con una **stima**: la mossa scelta non ha più la garanzia del minimax sull'intero albero.
+
+| Strategia delle slide | Idea |
+| --- | --- |
+| **Tipo A** | Esplora sistematicamente fino a una profondità fissata, applicando $E$ al bordo; la potatura α-β elimina i rami irrilevanti senza modificare il minimax entro quella profondità. |
+| **Tipo B** | Scarta già in partenza alcune mosse giudicate poco promettenti e segue più in profondità le restanti. |
+
+L'**effetto orizzonte** nasce quando un evento decisivo cade appena oltre il limite: la posizione sembra buona a profondità $\ell$, ma un ulteriore *ply* rivelerebbe un problema. Le slide propongono la scelta tra maggiore ampiezza e maggiore profondità in base al fattore di ramificazione e alla qualità della valutazione.
+
+## 6. Anticipazione delle slide: MCTS e giochi stocastici
+
+> La registrazione conclude annunciando Monte Carlo Tree Search per la lezione successiva. Il materiale seguente riassume le slide 22–32 senza attribuirlo alla spiegazione orale di questa lezione.
+
+### 6.1 Monte Carlo Tree Search
+
+**MCTS** stima il valore delle mosse tramite *playout* (partite simulate) e costruisce l'albero in modo incrementale. È utile quando il branching factor è grande o non si dispone di una buona funzione di valutazione. Una simulazione completa produce un'utilità terminale; la media delle utilità osservate che attraversano un nodo ne fornisce una stima empirica.
+
+```mermaid
+flowchart LR
+  S["Selezione"] --> E["Espansione"]
+  E --> R["Simulazione"]
+  R --> B["Aggiornamento degli antenati"]
+  B --> S
+```
+
+La **politica di selezione** decide quale percorso dell'albero attuale seguire, bilanciando esplorazione di nodi poco visitati e sfruttamento di nodi con buoni risultati. La **politica di playout** decide le mosse durante la simulazione. Dopo la simulazione, il risultato viene riportato lungo il percorso selezionato e si aggiornano conteggi e valori. Le politiche possono essere semplici o usare modelli appresi.
+
+Nella variante **UCT**, una forma usuale del punteggio per un figlio $n$ è
+
+$$
+\operatorname{UCT}(n)=\frac{U(n)}{N(n)}
++C\sqrt{\frac{\ln N(\operatorname{parent}(n))}{N(n)}},
+$$
+
+dove $U(n)$ è la somma delle utilità osservate, $N(n)$ il numero di visite e $C>0$ controlla l'esplorazione. Un figlio mai visitato viene trattato separatamente, dandogli priorità di esplorazione. **Nota sulle slide:** la formula stampata alla slide 25 mostra il rapporto logaritmico senza radice quadrata; la forma qui riportata è quella convenzionale di UCB1/UCT. Si distinguono così la media empirica e il bonus di esplorazione.
+
+Quando è ora di giocare, selezionare il figlio della radice **più visitato** è una scelta robusta: una stima molto alta fondata su due sole simulazioni può essere meno affidabile di una stima simile fondata su cento. MCTS può impiegare euristiche, ma non le richiede per definizione.
+
+### 6.2 Nodi casuali ed expectiminimax
+
+In un gioco con dadi o altri esiti aleatori, il nodo **chance** considera ciascun risultato $r$ con probabilità $P(r\mid s,a)$. Il suo valore è una media pesata delle continuazioni:
+
+$$
+V_{\mathrm{chance}}(s,a)
+=\sum_r P(r\mid s,a)\,V(\operatorname{RESULT}(s,a,r)).
+$$
+
+I nodi dei giocatori continuano a usare massimo e minimo, mentre quelli casuali usano l'aspettativa: questa è l'idea di **expectiminimax**. Giochi a informazione imperfetta, come poker, richiedono inoltre di rappresentare ciò che il giocatore conosce; le slide li citano come estensione e non ne sviluppano gli algoritmi.
+
+## 7. Domande per ripassare
+
+1. Perché AC-3 reinserisce nella coda gli archi $Z\to X$ quando cambia $D_X$? Un CSP arc-consistent è sempre risolto?
+2. Che differenza c'è tra forward checking e MAC dopo un'assegnazione che svuota un dominio?
+3. In che senso i pesi dei vincoli nella ricerca locale sono diversi dai pesi delle preferenze nel problema originario?
+4. Come si risolve un CSP ad albero in $O(nd^2)$ e perché l'assegnazione finale non richiede backtracking?
+5. Quali ipotesi richiede minimax? Perché la strategia è un piano condizionale?
+6. Calcola il valore di un nodo MIN con figli di valore $3$ e $8$, poi spiega quale ramo sceglierebbe MAX fra questo nodo e uno di valore $2$.
+7. Quale informazione contiene $\alpha$? Quando un nodo MIN permette di potare i figli restanti?
+8. Che cosa perde la ricerca a profondità limitata e come si manifesta l'effetto orizzonte?
+9. Quali ruoli hanno selezione, playout e aggiornamento in MCTS? Come si aggiunge un nodo casuale a minimax?

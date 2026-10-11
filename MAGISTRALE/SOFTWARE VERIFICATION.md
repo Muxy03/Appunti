@@ -11751,52 +11751,54 @@ $$
 Quindi il controllo di una **regular safety property** viene ridotto a un problema di **reachability / invariant checking** sul prodotto tra sistema e automa.
 
 # 6/10
+## Pagine 1–137 — $\omega$-Regular Properties e Büchi Automata
 
-> Appunti derivati da `sv_09.pdf`.
+> Appunti basati su `sv_09.pdf`, pagine 1–137.
 >
-> Formato compatibile con Obsidian:
-> - formule inline con `$ ... $`;
-> - formule su riga separata con `$$ ... $$`;
-> - schemi con blocchi `mermaid`.
+> Formato Obsidian:
+> - formule inline: `$ ... $`;
+> - formule display: `$$ ... $$`;
+> - schemi: blocchi `mermaid`.
 
 ---
 
-## 1. Obiettivo della lezione
+## 1. Regular LT Properties
 
-Questa parte del corso estende le **Regular Properties** dalle safety properties ai linguaggi di parole infinite.
+L'obiettivo è rappresentare **Linear-Time properties** mediante automi finiti.
 
-I temi principali sono:
+Una LT property è un linguaggio di parole infinite:
 
-- $\omega$-regular expressions;
-- $\omega$-regular languages;
-- Nondeterministic Büchi Automata (**NBA**);
-- equivalenza tra $\omega$-regular expressions e NBA;
-- proprietà di chiusura;
-- nonemptiness degli NBA;
-- Deterministic Büchi Automata (**DBA**);
-- limiti dei DBA;
-- Generalized Büchi Automata (**GNBA**);
-- intersezione tramite prodotto di automi.
+$$
+E \subseteq (2^{AP})^\omega.
+$$
+
+Le regular LT properties sono quelle che ammettono una rappresentazione finita.
 
 ```mermaid
 flowchart TB
-    LT["Linear-Time Properties"]
-    RP["Regular Properties"]
-    SR["Regular Safety Properties"]
-    WR["ω-Regular Properties"]
+    LT["Linear-Time properties"]
+    REG["Regular LT properties"]
+    SAFE["Regular safety properties"]
+    OTHER["Other regular LT properties"]
 
-    LT --> RP
-    RP --> SR
-    RP --> WR
+    LT --> REG
+    REG --> SAFE
+    REG --> OTHER
 
-    SR --> NFA["NFA for bad prefixes"]
-    WR --> RE["ω-regular expressions"]
-    WR --> NBA["Büchi automata"]
+    SAFE --> NFA["NFA for bad prefixes"]
+    OTHER --> OMEGA["ω-automata / ω-regular expressions"]
 ```
+
+Per le regular safety properties si riconoscono i **bad prefixes** tramite NFA.
+
+Per le proprietà su comportamenti infiniti si introducono invece:
+
+- $\omega$-regular expressions;
+- Büchi automata.
 
 ---
 
-## 2. Regular Expressions — richiamo
+## 2. Richiamo: Regular Expressions
 
 Sia:
 
@@ -11821,13 +11823,13 @@ $$
 A\in\Sigma.
 $$
 
-La semantica associa a ogni espressione un linguaggio di parole finite:
+La semantica associa a ogni espressione un linguaggio:
 
 $$
 L(\alpha)\subseteq\Sigma^*.
 $$
 
-Le regole fondamentali sono:
+Le operazioni sono:
 
 $$
 L(\emptyset)=\emptyset
@@ -11854,54 +11856,45 @@ L(\alpha_1)L(\alpha_2)
 $$
 
 $$
-L(\alpha^*)=L(\alpha)^*.
+L(\alpha^*)
+=
+L(\alpha)^*.
 $$
+
+Il Kleene star rappresenta una **ripetizione finita**.
 
 ---
 
-## 3. Dal Kleene Star all'operatore $\omega$
+## 3. Operatore $\omega$
 
-Il Kleene star descrive una ripetizione finita:
-
-$$
-\alpha^*.
-$$
-
-Per descrivere parole infinite viene introdotto:
+Per descrivere parole infinite si introduce:
 
 $$
-\boxed{\alpha^\omega}
+\alpha^\omega.
 $$
 
-con il significato di **infinite repetition**.
+Il significato intuitivo è:
 
-Quindi:
+> infinite repetition.
 
-- $\alpha^*$ = finite repetition;
-- $\alpha^\omega$ = infinite repetition.
-
----
-
-## 4. Definizione di $L^\omega$
-
-Sia:
+Per:
 
 $$
-L\subseteq\Sigma^*.
+L\subseteq\Sigma^*
 $$
 
-Definiamo:
+si definisce:
 
 $$
 \boxed{
 L^\omega
 =
-\left\{
+\{
 w_1w_2w_3\ldots
 \mid
 w_i\in L
-\text{ per ogni }i\geq1
-\right\}.
+\text{ per ogni }i\ge1
+\}.
 }
 $$
 
@@ -11917,9 +11910,11 @@ $$
 L^\omega\subseteq\Sigma^\omega.
 $$
 
+La condizione evita una ripetizione infinita di parole vuote.
+
 ---
 
-## 5. $\omega$-Regular Expressions
+## 4. $\omega$-Regular Expressions
 
 Una $\omega$-regular expression ha forma:
 
@@ -11935,7 +11930,7 @@ $$
 }
 $$
 
-con:
+dove $\alpha_i$ e $\beta_i$ sono regular expressions e:
 
 $$
 \varepsilon\notin L(\beta_i).
@@ -11947,8 +11942,8 @@ $$
 \boxed{
 L_\omega(\gamma)
 =
-\bigcup_{1\leq i\leq n}
-L(\alpha_i)L(\beta_i)^\omega
+\bigcup_{1\le i\le n}
+L(\alpha_i)L(\beta_i)^\omega.
 }
 $$
 
@@ -11960,51 +11955,107 @@ $$
 
 ---
 
-## 6. Esempio: infinitely many $B$
+## 5. Esempi su $\Sigma=\{A,B\}$
 
-Per:
-
-$$
-\Sigma=\{A,B\},
-$$
-
-la $\omega$-regular expression:
-
-$$
-\boxed{(A^*.B)^\omega}
-$$
-
-descrive tutte le parole infinite che contengono **infinitely many $B$**.
-
----
-
-## 7. Unione di condizioni infinite
-
-Consideriamo:
-
-$$
-(A^*.B)^\omega+(B^*.A)^\omega.
-$$
-
-Il primo termine significa “infinitely many $B$”, il secondo “infinitely many $A$”.
-
-Su:
-
-$$
-\Sigma=\{A,B\}
-$$
-
-ogni parola infinita ha almeno uno dei due simboli infinitamente spesso, quindi:
+### Infinitely many $B$
 
 $$
 \boxed{
-(A^*.B)^\omega+(B^*.A)^\omega=\Sigma^\omega.
+(A^*.B)^\omega
+}
+$$
+
+descrive tutte le parole infinite con infiniti $B$.
+
+Esempio:
+
+$$
+AAB\,B\,AAAB\,AB\,\ldots
+$$
+
+Ogni blocco della ripetizione termina con $B$.
+
+---
+
+### Infinitely many $A$ or infinitely many $B$
+
+$$
+(A^*.B)^\omega
++
+(B^*.A)^\omega.
+$$
+
+Su un alfabeto binario infinito, almeno uno tra $A$ e $B$ compare infinitamente spesso.
+
+Quindi:
+
+$$
+\boxed{
+(A^*.B)^\omega
++
+(B^*.A)^\omega
+=
+\Sigma^\omega.
 }
 $$
 
 ---
 
-## 8. $\omega$-Regular Languages
+### Finitely many $A$
+
+$$
+\boxed{
+(A+B)^*.B^\omega.
+}
+$$
+
+Dopo un prefisso arbitrario, rimangono solo $B$.
+
+---
+
+### Ogni $A$ seguito immediatamente da $B$
+
+Una forma mostrata nelle slide è:
+
+$$
+\boxed{
+(B^*.A.B)^*.B^\omega
++
+(B^*.A.B)^\omega.
+}
+$$
+
+---
+
+### Ogni $A$ seguito eventualmente da $B$
+
+Con:
+
+$$
+\alpha^+
+\overset{def}{=}
+\alpha.\alpha^*
+$$
+
+si può scrivere:
+
+$$
+(B^*.A^+.B)^*.B^\omega
++
+(B^*.A^+.B)^\omega.
+$$
+
+Le slide mostrano inoltre la semplificazione:
+
+$$
+\boxed{
+(A^*.B)^\omega.
+}
+$$
+
+---
+
+## 6. $\omega$-Regular Languages
 
 Un linguaggio:
 
@@ -12015,30 +12066,40 @@ $$
 è **$\omega$-regular** se esiste una $\omega$-regular expression $\gamma$ tale che:
 
 $$
-\boxed{L=L_\omega(\gamma).}
+\boxed{
+L=L_\omega(\gamma).
+}
 $$
 
 ---
 
-## 9. $\omega$-Regular Properties
+## 7. $\omega$-Regular Properties
 
-Per una LT property:
-
-$$
-E\subseteq(2^{AP})^\omega,
-$$
-
-$E$ è una **$\omega$-regular property** se esiste una $\omega$-regular expression su $2^{AP}$ tale che:
+Una LT property:
 
 $$
-\boxed{E=L_\omega(\gamma).}
+E\subseteq(2^{AP})^\omega
+$$
+
+è $\omega$-regular se esiste una $\omega$-regular expression sull'alfabeto:
+
+$$
+2^{AP}
+$$
+
+tale che:
+
+$$
+\boxed{
+E=L_\omega(\gamma).
+}
 $$
 
 ---
 
-## 10. Ogni Invariant è $\omega$-Regular
+## 8. Ogni invariant è $\omega$-Regular
 
-Sia $\Phi$ una invariant condition e:
+Sia $\Phi$ una invariant condition e siano:
 
 $$
 \{A\subseteq AP\mid A\models\Phi\}
@@ -12050,32 +12111,32 @@ Allora:
 
 $$
 \boxed{
-\text{always }\Phi=(A_1+\cdots+A_k)^\omega.
+\text{always }\Phi
+=
+(A_1+\cdots+A_k)^\omega.
 }
 $$
 
-Quindi ogni invariant è $\omega$-regular.
+Quindi ogni invariant è una $\omega$-regular property.
 
 ---
 
-## 11. Esempio: invariant $a\lor\neg b$
+## 9. Esempi di LT Properties $\omega$-Regular
 
-Per:
+### Invariant $a\lor\neg b$
+
+Con:
 
 $$
 AP=\{a,b\},
 $$
 
-le lettere che soddisfano:
+le lettere che soddisfano $a\lor\neg b$ sono:
 
 $$
-a\lor\neg b
-$$
-
-sono:
-
-$$
-\emptyset,\quad\{a\},\quad\{a,b\}.
+\emptyset,\quad
+\{a\},\quad
+\{a,b\}.
 $$
 
 Quindi:
@@ -12086,132 +12147,82 @@ $$
 }
 $$
 
-In notazione simbolica:
-
-$$
-\boxed{(a\lor\neg b)^\omega.}
-$$
-
 ---
 
-## 12. Esempio: infinitely often $a$
+### Infinitely often $a$
+
+Una forma è:
 
 $$
 \boxed{
-\left((\neg a)^*.a\right)^\omega.
+((\neg a)^*.a)^\omega.
 }
 $$
 
-Equivalentemente, per $AP=\{a,b\}$:
-
-$$
-\left(
-(\emptyset+\{b\})^*.(\{a\}+\{a,b\})
-\right)^\omega.
-$$
-
 ---
 
-## 13. Esempio: eventually $a$
+### Eventually $a$
 
 $$
 \boxed{
-(2^{AP})^*.a.(2^{AP})^\omega.
+true^*.a.true^\omega.
 }
 $$
 
-Significa:
+Intuitivamente:
 
-1. qualunque prefisso finito;
-2. una posizione in cui $a$ è vera;
-3. qualunque prosecuzione infinita.
-
----
-
-## 14. Esempio: from some moment on $a$
-
-La proprietà “eventually forever $a$” è:
-
-$$
-\boxed{true^*.a^\omega.}
-$$
+- prefisso arbitrario;
+- almeno una posizione con $a$;
+- seguito arbitrario infinito.
 
 ---
 
-## 15. Esempi di $\omega$-Regular Expressions
-
-Per:
-
-$$
-\Sigma=\{A,B\},
-$$
-
-### Solo finitely many $A$
-
-$$
-\boxed{(A+B)^*.B^\omega.}
-$$
-
-### Ogni $A$ è immediatamente seguito da $B$
+### Eventually forever $a$
 
 $$
 \boxed{
-(B^*.A.B)^*.B^\omega
-+
-(B^*.A.B)^\omega.
+true^*.a^\omega.
 }
 $$
 
-### Ogni $A$ è eventually seguito da $B$
+Cioè:
 
-Le slide usano:
-
-$$
-(B^*.A^+.B)^*.B^\omega+(B^*.A^+.B)^\omega
-$$
-
-con:
-
-$$
-\alpha^+\overset{def}{=}\alpha.\alpha^*.
-$$
-
-La stessa proprietà viene semplificata a:
-
-$$
-\boxed{(A^*.B)^\omega.}
-$$
+> da un certo momento in poi $a$ è sempre vero.
 
 ---
 
-## 16. Nondeterministic Büchi Automata
+## 10. Nondeterministic Büchi Automata
 
-Un **Nondeterministic Büchi Automaton** ha struttura:
+Un **NBA** ha la stessa struttura sintattica di un NFA:
 
 $$
 \boxed{
-\mathcal A=(Q,\Sigma,\delta,Q_0,F)
+\mathcal A
+=
+(Q,\Sigma,\delta,Q_0,F)
 }
 $$
 
 con:
 
-- $Q$ finito;
-- $\Sigma$ alfabeto;
-- $\delta:Q\times\Sigma\rightarrow2^Q$;
-- $Q_0\subseteq Q$;
-- $F\subseteq Q$.
+$$
+\delta:Q\times\Sigma\rightarrow2^Q.
+$$
 
-La sintassi è quindi la stessa degli NFA, ma la semantica riguarda parole infinite.
+La differenza fondamentale è che l'NBA legge parole infinite:
+
+$$
+\sigma\in\Sigma^\omega.
+$$
 
 ---
 
-## 17. Run di un NBA
+## 11. Run di un NBA
 
 Per:
 
 $$
-\sigma=A_0A_1A_2\ldots\in\Sigma^\omega
+\sigma=A_0A_1A_2\ldots
 $$
 
 una run è:
@@ -12220,7 +12231,7 @@ $$
 \pi=q_0q_1q_2\ldots
 $$
 
-con:
+tale che:
 
 $$
 q_0\in Q_0
@@ -12232,28 +12243,42 @@ $$
 q_{i+1}\in\delta(q_i,A_i)
 $$
 
-per ogni $i\geq0$.
+per ogni:
+
+$$
+i\ge0.
+$$
 
 ---
 
-## 18. Büchi Acceptance Condition
+## 12. Büchi Acceptance Condition
 
-Una run è accepting se visita stati finali **infinitely often**:
+Una run è accepting se visita stati finali infinitamente spesso:
 
 $$
 \boxed{
-\exists^\infty i\in\mathbb N:q_i\in F.
+\exists^\infty i\ge0:
+q_i\in F.
 }
 $$
 
-La differenza rispetto agli NFA è quindi essenziale:
+Equivalentemente, se:
 
-- NFA: la run finita deve **terminare** in uno stato finale;
-- NBA: una run infinita deve visitare $F$ **infinitamente spesso**.
+$$
+Inf(\pi)
+$$
+
+è l'insieme degli stati visitati infinitamente spesso:
+
+$$
+\boxed{
+Inf(\pi)\cap F\neq\emptyset.
+}
+$$
 
 ---
 
-## 19. Linguaggio Accettato da un NBA
+## 13. Linguaggio di un NBA
 
 $$
 \boxed{
@@ -12262,12 +12287,13 @@ L_\omega(\mathcal A)
 \{
 \sigma\in\Sigma^\omega
 \mid
-\sigma\text{ possiede una accepting run in }\mathcal A
+\sigma
+\text{ possiede una accepting run}
 \}.
 }
 $$
 
-Nel contesto delle LT properties:
+Nel model checking:
 
 $$
 \Sigma=2^{AP}.
@@ -12275,32 +12301,43 @@ $$
 
 ---
 
-## 20. NBA per “infinitely many $A$”
+## 14. NFA vs NBA
+
+| NFA | NBA |
+|---|---|
+| legge parole finite | legge parole infinite |
+| $w\in\Sigma^*$ | $\sigma\in\Sigma^\omega$ |
+| accetta se termina in $F$ | accetta se visita $F$ infinitamente spesso |
+| regular languages | $\omega$-regular languages |
+
+---
+
+## 15. NBA per “infinitely often $A$”
+
+Un automa concettuale può essere:
 
 ```mermaid
 stateDiagram-v2
     [*] --> q0
     q0 --> q0: B
     q0 --> q1: A
-    q1 --> q1: A
     q1 --> q0: B
+    q1 --> q1: A
 ```
 
-Con $q_1$ accepting, il linguaggio è:
+con $q_1$ accepting.
 
-$$
-\boxed{(B^*.A)^\omega.}
-$$
+La parola è accettata solo se $q_1$ viene visitato infinitamente spesso, quindi solo se $A$ compare infinitamente spesso.
 
 ---
 
-## 21. Esempio strutturato
+## 16. Esempio strutturato
 
-Le slide mostrano un NBA per:
+Le slide considerano anche proprietà del tipo:
 
 > every $B$ is preceded by a positive even number of $A$'s.
 
-Una $\omega$-regular expression equivalente è:
+Una corrispondente espressione è:
 
 $$
 \boxed{
@@ -12310,18 +12347,20 @@ $$
 }
 $$
 
-Il primo termine gestisce il caso con infiniti $B$, il secondo quello in cui dopo un certo punto compaiono solo $A$.
+Il primo caso descrive infiniti $B$.
+
+Il secondo descrive un numero finito di $B$, seguito da soli $A$.
 
 ---
 
-## 22. Da NBA a $\omega$-Regular Expression
+## 17. Da NBA a $\omega$-Regular Expression
 
 Teorema:
 
 $$
 \boxed{
-\forall\text{ NBA }\mathcal A,
-\exists\gamma:
+\forall\mathcal A\text{ NBA},
+\exists\gamma\ \omega\text{-regular}:
 L_\omega(\mathcal A)=L_\omega(\gamma).
 }
 $$
@@ -12332,10 +12371,18 @@ $$
 \mathcal A=(Q,\Sigma,\delta,Q_0,F).
 $$
 
-Per $q,p\in Q$, definiamo:
+Per:
 
 $$
-\mathcal A_{q,p}=(Q,\Sigma,\delta,\{q\},\{p\}).
+q,p\in Q
+$$
+
+si definisce l'NFA:
+
+$$
+\mathcal A_{q,p}
+=
+(Q,\Sigma,\delta,\{q\},\{p\}).
 $$
 
 Allora:
@@ -12355,176 +12402,382 @@ $$
 
 ---
 
-## 23. Intuizione della Conversione NBA $\to$ $\omega$-Regular
+## 18. Intuizione della Formula
 
 Una accepting run deve:
 
-1. partire da uno stato iniziale;
+1. partire da uno stato iniziale $q$;
 2. raggiungere uno stato accepting $p$;
-3. tornare a $p$ infinitamente spesso.
+3. tornare in $p$ infinitamente spesso.
 
 ```mermaid
 flowchart LR
-    Q0["Initial state q0"]
-    P["Accept state p"]
+    Q["initial q"]
+    P["accepting p"]
     P2["p"]
     P3["p"]
 
-    Q0 -->|"finite prefix"| P
+    Q -->|"finite prefix"| P
     P -->|"nonempty cycle"| P2
     P2 -->|"nonempty cycle"| P3
     P3 -->|"..."| P3
 ```
 
+La parte:
+
+$$
+L(\mathcal A_{q,p})
+$$
+
+descrive il prefisso.
+
+La parte:
+
+$$
+\left(
+L(\mathcal A_{p,p})\setminus\{\varepsilon\}
+\right)^\omega
+$$
+
+descrive gli infiniti ritorni a $p$.
+
 ---
 
-## 24. Da $\omega$-Regular Expression a NBA
+## 19. Da $\omega$-Regular Expression a NBA
 
-Vale anche:
+Vale anche il verso opposto:
 
 $$
 \boxed{
 \forall\gamma\ \omega\text{-regular},
-\exists\text{ NBA }\mathcal A:
-L_\omega(\mathcal A)=L_\omega(\gamma).
+\exists\mathcal A\text{ NBA}:
+L_\omega(\gamma)=L_\omega(\mathcal A).
 }
 $$
 
 Per:
 
 $$
-\gamma
-=
-\alpha_1.\beta_1^\omega+
-\cdots+
-\alpha_n.\beta_n^\omega,
+\gamma=
+\alpha_1.\beta_1^\omega
++\cdots+
+\alpha_n.\beta_n^\omega
 $$
 
-si costruiscono:
+la costruzione usa:
 
-1. NFA $\mathcal A_i$ per $\alpha_i$;
-2. NFA $\mathcal B_i$ per $\beta_i$;
-3. NBA per $\beta_i^\omega$;
-4. concatenazione tra NFA e NBA;
-5. unione dei risultati.
+1. NFA per ogni $\alpha_i$;
+2. NFA per ogni $\beta_i$;
+3. trasformazione della parte $\beta_i^\omega$ in Büchi;
+4. concatenazione;
+5. unione nondeterministica.
 
 ---
 
-## 25. NBA chiusi rispetto all'Unione
+## 20. Unione di NBA
 
-Se $\mathcal A_1$ e $\mathcal A_2$ sono NBA, esiste un NBA per:
+La classe dei linguaggi NBA-recognizable è chiusa per unione.
+
+Dati:
+
+$$
+\mathcal A_1,\mathcal A_2
+$$
+
+si costruisce un automa che sceglie nondeterministicamente quale componente simulare.
+
+```mermaid
+flowchart TB
+    START["initial nondeterministic choice"]
+    A1["NBA A₁"]
+    A2["NBA A₂"]
+
+    START --> A1
+    START --> A2
+```
+
+Quindi:
 
 $$
 \boxed{
+L_\omega(\mathcal A)
+=
 L_\omega(\mathcal A_1)
 \cup
 L_\omega(\mathcal A_2).
 }
 $$
 
-L'idea è una scelta nondeterministica iniziale tra le due componenti.
+---
+
+## 21. Concatenazione NFA + NBA
+
+Se:
+
+- $\mathcal A_1$ è un NFA;
+- $\mathcal A_2$ è un NBA;
+
+si può costruire un NBA per:
+
+$$
+\boxed{
+L(\mathcal A_1)
+.
+L_\omega(\mathcal A_2).
+}
+$$
+
+La fase iniziale consuma un prefisso finito con $\mathcal A_1$, poi passa alla componente Büchi.
+
+---
+
+## 22. Operatore $\omega$ per un NFA
+
+Sia $\mathcal B$ un NFA che riconosce:
+
+$$
+L(\mathcal B)\subseteq\Sigma^+.
+$$
+
+Si vuole costruire un NBA per:
+
+$$
+L(\mathcal B)^\omega.
+$$
+
+L'idea è concatenare infinite copie di parole accettate da $\mathcal B$.
+
+Le slide sottolineano però una cautela:
+
+> la costruzione ingenua può fallire se gli stati finali dell'NFA possiedono transizioni uscenti.
+
+Prima si trasforma quindi l'NFA in una forma equivalente adatta alla ripetizione, tipicamente rendendo terminali gli stati finali.
+
+---
+
+## 23. Esempio concettuale di $\omega$-iteration
 
 ```mermaid
-flowchart TB
-    I["Initial nondeterministic choice"]
-    A1["NBA A1"]
-    A2["NBA A2"]
-    I --> A1
-    I --> A2
+flowchart LR
+    I["start"]
+    F1["accept word w₁"]
+    F2["accept word w₂"]
+    F3["accept word w₃"]
+
+    I --> F1
+    F1 --> F2
+    F2 --> F3
+    F3 -->|"..."| F3
+```
+
+L'accettazione Büchi obbliga a completare infiniti blocchi di $L$.
+
+---
+
+## 24. Equivalenza Fondamentale
+
+Alla fine della prima parte delle slide si ottiene:
+
+$$
+\boxed{
+\text{$\omega$-regular expressions}
+\equiv
+\text{NBA-recognizable languages}.
+}
+$$
+
+Più precisamente:
+
+$$
+\boxed{
+E\text{ è $\omega$-regular}
+\iff
+E=L_\omega(\mathcal A)
+\text{ per qualche NBA }\mathcal A
+}
+$$
+
+sull'alfabeto:
+
+$$
+2^{AP}.
+$$
+
+```mermaid
+flowchart LR
+    RE["ω-regular expression γ"]
+    NBA["NBA A"]
+    LANG["same ω-language"]
+
+    RE --> LANG
+    NBA --> LANG
+    RE <--> NBA
 ```
 
 ---
 
-## 26. Concatenazione NFA + NBA
+## 25. Formule da ricordare
 
-Se $\mathcal A_1$ è un NFA e $\mathcal A_2$ un NBA, si può costruire un NBA che riconosce:
+### $\omega$-iteration
+
+$$
+L^\omega
+=
+\{
+w_1w_2w_3\ldots
+\mid
+w_i\in L
+\}.
+$$
+
+### $\omega$-regular expression
+
+$$
+\gamma
+=
+\sum_{i=1}^n
+\alpha_i.\beta_i^\omega.
+$$
+
+### Semantica
+
+$$
+L_\omega(\gamma)
+=
+\bigcup_{i=1}^n
+L(\alpha_i)L(\beta_i)^\omega.
+$$
+
+### NBA
+
+$$
+\mathcal A=(Q,\Sigma,\delta,Q_0,F).
+$$
+
+### Büchi condition
+
+$$
+\exists^\infty i:
+q_i\in F.
+$$
+
+### NBA $\to$ $\omega$-regular
+
+$$
+L_\omega(\mathcal A)
+=
+\bigcup_{q\in Q_0}
+\bigcup_{p\in F}
+L(\mathcal A_{q,p})
+\left(
+L(\mathcal A_{p,p})\setminus\{\varepsilon\}
+\right)^\omega.
+$$
+
+### Equivalenza
 
 $$
 \boxed{
-L(\mathcal A_1).L_\omega(\mathcal A_2).
+\omega\text{-regular}
+=
+NBA\text{-recognizable}.
 }
 $$
 
-Gli accepting states del nuovo automa sono quelli della componente NBA.
+---
+
+## 26. Mappa concettuale
+
+```mermaid
+flowchart TB
+    RE["Regular expressions"]
+    ORE["ω-Regular expressions"]
+    OLANG["ω-Regular languages"]
+    NBA["NBA"]
+
+    RE -->|"add ω operator"| ORE
+    ORE --> OLANG
+    NBA --> OLANG
+
+    ORE <-->|"equivalent expressive power"| NBA
+```
 
 ---
 
-## 27. Operatore $\omega$ applicato a un NFA
+## 27. Concetti da saper spiegare all'esame
 
-Dato un NFA per:
+1. differenza tra $\alpha^*$ e $\alpha^\omega$;
+2. definizione di $L^\omega$;
+3. sintassi delle $\omega$-regular expressions;
+4. semantica di $L_\omega(\gamma)$;
+5. definizione di $\omega$-regular language;
+6. esempi `infinitely often`, `finitely often`, `eventually`;
+7. perché ogni invariant è $\omega$-regular;
+8. definizione di NBA;
+9. differenza NFA/NBA;
+10. Büchi acceptance condition;
+11. significato di `infinitely often`;
+12. formula della conversione NBA $\to$ $\omega$-regular expression;
+13. significato di $\mathcal A_{q,p}$;
+14. idea della conversione $\omega$-regular expression $\to$ NBA;
+15. unione di NBA;
+16. concatenazione NFA/NBA;
+17. costruzione dell'operatore $\omega$;
+18. equivalenza finale:
+    $$
+    \omega\text{-regular}
+    =
+    NBA\text{-recognizable}.
+    $$
 
-$$
-L\subseteq\Sigma^+,
-$$
+# 8/10
+## Pagine 138–233 — Closure, Nonemptiness, DBA e GNBA
 
-si vuole ottenere un NBA per:
-
-$$
-L^\omega.
-$$
-
-Una costruzione ingenua può essere errata se gli stati finali dell'NFA hanno transizioni uscenti.
-
-Le slide richiedono prima di trasformare l'NFA in uno equivalente in cui tutti gli stati finali sono terminali.
-
-Solo dopo si collega il completamento di una parola di $L$ con l'inizio della successiva iterazione.
+> Appunti basati su `sv_09.pdf`, pagine 138–233.
+>
+> Formato Obsidian con formule MathJax e schemi Mermaid.
 
 ---
 
-## 28. Equivalenza Fondamentale
+## 1. Closure Properties degli $\omega$-Regular Languages
+
+Per i linguaggi regolari su parole finite, il teorema di Kleene garantisce chiusura rispetto a:
+
+- union;
+- intersection;
+- complementation;
+- concatenation;
+- Kleene star.
+
+Per i linguaggi $\omega$-regular vale:
 
 $$
 \boxed{
-\omega\text{-regular expressions}
-\equiv
-NBA\text{-recognizable languages}.
+\text{chiusura rispetto a union, intersection e complementation}.
 }
 $$
 
-Corollario:
+```mermaid
+flowchart TB
+    W["ω-Regular languages"]
+    U["Union"]
+    I["Intersection"]
+    C["Complement"]
 
-$$
-\boxed{
-E\text{ è }\omega\text{-regular}
-\iff
-E=L_\omega(\mathcal A)
-\text{ per qualche NBA }\mathcal A.
-}
-$$
+    W --> U
+    W --> I
+    W --> C
+```
+
+L'unione è relativamente semplice.
+
+L'intersezione viene sviluppata usando GNBA.
+
+La complementazione richiede tecniche più sofisticate e non viene ottenuta con il semplice scambio final/non-final.
 
 ---
 
-## 29. Closure Properties
-
-La classe dei linguaggi $\omega$-regular è chiusa rispetto a:
-
-$$
-\boxed{
-\text{union, intersection, complementation}.
-}
-$$
-
-Quindi:
-
-$$
-L_1\cup L_2,
-\qquad
-L_1\cap L_2,
-\qquad
-\Sigma^\omega\setminus L_1
-$$
-
-sono ancora $\omega$-regular.
-
-L'unione è immediata.
-
-L'intersezione sarà ottenuta tramite prodotto e GNBA.
-
-La complementazione è più complessa che per gli automi su parole finite.
-
----
-
-## 30. Nonemptiness per NBA
+## 2. Nonemptiness per NBA
 
 Dato:
 
@@ -12532,13 +12785,13 @@ $$
 \mathcal A=(Q,\Sigma,\delta,Q_0,F),
 $$
 
-vogliamo decidere se:
+vogliamo decidere:
 
 $$
-L_\omega(\mathcal A)=\emptyset.
+L_\omega(\mathcal A)=\emptyset?
 $$
 
-Vale:
+Il risultato fondamentale è:
 
 $$
 \boxed{
@@ -12557,47 +12810,52 @@ $$
 $$
 x\in\Sigma^*,
 \qquad
-y\in\Sigma^+,
+y\in\Sigma^+
 $$
 
 tali che:
 
 $$
 \boxed{
-p\in\delta(q_0,x)\cap\delta(p,y).
+p\in\delta(q_0,x)
+\cap
+\delta(p,y).
 }
 $$
 
 ---
 
-## 31. Interpretazione Grafica della Nonemptiness
+## 3. Interpretazione Grafica
 
-La condizione significa:
+La condizione dice:
 
-> esiste uno stato accepting raggiungibile che appartiene a un ciclo.
+> esiste uno stato accepting raggiungibile da uno stato iniziale e appartenente a un ciclo non vuoto.
 
 ```mermaid
 flowchart LR
-    Q0["Initial state q0"]
-    P["Accepting state p"]
+    Q0["initial q₀"]
+    P["accepting p"]
+
     Q0 -->|"x"| P
-    P -->|"nonempty cycle y"| P
+    P -->|"y ≠ ε"| P
 ```
 
-Da ciò segue una parola accettata:
+Da questo segue una parola accettata:
 
 $$
-\boxed{xy^\omega.}
+xy^\omega.
 $$
 
 ---
 
-## 32. Ultimately Periodic Words
+## 4. Ultimately Periodic Words
 
-Una parola della forma:
+Una parola infinita della forma:
 
 $$
-\boxed{xy^\omega}
+\boxed{
+xy^\omega
+}
 $$
 
 con:
@@ -12605,66 +12863,78 @@ con:
 $$
 x\in\Sigma^*,
 \qquad
-y\in\Sigma^+,
+y\in\Sigma^+
 $$
 
 è detta **ultimately periodic**.
 
-Se un linguaggio NBA-recognizable è non vuoto, contiene almeno una parola di questa forma.
+Un risultato importante è:
+
+> ogni linguaggio NBA-recognizable non vuoto contiene almeno una parola ultimately periodic.
 
 ---
 
-## 33. Algoritmo di Nonemptiness
+## 5. Algoritmo di Nonemptiness
 
-Si può risolvere il problema con algoritmi su grafi:
+La nonemptiness si riduce a un problema di grafo:
 
-1. calcolare gli stati raggiungibili;
+1. calcolare gli stati raggiungibili da $Q_0$;
 2. cercare uno stato accepting raggiungibile;
-3. verificare che appartenga a un ciclo.
+3. verificare se appartiene a un ciclo.
 
 ```mermaid
 flowchart TB
     A["NBA A"]
     R["Reachable states"]
     F["Reachable accepting state"]
-    C{"Belongs to a cycle?"}
-    NE["Lω(A) ≠ ∅"]
-    E["Lω(A) = ∅"]
+    C{"On a nonempty cycle?"}
+    YES["Lω(A) ≠ ∅"]
+    NO["Lω(A) = ∅"]
 
     A --> R --> F --> C
-    C -->|"yes"| NE
-    C -->|"no"| E
+    C -->|"yes"| YES
+    C -->|"no"| NO
 ```
 
-Le slide indicano complessità polinomiale nella dimensione dell'automa.
+È quindi sufficiente usare algoritmi standard di reachability / SCC.
 
 ---
 
-## 34. Deterministic Büchi Automata
+## 6. Deterministic Büchi Automata
 
-Un DBA è un NBA con:
+Un **DBA** è un NBA deterministico.
+
+Ha forma:
 
 $$
-Q_0=\{q_0\}
+\mathcal A=(Q,\Sigma,\delta,q_0,F)
 $$
 
-e:
+con un unico stato iniziale e:
 
 $$
 \boxed{
-|\delta(q,A)|\leq1
+|\delta(q,A)|\le1
 }
 $$
 
-per ogni $q\in Q$ e $A\in\Sigma$.
+per ogni:
+
+$$
+q\in Q,
+\qquad
+A\in\Sigma.
+$$
 
 ---
 
-## 35. Esempio di DBA
+## 7. Esempio di DBA
 
-Un DBA può riconoscere:
+La proprietà:
 
-> infinitely often $B$.
+> infinitely many $B$
+
+può essere riconosciuta da un DBA.
 
 ```mermaid
 stateDiagram-v2
@@ -12677,65 +12947,122 @@ stateDiagram-v2
 
 con $q_1$ accepting.
 
----
-
-## 36. La Powerset Construction Fallisce per NBA
-
-Per gli NFA la powerset construction permette la determinizzazione.
-
-Per gli NBA questo non vale in generale.
-
-Le slide usano l'esempio:
-
-> eventually forever $a$.
-
-Questa proprietà è NBA-recognizable, ma la powerset construction produce un comportamento equivalente a “infinitely often $a$”, quindi non preserva il linguaggio desiderato.
-
-$$
-\boxed{
-\text{powerset construction non basta per determinizzare gli NBA}.
-}
-$$
+Ogni occorrenza di $B$ porta o mantiene la run in uno stato accepting.
 
 ---
 
-## 37. Complementazione Ingenua dei DBA
+## 8. La Powerset Construction non Basta
 
-Per i DFA basta invertire gli stati finali.
-
-Per i DBA questo approccio fallisce.
-
-Infatti il complemento di:
-
-> visitare $F$ infinitely often
-
-è:
-
-> visitare $F$ only finitely often,
-
-non semplicemente:
-
-> visitare $Q\setminus F$ infinitely often.
-
----
-
-## 38. DBA meno Espressivi degli NBA
-
-Non esiste un DBA per:
-
-> eventually forever $a$.
-
-In termini di $\omega$-regular expressions:
+Per gli NFA su parole finite:
 
 $$
-\boxed{(A+B)^*.A^\omega.}
+NFA\rightarrow DFA
 $$
+
+tramite powerset construction.
+
+Per gli NBA, la stessa idea **non preserva in generale il linguaggio Büchi**.
 
 Quindi:
 
 $$
 \boxed{
+\text{la powerset construction standard fallisce per NBA}.
+}
+$$
+
+Il problema è la condizione di accettazione infinitaria:
+
+$$
+\text{visitare }F\text{ infinitamente spesso}.
+$$
+
+Memorizzare soltanto l'insieme corrente degli stati possibili non conserva abbastanza informazione sulle visite infinite.
+
+---
+
+## 9. Esempio Critico: Eventually Forever $a$
+
+La proprietà:
+
+> eventually forever $a$
+
+è:
+
+$$
+\boxed{
+true^*.a^\omega.
+}
+$$
+
+È $\omega$-regular ed è riconoscibile da NBA.
+
+Le slide mostrano che la determinizzazione ingenua tramite powerset construction non produce un DBA equivalente.
+
+Questo è uno dei primi esempi che evidenziano la minore espressività dei DBA.
+
+---
+
+## 10. Complementazione dei DBA
+
+Per DFA su parole finite, il complemento si ottiene scambiando:
+
+- final states;
+- non-final states.
+
+Per DBA questa tecnica fallisce.
+
+Se una run non soddisfa:
+
+$$
+\exists^\infty i:q_i\in F,
+$$
+
+significa che gli stati di $F$ vengono visitati **solo finitely often**.
+
+Ma ciò non equivale semplicemente a dire che:
+
+$$
+Q\setminus F
+$$
+
+viene visitato infinitamente spesso.
+
+Quindi:
+
+$$
+\boxed{
+\text{flip accepting/non-accepting non complementa un DBA}.
+}
+$$
+
+---
+
+## 11. Potere Espressivo dei DBA
+
+Le slide concludono che:
+
+$$
+\boxed{
 DBA\text{-recognizable}
+\subsetneq
+NBA\text{-recognizable}.
+}
+$$
+
+Poiché:
+
+$$
+NBA\text{-recognizable}
+=
+\omega\text{-regular},
+$$
+
+abbiamo:
+
+$$
+\boxed{
+DBA
 \subsetneq
 \omega\text{-regular}.
 }
@@ -12743,48 +13070,64 @@ $$
 
 ---
 
-## 39. DBA non Chiusi per Complementazione
+## 12. Esempio di Linguaggio non DBA-Recognizable
 
-Le slide mostrano che:
+La proprietà:
 
-- “infinitely many $B$” è DBA-recognizable;
-- “only finitely many $B$” non è DBA-recognizable.
+> eventually forever $a$
 
-Quindi:
+cioè:
+
+$$
+true^*.a^\omega
+$$
+
+non è riconoscibile da alcun DBA.
+
+Questo dimostra direttamente che i DBA sono strettamente meno espressivi.
+
+---
+
+## 13. DBA e Complementazione
+
+Un'altra conseguenza:
+
+> la classe dei linguaggi riconoscibili da DBA non è chiusa rispetto alla complementazione.
+
+Ad esempio:
+
+- `infinitely many B` è DBA-recognizable;
+- `only finitely many B` è il complemento;
+- quest'ultimo non è in generale DBA-recognizable.
+
+---
+
+## 14. Generalized Büchi Automata
+
+Un **GNBA** generalizza l'NBA permettendo più acceptance sets.
+
+La struttura è:
 
 $$
 \boxed{
-\text{la classe DBA-recognizable non è chiusa per complementazione}.
+\mathcal G
+=
+(Q,\Sigma,\delta,Q_0,\mathcal F)
 }
+$$
+
+dove:
+
+$$
+\mathcal F
+=
+\{F_1,\ldots,F_k\}
+\subseteq2^Q.
 $$
 
 ---
 
-## 40. Generalized Nondeterministic Büchi Automata
-
-Un GNBA è:
-
-$$
-\boxed{
-\mathcal G=(Q,\Sigma,\delta,Q_0,\mathcal F)
-}
-$$
-
-con:
-
-$$
-\mathcal F\subseteq2^Q.
-$$
-
-Quindi:
-
-$$
-\mathcal F=\{F_1,F_2,\ldots,F_k\}.
-$$
-
----
-
-## 41. Acceptance Condition di un GNBA
+## 15. Acceptance Condition di un GNBA
 
 Una run:
 
@@ -12792,18 +13135,26 @@ $$
 q_0q_1q_2\ldots
 $$
 
-è accepting se **ogni acceptance set** viene visitato infinitely often:
+è accepting se **ogni** acceptance set viene visitato infinitamente spesso:
 
 $$
 \boxed{
 \forall F\in\mathcal F:
-\exists^\infty i:q_i\in F.
+\exists^\infty i:
+q_i\in F.
 }
+$$
+
+Equivalente:
+
+$$
+\forall j\in\{1,\ldots,k\}:
+Inf(\pi)\cap F_j\neq\emptyset.
 $$
 
 ---
 
-## 42. Linguaggio di un GNBA
+## 16. Linguaggio di un GNBA
 
 $$
 \boxed{
@@ -12812,52 +13163,85 @@ L_\omega(\mathcal G)
 \{
 \sigma\in\Sigma^\omega
 \mid
-\sigma\text{ ha una accepting run in }\mathcal G
+\sigma
+\text{ possiede una accepting run}
 \}.
 }
 $$
 
 ---
 
-## 43. Esempio GNBA: Due Liveness Requirements
+## 17. GNBA per Due Liveness Requirements
 
-Per:
+Consideriamo:
 
 $$
-AP=\{crit_1,crit_2\},
+AP=\{crit_1,crit_2\}
 $$
 
-si vuole rappresentare:
+e la proprietà:
 
 > infinitely often $crit_1$ and infinitely often $crit_2$.
 
-Si usano due acceptance sets:
+È naturale usare:
 
 $$
 \mathcal F=
-\{
-\{q_1\},
-\{q_2\}
-\}.
+\{F_1,F_2\}
 $$
 
-```mermaid
-flowchart LR
-    Q0["q0"]
-    Q1["q1 - F1"]
-    Q2["q2 - F2"]
+dove:
 
-    Q0 -->|"crit1"| Q1
-    Q1 -->|"true"| Q0
-    Q0 -->|"crit2"| Q2
-    Q2 -->|"true"| Q0
+- $F_1$ rappresenta la visita di $crit_1$;
+- $F_2$ rappresenta la visita di $crit_2$.
+
+```mermaid
+flowchart TB
+    Q["run"]
+    F1["visit F₁ infinitely often"]
+    F2["visit F₂ infinitely often"]
+    OK["accept"]
+
+    Q --> F1
+    Q --> F2
+    F1 --> OK
+    F2 --> OK
 ```
 
 ---
 
-## 44. Acceptance Condition Vuota
+## 18. Esempi di GNBA
 
-La semantica differisce tra NBA e GNBA.
+Un GNBA può avere acceptance condition:
+
+$$
+\mathcal F=
+\{\{q_1\},\{q_2\}\}.
+$$
+
+Se non esiste alcuna run che visiti sia $q_1$ sia $q_2$ infinitamente spesso:
+
+$$
+L_\omega(\mathcal G)=\emptyset.
+$$
+
+Con acceptance sets più grandi, ad esempio:
+
+$$
+\mathcal F=
+\{
+\{q_1,q_3\},
+\{q_2,q_4\}
+\},
+$$
+
+è sufficiente visitare infinitamente spesso almeno uno stato di ciascun set.
+
+---
+
+## 19. Empty Acceptance Condition
+
+Attenzione alla differenza tra NBA e GNBA.
 
 ### NBA
 
@@ -12870,8 +13254,12 @@ $$
 allora:
 
 $$
-\boxed{L_\omega(\mathcal A)=\emptyset.}
+\boxed{
+L_\omega(\mathcal A)=\emptyset.
+}
 $$
+
+Nessuna run può visitare uno stato accepting infinitely often.
 
 ### GNBA
 
@@ -12881,44 +13269,124 @@ $$
 \mathcal F=\emptyset,
 $$
 
-la condizione universale sugli acceptance sets è vacuamente vera.
+la condizione:
 
-Quindi vengono accettate tutte le parole che ammettono una run infinita.
+$$
+\forall F\in\mathcal F:\ldots
+$$
+
+è vacuamente vera.
+
+Quindi il GNBA accetta ogni parola che possiede una run infinita.
 
 ---
 
-## 45. Da GNBA a NBA
+## 20. Normalizzazione di $\mathcal F=\emptyset$
 
-I GNBA non aumentano il potere espressivo.
-
-L'idea è aggiungere una componente che ricorda quale acceptance set deve essere visitato successivamente.
-
-Per:
+Le slide osservano che un GNBA:
 
 $$
-\mathcal F=\{F_1,\ldots,F_k\},
+\mathcal G=(Q,\Sigma,\delta,Q_0,\emptyset)
 $$
 
-si cicla tra:
+può essere trasformato in:
 
 $$
-1\rightarrow2\rightarrow\cdots\rightarrow k\rightarrow1.
+\boxed{
+\mathcal G'
+=
+(Q,\Sigma,\delta,Q_0,\{Q\})
+}
 $$
+
+senza cambiare il linguaggio.
+
+Infatti una run infinita visita necessariamente stati di $Q$ infinitamente spesso.
+
+---
+
+## 21. Da GNBA a NBA
+
+Teorema:
+
+$$
+\boxed{
+\forall\mathcal G\text{ GNBA},
+\exists\mathcal A\text{ NBA}:
+L_\omega(\mathcal G)=L_\omega(\mathcal A).
+}
+$$
+
+Se:
+
+$$
+\mathcal F=
+\{F_1,\ldots,F_k\}
+$$
+
+con:
+
+$$
+k\ge2,
+$$
+
+si costruiscono $k$ copie della struttura di $\mathcal G$.
+
+---
+
+## 22. Idea della Costruzione GNBA $\to$ NBA
+
+La componente aggiuntiva dell'NBA indica quale acceptance set dobbiamo ancora soddisfare.
 
 ```mermaid
 flowchart LR
-    F1["waiting for F1"]
-    F2["waiting for F2"]
-    FK["waiting for Fk"]
+    C1["copy 1<br/>waiting for F₁"]
+    C2["copy 2<br/>waiting for F₂"]
+    CK["copy k<br/>waiting for Fₖ"]
 
-    F1 -->|"F1 visited"| F2
-    F2 -->|"F2 visited"| FK
-    FK -->|"Fk visited"| F1
+    C1 -->|"F₁ reached"| C2
+    C2 -->|"F₂ reached"| CK
+    CK -->|"Fₖ reached"| C1
 ```
+
+Una run accepting deve completare il ciclo:
+
+$$
+F_1\to F_2\to\cdots\to F_k\to F_1
+$$
+
+infinitamente spesso.
 
 ---
 
-## 46. Equivalenza NBA e GNBA
+## 23. Dimensione della Conversione
+
+Se:
+
+$$
+\mathcal G
+$$
+
+ha acceptance condition $\mathcal F$, la dimensione dell'NBA risultante è:
+
+$$
+\boxed{
+size(\mathcal A)
+=
+O(size(\mathcal G)\cdot|\mathcal F|).
+}
+$$
+
+---
+
+## 24. Equivalenza NBA e GNBA
+
+Poiché:
+
+- ogni NBA è un caso particolare di GNBA;
+- ogni GNBA può essere convertito in NBA;
+
+segue:
 
 $$
 \boxed{
@@ -12928,7 +13396,182 @@ GNBA\text{-recognizable}.
 }
 $$
 
-Combinando con il risultato precedente:
+---
+
+## 25. Closure Properties — Intersezione
+
+Per dimostrare la chiusura rispetto all'intersezione, siano:
+
+$$
+\mathcal A_1
+=
+(Q_1,\Sigma,\delta_1,Q_{0,1},F_1)
+$$
+
+e:
+
+$$
+\mathcal A_2
+=
+(Q_2,\Sigma,\delta_2,Q_{0,2},F_2).
+$$
+
+Vogliamo un automa per:
+
+$$
+L_\omega(\mathcal A_1)
+\cap
+L_\omega(\mathcal A_2).
+$$
+
+---
+
+## 26. Perché il Prodotto Naturale Produce un GNBA
+
+Per accettare una parola devono valere entrambe le condizioni:
+
+$$
+F_1
+\text{ visited infinitely often}
+$$
+
+e:
+
+$$
+F_2
+\text{ visited infinitely often}.
+$$
+
+Quindi sono necessarie due acceptance conditions separate.
+
+Il prodotto naturale genera perciò un GNBA.
+
+---
+
+## 27. Prodotto di Due NBA
+
+Il GNBA:
+
+$$
+\mathcal G
+=
+\mathcal A_1\otimes\mathcal A_2
+$$
+
+ha:
+
+### State space
+
+$$
+\boxed{
+Q=Q_1\times Q_2.
+}
+$$
+
+### Initial states
+
+$$
+\boxed{
+Q_0
+=
+Q_{0,1}\times Q_{0,2}.
+}
+$$
+
+### Acceptance condition
+
+$$
+\boxed{
+\mathcal F
+=
+\{
+F_1\times Q_2,\;
+Q_1\times F_2
+\}.
+}
+$$
+
+### Transition relation
+
+$$
+\boxed{
+\delta(\langle q_1,q_2\rangle,A)
+=
+\{
+\langle p_1,p_2\rangle
+\mid
+p_1\in\delta_1(q_1,A),
+\;
+p_2\in\delta_2(q_2,A)
+\}.
+}
+$$
+
+---
+
+## 28. Intuizione del Prodotto
+
+```mermaid
+flowchart TB
+    W["same infinite input word"]
+    A1["NBA A₁"]
+    A2["NBA A₂"]
+    PROD["GNBA A₁ ⊗ A₂"]
+
+    F1["F₁ × Q₂ infinitely often"]
+    F2["Q₁ × F₂ infinitely often"]
+
+    W --> A1
+    W --> A2
+    A1 --> PROD
+    A2 --> PROD
+    PROD --> F1
+    PROD --> F2
+```
+
+Il GNBA viene poi trasformato in NBA usando la costruzione precedente.
+
+---
+
+## 29. Chiusura rispetto all'Intersezione
+
+Segue:
+
+$$
+\boxed{
+L_\omega(\mathcal A_1)
+\cap
+L_\omega(\mathcal A_2)
+}
+$$
+
+è ancora $\omega$-regular.
+
+---
+
+## 30. Summary Finale
+
+Le slide concludono che coincidono:
+
+$$
+\boxed{
+\text{$\omega$-regular expressions}
+}
+$$
+
+$$
+\boxed{
+\text{NBA-recognizable languages}
+}
+$$
+
+$$
+\boxed{
+\text{GNBA-recognizable languages}.
+}
+$$
+
+Quindi:
 
 $$
 \boxed{
@@ -12940,381 +13583,1238 @@ GNBA.
 }
 $$
 
----
-
-## 47. Intersezione di Due NBA
-
-Siano:
-
-$$
-\mathcal A_1=(Q_1,\Sigma,\delta_1,Q_{0,1},F_1)
-$$
-
-e:
-
-$$
-\mathcal A_2=(Q_2,\Sigma,\delta_2,Q_{0,2},F_2).
-$$
-
-Vogliamo un automa per:
+I DBA sono invece strettamente meno espressivi:
 
 $$
 \boxed{
-L_\omega(\mathcal A_1)
-\cap
-L_\omega(\mathcal A_2).
-}
-$$
-
-I due automi vengono eseguiti in parallelo sulla stessa parola.
-
----
-
-## 48. Perché il Prodotto Naturale è un GNBA
-
-Per accettare l'intersezione devono valere entrambe le condizioni:
-
-- $F_1$ visitato infinitely often;
-- $F_2$ visitato infinitely often.
-
-Servono quindi due acceptance sets, per cui il prodotto naturale è un GNBA.
-
----
-
-## 49. Prodotto per l'Intersezione
-
-Il GNBA:
-
-$$
-\mathcal G=\mathcal A_1\otimes\mathcal A_2
-$$
-
-ha:
-
-$$
-\boxed{Q=Q_1\times Q_2}
-$$
-
-$$
-\boxed{Q_0=Q_{0,1}\times Q_{0,2}}
-$$
-
-$$
-\boxed{
-\mathcal F=
-\{
-F_1\times Q_2,
-Q_1\times F_2
-\}.
-}
-$$
-
-La transition relation è:
-
-$$
-\boxed{
-\delta(\langle q_1,q_2\rangle,A)
-=
-\{
-\langle p_1,p_2\rangle
-\mid
-p_1\in\delta_1(q_1,A),
-\ p_2\in\delta_2(q_2,A)
-\}.
-}
-$$
-
----
-
-## 50. Intuizione dell'Intersezione
-
-```mermaid
-flowchart TB
-    W["Infinite input word"]
-    A1["NBA A1"]
-    A2["NBA A2"]
-    P["GNBA A1 ⊗ A2"]
-    C1["Visit F1 × Q2 infinitely often"]
-    C2["Visit Q1 × F2 infinitely often"]
-    OK["Word belongs to intersection"]
-
-    W --> A1
-    W --> A2
-    A1 --> P
-    A2 --> P
-    P --> C1
-    P --> C2
-    C1 --> OK
-    C2 --> OK
-```
-
-Poi il GNBA può essere trasformato in un NBA equivalente.
-
----
-
-## 51. Riassunto delle Classi Espressive
-
-Le slide concludono con:
-
-$$
-\boxed{
-\text{$\omega$-regular expressions}
-=
-\text{NBA-recognizable}
-=
-\text{GNBA-recognizable}.
-}
-$$
-
-Invece:
-
-$$
-\boxed{
-\text{DBA-recognizable}
+DBA
 \subsetneq
 \omega\text{-regular}.
 }
 $$
 
-Gli $\omega$-regular languages sono chiusi rispetto a:
+---
+
+## 31. Closure Summary
+
+La classe degli $\omega$-regular languages è chiusa rispetto a:
 
 $$
 \boxed{
-\cup,\quad\cap,\quad\text{complement}.
+\cup,\quad
+\cap,\quad
+\text{complement}.
 }
 $$
+
+- Union: costruzione diretta;
+- Intersection: prodotto $\to$ GNBA $\to$ NBA;
+- Complementation: richiede altre tecniche di $\omega$-automata.
 
 ---
 
-## 52. Mappa Concettuale Finale
-
-```mermaid
-flowchart TB
-    ORE["ω-Regular Expressions"]
-    WR["ω-Regular Languages"]
-    NBA["Nondeterministic Büchi Automata"]
-    GNBA["Generalized Büchi Automata"]
-    DBA["Deterministic Büchi Automata"]
-
-    ORE <--> WR
-    WR <--> NBA
-    NBA <--> GNBA
-
-    DBA -->|"strict subset"| NBA
-
-    NBA --> EMPTY["Nonemptiness via reachable accepting cycle"]
-    NBA --> UNION["Closed under union"]
-    GNBA --> INTER["Intersection via product"]
-    WR --> CLOSURE["Closed under union, intersection, complement"]
-```
-
----
-
-## 53. Formule Fondamentali da Ricordare
-
-### $\omega$-iteration
-
-$$
-\boxed{
-L^\omega
-=
-\{
-w_1w_2w_3\ldots
-\mid
-w_i\in L\text{ per ogni }i\geq1
-\}.
-}
-$$
-
-### $\omega$-regular expression
-
-$$
-\boxed{
-\gamma=
-\alpha_1.\beta_1^\omega+
-\cdots+
-\alpha_n.\beta_n^\omega.
-}
-$$
-
-### Semantica
-
-$$
-\boxed{
-L_\omega(\gamma)
-=
-\bigcup_{i=1}^nL(\alpha_i)L(\beta_i)^\omega.
-}
-$$
-
-### NBA
-
-$$
-\boxed{
-\mathcal A=(Q,\Sigma,\delta,Q_0,F).
-}
-$$
-
-### Büchi Acceptance
-
-$$
-\boxed{
-\exists^\infty i:q_i\in F.
-}
-$$
-
-### Equivalenza
-
-$$
-\boxed{
-E\text{ $\omega$-regular}
-\iff
-E=L_\omega(\mathcal A)
-\text{ per qualche NBA }\mathcal A.
-}
-$$
+## 32. Formule da Ricordare
 
 ### Nonemptiness
 
 $$
-\boxed{
 L_\omega(\mathcal A)\neq\emptyset
 \iff
-\exists q_0\in Q_0
-\exists p\in F
-\exists x\in\Sigma^*
-\exists y\in\Sigma^+:
- p\in\delta(q_0,x)\cap\delta(p,y).
-}
+\exists q_0\in Q_0,\ p\in F,\ x\in\Sigma^*,\ y\in\Sigma^+:
 $$
 
-### GNBA Acceptance
+$$
+p\in\delta(q_0,x)\cap\delta(p,y).
+$$
+
+### DBA determinism
 
 $$
-\boxed{
+|\delta(q,A)|\le1.
+$$
+
+### GNBA
+
+$$
+\mathcal G=(Q,\Sigma,\delta,Q_0,\mathcal F).
+$$
+
+### GNBA acceptance
+
+$$
 \forall F\in\mathcal F:
 \exists^\infty i:q_i\in F.
-}
 $$
 
-### Intersezione
+### Intersection product
+
+$$
+Q=Q_1\times Q_2
+$$
+
+$$
+Q_0=Q_{0,1}\times Q_{0,2}
+$$
+
+$$
+\mathcal F=
+\{
+F_1\times Q_2,\;
+Q_1\times F_2
+\}.
+$$
+
+---
+
+## 33. Mappa Finale
+
+```mermaid
+flowchart TB
+    WR["ω-Regular"]
+    NBA["NBA"]
+    GNBA["GNBA"]
+    DBA["DBA"]
+
+    WR <--> NBA
+    NBA <--> GNBA
+    DBA -->|"strict subset"| NBA
+
+    NBA --> NE["Nonemptiness:<br/>reachable accepting cycle"]
+    GNBA --> INT["Intersection product"]
+```
+
+---
+
+## 34. Concetti da Saper Spiegare all'Esame
+
+1. closure properties degli $\omega$-regular languages;
+2. NBA nonemptiness;
+3. accepting state reachable on a cycle;
+4. ultimately periodic words;
+5. definizione di DBA;
+6. perché la powerset construction standard fallisce;
+7. perché la complementazione ingenua dei DBA fallisce;
+8. perché i DBA sono meno espressivi degli NBA;
+9. esempio `eventually forever a`;
+10. definizione di GNBA;
+11. acceptance condition multipla;
+12. differenza tra $F=\emptyset$ in NBA e $\mathcal F=\emptyset$ in GNBA;
+13. conversione GNBA $\to$ NBA;
+14. complessità della conversione;
+15. intersezione di due NBA;
+16. acceptance sets del prodotto;
+17. equivalenza:
+    $$
+    \omega\text{-regular}=NBA=GNBA.
+    $$
+
+# 9/10
+
+## Model Checking con Büchi Automata e Nested DFS
+
+> Appunti basati su `sv_10.pdf`.
+>
+> Formato Obsidian:
+> - formule con `$ ... $` e `$$ ... $$`;
+> - diagrammi con blocchi `mermaid`.
+
+---
+
+## 1. Obiettivo
+
+Dato:
+
+- un transition system finito $\mathcal T$;
+- una $\omega$-regular property $E$;
+
+vogliamo decidere:
 
 $$
 \boxed{
-\mathcal F=
+\mathcal T\models E?
+}
+$$
+
+La strategia è trasformare la verifica in un problema di **persistence checking** su un prodotto tra:
+
+- il transition system;
+- un Büchi automaton che riconosce i comportamenti cattivi.
+
+---
+
+## 2. Dalla Proprietà ai Bad Behaviors
+
+Si costruisce un NBA:
+
+$$
+\mathcal A
+$$
+
+tale che:
+
+$$
+\boxed{
+L_\omega(\mathcal A)
+=
+(2^{AP})^\omega\setminus E.
+}
+$$
+
+Quindi $\mathcal A$ riconosce esattamente i comportamenti che violano $E$.
+
+---
+
+## 3. Condizione di Model Checking
+
+Per definizione:
+
+$$
+\mathcal T\models E
+$$
+
+se tutte le traces di $\mathcal T$ appartengono a $E$.
+
+Equivalentemente:
+
+$$
+\boxed{
+Traces(\mathcal T)
+\cap
+L_\omega(\mathcal A)
+=
+\emptyset.
+}
+$$
+
+```mermaid
+flowchart LR
+    T["Traces(T)"]
+    A["Lω(A) = bad behaviors"]
+    I["Intersection"]
+
+    T --> I
+    A --> I
+
+    I -->|"empty"| OK["T |= E"]
+    I -->|"nonempty"| BAD["counterexample"]
+```
+
+---
+
+## 4. Product Transition System
+
+Per controllare l'intersezione si costruisce:
+
+$$
+\boxed{
+\mathcal T\otimes\mathcal A.
+}
+$$
+
+Sia:
+
+$$
+\mathcal T
+=
+(S,Act,\rightarrow,S_0,AP,L)
+$$
+
+e:
+
+$$
+\mathcal A
+=
+(Q,2^{AP},\delta,Q_0,F).
+$$
+
+Il prodotto è:
+
+$$
+\boxed{
+\mathcal T\otimes\mathcal A
+=
+(S\times Q,Act,\rightarrow',S_0',AP',L').
+}
+$$
+
+---
+
+## 5. Transizioni del Prodotto
+
+Se:
+
+$$
+s\xrightarrow{\alpha}s'
+$$
+
+e:
+
+$$
+q'\in\delta(q,L(s')),
+$$
+
+allora:
+
+$$
+\boxed{
+\langle s,q\rangle
+\xrightarrow{\alpha}'
+\langle s',q'\rangle.
+}
+$$
+
+L'automa legge la label dello stato di arrivo.
+
+---
+
+## 6. Stati Iniziali
+
+L'NFA/NBA deve leggere anche la label dello stato iniziale del TS.
+
+Quindi:
+
+$$
+\boxed{
+S_0'
+=
 \{
-F_1\times Q_2,
-Q_1\times F_2
+\langle s_0,q\rangle
+\mid
+s_0\in S_0,
+q\in\delta(Q_0,L(s_0))
 \}.
 }
 $$
 
 ---
 
-## 54. Differenze da Non Confondere
+## 7. Atomic Propositions nel Prodotto
 
-### NFA vs NBA
-
-#### NFA
-
-Legge:
+Nel prodotto:
 
 $$
-\Sigma^*
+\boxed{
+AP'=Q
+}
 $$
 
-e accetta in base allo stato finale della run finita.
-
-#### NBA
-
-Legge:
+e:
 
 $$
-\Sigma^\omega
+\boxed{
+L'(\langle s,q\rangle)=\{q\}.
+}
 $$
 
-e accetta se $F$ viene visitato infinitely often.
+In questo modo possiamo osservare direttamente lo stato corrente dell'automa.
 
 ---
 
-### NBA vs DBA
+## 8. TS × NFA vs TS × NBA
 
-Un DBA è deterministico ma meno espressivo:
+La struttura del prodotto è la stessa.
+
+Ciò che cambia è il criterio di verifica.
+
+### NFA per regular safety
+
+Bisogna evitare di raggiungere:
 
 $$
-\boxed{DBA\subsetneq NBA.}
+F.
+$$
+
+Quindi si verifica un invariant:
+
+$$
+\text{always }\neg F.
+$$
+
+### NBA per $\omega$-regular properties
+
+Bisogna evitare di soddisfare la Büchi acceptance condition:
+
+$$
+F\text{ visited infinitely often}.
+$$
+
+Quindi serve un criterio infinitario.
+
+---
+
+## 9. Persistence Property
+
+Una LT property $E$ è una **persistence property** se esiste una formula proposizionale $\Phi$ tale che:
+
+$$
+\boxed{
+E=
+\{
+A_0A_1A_2\ldots
+\mid
+\exists j\ge0:
+\forall i\ge j:
+A_i\models\Phi
+\}.
+}
+$$
+
+Cioè:
+
+> from some moment on $\Phi$.
+
+oppure:
+
+> eventually forever $\Phi$.
+
+Si usa anche la notazione:
+
+$$
+\forall^\infty i\ge0:\ A_i\models\Phi
+$$
+
+per dire:
+
+> per tutti tranne finitely many indici.
+
+---
+
+## 10. Riduzione del Büchi Model Checking a Persistence
+
+Se $\mathcal A$ riconosce i bad behaviors, vogliamo garantire che in ogni path del prodotto gli stati accepting siano visitati solo finitely often.
+
+Quindi:
+
+$$
+\boxed{
+\mathcal T\models E
+\iff
+\mathcal T\otimes\mathcal A
+\models
+\text{eventually forever }\neg F.
+}
+$$
+
+Questa è una persistence property.
+
+```mermaid
+flowchart TB
+    T["Finite TS T"]
+    E["ω-regular property E"]
+    A["NBA A for complement of E"]
+    P["Product T ⊗ A"]
+    PC["Persistence checking<br/>eventually forever ¬F"]
+
+    E --> A
+    T --> P
+    A --> P
+    P --> PC
+```
+
+---
+
+## 11. Teorema di Riduzione
+
+La catena è:
+
+$$
+\mathcal T\models E
+$$
+
+se e solo se:
+
+$$
+Traces(\mathcal T)
+\cap
+L_\omega(\mathcal A)
+=
+\emptyset
+$$
+
+se e solo se:
+
+$$
+\boxed{
+\mathcal T\otimes\mathcal A
+\models
+\text{eventually forever }\neg F.
+}
 $$
 
 ---
 
-### NBA vs GNBA
+## 12. Cosa Significa Violare la Persistence
 
-NBA:
-
-$$
-F\subseteq Q.
-$$
-
-GNBA:
+La proprietà:
 
 $$
-\mathcal F\subseteq2^Q.
+\text{eventually forever }\neg F
 $$
 
-Un GNBA richiede che ogni acceptance set sia visitato infinitely often, ma:
+è falsa se esiste un path in cui:
 
 $$
-\boxed{NBA=GNBA}
+F
 $$
 
-in potere espressivo.
+viene visitato infinitamente spesso.
+
+In un TS finito ciò equivale all'esistenza di:
+
+- uno stato accepting raggiungibile;
+- un ciclo raggiungibile che consente di tornare infinitamente spesso in un accepting state.
 
 ---
 
-## 55. Concetti da Saper Spiegare all'Esame
+## 13. Persistenza in un TS Finito
 
-1. differenza tra regular expressions e $\omega$-regular expressions;
-2. significato di $\alpha^\omega$;
-3. definizione di $L^\omega$;
-4. sintassi e semantica delle $\omega$-regular expressions;
-5. definizione di $\omega$-regular language;
-6. proprietà `infinitely often`, `eventually`, `eventually forever`;
-7. perché ogni invariant è $\omega$-regular;
-8. definizione formale di NBA;
-9. run e Büchi acceptance condition;
-10. linguaggio $L_\omega(\mathcal A)$;
-11. conversione NBA $\rightarrow$ $\omega$-regular expression;
-12. formula con $\mathcal A_{q,p}$;
-13. conversione $\omega$-regular expression $\rightarrow$ NBA;
-14. closure under union;
-15. concatenazione NFA/NBA;
-16. costruzione per $L^\omega$;
-17. equivalenza NBA / $\omega$-regular expressions;
-18. closure properties;
-19. nonemptiness problem;
-20. reachable accepting state on a cycle;
-21. ultimately periodic words $xy^\omega$;
-22. definizione di DBA;
-23. fallimento della powerset construction;
-24. fallimento della complementazione ingenua;
-25. esempio `eventually forever a`;
-26. perché i DBA sono strictly less expressive;
-27. definizione di GNBA;
-28. acceptance condition dei GNBA;
-29. caso $\mathcal F=\emptyset$;
-30. conversione GNBA $\rightarrow$ NBA;
-31. prodotto per intersezione;
-32. acceptance sets del prodotto;
-33. equivalenza finale:
+Per un transition system finito, una violazione ha forma:
 
 $$
-\omega\text{-regular}=NBA=GNBA.
+\pi
+=
+prefix\cdot cycle^\omega.
+$$
+
+```mermaid
+flowchart LR
+    S0["initial"]
+    P["reachable accepting state"]
+    C1["cycle"]
+    C2["cycle"]
+
+    S0 -->|"prefix"| P
+    P --> C1
+    C1 --> C2
+    C2 -->|"back"| P
+```
+
+Questo è direttamente collegato alla nonemptiness dei Büchi automata.
+
+---
+
+## 14. Model Checking Pipeline
+
+```mermaid
+flowchart TB
+    SYS["Finite transition system T"]
+    PROP["ω-regular property E"]
+    COMP["Complement property"]
+    NBA["NBA A for bad behaviors"]
+    PROD["Product T ⊗ A"]
+    CYCLE["Accepting cycle search"]
+
+    SYS --> PROD
+    PROP --> COMP --> NBA --> PROD
+    PROD --> CYCLE
+
+    CYCLE -->|"none"| YES["T |= E"]
+    CYCLE -->|"found"| NO["T ⊭ E + counterexample"]
+```
+
+---
+
+## 15. Regular Safety vs General $\omega$-Regular Checking
+
+Le slide confrontano i due casi.
+
+### Safety
+
+Per NFA dei bad prefixes:
+
+$$
+\boxed{
+\text{reachability of }F
+}
+$$
+
+è sufficiente.
+
+### $\omega$-Regular
+
+Per NBA dei bad behaviors:
+
+$$
+\boxed{
+\text{reachable cycle containing/returning to }F
+}
+$$
+
+è necessario.
+
+Quindi:
+
+```mermaid
+flowchart LR
+    S["Safety"]
+    R["Reach accepting state"]
+
+    O["ω-Regular"]
+    C["Reach accepting cycle"]
+
+    S --> R
+    O --> C
+```
+
+---
+
+## 16. Persistence Checking
+
+Per una persistence condition $\Phi$, vogliamo verificare che lungo tutti i paths:
+
+$$
+\Phi
+$$
+
+sia vera da un certo punto in poi.
+
+La violazione è un path in cui:
+
+$$
+\neg\Phi
+$$
+
+compare infinitely often.
+
+Nel caso Büchi:
+
+$$
+\Phi=\neg F.
+$$
+
+Quindi cerchiamo un ciclo che consenta visite infinite a $F$.
+
+---
+
+## 17. Approccio Basato su SCC
+
+In un grafo finito, una execution infinita prima o poi rimane all'interno di una **strongly connected component**.
+
+Perciò una violazione esiste se è raggiungibile una SCC che:
+
+- contiene un accepting state;
+- contiene un ciclo.
+
+```mermaid
+flowchart TB
+    G["Reachable graph"]
+    SCC["Compute SCCs"]
+    ACC{"SCC with accepting state<br/>and a cycle?"}
+    BAD["counterexample"]
+    GOOD["property holds"]
+
+    G --> SCC --> ACC
+    ACC -->|"yes"| BAD
+    ACC -->|"no"| GOOD
+```
+
+---
+
+## 18. Approccio DFS-Based
+
+Le slide sviluppano un algoritmo basato su DFS.
+
+L'idea di base:
+
+1. prima DFS per esplorare lo state space;
+2. quando si completa l'esplorazione di uno stato accepting, si avvia una seconda DFS;
+3. la seconda DFS cerca un ciclo che ritorni allo stato accepting.
+
+Questo è il principio della **Nested DFS**.
+
+---
+
+## 19. Perché una DFS Singola non Basta Sempre
+
+Durante una DFS standard, trovare un edge verso uno stato già visitato non implica necessariamente aver trovato un accepting cycle rilevante.
+
+Serve distinguere:
+
+- stati ancora nello stack della DFS;
+- stati già completamente processati;
+- stato accepting da cui si sta cercando il ritorno.
+
+Le slide mostrano esempi in cui una strategia troppo semplice fallisce.
+
+---
+
+## 20. Nested DFS — Idea
+
+Usiamo due visite:
+
+- **blue DFS** / first DFS: esplora gli stati raggiungibili;
+- **red DFS** / second DFS: cerca un ciclo da uno stato accepting.
+
+```mermaid
+flowchart TB
+    B["First DFS"]
+    F{"Accepting state completed?"}
+    R["Second DFS from accepting state"]
+    C{"Can return to target / active path?"}
+    BAD["accepting cycle found"]
+    CONT["continue first DFS"]
+
+    B --> F
+    F -->|"no"| B
+    F -->|"yes"| R
+    R --> C
+    C -->|"yes"| BAD
+    C -->|"no"| CONT
+```
+
+---
+
+## 21. Quando Avviare la Seconda DFS
+
+Un dettaglio fondamentale:
+
+> la seconda DFS viene avviata quando la prima DFS ha finito di esplorare i successori dello stato accepting.
+
+Questo ordine evita alcuni falsi negativi mostrati nelle slide.
+
+La sequenza concettuale è:
+
+```text
+DFS1(s):
+    mark s
+    explore successors recursively
+
+    if s is accepting:
+        DFS2(s)
+```
+
+non:
+
+```text
+if s is accepting:
+    DFS2(s)
+explore successors
+```
+
+---
+
+## 22. Obiettivo della Seconda DFS
+
+Sia:
+
+$$
+s_F
+$$
+
+lo stato accepting da cui parte la seconda DFS.
+
+La seconda visita cerca un path non vuoto:
+
+$$
+s_F
+\rightarrow^+
+s_F
+$$
+
+oppure, nella variante dell'algoritmo, un collegamento a uno stato ancora appartenente allo stack rilevante della prima DFS.
+
+Se esiste, abbiamo un accepting cycle.
+
+---
+
+## 23. DFS-Based Cycle Check
+
+Un semplice schema è:
+
+```text
+CYCLE_CHECK(s):
+    mark s as visited by second DFS
+
+    for each successor t of s:
+        if t is target accepting state:
+            return true
+
+        if t not yet visited by second DFS:
+            if CYCLE_CHECK(t):
+                return true
+
+    return false
+```
+
+Questo algoritmo viene innestato nella prima DFS.
+
+---
+
+## 24. Complessità Temporale
+
+Nested DFS visita ogni stato/transizione solo un numero costante di volte.
+
+Quindi:
+
+$$
+\boxed{
+O(|S|+|\rightarrow|)
+}
+$$
+
+per il transition system su cui viene eseguito.
+
+Applicata al prodotto:
+
+$$
+\mathcal T\otimes\mathcal A,
+$$
+
+la complessità è lineare nella dimensione del prodotto.
+
+---
+
+## 25. Complessità del Büchi Model Checking
+
+Se il prodotto ha dimensione proporzionale a:
+
+$$
+size(\mathcal T)\cdot size(\mathcal A),
+$$
+
+allora il model checking ha complessità:
+
+$$
+\boxed{
+O(
+size(\mathcal T)\cdot size(\mathcal A)
+).
+}
+$$
+
+a meno del costo della costruzione dell'automa della proprietà.
+
+---
+
+## 26. Nested DFS e Memoria
+
+Una caratteristica importante è che non richiede di memorizzare esplicitamente tutte le SCC.
+
+Usa tipicamente:
+
+- visited set per la prima DFS;
+- visited set per la seconda DFS;
+- stack della prima DFS;
+- eventualmente stack/path per il counterexample.
+
+Questo la rende molto adatta al model checking esplicito.
+
+---
+
+## 27. Pseudocodice Concettuale della Prima DFS
+
+```text
+DFS1(s):
+    mark s as visited
+    push s on stack
+
+    for each successor t of s:
+        if t not visited:
+            DFS1(t)
+
+    if s is accepting:
+        clear / prepare second-search set
+        if DFS2(s, s):
+            report accepting cycle
+
+    pop s
+```
+
+La versione esatta delle slide raffina la gestione dei visited sets per evitare lavoro ripetuto.
+
+---
+
+## 28. Pseudocodice Concettuale della Seconda DFS
+
+```text
+DFS2(s, target):
+    mark s in second visited set
+
+    for each successor t of s:
+        if t == target:
+            return true
+
+        if t not in second visited set:
+            if DFS2(t, target):
+                return true
+
+    return false
+```
+
+---
+
+## 29. Counterexample Generation
+
+Se viene trovato un accepting cycle, il counterexample ha forma:
+
+$$
+\boxed{
+prefix\cdot cycle^\omega.
+}
+$$
+
+Il prefix porta da uno stato iniziale allo stato accepting/ciclo.
+
+Il cycle dimostra che il bad behavior può ripetersi infinitamente.
+
+```mermaid
+flowchart LR
+    I["initial"]
+    F["accepting state"]
+    C1["cycle state"]
+    C2["cycle state"]
+
+    I -->|"prefix"| F
+    F --> C1 --> C2 --> F
+```
+
+---
+
+## 30. Strutture Dati per il Counterexample
+
+Le slide introducono stack dedicati, concettualmente:
+
+- uno stack $\pi$ per il path della prima DFS;
+- uno stack per la seconda ricerca/ciclo;
+- visited sets separati.
+
+Alla scoperta del ciclo si combinano:
+
+$$
+prefix
+$$
+
+e:
+
+$$
+cycle
+$$
+
+per costruire l'error indication.
+
+---
+
+## 31. Forma dell'Error Indication
+
+Per il prodotto:
+
+$$
+\langle s_0,q_0\rangle
+\ldots
+\langle s_k,q_k\rangle
+\left(
+\langle s_{k+1},q_{k+1}\rangle
+\ldots
+\langle s_m,q_m\rangle
+\right)^\omega.
+$$
+
+Proiettando sulla componente del TS si ottiene una execution di $\mathcal T$ che viola la proprietà.
+
+La trace proiettata appartiene:
+
+$$
+L_\omega(\mathcal A)
+=
+(2^{AP})^\omega\setminus E.
 $$
 
 ---
 
-## 56. Riassunto in una Frase
+## 32. Soundness della Nested DFS
 
-La lezione mostra che le proprietà regolari su parole infinite possono essere descritte in modo equivalente tramite **$\omega$-regular expressions**, **Nondeterministic Büchi Automata** e **Generalized Büchi Automata**; i **Deterministic Büchi Automata** sono invece meno espressivi, mentre il problema di nonemptiness si riduce alla ricerca di uno stato accepting raggiungibile appartenente a un ciclo.
+La soundness richiede dimostrare:
 
-# 8/10
+> se l'algoritmo segnala un ciclo, allora esiste realmente un accepting path infinito.
+
+Se la seconda DFS trova un ritorno compatibile a partire da uno stato accepting, esiste un ciclo raggiungibile contenente la condizione Büchi.
+
+Ripetendo il ciclo:
+
+$$
+cycle^\omega
+$$
+
+lo stato accepting viene visitato infinitely often.
+
+Quindi la run è Büchi-accepting.
+
+---
+
+## 33. Completezza — Intuizione
+
+Viceversa, se esiste un accepting cycle raggiungibile, la prima DFS finirà per esplorare i suoi stati.
+
+Quando processa opportunamente uno stato accepting del ciclo, la nested search riesce a trovare un ritorno.
+
+Quindi:
+
+$$
+\boxed{
+\text{accepting cycle exists}
+\iff
+\text{Nested DFS reports violation}.
+}
+$$
+
+---
+
+## 34. Esempi nelle Slide
+
+Gli esempi mostrano diversi casi:
+
+- accepting state con self-loop;
+- accepting state in un ciclo con altri stati;
+- archi verso stati già visitati;
+- casi in cui una strategia di cycle-check troppo anticipata fallisce;
+- ordine corretto di avvio della seconda DFS.
+
+Il messaggio metodologico principale è:
+
+> non basta sapere che esiste un ciclo; il ciclo deve essere compatibile con la Büchi acceptance condition.
+
+---
+
+## 35. Further Improvements
+
+La parte finale delle slide accenna a miglioramenti della nested DFS.
+
+Gli obiettivi tipici sono:
+
+- ridurre le seconde esplorazioni;
+- riutilizzare informazione su stati già provati sicuri;
+- diminuire memoria e tempo;
+- generare counterexample in modo efficiente.
+
+Il principio fondamentale rimane comunque la ricerca di un **reachable accepting cycle**.
+
+---
+
+## 36. Confronto: Invariant Checking vs Büchi Checking
+
+| Invariant / Safety | Büchi / $\omega$-Regular |
+|---|---|
+| cerca un bad state | cerca un bad accepting cycle |
+| reachability | repeated reachability |
+| una DFS/BFS può bastare | nested DFS / SCC |
+| counterexample finito | counterexample lasso-shaped |
+
+Un counterexample Büchi ha tipicamente forma:
+
+$$
+\boxed{
+prefix\cdot cycle^\omega.
+}
+$$
+
+---
+
+## 37. Lasso Shape
+
+La forma:
+
+$$
+xy^\omega
+$$
+
+è detta **lasso**:
+
+```mermaid
+flowchart LR
+    X0["start"]
+    X1["prefix"]
+    Y0["cycle start"]
+    Y1["cycle"]
+    Y2["cycle"]
+
+    X0 --> X1 --> Y0
+    Y0 --> Y1 --> Y2 --> Y0
+```
+
+Questa struttura deriva dalla finitezza del product TS.
+
+---
+
+## 38. Formula Centrale del Capitolo
+
+Sia:
+
+$$
+L_\omega(\mathcal A)
+=
+(2^{AP})^\omega\setminus E.
+$$
+
+Allora:
+
+$$
+\boxed{
+\mathcal T\models E
+}
+$$
+
+se e solo se:
+
+$$
+\boxed{
+Traces(\mathcal T)\cap L_\omega(\mathcal A)=\emptyset
+}
+$$
+
+se e solo se non esiste un accepting cycle raggiungibile in:
+
+$$
+\boxed{
+\mathcal T\otimes\mathcal A.
+}
+$$
+
+---
+
+## 39. Workflow Completo
+
+```mermaid
+flowchart TB
+    E["ω-regular property E"]
+    NOT["Complement bad behaviors"]
+    A["NBA A"]
+    T["Finite TS T"]
+    P["Product T ⊗ A"]
+    NDFS["Nested DFS"]
+    RES{"Accepting cycle?"}
+
+    E --> NOT --> A
+    T --> P
+    A --> P
+    P --> NDFS --> RES
+
+    RES -->|"no"| YES["T |= E"]
+    RES -->|"yes"| NO["T ⊭ E<br/>lasso counterexample"]
+```
+
+---
+
+## 40. Formule da Ricordare
+
+### NBA per bad behaviors
+
+$$
+L_\omega(\mathcal A)
+=
+(2^{AP})^\omega\setminus E.
+$$
+
+### Satisfaction
+
+$$
+\mathcal T\models E
+\iff
+Traces(\mathcal T)\cap L_\omega(\mathcal A)=\emptyset.
+$$
+
+### Prodotto
+
+$$
+\mathcal T\otimes\mathcal A
+=
+(S\times Q,Act,\rightarrow',S_0',Q,L').
+$$
+
+### Product transition
+
+$$
+\frac{
+s\xrightarrow{\alpha}s'
+\qquad
+q'\in\delta(q,L(s'))
+}{
+\langle s,q\rangle
+\xrightarrow{\alpha}'
+\langle s',q'\rangle
+}.
+$$
+
+### Persistence
+
+$$
+\boxed{
+\exists j\ge0:
+\forall i\ge j:
+A_i\models\Phi.
+}
+$$
+
+### Riduzione
+
+$$
+\boxed{
+\mathcal T\models E
+\iff
+\mathcal T\otimes\mathcal A
+\models
+\text{eventually forever }\neg F.
+}
+$$
+
+### Nested DFS complexity
+
+$$
+\boxed{
+O(|S|+|\rightarrow|).
+}
+$$
+
+sul grafo esplorato.
+
+---
+
+## 41. Mappa Concettuale Finale
+
+```mermaid
+flowchart TB
+    T["Finite TS"]
+    E["ω-Regular property"]
+    NBA["NBA for complement"]
+    PROD["Product"]
+    PERSIST["Persistence property"]
+    CYCLE["Accepting-cycle detection"]
+    NDFS["Nested DFS"]
+
+    E --> NBA
+    T --> PROD
+    NBA --> PROD
+
+    PROD --> PERSIST
+    PERSIST --> CYCLE
+    CYCLE --> NDFS
+```
+
+---
+
+## 42. Concetti da Saper Spiegare all'Esame
+
+1. come si verifica una $\omega$-regular property;
+2. perché si costruisce un NBA per il complemento;
+3. perché si controlla l'intersezione con $Traces(\mathcal T)$;
+4. product transition system;
+5. stati iniziali del prodotto;
+6. labeling del prodotto;
+7. differenza tra NFA-product per safety e NBA-product;
+8. definizione di persistence property;
+9. significato di `eventually forever`;
+10. perché Büchi checking si riduce a persistence checking;
+11. repeated reachability;
+12. accepting cycles;
+13. SCC approach;
+14. perché una DFS semplice può essere insufficiente;
+15. idea della nested DFS;
+16. prima e seconda DFS;
+17. quando avviare la seconda DFS;
+18. cycle check;
+19. complessità della nested DFS;
+20. generazione del counterexample;
+21. lasso shape $xy^\omega$;
+22. soundness;
+23. completezza intuitiva;
+24. proiezione del counterexample dal prodotto al TS originale;
+25. workflow completo del Büchi model checking.

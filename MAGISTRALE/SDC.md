@@ -2120,3 +2120,8 @@ La capacità utile ideale cresce come $N$, mentre la penalità può crescere com
 # 30/9
 
 # 2/10
+
+# 7/10
+
+# 9/10
+
