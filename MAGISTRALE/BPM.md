@@ -2516,3 +2516,288 @@ Il notebook riporta per gli alignment del **log originale** il 100% di tracce pe
 - **Scoperta** ricava un modello dai dati; **conformità** confronta i dati con un modello già scelto.
 - **DFG** riassume successioni; **Petri/BPMN** esprimono anche scelta, parallelismo e cicli.
 - **Fitness** quantifica l'aderenza; gli **alignment** mostrano le mosse che spiegano le divergenze.
+
+# 13/10
+
+**Fonte:** *2026-10-13 - BPM - 06-Mining.pdf*, 120 pagine PDF. Le pagine con lo stesso contenuto e annotazioni progressive sono state accorpate. I riferimenti «p.» qui sotto indicano la **pagina del PDF**, che non sempre coincide con il numero stampato nella slide.
+
+## 1. Dalla descrizione del processo ai dati osservati
+
+Il **process mining** ricava conoscenza sui processi dalle registrazioni dei sistemi informativi. Si colloca fra analisi dei dati e modellazione dei processi: permette di **scoprire**, **controllare** e **migliorare** il comportamento effettivamente eseguito (pp. 2–7).
+
+Un processo ha più **casi** (*process instances*). Ciascun caso genera una sequenza di **eventi**. Un evento è l'occorrenza concreta di un'**attività**: due eventi possono avere la stessa etichetta di attività, ma restano due occorrenze distinte.
+
+| Campo dell'evento | Significato | Esempio nelle slide |
+| --- | --- | --- |
+| Case ID | Identifica l'istanza cui appartiene l'evento. | Caso 1, caso 2, ... |
+| Event ID | Identifica l'occorrenza. | 35654423 |
+| Timestamp | Colloca l'evento nel tempo e consente di ordinare la traccia. | 30-12-2010, 11:02 |
+| Activity | Tipo di operazione eseguita. | Register request, Check ticket |
+| Resource | Persona o risorsa associata. | Pete, Sue |
+| Cost | Valore attribuito all'evento. | 50, 400 |
+
+**Event log:** dopo aver raggruppato per Case ID e ordinato per timestamp, gli eventi di un caso diventano una **traccia**. Se $A$ è l'insieme delle attività, una traccia è una sequenza $\sigma=\langle a_1,\ldots,a_n\rangle\in A^*$; un log $L\in\mathcal{B}(A^*)$ è una **multicollezione di tracce**. La molteplicità registra quanti casi seguono la stessa variante. Per esempio $[\langle a,b,d\rangle^3,\langle a,c,d\rangle^2]$ contiene cinque casi ma solo due varianti (pp. 8–14, 59–60).
+
+> Il log è una **osservazione finita**. Un comportamento non registrato potrebbe essere impossibile, raro o semplicemente non ancora osservato.
+
+## 2. Le tre attività principali del process mining
+
+```mermaid
+flowchart TD
+    L["Event log"] --> D["Discovery: ricava un modello"]
+    L --> C["Conformance: confronta log e modello"]
+    M["Modello esistente"] --> C
+    L --> E["Enhancement: usa i dati per migliorare"]
+    M --> E
+    D --> N["Modello scoperto"]
+    C --> X["Misure e diagnosi"]
+    E --> R["Modello o sistema migliorato"]
+```
+
+| Attività | Input essenziale | Risultato e domanda |
+| --- | --- | --- |
+| **Discovery** (*play-in*) | Event log | Un modello ricavato senza un modello di processo dato a priori. «Quale processo emerge dai dati?» Può riguardare anche risorse e reti sociali. |
+| **Conformance checking** (*replay*) | Event log + modello | Misure globali e diagnosi locali: il comportamento osservato si accorda con quello modellato? Dove e quanto devia? |
+| **Enhancement** | Event log + modello esistente | Estensione, riparazione o miglioramento del modello/sistema con informazioni sulla realtà osservata. |
+
+**Play-out** parte invece da un modello e ne produce/esplora comportamenti: esecuzione tramite workflow engine, simulazione, generazione di tracce e model checking. **Replay** sovrappone un log a un modello per controllarne la corrispondenza, misurare prestazioni o individuare colli di bottiglia (pp. 16–22).
+
+Nel valutare le discrepanze bisogna chiarire **che ruolo ha il modello** (p. 21):
+
+- **Normativo:** il modello prescrive il processo voluto. Una traccia divergente segnala un comportamento da controllare o correggere.
+- **Descrittivo:** il modello tenta di rappresentare il processo reale. La stessa divergenza può suggerire che è il modello a dover cambiare.
+- **Repair:** modifica il modello alla luce del log; per esempio rende concorrenti due attività che erano state modellate in sequenza, ma che nella realtà possono apparire in entrambi gli ordini.
+
+## 3. Esempio dei reclami: dal log alla rete di Petri
+
+Nelle pp. 24–42 si usa un log di gestione delle richieste. Le attività sono abbreviate così:
+
+| Simbolo | Attività | Simbolo | Attività |
+| --- | --- | --- | --- |
+| $a$ | Register request | $e$ | Decide |
+| $b$ | Examine thoroughly | $f$ | Reinitiate request |
+| $c$ | Examine casually | $g$ | Pay compensation |
+| $d$ | Check ticket | $h$ | Reject request |
+
+Le sei tracce, dopo l'astrazione degli attributi, sono:
+
+| Caso | Sequenza di attività |
+| ---: | --- |
+| 1 | $\langle a,b,d,e,h\rangle$ |
+| 2 | $\langle a,d,c,e,g\rangle$ |
+| 3 | $\langle a,c,d,e,f,b,d,e,g\rangle$ |
+| 4 | $\langle a,d,b,e,h\rangle$ |
+| 5 | $\langle a,c,d,e,f,d,c,e,f,c,d,e,h\rangle$ |
+| 6 | $\langle a,c,d,e,g\rangle$ |
+
+Una lettura plausibile è: la richiesta viene registrata; avvengono **un esame** ($b$ oppure $c$) e il controllo del ticket ($d$), in ordine che può variare; segue la decisione ($e$); si può **reiniziare** ($f$) o terminare con pagamento ($g$) o rifiuto ($h$). Il modello scoperto può ammettere **altre tracce** oltre alle sei presenti nel log: scoprire un modello non significa memorizzare solo gli esempi osservati (pp. 30–43).
+
+```mermaid
+flowchart TD
+    A["Register request"] --> P["Attività da completare"]
+    P --> D["Check ticket"]
+    P --> X{"Scegli un esame"}
+    X --> B["Examine thoroughly"]
+    X --> C["Examine casually"]
+    D --> J["Attendi controllo ed esame"]
+    B --> J
+    C --> J
+    J --> E["Decide"]
+    E --> F["Reinitiate request"]
+    F --> P
+    E --> G["Pay compensation"]
+    E --> H["Reject request"]
+```
+
+*Schema concettuale della lettura del modello nelle slide, non riproduzione esatta degli archi e posti della rete di Petri.*
+
+## 4. Come giudicare un modello scoperto
+
+Un modello può rappresentare tutte le tracce del log e risultare comunque poco utile. Le pp. 43–55 introducono **quattro dimensioni di qualità**:
+
+| Criterio | Domanda | Pericolo quando manca |
+| --- | --- | --- |
+| **Fitness** | Il modello può riprodurre le tracce osservate? | Comportamenti effettivi restano esclusi (*non-fitting model*). |
+| **Precision** | Il modello evita comportamenti estranei a ciò che si è osservato? | **Underfitting**: permette troppo. |
+| **Generalization** | Il modello ammette varianti plausibili non ancora viste? | **Overfitting**: copia coincidenze e peculiarità del campione. |
+| **Simplicity** | Il modello ha una struttura comprensibile ed essenziale? | Una rete enorme può memorizzare ogni traccia ma spiegare poco. |
+
+Le slide confrontano, in modo qualitativo, una rete strutturata, un modello troppo restrittivo, uno troppo permissivo e una costruzione che rappresenta separatamente le varianti. Un modello «una strada per ogni traccia» può essere fedele al log e preciso sui casi visti, ma generalizza poco e diventa complesso. Le quattro qualità sono **in tensione**: nessuna, isolatamente, basta a stabilire la bontà della scoperta.
+
+### Due domande delle slide: quale rete inferire?
+
+**Esempio A (p. 56):** $L=[\langle a,c,d\rangle^6,\langle b,c,e\rangle^3]$, con **esattamente cinque transizioni visibili** $a,b,c,d,e$. Dopo la scelta iniziale $a$/$b$, la transizione $c$ è comune; la scelta finale resta **correlata** a quella iniziale ($a$ conduce a $d$, $b$ a $e$). Un semplice XOR indipendente dopo $c$ permetterebbe anche $a,c,e$ e $b,c,d$.
+
+Una rete che conserva il contesto usa i posti $p,p_a,p_b,q,o$: $a$ e $b$ competono per il posto iniziale $i$; $a$ produce token in $p$ e $p_a$, $b$ in $p$ e $p_b$; $c$ consuma $p$ e produce $q$; $d$ consuma $q$ e $p_a$, mentre $e$ consuma $q$ e $p_b$; entrambi producono un token in $o$. Così le sole tracce complete sono $a,c,d$ e $b,c,e$. Non servono transizioni aggiuntive.
+
+**Esempio B (p. 57):** $L=[\langle a,b,c,d\rangle^3,\langle a,e,d\rangle,\langle a,c,b,d\rangle^2]$. Dopo $a$, o si esegue $e$, oppure $b$ e $c$ si eseguono **entrambi, in qualunque ordine**; poi $d$.
+
+Con cinque transizioni soltanto: $a$ produce token nei posti $p_b,p_c$; $e$ consuma **entrambi** e produce token nei posti $q_b,q_c$; $b$ trasforma $p_b$ in $q_b$ e $c$ trasforma $p_c$ in $q_c$; $d$ consuma entrambi $q_b,q_c$ e porta al posto finale. Se $b$ o $c$ è già partito, $e$ non è più abilitato; se parte $e$, non si possono più eseguire $b$ o $c$.
+
+## 5. Relazioni osservabili nel log
+
+L'**algoritmo $\alpha$** è un esempio di *discovery play-in*: estrae relazioni d'ordine, forma una **footprint matrix** e da questa costruisce una rete di Petri. È didatticamente utile per capire il parallelismo, ma ha limiti importanti (pp. 58–61).
+
+Per attività $x,y\in A$ si definisce la relazione di **successione immediata**:
+
+$$x>_L y \iff \exists \sigma=\langle t_1,\ldots,t_n\rangle\in L,\ \exists i<n:\ t_i=x\land t_{i+1}=y.$$
+
+Conta almeno **un'occorrenza**, non la frequenza. Il grafo delle successioni dirette (**DFG**) ha una transizione/nodo per ciascuna attività e un arco $x\to y$ se $x>_L y$; opzionalmente l'arco è pesato con il numero di volte che quella coppia appare (pp. 62–64).
+
+Le altre relazioni sono derivate dalla presenza o assenza degli archi in due direzioni:
+
+| Simbolo | Definizione | Lettura convenzionale |
+| --- | --- | --- |
+| $x\to_L y$ | $x>_L y$ e $y\not>_L x$ | Causalità *inferita* da successione unidirezionale. |
+| $x\leftarrow_L y$ | $y\to_L x$ | Relazione causale nell'altro verso. |
+| $x\parallel_L y$ | $x>_L y$ e $y>_L x$ | Indizio di parallelismo. |
+| $x\#_L y$ | Né $x>_L y$ né $y>_L x$ | Nessuna successione immediata osservata. |
+
+Le parole «causalità» e «parallelismo» indicano **interpretazioni dell'algoritmo**, non dimostrazioni ottenute dal solo log. In particolare un ciclo corto $x,y,x$ crea successioni in entrambi i versi anche se le attività **non** sono parallele (pp. 115–117).
+
+### Footprint matrix: esempio completo
+
+Per $L_1=[\langle a,b,c,d\rangle^3,\langle a,c,b,d\rangle^2,\langle a,e,d\rangle]$ si osserva
+
+$$>_{L_1}=\{(a,b),(a,c),(a,e),(b,c),(c,b),(b,d),(c,d),(e,d)\}.$$
+
+La matrice contiene la relazione fra la **riga** e la **colonna** (pp. 68–73):
+
+| riga $\backslash$ colonna | $a$ | $b$ | $c$ | $d$ | $e$ |
+| --- | :---: | :---: | :---: | :---: | :---: |
+| $a$ | $\#$ | $\to$ | $\to$ | $\#$ | $\to$ |
+| $b$ | $\leftarrow$ | $\#$ | $\parallel$ | $\to$ | $\#$ |
+| $c$ | $\leftarrow$ | $\parallel$ | $\#$ | $\to$ | $\#$ |
+| $d$ | $\#$ | $\leftarrow$ | $\leftarrow$ | $\#$ | $\leftarrow$ |
+| $e$ | $\leftarrow$ | $\#$ | $\#$ | $\to$ | $\#$ |
+
+Per esempio, $b\parallel_{L_1}c$ perché compaiono sia $b,c$ sia $c,b$ in tracce diverse; $b\#_{L_1}e$ perché non sono immediatamente adiacenti in nessuno dei due versi. Il DFG è l'elenco degli otto archi in $>_{L_1}$; **non** è già una rete di Petri eseguibile.
+
+## 6. Dai footprint ai pattern di controllo
+
+Le pp. 74–78 collegano le relazioni d'ordine a configurazioni tipiche:
+
+| Pattern | Segnale nel log | Interpretazione nel modello |
+| --- | --- | --- |
+| Sequenza | $x\to_L y$ | $x$ precede $y$ nel frammento inferito. |
+| Scelta XOR | $x\#_L y$ fra alternative dopo uno stesso punto | Si percorre una delle alternative. |
+| AND-split | $a\to_L b$, $a\to_L c$, $b\parallel_L c$ | Dopo $a$, $b$ e $c$ possono avvenire in entrambi gli ordini; sono richiesti entrambi nel pattern di parallelismo. |
+| AND-join | $b\to_L d$, $c\to_L d$, $b\parallel_L c$ | $d$ segue la sincronizzazione dei due rami. |
+
+**Attenzione:** uno stesso footprint può essere compatibile con più spiegazioni. Servono ipotesi sulla completezza del log e, nei casi reali, tecniche di scoperta più robuste.
+
+## 7. Algoritmo $\alpha$: costruzione formale
+
+Sia $T_L$ l'insieme delle attività osservate. L'algoritmo usa **una transizione per attività distinta**, non una transizione separata per ogni occorrenza registrata nel log. Si fissano (pp. 79–100):
+
+$$T_L=\{t\mid t\text{ appare in almeno una traccia di }L\},$$
+$$T_I=\{\operatorname{first}(\sigma)\mid\sigma\in L\},\qquad
+T_O=\{\operatorname{last}(\sigma)\mid\sigma\in L\}.$$
+
+Per insiemi **non vuoti** $A,B\subseteq T_L$, la coppia $(A,B)$ appartiene a $X_L$ se
+
+$$
+\bigl(\forall a\in A,\ \forall b\in B:\ a\to_L b\bigr)
+\ \land\
+\bigl(\forall a_1\ne a_2\in A:\ a_1\#_L a_2\bigr)
+\ \land\
+\bigl(\forall b_1\ne b_2\in B:\ b_1\#_L b_2\bigr).
+$$
+
+In altre parole: ogni attività di $A$ è in relazione $\to_L$ con ogni attività di $B$; le attività **dentro** $A$ sono mutuamente in relazione $\#$, così come quelle **dentro** $B$. Una coppia identifica un candidato per un posto intermedio $p_{(A,B)}$ con archi da tutte le transizioni in $A$ e verso tutte quelle in $B$.
+
+Fra tali coppie si mantengono soltanto le **massimali** rispetto all'inclusione componente per componente:
+
+$$
+Y_L=\left\{(A,B)\in X_L\ \middle|\
+\nexists(A',B')\in X_L:
+A\subseteq A',\ B\subseteq B',\
+(A,B)\ne(A',B')\right\}.
+$$
+
+Questa scelta evita di introdurre anche i posti ridondanti corrispondenti a tutti i sottoinsiemi (pp. 83–107). Si costruiscono poi i posti e gli archi:
+
+$$P_L=\{p_{(A,B)}\mid(A,B)\in Y_L\}\cup\{i_L,o_L\},$$
+
+$$\begin{aligned}
+F_L={}&\{(a,p_{(A,B)})\mid(A,B)\in Y_L,\ a\in A\}\\
+&{}\cup\{(p_{(A,B)},b)\mid(A,B)\in Y_L,\ b\in B\}\\
+&{}\cup\{(i_L,t)\mid t\in T_I\}
+\cup\{(t,o_L)\mid t\in T_O\}.
+\end{aligned}$$
+
+Il risultato è $\alpha(L)=(P_L,T_L,F_L,i_L)$, con un token iniziale nel posto $i_L$; $o_L$ è il posto finale. Un **posto** può avere più transizioni in ingresso e più transizioni in uscita: in una rete di Petri il suo significato deriva da token, archi e abilitazione delle transizioni, non dalla sola forma del disegno.
+
+### Esempio guidato su $L_1$
+
+1. $T_L=\{a,b,c,d,e\}$, $T_I=\{a\}$, $T_O=\{d\}$.
+2. Dalla footprint matrix: $a\to b,c,e$; $b\parallel c$; $b\# e$; $c\# e$; $b,c,e\to d$.
+3. Le coppie massimali sono
+
+   $$Y_{L_1}=\{(\{a\},\{b,e\}),(\{a\},\{c,e\}),
+   (\{b,e\},\{d\}),(\{c,e\},\{d\})\}.$$
+
+4. La transizione $a$ alimenta i primi due posti. $b$ consuma il primo, $c$ il secondo; $e$ consuma **entrambi**. Prima di $d$, $b$ e $c$ devono avere alimentato i due posti finali, oppure $e$ li deve avere alimentati entrambi. La rete riproduce $\langle a,b,c,d\rangle$, $\langle a,c,b,d\rangle$ e $\langle a,e,d\rangle$.
+
+```mermaid
+flowchart TD
+    I["i_L"] --> A["a"]
+    A --> X{"b e c entrambi, oppure e"}
+    X --> B["b"]
+    X --> C["c"]
+    B --> J["Attendi b e c"]
+    C --> J
+    X --> E["e"]
+    E --> D["d"]
+    J --> D
+    D --> O["o_L"]
+```
+
+*L'ultima figura è una sintesi del comportamento: l'espressione nel nodo di scelta è solo descrittiva. La costruzione esatta della rete è data da $Y_{L_1}$ e dagli archi $F_L$ sopra, senza transizioni silenziose aggiunte.*
+
+## 8. Esercizi di verifica sulle slide
+
+Le pp. 112–114 chiedono di controllare una footprint matrix e la rete prodotta da $\alpha$ per alcuni log; si tratta di **verifiche** della procedura, non di un'ulteriore definizione.
+
+Per $L_4=[\langle a,c,d\rangle^{45},\langle b,c,d\rangle^{42},
+\langle a,c,e\rangle^{38},\langle b,c,e\rangle^{22}]$ (p. 112):
+
+- $T_I=\{a,b\}$, $T_O=\{d,e\}$;
+- $a\# b$, $a\to c$, $b\to c$, $c\to d$, $c\to e$, $d\# e$;
+- la rete ha una **scelta iniziale** fra $a$ e $b$, poi $c$, poi una **scelta finale** fra $d$ ed $e$.
+
+```mermaid
+flowchart TD
+    S([Inizio]) --> X{"Scelta iniziale"}
+    X --> A["a"]
+    X --> B["b"]
+    A --> C["c"]
+    B --> C
+    C --> Y{"Scelta finale"}
+    Y --> D["d"]
+    Y --> E["e"]
+    D --> F([Fine])
+    E --> F
+```
+
+Le molteplicità $45,42,38,22$ **non cambiano** la footprint qualitativa dell'algoritmo $\alpha$, finché tutte le varianti restano presenti: la relazione $>_L$ chiede se una coppia appare, non quante volte. Questo è uno dei motivi per cui la tecnica tratta male il rumore.
+
+## 9. Limiti dell'algoritmo $\alpha$
+
+| Limite | Che cosa accade nelle slide | Conseguenza |
+| --- | --- | --- |
+| **Dipendenze implicite / posti ridondanti** | Per il log $L_6$, due posti $p_1,p_2$ possono essere rimossi senza modificare i comportamenti (p. 115). | La rete scoperta non è necessariamente la più semplice. |
+| **Ciclo di lunghezza 1** | Nel log $L_7$, l'attività $b$ può ripetersi. La versione base scollega $b$ dalla rete principale (p. 116). | Il modello scoperto non rappresenta correttamente il ciclo e può non essere una WfN. |
+| **Ciclo di lunghezza 2** | Nel log $L_8$ compaiono $b,c,b$ e $c,b,c$: si osservano entrambi i versi $b>_L c$ e $c>_L b$ (p. 117). | $\alpha$ interpreta erroneamente il ciclo come parallelismo; anche qui si può ottenere una rete scorretta. |
+| **Rumore e frequenze** | Un comportamento raro è trattato qualitativamente come uno frequente; per le slide «noise» significa soprattutto comportamento raro/infrequente, non necessariamente errore di registrazione (pp. 118–120). | Un arco occasionale può alterare relazioni, posti e struttura scoperta. |
+
+Per questo l'algoritmo è soprattutto uno **strumento didattico** per le relazioni d'ordine e la ricostruzione di pattern. Il fatto che $\alpha(L)$ abbia un posto iniziale e uno finale non garantisce da solo che la rete sia **sound**, minimale o adeguata a un log incompleto e rumoroso.
+
+## 10. Ripasso rapido
+
+1. **Case ID** raggruppa eventi; il **timestamp** ne stabilisce l'ordine nella traccia; il log è una multicollezione di tracce.
+2. **Discovery**: log $\to$ modello. **Conformance**: log + modello $\to$ confronto. **Enhancement**: log + modello $\to$ miglioramento. **Play-out**: modello $\to$ comportamenti possibili.
+3. Il DFG rappresenta $>_L$; la footprint classifica ogni coppia come $\to,\leftarrow,\parallel,\#$.
+4. $\alpha$ prende le coppie $(A,B)$ che rispettano la footprint, conserva le massimali, introduce un posto per ognuna e collega attività iniziali e finali.
+5. **Fitness, precision, generalization, simplicity** devono essere valutate insieme.
+6. Dalla sola osservazione $x>_L y$ non si deduce una necessità causale universale; i cicli corti e il rumore sono controesempi importanti.
